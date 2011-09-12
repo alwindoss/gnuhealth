@@ -1,0 +1,12 @@
+prefix=@prefix@
+
+MANTARGET=	"/usr/share/man/man1"
+
+tryton_modules=@TRYTON_MODULES_PATH@
+
+install:
+	cp -a medical/ $(tryton_modules)
+	cp -a medical_* $(tryton_modules) 
+
+install_man:
+	install -m 644 medical/man/gnuhealth.1 $(MANTARGET) 

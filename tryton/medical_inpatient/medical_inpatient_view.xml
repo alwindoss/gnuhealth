@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+
+        <record model="ir.ui.icon" id="medical_hospital_patient_icon">
+            <field name="name">icon-hospital-patient</field>
+            <field name="path">icons/hospital_patient.svg</field>
+        </record> 
+
+        <menuitem name="Inpatient" parent="medical.medical_menu"
+            id="medical_inpatient_menu" sequence="2"
+            icon="icon-hospital-patient"/>
+
+<!-- Add other relevant icons -->
+
+        <record model="ir.ui.icon" id="medical_disease_icon">
+            <field name="name">icon-ok</field>
+            <field name="path">icons/ok.svg</field>
+        </record>
+
+        <record model="ir.ui.icon" id="medical_cancel_icon">
+            <field name="name">icon-cancel</field>
+            <field name="path">icons/cancel.svg</field>
+        </record>
+
+        <record model="ir.ui.icon" id="medical_home_icon">
+            <field name="name">icon-home</field>
+            <field name="path">icons/go-home.svg</field>
+        </record>
+
+<!-- Patient hospitalization and bed registration (in-patient registration) -->
+
+        <record model="ir.ui.view" id="medical_inpatient_registration_view">
+            <field name="model">medical.inpatient.registration</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Inpatient Registration Information">
+                    <notebook>
+                        <page string="Administrative data" id="page_admin_data">
+                            <group colspan="4" id="group_admin_data_holder1">
+                                <group colspan="2" id="group_admin_data">
+                                    <label name="name"/>
+                                    <field name="name"/>
+                                    <label name="patient"/>
+                                    <field name="patient"/>
+                                </group>
+                                <group colspan="2" id="group_admin_bed">
+                                    <label name="bed"/>
+                                    <field name="bed"/>
+                                </group>
+                                <newline/>
+
+                                <group colspan="4" id="group_admin_data_holder2">
+                                    <label name="hospitalization_date"/>
+                                    <field name="hospitalization_date"/>
+                                    <label name="discharge_date"/>
+                                    <field name="discharge_date"/>
+                                    <label name="attending_physician"/>
+                                    <field name="attending_physician"/>
+                                    <label name="operating_physician"/>
+                                    <field name="operating_physician"/>
+                                </group>
+                                <group colspan="4" id="group_admin_data_holder3">
+                                    <label name="admission_type"/>
+                                    <field name="admission_type"/>
+                                    <label name="admission_reason"/>
+                                    <field name="admission_reason"/>
+                                    <newline/>
+                                    <label name="info" colspan="4"/>
+                                    <field name="info" colspan="4"/>
+                                </group>
+                            </group>
+                            <newline/>
+                            <group colspan="4" id="group_registration_holder1">
+                                <group colspan="2" id="group_registration_holder2">
+                                    <field name="state" readonly="1"/>
+                                    <button name="button_registration_confirm" states="{'invisible': And(Not(Equal(Eval('state'), 'free')), Not(Equal(Eval('state'), 'cancelled')))}" string="Confirm" help="Confirm Registration / Make the reservation" icon="icon-ok" type="object"/>
+                                </group>
+
+                                <group expand="1" colspan="2" id="group_registration_holder3">
+                                    <button name="button_registration_cancel" states="{'invisible': Not(Equal(Eval('state'), 'confirmed'))}" help="Cancel Registration" string="Cancel" icon="icon-cancel" confirm="Cancel the patient registration process ?" type="object"/>
+                                    <button name="button_registration_admission" states="{'invisible': Not(Equal(Eval('state'), 'confirmed'))}" help="Patient Admission" string="Admission" icon="icon-ok" confirm="Admit the patient in the health institution and assign the bed" type="object"/>
+                                    <button name="button_patient_discharge" states= "{'invisible': Not(Equal(Eval('state'), 'hospitalized'))}" help="Discharge Patient" string="Discharge" icon="icon-home" confirm="You are about to discharge the patient from the health institution." type="object"/>
+                                </group>
+
+                            </group>
+
+                        </page>
+                        <page string="Care Plan" id="page_care_plan">
+                            <label name="nursing_plan"/>
+                            <field name="nursing_plan"/>
+                            <newline/>
+                            <label name="discharge_plan"/>
+                            <field name="discharge_plan"/>
+                        </page>
+                    </notebook>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="medical_inpatient_registration_tree">
+            <field name="model">medical.inpatient.registration</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="Inpatient Registration Info"
+                 colors="If(Equal(Eval('state'), 'hospitalized'), 'cyan',If(Equal(Eval('admission_type'), 'emergency'), 'red', If(Equal(Eval('admission_type'), 'maternity'), 'blue','black')))">
+                    <field name="name"/>
+                    <field name="patient"/>
+                    <field name="hospitalization_date"/>
+                    <field name="discharge_date"/>
+                    <field name="bed"/>
+                    <field name="admission_type"/>
+                    <field name="state"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+<!-- Create the Action -->
+
+        <record model="ir.action.act_window" id="medical_action_inpatient_registration">
+            <field name="name">Hospitalizations</field>
+            <field name="res_model">medical.inpatient.registration</field>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_inpatient_registration_list_view">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="medical_inpatient_registration_tree"/>
+            <field name="act_window" ref="medical_action_inpatient_registration"/>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_inpatient_registration_form_view">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="medical_inpatient_registration_view"/>
+            <field name="act_window" ref="medical_action_inpatient_registration"/>
+        </record>
+
+        <menuitem parent="medical_inpatient_menu"
+            action="medical_action_inpatient_registration"
+            id="medical_conf_inpatient_add" sequence="1"/>
+
+<!-- Add the patient hospitalization registration code to the appointment view -->
+
+        <record model="ir.ui.view" id="view_partner_form">
+            <field name="model">medical.appointment</field>
+            <field name="inherit" ref="medical.medical_appointment_form" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                    <xpath
+                        expr="/form/group/field[@name=&quot;institution&quot;]"
+                        position="after">
+
+                        <label name="inpatient_registration_code"/>
+                        <field name="inpatient_registration_code"/>
+
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+
+<!-- Add the patient Hospitalization Status to the partner form -->
+
+        <record id="view_patient_form" model="ir.ui.view">
+            <field name="model">medical.patient</field>
+            <field name="inherit" ref="medical.medical_patient_view_form"/>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+<!-- TODO : FIX ME
+                    <xpath
+                        expr="/form/notebook/page[@id=&quot;general_info&quot;]/field[@name=&quot;primary_care_doctor&quot;]"
+                        position="after">
+-->
+                    <xpath
+                        expr="//field[@name=&quot;primary_care_doctor&quot;]"
+                        position="after">
+
+                        <label name="patient_status"/>
+                        <field name="patient_status"/>
+
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+
+<!-- Add the patient Hospitalization Status to the tree -->
+
+        <record id="medical_patient_extd_tree" model="ir.ui.view">
+            <field name="model">medical.patient</field>
+            <field name="inherit" ref="medical.medical_patient_tree"/>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                    <xpath
+                        expr="/tree/field[@name=&quot;identification_code&quot;]"
+                        position="after">
+
+                        <field name="patient_status"/>
+
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+
+    </data>
+</tryton>

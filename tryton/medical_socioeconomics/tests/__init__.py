@@ -1,0 +1,1 @@
+from test_medical_socioeconomics import suite

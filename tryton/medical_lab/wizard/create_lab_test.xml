@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+
+        <record model="ir.ui.view" id="view_lab_make_test">
+            <field name="model">medical.lab.test.create.init</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Create Lab Tests">
+                    <separator string="Do you want to generate the test(s) ?"
+                        colspan="4" id="test_ask"/>
+                    <newline/>
+                    <separator string="Create Tests" colspan="6"
+                        id="test_ask_create"/>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.action.wizard" id="act_create_lab_test">
+            <field name="name">Create Lab Test</field>
+            <field name="wiz_name">medical.lab.test.create</field>
+            <field name="model">medical.patient.lab.test</field>
+        </record>
+        <record model="ir.action.keyword" id="act_create_lab_test_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">medical.patient.lab.test,0</field>
+            <field name="action" ref="act_create_lab_test"/>
+        </record>
+
+    </data>
+</tryton>

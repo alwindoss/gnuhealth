@@ -1,0 +1,3419 @@
+------------------------------------------------------------------------
+r552 | bvillasanti | 2011-08-15 17:15:02 -0300 (lun 15 de ago de 2011) | 1 line
+
+[REF] Formatting style PEP8 in Medical Lifestyle module for openerp/tryton branches
+------------------------------------------------------------------------
+r551 | meanmicio | 2011-08-15 16:52:44 -0300 (lun 15 de ago de 2011) | 4 lines
+
+- [ADD] GNU Health initial installer profile for Tryton
+- [MOD] Change email from info@gnusolidario.org to health@gnusolidario.org
+
+
+------------------------------------------------------------------------
+r550 | meanmicio | 2011-08-15 01:21:09 -0300 (lun 15 de ago de 2011) | 1 line
+
+[ADD] Include configure scripts for GNU package
+------------------------------------------------------------------------
+r549 | bvillasanti | 2011-08-14 21:55:26 -0300 (dom 14 de ago de 2011) | 1 line
+
+[REF] Formatting style PEP8 in Medical Surgery module for openerp/tryton branches
+------------------------------------------------------------------------
+r548 | bvillasanti | 2011-08-14 01:59:32 -0300 (dom 14 de ago de 2011) | 1 line
+
+[REF] Gyneco / Obs page turn invisible when the patient's sex is not female (Trytonize in medical_gyneco)
+------------------------------------------------------------------------
+r547 | bvillasanti | 2011-08-14 01:53:36 -0300 (dom 14 de ago de 2011) | 1 line
+
+[REF] Invoice exempt field turn invisible when appointments, prescriptions, and laboratory tests are invoiced (Trytonized in medical_invoice)
+------------------------------------------------------------------------
+r546 | meanmicio | 2011-08-13 19:36:26 -0300 (sáb 13 de ago de 2011) | 1 line
+
+[ADD] Initial man page
+------------------------------------------------------------------------
+r545 | bvillasanti | 2011-08-13 01:39:10 -0300 (sáb 13 de ago de 2011) | 1 line
+
+[REF] Formatting style PEP8 in Medical Gyneco module for openerp/tryton branches
+------------------------------------------------------------------------
+r544 | bvillasanti | 2011-08-07 15:12:03 -0300 (dom 07 de ago de 2011) | 2 lines
+
+[REF] Duplication appointments enabled
+[REF] Enabled exception 'There is no physician defined for current user' to open Lab Requests
+------------------------------------------------------------------------
+r543 | bvillasanti | 2011-08-07 01:12:05 -0300 (dom 07 de ago de 2011) | 1 line
+
+[REF] Trytonize wizard_appointment_invoice in medical_invoice module.
+------------------------------------------------------------------------
+r542 | bvillasanti | 2011-08-07 00:50:37 -0300 (dom 07 de ago de 2011) | 1 line
+
+[FIX] AttributeError: Couldn't find tag (xpath: /form/field[@name="institution"]) in parent view! in inheriting from medical_inpatient module.
+------------------------------------------------------------------------
+r541 | bvillasanti | 2011-08-06 21:46:58 -0300 (sáb 06 de ago de 2011) | 1 line
+
+[REF] Trytonize wizard_prescription_invoice in medical_invoice module.
+------------------------------------------------------------------------
+r540 | bvillasanti | 2011-08-06 16:08:50 -0300 (sáb 06 de ago de 2011) | 1 line
+
+[REF] Trytonize wizard create lab invoice in medical_lab module.
+------------------------------------------------------------------------
+r539 | bvillasanti | 2011-08-05 21:02:41 -0300 (vie 05 de ago de 2011) | 1 line
+
+[REF] Colors tree enabled in Test Requests
+------------------------------------------------------------------------
+r538 | bvillasanti | 2011-08-05 20:57:52 -0300 (vie 05 de ago de 2011) | 2 lines
+
+[REF] Trytonize (Finished) wizard create lab test in medical_lab module.
+[REM] wizard_create_lab_pos
+------------------------------------------------------------------------
+r537 | bvillasanti | 2011-08-05 17:49:50 -0300 (vie 05 de ago de 2011) | 1 line
+
+[REF] Trytonize (Initial) wizard create lab test in medical_lab module.
+------------------------------------------------------------------------
+r536 | meanmicio | 2011-08-05 17:44:29 -0300 (vie 05 de ago de 2011) | 4 lines
+
+[IMP] change some marital_status, disease severity, allergy type, disease status, urgency, appointment type, evaluation type, patient mood, bed tye and bed gender
+[IMP] Add acute status in disease.
+
+
+------------------------------------------------------------------------
+r535 | meanmicio | 2011-08-05 16:38:17 -0300 (vie 05 de ago de 2011) | 1 line
+
+[FIX] add noupdate to ICD10 PCS datafiles
+------------------------------------------------------------------------
+r534 | meanmicio | 2011-08-05 16:31:17 -0300 (vie 05 de ago de 2011) | 1 line
+
+[FIX] Make cause and date of death required when deceased is true
+------------------------------------------------------------------------
+r533 | meanmicio | 2011-08-05 15:51:16 -0300 (vie 05 de ago de 2011) | 3 lines
+
+[IMP] Gynecology and medicament views
+
+
+------------------------------------------------------------------------
+r532 | bvillasanti | 2011-08-04 16:00:32 -0300 (jue 04 de ago de 2011) | 3 lines
+
+[FIX] Lab Tests report in Medical Lab module for "TypeError: super(type, obj): obj must be an instance or subtype of type"
+[REF] Shortcut to the Lab Reports from the Patient trytonized
+[REM] Remove disused _inherit clause in medical_lab and medical_invoice modules
+------------------------------------------------------------------------
+r531 | bvillasanti | 2011-08-04 15:26:46 -0300 (jue 04 de ago de 2011) | 1 line
+
+[FIX] Remove wrong Pool() references in Medical Lab module.
+------------------------------------------------------------------------
+r530 | meanmicio | 2011-08-03 17:29:43 -0300 (mié 03 de ago de 2011) | 1 line
+
+[FIX] Add text in the confirm registration button
+------------------------------------------------------------------------
+r529 | meanmicio | 2011-08-03 17:16:55 -0300 (mié 03 de ago de 2011) | 1 line
+
+[IMP] Improve Medicament view
+------------------------------------------------------------------------
+r528 | meanmicio | 2011-08-03 17:04:08 -0300 (mié 03 de ago de 2011) | 1 line
+
+[FIX] Remove end comma from dose and overdose fields in the medicament model
+------------------------------------------------------------------------
+r527 | meanmicio | 2011-08-03 17:01:32 -0300 (mié 03 de ago de 2011) | 1 line
+
+[FIX] Add view labels for medication
+------------------------------------------------------------------------
+r526 | meanmicio | 2011-08-03 16:45:31 -0300 (mié 03 de ago de 2011) | 1 line
+
+[FIX] Prescription report when no review date is given
+------------------------------------------------------------------------
+r525 | meanmicio | 2011-08-03 16:29:53 -0300 (mié 03 de ago de 2011) | 1 line
+
+[FIX] Expand group on Patient recreational drugs
+------------------------------------------------------------------------
+r524 | meanmicio | 2011-08-03 05:25:30 -0300 (mié 03 de ago de 2011) | 1 line
+
+Update module descriptions
+------------------------------------------------------------------------
+r523 | bvillasanti | 2011-08-03 00:56:07 -0300 (mié 03 de ago de 2011) | 1 line
+
+[REF] Trytonize reports in Medical Lab module.
+------------------------------------------------------------------------
+r522 | bvillasanti | 2011-07-31 18:31:17 -0300 (dom 31 de jul de 2011) | 1 line
+
+[FIX] Wrong reference to field 'speciality' in view of Medical module.
+------------------------------------------------------------------------
+r521 | bvillasanti | 2011-07-31 02:54:41 -0300 (dom 31 de jul de 2011) | 1 line
+
+[REF] Trytonize Medical Invoice module
+------------------------------------------------------------------------
+r520 | bvillasanti | 2011-07-31 02:24:36 -0300 (dom 31 de jul de 2011) | 1 line
+
+[ADD] Initial Medical Invoice module for Tryton
+------------------------------------------------------------------------
+r519 | bvillasanti | 2011-07-29 17:55:37 -0300 (vie 29 de jul de 2011) | 1 line
+
+[REF] Trytonize sequences and data xml in medical_lab module.
+------------------------------------------------------------------------
+r518 | meanmicio | 2011-07-29 14:44:21 -0300 (vie 29 de jul de 2011) | 1 line
+
+[ADD] Initial Surgery module for Tryton
+------------------------------------------------------------------------
+r517 | bvillasanti | 2011-07-29 11:16:10 -0300 (vie 29 de jul de 2011) | 1 line
+
+[REF] Trytonize medical_lab module view
+------------------------------------------------------------------------
+r516 | bvillasanti | 2011-07-29 11:02:29 -0300 (vie 29 de jul de 2011) | 1 line
+
+[FIX] medical_lab: AttributeError: 'module' object has no attribute 'now'
+------------------------------------------------------------------------
+r515 | bvillasanti | 2011-07-29 03:42:28 -0300 (vie 29 de jul de 2011) | 4 lines
+
+[IMP] Initial port of Medical Lab to Tryton
+- Trytonize data models
+- Remove filters search type and refactoring of views in xml
+- PEP8
+------------------------------------------------------------------------
+r514 | bvillasanti | 2011-07-28 22:41:18 -0300 (jue 28 de jul de 2011) | 1 line
+
+[ADD] Initial copy of medical_lab to trytonize.
+------------------------------------------------------------------------
+r513 | meanmicio | 2011-07-28 00:01:56 -0300 (jue 28 de jul de 2011) | 1 line
+
+[ADD] Add new icons and finish main inpatient administration module for Tryton
+------------------------------------------------------------------------
+r512 | meanmicio | 2011-07-27 16:25:47 -0300 (mié 27 de jul de 2011) | 1 line
+
+[FIX] Patient registration process (buttons)
+------------------------------------------------------------------------
+r511 | meanmicio | 2011-07-27 16:00:19 -0300 (mié 27 de jul de 2011) | 1 line
+
+[FIX] Fix query for patient registration
+------------------------------------------------------------------------
+r510 | meanmicio | 2011-07-27 14:11:56 -0300 (mié 27 de jul de 2011) | 1 line
+
+[IMP] Get the bed name from the product list
+------------------------------------------------------------------------
+r509 | meanmicio | 2011-07-27 13:57:53 -0300 (mié 27 de jul de 2011) | 1 line
+
+Add buttons and actions to Patient registration
+------------------------------------------------------------------------
+r508 | meanmicio | 2011-07-26 23:12:39 -0300 (mar 26 de jul de 2011) | 1 line
+
+initial Inpatient / Hospitalization conversion to Tryton
+------------------------------------------------------------------------
+r507 | meanmicio | 2011-07-24 14:44:46 -0300 (dom 24 de jul de 2011) | 1 line
+
+[IMP] Medical gynecology view
+------------------------------------------------------------------------
+r506 | meanmicio | 2011-07-23 07:39:16 -0300 (sáb 23 de jul de 2011) | 1 line
+
+[ADD] Initial gynecology module implementation in tryton
+------------------------------------------------------------------------
+r505 | meanmicio | 2011-07-22 16:33:26 -0300 (vie 22 de jul de 2011) | 1 line
+
+[FIX] medical_pediatrics : add constraint for newborn ID in tryton
+------------------------------------------------------------------------
+r504 | meanmicio | 2011-07-21 17:47:48 -0300 (jue 21 de jul de 2011) | 1 line
+
+[ADD] Pediatrics to Tryton
+------------------------------------------------------------------------
+r503 | meanmicio | 2011-07-19 01:27:41 -0300 (mar 19 de jul de 2011) | 1 line
+
+[IMP] medical_pediatrics model definition for Tryton
+------------------------------------------------------------------------
+r502 | meanmicio | 2011-07-19 01:17:58 -0300 (mar 19 de jul de 2011) | 1 line
+
+[ADD] medical_pediatrics model definition for Tryton
+------------------------------------------------------------------------
+r501 | meanmicio | 2011-07-09 04:49:19 -0300 (sáb 09 de jul de 2011) | 1 line
+
+[IMP] Change data model name for medical patient drug use
+------------------------------------------------------------------------
+r500 | meanmicio | 2011-07-08 10:00:01 -0300 (vie 08 de jul de 2011) | 7 lines
+
+- Trytonize (initial) Pediatrics Module
+
+- Initial port of Lifestyle Module
+- [REF] Change from many2many to one2many the patient recreational drugs addictions
+- [FIX] dependance_level -> dependence_level ( recreational_drugs.xml )
+
+
+------------------------------------------------------------------------
+r499 | meanmicio | 2011-06-26 13:52:45 -0300 (dom 26 de jun de 2011) | 1 line
+
+initial lifestyle port to Tryton
+------------------------------------------------------------------------
+r498 | meanmicio | 2011-06-25 17:07:31 -0300 (sáb 25 de jun de 2011) | 1 line
+
+[ADD] Add automatic Family APGAR score
+------------------------------------------------------------------------
+r497 | meanmicio | 2011-06-25 13:09:33 -0300 (sáb 25 de jun de 2011) | 1 line
+
+[REF] Trytonize socioeconomics module view
+------------------------------------------------------------------------
+r496 | meanmicio | 2011-06-25 12:45:18 -0300 (sáb 25 de jun de 2011) | 1 line
+
+[IMP] PEP8 Tryton socioeconomics module
+------------------------------------------------------------------------
+r495 | meanmicio | 2011-06-25 12:09:54 -0300 (sáb 25 de jun de 2011) | 1 line
+
+[ADD][REM] Add initial socioecomics module to Tryton. Remove Patient Occupation since it is already in main module
+------------------------------------------------------------------------
+r494 | meanmicio | 2011-06-22 00:17:08 -0300 (mié 22 de jun de 2011) | 1 line
+
+[FIX][IMP] Remove non-printing chars in disease genes datafile . Improve Patient genetics view
+------------------------------------------------------------------------
+r493 | meanmicio | 2011-06-21 23:01:40 -0300 (mar 21 de jun de 2011) | 1 line
+
+[IMP] Patient genetics view
+------------------------------------------------------------------------
+r492 | meanmicio | 2011-06-21 15:53:08 -0300 (mar 21 de jun de 2011) | 1 line
+
+[IMP] Patient genetics view
+------------------------------------------------------------------------
+r491 | meanmicio | 2011-06-21 14:59:21 -0300 (mar 21 de jun de 2011) | 1 line
+
+[FIX] medical.disease.genes -> medical.disease.gene
+------------------------------------------------------------------------
+r490 | meanmicio | 2011-06-21 14:55:23 -0300 (mar 21 de jun de 2011) | 1 line
+
+[FIX] Remove old osv.osv from classes
+------------------------------------------------------------------------
+r489 | meanmicio | 2011-06-21 14:53:34 -0300 (mar 21 de jun de 2011) | 1 line
+
+[FIX] Genetics - FamilyDiseases - / -> \ in line continuation
+------------------------------------------------------------------------
+r488 | meanmicio | 2011-06-21 14:51:30 -0300 (mar 21 de jun de 2011) | 1 line
+
+[IMP] medical genetics - FamilyDiseases - change the names of fields.Selection from initials to longname, like gm -> grandmother 
+------------------------------------------------------------------------
+r487 | meanmicio | 2011-06-21 14:45:53 -0300 (mar 21 de jun de 2011) | 1 line
+
+[FIX] DiseaseGenes -> DiseaseGene
+------------------------------------------------------------------------
+r486 | meanmicio | 2011-06-21 14:28:37 -0300 (mar 21 de jun de 2011) | 1 line
+
+[ADD] Include __tryton__.py in genetics module
+------------------------------------------------------------------------
+r485 | meanmicio | 2011-06-21 14:26:49 -0300 (mar 21 de jun de 2011) | 7 lines
+
+- [ADD] Initial port of medical_genetics
+- [ADD] Create patient genetic risk model ( medical.patient.genetic.risk )
+- [REF] medical.family.diseases -> medical.patient.family.diseases
+- [REF] GeneticRisk -> DiseaseGene  (medical.disease.gene)
+- [REF] Change from Many2Many to One2Many patient family_history and genetic_risks 
+
+
+------------------------------------------------------------------------
+r484 | meanmicio | 2011-06-21 12:15:51 -0300 (mar 21 de jun de 2011) | 1 line
+
+[IMP] Tryton : Improve Prescription Report
+------------------------------------------------------------------------
+r483 | meanmicio | 2011-06-21 02:52:14 -0300 (mar 21 de jun de 2011) | 1 line
+
+[REM] Remove older python classes from reports
+------------------------------------------------------------------------
+r482 | meanmicio | 2011-06-21 02:49:20 -0300 (mar 21 de jun de 2011) | 1 line
+
+[FIX][IMP] fixes extra comma in prescription remarks field. Improve Prescription order view
+------------------------------------------------------------------------
+r481 | meanmicio | 2011-06-20 20:59:56 -0300 (lun 20 de jun de 2011) | 1 line
+
+[FIX] Tryton : remove ',' from prnt field in medical.prescription.line model
+------------------------------------------------------------------------
+r480 | meanmicio | 2011-06-20 18:47:04 -0300 (lun 20 de jun de 2011) | 1 line
+
+[REM] Tryton : delete old rml reports and add new prescription order report
+------------------------------------------------------------------------
+r479 | meanmicio | 2011-06-19 16:48:37 -0300 (dom 19 de jun de 2011) | 1 line
+
+[DEL] Remove RML reports from Tryton branch
+------------------------------------------------------------------------
+r478 | meanmicio | 2011-06-18 02:01:20 -0300 (sáb 18 de jun de 2011) | 1 line
+
+[IMP] Tryton : Improve report for patient diseases history
+------------------------------------------------------------------------
+r477 | meanmicio | 2011-06-17 23:36:09 -0300 (vie 17 de jun de 2011) | 1 line
+
+[ADD] Tryton : Add ODT report for patient diseases history
+------------------------------------------------------------------------
+r476 | meanmicio | 2011-06-17 23:35:05 -0300 (vie 17 de jun de 2011) | 1 line
+
+[ADD] Tryton : Reports for patient diseases history
+------------------------------------------------------------------------
+r475 | meanmicio | 2011-06-17 21:46:44 -0300 (vie 17 de jun de 2011) | 1 line
+
+[REF] In patient disease status, change status quo for unchanged
+------------------------------------------------------------------------
+r474 | meanmicio | 2011-06-17 21:12:09 -0300 (vie 17 de jun de 2011) | 1 line
+
+[IMP] Add time to print date in vaccination report
+------------------------------------------------------------------------
+r473 | meanmicio | 2011-06-17 21:10:30 -0300 (vie 17 de jun de 2011) | 1 line
+
+[IMP] Vaccination and Medication reports
+------------------------------------------------------------------------
+r472 | meanmicio | 2011-06-17 19:16:03 -0300 (vie 17 de jun de 2011) | 1 line
+
+[IMP] Add vaccination next dose in view
+------------------------------------------------------------------------
+r471 | meanmicio | 2011-06-17 18:59:50 -0300 (vie 17 de jun de 2011) | 1 line
+
+[ADD] Tryton : Reports for patient vaccination and medication history
+------------------------------------------------------------------------
+r470 | meanmicio | 2011-06-15 19:00:43 -0300 (mié 15 de jun de 2011) | 1 line
+
+[IMP] Rüdiger Könen - Update German translations in 1.0 an tunk branches.
+------------------------------------------------------------------------
+r469 | meanmicio | 2011-06-14 05:25:13 -0300 (mar 14 de jun de 2011) | 1 line
+
+[ADD] Tryton : New patient card report
+------------------------------------------------------------------------
+r468 | meanmicio | 2011-06-13 15:41:25 -0300 (lun 13 de jun de 2011) | 1 line
+
+[IMP] Tryton : Add Health center buildings, units, wards, beds and operating rooms
+------------------------------------------------------------------------
+r467 | meanmicio | 2011-06-13 09:20:50 -0300 (lun 13 de jun de 2011) | 1 line
+
+[IMP] Tryton : Add prescribing doctor ID
+------------------------------------------------------------------------
+r466 | meanmicio | 2011-06-13 08:45:46 -0300 (lun 13 de jun de 2011) | 1 line
+
+[IMP] Tryton : Prescription Order sequences and shortcut
+------------------------------------------------------------------------
+r465 | meanmicio | 2011-06-13 08:12:17 -0300 (lun 13 de jun de 2011) | 1 line
+
+[FIX] Tryton : Prescription Order shortcut
+------------------------------------------------------------------------
+r464 | meanmicio | 2011-06-13 08:08:53 -0300 (lun 13 de jun de 2011) | 1 line
+
+[IMP] Tryton : Add Prescription Order Functionality
+------------------------------------------------------------------------
+r463 | meanmicio | 2011-06-12 21:44:54 -0300 (dom 12 de jun de 2011) | 1 line
+
+[IMP] Tryton: PEP8
+------------------------------------------------------------------------
+r462 | meanmicio | 2011-06-12 21:36:27 -0300 (dom 12 de jun de 2011) | 1 line
+
+[FIX] Tryton: on_change on Glasgow coma scale
+------------------------------------------------------------------------
+r461 | meanmicio | 2011-06-12 19:13:23 -0300 (dom 12 de jun de 2011) | 4 lines
+
+[IMP] Tryton : Add shortcut to the patient evaluations
+[IMP] Tryton : Add on_change formulas for BMI and Glasgow
+
+
+------------------------------------------------------------------------
+r460 | meanmicio | 2011-06-12 14:44:46 -0300 (dom 12 de jun de 2011) | 1 line
+
+[IMP] Tryton : change name field in patient evaluation model to patient. Add get_rec_name for appointment
+------------------------------------------------------------------------
+r459 | meanmicio | 2011-06-12 13:36:10 -0300 (dom 12 de jun de 2011) | 1 line
+
+[IMP] Tryton : Patient evaluation form
+------------------------------------------------------------------------
+r458 | meanmicio | 2011-06-11 21:10:21 -0300 (sáb 11 de jun de 2011) | 1 line
+
+[FIX] Tryton : medical data model order
+------------------------------------------------------------------------
+r457 | meanmicio | 2011-06-11 19:58:52 -0300 (sáb 11 de jun de 2011) | 1 line
+
+[FIX] Tryton : Patient evaluation view. Add Medical directions model
+------------------------------------------------------------------------
+r456 | meanmicio | 2011-06-11 19:42:32 -0300 (sáb 11 de jun de 2011) | 1 line
+
+[FIX] Tryton : Patient evaluation view
+------------------------------------------------------------------------
+r455 | meanmicio | 2011-06-11 14:06:48 -0300 (sáb 11 de jun de 2011) | 1 line
+
+Tryton : Initial patient evaluation view
+------------------------------------------------------------------------
+r454 | meanmicio | 2011-06-11 13:07:55 -0300 (sáb 11 de jun de 2011) | 1 line
+
+Tryton : Add patient evaluation model
+------------------------------------------------------------------------
+r453 | meanmicio | 2011-06-09 07:59:48 -0300 (jue 09 de jun de 2011) | 1 line
+
+Tryton : Improve Medication and Vaccinations views in patient form
+------------------------------------------------------------------------
+r452 | meanmicio | 2011-06-08 22:11:07 -0300 (mié 08 de jun de 2011) | 1 line
+
+Tryton : Add patient appointment shortcut from patient form
+------------------------------------------------------------------------
+r451 | meanmicio | 2011-06-08 17:11:08 -0300 (mié 08 de jun de 2011) | 1 line
+
+Tryton : change select option for doctor in appointment
+------------------------------------------------------------------------
+r450 | meanmicio | 2011-06-08 17:01:44 -0300 (mié 08 de jun de 2011) | 1 line
+
+Tryton : Add initial appointment view
+------------------------------------------------------------------------
+r449 | meanmicio | 2011-06-08 12:23:18 -0300 (mié 08 de jun de 2011) | 1 line
+
+Tryton : initial appointment model
+------------------------------------------------------------------------
+r448 | meanmicio | 2011-06-07 22:25:34 -0300 (mar 07 de jun de 2011) | 1 line
+
+Tryton : Sort diseases by active, severity, infectious, diagnosis date
+------------------------------------------------------------------------
+r447 | meanmicio | 2011-06-07 17:11:52 -0300 (mar 07 de jun de 2011) | 1 line
+
+Tryton : [FIX] family member view and domain
+------------------------------------------------------------------------
+r446 | meanmicio | 2011-06-07 17:01:58 -0300 (mar 07 de jun de 2011) | 1 line
+
+Tryton : Use of colors for patient trees in medication and diseases
+------------------------------------------------------------------------
+r445 | meanmicio | 2011-06-07 15:01:20 -0300 (mar 07 de jun de 2011) | 1 line
+
+Tryton : Add patient disease history model. PEP8
+------------------------------------------------------------------------
+r444 | meanmicio | 2011-06-07 13:46:23 -0300 (mar 07 de jun de 2011) | 1 line
+
+Tryton : [Fix] check for null values in vaccine expiration date
+------------------------------------------------------------------------
+r443 | meanmicio | 2011-06-07 13:27:12 -0300 (mar 07 de jun de 2011) | 1 line
+
+Tryton : Add vaccination default date and uniqness constraint in vaccine name and dose
+------------------------------------------------------------------------
+r442 | meanmicio | 2011-06-07 11:39:51 -0300 (mar 07 de jun de 2011) | 1 line
+
+Tryton : Add vaccine expiration date check
+------------------------------------------------------------------------
+r441 | meanmicio | 2011-06-07 11:22:26 -0300 (mar 07 de jun de 2011) | 1 line
+
+Tryton : Fix default values for medication object
+------------------------------------------------------------------------
+r440 | meanmicio | 2011-06-07 11:01:04 -0300 (mar 07 de jun de 2011) | 1 line
+
+Fix indentation in medical.vaccination
+------------------------------------------------------------------------
+r439 | meanmicio | 2011-06-07 09:55:54 -0300 (mar 07 de jun de 2011) | 1 line
+
+Add family members search fields
+------------------------------------------------------------------------
+r438 | meanmicio | 2011-06-07 09:50:47 -0300 (mar 07 de jun de 2011) | 1 line
+
+Tryton : medical_icd10 Add noupdate to datafiles 
+------------------------------------------------------------------------
+r437 | meanmicio | 2011-06-07 09:45:52 -0300 (mar 07 de jun de 2011) | 1 line
+
+Tryton : Add family search fields
+------------------------------------------------------------------------
+r436 | meanmicio | 2011-06-06 22:22:32 -0300 (lun 06 de jun de 2011) | 8 lines
+
+Tryton
+- Fix get_rec_name when lastname was empty
+- Update medication view
+- Add name and ID to physician tree
+- Add name and code to disease tree
+
+
+
+------------------------------------------------------------------------
+r435 | meanmicio | 2011-06-06 09:38:31 -0300 (lun 06 de jun de 2011) | 1 line
+
+Tryton : add medicament form. Remove lastname form patient form and concat. to the name
+------------------------------------------------------------------------
+r434 | meanmicio | 2011-06-05 19:31:38 -0300 (dom 05 de jun de 2011) | 1 line
+
+Tryton : PEP8
+------------------------------------------------------------------------
+r433 | meanmicio | 2011-06-05 19:24:19 -0300 (dom 05 de jun de 2011) | 1 line
+
+Tryton : Add lastname searcher
+------------------------------------------------------------------------
+r432 | meanmicio | 2011-06-05 17:37:35 -0300 (dom 05 de jun de 2011) | 1 line
+
+Tryton : Add Lastname to the Patient form
+------------------------------------------------------------------------
+r431 | mangmeba | 2011-06-04 19:43:04 -0300 (sáb 04 de jun de 2011) | 4 lines
+
+medical:
+  [FIX] translation and help text for some filters
+  [ADD] context for search button, translation keys for filters
+
+------------------------------------------------------------------------
+r430 | meanmicio | 2011-06-04 16:36:28 -0300 (sáb 04 de jun de 2011) | 1 line
+
+Tryton : get party lastname in the get name function. Add patient ID and name to the patient search
+------------------------------------------------------------------------
+r429 | meanmicio | 2011-06-02 15:42:29 -0300 (jue 02 de jun de 2011) | 1 line
+
+Tryton : Implement states in DoD and CoD
+------------------------------------------------------------------------
+r428 | meanmicio | 2011-06-02 15:16:56 -0300 (jue 02 de jun de 2011) | 1 line
+
+Tryton : PEP8
+------------------------------------------------------------------------
+r427 | meanmicio | 2011-06-02 15:06:49 -0300 (jue 02 de jun de 2011) | 1 line
+
+Tryton : Fix address and insurance domains from patient object
+------------------------------------------------------------------------
+r426 | meanmicio | 2011-06-02 14:15:46 -0300 (jue 02 de jun de 2011) | 1 line
+
+Tryton : Fix patient current address domain
+------------------------------------------------------------------------
+r425 | meanmicio | 2011-06-02 09:11:13 -0300 (jue 02 de jun de 2011) | 1 line
+
+Tryton : Get primary care doctor name in patient view
+------------------------------------------------------------------------
+r424 | meanmicio | 2011-06-01 19:19:08 -0300 (mié 01 de jun de 2011) | 1 line
+
+Tryton : work on patient view
+------------------------------------------------------------------------
+r423 | meanmicio | 2011-06-01 12:39:49 -0300 (mié 01 de jun de 2011) | 1 line
+
+Tryton : Patient view layout update
+------------------------------------------------------------------------
+r422 | meanmicio | 2011-06-01 11:20:48 -0300 (mié 01 de jun de 2011) | 1 line
+
+Tryton : Implement the Patient age function
+------------------------------------------------------------------------
+r421 | meanmicio | 2011-06-01 11:10:27 -0300 (mié 01 de jun de 2011) | 1 line
+
+Tryton: Fix age function call
+------------------------------------------------------------------------
+r420 | meanmicio | 2011-06-01 10:51:54 -0300 (mié 01 de jun de 2011) | 1 line
+
+Tryton: Set a larger patient image size on form
+------------------------------------------------------------------------
+r419 | meanmicio | 2011-06-01 10:48:01 -0300 (mié 01 de jun de 2011) | 1 line
+
+Tryton: Skip update checks on static datafiles
+------------------------------------------------------------------------
+r418 | meanmicio | 2011-06-01 10:13:23 -0300 (mié 01 de jun de 2011) | 1 line
+
+Tryton :Fix comment block
+------------------------------------------------------------------------
+r417 | meanmicio | 2011-05-31 21:56:53 -0300 (mar 31 de may de 2011) | 1 line
+
+Tryton : Add initial patient model and sequence
+------------------------------------------------------------------------
+r416 | meanmicio | 2011-05-30 18:13:03 -0300 (lun 30 de may de 2011) | 7 lines
+
+Tryton :
+
+- Add medication Frequencies object
+- Add medication frequencies datafile
+- Place the Drug list / edit actions in the Medicament Menu 
+
+
+------------------------------------------------------------------------
+r415 | meanmicio | 2011-05-30 17:08:10 -0300 (lun 30 de may de 2011) | 8 lines
+
+Tryton :
+- Add Medical drug dose unit
+- Add Medical drug administration routes
+- Add datafile for occupations
+- Add datafile for drug dose units
+- Add datafile for drug administration routes
+
+
+------------------------------------------------------------------------
+r414 | meanmicio | 2011-05-30 09:13:52 -0300 (lun 30 de may de 2011) | 5 lines
+
+Tryton :
+- Add ethnicity and occupation objects
+- Improve view
+
+
+------------------------------------------------------------------------
+r413 | meanmicio | 2011-05-29 23:15:02 -0300 (dom 29 de may de 2011) | 1 line
+
+Add Physician classto Tryton
+------------------------------------------------------------------------
+r412 | meanmicio | 2011-05-29 19:53:01 -0300 (dom 29 de may de 2011) | 1 line
+
+update medical prodecures action secuences
+------------------------------------------------------------------------
+r411 | meanmicio | 2011-05-29 19:45:14 -0300 (dom 29 de may de 2011) | 4 lines
+
+- Fix Family domain
+- Reorder Family classes after OperationaArea and OperationalSector
+
+
+------------------------------------------------------------------------
+r410 | meanmicio | 2011-05-29 19:01:01 -0300 (dom 29 de may de 2011) | 4 lines
+
+- Add MedicalSpecialty class (renamed from Speciality )
+- Added medical specialties data file for Tryton
+
+
+------------------------------------------------------------------------
+r409 | meanmicio | 2011-05-29 18:03:44 -0300 (dom 29 de may de 2011) | 12 lines
+
+- Add family object 
+- Rename family_code class to Family
+- Rename members_ids to members in family model
+- Create FamilyMember class
+- Remove the many2many field in family and change it to one2many, pointing to the family member.
+
+- Add activation date field on the party view
+- Add user_id to the medical tab in the party form
+- Rename date to activation_date
+- Rename user_id to internal_user
+
+
+------------------------------------------------------------------------
+r408 | meanmicio | 2011-05-28 20:33:52 -0300 (sáb 28 de may de 2011) | 1 line
+
+Added operational areas and operational sectors in Tryton version
+------------------------------------------------------------------------
+r407 | meanmicio | 2011-05-28 18:54:10 -0300 (sáb 28 de may de 2011) | 5 lines
+
+- Change the Operational Areas and Insurances to the Miscelaneous configuration menu
+- Optimize the page strings in the medication views to better fit the screen (avoid scrolling).
+- Add icons for appointment, hospital, physicians and patients
+
+
+------------------------------------------------------------------------
+r406 | meanmicio | 2011-05-28 16:37:20 -0300 (sáb 28 de may de 2011) | 4 lines
+
+Added WHO list of essential medicines to Tryton
+Include the skiptest in the datafiles of the medical module
+
+
+------------------------------------------------------------------------
+r405 | meanmicio | 2011-05-28 13:01:57 -0300 (sáb 28 de may de 2011) | 5 lines
+
+Standarize data file naming
+add clinical and diseases icons
+add medicament model
+
+
+------------------------------------------------------------------------
+r404 | meanmicio | 2011-05-28 01:37:07 -0300 (sáb 28 de may de 2011) | 1 line
+
+added icon for diseases
+------------------------------------------------------------------------
+r403 | meanmicio | 2011-05-27 23:50:36 -0300 (vie 27 de may de 2011) | 1 line
+
+Added ICD-10 to tryton port
+------------------------------------------------------------------------
+r402 | meanmicio | 2011-05-27 23:17:24 -0300 (vie 27 de may de 2011) | 1 line
+
+Added pathology model and categories to Tryton
+------------------------------------------------------------------------
+r401 | meanmicio | 2011-05-27 17:32:34 -0300 (vie 27 de may de 2011) | 1 line
+
+PEP8
+------------------------------------------------------------------------
+r400 | meanmicio | 2011-05-27 11:12:05 -0300 (vie 27 de may de 2011) | 1 line
+
+Initial PEP8 conversion
+------------------------------------------------------------------------
+r399 | meanmicio | 2011-05-26 09:43:12 -0300 (jue 26 de may de 2011) | 1 line
+
+Included ICD-10-PCS procedures modules for Tryton
+------------------------------------------------------------------------
+r398 | meanmicio | 2011-05-26 08:14:48 -0300 (jue 26 de may de 2011) | 1 line
+
+Add medical procedures model to Tryton
+------------------------------------------------------------------------
+r397 | meanmicio | 2011-05-26 06:53:55 -0300 (jue 26 de may de 2011) | 1 line
+
+Added medical product specs to tryton
+------------------------------------------------------------------------
+r396 | meanmicio | 2011-05-26 06:18:05 -0300 (jue 26 de may de 2011) | 1 line
+
+add party constraint
+------------------------------------------------------------------------
+r395 | meanmicio | 2011-05-25 21:56:55 -0300 (mié 25 de may de 2011) | 1 line
+
+Added partner - patient contact info for Tryton
+------------------------------------------------------------------------
+r394 | meanmicio | 2011-05-25 17:02:03 -0300 (mié 25 de may de 2011) | 1 line
+
+MEDICAL integration in the party object and view
+------------------------------------------------------------------------
+r393 | meanmicio | 2011-05-25 15:23:55 -0300 (mié 25 de may de 2011) | 1 line
+
+generate insurance view in tryton
+------------------------------------------------------------------------
+r392 | meanmicio | 2011-05-25 11:29:43 -0300 (mié 25 de may de 2011) | 1 line
+
+Adapt syntax to Tryton
+------------------------------------------------------------------------
+r391 | meanmicio | 2011-05-24 23:28:46 -0300 (mar 24 de may de 2011) | 1 line
+
+name_get -> get_rec_name
+------------------------------------------------------------------------
+r390 | meanmicio | 2011-05-24 23:12:36 -0300 (mar 24 de may de 2011) | 1 line
+
+naming convention partner -> party
+------------------------------------------------------------------------
+r389 | meanmicio | 2011-05-24 16:58:42 -0300 (mar 24 de may de 2011) | 1 line
+
+res.users -> res.user
+------------------------------------------------------------------------
+r388 | meanmicio | 2011-05-24 12:46:18 -0300 (mar 24 de may de 2011) | 1 line
+
+Initial rework on the party and insurance objects for tryton
+------------------------------------------------------------------------
+r387 | meanmicio | 2011-05-24 11:38:33 -0300 (mar 24 de may de 2011) | 1 line
+
+change xml files tags to tryton
+------------------------------------------------------------------------
+r386 | meanmicio | 2011-05-24 11:26:48 -0300 (mar 24 de may de 2011) | 1 line
+
+delete directory images from tryton. Not needed. Use icons
+------------------------------------------------------------------------
+r385 | meanmicio | 2011-05-24 11:13:40 -0300 (mar 24 de may de 2011) | 1 line
+
+Add initial Tryton structure
+------------------------------------------------------------------------
+r384 | meanmicio | 2011-05-24 11:12:00 -0300 (mar 24 de may de 2011) | 1 line
+
+Add initial Tryton structure
+------------------------------------------------------------------------
+r383 | meanmicio | 2011-05-24 11:10:34 -0300 (mar 24 de may de 2011) | 1 line
+
+Add initial Tryton structure
+------------------------------------------------------------------------
+r382 | meanmicio | 2011-05-21 22:58:43 -0300 (sáb 21 de may de 2011) | 1 line
+
+add tryton and openerp to the trunk directory structure
+------------------------------------------------------------------------
+r381 | meanmicio | 2011-05-14 12:46:54 -0300 (sáb 14 de may de 2011) | 17 lines
+
+medical_surgery
+
+-- Add initial WHO Surgical Safety Checklist
+--- add Airway condition (Mallampati score) 
+--- Add risk of blood loss > 500 ml in adults or 70 ml in children 
+--- AddPulse Oximeter in place
+--- Check Pre-operation ABCDEs ( Airway Breathing Suction Drugs and Devices )
+--- Check site of surgery marking
+--- Antibiotic prophylaxis
+
+
+
+
+medical 
+-- Create the Operating Room object ( medical.hospital.or )
+
+
+------------------------------------------------------------------------
+r380 | meanmicio | 2011-05-13 11:12:48 -0300 (vie 13 de may de 2011) | 7 lines
+
+medical_surgery: trunk
+-- Change to one2many old many2many objects
+-- Add the poperationrocedure object, so we can have multiple procedures per surgery
+-- Add anesthetist
+-- Improve the views
+
+
+------------------------------------------------------------------------
+r379 | meanmicio | 2011-05-08 19:26:54 -0300 (dom 08 de may de 2011) | 1 line
+
+medical_pediatrics : Improve PSC view. Link PSC to patient instead of evaluation
+------------------------------------------------------------------------
+r378 | meanmicio | 2011-05-08 01:28:55 -0300 (dom 08 de may de 2011) | 1 line
+
+initial model for Pediatric Symptoms Checklist - PSC
+------------------------------------------------------------------------
+r377 | meanmicio | 2011-05-07 17:57:55 -0300 (sáb 07 de may de 2011) | 1 line
+
+Merge trunk revisions 358:376 to development branch 1.1
+------------------------------------------------------------------------
+r376 | meanmicio | 2011-05-06 17:06:02 -0300 (vie 06 de may de 2011) | 1 line
+
+trunk : medical_pediatrics : fix save of the newborn APGAR
+------------------------------------------------------------------------
+r375 | meanmicio | 2011-04-30 20:06:56 -0300 (sáb 30 de abr de 2011) | 7 lines
+
+medical_pediatrics : trunk 
+-- Added mother lastname and ID to the newborn identification tag
+-- Added doctor information to the newborn identification tag
+-- Added tooltips on cephalic perimeter, weight and height
+-- Improved the wristband label
+
+
+------------------------------------------------------------------------
+r374 | mangmeba | 2011-04-30 01:01:01 -0300 (sáb 30 de abr de 2011) | 3 lines
+
+medical_lab: add additional filters
+medical_lab: use search_default_xxx in act_window's context to get default behaviour and thus remove menuitems that are not needed
+
+------------------------------------------------------------------------
+r373 | meanmicio | 2011-04-25 22:39:35 -0300 (lun 25 de abr de 2011) | 8 lines
+
+trunk : medical_gyneco : Change the following medical.perinatal fields from many2many to one2many
+-- monitoring
+-- puerperium_monitoring
+-- medication
+-- Replace instances on the objects puerperium.monitor and perinatal.monitor 'name' from char (internal code) to patient ID (many2one). 
+-- Added a "admission_code" field in perinatal monitor.
+
+
+------------------------------------------------------------------------
+r372 | meanmicio | 2011-04-25 08:49:16 -0300 (lun 25 de abr de 2011) | 7 lines
+
+trunk : medical_pediatrics 
+-- Added name field in APGAR object and reference it as a one2many from the newborn object
+-- Change medication field from many2many to one2many
+-- Change APGAR field from many2many to one2many
+-- Change Congenital diseases field from many2many to one2many
+
+
+------------------------------------------------------------------------
+r371 | meanmicio | 2011-04-24 23:06:46 -0300 (dom 24 de abr de 2011) | 9 lines
+
+trunk : medical_pediatrics 
+-- create medical_pediatrics module and migrate neonatology from medical_gyneco
+-- Move newborn information from medical_gyneco
+-- Change name field to "newborn_name"
+-- Added ambiguous genitalia in neonatology
+-- Change "Born death" to "Stillbirth"
+-- Added Newborn ID tag (bracelet) for both mother and baby
+
+
+------------------------------------------------------------------------
+r370 | meanmicio | 2011-04-24 08:55:44 -0300 (dom 24 de abr de 2011) | 1 line
+
+trunk : medical_gyneco : Change medicament to medication in both the mother and newborn therapies.
+------------------------------------------------------------------------
+r369 | meanmicio | 2011-04-23 22:45:17 -0300 (sáb 23 de abr de 2011) | 9 lines
+
+medical_gyneco : trunk : Update and automate newborn APGAR score
+- Include the APGAR sections : Appearance, Pulse, Grimace, Activity and Respiration
+- Automate the scoring
+- Make it general, so it can be more than two tests
+- Make the score read-only
+- Use colors to indicate severity in APGAR score : RED < 4 very low  ; ORANGE [ 4 - 7 ] low ; BLUE > 7 normal
+
+
+
+------------------------------------------------------------------------
+r368 | mangmeba | 2011-04-17 05:47:06 -0300 (dom 17 de abr de 2011) | 1 line
+
+medical: fix/add additional views/search/menus
+------------------------------------------------------------------------
+r367 | mangmeba | 2011-04-17 05:45:25 -0300 (dom 17 de abr de 2011) | 1 line
+
+medical_lab: fix/add additional views/search/menus
+------------------------------------------------------------------------
+r366 | mangmeba | 2011-04-17 05:44:18 -0300 (dom 17 de abr de 2011) | 1 line
+
+medical_invoice: add additional views/search/menus
+------------------------------------------------------------------------
+r365 | mangmeba | 2011-04-17 05:42:38 -0300 (dom 17 de abr de 2011) | 1 line
+
+medical_lab: cleanup duplicate data
+------------------------------------------------------------------------
+r364 | mangmeba | 2011-04-17 05:40:32 -0300 (dom 17 de abr de 2011) | 1 line
+
+medical, medical_lab: fix translations
+------------------------------------------------------------------------
+r363 | mangmeba | 2011-04-17 05:38:24 -0300 (dom 17 de abr de 2011) | 1 line
+
+medical: fix title, author, filename for reports
+------------------------------------------------------------------------
+r362 | meanmicio | 2011-04-16 13:44:06 -0300 (sáb 16 de abr de 2011) | 1 line
+
+Thymbra -> GNU Solidario
+------------------------------------------------------------------------
+r361 | meanmicio | 2011-04-15 10:21:57 -0300 (vie 15 de abr de 2011) | 1 line
+
+all : Fix file attributes to non-exec for xml, po and rml (Andreas Tille)
+------------------------------------------------------------------------
+r360 | meanmicio | 2011-04-13 12:51:28 -0300 (mié 13 de abr de 2011) | 6 lines
+
+trunk : medical_gyneco
+- Included missing fields in the newborn signs and symptoms view
+-- Talipes equinovarus
+-- Hematoma
+
+
+------------------------------------------------------------------------
+r359 | meanmicio | 2011-04-13 12:46:01 -0300 (mié 13 de abr de 2011) | 23 lines
+
+trunk medical_gyneco : Move details to "Other" tab in the newborn information
+trunk medical_gynco : Move Info field to main newborn tab
+trunk medical_gyneco : Include perinatal / neonatal signs, symptoms and main maneuvers
+- Dystocia
+- neonatal_ortolani
+- neonatal_barlow
+- neonatal_hernia
+- neonatal_ambiguous_genitalia
+- neonatal_erbs_palsy
+- Transverse Palmar crease
+
+Check for Reflexes at birth
+- Moro reflex
+- Grasp reflex
+- Stepping reflex
+- Babinski reflex
+- Blink reflex
+- Sucking reflex
+- Swimming reflex
+- Tonic Neck reflex
+- Rooting reflex
+
+
+------------------------------------------------------------------------
+r358 | meanmicio | 2011-04-11 17:49:58 -0300 (lun 11 de abr de 2011) | 1 line
+
+updated versions file for trunk and development 1.1
+------------------------------------------------------------------------
+r357 | meanmicio | 2011-04-11 17:40:50 -0300 (lun 11 de abr de 2011) | 1 line
+
+merge trunk to 1.1
+------------------------------------------------------------------------
+r356 | meanmicio | 2011-04-11 17:33:16 -0300 (lun 11 de abr de 2011) | 1 line
+
+merge trunk to 1.1
+------------------------------------------------------------------------
+r355 | meanmicio | 2011-03-24 17:04:22 -0300 (jue 24 de mar de 2011) | 1 line
+
+Change to float the medicament dose
+------------------------------------------------------------------------
+r354 | parthiv1 | 2011-03-23 15:30:49 -0300 (mié 23 de mar de 2011) | 1 line
+
+Added an image for MEDICAL Module for OpenERP v6 Home Page
+------------------------------------------------------------------------
+r353 | parthiv1 | 2011-03-23 15:29:38 -0300 (mié 23 de mar de 2011) | 1 line
+
+Added an image for MEDICAL Module for OpenERP v6 Home Page
+------------------------------------------------------------------------
+r352 | meanmicio | 2011-03-20 18:37:34 -0300 (dom 20 de mar de 2011) | 6 lines
+
+medical : trunk
+- Include the vaccination next dose date ( Andrew Gledhill / Akshey Jawa )
+- Improve vaccination view
+- Improve vaccination report
+
+
+------------------------------------------------------------------------
+r351 | meanmicio | 2011-03-20 17:39:20 -0300 (dom 20 de mar de 2011) | 9 lines
+
+medical : trunk and 1.1 . Update and merge views to fit 1280x800 
+medical_gyneco : trunk and 1.1. Update and merge views to fit 1280x800
+medical_inpatient : trunk and 1.1 . Update and merge views to fit 1280x800
+medical_invoice : trunk and 1.1 . Update and merge views to fit 1280x800
+medical_socioeconomics : trunk and 1.1 . Update and merge views to fit 1280x800
+medical_lifestyle : trunk and 1.1 . Update and merge views to fit 1280x800
+medical_lab : trunk and 1.1 . Update and merge views to fit 1280x800
+ 
+
+------------------------------------------------------------------------
+r350 | meanmicio | 2011-03-20 11:46:45 -0300 (dom 20 de mar de 2011) | 3 lines
+
+medical 1.0 : merge fixes from trunk ( tremor sign )
+
+
+------------------------------------------------------------------------
+r349 | meanmicio | 2011-03-19 22:58:36 -0300 (sáb 19 de mar de 2011) | 7 lines
+
+medical : trunk and 1.1
+
+- sort alphabetically patient signs and symptoms
+- Improve view layout for signs and symptoms
+- Fix Jugular Engorgement and Tremor signs
+
+
+------------------------------------------------------------------------
+r348 | mangmeba | 2011-03-06 06:17:26 -0300 (dom 06 de mar de 2011) | 1 line
+
+Tag 1.0.1
+------------------------------------------------------------------------
+r347 | mangmeba | 2011-03-06 06:14:02 -0300 (dom 06 de mar de 2011) | 1 line
+
+Update translations and missing terms
+------------------------------------------------------------------------
+r346 | mangmeba | 2011-03-06 06:11:19 -0300 (dom 06 de mar de 2011) | 1 line
+
+Merge changes from trunk
+------------------------------------------------------------------------
+r345 | mangmeba | 2011-03-06 06:06:04 -0300 (dom 06 de mar de 2011) | 1 line
+
+medical_invoice: add dependency on module account
+------------------------------------------------------------------------
+r344 | mangmeba | 2011-03-06 06:02:38 -0300 (dom 06 de mar de 2011) | 1 line
+
+medical_lab: add more lab test units
+------------------------------------------------------------------------
+r343 | mangmeba | 2011-03-06 05:56:33 -0300 (dom 06 de mar de 2011) | 2 lines
+
+medical_invoice: add taxes for prescriptions, update loggings
+medical_lab: add several menu items, clean up code that have been moved to medical_invoice
+------------------------------------------------------------------------
+r342 | mangmeba | 2011-03-06 05:50:07 -0300 (dom 06 de mar de 2011) | 1 line
+
+Update translations and missing terms
+------------------------------------------------------------------------
+r341 | mangmeba | 2011-03-06 05:48:38 -0300 (dom 06 de mar de 2011) | 1 line
+
+Merge French translations from branches
+------------------------------------------------------------------------
+r340 | mangmeba | 2011-03-04 23:51:06 -0300 (vie 04 de mar de 2011) | 1 line
+
+Add missing French translation
+------------------------------------------------------------------------
+r339 | mangmeba | 2011-03-04 23:50:11 -0300 (vie 04 de mar de 2011) | 1 line
+
+[IMP] Add qty_available, adverse_reaction into tree view of medical.medicament
+------------------------------------------------------------------------
+r338 | mangmeba | 2011-03-04 23:48:16 -0300 (vie 04 de mar de 2011) | 1 line
+
+[ADD] Appointment ID are incremented only when saved
+------------------------------------------------------------------------
+r337 | mangmeba | 2011-03-04 23:18:47 -0300 (vie 04 de mar de 2011) | 1 line
+
+Update application terms and translation
+------------------------------------------------------------------------
+r336 | mangmeba | 2011-03-04 23:16:30 -0300 (vie 04 de mar de 2011) | 1 line
+
+Update initialization data for Vietnamese
+------------------------------------------------------------------------
+r335 | meanmicio | 2011-02-16 08:49:45 -0300 (mié 16 de feb de 2011) | 1 line
+
+Apply migration of dateutils from 1.0 to trunk and 1.1 branches
+------------------------------------------------------------------------
+r334 | meanmicio | 2011-02-16 07:50:24 -0300 (mié 16 de feb de 2011) | 1 line
+
+Update changelog
+------------------------------------------------------------------------
+r333 | meanmicio | 2011-02-16 06:46:01 -0300 (mié 16 de feb de 2011) | 1 line
+
+Medical 1.0 Migrate from mx DateTime to dateutil - OpenERP v6 does not include it
+------------------------------------------------------------------------
+r332 | evernichon | 2011-02-06 05:19:17 -0300 (dom 06 de feb de 2011) | 1 line
+
+french translation lifestyle 
+------------------------------------------------------------------------
+r331 | meanmicio | 2011-02-05 18:54:31 -0300 (sáb 05 de feb de 2011) | 2 lines
+
+Update changelog
+
+------------------------------------------------------------------------
+r330 | meanmicio | 2011-02-05 15:59:45 -0300 (sáb 05 de feb de 2011) | 9 lines
+
+Remove es_ES.po's and leave the v6 standard es.po for Spanish translations
+Remove de_DE.po's and leave the v6 standard de.po for German translations
+1.0 Update all translations from Transifex version
+Add Brazilian Portuguese translations
+Add partial Turkish translations
+Change version number to 1.0.0
+
+
+
+------------------------------------------------------------------------
+r329 | mariopuntin | 2011-02-05 12:03:58 -0300 (sáb 05 de feb de 2011) | 1 line
+
+Search by lastname: name_search() function extended in --partner_patient-- reusing parent (res.partner) name_search() (trunk and v1.1)
+------------------------------------------------------------------------
+r328 | meanmicio | 2011-01-30 14:05:42 -0300 (dom 30 de ene de 2011) | 1 line
+
+Update version file
+------------------------------------------------------------------------
+r327 | meanmicio | 2011-01-30 13:42:14 -0300 (dom 30 de ene de 2011) | 1 line
+
+Medical RC3 : Update Changelog
+------------------------------------------------------------------------
+r326 | meanmicio | 2011-01-30 07:43:07 -0300 (dom 30 de ene de 2011) | 1 line
+
+medical_lifestyle 1.0: Add security model for recreational drugs
+------------------------------------------------------------------------
+r325 | meanmicio | 2011-01-29 22:29:03 -0300 (sáb 29 de ene de 2011) | 7 lines
+
+- medical 1.0 : Optimize view for smaller screens
+- medical_gyneco 1.0 : Divide gynecological and obstetrics views in different pages
+- medical_inpatient 1.0 : Place medical hospitalization status in first page
+- medical_lifestyle : Optimize view and terminology 
+- medical_socioeconomics : Optimize view
+
+
+------------------------------------------------------------------------
+r324 | mangmeba | 2011-01-25 22:37:00 -0300 (mar 25 de ene de 2011) | 1 line
+
+Add Vietnamese translation for Specialties
+------------------------------------------------------------------------
+r323 | evernichon | 2011-01-25 05:19:12 -0300 (mar 25 de ene de 2011) | 1 line
+
+french translation for medical_surgery
+------------------------------------------------------------------------
+r322 | evernichon | 2011-01-25 04:56:18 -0300 (mar 25 de ene de 2011) | 1 line
+
+french translation for medical_icd10pcs
+------------------------------------------------------------------------
+r321 | evernichon | 2011-01-25 04:48:16 -0300 (mar 25 de ene de 2011) | 1 line
+
+french translation for medical_socioeconomics
+------------------------------------------------------------------------
+r320 | evernichon | 2011-01-25 04:37:57 -0300 (mar 25 de ene de 2011) | 1 line
+
+french translation for medical_inpatient
+------------------------------------------------------------------------
+r319 | meanmicio | 2011-01-24 21:48:17 -0300 (lun 24 de ene de 2011) | 1 line
+
+Medical lifestyle 1.0 : Improve views and reduce size in the forms
+------------------------------------------------------------------------
+r318 | meanmicio | 2011-01-24 19:21:15 -0300 (lun 24 de ene de 2011) | 4 lines
+
+Medical 1.0 : reduce tree size on patient evaluation
+Medical_genetics : improve and reduce size
+
+
+------------------------------------------------------------------------
+r317 | evernichon | 2011-01-24 18:23:22 -0300 (lun 24 de ene de 2011) | 1 line
+
+french translation for medical_invoicing
+------------------------------------------------------------------------
+r316 | evernichon | 2011-01-24 17:57:55 -0300 (lun 24 de ene de 2011) | 1 line
+
+french translation for medical_lab
+------------------------------------------------------------------------
+r315 | evernichon | 2011-01-24 16:49:45 -0300 (lun 24 de ene de 2011) | 1 line
+
+french translation for medical_genetics
+------------------------------------------------------------------------
+r314 | meanmicio | 2011-01-24 15:59:35 -0300 (lun 24 de ene de 2011) | 1 line
+
+Medical socioeconomics 1.0 : Improve views and reduce size in forms
+------------------------------------------------------------------------
+r313 | evernichon | 2011-01-24 08:13:51 -0300 (lun 24 de ene de 2011) | 1 line
+
+add translation for medical_gyneco
+------------------------------------------------------------------------
+r312 | evernichon | 2011-01-24 05:58:15 -0300 (lun 24 de ene de 2011) | 1 line
+
+French Translation medical-core 100%
+------------------------------------------------------------------------
+r311 | meanmicio | 2011-01-23 21:03:29 -0300 (dom 23 de ene de 2011) | 4 lines
+
+- medical 1.0 : Move Extra information to the bottom of the form
+- medical 1.0 : Improve ergonomics in main patient view 
+- medical 1.0 : Reduce the size of the form view for the Main Medical module
+
+------------------------------------------------------------------------
+r310 | meanmicio | 2011-01-23 14:28:30 -0300 (dom 23 de ene de 2011) | 1 line
+
+Medical 1.0: Improve family view
+------------------------------------------------------------------------
+r309 | evernichon | 2011-01-23 13:55:27 -0300 (dom 23 de ene de 2011) | 1 line
+
+medical_code 1.1 french translation
+------------------------------------------------------------------------
+r308 | evernichon | 2011-01-23 13:12:21 -0300 (dom 23 de ene de 2011) | 1 line
+
+medical_socieconmics 1.1 french translation
+------------------------------------------------------------------------
+r307 | mariomop | 2011-01-17 20:01:54 -0300 (lun 17 de ene de 2011) | 1 line
+
+Search by lastname: name_search() function extended in --partner-- [ Correction to previous commit ]
+------------------------------------------------------------------------
+r306 | mariomop | 2011-01-17 18:00:44 -0300 (lun 17 de ene de 2011) | 1 line
+
+Search by lastname: name_search() function extended in --partner-- and modified in --patient-- class to include the lastname field
+------------------------------------------------------------------------
+r305 | mariomop | 2011-01-17 17:04:19 -0300 (lun 17 de ene de 2011) | 1 line
+
+Patient: automatically assign address if there is only one address (res.partner.address)
+------------------------------------------------------------------------
+r304 | mariomop | 2011-01-17 12:31:12 -0300 (lun 17 de ene de 2011) | 1 line
+
+Insurance plans converted from char field to m2o (services in product.product)
+------------------------------------------------------------------------
+r303 | mariomop | 2011-01-14 18:46:22 -0300 (vie 14 de ene de 2011) | 1 line
+
+Doctor field in appointments declared as m2o to medical.physician, instead of res.partner (suggested by Gustavo Cabral)
+------------------------------------------------------------------------
+r302 | mariomop | 2011-01-14 11:31:46 -0300 (vie 14 de ene de 2011) | 1 line
+
+Updated update_xml for Spanish, in medical module
+------------------------------------------------------------------------
+r301 | mariomop | 2011-01-11 19:57:56 -0300 (mar 11 de ene de 2011) | 1 line
+
+Added insurance_company type in res.partner; added insurance_plans tab (v1.1 branch)
+------------------------------------------------------------------------
+r300 | mariomop | 2011-01-11 13:52:17 -0300 (mar 11 de ene de 2011) | 1 line
+
+Spanish translation for medical_specialities
+------------------------------------------------------------------------
+r299 | mariomop | 2011-01-11 11:52:10 -0300 (mar 11 de ene de 2011) | 1 line
+
+Typo in -insurance companies-
+------------------------------------------------------------------------
+r298 | mariomop | 2011-01-11 11:35:58 -0300 (mar 11 de ene de 2011) | 1 line
+
+Added insurance_company type in res.partner; added insurance_plans tab
+------------------------------------------------------------------------
+r297 | mariomop | 2011-01-10 20:09:41 -0300 (lun 10 de ene de 2011) | 1 line
+
+Updated Spanish (Argentinian) translations
+------------------------------------------------------------------------
+r296 | mariomop | 2011-01-10 19:00:09 -0300 (lun 10 de ene de 2011) | 1 line
+
+Addition to avoid error message when there is no physician associated with the doctor partner, in appointments
+------------------------------------------------------------------------
+r295 | meanmicio | 2011-01-05 16:32:38 -0300 (mié 05 de ene de 2011) | 1 line
+
+update spanish translations
+------------------------------------------------------------------------
+r294 | mangmeba | 2011-01-02 02:44:11 -0300 (dom 02 de ene de 2011) | 1 line
+
+update Vietnamese translations
+------------------------------------------------------------------------
+r293 | meanmicio | 2010-12-31 18:33:37 -0300 (vie 31 de dic de 2010) | 1 line
+
+update spanish translations
+------------------------------------------------------------------------
+r292 | meanmicio | 2010-12-31 14:52:18 -0300 (vie 31 de dic de 2010) | 1 line
+
+sync German translations from Transifex
+------------------------------------------------------------------------
+r291 | meanmicio | 2010-12-31 13:57:44 -0300 (vie 31 de dic de 2010) | 1 line
+
+delete old de_DE.po. Using the new de.po for German translations
+------------------------------------------------------------------------
+r290 | meanmicio | 2010-12-31 11:22:55 -0300 (vie 31 de dic de 2010) | 1 line
+
+Update translations
+------------------------------------------------------------------------
+r289 | mangmeba | 2010-12-28 03:02:08 -0300 (mar 28 de dic de 2010) | 3 lines
+
+medical, medical_invoice: refactor to move the 'consultations' back to module medical as that should be the more appropriate place
+medical_lab: fix translations
+
+------------------------------------------------------------------------
+r288 | mangmeba | 2010-12-23 07:16:27 -0300 (jue 23 de dic de 2010) | 1 line
+
+medical: fix translations
+------------------------------------------------------------------------
+r287 | mangmeba | 2010-12-22 12:00:13 -0300 (mié 22 de dic de 2010) | 1 line
+
+medical_lab: fix translations
+------------------------------------------------------------------------
+r286 | mangmeba | 2010-12-20 22:37:11 -0300 (lun 20 de dic de 2010) | 1 line
+
+medical_invoice: add invoice status to Lab Request form
+------------------------------------------------------------------------
+r285 | mangmeba | 2010-12-20 20:11:32 -0300 (lun 20 de dic de 2010) | 1 line
+
+medical: add help text in partner_patient and small format clean up
+------------------------------------------------------------------------
+r284 | mangmeba | 2010-12-20 20:08:13 -0300 (lun 20 de dic de 2010) | 2 lines
+
+medical: add grouping by patient in appointment
+medical: add help text in partner_patient
+------------------------------------------------------------------------
+r283 | mangmeba | 2010-12-20 20:01:35 -0300 (lun 20 de dic de 2010) | 1 line
+
+merge features from trunk
+------------------------------------------------------------------------
+r282 | mangmeba | 2010-12-20 19:58:39 -0300 (lun 20 de dic de 2010) | 1 line
+
+small format cleanup
+------------------------------------------------------------------------
+r281 | mangmeba | 2010-12-20 19:50:25 -0300 (lun 20 de dic de 2010) | 1 line
+
+fix various translation
+------------------------------------------------------------------------
+r280 | mangmeba | 2010-12-17 13:35:34 -0300 (vie 17 de dic de 2010) | 1 line
+
+update translation files
+------------------------------------------------------------------------
+r279 | meanmicio | 2010-12-12 23:59:05 -0300 (dom 12 de dic de 2010) | 1 line
+
+Fix Italian Translations
+------------------------------------------------------------------------
+r278 | meanmicio | 2010-12-12 23:29:06 -0300 (dom 12 de dic de 2010) | 1 line
+
+fix italian translations
+------------------------------------------------------------------------
+r277 | meanmicio | 2010-12-12 17:09:40 -0300 (dom 12 de dic de 2010) | 1 line
+
+change language ISO codes for Spanish (es_ES -> es ) and Italian (it_IT -> it )
+------------------------------------------------------------------------
+r276 | meanmicio | 2010-12-12 16:04:52 -0300 (dom 12 de dic de 2010) | 2 lines
+
+RELEASE 1.0 RC2
+
+------------------------------------------------------------------------
+r275 | meanmicio | 2010-12-12 15:57:52 -0300 (dom 12 de dic de 2010) | 1 line
+
+Updated changelog and version for 1.0 RC2
+------------------------------------------------------------------------
+r274 | meanmicio | 2010-12-12 15:15:39 -0300 (dom 12 de dic de 2010) | 1 line
+
+Added Italian Translations
+------------------------------------------------------------------------
+r273 | meanmicio | 2010-12-12 14:59:30 -0300 (dom 12 de dic de 2010) | 1 line
+
+Added Italian Translations
+------------------------------------------------------------------------
+r272 | mangmeba | 2010-12-12 11:22:34 -0300 (dom 12 de dic de 2010) | 3 lines
+
+medical_invoice: Fix typo 'require=True' -> 'required=True'
+medical_invoice: Fix missing translation
+
+------------------------------------------------------------------------
+r271 | mangmeba | 2010-12-12 05:28:43 -0300 (dom 12 de dic de 2010) | 1 line
+
+medical_lab: Fix translations
+------------------------------------------------------------------------
+r270 | mangmeba | 2010-12-12 05:08:52 -0300 (dom 12 de dic de 2010) | 1 line
+
+medical_gyneco: Fix translations
+------------------------------------------------------------------------
+r269 | meanmicio | 2010-12-08 15:08:57 -0300 (mié 08 de dic de 2010) | 1 line
+
+merge language templates and initial translations to 1.1 and 1.0 branches
+------------------------------------------------------------------------
+r268 | meanmicio | 2010-12-05 19:49:56 -0300 (dom 05 de dic de 2010) | 1 line
+
+Add initial Italian translation
+------------------------------------------------------------------------
+r267 | meanmicio | 2010-12-05 18:59:17 -0300 (dom 05 de dic de 2010) | 1 line
+
+Add medical invoice language template
+------------------------------------------------------------------------
+r266 | meanmicio | 2010-12-05 18:41:18 -0300 (dom 05 de dic de 2010) | 1 line
+
+Add icd10 language template
+------------------------------------------------------------------------
+r265 | meanmicio | 2010-12-05 18:40:33 -0300 (dom 05 de dic de 2010) | 1 line
+
+Add language templates for medical modules
+------------------------------------------------------------------------
+r264 | meanmicio | 2010-12-05 18:22:52 -0300 (dom 05 de dic de 2010) | 1 line
+
+fixed some languages strings. Added medical_gyneco translation template
+------------------------------------------------------------------------
+r263 | meanmicio | 2010-12-05 17:36:35 -0300 (dom 05 de dic de 2010) | 4 lines
+
+medical : Fix duplicated entries in es_ES.po file, now is msgfmt validated
+medical : add translation template medical.pot
+
+
+------------------------------------------------------------------------
+r262 | meanmicio | 2010-12-05 16:51:10 -0300 (dom 05 de dic de 2010) | 2 lines
+
+Integrate all Spanish translations to es_ES
+
+------------------------------------------------------------------------
+r261 | mangmeba | 2010-12-03 07:09:00 -0300 (vie 03 de dic de 2010) | 1 line
+
+Rename all vi_VN.po to vi.po for consistency with naming convention in OpenERP
+------------------------------------------------------------------------
+r260 | mangmeba | 2010-12-02 22:26:59 -0300 (jue 02 de dic de 2010) | 1 line
+
+Rename all vi_VN.po to vi.po for consistency with naming convention in OpenERP
+------------------------------------------------------------------------
+r259 | mangmeba | 2010-12-01 16:25:30 -0300 (mié 01 de dic de 2010) | 3 lines
+
+medical: add back filter for Todays's Appointments
+medical_lab: add filters and remove redundant menuitems
+
+------------------------------------------------------------------------
+r258 | mangmeba | 2010-11-27 01:45:18 -0300 (sáb 27 de nov de 2010) | 1 line
+
+Fix translations
+------------------------------------------------------------------------
+r257 | mangmeba | 2010-11-27 00:40:25 -0300 (sáb 27 de nov de 2010) | 1 line
+
+Fix errors in translation (.po) files (partially)
+------------------------------------------------------------------------
+r256 | meanmicio | 2010-11-24 01:23:00 -0300 (mié 24 de nov de 2010) | 1 line
+
+medical_inpatient : fixed bug 00003  when importing patients and checking for their hospitalization status
+------------------------------------------------------------------------
+r255 | meanmicio | 2010-11-23 15:41:18 -0300 (mar 23 de nov de 2010) | 1 line
+
+trunk : Export es_ES language
+------------------------------------------------------------------------
+r254 | meanmicio | 2010-11-23 13:45:22 -0300 (mar 23 de nov de 2010) | 1 line
+
+medical_genetics : merge changes to 1.0 and 1.1 branches
+------------------------------------------------------------------------
+r253 | meanmicio | 2010-11-23 13:42:06 -0300 (mar 23 de nov de 2010) | 1 line
+
+medical_genetics: Fix name x_or_y field name -> xory on family diseases
+------------------------------------------------------------------------
+r252 | mangmeba | 2010-11-23 12:40:40 -0300 (mar 23 de nov de 2010) | 1 line
+
+medical_invoice: make field 'no_invoice' invisible if the billing status is 'invoiced'
+------------------------------------------------------------------------
+r251 | mangmeba | 2010-11-23 12:39:20 -0300 (mar 23 de nov de 2010) | 1 line
+
+medical: add feature to auto load the speciality based on selected doctor
+------------------------------------------------------------------------
+r250 | mangmeba | 2010-11-23 12:36:55 -0300 (mar 23 de nov de 2010) | 1 line
+
+fix errors as reported by msgfmt
+------------------------------------------------------------------------
+r249 | mangmeba | 2010-11-16 07:49:40 -0300 (mar 16 de nov de 2010) | 1 line
+
+remove import of module pickle
+------------------------------------------------------------------------
+r248 | mangmeba | 2010-11-14 08:38:44 -0300 (dom 14 de nov de 2010) | 1 line
+
+add/fix translations
+------------------------------------------------------------------------
+r247 | mangmeba | 2010-11-14 08:06:49 -0300 (dom 14 de nov de 2010) | 1 line
+
+medical_invoice: Fix comments and clean up unused declaration
+------------------------------------------------------------------------
+r246 | mangmeba | 2010-11-14 04:40:54 -0300 (dom 14 de nov de 2010) | 1 line
+
+add/fix translations
+------------------------------------------------------------------------
+r245 | mangmeba | 2010-11-13 00:55:50 -0300 (sáb 13 de nov de 2010) | 1 line
+
+add/fix translations
+------------------------------------------------------------------------
+r244 | mangmeba | 2010-11-12 21:46:56 -0300 (vie 12 de nov de 2010) | 1 line
+
+add/fix translations
+------------------------------------------------------------------------
+r243 | mangmeba | 2010-11-12 21:41:52 -0300 (vie 12 de nov de 2010) | 1 line
+
+medical_lifestyle: fix field description and help text
+------------------------------------------------------------------------
+r242 | meanmicio | 2010-11-12 07:04:05 -0300 (vie 12 de nov de 2010) | 1 line
+
+commit patch / addition for shortcut in patient appointments
+------------------------------------------------------------------------
+r241 | mangmeba | 2010-11-09 19:12:51 -0300 (mar 09 de nov de 2010) | 1 line
+
+Fix translations
+------------------------------------------------------------------------
+r240 | meanmicio | 2010-11-09 10:06:51 -0300 (mar 09 de nov de 2010) | 1 line
+
+trunk ->  medical : fix medical patient shortcut from appointment form
+------------------------------------------------------------------------
+r239 | meanmicio | 2010-11-09 06:11:36 -0300 (mar 09 de nov de 2010) | 2 lines
+
+Remove patient shortcut from appointment menu from branch 1.0
+
+------------------------------------------------------------------------
+r238 | meanmicio | 2010-11-08 03:51:25 -0300 (lun 08 de nov de 2010) | 1 line
+
+Create 1.1 unstable / new features release branch
+------------------------------------------------------------------------
+r237 | meanmicio | 2010-11-08 03:47:42 -0300 (lun 08 de nov de 2010) | 1 line
+
+Create 1.0 stable release branch
+------------------------------------------------------------------------
+r236 | mangmeba | 2010-11-08 02:01:46 -0300 (lun 08 de nov de 2010) | 1 line
+
+medical: add Patient shorcut in appointment form
+------------------------------------------------------------------------
+r235 | meanmicio | 2010-11-07 20:25:41 -0300 (dom 07 de nov de 2010) | 4 lines
+
+Release of Medical 1.0 RC1
+Update version and Changelog files
+
+
+------------------------------------------------------------------------
+r234 | meanmicio | 2010-11-07 19:58:12 -0300 (dom 07 de nov de 2010) | 1 line
+
+medical : fix medical administration route search
+------------------------------------------------------------------------
+r233 | meanmicio | 2010-11-07 19:49:47 -0300 (dom 07 de nov de 2010) | 1 line
+
+medical : fix medical drug presentation form filter
+------------------------------------------------------------------------
+r232 | meanmicio | 2010-11-07 19:46:13 -0300 (dom 07 de nov de 2010) | 6 lines
+
+medical : add medical drug form filter
+medical : add drug administration route filter
+medical : add drug administration frequency filter
+medical_lab : add test_type filter
+
+
+------------------------------------------------------------------------
+r231 | meanmicio | 2010-11-07 19:10:08 -0300 (dom 07 de nov de 2010) | 18 lines
+
+medical : add physician search filter 
+medical : add medicament dose unit search filter 
+medical : add patient hospitalization filter 
+medical : add medical specialties filter 
+medical : add operational areas filter 
+medical : add operational sector filter 
+medical : add insurance filter 
+medical : add health center building filter
+medical : add health center unit filter
+medical : add health center ward filter
+medical : add health center bed filter
+medical_lab : add lab test unit filter
+medical : add disease category filter
+medical : Fix add medical procedure filter
+medical : add occupations/careers filters
+medical_lifestyle : add recreational drugs filters
+
+
+------------------------------------------------------------------------
+r230 | meanmicio | 2010-11-07 16:33:15 -0300 (dom 07 de nov de 2010) | 2 lines
+
+medical : add prescription order filter
+
+------------------------------------------------------------------------
+r229 | meanmicio | 2010-11-07 16:23:06 -0300 (dom 07 de nov de 2010) | 6 lines
+
+medical : add filters for family
+medical_lab : add lab tests requests and lab test results filters
+medical : add physicians configuration menu
+medical : add medicaments configuration menu
+
+
+------------------------------------------------------------------------
+r228 | meanmicio | 2010-11-07 04:31:22 -0300 (dom 07 de nov de 2010) | 4 lines
+
+medical : make medical_invoice part of the default modules.
+medical : Add group by date for the appointment
+
+
+------------------------------------------------------------------------
+r227 | mangmeba | 2010-11-06 23:51:17 -0300 (sáb 06 de nov de 2010) | 1 line
+
+medical: consolidate data/appointment.xml to data/medical_sequences.xml
+------------------------------------------------------------------------
+r226 | meanmicio | 2010-11-06 23:11:10 -0300 (sáb 06 de nov de 2010) | 11 lines
+
+medical : show age taken from the death certificate of the patient ("stop the age clock") 
+medical : make a required field entry the "date / time of death" of the patient when the patient has died.
+medical : show "at time of death" on the age, along with the "deceased" label on the field. 
+medical : add filter for medical procedures
+medical_genetics : fix description on filter
+medical : Add medical procedures to the configuration menu
+medical : make medical procedure name required, at view level.
+medical : re-order medical menu, placing the reporting at the end 
+medical : add the is_person attribute to the partners on the demo data
+
+
+------------------------------------------------------------------------
+r225 | mangmeba | 2010-11-06 23:01:04 -0300 (sáb 06 de nov de 2010) | 1 line
+
+small fix for debug msg
+------------------------------------------------------------------------
+r224 | meanmicio | 2010-11-06 18:58:36 -0300 (sáb 06 de nov de 2010) | 3 lines
+
+Add filter for patient genetic risks
+
+
+------------------------------------------------------------------------
+r223 | meanmicio | 2010-11-06 18:38:38 -0300 (sáb 06 de nov de 2010) | 4 lines
+
+medical : Add Glasgow coma scale title, and put impairments title in patient mental assesment
+medical : add search filter for medicaments
+
+
+------------------------------------------------------------------------
+r222 | meanmicio | 2010-11-06 13:25:33 -0300 (sáb 06 de nov de 2010) | 4 lines
+
+medical_inpatient : Show dynamically the Patient Hospitalization Status, upon deceased field
+medical : Show date of death and Cause of death only when the patient is deceased.
+
+
+------------------------------------------------------------------------
+r221 | meanmicio | 2010-11-05 23:54:00 -0300 (vie 05 de nov de 2010) | 4 lines
+
+medical_lab : terminology : Lab tests -> Lab test results
+medical_lab : make physician required in the lab test results.
+
+
+------------------------------------------------------------------------
+r220 | meanmicio | 2010-11-05 23:25:34 -0300 (vie 05 de nov de 2010) | 6 lines
+
+medical_invoice : fix lab tests ids
+medical_lab : terminology : Lab tests -> Lab test results
+medical_lab : remove old entries from __openerp__.py that were pointing to invoicing (now they are on medical_invoice)
+medical_invoice : add wizard/create_lab_invoice.xml to __openerp__.py (that was migrated from medical_lab)
+
+
+------------------------------------------------------------------------
+r219 | meanmicio | 2010-11-05 23:00:37 -0300 (vie 05 de nov de 2010) | 5 lines
+
+medical_invoice : check invoicing exemption before creating the invoice of the prescription
+medical_invoice : fix patient invoice id
+medical_invoice : check invoicing exemption before creating the invoice of the appointment
+
+
+------------------------------------------------------------------------
+r218 | meanmicio | 2010-11-05 20:13:07 -0300 (vie 05 de nov de 2010) | 4 lines
+
+medical_invoice : Fix mantis bug #1 (medical has now a brand new bt system !! :-) ). Corrected the prescriptions IDs assignment
+medical_invoice : Added restriction for prescriptions with no lines
+
+
+------------------------------------------------------------------------
+r217 | meanmicio | 2010-11-05 19:30:34 -0300 (vie 05 de nov de 2010) | 5 lines
+
+medical_lab : migrate invoicing process to medical_invoice
+medical : add medical specialties
+medical_invoice : add some temporary debuging breakpoints (tbd)
+
+
+------------------------------------------------------------------------
+r216 | meanmicio | 2010-11-05 16:50:38 -0300 (vie 05 de nov de 2010) | 9 lines
+
+medical : make prescription ID field readonly (controlled by the sequence)
+
+medical_invoice : Menu: "Invoice" -> "Invoices"
+medical_invoice : normalize prescription invoice coding with appointment 
+medical_invoice : add "invoice exempt" field to all processes (appointment, prescription)
+medical_invoice : Make read-only the invoice status
+medical_lab : make required fields lab test and patient
+
+
+------------------------------------------------------------------------
+r215 | meanmicio | 2010-11-05 12:41:31 -0300 (vie 05 de nov de 2010) | 9 lines
+
+medical : terminology : Doctor -> Physician
+medical : make physician name required, at view level
+medical : make medicament unit required, at view level
+medical : add initial medical specialties list
+medical_invoice : add dependency "medical_lab" for medical_invoice
+medical_lab : make field testing unit required at view level
+medical_lab : make field lab test type required at view level
+
+
+------------------------------------------------------------------------
+r214 | meanmicio | 2010-11-05 10:53:54 -0300 (vie 05 de nov de 2010) | 1 line
+
+Make medical specialty name required, at view level
+------------------------------------------------------------------------
+r213 | meanmicio | 2010-11-04 21:08:39 -0300 (jue 04 de nov de 2010) | 1 line
+
+medical: fix bug on relative_id
+------------------------------------------------------------------------
+r212 | meanmicio | 2010-11-04 17:03:45 -0300 (jue 04 de nov de 2010) | 3 lines
+
+medical: Update terminology and tooltips on partners /patients relatives and relationships .
+
+
+------------------------------------------------------------------------
+r211 | mangmeba | 2010-11-03 19:55:14 -0300 (mié 03 de nov de 2010) | 1 line
+
+complete refactoring medical_lab to medical_invoice (moving fields used for invoicing
+------------------------------------------------------------------------
+r210 | meanmicio | 2010-11-03 05:38:40 -0300 (mié 03 de nov de 2010) | 2 lines
+
+Fix fields.related to many2one in medical prescription
+
+------------------------------------------------------------------------
+r209 | meanmicio | 2010-11-02 22:33:32 -0300 (mar 02 de nov de 2010) | 6 lines
+
+medical : migrate to medical_invoice the field "invoice_status" from medical.prescription.order
+medical : add invoice status to the form
+medical : add menu for prescriptions to be invoiced
+medical : Use Doctor's name from the ID, and doctor signature from the user admin
+
+
+------------------------------------------------------------------------
+r208 | meanmicio | 2010-11-02 19:40:12 -0300 (mar 02 de nov de 2010) | 4 lines
+
+medical : change "doctor" for "user_id" in prescription order
+medical : make user_id (Prescribing doctor) in prescription order a read-only field
+
+
+------------------------------------------------------------------------
+r207 | mangmeba | 2010-11-02 12:05:05 -0300 (mar 02 de nov de 2010) | 1 line
+
+refactoring invoicing feature from medical_lab to medical_invoice
+------------------------------------------------------------------------
+r206 | meanmicio | 2010-11-02 07:31:11 -0300 (mar 02 de nov de 2010) | 6 lines
+
+medical : add shortcut in main window to show physicians
+medical : add health centers in the configuration menu
+medical : add health centers shorcut
+medical : Terminology. "Change Institution" by "Health Center"
+
+
+------------------------------------------------------------------------
+r205 | mangmeba | 2010-11-01 12:19:49 -0300 (lun 01 de nov de 2010) | 1 line
+
+medical_lab: clean up duplicated fields, add default value for date_requested
+------------------------------------------------------------------------
+r204 | mangmeba | 2010-11-01 12:18:12 -0300 (lun 01 de nov de 2010) | 1 line
+
+medical: clean up duplicated translation
+------------------------------------------------------------------------
+r203 | meanmicio | 2010-11-01 06:36:40 -0300 (lun 01 de nov de 2010) | 4 lines
+
+medical : Migrate appointment invoicing related information to medical_invoicing module
+medical : reverse version to 0.1.3 due to last minute bugs
+
+
+------------------------------------------------------------------------
+r202 | meanmicio | 2010-11-01 03:57:31 -0300 (lun 01 de nov de 2010) | 1 line
+
+update version, Changelog and README files
+------------------------------------------------------------------------
+r201 | meanmicio | 2010-11-01 03:14:36 -0300 (lun 01 de nov de 2010) | 1 line
+
+add more patient demo data
+------------------------------------------------------------------------
+r200 | meanmicio | 2010-10-31 17:15:34 -0300 (dom 31 de oct de 2010) | 1 line
+
+swap patient and doctor internal ID fields places in patient evaluation
+------------------------------------------------------------------------
+r199 | meanmicio | 2010-10-31 16:37:00 -0300 (dom 31 de oct de 2010) | 8 lines
+
+medical : make search domain for appointment id and next appointment.
+medical : assign a doctor (internal user) to the partner (administrator) in demo data.
+medical : assign a doctor (internal user) to the patient  in demo data.
+medical : add "my patients" filter 
+medical : add patient ID in the evaluation form (defaults to parent id)
+medical : add the "user_id" field in patient, to relate it to the doctor responsible of the user . This doctor has an account on Medical, and can login in the local health care system. It's not necessarily the Primary Care Doctor, but most of the time it will be the case.
+
+
+------------------------------------------------------------------------
+r198 | mangmeba | 2010-10-30 21:08:14 -0300 (sáb 30 de oct de 2010) | 1 line
+
+Fix translations
+------------------------------------------------------------------------
+r197 | meanmicio | 2010-10-30 17:46:45 -0300 (sáb 30 de oct de 2010) | 2 lines
+
+medical : add appointments in the patient's main form. It will visualize all the patient appointments, as well as provide a way of creating new appointment for the specific patient.
+
+------------------------------------------------------------------------
+r196 | meanmicio | 2010-10-30 14:48:37 -0300 (sáb 30 de oct de 2010) | 2 lines
+
+Add Patient shortcut in the main window
+
+------------------------------------------------------------------------
+r195 | meanmicio | 2010-10-30 13:41:38 -0300 (sáb 30 de oct de 2010) | 7 lines
+
+medical : Work on Terminology
+medical : change Pathology for Disease
+medical : Change Hospital for Health Center
+medical : add disease tree
+medical : add name and code as default search fields for disease.
+
+
+------------------------------------------------------------------------
+r194 | mangmeba | 2010-10-29 20:43:23 -0300 (vie 29 de oct de 2010) | 1 line
+
+Remove unncessary module dependencies
+------------------------------------------------------------------------
+r193 | mangmeba | 2010-10-29 20:28:25 -0300 (vie 29 de oct de 2010) | 1 line
+
+Fix missing imports and configuration for logging
+------------------------------------------------------------------------
+r192 | meanmicio | 2010-10-28 22:25:49 -0300 (jue 28 de oct de 2010) | 1 line
+
+medical: fix typo in new appointment view
+------------------------------------------------------------------------
+r191 | meanmicio | 2010-10-28 22:25:08 -0300 (jue 28 de oct de 2010) | 4 lines
+
+medical : remove shortcut "patient" from appointment, since it's one of the fields
+medical : remove shortcut "Medications" from patient, since it's on one of the pages. Now the medication status is shown with colors.
+
+
+------------------------------------------------------------------------
+r190 | meanmicio | 2010-10-28 21:45:17 -0300 (jue 28 de oct de 2010) | 1 line
+
+medical_icd10 : revert to default english language ICD-10 file
+------------------------------------------------------------------------
+r189 | meanmicio | 2010-10-27 04:16:11 -0300 (mié 27 de oct de 2010) | 6 lines
+
+medical : Change string name "Salesman" to "Internal User". It's easier to relate to the doctor or health professional
+medical : add filters in the appointments (my appointments) and search fields (doctor, patient, start and end of the appointment)
+medical : add groups in the appointments view (group by doctor or speciality)
+ 
+
+
+------------------------------------------------------------------------
+r188 | meanmicio | 2010-10-24 04:19:45 -0300 (dom 24 de oct de 2010) | 11 lines
+
+medical : Create initial filters for the patient object
+- Name
+- Lastname
+- Patient ID
+- SSN
+
+medical : create initial patient groups (sex and doctors) 
+
+medical : change string ID on the patient SSN (related to partner).
+
+
+------------------------------------------------------------------------
+r187 | meanmicio | 2010-10-24 01:37:51 -0300 (dom 24 de oct de 2010) | 2 lines
+
+Restrict the family members domain to people only in the partners object
+
+------------------------------------------------------------------------
+r186 | mangmeba | 2010-10-20 07:12:25 -0300 (mié 20 de oct de 2010) | 1 line
+
+fix translations
+------------------------------------------------------------------------
+r185 | mangmeba | 2010-10-20 07:09:19 -0300 (mié 20 de oct de 2010) | 3 lines
+
+medical: add qty_available to medical.medicament
+medical: add the missing field (consultations) that should have been commited in r178
+
+------------------------------------------------------------------------
+r184 | mangmeba | 2010-10-19 22:38:50 -0300 (mar 19 de oct de 2010) | 1 line
+
+medical: merge features from openerp6 (trunk, r181-182) to openerp5 branch
+------------------------------------------------------------------------
+r183 | mangmeba | 2010-10-19 22:37:48 -0300 (mar 19 de oct de 2010) | 1 line
+
+medical: fix translations
+------------------------------------------------------------------------
+r182 | meanmicio | 2010-10-19 09:24:04 -0300 (mar 19 de oct de 2010) | 2 lines
+
+Added medicament price in tree
+
+------------------------------------------------------------------------
+r181 | meanmicio | 2010-10-19 09:18:43 -0300 (mar 19 de oct de 2010) | 4 lines
+
+medical : Add person property to partner, so we can choose people from the partner list (eg, for the family members)
+medical : Added price for medicament (suggested by Phong Nguyen) in views
+
+
+------------------------------------------------------------------------
+r180 | mangmeba | 2010-10-17 10:52:54 -0300 (dom 17 de oct de 2010) | 1 line
+
+fix error in translation that results in malformed XML tags
+------------------------------------------------------------------------
+r179 | mangmeba | 2010-10-14 05:07:22 -0300 (jue 14 de oct de 2010) | 2 lines
+
+Merge changes in branches/openerp5 (r169:178)
+
+------------------------------------------------------------------------
+r178 | mangmeba | 2010-10-14 00:51:30 -0300 (jue 14 de oct de 2010) | 4 lines
+
+medical_genetics, medical_gyneco, medical_invoice, medical_socioeconomics, medical_lab, medical, medical_lifestyle: Fix translations
+medical, medical_invoice: improve billing for appointment: consultation service is now charged as a service product so that a doctor can charge differently for different services.
+medical_lab, medical_invoice: clean up unused packages, debugs
+
+------------------------------------------------------------------------
+r177 | meanmicio | 2010-10-12 03:57:12 -0300 (mar 12 de oct de 2010) | 7 lines
+
+medical : remove recreational drugs from the access control list (is now in medical_lifestyle)
+medical_lifestyle : add DEA Schedule levels for recreational drugs
+medical_lifestyle : change addiction level for dependence level
+medical_lifestyle : add NIDA (Nationa Institute on Drug Abuse) drug listing and categories
+medical_lifestyle : modify lifestyle view
+medical_lifestyle : Fix typos
+
+------------------------------------------------------------------------
+r176 | meanmicio | 2010-10-11 03:36:30 -0300 (lun 11 de oct de 2010) | 10 lines
+
+medical : remove recreational drugs class, since it was in lifestyle module. 
+medical_lifestyle : add recreational drugs categories
+medical_lifestyle : add recreational drugs administration route
+medical_lifestyle : add addiction rating from NIDA and Dr Henningfield
+medical_lifestyle : reorder tree view of recreational drugs
+medical_lifestyle : add new fields to recreational drugs model (IV users, categories, ..)
+medical_lifestyle : add new fields to patient related addictions (tobacco, alcohol, recreational drugs)
+medical:lifestyle : Initial view update
+
+
+------------------------------------------------------------------------
+r175 | meanmicio | 2010-10-09 21:01:37 -0300 (sáb 09 de oct de 2010) | 3 lines
+
+medical : Fixed & -> &amp; in installer 
+medical : Add again the dependencies for sale, purchase and account, since it's intimately related to the Health Center operation.
+
+------------------------------------------------------------------------
+r174 | meanmicio | 2010-10-09 20:04:03 -0300 (sáb 09 de oct de 2010) | 3 lines
+
+Remove the sale and account dependencies from the medical module (Husen Daudi)
+Add ICD-10-PCS module to the installer view.
+
+------------------------------------------------------------------------
+r173 | meanmicio | 2010-10-09 18:00:21 -0300 (sáb 09 de oct de 2010) | 7 lines
+
+profile_medical: Delete profile_medical module, since we'll be using the new installer in medical module
+medical : Add extra info and fix typos in installer
+medical : Add ICD-10-PCS module in installer
+medical : Remove sale and account modules dependencies (Husen Daudi)
+medical_inpatient : merge latest changes in hospitalization administration
+
+
+------------------------------------------------------------------------
+r172 | meanmicio | 2010-10-09 15:35:06 -0300 (sáb 09 de oct de 2010) | 1 line
+
+Remove former openerp6 development branch, which is now the current trunk
+------------------------------------------------------------------------
+r171 | meanmicio | 2010-10-09 15:29:23 -0300 (sáb 09 de oct de 2010) | 2 lines
+
+Move current openerp6 Medical development to trunk
+
+------------------------------------------------------------------------
+r170 | meanmicio | 2010-10-09 15:26:39 -0300 (sáb 09 de oct de 2010) | 2 lines
+
+Move the current trunk to openerp5
+
+------------------------------------------------------------------------
+r169 | meanmicio | 2010-10-09 15:19:03 -0300 (sáb 09 de oct de 2010) | 1 line
+
+Branch version 0.1.3 to openerp5
+------------------------------------------------------------------------
+r168 | meanmicio | 2010-10-09 12:46:29 -0300 (sáb 09 de oct de 2010) | 4 lines
+
+Update version and Changelog for 0.1.3 .
+From next version on, development (trunk) will focus on openobject v6
+Current 0.1.3 will be branched to openerpv5 
+
+------------------------------------------------------------------------
+r167 | husen_daudi | 2010-10-09 10:34:16 -0300 (sáb 09 de oct de 2010) | 1 line
+
+added installer
+------------------------------------------------------------------------
+r166 | husen_daudi | 2010-10-09 10:33:43 -0300 (sáb 09 de oct de 2010) | 1 line
+
+added installer
+------------------------------------------------------------------------
+r165 | husen_daudi | 2010-10-09 10:33:07 -0300 (sáb 09 de oct de 2010) | 1 line
+
+added installer
+------------------------------------------------------------------------
+r164 | husen_daudi | 2010-10-09 10:32:36 -0300 (sáb 09 de oct de 2010) | 1 line
+
+added installer
+------------------------------------------------------------------------
+r163 | mangmeba | 2010-10-09 06:40:08 -0300 (sáb 09 de oct de 2010) | 1 line
+
+merge changes from r150, r152-r156 r158-r160 to OpenERP 6.0
+------------------------------------------------------------------------
+r162 | meanmicio | 2010-10-09 00:58:39 -0300 (sáb 09 de oct de 2010) | 2 lines
+
+medical_inpatient : Fix position on patient hospitalization status
+
+------------------------------------------------------------------------
+r161 | meanmicio | 2010-10-08 23:53:35 -0300 (vie 08 de oct de 2010) | 10 lines
+
+medical_inpatient : add patient hospitalization status to main patient form
+medical_inpatient : add patient hospitalization status to the patient tree
+medical_inpatient : Dinamically calculate the patient status (hospitalized vs outpatient )
+medical_inpatient : Add the action "admission" to the patient hospitalization workflow
+medical_inpatient : re-order the buttons to follow the patient hospitalization proccess
+-> Confirm, cancel, admission, discharge
+medical_inpatient : dinamically show buttons depending the patient hospitalization status
+medical_lab : fixed "un digested matter" -> "undigested matter" 
+
+
+------------------------------------------------------------------------
+r160 | mangmeba | 2010-10-07 07:39:11 -0300 (jue 07 de oct de 2010) | 4 lines
+
+medical_lab: clean up unused code, debug info is now logged with logging.debug
+medical_lab: change invoice calculation to use product information directly from lab test(s), instead of using employee-product association (as in the appointment)
+medical_lab: add feature to make single invoice for multiple lab tests from the same patient
+
+------------------------------------------------------------------------
+r159 | mangmeba | 2010-10-07 01:37:29 -0300 (jue 07 de oct de 2010) | 3 lines
+
+clean up unused code, debug info is now logged with logging.debug
+change invoice calculation to use product information directly from prescription(s), instead of using employee-product association (as in the appointment)
+add feature to make single invoice for multiple prescriptions from the same patient
+------------------------------------------------------------------------
+r158 | mangmeba | 2010-10-05 23:38:46 -0300 (mar 05 de oct de 2010) | 1 line
+
+medical: add initialization sequence for Vietnamese
+------------------------------------------------------------------------
+r157 | meanmicio | 2010-10-05 21:42:41 -0300 (mar 05 de oct de 2010) | 3 lines
+
+medical_lab ( branch openerp6-devel) : Change wizard to osv.osv_memory format to be OpenERP v6 compatible 
+medical_lab : Change "Test report" for "Lab report"  
+
+------------------------------------------------------------------------
+r156 | mangmeba | 2010-10-05 05:04:06 -0300 (mar 05 de oct de 2010) | 1 line
+
+medical: add Vietnamese translations for medical/data/occupations.xml, medical/data/medicament_form.xml, medical/data/medicament_categories.xml, medical/data/snomed_frequencies.xml, medical/data/HL7_drug_administration_routes.xml
+------------------------------------------------------------------------
+r155 | mangmeba | 2010-10-05 04:47:48 -0300 (mar 05 de oct de 2010) | 3 lines
+
+medical_invoice: add feature to make invoices for prescriptions
+medical: add default doctor and prescription id (from sequence)
+
+------------------------------------------------------------------------
+r154 | mangmeba | 2010-10-05 04:16:57 -0300 (mar 05 de oct de 2010) | 1 line
+
+medical_lab: fix text in 'UserError' exceptions
+------------------------------------------------------------------------
+r153 | mangmeba | 2010-10-05 03:59:06 -0300 (mar 05 de oct de 2010) | 1 line
+
+medical: fix some Vietnamese translation
+------------------------------------------------------------------------
+r152 | mangmeba | 2010-10-04 10:55:10 -0300 (lun 04 de oct de 2010) | 1 line
+
+medical_lab: add feature to make invoices for lab tests
+------------------------------------------------------------------------
+r151 | meanmicio | 2010-10-03 20:01:55 -0300 (dom 03 de oct de 2010) | 2 lines
+
+V6 medical_invoice : update wizard to osv_memory to be compatible with OpenERP v6
+
+------------------------------------------------------------------------
+r150 | mangmeba | 2010-10-03 04:50:48 -0300 (dom 03 de oct de 2010) | 1 line
+
+translate and add Vietnamese ethic groups
+------------------------------------------------------------------------
+r149 | meanmicio | 2010-09-29 18:18:38 -0300 (mié 29 de sep de 2010) | 2 lines
+
+Modify filenames to fit OpenERP v6
+
+------------------------------------------------------------------------
+r148 | meanmicio | 2010-09-27 11:03:07 -0300 (lun 27 de sep de 2010) | 2 lines
+
+Correction on translation files in medical_invoice and medical_inpatient
+
+------------------------------------------------------------------------
+r147 | meanmicio | 2010-09-26 00:35:36 -0300 (dom 26 de sep de 2010) | 2 lines
+
+Update / merge changes in for version 6 branch
+
+------------------------------------------------------------------------
+r146 | meanmicio | 2010-09-26 00:19:11 -0300 (dom 26 de sep de 2010) | 6 lines
+
+medical : add constraint in vaccine to avoid applying same dose twice
+medical : fixed onchange error in vaccine, removing the boolean (true) return from the onchange check expiration date function
+medical : add default vaccination date as the current date and hour
+
+medical_invoice : (Mario Puntin). Update Spanish translation
+
+------------------------------------------------------------------------
+r145 | meanmicio | 2010-09-25 07:14:09 -0300 (sáb 25 de sep de 2010) | 2 lines
+
+Fix issues in medical invoice after change of patient class (Mario Puntin)
+
+------------------------------------------------------------------------
+r144 | meanmicio | 2010-09-22 06:31:52 -0300 (mié 22 de sep de 2010) | 3 lines
+
+branch openerp6-devel : Eliminate all instances of "select=1 or select=2" from all the views to make it openerp 6.0 compatible
+
+
+------------------------------------------------------------------------
+r143 | meanmicio | 2010-09-19 15:16:08 -0300 (dom 19 de sep de 2010) | 1 line
+
+merge openerp6-devel branch with trunk
+------------------------------------------------------------------------
+r142 | meanmicio | 2010-09-19 14:55:58 -0300 (dom 19 de sep de 2010) | 4 lines
+
+medical :fixed appointment object. Patient now points to patient object, instead of partner.
+profile_medical : change double quotes to single.
+
+
+------------------------------------------------------------------------
+r141 | meanmicio | 2010-09-18 17:53:54 -0300 (sáb 18 de sep de 2010) | 1 line
+
+mergeg trunk to openerp6-devel
+------------------------------------------------------------------------
+r140 | meanmicio | 2010-09-18 17:36:38 -0300 (sáb 18 de sep de 2010) | 6 lines
+
+medical : use the required field "ref" at view level, not at DB level
+medical : check the patient vaccine expiration date at runtime (on change), in addition to the constraint.
+medical : make the vaccination date required (at view level) 
+medical : change osv raise exception to "warning" methods to make it python 3.0 compatible.
+
+
+------------------------------------------------------------------------
+r139 | meanmicio | 2010-09-17 01:44:08 -0300 (vie 17 de sep de 2010) | 1 line
+
+merge r138 with branch openerp6-devel
+------------------------------------------------------------------------
+r138 | meanmicio | 2010-09-17 01:02:18 -0300 (vie 17 de sep de 2010) | 2 lines
+
+Increase the code field size in medical_pathology from 5 to 32 
+
+------------------------------------------------------------------------
+r137 | meanmicio | 2010-09-16 18:10:10 -0300 (jue 16 de sep de 2010) | 1 line
+
+Branch for medical development in upcoming openerp 6.0
+------------------------------------------------------------------------
+r136 | meanmicio | 2010-09-16 05:10:44 -0300 (jue 16 de sep de 2010) | 8 lines
+
+medical : add patient status in the appointment object
+medical: rearrange fields on the medical appointment view
+medical : Set Ambulatory as the default value for appointments
+medical_inpatient : add the registration ID field in the appointment object
+medical_inpatient : add "room" in the description of ward field 
+medical_inpatient : make the registration dates required (at view level)
+
+
+------------------------------------------------------------------------
+r135 | mangmeba | 2010-09-14 23:47:43 -0300 (mar 14 de sep de 2010) | 1 line
+
+Corrected sme translations
+------------------------------------------------------------------------
+r134 | mangmeba | 2010-09-14 12:51:44 -0300 (mar 14 de sep de 2010) | 1 line
+
+Add additional classifications by Vietnam's Ministry of Health
+------------------------------------------------------------------------
+r133 | mangmeba | 2010-09-14 12:29:41 -0300 (mar 14 de sep de 2010) | 1 line
+
+Fix translation
+------------------------------------------------------------------------
+r132 | meanmicio | 2010-09-12 22:03:49 -0300 (dom 12 de sep de 2010) | 2 lines
+
+medical_inpatient: add access control list to the module objects
+
+------------------------------------------------------------------------
+r131 | meanmicio | 2010-09-12 21:38:27 -0300 (dom 12 de sep de 2010) | 3 lines
+
+Update Changelog
+Update version file
+
+------------------------------------------------------------------------
+r130 | meanmicio | 2010-09-12 18:29:28 -0300 (dom 12 de sep de 2010) | 12 lines
+
+medical_profile : add medical_inpatient to the initial module list
+medical_inpatient : improve view and fix 
+medical_inpatient : use colors in tree for patient hospitalization types 
+- Red : Emergency
+- Blue : Maternity
+- Black : Routine and Elective admissions
+
+medical_inpatient : merge nursing plan and discharge plan into the main inpatient registation class
+
+medical : add vaccine brand name (trade name), batch number (lot number), institution and expiration date to the vaccine (Andrew Gledhill)
+medical : add constraint in vaccine if the vaccine expires before the dose vaccination date.
+
+------------------------------------------------------------------------
+r129 | mangmeba | 2010-09-12 15:27:43 -0300 (dom 12 de sep de 2010) | 1 line
+
+Add translation to Vietnamese for module medical_invoice
+------------------------------------------------------------------------
+r128 | mangmeba | 2010-09-12 14:35:08 -0300 (dom 12 de sep de 2010) | 1 line
+
+Fix some incorrect translations
+------------------------------------------------------------------------
+r127 | meanmicio | 2010-09-12 13:52:51 -0300 (dom 12 de sep de 2010) | 3 lines
+
+medical_inpatient : implement hospital bed reservation method
+medical_inpatient : change from date to datetime the hospitalization and discharge dates.
+
+------------------------------------------------------------------------
+r126 | mangmeba | 2010-09-12 13:37:50 -0300 (dom 12 de sep de 2010) | 1 line
+
+Fix UTF-8 encoding of translated text
+------------------------------------------------------------------------
+r125 | mangmeba | 2010-09-12 13:32:52 -0300 (dom 12 de sep de 2010) | 1 line
+
+Add translation to Vietnamese for modules medical_inpatient, profile_medical
+------------------------------------------------------------------------
+r124 | mangmeba | 2010-09-12 10:34:03 -0300 (dom 12 de sep de 2010) | 1 line
+
+Add translation to Vietnamese (diseases_vi.xml, disease_categories_vi.xml)
+------------------------------------------------------------------------
+r123 | mangmeba | 2010-09-11 02:01:43 -0300 (sáb 11 de sep de 2010) | 1 line
+
+Added translation to Vietnamese
+------------------------------------------------------------------------
+r122 | meanmicio | 2010-09-06 22:20:46 -0300 (lun 06 de sep de 2010) | 8 lines
+
+medical_inpatient : fix patient hospitalization history view. Added the registration code.
+medical_inpatient : Added the following states : free, cancelled, confirmed to the inpatient reservation object
+medical_inpatient : initial code for patient registration, inpatient cancellation and patient discharge
+medical_inpatient : create views for medical inpatient care and link it to the patient chart.
+medical_gr* : remove modules until the Greek team make a new commit compatible with current Medical version
+medical_report : remove module since its functionality is already merged in medical and medical_invoice
+
+
+------------------------------------------------------------------------
+r121 | meanmicio | 2010-09-05 21:20:18 -0300 (dom 05 de sep de 2010) | 19 lines
+
+medical : add patient inpatient description
+medical : Fix bed class. Remove category (taken from the product) and link name field to the product itself.
+
+medical : add demo for hospital wards and beds
+medical : create hospital bed product category
+medical : make the bed product "rentable". Unlink the "can be bought" and "can be sold" properties
+medical : fix name on product, under product_medical class : Bed instead of ward (is_bed)
+
+medical : make not required the ward status (it will become a read-only field in the near future, controlled by a function )
+medical : make default gender "unisex" for wards/rooms.
+medical : Remove "Biological hazard" from the ward states and make it a separate field
+
+medical_inpatient : Create the in-patient module, to cover the hospitalization process.
+medical_inpatient : Create the Inpatient registration process
+medical_inpatient : modify admission for admission history. Got rid of fields that can vary among institutions ( bed number... )
+medical_inpatient : create a sequence for the inpatient registration
+
+
+
+------------------------------------------------------------------------
+r120 | meanmicio | 2010-08-22 12:29:13 -0300 (dom 22 de ago de 2010) | 3 lines
+
+medical_lab : Fix typos and grammar in views
+
+
+------------------------------------------------------------------------
+r119 | meanmicio | 2010-08-21 18:33:34 -0300 (sáb 21 de ago de 2010) | 5 lines
+
+medical : Clean up obsolete files in main tree structure
+medical : Added bed field in the patient admission tree history.
+medical_invoice : initial addition of module to the main distribution 
+
+
+------------------------------------------------------------------------
+r118 | meanmicio | 2010-08-14 16:54:20 -0300 (sáb 14 de ago de 2010) | 3 lines
+
+Add PoS and functionality (Husen Daudi / Mario Puntin) with module medical_invoice
+
+
+------------------------------------------------------------------------
+r117 | meanmicio | 2010-07-30 13:18:17 -0300 (vie 30 de jul de 2010) | 2 lines
+
+Updated and fixed patient lifesytle view
+
+------------------------------------------------------------------------
+r116 | meanmicio | 2010-07-30 12:23:05 -0300 (vie 30 de jul de 2010) | 4 lines
+
+Add Spanish translations and data files (Mario Puntin)
+Updated __terp__  with the new translation files for Spanish
+
+
+------------------------------------------------------------------------
+r115 | meanmicio | 2010-07-22 17:59:26 -0300 (jue 22 de jul de 2010) | 2 lines
+
+medical_lab: Update French translation (Bona Tan)
+
+------------------------------------------------------------------------
+r114 | meanmicio | 2010-07-22 17:58:09 -0300 (jue 22 de jul de 2010) | 4 lines
+
+medical : Update French translation (Bona Tan)
+medical_lab : Update French translation (Bona Tan)
+
+
+------------------------------------------------------------------------
+r113 | meanmicio | 2010-07-18 22:17:37 -0300 (dom 18 de jul de 2010) | 2 lines
+
+Uptate version and Changelog
+
+------------------------------------------------------------------------
+r112 | meanmicio | 2010-07-18 21:39:48 -0300 (dom 18 de jul de 2010) | 4 lines
+
+medical : update terms ( admin times -> admin hours )
+medical : update default values in prescription ( quantity 0 -> 1 )
+
+
+------------------------------------------------------------------------
+r111 | meanmicio | 2010-07-18 19:56:55 -0300 (dom 18 de jul de 2010) | 4 lines
+
+medical_surgery : add access control list
+medical_lab : Improve lab test report
+
+
+------------------------------------------------------------------------
+r110 | meanmicio | 2010-07-18 18:25:52 -0300 (dom 18 de jul de 2010) | 5 lines
+
+medical_genetics: Fix access control lists
+medical_lifestyle : Fix access control lists
+medical_lab : fix bug on rml report ( duplicate </template> )
+medical_lab : standarize lab report format
+
+------------------------------------------------------------------------
+r109 | meanmicio | 2010-07-18 17:53:36 -0300 (dom 18 de jul de 2010) | 11 lines
+
+medical : add unit quantities to recipies and medication  ( Andrew Gledhill ) : Amoxicillin - Dose: 1000 mg vs Amoxicillin - Dose: 500 mg x 2 capsules
+medical : add prescription print box for the items that should be (re)printed 
+medical : add permissions to new objects
+medical : add "active" medication on the medication report 
+medical : Fix typos in terminology (Mario Puntin)
+medical : Update Spanish - Spain and Argentina - translations (Mario Puntin)
+medical_genetics : update access control
+medical_gyneco : update access control
+medical_lifestyle : fix typos
+
+
+------------------------------------------------------------------------
+r108 | meanmicio | 2010-07-17 18:43:55 -0300 (sáb 17 de jul de 2010) | 15 lines
+
+medical_genetics : delete binary pyc's
+medical_lab : delete binary pyc's
+medical : add medicament dosage frequency codes and suggested admin times object (Andrew Gledhill)
+medical : add the medication dosage field relation (standard_dosage) to the medicament template
+medical : add the suggested administration times field (admin_times) to the medicament template object
+medical : add default value "days" in medication and prescription objects, for duration period
+medical : create the medicament dosage frequency (SNOMED CT) data file
+medical : update medical view
+medical : add color to blue to active medication
+medical : add telemedicine evaluation 
+medical : change active for is_active, so we can see the whole list of medication history, differentiated by colors
+medical : add start and stop treatment dates in the prescription form
+medical : Improve prescription report
+
+
+------------------------------------------------------------------------
+r107 | meanmicio | 2010-07-16 15:04:32 -0300 (vie 16 de jul de 2010) | 2 lines
+
+Create a page for diseases. Fits better the web client
+
+------------------------------------------------------------------------
+r106 | meanmicio | 2010-07-09 07:31:09 -0300 (vie 09 de jul de 2010) | 2 lines
+
+Update Changelog for 0.0.52
+
+------------------------------------------------------------------------
+r105 | meanmicio | 2010-07-09 07:26:38 -0300 (vie 09 de jul de 2010) | 2 lines
+
+medical : Fixed prescription report
+
+------------------------------------------------------------------------
+r104 | meanmicio | 2010-07-09 06:39:54 -0300 (vie 09 de jul de 2010) | 4 lines
+
+medical : Fixed patient picture field to avoid scrolling
+medical : Added Patient critical info to demo data
+
+
+------------------------------------------------------------------------
+r103 | meanmicio | 2010-07-09 04:12:06 -0300 (vie 09 de jul de 2010) | 3 lines
+
+medical : update version and Changelog
+medical : update demo data
+
+------------------------------------------------------------------------
+r102 | meanmicio | 2010-07-09 03:51:43 -0300 (vie 09 de jul de 2010) | 6 lines
+
+medical : fix view with insurance field when left empty
+medical : set default values for medication treatment frequency and duration
+medical : updated reports to fit the page
+medical : fix typo in view
+
+
+------------------------------------------------------------------------
+r101 | meanmicio | 2010-07-09 02:30:47 -0300 (vie 09 de jul de 2010) | 16 lines
+
+medical : improve insurance view
+medical : fix prescription view
+medical : standarize insurance name field to patient id
+medical : create prescription report
+medical : make insurance number field required (at form level)
+medical : add patient address to prescription form (allows to choose from diferent addresses)
+medical : add patient insurance to prescription form (allows to choose from diferent insurances)
+medical : add insurance information to the patient form ( move it from the general menu )
+medical : Fixed duplicated syncope field in form
+medical : Improved main form navigation
+medical : Add primary care doctor field to patient
+medical : Add medicament presentation form (medical drug presentation .- tablets, gel .. )
+medical : Add doctor contact information in demo
+medical_gyneco : Hide Gynecology and obstetrics information when the patient is not a woman.
+
+
+------------------------------------------------------------------------
+r100 | meanmicio | 2010-07-05 21:35:41 -0300 (lun 05 de jul de 2010) | 2 lines
+
+medical : Fixed default values 
+
+------------------------------------------------------------------------
+r99 | meanmicio | 2010-07-05 19:30:45 -0300 (lun 05 de jul de 2010) | 18 lines
+
+medical : Change svn structure ( now all modules are within trunk, including medical)
+medical : Add prescription id on the patient medication tree
+medical : fixed patient medication report, showing the indication for the medicament.
+medical : Use pathology list instead of the patient diseases for the medication (since some of them can be prophylactic ).
+medical : Create patient medication template, to be used with prescription and treatment.
+medical : Create prescription object
+
+medical : modify from prescription_id in medication from char to many2one (prescription)
+medical : add doctor information for demo data
+
+Lifestyle : Add motorcycle rider and use of helmet
+Lifestyle : Add an indicator for patients who sleep during daytime
+Lifestyle : Make required field for Recreational Drug
+
+Socioeconomics : Use default values as "True" for different infrastructure indicators
+Socioeconomics : Fixed family APGAR view to better fit the screen
+
+
+------------------------------------------------------------------------
+r98 | meanmicio | 2010-06-20 18:57:07 -0300 (dom 20 de jun de 2010) | 2 lines
+
+Update Changelog
+
+------------------------------------------------------------------------
+r97 | meanmicio | 2010-06-20 18:35:50 -0300 (dom 20 de jun de 2010) | 17 lines
+
+- Rearrange fields on lifestyle to better fit the screen
+
+- Updated sexuality functionality
+-- Other practices ( oral, anal, active, passive, both )
+-- Prostitution
+-- Practice with sexual workers
+
+- Gynecological screening
+-- Mammography
+-- Breast self-examination
+-- Mammography last test
+-- PAP tests
+-- Papanicolau last test
+-- Colposcopy
+-- Colposcopy last exam
+
+
+------------------------------------------------------------------------
+r96 | meanmicio | 2010-06-20 16:01:45 -0300 (dom 20 de jun de 2010) | 20 lines
+
+- Create "Medical center profile" in startup, including
+-- Medical
+-- Medical_socioeconomics
+-- Medical_lifestyle
+-- Medical_lab
+-- Medical_icd10
+-- Medical_genetics
+-- Medical_gyneco
+
+- Fix reports crashes when there was no data
+-- Vaccination
+-- Medication
+-- Lab Tests
+-- Diseases
+
+- Fix Patient ID in lab test report
+
+- Fix units in lab tests (proteins , mg/dL -> g/dL )
+
+
+------------------------------------------------------------------------
+r95 | meanmicio | 2010-06-14 00:04:33 -0300 (lun 14 de jun de 2010) | 139 lines
+
+MAIN MODULE
+
+- Nutritional status
+- Head circumference (for pediatric patients)
+- Change Basic Data for Signs on the patient evaluation form
+- Add respiratory rate
+- Change "Directions" by "Plan"
+- Use medical terminology for the symptoms
+- Change "Medications" by "Medication history"
+- Highlight in red evaluations when BMI is greater than 25 or smaller than 18 (overweight or underweight)
+- Change LDL total from float to integer
+- Fix typos
+
+- Complete with the following fields to evaluation to the patient signs
+Systolic Pressure
+Diastolic Pressure
+Heart Rate
+Respiratory Rate
+Oxygen Saturation
+Malnutrition
+Dehydration
+Temperature 
+Weight 
+Height 
+Body Mass Index
+Head Circumference
+Abdominal Circumference
+Edema
+Petechiae
+Hematomas
+Cyanosis
+Acropachy
+Nystagmus
+Miosis
+Mydriasis
+Cough
+Palpebral Ptosis
+Arritmias
+Heart Murmurs
+Heart Extra Sounds
+Tremor
+Ascites
+Lung Adventitious sounds
+Bronchophony
+Increased Fremitus
+Decreased Fremitus
+Jaundice
+Breast Lump
+Breast Asymmetry
+Nipple Inversion
+Nipple Discharge
+Peau d orange
+Gynecomastia
+Hypotonia
+Hypertonia
+Pressure Ulcers
+Goiter
+Alopecia
+Xerosis
+Erithema
+
+- Add the following Symptoms
+
+Pain
+Pain intensity
+Arthralgia
+Arthralgia
+Abdominal Pain
+Cervical Pain
+Thoracic Pain
+Lumbar Pain
+Pelvic Pain
+Headache
+Odynophagia
+Sore throat
+Otalgia
+Ear Discharge
+Hoarseness
+Chest Pain
+Chest Pain on excercise only
+Orthostatic hypotension
+Astenia
+Anorexia
+Sudden weight change
+Abdominal Distension
+Hemoptisis
+Hematemesis
+Gingival bleeding
+Rinorrhea
+Epistaxis
+Nausea
+Vomiting
+Dysphagia
+Polydipsia
+Polyphagia
+Polyuria
+Nocturia
+Vesical Tenesmus
+Pollakiuiria
+Dysuria
+Stressed-out
+Pruritus
+Insomnia
+Disturbed Sleep
+Dyspnea
+Ortopnea
+Amnesia
+Paresthesia
+Syncope
+Dizziness
+Vertigo
+Tinnitus
+Blurry vision
+Eye glasses / Contact lenses
+Diploplia
+Photophobia
+Dysmenorrhea
+Amenorrhea
+Metrorrhagia
+Menorrhagia
+Vaginal discharge
+Urethral discharge
+Diarrhea
+Constipation
+Rectal Tenesmus
+Melena
+Proctorrhagia
+Xerostomia
+Sexual Dysfunction
+
+
+LIFESTYLE MODULE
+
+- Add number of sexual partners
+- Add home safety
+- Add traffic safety ( traffic laws, seat belts and child safety measures)
+- Add home safety 
+
+
+------------------------------------------------------------------------
+r94 | meanmicio | 2010-06-07 02:03:12 -0300 (lun 07 de jun de 2010) | 2 lines
+
+Update version and Changelog
+
+------------------------------------------------------------------------
+r93 | meanmicio | 2010-06-07 01:56:59 -0300 (lun 07 de jun de 2010) | 6 lines
+
+- Add new demo data for Medical main module
+- Add last name to Patient Label
+- Correct typos in view
+- Change header for reports
+
+
+------------------------------------------------------------------------
+r92 | meanmicio | 2010-06-06 23:47:03 -0300 (dom 06 de jun de 2010) | 3 lines
+
+Delete obsolete reports
+Add new reports (diseases)
+
+------------------------------------------------------------------------
+r91 | meanmicio | 2010-06-06 23:43:04 -0300 (dom 06 de jun de 2010) | 15 lines
+
+- Merge allergic information into the disease object
+- Create infectious / transmissible disease field
+- Place the disease information in the main form, so it's always visible.
+- Add a field for disease severity (including the allergies)
+- Remove comments on allergy
+- Add a short comment on the disease.
+- Remove allergy description field
+- Place vaccinations in the medication tab 
+- Make orange the infectious diseases in the disease view
+- The diseases will be shown in the following order : Active, severity, infectious, allergy, diagnosed date
+- Make default the "active" in the new disease
+- Create the patient diseases history report
+- Display the patient in "Lastname, Name" format, in main form and reports
+
+
+------------------------------------------------------------------------
+r90 | meanmicio | 2010-05-30 19:06:39 -0300 (dom 30 de may de 2010) | 21 lines
+
+- Create Patient Vaccinations report
+- Add observations field to the patient vaccinations tree view
+- Fix string in Medical directions
+- Put a label in the allergy information box
+- Fixed field in Patient allergies
+- Change Allergies widget from many2many to one2many list
+- Create the patient allergy object, holding the type of allergy and severity of the allergic reaction, and pointing to the patient disease object for the other information
+- Add is_allergy field in the patient disease object, to be used with domains in other references, such as the list of allergies in the patient.
+- Move perinatal information from the main module view to the medical_gyneco module
+- Add Pathology indication in the Medication tree view
+- Show Patient ID in the Patient form . This is the internal id of the center, not the partner identifier.
+- Change identifier to patient_id in patient tree view
+- Add heal date of a disease
+- Change diagnosis age to integer
+- Add a field to determine that a disease is at an active state
+- Sort list of patient diseases by its activity status.
+- Link medication to patient diseases instead of general pathology.
+- Added missing "course_completed" field on the medication form
+- Highlight in the form the allergies that generate severe reactions on the patient
+
+
+------------------------------------------------------------------------
+r89 | meanmicio | 2010-05-29 14:01:40 -0300 (sáb 29 de may de 2010) | 4 lines
+
+Modify the patient age with years months and days ( suffixes to make it clearer eg, 27y 1m 23d )
+Add Patient Medication history report
+
+
+------------------------------------------------------------------------
+r88 | meanmicio | 2010-05-25 21:57:47 -0300 (mar 25 de may de 2010) | 27 lines
+
+MAIN MODULE
+
+- Rename "Consciusness and Mood" page for "Mental Status" in the patient evaluation
+- Fixed the description for Verbal and Motor responses.
+- Added "Emotional State" assessment
+-- Orientation ( time and places )
+-- Memory
+-- Knowledge of current events
+-- Judgment
+-- Abstraction
+-- Vocabulary
+-- Calculation ability
+-- Object recognition
+-- Praxis
+-- Violent
+-- Mood
+
+- Add insomnia and disturbed sleep in patient symptoms
+
+
+LIFESTYLE MODULE
+
+- Add hours of sleep per day field
+- Add diet field
+- Add type of diet the patient is currently on
+
+
+------------------------------------------------------------------------
+r87 | meanmicio | 2010-05-07 16:25:01 -0300 (vie 07 de may de 2010) | 31 lines
+
+Main module :
+-------------
+
+Change vaccinations in medical.patient from many2many to one2many
+
+Change medical.vaccination :
+- name field to the patient
+- rename "name" for "vaccine" in the medical.vaccination object
+
+Added the Patient in the vaccination view
+
+Change disease in medical.patient from many2many to one2many
+
+Change medical.patient.disease
+- name field holds now patient_id
+- rename "name" to "pathology"
+
+Change field "disease" for "diseases" on medical.patient
+
+Link allergies to disease instead of pathology, and make it one2many
+
+
+Fixed typo in vaccination view
+
+Added Medical Direction class
+- created medical.direction object
+- Create the object views
+
+Link "actions" field to medical.direction in medical.patient object
+
+
+------------------------------------------------------------------------
+r86 | sherrera | 2010-05-06 18:21:15 -0300 (jue 06 de may de 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r85 | pkontaxis | 2010-05-06 07:04:41 -0300 (jue 06 de may de 2010) | 2 lines
+
+medical_gr_data upload
+
+------------------------------------------------------------------------
+r84 | meanmicio | 2010-05-04 18:05:20 -0300 (mar 04 de may de 2010) | 4 lines
+
+Remove dup field on appointment object (doctor).
+Change to required the doctor field in the appointment view.
+
+
+------------------------------------------------------------------------
+r83 | pkontaxis | 2010-05-04 15:13:40 -0300 (mar 04 de may de 2010) | 2 lines
+
+medical_gr_data folder
+
+------------------------------------------------------------------------
+r82 | pkontaxis | 2010-05-04 15:12:47 -0300 (mar 04 de may de 2010) | 2 lines
+
+medical_gr_admission upload
+
+------------------------------------------------------------------------
+r81 | pkontaxis | 2010-05-04 15:11:55 -0300 (mar 04 de may de 2010) | 2 lines
+
+medical_gr_admission folder
+
+------------------------------------------------------------------------
+r80 | pkontaxis | 2010-05-04 15:10:54 -0300 (mar 04 de may de 2010) | 2 lines
+
+medical_gr_ped upload
+
+------------------------------------------------------------------------
+r79 | pkontaxis | 2010-05-04 15:08:27 -0300 (mar 04 de may de 2010) | 2 lines
+
+medical_gr_ped
+
+------------------------------------------------------------------------
+r78 | pkontaxis | 2010-05-04 15:06:17 -0300 (mar 04 de may de 2010) | 2 lines
+
+medical_gr upload
+
+------------------------------------------------------------------------
+r77 | pkontaxis | 2010-05-04 15:04:26 -0300 (mar 04 de may de 2010) | 2 lines
+
+medical_gr folder
+
+------------------------------------------------------------------------
+r76 | pkontaxis | 2010-05-04 15:03:26 -0300 (mar 04 de may de 2010) | 2 lines
+
+Delete medical_gr in order to re-import
+
+------------------------------------------------------------------------
+r75 | pkontaxis | 2010-04-26 13:53:22 -0300 (lun 26 de abr de 2010) | 2 lines
+
+Initial upload
+
+------------------------------------------------------------------------
+r74 | meanmicio | 2010-04-26 02:37:06 -0300 (lun 26 de abr de 2010) | 3 lines
+
+Add medical_lab/data/medical_lab_sequences.xml to the SVN repository
+
+
+------------------------------------------------------------------------
+r73 | meanmicio | 2010-04-26 02:13:23 -0300 (lun 26 de abr de 2010) | 28 lines
+
+- Fixed indentation problem and added missing function in merging medical_reports
+- Added reports from Husen Daudi's medical_reports
+
+- Moved medical_lab_sequence from medical_lab root dir to data/medical_lab_sequences.xml
+
+- Fixed medical_lab report addressing in medical_lab_report.xml
+
+- Fixed patient form. Medication list was not being saved. Commented the search and _get_default_dr methods that were causing the problem.
+
+- Removed "medications" field from the evaluation object (it was deprecated)
+
+- Renamed "Test Name" to "Test Type" in medical_lab module ( request draft test form ).
+
+- Change Patient Medication Schema
+
+		'name' : fields.many2one ('medical.patient','Patient ID', readonly=True),
+		'medicament' : fields.many2one ('medical.medicament','Medicament',help="Prescribed Medicament"),
+		
+ This will allow to make prescriptions separately from the patient form (name now points to the patient ).
+
+- Removed patient wizards from medical core module until v. > 0.0.50
+
+TODO:
+
+- Work on  wizards and reports
+- Add hours of sleep and diets in lifestyle
+
+
+------------------------------------------------------------------------
+r72 | meanmicio | 2010-04-25 16:15:26 -0300 (dom 25 de abr de 2010) | 5 lines
+
+Merge into the main module Husen Daudi's extra functionality for the appointment and medications (from medical_report module )
+
+Fixed medical_lab report addressing in medical_lab_report.xml
+
+
+------------------------------------------------------------------------
+r71 | meanmicio | 2010-04-25 15:00:25 -0300 (dom 25 de abr de 2010) | 24 lines
+
+Add some important symptoms to the evaluation form. 
+The rest of the questionaire (disease history and medications ) should go on the appropiate segment.
+
+symptom_dyspnea
+symptom_thirst
+symptom_hunger
+symptom_urination
+symptom_chest_pain
+symptom_chest_pain_excercise
+symptom_stress
+symptom_weight_change
+symptom_bruise
+symptom_fatigue 
+symptom_dyspnea
+symptom_swollen_limbs
+symptom_headache
+symptom_memory_loss
+symptom_fainting 
+symptom_blurry_vision
+symptom_mood_swings
+
+Added hours_sleep and diet in lifestyle
+
+
+------------------------------------------------------------------------
+r70 | meanmicio | 2010-04-24 22:25:17 -0300 (sáb 24 de abr de 2010) | 18 lines
+
+Renamed object "medical.test" to "medical.test_type"
+
+Create access rules for the following objects :
+
+medical.drugs_recreational 
+medical.occupation
+medical.hospital.building
+medical.hospital.unit
+medical.hospital.ward
+medical.hospital.bed
+medical.patient.admission
+medical.test_type
+medical.lab
+medical.lab.test.units
+medical_test.critearea
+medical.patient.lab.test
+
+
+------------------------------------------------------------------------
+r69 | meanmicio | 2010-04-24 15:41:12 -0300 (sáb 24 de abr de 2010) | 3 lines
+
+Fixed typos in lab test units (mg/dl)
+
+
+------------------------------------------------------------------------
+r68 | meanmicio | 2010-04-24 15:27:45 -0300 (sáb 24 de abr de 2010) | 6 lines
+
+- Use patient ID (name) in the lab test
+- Use the generic form for Lab. 
+- Remove the hemogram or hepatogram forms in favor of the generic form that include different test types (thanks Husen Daudi ! )
+- Create the data dir on medical_lab, moving lab_test_data on it.
+
+
+------------------------------------------------------------------------
+r67 | meanmicio | 2010-04-23 21:41:48 -0300 (vie 23 de abr de 2010) | 5 lines
+
+Create medical_lab module
+Start merging laboratory objects and functionality from medical main module and from medical_reports (this last one from Husen Daudi - OpenERP) into medical_lab
+
+
+
+------------------------------------------------------------------------
+r66 | meanmicio | 2010-04-23 20:00:50 -0300 (vie 23 de abr de 2010) | 3 lines
+
+Fixed broken / orphan menu on genetics
+
+
+------------------------------------------------------------------------
+r65 | meanmicio | 2010-04-23 15:20:07 -0300 (vie 23 de abr de 2010) | 12 lines
+
+Include spanish translations for the following modules :
+
+medical_genetics
+medical_gyneco
+medical_icd10pcs (only module description)
+medical_icd10 (only module description. The terms are already translated on the data file - xml - in the module medical_icd10)
+medical_socioeconomics
+medical_surgery
+medical_lifestyle
+
+
+
+------------------------------------------------------------------------
+r64 | meanmicio | 2010-04-18 18:35:03 -0300 (dom 18 de abr de 2010) | 16 lines
+
+* Create medical_socioeconomics module
+- Move coding, views and data from main module to medical_socioeconomics
+
+
+* Create medical_lifestyle module
+- Move coding, views and data from main module to medical_lifestyle
+- Move sexuality to medical_lifestyle
+
+* Create medical_gyneco module, with the following functionality
+- Gynecological Information
+- Obstetric information
+- Perinatal Information
+- Puerperium
+
+
+
+------------------------------------------------------------------------
+r63 | meanmicio | 2010-04-17 20:45:09 -0300 (sáb 17 de abr de 2010) | 5 lines
+
+Created medical_genetics module
+- Moved code, menus and views from main module to medical_genetics
+
+
+
+------------------------------------------------------------------------
+r62 | meanmicio | 2010-04-17 17:21:17 -0300 (sáb 17 de abr de 2010) | 5 lines
+
+Remove files icd_10_pcs_2009* from the medical_surgery files.
+
+The ICD-10PCS data files reside on the medical_icd10pcs module
+
+
+------------------------------------------------------------------------
+r61 | meanmicio | 2010-04-17 17:10:35 -0300 (sáb 17 de abr de 2010) | 19 lines
+
+Initial "Modularization" process. 
+
+- Create the medical_icd10 module
+- Create the medical_icd10pcs module (procedure codes)
+- Pathology and Pathology_category classes remain in main module
+- Passed the functionality from the main module to medical_icd10
+- Made pathology class generic (now it should hold any standard)
+- Moved data/ related files to the medical_icd10 module
+- Cleaned up main module 
+- Removed old update data from the main __terp__ and passed it to the specific modules
+
+
+- Medical Surgery Module
+--- Move the surgery field (on the medical_patient class ) from the main module to the surgery module.
+
+
+
+
+
+------------------------------------------------------------------------
+r60 | pkontaxis | 2010-04-16 10:49:59 -0300 (vie 16 de abr de 2010) | 2 lines
+
+Create Folder
+
+------------------------------------------------------------------------
+r59 | meanmicio | 2010-03-31 04:12:06 -0300 (mié 31 de mar de 2010) | 2 lines
+
+Update Frech translation ( Eric Vernichon )
+
+------------------------------------------------------------------------
+r58 | meanmicio | 2010-03-28 17:52:19 -0300 (dom 28 de mar de 2010) | 2 lines
+
+Updated dutch translation (Mark van Deursen)
+
+------------------------------------------------------------------------
+r57 | meanmicio | 2010-03-28 14:10:13 -0300 (dom 28 de mar de 2010) | 2 lines
+
+Update Changelog
+
+------------------------------------------------------------------------
+r56 | meanmicio | 2010-03-28 14:03:07 -0300 (dom 28 de mar de 2010) | 2 lines
+
+Fixed admission and ward objects
+
+------------------------------------------------------------------------
+r55 | meanmicio | 2010-03-27 20:12:22 -0300 (sáb 27 de mar de 2010) | 9 lines
+
+Added :
+- Patient Admission
+- Inpatient
+- Outpatient
+- Hospital buildings
+- Wards
+- Beds
+
+
+------------------------------------------------------------------------
+r54 | meanmicio | 2009-12-12 19:46:55 -0300 (sáb 12 de dic de 2009) | 6 lines
+
+
+- Added Patient Admission and Discharge information
+
+- Added Hospital Building / Units and Rooms configuration
+
+
+------------------------------------------------------------------------
+r53 | husen_daudi | 2009-12-12 07:45:50 -0300 (sáb 12 de dic de 2009) | 1 line
+
+Added dosage label sxw and improved alert message
+------------------------------------------------------------------------
+r52 | meanmicio | 2009-12-10 20:57:20 -0300 (jue 10 de dic de 2009) | 2 lines
+
+Spanish version update for medical_reports module
+
+------------------------------------------------------------------------
+r51 | meanmicio | 2009-12-10 18:46:13 -0300 (jue 10 de dic de 2009) | 4 lines
+
+- Added date for questionnaire (medical history questionnaire)
+- Modified the view so the medical history questionnaire fits in a single tab
+
+
+------------------------------------------------------------------------
+r50 | meanmicio | 2009-12-10 15:18:14 -0300 (jue 10 de dic de 2009) | 4 lines
+
+- Added Duration of the treatment (Andrew Gledhill)
+- Added comments / tooltips  on prescription fields
+
+
+------------------------------------------------------------------------
+r49 | husen_daudi | 2009-12-10 07:12:44 -0300 (jue 10 de dic de 2009) | 1 line
+
+Added Lab test reports data and related service products
+------------------------------------------------------------------------
+r48 | husen_daudi | 2009-12-10 03:31:59 -0300 (jue 10 de dic de 2009) | 1 line
+
+Improved view for better translation
+------------------------------------------------------------------------
+r47 | meanmicio | 2009-12-09 17:28:46 -0300 (mié 09 de dic de 2009) | 2 lines
+
+Use the english data as default on __terp__.py instead of the spanish
+
+------------------------------------------------------------------------
+r46 | meanmicio | 2009-12-09 17:27:13 -0300 (mié 09 de dic de 2009) | 3 lines
+
+Added Spanish translations
+Fixed some typos
+
+------------------------------------------------------------------------
+r45 | husen_daudi | 2009-12-09 16:34:22 -0300 (mié 09 de dic de 2009) | 1 line
+
+Added Access Rights for pathologist and link on patient form to open all patient's test reports
+------------------------------------------------------------------------
+r44 | husen_daudi | 2009-12-08 13:57:05 -0300 (mar 08 de dic de 2009) | 1 line
+
+Fix small problem
+------------------------------------------------------------------------
+r43 | husen_daudi | 2009-12-08 07:55:57 -0300 (mar 08 de dic de 2009) | 1 line
+
+medical_reports module to add some reports and enhancements
+------------------------------------------------------------------------
+r42 | husen_daudi | 2009-11-25 04:00:57 -0300 (mié 25 de nov de 2009) | 1 line
+
+Code improvement for better understanding
+------------------------------------------------------------------------
+r41 | meanmicio | 2009-11-24 10:48:37 -0300 (mar 24 de nov de 2009) | 4 lines
+
+Improvents on English terms ( Husen Dausi )
+Change medication from many2many to one2many ( Husen Dausi )
+
+
+------------------------------------------------------------------------
+r40 | meanmicio | 2009-11-07 02:48:34 -0300 (sáb 07 de nov de 2009) | 3 lines
+
+Added Dutch Translation .- Mark van Deursen
+
+
+------------------------------------------------------------------------
+r39 | meanmicio | 2009-10-12 23:40:46 -0300 (lun 12 de oct de 2009) | 2 lines
+
+Updated Changelog
+
+------------------------------------------------------------------------
+r38 | meanmicio | 2009-10-12 23:35:46 -0300 (lun 12 de oct de 2009) | 2 lines
+
+Added HL7 drug administration routes xml file
+
+------------------------------------------------------------------------
+r37 | meanmicio | 2009-10-12 23:34:49 -0300 (lun 12 de oct de 2009) | 11 lines
+
+- Added "when required" in the dosage frequency ( Andrew Gledhill)
+
+- Changed the drug administration route to HL7 ( Andrew Gledhill )
+
+- Added medical.drug.route object to hold the 47 HL5 administration routes
+
+- Added autocompletion in drug administration route field 
+
+- Make translatable the HL7 list for administration list.
+
+
+------------------------------------------------------------------------
+r36 | meanmicio | 2009-10-12 20:56:59 -0300 (lun 12 de oct de 2009) | 2 lines
+
+Fixed ethnic groups in spanish
+
+------------------------------------------------------------------------
+r35 | meanmicio | 2009-10-12 20:53:25 -0300 (lun 12 de oct de 2009) | 2 lines
+
+Updated Changelog
+
+------------------------------------------------------------------------
+r34 | meanmicio | 2009-10-12 19:20:59 -0300 (lun 12 de oct de 2009) | 2 lines
+
+Added initial list of occupations
+
+------------------------------------------------------------------------
+r33 | meanmicio | 2009-10-09 01:18:09 -0300 (vie 09 de oct de 2009) | 8 lines
+
+Update spanish terms in :
+
+- Medicaments
+- Medicines (product)
+- Medicines (product) categories
+- Ethnic groups
+ 
+
+------------------------------------------------------------------------
+r32 | meanmicio | 2009-10-06 23:48:50 -0300 (mar 06 de oct de 2009) | 2 lines
+
+Update Changelog and version
+
+------------------------------------------------------------------------
+r31 | meanmicio | 2009-10-06 23:43:15 -0300 (mar 06 de oct de 2009) | 10 lines
+
+- Fix Family assignment in patient form: Now it does not allow to assign an arbitrary family to the patient. The patient must exist as a family member or it won't show it on the form.
+It checks before the family who belongs the patient, no matter what the operator puts.
+
+- Added the list of essential WHO medicaments, based on the essential products. Filled in the active component
+
+- Created a new category called "Generic" within medicaments. Theses are used to make generic prescriptions, without an specific brand. Specific brands medicaments will go in another category.
+
+- Change de XML IDs on products from a number to "product_"[ID] notation.
+
+
+------------------------------------------------------------------------
+r30 | meanmicio | 2009-10-06 11:35:50 -0300 (mar 06 de oct de 2009) | 5 lines
+
+Created initial security model and group for medical (Mark Höller)
+Added German ICD-10 codes (Mark Höller)
+Added German ICMP OPS codes (Mark Höller)
+
+
+------------------------------------------------------------------------
+r29 | meanmicio | 2009-10-04 19:14:20 -0300 (dom 04 de oct de 2009) | 2 lines
+
+Make a required field the surgery description
+
+------------------------------------------------------------------------
+r28 | browerbr | 2009-10-04 16:11:21 -0300 (dom 04 de oct de 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r27 | meanmicio | 2009-10-03 21:14:18 -0300 (sáb 03 de oct de 2009) | 5 lines
+
+- Created medicament and vaccine product categories
+- Change to required name fields on medicament and vaccines
+- Added WHO list of essential medicines (Andrew Gledhill)
+
+
+------------------------------------------------------------------------
+r26 | meanmicio | 2009-10-03 18:09:05 -0300 (sáb 03 de oct de 2009) | 2 lines
+
+Initial Portuguese (Brazilian) translation . Dalton Hard / Bogdan Czaplinski
+
+------------------------------------------------------------------------
+r25 | meanmicio | 2009-10-01 09:49:17 -0300 (jue 01 de oct de 2009) | 4 lines
+
+Removed default left tab position on patient view, since it crashed on MS Windows GTK.
+Don't change it either on the client preferences, since it will have the same behaviour.
+
+
+------------------------------------------------------------------------
+r24 | meanmicio | 2009-09-28 11:25:31 -0300 (lun 28 de sep de 2009) | 3 lines
+
+Updated Changelog and version
+
+
+------------------------------------------------------------------------
+r23 | meanmicio | 2009-09-25 20:01:59 -0300 (vie 25 de sep de 2009) | 6 lines
+
+- Updated French translation (Steven Gay)
+- Updated German translation (Thomas Karopka)
+- Fixed some typos in English
+
+
+
+------------------------------------------------------------------------
+r22 | meanmicio | 2009-09-21 22:46:25 -0300 (lun 21 de sep de 2009) | 2 lines
+
+Improved Views (patient / Perinatal / Newborn ) to better fit the smaller screens
+
+------------------------------------------------------------------------
+r21 | meanmicio | 2009-09-19 22:17:02 -0300 (sáb 19 de sep de 2009) | 7 lines
+
+
+- Change disease for congenital_diseases in newborn class and view
+- Fixed es_AR translation
+- Fixed meconium field on newborn (integer -> boolean) and added to the view
+- Make several fields required on the views
+
+
+------------------------------------------------------------------------
+r20 | meanmicio | 2009-09-19 18:20:13 -0300 (sáb 19 de sep de 2009) | 4 lines
+
+- Copy es_AR to es_ES
+- Fixed CIE-10 translation
+
+
+------------------------------------------------------------------------
+r19 | meanmicio | 2009-09-19 18:04:12 -0300 (sáb 19 de sep de 2009) | 5 lines
+
+- Fixed es_AR / es_ES translation in Socioeconomics
+- Change default disease coding to ICD-10 (in English)
+
+
+
+------------------------------------------------------------------------
+r18 | meanmicio | 2009-09-19 17:55:06 -0300 (sáb 19 de sep de 2009) | 6 lines
+
+
+- Added CIE-10 (ICD-10 in spanish)
+
+- Fixed ICD-10 category group R30-R39
+
+
+------------------------------------------------------------------------
+r17 | meanmicio | 2009-09-14 01:59:34 -0300 (lun 14 de sep de 2009) | 26 lines
+
+- Add the following fields to medication object ( Andrew Gledhill )
+		'prescription_id'
+		'dose' 
+		'dose_unit' 
+		'frequency' 
+		'review' 
+		'indication' - > Associated to ICD-10
+		'quantity' 
+		'refills' 
+		'allow_substitution' 
+
+
+- Added Dosage units object and initial load
+
+- Create view and menu (in configuration -> Misc ) for dosage units
+
+- Remove the medicament entry and the prescription field from the evaluation form. All is now managed in the medications tab.
+
+- Modify main form. Notes are in the main screen and not in a tab. Easier to identify patient's key issues.
+
+- Add Allergies field in patient's object, with ICD-10 code and notes. The patient's allergies are on top of the Medication / prescription form to minimize errors when prescribing medicaments.
+
+- Updated spanish translation and correct some translations items.
+
+
+
+------------------------------------------------------------------------
+r16 | meanmicio | 2009-09-12 19:29:00 -0300 (sáb 12 de sep de 2009) | 2 lines
+
+Updated Changelog
+
+------------------------------------------------------------------------
+r15 | meanmicio | 2009-09-12 19:10:14 -0300 (sáb 12 de sep de 2009) | 3 lines
+
+Updated Spanish translation
+
+
+------------------------------------------------------------------------
+r14 | meanmicio | 2009-09-12 18:00:32 -0300 (sáb 12 de sep de 2009) | 12 lines
+
+- change sencond-hand smoker for "passive smoker"
+
+- Link patient's evaluation dates to the appointment calendar object.
+
+- Create Appointment sequence
+- Assign appointment sequence to appointment object (name).
+
+- sort appointment descending order by date
+
+- Adapt searchable fields and required field in different objects.
+
+
+------------------------------------------------------------------------
+r13 | meanmicio | 2009-09-12 12:48:09 -0300 (sáb 12 de sep de 2009) | 10 lines
+
+- Fix medication field on newborn. Put it on table newborn_medication_rel instead of patient_labor_rel
+
+- Added patient_medication class. Make a difference between medicament (drug) and medication (treatment). On the medication tab of the patient is all the medication confirmed by the doctor that the patient has taken from the prescriptions. Start date, on course, discontinuation, reasons, observed side effects....
+--> Many thanks to Andrew Gledhill for providing the model.
+
+
+- In the patient chart, changed medicaments for medications (both at object / field and at view level ). So medicaments_ids becomes medications.
+
+
+
+------------------------------------------------------------------------
+r12 | meanmicio | 2009-09-08 13:50:59 -0300 (mar 08 de sep de 2009) | 2 lines
+
+Activate xml load update.
+
+------------------------------------------------------------------------
+r11 | meanmicio | 2009-09-08 13:49:19 -0300 (mar 08 de sep de 2009) | 4 lines
+
+- Gravida : Include GPA (Gravida / Para / Abortus ) in gynecological information
+- Fix typos in forms 
+- Fix typo in field name (frequency)
+
+------------------------------------------------------------------------
+r10 | meanmicio | 2009-09-07 08:20:47 -0300 (lun 07 de sep de 2009) | 4 lines
+
+- Fixed typos and grammatical errors. (Steven Gay)
+- Changed "Cell" for "Corpuscular" in MCV and MCH (Steven Gay)
+ 
+
+------------------------------------------------------------------------
+r9 | meanmicio | 2009-09-06 14:17:33 -0300 (dom 06 de sep de 2009) | 4 lines
+
+- Automatic family assignment to the patient. If the patient is member of a family, it will be automatically filled in the patient's chart.
+- Family management is now on the Patient Menu
+
+
+------------------------------------------------------------------------
+r8 | meanmicio | 2009-09-05 12:43:45 -0300 (sáb 05 de sep de 2009) | 5 lines
+
+Splitted ICD-10-PCS into three files to minimize memory consumption.
+Now Medical can be run in less than 300 MB, being able to run in severs with little resources ( 512 MB )
+The original xml file for Procedures remains on the distribution, but is not active.
+
+
+------------------------------------------------------------------------
+r7 | meanmicio | 2009-08-26 20:42:54 -0300 (mié 26 de ago de 2009) | 4 lines
+
+- Change Newborn cod to pathology instead of patient.disease
+- Update Spanish translation (Julieta Catalano)
+
+
+------------------------------------------------------------------------
+r6 | meanmicio | 2009-08-26 17:03:28 -0300 (mié 26 de ago de 2009) | 2 lines
+
+Added initial French translation (Eric Vernichon)
+
+------------------------------------------------------------------------
+r5 | meanmicio | 2009-08-23 13:45:29 -0300 (dom 23 de ago de 2009) | 4 lines
+
+- Added over 4200 genes associated to diseases ("disease genes"). Many thanks to NCBI (http://www.ncbi.nlm.nih.gov ) and Genecards (www.genecards.org). We excluded the genes that didn't have an specific chromosome / Locus
+- Change the id for the doctor name in the physician object.
+ 
+
+------------------------------------------------------------------------
+r4 | meanmicio | 2009-08-22 05:03:17 -0300 (sáb 22 de ago de 2009) | 2 lines
+
+Added menu for genetic risks
+
+------------------------------------------------------------------------
+r3 | meanmicio | 2009-08-18 15:23:15 -0300 (mar 18 de ago de 2009) | 4 lines
+
+- Change version # to 0.0.35
+- Added data/genetic_risks.xml sample
+
+
+------------------------------------------------------------------------
+r2 | meanmicio | 2009-08-18 15:18:18 -0300 (mar 18 de ago de 2009) | 16 lines
+
+- New section on Genetic / Hereditary Risks, family history and vertical transmission (standards from NCBI - http://www.ncbi.nlm.nih.gov/ )
+- Added Perinatal information
+- Added Neonatal information
+- Added Puerperium information
+- Change Gynecological / Obstetric view
+- Added central form for patient diseases. Object enhanced with extra information.
+- Add age of contracting an illness (both age and week of pregnancy ) in the pathology
+- Add Triacylglicerol info.
+- Centralize all patient's diseases in a single object and view. Genetics, Chronic, Allergies, Infancy, Psychiatry and Gynecological diseases have bee
+n included in a single form and there is not a specific object for them now.
+- Change to integer LDL, TAGS, HDL, systolic and Dyastolic pressures
+- Added date and cause of death in the patient form
+- Change date of death from date to datetime
+
+
+
+------------------------------------------------------------------------
+r1 | lfm | 2009-08-13 18:50:33 -0300 (jue 13 de ago de 2009) | 1 line
+
+Initial import
+------------------------------------------------------------------------

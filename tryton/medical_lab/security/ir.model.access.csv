@@ -1,0 +1,8 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_medical_lab","medical.lab","model_medical_lab","medical.group_medical_user",1,1,1,1
+"access_medical_lab_test_units","medical.lab.test.units","model_medical_lab_test_units","medical.group_medical_user",1,1,1,1
+"access_medical_test_critearea","medical_test.critearea","model_medical_test_critearea","medical.group_medical_user",1,1,1,1
+"access_medical_test_type","medical.test_type","model_medical_test_type","medical.group_medical_user",1,1,1,1
+"access_medical_patient_lab_test","medical.patient.lab.test","model_medical_patient_lab_test","medical.group_medical_user",1,1,1,1
+
+
