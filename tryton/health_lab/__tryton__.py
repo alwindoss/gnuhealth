@@ -26,7 +26,6 @@ Módulo con la funcionalidad de laboratorio.
 ''',
 
     'xml': [
-        #'security/ir.model.access.csv',
         'health_lab_view.xml',
         'health_lab_report.xml',
         'data/health_lab_sequences.xml',

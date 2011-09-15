@@ -1,8 +1,0 @@
-"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
-"access_gnuhealth_lab","gnuhealth.lab","model_gnuhealth_lab","gnuhealth.group_gnuhealth_user",1,1,1,1
-"access_gnuhealth_lab_test_units","gnuhealth.lab.test.units","model_gnuhealth_lab_test_units","gnuhealth.group_gnuhealth_user",1,1,1,1
-"access_gnuhealth_test_critearea","gnuhealth_test.critearea","model_gnuhealth_test_critearea","gnuhealth.group_gnuhealth_user",1,1,1,1
-"access_gnuhealth_test_type","gnuhealth.test_type","model_gnuhealth_test_type","gnuhealth.group_gnuhealth_user",1,1,1,1
-"access_gnuhealth_patient_lab_test","gnuhealth.patient.lab.test","model_gnuhealth_patient_lab_test","gnuhealth.group_gnuhealth_user",1,1,1,1
-
-
