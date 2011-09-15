@@ -6,7 +6,7 @@
 	'author' : 'GNU Solidario',
 	'email' : 'health@gnusolidario.org',
 	'website' : "http://health.gnu.org",
-	'depends' : ['ir','product'],    
+    'depends' : ['ir', 'res', 'product', 'party'],
     'name_es_ES': 'GNU Health : Sistema Libre de Gestión Hospitalaria y de Salud',
     'translation': ['es_ES.csv'],
 
