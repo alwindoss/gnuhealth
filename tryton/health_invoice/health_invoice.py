@@ -20,7 +20,6 @@
 ##############################################################################
 
 from datetime import datetime
-from mx import DateTime
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
         PYSONEncoder
