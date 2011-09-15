@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from datetime import datetime
 from trytond.transaction import Transaction
 from trytond.modules.company import CompanyReport
 
