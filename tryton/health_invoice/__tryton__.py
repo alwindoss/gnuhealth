@@ -28,6 +28,7 @@
         'health',
         'health_lab',
         'account_invoice',
+        'party',
     ],
     'xml': [
         'health_invoice_view.xml',
