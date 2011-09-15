@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data skiptest="True">
+
+        <record model="gnuhealth.drug.route" id="route_1">
+            <field name="name">Dùng bên ngoài</field>
+            <field name="code">AP</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_2">
+            <field name="name">(Thuộc) Má, miệng</field>
+            <field name="code">B</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_3">
+            <field name="name">Răng </field>
+            <field name="code">DT</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_4">
+            <field name="name">Gây tê ngoài màng cứng </field>
+            <field name="code">EP</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_5">
+            <field name="name">Ống nội khí quản</field>
+            <field name="code">ET</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_6">
+            <field name="name">Ống mở thông dạ dày</field>
+            <field name="code">GTT</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_7">
+            <field name="name">GU Irrigant </field>
+            <field name="code">GU</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_8">
+            <field name="name">Ngâm bộ phận cơ thể </field>
+            <field name="code">IMR</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_9">
+            <field name="name">Nội động mạch </field>
+            <field name="code">IA</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_10">
+            <field name="name">Nội bìu, túi </field>
+            <field name="code">IB</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_11">
+            <field name="name">Nội tim </field>
+            <field name="code">IC</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_12">
+            <field name="name">Trong cổ tử cung (tử cung) </field>
+            <field name="code">ICV</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_13">
+            <field name="name">Nội bì </field>
+            <field name="code">ID</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_14">
+            <field name="name">Hít vào </field>
+            <field name="code">IH</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_15">
+            <field name="name">Động mạch trong gan </field>
+            <field name="code">IHA</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_16">
+            <field name="name">Trong cơ </field>
+            <field name="code">IM</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_17">
+            <field name="name">Trong mũi </field>
+            <field name="code">IN</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_18">
+            <field name="name">Trong mắt </field>
+            <field name="code">IO</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_19">
+            <field name="name">Trong màng bụng </field>
+            <field name="code">IP</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_20">
+            <field name="name">Trong bao hoạt dịch </field>
+            <field name="code">IS</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_21">
+            <field name="name">Nội tủy mạc </field>
+            <field name="code">IT</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_22">
+            <field name="name">Trong tử cung </field>
+            <field name="code">IU</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_23">
+            <field name="name">Trong tĩnh mạch </field>
+            <field name="code">IV</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_24">
+            <field name="name">Miệng/Họng </field>
+            <field name="code">MTH</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_25">
+            <field name="name">Niêm mạc</field>
+            <field name="code">MM</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_26">
+            <field name="name">Mũi</field>
+            <field name="code">NS</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_27">
+            <field name="name">Thông dạ dày qua đường mũi</field>
+            <field name="code">NG</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_28">
+            <field name="name">Ngạnh mũi</field>
+            <field name="code">NP</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_29">
+            <field name="name">Nasotrachial Tube</field>
+            <field name="code">NT</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_30">
+            <field name="name">Mắt</field>
+            <field name="code">OP</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_31">
+            <field name="name">Tai</field>
+            <field name="code">OT</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_32">
+            <field name="name">Khác/Linh tinh</field>
+            <field name="code">OTH</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_33">
+            <field name="name">Truyền dịch</field>
+            <field name="code">PF</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_34">
+            <field name="name">Uống</field>
+            <field name="code">PO</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_35">
+            <field name="name">Trực tràng</field>
+            <field name="code">PR</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_36">
+            <field name="name">Mặt nạ hỗ trợ thở</field>
+            <field name="code">RM</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_37">
+            <field name="name">Băng ngâm</field>
+            <field name="code">SD</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_38">
+            <field name="name">Dưới da</field>
+            <field name="code">SC</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_39">
+            <field name="name">Dưới lưỡi</field>
+            <field name="code">SL</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_40">
+            <field name="name">Khu trú</field>
+            <field name="code">TP</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_41">
+            <field name="name">(Thủ thuật) mở thông khí quản</field>
+            <field name="code">TRA</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_42">
+            <field name="name">Dùng thuốc ngoài da</field>
+            <field name="code">TD</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_43">
+            <field name="name">Qua lưỡi</field>
+            <field name="code">TL</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_44">
+            <field name="name">Niệu đạo</field>
+            <field name="code">UR</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_45">
+            <field name="name">Âm đạo</field>
+            <field name="code">VG</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_46">
+            <field name="name">Ventimask</field>
+            <field name="code">VM</field>
+        </record>
+        <record model="gnuhealth.drug.route" id="route_47">
+            <field name="name">Vết thương</field>
+            <field name="code">WND</field>
+        </record>
+
+    </data>
+</tryton>

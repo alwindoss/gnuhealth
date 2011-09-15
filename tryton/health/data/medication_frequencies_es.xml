@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data skiptest="True" noupdate="1">
+
+        <record model="gnuhealth.medication.dosage" id="229797004">
+            <field name="name">1 vez por día</field>
+            <field name="code">229797004</field>
+            <field name="abbreviation">od</field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="307472001">
+            <field name="name">1 vez por día por la mañana</field>
+            <field name="code">307472001</field>
+            <field name="abbreviation">om</field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="396147000">
+            <field name="name">1 vez por día por la noche</field>
+            <field name="code">396147000</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="396142006">
+            <field name="name">1 vez por día al acostarse</field>
+            <field name="code">396142006</field>
+            <field name="abbreviation">on</field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="229799001">
+            <field name="name">2 veces por día</field>
+            <field name="code">229799001</field>
+            <field name="abbreviation">bd</field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="229798009">
+            <field name="name">3 veces por día</field>
+            <field name="code">229798009</field>
+            <field name="abbreviation">tds</field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="396145008">
+            <field name="name">3 veces por día, antes de las cómidas</field>
+            <field name="code">396145008</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="396146009">
+            <field name="name">3 veces por día, con las comidas</field>
+            <field name="code">396146009</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="307439001">
+            <field name="name">4 veces por día</field>
+            <field name="code">307439001</field>
+            <field name="abbreviation">qds</field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="225750008">
+            <field name="name">cada 2 horas</field>
+            <field name="code">225750008</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="225756002">
+            <field name="name">cada 4 horas</field>
+            <field name="code">225756002</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="307468000">
+            <field name="name">cada 6 horas</field>
+            <field name="code">307468000</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="307469008">
+            <field name="name">cada 8 horas</field>
+            <field name="code">307469008</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="307470009">
+            <field name="name">cada 12 horas</field>
+            <field name="code">307470009</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="225760004">
+            <field name="name">día por medio</field>
+            <field name="code">225760004</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="225769003">
+            <field name="name">1 vez por semana</field>
+            <field name="code">225769003</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="20050000">
+            <field name="name">cada dos semanas</field>
+            <field name="code">20050000</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="307476003">
+            <field name="name">cada 28 días</field>
+            <field name="code">307476003</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="307475004">
+            <field name="name">cada mes</field>
+            <field name="code">307475004</field>
+            <field name="abbreviation"></field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="420449005">
+            <field name="name">según sea necesario</field>
+            <field name="code">420449005</field>
+            <field name="abbreviation">prn</field>
+        </record>
+        <record model="gnuhealth.medication.dosage" id="422114001">
+            <field name="name">1 vez</field>
+            <field name="code">422114001</field>
+            <field name="abbreviation">stat</field>
+        </record>
+
+    </data>
+</tryton>

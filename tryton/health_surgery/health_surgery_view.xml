@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+
+<!-- Surgery -->
+
+        <record model="ir.ui.view" id="gnuhealth_surgery_view">
+            <field name="model">gnuhealth.surgery</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Surgery">
+
+                    <label name="code"/>
+                    <field name="code"/>
+                    <label name="description"/>
+                    <field name="description"/>
+                    <newline/>
+                    <label name="pathology"/>
+                    <field name="pathology"/>
+                    <label name="classification"/>
+                    <field name="classification"/>
+                    <newline/>
+                    <label name="date"/>
+                    <field name="date"/>
+                    <label name="age"/>
+                    <field name="age"/>
+                    <newline/>
+                    <separator id="surgery_separator_1" colspan="4"/>
+                    <field name="procedures" colspan="4"/>
+                    <newline/>
+                    <group colspan="4" col="6" id="group_surgery_1">
+                        <label name="surgeon"/>
+                        <field name="surgeon"/>
+                        <label name="anesthetist"/>
+                        <field name="anesthetist"/>
+                        <label name="operating_room"/>
+                        <field name="operating_room"/>
+                    </group>
+                    <newline/>
+
+                    <group string="Surgical Safety Checklist" id="group_surgery_mallampati" colspan="4" col="10">
+                        <label name="preop_mallampati"/>
+                        <field name="preop_mallampati"/>
+                        <newline/>
+                        <label name="preop_bleeding_risk"/>
+                        <field name="preop_bleeding_risk"/>
+                        <label name="preop_oximeter"/>
+                        <field name="preop_oximeter"/>
+                        <label name="preop_site_marking"/>
+                        <field name="preop_site_marking"/>
+                        <label name="preop_antibiotics"/>
+                        <field name="preop_antibiotics"/>
+                        <label name="preop_sterility"/>
+                        <field name="preop_sterility"/>
+                    </group>
+
+                    <newline/>
+                    <separator string="Details" id="separator_surgery_details" colspan="4"/>                    
+                    <field name="extra_info" colspan='4'/>
+
+                </form>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_surgery_tree">
+            <field name="model">gnuhealth.surgery</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string='Surgery'>
+                    <field name="description"/>
+                    <field name="pathology"/>
+                    <field name="classification"/>
+                    <field name="date"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+<!-- Procedure -->
+
+        <record model="ir.ui.view" id="gnuhealth_procedure_view">
+            <field name="model">gnuhealth.procedure</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Procedure">
+                    <label name="name"/>
+                    <field name="name"/>
+                    <label name="description"/>
+                    <field name="description"/>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_procedure_tree">
+            <field name="model">gnuhealth.procedure</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string='Procedure'>
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+<!-- Operation -->
+
+        <record model="ir.ui.view" id="gnuhealth_operation_view">
+            <field name="model">gnuhealth.operation</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Operation">
+                    <label name="procedure"/>
+                    <field name="procedure"/>
+                    <newline/>
+                    <separator string="Operation Details / Incidents" colspan="4" id="separator_surgery_op_details"/>
+                    <newline/>
+                    <field name="notes" colspan="4"/>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_operation_tree">
+            <field name="model">gnuhealth.operation</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string='Operation'>
+                    <field name="procedure"/>
+                    <field name="notes"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+
+<!-- Include the Surgery page into the Patient History -->
+
+        <record model="ir.ui.view" id="gnuhealth_patient_view">
+            <field name="model">gnuhealth.patient</field>
+            <field name="inherit" ref="health.gnuhealth_patient_view_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                    <xpath
+                        expr="/form/notebook/page[@id=&quot;patient_diseases&quot;]"
+                        position="after">
+
+                        <page string="Surgeries" id="page_surgery">
+                            <field name="surgery" colspan="4"/>
+                        </page>
+
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+
+    </data>
+</tryton>

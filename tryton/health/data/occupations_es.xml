@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data skiptest="1" noupdate="1">
+
+        <record model="gnuhealth.occupation" id="prof1">
+            <field name="name">abogado</field>
+            <field name="code">1</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof2">
+            <field name="name">abogado de oficio</field>
+            <field name="code">2</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof3">
+            <field name="name">abogado criminalista</field>
+            <field name="code">3</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof4">
+            <field name="name">actor, actriz</field>
+            <field name="code">4</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof5">
+            <field name="name">actor de teatro</field>
+            <field name="code">5</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof6">
+            <field name="name">agente de bolsa/cambio</field>
+            <field name="code">6</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof7">
+            <field name="name">agente (empleado) de seguridad</field>
+            <field name="code">7</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof8">
+            <field name="name">agente de seguros</field>
+            <field name="code">8</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof9">
+            <field name="name">agente inmobiliario</field>
+            <field name="code">9</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof10">
+            <field name="name">asistenta</field>
+            <field name="code">10</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof11">
+            <field name="name">asistente social</field>
+            <field name="code">11</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof12">
+            <field name="name">agricultor</field>
+            <field name="code">12</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof13">
+            <field name="name">arquitecto</field>
+            <field name="code">13</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof14">
+            <field name="name">albañil</field>
+            <field name="code">14</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof15">
+            <field name="name">aprendiz</field>
+            <field name="code">15</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof16">
+            <field name="name">astronauta</field>
+            <field name="code">16</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof17">
+            <field name="name">azafata (de vuelo, de congresos)</field>
+            <field name="code">17</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof18">
+            <field name="name">azafata de tierra</field>
+            <field name="code">18</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof19">
+            <field name="name">bailarín</field>
+            <field name="code">19</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof20">
+            <field name="name">basurero</field>
+            <field name="code">20</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof21">
+            <field name="name">biólogo</field>
+            <field name="code">21</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof22">
+            <field name="name">bombero</field>
+            <field name="code">22</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof23">
+            <field name="name">cajero</field>
+            <field name="code">23</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof24">
+            <field name="name">camarero (atendiendo mesas)</field>
+            <field name="code">24</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof25">
+            <field name="name">camarero (barra)</field>
+            <field name="code">25</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof26">
+            <field name="name">camionero</field>
+            <field name="code">26</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof27">
+            <field name="name">cantante</field>
+            <field name="code">27</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof28">
+            <field name="name">carnicero</field>
+            <field name="code">28</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof29">
+            <field name="name">carpintero</field>
+            <field name="code">29</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof30">
+            <field name="name">cartero</field>
+            <field name="code">30</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof31">
+            <field name="name">celador (cárcel)</field>
+            <field name="code">31</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof32">
+            <field name="name">celador (hospital)</field>
+            <field name="code">32</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof33">
+            <field name="name">celador (museo)</field>
+            <field name="code">33</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof34">
+            <field name="name">científico</field>
+            <field name="code">34</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof35">
+            <field name="name">cirujano</field>
+            <field name="code">35</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof36">
+            <field name="name">cobrador (deudas, recibos)</field>
+            <field name="code">36</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof37">
+            <field name="name">cobrador (autobús)</field>
+            <field name="code">37</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof38">
+            <field name="name">cocinero</field>
+            <field name="code">38</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof39">
+            <field name="name">comercial</field>
+            <field name="code">39</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof40">
+            <field name="name">comerciante (de tienda)</field>
+            <field name="code">40</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof41">
+            <field name="name">comerciante al por mayor</field>
+            <field name="code">41</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof42">
+            <field name="name">comerciante al por menor</field>
+            <field name="code">42</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof43">
+            <field name="name">comerciante (negociante)</field>
+            <field name="code">43</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof44">
+            <field name="name">conductor</field>
+            <field name="code">44</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof45">
+            <field name="name">conserje (edificio, hotel)</field>
+            <field name="code">45</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof46">
+            <field name="name">conserje (de escuela, bedel)</field>
+            <field name="code">46</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof47">
+            <field name="name">coreógrafo</field>
+            <field name="code">47</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof48">
+            <field name="name">criado</field>
+            <field name="code">48</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof49">
+            <field name="name">cristalero</field>
+            <field name="code">49</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof50">
+            <field name="name">dentista, odontólogo</field>
+            <field name="code">50</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof51">
+            <field name="name">dependiente</field>
+            <field name="code">51</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof52">
+            <field name="name">deportista</field>
+            <field name="code">52</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof53">
+            <field name="name">desempleado, parado</field>
+            <field name="code">53</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof54">
+            <field name="name">detective</field>
+            <field name="code">54</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof55">
+            <field name="name">director de colegio</field>
+            <field name="code">55</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof56">
+            <field name="name">director gerente</field>
+            <field name="code">56</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof57">
+            <field name="name">director artístico/financiero</field>
+            <field name="code">57</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof58">
+            <field name="name">electricista</field>
+            <field name="code">58</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof59">
+            <field name="name">editor</field>
+            <field name="code">59</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof60">
+            <field name="name">empresario</field>
+            <field name="code">60</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof61">
+            <field name="name">enfermero</field>
+            <field name="code">61</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof62">
+            <field name="name">escritor</field>
+            <field name="code">62</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof63">
+            <field name="name">escultor</field>
+            <field name="code">63</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof64">
+            <field name="name">farmacéutico</field>
+            <field name="code">64</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof65">
+            <field name="name">físico</field>
+            <field name="code">65</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof66">
+            <field name="name">fisioterapeuta</field>
+            <field name="code">66</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof67">
+            <field name="name">fontanero</field>
+            <field name="code">67</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof68">
+            <field name="name">fotógrafo</field>
+            <field name="code">68</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof69">
+            <field name="name">funcionario</field>
+            <field name="code">69</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof70">
+            <field name="name">geólogo</field>
+            <field name="code">70</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof71">
+            <field name="name">guionista</field>
+            <field name="code">71</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof72">
+            <field name="name">herrero</field>
+            <field name="code">72</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof73">
+            <field name="name">informático</field>
+            <field name="code">73</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof74">
+            <field name="name">ingeniero</field>
+            <field name="code">74</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof75">
+            <field name="name">inspector</field>
+            <field name="code">75</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof76">
+            <field name="name">jardinero</field>
+            <field name="code">76</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof77">
+            <field name="name">jefe de cocina</field>
+            <field name="code">77</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof78">
+            <field name="name">juez</field>
+            <field name="code">78</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof79">
+            <field name="name">librero</field>
+            <field name="code">79</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof80">
+            <field name="name">limpiabotas</field>
+            <field name="code">80</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof81">
+            <field name="name">limpiacristales</field>
+            <field name="code">81</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof82">
+            <field name="name">limpiador</field>
+            <field name="code">82</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof83">
+            <field name="name">marinero</field>
+            <field name="code">83</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof84">
+            <field name="name">masajista</field>
+            <field name="code">84</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof85">
+            <field name="name">matemático</field>
+            <field name="code">85</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof86">
+            <field name="name">mecánico</field>
+            <field name="code">86</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof87">
+            <field name="name">médico</field>
+            <field name="code">87</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof88">
+            <field name="name">médico de cabecera</field>
+            <field name="code">88</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof89">
+            <field name="name">médico forense</field>
+            <field name="code">89</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof90">
+            <field name="name">militar, soldado</field>
+            <field name="code">90</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof91">
+            <field name="name">minero</field>
+            <field name="code">91</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof92">
+            <field name="name">ministro</field>
+            <field name="code">92</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof93">
+            <field name="name">modisto, diseñador</field>
+            <field name="code">93</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof94">
+            <field name="name">modista, costurera</field>
+            <field name="code">94</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof95">
+            <field name="name">músico</field>
+            <field name="code">95</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof96">
+            <field name="name">obrero</field>
+            <field name="code">96</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof97">
+            <field name="name">oficinista</field>
+            <field name="code">97</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof98">
+            <field name="name">panadero</field>
+            <field name="code">98</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof99">
+            <field name="name">pastelero</field>
+            <field name="code">99</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof100">
+            <field name="name">pediatra</field>
+            <field name="code">100</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof101">
+            <field name="name">peluquero</field>
+            <field name="code">101</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof102">
+            <field name="name">peón</field>
+            <field name="code">102</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof103">
+            <field name="name">periodista </field>
+            <field name="code">103</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof104">
+            <field name="name">pescador</field>
+            <field name="code">104</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof105">
+            <field name="name">piloto</field>
+            <field name="code">105</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof106">
+            <field name="name">pintor</field>
+            <field name="code">106</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof107">
+            <field name="name">pintor de brocha gorda</field>
+            <field name="code">107</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof108">
+            <field name="name">podólogo</field>
+            <field name="code">108</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof109">
+            <field name="name">presentador</field>
+            <field name="code">109</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof110">
+            <field name="name">psicólogo</field>
+            <field name="code">110</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof111">
+            <field name="name">psiquiatra</field>
+            <field name="code">111</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof112">
+            <field name="name">policía</field>
+            <field name="code">112</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof113">
+            <field name="name">político</field>
+            <field name="code">113</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof114">
+            <field name="name">profesor</field>
+            <field name="code">114</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof115">
+            <field name="name">profesor de universidad</field>
+            <field name="code">115</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof116">
+            <field name="name">profesor (catedrático)</field>
+            <field name="code">116</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof117">
+            <field name="name">profesor particular</field>
+            <field name="code">117</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof118">
+            <field name="name">programador</field>
+            <field name="code">118</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof119">
+            <field name="name">recepcionista</field>
+            <field name="code">119</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof120">
+            <field name="name">representante (cine, teatro)</field>
+            <field name="code">120</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof121">
+            <field name="name">repartidor</field>
+            <field name="code">121</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof122">
+            <field name="name">sacerdote, sacerdotisa</field>
+            <field name="code">122</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof123">
+            <field name="name">secretario</field>
+            <field name="code">123</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof124">
+            <field name="name">soldador</field>
+            <field name="code">124</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof125">
+            <field name="name">taxista</field>
+            <field name="code">125</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof126">
+            <field name="name">vendedor ambulante</field>
+            <field name="code">126</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof127">
+            <field name="name">vendedor a domicilio</field>
+            <field name="code">127</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof128">
+            <field name="name">veterinario</field>
+            <field name="code">128</field>
+        </record>
+        <record model="gnuhealth.occupation" id="prof129">
+            <field name="name">zapatero</field>
+            <field name="code">129</field>
+        </record>
+
+    </data>
+</tryton>

@@ -1,0 +1,1146 @@
+<?xml version="1.0"?>
+<tryton>
+<data skiptest="1" noupdate="1">
+
+<!-- Disease Categories, based on ICD-10 -->
+
+	<record model="gnuhealth.pathology.category" id="icdcat1">
+		<field name="name">I Bệnh nhiễm trùng và kí sinh trùng</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat2">
+		<field name="name">II Khối ung thư</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat3">
+		<field name="name">III Bệnh của máu, cơ quan tạo máu và các rối loạn liên quan đến cơ chế miễn dịch</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat4">
+		<field name="name">IV Bệnh nội tiết, dinh dưỡng và chuyển hóa</field>
+	</record>
+
+        <record model="gnuhealth.pathology.category" id="icdcat5">
+                <field name="name">V Rối loạn tâm thần và hành vi</field>
+        </record>
+
+
+	<record model="gnuhealth.pathology.category" id="icdcat6">
+		<field name="name">VI Bệnh hệ thần kinh</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat7">
+		<field name="name">VII Bệnh mắt và phần phụ</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat8">
+		<field name="name">VIII Bệnh tai và xương chũm</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat9">
+		<field name="name">IX Bệnh hệ tuần hoàn</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat10">
+		<field name="name">X Bệnh hệ hô hấp</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat11">
+		<field name="name">XI Bệnh hệ tiêu hóa</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat12">
+		<field name="name">XII Bệnh da và mô dưới da</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat13">
+		<field name="name">XIII Bệnh của hệ cơ xương khớp và mô liên kết</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat14">
+		<field name="name">XIV Bệnh hệ sinh dục và tiết niệu</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat15">
+		<field name="name">XV Thai nghén ,sinh đẻ và hậu sản</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat16">
+		<field name="name">XVI Một số bệnh lý xuất phát trong thời kỳ Chu Sinh</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat17">
+		<field name="name">XVII Dị tật bẩm sinh, biến dạng và bất thường nhiễm sắc thể</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat18">
+		<field name="name">XVIII Các triệu chứng, dấu hiệu và những biểu hiện lâm sàng, cận lâm sàng bất thường, không phân loại ở phần khác</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat19">
+		<field name="name">XIX Vết thương, ngộ độc và hậu quả của một số nguyên nhân bên ngoài</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat20">
+		<field name="name">XX Các nguyên nhân ngoại sinh của bệnh và tử vong</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat21">
+		<field name="name">XXI Các yếu tố ảnh hưởng đến tình trạng sức khỏe và tiếp xúc dịch vụ y tế</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat22">
+		<field name="name">XXII Code cho các mục đích đặc biệt</field>
+	</record>
+
+<record model="gnuhealth.pathology.category" id="icdcat1-1">
+	<field name="name">(A00-A09) Bệnh nhiễm trùng đường ruột</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-2">
+	<field name="name">(A15-A19) Bệnh lao</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-3">
+	<field name="name">(A20-A28) Bệnh nhiễm khuẩn do các súc vật truyền sang người </field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-4">
+	<field name="name">(A30-A49) Bênh nhiễm khuẩn khác </field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-5">
+	<field name="name">(A50-A64) Bệnh nhiễm trùng lây truyền chủ yếu qua đường tình dục </field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-6">
+	<field name="name">(A65-A69) Bệnh do xoắn trùng khác </field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-7">
+	<field name="name">(A70-A74) OBệnh khác do chlamydia</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-8">
+	<field name="name">(A75-A79) Bệnh do Rickettsia</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-9">
+	<field name="name">(A80-A89) Nhiễm virus ở hệ thần kinh trung ương</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-10">
+	<field name="name">(A90-A99) Sốt virus và sốt xuất huyết virus do tiết túc truyền </field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-11">
+	<field name="name">(B00-B09) Nhiễm virus có đặc điểm tổn thương tại da và niêm mạc</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-12">
+	<field name="name">(B15-B19) Viêm gan virus</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-13">
+	<field name="name">(B20-B24) Bệnh (HIV) nhiễm virus suy giảm miễn dịch ở người</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-14">
+	<field name="name">(B25-B34) Các bệnh nhiễm virus khács</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-15">
+	<field name="name">(B35-B49) Bệnh nhiễm nấm</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-16">
+	<field name="name">(B50-B64) Bệnh do ký sinh trùng đơn bào</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-17">
+	<field name="name">(B65-B83) Bệnh giun sán</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-18">
+	<field name="name">(B85-B89) Bệnh chấy rận, bệnh ghẻ và nhiễm ký sinh vật khác </field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-19">
+	<field name="name">(B90-B94) Di chứng của bệnh nhiễm trùng và ký sinh trùng</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-20">
+	<field name="name">(B95-B97) Nhiễm vi trùng, virus và tác nhân gây nhiễm khác</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat1-21">
+	<field name="name">(B99-B99) Bệnh nhiễm trùng khác</field>
+	<field name="parent" ref="icdcat1"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-1">
+	<field name="name">(C00-C14) Bướu ác tính của môi, khoang miệng và họng</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-2">
+	<field name="name">(C15-C26) Bướu ác của cơ quan tiêu hoá </field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-3">
+	<field name="name">(C30-C39) Bướu ác của cơ quan hô hấp và trong lồng ngực </field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-4">
+	<field name="name">(C40-C41) Bướu ác của xương và sụn khớp</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-5">
+	<field name="name">(C43-C44) U hắc tố ác tính và các bướu khác của da</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-6">
+	<field name="name">(C45-C49) Bướu ác của trung mô và mô mềm </field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-7">
+	<field name="name">(C50-C50) Bướu ác vú</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-8">
+	<field name="name">(C51-C58) Bướu ác của cơ quan sinh dục nữ </field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-9">
+	<field name="name">(C60-C63) Bướu ác của cơ quan sinh dục nam</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-10">
+	<field name="name">(C64-C68) Bướu ác tính của hệ tiết niệu</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-11">
+	<field name="name">(C69-C72) Bướu ác của tuyến giáp và tuyến nội tiết khác</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-12">
+	<field name="name">(C73-C75) Bướu ác của tuyến giáp và tuyến nội tiết khác</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-13">
+	<field name="name">(C76-C80) Bướu ác có vị trí không rõ ràng, thứ phát và không xác định</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-14">
+	<field name="name">(C81-C96) Bướu ác của hệ lymphô, hệ tạo máu và các mô liên quan</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-15">
+	<field name="name">(C97-C97) Bướu ác có nhiều vị trí độc lập (nguyên phát)</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-16">
+	<field name="name">(D00-D09) Bướu tân sinh tại chỗ</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-17">
+	<field name="name">(D10-D36) Bướu lành</field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat2-18">
+	<field name="name">(D37-D48) Bướu tân sinh không rõ hoặc không biết tính chất </field>
+	<field name="parent" ref="icdcat2"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat3-1">
+	<field name="name">(D50-D53) Thiếu máu dinh dưỡng</field>
+	<field name="parent" ref="icdcat3"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat3-2">
+	<field name="name">(D55-D59) Thiếu máu tan máu</field>
+	<field name="parent" ref="icdcat3"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat3-3">
+	<field name="name">(D60-D64) Bất sản tủy và các thiếu máu khác</field>
+	<field name="parent" ref="icdcat3"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat3-4">
+	<field name="name">(D65-D69) Các rối loạn đông máu, ban xuất huyết và các tình trạng chẩy máu khác</field>
+	<field name="parent" ref="icdcat3"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat3-5">
+	<field name="name">(D70-D77) Bệnh khác của máu và cơ quan tạo máu</field>
+	<field name="parent" ref="icdcat3"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat3-6">
+	<field name="name">(D80-D89) Các rối loạn liên quan đến cơ chế miễn dịch</field>
+	<field name="parent" ref="icdcat3"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat4-1">
+	<field name="name">(E00-E07) DBệnh tuyến giáp</field>
+	<field name="parent" ref="icdcat4"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat4-2">
+	<field name="name">(E10-E14) Đái tháo đường </field>
+	<field name="parent" ref="icdcat4"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat4-3">
+	<field name="name">(E15-E16) Các rối loạn khác về điều hoà gluco và nội tiết tuyến tụy </field>
+	<field name="parent" ref="icdcat4"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat4-4">
+	<field name="name">(E20-E35) Rối loạn các tuyến nội tiết khác</field>
+	<field name="parent" ref="icdcat4"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat4-5">
+	<field name="name">(E40-E46) Suy dinh dưỡng</field>
+	<field name="parent" ref="icdcat4"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat4-6">
+	<field name="name">(E50-E64) Những bệnh thiếu dinh dưỡng khác </field>
+	<field name="parent" ref="icdcat4"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat4-7">
+	<field name="name">(E65-E68) Béo phì và dạng thừa dinh dưỡng khác</field>
+	<field name="parent" ref="icdcat4"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat4-8">
+	<field name="name">(E70-E90) MRối loạn chuyển hoá</field>
+	<field name="parent" ref="icdcat4"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-1">
+	<field name="name">(F00-F09) Rối loạn tâm thần thực thể bao gồm rối loạn tâm thần triệu chứng</field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-2">
+	<field name="name">(F10-F19) Rối loạn tâm thần và hành vi do sử dụng các chất tác động tâm thần</field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-3">
+	<field name="name">(F20-F29) Tâm thần phân liệt, rối loạn dạng phân liệt và rối loạn hoang tưởng</field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-4">
+	<field name="name">(F30-F39) Rối loạn khí sắc (cảm xúc) </field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-5">
+	<field name="name">(F40-F48) Loạn thần kinh, rối loạn liên quan đến stress và rối loạn dạng cơ thể</field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-6">
+	<field name="name">(F50-F59) Hội chứng hành vi kết hợp với rối loạn sinh lý và yếu tố thể chất</field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-7">
+	<field name="name">(F60-F69) Rối loạn nhân cách và hành vi ở người trưởng thành</field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-8">
+	<field name="name">(F70-F79) Chậm phát triển tâm thần </field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-9">
+	<field name="name">(F80-F89) Rối loạn phát triển tâm lý</field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-10">
+	<field name="name">(F90-F98) Rối loạn về hành vi và cảm xúc với sự khởi bệnh thường xảy ra ở lứa tuổi trẻ em và thiếu niên</field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat5-11">
+	<field name="name">(F99-F99) Rối loạn tâm thần không xác địn</field>
+	<field name="parent" ref="icdcat5"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-1">
+	<field name="name">(G00-G09) Bệnh viêm hệ thần kinh trung ương</field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-2">
+	<field name="name">(G10-G13) Bệnh teo hệ thống ảnh hưởng chủ yếu tới hệ thần kinh trung ương</field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-3">
+	<field name="name">(G20-G26) Hội chứng ngoại tháp và rối loạn vận động</field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-4">
+	<field name="name">(G30-G32) Bệnh thoái hóa khác của hệ thần kinh </field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-5">
+	<field name="name">(G35-G37) Bệnh mất myêlin của hệ thần kinh trung ương </field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-6">
+	<field name="name">(G40-G47) Bệnh chu kỳ và kịch phát</field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-7">
+	<field name="name">(G50-G59) Bệnh của dây, rễ và đám rối thần kinh</field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-8">
+	<field name="name">(G60-G64) Viêm nhiều dây thần kinh và bệnh hệ thần kinh ngoại biên khác</field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-9">
+	<field name="name">(G70-G73) Bệnh nơi tiếp nối thần kinh – cơ và cơ</field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-10">
+	<field name="name">(G80-G83) Bại não và những hội chứng liệt khác</field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat6-11">
+	<field name="name">(G90-G99) Bệnh khác của hệ thần kinh</field>
+	<field name="parent" ref="icdcat6"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-1">
+	<field name="name">(H00-H06) Bệnh của mí mắt, lệ bộ và hốc mắt</field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-2">
+	<field name="name">(H10-H13) Bệnh của kết mạc</field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-3">
+	<field name="name">(H15-H22) Bệnh củng mạc, giác mạc, mống mắt và thể mi</field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-4">
+	<field name="name">(H25-H28) Bệnh thủy tinh thể</field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-5">
+	<field name="name">(H30-H36) Bệnh của hắc mạc và võng mạc</field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-6">
+	<field name="name">(H40-H42) Bệnh glôcôm</field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-7">
+	<field name="name">(H43-H45) Bệnh dịch kính và nhãn cầu</field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-8">
+	<field name="name">(H46-H48) Bệnh thần kinh thị và ddường dẫn thị giác</field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-9">
+	<field name="name">(H49-H52) Bệnh cơ vận nhãn, vận nhãn, điều tiết và khúc xạ </field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-10">
+	<field name="name">(H53-H54) Rối loạn thị giác và mù </field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat7-11">
+	<field name="name">(H55-H59) Các bệnh khác của mắt và phần phụ </field>
+	<field name="parent" ref="icdcat7"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat8-1">
+	<field name="name">(H60-H62) Các bệnh tai ngoài</field>
+	<field name="parent" ref="icdcat8"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat8-2">
+	<field name="name">(H65-H75) Bệnh của tai giữa và xương chũm</field>
+	<field name="parent" ref="icdcat8"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat8-3">
+	<field name="name">(H80-H83) Bệnh tai trong</field>
+	<field name="parent" ref="icdcat8"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat8-4">
+	<field name="name">(H90-H95) Bệnh khác của tai </field>
+	<field name="parent" ref="icdcat8"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat9-1">
+	<field name="name">(I00-I02) Bệnh tim ạmn tính do thấp</field>
+	<field name="parent" ref="icdcat9"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat9-2">
+	<field name="name">(I05-I09) Bệnh tim ạmn tính do thấp</field>
+	<field name="parent" ref="icdcat9"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat9-3">
+	<field name="name">(I10-I15) Bệnh cao huyết áp</field>
+	<field name="parent" ref="icdcat9"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat9-4">
+	<field name="name">(I20-I25) IBệnh tim do thiếu máu cục bộ </field>
+	<field name="parent" ref="icdcat9"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat9-5">
+	<field name="name">(I26-I28) Bệnh tim do phổi và bệnh tuần hoàn phổi</field>
+	<field name="parent" ref="icdcat9"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat9-6">
+	<field name="name">(I30-I52) Các thể bệnh tim khác</field>
+	<field name="parent" ref="icdcat9"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat9-7">
+	<field name="name">(I60-I69) Bệnh mạch não </field>
+	<field name="parent" ref="icdcat9"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat9-8">
+	<field name="name">(I70-I79) Bệnh động mạch, tiểu động mạch và mao mạch</field>
+	<field name="parent" ref="icdcat9"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat9-9">
+	<field name="name">(I80-I89) Bệnh tĩnh mạch, mạch bạch huyết, hạch bạch huyết không phân loại nơi khác </field>
+	<field name="parent" ref="icdcat9"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat9-10">
+	<field name="name">(I95-I99) Rối loạn khác và không xác định của hệ tuần hoàn</field>
+	<field name="parent" ref="icdcat9"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat10-1">
+	<field name="name">(J00-J06) Nhiễm khuẩn đường hô hấp trên cấp tính</field>
+	<field name="parent" ref="icdcat10"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat10-2">
+	<field name="name">(J10-J18) Cảm cúm và viêm phổi </field>
+	<field name="parent" ref="icdcat10"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat10-3">
+	<field name="name">(J20-J22) Nhiễm trùng hô hấp dưới cấp khác </field>
+	<field name="parent" ref="icdcat10"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat10-4">
+	<field name="name">(J30-J39) Bệnh khác của đường hô hấp trên</field>
+	<field name="parent" ref="icdcat10"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat10-5">
+	<field name="name">(J40-J47) Bệnh đường hô hấp dưới mạn tính</field>
+	<field name="parent" ref="icdcat10"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat10-6">
+	<field name="name">(J60-J70) Bệnh phổi do tác nhân bên ngoài </field>
+	<field name="parent" ref="icdcat10"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat10-7">
+	<field name="name">(J80-J84) Bệnh hô hấp khác ảnh hưởng chủ yếu đến mô kẽ </field>
+	<field name="parent" ref="icdcat10"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat10-8">
+	<field name="name">(J85-J86) Tình trạng nung mủ và hoại tử đường hô hấp dưới </field>
+	<field name="parent" ref="icdcat10"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat10-9">
+	<field name="name">(J90-J94) Bệnh khác của màng phổi</field>
+	<field name="parent" ref="icdcat10"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat10-10">
+	<field name="name">(J95-J99) Bệnh khác của hệ hô hấp</field>
+	<field name="parent" ref="icdcat10"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat11-1">
+	<field name="name">(K00-K14) Bệnh của khoang miệng, tuyến nước bọt và xương hàm</field>
+	<field name="parent" ref="icdcat11"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat11-2">
+	<field name="name">(K20-K31) Bệnh của thực quản, dạ dày và tá tràng </field>
+	<field name="parent" ref="icdcat11"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat11-3">
+	<field name="name">(K35-K38) Bệnh ruột thừa</field>
+	<field name="parent" ref="icdcat11"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat11-4">
+	<field name="name">(K40-K46) Thoát vị </field>
+	<field name="parent" ref="icdcat11"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat11-5">
+	<field name="name">(K50-K52) Viêm ruột non và ruột già không do nhiễm trùng</field>
+	<field name="parent" ref="icdcat11"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat11-6">
+	<field name="name">(K55-K63) Bệnh đường ruột khác</field>
+	<field name="parent" ref="icdcat11"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat11-7">
+	<field name="name">(K65-K67) Bệnh của phúc mạc</field>
+	<field name="parent" ref="icdcat11"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat11-8">
+	<field name="name">(K70-K77) Bệnh của gan </field>
+	<field name="parent" ref="icdcat11"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat11-9">
+	<field name="name">(K80-K87) Bệnh túi mật, đường mật và tuỵ</field>
+	<field name="parent" ref="icdcat11"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat11-10">
+	<field name="name">(K90-K93) Các bệnh khác của hệ tiêu hoá</field>
+	<field name="parent" ref="icdcat11"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat12-1">
+	<field name="name">(L00-L08) Nhiễm khuẩn da và mô dưới da</field>
+	<field name="parent" ref="icdcat12"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat12-2">
+	<field name="name">(L10-L14) Các bệnh có bọng nước</field>
+	<field name="parent" ref="icdcat12"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat12-3">
+	<field name="name">(L20-L30) DViêm da và eczema</field>
+	<field name="parent" ref="icdcat12"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat12-4">
+	<field name="name">(L40-L45) Bệnh sần có vẩy</field>
+	<field name="parent" ref="icdcat12"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat12-5">
+	<field name="name">(L50-L54) Mày đay và hồng ban</field>
+	<field name="parent" ref="icdcat12"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat12-6">
+	<field name="name">(L55-L59) Các rối loạn da và mô dưới da liên quan đến bức xạ </field>
+	<field name="parent" ref="icdcat12"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat12-7">
+	<field name="name">(L60-L75) Các rối loạn phần phụ của da </field>
+	<field name="parent" ref="icdcat12"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat12-8">
+	<field name="name">(L80-L99) Các bệnh khác của da và mô dưới da</field>
+	<field name="parent" ref="icdcat12"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-1">
+	<field name="name">(M00-M03) Bệnh khớp nhiễm khuẩn</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-2">
+	<field name="name">(M05-M14) IViêm đa khớp </field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-3">
+	<field name="name">(M15-M19) Bệnh hư khớp (thoái hóa khớp)</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-4">
+	<field name="name">(M20-M25) Bệnh khác ở khớp</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-5">
+	<field name="name">(M30-M36) Bệnh mô liên kết hệ thống</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-6">
+	<field name="name">(M40-M43) Dị tật cột sống</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-7">
+	<field name="name">(M45-M49) Bệnh thân đốt sống</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-8">
+	<field name="name">(M50-M54) Bệnh khác của cột sống</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-9">
+	<field name="name">(M60-M63) Bệnh của cơ</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-10">
+	<field name="name">(M65-M68) Rối loạn màng hoạt dịch và gân</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-11">
+	<field name="name">(M70-M79) Những bệnh khác của mô mềm</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-12">
+	<field name="name">(M80-M85) Bệnh về mật độ và cấu trúc xương</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-13">
+	<field name="name">(M86-M90) Bệnh khác của xương</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-14">
+	<field name="name">(M91-M94) Các bệnh sụn</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat13-15">
+	<field name="name">(M95-M99) Các bệnh khác của hệ cơ-xương-khớp và mô liên kết</field>
+	<field name="parent" ref="icdcat13"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-1">
+	<field name="name">(N00-N08) Bệnh cầu thận</field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-2">
+	<field name="name">(N10-N16) Bệnh kẽ ống thận</field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-3">
+	<field name="name">(N17-N19) Suy thận </field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-4">
+	<field name="name">(N20-N23) Sỏi tiết niệu</field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-5">
+	<field name="name">(N25-N29) Bệnh khác của thận và niệu quản</field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-6">
+	<field name="name">(N30-N39) Các bệnh khác của hệ tiết niệu </field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-7">
+	<field name="name">(N40-N51) Bệnh cơ quan sinh dục nam</field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-8">
+	<field name="name">(N60-N64) Các biến đổi của vú </field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-9">
+	<field name="name">(N70-N77) Viêm cơ quan sinh dục vùng chậu nữ </field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-10">
+	<field name="name">(N80-N98) Biến đổi không do viêm của đường sinh dục nữ</field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat14-11">
+	<field name="name">(N99-N99) Các rối loạn khác của hệ sinh dục tiết niệu </field>
+	<field name="parent" ref="icdcat14"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat15-1">
+	<field name="name">(O00-O08) Thai nghén và sẩy thai</field>
+	<field name="parent" ref="icdcat15"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat15-2">
+	<field name="name">(O10-O16) Phù, prôtêin niệu và tǎng huyết áp trong khi có thai, khi đẻ và sau đẻ </field>
+	<field name="parent" ref="icdcat15"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat15-3">
+	<field name="name">(O20-O29) Các rối loạn khác của bà mẹ chủ yếu liên quan đến thai nghén</field>
+	<field name="parent" ref="icdcat15"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat15-4">
+	<field name="name">(O30-O48) Chǎm sóc bà mẹ liên quan đến thai nhi, buồng ối và có thể là các vấn đề khi đẻ </field>
+	<field name="parent" ref="icdcat15"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat15-5">
+	<field name="name">(O60-O75) CBiến chứng của chuyển dạ và đẻ</field>
+	<field name="parent" ref="icdcat15"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat15-6">
+	<field name="name">(O80-O84) Cuộc đẻ</field>
+	<field name="parent" ref="icdcat15"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat15-7">
+	<field name="name">(O85-O92) Biến chứng chủ yếu liên quan đến sau đẻ</field>
+	<field name="parent" ref="icdcat15"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat15-8">
+	<field name="name">(O95-O99) Các tình trạng sản khoa khác chưa được xếp loại ở phần khác</field>
+	<field name="parent" ref="icdcat15"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat16-1">
+	<field name="name">(P00-P04) Thai và trẻ sơ sinh bị tổn thương bởi các yếu tố của mẹ và bởi biến chứng của thai nghén, chuyển dạ và đẻ</field>
+	<field name="parent" ref="icdcat16"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat16-2">
+	<field name="name">(P05-P08) Rối loạn liên quan đến tuổi thai và sự phát triển của thai </field>
+	<field name="parent" ref="icdcat16"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat16-3">
+	<field name="name">(P10-P15) Chấn thương cuộc đẻ</field>
+	<field name="parent" ref="icdcat16"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat16-4">
+	<field name="name">(P20-P29) Rối loạn hô hấp và tim mạch đặc hiệu cho giai đoạn chu sinh </field>
+	<field name="parent" ref="icdcat16"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat16-5">
+	<field name="name">(P35-P39) Nhiễm khuẩn đặc hiệu trong thời kỳ chu sinh</field>
+	<field name="parent" ref="icdcat16"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat16-6">
+	<field name="name">(P50-P61) Rối loạn chảy máu và huyết học cuat thai và trẻ sơ sinh</field>
+	<field name="parent" ref="icdcat16"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat16-7">
+	<field name="name">(P70-P74) Các rối loạn nội tiết, chuyển hóa tạm thời đặc hiệu cho thai và trẻ sơ sinh </field>
+	<field name="parent" ref="icdcat16"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat16-8">
+	<field name="name">(P75-P78) Các rối loạn của hệ thống tiêu hoá ở thai và trẻ sơ sinh</field>
+	<field name="parent" ref="icdcat16"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat16-9">
+	<field name="name">(P80-P83) Các điều kiện của da và điều hòa thân nhiệt của thai và trẻ sơ sinh </field>
+	<field name="parent" ref="icdcat16"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat16-10">
+	<field name="name">(P90-P96) Các điều kiện khác có nguồn gốc trong giai đoạn chu sinh</field>
+	<field name="parent" ref="icdcat16"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-1">
+	<field name="name">(Q00-Q07) Dị tật bẩm sinh của hệ thần kinh trung ương</field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-2">
+	<field name="name">(Q10-Q18) Các dị tật bẩm sinh ở mắt , tai, mặt và cổ </field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-3">
+	<field name="name">(Q20-Q28) Các dị tật bẩm sinh của hệ tuần hoàn</field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-4">
+	<field name="name">(Q30-Q34) Các dị tật bẩm sinh đường hô hấp</field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-5">
+	<field name="name">(Q35-Q37) Khe hở môi và khe hở vòm miệng</field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-6">
+	<field name="name">(Q38-Q45) Các dị tật bẩm sinh khác của hệ tiêu hoá</field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-7">
+	<field name="name">(Q50-Q56) Các dị tật bẩm sinh của cơ quan sinh dục</field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-8">
+	<field name="name">(Q60-Q64) Các dị tật bẩm sinh của hệ tiết niệu</field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-9">
+	<field name="name">(Q65-Q79) Các dị tật và biến dạng bẩm sinh của hệ cơ xương</field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-10">
+	<field name="name">(Q80-Q89) Các dị tật bẩm sinh khác</field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat17-11">
+	<field name="name">(Q90-Q99) Các bất thường nhiễm sắc thể, chưa được phân loại </field>
+	<field name="parent" ref="icdcat17"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-1">
+	<field name="name">(R00-R09) Triệu chứng và dấu hiệu về hệ tuần hoàn và hô hấp</field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-2">
+	<field name="name">(R10-R19) Triệu chứng và dấu hiệu về hệ tiêu hoá và bụng</field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-3">
+	<field name="name">(R20-R23) Triệu chứng và dấu hiệu của da và tổ chức dưới da</field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-4">
+	<field name="name">(R25-R29) Triệu chứng và dấu hiệu về thần kinh và hệ cơ xương</field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-5">
+	<field name="name">(R30-R39) Triệu chứng và dấu hiệu về hệ tiết niệu </field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-6">
+	<field name="name">(R40-R46) Triệu chứng và dấu hiệu về nhận thức, tri giác, hành vi và trạng thái cảm xúc </field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-7">
+	<field name="name">(R47-R49) Triệu chứng và dấu hiệu về ngôn ngữ và giọng nói </field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-8">
+	<field name="name">(R50-R69) Triệu chứng và dấu hiệu tổng quát</field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-9">
+	<field name="name">(R70-R79) Phát hiện bất thường về xét nghiệm máu, không có chẩn đoán</field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-10">
+	<field name="name">(R80-R82) Các phát hiện bất thường về xét nghiệm nước tiểu, không có chẩn đoán</field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-11">
+	<field name="name">(R83-R89) Các phát hiện bất thường về xét nghiệm các dịch cơ thể, các chất và mô khác, không có chẩn đoán </field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-12">
+	<field name="name">(R90-R94) Các phát hiện bất thường về chẩn đoán hình ảnh và thǎm dò chức nǎng, không có chẩn đoán</field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat18-13">
+	<field name="name">(R95-R99) Nguyên nhân chết bệnh xác định và chết không rõ nguyên nhân</field>
+	<field name="parent" ref="icdcat18"></field>
+</record>
+
+<record model="gnuhealth.pathology.category" id="icdcat19-1">
+	<field name="name">(S00-S09) Tổn thương ở đầu </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-2">
+	<field name="name">(S10-S19) ITổn thương của cổ </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-3">
+	<field name="name">(S20-S29) Tổn thương lồng ngực</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-4">
+	<field name="name">(S30-S39) Tổn thương bụng, lưng dưới, cột sống thắt lưng và chậu hông</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-5">
+	<field name="name">(S40-S49) Vết thương vai và cánh tay</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-6">
+	<field name="name">(S50-S59) Tổn thương khuỷu tay và cẳng tay (</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-7">
+	<field name="name">(S60-S69) Tổn thương ở cổ tay và bàn tay</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-8">
+	<field name="name">(S70-S79) Tổn thương tại háng và đùi </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-9">
+	<field name="name">(S80-S89) Tổn thương tại đầu gối và cẳng chân </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-10">
+	<field name="name">(S90-S99) Tổn thương tại cổ chân và bàn chân </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-11">
+	<field name="name">(T00-T07) Tổn thương tác động nhiều vùng cơ thể</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-12">
+	<field name="name">(T08-T14) Tổn thương phần chưa xác định của thân, các chi hoặc vùng cơ thể </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-13">
+	<field name="name">(T15-T19) Tác động của vật lạ vào qua lỗ tự nhiên</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-14">
+	<field name="name">(T20-T25) Bỏng và ǎn mòn mặt ngoài cơ thể, xác định theo vị trí</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-15">
+	<field name="name">(T26-T28) Bỏng và ǎn mòn giới hạn tại mắt và cơ quan nội tạng</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-16">
+	<field name="name">(T29-T32) Bỏng và ǎn mòn nhiều vùng cơ thể và chưa xác định</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-17">
+	<field name="name">(T33-T35) Tổn thương do cóng lạnh </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-18">
+	<field name="name">(T36-T50) Nhiễm độc do thuốc, dược phẩm và các chất sinh học</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-19">
+	<field name="name">(T51-T65) Tác dụng độc của chất chủ yếu không có nguồn gốc y học </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-20">
+	<field name="name">(T66-T78) Tác dụng khác và chưa xác định của cǎn nguyên bên ngoài </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-21">
+	<field name="name">(T79-T79) Một vài biến chứng sớm của chấn thương</field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-22">
+	<field name="name">(T80-T88) Biến chứng của phẫu thuật và chǎm sóc y tế không xếp loại ở nơi khác </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat19-23">
+	<field name="name">(T90-T98) Di chứng của tổn thương, của nhiễm độc và hậu quả khác của cǎn nguyên từ bên ngoài </field>
+	<field name="parent" ref="icdcat19"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-1">
+	<field name="name">(V01-V09) Người đi bộ bị thương trong tai nạn giao thông</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-2">
+	<field name="name">(V10-V19) Người đi xe đạp bị thương trong tai nạn giao thông </field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-3">
+	<field name="name">(V20-V29) Người lái mô tô bị thương trong tai nạn giao thông </field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-4">
+	<field name="name">(V30-V39) Người đi mô tô 3 bánh bị thương trong tai nạn giao thông</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-5">
+	<field name="name">(V40-V49) Người đi ô tô bị thương trong tai nạn giao thông </field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-6">
+	<field name="name">(V50-V59) Người đi xe tải thu góp hay xe tải (TTG-T) bị thương trong TNGT</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-7">
+	<field name="name">(V60-V69) ONgười trên xe tải nặng (XTN) trong tai nạn giao thông</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-8">
+	<field name="name">(V70-V79) Người trên xe buýt (B) bị tai nạn giao thông</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-9">
+	<field name="name">(V80-V89) Tai nạn giao thông khác trên mặt đất </field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-10">
+	<field name="name">(V90-V94) Tai nạn giao thông đường thủy</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-11">
+	<field name="name">(V95-V97) Tai nạn giao thông hàng không và vũ trụ</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-12">
+	<field name="name">(V98-V99) Tai nạn giao thông không rõ đặc điểm khác </field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-13">
+	<field name="name">(W00-W19) Ngã</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-14">
+	<field name="name">(W20-W49) Tác dụng của lực cơ học bất động </field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-15">
+	<field name="name">(W50-W64) Ảnh hưởng của lực cơ học chuyển động</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-16">
+	<field name="name">(W65-W74) Tai nạn ngã xuống nước và ngập nước</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-17">
+	<field name="name">(W75-W84) OCác tai nạn đe doạ thở khác</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-18">
+	<field name="name">(W85-W99) Phơi nhiễm dòng điện, phóng xạ và nhiệt độ áp lực không khí bao quanh quá mức</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-19">
+	<field name="name">(X00-X09) Phơi nhiễm khói, cháy , lửa</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-20">
+	<field name="name">(X10-X19) Tiếp xúc với nhiệt và chất nóng</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-21">
+	<field name="name">(X20-X29) Tiếp xúc với cây và súc vật có độc</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-22">
+	<field name="name">(X30-X39) Phơi nhiễm lực thiên nhiên</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-23">
+	<field name="name">(X40-X49) Tai Nạn ngộ độc và phơi nhiễm chất độc</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-24">
+	<field name="name">(X50-X57) Cố gắng quá mức, du lịch, thiếu thốn</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-25">
+	<field name="name">(X58-X59) Tai nạn do phơi nhiễm các yếu tố khác không xác định đặc điểm</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-26">
+	<field name="name">(X60-X84) Cố tình tự hại</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-27">
+	<field name="name">(X85-Y09) Tấn công</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-28">
+	<field name="name">(Y10-Y34) Biến cố không rõ ý đồ</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-29">
+	<field name="name">(Y35-Y36) Can thiệp hợp pháp và hành động chiến tranh</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-30">
+	<field name="name">(Y40-Y59) Tai biến của thuốc và các chất sinh học trong điều trị </field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-31">
+	<field name="name">(Y60-Y69) Rủi ro của bệnh nhân trong điều trị nội ngoại khoa </field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-32">
+	<field name="name">(Y70-Y82) Dụng cụ y tế kết hợp với tai biến trong khi dùng để chẩn đoán và điều trị </field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-33">
+	<field name="name">(Y83-Y84) Thủ thuật nội hay ngoại khoa là nguyên nhân của phản ứng bất thường của bệnh nhân hay biến chứng sau này, mà không nêu ra là rủi to trong khi tiến hành thủ thuật</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-34">
+	<field name="name">(Y85-Y89) Di chứng của nguyên nhân bên ngoài của bệnh lý và tử vong</field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat20-35">
+	<field name="name">(Y90-Y98) Các yếu tố phụ liên quan đến các nguyên nhân bệnh lý và tử vong sắp xếp ở nơi khác </field>
+	<field name="parent" ref="icdcat20"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat21-1">
+	<field name="name">(Z00-Z13) Những người đến cơ quan y tế để khám sức khỏe và kiểm tra sức khỏe</field>
+	<field name="parent" ref="icdcat21"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat21-2">
+	<field name="name">(Z20-Z29) Các đối tượng với nguy cơ tiềm tàng liên quan tới các bệnh lây truyền </field>
+	<field name="parent" ref="icdcat21"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat21-3">
+	<field name="name">(Z30-Z39) Những người đến cơ quan y tế về các vấn đề liên quan tới sinh sản</field>
+	<field name="parent" ref="icdcat21"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat21-4">
+	<field name="name">(Z40-Z54) Những người đến cơ quan y tế vì các phương thức khác và chǎm sóc sức khỏe đặc biệt</field>
+	<field name="parent" ref="icdcat21"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat21-5">
+	<field name="name">(Z55-Z65) Những người có nguy cơ sức khỏe tiềm tàng liên quan đến những hoàn cảnh kinh tế xã hội và tâm lý xã hội</field>
+	<field name="parent" ref="icdcat21"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat21-6">
+	<field name="name">(Z70-Z76) Những người tiếp xúc với cơ quan y tế trong các hoàn cảnh khác</field>
+	<field name="parent" ref="icdcat21"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat21-7">
+	<field name="name">(Z80-Z99) Những người có nguy cơ sức khỏe tiềm ẩn liên quan đến bệnh sử gia đình và cá nhân và một số trạng thái ảnh hưởng đến tình trạng sức khỏe</field>
+	<field name="parent" ref="icdcat21"></field>
+</record>
+<record model="gnuhealth.pathology.category" id="icdcat22-1">
+	<field name="name">(U00-U49) Provisional assignment of new diseases of uncertain aetiology</field>
+	<field name="parent" ref="icdcat22"></field>
+</record>
+</data>
+</tryton>

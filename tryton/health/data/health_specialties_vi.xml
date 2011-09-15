@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data skiptest="True">
+
+        <record model="gnuhealth.speciality" id="2">
+            <field name="name">Khoa Giải phẫu (Anatomy)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="3">
+            <field name="name">Nguyên bào nam tính (Andrology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="4">
+            <field name="name">Alternative Medicine</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="5">
+            <field name="name">Bác sĩ gây mê (Anesthesiology)</field>
+            <field name="code">AN, PAN</field>
+        </record>
+        <record model="gnuhealth.speciality" id="6">
+            <field name="name">Hoá sinh (Biochemistry)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="7">
+            <field name="name">Tim học (Cardiology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="8">
+            <field name="name">Phẫu thuật tim mạch (Cardiovascular surgery)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="9">
+            <field name="name">Clinical laboratory sciences</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="10">
+            <field name="name">Clinical Neurophysiology</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="11">
+            <field name="name">Khoa da liễu (Dermatology)</field>
+            <field name="code">D, DS</field>
+        </record>
+        <record model="gnuhealth.speciality" id="12">
+            <field name="name">Khoa dinh dưỡng (Dietetics)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="13">
+            <field name="name">Phôi học (Embryology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="14">
+            <field name="name">Emergency medicine</field>
+            <field name="code">EM</field>
+        </record>
+        <record model="gnuhealth.speciality" id="15">
+            <field name="name">Nội tiết học (Endocrinology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="16">
+            <field name="name">Family Medicine</field>
+            <field name="code">FM</field>
+        </record>
+        <record model="gnuhealth.speciality" id="17">
+            <field name="name">Pháp y (Forensic Medicine)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="18">
+            <field name="name">Vị tràng học (Gastroenterology)</field>
+            <field name="code">GI</field>
+        </record>
+        <record model="gnuhealth.speciality" id="19">
+            <field name="name">Phẫu thuật tổng quát (General surgery)</field>
+            <field name="code">GS</field>
+        </record>
+        <record model="gnuhealth.speciality" id="20">
+            <field name="name">Di truyền học (Genetics)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="21">
+            <field name="name">Lão khoa (Geriatrics)</field>
+            <field name="code">IMG</field>
+        </record>
+        <record model="gnuhealth.speciality" id="22">
+            <field name="name">Phụ khoa (Gynaecology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="23">
+            <field name="name">Huyết học (Hematology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="24">
+            <field name="name">Sỏi gan (Hepatology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="25">
+            <field name="name">Mô học (Histology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="26">
+            <field name="name">Miễn dịch học (Immunology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="27">
+            <field name="name">Bệnh truyền nhiễm (Infectious disease)</field>
+            <field name="code">ID</field>
+        </record>
+        <record model="gnuhealth.speciality" id="28">
+            <field name="name">Khoa săn sóc đặc biệt (Intensive care medicine)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="29">
+            <field name="name">Phẫu thuật Hàm - Mặt (Maxillofacial surgery)</field>
+            <field name="code">Maxfacs, OMFS</field>
+        </record>
+        <record model="gnuhealth.speciality" id="30">
+            <field name="name">Thận học (Nephrology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="31">
+            <field name="name">Khoa thần kinh (Neurology)</field>
+            <field name="code">N</field>
+        </record>
+        <record model="gnuhealth.speciality" id="32">
+            <field name="name">Khoa giải phẫu thần kinh (Neurosurgery)</field>
+            <field name="code">NS</field>
+        </record>
+        <record model="gnuhealth.speciality" id="33">
+            <field name="name">Điều dưỡng (Nursing)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="34">
+            <field name="name">Sản phụ khoa (Obstetrics and gynecology)</field>
+            <field name="code">OB/GYN</field>
+        </record>
+        <record model="gnuhealth.speciality" id="35">
+            <field name="name">U bướu học (Oncology)</field>
+            <field name="code">ON</field>
+        </record>
+        <record model="gnuhealth.speciality" id="36">
+            <field name="name">Khoa mắt (Ophthalmology)</field>
+            <field name="code">OPH</field>
+        </record>
+        <record model="gnuhealth.speciality" id="37">
+            <field name="name">Phẫu thuật chỉnh hình (Orthopedic surgery)</field>
+            <field name="code">ORS</field>
+        </record>
+        <record model="gnuhealth.speciality" id="38">
+            <field name="name">Khoa Tai Mũi Họng (Otolaryngology, or ENT)</field>
+            <field name="code">ORL, ENT</field>
+        </record>
+        <record model="gnuhealth.speciality" id="39">
+            <field name="name">Palliative care</field>
+            <field name="code">PLM</field>
+        </record>
+        <record model="gnuhealth.speciality" id="40">
+            <field name="name">Bệnh lý học (Pathology)</field>
+            <field name="code">PTH</field>
+        </record>
+        <record model="gnuhealth.speciality" id="41">
+            <field name="name">Khoa nhi (Pediatrics)</field>
+            <field name="code">PD</field>
+        </record>
+        <record model="gnuhealth.speciality" id="42">
+            <field name="name">Phẫu thuật Nhi (Pediatric surgery)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="43">
+            <field name="name">Dược lý học (Pharmacology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="44">
+            <field name="name">y học cơ thể và phục hồi chức năng (Physical medicine and rehabilitation)</field>
+            <field name="code">PM&amp;R</field>
+        </record>
+        <record model="gnuhealth.speciality" id="45">
+            <field name="name">Phẫu thuật tạo hình (Plastic surgery)</field>
+            <field name="code">PS</field>
+        </record>
+        <record model="gnuhealth.speciality" id="46">
+            <field name="name">Trực tràng học (Proctology)</field>
+            <field name="code">PRO</field>
+        </record>
+        <record model="gnuhealth.speciality" id="47">
+            <field name="name">Tâm thần học (Psychiatry)</field>
+            <field name="code">P</field>
+        </record>
+        <record model="gnuhealth.speciality" id="48">
+            <field name="name">Bác sĩ chuyên khoa phổi (Pulmonology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="49">
+            <field name="name">Y học phóng xạ (Radiology)</field>
+            <field name="code">R, DR</field>
+        </record>
+        <record model="gnuhealth.speciality" id="50">
+            <field name="name">Khoa thấp khớp (Rheumatology)</field>
+            <field name="code">RHU</field>
+        </record>
+        <record model="gnuhealth.speciality" id="51">
+            <field name="name">Khoa miệng (Stomatology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="52">
+            <field name="name">Phẫu thuật u bướu (Surgical oncology)</field>
+            <field name="code">SO</field>
+        </record>
+        <record model="gnuhealth.speciality" id="53">
+            <field name="name">Phẫu thuật ngực (Thoracic surgery)</field>
+            <field name="code">TS</field>
+        </record>
+        <record model="gnuhealth.speciality" id="54">
+            <field name="name">Độc chất học (Toxicology)</field>
+            <field name="code"></field>
+        </record>
+        <record model="gnuhealth.speciality" id="55">
+            <field name="name">Phẫu thuật cấy ghép (Transplant surgery)</field>
+            <field name="code">TTS</field>
+        </record>
+        <record model="gnuhealth.speciality" id="56">
+            <field name="name">Phẫu thuật chấn thương (Trauma surgery)</field>
+            <field name="code">TRS</field>
+        </record>
+        <record model="gnuhealth.speciality" id="57">
+            <field name="name">Urgent Care Medicine</field>
+            <field name="code">UCM</field>
+        </record>
+        <record model="gnuhealth.speciality" id="58">
+            <field name="name">Khoa tiết niệu (Urology)</field>
+            <field name="code">U</field>
+        </record>
+        <record model="gnuhealth.speciality" id="59">
+            <field name="name">Phẫu thuật Mạch</field>
+            <field name="code">VS</field>
+        </record>
+
+    </data>
+</tryton>

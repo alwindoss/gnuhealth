@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data skiptest="1" noupdate="1">
+
+        <record model="gnuhealth.ethnicity" id="eth1">
+            <field name="name">Da đen</field>
+            <field name="code">1</field>
+        </record>
+        <record model="gnuhealth.ethnicity" id="eth2">
+            <field name="name">Châu Á</field>
+            <field name="code">2</field>
+        </record>
+        <record model="gnuhealth.ethnicity" id="eth3">
+            <field name="name">Da trắng</field>
+            <field name="code">3</field>
+        </record>
+        <record model="gnuhealth.ethnicity" id="eth4">
+            <field name="name">Trung Đông</field>
+            <field name="code">4</field>
+        </record>
+        <record model="gnuhealth.ethnicity" id="eth5">
+            <field name="name">Hispanic</field>
+            <field name="code">5</field>
+        </record>
+        <record model="gnuhealth.ethnicity" id="eth6">
+            <field name="name">Mỹ gốc Phi</field>
+            <field name="code">6</field>
+        </record>
+        <record model="gnuhealth.ethnicity" id="eth7">
+            <field name="name">Mỹ gốc Ấn</field>
+            <field name="code">7</field>
+        </record>
+
+        <!-- http://vi.wikisource.org/wiki/List_of_ethnic_groups_in_Vietnam.html -->
+        <record model="gnuhealth.ethnicity" id="eth11">
+            <field name="name">Kinh</field>
+            <field name="code">11</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth12">
+            <field name="name">Tày</field>
+            <field name="code">12</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth13">
+            <field name="name">Thái</field>
+            <field name="code">13</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth14">
+            <field name="name">Mường</field>
+            <field name="code">14</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth15">
+            <field name="name">Khmer Krom</field>
+            <field name="code">15</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth16">
+            <field name="name">Hoa</field>
+            <field name="code">16</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth17">
+            <field name="name">Nùng</field>
+            <field name="code">17</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth18">
+            <field name="name">H'Mông</field>
+            <field name="code">18</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth19">
+            <field name="name">Dao</field>
+            <field name="code">19</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth20">
+            <field name="name">Gia Rai</field>
+            <field name="code">20</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth21">
+            <field name="name">Ê Đê</field>
+            <field name="code">21</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth22">
+            <field name="name">Ba Na</field>
+            <field name="code">22</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth23">
+            <field name="name">Sán Chay</field>
+            <field name="code">23</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth24">
+            <field name="name">Chăm</field>
+            <field name="code">24</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth25">
+            <field name="name">Xơ Đăng</field>
+            <field name="code">25</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth26">
+            <field name="name">Sán Dìu</field>
+            <field name="code">26</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth27">
+            <field name="name">Hrê</field>
+            <field name="code">27</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth28">
+            <field name="name">Cờ Ho</field>
+            <field name="code">28</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth29">
+            <field name="name">Ra Glai</field>
+            <field name="code">29</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth30">
+            <field name="name">M'Nông</field>
+            <field name="code">30</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth31">
+            <field name="name">Thổ</field>
+            <field name="code">31</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth32">
+            <field name="name">Xtiêng</field>
+            <field name="code">32</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth33">
+            <field name="name">Khơ Mú</field>
+            <field name="code">33</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth34">
+            <field name="name">Bru</field>
+            <field name="code">34</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth35">
+            <field name="name">Giáy</field>
+            <field name="code">35</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth36">
+            <field name="name">Cơ Tu</field>
+            <field name="code">36</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth37">
+            <field name="name">Giẻ Triêng</field>
+            <field name="code">37</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth38">
+            <field name="name">Tà Ôi</field>
+            <field name="code">38</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth39">
+            <field name="name">Mạ</field>
+            <field name="code">39</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth40">
+            <field name="name">Co</field>
+            <field name="code">40</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth41">
+            <field name="name">Chơ Ro</field>
+            <field name="code">41</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth42">
+            <field name="name">Hà Nhì</field>
+            <field name="code">42</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth43">
+            <field name="name">Xinh Mun</field>
+            <field name="code">43</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth44">
+            <field name="name">Chu Ru</field>
+            <field name="code">44</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth45">
+            <field name="name">Lao</field>
+            <field name="code">45</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth46">
+            <field name="name">La Chí</field>
+            <field name="code">46</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth47">
+            <field name="name">Phù Lá</field>
+            <field name="code">47</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth48">
+            <field name="name">La Hủ</field>
+            <field name="code">48</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth49">
+            <field name="name">Kháng</field>
+            <field name="code">49</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth50">
+            <field name="name">Lự</field>
+            <field name="code">50</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth51">
+            <field name="name">Pà Thẻn</field>
+            <field name="code">51</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth52">
+            <field name="name">Lô Lô</field>
+            <field name="code">52</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth53">
+            <field name="name">Chứt</field>
+            <field name="code">53</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth54">
+            <field name="name">Mảng</field>
+            <field name="code">54</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth55">
+            <field name="name">Cờ Lao</field>
+            <field name="code">55</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth56">
+            <field name="name">Bố Y</field>
+            <field name="code">56</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth57">
+            <field name="name">La Ha</field>
+            <field name="code">57</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth58">
+            <field name="name">Cống</field>
+            <field name="code">58</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth59">
+            <field name="name">Ngái</field>
+            <field name="code">59</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth60">
+            <field name="name">Si La</field>
+            <field name="code">60</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth61">
+            <field name="name">Pu Péo</field>
+            <field name="code">61</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth62">
+            <field name="name">Brâu</field>
+            <field name="code">62</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth63">
+            <field name="name">Rơ Măm</field>
+            <field name="code">63</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth64">
+            <field name="name">Ơ Đu</field>
+            <field name="code">64</field>
+        </record>
+
+    </data>
+</tryton>

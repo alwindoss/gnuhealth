@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data skiptest="True" noupdate="1">
+
+        <record model="gnuhealth.drug.form" id="AMP">
+            <field name="name">Ampolla</field>
+            <field name="code">AMP</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="AMI">
+            <field name="name">Ampolla intramuscular</field>
+            <field name="code">AMI</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="APS">
+            <field name="name">Apósito soluble</field>
+            <field name="code">APS</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="BAL">
+            <field name="name">Bálsamos</field>
+            <field name="code">BAL</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="CAP">
+            <field name="name">Cápsulas</field>
+            <field name="code">CAP</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="CAR">
+            <field name="name">Caramelos</field>
+            <field name="code">CAR</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="CAT">
+            <field name="name">Cataplasmas</field>
+            <field name="code">CAT</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="COM">
+            <field name="name">Comprimidos</field>
+            <field name="code">COM</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="CRE">
+            <field name="name">Crema</field>
+            <field name="code">CRE</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="CRT">
+            <field name="name">Crema tópica</field>
+            <field name="code">CRT</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="CRV">
+            <field name="name">Crema vaginal</field>
+            <field name="code">CRV</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="ELI">
+            <field name="name">Elixir</field>
+            <field name="code">ELI</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="EMP">
+            <field name="name">Emplastos</field>
+            <field name="code">EMP</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="EMU">
+            <field name="name">Emulsión</field>
+            <field name="code">EMU</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="ENE">
+            <field name="name">Enemas</field>
+            <field name="code">ENE</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="ENJ">
+            <field name="name">Enjuague bucal</field>
+            <field name="code">ENJ</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="FOM">
+            <field name="name">Fomentos</field>
+            <field name="code">FOM</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="GAR">
+            <field name="name">Gargarismos</field>
+            <field name="code">GAR</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="GEL">
+            <field name="name">Gel</field>
+            <field name="code">GEL</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="GLO">
+            <field name="name">Glóbulos</field>
+            <field name="code">GLO</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="GOT">
+            <field name="name">Gotas</field>
+            <field name="code">GOT</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="GON">
+            <field name="name">Gotas nasales</field>
+            <field name="code">GON</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="GRA">
+            <field name="name">Grageas</field>
+            <field name="code">GRA</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="GRE">
+            <field name="name">Grageas entéricas</field>
+            <field name="code">GRE</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="GRN">
+            <field name="name">Gránulos</field>
+            <field name="code">GRN</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="INH">
+            <field name="name">Inhalador</field>
+            <field name="code">INH</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="INA">
+            <field name="name">Inyección acuosa</field>
+            <field name="code">INA</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="INY">
+            <field name="name">Inyectable</field>
+            <field name="code">INY</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="JAB">
+            <field name="name">Jabón</field>
+            <field name="code">JAB</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="JLI">
+            <field name="name">Jabón líquido</field>
+            <field name="code">JLI</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="JAL">
+            <field name="name">Jalea</field>
+            <field name="code">JAL</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="JAR">
+            <field name="name">Jarabe</field>
+            <field name="code">JAR</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="LAV">
+            <field name="name">Lavado vaginal</field>
+            <field name="code">LAV</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="LIN">
+            <field name="name">Linimentos</field>
+            <field name="code">LIN</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="LOC">
+            <field name="name">Loción</field>
+            <field name="code">LOC</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="OVU">
+            <field name="name">Óvulos</field>
+            <field name="code">OVU</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="OVA">
+            <field name="name">Óvulos vaginales</field>
+            <field name="code">OVA</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="PAR">
+            <field name="name">Parches</field>
+            <field name="code">PAR</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="PAS">
+            <field name="name">Pastillas</field>
+            <field name="code">PAS</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="PAV">
+            <field name="name">Pastillas vaginales</field>
+            <field name="code">PAV</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="PER">
+            <field name="name">Perlas</field>
+            <field name="code">PER</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="PIL">
+            <field name="name">Píldoras</field>
+            <field name="code">PIL</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="POC">
+            <field name="name">Poción</field>
+            <field name="code">POC</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="POL">
+            <field name="name">Polvo</field>
+            <field name="code">POL</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="POS">
+            <field name="name">Polvo para suspensión</field>
+            <field name="code">POS</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="POM">
+            <field name="name">Pomada</field>
+            <field name="code">POM</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="SHA">
+            <field name="name">Shampoo</field>
+            <field name="code">SHA</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="SOL">
+            <field name="name">Solución</field>
+            <field name="code">SOL</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="SOC">
+            <field name="name">Solución capilar</field>
+            <field name="code">SOC</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="SOG">
+            <field name="name">Solución gotas</field>
+            <field name="code">SOG</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="SOO">
+            <field name="name">Solución oftálmica</field>
+            <field name="code">SOO</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="SOE">
+            <field name="name">Solución oftálmica estéril</field>
+            <field name="code">SOE</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="SOP">
+            <field name="name">Solución óptica</field>
+            <field name="code">SOP</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="SUP">
+            <field name="name">Supositorios</field>
+            <field name="code">SUP</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="SUS">
+            <field name="name">Suspensión</field>
+            <field name="code">SUS</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="SUI">
+            <field name="name">Suspensión inyectable</field>
+            <field name="code">SUI</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="TAB">
+            <field name="name">Tabletas</field>
+            <field name="code">TAB</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="TLP">
+            <field name="name">Tabletas de liberación prolongada</field>
+            <field name="code">TLP</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="TAR">
+            <field name="name">Tabletas recubiertas</field>
+            <field name="code">TAR</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="TIN">
+            <field name="name">Tintura</field>
+            <field name="code">TIN</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="TOB">
+            <field name="name">Tópico bucal</field>
+            <field name="code">TOB</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="TOU">
+            <field name="name">Tópico ungüento</field>
+            <field name="code">TOU</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="UNG">
+            <field name="name">Ungüento</field>
+            <field name="code">UNG</field>
+        </record>
+        <record model="gnuhealth.drug.form" id="UND">
+            <field name="name">Ungüento dermatológico</field>
+            <field name="code">UND</field>
+        </record>
+
+    </data>
+</tryton>

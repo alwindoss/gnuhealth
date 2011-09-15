@@ -1,1 +1,0 @@
-from test_medical_inpatient import suite

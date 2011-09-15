@@ -1,0 +1,2619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data skiptest="1" noupdate="1">
+
+        <record model="gnuhealth.occupation" id="occ1">
+            <field name="name">Thất nghiệp</field>
+            <field name="code">1</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ2">
+            <field name="name">Nhà quản lý</field>
+            <field name="code">2</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ3">
+            <field name="name">Nhà nông học</field>
+            <field name="code">3</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ4">
+            <field name="name">Phi hành gia</field>
+            <field name="code">4</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ5">
+            <field name="name">Nhà khảo cổ</field>
+            <field name="code">5</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ6">
+            <field name="name">Kiến trúc sư</field>
+            <field name="code">6</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ7">
+            <field name="name">Kiểm toán viên</field>
+            <field name="code">7</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ8">
+            <field name="name">Tác giả</field>
+            <field name="code">8</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ9">
+            <field name="name">Nghệ sĩ</field>
+            <field name="code">9</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ10">
+            <field name="name">Diễn viên ba lê/kịch múa</field>
+            <field name="code">10</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ11">
+            <field name="name">Nhạc công chơi nhạc cụ âm trầm</field>
+            <field name="code">11</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ12">
+            <field name="name">Viên quản lý neo buồm</field>
+            <field name="code">12</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ13">
+            <field name="name">Thợ thủ công làm nồi hơi</field>
+            <field name="code">13</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ14">
+            <field name="name">Người bán sách</field>
+            <field name="code">14</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ15">
+            <field name="name">Người xây dựng</field>
+            <field name="code">15</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ16">
+            <field name="name">Tài xế taxi</field>
+            <field name="code">16</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ17">
+            <field name="name">Cảnh sát</field>
+            <field name="code">17</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ18">
+            <field name="name">Thợ đóng đồ gỗ mỹ thuật</field>
+            <field name="code">18</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ19">
+            <field name="name">Người viết chữ đẹp</field>
+            <field name="code">19</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ20">
+            <field name="name">Gái gọi</field>
+            <field name="code">20</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ21">
+            <field name="name">Thợ chụp ảnh/quay phim</field>
+            <field name="code">21</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ22">
+            <field name="name">Cố vấn trại</field>
+            <field name="code">22</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ23">
+            <field name="name">Nhà thiết kế xe hơi</field>
+            <field name="code">23</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ24">
+            <field name="name">Bác sĩ chuyên khoa tim</field>
+            <field name="code">24</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ25">
+            <field name="name">Thợ mộc</field>
+            <field name="code">25</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ26">
+            <field name="name">Người chuyên vẽ bản đồ</field>
+            <field name="code">26</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ27">
+            <field name="name">Người vẽ tranh hoạt hình</field>
+            <field name="code">27</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ28">
+            <field name="name">Người làm và sửa xe bò, xe ngựa</field>
+            <field name="code">28</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ29">
+            <field name="name">Thu ngân</field>
+            <field name="code">29</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ30">
+            <field name="name">Nhân vật nổi tiếng</field>
+            <field name="code">30</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ31">
+            <field name="name">Người chơi đàn viôlôngxen</field>
+            <field name="code">31</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ32">
+            <field name="name">Nhân viên kiểm duyệt, giám thị</field>
+            <field name="code">32</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ33">
+            <field name="name">Tổng giám đốc (CEO)</field>
+            <field name="code">33</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ34">
+            <field name="name">Giám đốc tài chính (CFO)</field>
+            <field name="code">34</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ35">
+            <field name="name">Người làm nến, bán nến</field>
+            <field name="code">35</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ36">
+            <field name="name">Người bán hàng rong</field>
+            <field name="code">36</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ37">
+            <field name="name">Tài xế</field>
+            <field name="code">37</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ38">
+            <field name="name">Hoạt náo viên</field>
+            <field name="code">38</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ39">
+            <field name="name">Người làm phô mai</field>
+            <field name="code">39</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ40">
+            <field name="name">Bếp trưởng </field>
+            <field name="code">40</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ41">
+            <field name="name">Kỹ sư hóa học</field>
+            <field name="code">41</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ42">
+            <field name="name">Kỹ sư công nghệ hóa chất</field>
+            <field name="code">42</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ43">
+            <field name="name">Nhà hóa học</field>
+            <field name="code">43</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ44">
+            <field name="name">Cảnh sát trưởng</field>
+            <field name="code">44</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ45">
+            <field name="name">Đại phó</field>
+            <field name="code">45</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ46">
+            <field name="name">Người quét ống khói</field>
+            <field name="code">46</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ47">
+            <field name="name">Người chuyên chữa bệnh về chân</field>
+            <field name="code">47</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ48">
+            <field name="name">Bác sĩ chuyên chữa bệnh bằng phương pháp nắn khớp xương</field>
+            <field name="code">48</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ49">
+            <field name="name">Biên đạo múa</field>
+            <field name="code">49</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ50">
+            <field name="name">Người phục vụ trong nhà thờ</field>
+            <field name="code">50</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ51">
+            <field name="name">Mật vụ CIA</field>
+            <field name="code">51</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ52">
+            <field name="name">Nhà thuyết pháp lưu động</field>
+            <field name="code">52</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ53">
+            <field name="name">Công chức</field>
+            <field name="code">53</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ54">
+            <field name="name">Kỹ sư phụ trách công trình dân dụng quy mô lớn (đường sá, cầu cống...)</field>
+            <field name="code">54</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ55">
+            <field name="name">Người chơi clarinet</field>
+            <field name="code">55</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ56">
+            <field name="name">Lao công</field>
+            <field name="code">56</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ57">
+            <field name="name">Thư ký</field>
+            <field name="code">57</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ58">
+            <field name="name">Thợ làm và sửa đồng hồ</field>
+            <field name="code">58</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ59">
+            <field name="name">Huấn luyện viên</field>
+            <field name="code">59</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ60">
+            <field name="name">Người đánh xe ngựa</field>
+            <field name="code">60</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ61">
+            <field name="name">Người gác biển</field>
+            <field name="code">61</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ62">
+            <field name="name">Thợ sửa giày</field>
+            <field name="code">62</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ63">
+            <field name="name">Nhà khoa học về nhận thức</field>
+            <field name="code">63</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ64">
+            <field name="name">Nhà báo chuyên mục</field>
+            <field name="code">64</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ65">
+            <field name="name">Diễn viên hài</field>
+            <field name="code">65</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ66">
+            <field name="name">Thợ làm và sửa la bàn</field>
+            <field name="code">66</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ67">
+            <field name="name">Người sáng tác</field>
+            <field name="code">67</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ68">
+            <field name="name">Kỹ sư tin học</field>
+            <field name="code">68</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ69">
+            <field name="name">Lập trình viên</field>
+            <field name="code">69</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ70">
+            <field name="name">Phu khuân vác</field>
+            <field name="code">70</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ71">
+            <field name="name">Nhạc trưởng</field>
+            <field name="code">71</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ72">
+            <field name="name">Nguyên soái</field>
+            <field name="code">72</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ73">
+            <field name="name">Kỹ sư xây dựng</field>
+            <field name="code">73</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ74">
+            <field name="name">Người quản lý xây dựng</field>
+            <field name="code">74</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ75">
+            <field name="name">Công nhân xây dựng</field>
+            <field name="code">75</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ76">
+            <field name="name">Lãnh sự</field>
+            <field name="code">76</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ77">
+            <field name="name">Người tư vấn, cố vấn</field>
+            <field name="code">77</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ78">
+            <field name="name">Người quản lý hợp đồng</field>
+            <field name="code">78</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ79">
+            <field name="name">Kiểm soát viên</field>
+            <field name="code">79</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ80">
+            <field name="name">Bác sĩ pháp y</field>
+            <field name="code">80</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ81">
+            <field name="name">Cán bộ quản lý cao cấp</field>
+            <field name="code">81</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ82">
+            <field name="name">Cán bộ cải huấn</field>
+            <field name="code">82</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ83">
+            <field name="name">Người hiệu chỉnh, kiểm duyệt</field>
+            <field name="code">83</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ84">
+            <field name="name">Phóng viên</field>
+            <field name="code">84</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ85">
+            <field name="name">Nhà mỹ dung</field>
+            <field name="code">85</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ86">
+            <field name="name">Nhà du hành vũ trụ</field>
+            <field name="code">86</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ87">
+            <field name="name">Người bán hàng rong</field>
+            <field name="code">87</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ88">
+            <field name="name">Nhà thiết kế trang phục</field>
+            <field name="code">88</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ89">
+            <field name="name">Người đưa thư</field>
+            <field name="code">89</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ90">
+            <field name="name">Anh hề</field>
+            <field name="code">90</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ91">
+            <field name="name">Người chăn bò</field>
+            <field name="code">91</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ92">
+            <field name="name">Kiểm toán viên CPA</field>
+            <field name="code">92</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ93">
+            <field name="name">Thợ thủ công </field>
+            <field name="code">93</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ94">
+            <field name="name">Kỹ sư sáng tạo</field>
+            <field name="code">94</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ95">
+            <field name="name">Người rao</field>
+            <field name="code">95</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ96">
+            <field name="name">Chủ trại nhỏ</field>
+            <field name="code">96</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ97">
+            <field name="name">Người viết mật mã</field>
+            <field name="code">97</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ98">
+            <field name="name">Nhà nghiên cứu động vật có tính huyền thoại hoặc không tồn tại theo xu thế sinh vật học</field>
+            <field name="code">98</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ99">
+            <field name="name">Nhà nghiên cứu tinh thể học</field>
+            <field name="code">99</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ100">
+            <field name="name">Người quản lý, tổ chức triển lãm</field>
+            <field name="code">100</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ101">
+            <field name="name">Người sang sửa và nhuộm da</field>
+            <field name="code">101</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ102">
+            <field name="name">Người giám hộ</field>
+            <field name="code">102</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ103">
+            <field name="name">Cán bộ hải quan</field>
+            <field name="code">103</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ104">
+            <field name="name">Người làm, bán, sửa chữa dao kéo</field>
+            <field name="code">104</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ105">
+            <field name="name">Diễn viên múa</field>
+            <field name="code">105</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ106">
+            <field name="name">Huấn luyện viên khiêu vũ</field>
+            <field name="code">106</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ107">
+            <field name="name">Chuyên viên quản trị cơ sở dữ liệu (DBA)</field>
+            <field name="code">107</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ108">
+            <field name="name">Phó (thực thi pháp luật)</field>
+            <field name="code">108</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ109">
+            <field name="name">Nghị sĩ</field>
+            <field name="code">109</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ110">
+            <field name="name">Nhà nhân khẩu học</field>
+            <field name="code">110</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ111">
+            <field name="name">Người phá hủy</field>
+            <field name="code">111</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ112">
+            <field name="name">Nha sĩ</field>
+            <field name="code">112</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ113">
+            <field name="name">Bác sĩ chuyên khoa da liễu</field>
+            <field name="code">113</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ114">
+            <field name="name">Nhà thiết kế</field>
+            <field name="code">114</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ115">
+            <field name="name">Thám tử</field>
+            <field name="code">115</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ116">
+            <field name="name">Nhà sản xuất kim cương</field>
+            <field name="code">116</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ117">
+            <field name="name">Người độc tài</field>
+            <field name="code">117</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ118">
+            <field name="name">Chuyên gia dinh dưỡng</field>
+            <field name="code">118</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ119">
+            <field name="name">Nhà ngoại giao</field>
+            <field name="code">119</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ120">
+            <field name="name">Giám đốc</field>
+            <field name="code">120</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ121">
+            <field name="name">Người giới thiệu đĩa hát</field>
+            <field name="code">121</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ122">
+            <field name="name">Người điều vận (xe lửa)</field>
+            <field name="code">122</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ123">
+            <field name="name">Người chưng cất rượu</field>
+            <field name="code">123</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ124">
+            <field name="name">Thợ lặn</field>
+            <field name="code">124</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ125">
+            <field name="name">Người lao động bến tàu</field>
+            <field name="code">125</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ126">
+            <field name="name">Thủ thư hỗ trợ tìm kiếm tài liệu khoa học và kỹ thuật</field>
+            <field name="code">126</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ127">
+            <field name="name">Tiến sĩ</field>
+            <field name="code">127</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ128">
+            <field name="name">Tiến sĩ giáo dục</field>
+            <field name="code">128</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ129">
+            <field name="name">Bác sĩ</field>
+            <field name="code">129</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ130">
+            <field name="name">Bác sĩ vật lý trị liệu</field>
+            <field name="code">130</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ131">
+            <field name="name">Người nuôi chó</field>
+            <field name="code">131</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ132">
+            <field name="name">Người bắt chó</field>
+            <field name="code">132</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ133">
+            <field name="name">Người dẫn chó đi dạo</field>
+            <field name="code">133</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ134">
+            <field name="name">Người giúp việc nhà</field>
+            <field name="code">134</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ135">
+            <field name="name">Dominatrix</field>
+            <field name="code">135</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ136">
+            <field name="name">Donkey Trainer</field>
+            <field name="code">136</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ137">
+            <field name="name">Người gác cửa</field>
+            <field name="code">137</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ138">
+            <field name="name">Người phác thảo</field>
+            <field name="code">138</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ139">
+            <field name="name">Nhà soạn kịch</field>
+            <field name="code">139</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ140">
+            <field name="name">Nhà viết kịch</field>
+            <field name="code">140</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ141">
+            <field name="name">Người bán vải</field>
+            <field name="code">141</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ142">
+            <field name="name">Người đánh xe bò không lá chắn</field>
+            <field name="code">142</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ143">
+            <field name="name">Thợ may</field>
+            <field name="code">143</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ144">
+            <field name="name">Huấn luyện viên tập luyện</field>
+            <field name="code">144</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ145">
+            <field name="name">Tài xế</field>
+            <field name="code">145</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ146">
+            <field name="name">Người bán thuốc</field>
+            <field name="code">146</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ147">
+            <field name="name">Người đánh trống</field>
+            <field name="code">147</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ148">
+            <field name="name">Drycooper</field>
+            <field name="code">148</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ149">
+            <field name="name">Drywaller</field>
+            <field name="code">149</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ150">
+            <field name="name">Người hốt rác</field>
+            <field name="code">150</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ151">
+            <field name="name">Thợ nhuộm</field>
+            <field name="code">151</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ152">
+            <field name="name">Nhà sinh thái học</field>
+            <field name="code">152</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ153">
+            <field name="name">Nhà kinh tế học</field>
+            <field name="code">153</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ154">
+            <field name="name">Biên tập viên</field>
+            <field name="code">154</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ155">
+            <field name="name">Nhà giáo dục học</field>
+            <field name="code">155</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ156">
+            <field name="name">Nhà sư phạm</field>
+            <field name="code">156</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ157">
+            <field name="name">Nhà nghiên cứu về Ai Cập</field>
+            <field name="code">157</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ158">
+            <field name="name">Kỹ sư điện</field>
+            <field name="code">158</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ159">
+            <field name="name">Thợ điện</field>
+            <field name="code">159</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ160">
+            <field name="name">Công nhân cơ khí thang máy</field>
+            <field name="code">160</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ161">
+            <field name="name">Người ướp xác</field>
+            <field name="code">161</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ162">
+            <field name="name">Nhà phôi học</field>
+            <field name="code">162</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ163">
+            <field name="name">Kỹ thuật viên cấp cứu y tế</field>
+            <field name="code">163</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ164">
+            <field name="name">Thợ máy</field>
+            <field name="code">164</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ165">
+            <field name="name">Kỹ sư</field>
+            <field name="code">165</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ166">
+            <field name="name">Thợ chạm, khắc</field>
+            <field name="code">166</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ167">
+            <field name="name">Người làm rượu nho</field>
+            <field name="code">167</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ168">
+            <field name="name">Người làm trò tiêu khiển</field>
+            <field name="code">168</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ169">
+            <field name="name">Nhà côn trùng học</field>
+            <field name="code">169</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ170">
+            <field name="name">Doanh nhân</field>
+            <field name="code">170</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ171">
+            <field name="name">Nhà khoa học môi trường</field>
+            <field name="code">171</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ172">
+            <field name="name">Nhà nghiên cứu về lao động, về thiết kế tương tác giữa người dùng và thiết bị</field>
+            <field name="code">172</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ173">
+            <field name="name">Vệ sĩ</field>
+            <field name="code">173</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ174">
+            <field name="name">Người môi giới bất động sản</field>
+            <field name="code">174</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ175">
+            <field name="name">Nhà mỹ học</field>
+            <field name="code">175</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ176">
+            <field name="name">Nhà dân tộc học</field>
+            <field name="code">176</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ177">
+            <field name="name">Nhà phong tục học</field>
+            <field name="code">177</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ178">
+            <field name="name">Nhà từ nguyên học</field>
+            <field name="code">178</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ179">
+            <field name="name">Người truyền giáo</field>
+            <field name="code">179</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ180">
+            <field name="name">Bộ Tài chính Anh</field>
+            <field name="code">180</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ181">
+            <field name="name">Ủy viên</field>
+            <field name="code">181</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ182">
+            <field name="name">Vũ công múa khỏa thân</field>
+            <field name="code">182</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ183">
+            <field name="name">Nhân viên hãng vận tải tốc hành</field>
+            <field name="code">183</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ184">
+            <field name="name">Người hủy diệt</field>
+            <field name="code">184</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ185">
+            <field name="name">Người đóng vai phụ</field>
+            <field name="code">185</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ186">
+            <field name="name">Người nuôi chim ưng</field>
+            <field name="code">186</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ187">
+            <field name="name">Nông dân</field>
+            <field name="code">187</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ188">
+            <field name="name">Thợ đóng móng ngựa</field>
+            <field name="code">188</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ189">
+            <field name="name">Nhà thiết kế thời trang</field>
+            <field name="code">189</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ190">
+            <field name="name">Đặc vụ FBI</field>
+            <field name="code">190</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ191">
+            <field name="name">Người buôn bán da lông thú</field>
+            <field name="code">191</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ192">
+            <field name="name">Người đấu kiếm</field>
+            <field name="code">192</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ193">
+            <field name="name">Công nhân phà</field>
+            <field name="code">193</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ194">
+            <field name="name">Đạo diễn phim</field>
+            <field name="code">194</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ195">
+            <field name="name">Nhà sản xuất phim</field>
+            <field name="code">195</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ196">
+            <field name="name">Cố vấn tài chính</field>
+            <field name="code">196</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ197">
+            <field name="name">Nhà phân tích tài chính</field>
+            <field name="code">197</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ198">
+            <field name="name">Giám đốc tài chính</field>
+            <field name="code">198</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ199">
+            <field name="name">Người lập kế hoạch tài chính</field>
+            <field name="code">199</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ200">
+            <field name="name">Chuyên gia tài chính</field>
+            <field name="code">200</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ201">
+            <field name="name">Lính cứu hỏa</field>
+            <field name="code">201</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ202">
+            <field name="name">Nhân viên cứu hỏa</field>
+            <field name="code">202</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ203">
+            <field name="name">Lính cứu hỏa</field>
+            <field name="code">203</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ204">
+            <field name="name">Đại phó</field>
+            <field name="code">204</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ205">
+            <field name="name">Người bán cá</field>
+            <field name="code">205</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ206">
+            <field name="name">Người đánh các</field>
+            <field name="code">206</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ207">
+            <field name="name">Thợ lắp ráp</field>
+            <field name="code">207</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ208">
+            <field name="name">Người thổi sáo</field>
+            <field name="code">208</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ209">
+            <field name="name">Nhà chế tạo hương liệu</field>
+            <field name="code">209</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ210">
+            <field name="name">Người làm cung tên</field>
+            <field name="code">210</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ211">
+            <field name="name">Tiếp viên hàng không</field>
+            <field name="code">211</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ212">
+            <field name="name">Kỹ sư hàng không</field>
+            <field name="code">212</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ213">
+            <field name="name">Huấn luyện viên bay</field>
+            <field name="code">213</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ214">
+            <field name="name">Người điều khiển chương trình truyền hình</field>
+            <field name="code">214</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ215">
+            <field name="name">Người bán hoa</field>
+            <field name="code">215</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ216">
+            <field name="name">Fluffer</field>
+            <field name="code">216</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ217">
+            <field name="name">Người thổi sáo</field>
+            <field name="code">217</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ218">
+            <field name="name">Quản đốc</field>
+            <field name="code">218</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ219">
+            <field name="name">Nhà khoa học pháp y</field>
+            <field name="code">219</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ220">
+            <field name="name">Người bán hoa quả</field>
+            <field name="code">220</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ221">
+            <field name="name">Người thuộc da lông thú</field>
+            <field name="code">221</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ222">
+            <field name="name">Người canh rừng không cho săn trộm thú</field>
+            <field name="code">222</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ223">
+            <field name="name">Người dẫn chương trình trò chơi truyền hình</field>
+            <field name="code">223</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ224">
+            <field name="name">Nhà thiết kế trò chơi</field>
+            <field name="code">224</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ225">
+            <field name="name">Người thu gom rác</field>
+            <field name="code">225</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ226">
+            <field name="name">Người làm vườn</field>
+            <field name="code">226</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ227">
+            <field name="name">Người gác cổng</field>
+            <field name="code">227</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ228">
+            <field name="name">Người cắt, mài ngọc, đá quý</field>
+            <field name="code">228</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ229">
+            <field name="name">Nhà phả hệ học</field>
+            <field name="code">229</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ230">
+            <field name="name">Tướng</field>
+            <field name="code">230</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ231">
+            <field name="name">Nhà đo đạc</field>
+            <field name="code">231</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ232">
+            <field name="name">Nhà địa lý</field>
+            <field name="code">232</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ233">
+            <field name="name">Nhà địa chất</field>
+            <field name="code">233</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ234">
+            <field name="name">Nhà hình học</field>
+            <field name="code">234</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ235">
+            <field name="name">Nhà địa vật lý</field>
+            <field name="code">235</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ236">
+            <field name="name">Đại diện chính phủ</field>
+            <field name="code">236</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ237">
+            <field name="name">Thống đốc</field>
+            <field name="code">237</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ238">
+            <field name="name">Nhà văn phạm</field>
+            <field name="code">238</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ239">
+            <field name="name">Nghệ sĩ đồ họa</field>
+            <field name="code">239</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ240">
+            <field name="name">Người đào huyệt</field>
+            <field name="code">240</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ241">
+            <field name="name">Lính ném lựu đạn</field>
+            <field name="code">241</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ242">
+            <field name="name">Người bán rau quả</field>
+            <field name="code">242</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ243">
+            <field name="name">Người bán tạp hóa</field>
+            <field name="code">243</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ244">
+            <field name="name">Hướng dẫn viên</field>
+            <field name="code">244</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ245">
+            <field name="name">Người chơi đàn ghita</field>
+            <field name="code">245</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ246">
+            <field name="name">Người làm, sửa súng</field>
+            <field name="code">246</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ247">
+            <field name="name">Gynecologist</field>
+            <field name="code">247</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ248">
+            <field name="name">Garrett</field>
+            <field name="code">248</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ249">
+            <field name="name">Người bán đồ kim chỉ</field>
+            <field name="code">249</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ250">
+            <field name="name">Người chơi đàn hạc</field>
+            <field name="code">250</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ251">
+            <field name="name">Thợ làm tóc</field>
+            <field name="code">251</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ252">
+            <field name="name">Người làm công việc lặt vặt</field>
+            <field name="code">252</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ253">
+            <field name="name">Trưởng cảng</field>
+            <field name="code">253</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ254">
+            <field name="name">Người chơi đàn hạc</field>
+            <field name="code">254</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ255">
+            <field name="name">Người làm/bán mũ</field>
+            <field name="code">255</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ256">
+            <field name="name">Hayward</field>
+            <field name="code">256</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ257">
+            <field name="name">Hiệu trưởng</field>
+            <field name="code">257</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ258">
+            <field name="name">Người đưa tin</field>
+            <field name="code">258</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ259">
+            <field name="name">Nhà nghiên cứu về thảo mộc</field>
+            <field name="code">259</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ260">
+            <field name="name">Herder</field>
+            <field name="code">260</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ261">
+            <field name="name">Nhà viết sử, sử gia</field>
+            <field name="code">261</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ262">
+            <field name="name">Người chép sử</field>
+            <field name="code">262</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ263">
+            <field name="name">Người buôn hàng dệt kim</field>
+            <field name="code">263</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ264">
+            <field name="name">Người huấn luyện ngựa</field>
+            <field name="code">264</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ265">
+            <field name="name">Chủ khách sạn</field>
+            <field name="code">265</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ266">
+            <field name="name">Thợ sơn nhà</field>
+            <field name="code">266</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ267">
+            <field name="name">Người nội trợ</field>
+            <field name="code">267</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ268">
+            <field name="name">Thợ săn</field>
+            <field name="code">268</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ269">
+            <field name="name">Kỹ sư thủy lợi</field>
+            <field name="code">269</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ270">
+            <field name="name">Người soi sáng</field>
+            <field name="code">270</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ271">
+            <field name="name">Nhà ảo thuật</field>
+            <field name="code">271</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ272">
+            <field name="name">Người vẽ tranh minh họa</field>
+            <field name="code">272</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ273">
+            <field name="name">Nhà nhập khẩu</field>
+            <field name="code">273</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ274">
+            <field name="name">Nhà thiết kế công nghiệp</field>
+            <field name="code">274</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ275">
+            <field name="name">Kỹ sư công nghiệp</field>
+            <field name="code">275</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ276">
+            <field name="name">Nhà tư bản công nghiệp</field>
+            <field name="code">276</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ277">
+            <field name="name">Lính bộ binh</field>
+            <field name="code">277</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ278">
+            <field name="name">Kiến trúc sư thông tin</field>
+            <field name="code">278</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ279">
+            <field name="name">Kỹ sư công nghệ thông tin</field>
+            <field name="code">279</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ280">
+            <field name="name">Người bôi mực</field>
+            <field name="code">280</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ281">
+            <field name="name">Chủ quán trọ, khách sạn nhỏ</field>
+            <field name="code">281</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ282">
+            <field name="name">Huấn luyện viên</field>
+            <field name="code">282</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ283">
+            <field name="name"> Người bảo hiểm</field>
+            <field name="code">283</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ284">
+            <field name="name">Nhân viên tình báo</field>
+            <field name="code">284</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ285">
+            <field name="name">Nhà thiết kế nội thất</field>
+            <field name="code">285</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ286">
+            <field name="name">Bác sĩ nội khoa</field>
+            <field name="code">286</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ287">
+            <field name="name">Thông dịch viên</field>
+            <field name="code">287</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ288">
+            <field name="name">Người thẩm vấn</field>
+            <field name="code">288</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ289">
+            <field name="name">Nhà phát minh, sáng chế</field>
+            <field name="code">289</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ290">
+            <field name="name">Điều tra viên</field>
+            <field name="code">290</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ291">
+            <field name="name">Nhà phân tích đầu tư</field>
+            <field name="code">291</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ292">
+            <field name="name">Cán bộ ngân hàng đầu tư</field>
+            <field name="code">292</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ293">
+            <field name="name">Nhà môi giới đầu tư</field>
+            <field name="code">293</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ294">
+            <field name="name">Người bán đồ sắt</field>
+            <field name="code">294</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ295">
+            <field name="name">Người sản xuất gang</field>
+            <field name="code">295</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ296">
+            <field name="name">Thợ làm đồ sắt</field>
+            <field name="code">296</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ297">
+            <field name="name">Cai ngục, cai tù</field>
+            <field name="code">297</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ298">
+            <field name="name">Người trông nom nhà cửa (khi chủ vắng mặt)</field>
+            <field name="code">298</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ299">
+            <field name="name">Thợ kim hoàn</field>
+            <field name="code">299</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ300">
+            <field name="name">Nhà báo, ký giả</field>
+            <field name="code">300</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ301">
+            <field name="name">Luật gia</field>
+            <field name="code">301</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ302">
+            <field name="name">Quan tòa, thẩm phán</field>
+            <field name="code">302</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ303">
+            <field name="name">Nhà nghiên cứu vận động của con người</field>
+            <field name="code">303</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ304">
+            <field name="name">Vua</field>
+            <field name="code">304</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ305">
+            <field name="name">Trợ lý phòng thí nghiệm</field>
+            <field name="code">305</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ306">
+            <field name="name">Người lao động</field>
+            <field name="code">306</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ307">
+            <field name="name">Chủ nhà </field>
+            <field name="code">307</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ308">
+            <field name="name">Người làm đẹp phong cảnh</field>
+            <field name="code">308</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ309">
+            <field name="name">Người thắp đèn</field>
+            <field name="code">309</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ310">
+            <field name="name">Thợ giặt</field>
+            <field name="code">310</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ311">
+            <field name="name">Người thực thi pháp luật</field>
+            <field name="code">311</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ312">
+            <field name="name">Luật sư</field>
+            <field name="code">312</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ313">
+            <field name="name">Thợ đúc chì</field>
+            <field name="code">313</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ314">
+            <field name="name">Thợ thuộc da</field>
+            <field name="code">314</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ315">
+            <field name="name">Giảng viên đại học</field>
+            <field name="code">315</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ316">
+            <field name="name">Nhà thiết kế trò chơi điện tử</field>
+            <field name="code">316</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ317">
+            <field name="name">Thủ thư</field>
+            <field name="code">317</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ318">
+            <field name="name">Trợ lý kỹ thuật thư viện</field>
+            <field name="code">318</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ319">
+            <field name="name">Người viết lời nhạc kịch</field>
+            <field name="code">319</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ320">
+            <field name="name">Người cứu hộ</field>
+            <field name="code">320</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ321">
+            <field name="name">Người gác hải đăng</field>
+            <field name="code">321</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ322">
+            <field name="name">Kỹ thuật viên chiếu sáng</field>
+            <field name="code">322</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ323">
+            <field name="name">Thợ đường dây</field>
+            <field name="code">323</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ324">
+            <field name="name">Nhà ngôn ngữ học</field>
+            <field name="code">324</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ325">
+            <field name="name">Cán bộ cho vay</field>
+            <field name="code">325</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ326">
+            <field name="name">Người vận động hành lang</field>
+            <field name="code">326</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ327">
+            <field name="name">Thợ khóa</field>
+            <field name="code">327</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ328">
+            <field name="name">Chuyên gia về hậu cần học</field>
+            <field name="code">328</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ329">
+            <field name="name">Thợ đốn gỗ</field>
+            <field name="code">329</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ330">
+            <field name="name">Nhà thơ trữ tình</field>
+            <field name="code">330</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ331">
+            <field name="name">Biên tập tạp chí</field>
+            <field name="code">331</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ332">
+            <field name="name">Ảo thuật gia</field>
+            <field name="code">332</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ333">
+            <field name="name">Quan tòa</field>
+            <field name="code">333</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ334">
+            <field name="name">Người giúp việc</field>
+            <field name="code">334</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ335">
+            <field name="name">Người đưa thư</field>
+            <field name="code">335</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ336">
+            <field name="name">Nghệ sĩ trang điểm</field>
+            <field name="code">336</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ337">
+            <field name="name">Tư vấn quản lý</field>
+            <field name="code">337</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ338">
+            <field name="name">Giám đốc</field>
+            <field name="code">338</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ339">
+            <field name="name">Thợ cắt sửa móng tay</field>
+            <field name="code">339</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ340">
+            <field name="name">Nhà sản xuất</field>
+            <field name="code">340</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ341">
+            <field name="name">Lính thủy đánh bộ</field>
+            <field name="code">341</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ342">
+            <field name="name">Tiếp thị</field>
+            <field name="code">342</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ343">
+            <field name="name">Người làm vườn để bán</field>
+            <field name="code">343</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ344">
+            <field name="name">Võ sĩ</field>
+            <field name="code">344</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ345">
+            <field name="name">Thợ nề, thợ xây</field>
+            <field name="code">345</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ346">
+            <field name="name">Nhà trị liệu bằng mat-xa </field>
+            <field name="code">346</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ347">
+            <field name="name">Người dẫn chương trình (MC)</field>
+            <field name="code">347</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ348">
+            <field name="name">Người đấu bò</field>
+            <field name="code">348</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ349">
+            <field name="name">Kỹ sư vật liệu</field>
+            <field name="code">349</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ350">
+            <field name="name">Nhà khoa học vật liệu</field>
+            <field name="code">350</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ351">
+            <field name="name">Nhà toán học</field>
+            <field name="code">351</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ352">
+            <field name="name">Nữ y tá trưởng</field>
+            <field name="code">352</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ353">
+            <field name="name">Công nhân cơ khí</field>
+            <field name="code">353</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ354">
+            <field name="name">Kỹ sư cơ khí</field>
+            <field name="code">354</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ355">
+            <field name="name">Thợ cơ khí</field>
+            <field name="code">355</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ356">
+            <field name="name">Người hòa giải</field>
+            <field name="code">356</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ357">
+            <field name="name">Bác sĩ cấp cứu</field>
+            <field name="code">357</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ358">
+            <field name="name">Người làm thủ tục thanh toán cho bác sĩ, bệnh viện từ các công ty bảo hiểm y tế</field>
+            <field name="code">358</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ359">
+            <field name="name">Kỹ thuật viên y khoa</field>
+            <field name="code">359</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ360">
+            <field name="name">Người ghi hồ sơ bệnh nhân</field>
+            <field name="code">360</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ361">
+            <field name="name">Người có tài thôi miên</field>
+            <field name="code">361</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ362">
+            <field name="name">Người đưa tin</field>
+            <field name="code">362</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ363">
+            <field name="name">Nhà khí tượng học</field>
+            <field name="code">363</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ364">
+            <field name="name">Nhà vi trùng học</field>
+            <field name="code">364</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ365">
+            <field name="name">Bà đỡ</field>
+            <field name="code">365</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ366">
+            <field name="name">Người bán sữa, giao sữa </field>
+            <field name="code">366</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ367">
+            <field name="name">Chủ cối xay</field>
+            <field name="code">367</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ368">
+            <field name="name">Thợ mở</field>
+            <field name="code">368</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ369">
+            <field name="name">Người mẫu</field>
+            <field name="code">369</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ370">
+            <field name="name">Người làm mẫu vật, mô hình</field>
+            <field name="code">370</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ371">
+            <field name="name">Người chuyên bắt chuột chũi </field>
+            <field name="code">371</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ372">
+            <field name="name">Thợ đúc khuôn</field>
+            <field name="code">372</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ373">
+            <field name="name">Người thu đổi ngoại tệ</field>
+            <field name="code">373</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ374">
+            <field name="name">Người cho vay nặng lãi</field>
+            <field name="code">374</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ375">
+            <field name="name">Thầy tu</field>
+            <field name="code">375</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ376">
+            <field name="name">Người cho vay thế chấp bất động sản</field>
+            <field name="code">376</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ377">
+            <field name="name">Người môi giới cho vay thế chấp bất động sản</field>
+            <field name="code">377</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ378">
+            <field name="name">Người làm dịch vụ lễ tang</field>
+            <field name="code">378</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ379">
+            <field name="name">Người tìm kiếm, cứu hộ trên núi</field>
+            <field name="code">379</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ380">
+            <field name="name">Người leo núi</field>
+            <field name="code">380</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ381">
+            <field name="name">Người dắt la</field>
+            <field name="code">381</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ382">
+            <field name="name">Người vẽ tranh tường</field>
+            <field name="code">382</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ383">
+            <field name="name">Giám đốc âm nhạc</field>
+            <field name="code">383</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ384">
+            <field name="name">Nhạc sĩ</field>
+            <field name="code">384</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ385">
+            <field name="name">Người giữ trẻ</field>
+            <field name="code">385</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ386">
+            <field name="name">Nhà hàng hải</field>
+            <field name="code">386</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ387">
+            <field name="name">Needler</field>
+            <field name="code">387</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ388">
+            <field name="name">Nhà buôn rượu</field>
+            <field name="code">388</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ389">
+            <field name="name">Người đàm phán</field>
+            <field name="code">389</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ390">
+            <field name="name">Người đan lưới</field>
+            <field name="code">390</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ391">
+            <field name="name">Nhà giải phẫu thần kinh</field>
+            <field name="code">391</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ392">
+            <field name="name">Phát thanh viên</field>
+            <field name="code">392</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ393">
+            <field name="name">Công chứng viên</field>
+            <field name="code">393</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ394">
+            <field name="name">Người viết tiểu thuyết</field>
+            <field name="code">394</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ395">
+            <field name="name">Kỹ sư hạt nhân</field>
+            <field name="code">395</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ396">
+            <field name="name">Numerologist</field>
+            <field name="code">396</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ397">
+            <field name="name">Người nghiên cứu tiền đúc/Người sưu tầm các loại tiền</field>
+            <field name="code">397</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ398">
+            <field name="name">Bà xơ/Ni cô</field>
+            <field name="code">398</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ399">
+            <field name="name">Y tá</field>
+            <field name="code">399</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ400">
+            <field name="name">Người giữ trẻ, bảo mẫu</field>
+            <field name="code">400</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ401">
+            <field name="name">Người thổi kèn ô-boa</field>
+            <field name="code">401</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ402">
+            <field name="name">Bác sĩ sản khoa</field>
+            <field name="code">402</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ403">
+            <field name="name">Người chữa bệnh bằng cách giao những công việc phải làm</field>
+            <field name="code">403</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ404">
+            <field name="name">Bác sĩ nha khoa</field>
+            <field name="code">404</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ405">
+            <field name="name">Trợ lý văn phòng</field>
+            <field name="code">405</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ406">
+            <field name="name">Bác sĩ chuyên khoa ung thư</field>
+            <field name="code">406</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ407">
+            <field name="name">Nhà bản thể học</field>
+            <field name="code">407</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ408">
+            <field name="name">Tổng đài viên</field>
+            <field name="code">408</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ409">
+            <field name="name">Bác sĩ nhãn khoa</field>
+            <field name="code">409</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ410">
+            <field name="name">Chuyên gia nhãn khoa</field>
+            <field name="code">410</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ411">
+            <field name="name">Nhà tiên tri</field>
+            <field name="code">411</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ412">
+            <field name="name">Binh nhì hải quân</field>
+            <field name="code">412</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ413">
+            <field name="name">Nhạc công chơi đàn organ</field>
+            <field name="code">413</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ414">
+            <field name="name">Người tổ chức</field>
+            <field name="code">414</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ415">
+            <field name="name">Nhà nghiên cứu chim</field>
+            <field name="code">415</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ416">
+            <field name="name">Bác sĩ chỉnh răng</field>
+            <field name="code">416</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ417">
+            <field name="name">Bác sĩ chuyên khoa chỉnh hình</field>
+            <field name="code">417</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ418">
+            <field name="name">Người coi chuồng ngựa</field>
+            <field name="code">418</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ419">
+            <field name="name">Bác sĩ chuyên khoa tai mũi họng</field>
+            <field name="code">419</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ420">
+            <field name="name">Thợ sơn</field>
+            <field name="code">420</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ421">
+            <field name="name">Nhà cổ sinh vật học</field>
+            <field name="code">421</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ422">
+            <field name="name">Huấn luyện viên nhảy dù</field>
+            <field name="code">422</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ423">
+            <field name="name">Trợ lý luật sư</field>
+            <field name="code">423</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ424">
+            <field name="name">Người phụ giúp công việc y tế</field>
+            <field name="code">424</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ425">
+            <field name="name">Người bảo vệ rừng</field>
+            <field name="code">425</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ426">
+            <field name="name">Luật sư về bằng sáng chế</field>
+            <field name="code">426</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ427">
+            <field name="name">Người xem xét hồ sơ xin cấp bằng sáng chế</field>
+            <field name="code">427</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ428">
+            <field name="name">Nhà nghiên cứu bệnh học</field>
+            <field name="code">428</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ429">
+            <field name="name">Chủ hiệu cầm đồ</field>
+            <field name="code">429</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ430">
+            <field name="name">Người bán ma túy</field>
+            <field name="code">430</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ431">
+            <field name="name">Bác sĩ nhi khoa</field>
+            <field name="code">431</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ432">
+            <field name="name">Bác sĩ nhi khoa</field>
+            <field name="code">432</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ433">
+            <field name="name">Nhà thổ nhưỡng học</field>
+            <field name="code">433</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ434">
+            <field name="name">Nhà tâm lý học trẻ em</field>
+            <field name="code">434</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ435">
+            <field name="name">Người chơi nhạc cụ gõ</field>
+            <field name="code">435</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ436">
+            <field name="name">Người làm, bán nước hoa</field>
+            <field name="code">436</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ437">
+            <field name="name">Huấn luyện viên thể dục</field>
+            <field name="code">437</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ438">
+            <field name="name">Dược sĩ</field>
+            <field name="code">438</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ439">
+            <field name="name">Người nhân đức, người làm từ thiện</field>
+            <field name="code">439</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ440">
+            <field name="name">Nhà ngữ văn</field>
+            <field name="code">440</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ441">
+            <field name="name">Nhà nhiếp ảnh</field>
+            <field name="code">441</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ442">
+            <field name="name">Nhà vật lý trị liệu</field>
+            <field name="code">442</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ443">
+            <field name="name">Bác sĩ</field>
+            <field name="code">443</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ444">
+            <field name="name">Trợ lý bác sĩ</field>
+            <field name="code">444</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ445">
+            <field name="name">Nhà vật lý</field>
+            <field name="code">445</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ446">
+            <field name="name">Người xem tướng mặt</field>
+            <field name="code">446</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ447">
+            <field name="name">Nhà sinh lý học</field>
+            <field name="code">447</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ448">
+            <field name="name">Nhà vật lý trị liệu</field>
+            <field name="code">448</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ449">
+            <field name="name">Nghệ sĩ dương cầm</field>
+            <field name="code">449</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ450">
+            <field name="name">Người lên dây đàn pianô</field>
+            <field name="code">450</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ451">
+            <field name="name">Phi công</field>
+            <field name="code">451</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ452">
+            <field name="name">Hải tặc</field>
+            <field name="code">452</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ453">
+            <field name="name">Bác sĩ phẩu thuật tạo hình</field>
+            <field name="code">453</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ454">
+            <field name="name">Nhà soạn kịch</field>
+            <field name="code">454</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ455">
+            <field name="name">Thợ ống nước</field>
+            <field name="code">455</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ456">
+            <field name="name">Nhà thơ</field>
+            <field name="code">456</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ457">
+            <field name="name">Cảnh sát</field>
+            <field name="code">457</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ458">
+            <field name="name">Công an, cảnh sát</field>
+            <field name="code">458</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ459">
+            <field name="name">Nữ công an, cảnh sát</field>
+            <field name="code">459</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ460">
+            <field name="name">Cảnh sát</field>
+            <field name="code">460</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ461">
+            <field name="name">Thanh tra cảnh sát</field>
+            <field name="code">461</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ462">
+            <field name="name">Nhà khoa học chính trị</field>
+            <field name="code">462</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ463">
+            <field name="name">Người dẫn chương trình</field>
+            <field name="code">463</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ464">
+            <field name="name">Người phát ngôn báo chí</field>
+            <field name="code">464</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ465">
+            <field name="name">Hiệu trưởng</field>
+            <field name="code">465</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ466">
+            <field name="name">Thợ in</field>
+            <field name="code">466</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ467">
+            <field name="name">Thám tử tư</field>
+            <field name="code">467</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ468">
+            <field name="name">Bác sĩ chuyên khoa hậu môn</field>
+            <field name="code">468</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ469">
+            <field name="name">Giáo sư</field>
+            <field name="code">469</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ470">
+            <field name="name">Professional dominant</field>
+            <field name="code">470</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ471">
+            <field name="name">Lập trình viên</field>
+            <field name="code">471</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ472">
+            <field name="name">Giám đốc dự án</field>
+            <field name="code">472</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ473">
+            <field name="name">Người đọc và sửa bản in thử</field>
+            <field name="code">473</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ474">
+            <field name="name">Gái mại dâm</field>
+            <field name="code">474</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ475">
+            <field name="name">Chuyên gia về tâm thần học</field>
+            <field name="code">475</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ476">
+            <field name="name">Người chữa bệnh bằng tâm lý qua việc cho bệnh nhân đóng các vai kịch</field>
+            <field name="code">476</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ477">
+            <field name="name">Nhà tâm lý học</field>
+            <field name="code">477</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ478">
+            <field name="name">Người làm công tác dân vận</field>
+            <field name="code">478</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ479">
+            <field name="name">Người nói chuyện trước công chúng</field>
+            <field name="code">479</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ480">
+            <field name="name">Nhà xuất bản</field>
+            <field name="code">480</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ481">
+            <field name="name">Người may mền bông</field>
+            <field name="code">481</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ482">
+            <field name="name">Bác sĩ X-quang</field>
+            <field name="code">482</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ483">
+            <field name="name">Nhân viên X-quang</field>
+            <field name="code">483</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ484">
+            <field name="name">Người đua xe</field>
+            <field name="code">484</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ485">
+            <field name="name">Môi giới bất động sản</field>
+            <field name="code">485</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ486">
+            <field name="name">Môi giới bất động sản</field>
+            <field name="code">486</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ487">
+            <field name="name">Nhà đầu tư bất động sản</field>
+            <field name="code">487</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ488">
+            <field name="name">Nhà phát triển bất động sản</field>
+            <field name="code">488</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ489">
+            <field name="name">Nhân viên tiếp tân</field>
+            <field name="code">489</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ490">
+            <field name="name">Nhà sản xuất băng đĩa nhạc</field>
+            <field name="code">490</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ491">
+            <field name="name">Kỹ sư ghi âm</field>
+            <field name="code">491</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ492">
+            <field name="name">Trọng tài</field>
+            <field name="code">492</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ493">
+            <field name="name">Người thu gom rác</field>
+            <field name="code">493</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ494">
+            <field name="name">Hộ tịch viên</field>
+            <field name="code">494</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ495">
+            <field name="name">Giáo viên hỗ trợ học sinh chậm hiểu</field>
+            <field name="code">495</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ496">
+            <field name="name">Phóng viên</field>
+            <field name="code">496</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ497">
+            <field name="name">Nhà trị liệu hô hấp</field>
+            <field name="code">497</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ498">
+            <field name="name">Chủ nhà hàng</field>
+            <field name="code">498</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ499">
+            <field name="name">Người bán lẻ</field>
+            <field name="code">499</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ500">
+            <field name="name">Rajan Brar</field>
+            <field name="code">500</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ501">
+            <field name="name">Người làm, sửa buồm</field>
+            <field name="code">501</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ502">
+            <field name="name">Thủy thủ</field>
+            <field name="code">502</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ503">
+            <field name="name">Người bán hàng</field>
+            <field name="code">503</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ504">
+            <field name="name">Người làm công</field>
+            <field name="code">504</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ505">
+            <field name="name">Người chuyên làm nước sốt</field>
+            <field name="code">505</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ506">
+            <field name="name">Người chơi xắcxô</field>
+            <field name="code">506</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ507">
+            <field name="name">Thợ xẻ, thợ cưa</field>
+            <field name="code">507</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ508">
+            <field name="name">Người làm bao vỏ gươm, súng, kiếm, v.v..</field>
+            <field name="code">508</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ509">
+            <field name="name">Tài xế lái xe buýt trường học</field>
+            <field name="code">509</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ510">
+            <field name="name">Hiệu trưởng</field>
+            <field name="code">510</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ511">
+            <field name="name">Giám thị trường học</field>
+            <field name="code">511</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ512">
+            <field name="name">Nhà khoa học</field>
+            <field name="code">512</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ513">
+            <field name="name">Hướng đạo sinh</field>
+            <field name="code">513</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ514">
+            <field name="name">Người viết kịch bản phim</field>
+            <field name="code">514</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ515">
+            <field name="name">Người chép thuê</field>
+            <field name="code">515</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ516">
+            <field name="name">Nhà điêu khắc</field>
+            <field name="code">516</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ517">
+            <field name="name">Nữ thợ may</field>
+            <field name="code">517</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ518">
+            <field name="name">Sỹ quan boong (phó hai)</field>
+            <field name="code">518</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ519">
+            <field name="name">Mật vụ</field>
+            <field name="code">519</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ520">
+            <field name="name">Thư ký</field>
+            <field name="code">520</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ521">
+            <field name="name">Tổng thư ký</field>
+            <field name="code">521</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ522">
+            <field name="name">Người hầu</field>
+            <field name="code">522</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ523">
+            <field name="name">Chuyên gia về tình dục học</field>
+            <field name="code">523</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ524">
+            <field name="name">Người trông nom nhà thờ và nghĩa địa</field>
+            <field name="code">524</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ525">
+            <field name="name">Người làm trong ngành công nghiệp sex</field>
+            <field name="code">525</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ526">
+            <field name="name">Người xén lông cừu</field>
+            <field name="code">526</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ527">
+            <field name="name">Người chăn cừu</field>
+            <field name="code">527</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ528">
+            <field name="name">Pháp sư</field>
+            <field name="code">528</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ529">
+            <field name="name">Scott</field>
+            <field name="code">529</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ530">
+            <field name="name">Cảnh sát trưởng</field>
+            <field name="code">530</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ531">
+            <field name="name">Nhân viên văn phòng chánh án</field>
+            <field name="code">531</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ532">
+            <field name="name">Thợ đóng giày</field>
+            <field name="code">532</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ533">
+            <field name="name">Ca sĩ</field>
+            <field name="code">533</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ534">
+            <field name="name">Người ủng hộ</field>
+            <field name="code">534</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ535">
+            <field name="name">Thám tử, mật thám</field>
+            <field name="code">535</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ536">
+            <field name="name">Người làm công tác xã hội</field>
+            <field name="code">536</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ537">
+            <field name="name">Nhà xã hội học</field>
+            <field name="code">537</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ538">
+            <field name="name">Kiến trúc sư phần mềm</field>
+            <field name="code">538</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ539">
+            <field name="name">Kỹ sư phần mềm</field>
+            <field name="code">539</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ540">
+            <field name="name">Giám đốc dự án phần mềm</field>
+            <field name="code">540</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ541">
+            <field name="name">Nhà nghiên cứu về đất</field>
+            <field name="code">541</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ542">
+            <field name="name">Quân nhân</field>
+            <field name="code">542</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ543">
+            <field name="name">Luật sư, cố vấn pháp luật</field>
+            <field name="code">543</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ544">
+            <field name="name">Người hầu rượu</field>
+            <field name="code">544</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ545">
+            <field name="name">Kỹ sư âm thanh</field>
+            <field name="code">545</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ546">
+            <field name="name">Điều tra viên</field>
+            <field name="code">546</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ547">
+            <field name="name">Chuyên gia</field>
+            <field name="code">547</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ548">
+            <field name="name">Nhà trị liệu ngôn ngữ, giọng nói</field>
+            <field name="code">548</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ549">
+            <field name="name">Người hiến tinh trùng</field>
+            <field name="code">549</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ550">
+            <field name="name">Nhà trị liệu thể dục thể thao</field>
+            <field name="code">550</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ551">
+            <field name="name">Nhà thiết kế sân khấu</field>
+            <field name="code">551</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ552">
+            <field name="name">Người thống kê</field>
+            <field name="code">552</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ553">
+            <field name="name">Tiếp viên hàng không</field>
+            <field name="code">553</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ554">
+            <field name="name">Người môi giới chứng khoán</field>
+            <field name="code">554</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ555">
+            <field name="name">Người quản lý kho</field>
+            <field name="code">555</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ556">
+            <field name="name">Nghệ sĩ đường phố</field>
+            <field name="code">556</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ557">
+            <field name="name">Nhạc sĩ đường phố</field>
+            <field name="code">557</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ558">
+            <field name="name">Người bán dạo trên đường phố</field>
+            <field name="code">558</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ559">
+            <field name="name">Cộng tác viên báo chí</field>
+            <field name="code">559</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ560">
+            <field name="name">Người múa điệu thoát y</field>
+            <field name="code">560</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ561">
+            <field name="name">Kỹ sư kết cấu</field>
+            <field name="code">561</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ562">
+            <field name="name">Sinh viên</field>
+            <field name="code">562</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ563">
+            <field name="name">Người nhồi (gối, nệm, ghế, thú bông)</field>
+            <field name="code">563</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ564">
+            <field name="name">Điều phối viên các màn biểu diễn nguy hiểm</field>
+            <field name="code">564</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ565">
+            <field name="name">Người đóng thế vai</field>
+            <field name="code">565</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ566">
+            <field name="name">Người thực hiện các màn biểu diễn nguy hiểm</field>
+            <field name="code">566</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ567">
+            <field name="name">Siêu anh hùng</field>
+            <field name="code">567</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ568">
+            <field name="name">Bác sĩ phẫu thuật</field>
+            <field name="code">568</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ569">
+            <field name="name">Kỹ thuật viên phẫu thuật</field>
+            <field name="code">569</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ570">
+            <field name="name">Thanh tra viên, giám định viên</field>
+            <field name="code">570</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ571">
+            <field name="name">Vận động viên bơi lội</field>
+            <field name="code">571</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ572">
+            <field name="name">Điện thoại viên</field>
+            <field name="code">572</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ573">
+            <field name="name">Người quản trị hệ thống</field>
+            <field name="code">573</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ574">
+            <field name="name">Nhà thiết kế hệ thống</field>
+            <field name="code">574</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ575">
+            <field name="name">Người phân tích hệ thống</field>
+            <field name="code">575</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ576">
+            <field name="name">Thợ may</field>
+            <field name="code">576</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ577">
+            <field name="name">Thợ thuộc da</field>
+            <field name="code">577</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ578">
+            <field name="name">Tapicer</field>
+            <field name="code">578</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ579">
+            <field name="name">Người thu thuế</field>
+            <field name="code">579</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ580">
+            <field name="name">Người nhồi bông thú</field>
+            <field name="code">580</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ581">
+            <field name="name">Tài xế taxi</field>
+            <field name="code">581</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ582">
+            <field name="name">Nhà phân loại</field>
+            <field name="code">582</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ583">
+            <field name="name">Cô hầu trà</field>
+            <field name="code">583</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ584">
+            <field name="name">Giáo viên</field>
+            <field name="code">584</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ585">
+            <field name="name">Kỹ thuật viên</field>
+            <field name="code">585</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ586">
+            <field name="name">Kỹ sư công nghệ</field>
+            <field name="code">586</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ587">
+            <field name="name">Người viết tài liệu kỹ thuật</field>
+            <field name="code">587</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ588">
+            <field name="name">Điện báo viên</field>
+            <field name="code">588</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ589">
+            <field name="name">Người tiếp thị qua điện thoại</field>
+            <field name="code">589</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ590">
+            <field name="name">Điện thoại viên</field>
+            <field name="code">590</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ591">
+            <field name="name">Vận động viên quần vợt</field>
+            <field name="code">591</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ592">
+            <field name="name">Lập trình viên kiểm tra phần mềm</field>
+            <field name="code">592</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ593">
+            <field name="name">Phi công lái máy bay thử</field>
+            <field name="code">593</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ594">
+            <field name="name">Thợ lợp tranh, lợp lá</field>
+            <field name="code">594</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ595">
+            <field name="name">Giám đốc nhà hát</field>
+            <field name="code">595</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ596">
+            <field name="name">Nhà thần học</field>
+            <field name="code">596</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ597">
+            <field name="name">Nhà trị liệu</field>
+            <field name="code">597</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ598">
+            <field name="name">Người làm cái đê khâu vá</field>
+            <field name="code">598</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ599">
+            <field name="name">Thợ lợp ngói, lát đá</field>
+            <field name="code">599</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ600">
+            <field name="name">Người chế tạo dụng cụ</field>
+            <field name="code">600</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ601">
+            <field name="name">Luật sư chuyên về thương hiệu</field>
+            <field name="code">601</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ602">
+            <field name="name">Thương nhân</field>
+            <field name="code">602</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ603">
+            <field name="name">Người bán hàng, người giao hàng</field>
+            <field name="code">603</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ604">
+            <field name="name">Huấn luyện viên</field>
+            <field name="code">604</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ605">
+            <field name="name">Người quy hoạch hệ thống giao thông công cộng</field>
+            <field name="code">605</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ606">
+            <field name="name">Người dịch</field>
+            <field name="code">606</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ607">
+            <field name="name">Thủ quỹ</field>
+            <field name="code">607</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ608">
+            <field name="name">Nhà lượng giác học</field>
+            <field name="code">608</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ609">
+            <field name="name">Tài xế xe tải</field>
+            <field name="code">609</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ610">
+            <field name="name">Người lên dây nhạc cụ</field>
+            <field name="code">610</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ611">
+            <field name="name">Thợ tiện</field>
+            <field name="code">611</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ612">
+            <field name="name">Gia sư, giáo viên phụ đạo</field>
+            <field name="code">612</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ613">
+            <field name="name">Người gác cổng nhà trọ</field>
+            <field name="code">613</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ614">
+            <field name="name">Người làm dịch vụ lễ tang</field>
+            <field name="code">614</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ615">
+            <field name="name">Nhà nghiên cứu UFO</field>
+            <field name="code">615</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ616">
+            <field name="name">Mật thám</field>
+            <field name="code">616</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ617">
+            <field name="name">Người xác nhận, chứng thực</field>
+            <field name="code">617</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ618">
+            <field name="name">Người làm nghề nhồi (bọc) đồ đạc</field>
+            <field name="code">618</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ619">
+            <field name="name">Bác sĩ chuyên khoa tiết niệu</field>
+            <field name="code">619</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ620">
+            <field name="name">Người quy hoạch đô thị</field>
+            <field name="code">620</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ621">
+            <field name="name">Người gác cửa, người chỉ chỗ ngồi</field>
+            <field name="code">621</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ622">
+            <field name="name">Người hầu nam</field>
+            <field name="code">622</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ623">
+            <field name="name">Người cầm gậy giám mục</field>
+            <field name="code">623</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ624">
+            <field name="name">Bác sĩ thú y</field>
+            <field name="code">624</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ625">
+            <field name="name">Người chơi đàn tăng rung</field>
+            <field name="code">625</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ626">
+            <field name="name">Cha sở</field>
+            <field name="code">626</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ627">
+            <field name="name">Người biên tập video</field>
+            <field name="code">627</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ628">
+            <field name="name">Người phát triển trò chơi điện tử</field>
+            <field name="code">628</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ629">
+            <field name="name">Người bán rượu vang </field>
+            <field name="code">629</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ630">
+            <field name="name">Người chơi đàn viôlong</field>
+            <field name="code">630</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ631">
+            <field name="name">Người chơi đàn viôlong</field>
+            <field name="code">631</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ632">
+            <field name="name">Ca sĩ</field>
+            <field name="code">632</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ633">
+            <field name="name">Người hầu bàn</field>
+            <field name="code">633</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ634">
+            <field name="name">Cai tù, giám ngục</field>
+            <field name="code">634</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ635">
+            <field name="name">Người làm vũ khí</field>
+            <field name="code">635</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ636">
+            <field name="name">Nhà khí tượng học</field>
+            <field name="code">636</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ637">
+            <field name="name">Thợ dệt</field>
+            <field name="code">637</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ638">
+            <field name="name">Người quản trị trang web</field>
+            <field name="code">638</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ639">
+            <field name="name">Người xây dựng, phát triển trang web</field>
+            <field name="code">639</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ640">
+            <field name="name">Nhà thiết kế web</field>
+            <field name="code">640</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ641">
+            <field name="name">Thợ hàn</field>
+            <field name="code">641</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ642">
+            <field name="name">Vú nuôi</field>
+            <field name="code">642</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ643">
+            <field name="name">Thợ chạm, thợ khắc gỗ</field>
+            <field name="code">643</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ644">
+            <field name="name">Người đốn gỗ</field>
+            <field name="code">644</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ645">
+            <field name="name">Người điều khiển động vật</field>
+            <field name="code">645</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ646">
+            <field name="name">Người làm rượu</field>
+            <field name="code">646</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ647">
+            <field name="name">Nhà văn</field>
+            <field name="code">647</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ648">
+            <field name="name">Người chơi đàn phiến gỗ</field>
+            <field name="code">648</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ649">
+            <field name="name">Kỹ thuật viên X-quang</field>
+            <field name="code">649</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ650">
+            <field name="name">Người hát theo cách đổi giọng trầm sang giọng kim</field>
+            <field name="code">650</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ651">
+            <field name="name">Người hỗ trợ thanh niên trong giáo dục không chính thức</field>
+            <field name="code">651</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ652">
+            <field name="name">Người trông nom vườn thú</field>
+            <field name="code">652</field>
+        </record>
+        <record model="gnuhealth.occupation" id="occ653">
+            <field name="name">Nhà động vật học</field>
+            <field name="code">653</field>
+        </record>
+
+    </data>
+</tryton>

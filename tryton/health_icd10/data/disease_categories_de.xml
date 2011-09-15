@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+<data skiptest="1" noupdate="1">
+
+<record model="gnuhealth.pathology.category" id="icdcat1">
+		<field name="name">I Bestimmte infektiöse und parasitäre Krankheiten</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat2">
+	<field name="name">II Neubildungen</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat3">
+	<field name="name">III Krkh. Blut und blutbild. Organe sowie best. Störungen mit Beteil. Immunsystem</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat4">
+	<field name="name">IV Endokrine</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5">
+	<field name="name">V Psychische und Verhaltensstörungen</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6">
+	<field name="name">VI Krankheiten des Nervensystems</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7">
+	<field name="name">VII Krankheiten des Auges und der Augenanhangsgebilde</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat8">
+	<field name="name">VIII Krankheiten des Ohres und des Warzenfortsatzes</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9">
+	<field name="name">IX Krankheiten des Kreislaufsystems</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10">
+	<field name="name">X Krankheiten des Atmungssystems</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11">
+	<field name="name">XI Krankheiten des Verdauungssystems</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat12">
+	<field name="name">XII Krankheiten der Haut und der Unterhaut</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat13">
+	<field name="name">XIII Krankheiten des Muskel-Skelett-Systems und des Bindegewebes</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14">
+	<field name="name">XIV Krankheiten des Urogenitalsystems</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat15">
+	<field name="name">XV Schwangerschaft</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16">
+	<field name="name">XVI Bestimmte Zustände</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17">
+	<field name="name">XVII Angeborene Fehlbildungen</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18">
+	<field name="name">XVIII Symptome und abnorme klinische und Laborbefunde anderenorts nicht klassifiziert</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19">
+	<field name="name">XIX Verletzungen</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat20">
+	<field name="name">XX äußere Ursachen von Morbidität und Mortalität</field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat21">
+	<field name="name">XXI Faktor Gesundheitszust. beeinfluss. zur Inanspruchnahme Gesundheitswesen führend</field>
+	</record>
+
+	<record model="gnuhealth.pathology.category" id="icdcat1-1">
+	<field name="name">A00-A09 Infektiöse Darmkrankheiten</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-2">
+	<field name="name">A15-A19 Tuberkulose</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-3">
+	<field name="name">A20-A28 Bestimmte bakterielle Zoonosen</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-4">
+	<field name="name">A30-A49 Sonstige bakterielle Krankheiten</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-5">
+	<field name="name">A50-A64 Infektionen</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-6">
+	<field name="name">A65-A69 Sonstige Spirochätenkrankheiten</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-7">
+	<field name="name">A70-A74 Sonstige Krankheiten durch Chlamydien</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-8">
+	<field name="name">A75-A79 Rickettsiosen</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-9">
+	<field name="name">A80-A89 Virusinfektionen des Zentralnervensystems</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-10">
+	<field name="name">A90-A99 Durch Arthropoden übertragene Viruskrankheiten und virale hämorrhagische Fieber</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-11">
+	<field name="name">B00-B09 Virusinfektionen</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-12">
+	<field name="name">B15-B19 Virushepatitis</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-13">
+	<field name="name">B20-B24 HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-14">
+	<field name="name">B25-B34 Sonstige Viruskrankheiten</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-15">
+	<field name="name">B35-B49 Mykosen</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-16">
+	<field name="name">B50-B64 Protozoenkrankheiten</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-17">
+	<field name="name">B65-B83 Helminthosen</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-18">
+	<field name="name">B85-B89 Pedikulose [Läusebefall] Akarinose [Milbenbefall] u. sonst. Parasitenbefall Haut</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-19">
+	<field name="name">B90-B94 Folgezustände von infektiösen und parasitären Krankheiten</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-20">
+	<field name="name">B95-B97 Bakterien</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat1-21">
+	<field name="name">(B99-B99) Sonstige Infektionskrankheiten</field>
+	<field name="parent" ref="icdcat1"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat2-22">
+	<field name="name">C00-C97 Bösartige Neubildungen</field>
+	<field name="parent" ref="icdcat2"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat2-23">
+	<field name="name">D00-D09 In-situ-Neubildungen</field>
+	<field name="parent" ref="icdcat2"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat2-24">
+	<field name="name">D10-D36 Gutartige Neubildungen</field>
+	<field name="parent" ref="icdcat2"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat2-25">
+	<field name="name">D37-D48 Neubildungen mit unsicherem oder unbekanntem Verhalten</field>
+	<field name="parent" ref="icdcat2"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat3-26">
+	<field name="name">D50-D53 Alimentäre Anämien</field>
+	<field name="parent" ref="icdcat3"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat3-27">
+	<field name="name">D55-D59 Hämolytische Anämien</field>
+	<field name="parent" ref="icdcat3"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat3-28">
+	<field name="name">D60-D64 Aplastische und sonstige Anämien</field>
+	<field name="parent" ref="icdcat3"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat3-29">
+	<field name="name">D65-D69 Koagulopathien</field>
+	<field name="parent" ref="icdcat3"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat3-30">
+	<field name="name">D70-D77 Sonstige Krankheiten des Blutes und der blutbildenden Organe</field>
+	<field name="parent" ref="icdcat3"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat3-31">
+	<field name="name">D80-D89 Bestimmte Störungen mit Beteiligung des Immunsystems</field>
+	<field name="parent" ref="icdcat3"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat4-32">
+	<field name="name">E00-E07 Krankheiten der Schilddrüse</field>
+	<field name="parent" ref="icdcat4"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat4-33">
+	<field name="name">E10-E14 Diabetes mellitus</field>
+	<field name="parent" ref="icdcat4"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat4-34">
+	<field name="name">E15-E16 Sonstige Störungen Blutglukose-Regulation und innere Sekretion des Pankreas</field>
+	<field name="parent" ref="icdcat4"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat4-35">
+	<field name="name">E20-E35 Krankheiten sonstiger endokriner Drüsen</field>
+	<field name="parent" ref="icdcat4"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat4-36">
+	<field name="name">E40-E46 Mangelernährung</field>
+	<field name="parent" ref="icdcat4"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat4-37">
+	<field name="name">E50-E64 Sonstige alimentäre Mangelzustände</field>
+	<field name="parent" ref="icdcat4"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat4-38">
+	<field name="name">E65-E68 Adipositas und sonstige überernährung</field>
+	<field name="parent" ref="icdcat4"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat4-39">
+	<field name="name">E70-E90 Stoffwechselstörungen</field>
+	<field name="parent" ref="icdcat4"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-40">
+	<field name="name">F00-F09 Organische</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-41">
+	<field name="name">F10-F19 Psychische und Verhaltensstörungen durch psychotrope Substanzen</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-42">
+	<field name="name">F20-F29 Schizophrenie</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-43">
+	<field name="name">F30-F39 Affektive Störungen</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-44">
+	<field name="name">F40-F48 Neurotische</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-45">
+	<field name="name">F50-F59 Verhaltensauffälligkeiten mit körperlichen Störungen und Faktoren</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-46">
+	<field name="name">F60-F69 Persönlichkeits- und Verhaltensstörungen</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-47">
+	<field name="name">F70-F79 Intelligenzminderung</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-48">
+	<field name="name">F80-F89 Entwicklungsstörungen</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-49">
+	<field name="name">F90-F98 Verhaltens- und emotionale Störungen mit Beginn in der Kindheit und Jugend</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat5-50">
+	<field name="name">F99 Nicht näher bezeichnete psychische Störungen</field>
+	<field name="parent" ref="icdcat5"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-51">
+	<field name="name">G00-G09 Entzündliche Krankheiten des Zentralnervensystems</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-52">
+	<field name="name">G10-G13 Systematrophien</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-53">
+	<field name="name">G20-G26 Extrapyramidale Krankheiten und Bewegungsstörungen</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-54">
+	<field name="name">G30-G32 Sonstige degenerative Krankheiten des Nervensystems</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-55">
+	<field name="name">G35-G37 Demyelinisierende Krankheiten des Zentralnervensystems</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-56">
+	<field name="name">G40-G47 Episodische und paroxysmale Krankheiten Nervensystem</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-57">
+	<field name="name">G50-G59 Krankheiten von Nerven</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-58">
+	<field name="name">G60-G64 Polyneuropathien und sonstige Krankheiten des peripheren Nervensystems</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-59">
+	<field name="name">G70-G73 Krankheiten im Bereich der neuromuskulären Synapse und des Muskels</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-60">
+	<field name="name">G80-G83 Zerebrale Lähmung und sonstige Lähmungssyndrome</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat6-61">
+	<field name="name">G90-G99 Sonstige Krankheiten des Nervensystems</field>
+	<field name="parent" ref="icdcat6"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-62">
+	<field name="name">H00-H06 Affektionen des Augenlides</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-63">
+	<field name="name">H10-H13 Affektionen der Konjunktiva</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-64">
+	<field name="name">H15-H22 Affektionen der Sklera</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-65">
+	<field name="name">H25-H28 Affektionen der Linse</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-66">
+	<field name="name">H30-H36 Affektionen der Aderhaut und der Netzhaut</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-67">
+	<field name="name">H40-H42 Glaukom</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-68">
+	<field name="name">H43-H45 Affektionen des Glaskörpers und des Augapfels</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-69">
+	<field name="name">H46-H48 Affektionen des N. opticus und der Sehbahn</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-70">
+	<field name="name">H49-H52 Affektion Augenmuskeln Stör. Blickbewegung Akkommodationsstör. Refraktionsfehler</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-71">
+	<field name="name">H53-H54 Sehstörungen und Blindheit</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat7-72">
+	<field name="name">H55-H59 Sonstige Affektionen des Auges und der Augenanhangsgebilde</field>
+	<field name="parent" ref="icdcat7"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat8-73">
+	<field name="name">H60-H62 Krankheiten des äußeren Ohres</field>
+	<field name="parent" ref="icdcat8"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat8-74">
+	<field name="name">H65-H75 Krankheiten des Mittelohres und des Warzenfortsatzes</field>
+	<field name="parent" ref="icdcat8"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat8-75">
+	<field name="name">H80-H83 Krankheiten des Innenohres</field>
+	<field name="parent" ref="icdcat8"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat8-76">
+	<field name="name">H90-H95 Sonstige Krankheiten des Ohres</field>
+	<field name="parent" ref="icdcat8"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9-77">
+	<field name="name">I00-I02 Akutes rheumatisches Fieber</field>
+	<field name="parent" ref="icdcat9"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9-78">
+	<field name="name">I05-I09 Chronische rheumatische Herzkrankheiten</field>
+	<field name="parent" ref="icdcat9"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9-79">
+	<field name="name">I10-I15 Hypertonie [Hochdruckkrankheit]</field>
+	<field name="parent" ref="icdcat9"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9-80">
+	<field name="name">I20-I25 Ischämische Herzkrankheiten</field>
+	<field name="parent" ref="icdcat9"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9-81">
+	<field name="name">I26-I28 Pulmonale Herzkrankheit und Krankheiten des Lungenkreislaufes</field>
+	<field name="parent" ref="icdcat9"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9-82">
+	<field name="name">I30-I52 Sonstige Formen der Herzkrankheit</field>
+	<field name="parent" ref="icdcat9"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9-83">
+	<field name="name">I60-I69 Zerebrovaskuläre Krankheiten</field>
+	<field name="parent" ref="icdcat9"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9-84">
+	<field name="name">I70-I79 Krankheiten der Arterien</field>
+	<field name="parent" ref="icdcat9"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9-85">
+	<field name="name">I80-I89 Krankheiten Venen</field>
+	<field name="parent" ref="icdcat9"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat9-86">
+	<field name="name">I95-I99 Sonstige und nicht näher bezeichnete Krankheiten des Kreislaufsystems</field>
+	<field name="parent" ref="icdcat9"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10-87">
+	<field name="name">J00-J06 Akute Infektionen der oberen Atemwege</field>
+	<field name="parent" ref="icdcat10"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10-88">
+	<field name="name">J10-J18 Grippe und Pneumonie</field>
+	<field name="parent" ref="icdcat10"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10-89">
+	<field name="name">J20-J22 Sonstige akute Infektionen der unteren Atemwege</field>
+	<field name="parent" ref="icdcat10"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10-90">
+	<field name="name">J30-J39 Sonstige Krankheiten der oberen Atemwege</field>
+	<field name="parent" ref="icdcat10"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10-91">
+	<field name="name">J40-J47 Chronische Krankheiten der unteren Atemwege</field>
+	<field name="parent" ref="icdcat10"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10-92">
+	<field name="name">J60-J70 Lungenkrankheiten durch exogene Substanzen</field>
+	<field name="parent" ref="icdcat10"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10-93">
+	<field name="name">J80-J84 Sonstige Krankheiten der Atmungsorgane hauptsächlich Interstitium betreffend</field>
+	<field name="parent" ref="icdcat10"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10-94">
+	<field name="name">J85-J86 Purulente und nekrotisierende Krankheitszustände der unteren Atemwege</field>
+	<field name="parent" ref="icdcat10"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10-95">
+	<field name="name">J90-J94 Sonstige Krankheiten der Pleura</field>
+	<field name="parent" ref="icdcat10"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat10-96">
+	<field name="name">J95-J99 Sonstige Krankheiten des Atmungssystems</field>
+	<field name="parent" ref="icdcat10"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11-97">
+	<field name="name">K00-K14 Krankheiten der Mundhöhle</field>
+	<field name="parent" ref="icdcat11"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11-98">
+	<field name="name">K20-K31 Krankheiten des ösophagus</field>
+	<field name="parent" ref="icdcat11"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11-99">
+	<field name="name">K35-K38 Krankheiten der Appendix</field>
+	<field name="parent" ref="icdcat11"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11-100">
+	<field name="name">K40-K46 Hernien</field>
+	<field name="parent" ref="icdcat11"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11-101">
+	<field name="name">K50-K52 Nichtinfektiöse Enteritis und Kolitis</field>
+	<field name="parent" ref="icdcat11"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11-102">
+	<field name="name">K55-K63 Sonstige Krankheiten des Darmes</field>
+	<field name="parent" ref="icdcat11"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11-103">
+	<field name="name">K65-K67 Krankheiten des Peritoneums</field>
+	<field name="parent" ref="icdcat11"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11-104">
+	<field name="name">K70-K77 Krankheiten der Leber</field>
+	<field name="parent" ref="icdcat11"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11-105">
+	<field name="name">K80-K87 Krankheiten der Gallenblase</field>
+	<field name="parent" ref="icdcat11"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat11-106">
+	<field name="name">K90-K93 Sonstige Krankheiten des Verdauungssystems</field>
+	<field name="parent" ref="icdcat11"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat12-107">
+	<field name="name">L00-L08 Infektionen der Haut und der Unterhaut</field>
+	<field name="parent" ref="icdcat12"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat12-108">
+	<field name="name">L10-L14 Bullöse Dermatosen</field>
+	<field name="parent" ref="icdcat12"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat12-109">
+	<field name="name">L20-L30 Dermatitis und Ekzem</field>
+	<field name="parent" ref="icdcat12"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat12-110">
+	<field name="name">L40-L45 Papulosquamöse Hautkrankheiten</field>
+	<field name="parent" ref="icdcat12"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat12-111">
+	<field name="name">L50-L54 Urtikaria und Erythem</field>
+	<field name="parent" ref="icdcat12"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat12-112">
+	<field name="name">L55-L59 Krankheiten der Haut und der Unterhaut durch Strahleneinwirkung</field>
+	<field name="parent" ref="icdcat12"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat12-113">
+	<field name="name">L60-L75 Krankheiten der Hautanhangsgebilde</field>
+	<field name="parent" ref="icdcat12"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat12-114">
+	<field name="name">L80-L99 Sonstige Krankheiten der Haut und der Unterhaut</field>
+	<field name="parent" ref="icdcat12"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat13-115">
+	<field name="name">M00-M25 Arthropathien</field>
+	<field name="parent" ref="icdcat13"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat13-116">
+	<field name="name">M30-M36 Systemkrankheiten des Bindegewebes</field>
+	<field name="parent" ref="icdcat13"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat13-117">
+	<field name="name">M40-M54 Krankheiten der Wirbelsäule und des Rückens</field>
+	<field name="parent" ref="icdcat13"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat13-118">
+	<field name="name">M60-M79 Krankheiten der Weichteilgewebe</field>
+	<field name="parent" ref="icdcat13"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat13-119">
+	<field name="name">M80-M94 Osteopathien und Chondropathien</field>
+	<field name="parent" ref="icdcat13"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat13-120">
+	<field name="name">M95-M99 Sonstige Krankheiten des Muskel-Skelett-Systems und des Bindegewebes</field>
+	<field name="parent" ref="icdcat13"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-121">
+	<field name="name">N00-N08 Glomeruläre Krankheiten</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-122">
+	<field name="name">N10-N16 Tubulointerstitielle Nierenkrankheiten</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-123">
+	<field name="name">N17-N19 Niereninsuffizienz</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-124">
+	<field name="name">N20-N23 Urolithiasis</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-125">
+	<field name="name">N25-N29 Sonstige Krankheiten der Niere und des Ureters</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-126">
+	<field name="name">N30-N39 Sonstige Krankheiten des Harnsystems</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-127">
+	<field name="name">N40-N51 Krankheiten der männlichen Genitalorgane</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-128">
+	<field name="name">N60-N64 Krankheiten der Mamma [Brustdrüse]</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-129">
+	<field name="name">N70-N77 Entzündliche Krankheiten der weiblichen Beckenorgane</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-130">
+	<field name="name">N80-N98 Nichtentzündliche Krankheiten des weiblichen Genitaltraktes</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat14-131">
+	<field name="name">N99 Sonstige Krankheiten des Urogenitalsystems</field>
+	<field name="parent" ref="icdcat14"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat15-132">
+	<field name="name">O00-O08 Schwangerschaft mit abortivem Ausgang</field>
+	<field name="parent" ref="icdcat15"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat15-133">
+	<field name="name">O10-O16 ödeme</field>
+	<field name="parent" ref="icdcat15"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat15-134">
+	<field name="name">O20-O29 Sonstige Krankheiten der Mutter vorwiegend mit der Schwangerschaft verbunden</field>
+	<field name="parent" ref="icdcat15"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat15-135">
+	<field name="name">O30-O48 Betreuung Mutter im Hinblick auf Fetus Amnionhöhle sowie mögl. Entbindungskompl.</field>
+	<field name="parent" ref="icdcat15"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat15-136">
+	<field name="name">O60-O75 Komplikationen bei Wehentätigkeit und Entbindung</field>
+	<field name="parent" ref="icdcat15"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat15-137">
+	<field name="name">O80-O84 Entbindung</field>
+	<field name="parent" ref="icdcat15"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat15-138">
+	<field name="name">O85-O92 Komplikationen</field>
+	<field name="parent" ref="icdcat15"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat15-139">
+	<field name="name">O95-O99 Sonstige Krankheitszustände während Gestationsperiode sonst nicht klassifiz.</field>
+	<field name="parent" ref="icdcat15"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16-140">
+	<field name="name">P00-P04 Schäd. Fetus Neugeb. d. mütterl. Faktor Kompl. bei Schwangerschaft Wehen Entb.</field>
+	<field name="parent" ref="icdcat16"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16-141">
+	<field name="name">P05-P08 Störungen im Zusammenhang mit der Schwangerschaftsdauer und dem fetalen Wachstum</field>
+	<field name="parent" ref="icdcat16"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16-142">
+	<field name="name">P10-P15 Geburtstrauma</field>
+	<field name="parent" ref="icdcat16"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16-143">
+	<field name="name">P20-P29 Krankheiten Atmungs- und Herz-Kreislaufsystem für Perinatalperiode spezifisch</field>
+	<field name="parent" ref="icdcat16"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16-144">
+	<field name="name">P35-P39 Infektionen</field>
+	<field name="parent" ref="icdcat16"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16-145">
+	<field name="name">P50-P61 Hämorrhagische und hämatologische Krankheiten beim Feten und Neugeborenen</field>
+	<field name="parent" ref="icdcat16"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16-146">
+	<field name="name">P70-P74 Transitorische endokrine und Stoffwechselstörungen für Fetus Neugeborenes spez.</field>
+	<field name="parent" ref="icdcat16"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16-147">
+	<field name="name">P75-P78 Krankheiten des Verdauungssystems beim Feten und Neugeborenen</field>
+	<field name="parent" ref="icdcat16"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16-148">
+	<field name="name">P80-P83 Krankheitszustände mit Beteil. Haut und Temperaturregulation Fetus Neugeborenes</field>
+	<field name="parent" ref="icdcat16"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat16-149">
+	<field name="name">P90-P96 Sonstige Störungen</field>
+	<field name="parent" ref="icdcat16"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-150">
+	<field name="name">Q00-Q07 Angeborene Fehlbildungen des Nervensystems</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-151">
+	<field name="name">Q10-Q18 Angeborene Fehlbildungen des Auges</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-152">
+	<field name="name">Q20-Q28 Angeborene Fehlbildungen des Kreislaufsystems</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-153">
+	<field name="name">Q30-Q34 Angeborene Fehlbildungen des Atmungssystems</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-154">
+	<field name="name">Q35-Q37 Lippen-</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-155">
+	<field name="name">Q38-Q45 Sonstige angeborene Fehlbildungen des Verdauungssystems</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-156">
+	<field name="name">Q50-Q56 Angeborene Fehlbildungen der Genitalorgane</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-157">
+	<field name="name">Q60-Q64 Angeborene Fehlbildungen des Harnsystems</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-158">
+	<field name="name">Q65-Q79 Angeborene Fehlbildungen und Deformitäten des Muskel-Skelett-Systems</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-159">
+	<field name="name">Q80-Q89 Sonstige angeborene Fehlbildungen</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat17-160">
+	<field name="name">Q90-Q99 Chromosomenanomalien</field>
+	<field name="parent" ref="icdcat17"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-161">
+	<field name="name">R00-R09 Symptome</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-162">
+	<field name="name">R10-R19 Symptome</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-163">
+	<field name="name">R20-R23 Symptome</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-164">
+	<field name="name">R25-R29 Symptome</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-165">
+	<field name="name">R30-R39 Symptome</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-166">
+	<field name="name">R40-R46 Symptome Erkennungs- und Wahrnehmungsvermögen</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-167">
+	<field name="name">R47-R49 Symptome</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-168">
+	<field name="name">R50-R69 Allgemeinsymptome</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-169">
+	<field name="name">R70-R79 Abnorme Blutuntersuchungsbefunde ohne Vorliegen einer Diagnose</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-170">
+	<field name="name">R80-R82 Abnorme Urinuntersuchungsbefunde ohne Vorliegen einer Diagnose</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-171">
+	<field name="name">R83-R89 Abnorme Befunde ohne Diagnose bei Untersuchung anderer Körperflüss. Subs. Gewebe</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-172">
+	<field name="name">R90-R94 Abnorme Befunde ohne Diagnose bei bildgebender Diagnostik und Funktionsprüfungen</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat18-173">
+	<field name="name">R95-R99 Ungenau bezeichnete und unbekannte Todesursachen</field>
+	<field name="parent" ref="icdcat18"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-174">
+	<field name="name">S00-S09 Verletzungen des Kopfes</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-175">
+	<field name="name">S10-S19 Verletzungen des Halses</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-176">
+	<field name="name">S20-S29 Verletzungen des Thorax</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-177">
+	<field name="name">S30-S39 Verletzungen Abdomen</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-178">
+	<field name="name">S40-S49 Verletzungen der Schulter und des Oberarmes</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-179">
+	<field name="name">S50-S59 Verletzungen des Ellenbogens und des Unterarmes</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-180">
+	<field name="name">S60-S69 Verletzungen des Handgelenkes und der Hand</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-181">
+	<field name="name">S70-S79 Verletzungen der Hüfte und des Oberschenkels</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-182">
+	<field name="name">S80-S89 Verletzungen des Knies und des Unterschenkels</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-183">
+	<field name="name">S90-S99 Verletzungen der Knöchelregion und des Fußes</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-184">
+	<field name="name">T00-T07 Verletzungen mit Beteiligung mehrerer Körperregionen</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-185">
+	<field name="name">T08-T14 Verletzungen nicht näher bez. Teil Rumpf</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-186">
+	<field name="name">T15-T19 Folgen des Eindringens eines Fremdkörpers durch eine natürliche Körperöffnung</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-187">
+	<field name="name">T20-T32 Verbrennungen oder Verätzungen</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-188">
+	<field name="name">T33-T35 Erfrierungen</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-189">
+	<field name="name">T36-T50 Vergiftung durch Arzneimittel</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-190">
+	<field name="name">T51-T65 Toxische Wirkungen von vorwiegend nicht medizinisch verwendeten Substanzen</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-191">
+	<field name="name">T66-T78 Sonstige und nicht näher bezeichnete Schäden durch äußere Ursachen</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-192">
+	<field name="name">T79 Bestimmte Frühkomplikationen eines Traumas</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-193">
+	<field name="name">T80-T88 Komplikationen bei chirurg. Eingriffen</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat19-194">
+	<field name="name">T90-T98 Folgen von Verletzungen Vergiftungen und sonstigen Auswirkungen äußerer Ursachen</field>
+	<field name="parent" ref="icdcat19"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat20-195">
+	<field name="name">V01-V99 Transportmittelunfälle</field>
+	<field name="parent" ref="icdcat20"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat20-196">
+	<field name="name">W00-X59 Sonstige äußere Ursachen von Unfallverletzungen</field>
+	<field name="parent" ref="icdcat20"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat20-197">
+	<field name="name">X60-X84 Vorsätzliche Selbstbeschädigung</field>
+	<field name="parent" ref="icdcat20"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat20-198">
+	<field name="name">X85-Y09 Tätlicher Angriff</field>
+	<field name="parent" ref="icdcat20"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat20-199">
+	<field name="name">Y10-Y34 Ereignis</field>
+	<field name="parent" ref="icdcat20"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat20-200">
+	<field name="name">Y35-Y36 Gesetzliche Maßnahmen und Kriegshandlungen</field>
+	<field name="parent" ref="icdcat20"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat20-201">
+	<field name="name">Y40-Y84 Komplikationen bei der medizinischen und chirurgischen Behandlung</field>
+	<field name="parent" ref="icdcat20"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat20-202">
+	<field name="name">Y85-Y89 Folgezustände äußerer Ursachen von Morbidität und Mortalität</field>
+	<field name="parent" ref="icdcat20"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat20-203">
+	<field name="name">Y90-Y98 Zusätzl. Faktor mit Bez. auf sonst klassifiz. Ursache von Morbidität Mortalität</field>
+	<field name="parent" ref="icdcat20"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat21-204">
+	<field name="name">Z00-Z13 Personen Gesundheitswesen zur Untersuchung und Abklärung in Anspruch nehmend</field>
+	<field name="parent" ref="icdcat21"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat21-205">
+	<field name="name">Z20-Z29 Personen mit potentiellen Gesundheitsrisiken hinsichtlich übertragbarer Krkh</field>
+	<field name="parent" ref="icdcat21"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat21-206">
+	<field name="name">Z30-Z39 Personen Gesundheitswesen im Zus. mit Reproduktionsproblemen in Anspruch nehmend</field>
+	<field name="parent" ref="icdcat21"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat21-207">
+	<field name="name">Z40-Z54 Personen Gesundheitswesen für spez. Maßnahmen med. Betreuung in Anspruch nehmend</field>
+	<field name="parent" ref="icdcat21"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat21-208">
+	<field name="name">Z55-Z65 Person potentielles Gesundheitsrisiko aufgrund sozioökon. o. psychosoz. Umstände</field>
+	<field name="parent" ref="icdcat21"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat21-209">
+	<field name="name">Z70-Z76 Personen</field>
+	<field name="parent" ref="icdcat21"></field>
+	</record>
+	<record model="gnuhealth.pathology.category" id="icdcat21-210">
+	<field name="name">Z80-Z99 Person mögl. Gesundheitsrisiko in FA o. EA best. Zust. Gesundheitszust. beeinfl.</field>
+	<field name="parent" ref="icdcat21"></field>
+	</record>
+</data>
+</tryton>
