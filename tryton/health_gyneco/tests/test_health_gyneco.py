@@ -11,24 +11,24 @@ import trytond.tests.test_tryton
 from trytond.tests.test_tryton import test_view
 
 
-class MedicalGynecoTestCase(unittest.TestCase):
+class HealthGynecoTestCase(unittest.TestCase):
     '''
-    Test MedicalGyneco module.
+    Test HealthGyneco module.
     '''
 
     def setUp(self):
-        trytond.tests.test_tryton.install_module('medical_gyneco')
+        trytond.tests.test_tryton.install_module('health_gyneco')
 
     def test0005views(self):
         '''
         Test views.
         '''
-        test_view('medical_gyneco')
+        test_view('health_gyneco')
 
 def suite():
     suite = trytond.tests.test_tryton.suite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(
-        MedicalGynecoTestCase))
+        HealthGynecoTestCase))
     return suite
 
 if __name__ == '__main__':

@@ -1,1 +1,1 @@
-from test_medical_gyneco import suite
+from test_health_gyneco import suite
