@@ -45,7 +45,7 @@
         </record>
         
         <record model="ir.action.act_window" id="gnuhealth_action_lab_unit">
-            <field name="name">Lab Testing Units</field>
+            <field name="name">Lab Test Units</field>
             <field name="res_model">gnuhealth.lab.test.units</field>
         </record>
 
@@ -104,7 +104,7 @@
         </record>
 
         <record model="ir.action.act_window" id="gnuhealth_action_lab_test_request">
-            <field name="name">Lab Requests</field>
+            <field name="name">Lab Test Requests</field>
             <field name="res_model">gnuhealth.patient.lab.test</field>
             <field name="context">{'group_by': [], 'search_default_today': 1, 'search_default_draft': 1}</field>
         </record>
@@ -127,8 +127,8 @@
 
 <!-- Lab Test Type -->
 
-        <record model="ir.ui.view" id="gnuhealth_test_view">
-            <field name="model">gnuhealth.test_type</field>
+        <record model="ir.ui.view" id="gnuhealth_lab_test_view">
+            <field name="model">gnuhealth.lab.test_type</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <![CDATA[
@@ -143,6 +143,8 @@
                                 <tree string="Test Cases">
                                     <field name="sequence"/>
                                     <field name="name"/>
+                                    <field name="lower_limit"/>
+                                    <field name="upper_limit"/>                                   
                                     <field name="normal_range"/>
                                     <field name="units"/>
                                 </tree>
@@ -154,6 +156,10 @@
                                     <label name="sequence"/>
                                     <field name="sequence"/>
                                     <newline/>
+                                    <label name="lower_limit"/>
+                                    <field name="lower_limit"/>
+                                    <label name="upper_limit"/>
+                                    <field name="upper_limit"/>                           
                                     <label name="normal_range"/>
                                     <field name="normal_range"/>
                                 </form>
@@ -171,8 +177,8 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="gnuhealth_test_tree">
-            <field name="model">gnuhealth.test_type</field>
+        <record model="ir.ui.view" id="gnuhealth_lab_test_tree">
+            <field name="model">gnuhealth.lab.test_type</field>
             <field name="type">tree</field>
             <field name="arch" type="xml">
                 <![CDATA[
@@ -185,13 +191,13 @@
         </record>
 
         <record model="ir.action.act_window" id="gnuhealth_action_list_test">
-            <field name="name">List of Lab tests</field>
-            <field name="res_model">gnuhealth.test_type</field>
+            <field name="name">Lab tests</field>
+            <field name="res_model">gnuhealth.lab.test_type</field>
         </record>
 
         <record model="ir.action.act_window.view" id="gnuhealth_action_list_test_tree_view">
             <field name="sequence" eval="10"/>
-            <field name="view" ref="gnuhealth_test_tree"/>
+            <field name="view" ref="gnuhealth_lab_test_tree"/>
             <field name="act_window" ref="gnuhealth_action_list_test"/>
         </record>
 
@@ -199,13 +205,13 @@
             id="menu_gnuhealth_action_list_test"/>
 
         <record model="ir.action.act_window" id="gnuhealth_action_form_test">
-            <field name="name">New Type of Lab test</field>
-            <field name="res_model">gnuhealth.test_type</field>
+            <field name="name">New Lab Test Type</field>
+            <field name="res_model">gnuhealth.lab.test_type</field>
         </record>
 
         <record model="ir.action.act_window.view" id="gnuhealth_action_list_test_form_view">
             <field name="sequence" eval="10"/>
-            <field name="view" ref="gnuhealth_test_view"/>
+            <field name="view" ref="gnuhealth_lab_test_view"/>
             <field name="act_window" ref="gnuhealth_action_form_test"/>
         </record>
 
@@ -244,6 +250,8 @@
                                     <field name="sequence"/>
                                     <field name="name"/>
                                     <field name="result"/>
+                                    <field name="lower_limit"/>
+                                    <field name="upper_limit"/>
                                     <field name="normal_range"/>
                                     <field name="units"/>
                                 </tree>
@@ -254,6 +262,10 @@
                                     <field name="result"/>
                                     <label name="units"/>
                                     <field name="units"/>
+                                    <label name="lower_limit"/>
+                                    <field name="lower_limit"/>
+                                    <label name="upper_limit"/>
+                                    <field name="upper_limit"/>                           
                                     <label name="normal_range"/>
                                     <field name="normal_range"/>
                                 </form>

@@ -29,14 +29,14 @@ field,"gnuhealth.test_type,info",0,Description,Descripción,0
 field,"gnuhealth.test_type,name",0,Test,Prueba,0
 field,"gnuhealth.test_type,product_id",0,Service,Servicio,0
 field,"gnuhealth.test_type,rec_name",0,Name,Nombre del campo,0
-field,"gnuhealth_test.critearea,gnuhealth.lab_id",0,Test Cases,Pruebas,0
-field,"gnuhealth_test.critearea,name",0,Test,Prueba,0
-field,"gnuhealth_test.critearea,normal_range",0,Normal Range,Rango normal,0
-field,"gnuhealth_test.critearea,rec_name",0,Name,Nombre del campo,0
-field,"gnuhealth_test.critearea,result",0,Result,Resultado,0
-field,"gnuhealth_test.critearea,sequence",0,Sequence,Secuencia,0
-field,"gnuhealth_test.critearea,test_type_id",0,Test type,Tipo de prueba,0
-field,"gnuhealth_test.critearea,units",0,Units,Unidades,0
+field,"gnuhealth.lab.test.critearea,gnuhealth.lab_id",0,Test Cases,Pruebas,0
+field,"gnuhealth.lab.test.critearea,name",0,Test,Prueba,0
+field,"gnuhealth.lab.test.critearea,normal_range",0,Normal Range,Rango normal,0
+field,"gnuhealth.lab.test.critearea,rec_name",0,Name,Nombre del campo,0
+field,"gnuhealth.lab.test.critearea,result",0,Result,Resultado,0
+field,"gnuhealth.lab.test.critearea,sequence",0,Sequence,Secuencia,0
+field,"gnuhealth.lab.test.critearea,test_type_id",0,Test type,Tipo de prueba,0
+field,"gnuhealth.lab.test.critearea,units",0,Units,Unidades,0
 help,"gnuhealth.lab,name",0,Lab result ID,ID del resultado,0
 help,"gnuhealth.lab,pathologist",0,Pathologist,Patólogo,0
 help,"gnuhealth.lab,patient",0,Patient ID,ID del paciente,0
@@ -68,7 +68,7 @@ model,"gnuhealth.lab.test.create.init,name",0,Create Test Report Init,Generar Re
 model,"gnuhealth.lab.test.units,name",0,Lab Test Units,Unidades de la prueba,0
 model,"gnuhealth.patient.lab.test,name",0,Patient Lab Test,Prueba de laboratorio del paciente,0
 model,"gnuhealth.test_type,name",0,Type of Lab test,Tipo de prueba de laboratorio,0
-model,"gnuhealth_test.critearea,name",0,Lab Test Critearea,Criterios de Prueba de Laboratorio,0
+model,"gnuhealth.lab.test.critearea,name",0,Lab Test Critearea,Criterios de Prueba de Laboratorio,0
 model,"product.category,name",product_category_labservices0,Lab Services,Servicios de Laboratorio,0
 model,"product.template,name",product_product_bloodcounttestcharges0,Blood count test charges,Cargos por análisis de sangre,0
 model,"product.template,name",product_product_endocrinology0,Endocrinology,Endocrinología,0

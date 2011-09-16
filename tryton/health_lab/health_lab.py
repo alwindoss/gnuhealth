@@ -42,7 +42,7 @@ class TestType(ModelSQL, ModelView):
         help="Short name - code for the test", select="2")
     info = fields.Text('Description')
     product_id = fields.Many2One('product.product', 'Service', required=True)
-    critearea = fields.One2Many('gnuhealth_test.critearea', 'test_type_id',
+    critearea = fields.One2Many('gnuhealth.lab.test.critearea', 'test_type_id',
         'Test Cases')
 
     def __init__(self):
@@ -70,7 +70,7 @@ class Lab(ModelSQL, ModelView):
         help="Doctor who requested the test", select="2")
     results = fields.Text('Results')
     diagnosis = fields.Text('Diagnosis')
-    critearea = fields.One2Many('gnuhealth_test.critearea', 'gnuhealth_lab_id',
+    critearea = fields.One2Many('gnuhealth.lab.test.critearea', 'gnuhealth_lab_id',
         'Test Cases')
     date_requested = fields.DateTime('Date requested', select="1")
     date_analysis = fields.DateTime('Date of the Analysis', select="1")
@@ -113,12 +113,14 @@ GnuHealthLabTestUnits()
 
 class GnuHealthTestCritearea(ModelSQL, ModelView):
     'Lab Test Critearea'
-    _name = 'gnuhealth_test.critearea'
+    _name = 'gnuhealth.lab.test.critearea'
     _description = __doc__
 
     name = fields.Char('Test', select="1")
     result = fields.Text('Result')
     normal_range = fields.Text('Normal Range')
+    lower_limit = fields.Float ('Lower Limit')
+    upper_limit = fields.Float ('Upper Limit')
     units = fields.Many2One('gnuhealth.lab.test.units', 'Units')
     test_type_id = fields.Many2One('gnuhealth.test_type', 'Test type',
      select="2")

@@ -79,6 +79,8 @@ class CreateTestReport(Wizard):
             test_cases.append(('create', {
                     'name': critearea.name,
                     'sequence': critearea.sequence,
+                    'lower_limit': critearea.lower_limit,
+                    'upper_limit': critearea.upper_limit,                    
                     'normal_range': critearea.normal_range,
                     'units': critearea.units.id,
                 }))
