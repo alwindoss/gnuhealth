@@ -10,3 +10,12 @@ install:
 
 install_man:
 	install -m 644 health/man/gnuhealth.1 $(MANTARGET) 
+
+update_version:
+	perl -p -i -e "s/'version'.*$$/'version': '`cat version`',/" */__tryton__.py
+
+release:
+	for module in health*; do \
+		cd $(modules); \
+		python setup.py register sdist upload; \
+	done

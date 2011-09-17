@@ -1,0 +1,6 @@
+include COPYING
+include *.xml
+include data/*
+include report/*
+include *.csv
+include icons/*
