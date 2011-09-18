@@ -119,8 +119,17 @@ class GnuHealthTestCritearea(ModelSQL, ModelView):
     _description = __doc__
 
     name = fields.Char('Test', select="1")
-    result = fields.Float('Result')
-    normal_range = fields.Text('Normal Range')
+    excluded = fields.Boolean('Excluded',help='Select this option when' \
+        ' this analyte is excluded from the test')
+    result = fields.Float('Value')
+    result_text = fields.Char('Result - Text',help='Non-numeric results. For example '\
+        'qualitative values, morphological, colors ...')
+    remarks = fields.Char('Remarks')
+    warning = fields.Boolean('Warn',help='Warns the patient about this analyte result' \
+        ' It is useful to contextualize the result to each patient status ' \
+        ' like age, sex, comorbidities, ...',
+         on_change_with=['result', 'lower_limit', 'upper_limit'])
+    normal_range = fields.Text('Reference')
     lower_limit = fields.Float ('Lower Limit')
     upper_limit = fields.Float ('Upper Limit')
     units = fields.Many2One('gnuhealth.lab.test.units', 'Units')
@@ -135,6 +144,20 @@ class GnuHealthTestCritearea(ModelSQL, ModelView):
 
     def default_sequence(self):
         return 1
+
+    def default_excluded(self):
+        return False
+        
+    def on_change_with_warning(self, vals):
+        lower_limit = vals.get('lower_limit')
+        upper_limit = vals.get('upper_limit')
+        result = vals.get ('result')
+        if (result < lower_limit or result > upper_limit):
+            warning = True
+        else:
+            warning = False
+        return warning
+        
 
 GnuHealthTestCritearea()
 
