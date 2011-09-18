@@ -18,6 +18,8 @@
 from datetime import datetime
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.transaction import Transaction
+from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
+        Greater, Less, PYSONEncoder
 
 
 class PatientData(ModelSQL, ModelView):
@@ -117,7 +119,7 @@ class GnuHealthTestCritearea(ModelSQL, ModelView):
     _description = __doc__
 
     name = fields.Char('Test', select="1")
-    result = fields.Text('Result')
+    result = fields.Float('Result')
     normal_range = fields.Text('Normal Range')
     lower_limit = fields.Float ('Lower Limit')
     upper_limit = fields.Float ('Upper Limit')

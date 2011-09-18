@@ -688,11 +688,6 @@ Postmenopause : &lt; 0.8&quot;&quot;&quot;" name="normal_range"/>
             <field name="units" ref="gnuhealth_lab_test_units_hpf0"/>
         </record>
 
-        <record id="gnuhealth_test_critearea_0" model="gnuhealth.lab.test.critearea">
-            <field eval="9" name="sequence"/>
-            <field name="test_type_id" ref="gnuhealth_test_completebloodcount0"/>
-        </record>
-
         <record id="gnuhealth_test_critearea_sgot0" model="gnuhealth.lab.test.critearea">
             <field eval="&quot;&quot;&quot;SGOT&quot;&quot;&quot;" name="name"/>
             <field eval="9" name="sequence"/>
@@ -961,11 +956,6 @@ Postmenopause : &lt; 0.8&quot;&quot;&quot;" name="normal_range"/>
             <field eval="&quot;&quot;&quot;Crystals&quot;&quot;&quot;" name="name"/>
             <field eval="19" name="sequence"/>
             <field name="test_type_id" ref="gnuhealth_test_urineanalysis0"/>
-        </record>
-
-        <record id="gnuhealth_test_critearea_1" model="gnuhealth.lab.test.critearea">
-            <field eval="19" name="sequence"/>
-            <field name="test_type_id" ref="gnuhealth_test_completebloodcount0"/>
         </record>
 
         <record id="gnuhealth_test_critearea_esr0" model="gnuhealth.lab.test.critearea">

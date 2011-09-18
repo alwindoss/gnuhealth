@@ -246,7 +246,12 @@
                             <field name="requestor"/>
 
                             <field name="critearea" colspan="4">
-                                <tree editable="top" string="Test Cases">
+                                <tree editable="top" string="Test Cases"
+                                colors="If(Or(Less(Eval('result',-1),
+                                Eval('lower_limit',-1)),
+                                 Greater(Eval('result',-1),
+                                Eval('upper_limit',-1))),'red','black')">
+
                                     <field name="sequence"/>
                                     <field name="name"/>
                                     <field name="result"/>

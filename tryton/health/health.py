@@ -27,7 +27,6 @@ from trytond.tools import safe_eval, datetime_strftime
 from trytond.transaction import Transaction
 from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
         PYSONEncoder
-from trytond.pyson import Eval
 
 
 class DrugDoseUnits(ModelSQL, ModelView):
