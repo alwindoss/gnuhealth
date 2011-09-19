@@ -1,3 +1,79 @@
+changeset:   14:0bf2e8744f17
+tag:         tip
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Sep 18 23:02:59 2011 -0300
+summary:     Improve icons and menus
+
+changeset:   13:db3b4b8e5e22
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Sep 18 17:56:00 2011 -0300
+summary:     Include text qualitative tests and patient contextual warnings and remarks
+
+changeset:   12:162525779caa
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Sep 18 03:13:02 2011 -0300
+summary:     Enable colors in lab test report to show out-of-range values
+
+changeset:   11:4428130fd514
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sat Sep 17 23:29:48 2011 -0300
+summary:     Add colors to lab result elements when out of range. Optimize and bug fixing
+
+changeset:   10:5a396b6365c4
+user:        Cédric Krier <ced@b2ck.com>
+date:        Sat Sep 17 14:13:19 2011 +0200
+summary:     Add setup.py to medical modules
+
+changeset:   9:0cc0b9abd3ff
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Fri Sep 16 12:18:47 2011 -0300
+summary:     Improve healt_lab . Include lower and upper limits for lab tests. Normalize models
+
+changeset:   8:fdd74d24b1ae
+user:        Cédric Krier <ced@b2ck.com>
+date:        Fri Sep 16 00:12:11 2011 +0200
+summary:     Add missing depends on res and party
+
+changeset:   7:caa26c38452a
+user:        Cédric Krier <ced@b2ck.com>
+date:        Fri Sep 16 00:05:16 2011 +0200
+summary:     Missing depends on party
+
+changeset:   6:7988d7eb6c91
+user:        Cédric Krier <ced@b2ck.com>
+date:        Thu Sep 15 23:40:26 2011 +0200
+summary:     Remove unused import
+
+changeset:   5:66baa0d16feb
+user:        Cédric Krier <ced@b2ck.com>
+date:        Thu Sep 15 23:34:57 2011 +0200
+summary:     Remove unused mx.DateTime import
+
+changeset:   4:df630d6e4099
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Thu Sep 15 16:45:52 2011 -0300
+summary:     Remove obsolete files pre-migration
+
+changeset:   3:039dc993ffd7
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Thu Sep 15 16:32:15 2011 -0300
+summary:     Remove account dependencies from main module and obsolete OE files in pediatrics
+
+changeset:   2:13da71311d06
+user:        Cédric Krier <ced@b2ck.com>
+date:        Thu Sep 15 21:06:19 2011 +0200
+summary:     Fix missing rename from medical into health
+
+changeset:   1:69d55a482da1
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Sep 14 22:22:35 2011 -0300
+summary:     Change modules and model names prefixes to new GNU Health style
+
+changeset:   0:6f7b95bba719
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Sep 12 05:02:14 2011 -0300
+summary:     Initial port to Savannah, based in GNU Health Subversion 597
+
 ------------------------------------------------------------------------
 r552 | bvillasanti | 2011-08-15 17:15:02 -0300 (lun 15 de ago de 2011) | 1 line
 

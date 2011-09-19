@@ -125,14 +125,14 @@
 
 
 
-<!-- Lab Test Type -->
+<!-- Lab Test Type / Model -->
 
         <record model="ir.ui.view" id="gnuhealth_lab_test_view">
             <field name="model">gnuhealth.lab.test_type</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <![CDATA[
-                <form string="Lab Test">
+                <form string="Lab Test Type">
                     <notebook>
                         <page string="Main Info" id="test_type_main_info">
                             <label name="name"/>
@@ -140,7 +140,7 @@
                             <label name="code"/>
                             <field name="code"/>
                             <field name="critearea" colspan="4">
-                                <tree string="Test Cases">
+                                <tree string="Analyte">
                                     <field name="sequence"/>
                                     <field name="name"/>
                                     <field name="lower_limit"/>
@@ -148,7 +148,7 @@
                                     <field name="normal_range"/>
                                     <field name="units"/>
                                 </tree>
-                                <form string="Test Cases">
+                                <form string="Analyte">
                                     <label name="name"/>
                                     <field name="name"/>
                                     <label name="units"/>
@@ -159,9 +159,11 @@
                                     <label name="lower_limit"/>
                                     <field name="lower_limit"/>
                                     <label name="upper_limit"/>
-                                    <field name="upper_limit"/>                           
-                                    <label name="normal_range"/>
-                                    <field name="normal_range"/>
+                                    <field name="upper_limit"/>
+                                    <newline/>                         
+                                    <separator colspan="4" id="analyte_reference" string="Reference Value / Range"/>
+                                    <newline/>                         
+                                    <field colspan="4" name="normal_range"/>
                                 </form>
                             </field>
                             <label name="product_id"/>
@@ -191,7 +193,7 @@
         </record>
 
         <record model="ir.action.act_window" id="gnuhealth_action_list_test">
-            <field name="name">Lab tests</field>
+            <field name="name">Lab Test Types</field>
             <field name="res_model">gnuhealth.lab.test_type</field>
         </record>
 
@@ -201,22 +203,15 @@
             <field name="act_window" ref="gnuhealth_action_list_test"/>
         </record>
 
+        <record model="ir.action.act_window.view" id="gnuhealth_action_list_test_form_view">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="gnuhealth_lab_test_view"/>
+            <field name="act_window" ref="gnuhealth_action_list_test"/>
+        </record>
+
         <menuitem parent="gnuhealth_conf_laboratory" action="gnuhealth_action_list_test"
             id="menu_gnuhealth_action_list_test"/>
 
-        <record model="ir.action.act_window" id="gnuhealth_action_form_test">
-            <field name="name">New Lab Test Type</field>
-            <field name="res_model">gnuhealth.lab.test_type</field>
-        </record>
-
-        <record model="ir.action.act_window.view" id="gnuhealth_action_list_test_form_view">
-            <field name="sequence" eval="10"/>
-            <field name="view" ref="gnuhealth_lab_test_view"/>
-            <field name="act_window" ref="gnuhealth_action_form_test"/>
-        </record>
-
-        <menuitem parent="gnuhealth_conf_laboratory" action="gnuhealth_action_form_test"
-            id="gnuhealth_conf_test"/>
 
 <!-- Lab Test Results -->
 
@@ -254,7 +249,8 @@
                                     <field name="name"/>
                                     <field name="result"/>                              
                                     <field name="result_text"/>
-                                    <field name="normal_range"/>
+                                    <field name="lower_limit"/>
+                                    <field name="upper_limit"/>
                                     <field name="units"/>
                                     <field name="remarks"/>
                                 </tree>

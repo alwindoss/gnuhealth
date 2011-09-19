@@ -35,13 +35,13 @@ PatientData()
 
 class TestType(ModelSQL, ModelView):
     'Type of Lab test'
-    _name = 'gnuhealth.test_type'
+    _name = 'gnuhealth.lab.test_type'
     _description = __doc__
 
     name = fields.Char('Test', 
-        help="Test type, eg X-Ray, hemogram,biopsy...", select="1")
+        help="Test type, eg X-Ray, hemogram,biopsy...", required=True, select="1")
     code = fields.Char('Code', 
-        help="Short name - code for the test", select="2")
+        help="Short name - code for the test", required=True, select="1")
     info = fields.Text('Description')
     product_id = fields.Many2One('product.product', 'Service', required=True)
     critearea = fields.One2Many('gnuhealth.lab.test.critearea', 'test_type_id',
@@ -62,10 +62,10 @@ class Lab(ModelSQL, ModelView):
     _description = __doc__
 
     name = fields.Char('ID', help="Lab result ID")
-    test = fields.Many2One('gnuhealth.test_type', 'Test type',
-        help="Lab test type", select="1")
+    test = fields.Many2One('gnuhealth.lab.test_type', 'Test type',
+        help="Lab test type", required=True, select="1")
     patient = fields.Many2One('gnuhealth.patient', 'Patient',
-     help="Patient ID", select="1")
+     help="Patient ID", required=True, select="1")
     pathologist = fields.Many2One('gnuhealth.physician', 'Pathologist',
         help="Pathologist", select="2")
     requestor = fields.Many2One('gnuhealth.physician', 'Physician',
@@ -73,8 +73,8 @@ class Lab(ModelSQL, ModelView):
     results = fields.Text('Results')
     diagnosis = fields.Text('Diagnosis')
     critearea = fields.One2Many('gnuhealth.lab.test.critearea', 'gnuhealth_lab_id',
-        'Test Cases')
-    date_requested = fields.DateTime('Date requested', select="1")
+        'Lab Test Critearea')
+    date_requested = fields.DateTime('Date requested', required=True, select="1")
     date_analysis = fields.DateTime('Date of the Analysis', select="1")
 
     def __init__(self):
@@ -118,22 +118,22 @@ class GnuHealthTestCritearea(ModelSQL, ModelView):
     _name = 'gnuhealth.lab.test.critearea'
     _description = __doc__
 
-    name = fields.Char('Test', select="1")
+    name = fields.Char('Analyte', required=True, select="1")
     excluded = fields.Boolean('Excluded',help='Select this option when' \
         ' this analyte is excluded from the test')
     result = fields.Float('Value')
     result_text = fields.Char('Result - Text',help='Non-numeric results. For example '\
         'qualitative values, morphological, colors ...')
     remarks = fields.Char('Remarks')
+    normal_range = fields.Text('Reference')
+    lower_limit = fields.Float ('Lower Limit')
+    upper_limit = fields.Float ('Upper Limit')
     warning = fields.Boolean('Warn',help='Warns the patient about this analyte result' \
         ' It is useful to contextualize the result to each patient status ' \
         ' like age, sex, comorbidities, ...',
          on_change_with=['result', 'lower_limit', 'upper_limit'])
-    normal_range = fields.Text('Reference')
-    lower_limit = fields.Float ('Lower Limit')
-    upper_limit = fields.Float ('Upper Limit')
     units = fields.Many2One('gnuhealth.lab.test.units', 'Units')
-    test_type_id = fields.Many2One('gnuhealth.test_type', 'Test type',
+    test_type_id = fields.Many2One('gnuhealth.lab.test_type', 'Test type',
      select="2")
     gnuhealth_lab_id = fields.Many2One('gnuhealth.lab', 'Test Cases', select="2")
     sequence = fields.Integer('Sequence')
@@ -167,7 +167,7 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
     _name = 'gnuhealth.patient.lab.test'
     _description = __doc__
 
-    name = fields.Many2One('gnuhealth.test_type', 'Test Type', required=True,
+    name = fields.Many2One('gnuhealth.lab.test_type', 'Test Type', required=True,
      select="1")
     date = fields.DateTime('Date', select="2")
     state = fields.Selection([

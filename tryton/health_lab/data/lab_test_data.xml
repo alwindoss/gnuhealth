@@ -78,55 +78,55 @@
             <field name="category" ref="product_category_labservices0"/>
         </record>
 
-        <record id="gnuhealth_test_semenanalysis0" model="gnuhealth.test_type">
+        <record id="gnuhealth_test_semenanalysis0" model="gnuhealth.lab.test_type">
             <field eval="&quot;&quot;&quot;SA&quot;&quot;&quot;" name="code"/>
             <field name="product_id" ref="product_product_semenanalysischarges0"/>
             <field eval="&quot;&quot;&quot;SEMEN ANALYSIS&quot;&quot;&quot;" name="name"/>
         </record>
 
-        <record id="gnuhealth_test_completebloodcount0" model="gnuhealth.test_type">
+        <record id="gnuhealth_test_completebloodcount0" model="gnuhealth.lab.test_type">
             <field eval="&quot;&quot;&quot;CBC&quot;&quot;&quot;" name="code"/>
             <field name="product_id" ref="product_product_bloodcounttestcharges0"/>
             <field eval="&quot;&quot;&quot;COMPLETE BLOOD COUNT&quot;&quot;&quot;" name="name"/>
         </record>
 
-        <record id="gnuhealth_test_liverfunctiontest0" model="gnuhealth.test_type">
+        <record id="gnuhealth_test_liverfunctiontest0" model="gnuhealth.lab.test_type">
             <field eval="&quot;&quot;&quot;LFT&quot;&quot;&quot;" name="code"/>
             <field name="product_id" ref="product_product_liverfunctiontestcharges0"/>
             <field eval="&quot;&quot;&quot;LIVER FUNCTION TEST&quot;&quot;&quot;" name="name"/>
         </record>
 
-        <record id="gnuhealth_test_stoolexamination0" model="gnuhealth.test_type">
+        <record id="gnuhealth_test_stoolexamination0" model="gnuhealth.lab.test_type">
             <field eval="&quot;&quot;&quot;SE&quot;&quot;&quot;" name="code"/>
             <field name="product_id" ref="product_product_stoolexaminationcharges0"/>
             <field eval="&quot;&quot;&quot;STOOL EXAMINATION&quot;&quot;&quot;" name="name"/>
         </record>
 
-        <record id="gnuhealth_test_renalfunctiontest0" model="gnuhealth.test_type">
+        <record id="gnuhealth_test_renalfunctiontest0" model="gnuhealth.lab.test_type">
             <field eval="&quot;&quot;&quot;RFT&quot;&quot;&quot;" name="code"/>
             <field name="product_id" ref="product_product_renalfunctiontestcharges0"/>
             <field eval="&quot;&quot;&quot;RENAL FUNCTION TEST&quot;&quot;&quot;" name="name"/>
         </record>
 
-        <record id="gnuhealth_test_haematology0" model="gnuhealth.test_type">
+        <record id="gnuhealth_test_haematology0" model="gnuhealth.lab.test_type">
             <field eval="&quot;&quot;&quot;HTG&quot;&quot;&quot;" name="code"/>
             <field name="product_id" ref="product_product_haematologycharges0"/>
             <field eval="&quot;&quot;&quot;HAEMATOLOGY&quot;&quot;&quot;" name="name"/>
         </record>
 
-        <record id="gnuhealth_test_peripheralsmearexamination0" model="gnuhealth.test_type">
+        <record id="gnuhealth_test_peripheralsmearexamination0" model="gnuhealth.lab.test_type">
             <field eval="&quot;&quot;&quot;PSE&quot;&quot;&quot;" name="code"/>
             <field name="product_id" ref="product_product_peripheralsmearexaminationcharges0"/>
             <field eval="&quot;&quot;&quot;PERIPHERAL SMEAR EXAMINATION&quot;&quot;&quot;" name="name"/>
         </record>
 
-        <record id="gnuhealth_test_urineanalysis0" model="gnuhealth.test_type">
+        <record id="gnuhealth_test_urineanalysis0" model="gnuhealth.lab.test_type">
             <field eval="&quot;&quot;&quot;UA&quot;&quot;&quot;" name="code"/>
             <field name="product_id" ref="product_product_urineanalysischarges0"/>
             <field eval="&quot;&quot;&quot;URINE ANALYSIS&quot;&quot;&quot;" name="name"/>
         </record>
 
-        <record id="gnuhealth_test_endocrinology0" model="gnuhealth.test_type">
+        <record id="gnuhealth_test_endocrinology0" model="gnuhealth.lab.test_type">
             <field eval="&quot;&quot;&quot;EGY&quot;&quot;&quot;" name="code"/>
             <field name="product_id" ref="product_product_endocrinology0"/>
             <field eval="&quot;&quot;&quot;ENDOCRINOLOGY&quot;&quot;&quot;" name="name"/>

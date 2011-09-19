@@ -1,7 +1,7 @@
 type,name,res_id,src,value,fuzzy
 error,gnuhealth.lab,0,The test ID code must be unique,El código de la prueba debe ser único,0
 error,gnuhealth.lab.test.units,0,The Unit name must be unique,El código de la prueba debe ser único,0
-error,gnuhealth.test_type,0,The Lab Test code must be unique,El código de la prueba debe ser único,0
+error,gnuhealth.lab.test_type,0,The Lab Test code must be unique,El código de la prueba debe ser único,0
 field,"gnuhealth.lab,critearea",0,Test Cases,Pruebas,0
 field,"gnuhealth.lab,date_analysis",0,Date of the Analysis,Fecha del análisis,0
 field,"gnuhealth.lab,date_requested",0,Date requested,Fecha del pedido,0
@@ -23,12 +23,12 @@ field,"gnuhealth.patient.lab.test,name",0,Test Type,Tipo de prueba,0
 field,"gnuhealth.patient.lab.test,patient_id",0,Patient,Paciente,0
 field,"gnuhealth.patient.lab.test,rec_name",0,Name,Nombre del campo,0
 field,"gnuhealth.patient.lab.test,state",0,State,Estado,0
-field,"gnuhealth.test_type,code",0,Code,Código,0
-field,"gnuhealth.test_type,critearea",0,Test Cases,Pruebas,0
-field,"gnuhealth.test_type,info",0,Description,Descripción,0
-field,"gnuhealth.test_type,name",0,Test,Prueba,0
-field,"gnuhealth.test_type,product_id",0,Service,Servicio,0
-field,"gnuhealth.test_type,rec_name",0,Name,Nombre del campo,0
+field,"gnuhealth.lab.test_type,code",0,Code,Código,0
+field,"gnuhealth.lab.test_type,critearea",0,Test Cases,Pruebas,0
+field,"gnuhealth.lab.test_type,info",0,Description,Descripción,0
+field,"gnuhealth.lab.test_type,name",0,Test,Prueba,0
+field,"gnuhealth.lab.test_type,product_id",0,Service,Servicio,0
+field,"gnuhealth.lab.test_type,rec_name",0,Name,Nombre del campo,0
 field,"gnuhealth.lab.test.critearea,gnuhealth.lab_id",0,Test Cases,Pruebas,0
 field,"gnuhealth.lab.test.critearea,name",0,Test,Prueba,0
 field,"gnuhealth.lab.test.critearea,normal_range",0,Normal Range,Rango normal,0
@@ -43,8 +43,8 @@ help,"gnuhealth.lab,patient",0,Patient ID,ID del paciente,0
 help,"gnuhealth.lab,requestor",0,Doctor who requested the test,Doctor que pidió el análisis,0
 help,"gnuhealth.lab,test",0,Lab test type,Tipo de prueba,0
 help,"gnuhealth.patient.lab.test,doctor_id",0,Doctor who Request the lab test.,Doctor que pidió el análisis,0
-help,"gnuhealth.test_type,code",0,Short name - code for the test,Abreviación - código de la prueba,0
-help,"gnuhealth.test_type,name",0,"Test type, eg X-Ray, hemogram,biopsy...","Tipo de prueba, ej Radiología, hemograma, biopsia...",0
+help,"gnuhealth.lab.test_type,code",0,Short name - code for the test,Abreviación - código de la prueba,0
+help,"gnuhealth.lab.test_type,name",0,"Test type, eg X-Ray, hemogram,biopsy...","Tipo de prueba, ej Radiología, hemograma, biopsia...",0
 model,"ir.action,name",act_create_lab_test,Create Lab Test,Generar análisis,0
 model,"ir.action,name",act_patient_lab_history_form1,Lab Reports,Reportes de Laboratorio,0
 model,"ir.action,name",gnuhealth.action_form_test,New Type of Lab test,Nuevo tipo de prueba de laboratorio,0
@@ -67,7 +67,7 @@ model,"gnuhealth.lab,name",0,Lab Test,Prueba de laboratorio,0
 model,"gnuhealth.lab.test.create.init,name",0,Create Test Report Init,Generar Reporte de Análisis,0
 model,"gnuhealth.lab.test.units,name",0,Lab Test Units,Unidades de la prueba,0
 model,"gnuhealth.patient.lab.test,name",0,Patient Lab Test,Prueba de laboratorio del paciente,0
-model,"gnuhealth.test_type,name",0,Type of Lab test,Tipo de prueba de laboratorio,0
+model,"gnuhealth.lab.test_type,name",0,Type of Lab test,Tipo de prueba de laboratorio,0
 model,"gnuhealth.lab.test.critearea,name",0,Lab Test Critearea,Criterios de Prueba de Laboratorio,0
 model,"product.category,name",product_category_labservices0,Lab Services,Servicios de Laboratorio,0
 model,"product.template,name",product_product_bloodcounttestcharges0,Blood count test charges,Cargos por análisis de sangre,0
@@ -93,10 +93,10 @@ view,gnuhealth.lab.test.create.init,0,Do you want to generate the test(s) ?,Quie
 view,gnuhealth.lab.test.units,0,Test Unit,Unidad de la prueba,0
 view,gnuhealth.patient,0,Lab Tests,Pruebas de laboratorio,0
 view,gnuhealth.patient.lab.test,0,Test Requests,Pedidos de Pruebas,0
-view,gnuhealth.test_type,0,Extra Info,Información Adicional,0
-view,gnuhealth.test_type,0,Lab Test,Prueba de laboratorio,0
-view,gnuhealth.test_type,0,Lab test type,Tipo de prueba,0
-view,gnuhealth.test_type,0,Main Info,Información Principal,0
-view,gnuhealth.test_type,0,Test Cases,Pruebas,0
+view,gnuhealth.lab.test_type,0,Extra Info,Información Adicional,0
+view,gnuhealth.lab.test_type,0,Lab Test,Prueba de laboratorio,0
+view,gnuhealth.lab.test_type,0,Lab test type,Tipo de prueba,0
+view,gnuhealth.lab.test_type,0,Main Info,Información Principal,0
+view,gnuhealth.lab.test_type,0,Test Cases,Pruebas,0
 wizard_button,"gnuhealth.lab.test.create,init,create",0,Create Lab Test,Generar análisis,0
 wizard_button,"gnuhealth.lab.test.create,init,end",0,Cancel,Cancelar,0
