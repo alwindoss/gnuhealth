@@ -2,8 +2,16 @@
 <tryton>
     <data>
 
+<!-- Add Genetics icon -->
+
+        <record model="ir.ui.icon" id="gnuhealth_dna_icon">
+            <field name="name">icon-dna</field>
+            <field name="path">icons/dna.svg</field>
+        </record> 
+
         <menuitem name="Genetics" parent="health.gnuhealth_conf_menu"
-            id="gnuhealth_conf_genetics"/>
+            id="gnuhealth_conf_genetics" icon="icon-dna"/>
+
 
 <!-- Genetic Risks -->
 

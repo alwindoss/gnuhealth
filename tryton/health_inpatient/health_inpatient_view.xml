@@ -4,10 +4,10 @@
 
         <record model="ir.ui.icon" id="gnuhealth_hospital_patient_icon">
             <field name="name">icon-hospital-patient</field>
-            <field name="path">icons/hospital_patient.svg</field>
+            <field name="path">icons/hospital.svg</field>
         </record> 
 
-        <menuitem name="Inpatient" parent="health.gnuhealth_menu"
+        <menuitem name="Hospitalizations" parent="health.gnuhealth_menu"
             id="gnuhealth_inpatient_menu" sequence="2"
             icon="icon-hospital-patient"/>
 
