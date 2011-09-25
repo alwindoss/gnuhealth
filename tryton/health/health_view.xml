@@ -768,9 +768,12 @@
 							<page string="Pregnancy" id="medicament_pregnancy">
 								<label name="pregnancy_warning"/>
 								<field name="pregnancy_warning"/>
+								<label name="pregnancy_category"/>
+								<field name="pregnancy_category"/>
 								<newline/>
-								<label name="pregnancy"/>
-								<field name="pregnancy"/>
+                                <separator string="Notes" id="pregnancy_notes" colspan="4"/>
+                                <newline/>
+								<field colspan="4" name="pregnancy"/>
 							</page>
 
 							<page string="Adverse Reactions" id="medicament_adverse_reactions">
@@ -804,6 +807,7 @@
 						<field name="active_component"></field>
 						<field name="therapeutic_action"></field>
 						<field name="pregnancy_warning"></field>
+						<field name="pregnancy_category"></field>
 
 <!-- TODO : Work on the FIELDS.RELATED conversion to Tryton
 						

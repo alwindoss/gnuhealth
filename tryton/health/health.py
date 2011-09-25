@@ -283,6 +283,44 @@ class Medicament(ModelSQL, ModelView):
         help="The drug represents risk to pregnancy or lactancy")
     pregnancy = fields.Text('Pregnancy and Lactancy',
         help="Warnings for Pregnant Women")
+
+    pregnancy_category = fields.Selection([
+                        ('A', 'A'),
+                        ('B', 'B'),
+                        ('C', 'C'),
+                        ('D', 'D'),
+                        ('X', 'X'),
+
+                        ], 'Pregnancy Category', select="1",
+                        help='** FDA Pregancy Categories ***\n' \
+                        'CATEGORY A :Adequate and well-controlled human studies have' \
+                        ' failed to demonstrate a risk to the fetus in the' \
+                        ' first trimester of pregnancy (and there is no ' \
+                        'evidence of risk in later trimesters).\n\n' \
+                        'CATEGORY B : Animal reproduction studies have failed to' \
+                        'demonstrate a risk to the fetus and there are no' \
+                        ' adequate and well-controlled studies in pregnant women' \
+                        ' OR Animal studies have shown an adverse effect, but' \
+                        ' adequate and well-controlled studies in pregnant women' \
+                        ' have failed to demonstrate a risk to the fetus in any' \
+                        ' trimester.\n\n'
+                        'CATEGORY C : Animal reproduction studies have shown an adverse' \
+                        ' effect on the fetus and there are no adequate and' \
+                        ' well-controlled studies in humans, but potential benefits' \
+                        ' may warrant use of the drug in pregnant women despite ' \
+                        'potential risks. \n\n' \
+                        ' CATEGORY D : There is positive evidence of human fetal ' \
+                        ' risk based on adverse reaction data from investigational' \
+                        ' or marketing experience or studies in humans, but potential' \
+                        ' benefits may warrant use of the drug in pregnant women despite' \
+                        ' potential risks.\n\n'
+                        'CATEGORY X : Studies in animals or humans have demonstrated' \
+                        ' fetal abnormalities and/or there is positive evidence of human' \
+                        ' fetal risk based on adverse reaction data from investigational' \
+                        ' or marketing experience, and the risks involved in use of the' \
+                        ' drug in pregnant women clearly outweigh potential benefits.'
+                        )
+    
     presentation = fields.Text('Presentation', help="Packaging")
     adverse_reaction = fields.Text('Adverse Reactions')
     storage = fields.Text('Storage Conditions')

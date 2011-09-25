@@ -2,7 +2,7 @@
 {
 
     'name' : 'GNU Health : Installer',  
-    'version': '1.3.3',
+    'version': '1.3.4',
     'author' : 'GNU Solidario',
     'email' : 'health@gnusolidario.org',
     'website' : "http://health.gnu.org",
