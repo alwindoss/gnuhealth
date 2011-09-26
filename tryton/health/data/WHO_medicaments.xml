@@ -5,10 +5,13 @@
         <record model="gnuhealth.medicament" id="medicament_2">
             <field name="name" ref="product_2"/>
             <field name="active_component">abacavir (ABC)</field>
+            <field name="pregnancy_category">C</field>
+            
         </record>
         <record model="gnuhealth.medicament" id="medicament_3">
             <field name="name" ref="product_3"/>
             <field name="active_component">acetazolamide</field>
+            <field name="pregnancy_category">C</field>
         </record>
         <record model="gnuhealth.medicament" id="medicament_4">
             <field name="name" ref="product_4"/>
