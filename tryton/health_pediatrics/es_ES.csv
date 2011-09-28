@@ -116,8 +116,8 @@ help,"gnuhealth.newborn,test_metabolic",0,"Test for Fenilketonuria, Congenital H
 help,"gnuhealth.newborn,weight",0,Weight in grams (g),Peso en gramos (g),0
 help,"gnuhealth.patient.psc,evaluation_date",0,Enter or select the date / ID of the appointment related to this evaluation,Introduzca o elija la fecha y la identificación de la cita relacionado con esta evaluación,0
 model,"ir.action,name",gnuhealth.action_newborn,Newborn,Neonato,0
-model,"ir.ui.menu,name",gnuhealth.conf_edit_newborn,Newborn,Neonato,0
-model,"ir.ui.menu,name",gnuhealth.conf_neonatology,Neonatology,Neonatología,0
+model,"ir.ui.menu,name",gnuhealth_conf_edit_newborn,Newborn,Neonato,0
+model,"ir.ui.menu,name",gnuhealth_conf_neonatology,Neonatology,Neonatología,0
 model,"gnuhealth.neonatal.apgar,name",0,Neonatal APGAR Score,Score APGAR Neonatal,0
 model,"gnuhealth.newborn,name",0,Newborn Information,ID del Neonato,0
 model,"gnuhealth.patient.psc,name",0,Pediatric Symptoms Checklist,Pediatric Symptoms Checklist,0

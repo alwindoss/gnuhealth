@@ -700,43 +700,43 @@ model,"ir.sequence,name",seq_health_prescription,Prescription,Receta,0
 model,"ir.sequence.type,name",seq_type_health_appointment,Appointment,Cita,0
 model,"ir.sequence.type,name",seq_type_health_patient,Patient,Paciente,0
 model,"ir.sequence.type,name",seq_type_health_prescription,Prescription,Receta,0
-model,"ir.ui.menu,name",gnuhealth.appointment_menu,Appointments,Citas,0
-model,"ir.ui.menu,name",gnuhealth.conf_dosage,Medication Frequencies,Frecuencia de Medicación,0
-model,"ir.ui.menu,name",gnuhealth.conf_dose,Drug Dose Units,Unidades de la dosis,0
-model,"ir.ui.menu,name",gnuhealth.conf_drug_form,Drug Forms,Presentación de la droga,0
-model,"ir.ui.menu,name",gnuhealth.conf_drug_route,Drug Administration Routes,Vías de Administración,0
-model,"ir.ui.menu,name",gnuhealth.conf_edit_insurance,Insurances,Seguros,0
-model,"ir.ui.menu,name",gnuhealth.conf_edit_insurance_company,Insurance Company,Compañía de Seguros,0
-model,"ir.ui.menu,name",gnuhealth.conf_edit_operational_area,Operational Areas,Áreas Operacionales,0
-model,"ir.ui.menu,name",gnuhealth.conf_edit_operational_sector,Operational Sectors,Sectores Operacionales,0
-model,"ir.ui.menu,name",gnuhealth.conf_ethnicity,Ethnicities,Grupos étnicos,0
-model,"ir.ui.menu,name",gnuhealth.conf_hospital,Health Centers,Centros de Salud,0
-model,"ir.ui.menu,name",gnuhealth.conf_hospital_bed_add,Beds,Camas,0
-model,"ir.ui.menu,name",gnuhealth.conf_hospital_building_add,Buildings,Edificios,0
-model,"ir.ui.menu,name",gnuhealth.conf_hospital_center,Centers,Centros,0
-model,"ir.ui.menu,name",gnuhealth.conf_hospital_or_add,Operating Rooms,Quirófanos,0
-model,"ir.ui.menu,name",gnuhealth.conf_hospital_unit_add,Units,Unidades,0
-model,"ir.ui.menu,name",gnuhealth.conf_hospital_ward_add,Wards,Salas,0
-model,"ir.ui.menu,name",gnuhealth.conf_insurances,Insurances,Seguros,0
-model,"ir.ui.menu,name",gnuhealth.conf_medicaments,Medicaments,Medicamentos,0
-model,"ir.ui.menu,name",gnuhealth.conf_menu,Configuration,Configuración,0
-model,"ir.ui.menu,name",gnuhealth.conf_misc,Misc,Misc,0
-model,"ir.ui.menu,name",gnuhealth.conf_occupation,Occupations,Profesiones,0
-model,"ir.ui.menu,name",gnuhealth.conf_operational_areas,Operational Areas,Áreas Operacionales,0
-model,"ir.ui.menu,name",gnuhealth.conf_pathology,Diseases,Enfermedades,0
-model,"ir.ui.menu,name",gnuhealth.conf_pathology_categories,Categories,Categorías,0
-model,"ir.ui.menu,name",gnuhealth.conf_pathology_category,Disease categories,Categorías de enfermedades,0
-model,"ir.ui.menu,name",gnuhealth.conf_pathology_pathology,Diseases,Enfermedades,0
-model,"ir.ui.menu,name",gnuhealth.conf_physicians,Physicians,Doctores,0
-model,"ir.ui.menu,name",gnuhealth.conf_procedure,Medical Procedures,Procedimientos Médicos,0
-model,"ir.ui.menu,name",gnuhealth.conf_specialty,Medical Specialties,Especialidades Médicas,0
-model,"ir.ui.menu,name",gnuhealth.edit_family,Families,Familias,0
-model,"ir.ui.menu,name",gnuhealth.edit_family_member,Family Members,Miembros familiares,0
-model,"ir.ui.menu,name",gnuhealth.edit_medicament,Medicaments,Medicamentos,0
-model,"ir.ui.menu,name",gnuhealth.edit_physician,Physicians,Doctores,0
-model,"ir.ui.menu,name",gnuhealth.menu,Medical,Medical,0
-model,"ir.ui.menu,name",gnuhealth.patients_menu,Patients,Pacientes,0
-model,"ir.ui.menu,name",gnuhealth.reporting_menu,Reporting,Reporting,0
+model,"ir.ui.menu,name",gnuhealth_appointment_menu,Appointments,Citas,0
+model,"ir.ui.menu,name",gnuhealth_conf_dosage,Medication Frequencies,Frecuencia de Medicación,0
+model,"ir.ui.menu,name",gnuhealth_conf_dose,Drug Dose Units,Unidades de la dosis,0
+model,"ir.ui.menu,name",gnuhealth_conf_drug_form,Drug Forms,Presentación de la droga,0
+model,"ir.ui.menu,name",gnuhealth_conf_drug_route,Drug Administration Routes,Vías de Administración,0
+model,"ir.ui.menu,name",gnuhealth_conf_edit_insurance,Insurances,Seguros,0
+model,"ir.ui.menu,name",gnuhealth_conf_edit_insurance_company,Insurance Company,Compañía de Seguros,0
+model,"ir.ui.menu,name",gnuhealth_conf_edit_operational_area,Operational Areas,Áreas Operacionales,0
+model,"ir.ui.menu,name",gnuhealth_conf_edit_operational_sector,Operational Sectors,Sectores Operacionales,0
+model,"ir.ui.menu,name",gnuhealth_conf_ethnicity,Ethnicities,Grupos étnicos,0
+model,"ir.ui.menu,name",gnuhealth_conf_hospital,Health Centers,Centros de Salud,0
+model,"ir.ui.menu,name",gnuhealth_conf_hospital_bed_add,Beds,Camas,0
+model,"ir.ui.menu,name",gnuhealth_conf_hospital_building_add,Buildings,Edificios,0
+model,"ir.ui.menu,name",gnuhealth_conf_hospital_center,Centers,Centros,0
+model,"ir.ui.menu,name",gnuhealth_conf_hospital_or_add,Operating Rooms,Quirófanos,0
+model,"ir.ui.menu,name",gnuhealth_conf_hospital_unit_add,Units,Unidades,0
+model,"ir.ui.menu,name",gnuhealth_conf_hospital_ward_add,Wards,Salas,0
+model,"ir.ui.menu,name",gnuhealth_conf_insurances,Insurances,Seguros,0
+model,"ir.ui.menu,name",gnuhealth_conf_medicaments,Medicaments,Medicamentos,0
+model,"ir.ui.menu,name",gnuhealth_conf_menu,Configuration,Configuración,0
+model,"ir.ui.menu,name",gnuhealth_conf_misc,Misc,Misc,0
+model,"ir.ui.menu,name",gnuhealth_conf_occupation,Occupations,Profesiones,0
+model,"ir.ui.menu,name",gnuhealth_conf_operational_areas,Operational Areas,Áreas Operacionales,0
+model,"ir.ui.menu,name",gnuhealth_conf_pathology,Diseases,Enfermedades,0
+model,"ir.ui.menu,name",gnuhealth_conf_pathology_categories,Categories,Categorías,0
+model,"ir.ui.menu,name",gnuhealth_conf_pathology_category,Disease categories,Categorías de enfermedades,0
+model,"ir.ui.menu,name",gnuhealth_conf_pathology_pathology,Diseases,Enfermedades,0
+model,"ir.ui.menu,name",gnuhealth_conf_physicians,Physicians,Doctores,0
+model,"ir.ui.menu,name",gnuhealth_conf_procedure,Medical Procedures,Procedimientos Médicos,0
+model,"ir.ui.menu,name",gnuhealth_conf_specialty,Medical Specialties,Especialidades Médicas,0
+model,"ir.ui.menu,name",gnuhealth_edit_family,Families,Familias,0
+model,"ir.ui.menu,name",gnuhealth_edit_family_member,Family Members,Miembros familiares,0
+model,"ir.ui.menu,name",gnuhealth_edit_medicament,Medicaments,Medicamentos,0
+model,"ir.ui.menu,name",gnuhealth_edit_physician,Physicians,Doctores,0
+model,"ir.ui.menu,name",gnuhealth_menu,Medical,Health,0
+model,"ir.ui.menu,name",gnuhealth_patients_menu,Patients,Pacientes,0
+model,"ir.ui.menu,name",gnuhealth_reporting_menu,Reporting,Reporting,0
 model,"ir.ui.menu,name",menu_health_appointment_list,appointments,Citas,0
 model,"ir.ui.menu,name",menu_health_patient_evaluation_list,Patient Evaluations,Evaluaciones,0
 model,"ir.ui.menu,name",menu_health_patient_list,Patients,Pacientes,0

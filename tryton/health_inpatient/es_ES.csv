@@ -19,8 +19,8 @@ field,"gnuhealth.patient,patient_status",0,Hospitalization Status,Status,0
 help,"gnuhealth.appointment,inpatient_registration_code",0,Enter the patient hospitalization code,Introducir el código de hospitalización,0
 help,"gnuhealth.inpatient.registration,admission_reason",0,Reason for Admission,Motivo de ingreso,0
 model,"ir.action,name",gnuhealth.action_inpatient_registration,Hospitalizations,Hospitalizaciones,0
-model,"ir.ui.menu,name",gnuhealth.conf_inpatient_add,Hospitalizations,Hospitalizaciones,0
-model,"ir.ui.menu,name",gnuhealth.inpatient_menu,Inpatient,Hospitalizaciones,0
+model,"ir.ui.menu,name",gnuhealth_conf_inpatient_add,Hospitalizations,Hospitalizaciones,0
+model,"ir.ui.menu,name",gnuhealth_inpatient_menu,Inpatient,Hospitalizaciones,0
 model,"gnuhealth.inpatient.registration,name",0,Patient admission History,Historial de hospitalizaciones,0
 selection,"gnuhealth.inpatient.registration,admission_type",0,Elective,Electivo,0
 selection,"gnuhealth.inpatient.registration,admission_type",0,Emergency,Emergencia,0

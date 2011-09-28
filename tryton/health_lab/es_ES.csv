@@ -56,12 +56,12 @@ model,"ir.action,name",report_patient_labtest,Lab Tests,Pruebas de laboratorio,0
 model,"ir.action,name",report_patient_labtest_report,Lab Report,Reporte de Laboratorio,0
 model,"ir.sequence,name",seq_gnuhealth_lab_test,Lab Test,Prueba de laboratorio,0
 model,"ir.sequence.type,name",seq_type_gnuhealth_lab_test,Lab Test,Prueba de laboratorio,0
-model,"ir.ui.menu,name",gnuhealth.action_lab_tree,Lab Tests Results,Resultados de las pruebas,0
-model,"ir.ui.menu,name",gnuhealth.conf_laboratory,Laboratory,Laboratorio,0
-model,"ir.ui.menu,name",gnuhealth.conf_test,New Type of Lab test,Nuevo tipo de prueba de laboratorio,0
-model,"ir.ui.menu,name",gnuhealth.laboratory_menu,Laboratory,Laboratorio,0
-model,"ir.ui.menu,name",gnuhealth.labtest_request,Lab Requests,Pedidos de Laboratorio,0
-model,"ir.ui.menu,name",gnuhealth.labtest_unit,Lab Testing Units,Unidades de la prueba de laboratorio,0
+model,"ir.ui.menu,name",gnuhealth_action_lab_tree,Lab Tests Results,Resultados de las pruebas,0
+model,"ir.ui.menu,name",gnuhealth_conf_laboratory,Laboratory,Laboratorio,0
+model,"ir.ui.menu,name",gnuhealth_conf_test,New Type of Lab test,Nuevo tipo de prueba de laboratorio,0
+model,"ir.ui.menu,name",gnuhealth_laboratory_menu,Laboratory,Laboratorio,0
+model,"ir.ui.menu,name",gnuhealth_labtest_request,Lab Requests,Pedidos de Laboratorio,0
+model,"ir.ui.menu,name",gnuhealth_labtest_unit,Lab Testing Units,Unidades de la prueba de laboratorio,0
 model,"ir.ui.menu,name",menu_gnuhealth_action_list_test,List of Lab tests,Listado de Pruebas de laboratorio,0
 model,"gnuhealth.lab,name",0,Lab Test,Prueba de laboratorio,0
 model,"gnuhealth.lab.test.create.init,name",0,Create Test Report Init,Generar Reporte de Análisis,0

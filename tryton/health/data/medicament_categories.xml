@@ -46,6 +46,11 @@
             <field name="parent" ref="em_1"/>
         </record>
 
+        <record model="product.category" id="em_1_2c">
+            <field name="name">Complementary</field>
+            <field name="parent" ref="em_1_2"/>
+        </record>
+
         <record model="product.category" id="em_1_3">
             <field name="name">Preoperative medication and sedation for short-term procedures</field>
             <field name="parent" ref="em_1"/>
@@ -96,6 +101,11 @@
             <field name="parent" ref="em_4"/>
         </record>
 
+        <record model="product.category" id="em_4_2c">
+            <field name="name">Complementary</field>
+            <field name="parent" ref="em_4_2"/>
+        </record>
+
         <record model="product.category" id="em_5">
             <field name="name">ANTICONVULSANTS/ANTIEPILEPTICS</field>
             <field name="parent" ref="em"/>
@@ -134,6 +144,11 @@
         <record model="product.category" id="em_6_2_1">
             <field name="name">Beta Lactam medicines</field>
             <field name="parent" ref="em_6_2"/>
+        </record>
+
+        <record model="product.category" id="em_6_2_1c">
+            <field name="name">Complementary</field>
+            <field name="parent" ref="em_6_2_1"/>
         </record>
 
         <record model="product.category" id="em_6_2_2">

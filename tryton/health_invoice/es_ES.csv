@@ -17,14 +17,14 @@ model,"ir.action,name",gnuhealth.action_tobeinvoiced_labtest_request,Lab Request
 model,"ir.action,name",gnuhealth.action_tobeinvoiced_prescription,Prescriptions to be invoiced,Recetas por facturar,0
 model,"ir.action,name",gnuhealth.action_today_tobeinvoiced_appointment,Today's Appointments to be Invocied,Citas de hoy por facturar,0
 model,"ir.action,name",gnuhealth.action_today_tobeinvoiced_labtest_request,Today's Lab Requests to be invoiced,Pruebas de laboratorio de hoy por facturar,0
-model,"ir.ui.menu,name",gnuhealth.invoice_menu,Invoices,Facturas,0
-model,"ir.ui.menu,name",gnuhealth.invoiced_appointment,Invoiced Appointments,Citas facturadas,0
-model,"ir.ui.menu,name",gnuhealth.invoiced_labtest_request,Invoiced Lab Test Requests,Pruebas de laboratorio facturadas,0
-model,"ir.ui.menu,name",gnuhealth.tobeinvoiced_appointment,Appointments to be invoiced,Citas por facturar,0
-model,"ir.ui.menu,name",gnuhealth.tobeinvoiced_labtest_request,Lab Requests to be invoiced,Pruebas de laboratorio por facturar,0
-model,"ir.ui.menu,name",gnuhealth.tobeinvoiced_prescription,Prescriptions to be invoiced,Recetas por facturar,0
-model,"ir.ui.menu,name",gnuhealth.today_tobeinvoiced_appointment,Today's Appointments to be Invocied,Citas de hoy por facturar,0
-model,"ir.ui.menu,name",gnuhealth.today_tobeinvoiced_labtest_request,Today's Lab Requests to be invoiced,Pruebas de laboratorio de hoy por facturar,0
+model,"ir.ui.menu,name",gnuhealth_invoice_menu,Invoices,Facturas,0
+model,"ir.ui.menu,name",gnuhealth_invoiced_appointment,Invoiced Appointments,Citas facturadas,0
+model,"ir.ui.menu,name",gnuhealth_invoiced_labtest_request,Invoiced Lab Test Requests,Pruebas de laboratorio facturadas,0
+model,"ir.ui.menu,name",gnuhealth_tobeinvoiced_appointment,Appointments to be invoiced,Citas por facturar,0
+model,"ir.ui.menu,name",gnuhealth_tobeinvoiced_labtest_request,Lab Requests to be invoiced,Pruebas de laboratorio por facturar,0
+model,"ir.ui.menu,name",gnuhealth_tobeinvoiced_prescription,Prescriptions to be invoiced,Recetas por facturar,0
+model,"ir.ui.menu,name",gnuhealth_today_tobeinvoiced_appointment,Today's Appointments to be Invocied,Citas de hoy por facturar,0
+model,"ir.ui.menu,name",gnuhealth_today_tobeinvoiced_labtest_request,Today's Lab Requests to be invoiced,Pruebas de laboratorio de hoy por facturar,0
 model,"gnuhealth.appointment.invoice.init,name",0,Make Medical Appointment Invoice Init,Generar Factura por cita,0
 model,"gnuhealth.lab.test.invoice.init,name",0,Create Test Invoice Init,Crear Facturas por Laboratorio,0
 model,"gnuhealth.prescription.invoice.init,name",0,Make Medical Prescription Invoice Init,Generar Factura por cita,0
