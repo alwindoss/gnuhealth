@@ -546,6 +546,11 @@
             <field name="parent" ref="em_18"/>
         </record>
 
+        <record model="product.category" id="em_19">
+            <field name="name">IMMUNOLOGICALS</field>
+            <field name="parent" ref="em"/>
+        </record>
+
         <record model="product.category" id="em_19_1">
             <field name="name">Diagnostic agents</field>
             <field name="parent" ref="em_19"/>

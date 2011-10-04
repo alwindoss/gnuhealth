@@ -1284,12 +1284,30 @@ class PatientEvaluation(ModelSQL, ModelView):
         help='Level of Consciousness - on Glasgow Coma Scale :' \
         '  1=coma - 15=normal',
         on_change_with=['loc_verbal', 'loc_motor', 'loc_eyes'])
-    loc_eyes = fields.Integer('Level of Consciousness - Eyes',
-        help="Eyes Response - Glasgow Coma Scale - 1 to 4")
-    loc_verbal = fields.Integer('Level of Consciousness - Verbal',
-        help="Verbal Response - Glasgow Coma Scale - 1 to 5")
-    loc_motor = fields.Integer('Level of Consciousness - Motor',
-        help="Motor Response - Glasgow Coma Scale - 1 to 6")
+    loc_eyes = fields.Selection([
+       ('1', 'Does not Open Eyes'),
+       ('2', 'Opens eyes in response to painful stimuli'),
+       ('3', 'Opens eyes in response to voice'),
+       ('4', 'Opens eyes spontaneously'),
+        ], 'Glasgow - Eyes', sort=False)
+
+    loc_verbal = fields.Selection([
+       ('1', 'Makes no sounds'),
+       ('2', 'Incomprehensible sounds'),
+       ('3', 'Utters inappropriate words'),
+       ('4', 'Confused, disoriented'),
+       ('5', 'Oriented, converses normally'),
+        ], 'Glasgow - Verbal', sort=False)
+
+    loc_motor = fields.Selection([
+       ('1', 'Makes no movement'),
+       ('2', 'Extension to painful stimuli - decerebrate response -'),
+       ('3', 'Abnormal flexion to painful stimuli (decorticate response)'),
+       ('4', 'Flexion / Withdrawal to painful stimuli'),
+       ('5', 'Localizes painful stimuli'),
+       ('6', 'Obeys commands'),
+        ], 'Glasgow - Motor', sort=False)
+
     tremor = fields.Boolean('Tremor', help='If associated  to a ' \
         'disease, please encode it on the patient disease history')
     violent = fields.Boolean('Violent Behaviour',
@@ -1436,7 +1454,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         loc_motor = vals.get('loc_motor')
         loc_eyes = vals.get('loc_eyes')
         loc_verbal = vals.get('loc_verbal')
-        loc = loc_motor + loc_eyes + loc_verbal
+        loc = int(loc_motor) + int(loc_eyes) + int(loc_verbal)
 
         return loc
 
