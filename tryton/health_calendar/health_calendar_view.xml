@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+
+    <!-- Appointment details -->
+
+        <record model="ir.ui.view" id="gnuhealth_calendar_appointment_view">
+            <field name="model">gnuhealth.appointment</field>
+            <field name="type">form</field>
+            <field name="inherit" ref="health.gnuhealth_appointment_form"/>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                    <xpath
+                        expr="/form/group[@id=&quot;appointment_header&quot;]/field[@name=&quot;appointment_type&quot;]"
+                        position="after">
+
+                        <label name="event"/>
+                        <field name="event"/>
+
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+
+    </data>
+</tryton>
