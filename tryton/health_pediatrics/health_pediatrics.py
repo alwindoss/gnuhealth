@@ -129,19 +129,19 @@ class NeonatalApgar(ModelSQL, ModelView):
         ('0', 'No response to stimulation'),
         ('1', 'grimace when stimulated'),
         ('2', 'cry or pull away when stimulated'),
-        ], 'Grimace', required=True)
+        ], 'Grimace', required=True, sort=False)
 
     apgar_activity = fields.Selection([
         ('0', 'None'),
         ('1', 'Some flexion'),
         ('2', 'flexed arms and legs'),
-        ], 'Activity', required=True)
+        ], 'Activity', required=True, sort=False)
 
     apgar_respiration = fields.Selection([
         ('0', 'Absent'),
         ('1', 'Weak / Irregular'),
         ('2', 'strong'),
-        ], 'Respiration', required=True)
+        ], 'Respiration', required=True, sort=False)
 
     apgar_score = fields.Integer('APGAR Score',
         on_change_with=['apgar_respiration', 'apgar_activity',
