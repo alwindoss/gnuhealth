@@ -32,7 +32,7 @@ class MedicalPatient(ModelSQL, ModelView):
         ('2', 'Middle'),
         ('3', 'Middle-upper'),
         ('4', 'Higher'),
-        ], 'Socioeconomics', help="SES - Socioeconomic Status")
+        ], 'Socioeconomics', help="SES - Socioeconomic Status", sort=False)
 
     education = fields.Selection([
         ('0', 'None'),
@@ -41,7 +41,7 @@ class MedicalPatient(ModelSQL, ModelView):
         ('3', 'Incomplete Secondary School'),
         ('4', 'Secondary School'),
         ('5', 'University'),
-        ], 'Education Level', help="Education Level")
+        ], 'Education Level', help="Education Level", sort=False)
 
     housing = fields.Selection([
         ('0', 'Shanty, deficient sanitary conditions'),
@@ -49,7 +49,7 @@ class MedicalPatient(ModelSQL, ModelView):
         ('2', 'Comfortable and good sanitary conditions'),
         ('3', 'Roomy and excellent sanitary conditions'),
         ('4', 'Luxury and excellent sanitary conditions'),
-        ], 'Housing conditions', help="Housing and sanitary living conditions")
+        ], 'Housing conditions', help="Housing and sanitary living conditions", sort=False)
 
     hostile_area = fields.Boolean('Hostile Area',
         help="Check if patient lives in a zone of high hostility (eg, war)")
@@ -83,7 +83,7 @@ class MedicalPatient(ModelSQL, ModelView):
         ('2', 'Very much'),
         ], 'Help from family',
         help="Is the patient satisfied with the level of help coming from " \
-        "the family when there is a problem ?")
+        "the family when there is a problem ?", sort=False)
 
     fam_apgar_discussion = fields.Selection([
         ('0', 'None'),
@@ -91,7 +91,7 @@ class MedicalPatient(ModelSQL, ModelView):
         ('2', 'Very much'),
         ], 'Problems discussion',
         help="Is the patient satisfied with the level talking over the " \
-        "problems as family ?")
+        "problems as family ?", sort=False)
 
     fam_apgar_decisions = fields.Selection([
         ('0', 'None'),
@@ -99,7 +99,7 @@ class MedicalPatient(ModelSQL, ModelView):
         ('2', 'Very much'),
         ], 'Decision making',
         help="Is the patient satisfied with the level of making important " \
-        "decisions as a group ?")
+        "decisions as a group ?", sort=False)
 
     fam_apgar_timesharing = fields.Selection([
         ('0', 'None'),
@@ -107,7 +107,7 @@ class MedicalPatient(ModelSQL, ModelView):
         ('2', 'Very much'),
         ], 'Time sharing',
         help="Is the patient satisfied with the level of time that they " \
-        "spend together ?")
+        "spend together ?", sort=False)
 
     fam_apgar_affection = fields.Selection([
         ('0', 'None'),
@@ -115,7 +115,7 @@ class MedicalPatient(ModelSQL, ModelView):
         ('2', 'Very much'),
         ], 'Family affection',
         help="Is the patient satisfied with the level of affection coming " \
-        "from the family ?")
+        "from the family ?", sort=False)
 
     fam_apgar_score = fields.Integer('Score',
         help="Total Family APGAR \n" \
@@ -129,7 +129,7 @@ class MedicalPatient(ModelSQL, ModelView):
         ('h', 'High'),
         ('m', 'Medium / Average'),
         ('l', 'Low'),
-        ], 'Income')
+        ], 'Income', sort=False)
 
     occupation = fields.Many2One('gnuhealth.occupation', 'Occupation')
     works_at_home = fields.Boolean('Works at home',
