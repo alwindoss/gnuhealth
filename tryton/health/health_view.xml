@@ -1740,7 +1740,7 @@
 							<field name="photo" img_width="200" img_height="200" height="200" width="200" widget="image"/>	
 						</group>
 						<newline/>
-						<notebook tabpos="up">
+						<notebook>
 							<page string="General Info" id="general_info">
 								<notebook>
 
