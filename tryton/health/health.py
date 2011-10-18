@@ -27,6 +27,8 @@ from trytond.tools import safe_eval, datetime_strftime
 from trytond.transaction import Transaction
 from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
         PYSONEncoder
+from trytond.pool import Pool
+
 
 
 class DrugDoseUnits(ModelSQL, ModelView):
@@ -725,8 +727,8 @@ class PatientData(ModelSQL, ModelView):
             'The Patient already exists !')]
 
     def create(self, values):
-        sequence_obj = self.pool.get('ir.sequence')
-        config_obj = self.pool.get('gnuhealth.sequences')
+        sequence_obj = Pool().get('ir.sequence')
+        config_obj = Pool().get('gnuhealth.sequences')
 
         values = values.copy()
         if not values.get('identification_code'):
@@ -855,8 +857,8 @@ class Appointment (ModelSQL, ModelView):
         self._order.insert(0, ('name', 'DESC'))
 
     def create(self, values):
-        sequence_obj = self.pool.get('ir.sequence')
-        config_obj = self.pool.get('gnuhealth.sequences')
+        sequence_obj = Pool().get('ir.sequence')
+        config_obj = Pool().get('gnuhealth.sequences')
 
         values = values.copy()
         if not values.get('name'):
@@ -1067,13 +1069,13 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         return datetime.now()
 
     def default_user_id(self):
-        user_obj = self.pool.get('res.user')
+        user_obj = Pool().get('res.user')
         user = user_obj.browse(Transaction().user)
         return int(user.id)
 
     def create(self, values):
-        sequence_obj = self.pool.get('ir.sequence')
-        config_obj = self.pool.get('gnuhealth.sequences')
+        sequence_obj = Pool().get('ir.sequence')
+        config_obj = Pool().get('gnuhealth.sequences')
 
         values = values.copy()
         if not values.get('prescription_id'):

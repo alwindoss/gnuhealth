@@ -9,7 +9,7 @@
         </record>
         <record model="ir.action.keyword" id="report_card_patient">
             <field name="keyword">form_print</field>
-            <field name="model">gnuhealth.patient,0</field>
+            <field name="model">gnuhealth.patient,-1</field>
             <field name="action" ref="report_patient_card"/>
         </record>
         <record model="ir.action.report" id="report_patient_medication">
@@ -20,7 +20,7 @@
         </record>
         <record model="ir.action.keyword" id="report_medication_patient">
             <field name="keyword">form_print</field>
-            <field name="model">gnuhealth.patient,0</field>
+            <field name="model">gnuhealth.patient,-1</field>
             <field name="action" ref="report_patient_medication"/>
         </record>
 
@@ -33,7 +33,7 @@
 
         <record model="ir.action.keyword" id="report_vaccination_patient">
             <field name="keyword">form_print</field>
-            <field name="model">gnuhealth.patient,0</field>
+            <field name="model">gnuhealth.patient,-1</field>
             <field name="action" ref="report_patient_vaccination"/>
         </record>
 
@@ -46,7 +46,7 @@
 
         <record model="ir.action.keyword" id="report_disease_patient">
             <field name="keyword">form_print</field>
-            <field name="model">gnuhealth.patient,0</field>
+            <field name="model">gnuhealth.patient,-1</field>
             <field name="action" ref="report_patient_disease"/>
         </record>
 
@@ -59,7 +59,7 @@
 
         <record model="ir.action.keyword" id="keyword_prescription_order">
             <field name="keyword">form_print</field>
-            <field name="model">gnuhealth.prescription.order,0</field>
+            <field name="model">gnuhealth.prescription.order,-1</field>
             <field name="action" ref="report_prescription_order"/>
         </record>
 

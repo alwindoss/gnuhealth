@@ -21,6 +21,8 @@ from trytond.transaction import Transaction
 from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
         Greater, Less, PYSONEncoder
 
+from trytond.pool import Pool
+
 
 class PatientData(ModelSQL, ModelView):
     'Patient lab tests'
@@ -90,7 +92,7 @@ class Lab(ModelSQL, ModelView):
         return datetime.now()
 
     def default_name(self):
-        sequence_obj = self.pool.get('ir.sequence')
+        sequence_obj = Pool().get('ir.sequence')
         return sequence_obj.get('gnuhealth.lab')
 
 Lab()
@@ -187,14 +189,14 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
         return 'draft'
 
     def default_doctor_id(self):
-        user_obj = self.pool.get('res.user')
+        user_obj = Pool().get('res.user')
         user = user_obj.browse(Transaction().user)
         uid = int(user.id)
 
-        party_id = self.pool.get('party.party').search([
+        party_id = Pool().get('party.party').search([
                 ('internal_user', '=', uid)])
         if party_id:
-            dr_id = self.pool.get('gnuhealth.physician').search([
+            dr_id = Pool().get('gnuhealth.physician').search([
                     ('name', '=', party_id[0])])
             if dr_id:
                 return dr_id[0]
