@@ -36,7 +36,7 @@
                             </group>
                             <newline/>
 
-                            <group expand="1" id="meds">
+                            <group id="meds">
                                 <field colspan="4" name="monitoring"/>
                                 <newline/>
                                 <field name="medication"/>

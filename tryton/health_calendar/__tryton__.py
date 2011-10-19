@@ -21,7 +21,7 @@
 
 {
     'name': 'GNU Health: Calendar',
-    'version': '1.3.4',
+    'version': '1.4.0',
     'author': 'GNU Solidario',
     'website': 'http://health.gnu.org',
     'depends': [

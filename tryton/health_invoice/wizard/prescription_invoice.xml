@@ -24,7 +24,7 @@
         </record>
         <record model="ir.action.keyword" id="action_create_prescription_invoice_keyword">
             <field name="keyword">form_action</field>
-            <field name="model">gnuhealth.prescription.order,0</field>
+            <field name="model">gnuhealth.prescription.order,-1</field>
             <field name="action" ref="action_create_prescription_invoice"/>
         </record>
 

@@ -24,6 +24,7 @@ from trytond.model import ModelView, ModelSQL, fields
 from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
         PYSONEncoder
 from trytond.pyson import Eval
+from trytond.pool import Pool
 
 
 class PatientData(ModelSQL, ModelView):

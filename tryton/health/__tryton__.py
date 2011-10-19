@@ -2,7 +2,7 @@
 {
 
 	'name' : 'GNU Health : Free Health and Hospital Information System',  
-    'version': '1.3.4',
+    'version': '1.4.0',
 	'author' : 'GNU Solidario',
 	'email' : 'health@gnusolidario.org',
 	'website' : "http://health.gnu.org",

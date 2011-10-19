@@ -364,11 +364,13 @@ Post menopausal : 8.2-40.8&quot;&quot;&quot;" name="normal_range"/>
             <field name="units" ref="gnuhealth_lab_test_units_ul0"/>
         </record>
 
+<!--
         <record id="gnuhealth_test_critearea_testingheader0" model="gnuhealth.lab.test.critearea">
             <field model="gnuhealth.lab" name="gnuhealth_lab_id" search="[('name', '=', u'TEST003')]"/>
             <field eval="&quot;&quot;&quot;testing header&quot;&quot;&quot;" name="name"/>
             <field eval="2" name="sequence"/>
         </record>
+-->
 
         <record id="gnuhealth_test_critearea_color2" model="gnuhealth.lab.test.critearea">
             <field eval="&quot;&quot;&quot;Color&quot;&quot;&quot;" name="name"/>

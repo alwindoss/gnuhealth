@@ -60,8 +60,8 @@ class MakeMedicalPrescriptionInvoice(Wizard):
     }
 
     def _action_open_invoice(self, ids):
-        model_data_obj = self.pool.get('ir.model.data')
-        act_window_obj = self.pool.get('ir.action.act_window')
+        model_data_obj = Pool().get('ir.model.data')
+        act_window_obj = Pool().get('ir.action.act_window')
 
         act_window_id = model_data_obj.get_id('account_invoice',
                 'act_invoice_out_invoice_form3')
@@ -72,8 +72,8 @@ class MakeMedicalPrescriptionInvoice(Wizard):
     def _create_prescription_invoice(self, data):
         __logger = logging.getLogger(
                 'gnuhealth_invoice.wizard.prescription_invoice')
-        invoice_obj = self.pool.get('account.invoice')
-        pres_request_obj = self.pool.get('gnuhealth.prescription.order')
+        invoice_obj = Pool().get('account.invoice')
+        pres_request_obj = Pool().get('gnuhealth.prescription.order')
 
 #       prescriptions = ids
 # Don't use this. It will be 1 (and it would go to the invoice status of the
@@ -120,7 +120,7 @@ class MakeMedicalPrescriptionInvoice(Wizard):
             __logger.debug('pres.patient = %s', repr(pres.patient))
             if pres.patient.name.id:
                 invoice_data['party'] = pres.patient.name.id
-                res = self.pool.get('party.party').address_get(
+                res = Pool().get('party.party').address_get(
                         pres.patient.name.id, None)
                 invoice_data['invoice_address'] = res
                 invoice_data['account'] = \

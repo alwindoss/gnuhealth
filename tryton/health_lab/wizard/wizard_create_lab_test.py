@@ -17,6 +17,7 @@
 
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.wizard import Wizard
+from trytond.pool import Pool
 
 
 class CreateTestReportInit(ModelView):
@@ -52,8 +53,8 @@ class CreateTestReport(Wizard):
     }
 
     def _action_open_gnuhealth_lab(self, ids):
-        model_data_obj = self.pool.get('ir.model.data')
-        act_window_obj = self.pool.get('ir.action.act_window')
+        model_data_obj = Pool().get('ir.model.data')
+        act_window_obj = Pool().get('ir.action.act_window')
 
         act_window_id = model_data_obj.get_id('health_lab',
                 'gnuhealth_action_tree_lab')
@@ -62,8 +63,8 @@ class CreateTestReport(Wizard):
         return res
 
     def _create_lab_test(self, data):
-        test_request_obj = self.pool.get('gnuhealth.patient.lab.test')
-        lab_obj = self.pool.get('gnuhealth.lab')
+        test_request_obj = Pool().get('gnuhealth.patient.lab.test')
+        lab_obj = Pool().get('gnuhealth.lab')
 
         test_report_data = {}
         test_cases = []

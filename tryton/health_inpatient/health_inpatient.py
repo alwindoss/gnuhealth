@@ -27,6 +27,7 @@ from trytond.transaction import Transaction
 from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
         PYSONEncoder
 from trytond.pyson import Eval
+from trytond.pool import Pool
 
 
 class InpatientSequences(ModelSingleton, ModelSQL, ModelView):
@@ -118,8 +119,8 @@ class InpatientRegistration(ModelSQL, ModelView):
         return True
 
     def create(self, values):
-        sequence_obj = self.pool.get('ir.sequence')
-        config_obj = self.pool.get('gnuhealth.sequences')
+        sequence_obj = Pool().get('ir.sequence')
+        config_obj = Pool().get('gnuhealth.sequences')
 
         values = values.copy()
         if not values.get('name'):

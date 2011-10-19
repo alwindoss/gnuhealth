@@ -59,8 +59,8 @@ class CreateTestInvoice(Wizard):
     }
 
     def _action_open_invoice(self, ids):
-        model_data_obj = self.pool.get('ir.model.data')
-        act_window_obj = self.pool.get('ir.action.act_window')
+        model_data_obj = Pool().get('ir.model.data')
+        act_window_obj = Pool().get('ir.action.act_window')
 
         act_window_id = model_data_obj.get_id('account_invoice',
                 'act_invoice_out_invoice_form3')
@@ -69,7 +69,7 @@ class CreateTestInvoice(Wizard):
         return res
 
     def _journal_id(self):
-        journal_obj = self.pool.get('account.journal')
+        journal_obj = Pool().get('account.journal')
         journal_id = journal_obj.search([
             ('type', '=', 'revenue'),
             ], limit=1)
@@ -80,8 +80,8 @@ class CreateTestInvoice(Wizard):
     def _create_lab_invoice(self, data):
         __logger = logging.getLogger('gnuhealth_invoice.wizard.test_invoice')
 
-        invoice_obj = self.pool.get('account.invoice')
-        test_request_obj = self.pool.get('gnuhealth.patient.lab.test')
+        invoice_obj = Pool().get('account.invoice')
+        test_request_obj = Pool().get('gnuhealth.patient.lab.test')
 
         tests = data['ids']
         __logger.debug('tests = %s', repr(tests))
@@ -122,7 +122,7 @@ class CreateTestInvoice(Wizard):
                 invoice_data['state'] = 'draft'
                 invoice_data['type'] = 'out_invoice'
                 invoice_data['party'] = test.patient_id.name.id
-                res = self.pool.get('party.party').address_get(
+                res = Pool().get('party.party').address_get(
                         test.patient_id.name.id, None)
                 invoice_data['invoice_address'] = res
                 invoice_data['account'] = \

@@ -59,8 +59,8 @@ class MakeMedicalAppointmentInvoice(Wizard):
     }
 
     def _action_open_invoice(self, ids):
-        model_data_obj = self.pool.get('ir.model.data')
-        act_window_obj = self.pool.get('ir.action.act_window')
+        model_data_obj = Pool().get('ir.model.data')
+        act_window_obj = Pool().get('ir.action.act_window')
 
         act_window_id = model_data_obj.get_id('account_invoice',
                 'act_invoice_out_invoice_form3')
@@ -71,8 +71,8 @@ class MakeMedicalAppointmentInvoice(Wizard):
     def _create_invoice(self, data):
         __logger = logging.getLogger(
                 'gnuhealth_invoice.wizard.appointment_invoice')
-        invoice_obj = self.pool.get('account.invoice')
-        appointment_obj = self.pool.get('gnuhealth.appointment')
+        invoice_obj = Pool().get('account.invoice')
+        appointment_obj = Pool().get('gnuhealth.appointment')
 
         apps = data['ids']
         pats = []
@@ -106,7 +106,7 @@ class MakeMedicalAppointmentInvoice(Wizard):
 
             if appointment.patient.name.id:
                 invoice_data['party'] = appointment.patient.name.id
-                res = self.pool.get('party.party').address_get(
+                res = Pool().get('party.party').address_get(
                         appointment.patient.name.id, None)
                 invoice_data['invoice_address'] = res
                 invoice_data['account'] = \

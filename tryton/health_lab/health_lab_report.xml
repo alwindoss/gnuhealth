@@ -11,7 +11,7 @@
         </record>
         <record model="ir.action.keyword" id="report_patient_labtest_report_keyword">
             <field name="keyword">form_print</field>
-            <field name="model">gnuhealth.lab,0</field>
+            <field name="model">gnuhealth.lab,-1</field>
             <field name="action" ref="report_patient_labtest_report"/>
         </record>
 

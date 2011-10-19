@@ -253,7 +253,7 @@
                                             </group>
                                         </page>
                                         <page string="Recreational Drugs" id="page_recreational_drugs">
-                                            <group colspan="4" expand="1" id="group_recreational_drugs">
+                                            <group colspan="4" id="group_recreational_drugs">
                                                 <field name="recreational_drugs"/>
                                             </group>
                                         </page>

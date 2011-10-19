@@ -25,7 +25,7 @@
         </record>
         <record model="ir.action.keyword" id="act_create_lab_test_keyword">
             <field name="keyword">form_action</field>
-            <field name="model">gnuhealth.patient.lab.test,0</field>
+            <field name="model">gnuhealth.patient.lab.test,-1</field>
             <field name="action" ref="act_create_lab_test"/>
         </record>
 
