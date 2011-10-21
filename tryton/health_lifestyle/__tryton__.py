@@ -9,7 +9,9 @@
         'health',
     ],
     'name_es_ES': 'GNU Health : Estilos de vida',
-    'translation': ['es_ES.csv'],
+    'translation': [
+        'locale/es_ES.po',
+    ],
 
     'description': '''
 

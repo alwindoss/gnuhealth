@@ -37,7 +37,9 @@
         'wizard/create_lab_invoice.xml',
     ],
     'name_es_ES': 'GNU Health : Facturación',
-    'translation': ['es_ES.csv'],
+    'translation': [
+        'locale/es_ES.po',
+    ],
 
     'description': ''' 
         This module add functionality to create invoices for doctor's consulting charge.

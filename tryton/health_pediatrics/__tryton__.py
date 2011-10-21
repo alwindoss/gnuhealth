@@ -10,7 +10,9 @@
     ],
 
     'name_es_ES': 'GNU Health : Pediatría',
-    'translation': ['es_ES.csv'],
+    'translation': [
+        'locale/es_ES.po',
+    ],
 
     'description': '''
 	

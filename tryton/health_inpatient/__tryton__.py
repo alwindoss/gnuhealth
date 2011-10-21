@@ -9,7 +9,9 @@
         'health',
     ],
     'name_es_ES': 'GNU Health : Hospitalización',
-    'translation': ['es_ES.csv'],
+    'translation': [
+        'locale/es_ES.po',
+    ],
 
     'description': '''
 This module will hold all the processes related to Inpatient (Patient hospitalization and bed assignment )

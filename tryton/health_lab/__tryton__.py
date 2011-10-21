@@ -10,7 +10,9 @@
     ],
 
     'name_es_ES': 'GNU Health : Laboratorio',
-    'translation': ['es_ES.csv'],
+    'translation': [
+        'locale/es_ES.po',
+    ],
 
     'description': '''
 

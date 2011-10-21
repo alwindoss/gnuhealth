@@ -32,7 +32,9 @@
         'health_calendar_view.xml',
     ],
     'name_es_ES': 'GNU Health : Calendario',
-    'translation': ['es_ES.csv'],
+    'translation': [
+        'locale/es_ES.po',
+    ],
 
     'description': ''' 
         This module add functionality to connect with a CalDAV client.

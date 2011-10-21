@@ -10,7 +10,9 @@
         'health',
     ],
     'name_es_ES': 'GNU Health : Genética',
-    'translation': ['es_ES.csv'],
+    'translation': [
+        'locale/es_ES.po',
+    ],
     
     'description': '''
 

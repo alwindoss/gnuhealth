@@ -1,0 +1,159 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:gnuhealth.appointment,appointment_validity_date:0"
+msgid "Validity Date"
+msgstr "Fecha de validez"
+
+msgctxt "field:gnuhealth.appointment,no_invoice:0"
+msgid "Invoice exempt"
+msgstr "Exempto de facturación"
+
+msgctxt "field:gnuhealth.appointment,validity_status:0"
+msgid "Status"
+msgstr "Estado"
+
+msgctxt "field:gnuhealth.patient.lab.test,invoice_status:0"
+msgid "Invoice Status"
+msgstr "Estado de la factura"
+
+msgctxt "field:gnuhealth.patient.lab.test,no_invoice:0"
+msgid "Invoice exempt"
+msgstr "Exempto de facturación"
+
+msgctxt "field:gnuhealth.prescription.order,invoice_status:0"
+msgid "Invoice Status"
+msgstr "Estado de la factura"
+
+msgctxt "field:gnuhealth.prescription.order,no_invoice:0"
+msgid "Invoice exempt"
+msgstr "Exempto de facturación"
+
+msgctxt "model:gnuhealth.appointment.invoice.init,name:0"
+msgid "Make Medical Appointment Invoice Init"
+msgstr "Generar Factura por cita"
+
+msgctxt "model:gnuhealth.lab.test.invoice.init,name:0"
+msgid "Create Test Invoice Init"
+msgstr "Crear Facturas por Laboratorio"
+
+msgctxt "model:gnuhealth.prescription.invoice.init,name:0"
+msgid "Make Medical Prescription Invoice Init"
+msgstr "Generar Factura por cita"
+
+msgctxt "model:ir.action,name:action_create_appointment_invoice"
+msgid "Create Invoice"
+msgstr "Crear Facturas"
+
+msgctxt "model:ir.action,name:action_create_lab_invoice"
+msgid "Create Lab Invoice"
+msgstr "Crear Factura de laboratorio"
+
+msgctxt "model:ir.action,name:action_create_prescription_invoice"
+msgid "Create Prescription Invoice"
+msgstr "Crear las factura de receta"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_invoice_menu"
+msgid "Invoices"
+msgstr "Facturas"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_invoiced_appointment"
+msgid "Invoiced Appointments"
+msgstr "Citas facturadas"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_invoiced_labtest_request"
+msgid "Invoiced Lab Test Requests"
+msgstr "Pruebas de laboratorio facturadas"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_tobeinvoiced_appointment"
+msgid "Appointments to be invoiced"
+msgstr "Citas por facturar"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_tobeinvoiced_labtest_request"
+msgid "Lab Requests to be invoiced"
+msgstr "Pruebas de laboratorio por facturar"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_tobeinvoiced_prescription"
+msgid "Prescriptions to be invoiced"
+msgstr "Recetas por facturar"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_today_tobeinvoiced_appointment"
+msgid "Today's Appointments to be Invocied"
+msgstr "Citas de hoy por facturar"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_today_tobeinvoiced_labtest_request"
+msgid "Today's Lab Requests to be invoiced"
+msgstr "Pruebas de laboratorio de hoy por facturar"
+
+msgctxt "selection:gnuhealth.appointment,validity_status:0"
+msgid "Invoiced"
+msgstr "Facturado"
+
+msgctxt "selection:gnuhealth.appointment,validity_status:0"
+msgid "To be Invoiced"
+msgstr "Por facturar"
+
+msgctxt "selection:gnuhealth.patient.lab.test,invoice_status:0"
+msgid "Invoiced"
+msgstr "Facturado"
+
+msgctxt "selection:gnuhealth.patient.lab.test,invoice_status:0"
+msgid "To be Invoiced"
+msgstr "Por facturar"
+
+msgctxt "selection:gnuhealth.prescription.order,invoice_status:0"
+msgid "Invoiced"
+msgstr "Facturado"
+
+msgctxt "selection:gnuhealth.prescription.order,invoice_status:0"
+msgid "To be Invoiced"
+msgstr "Por facturar"
+
+msgctxt "view:gnuhealth.appointment.invoice.init:0"
+msgid "Create invoices"
+msgstr "Crear Facturas"
+
+msgctxt "view:gnuhealth.appointment.invoice.init:0"
+msgid "Do you want to create the invoice(s) ?"
+msgstr "Quiere generar las facturas ?"
+
+msgctxt "view:gnuhealth.lab.test.invoice.init:0"
+msgid "Create Lab Invoices"
+msgstr "Crear facturas por laboratorio"
+
+msgctxt "view:gnuhealth.lab.test.invoice.init:0"
+msgid "Do you want to generate the invoice(s) ?"
+msgstr "Quiere generar las facturas ?"
+
+msgctxt "view:gnuhealth.prescription.invoice.init:0"
+msgid "Create prescription invoices"
+msgstr "Crear las facturas de recetas"
+
+msgctxt "view:gnuhealth.prescription.invoice.init:0"
+msgid "Do you want to create the prescription invoice(s) ?"
+msgstr "Quiere generar las facturas asociadas a las recetas ?"
+
+msgctxt "wizard_button:gnuhealth.appointment.invoice,init,create:0"
+msgid "Create Invoices"
+msgstr "Crear Facturas"
+
+msgctxt "wizard_button:gnuhealth.appointment.invoice,init,end:0"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:gnuhealth.lab.test.invoice,init,create:0"
+msgid "Create Lab Invoice"
+msgstr "Crear Factura de laboratorio"
+
+msgctxt "wizard_button:gnuhealth.lab.test.invoice,init,end:0"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:gnuhealth.prescription.invoice,init,create:0"
+msgid "Create Prescription Invoices"
+msgstr "Crear las facturas de recetas"
+
+msgctxt "wizard_button:gnuhealth.prescription.invoice,init,end:0"
+msgid "Cancel"
+msgstr "Cancelar"
