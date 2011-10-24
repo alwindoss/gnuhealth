@@ -725,7 +725,6 @@
 
 
 
-
 <!-- medicaments -->
 
 		<record model="ir.ui.view" id="gnuhealth_medicament_form">
@@ -738,9 +737,14 @@
 							<page string="Main Info" id="medicament_main">
 								<label name="name"/>
 								<field name="name"/>
+								<label name="category"/>                    
+								<field name="category"/>                    
+
 								<newline/>
+<!--                                                               
 								<label name="therapeutic_action"/>
 								<field name="therapeutic_action"/>
+-->
 								<label name="active_component"/>
 								<field name="active_component"/>
 								<newline/>
@@ -805,7 +809,7 @@
 					<tree string='medicament'>
 						<field name="name"></field>
 						<field name="active_component"></field>
-						<field name="therapeutic_action"></field>
+						<field name="category"></field>
 						<field name="pregnancy_warning"></field>
 						<field name="pregnancy_category"></field>
 
@@ -841,6 +845,91 @@
 		</record>
 
 		<menuitem action="gnuhealth_action_view_medicament" id="gnuhealth_edit_medicament" parent="gnuhealth_conf_medicaments" sequence="2"/>
+
+
+<!-- Medicament Categories -->
+
+        <record model="ir.action.act_window" id="act_medicament_by_category">
+            <field name="name">Medicament by Category</field>
+            <field name="res_model">gnuhealth.medicament</field>
+            <field name="context">{'categories': [Eval('active_id')]}</field>
+            <field name="domain">[('category','child_of', [Eval('active_id')], 'parent')]</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_medicament_by_category_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="gnuhealth_medicament_tree"/>
+            <field name="act_window" ref="act_medicament_by_category"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_medicament_by_category_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="gnuhealth_medicament_form"/>
+            <field name="act_window" ref="act_medicament_by_category"/>
+        </record>
+        <record model="ir.action.keyword" id="act_medicament_by_category_keyword1">
+            <field name="keyword">tree_open</field>
+            <field name="model">gnuhealth.medicament.category,-1</field>
+            <field name="action" ref="act_medicament_by_category"/>
+        </record>
+
+       <record model="ir.ui.view" id="gnuhealth_medicament_category_form">
+                <field name="model">gnuhealth.medicament.category</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+					<![CDATA[
+                        <form string="Medicament categories">
+							<field name="name"/>
+							<field name="parent"/>
+                        </form>
+					]]>
+                </field>
+        </record>
+        <record model="ir.ui.view" id="gnuhealth_medicament_category_list">
+                <field name="model">gnuhealth.medicament.category</field>
+                <field name="type">tree</field>
+                <field name="arch" type="xml">
+					<![CDATA[
+                        <tree string="Medicament Categories">
+							<field name="name"/>
+                        </tree>
+					]]>
+                </field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_medicament_category_tree">
+                <field name="model">gnuhealth.medicament.category</field>
+                <field name="type">tree</field>
+                <field name="field_childs">childs</field>
+                <field name="arch" type="xml">
+					<![CDATA[
+						<tree string="Medicament Categories" keyword_open="1">
+							<field name="name"/>
+							<field name="parent" tree_invisible="1"/>
+							<field name="childs" tree_invisible="1"/>
+						</tree>
+					]]>
+                </field>
+        </record>
+
+        <record model="ir.action.act_window" id="action_gnuhealth_medicament_category_tree">
+                <field name="name">Medicament categories</field>
+                <field name="res_model">gnuhealth.medicament.category</field>
+                <field name="domain">[('parent','=',False)]</field>
+        </record>
+
+
+        <record model="ir.action.act_window.view" id="act_medicament_category_tree_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="gnuhealth_medicament_category_tree"/>
+            <field name="act_window" ref="action_gnuhealth_medicament_category_tree"/>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_medicament_category_tree_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="gnuhealth_medicament_category_form"/>
+            <field name="act_window" ref="action_gnuhealth_medicament_category_tree"/>
+        </record>
+
+        <menuitem action="action_gnuhealth_medicament_category_tree" id="gnuhealth_conf_medicament_category" parent="gnuhealth_conf_medicaments"/>
 
 
 

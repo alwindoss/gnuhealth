@@ -24,6 +24,8 @@ import logging
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.wizard import Wizard
 
+from trytond.pool import Pool
+
 logging.basicConfig(level=logging.DEBUG)
 
 

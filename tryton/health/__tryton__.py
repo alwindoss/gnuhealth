@@ -13,7 +13,7 @@
     ],
 
 	"xml" : ["health_view.xml","data/medicament_categories.xml",
-        "data/WHO_list_of_essential_medicines.xml",
+        "data/WHO_products.xml","data/WHO_list_of_essential_medicines.xml",
         "data/health_specialties.xml","data/ethnic_groups.xml",
         "data/occupations.xml","data/dose_units.xml",
         "data/drug_administration_routes.xml","data/medicament_form.xml",

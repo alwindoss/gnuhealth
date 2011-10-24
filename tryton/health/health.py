@@ -263,6 +263,47 @@ class FamilyMember(ModelSQL, ModelView):
 
 FamilyMember()
 
+# Use the template as in Product category.
+
+class MedicamentCategory(ModelSQL, ModelView):    
+    "Medicament Category"
+    _name = "gnuhealth.medicament.category"
+    _description = __doc__
+
+    name = fields.Char('Name', required=True, translate=True)
+    parent = fields.Many2One('gnuhealth.medicament.category','Parent', select=1)
+    childs = fields.One2Many('gnuhealth.medicament.category', 'parent',
+            string='Children')
+
+    def __init__(self):
+        super(MedicamentCategory, self).__init__()
+        self._order.insert(0, ('name', 'ASC'))
+
+        self._constraints += [
+            ('check_recursion', 'recursive_categories'),
+        ]
+        self._error_messages.update({
+            'recursive_categories': 'You can not create recursive categories!',
+        })
+
+    def get_rec_name(self, ids, name):
+        if not ids:
+            return {}
+        res = {}
+        def _name(category):
+            if category.id in res:
+                return res[category.id]
+            elif category.parent:
+                return _name(category.parent) + ' / ' + category.name
+            else:
+                return category.name
+        for category in self.browse(ids):
+            res[category.id] = _name(category)
+        return res
+
+MedicamentCategory()
+
+
 
 class Medicament(ModelSQL, ModelView):
 
@@ -270,10 +311,11 @@ class Medicament(ModelSQL, ModelView):
     _description = __doc__
     _name = "gnuhealth.medicament"
 
-    name = fields.Many2One('product.product', 'Name',
+    name = fields.Many2One('product.product', 'Product',
         domain=[('is_medicament', '=', True)], select="1",
-        help="Commercial Name")
+        help="Product Name", required=True)
     active_component = fields.Char('Active component', help="Active Component")
+    category = fields.Many2One('gnuhealth.medicament.category', 'Category', select= True)
     therapeutic_action = fields.Char('Therapeutic effect',
         help="Therapeutic action")
     composition = fields.Text('Composition', help="Components")

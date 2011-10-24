@@ -2,30 +2,6 @@
 <tryton>
     <data>
 
-    <!-- Patient details -->
-
-<!-- TODO: Trytonize field receivable in model data
-        <record model="ir.ui.view" id="gnuhealth_patient_view_referance_source">
-            <field name="model">gnuhealth.patient</field>
-            <field name="type">form</field>
-            <field name="inherit" ref="health.gnuhealth_patient_view_form"/>
-            <field name="arch" type="xml">
-                <![CDATA[
-                <data>
-                    <xpath
-                        expr="/form/notebook/page[@id=&quot;general_info&quot;]/notebook/page[@id=&quot;main_info_page&quot;]/group[@id=&quot;general_info&quot;]/field[@name=&quot;ethnic_group&quot;]"
-                        position="after">  <! TODO: family_code instead ethnic_group field >
-
-                        <label name="receivable"/>
-                        <field name="receivable"/>
-
-                    </xpath>
-                </data>
-                ]]>
-            </field>
-        </record>
--->
-
 
     <!-- Appointment details -->
 

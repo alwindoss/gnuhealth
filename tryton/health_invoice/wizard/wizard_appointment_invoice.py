@@ -26,6 +26,7 @@ from trytond.wizard import Wizard
 
 logging.basicConfig(level=logging.DEBUG)
 
+from trytond.pool import Pool
 
 class MakeMedicalAppointmentInvoiceInit(ModelView):
     'Make Medical Appointment Invoice Init'
