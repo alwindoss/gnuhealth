@@ -2,9 +2,21 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:gnuhealth.appointment,appointment_time:0"
+msgid "Appointment Time"
+msgstr "Duración de la Cita"
+
 msgctxt "field:gnuhealth.appointment,event:0"
 msgid "Calendar Event"
 msgstr "Evento de Calendario"
+
+msgctxt "field:gnuhealth.physician,calendar:0"
+msgid "Calendar"
+msgstr "Calendario"
+
+msgctxt "help:gnuhealth.appointment,appointment_time:0"
+msgid "Appointment Time (Minutes)"
+msgstr "Duración de la Cita (Minutos)"
 
 msgctxt "help:gnuhealth.appointment,event:0"
 msgid "Calendar Event"
