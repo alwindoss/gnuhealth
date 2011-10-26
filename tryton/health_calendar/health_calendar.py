@@ -19,8 +19,22 @@
 #
 ##############################################################################
 
+
+from datetime import timedelta
+
 from trytond.model import ModelView, ModelSQL, fields
-from trytond.transaction import Transaction
+from trytond.pool import Pool
+
+
+class Physician(ModelSQL, ModelView):
+    "Add Calendar to Physician"
+    _name = "gnuhealth.physician"
+    _description = __doc__
+
+    calendar = fields.Many2One('calendar.calendar', 'Calendar')
+
+Physician()
+
 
 class Appointment(ModelSQL, ModelView):
     'Add Calendar to the Appointment'
@@ -29,49 +43,67 @@ class Appointment(ModelSQL, ModelView):
 
     event = fields.Many2One('calendar.event', 'Calendar Event', readonly=True,
         help="Calendar Event")
+    appointment_time = fields.Integer('Appointment Time',
+        help='Appointment Time (Minutes)')
+        
+    def default_appointment_time(self):
+        return 30
         
     def create(self, values):
-        user_obj = self.pool.get('res.user')
-        calendar_obj = self.pool.get('calendar.calendar')        
-        event_obj = self.pool.get('calendar.event')
-        patient_obj = self.pool.get('gnuhealth.patient')        
-        physician_obj = self.pool.get('gnuhealth.physician')
+        event_obj = Pool().get('calendar.event')
+        patient_obj = Pool().get('gnuhealth.patient')
+        physician_obj = Pool().get('gnuhealth.physician')
                 
         patient = patient_obj.browse(values['patient'])
         if values['doctor']:
             doctor = physician_obj.browse(values['doctor'])
-            event_doctor = ' with ' + doctor.name.name
-        else:
-            event_doctor = ''
-        user = user_obj.browse(Transaction().user)
-        calendar_ids = calendar_obj.search([('owner', '=', user)], limit=1)
-        if calendar_ids:
-            calendar = calendar_ids[0]
         else:
             return False
         values['event'] = event_obj.create({
-            'dtstart': values['appointment_date'], 
-            'calendar': calendar, 
-            'summary': 'Appointment ' + patient.name.name + event_doctor 
+            'dtstart': values['appointment_date'],
+            'dtend': values['appointment_date'] + 
+                timedelta(minutes=values['appointment_time']),
+            'calendar': doctor.calendar.id,
+            'summary': patient.name.name
             })
         return super(Appointment, self).create(values)
 
     def write(self, ids, values):
-        event_obj = self.pool.get('calendar.event')
-        physician_obj = self.pool.get('gnuhealth.physician')
+        event_obj = Pool().get('calendar.event')
+        patient_obj = Pool().get('gnuhealth.patient')        
+        physician_obj = Pool().get('gnuhealth.physician')
                 
         for appointment_id in ids:
             appointment = self.browse(appointment_id)
             if 'appointment_date' in values:
                 event_obj.write(appointment.event.id, {
                     'dtstart': values['appointment_date'],
+                    'dtend': values['appointment_date'] + 
+                        timedelta(minutes=appointment.appointment_time),
+                    })
+            if 'appointment_time' in values:
+                event_obj.write(appointment.event.id, {
+                    'dtend': appointment.appointment_date + 
+                        timedelta(minutes=values['appointment_time']),
                     })
             if 'doctor' in values:
                 doctor = physician_obj.browse(values['doctor'])
                 event_obj.write(appointment.event.id, {
-                    'summary': 'Appointment ' + appointment.patient.name.name + 
-                        ' with ' + doctor.name.name,
+                    'calendar': doctor.calendar.id,
+                    })
+            if 'patient' in values:
+                patient = patient_obj.browse(values['patient'])
+                event_obj.write(appointment.event.id, {
+                    'summary': patient.name.name,
                     })
         return super(Appointment, self).write(ids, values)
+        
+    def delete(self, ids):
+        event_obj = Pool().get('calendar.event')
+
+        for appointment_id in ids:
+            appointment = self.browse(appointment_id)
+            event_obj.delete(appointment.event.id)            
+        return super(Appointment, self).delete(ids)        
         
 Appointment() 

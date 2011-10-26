@@ -2,6 +2,28 @@
 <tryton>
     <data>
 
+    <!-- Physician -->
+
+        <record model="ir.ui.view" id="gnuhealth_calendar_physician_view">
+            <field name="model">gnuhealth.physician</field>
+            <field name="type">form</field>
+            <field name="inherit" ref="health.gnuhealth_physician_view"/>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                    <xpath
+                        expr="/form/group[@id=&quot;general_info&quot;]/field[@name=&quot;code&quot;]"
+                        position="after">
+
+                        <label name="calendar"/>
+                        <field name="calendar"/>
+
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+            
     <!-- Appointment details -->
 
         <record model="ir.ui.view" id="gnuhealth_calendar_appointment_view">
@@ -12,9 +34,11 @@
                 <![CDATA[
                 <data>
                     <xpath
-                        expr="/form/group[@id=&quot;appointment_header&quot;]/field[@name=&quot;appointment_type&quot;]"
+                        expr="/form/group[@id=&quot;appointment_header&quot;]/field[@name=&quot;appointment_date&quot;]"
                         position="after">
 
+                        <label name="appointment_time"/>
+                        <field name="appointment_time"/>
                         <label name="event"/>
                         <field name="event"/>
 
