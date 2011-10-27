@@ -19,6 +19,7 @@ from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
 from trytond.tools import safe_eval, datetime_strftime
 from trytond.transaction import Transaction
 from trytond.pyson import Eval
+from trytond.pool import Pool
 
 
 class Newborn(ModelSQL, ModelView):
@@ -431,7 +432,7 @@ class PediatricSymptomsChecklist(ModelSQL, ModelView):
         'psc_refuses_to_share'])
 
     def default_user_id(self):
-        user_obj = self.pool.get('res.user')
+        user_obj = Pool().get('res.user')
         user = user_obj.browse(Transaction().user)
         return int(user.id)
 
