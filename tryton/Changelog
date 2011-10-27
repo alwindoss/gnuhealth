@@ -1,8 +1,100 @@
-changeset:   15:44e97ba28804
+changeset:   33:b37bf73de296
 tag:         tip
+user:        Sebastian Marro <smarro@thymbra.com>
+date:        Wed Oct 26 21:02:57 2011 -0300
+summary:     Update health_pediatrics module to 1.4
+
+changeset:   32:a5ef5bc6678d
+user:        Sebastian Marro <smarro@thymbra.com>
+date:        Tue Oct 25 23:39:10 2011 -0300
+summary:     Add health_inpatient_calendar module
+
+changeset:   31:76eebd87a111
+user:        Sebastian Marro <smarro@thymbra.com>
+date:        Tue Oct 25 23:00:28 2011 -0300
+summary:     Update health_calendar to 1.4
+
+changeset:   30:106d18fab205
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Oct 24 01:54:43 2011 -0300
+summary:     Move Medicament category from product to medicament model.
+
+changeset:   29:128a359b3f13
+user:        Bruno M. Villasanti <bvillasanti@thymbra.com>
+date:        Fri Oct 21 16:12:26 2011 -0300
+summary:     Replace .csv file by .po file for translations
+
+changeset:   28:822570a9b35d
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Oct 19 18:59:01 2011 -0300
+summary:     Update the upgrade to 1.4 process
+
+changeset:   27:7d28cbf6ce70
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Tue Oct 18 13:22:08 2011 -0300
+summary:     Inital upgrade of Health module
+
+changeset:   26:7160b88bc8c4
+user:        Cédric Krier <ced@b2ck.com>
+date:        Sat Oct 15 18:06:47 2011 +0200
+summary:     Remove tabpos usage
+
+changeset:   25:7aa02f928c66
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Tue Oct 11 08:35:04 2011 -0300
+summary:     Set to unsorted the selection values in socioeconomics module
+
+changeset:   24:eb0703498cdc
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Tue Oct 11 08:13:57 2011 -0300
+summary:     Fix sorted APGAR score
+
+changeset:   23:92611a08d7eb
+user:        Sebastian Marro <smarro@thymbra.com>
+date:        Mon Oct 10 15:31:02 2011 -0300
+summary:     Remove health_calendar *.pyc
+
+changeset:   22:96d80fff0bef
+user:        Sebastian Marro <smarro@thymbra.com>
+date:        Mon Oct 10 14:46:28 2011 -0300
+summary:     Add health_calendar module
+
+changeset:   21:f761885ab7f2
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Oct 09 21:50:47 2011 -0300
+summary:     WHO 17th list of essential medicines in products
+
+changeset:   20:82f568e43009
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Tue Oct 04 11:06:20 2011 -0300
+summary:     Use selection fields for Glasgow coma scale
+
+changeset:   19:d6d61cb95d9c
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Sep 28 12:43:47 2011 -0300
+summary:     Fixes Spanish menu items for 1.3.3
+
+changeset:   18:7c2c4805af2f
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Sep 26 08:54:23 2011 -0300
+summary:     Include essential medicines categories for WHO 17th revision
+
+changeset:   17:afcf4fbd9991
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Sep 25 18:44:30 2011 -0300
+summary:     Add pregnancy category to medicament model
+
+changeset:   16:20521ed38fe0
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Tue Sep 20 11:29:37 2011 -0300
+summary:     Added tag 1.3.3 for changeset 44e97ba28804
+
+changeset:   15:44e97ba28804
+tag:         1.3.3
 user:        Luis Falcon <lfalcon@gnusolidario.org>
 date:        Mon Sep 19 02:53:56 2011 -0300
 summary:     Fix configuration menu and tree in health_lab
+
 
 changeset:   14:0bf2e8744f17
 user:        Luis Falcon <lfalcon@gnusolidario.org>
