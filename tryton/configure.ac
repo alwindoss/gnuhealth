@@ -1,8 +1,8 @@
-AC_INIT([GNU Health], [1.3], [health@gnusolidario.org], [GNU Health], [http://www.gnuhealth.org])
+AC_INIT([GNU Health], [1.4.1], [health@gnusolidario.org], [GNU Health], [http://health.gnu.org])
 
 AC_PREFIX_DEFAULT(/usr)
 
-AM_PATH_PYTHON([2.5],,)
+AM_PATH_PYTHON([2.7],,)
 
 
 AC_ARG_WITH(tryton,

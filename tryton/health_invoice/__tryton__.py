@@ -21,7 +21,7 @@
 
 {
     'name': 'GNU Health: Invoice',
-    'version': '1.4.0',
+    'version': '1.4.1',
     'author': 'Silix',
     'website': 'http://health.gnu.org',
     'depends': [
