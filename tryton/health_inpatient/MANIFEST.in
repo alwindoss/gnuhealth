@@ -1,5 +1,5 @@
 include COPYING
 include *.xml
 include data/*
-include *.csv
+include locale/*.po
 include icons/*

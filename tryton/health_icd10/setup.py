@@ -19,7 +19,7 @@ import re
 from setuptools import setup
 
 info = eval(open('__tryton__.py').read())
-major_version, minor_version = 2, 0
+major_version, minor_version = 2, 2
 
 requires = []
 for dep in info.get('depends', []):
