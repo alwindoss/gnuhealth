@@ -1,4 +1,23 @@
+******** VERSION 1.4.1 **********
+
+changeset:   39:dda911d6ae8d
+tag:         tip
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Fri Oct 28 20:46:40 2011 -0300
+summary:     Update packaging for GNU autoconf and pypi
+
+changeset:   38:19ddf1c9c616
+user:        Sebastian Marro <smarro@thymbra.com>
+date:        Fri Oct 28 13:22:31 2011 -0300
+summary:     FIX setup.py and MANIFEST.in
+
+changeset:   37:2d376dbf7b04
+user:        Cédric Krier <ced@b2ck.com>
+date:        Fri Oct 28 15:18:12 2011 +0200
+summary:     Fix make release
+
 ******** VERSION 1.4.0 **********
+
 changeset:   33:b37bf73de296
 tag:         tip
 user:        Sebastian Marro <smarro@thymbra.com>
