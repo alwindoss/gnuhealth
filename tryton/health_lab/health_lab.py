@@ -16,13 +16,25 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from datetime import datetime
-from trytond.model import ModelView, ModelSQL, fields
+from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
 from trytond.transaction import Transaction
 from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
         Greater, Less, PYSONEncoder
 
 from trytond.pool import Pool
 
+
+class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
+    "Standard Sequences for GNU Health"
+
+    _description = __doc__
+    _name = "gnuhealth.sequences"
+
+    lab_sequence = fields.Property(fields.Many2One('ir.sequence',
+        'Lab Sequence', domain=[('code', '=', 'gnuhealth.lab')],
+        required=True))
+
+GnuHealthSequences()
 
 class PatientData(ModelSQL, ModelView):
     'Patient lab tests'
@@ -63,7 +75,7 @@ class Lab(ModelSQL, ModelView):
     _name = 'gnuhealth.lab'
     _description = __doc__
 
-    name = fields.Char('ID', help="Lab result ID")
+    name = fields.Char('ID', help="Lab result ID",readonly=True)
     test = fields.Many2One('gnuhealth.lab.test_type', 'Test type',
         help="Lab test type", required=True, select="1")
     patient = fields.Many2One('gnuhealth.patient', 'Patient',
@@ -91,9 +103,21 @@ class Lab(ModelSQL, ModelView):
     def default_analysis(self):
         return datetime.now()
 
-    def default_name(self):
+#    def default_name(self):
+#        sequence_obj = Pool().get('ir.sequence')
+#        return sequence_obj.get('gnuhealth.lab')
+
+    def create(self, values):
         sequence_obj = Pool().get('ir.sequence')
-        return sequence_obj.get('gnuhealth.lab')
+        config_obj = Pool().get('gnuhealth.sequences')
+
+        values = values.copy()
+        if not values.get('name'):
+            config = config_obj.browse(1)
+            values['name'] = sequence_obj.get_id(
+            config.lab_sequence.id)
+
+        return super(Lab, self).create(values)
 
 Lab()
 
