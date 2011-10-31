@@ -2,3 +2,4 @@ include COPYING
 include *.xml
 include data/*
 include locale/*.po
+include icons/*

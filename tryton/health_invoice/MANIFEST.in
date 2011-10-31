@@ -1,3 +1,6 @@
 include COPYING
 include *.xml
 include locale/*.po
+include wizard/*.xml
+include report/*
+include locale/*.po
