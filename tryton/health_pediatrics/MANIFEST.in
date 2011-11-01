@@ -1,5 +1,1 @@
-include COPYING
-include README
-include *.xml
-include locale/*.po
-include icons/*
+global-include *.xml *.odt *.svg *.po README COPYING

@@ -47,7 +47,9 @@ setup(name='trytond_health_genetics',
         ],
     package_data={
         'trytond.modules.health_genetics': info.get('xml', []) \
-            + info.get('translation', []),
+            + info.get('translation', []) \
+            + ['report/*.odt', 'icons/*.svg'],
+
         },
     classifiers=[
         'Development Status :: 5 - Production/Stable',

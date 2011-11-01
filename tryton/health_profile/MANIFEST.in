@@ -1,2 +1,1 @@
-include COPYING
-include README
+global-include *.xml *.odt *.svg *.po README COPYING
