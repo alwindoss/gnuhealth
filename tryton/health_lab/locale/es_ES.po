@@ -1,6 +1,14 @@
 # 
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: meanmicio <lfalcon@gnusolidario.org>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 msgctxt "error:gnuhealth.lab.test.units:0"
 msgid "The Unit name must be unique"
@@ -270,18 +278,15 @@ msgctxt "model:product.template,name:product_product_haematologycharges0"
 msgid "Haematology Charges"
 msgstr "Cargos por Hematología"
 
-msgctxt ""
-"model:product.template,name:product_product_liverfunctiontestcharges0"
+msgctxt "model:product.template,name:product_product_liverfunctiontestcharges0"
 msgid "Liver Function test charges"
 msgstr "Cargos por pruebas de función hepática"
 
-msgctxt ""
-"model:product.template,name:product_product_peripheralsmearexaminationcharges0"
+msgctxt "model:product.template,name:product_product_peripheralsmearexaminationcharges0"
 msgid "Peripheral Smear Examination Charges"
 msgstr "Cargos por extendido periférico"
 
-msgctxt ""
-"model:product.template,name:product_product_renalfunctiontestcharges0"
+msgctxt "model:product.template,name:product_product_renalfunctiontestcharges0"
 msgid "Renal Function test charges"
 msgstr "Cargos por pruebas de función renal"
 
@@ -380,3 +385,4 @@ msgstr "Generar análisis"
 msgctxt "wizard_button:gnuhealth.lab.test.create,init,end:0"
 msgid "Cancel"
 msgstr "Cancelar"
+

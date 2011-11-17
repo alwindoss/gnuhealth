@@ -1,6 +1,14 @@
 # 
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: meanmicio <lfalcon@gnusolidario.org>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 msgctxt "field:gnuhealth.appointment,appointment_validity_date:0"
 msgid "Validity Date"
@@ -157,3 +165,4 @@ msgstr "Crear las facturas de recetas"
 msgctxt "wizard_button:gnuhealth.prescription.invoice,init,end:0"
 msgid "Cancel"
 msgstr "Cancelar"
+
