@@ -535,7 +535,7 @@ class PartyPatient (ModelSQL, ModelView):
     activation_date = fields.Date('Activation date',
      help="Date of activation of the party")
     alias = fields.Char('Alias', help="Common name that the Party is reffered")
-    ref = fields.Char('ID Number', size=64, help="Patient Personal ID")
+    ref = fields.Char('SSN', help="Patient Social Security Number or equivalent")
     is_person = fields.Boolean('Person',
      help="Check if the party is a person.")
     is_patient = fields.Boolean('Patient',
@@ -564,7 +564,7 @@ class PartyPatient (ModelSQL, ModelView):
     def __init__(self):
         super(PartyPatient, self).__init__()
         self._sql_constraints += [
-            ('ref_uniq', 'UNIQUE(ref)', 'The Party ID must be unique')]
+            ('ref_uniq', 'UNIQUE(ref)', 'The Patient SSN must be unique')]
 
     def get_rec_name(self, ids, name):
         if not ids:
