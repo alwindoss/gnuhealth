@@ -27,8 +27,8 @@ config = config.set_trytond('gnuhealth_demo', database_type='postgresql', user='
 def InitDatabase ():
     
     Module = Model.get('ir.module.module')
-    (medical_profile,) = Module.find([('name', '=', 'health')])
-    Module.button_install([medical_profile.id], config.context)
+    (health_profile,) = Module.find([('name', '=', 'health_profile')])
+    Module.button_install([health_profile.id], config.context)
     Wizard('ir.module.module.install_upgrade').execute('start')
 
 InitDatabase()
@@ -47,7 +47,8 @@ def LoadParties ():
         party = Party()
         party.name = line[0]
         party.lastname = line[1]
-        party.ref = line[2]
+        if line[2]:
+            party.ref = line[2]
         party.is_patient = False if line[3] == '0' else True
         party.is_doctor = False if line[4] == '0' else True
         party.is_insurance_company = False if line[5] == '0' else True
