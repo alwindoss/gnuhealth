@@ -36,8 +36,8 @@ class DrugDoseUnits(ModelSQL, ModelView):
     _description = __doc__
 
     _name = "gnuhealth.dose.unit"
-    name = fields.Char('Unit', required=True, select=True)
-    desc = fields.Char('Description')
+    name = fields.Char('Unit', required=True, select=True, translate=True)
+    desc = fields.Char('Description', translate=True)
 
     def __init__(self):
         super(DrugDoseUnits, self).__init__()
@@ -53,7 +53,7 @@ class MedicationFrequency(ModelSQL, ModelView):
     _description = __doc__
 
     _name = "gnuhealth.medication.dosage"
-    name = fields.Char('Frequency', required=True, select=True,
+    name = fields.Char('Frequency', required=True, select=True, translate=True,
         help='Common frequency name')
     code = fields.Char('Code',
         help='Dosage Code,for example: SNOMED 229798009 = 3 times per day')
@@ -74,7 +74,7 @@ class DrugForm(ModelSQL, ModelView):
     _description = __doc__
 
     _name = "gnuhealth.drug.form"
-    name = fields.Char('Form', required=True, select=True)
+    name = fields.Char('Form', required=True, select=True, translate=True)
     code = fields.Char('Code')
 
     def __init__(self):
@@ -91,7 +91,7 @@ class DrugRoute(ModelSQL, ModelView):
     _description = __doc__
 
     _name = "gnuhealth.drug.route"
-    name = fields.Char('Unit', required=True, select=True)
+    name = fields.Char('Unit', required=True, select=True, translate=True)
     code = fields.Char('Code')
 
     def __init__(self):
@@ -108,7 +108,7 @@ class Occupation(ModelSQL, ModelView):
     _description = __doc__
 
     _name = "gnuhealth.occupation"
-    name = fields.Char('Name', required="1")
+    name = fields.Char('Name', required="1", translate=True)
     code = fields.Char('Code')
 
     def __init__(self):
@@ -125,7 +125,7 @@ class Ethnicity(ModelSQL, ModelView):
     _description = __doc__
 
     _name = "gnuhealth.ethnicity"
-    name = fields.Char('Name', required="1")
+    name = fields.Char('Name', required="1", translate=True)
     code = fields.Char('Code')
     notes = fields.Char('Notes')
 
@@ -143,7 +143,7 @@ class MedicalSpecialty(ModelSQL, ModelView):
     _description = __doc__
 
     _name = "gnuhealth.specialty"
-    name = fields.Char('Specialty', required="1", select="1",
+    name = fields.Char('Specialty', required="1", select="1", translate=True,
         help="ie, Addiction Psychiatry")
     code = fields.Char('Code', select="1", help="ie, ADP")
 
@@ -314,7 +314,8 @@ class Medicament(ModelSQL, ModelView):
     name = fields.Many2One('product.product', 'Product',
         domain=[('is_medicament', '=', True)], select="1",
         help="Product Name", required=True)
-    active_component = fields.Char('Active component', help="Active Component")
+    active_component = fields.Char('Active component', help="Active Component",
+        translate=True)
     category = fields.Many2One('gnuhealth.medicament.category', 'Category', select= True)
     therapeutic_action = fields.Char('Therapeutic effect',
         help="Therapeutic action")
