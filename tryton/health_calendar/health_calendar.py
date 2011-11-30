@@ -64,7 +64,7 @@ class Appointment(ModelSQL, ModelView):
             'dtend': values['appointment_date'] + 
                 timedelta(minutes=values['appointment_time']),
             'calendar': doctor.calendar.id,
-            'summary': patient.name.name
+            'summary': patient.name.lastname + ', ' + patient.name.name,
             })
         return super(Appointment, self).create(values)
 
