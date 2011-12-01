@@ -837,8 +837,8 @@ class PatientDiseaseInfo (ModelSQL, ModelView):
     pcs_code = fields.Many2One('gnuhealth.procedure', 'Code',
         help="Procedure code, for example, ICD-10-PCS Code 7-character string")
     treatment_description = fields.Char('Treatment Description')
-    date_start_treatment = fields.Date('Start of treatment')
-    date_stop_treatment = fields.Date('End of treatment')
+    date_start_treatment = fields.Date('Start', help="Start of treatment date")
+    date_stop_treatment = fields.Date('End', help="End of treatment date")
     status = fields.Selection([
         ('a', 'acute'),
         ('c', 'chronic'),
@@ -984,8 +984,8 @@ class MedicationTemplate(ModelSQL, ModelView):
             ('indefinite', 'indefinite')], 'Treatment period',
             help='Period that the patient must take the medication in ' \
             'minutes, hours, days, months, years or indefinately', sort=False)
-    start_treatment = fields.DateTime('Start of treatment')
-    end_treatment = fields.DateTime('End of treatment')
+    start_treatment = fields.DateTime('Start', help="Date of start of Treatment")
+    end_treatment = fields.DateTime('End', help="Date of start of Treatment")
 
 MedicationTemplate()
 
@@ -1003,15 +1003,46 @@ class PatientMedication(ModelSQL, ModelView):
     doctor = fields.Many2One('gnuhealth.physician', 'Physician',
         help="Physician who prescribed the medicament")
     is_active = fields.Boolean('Active',
-        help="Check if the patient is currently taking the medication")
-    discontinued = fields.Boolean('Discontinued')
-    course_completed = fields.Boolean('Course Completed')
+        help="Check if the patient is currently taking the medication",
+        on_change_with=['discontinued', 'course_completed'])
+    discontinued = fields.Boolean('Discontinued',
+        on_change_with=['is_active', 'course_completed'])
+    course_completed = fields.Boolean('Course Completed',
+        on_change_with=['is_active', 'discontinued'])
     discontinued_reason = fields.Char('Reason for discontinuation',
-        help="Short description for discontinuing the treatment")
+        help="Short description for discontinuing the treatment",
+         states={'invisible': Not(Bool(Eval('discontinued'))),
+         'required': Bool(Eval('discontinued'))})
     adverse_reaction = fields.Text('Adverse Reactions',
         help="Side effects or adverse reactions that the patient experienced")
     notes = fields.Text('Extra Info')
     patient = fields.Many2One('gnuhealth.patient', 'Patient')
+
+    def on_change_with_is_active (self, vals):
+        discontinued = vals.get('discontinued')
+        course_completed = vals.get('course_completed')
+        is_active = True
+        if (discontinued or course_completed):
+            is_active = False
+        return is_active
+
+    def on_change_with_discontinued (self, vals):
+        discontinued = vals.get('discontinued')
+        is_active = vals.get('is_active')
+        course_completed = vals.get('course_completed')
+
+        if (is_active or course_completed):
+                discontinued = False
+        return ( discontinued ) 
+        
+    def on_change_with_course_completed (self, vals):
+        is_active = vals.get('is_active')
+        course_completed = vals.get('discontinued')
+        discontinued = vals.get('discontinued')
+
+        if (is_active or discontinued):
+                course_completed = False
+        return ( course_completed ) 
 
     def default_is_active(self):
         return True

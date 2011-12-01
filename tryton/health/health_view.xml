@@ -1420,39 +1420,61 @@
 			<field name="arch" type="xml">
 				<![CDATA[
 					<form string="Medication">
-						<group colspan="4" col="6" id="medication_header">
+						<notebook>
+							<page string="General Info" id="medication_general_info">
+						<group id="medication_header" string="Medication">
 							<label name="medicament"/>
 							<field name="medicament"/>
 							<label name="indication"/>
 							<field name="indication"/>
-							<label name="doctor"/>
-							<field name="doctor"/>
+                        </group>
+                            <newline/>
 							<newline/>
+
+                            <group id="treatment_period" string="Treatment period">
 							<label name="start_treatment"/>
 							<field name="start_treatment"/>
 							<label name="end_treatment"/>
 							<field name="end_treatment"/>
+                            </group>
+							<newline/>
+							<newline/>
+                            <group id="treatment_status" string="Status">
 							<label name="is_active"/>
 							<field name="is_active"/>
-							<newline/>
 							<label name="course_completed"/>
 							<field name="course_completed"/>
 							<label name="discontinued"/>
 							<field name="discontinued"/>
 							<label name="discontinued_reason"/>
 							<field name="discontinued_reason"/>
-						</group>
-						<newline/>
+                            </group>
+
+                        <newline/>
+                        
+                        <group id="medication_adeverse_effects" string="Adverse Reactions and Notes">
+                            <field name="adverse_reaction"/>
+                            <newline/>
+                            <separator string="Notes" id="medication_notes"/>
+                            <newline/>
+                            <field name="notes"/>
+
+                        </group>
+
+                        </page>
+                        <page id="medication_misc" string="Extra Info">
+
 						
-						<group string="Dosage" colspan="4" id="medicament_dosage_main">
-							<group id="medicament_form" colspan="4" col="4">
+						<group id="medicament_dosage_main">
+							<group id="medicament_form" string="Admnistration">
 								<label name="form"/>
 								<field name="form"/>
 								<label name="route"/>
 								<field name="route"/>
 							</group>
 							<newline/>
-							<group id="medicament_dosage" colspan="4" col="6">
+
+							<group id="medicament_dosage" col="6" string="Dosage">
 								<label name="dose"/>
 								<field name="dose"/>
 								<label name="dose_unit"/>
@@ -1461,7 +1483,7 @@
 								<field name="qty"/>
 							</group>
 							<newline/>
-							<group id="medicament_duration" colspan="4" col="4">
+							<group id="medicament_duration" string="Treatment duration">
 								<label name="duration"/>
 								<field name="duration"/>
 								<label name="duration_period"/>
@@ -1474,19 +1496,23 @@
 								<label name="admin_times"/>
 								<field name="admin_times"/>
 							</group>
+                            <newline/>
 							<group string="Specific Dosage" id="group_specific_dosage">
 								<label name="frequency"/>
 								<field name="frequency"/>
 								<label name="frequency_unit"/>
 								<field name="frequency_unit"/>
 							</group>
-							
 						</group>
+						<newline/>
 
-						<newline/>
-						<separator string="Notes" id="separator_medication_notes"/>
-						<newline/>
-						<field name="notes" colspan="4"/>
+                        <group id="medication_notes" string="Prescribing doctor">
+                            <label name="doctor"/>
+                            <field name="doctor"/>
+                        </group>
+
+                    </page>
+                    </notebook>
 					</form>
 				]]>
 			</field>
