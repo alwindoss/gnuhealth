@@ -16,7 +16,6 @@ World Health Organization - International Classification of Diseases for GNU HEA
 Organización Mundial de la Salud - Clasificación Internacional de Enfermedades - Revisión 10' 
 ''',
 	"xml" : ["data/disease_categories.xml","data/diseases.xml"],
-# Uncomment the following line and comment the previous one to enable Spanish CIE-10
-#	"xml" : ["data/disease_categories_es.xml","data/diseases_es.xml"],
+
 	"active": False 
 }

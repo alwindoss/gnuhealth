@@ -390,7 +390,7 @@ class PathologyCategory(ModelSQL, ModelView):
     _description = __doc__
     _name = 'gnuhealth.pathology.category'
 
-    name = fields.Char('Category Name', required=True)
+    name = fields.Char('Category Name', required=True, translate=True)
     parent = fields.Many2One('gnuhealth.pathology.category',
      'Parent Category', select=True)
     childs = fields.One2Many('gnuhealth.pathology.category',
@@ -429,7 +429,7 @@ PathologyCategory()
 class Pathology (ModelSQL, ModelView):
     "Diseases"
     _name = "gnuhealth.pathology"
-    name = fields.Char('Name', help="Disease name", required=True, select="1")
+    name = fields.Char('Name', help="Disease name", required=True, translate=True)
     code = fields.Char('Code', select="1",
         help='Specific Code for the Disease (eg, ICD-10, SNOMED...\)')
     category = fields.Many2One('gnuhealth.pathology.category',
@@ -454,8 +454,8 @@ class ProcedureCode(ModelSQL, ModelView):
     _name = "gnuhealth.procedure"
     _description = __doc__
 
-    name = fields.Char('Code', required=True, select="1")
-    description = fields.Char('Long Text', select="1")
+    name = fields.Char('Code', required=True )
+    description = fields.Char('Long Text', translate=True)
 
 ProcedureCode()
 

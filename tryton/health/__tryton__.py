@@ -20,16 +20,6 @@
         "data/medication_frequencies.xml","data/health_sequences.xml",
         "health_report.xml"],
 
-# Use the following lines for Spanish and comment the prior English language ones
-
-#    "xml" : ["health_view.xml","health_report.xml",
-#        "data/health_sequences.xml","data/ethnic_groups_es.xml",
-#        "data/occupations_es.xml","data/dose_units_es.xml",
-#        "data/drug_administration_routes.xml","data/medicament_form_es.xml",
-#        "data/medication_frequencies_es.xml","data/medicament_categories.xml",
-#        "data/WHO_list_of_essential_medicines.xml",
-#        "data/WHO_medicaments.xml","data/health_specialties_es.xml"],
-
 	'description' : """
 
 About GNU Health
