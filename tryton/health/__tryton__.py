@@ -18,7 +18,7 @@
         "data/occupations.xml","data/dose_units.xml",
         "data/drug_administration_routes.xml","data/medicament_form.xml",
         "data/medication_frequencies.xml","data/health_sequences.xml",
-        "health_report.xml"],
+        "security/access_rights.xml","health_report.xml"],
 
 	'description' : """
 
