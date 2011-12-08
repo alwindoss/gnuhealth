@@ -36,7 +36,7 @@ Este módulo incluye :
 ''',
 
     'xml': [
-        'health_gyneco_view.xml',
+        'health_gyneco_view.xml','security/access_rights.xml'
     ],
     'active': False,
 }

@@ -33,5 +33,6 @@ Módulo con la funcionalidad de laboratorio.
         'data/health_lab_sequences.xml',
         'data/lab_test_data.xml',
         'wizard/create_lab_test.xml',
+        'security/access_rights.xml',
     ],
 }

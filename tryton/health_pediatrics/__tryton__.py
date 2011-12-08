@@ -40,6 +40,7 @@ Nos focalizamos en la evaluación pediátrica básica, haciendo énfasis en el d
 ''',
     'xml': [
         'health_pediatrics_view.xml',
+        'security/access_rights.xml'
     ],
     'active': False,
 }

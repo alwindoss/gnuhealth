@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is part of GNU Health. GPL v3+ -->
+<!-- Luis Falcon . GNU Solidario --> 
+<!-- Default template for permission groups -->
+
+<tryton>
+    <data>
+        
+<!-- BEGIN GENETICS ADMINISTRATION GROUP ACCESS RIGHTS -->
+        
+<!-- Create the Health Administration group -->
+        <record model="res.group" id="group_health_genetics_admin">
+            <field name="name">Health Genetics Administration</field>
+        </record>
+
+<!-- Assign the Group to the "admin" user -->
+        
+        <record model="res.user-res.group" id="user_admin_group_health_genetics">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_health_genetics_admin"/>
+        </record>
+
+<!-- Access to Menus -->        
+        <record model="ir.ui.menu-res.group" id="menu_health_group_health_genetics_admin">
+            <field name="menu" ref="gnuhealth_conf_genetics"/>
+            <field name="group" ref="group_health_genetics_admin"/>
+        </record>
+
+
+<!-- Access rights to models for the health admin group -->
+
+        <record model="ir.model.access" id="access_health_genetics_disease_gene_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.disease.gene')]"/>
+            <field name="group" ref="group_health_genetics_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_health_genetics_patient_family_diseases_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.patient.family.diseases')]"/>
+            <field name="group" ref="group_health_genetics_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_health_genetics_patient_genetic_risk_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.patient.genetic.risk')]"/>
+            <field name="group" ref="group_health_genetics_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+
+<!-- END OF GENETICS ADMINISTRATION GROUP ACCESS RIGHTS -->
+
+    </data>
+</tryton>

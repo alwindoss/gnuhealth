@@ -31,6 +31,7 @@ con la funcionalidad específica, como gnuhealth_ICD10-PCS
 
     'xml': [
         'health_surgery_view.xml',
+        'security/access_rights.xml'
     ],
     'active': False,
 }

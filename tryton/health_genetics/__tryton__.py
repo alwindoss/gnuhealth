@@ -34,7 +34,7 @@ Incluye desórdenes genéticos y genes patológicos ("disease genes"), con una b
 
     'xml': [
         'health_genetics_view.xml',
-        'data/disease_genes.xml',
+        'data/disease_genes.xml','security/access_rights.xml'
     ],
     'active': False,
 }

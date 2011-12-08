@@ -35,6 +35,7 @@
         'wizard/appointment_invoice.xml',
         'wizard/prescription_invoice.xml',
         'wizard/create_lab_invoice.xml',
+        'security/access_rights.xml'
     ],
     'name_es_ES': 'GNU Health : Facturación',
     'translation': [

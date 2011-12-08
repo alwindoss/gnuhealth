@@ -49,6 +49,7 @@ Guarda información de los hábitos y sexualidad del paciente
     'xml': [
         'health_lifestyle_view.xml',
         'data/recreational_drugs.xml',
+        'security/access_rights.xml'
     ],
     'active': False,
 }
