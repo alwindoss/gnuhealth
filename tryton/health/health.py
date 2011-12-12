@@ -1429,7 +1429,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         'Presumptive Diagnosis', help="Presumptive Diagnosis")
     info_diagnosis = fields.Text('Presumptive Diagnosis: Extra Info')
     directions = fields.Text('Plan')
-    actions = fields.One2Many('gnuhealth.directions', 'name', 'P')
+    actions = fields.One2Many('gnuhealth.directions', 'name', 'Procedures', help="Procedures / Actions to take")
     symptom_pain = fields.Boolean('Pain')
     symptom_pain_intensity = fields.Integer('Pain intensity',
         help="Pain intensity from 0(no pain) to 10(worst possible pain)")

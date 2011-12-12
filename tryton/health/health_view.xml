@@ -1665,6 +1665,10 @@
             <field name="action" ref="act_prescription_form1"/>
         </record>
 							
+
+
+
+
 <!-- PATIENT VACCINATIONS -->
 
 
@@ -1715,6 +1719,40 @@
 						<field name="date"></field>
 						<field name="next_dose_date"/>
 						<field name="observations"></field>
+					</tree>
+				]]>
+			</field>
+		</record>
+
+
+<!-- PATIENT DIRECTIONS - PROCEDURES / ACTIONS TO TAKE -->
+
+
+		<record model="ir.ui.view" id="gnuhealth_directions_form">
+			<field name="model">gnuhealth.directions</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<![CDATA[
+					<form string="directions">
+								<label name="procedure"/>
+								<field name="procedure"/>
+                                <newline/>
+								<label name="comments"/>
+								<field name="comments"/>
+					</form>
+				]]>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="gnuhealth_directions_tree">
+			<field name="model">gnuhealth.directions</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<![CDATA[
+
+					<tree string='Patient directions'>
+						<field name="procedure"></field>
+						<field name="comments"></field>
 					</tree>
 				]]>
 			</field>
