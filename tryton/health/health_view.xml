@@ -1287,10 +1287,28 @@
 						</xpath>
 
 					</data>
-
 				]]>
 			</field>
 		</record>
+
+<!-- Add the Lastname field to the tree view of the party -->
+
+        <record model="ir.ui.view" id="party_view_tree">
+            <field name="model">party.party</field>
+            <field name="inherit" ref="party.party_view_tree"/>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                    <xpath
+                        expr="/tree/field[@name=&quot;name&quot;]"
+                        position="after">
+                        <field name="lastname"/>
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+
 
 
 <!-- PARTY CONTACT INFO - RELATIVES -->
