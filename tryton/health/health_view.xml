@@ -1995,6 +1995,7 @@
 					<tree string='patient'>
 						<field name="name"></field>
 						<field name="lastname"></field>
+						<field name="ssn"></field>
 						<field name="identification_code"></field>
 					</tree>
 				]]>

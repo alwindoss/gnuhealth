@@ -681,9 +681,13 @@ class PatientData(ModelSQL, ModelView):
         help="Patient Name")
     lastname = fields.Function(fields.Char('Lastname'),
         'get_patient_lastname', searcher="search_patient_lastname")
+
+    ssn = fields.Function(fields.Char('SSN'),
+        'get_patient_ssn', searcher="search_patient_ssn")
+
     identification_code = fields.Char('ID', readonly=True, select="1",
        help='Patient Identifier provided by the Health Center.' \
-        'Is not the ID from the party form')
+        'Is not the Social Security Number')
 
     family = fields.Many2One('gnuhealth.family',
         'Family', help="Family Code")
@@ -750,6 +754,19 @@ class PatientData(ModelSQL, ModelView):
     cod = fields.Many2One('gnuhealth.pathology', 'Cause of Death',
      states={'invisible': Not(Bool(Eval('deceased'))),
       'required': Bool(Eval('deceased'))})
+
+    def get_patient_ssn(self, ids, name):
+        res = {}
+        for patient in self.browse(ids):
+            res[patient.id] = patient.name.ref
+        return res
+
+    def search_patient_ssn(self, name, clause):
+        res = []
+        value = clause[2]
+        res.append(('name.ref', clause[1], value))
+        return res
+
 
     def get_patient_lastname(self, ids, name):
         res = {}
