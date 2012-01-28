@@ -47,21 +47,33 @@
 			<field name="path">icons/patient.svg</field>
 		</record>
 
+		<record model="ir.ui.icon" id="gnuhealth_prescription_icon">
+			<field name="name">gnuhealth-prescription</field>
+			<field name="path">icons/prescription.svg</field>
+		</record>
+
+		<record model="ir.ui.icon" id="gnuhealth_report_icon">
+			<field name="name">gnuhealth-report</field>
+			<field name="path">icons/report.svg</field>
+		</record>
+
 <!-- Initial Menu -->		
 
 		<menuitem name="Health" id="gnuhealth_menu" icon="gnuhealth"/>
-		<menuitem name="Configuration" id="gnuhealth_conf_menu" parent="gnuhealth_menu" sequence="1" icon="tryton-preferences"/>
-		<menuitem name="Appointments" id="gnuhealth_appointment_menu" parent="gnuhealth_menu" sequence="2" icon="gnuhealth-appointment"/>
-		<menuitem name="Patients" id="gnuhealth_patients_menu" parent="gnuhealth_menu" sequence="3" icon="gnuhealth-patient"/>
-		<menuitem name="Diseases" id="gnuhealth_conf_pathology" parent="gnuhealth_conf_menu" sequence="4" icon="gnuhealth-disease"/>
-		<menuitem name="Procedures" id="gnuhealth_conf_procedure" parent="gnuhealth_conf_menu" sequence="5" icon="gnuhealth-procedure"/>
-		<menuitem name="Health Centers" id="gnuhealth_conf_hospital" parent="gnuhealth_conf_menu" sequence="6" icon="gnuhealth-hospital"/>
-		<menuitem name="Physicians" id="gnuhealth_conf_physicians" parent="gnuhealth_conf_menu" sequence="7" icon="gnuhealth-physician"/>
-		<menuitem name="Medicaments" id="gnuhealth_conf_medicaments" parent="gnuhealth_conf_menu" sequence="8" icon="gnuhealth-medicament"/>
-		<menuitem name="Misc" id="gnuhealth_conf_misc" parent="gnuhealth_conf_menu" sequence="9"/>
-		<menuitem name="Operational Areas" id="gnuhealth_conf_operational_areas" parent="gnuhealth_conf_misc"/>
-		<menuitem name="Insurances" id="gnuhealth_conf_insurances" parent="gnuhealth_conf_misc"/>		
-		<menuitem name="Reporting" id="gnuhealth_reporting_menu" parent="gnuhealth_menu" sequence="10"/>
+		<menuitem name="Patients" id="gnuhealth_patients_menu" parent="gnuhealth_menu" sequence="10" icon="gnuhealth-patient"/>
+		<menuitem name="Appointments" id="gnuhealth_appointment_menu" parent="gnuhealth_menu" sequence="20" icon="gnuhealth-appointment"/>
+		<menuitem name="Prescriptions" id="gnuhealth_prescription_menu" parent="gnuhealth_menu" sequence="30" icon="gnuhealth-prescription"/>
+		<menuitem name="Reporting" id="gnuhealth_reporting_menu" parent="gnuhealth_menu" sequence="998" icon="gnuhealth-report"/>
+		<menuitem name="Configuration" id="gnuhealth_conf_menu" parent="gnuhealth_menu" sequence="999" icon="tryton-preferences"/>
+<!-- Configuration Menu -->        
+		<menuitem name="Diseases" id="gnuhealth_conf_pathology" parent="gnuhealth_conf_menu" sequence="10" icon="gnuhealth-disease"/>
+		<menuitem name="Procedures" id="gnuhealth_conf_procedure" parent="gnuhealth_conf_menu" sequence="20" icon="gnuhealth-procedure"/>
+		<menuitem name="Health Centers" id="gnuhealth_conf_hospital" parent="gnuhealth_conf_menu" sequence="30" icon="gnuhealth-hospital"/>
+		<menuitem name="Physicians" id="gnuhealth_conf_physicians" parent="gnuhealth_conf_menu" sequence="40" icon="gnuhealth-physician"/>
+		<menuitem name="Medicaments" id="gnuhealth_conf_medicaments" parent="gnuhealth_conf_menu" sequence="50" icon="gnuhealth-medicament"/>
+		<menuitem name="Misc" id="gnuhealth_conf_misc" parent="gnuhealth_conf_menu" sequence="60"/>
+		<menuitem name="Operational Areas" id="gnuhealth_conf_operational_areas" parent="gnuhealth_conf_misc" sequence="10"/>
+		<menuitem name="Insurances" id="gnuhealth_conf_insurances" parent="gnuhealth_conf_misc" sequence="20"/>		
 
 
 <!-- Medication Frequencies -->
@@ -2605,7 +2617,7 @@
             <field name="act_window" ref="action_gnuhealth_prescription_view"/>
         </record>
 
-		<menuitem action="action_gnuhealth_prescription_view" id="menu_gnuhealth_prescription_list" parent="gnuhealth_patients_menu" sequence="50"/>
+		<menuitem action="action_gnuhealth_prescription_view" id="menu_gnuhealth_prescription_list" parent="gnuhealth_prescription_menu" sequence="10"/>
 
 
 <!-- HEALTH CENTERS -->

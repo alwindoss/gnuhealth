@@ -9,10 +9,11 @@
             <field name="path">icons/lab_icon.svg</field>
         </record>
 
-        <menuitem name="Laboratory" parent="health.gnuhealth_conf_menu"
-            id="gnuhealth_conf_laboratory" sequence="3" icon="gnuhealth.lab"/>
         <menuitem name="Laboratory" parent="health.gnuhealth_menu"
-            id="gnuhealth_laboratory_menu" sequence="4" icon="gnuhealth.lab"/>
+            id="gnuhealth_laboratory_menu" sequence="40" icon="gnuhealth.lab"/>
+
+        <menuitem name="Laboratory" parent="health.gnuhealth_conf_menu"
+            id="gnuhealth_conf_laboratory" sequence="30" icon="gnuhealth.lab"/>
 
 <!-- Lab Test Units -->
 

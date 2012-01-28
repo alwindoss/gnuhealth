@@ -1,4 +1,4 @@
-#    Copyright (C) 2008-2011  Luis Falcon
+#    Copyright (C) 2008-2012  Luis Falcon
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by

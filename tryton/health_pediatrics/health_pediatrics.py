@@ -1,6 +1,6 @@
 # coding=utf-8
 
-#    Copyright (C) 2008-2011  Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2008-2012  Luis Falcon <lfalcon@gnusolidario.org>
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -27,16 +27,16 @@ class Newborn(ModelSQL, ModelView):
     _name = 'gnuhealth.newborn'
     _description = __doc__
 
-    name = fields.Char('Newborn ID',select="1")
-    mother = fields.Many2One('gnuhealth.patient', 'Mother', select="1")
+    name = fields.Char('Newborn ID')
+    mother = fields.Many2One('gnuhealth.patient', 'Mother')
     newborn_name = fields.Char('Baby\'s name',select="2")
-    birth_date = fields.DateTime('Date of Birth', required=True, select="1")
+    birth_date = fields.DateTime('Date of Birth', required=True)
     photo = fields.Binary('Picture')
     sex = fields.Selection([
         ('m', 'Male'),
         ('f', 'Female'),
         ('a', 'Ambiguous genitalia'),
-        ], 'Sex', select="2", required=True)
+        ], 'Sex', sort=False, required=True)
     cephalic_perimeter = fields.Integer('Cephalic Perimeter',
         help="Perimeter in centimeters (cm)")
     length = fields.Integer('Length', help="Perimeter in centimeters (cm)")
@@ -378,8 +378,6 @@ class PediatricSymptomsChecklist(ModelSQL, ModelView):
         ('2', 'Often'),
         ], 'Does not show feelings')
 
-#   psc_does_not_get_people_feelings = fields.Integer(
-#       'Does not understand other people feelings')
 
     psc_does_not_get_people_feelings = fields.Selection([
         ('0', 'Never'),
@@ -502,14 +500,6 @@ class PediatricSymptomsChecklist(ModelSQL, ModelView):
 
 PediatricSymptomsChecklist()
 
-
-'''
-    psc_does_not_get_people_feelings = fields.Selection([
-        ('0', 'Never'),
-        ('1', 'Sometimes'),
-        ('2', 'Often'),
-        ], 'Does not understand other people feelings')
-'''
 
 
 class PscEvaluation(ModelSQL, ModelView):

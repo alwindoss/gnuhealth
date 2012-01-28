@@ -3,6 +3,14 @@
     <data>
 
 
+<!-- Add other relevant icons -->
+        
+		<record model="ir.ui.icon" id="gnuhealth_invoice_icon">
+			<field name="name">gnuhealth-invoice</field>
+			<field name="path">icons/invoice.svg</field>
+		</record>
+
+
     <!-- Appointment details -->
 
         <record model="ir.ui.view" id="gnuhealth_invoice_appointment_view">
@@ -99,7 +107,7 @@
         </record>
 
         <menuitem name="Invoices" parent="health.gnuhealth_menu"
-            id="gnuhealth_invoice_menu" sequence="5"/>
+            id="gnuhealth_invoice_menu" sequence="990" icon="gnuhealth-invoice"/>
 
         <record model="ir.action.act_window" id="gnuhealth_action_invoiced_labtest_request">
             <field name="name">Invoiced Lab Test Requests</field>
