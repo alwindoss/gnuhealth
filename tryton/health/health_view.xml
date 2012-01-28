@@ -1291,7 +1291,7 @@
 			</field>
 		</record>
 
-<!-- Add the Lastname field to the tree view of the party -->
+<!-- Add the Lastname and SSN (ref) field to the tree view of the party -->
 
         <record model="ir.ui.view" id="party_view_tree">
             <field name="model">party.party</field>
@@ -1303,6 +1303,7 @@
                         expr="/tree/field[@name=&quot;name&quot;]"
                         position="after">
                         <field name="lastname"/>
+                        <field name="ref"/>
                     </xpath>
                 </data>
                 ]]>
