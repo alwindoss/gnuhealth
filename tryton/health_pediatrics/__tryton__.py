@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 {
     'name': 'GNU Health: Pediatrics',
-    'version': '1.4.2',
+    'version': '1.4.3',
     'author': 'GNU Solidario',
     'email': 'health@gnusolidario.org',
     'website': 'http://health.gnu.org',
@@ -40,6 +40,7 @@ Nos focalizamos en la evaluación pediátrica básica, haciendo énfasis en el d
 ''',
     'xml': [
         'health_pediatrics_view.xml',
+        'health_pediatrics_report.xml',
         'security/access_rights.xml'
     ],
     'active': False,

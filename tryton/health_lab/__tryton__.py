@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 {
     'name': 'GNU Health: Laboratory',
-    'version': '1.4.2',
+    'version': '1.4.3',
     'author': 'GNU Solidario',
     'email': 'health@gnusolidario.org',
     'website': 'http://health.gnu.org',
