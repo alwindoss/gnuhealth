@@ -188,11 +188,13 @@ class PediatricSymptomsChecklist(ModelSQL, ModelView):
     _name = 'gnuhealth.patient.psc'
     _description = __doc__
 
-    name = fields.Many2One('gnuhealth.patient', 'Patient ID')
+    patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
 
-    evaluation_date = fields.Many2One('gnuhealth.appointment', 'Evaluation Date',
+    evaluation_date = fields.Many2One('gnuhealth.appointment', 'Appointment',
         help="Enter or select the date / ID of the appointment related to " \
         "this evaluation")
+
+    evaluation_start = fields.DateTime('Date', required=True)
 
     user_id = fields.Many2One('res.user', 'Healh Professional', readonly=True)
 

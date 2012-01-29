@@ -143,9 +143,9 @@ class MedicalSpecialty(ModelSQL, ModelView):
     _description = __doc__
 
     _name = "gnuhealth.specialty"
-    name = fields.Char('Specialty', required="1", select="1", translate=True,
+    name = fields.Char('Specialty', required="1", translate=True,
         help="ie, Addiction Psychiatry")
-    code = fields.Char('Code', select="1", help="ie, ADP")
+    code = fields.Char('Code', help="ie, ADP")
 
     def __init__(self):
         super(MedicalSpecialty, self).__init__()
@@ -162,12 +162,12 @@ class Physician(ModelSQL, ModelView):
     _description = __doc__
 
     name = fields.Many2One('party.party', 'Physician',
-        required="1", domain=[('is_doctor', '=', True)], select="1",
+        required="1", domain=[('is_doctor', '=', True)],
         help="Physician's Name, from the partner list")
     institution = fields.Many2One('party.party', 'Institution',
         domain=[('is_institution', '=', True)],
         help="Instituion where she/he works")
-    code = fields.Char('ID', select="1", help="MD License ID")
+    code = fields.Char('ID', help="MD License ID")
     specialty = fields.Many2One('gnuhealth.specialty',
         'Specialty', help="Specialty Code")
     info = fields.Text('Extra info')
@@ -193,7 +193,7 @@ class OperationalArea (ModelSQL, ModelView):
     _name = "gnuhealth.operational_area"
     _description = __doc__
     name = fields.Char('Name',
-        help="Operational Area of the city or region", required="1", select="1")
+        help="Operational Area of the city or region", required="1")
     operational_sector = fields.One2Many ('gnuhealth.operational_sector','operational_area',
         'Operational Sector',readonly="1")
         
@@ -213,10 +213,10 @@ class OperationalSector(ModelSQL, ModelView):
     _name = "gnuhealth.operational_sector"
     _description = __doc__
 
-    name = fields.Char('Op. Sector', required="1", select="1",
+    name = fields.Char('Op. Sector', required="1",
         help="Region included in an operational area")
     operational_area = fields.Many2One('gnuhealth.operational_area',
-     'Operational Area', select="1")
+     'Operational Area')
     info = fields.Text('Extra Information')
 
     def __init__(self):
@@ -233,10 +233,10 @@ class Family(ModelSQL, ModelView):
     "Family"
     _name = "gnuhealth.family"
 
-    name = fields.Char('Family', required="1", select="1",
+    name = fields.Char('Family', required="1",
      help="Family code within an operational sector")
     operational_sector = fields.Many2One('gnuhealth.operational_sector',
-        'Operational Sector', select="1")
+        'Operational Sector')
     members = fields.One2Many('gnuhealth.family_member', 'name',
         'Family Members')
 
@@ -257,7 +257,7 @@ class FamilyMember(ModelSQL, ModelView):
 
     name = fields.Many2One('gnuhealth.family', 'Family', required="1",
      select="1", help="Family code")
-    party = fields.Many2One('party.party', 'Party', required="1", select="1",
+    party = fields.Many2One('party.party', 'Party', required="1",
         domain=[('is_person', '=', True)], help="Family code")
     role = fields.Char('Role', help="Father, Mother, sibbling...")
 
@@ -312,7 +312,7 @@ class Medicament(ModelSQL, ModelView):
     _name = "gnuhealth.medicament"
 
     name = fields.Many2One('product.product', 'Product',
-        domain=[('is_medicament', '=', True)], select="1",
+        domain=[('is_medicament', '=', True)],
         help="Product Name", required=True)
     active_component = fields.Char('Active component', help="Active Component",
         translate=True)
@@ -337,7 +337,7 @@ class Medicament(ModelSQL, ModelView):
                         ('X', 'X'),
                         ('N', 'N'),
 
-                        ], 'Pregnancy Category', select="1",
+                        ], 'Pregnancy Category',
                         help='** FDA Pregancy Categories ***\n' \
                         'CATEGORY A :Adequate and well-controlled human studies have' \
                         ' failed to demonstrate a risk to the fetus in the' \
@@ -430,7 +430,7 @@ class Pathology (ModelSQL, ModelView):
     "Diseases"
     _name = "gnuhealth.pathology"
     name = fields.Char('Name', help="Disease name", required=True, translate=True)
-    code = fields.Char('Code', select="1",
+    code = fields.Char('Code',
         help='Specific Code for the Disease (eg, ICD-10, SNOMED...\)')
     category = fields.Many2One('gnuhealth.pathology.category',
         'Disease Category')
@@ -467,10 +467,10 @@ class InsurancePlan(ModelSQL, ModelView):
 
     name = fields.Many2One('product.product', 'Plan',
      domain=[('type', '=', "service")],
-      help="Insurance company plan", select="1", required=True)
+      help="Insurance company plan", required=True)
 
     company = fields.Many2One('party.party', 'Insurance Company',
-     domain=[('is_insurance_company', '=', True)], select="1", required=True)
+     domain=[('is_insurance_company', '=', True)], required=True)
 
     is_default = fields.Boolean('Default plan',
         help='Check if this is the default plan when assigning ' \
@@ -676,7 +676,7 @@ class PatientData(ModelSQL, ModelView):
             patient_data.deceased, patient_data.dod)
         return result
 
-    name = fields.Many2One('party.party', 'Patient', required="1", select="1",
+    name = fields.Many2One('party.party', 'Patient', required="1",
         domain=[('is_patient', '=', True), ('is_person', '=', True)],
         help="Patient Name")
     lastname = fields.Function(fields.Char('Lastname'),
@@ -685,7 +685,7 @@ class PatientData(ModelSQL, ModelView):
     ssn = fields.Function(fields.Char('SSN'),
         'get_patient_ssn', searcher="search_patient_ssn")
 
-    identification_code = fields.Char('ID', readonly=True, select="1",
+    identification_code = fields.Char('ID', readonly=True,
        help='Patient Identifier provided by the Health Center.' \
         'Is not the Social Security Number')
 
@@ -886,16 +886,16 @@ class Appointment (ModelSQL, ModelView):
     _name = "gnuhealth.appointment"
     _description = __doc__
 
-    name = fields.Char('Appointment ID', readonly=True, select="2")
+    name = fields.Char('Appointment ID', readonly=True)
     doctor = fields.Many2One('gnuhealth.physician', 'Physician',
         select="1", help="Physician's Name")
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True,
         select="1", help="Patient Name")
-    appointment_date = fields.DateTime('Date and Time', select="1")
+    appointment_date = fields.DateTime('Date and Time')
     institution = fields.Many2One('party.party', 'Health Center',
         domain=[('is_institution', '=', True)], help="Medical Center")
     speciality = fields.Many2One('gnuhealth.specialty', 'Specialty',
-        select="2", help="Medical Specialty / Sector")
+        help="Medical Specialty / Sector")
     urgency = fields.Selection([
             ('a', 'Normal'),
             ('b', 'Urgent'),
@@ -1147,11 +1147,11 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True,
      select="1")
     prescription_id = fields.Char('Prescription ID',
-        readonly=True, help='Type in the ID of this prescription', select="2")
-    prescription_date = fields.DateTime('Prescription Date', select="1")
+        readonly=True, help='Type in the ID of this prescription')
+    prescription_date = fields.DateTime('Prescription Date')
     user_id = fields.Many2One('res.user', 'Prescribing Doctor', readonly=True,
      select="1")
-    pharmacy = fields.Many2One('party.party', 'Pharmacy', select="2")
+    pharmacy = fields.Many2One('party.party', 'Pharmacy')
     prescription_line = fields.One2Many('gnuhealth.prescription.line',
         'name', 'Prescription line')
     notes = fields.Text('Prescription Notes')
@@ -1233,12 +1233,12 @@ class PatientEvaluation(ModelSQL, ModelView):
     _name = "gnuhealth.patient.evaluation"
     _description = __doc__
 
-    patient = fields.Many2One('gnuhealth.patient', 'Patient', select="1")
-    evaluation_date = fields.Many2One('gnuhealth.appointment', 'Appointment', select="1", 
+    patient = fields.Many2One('gnuhealth.patient', 'Patient')
+    evaluation_date = fields.Many2One('gnuhealth.appointment', 'Appointment', 
         help='Enter or select the date / ID of the appointment' \
         ' related to this evaluation')
     evaluation_start = fields.DateTime('Start of Evaluation',
-     required=True, select="1")
+     required=True)
     evaluation_endtime = fields.DateTime('End of Evaluation', required="1")
     next_evaluation = fields.Many2One('gnuhealth.appointment',
         'Next Appointment')
@@ -1559,12 +1559,12 @@ class HospitalBuilding(ModelSQL, ModelView):
     "Hospital Building"
     _description = __doc__
     _name = "gnuhealth.hospital.building"
-    name = fields.Char('Name', select="1", required=True,
+    name = fields.Char('Name', required=True,
         help="Name of the building within the institution")
     institution = fields.Many2One('party.party', 'Institution',
-        domain=[('is_institution', '=', "1")], select="1",
+        domain=[('is_institution', '=', "1")],
         help="Medical Center")
-    code = fields.Char('Code', select="2")
+    code = fields.Char('Code')
     extra_info = fields.Text('Extra Info')
 
 HospitalBuilding()
@@ -1574,12 +1574,12 @@ class HospitalUnit(ModelSQL, ModelView):
     "Hospital Unit"
     _description = __doc__
     _name = "gnuhealth.hospital.unit"
-    name = fields.Char('Name', select="1", required=True,
+    name = fields.Char('Name', required=True,
         help="Name of the unit, eg Neonatal, Intensive Care, ...")
     institution = fields.Many2One('party.party', 'Institution',
-        domain=[('is_institution', '=', "1")], select="1",
+        domain=[('is_institution', '=', "1")],
         help="Medical Center")
-    code = fields.Char('Code', select="2")
+    code = fields.Char('Code')
     extra_info = fields.Text('Extra Info')
 
 HospitalUnit()
@@ -1590,9 +1590,9 @@ class HospitalOR(ModelSQL, ModelView):
     _description = __doc__
     _name = "gnuhealth.hospital.or"
 
-    name = fields.Char('Name', required=True, select="1",
+    name = fields.Char('Name', required=True,
         help="Name of the Operating Room")
-    institution = fields.Many2One('party.party', 'Institution', select="1",
+    institution = fields.Many2One('party.party', 'Institution',
         domain=[('is_institution', '=', "1")], help="Medical Center")
     building = fields.Many2One('gnuhealth.hospital.building', 'Building',
         select="1")
@@ -1613,13 +1613,13 @@ class HospitalWard(ModelSQL, ModelView):
     _name = "gnuhealth.hospital.ward"
     _description = __doc__
 
-    name = fields.Char('Name', required=True, select="1",
+    name = fields.Char('Name', required=True,
      help="Ward / Room code")
-    institution = fields.Many2One('party.party', 'Institution', select="1",
+    institution = fields.Many2One('party.party', 'Institution',
         domain=[('is_institution', '=', "1")], help="Medical Center")
     building = fields.Many2One('gnuhealth.hospital.building', 'Building')
-    floor = fields.Integer('Floor Number', select="2")
-    unit = fields.Many2One('gnuhealth.hospital.unit', 'Unit', select="2")
+    floor = fields.Integer('Floor Number')
+    unit = fields.Many2One('gnuhealth.hospital.unit', 'Unit')
     private = fields.Boolean('Private',
         help="Check this option for private room")
     bio_hazard = fields.Boolean('Bio Hazard',
@@ -1635,9 +1635,9 @@ class HospitalWard(ModelSQL, ModelView):
     refrigerator = fields.Boolean('Refrigetator')
     microwave = fields.Boolean('Microwave')
     gender = fields.Selection((('men', 'Men Ward'), ('women', 'Women Ward'),
-        ('unisex', 'Unisex')), 'Gender', required=True,  select="2", sort=False)
+        ('unisex', 'Unisex')), 'Gender', required=True, sort=False)
     state = fields.Selection((('beds_available', 'Beds available'),
-        ('full', 'Full'), ('na', 'Not available')), 'Status',  select="2", sort=False)
+        ('full', 'Full'), ('na', 'Not available')), 'Status', sort=False)
     extra_info = fields.Text('Extra Info')
 
     def default_gender(self):
@@ -1654,19 +1654,19 @@ class HospitalBed(ModelSQL, ModelView):
     _description = __doc__
     _name = "gnuhealth.hospital.bed"
     name = fields.Many2One('product.product', 'Bed', domain=[('is_bed', '=', True)],
-     required=True, select="1",  help="Bed Number")
+     required=True,  help="Bed Number")
     ward = fields.Many2One('gnuhealth.hospital.ward',
-        'Ward',  select="2", help="Ward or room")
+        'Ward', help="Ward or room")
     bed_type = fields.Selection((('gatch', 'Gatch Bed'),
         ('electric', 'Electric'), ('stretcher', 'Stretcher'),
         ('low', 'Low Bed'), ('low_air_loss', 'Low Air Loss'),
         ('circo_electric', 'Circo Electric'),
-        ('clinitron', 'Clinitron')), 'Bed Type', required=True,  select="2", sort=False)
+        ('clinitron', 'Clinitron')), 'Bed Type', required=True, sort=False)
     telephone_number = fields.Char('Telephone Number',
         help="Telephone number / Extension")
     extra_info = fields.Text('Extra Info')
     state = fields.Selection((('free', 'Free'), ('reserved', 'Reserved'),
-     ('occupied', 'Occupied'), ('na', 'Not available')), 'Status',  select="2", sort=False)
+     ('occupied', 'Occupied'), ('na', 'Not available')), 'Status', sort=False)
 
     def default_bed_type(self):
         return 'gatch'

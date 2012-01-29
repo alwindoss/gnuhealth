@@ -23,7 +23,7 @@
 <!-- Access to Menus -->        
 
         <record model="ir.ui.menu-res.group" id="menu_health_group_health_pediatrics_admin">
-            <field name="menu" ref="gnuhealth_conf_neonatology"/>
+            <field name="menu" ref="gnuhealth_pediatrics"/>
             <field name="group" ref="group_health_pediatrics_admin"/>
         </record>
 
