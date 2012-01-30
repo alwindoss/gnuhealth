@@ -1,3 +1,227 @@
+******** VERSION 1.4.3 **********
+changeset:   73:6d134c99fa4a
+tag:         tip
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Jan 29 20:43:45 2012 -0300
+description:
+- Update version to 1.4.3
+- Create newborn identification card report
+
+
+changeset:   72:83176bb580db
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Jan 29 14:59:42 2012 -0300
+description:
+- Pediatrics : Create the Pediatrics menu and rename newborn menuentry for neonatology
+- Pediatrics : Move Pediatric Symptom Checklist from patient form to Pediatrics menu
+- Health : Get rid of selects in model field names
+- Pediatrics : Normalize PSC field to "patient" instead of name
+- Pediatrics : Add the Evalutation date, in addition to the Appointment ID, making the date required.
+- Pediatrics : Add related action from the patient form to Pediatric Symptoms Checklist (PSC)
+
+
+changeset:   71:da6fa858d9f7
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sat Jan 28 14:30:06 2012 -0300
+description:
+- Pediatrics : Fix order of newborn gender
+- Pediatrics : remove selects from fields, since they're no longer used in Tryton
+- Pediatrics : Remove old commented code
+- Health : Place prescriptions in a separate menu. Thanks to openclipart and J_Alves for the Prescription icon !
+- Health : Reorder main menu entries for better navigation
+--- 10) Patients
+--- 20) Appointments
+--- 30) Prescriptions
+--- All extra modules, with a 10-count interval in between (40 Lab, 50 Hospitalization,  60 Neonatology,
+--- 990 Invoicing ( if used, from health_invoice)
+--- 998 Reporting
+--- 999 Configuration (last one)
+
+- Health_invoice : Added invoice Icon. Thanks to klm in openclipart !
+- Update GPL year
+
+
+changeset:   70:7b1ed108a83d
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Fri Jan 27 22:00:11 2012 -0300
+description:
+IMP - Added Social Security Number (SSN) to patient search and tree
+Fixed bug 35387 . https://savannah.gnu.org/bugs/index.php?35387
+
+
+changeset:   69:6b9fe688591d
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Fri Jan 27 21:29:46 2012 -0300
+description:
+IMP - Add Social Security Number to the Party tree / search view
+
+
+changeset:   68:fe0a18271918
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Fri Jan 27 20:30:48 2012 -0300
+description:
+IMP - Added Lastname field to the tree view in the party
+Related to bug 35371 https://savannah.gnu.org/bugs/?35371
+
+
+changeset:   67:4822e703441e
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Fri Jan 27 13:03:52 2012 -0300
+description:
+IMP - Place Patient menuentry as the first one in the Patient menu
+
+
+changeset:   66:03cfd8962381
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Jan 15 20:11:05 2012 -0300
+description:
+Add product category for insurance plans
+https://savannah.gnu.org/bugs/index.php?35315
+
+
+changeset:   65:41b93400b1a6
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Dec 12 19:52:06 2011 -0300
+description:
+Fix bug 35045 : https://savannah.gnu.org/bugs/index.php?35045
+Added the right field description.
+Also add the comments field for the Actions / Procedures to take on each patient evaluation.
+
+
+changeset:   64:65f12393e0af
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Thu Dec 08 20:21:41 2011 -0300
+description:
+Updated task https://savannah.gnu.org/task/?11368
+Created initial administrator access rights for the following modules
+
+- health_genetics
+- health_gyneco
+- health_inpatient
+- health_invoice
+- health_lab
+- health_lifestyle
+- health_pediatrics
+- health_surgery
+
+
+changeset:   63:ee13dd492507
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Thu Dec 08 17:16:07 2011 -0300
+description:
+Create a security/access_rights.xml file for health module
+Update Task 11368 (https://savannah.gnu.org/task/index.php?11368)
+
+
+changeset:   62:c536412cd1dc
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Dec 07 20:23:03 2011 -0300
+description:
+Remove old language specific data files that should now be incorporated to the translation project
+
+
+changeset:   61:5728cf308c8f
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Dec 07 19:16:16 2011 -0300
+description:
+Add translation template in main module (health) to be automatically update the terms from the trunk
+
+
+changeset:   60:f1574987f7c4
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Dec 07 17:57:00 2011 -0300
+description:
+Fix bug 35005 https://savannah.gnu.org/bugs/index.php?35005
+Set as translatable fields in ICD and ICD-10PCS to avoid mixing english with non-english datafiles.
+Datafiles should be translated in Transifex and be part of the localization project
+
+
+changeset:   59:be2a7fd8e180
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Thu Dec 01 16:05:53 2011 -0300
+description:
+Optimize Patient medication history input form
+Fixes bug 34963.  https://savannah.gnu.org/bugs/index.php?34963
+
+- Uncheck active medication if course is completed or discontinued and viceversa
+- Make visible the "Reason for discontinuation" field only if medication is discontinued
+- Add "Adverse reactions field"
+
+
+changeset:   58:94943deb5ea5
+user:        Sebastian Marro <smarro@thymbra.com>
+date:        Wed Nov 30 17:51:39 2011 -0300
+description:
+Add patient lastname to summary of appointment event calendar
+Fix bug 34956 https://savannah.gnu.org/bugs/index.php?34956
+
+
+changeset:   57:56ba09d40e20
+user:        Sebastian Marro <smarro@thymbra.com>
+date:        Tue Nov 29 15:15:55 2011 -0300
+description:
+Add translate property to
+Dose Units
+Drug Administration Routes
+Ethnic Groups
+Medicament Active Component
+Medicament Drug Form
+Medication Frequencies
+Occupation
+Specialties
+Fix bug 34937 https://savannah.gnu.org/bugs/index.php?34937
+
+
+changeset:   56:ad0819de04e3
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Nov 28 13:46:44 2011 -0300
+description:
+Update Demo database environment
+Fix bug https://savannah.gnu.org/bugs/index.php?34928
+- Added the new health profile
+- Fix bug on patient SSN when it was empty. Check for null befor updating it, otherwise it would treat it as duplicate.
+- Use the health_profile module instead of just the health module
+
+
+changeset:   55:7aef14c84489
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Nov 27 19:42:29 2011 -0300
+description:
+Fix Patient disease report for the infectious disease status
+Fix bug 34915 . https://savannah.gnu.org/bugs/index.php?34915
+
+
+changeset:   54:c764e3866b79
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Nov 21 10:07:51 2011 -0300
+description:
+Change label ID for SSN in party model ref field
+Move ref (SSN) field to the Health tab in the party model
+Remove size attribute from the ref field
+Fixed bug 34796
+https://savannah.gnu.org/bugs/?34796
+
+
+changeset:   53:39684a2084bd
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Thu Nov 17 18:17:15 2011 -0300
+description:
+Updated Spanish translation files headers
+
+
+changeset:   52:881c1b2e749e
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Tue Nov 01 02:29:07 2011 -0300
+description:
+Update Changelog
+
+
+changeset:   51:d5c77e80ffdc
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Tue Nov 01 02:28:33 2011 -0300
+description:
+Added tag 1.4.2 for changeset c7900bb19b0d
+
 ******** VERSION 1.4.2 **********
 changeset:   50:c7900bb19b0d
 tag:         tip
