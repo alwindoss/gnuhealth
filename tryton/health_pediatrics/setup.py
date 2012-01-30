@@ -48,7 +48,7 @@ setup(name='trytond_health_pediatrics',
     package_data={
         'trytond.modules.health_pediatrics': info.get('xml', []) \
             + info.get('translation', []) \
-            + ['icons/*.svg'],
+            + ['report/*.odt', 'icons/*.svg'],
         },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
