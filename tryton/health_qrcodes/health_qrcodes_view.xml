@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<tryton>
+        <data>
+        
+
+<!-- PARTY -->
+
+		<record model="ir.ui.view" id="view_party_form">
+			<field name="model">party.party</field>
+			<field name="inherit" ref="party.party_view_form" />
+			<field name="type">form</field>
+
+			<field name="arch" type="xml">
+				<![CDATA[
+					<data>
+	                    <xpath
+							expr="//group[@id=&quot;party_specs&quot;]"
+							position="after">
+                        
+                                <group string="QR Code" id="group_qr">
+                                    <field name="qr" widget="image"/>
+                                </group>
+
+                        </xpath>
+					</data>
+				]]>
+			</field>
+		</record>
+
+<!-- NEWBORN -->
+
+		<record model="ir.ui.view" id="view_newborn_form">
+			<field name="model">gnuhealth.newborn</field>
+			<field name="inherit" ref="health_pediatrics.gnuhealth_newborn_view" />
+			<field name="type">form</field>
+
+			<field name="arch" type="xml">
+				<![CDATA[
+					<data>
+	                    <xpath
+   							expr="//field[@name=&quot;notes&quot;]"
+							position="after">
+                                <group id="group_qr">
+                                <field name="qr" widget="image"/>
+                            </group>
+                        </xpath>
+
+					</data>
+				]]>
+			</field>
+		</record>
+
+	
+	</data>
+</tryton>

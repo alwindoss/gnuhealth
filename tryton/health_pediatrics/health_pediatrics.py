@@ -15,6 +15,8 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import qrcode
+import StringIO
 from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
 from trytond.tools import safe_eval, datetime_strftime
 from trytond.transaction import Transaction
@@ -26,10 +28,10 @@ class Newborn(ModelSQL, ModelView):
     'Newborn Information'
     _name = 'gnuhealth.newborn'
     _description = __doc__
-
+    
     name = fields.Char('Newborn ID')
     mother = fields.Many2One('gnuhealth.patient', 'Mother')
-    newborn_name = fields.Char('Baby\'s name',select="2")
+    newborn_name = fields.Char('Baby\'s name')
     birth_date = fields.DateTime('Date of Birth', required=True)
     photo = fields.Binary('Picture')
     sex = fields.Selection([
@@ -94,7 +96,7 @@ class Newborn(ModelSQL, ModelView):
     tod = fields.DateTime('Time of Death')
     cod = fields.Many2One('gnuhealth.pathology', 'Cause of death')
     notes = fields.Text('Notes')
-
+    
     def __init__(self):
         super(Newborn, self).__init__()
 
