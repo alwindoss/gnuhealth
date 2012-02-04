@@ -68,7 +68,10 @@ class Newborn (ModelSQL, ModelView):
 # Create the QR code 
         result = {}
         for newborn_data in self.browse(ids):
-            qr_image = qrcode.make(newborn_data.name)
+            qr_string = "ID: " + newborn_data.name + '\nMother: ' + \
+            newborn_data.mother.name.lastname + ',' + newborn_data.mother.name.name + '\nMother\'s ID: ' + newborn_data.mother.identification_code + '\nSex: ' + newborn_data.sex + '\nDoB: ' + str (newborn_data.birth_date)
+
+            qr_image = qrcode.make(qr_string)
  
 # Make a PNG image from PIL without the need to create a temp file            
             holder = StringIO.StringIO()
