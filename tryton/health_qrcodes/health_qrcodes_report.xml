@@ -10,7 +10,7 @@
         <record model="ir.action.keyword" id="report_qrcard_patient">
             <field name="keyword">form_print</field>
             <field name="model">gnuhealth.patient,-1</field>
-            <field name="action" ref="report_patient_card"/>
+            <field name="action" ref="report_patient_qrcard"/>
         </record>
 
        <record model="ir.action.report" id="report_newborn_qrcard">

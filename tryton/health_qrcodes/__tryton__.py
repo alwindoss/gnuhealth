@@ -12,7 +12,7 @@
         'locale/es_ES.po',
     ],
 
-	"xml" : ["health_qrcodes_view.xml"],
+	"xml" : ["health_qrcodes_view.xml","health_qrcodes_report.xml"],
 
 	'description' : """
 This module adds QR (Quick Recognition) codes to GNU Health objects, like patient and newborns
