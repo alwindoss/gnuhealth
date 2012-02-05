@@ -29,17 +29,28 @@ from trytond.pool import Pool
 
 
 
-# Add the QR field and QR image in the party model
+# Add the QR field and QR image in the patient model
 
-class PartyPatient (ModelSQL, ModelView):
-    "Party"
-    _name = "party.party"
+class Patient (ModelSQL, ModelView):
+    "Patient"
+    _name = "gnuhealth.patient"
 
     def make_qrcode(self, ids, name):
 # Create the QR code 
         result = {}
-        for party_data in self.browse(ids):
-            qr_image = qrcode.make(party_data.name)
+        for patient_data in self.browse(ids):
+
+            if not patient_data.ssn:
+                patient_data.ssn = ""
+                
+            qr_string = "ID: " + patient_data.identification_code + '\nName: ' + \
+                patient_data.lastname + ',' + \
+                patient_data.name.name + '\nSSN: ' + \
+                patient_data.ssn + '\nSex: ' + \
+                patient_data.sex + '\nDoB: ' + str (patient_data.dob)
+                
+            
+            qr_image = qrcode.make(qr_string)
  
 # Make a PNG image from PIL without the need to create a temp file            
             holder = StringIO.StringIO()
@@ -47,16 +58,16 @@ class PartyPatient (ModelSQL, ModelView):
             qr_png = holder.getvalue()
             holder.close()
 
-            result[party_data.id] = buffer(qr_png)
+            result[patient_data.id] = buffer(qr_png)
 
         return result
 
-# Add the QR Code to the Party
+# Add the QR Code to the Patient
 
     qr = fields.Function(fields.Binary('QR Code'), 'make_qrcode')
 
 
-PartyPatient()
+Patient()
 
 # Add the QR code field and image to the Newborn
 
@@ -68,6 +79,10 @@ class Newborn (ModelSQL, ModelView):
 # Create the QR code 
         result = {}
         for newborn_data in self.browse(ids):
+
+            if not newborn_data.name:
+                newborn_data.name = ""
+
             qr_string = "ID: " + newborn_data.name + '\nMother: ' + \
             newborn_data.mother.name.lastname + ',' + \
             newborn_data.mother.name.name + '\nMother\'s ID: ' + \
@@ -86,7 +101,7 @@ class Newborn (ModelSQL, ModelView):
 
         return result
 
-# Add the QR Code to the Party
+# Add the QR Code to the Newborn
 
     qr = fields.Function(fields.Binary('QR Code'), 'make_qrcode')
 
