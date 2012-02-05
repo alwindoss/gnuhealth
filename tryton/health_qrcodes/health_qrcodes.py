@@ -69,7 +69,10 @@ class Newborn (ModelSQL, ModelView):
         result = {}
         for newborn_data in self.browse(ids):
             qr_string = "ID: " + newborn_data.name + '\nMother: ' + \
-            newborn_data.mother.name.lastname + ',' + newborn_data.mother.name.name + '\nMother\'s ID: ' + newborn_data.mother.identification_code + '\nSex: ' + newborn_data.sex + '\nDoB: ' + str (newborn_data.birth_date)
+            newborn_data.mother.name.lastname + ',' + \
+            newborn_data.mother.name.name + '\nMother\'s ID: ' + \
+            newborn_data.mother.identification_code + '\nSex: ' + \
+            newborn_data.sex + '\nDoB: ' + str (newborn_data.birth_date)
 
             qr_image = qrcode.make(qr_string)
  
