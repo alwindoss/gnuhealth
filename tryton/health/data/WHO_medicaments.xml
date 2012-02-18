@@ -16,320 +16,393 @@
         <record model="gnuhealth.medicament" id="medicament_4">
             <field name="name" ref="product_4"/>
             <field name="active_component">acetylcysteine</field>
+            <field name="pregnancy_category">B</field>
         </record>
         <record model="gnuhealth.medicament" id="medicament_5">
             <field name="name" ref="product_5"/>
             <field name="active_component">acetylsalicylic acid</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_6">
             <field name="name" ref="product_6"/>
-            <field name="active_component">aciclovir</field>
+            <field name="active_component">acyclovir</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_7">
             <field name="name" ref="product_7"/>
             <field name="active_component">albendazole</field>
+            <field name="pregnancy_category">C</field>          
+
         </record>
         <record model="gnuhealth.medicament" id="medicament_8">
             <field name="name" ref="product_8"/>
             <field name="active_component">alcuronium</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_9">
             <field name="name" ref="product_9"/>
             <field name="active_component">allopurinol</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_10">
             <field name="name" ref="product_10"/>
             <field name="active_component">aluminium diacetate</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_11">
             <field name="name" ref="product_11"/>
             <field name="active_component">aluminium hydroxide</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_12">
             <field name="name" ref="product_12"/>
             <field name="active_component">amidotrizoate</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_13">
             <field name="name" ref="product_13"/>
             <field name="active_component">amikacin</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_14">
             <field name="name" ref="product_14"/>
             <field name="active_component">amiloride</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_15">
             <field name="name" ref="product_15"/>
             <field name="active_component">amitriptyline</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_16">
             <field name="name" ref="product_16"/>
             <field name="active_component">amlodipine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_17">
             <field name="name" ref="product_17"/>
             <field name="active_component">amodiaquine</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_18">
             <field name="name" ref="product_18"/>
             <field name="active_component">amoxicillin</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_19">
             <field name="name" ref="product_19"/>
             <field name="active_component">amoxicillin + clavulanic acid</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_20">
             <field name="name" ref="product_20"/>
             <field name="active_component">amphotericin B</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_21">
             <field name="name" ref="product_21"/>
             <field name="active_component">ampicillin</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_22">
             <field name="name" ref="product_22"/>
             <field name="active_component">anti‐D immunoglobulin (human)</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_23">
             <field name="name" ref="product_23"/>
             <field name="active_component">antitetanus immunoglobulin (human)</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_24">
             <field name="name" ref="product_24"/>
             <field name="active_component">antivenom immunoglobulin</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_25">
             <field name="name" ref="product_25"/>
             <field name="active_component">artemether</field>
+            <field name="pregnancy_category">X</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_26">
             <field name="name" ref="product_26"/>
             <field name="active_component">artemether + lumefantrine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_27">
             <field name="name" ref="product_27"/>
             <field name="active_component">artesunate</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_28">
             <field name="name" ref="product_28"/>
             <field name="active_component">ascorbic acid</field>
+            <field name="pregnancy_category">A</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_29">
             <field name="name" ref="product_29"/>
             <field name="active_component">asparaginase</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_30">
             <field name="name" ref="product_30"/>
             <field name="active_component">atenolol</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_31">
             <field name="name" ref="product_31"/>
             <field name="active_component">atropine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_32">
             <field name="name" ref="product_32"/>
             <field name="active_component">azathioprine</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_33">
             <field name="name" ref="product_33"/>
             <field name="active_component">azithromycin</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_34">
             <field name="name" ref="product_34"/>
             <field name="active_component">bacitracin</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_35">
             <field name="name" ref="product_35"/>
             <field name="active_component">barium sulfate</field>
+            <field name="pregnancy_category">N</field>          
         </record>
-        <!--
-        <record model="gnuhealth.medicament" id="medicament_36">
-            <field name="name" ref="product_36"/>
-            <field name="active_component">BCG vaccine</field>
-        </record>
-        -->
         <record model="gnuhealth.medicament" id="medicament_37">
             <field name="name" ref="product_37"/>
             <field name="active_component">beclometasone</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_38">
             <field name="name" ref="product_38"/>
             <field name="active_component">benzathine benzylpenicillin</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_39">
             <field name="name" ref="product_39"/>
             <field name="active_component">benznidazole</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_40">
             <field name="name" ref="product_40"/>
             <field name="active_component">benzoic acid</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_41">
             <field name="name" ref="product_41"/>
             <field name="active_component">benzoic acid + salicylic acid</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_42">
             <field name="name" ref="product_42"/>
             <field name="active_component">benzoyl peroxide</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_43">
             <field name="name" ref="product_43"/>
             <field name="active_component">benzyl benzoate</field>
-        </record>
+             <field name="pregnancy_category">N</field>          
+       </record>
         <record model="gnuhealth.medicament" id="medicament_44">
             <field name="name" ref="product_44"/>
             <field name="active_component">benzylpenicillin</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_45">
             <field name="name" ref="product_45"/>
             <field name="active_component">betamethasone</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_46">
             <field name="name" ref="product_46"/>
             <field name="active_component">biperiden</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_47">
             <field name="name" ref="product_47"/>
             <field name="active_component">bleomycin</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_48">
             <field name="name" ref="product_48"/>
             <field name="active_component">bupivacaine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_49">
             <field name="name" ref="product_49"/>
             <field name="active_component">caffeine citrate</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_50">
             <field name="name" ref="product_50"/>
             <field name="active_component">calamine lotion</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_51">
             <field name="name" ref="product_51"/>
             <field name="active_component">calcium folinate</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_52">
             <field name="name" ref="product_52"/>
             <field name="active_component">calcium gluconate</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_53">
             <field name="name" ref="product_53"/>
             <field name="active_component">capreomycin</field>
-        </record>
+             <field name="pregnancy_category">C</field>          
+       </record>
         <record model="gnuhealth.medicament" id="medicament_54">
             <field name="name" ref="product_54"/>
             <field name="active_component">carbamazepine</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_55">
             <field name="name" ref="product_55"/>
             <field name="active_component">carbidopa</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_56">
             <field name="name" ref="product_56"/>
             <field name="active_component">cefazolin</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_57">
             <field name="name" ref="product_57"/>
             <field name="active_component">cefixime</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_58">
             <field name="name" ref="product_58"/>
             <field name="active_component">ceftazidime</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_59">
             <field name="name" ref="product_59"/>
             <field name="active_component">ceftriaxone</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_60">
             <field name="name" ref="product_60"/>
             <field name="active_component">charcoal, activated</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_61">
             <field name="name" ref="product_61"/>
             <field name="active_component">chlorambucil</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_62">
             <field name="name" ref="product_62"/>
             <field name="active_component">chloramphenicol</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_63">
             <field name="name" ref="product_63"/>
             <field name="active_component">chlorhexidine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_64">
             <field name="name" ref="product_64"/>
             <field name="active_component">chlorine base compound</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_65">
             <field name="name" ref="product_65"/>
             <field name="active_component">chloroquine</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_66">
             <field name="name" ref="product_66"/>
             <field name="active_component">chloroxylenol</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_67">
             <field name="name" ref="product_67"/>
             <field name="active_component">chlorphenamine</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_68">
             <field name="name" ref="product_68"/>
             <field name="active_component">chlorpromazine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_69">
             <field name="name" ref="product_69"/>
             <field name="active_component">cholera vaccine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_70">
             <field name="name" ref="product_70"/>
             <field name="active_component">ciclosporin</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_71">
             <field name="name" ref="product_71"/>
             <field name="active_component">cilastatin</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_72">
             <field name="name" ref="product_72"/>
             <field name="active_component">ciprofloxacin</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_73">
             <field name="name" ref="product_73"/>
             <field name="active_component">cisplatin</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_74">
             <field name="name" ref="product_74"/>
             <field name="active_component">clavulanic acid</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_75">
             <field name="name" ref="product_75"/>
             <field name="active_component">clindamycin</field>
+            <field name="pregnancy_category">B</field>                     
         </record>
         <record model="gnuhealth.medicament" id="medicament_76">
             <field name="name" ref="product_76"/>
             <field name="active_component">clofazimine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_77">
             <field name="name" ref="product_77"/>
             <field name="active_component">clomifene</field>
+            <field name="pregnancy_category">X</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_78">
             <field name="name" ref="product_78"/>
             <field name="active_component">clomipramine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_79">
             <field name="name" ref="product_79"/>
             <field name="active_component">clotrimazole</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_80">
             <field name="name" ref="product_80"/>
             <field name="active_component">cloxacillin</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_81">
             <field name="name" ref="product_81"/>
             <field name="active_component">coal tar</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_82">
             <field name="name" ref="product_82"/>
             <field name="active_component">codeine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_83">
             <field name="name" ref="product_83"/>
@@ -342,10 +415,12 @@
         <record model="gnuhealth.medicament" id="medicament_85">
             <field name="name" ref="product_85"/>
             <field name="active_component">cyclophosphamide</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_86">
             <field name="name" ref="product_86"/>
             <field name="active_component">cycloserine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_87">
             <field name="name" ref="product_87"/>
@@ -354,34 +429,42 @@
         <record model="gnuhealth.medicament" id="medicament_88">
             <field name="name" ref="product_88"/>
             <field name="active_component">cytarabine</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_89">
             <field name="name" ref="product_89"/>
             <field name="active_component">dacarbazine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_90">
             <field name="name" ref="product_90"/>
             <field name="active_component">dactinomycin</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_91">
             <field name="name" ref="product_91"/>
             <field name="active_component">dapsone</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_92">
             <field name="name" ref="product_92"/>
             <field name="active_component">daunorubicin</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_93">
             <field name="name" ref="product_93"/>
             <field name="active_component">deferoxamine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_94">
             <field name="name" ref="product_94"/>
             <field name="active_component">dexamethasone</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_95">
             <field name="name" ref="product_95"/>
             <field name="active_component">dextran</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_96">
             <field name="name" ref="product_96"/>
@@ -390,39 +473,48 @@
         <record model="gnuhealth.medicament" id="medicament_97">
             <field name="name" ref="product_97"/>
             <field name="active_component">diazepam</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_98">
             <field name="name" ref="product_98"/>
             <field name="active_component">didanosine (ddI)</field>
+            <field name="pregnancy_category">B</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_99">
             <field name="name" ref="product_99"/>
             <field name="active_component">diethylcarbamazine</field>
+            <field name="pregnancy_category">X</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_100">
             <field name="name" ref="product_100"/>
             <field name="active_component">digoxin</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_101">
             <field name="name" ref="product_101"/>
             <field name="active_component">diloxanide</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_102">
             <field name="name" ref="product_102"/>
             <field name="active_component">dimercaprol</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_103">
             <field name="name" ref="product_103"/>
             <field name="active_component">diphtheria antitoxin</field>
+            <field name="pregnancy_category">N</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_104">
             <field name="name" ref="product_104"/>
             <field name="active_component">diphtheria vaccine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_105">
             <field name="name" ref="product_105"/>
             <field name="active_component">dithranol</field>
-        </record>
+             <field name="pregnancy_category">C</field>          
+       </record>
         <record model="gnuhealth.medicament" id="medicament_106">
             <field name="name" ref="product_106"/>
             <field name="active_component">DL‐methionine</field>
@@ -430,15 +522,18 @@
         <record model="gnuhealth.medicament" id="medicament_107">
             <field name="name" ref="product_107"/>
             <field name="active_component">dopamine</field>
+            <field name="pregnancy_category">C</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_108">
             <field name="name" ref="product_108"/>
             <field name="active_component">doxorubicin</field>
+            <field name="pregnancy_category">D</field>          
         </record>
         <record model="gnuhealth.medicament" id="medicament_109">
             <field name="name" ref="product_109"/>
             <field name="active_component">doxycycline</field>
-        </record>
+            <field name="pregnancy_category">D</field>          
+        </record>   
         <record model="gnuhealth.medicament" id="medicament_110">
             <field name="name" ref="product_110"/>
             <field name="active_component">efavirenz (EFV or EFZ)</field>

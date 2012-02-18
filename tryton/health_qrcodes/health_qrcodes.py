@@ -43,11 +43,19 @@ class Patient (ModelSQL, ModelView):
             if not patient_data.ssn:
                 patient_data.ssn = ""
                 
+            if not patient_data.blood_type:
+                patient_data.blood_type = ""
+
+            if not patient_data.rh:
+                patient_data.rh = ""
+            
             qr_string = "ID: " + patient_data.identification_code + '\nName: ' + \
                 patient_data.lastname + ',' + \
                 patient_data.name.name + '\nSSN: ' + \
                 patient_data.ssn + '\nSex: ' + \
-                patient_data.sex + '\nDoB: ' + str (patient_data.dob)
+                patient_data.sex + '\nDoB: ' + str (patient_data.dob) + '\nDoB: ' + \
+                patient_data.blood_type + ' ' + patient_data.rh
+                
                 
             
             qr_image = qrcode.make(qr_string)
