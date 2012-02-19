@@ -2128,7 +2128,7 @@ Solid oral dosage form: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'selenium sulfide')]"/>
 	<field name="active_component">selenium sulfide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_1"></field>
-	<field name="pregnancy_category"></field>
+	<field name="pregnancy_category">C</field>
 	<field name="notes">Detergent‐based suspension: 2%</field>
 </record>
 <record model="gnuhealth.medicament" id="meds_em271">
