@@ -1156,6 +1156,23 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         'name', 'Prescription line')
     notes = fields.Text('Prescription Notes')
 
+    pregnancy_warning = fields.Boolean ('Pregancy Warning',
+     on_change_with=['patient','prescription_line']) 
+
+
+    def on_change_with_pregnancy_warning(self,vals):
+        result = False
+        patient_obj = Pool().get('gnuhealth.patient')
+
+        if vals.get('patient'):
+            patient = patient_obj.browse(vals['patient'])
+            patient_sex = patient.sex
+        
+       
+        if (patient_sex == 'f'):
+            result = True
+        return result
+        
     def default_prescription_date(self):
         return datetime.now()
 
@@ -1175,6 +1192,11 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             config.prescription_sequence.id)
 
         return super(PatientPrescriptionOrder, self).create(values)
+
+
+
+
+
 
 PatientPrescriptionOrder()
 

@@ -818,7 +818,11 @@
 			<field name="type">tree</field>
 			<field name="arch" type="xml">
 				<![CDATA[
-					<tree string='medicament'>
+					<tree string='medicament'
+                     colors="If(Equal(Eval('pregnancy_category'), 'X'), 'red',
+                     If(Equal(Eval('pregnancy_category'), 'D'), 'brown',
+                     If(Equal(Eval('pregnancy_category'), 'C'), 'orange',
+                     If(Equal(Eval('pregnancy_category'), 'N'),'black','blue'))))">
 						<field name="name"></field>
 						<field name="active_component"></field>
 						<field name="category"></field>
@@ -2569,6 +2573,8 @@
 							<field name="user_id"/>
 							<label name="pharmacy"/>
 							<field name="pharmacy"/>
+							<label name="pregnancy_warning"/>
+							<field name="pregnancy_warning"/>           
 						</group>
 						<newline/>
 						<label name="prescription_line" colspan="4"/>

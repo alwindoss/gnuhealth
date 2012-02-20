@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <tryton>
-<data noupdate="1">
+<data skiptest="1" noupdate="1">
 
 
 <!-- Add list of products -->
@@ -8,6 +8,7 @@
 	<field name="name" search="[('name', '=', 'halothane')]"/>
 	<field name="active_component">halothane</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_1_1_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Inhalation</field>
 </record>
@@ -15,6 +16,7 @@
 	<field name="name" search="[('name', '=', 'isoflurane')]"/>
 	<field name="active_component">isoflurane</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_1_1_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Inhalation</field>
 </record>
@@ -22,6 +24,7 @@
 	<field name="name" search="[('name', '=', 'nitrous oxide')]"/>
 	<field name="active_component">nitrous oxide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_1_1_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Inhalation</field>
 </record>
@@ -29,6 +32,7 @@
 	<field name="name" search="[('name', '=', 'oxygen')]"/>
 	<field name="active_component">oxygen</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_1_1_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Inhalation</field>
 </record>
@@ -36,6 +40,7 @@
 	<field name="name" search="[('name', '=', 'ketamine')]"/>
 	<field name="active_component">ketamine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_1_1_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 50 mg (as hydrochloride)/ml in 10‐ml vial. 
 Injection: 10 mg/ml; 20 mg/ml</field>
@@ -53,6 +58,7 @@ availability and cost</field>
 	<field name="name" search="[('name', '=', 'bupivacaine')]"/>
 	<field name="active_component">bupivacaine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_1_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 0.25%; 0.5% (hydrochloride) in vial.
 Injection for spinal anaesthesia: 0.5% (hydrochloride) in 
@@ -80,6 +86,7 @@ Injection: 1%; 2% (hydrochloride or sulfate) + epinephrine
 	<field name="name" search="[('name', '=', 'ephedrine')]"/>
 	<field name="active_component">ephedrine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_1_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 30 mg (hydrochloride)/ml in 1‐ml ampoule.
 (For use in spinal anaesthesia during delivery, to prevent hypotension).</field>
@@ -88,6 +95,7 @@ Injection: 1%; 2% (hydrochloride or sulfate) + epinephrine
 	<field name="name" search="[('name', '=', 'atropine')]"/>
 	<field name="active_component">atropine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_1_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 1 mg (sulfate) in 1‐ml ampoule. </field>
 </record>
@@ -95,6 +103,7 @@ Injection: 1%; 2% (hydrochloride or sulfate) + epinephrine
 	<field name="name" search="[('name', '=', 'midazolam')]"/>
 	<field name="active_component">midazolam</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_1_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Injection: 1 mg/ml.
 Oral liquid: 2 mg/ml
@@ -104,6 +113,7 @@ Tablet: 7.5 mg; 15 mg.</field>
 	<field name="name" search="[('name', '=', 'morphine')]"/>
 	<field name="active_component">morphine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_1_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 10 mg (sulfate or hydrochloride) in 1‐ml ampoule.</field>
 </record>
@@ -111,6 +121,7 @@ Tablet: 7.5 mg; 15 mg.</field>
 	<field name="name" search="[('name', '=', 'acetylsalicylic acid')]"/>
 	<field name="active_component">acetylsalicylic acid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_2_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Suppository: 50 mg to 150 mg.
 Tablet: 100 mg to 500 mg.</field>
@@ -119,6 +130,7 @@ Tablet: 100 mg to 500 mg.</field>
 	<field name="name" search="[('name', '=', 'ibuprofen')]"/>
 	<field name="active_component">ibuprofen</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_2_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 40 mg/ml (200 mg/5 ml)
 Tablet: 200 mg; 400 mg</field>
@@ -136,6 +148,7 @@ Tablet: 100 mg to 500 mg. </field>
 	<field name="name" search="[('name', '=', 'acetylsalicylic acid')]"/>
 	<field name="active_component">acetylsalicylic acid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_2_1c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Suppository: 50 mg to 150 mg. 
 Tablet: 100 mg to 500 mg. 
@@ -145,6 +158,7 @@ For use for rheumatic fever, juvenile arthritis, Kawasaki disease.</field>
 	<field name="name" search="[('name', '=', 'codeine')]"/>
 	<field name="active_component">codeine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 30 mg (phosphate).</field>
 </record>
@@ -152,6 +166,7 @@ For use for rheumatic fever, juvenile arthritis, Kawasaki disease.</field>
 	<field name="name" search="[('name', '=', 'morphine')]"/>
 	<field name="active_component">morphine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 10 mg (morphine hydrochloride or morphine sulfate) in 1‐ml ampoule. 
 Oral liquid: 10 mg (morphine hydrochloride or morphine sulfate)/5 ml. 
@@ -162,6 +177,7 @@ Tablet (prolonged release): 10 mg; 30 mg; 60 mg (morphine sulfate). </field>
 	<field name="name" search="[('name', '=', 'allopurinol')]"/>
 	<field name="active_component">allopurinol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 100 mg</field>
 </record>
@@ -169,6 +185,7 @@ Tablet (prolonged release): 10 mg; 30 mg; 60 mg (morphine sulfate). </field>
 	<field name="name" search="[('name', '=', 'choloroquine')]"/>
 	<field name="active_component">choloroquine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 100 mg; 150 mg (as phosphate or sulfate)</field>
 </record>
@@ -176,6 +193,7 @@ Tablet (prolonged release): 10 mg; 30 mg; 60 mg (morphine sulfate). </field>
 	<field name="name" search="[('name', '=', 'azathioprine')]"/>
 	<field name="active_component">azathioprine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 50 mg.</field>
 </record>
@@ -183,6 +201,7 @@ Tablet (prolonged release): 10 mg; 30 mg; 60 mg (morphine sulfate). </field>
 	<field name="name" search="[('name', '=', 'hydroxychloroquine')]"/>
 	<field name="active_component">hydroxychloroquine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solid oral dosage form: 200 mg (as sulfate)</field>
 </record>
@@ -190,6 +209,7 @@ Tablet (prolonged release): 10 mg; 30 mg; 60 mg (morphine sulfate). </field>
 	<field name="name" search="[('name', '=', 'methotrexate')]"/>
 	<field name="active_component">methotrexate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 2.5 mg (as sodium salt).</field>
 </record>
@@ -206,6 +226,7 @@ Tablet: 4 mg (hydrogen maleate)</field>
 	<field name="name" search="[('name', '=', 'dexamethasone')]"/>
 	<field name="active_component">dexamethasone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 4 mg dexamethasone phosphate (as disodium salt) in 1‐ml ampoule.</field>
 </record>
@@ -213,6 +234,7 @@ Tablet: 4 mg (hydrogen maleate)</field>
 	<field name="name" search="[('name', '=', 'epinefrine (adrenaline)')]"/>
 	<field name="active_component">epinefrine (adrenaline)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 1 mg (as hydrochloride or hydrogen tartrate) in 1-ml ampoule</field>
 </record>
@@ -220,6 +242,7 @@ Tablet: 4 mg (hydrogen maleate)</field>
 	<field name="name" search="[('name', '=', 'hydrocortisone')]"/>
 	<field name="active_component">hydrocortisone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 100 mg (as sodium succinate) in vial.</field>
 </record>
@@ -227,6 +250,7 @@ Tablet: 4 mg (hydrogen maleate)</field>
 	<field name="name" search="[('name', '=', 'prednisolone')]"/>
 	<field name="active_component">prednisolone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 5 mg/ml 
 Tablet: 5 mg; 25 mg.</field>
@@ -235,6 +259,7 @@ Tablet: 5 mg; 25 mg.</field>
 	<field name="name" search="[('name', '=', 'charcoal, activated')]"/>
 	<field name="active_component">charcoal, activated</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Powder</field>
 </record>
@@ -250,6 +275,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'atropine')]"/>
 	<field name="active_component">atropine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 1 mg (sulfate) in 1‐ml ampoule.</field>
 </record>
@@ -257,6 +283,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'calcium gluconate')]"/>
 	<field name="active_component">calcium gluconate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 100 mg/ml in 10‐ml ampoule.</field>
 </record>
@@ -264,6 +291,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'methylthioninium chloride (methylene blue) ')]"/>
 	<field name="active_component">methylthioninium chloride (methylene blue) </field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 10 mg/ml in 10‐ml ampoule</field>
 </record>
@@ -271,6 +299,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'naloxone')]"/>
 	<field name="active_component">naloxone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 400 micrograms (hydrochloride) in 1‐ml ampoule.</field>
 </record>
@@ -278,6 +307,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'penicillamine')]"/>
 	<field name="active_component">penicillamine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Solid oral dosage form: 250 mg.</field>
 </record>
@@ -285,6 +315,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'potassium ferric hexacyano‐ferrate(II) ‐ 2H20 (Prussian blue)')]"/>
 	<field name="active_component">potassium ferric hexacyano‐ferrate(II) ‐ 2H20 (Prussian blue)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for oral administration.</field>
 </record>
@@ -292,6 +323,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'sodium nitrite')]"/>
 	<field name="active_component">sodium nitrite</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 30 mg/ml in 10‐ml ampoule.</field>
 </record>
@@ -299,6 +331,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'sodium thiosulfate')]"/>
 	<field name="active_component">sodium thiosulfate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 250 mg/ml in 50‐ml ampoule.</field>
 </record>
@@ -306,6 +339,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'deferoxamine')]"/>
 	<field name="active_component">deferoxamine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 500 mg (mesilate) in vial</field>
 </record>
@@ -313,6 +347,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'dimercaprol')]"/>
 	<field name="active_component">dimercaprol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection in oil: 50 mg/ml in 2‐ml ampoule.</field>
 </record>
@@ -327,6 +362,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'succimer')]"/>
 	<field name="active_component">succimer</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_4_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solid oral dosage form: 100 mg.</field>
 </record>
@@ -334,6 +370,7 @@ Oral liquid: 10% ; 20%  </field>
 	<field name="name" search="[('name', '=', 'carbamazepine')]"/>
 	<field name="active_component">carbamazepine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Oral liquid: 100 mg/5 ml.
 Tablet (chewable): 100 mg; 200 mg.
@@ -343,6 +380,7 @@ Tablet (scored): 100 mg; 200 mg</field>
 	<field name="name" search="[('name', '=', 'diazepam')]"/>
 	<field name="active_component">diazepam</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Gel or rectal solution: 5 mg/ml in 0.5 ml; 2‐ml and 4‐ml tubes.</field>
 </record>
@@ -350,6 +388,7 @@ Tablet (scored): 100 mg; 200 mg</field>
 	<field name="name" search="[('name', '=', 'lorazepam')]"/>
 	<field name="active_component">lorazepam</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Parenteral formulation: 2 mg/ml in 1‐ml ampoule; 4 mg/ml in 1‐ml ampoule</field>
 </record>
@@ -367,6 +406,7 @@ convulsant disorders.</field>
 	<field name="name" search="[('name', '=', 'phenobarbital')]"/>
 	<field name="active_component">phenobarbital</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Injection: 200 mg/ml (phenobarbital sodium). 
 Oral liquid: 15 mg/5 ml (phenobarbital).
@@ -376,6 +416,7 @@ Tablet: 15 mg to 100 mg (phenobarbital).</field>
 	<field name="name" search="[('name', '=', 'phenytoin')]"/>
 	<field name="active_component">phenytoin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Capsule: 25 mg; 50 mg; 100 mg (sodium salt). 
 Injection: 50 mg/ml in 5‐ml vial (sodium salt). 
@@ -391,6 +432,7 @@ dispensing and should be avoided. </field>
 	<field name="name" search="[('name', '=', 'valproic acid (sodium valproate)')]"/>
 	<field name="active_component">valproic acid (sodium valproate)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Oral liquid: 200 mg/5 ml.
 Tablet (crushable): 100 mg.
@@ -400,6 +442,7 @@ Tablet (enteric‐coated): 200 mg; 500 mg (sodium valproate).</field>
 	<field name="name" search="[('name', '=', 'ethosuximide')]"/>
 	<field name="active_component">ethosuximide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_5c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 250 mg. 
 Oral liquid: 250 mg/5 ml</field>
@@ -408,6 +451,7 @@ Oral liquid: 250 mg/5 ml</field>
 	<field name="name" search="[('name', '=', 'albendazole')]"/>
 	<field name="active_component">albendazole</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_1_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet (chewable): 400 mg.</field>
 </record>
@@ -415,6 +459,7 @@ Oral liquid: 250 mg/5 ml</field>
 	<field name="name" search="[('name', '=', 'levamisole')]"/>
 	<field name="active_component">levamisole</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_1_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 50 mg; 150 mg (as hydrochloride).</field>
 </record>
@@ -422,6 +467,7 @@ Oral liquid: 250 mg/5 ml</field>
 	<field name="name" search="[('name', '=', 'mebendazole')]"/>
 	<field name="active_component">mebendazole</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_1_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet (chewable): 100 mg; 500 mg.</field>
 </record>
@@ -444,6 +490,7 @@ Niclosamide is listed for use when praziquantel treatment fails</field>
 	<field name="name" search="[('name', '=', 'pyrantel')]"/>
 	<field name="active_component">pyrantel</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_1_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 50 mg (as embonate or pamoate)/ml.
 Tablet (chewable): 250 mg (as embonate or pamoate).</field>
@@ -452,6 +499,7 @@ Tablet (chewable): 250 mg (as embonate or pamoate).</field>
 	<field name="name" search="[('name', '=', 'albendazole')]"/>
 	<field name="active_component">albendazole</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_1_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet (chewable): 400 mg.</field>
 </record>
@@ -459,6 +507,7 @@ Tablet (chewable): 250 mg (as embonate or pamoate).</field>
 	<field name="name" search="[('name', '=', 'diethylcarbamazine')]"/>
 	<field name="active_component">diethylcarbamazine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_1_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 50 mg; 100 mg (dihydrogen citrate).</field>
 </record>
@@ -466,6 +515,7 @@ Tablet (chewable): 250 mg (as embonate or pamoate).</field>
 	<field name="name" search="[('name', '=', 'ivermectin')]"/>
 	<field name="active_component">ivermectin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_1_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet (scored): 3 mg; 6 mg.</field>
 </record>
@@ -480,6 +530,7 @@ Tablet (chewable): 250 mg (as embonate or pamoate).</field>
 	<field name="name" search="[('name', '=', 'triclabendazole')]"/>
 	<field name="active_component">triclabendazole</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_1_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 250 mg.</field>
 </record>
@@ -487,6 +538,7 @@ Tablet (chewable): 250 mg (as embonate or pamoate).</field>
 	<field name="name" search="[('name', '=', 'oxamniquine')]"/>
 	<field name="active_component">oxamniquine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_1_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 250 mg/5 ml</field>
 </record>
@@ -604,6 +656,7 @@ Procaine benzylpenicillin is not recommended as first‐line treatment for neona
 	<field name="name" search="[('name', '=', 'imipenem + cilastatin')]"/>
 	<field name="active_component">imipenem + cilastatin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_1c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 250 mg (as monohydrate) + 250 mg (as sodium 
 salt); 500 mg (as monohydrate) + 500 mg (as sodium salt) in vial. 
@@ -624,6 +677,7 @@ Oral liquid: 200 mg/5 ml.
 	<field name="name" search="[('name', '=', 'clarithromycin')]"/>
 	<field name="active_component">clarithromycin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solid oral dosage form: 500 mg.
 For use in combination regimens for eradication of H. Pylori in 
@@ -633,6 +687,7 @@ adults. </field>
 	<field name="name" search="[('name', '=', 'chloramphenicol')]"/>
 	<field name="active_component">chloramphenicol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 250 mg.
 Oily suspension for injection*: 0.5 g (as sodium succinate)/ml in 2‐ml ampoule
@@ -645,6 +700,7 @@ Powder for injection: 1 g (sodium succinate) in vial.</field>
 	<field name="name" search="[('name', '=', 'ciprofloxacin')]"/>
 	<field name="active_component">ciprofloxacin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 250 mg/5 ml (anhydrous) [c].
 Solution for IV infusion: 2 mg/ml (as hyclate) [c]
@@ -654,6 +710,7 @@ Tablet: 250 mg (as hydrochloride)</field>
 	<field name="name" search="[('name', '=', 'doxycycline')]"/>
 	<field name="active_component">doxycycline</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Oral liquid: 25 mg/5 ml [c]; 50 mg/5 ml (anhydrous) [c].
 Solid oral dosage form: 50 mg [c]; 100 mg (as hyclate)
@@ -670,6 +727,7 @@ Use in children &lt;8 years only for life-threatening infections when no alterna
 	<field name="name" search="[('name', '=', 'gentamicin')]"/>
 	<field name="active_component">gentamicin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Injection: 10 mg; 40 mg (as sulfate)/ml in 2‐ml vial</field>
 </record>
@@ -695,6 +753,7 @@ Tablet: 100 mg</field>
 	<field name="name" search="[('name', '=', 'spectinomycin')]"/>
 	<field name="active_component">spectinomycin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 2 g (as hydrochloride) in vial.</field>
 </record>
@@ -702,6 +761,7 @@ Tablet: 100 mg</field>
 	<field name="name" search="[('name', '=', 'sulfamethoxazole + trimethoprim')]"/>
 	<field name="active_component">sulfamethoxazole + trimethoprim</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"> Injection:  
  80 mg + 16 mg/ml in 5‐ml ampoule;  
@@ -714,6 +774,7 @@ Tablet: 100 mg</field>
 	<field name="name" search="[('name', '=', 'trimethoprim')]"/>
 	<field name="active_component">trimethoprim</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 50 mg/5 ml [c]. 
 Tablet: 100 mg; 200 mg. 
@@ -732,6 +793,7 @@ Oral liquid: 75 mg/5 ml (as palmitate) [c].</field>
 	<field name="name" search="[('name', '=', 'vancomycin')]"/>
 	<field name="active_component">vancomycin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 250 mg (as hydrochloride) in vial</field>
 </record>
@@ -739,6 +801,7 @@ Oral liquid: 75 mg/5 ml (as palmitate) [c].</field>
 	<field name="name" search="[('name', '=', 'clofazimine')]"/>
 	<field name="active_component">clofazimine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 50 mg; 100 mg.</field>
 </record>
@@ -746,6 +809,7 @@ Oral liquid: 75 mg/5 ml (as palmitate) [c].</field>
 	<field name="name" search="[('name', '=', 'dapsone')]"/>
 	<field name="active_component">dapsone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 25 mg; 50 mg; 100 mg.</field>
 </record>
@@ -753,6 +817,7 @@ Oral liquid: 75 mg/5 ml (as palmitate) [c].</field>
 	<field name="name" search="[('name', '=', 'rifampicin')]"/>
 	<field name="active_component">rifampicin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solid oral dosage form: 150 mg; 300 mg.</field>
 </record>
@@ -760,6 +825,7 @@ Oral liquid: 75 mg/5 ml (as palmitate) [c].</field>
 	<field name="name" search="[('name', '=', 'ethambutol')]"/>
 	<field name="active_component">ethambutol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 25 mg/ml [c]. 
 Tablet: 100 mg to 400 mg (hydrochloride).</field>
@@ -768,6 +834,7 @@ Tablet: 100 mg to 400 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'ethambutol + isoniazid')]"/>
 	<field name="active_component">ethambutol + isoniazid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 400 mg + 150 mg.</field>
 </record>
@@ -775,6 +842,7 @@ Tablet: 100 mg to 400 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'ethambutol + isoniazid + pyrazinamide + rifampicin')]"/>
 	<field name="active_component">ethambutol + isoniazid + pyrazinamide + rifampicin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 275 mg + 75 mg + 400 mg + 150 mg</field>
 </record>
@@ -782,6 +850,7 @@ Tablet: 100 mg to 400 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'ethambutol + isoniazid + rifampicin')]"/>
 	<field name="active_component">ethambutol + isoniazid + rifampicin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 275 mg + 75 mg + 150 mg.</field>
 </record>
@@ -789,6 +858,7 @@ Tablet: 100 mg to 400 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'isoniazid')]"/>
 	<field name="active_component">isoniazid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 50 mg/5 ml [c].
 Tablet: 100 mg to 300 mg. 
@@ -798,6 +868,7 @@ Tablet (scored): 50 mg.</field>
 	<field name="name" search="[('name', '=', 'isoniazid + pyrazinamide + rifampicin')]"/>
 	<field name="active_component">isoniazid + pyrazinamide + rifampicin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet:  
 75 mg + 400 mg + 150 mg. 
@@ -807,6 +878,7 @@ Tablet (scored): 50 mg.</field>
 	<field name="name" search="[('name', '=', 'isoniazid + rifampicin')]"/>
 	<field name="active_component">isoniazid + rifampicin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet:  
 75 mg + 150 mg; 150 mg + 300 mg. 
@@ -817,6 +889,7 @@ Tablet (scored): 50 mg.</field>
 	<field name="name" search="[('name', '=', 'pyrazinamide')]"/>
 	<field name="active_component">pyrazinamide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 30 mg/ml [c]. 
 Tablet: 400 mg. 
@@ -835,6 +908,7 @@ Tablet (scored): 150 mg.</field>
 	<field name="name" search="[('name', '=', 'rifampicin')]"/>
 	<field name="active_component">rifampicin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 20 mg/ml [c]. 
 Solid oral dosage form: 150 mg; 300 mg.</field>
@@ -843,6 +917,7 @@ Solid oral dosage form: 150 mg; 300 mg.</field>
 	<field name="name" search="[('name', '=', 'streptomycin')]"/>
 	<field name="active_component">streptomycin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 1 g (as sulfate) in vial</field>
 </record>
@@ -850,6 +925,7 @@ Solid oral dosage form: 150 mg; 300 mg.</field>
 	<field name="name" search="[('name', '=', 'amikacin')]"/>
 	<field name="active_component">amikacin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 100 mg; 500 mg; 1 g (as sulfate) in vial</field>
 </record>
@@ -857,6 +933,7 @@ Solid oral dosage form: 150 mg; 300 mg.</field>
 	<field name="name" search="[('name', '=', 'capreomycin')]"/>
 	<field name="active_component">capreomycin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 1 g (as sulfate) in vial.</field>
 </record>
@@ -864,6 +941,7 @@ Solid oral dosage form: 150 mg; 300 mg.</field>
 	<field name="name" search="[('name', '=', 'cycloserine')]"/>
 	<field name="active_component">cycloserine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solid oral dosage form: 250 mg.</field>
 </record>
@@ -871,6 +949,7 @@ Solid oral dosage form: 150 mg; 300 mg.</field>
 	<field name="name" search="[('name', '=', 'ethionamide')]"/>
 	<field name="active_component">ethionamide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 125 mg; 250 mg.</field>
 </record>
@@ -878,6 +957,7 @@ Solid oral dosage form: 150 mg; 300 mg.</field>
 	<field name="name" search="[('name', '=', 'kanamycin')]"/>
 	<field name="active_component">kanamycin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 1 g (as sulfate) in vial.</field>
 </record>
@@ -885,6 +965,7 @@ Solid oral dosage form: 150 mg; 300 mg.</field>
 	<field name="name" search="[('name', '=', 'ofloxacin')]"/>
 	<field name="active_component">ofloxacin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 200 mg; 400 mg. 
 * Levofloxacin may be an alternative based on availability and 
@@ -894,6 +975,7 @@ programme considerations</field>
 	<field name="name" search="[('name', '=', 'p‐aminosalicylic acid')]"/>
 	<field name="active_component">p‐aminosalicylic acid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_2_4c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Granules: 4 g in sachet.
 Tablet: 500 mg.</field>
@@ -902,6 +984,7 @@ Tablet: 500 mg.</field>
 	<field name="name" search="[('name', '=', 'clotrimazole')]"/>
 	<field name="active_component">clotrimazole</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Vaginal cream: 1%; 10%.
 Vaginal tablet: 100 mg; 500 mg.</field>
@@ -910,6 +993,7 @@ Vaginal tablet: 100 mg; 500 mg.</field>
 	<field name="name" search="[('name', '=', 'fluconazole')]"/>
 	<field name="active_component">fluconazole</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 50 mg.
 Injection: 2 mg/ml in vial.
@@ -919,6 +1003,7 @@ Oral liquid: 50 mg/5 ml</field>
 	<field name="name" search="[('name', '=', 'griseofulvin')]"/>
 	<field name="active_component">griseofulvin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 125 mg/5 ml [c].
 Solid oral dosage form: 125 mg; 250 mg.</field>
@@ -927,6 +1012,7 @@ Solid oral dosage form: 125 mg; 250 mg.</field>
 	<field name="name" search="[('name', '=', 'nystatin')]"/>
 	<field name="active_component">nystatin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Lozenge: 100 000 IU.
 Oral liquid: 50 mg/5 ml [c]; 100 000 IU/ml [c].
@@ -945,6 +1031,7 @@ As sodium deoxycholate or liposomal complex.</field>
 	<field name="name" search="[('name', '=', 'flucytosine')]"/>
 	<field name="active_component">flucytosine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 250 mg.
 Infusion: 2.5 g in 250 ml.</field>
@@ -953,6 +1040,7 @@ Infusion: 2.5 g in 250 ml.</field>
 	<field name="name" search="[('name', '=', 'potassium iodide')]"/>
 	<field name="active_component">potassium iodide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Saturated solution.</field>
 </record>
@@ -969,7 +1057,8 @@ Tablet: 200 mg.</field>
 	<field name="name" search="[('name', '=', 'abacavir (ABC)')]"/>
 	<field name="active_component">abacavir (ABC)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_1"></field>
-    <field name="pregnancy_category">C</field>
+    <field name="pregnancy_warning">1</field>
+	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 100 mg (as sulfate)/5 ml.
 Tablet: 300 mg (as sulfate).</field>
 </record>
@@ -986,6 +1075,7 @@ Tablet (buffered chewable, dispersible): 25 mg; 50 mg; 100 mg;150 mg; 200 mg.</f
 	<field name="name" search="[('name', '=', 'stavudine (d4T)')]"/>
 	<field name="active_component">stavudine (d4T)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 15 mg; 20 mg; 30 mg.
 Powder for oral liquid: 5 mg/5 ml.</field>
@@ -1001,6 +1091,7 @@ Powder for oral liquid: 5 mg/5 ml.</field>
 	<field name="name" search="[('name', '=', 'zidovudine (ZDV or AZT)')]"/>
 	<field name="active_component">zidovudine (ZDV or AZT)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 100 mg; 250 mg.
 Oral liquid: 50 mg/5 ml.
@@ -1011,6 +1102,7 @@ Tablet: 300 mg.</field>
 	<field name="name" search="[('name', '=', 'efavirenz (EFV or EFZ)')]"/>
 	<field name="active_component">efavirenz (EFV or EFZ)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Capsule: 50 mg; 100 mg; 200 mg.
 Oral liquid: 150 mg/5 ml.
@@ -1037,6 +1129,7 @@ Tablet: 200 mg.</field>
 	<field name="name" search="[('name', '=', 'indinavir (IDV)')]"/>
 	<field name="active_component">indinavir (IDV)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solid oral dosage form: 400 mg (as sulfate).</field>
 </record>
@@ -1044,6 +1137,7 @@ Tablet: 200 mg.</field>
 	<field name="name" search="[('name', '=', 'lopinavir + ritonavir (LPV/r)')]"/>
 	<field name="active_component">lopinavir + ritonavir (LPV/r)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 133.3 mg + 33.3 mg.
 Oral liquid: 400 mg + 100 mg/5 ml.
@@ -1053,6 +1147,7 @@ Tablet (heat stable): 100 mg + 25 mg; 200 mg + 50 mg.</field>
 	<field name="name" search="[('name', '=', 'ritonavir')]"/>
 	<field name="active_component">ritonavir</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 400 mg/5 ml.
 Solid oral dosage form: 100 mg.
@@ -1070,6 +1165,7 @@ Tablet (heat stable): 25 mg; 100 mg.</field>
 	<field name="name" search="[('name', '=', 'efavirenz + emtricitabine + tenofovir')]"/>
 	<field name="active_component">efavirenz + emtricitabine + tenofovir</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 600 mg + 200 mg + 300 mg (disoproxil fumarate equivalent to 245 mg tenofovir disoproxil).
 * FTC is an acceptable alternative to 3TC, based on knowledge of the pharmacology, the resistance patterns and clinical trials of antiretrovirals. </field>
@@ -1087,6 +1183,7 @@ Tablet (heat stable): 25 mg; 100 mg.</field>
 	<field name="name" search="[('name', '=', 'lamivudine + nevirapine + stavudine')]"/>
 	<field name="active_component">lamivudine + nevirapine + stavudine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 150 mg + 200 mg + 30 mg.
 Tablet (dispersible):
@@ -1096,6 +1193,7 @@ Tablet (dispersible):
 	<field name="name" search="[('name', '=', 'lamivudine + nevirapine + zidovudine')]"/>
 	<field name="active_component">lamivudine + nevirapine + zidovudine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 30 mg + 50 mg + 60 mg [c]; 150 mg + 200 mg + 300 mg.</field>
 </record>
@@ -1103,6 +1201,7 @@ Tablet (dispersible):
 	<field name="name" search="[('name', '=', 'lamivudine + zidovudine')]"/>
 	<field name="active_component">lamivudine + zidovudine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_2_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 30 mg + 60 mg [c]; 150 mg + 300 mg.</field>
 </record>
@@ -1110,6 +1209,7 @@ Tablet (dispersible):
 	<field name="name" search="[('name', '=', 'oseltamivir')]"/>
 	<field name="active_component">oseltamivir</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 30 mg; 45 mg; 75 mg (as phosphate).
 Oral powder: 12 mg/ml.
@@ -1119,6 +1219,7 @@ Oral powder: 12 mg/ml.
 	<field name="name" search="[('name', '=', 'ribavirin')]"/>
 	<field name="active_component">ribavirin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_4_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Injection for intravenous administration: 800 mg and 1 g in 10‐ml phosphate buffer solution.
 Solid oral dosage form: 200 mg; 400 mg; 600 mg.
@@ -1128,6 +1229,7 @@ Solid oral dosage form: 200 mg; 400 mg; 600 mg.
 	<field name="name" search="[('name', '=', 'diloxanide')]"/>
 	<field name="active_component">diloxanide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 500 mg (furoate).
 &gt; 25 kg</field>
@@ -1153,6 +1255,7 @@ As sodium deoxycholate or liposomal complex.</field>
 	<field name="name" search="[('name', '=', 'miltefosine')]"/>
 	<field name="active_component">miltefosine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Solid oral dosage form: 10 mg; 50 mg.</field>
 </record>
@@ -1160,6 +1263,7 @@ As sodium deoxycholate or liposomal complex.</field>
 	<field name="name" search="[('name', '=', 'paromomycin')]"/>
 	<field name="active_component">paromomycin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution for intramuscular injection: 750 mg of paromomycin base (as the sulfate).</field>
 </record>
@@ -1167,6 +1271,7 @@ As sodium deoxycholate or liposomal complex.</field>
 	<field name="name" search="[('name', '=', 'sodium stibogluconate')]"/>
 	<field name="active_component">sodium stibogluconate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Injection: 100 mg/ml, 1 vial = 30 ml or 30%, equivalent to approximately 8.1% antimony (pentavalent) in 5‐ml ampoule.</field>
 </record>
@@ -1174,6 +1279,7 @@ As sodium deoxycholate or liposomal complex.</field>
 	<field name="name" search="[('name', '=', 'amodiaquine')]"/>
 	<field name="active_component">amodiaquine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 153 mg or 200 mg (as hydrochloride).
 * To be used in combination with artesunate 50 mg.</field>
@@ -1182,6 +1288,7 @@ As sodium deoxycholate or liposomal complex.</field>
 	<field name="name" search="[('name', '=', 'artemether')]"/>
 	<field name="active_component">artemether</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Oily injection: 80 mg/ml in 1‐ml ampoule.
 * For use in the management of severe malaria.</field>
@@ -1190,6 +1297,7 @@ As sodium deoxycholate or liposomal complex.</field>
 	<field name="name" search="[('name', '=', 'artemether + lumefantrine')]"/>
 	<field name="active_component">artemether + lumefantrine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 20 mg + 120 mg.
 Tablet (dispersible): 20 mg + 120 mg [c]
@@ -1200,6 +1308,7 @@ children below 5 kg.</field>
 	<field name="name" search="[('name', '=', 'artesunate')]"/>
 	<field name="active_component">artesunate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Injection: ampoules, containing 60 mg anhydrous artesunic acid with a separate ampoule of 5% sodium bicarbonate solution. 
 For use in the management of severe malaria. Rectal dosage form: 50 mg [c]; 200 mg capsules (for pre‐referral treatment of severe malaria only; patients should be taken to an appropriate health facility for follow‐up care) [c]. 
@@ -1210,6 +1319,7 @@ Tablet: 50 mg.
 	<field name="name" search="[('name', '=', 'artesunate + amodiaquine')]"/>
 	<field name="active_component">artesunate + amodiaquine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 25 mg + 67.5 mg; 50 mg + 135 mg; 100 mg + 270 mg.
 * Other combinations that deliver the target doses required such as 153 mg or 200 mg (as hydrochloride) with 50 mg artesunate can be alternatives.</field>
@@ -1218,6 +1328,7 @@ Tablet: 50 mg.
 	<field name="name" search="[('name', '=', 'chloroquine')]"/>
 	<field name="active_component">chloroquine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Oral liquid: 50 mg (as phosphate or sulfate)/5 ml
 Tablet: 100 mg; 150 mg (as phosphate or sulfate).
@@ -1227,6 +1338,7 @@ Tablet: 100 mg; 150 mg (as phosphate or sulfate).
 	<field name="name" search="[('name', '=', 'doxycycline')]"/>
 	<field name="active_component">doxycycline</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Capsule: 100 mg (as hydrochloride or hyclate).
 Tablet (dispersible): 100 mg (as monohydrate).
@@ -1236,6 +1348,7 @@ Tablet (dispersible): 100 mg (as monohydrate).
 	<field name="name" search="[('name', '=', 'mefloquine')]"/>
 	<field name="active_component">mefloquine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 250 mg (as hydrochloride).
 * To be used in combination with artesunate 50 mg.</field>
@@ -1244,6 +1357,7 @@ Tablet (dispersible): 100 mg (as monohydrate).
 	<field name="name" search="[('name', '=', 'primaquine')]"/>
 	<field name="active_component">primaquine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 7.5 mg; 15 mg (as diphosphate).
 * Only for use to achieve radical cure of P.vivax and P.ovale 
@@ -1253,6 +1367,7 @@ infections, given for 14 days.</field>
 	<field name="name" search="[('name', '=', 'quinine')]"/>
 	<field name="active_component">quinine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 300 mg quinine hydrochloride/ml in 2‐ml ampoule
 Tablet: 300 mg (quinine sulfate) or 300 mg (quinine bisulfate).
@@ -1263,6 +1378,7 @@ used in combination with doxycycline.</field>
 	<field name="name" search="[('name', '=', 'sulfadoxine + pyrimethamine')]"/>
 	<field name="active_component">sulfadoxine + pyrimethamine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 500 mg + 25 mg.
 * Only in combination with artesunate 50 mg.</field>
@@ -1271,6 +1387,7 @@ used in combination with doxycycline.</field>
 	<field name="name" search="[('name', '=', 'chloroquine')]"/>
 	<field name="active_component">chloroquine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Oral liquid: 50 mg (as phosphate or sulfate)/5 ml.
 Tablet: 150 mg (as phosphate or sulfate).
@@ -1280,6 +1397,7 @@ Tablet: 150 mg (as phosphate or sulfate).
 	<field name="name" search="[('name', '=', 'doxycycline')]"/>
 	<field name="active_component">doxycycline</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Solid oral dosage form: 100 mg (as hydrochloride or hyclate).
 &gt;8 years.</field>
@@ -1288,6 +1406,7 @@ Tablet: 150 mg (as phosphate or sulfate).
 	<field name="name" search="[('name', '=', 'mefloquine')]"/>
 	<field name="active_component">mefloquine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 250 mg (as hydrochloride).
 &gt;5 kg or &gt;3 months</field>
@@ -1296,6 +1415,7 @@ Tablet: 150 mg (as phosphate or sulfate).
 	<field name="name" search="[('name', '=', 'proguanil')]"/>
 	<field name="active_component">proguanil</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_3_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 100 mg (as hydrochloride).
 * For use only in combination with chloroquine.</field>
@@ -1304,6 +1424,7 @@ Tablet: 150 mg (as phosphate or sulfate).
 	<field name="name" search="[('name', '=', 'pyrimethamine')]"/>
 	<field name="active_component">pyrimethamine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 25 mg.</field>
 </record>
@@ -1311,6 +1432,7 @@ Tablet: 150 mg (as phosphate or sulfate).
 	<field name="name" search="[('name', '=', 'sulfadiazine')]"/>
 	<field name="active_component">sulfadiazine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 500 mg.</field>
 </record>
@@ -1318,6 +1440,7 @@ Tablet: 150 mg (as phosphate or sulfate).
 	<field name="name" search="[('name', '=', 'sulfamethoxazole + trimethoprim')]"/>
 	<field name="active_component">sulfamethoxazole + trimethoprim</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection:  
 80 mg + 16 mg/ml in 5‐ml ampoule;  
@@ -1329,6 +1452,7 @@ Tablet: 100 mg + 20 mg; 400 mg + 80 mg [c].</field>
 	<field name="name" search="[('name', '=', 'pentamidine')]"/>
 	<field name="active_component">pentamidine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_4c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 200 mg; 300 mg (as isethionate).</field>
 </record>
@@ -1336,6 +1460,7 @@ Tablet: 100 mg + 20 mg; 400 mg + 80 mg [c].</field>
 	<field name="name" search="[('name', '=', 'pentamidine')]"/>
 	<field name="active_component">pentamidine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_5_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Medicines for the treatment of 1st stage African trypanosomiasis
 Powder for injection: 200 mg (as isetionate) in vial.</field>
@@ -1344,6 +1469,7 @@ Powder for injection: 200 mg (as isetionate) in vial.</field>
 	<field name="name" search="[('name', '=', 'suramin sodium')]"/>
 	<field name="active_component">suramin sodium</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_5_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Medicines for the treatment of 1st stage African trypanosomiasis
 * To be used for the treatment of the initial phase of Trypanosoma brucei rhodesiense infection.</field>
@@ -1352,6 +1478,7 @@ Powder for injection: 200 mg (as isetionate) in vial.</field>
 	<field name="name" search="[('name', '=', 'eflornithine')]"/>
 	<field name="active_component">eflornithine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_5_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Medicines for the treatment of 2nd stage African trypanosomiasis
 * To be used for the treatment of Trypanosoma brucei gambiense 
@@ -1361,6 +1488,7 @@ infection.</field>
 	<field name="name" search="[('name', '=', 'melarsoprol')]"/>
 	<field name="active_component">melarsoprol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_5_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Medicines for the treatment of 2nd stage African trypanosomiasis
 Injection: 3.6% solution, 5‐ml ampoule (180 mg of active compound)</field>
@@ -1369,6 +1497,7 @@ Injection: 3.6% solution, 5‐ml ampoule (180 mg of active compound)</field>
 	<field name="name" search="[('name', '=', 'nifurtimox')]"/>
 	<field name="active_component">nifurtimox</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_5_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Medicines for the treatment of 2nd stage African trypanosomiasis
 Tablet : 120mg
@@ -1379,6 +1508,7 @@ treatment of Trypanosoma brucei gambiense infection.</field>
 	<field name="name" search="[('name', '=', 'melarsoprol')]"/>
 	<field name="active_component">melarsoprol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_5_1c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Medicines for the treatment of 2nd stage African trypanosomiasis
 Injection: 3.6% solution in 5‐ml ampoule (180 mg of active compound).</field>
@@ -1387,6 +1517,7 @@ Injection: 3.6% solution in 5‐ml ampoule (180 mg of active compound).</field>
 	<field name="name" search="[('name', '=', 'benznidazole')]"/>
 	<field name="active_component">benznidazole</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_5_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 100 mg.</field>
 </record>
@@ -1394,6 +1525,7 @@ Injection: 3.6% solution in 5‐ml ampoule (180 mg of active compound).</field>
 	<field name="name" search="[('name', '=', 'nifurtimox')]"/>
 	<field name="active_component">nifurtimox</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_6_5_5_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 30 mg; 120 mg; 250 mg</field>
 </record>
@@ -1401,6 +1533,7 @@ Injection: 3.6% solution in 5‐ml ampoule (180 mg of active compound).</field>
 	<field name="name" search="[('name', '=', 'acetylsalicylic acid')]"/>
 	<field name="active_component">acetylsalicylic acid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_7_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 300 mg to 500 mg.</field>
 </record>
@@ -1408,6 +1541,7 @@ Injection: 3.6% solution in 5‐ml ampoule (180 mg of active compound).</field>
 	<field name="name" search="[('name', '=', 'ibuprofen')]"/>
 	<field name="active_component">ibuprofen</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_7_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 200 mg; 400 mg. [c]</field>
 </record>
@@ -1423,6 +1557,7 @@ Tablet: 300 mg to 500 mg.</field>
 	<field name="name" search="[('name', '=', 'propranolol')]"/>
 	<field name="active_component">propranolol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_7_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 20 mg; 40 mg (hydrochloride).</field>
 </record>
@@ -1430,6 +1565,7 @@ Tablet: 300 mg to 500 mg.</field>
 	<field name="name" search="[('name', '=', 'azathioprine')]"/>
 	<field name="active_component">azathioprine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_1c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 100 mg (as sodium salt) in vial.
 Tablet (scored): 50 mg.</field>
@@ -1438,6 +1574,7 @@ Tablet (scored): 50 mg.</field>
 	<field name="name" search="[('name', '=', 'ciclosporin')]"/>
 	<field name="active_component">ciclosporin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_1c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 25 mg.
 Concentrate for injection: 50 mg/ml in 1‐ml ampoule for organ transplantation.</field>
@@ -1446,6 +1583,7 @@ Concentrate for injection: 50 mg/ml in 1‐ml ampoule for organ transplantation.
 	<field name="name" search="[('name', '=', 'allopurinol')]"/>
 	<field name="active_component">allopurinol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solid oral dosage form: 100 mg; 300 mg. [c]</field>
 </record>
@@ -1453,6 +1591,7 @@ Concentrate for injection: 50 mg/ml in 1‐ml ampoule for organ transplantation.
 	<field name="name" search="[('name', '=', 'asparaginase')]"/>
 	<field name="active_component">asparaginase</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 10 000 IU in vial.</field>
 </record>
@@ -1460,6 +1599,7 @@ Concentrate for injection: 50 mg/ml in 1‐ml ampoule for organ transplantation.
 	<field name="name" search="[('name', '=', 'bleomycin')]"/>
 	<field name="active_component">bleomycin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 15 mg (as sulfate) in vial.</field>
 </record>
@@ -1467,6 +1607,7 @@ Concentrate for injection: 50 mg/ml in 1‐ml ampoule for organ transplantation.
 	<field name="name" search="[('name', '=', 'calcium folinate')]"/>
 	<field name="active_component">calcium folinate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 3 mg/ml in 10‐ml ampoule.
 Tablet: 15 mg</field>
@@ -1475,6 +1616,7 @@ Tablet: 15 mg</field>
 	<field name="name" search="[('name', '=', 'carboplatin')]"/>
 	<field name="active_component">carboplatin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Injection: 50 mg/5 ml; 150 mg/15 ml; 450 mg/45 ml; 600 mg/60 ml.</field>
 </record>
@@ -1482,6 +1624,7 @@ Tablet: 15 mg</field>
 	<field name="name" search="[('name', '=', 'chlorambucil')]"/>
 	<field name="active_component">chlorambucil</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 2 mg.</field>
 </record>
@@ -1489,6 +1632,7 @@ Tablet: 15 mg</field>
 	<field name="name" search="[('name', '=', 'cyclophosphamide')]"/>
 	<field name="active_component">cyclophosphamide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 500 mg in vial.
 Tablet: 25 mg.</field>
@@ -1497,6 +1641,7 @@ Tablet: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'cytarabine')]"/>
 	<field name="active_component">cytarabine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 100 mg in vial.</field>
 </record>
@@ -1504,6 +1649,7 @@ Tablet: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'dacarbazine')]"/>
 	<field name="active_component">dacarbazine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 100 mg in vial.</field>
 </record>
@@ -1511,6 +1657,7 @@ Tablet: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'dactinomycin')]"/>
 	<field name="active_component">dactinomycin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 500 micrograms in vial.</field>
 </record>
@@ -1518,6 +1665,7 @@ Tablet: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'daunorubicin')]"/>
 	<field name="active_component">daunorubicin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 50 mg (hydrochloride) in vial.</field>
 </record>
@@ -1525,6 +1673,7 @@ Tablet: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'docetaxel')]"/>
 	<field name="active_component">docetaxel</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Injection: 20 mg/ml; 40 mg/ml.</field>
 </record>
@@ -1532,6 +1681,7 @@ Tablet: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'doxorubicin')]"/>
 	<field name="active_component">doxorubicin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 10 mg; 50 mg (hydrochloride) in vial.</field>
 </record>
@@ -1539,6 +1689,7 @@ Tablet: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'etoposide')]"/>
 	<field name="active_component">etoposide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Capsule: 100 mg.
 Injection: 20 mg/ml in 5‐ml ampoule</field>
@@ -1547,6 +1698,7 @@ Injection: 20 mg/ml in 5‐ml ampoule</field>
 	<field name="name" search="[('name', '=', 'fluorouracil')]"/>
 	<field name="active_component">fluorouracil</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Injection: 50 mg/ml in 5‐ml ampoule.</field>
 </record>
@@ -1554,6 +1706,7 @@ Injection: 20 mg/ml in 5‐ml ampoule</field>
 	<field name="name" search="[('name', '=', 'hydroxycarbamide')]"/>
 	<field name="active_component">hydroxycarbamide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Solid oral dosage form: 200 mg; 250 mg; 300 mg; 400 mg; 500 mg; 1 g.</field>
 </record>
@@ -1561,6 +1714,7 @@ Injection: 20 mg/ml in 5‐ml ampoule</field>
 	<field name="name" search="[('name', '=', 'ifosfamide')]"/>
 	<field name="active_component">ifosfamide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 1 g vial; 2 g vial.</field>
 </record>
@@ -1568,6 +1722,7 @@ Injection: 20 mg/ml in 5‐ml ampoule</field>
 	<field name="name" search="[('name', '=', 'mercaptopurine')]"/>
 	<field name="active_component">mercaptopurine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 50 mg.</field>
 </record>
@@ -1583,6 +1738,7 @@ Solid oral dosage form: 400 mg; 600 mg.</field>
 	<field name="name" search="[('name', '=', 'methotrexate')]"/>
 	<field name="active_component">methotrexate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Powder for injection: 50 mg (as sodium salt) in vial.
 Tablet: 2.5 mg (as sodium salt).</field>
@@ -1591,6 +1747,7 @@ Tablet: 2.5 mg (as sodium salt).</field>
 	<field name="name" search="[('name', '=', 'paclitaxel')]"/>
 	<field name="active_component">paclitaxel</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 6 mg/ml.</field>
 </record>
@@ -1598,6 +1755,7 @@ Tablet: 2.5 mg (as sodium salt).</field>
 	<field name="name" search="[('name', '=', 'procarbazine')]"/>
 	<field name="active_component">procarbazine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Capsule: 50 mg (as hydrochloride).</field>
 </record>
@@ -1605,6 +1763,7 @@ Tablet: 2.5 mg (as sodium salt).</field>
 	<field name="name" search="[('name', '=', 'thioguanine')]"/>
 	<field name="active_component">thioguanine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Solid oral dosage form: 40 mg.[c]</field>
 </record>
@@ -1612,6 +1771,7 @@ Tablet: 2.5 mg (as sodium salt).</field>
 	<field name="name" search="[('name', '=', 'vinblastine')]"/>
 	<field name="active_component">vinblastine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 10 mg (sulfate) in vial</field>
 </record>
@@ -1619,6 +1779,7 @@ Tablet: 2.5 mg (as sodium salt).</field>
 	<field name="name" search="[('name', '=', 'vincristine')]"/>
 	<field name="active_component">vincristine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Powder for injection: 1 mg; 5 mg (sulfate) in vial.</field>
 </record>
@@ -1626,6 +1787,7 @@ Tablet: 2.5 mg (as sodium salt).</field>
 	<field name="name" search="[('name', '=', 'dexamethasone')]"/>
 	<field name="active_component">dexamethasone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 4 mg dexamethasone phosphate (as disodium salt) in 1‐ml ampoule.</field>
 </record>
@@ -1633,6 +1795,7 @@ Tablet: 2.5 mg (as sodium salt).</field>
 	<field name="name" search="[('name', '=', 'hydrocortisone')]"/>
 	<field name="active_component">hydrocortisone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 100 mg (as sodium succinate) in vial.</field>
 </record>
@@ -1640,6 +1803,7 @@ Tablet: 2.5 mg (as sodium salt).</field>
 	<field name="name" search="[('name', '=', 'methylprednisolone')]"/>
 	<field name="active_component">methylprednisolone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 40 mg/ml (as sodium succinate) in 1‐ml single dose vial and 5‐ml multidose vials; 80 mg/ml (as sodium succinate) in 1‐ml single dose vial [c]</field>
 </record>
@@ -1647,6 +1811,7 @@ Tablet: 2.5 mg (as sodium salt).</field>
 	<field name="name" search="[('name', '=', 'prednisolone')]"/>
 	<field name="active_component">prednisolone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 5 mg/ml [c].
 Tablet: 5 mg; 25 mg.</field>
@@ -1655,6 +1820,7 @@ Tablet: 5 mg; 25 mg.</field>
 	<field name="name" search="[('name', '=', 'tamoxifen')]"/>
 	<field name="active_component">tamoxifen</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 10 mg; 20 mg (as citrate).</field>
 </record>
@@ -1662,6 +1828,7 @@ Tablet: 5 mg; 25 mg.</field>
 	<field name="name" search="[('name', '=', 'amitriptyline')]"/>
 	<field name="active_component">amitriptyline</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 10 mg; 25 mg. [c]</field>
 </record>
@@ -1677,6 +1844,7 @@ Tablet: 50 mg. [c]</field>
 	<field name="name" search="[('name', '=', 'dexamethasone')]"/>
 	<field name="active_component">dexamethasone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 4 mg/ml [c]
 Tablet: 2 mg. [c]</field>
@@ -1685,6 +1853,7 @@ Tablet: 2 mg. [c]</field>
 	<field name="name" search="[('name', '=', 'diazepam')]"/>
 	<field name="active_component">diazepam</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Injection: 5 mg/ml. 
 Oral liquid: 2 mg/5 ml. 
@@ -1696,6 +1865,7 @@ Tablet: 5 mg; 10 mg
 	<field name="name" search="[('name', '=', 'docusate sodium')]"/>
 	<field name="active_component">docusate sodium</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 100 mg. 
 Oral liquid: 50 mg/5 ml.</field>
@@ -1704,6 +1874,7 @@ Oral liquid: 50 mg/5 ml.</field>
 	<field name="name" search="[('name', '=', 'fluoxetine')]"/>
 	<field name="active_component">fluoxetine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solid oral dosage form: 20 mg (as hydrochloride).
 &gt;8 years</field>
@@ -1712,6 +1883,7 @@ Oral liquid: 50 mg/5 ml.</field>
 	<field name="name" search="[('name', '=', 'hyoscine hydrobromide')]"/>
 	<field name="active_component">hyoscine hydrobromide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Injection: 400 micrograms/ml; 600 micrograms/ml.
 Transdermal patches: 1 mg/72 hours.
@@ -1721,6 +1893,7 @@ Transdermal patches: 1 mg/72 hours.
 	<field name="name" search="[('name', '=', 'ibuprofen')]"/>
 	<field name="active_component">ibuprofen</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 100 mg/5 ml.
 Tablet: 200 mg; 400 mg; 600 mg.
@@ -1737,6 +1910,7 @@ Tablet: 200 mg; 400 mg; 600 mg.
 	<field name="name" search="[('name', '=', 'midazolam')]"/>
 	<field name="active_component">midazolam</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Injection: 1 mg/ml; 5 mg/ml.</field>
 </record>
@@ -1744,6 +1918,7 @@ Tablet: 200 mg; 400 mg; 600 mg.
 	<field name="name" search="[('name', '=', 'morphine')]"/>
 	<field name="active_component">morphine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Granules (modified release) (to mix with water): 20 mg; 30 mg; 60 mg; 100 mg; 200 mg.
 Injection: 10 mg/ml. 
@@ -1765,6 +1940,7 @@ Solid oral dosage form: Eq 4 mg base; Eq 8 mg base.
 	<field name="name" search="[('name', '=', 'senna')]"/>
 	<field name="active_component">senna</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_8_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 7.5 mg/5 ml.</field>
 </record>
@@ -1772,6 +1948,7 @@ Solid oral dosage form: Eq 4 mg base; Eq 8 mg base.
 	<field name="name" search="[('name', '=', 'biperiden')]"/>
 	<field name="active_component">biperiden</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_9"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 5 mg (lactate) in 1‐ml ampoule.
 Tablet: 2 mg (hydrochloride).</field>
@@ -1780,6 +1957,7 @@ Tablet: 2 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'levodopa + carbidopa')]"/>
 	<field name="active_component">levodopa + carbidopa</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_9"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 100 mg + 10 mg; 250 mg + 25 mg</field>
 </record>
@@ -1787,6 +1965,7 @@ Tablet: 2 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'ferrous salt')]"/>
 	<field name="active_component">ferrous salt</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: equivalent to 25 mg iron (as sulfate)/ml.
 Tablet: equivalent to 60 mg iron.</field>
@@ -1795,6 +1974,7 @@ Tablet: equivalent to 60 mg iron.</field>
 	<field name="name" search="[('name', '=', 'ferrous salt + folic acid')]"/>
 	<field name="active_component">ferrous salt + folic acid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet equivalent to 60 mg iron + 400 micrograms folic acid (Nutritional supplement for use during pregnancy).</field>
 </record>
@@ -1809,6 +1989,7 @@ Tablet: equivalent to 60 mg iron.</field>
 	<field name="name" search="[('name', '=', 'hydroxocobalamin')]"/>
 	<field name="active_component">hydroxocobalamin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 1 mg (as acetate, hydrochloride or as sulfate) in 1‐ml ampoule</field>
 </record>
@@ -1816,6 +1997,7 @@ Tablet: equivalent to 60 mg iron.</field>
 	<field name="name" search="[('name', '=', 'heparin sodium')]"/>
 	<field name="active_component">heparin sodium</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 1000 IU/ml; 5000 IU/ml; 20000 IU/ml in 1‐ml ampoule.</field>
 </record>
@@ -1823,6 +2005,7 @@ Tablet: equivalent to 60 mg iron.</field>
 	<field name="name" search="[('name', '=', 'phytomenadione')]"/>
 	<field name="active_component">phytomenadione</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Injection: 1 mg/ml [c]; 10 mg/ml in 5‐ml ampoule.
 Tablet: 10 mg.</field>
@@ -1831,6 +2014,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'protamine sulfate')]"/>
 	<field name="active_component">protamine sulfate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 10 mg/ml in 5‐ml ampoule.</field>
 </record>
@@ -1845,6 +2029,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'warfarin')]"/>
 	<field name="active_component">warfarin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 1 mg; 2 mg; 5 mg (sodium salt).</field>
 </record>
@@ -1852,6 +2037,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'heparin sodium ')]"/>
 	<field name="active_component">heparin sodium </field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 1000 IU/ml; 5000 IU/ml in 1‐ml ampoule. [c]</field>
 </record>
@@ -1859,6 +2045,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'protamine sulfate')]"/>
 	<field name="active_component">protamine sulfate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 10 mg/ml in 5‐ml ampoule. [c]</field>
 </record>
@@ -1866,6 +2053,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'warfarin')]"/>
 	<field name="active_component">warfarin </field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 0.5 mg; 1 mg; 2 mg; 5 mg (sodium salt). [c]</field>
 </record>
@@ -1873,6 +2061,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'deferoxamine')]"/>
 	<field name="active_component">deferoxamine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 500 mg (mesilate) in vial. 
 * Deferasirox oral form may be an alternative, depending on cost and availability</field>
@@ -1881,6 +2070,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'hydroxycarbamide')]"/>
 	<field name="active_component">hydroxycarbamide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_10_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Solid oral dosage form: 200 mg; 500 mg; 1 g.</field>
 </record>
@@ -1888,6 +2078,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'dextran 70')]"/>
 	<field name="active_component">dextran 70</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_11_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injectable solution: 6%.
 * Polygeline, injectable solution, 3.5% is considered as equivalent</field>
@@ -1896,6 +2087,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'factor VIII concentrate')]"/>
 	<field name="active_component">factor VIII concentrate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_11_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Dried.</field>
 </record>
@@ -1903,6 +2095,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'factor IX complex (coagulation factors, II, VII, IX, X) concentrate')]"/>  
 	<field name="active_component">factor IX complex (coagulation factors, II, VII, IX, X) concentrate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_11_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Dried.</field>
 </record>
@@ -1910,6 +2103,7 @@ Tablet: 10 mg.</field>
 	<field name="name" search="[('name', '=', 'human normal immunoglobulin')]"/>
 	<field name="active_component">human normal immunoglobulin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_11_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Intramuscular administration: 16% protein solution.* 
 Intravenous administration: 5%; 10% protein solution.** 
@@ -1921,6 +2115,7 @@ Subcutaneous administration: 15%; 16% protein solution.*
 	<field name="name" search="[('name', '=', 'bisoprolol')]"/>
 	<field name="active_component">bisoprolol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 1.25 mg; 5 mg.
 * includes metoprolol and carvedilol as alternatives.</field>
@@ -1929,6 +2124,7 @@ Subcutaneous administration: 15%; 16% protein solution.*
 	<field name="name" search="[('name', '=', 'glyceryl trinitrate')]"/>
 	<field name="active_component">glyceryl trinitrate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet (sublingual): 500 micrograms.</field>
 </record>
@@ -1936,6 +2132,7 @@ Subcutaneous administration: 15%; 16% protein solution.*
 	<field name="name" search="[('name', '=', 'isosorbide dinitrate')]"/>
 	<field name="active_component">isosorbide dinitrate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet (sublingual): 5 mg.</field>
 </record>
@@ -1943,6 +2140,7 @@ Subcutaneous administration: 15%; 16% protein solution.*
 	<field name="name" search="[('name', '=', 'verapamil')]"/>
 	<field name="active_component">verapamil</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 40 mg; 80 mg (hydrochloride).</field>
 </record>
@@ -1950,6 +2148,7 @@ Subcutaneous administration: 15%; 16% protein solution.*
 	<field name="name" search="[('name', '=', 'bisoprolol')]"/>
 	<field name="active_component">bisoprolol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 1.25 mg; 5 mg.
 * includes metoprolol and carvedilol as alternatives.</field>
@@ -1958,6 +2157,7 @@ Subcutaneous administration: 15%; 16% protein solution.*
 	<field name="name" search="[('name', '=', 'digoxin')]"/>
 	<field name="active_component">digoxin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 250 micrograms/ml in 2‐ml ampoule.
 Oral liquid: 50 micrograms/ml.
@@ -1967,6 +2167,7 @@ Tablet: 62.5 micrograms; 250 micrograms.</field>
 	<field name="name" search="[('name', '=', 'epinephrine (adrenaline)')]"/>
 	<field name="active_component">epinephrine (adrenaline)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 100 micrograms/ml (as acid tartrate or hydrochloride) in 10‐ml ampoule.</field>
 </record>
@@ -1981,6 +2182,7 @@ Tablet: 62.5 micrograms; 250 micrograms.</field>
 	<field name="name" search="[('name', '=', 'verapamil')]"/>
 	<field name="active_component">verapamil</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 2.5 mg (hydrochloride)/ml in 2‐ml ampoule.
 Tablet: 40 mg; 80 mg (hydrochloride).</field>
@@ -1989,6 +2191,7 @@ Tablet: 40 mg; 80 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'amiodarone')]"/>
 	<field name="active_component">amiodarone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Injection: 50 mg/ml in 3‐ml ampoule (hydrochloride).
 Tablet (HCI): 100 mg; 200 mg; 400 mg (hydrochloride).</field>
@@ -1997,6 +2200,7 @@ Tablet (HCI): 100 mg; 200 mg; 400 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'amlodipine')]"/>
 	<field name="active_component">amlodipine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 5 mg (as maleate, mesylate or as besylate).</field>
 </record>
@@ -2004,6 +2208,7 @@ Tablet (HCI): 100 mg; 200 mg; 400 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'bisoprolol')]"/>
 	<field name="active_component">bisoprolol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 1.25 mg; 5 mg.
 * includes metoprolol and carvedilol as alternatives.</field>
@@ -2012,6 +2217,7 @@ Tablet (HCI): 100 mg; 200 mg; 400 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'enalapril')]"/>
 	<field name="active_component">enalapril</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 2.5 mg; 5 mg (as hydrogen maleate).</field>
 </record>
@@ -2019,6 +2225,7 @@ Tablet (HCI): 100 mg; 200 mg; 400 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'hydralazine')]"/>
 	<field name="active_component">hydralazine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 20 mg (hydrochloride) in ampoule.
 Tablet: 25 mg; 50 mg (hydrochloride).
@@ -2044,6 +2251,7 @@ Solid oral dosage form: 12.5 mg; 25 mg.</field>
 	<field name="name" search="[('name', '=', 'sodium nitroprusside')]"/>
 	<field name="active_component">sodium nitroprusside</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for infusion: 50 mg in ampoule.</field>
 </record>
@@ -2051,6 +2259,7 @@ Solid oral dosage form: 12.5 mg; 25 mg.</field>
 	<field name="name" search="[('name', '=', 'bisoprolol')]"/>
 	<field name="active_component">bisoprolol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 1.25 mg; 5 mg.
 *  includes metoprolol and carvedilol as alternatives.</field>
@@ -2059,6 +2268,7 @@ Solid oral dosage form: 12.5 mg; 25 mg.</field>
 	<field name="name" search="[('name', '=', 'digoxin')]"/>
 	<field name="active_component">digoxin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 250 micrograms/ml in 2‐ml ampoule.
 Oral liquid: 50 micrograms/ml.
@@ -2068,6 +2278,7 @@ Tablet: 62.5 micrograms; 250 micrograms.</field>
 	<field name="name" search="[('name', '=', 'enalapril')]"/>
 	<field name="active_component">enalapril</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 2.5 mg; 5 mg (as hydrogen maleate).</field>
 </record>
@@ -2075,6 +2286,7 @@ Tablet: 62.5 micrograms; 250 micrograms.</field>
 	<field name="name" search="[('name', '=', 'furosemide')]"/>
 	<field name="active_component">furosemide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 10 mg/ml in 2‐ml ampoule.
 Oral liquid: 20 mg/5 ml [c]
@@ -2092,6 +2304,7 @@ Solid oral dosage form: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'dopamine')]"/>
 	<field name="active_component">dopamine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_4c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 40 mg/ml (hydrochloride) in 5‐ml vial.</field>
 </record>
@@ -2099,6 +2312,7 @@ Solid oral dosage form: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'acetylsalicylic acid')]"/>
 	<field name="active_component">acetylsalicylic acid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 100 mg.</field>
 </record>
@@ -2106,6 +2320,7 @@ Solid oral dosage form: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'streptokinase')]"/>
 	<field name="active_component">streptokinase</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_5c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 1.5 million IU in vial.</field>
 </record>
@@ -2113,6 +2328,7 @@ Solid oral dosage form: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'simvastatin')]"/>
 	<field name="active_component">simvastatin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_12_6"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 5 mg; 10 mg; 20 mg; 40 mg.
 * For use in high‐risk patients.</field>
@@ -2121,6 +2337,7 @@ Solid oral dosage form: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'miconazole')]"/>
 	<field name="active_component">miconazole</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Cream or ointment: 2% (nitrate).</field>
 </record>
@@ -2128,6 +2345,7 @@ Solid oral dosage form: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'selenium sulfide')]"/>
 	<field name="active_component">selenium sulfide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Detergent‐based suspension: 2%</field>
 </record>
@@ -2135,6 +2353,7 @@ Solid oral dosage form: 25 mg.</field>
 	<field name="name" search="[('name', '=', 'sodium thiosulfate')]"/>
 	<field name="active_component">sodium thiosulfate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution: 15%</field>
 </record>
@@ -2157,6 +2376,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'potassium permanganate')]"/>
 	<field name="active_component">potassium permanganate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Aqueous solution: 1:10000.</field>
 </record>
@@ -2164,6 +2384,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'silver sulfadiazine')]"/>
 	<field name="active_component">silver sulfadiazine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Cream: 1%.
 &gt;2 months</field>
@@ -2172,6 +2393,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'betamethasone')]"/>
 	<field name="active_component">betamethasone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Cream or ointment: 0.1% (as valerate).
 * Hydrocortisone preferred in neonates</field>
@@ -2180,6 +2402,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'calamine')]"/>
 	<field name="active_component">calamine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Lotion</field>
 </record>
@@ -2187,6 +2410,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'hydrocortisone')]"/>
 	<field name="active_component">hydrocortisone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Cream or ointment: 1% (acetate).</field>
 </record>
@@ -2194,6 +2418,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'benzoyl peroxide')]"/>
 	<field name="active_component">benzoyl peroxide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Cream or lotion: 5%.</field>
 </record>
@@ -2201,6 +2426,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'coal tar')]"/>
 	<field name="active_component">coal tar</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution: 5%.</field>
 </record>
@@ -2208,6 +2434,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'dithranol')]"/>
 	<field name="active_component">dithranol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Ointment: 0.1% to 2%.</field>
 </record>
@@ -2215,6 +2442,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'fluorouracil')]"/>
 	<field name="active_component">fluorouracil</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Ointment: 5%.</field>
 </record>
@@ -2222,6 +2450,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'podophyllum resin')]"/>
 	<field name="active_component">podophyllum resin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Solution: 10% to 25%.</field>
 </record>
@@ -2229,6 +2458,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'salicylic acid')]"/>
 	<field name="active_component">salicylic acid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution: 5%.</field>
 </record>
@@ -2236,6 +2466,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'urea')]"/>
 	<field name="active_component">urea</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Cream or ointment: 5%; 10%.</field>
 </record>
@@ -2243,6 +2474,7 @@ Ointment: 2%.</field>
 	<field name="name" search="[('name', '=', 'benzyl benzoate')]"/>
 	<field name="active_component">benzyl benzoate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_13_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Lotion: 25%.
 &gt;2 years</field>
@@ -2259,6 +2491,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'fluorescein')]"/>
 	<field name="active_component">fluorescein</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_14_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Eye drops: 1% (sodium salt).</field>
 </record>
@@ -2266,6 +2499,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'tropicamide')]"/>
 	<field name="active_component">tropicamide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_14_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Eye drops: 0.5%.</field>
 </record>
@@ -2273,6 +2507,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'amidotrizoate')]"/>
 	<field name="active_component">amidotrizoate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_14_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 140 mg to 420 mg iodine (as sodium or meglumine salt)/ml in 20‐ml ampoule.</field>
 </record>
@@ -2280,6 +2515,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'barium sulfate')]"/>
 	<field name="active_component">barium sulfate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_14_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Aqueous suspension.</field>
 </record>
@@ -2294,6 +2530,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'barium sulfate')]"/>
 	<field name="active_component">barium sulfate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_14_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Aqueous suspension.</field>
 </record>
@@ -2301,6 +2538,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'meglumine iotroxate')]"/>
 	<field name="active_component">meglumine iotroxate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_14_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Solution: 5 g to 8 g iodine in 100 ml to 250 ml</field>
 </record>
@@ -2308,6 +2546,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'chlorhexidine')]"/>
 	<field name="active_component">chlorhexidine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_15_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution: 5% (digluconate); 20% (digluconate) (needs to be diluted prior to use for cord care) [c]</field>
 </record>
@@ -2315,6 +2554,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'ethanol')]"/>
 	<field name="active_component">ethanol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_15_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution: 70% (denatured).</field>
 </record>
@@ -2329,6 +2569,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'chlorine base compound')]"/>
 	<field name="active_component">chlorine base compound</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_15_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Powder: (0.1% available chlorine) for solution.</field>
 </record>
@@ -2336,6 +2577,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'chloroxylenol')]"/>
 	<field name="active_component">chloroxylenol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_15_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Solution: 4.8%.</field>
 </record>
@@ -2343,6 +2585,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'glutaral')]"/>
 	<field name="active_component">glutaral</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_15_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Solution: 2%.</field>
 </record>
@@ -2357,6 +2600,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'furosemide')]"/>
 	<field name="active_component">furosemide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_16"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 20 mg/5 ml [c].</field>
 </record>
@@ -2371,6 +2615,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'mannitol')]"/>
 	<field name="active_component">mannitol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_16"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injectable solution: 10%; 20%.</field>
 </record>
@@ -2378,6 +2623,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'spironolactone')]"/>
 	<field name="active_component">spironolactone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_16"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 25 mg.</field>
 </record>
@@ -2392,6 +2638,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'mannitol')]"/>
 	<field name="active_component">mannitol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_16c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injectable solution: 10%; 20%. [c]</field>
 </record>
@@ -2399,6 +2646,7 @@ Lotion: 1%.</field>
 	<field name="name" search="[('name', '=', 'spironolactone')]"/>
 	<field name="active_component">spironolactone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_16c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 5 mg/5 ml; 10 mg/5 ml; 25 mg/5 ml
 Tablet: 25 mg. [c]</field>
@@ -2407,6 +2655,7 @@ Tablet: 25 mg. [c]</field>
 	<field name="name" search="[('name', '=', 'pancreatic enzymes')]"/>
 	<field name="active_component">pancreatic enzymes</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_17c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Age‐appropriate formulations and doses including lipase, protease and amylase.</field>
 </record>
@@ -2414,6 +2663,7 @@ Tablet: 25 mg. [c]</field>
 	<field name="name" search="[('name', '=', 'omeprazole')]"/>
 	<field name="active_component">omeprazole</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_17_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for oral liquid: 20 mg; 40 mg sachets.
 Solid oral dosage form: 10 mg; 20 mg; 40 mg.</field>
@@ -2431,6 +2681,7 @@ Tablet: 150 mg (as hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'dexamethasone')]"/>
 	<field name="active_component">dexamethasone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_17_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 4 mg/ml in 1‐ml ampoule (as disodium phosphate salt).
 Oral liquid: 0.5 mg/5 ml; 2 mg/5 ml.
@@ -2469,6 +2720,7 @@ Tablet: 500 mg</field>
 	<field name="name" search="[('name', '=', 'hydrocortisone')]"/>
 	<field name="active_component">hydrocortisone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_17_3c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Retention enema.
 Suppository: 25 mg (acetate).</field>
@@ -2477,6 +2729,7 @@ Suppository: 25 mg (acetate).</field>
 	<field name="name" search="[('name', '=', 'senna')]"/>
 	<field name="active_component">senna</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_17_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 7.5 mg (sennosides) (or traditional dosage forms).</field>
 </record>
@@ -2484,6 +2737,7 @@ Suppository: 25 mg (acetate).</field>
 	<field name="name" search="[('name', '=', 'oral rehydration salts')]"/>
 	<field name="active_component">oral rehydration salts</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_17_5_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">glucose:                            75 mEq  
 sodium:                             75 mEq or mmol/L  
@@ -2505,6 +2759,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'zinc sulfate')]"/>
 	<field name="active_component">zinc sulfate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_17_5_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Solid oral dosage form: 20 mg. 
 * In acute diarrhoea zinc sulfate should be used as an adjunct to oral rehydration salts.</field>
@@ -2513,6 +2768,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'fludrocortisone')]"/>
 	<field name="active_component">fludrocortisone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 100 micrograms (acetate).</field>
 </record>
@@ -2520,6 +2776,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'hydrocortisone')]"/>
 	<field name="active_component">hydrocortisone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 5 mg; 10 mg; 20 mg.</field>
 </record>
@@ -2527,6 +2784,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'testosterone')]"/>
 	<field name="active_component">testosterone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_2c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Injection: 200 mg (enanthate) in 1‐ml ampoule.</field>
 </record>
@@ -2534,6 +2792,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'ethinylestradiol +   levonorgestrel')]"/>
 	<field name="active_component">ethinylestradiol +   levonorgestrel</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 30 micrograms + 150 micrograms.</field>
 </record>
@@ -2541,6 +2800,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'ethinylestradiol +   norethisterone')]"/>
 	<field name="active_component">ethinylestradiol +   norethisterone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 35 micrograms + 1 mg.</field>
 </record>
@@ -2548,6 +2808,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'levonorgestrel')]"/>
 	<field name="active_component">levonorgestrel</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_3_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 30 micrograms; 750 micrograms (pack of two); 1.5 mg.</field>
 </record>
@@ -2555,6 +2816,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'estradiol cypionate + medroxyprogesterone acetate')]"/>
 	<field name="active_component">estradiol cypionate + medroxyprogesterone acetate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_3_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Injection: 5 mg + 25 mg.</field>
 </record>
@@ -2562,6 +2824,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'medroxyprogesterone acetate')]"/>
 	<field name="active_component">medroxyprogesterone acetate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_3_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Depot injection: 150 mg/ml in 1‐ml vial.</field>
 </record>
@@ -2569,6 +2832,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'norethisterone enantate')]"/>
 	<field name="active_component">norethisterone enantate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_3_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Oily solution: 200 mg/ml in 1‐ml ampoule.</field>
 </record>
@@ -2576,6 +2840,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'copper‐containing device')]"/>
 	<field name="active_component">copper‐containing device</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_3_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes"></field>
 </record>
@@ -2583,6 +2848,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'condoms')]"/>
 	<field name="active_component">condoms</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_3_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes"></field>
 </record>
@@ -2590,6 +2856,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'diaphragms')]"/>
 	<field name="active_component">diaphragms</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_3_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes"></field>
 </record>
@@ -2597,6 +2864,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'levonorgestrel‐releasing implant')]"/>
 	<field name="active_component">levonorgestrel‐releasing implant</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_3_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Two‐rod levonorgestrel‐releasing implant, each rod containing 75 mg of levonorgestrel (150 mg total).</field>
 </record>
@@ -2604,6 +2872,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'glibenclamide')]"/>
 	<field name="active_component">glibenclamide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 2.5 mg; 5 mg.</field>
 </record>
@@ -2625,6 +2894,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'intermediate‐acting insulin')]"/>
 	<field name="active_component">intermediate‐acting insulin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 40 IU/ml in 10‐ml vial; 100 IU/ml in 10‐ml vial (as compound insulin zinc suspension or isophane insulin).</field>
 </record>
@@ -2646,6 +2916,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'clomifene')]"/>
 	<field name="active_component">clomifene</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_6"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 50 mg (citrate).</field>
 </record>
@@ -2653,6 +2924,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'medroxyprogesterone acetate')]"/>
 	<field name="active_component">medroxyprogesterone acetate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_7"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 5 mg.</field>
 </record>
@@ -2667,6 +2939,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'potassium iodide')]"/>
 	<field name="active_component">potassium iodide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_8"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 60 mg.</field>
 </record>
@@ -2674,6 +2947,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'propylthiouracil')]"/>
 	<field name="active_component">propylthiouracil</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_8"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 50 mg.</field>
 </record>
@@ -2681,6 +2955,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'Lugol solution')]"/>
 	<field name="active_component">Lugol solution</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_8c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Oral liquid: about 130 mg total iodine/ml.</field>
 </record>
@@ -2688,6 +2963,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'potassium iodide')]"/>
 	<field name="active_component">potassium iodide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_8c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 60 mg.</field>
 </record>
@@ -2695,6 +2971,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'propylthiouracil')]"/>
 	<field name="active_component">propylthiouracil</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_18_8c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet: 50 mg.</field>
 </record>
@@ -2702,6 +2979,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'tuberculin, purified protein derivative (PPD)')]"/>
 	<field name="active_component">tuberculin, purified protein derivative (PPD)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection</field>
 </record>
@@ -2709,6 +2987,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'anti‐D immunoglobulin (human)')]"/>
 	<field name="active_component">anti‐D immunoglobulin (human)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 250 micrograms in single‐dose vial.</field>
 </record>
@@ -2716,6 +2995,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'antitetanus immunoglobulin (human)')]"/>
 	<field name="active_component">antitetanus immunoglobulin (human)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 500 IU in vial.</field>
 </record>
@@ -2723,6 +3003,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'antivenom immunoglobulin')]"/>
 	<field name="active_component">antivenom immunoglobulin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection
 * Exact type to be defined locally.</field>
@@ -2731,6 +3012,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'diphtheria antitoxin')]"/>
 	<field name="active_component">diphtheria antitoxin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Injection: 10 000 IU; 20 000 IU in vial.</field>
 </record>
@@ -2738,6 +3020,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'rabies immunoglobulin')]"/>
 	<field name="active_component">rabies immunoglobulin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 150 IU/ml in vial.</field>
 </record>
@@ -2745,6 +3028,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'BCG vaccine')]"/>
 	<field name="active_component">BCG vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2752,6 +3036,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'cholera vaccine')]"/>
 	<field name="active_component">cholera vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2759,6 +3044,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'diphtheria vaccine')]"/>
 	<field name="active_component">diphtheria vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes"></field>
 </record>
@@ -2766,6 +3052,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'hepatitis A vaccine')]"/>
 	<field name="active_component">hepatitis A vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2773,6 +3060,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'hepatitis B vaccine')]"/>
 	<field name="active_component">hepatitis B vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2780,6 +3068,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'Haemophilus influenzae type b vaccine')]"/>
 	<field name="active_component">Haemophilus influenzae type b vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2787,6 +3076,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'influenza vaccine')]"/>
 	<field name="active_component">influenza vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2801,6 +3091,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'measles vaccine')]"/>
 	<field name="active_component">measles vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2808,6 +3099,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'meningococcal meningitis vaccine')]"/>
 	<field name="active_component">meningococcal meningitis vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2815,6 +3107,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'mumps vaccine')]"/>
 	<field name="active_component">mumps vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2822,6 +3115,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'pertussis vaccine')]"/>
 	<field name="active_component">pertussis vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2829,6 +3123,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'pneumococcal vaccine')]"/>
 	<field name="active_component">pneumococcal vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2843,6 +3138,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'rabies vaccine')]"/>
 	<field name="active_component">rabies vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2850,6 +3146,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'rotavirus vaccine')]"/>
 	<field name="active_component">rotavirus vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2857,6 +3154,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'rubella vaccine')]"/>
 	<field name="active_component">rubella vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2864,6 +3162,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'tetanus vaccine')]"/>
 	<field name="active_component">tetanus vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2871,6 +3170,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'typhoid vaccine')]"/>
 	<field name="active_component">typhoid vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2878,6 +3178,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'varicella vaccine')]"/>
 	<field name="active_component">varicella vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2885,6 +3186,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'yellow fever vaccine')]"/>
 	<field name="active_component">yellow fever vaccine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_19_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes"></field>
 </record>
@@ -2892,6 +3194,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'atracurium')]"/>
 	<field name="active_component">atracurium</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_20"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 10 mg/ml (atracurium besylate).</field>
 </record>
@@ -2899,6 +3202,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'neostigmine')]"/>
 	<field name="active_component">neostigmine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_20"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 500 micrograms in 1‐ml ampoule; 2.5 mg (metilsulfate) in 1‐ml ampoule.
 Tablet: 15 mg (bromide).</field>
@@ -2907,6 +3211,7 @@ Tablet: 15 mg (bromide).</field>
 	<field name="name" search="[('name', '=', 'suxamethonium')]"/>
 	<field name="active_component">suxamethonium</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_20"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 50 mg (chloride)/ml in 2‐ml ampoule.
 Powder for injection (chloride), in vial.</field>
@@ -2915,6 +3220,7 @@ Powder for injection (chloride), in vial.</field>
 	<field name="name" search="[('name', '=', 'vecuronium')]"/>
 	<field name="active_component">vecuronium</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_20"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 10 mg (bromide) in vial. [c]</field>
 </record>
@@ -2922,6 +3228,7 @@ Powder for injection (chloride), in vial.</field>
 	<field name="name" search="[('name', '=', 'pyridostigmine')]"/>
 	<field name="active_component">pyridostigmine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_20c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 1 mg in 1‐ml ampoule.
 Tablet: 60 mg (bromide).</field>
@@ -2930,6 +3237,7 @@ Tablet: 60 mg (bromide).</field>
 	<field name="name" search="[('name', '=', 'vecuronium')]"/>
 	<field name="active_component">vecuronium</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_20c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for injection: 10 mg (bromide) in vial.</field>
 </record>
@@ -2944,6 +3252,7 @@ Tablet: 60 mg (bromide).</field>
 	<field name="name" search="[('name', '=', 'gentamicin')]"/>
 	<field name="active_component">gentamicin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_21_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Solution (eye drops): 0.3% (sulfate).</field>
 </record>
@@ -2951,6 +3260,7 @@ Tablet: 60 mg (bromide).</field>
 	<field name="name" search="[('name', '=', 'tetracycline')]"/>
 	<field name="active_component">tetracycline</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_21_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Eye ointment: 1% (hydrochloride).</field>
 </record>
@@ -2958,6 +3268,7 @@ Tablet: 60 mg (bromide).</field>
 	<field name="name" search="[('name', '=', 'prednisolone')]"/>
 	<field name="active_component">prednisolone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_21_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution (eye drops): 0.5% (sodium phosphate).</field>
 </record>
@@ -2965,6 +3276,7 @@ Tablet: 60 mg (bromide).</field>
 	<field name="name" search="[('name', '=', 'tetracaine')]"/>
 	<field name="active_component">tetracaine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_21_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution (eye drops): 0.5% (hydrochloride)
 * Not in preterm neonates</field>
@@ -2973,13 +3285,15 @@ Tablet: 60 mg (bromide).</field>
 	<field name="name" search="[('name', '=', 'acetazolamide')]"/>
 	<field name="active_component">acetazolamide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_21_4"></field>
-    <field name="pregnancy_category">C</field>
+    <field name="pregnancy_warning">1</field>
+	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 250 mg.</field>
 </record>
 <record model="gnuhealth.medicament" id="meds_em386">
 	<field name="name" search="[('name', '=', 'pilocarpine')]"/>
 	<field name="active_component">pilocarpine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_21_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution (eye drops): 2%; 4% (hydrochloride or nitrate).</field>
 </record>
@@ -2987,6 +3301,7 @@ Tablet: 60 mg (bromide).</field>
 	<field name="name" search="[('name', '=', 'timolol')]"/>
 	<field name="active_component">timolol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_21_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution (eye drops): 0.25%; 0.5% (as hydrogen maleate).</field>
 </record>
@@ -2994,6 +3309,7 @@ Tablet: 60 mg (bromide).</field>
 	<field name="name" search="[('name', '=', 'atropine')]"/>
 	<field name="active_component">atropine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_21_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution (eye drops): 0.1%; 0.5%; 1% (sulfate)
 Or homatropine (hydrobromide) or cyclopentolate (hydrochloride). [c]</field>
@@ -3002,6 +3318,7 @@ Or homatropine (hydrobromide) or cyclopentolate (hydrochloride). [c]</field>
 	<field name="name" search="[('name', '=', 'epinephrine (adrenaline)')]"/>
 	<field name="active_component">epinephrine (adrenaline)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_21_5c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution (eye drops): 2% (as hydrochloride).</field>
 </record>
@@ -3009,6 +3326,7 @@ Or homatropine (hydrobromide) or cyclopentolate (hydrochloride). [c]</field>
 	<field name="name" search="[('name', '=', 'ergometrine')]"/>
 	<field name="active_component">ergometrine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_22_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 200 micrograms (hydrogen maleate) in 1‐ml ampoule.</field>
 </record>
@@ -3016,6 +3334,7 @@ Or homatropine (hydrobromide) or cyclopentolate (hydrochloride). [c]</field>
 	<field name="name" search="[('name', '=', 'misoprostol')]"/>
 	<field name="active_component">misoprostol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_22_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet: 200 micrograms.* 
 * For management of incomplete abortion and miscarriage, and for 
@@ -3029,6 +3348,7 @@ are available.</field>
 	<field name="name" search="[('name', '=', 'oxytocin')]"/>
 	<field name="active_component">oxytocin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_22_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Injection: 10 IU in 1‐ml.</field>
 </record>
@@ -3036,6 +3356,7 @@ are available.</field>
 	<field name="name" search="[('name', '=', 'mifepristone – misoprostol')]"/>
 	<field name="active_component">mifepristone – misoprostol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_22_1c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Tablet 200 mg – tablet 200 micrograms.
 Where permitted under national law and where culturally acceptable.
@@ -3045,6 +3366,7 @@ Where permitted under national law and where culturally acceptable.
 	<field name="name" search="[('name', '=', 'nifedipine')]"/>
 	<field name="active_component">nifedipine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_22_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Immediate‐release capsule: 10 mg</field>
 </record>
@@ -3052,6 +3374,7 @@ Where permitted under national law and where culturally acceptable.
 	<field name="name" search="[('name', '=', 'intraperitoneal dialysis solution (of appropriate composition)')]"/>
 	<field name="active_component">intraperitoneal dialysis solution (of appropriate composition)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_23"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Parenteral solution.</field>
 </record>
@@ -3059,6 +3382,7 @@ Where permitted under national law and where culturally acceptable.
 	<field name="name" search="[('name', '=', 'chlorpromazine')]"/>
 	<field name="active_component">chlorpromazine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 25 mg (hydrochloride)/ml in 2‐ml ampoule.
 Oral liquid: 25 mg (hydrochloride)/5 ml.
@@ -3068,6 +3392,7 @@ Tablet: 100 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'fluphenazine')]"/>
 	<field name="active_component">fluphenazine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 25 mg (decanoate or enantate) in 1‐ml ampoule.</field>
 </record>
@@ -3075,6 +3400,7 @@ Tablet: 100 mg (hydrochloride).</field>
 	<field name="name" search="[('name', '=', 'haloperidol')]"/>
 	<field name="active_component">haloperidol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 5 mg in 1‐ml ampoule
 Tablet: 2 mg; 5 mg.</field>
@@ -3083,6 +3409,7 @@ Tablet: 2 mg; 5 mg.</field>
 	<field name="name" search="[('name', '=', 'chlorpromazine')]"/>
 	<field name="active_component">chlorpromazine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_1c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 25 mg (hydrochloride)/ml in 2‐ml ampoule.
 Oral liquid: 25 mg (hydrochloride)/5 ml.
@@ -3092,6 +3419,7 @@ Tablet: 10 mg; 25 mg; 50 mg; 100 mg (hydrochloride)</field>
 	<field name="name" search="[('name', '=', 'haloperidol')]"/>
 	<field name="active_component">haloperidol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_1c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 5 mg in 1‐ml ampoule.
 Oral liquid: 2 mg/ml.
@@ -3101,6 +3429,7 @@ Solid oral dosage form: 0.5 mg; 2 mg; 5 mg</field>
 	<field name="name" search="[('name', '=', 'amitriptyline')]"/>
 	<field name="active_component">amitriptyline</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_2_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 25 mg (hydrochloride).</field>
 </record>
@@ -3108,6 +3437,7 @@ Solid oral dosage form: 0.5 mg; 2 mg; 5 mg</field>
 	<field name="name" search="[('name', '=', 'fluoxetine')]"/>
 	<field name="active_component">fluoxetine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_2_1c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solid oral dosage form: 20 mg (as hydrochloride).
 &gt;8 years</field>
@@ -3116,6 +3446,7 @@ Solid oral dosage form: 0.5 mg; 2 mg; 5 mg</field>
 	<field name="name" search="[('name', '=', 'carbamazepine')]"/>
 	<field name="active_component">carbamazepine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet (scored): 100 mg; 200 mg.</field>
 </record>
@@ -3123,6 +3454,7 @@ Solid oral dosage form: 0.5 mg; 2 mg; 5 mg</field>
 	<field name="name" search="[('name', '=', 'lithium carbonate')]"/>
 	<field name="active_component">lithium carbonate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Solid oral dosage form: 300 mg.</field>
 </record>
@@ -3130,6 +3462,7 @@ Solid oral dosage form: 0.5 mg; 2 mg; 5 mg</field>
 	<field name="name" search="[('name', '=', 'valproic acid (sodium valproate)')]"/>
 	<field name="active_component">valproic acid (sodium valproate)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_2_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet (enteric‐coated): 200 mg; 500 mg (sodium valproate).</field>
 </record>
@@ -3137,6 +3470,7 @@ Solid oral dosage form: 0.5 mg; 2 mg; 5 mg</field>
 	<field name="name" search="[('name', '=', 'diazepam')]"/>
 	<field name="active_component">diazepam</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Tablet (scored): 2 mg; 5 mg.</field>
 </record>
@@ -3144,6 +3478,7 @@ Solid oral dosage form: 0.5 mg; 2 mg; 5 mg</field>
 	<field name="name" search="[('name', '=', 'clomipramine')]"/>
 	<field name="active_component">clomipramine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_4"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 10 mg; 25 mg (hydrochloride).</field>
 </record>
@@ -3151,6 +3486,7 @@ Solid oral dosage form: 0.5 mg; 2 mg; 5 mg</field>
 	<field name="name" search="[('name', '=', 'nicotine replacement therapy (NRT)')]"/>
 	<field name="active_component">nicotine replacement therapy (NRT)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_5"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Chewing gum: 2 mg; 4 mg (as polacrilax).
 Transdermal patch: 5 mg to 30 mg/16 hrs; 7 mg to 21 mg/24 hrs.</field>
@@ -3159,6 +3495,7 @@ Transdermal patch: 5 mg to 30 mg/16 hrs; 7 mg to 21 mg/24 hrs.</field>
 	<field name="name" search="[('name', '=', 'methadone')]"/>
 	<field name="active_component">methadone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_24_5c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">D</field>
 	<field name="notes">Concentrate for oral liquid: 5 mg/ml; 10 mg/ml (hydrochloride).
 Oral liquid: 5 mg/5 ml; 10 mg/5 ml (hydrochloride).
@@ -3168,6 +3505,7 @@ Oral liquid: 5 mg/5 ml; 10 mg/5 ml (hydrochloride).
 	<field name="name" search="[('name', '=', 'beclometasone')]"/>
 	<field name="active_component">beclometasone</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_25_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Inhalation (aerosol): 50 micrograms (dipropionate) per dose;
 100 micrograms (dipropionate) per dose (as CFC free forms).</field>
@@ -3176,6 +3514,7 @@ Oral liquid: 5 mg/5 ml; 10 mg/5 ml (hydrochloride).
 	<field name="name" search="[('name', '=', 'budesonide')]"/>
 	<field name="active_component">budesonide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_25_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Inhalation (aerosol): 100 micrograms per dose; 200 micrograms per dose.</field>
 </record>
@@ -3183,6 +3522,7 @@ Oral liquid: 5 mg/5 ml; 10 mg/5 ml (hydrochloride).
 	<field name="name" search="[('name', '=', 'epinephrine (adrenaline)')]"/>
 	<field name="active_component">epinephrine (adrenaline)</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_25_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 1 mg (as hydrochloride or hydrogen tartrate) in 1‐ml ampoule.</field>
 </record>
@@ -3197,6 +3537,7 @@ Oral liquid: 5 mg/5 ml; 10 mg/5 ml (hydrochloride).
 	<field name="name" search="[('name', '=', 'salbutamol')]"/>
 	<field name="active_component">salbutamol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_25_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Inhalation (aerosol): 100 micrograms (as sulfate) per dose.
 Injection: 50 micrograms (as sulfate)/ml in 5‐ml ampoule.
@@ -3207,6 +3548,7 @@ Respirator solution for use in nebulizers: 5 mg (as sulfate)/ml.</field>
 	<field name="name" search="[('name', '=', 'oral rehydration salts')]"/>
 	<field name="active_component">oral rehydration salts</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_26_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">glucose:                            75 mEq  
 sodium:                             75 mEq or mmol/L  
@@ -3228,6 +3570,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'potassium chloride')]"/>
 	<field name="active_component">potassium chloride</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_26_1"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Powder for solution.</field>
 </record>
@@ -3235,6 +3578,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'glucose')]"/>
 	<field name="active_component">glucose</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_26_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injectable solution: 5% (isotonic); 10% (hypertonic);50% (hypertonic).</field>
 </record>
@@ -3242,6 +3586,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'glucose with sodium chloride')]"/>
 	<field name="active_component">glucose with sodium chloride</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_26_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injectable solution: 5% glucose, 0.9% sodium chloride (equivalent to 150 mmol/L Na+ and 150 mmol/L Cl‐); 5% glucose, 0.45% sodium chloride (equivalent to 75 mmol/L Na+ and 75 mmol/L Cl‐) [c].</field>
 </record>
@@ -3249,6 +3594,7 @@ Powder for dilution in 200 ml; 500 ml; 1 L. </field>
 	<field name="name" search="[('name', '=', 'potassium chloride')]"/>
 	<field name="active_component">potassium chloride</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_26_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution: 11.2% in 20‐ml ampoule (equivalent to K+ 1.5 mmol/ml, Cl‐ 1.5 mmol/ml). 
 Solution for dilution: 7.5% (equivalent to K 1 mmol/ml and Cl 1 mmol/ml) [c]; 15% (equivalent to K 2 mmol/ml and Cl 2 mmol/ml) [c].</field>
@@ -3257,6 +3603,7 @@ Solution for dilution: 7.5% (equivalent to K 1 mmol/ml and Cl 1 mmol/ml) [c]; 15
 	<field name="name" search="[('name', '=', 'sodium chloride')]"/>
 	<field name="active_component">sodium chloride</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_26_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injectable solution: 0.9% isotonic (equivalent to Na+ 154 mmol/L, Cl‐ 154 mmol/L).</field>
 </record>
@@ -3264,6 +3611,7 @@ Solution for dilution: 7.5% (equivalent to K 1 mmol/ml and Cl 1 mmol/ml) [c]; 15
 	<field name="name" search="[('name', '=', 'sodium hydrogen carbonate')]"/>
 	<field name="active_component">sodium hydrogen carbonate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_26_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injectable solution: 1.4% isotonic (equivalent to Na+ 167 mmol/L,HCO3‐ 167 mmol/L).
 Solution: 8.4% in 10‐ml ampoule (equivalent to Na+ 1000 mmol/L, HCO3‐1000 mmol/L).</field>
@@ -3272,6 +3620,7 @@ Solution: 8.4% in 10‐ml ampoule (equivalent to Na+ 1000 mmol/L, HCO3‐1000 mm
 	<field name="name" search="[('name', '=', 'sodium lactate, compound solution')]"/>
 	<field name="active_component">sodium lactate, compound solution</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_26_2"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injectable solution.</field>
 </record>
@@ -3279,6 +3628,7 @@ Solution: 8.4% in 10‐ml ampoule (equivalent to Na+ 1000 mmol/L, HCO3‐1000 mm
 	<field name="name" search="[('name', '=', 'water for injection')]"/>
 	<field name="active_component">water for injection</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_26_3"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">2‐ml; 5‐ml; 10‐ml ampoules.</field>
 </record>
@@ -3286,6 +3636,7 @@ Solution: 8.4% in 10‐ml ampoule (equivalent to Na+ 1000 mmol/L, HCO3‐1000 mm
 	<field name="name" search="[('name', '=', 'ascorbic acid')]"/>
 	<field name="active_component">ascorbic acid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 50 mg.</field>
 </record>
@@ -3293,6 +3644,7 @@ Solution: 8.4% in 10‐ml ampoule (equivalent to Na+ 1000 mmol/L, HCO3‐1000 mm
 	<field name="name" search="[('name', '=', 'cholecalciferol')]"/>
 	<field name="active_component">cholecalciferol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 400 IU/ml.
 Solid oral dosage form: 400 IU; 1000 IU.[c]
@@ -3302,6 +3654,7 @@ Solid oral dosage form: 400 IU; 1000 IU.[c]
 	<field name="name" search="[('name', '=', 'ergocalciferol')]"/>
 	<field name="active_component">ergocalciferol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Oral liquid: 250 micrograms/ml (10 000 IU/ml).
 Solid oral dosage form: 1.25 mg (50 000 IU).</field>
@@ -3310,6 +3663,7 @@ Solid oral dosage form: 1.25 mg (50 000 IU).</field>
 	<field name="name" search="[('name', '=', 'iodine')]"/>
 	<field name="active_component">iodine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Iodized oil: 1 ml (480 mg iodine); 0.5 ml (240 mg iodine) in ampoule (oral or injectable); 0.57 ml (308 mg iodine) in dispenser bottle.</field>
 </record>
@@ -3317,6 +3671,7 @@ Solid oral dosage form: 1.25 mg (50 000 IU).</field>
 	<field name="name" search="[('name', '=', 'nicotinamide')]"/>
 	<field name="active_component">nicotinamide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Tablet: 50 mg.</field>
 </record>
@@ -3324,6 +3679,7 @@ Solid oral dosage form: 1.25 mg (50 000 IU).</field>
 	<field name="name" search="[('name', '=', 'pyridoxine')]"/>
 	<field name="active_component">pyridoxine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 25 mg (hydrochloride).</field>
 </record>
@@ -3331,6 +3687,7 @@ Solid oral dosage form: 1.25 mg (50 000 IU).</field>
 	<field name="name" search="[('name', '=', 'retinol')]"/>
 	<field name="active_component">retinol</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Capsule: 50 000 IU; 100 000 IU; 200 000 IU (as palmitate). 
 Oral oily solution: 100 000 IU (as palmitate)/ml in multidose dispenser.
@@ -3341,6 +3698,7 @@ Water‐miscible injection: 100 000 IU (as palmitate) in 2‐ml ampoule.</field>
 	<field name="name" search="[('name', '=', 'riboflavin')]"/>
 	<field name="active_component">riboflavin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 5 mg.</field>
 </record>
@@ -3348,6 +3706,7 @@ Water‐miscible injection: 100 000 IU (as palmitate) in 2‐ml ampoule.</field>
 	<field name="name" search="[('name', '=', 'sodium fluoride')]"/>
 	<field name="active_component">sodium fluoride</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">In any appropriate topical formulation.</field>
 </record>
@@ -3355,6 +3714,7 @@ Water‐miscible injection: 100 000 IU (as palmitate) in 2‐ml ampoule.</field>
 	<field name="name" search="[('name', '=', 'thiamine')]"/>
 	<field name="active_component">thiamine</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Tablet: 50 mg (hydrochloride).</field>
 </record>
@@ -3362,6 +3722,7 @@ Water‐miscible injection: 100 000 IU (as palmitate) in 2‐ml ampoule.</field>
 	<field name="name" search="[('name', '=', 'calcium gluconate')]"/>
 	<field name="active_component">calcium gluconate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_27c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 100 mg/ml in 10‐ml ampoule.</field>
 </record>
@@ -3369,6 +3730,7 @@ Water‐miscible injection: 100 000 IU (as palmitate) in 2‐ml ampoule.</field>
 	<field name="name" search="[('name', '=', 'acetic acid')]"/>
 	<field name="active_component">acetic acid</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_28"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Topical: 2%, in alcohol.</field>
 </record>
@@ -3376,6 +3738,7 @@ Water‐miscible injection: 100 000 IU (as palmitate) in 2‐ml ampoule.</field>
 	<field name="name" search="[('name', '=', 'budesonide')]"/>
 	<field name="active_component">budesonide</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_28"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Nasal spray: 100 micrograms per dose.</field>
 </record>
@@ -3383,6 +3746,7 @@ Water‐miscible injection: 100 000 IU (as palmitate) in 2‐ml ampoule.</field>
 	<field name="name" search="[('name', '=', 'ciprofloxacin')]"/>
 	<field name="active_component">ciprofloxacin</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_28"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Topical: 0.3% drops (as hydrochloride).</field>
 </record>
@@ -3390,6 +3754,7 @@ Water‐miscible injection: 100 000 IU (as palmitate) in 2‐ml ampoule.</field>
 	<field name="name" search="[('name', '=', 'xylometazoline')]"/>
 	<field name="active_component">xylometazoline</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_28"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Nasal spray: 0.05%
 * Not in children less than 3 months</field>
@@ -3398,6 +3763,7 @@ Water‐miscible injection: 100 000 IU (as palmitate) in 2‐ml ampoule.</field>
 	<field name="name" search="[('name', '=', 'caffeine citrate')]"/>
 	<field name="active_component">caffeine citrate</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_29"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Injection: 20 mg/ml (equivalent to 10 mg caffeine base/ml).
 Oral liquid: 20 mg/ml (equivalent to 10 mg caffeine base/ml).</field>
@@ -3406,6 +3772,7 @@ Oral liquid: 20 mg/ml (equivalent to 10 mg caffeine base/ml).</field>
 	<field name="name" search="[('name', '=', 'ibuprofen')]"/>
 	<field name="active_component">ibuprofen</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_29c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">C</field>
 	<field name="notes">Solution for injection: 5 mg/ml.</field>
 </record>
@@ -3413,6 +3780,7 @@ Oral liquid: 20 mg/ml (equivalent to 10 mg caffeine base/ml).</field>
 	<field name="name" search="[('name', '=', 'prostaglandin E')]"/>
 	<field name="active_component">prostaglandin E</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_29c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">X</field>
 	<field name="notes">Solution for injection:
 Prostaglandin E1: 0.5 mg/ml in alcohol.
@@ -3422,6 +3790,7 @@ Prostaglandin E2: 1 mg/ml.</field>
 	<field name="name" search="[('name', '=', 'surfactant')]"/>
 	<field name="active_component">surfactant</field>
 	<field name="category" model="gnuhealth.medicament.category" ref="em_29c"></field>
+	<field name="pregnancy_warning">1</field>
 	<field name="pregnancy_category">N</field>
 	<field name="notes">Suspension for intratracheal instillation: 25 mg/ml or 80 mg/ml.</field>
 </record>
