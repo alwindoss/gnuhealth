@@ -1144,13 +1144,22 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
     _name = "gnuhealth.prescription.order"
     _description = __doc__
 
-    patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True,
-     select="1")
+    def check_prescription_warning(self, ids):
+
+        prescription = self.browse(ids[0])
+
+        if prescription.prescription_warning_ack:
+                return True
+                
+        return False
+
+
+    patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
+
     prescription_id = fields.Char('Prescription ID',
         readonly=True, help='Type in the ID of this prescription')
     prescription_date = fields.DateTime('Prescription Date')
-    user_id = fields.Many2One('res.user', 'Prescribing Doctor', readonly=True,
-     select="1")
+    user_id = fields.Many2One('res.user', 'Prescribing Doctor', readonly=True)
     pharmacy = fields.Many2One('party.party', 'Pharmacy')
     prescription_line = fields.One2Many('gnuhealth.prescription.line',
         'name', 'Prescription line')
@@ -1159,18 +1168,50 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
     pregnancy_warning = fields.Boolean ('Pregancy Warning',
      on_change_with=['patient','prescription_line']) 
 
+    prescription_warning_ack = fields.Boolean ('Warning Acknowledged',
+     on_change_with=['pregnancy_warning']) 
+
+
+    def __init__(self):
+        super(PatientPrescriptionOrder, self).__init__()
+
+        self._constraints = [
+            ('check_prescription_warning', 'drug_pregnancy_warning')]
+
+        self._error_messages.update({
+            'drug_pregnancy_warning': 'ASK THE PATIENT' \
+            ' IS SHE IS PREGNANT OR IS THINKING ABOUT GETTING PREGNANT.' \
+            'THEN CHECK THE WARNING BOX',
+        })
+
+    def default_prescription_warning_ack(self):
+        return True
+
+# Method that makes the doctor to acknoledge if there is any
+# warning in the prescription
+
+    def on_change_with_prescription_warning_ack(self,vals):
+        result = True
+      
+        pregnancy_warning = vals.get ('pregnancy_warning')
+        if pregnancy_warning:
+            result = False
+            
+        return result
 
     def on_change_with_pregnancy_warning(self,vals):
         result = False
+            
         patient_obj = Pool().get('gnuhealth.patient')
 
         if vals.get('patient'):
             patient = patient_obj.browse(vals['patient'])
             patient_sex = patient.sex
-        
+           
        
         if (patient_sex == 'f'):
             result = True
+            
         return result
         
     def default_prescription_date(self):
@@ -1192,8 +1233,6 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             config.prescription_sequence.id)
 
         return super(PatientPrescriptionOrder, self).create(values)
-
-
 
 
 

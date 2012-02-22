@@ -2573,8 +2573,12 @@
 							<field name="user_id"/>
 							<label name="pharmacy"/>
 							<field name="pharmacy"/>
-							<label name="pregnancy_warning"/>
-							<field name="pregnancy_warning"/>           
+                            <group colspan="2" id="prescription_warning">
+                                <label name="pregnancy_warning"/>
+                                <field name="pregnancy_warning"/>           
+                                <label name="prescription_warning_ack"/>
+                                <field name="prescription_warning_ack"/>           
+                            </group>
 						</group>
 						<newline/>
 						<label name="prescription_line" colspan="4"/>
