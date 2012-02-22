@@ -1154,7 +1154,8 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         return False
 
 
-    patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
+    patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True,
+        on_change=['patient'])
 
     prescription_id = fields.Char('Prescription ID',
         readonly=True, help='Type in the ID of this prescription')
@@ -1165,11 +1166,9 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         'name', 'Prescription line')
     notes = fields.Text('Prescription Notes')
 
-    pregnancy_warning = fields.Boolean ('Pregancy Warning',
-     on_change_with=['patient','prescription_line']) 
-
-    prescription_warning_ack = fields.Boolean ('Warning Acknowledged',
-     on_change_with=['pregnancy_warning']) 
+    pregnancy_warning = fields.Boolean ('Pregancy Warning', readonly=True) 
+        
+    prescription_warning_ack = fields.Boolean ('Warning Acknowledged') 
 
 
     def __init__(self):
@@ -1184,24 +1183,15 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             'THEN CHECK THE WARNING BOX',
         })
 
-    def default_prescription_warning_ack(self):
-        return True
-
-# Method that makes the doctor to acknoledge if there is any
+ 
+# Method that makes the doctor to acknowledge if there is any
 # warning in the prescription
 
-    def on_change_with_prescription_warning_ack(self,vals):
-        result = True
-      
-        pregnancy_warning = vals.get ('pregnancy_warning')
-        if pregnancy_warning:
-            result = False
-            
-        return result
-
-    def on_change_with_pregnancy_warning(self,vals):
-        result = False
-            
+    def on_change_patient(self,vals):
+        preg_warning = False
+        presc_warning_ack = True
+        patient_sex=''
+        
         patient_obj = Pool().get('gnuhealth.patient')
 
         if vals.get('patient'):
@@ -1210,9 +1200,12 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
            
        
         if (patient_sex == 'f'):
-            result = True
-            
-        return result
+            preg_warning = True
+            presc_warning_ack = False
+      
+        return { 'prescription_warning_ack': presc_warning_ack,
+            'pregnancy_warning': preg_warning }
+
         
     def default_prescription_date(self):
         return datetime.now()
