@@ -647,9 +647,9 @@ class PatientData(ModelSQL, ModelView):
 # When the patient dies, it will show the age at time of death.
 
     def patient_age(self, ids, name):
-
+    
         def compute_age_from_dates(patient_dob, patient_deceased,
-            patient_dod):
+            patient_dod, patient_sex):
             now = datetime.now()
             if (patient_dob):
                 dob = datetime.strptime(str(patient_dob), '%Y-%m-%d')
@@ -667,13 +667,24 @@ class PatientData(ModelSQL, ModelView):
             else:
                 years_months_days = "No DoB !"
 
-            return years_months_days
+# Return the age in format y m d when the caller is the field name
+            if name == 'age':
+                return years_months_days
+
+# Return if the patient is in the period of childbearing age (10 is the caller is
+# childbearing_potential
+
+            if (name == 'childbearing_age'):
+                if ( delta.years >= 11 and delta.years <= 55 and patient_sex =='f'):
+                    return True
+                else:
+                    return False
 
         result = {}
 
         for patient_data in self.browse(ids):
             result[patient_data.id] = compute_age_from_dates(patient_data.dob,
-            patient_data.deceased, patient_data.dod)
+            patient_data.deceased, patient_data.dod, patient_data.sex)
         return result
 
     name = fields.Many2One('party.party', 'Patient', required="1",
@@ -754,6 +765,8 @@ class PatientData(ModelSQL, ModelView):
     cod = fields.Many2One('gnuhealth.pathology', 'Cause of Death',
      states={'invisible': Not(Bool(Eval('deceased'))),
       'required': Bool(Eval('deceased'))})
+
+    childbearing_age = fields.Function(fields.Boolean('Potential for Childbearing'), 'patient_age')
 
     def get_patient_ssn(self, ids, name):
         res = {}
@@ -1144,34 +1157,72 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
     _name = "gnuhealth.prescription.order"
     _description = __doc__
 
+    def check_prescription_warning(self, ids):
+
+        prescription = self.browse(ids[0])
+
+        if prescription.prescription_warning_ack:
+                return True
+                
+        return False
+
+
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True,
-     select="1")
+        on_change=['patient'])
+
     prescription_id = fields.Char('Prescription ID',
         readonly=True, help='Type in the ID of this prescription')
     prescription_date = fields.DateTime('Prescription Date')
-    user_id = fields.Many2One('res.user', 'Prescribing Doctor', readonly=True,
-     select="1")
+    user_id = fields.Many2One('res.user', 'Prescribing Doctor', readonly=True)
     pharmacy = fields.Many2One('party.party', 'Pharmacy')
     prescription_line = fields.One2Many('gnuhealth.prescription.line',
         'name', 'Prescription line')
     notes = fields.Text('Prescription Notes')
 
-    pregnancy_warning = fields.Boolean ('Pregancy Warning',
-     on_change_with=['patient','prescription_line']) 
+    pregnancy_warning = fields.Boolean ('Pregancy Warning', readonly=True) 
+        
+    prescription_warning_ack = fields.Boolean ('Prescription verified') 
 
 
-    def on_change_with_pregnancy_warning(self,vals):
-        result = False
+    def __init__(self):
+        super(PatientPrescriptionOrder, self).__init__()
+
+        self._constraints = [
+            ('check_prescription_warning', 'drug_pregnancy_warning')]
+
+        self._error_messages.update({
+            'drug_pregnancy_warning': '== DRUG AND PREGNANCY VERIFICATION ==\n\n' \
+            '- IS THE PATIENT PREGNANT ? \n' \
+            '- IS PLANNING to BECOME PREGNANT ?\n' \
+            '- HOW MANY WEEKS OF PREGNANCY \n\n' \
+            'Verify and check for safety the prescribed drugs\n',
+        })
+
+ 
+# Method that makes the doctor to acknowledge if there is any
+# warning in the prescription
+
+    def on_change_patient(self,vals):
+        preg_warning = False
+        presc_warning_ack = True
+        patient_sex=''
+        
         patient_obj = Pool().get('gnuhealth.patient')
 
         if vals.get('patient'):
             patient = patient_obj.browse(vals['patient'])
             patient_sex = patient.sex
-        
-       
-        if (patient_sex == 'f'):
-            result = True
-        return result
+            patient_age = patient.age
+            patient_childbearing_age = patient.childbearing_age
+           
+# Trigger the warning if the patient is at a childbearing age      
+        if (patient_childbearing_age):
+            preg_warning = True
+            presc_warning_ack = False
+      
+        return { 'prescription_warning_ack': presc_warning_ack,
+            'pregnancy_warning': preg_warning }
+
         
     def default_prescription_date(self):
         return datetime.now()
@@ -1192,8 +1243,6 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             config.prescription_sequence.id)
 
         return super(PatientPrescriptionOrder, self).create(values)
-
-
 
 
 
