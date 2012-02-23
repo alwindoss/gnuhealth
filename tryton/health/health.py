@@ -647,9 +647,9 @@ class PatientData(ModelSQL, ModelView):
 # When the patient dies, it will show the age at time of death.
 
     def patient_age(self, ids, name):
-
+    
         def compute_age_from_dates(patient_dob, patient_deceased,
-            patient_dod):
+            patient_dod, patient_sex):
             now = datetime.now()
             if (patient_dob):
                 dob = datetime.strptime(str(patient_dob), '%Y-%m-%d')
@@ -667,13 +667,24 @@ class PatientData(ModelSQL, ModelView):
             else:
                 years_months_days = "No DoB !"
 
-            return years_months_days
+# Return the age in format y m d when the caller is the field name
+            if name == 'age':
+                return years_months_days
+
+# Return if the patient is in the period of childbearing age (10 is the caller is
+# childbearing_potential
+
+            if (name == 'childbearing_age'):
+                if ( delta.years >= 11 and delta.years <= 55 and patient_sex =='f'):
+                    return True
+                else:
+                    return False
 
         result = {}
 
         for patient_data in self.browse(ids):
             result[patient_data.id] = compute_age_from_dates(patient_data.dob,
-            patient_data.deceased, patient_data.dod)
+            patient_data.deceased, patient_data.dod, patient_data.sex)
         return result
 
     name = fields.Many2One('party.party', 'Patient', required="1",
@@ -754,6 +765,8 @@ class PatientData(ModelSQL, ModelView):
     cod = fields.Many2One('gnuhealth.pathology', 'Cause of Death',
      states={'invisible': Not(Bool(Eval('deceased'))),
       'required': Bool(Eval('deceased'))})
+
+    childbearing_age = fields.Function(fields.Boolean('Potential for Childbearing'), 'patient_age')
 
     def get_patient_ssn(self, ids, name):
         res = {}
@@ -1168,7 +1181,7 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
 
     pregnancy_warning = fields.Boolean ('Pregancy Warning', readonly=True) 
         
-    prescription_warning_ack = fields.Boolean ('Warning Acknowledged') 
+    prescription_warning_ack = fields.Boolean ('Prescription verified') 
 
 
     def __init__(self):
@@ -1178,9 +1191,11 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             ('check_prescription_warning', 'drug_pregnancy_warning')]
 
         self._error_messages.update({
-            'drug_pregnancy_warning': 'ASK THE PATIENT' \
-            ' IS SHE IS PREGNANT OR IS THINKING ABOUT GETTING PREGNANT.' \
-            'THEN CHECK THE WARNING BOX',
+            'drug_pregnancy_warning': '== DRUG AND PREGNANCY VERIFICATION ==\n\n' \
+            '- IS THE PATIENT PREGNANT ? \n' \
+            '- IS PLANNING to BECOME PREGNANT ?\n' \
+            '- HOW MANY WEEKS OF PREGNANCY \n\n' \
+            'Verify and check for safety the prescribed drugs\n',
         })
 
  
@@ -1197,9 +1212,11 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         if vals.get('patient'):
             patient = patient_obj.browse(vals['patient'])
             patient_sex = patient.sex
+            patient_age = patient.age
+            patient_childbearing_age = patient.childbearing_age
            
-       
-        if (patient_sex == 'f'):
+# Trigger the warning if the patient is at a childbearing age      
+        if (patient_childbearing_age):
             preg_warning = True
             presc_warning_ack = False
       
