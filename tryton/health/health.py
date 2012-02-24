@@ -1195,6 +1195,7 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             '- IS THE PATIENT PREGNANT ? \n' \
             '- IS PLANNING to BECOME PREGNANT ?\n' \
             '- HOW MANY WEEKS OF PREGNANCY \n\n' \
+            '- IS THE PATIENT BREASTFEEDING \n\n' \
             'Verify and check for safety the prescribed drugs\n',
         })
 
