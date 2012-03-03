@@ -15,11 +15,8 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
 import qrcode
 import StringIO
-
-
 from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
 from trytond.tools import safe_eval, datetime_strftime
 from trytond.transaction import Transaction
@@ -31,8 +28,8 @@ from trytond.pool import Pool
 # Add the QR field and QR image in the patient model
 
 class Patient(ModelSQL, ModelView):
-    "Patient"
-    _name = "gnuhealth.patient"
+    'Patient'
+    _name = 'gnuhealth.patient'
 
     def make_qrcode(self, ids, name):
 # Create the QR code
@@ -40,15 +37,15 @@ class Patient(ModelSQL, ModelView):
         for patient_data in self.browse(ids):
 
             if not patient_data.ssn:
-                patient_data.ssn = ""
+                patient_data.ssn = ''
 
             if not patient_data.blood_type:
-                patient_data.blood_type = ""
+                patient_data.blood_type = ''
 
             if not patient_data.rh:
-                patient_data.rh = ""
+                patient_data.rh = ''
 
-            qr_string = "ID: " + patient_data.identification_code \
+            qr_string = 'ID: ' + patient_data.identification_code \
                 + '\nName: ' + patient_data.lastname + ',' \
                         + patient_data.name.name \
                 + '\nSSN: ' + patient_data.ssn \
@@ -60,7 +57,7 @@ class Patient(ModelSQL, ModelView):
 
 # Make a PNG image from PIL without the need to create a temp file
             holder = StringIO.StringIO()
-            qr_image.save(holder, format="PNG")
+            qr_image.save(holder, format='PNG')
             qr_png = holder.getvalue()
             holder.close()
 
@@ -69,9 +66,7 @@ class Patient(ModelSQL, ModelView):
         return result
 
 # Add the QR Code to the Patient
-
     qr = fields.Function(fields.Binary('QR Code'), 'make_qrcode')
-
 
 Patient()
 
@@ -79,8 +74,8 @@ Patient()
 # Add the QR code field and image to the Newborn
 
 class Newborn(ModelSQL, ModelView):
-    "NewBorn"
-    _name = "gnuhealth.newborn"
+    'NewBorn'
+    _name = 'gnuhealth.newborn'
 
     def make_qrcode(self, ids, name):
 # Create the QR code
@@ -88,19 +83,21 @@ class Newborn(ModelSQL, ModelView):
         for newborn_data in self.browse(ids):
 
             if not newborn_data.name:
-                newborn_data.name = ""
+                newborn_data.name = ''
 
-            qr_string = "ID: " + newborn_data.name + '\nMother: ' + \
-            newborn_data.mother.name.lastname + ',' + \
-            newborn_data.mother.name.name + '\nMother\'s ID: ' + \
-            newborn_data.mother.identification_code + '\nSex: ' + \
-            newborn_data.sex + '\nDoB: ' + str(newborn_data.birth_date)
+            qr_string = 'ID: ' + newborn_data.name \
+                + '\nMother: ' + newborn_data.mother.name.lastname + ',' \
+                        + newborn_data.mother.name.name \
+                + '\nMother\'s ID: ' \
+                        + newborn_data.mother.identification_code \
+                + '\nSex: ' + newborn_data.sex \
+                + '\nDoB: ' + str(newborn_data.birth_date)
 
             qr_image = qrcode.make(qr_string)
 
 # Make a PNG image from PIL without the need to create a temp file
             holder = StringIO.StringIO()
-            qr_image.save(holder, format="PNG")
+            qr_image.save(holder, format='PNG')
             qr_png = holder.getvalue()
             holder.close()
 
@@ -109,8 +106,6 @@ class Newborn(ModelSQL, ModelView):
         return result
 
 # Add the QR Code to the Newborn
-
     qr = fields.Function(fields.Binary('QR Code'), 'make_qrcode')
-
 
 Newborn()
