@@ -30,7 +30,6 @@ from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
 from trytond.pool import Pool
 
 
-
 class DrugDoseUnits(ModelSQL, ModelView):
     "Drug Dose Unit"
     _description = __doc__
@@ -42,7 +41,7 @@ class DrugDoseUnits(ModelSQL, ModelView):
     def __init__(self):
         super(DrugDoseUnits, self).__init__()
 
-        self._sql_constraints = [('name_uniq', 'unique (name)',
+        self._sql_constraints = [('name_uniq', 'unique(name)',
             'The Unit must be unique !')]
 
 DrugDoseUnits()
@@ -63,7 +62,7 @@ class MedicationFrequency(ModelSQL, ModelView):
     def __init__(self):
         super(MedicationFrequency, self).__init__()
 
-        self._sql_constraints = [('name_uniq', 'unique (name)',
+        self._sql_constraints = [('name_uniq', 'unique(name)',
             'The Unit must be unique !')]
 
 MedicationFrequency()
@@ -80,7 +79,7 @@ class DrugForm(ModelSQL, ModelView):
     def __init__(self):
         super(DrugForm, self).__init__()
 
-        self._sql_constraints = [('name_uniq', 'unique (name)',
+        self._sql_constraints = [('name_uniq', 'unique(name)',
             'The Unit must be unique !')]
 
 DrugForm()
@@ -97,7 +96,7 @@ class DrugRoute(ModelSQL, ModelView):
     def __init__(self):
         super(DrugRoute, self).__init__()
 
-        self._sql_constraints = [('name_uniq', 'unique (name)',
+        self._sql_constraints = [('name_uniq', 'unique(name)',
             'The Name must be unique !')]
 
 DrugRoute()
@@ -114,7 +113,7 @@ class Occupation(ModelSQL, ModelView):
     def __init__(self):
         super(Occupation, self).__init__()
 
-        self._sql_constraints = [('name_uniq', 'unique (name)',
+        self._sql_constraints = [('name_uniq', 'unique(name)',
             'The Name must be unique !')]
 
 Occupation()
@@ -132,7 +131,7 @@ class Ethnicity(ModelSQL, ModelView):
     def __init__(self):
         super(Ethnicity, self).__init__()
 
-        self._sql_constraints = [('name_uniq', 'unique (name)',
+        self._sql_constraints = [('name_uniq', 'unique(name)',
             'The Name must be unique !')]
 
 Ethnicity()
@@ -150,7 +149,7 @@ class MedicalSpecialty(ModelSQL, ModelView):
     def __init__(self):
         super(MedicalSpecialty, self).__init__()
 
-        self._sql_constraints = [('name_uniq', 'unique (name)',
+        self._sql_constraints = [('name_uniq', 'unique(name)',
             'The Specialty must be unique !')]
 
 MedicalSpecialty()
@@ -188,21 +187,21 @@ class Physician(ModelSQL, ModelView):
 Physician()
 
 
-class OperationalArea (ModelSQL, ModelView):
+class OperationalArea(ModelSQL, ModelView):
     "Operational Area"
     _name = "gnuhealth.operational_area"
     _description = __doc__
     name = fields.Char('Name',
         help="Operational Area of the city or region", required="1")
-    operational_sector = fields.One2Many ('gnuhealth.operational_sector','operational_area',
-        'Operational Sector',readonly="1")
-        
+    operational_sector = fields.One2Many('gnuhealth.operational_sector',
+        'operational_area', 'Operational Sector', readonly="1")
+
     info = fields.Text('Extra Information')
 
     def __init__(self):
         super(OperationalArea, self).__init__()
 
-        self._sql_constraints += [('name_uniq', 'unique (name)',
+        self._sql_constraints += [('name_uniq', 'unique(name)',
             'The operational area must be unique !')]
 
 OperationalArea()
@@ -223,7 +222,7 @@ class OperationalSector(ModelSQL, ModelView):
         super(OperationalSector, self).__init__()
 
         self._sql_constraints += [('name_uniq',
-            'unique (name, operational_area)',
+            'unique(name, operational_area)',
         'The operational sector must be unique in each operational area!')]
 
 OperationalSector()
@@ -245,7 +244,7 @@ class Family(ModelSQL, ModelView):
     def __init__(self):
         super(Family, self).__init__()
 
-        self._sql_constraints = [('name_uniq', 'unique (name)',
+        self._sql_constraints = [('name_uniq', 'unique(name)',
             'The Family Code must be unique !')]
 
 Family()
@@ -263,15 +262,17 @@ class FamilyMember(ModelSQL, ModelView):
 
 FamilyMember()
 
+
 # Use the template as in Product category.
 
-class MedicamentCategory(ModelSQL, ModelView):    
+class MedicamentCategory(ModelSQL, ModelView):
     "Medicament Category"
     _name = "gnuhealth.medicament.category"
     _description = __doc__
 
     name = fields.Char('Name', required=True, translate=True)
-    parent = fields.Many2One('gnuhealth.medicament.category','Parent', select=1)
+    parent = fields.Many2One('gnuhealth.medicament.category', 'Parent',
+            select=1)
     childs = fields.One2Many('gnuhealth.medicament.category', 'parent',
             string='Children')
 
@@ -290,6 +291,7 @@ class MedicamentCategory(ModelSQL, ModelView):
         if not ids:
             return {}
         res = {}
+
         def _name(category):
             if category.id in res:
                 return res[category.id]
@@ -304,7 +306,6 @@ class MedicamentCategory(ModelSQL, ModelView):
 MedicamentCategory()
 
 
-
 class Medicament(ModelSQL, ModelView):
 
     "Medicament"
@@ -316,7 +317,8 @@ class Medicament(ModelSQL, ModelView):
         help="Product Name", required=True)
     active_component = fields.Char('Active component', help="Active Component",
         translate=True)
-    category = fields.Many2One('gnuhealth.medicament.category', 'Category', select= True)
+    category = fields.Many2One('gnuhealth.medicament.category', 'Category',
+        select=True)
     therapeutic_action = fields.Char('Therapeutic effect',
         help="Therapeutic action")
     composition = fields.Text('Composition', help="Components")
@@ -330,44 +332,43 @@ class Medicament(ModelSQL, ModelView):
         help="Warnings for Pregnant Women")
 
     pregnancy_category = fields.Selection([
-                        ('A', 'A'),
-                        ('B', 'B'),
-                        ('C', 'C'),
-                        ('D', 'D'),
-                        ('X', 'X'),
-                        ('N', 'N'),
+        ('A', 'A'),
+        ('B', 'B'),
+        ('C', 'C'),
+        ('D', 'D'),
+        ('X', 'X'),
+        ('N', 'N'),
 
-                        ], 'Pregnancy Category',
-                        help='** FDA Pregancy Categories ***\n' \
-                        'CATEGORY A :Adequate and well-controlled human studies have' \
-                        ' failed to demonstrate a risk to the fetus in the' \
-                        ' first trimester of pregnancy (and there is no ' \
-                        'evidence of risk in later trimesters).\n\n' \
-                        'CATEGORY B : Animal reproduction studies have failed to' \
-                        'demonstrate a risk to the fetus and there are no' \
-                        ' adequate and well-controlled studies in pregnant women' \
-                        ' OR Animal studies have shown an adverse effect, but' \
-                        ' adequate and well-controlled studies in pregnant women' \
-                        ' have failed to demonstrate a risk to the fetus in any' \
-                        ' trimester.\n\n'
-                        'CATEGORY C : Animal reproduction studies have shown an adverse' \
-                        ' effect on the fetus and there are no adequate and' \
-                        ' well-controlled studies in humans, but potential benefits' \
-                        ' may warrant use of the drug in pregnant women despite ' \
-                        'potential risks. \n\n' \
-                        ' CATEGORY D : There is positive evidence of human fetal ' \
-                        ' risk based on adverse reaction data from investigational' \
-                        ' or marketing experience or studies in humans, but potential' \
-                        ' benefits may warrant use of the drug in pregnant women despite' \
-                        ' potential risks.\n\n'
-                        'CATEGORY X : Studies in animals or humans have demonstrated' \
-                        ' fetal abnormalities and/or there is positive evidence of human' \
-                        ' fetal risk based on adverse reaction data from investigational' \
-                        ' or marketing experience, and the risks involved in use of the' \
-                        ' drug in pregnant women clearly outweigh potential benefits.\n\n' \
-                        'CATEGORY N : Not yet classified'
-                        )
-    
+        ], 'Pregnancy Category',
+        help='** FDA Pregancy Categories ***\n' \
+        'CATEGORY A :Adequate and well-controlled human studies have' \
+        ' failed to demonstrate a risk to the fetus in the' \
+        ' first trimester of pregnancy (and there is no ' \
+        'evidence of risk in later trimesters).\n\n' \
+        'CATEGORY B : Animal reproduction studies have failed to' \
+        'demonstrate a risk to the fetus and there are no' \
+        ' adequate and well-controlled studies in pregnant women' \
+        ' OR Animal studies have shown an adverse effect, but' \
+        ' adequate and well-controlled studies in pregnant women' \
+        ' have failed to demonstrate a risk to the fetus in any' \
+        ' trimester.\n\n'
+        'CATEGORY C : Animal reproduction studies have shown an adverse' \
+        ' effect on the fetus and there are no adequate and' \
+        ' well-controlled studies in humans, but potential benefits' \
+        ' may warrant use of the drug in pregnant women despite ' \
+        'potential risks. \n\n' \
+        ' CATEGORY D : There is positive evidence of human fetal ' \
+        ' risk based on adverse reaction data from investigational' \
+        ' or marketing experience or studies in humans, but potential' \
+        ' benefits may warrant use of the drug in pregnant women despite' \
+        ' potential risks.\n\n'
+        'CATEGORY X : Studies in animals or humans have demonstrated' \
+        ' fetal abnormalities and/or there is positive evidence of human' \
+        ' fetal risk based on adverse reaction data from investigational' \
+        ' or marketing experience, and the risks involved in use of the' \
+        ' drug in pregnant women clearly outweigh potential benefits.\n\n' \
+        'CATEGORY N : Not yet classified')
+
     presentation = fields.Text('Presentation', help="Packaging")
     adverse_reaction = fields.Text('Adverse Reactions')
     storage = fields.Text('Storage Conditions')
@@ -426,10 +427,11 @@ class PathologyCategory(ModelSQL, ModelView):
 PathologyCategory()
 
 
-class Pathology (ModelSQL, ModelView):
+class Pathology(ModelSQL, ModelView):
     "Diseases"
     _name = "gnuhealth.pathology"
-    name = fields.Char('Name', help="Disease name", required=True, translate=True)
+    name = fields.Char('Name', required=True, translate=True,
+        help="Disease name")
     code = fields.Char('Code',
         help='Specific Code for the Disease (eg, ICD-10, SNOMED...\)')
     category = fields.Many2One('gnuhealth.pathology.category',
@@ -443,7 +445,7 @@ class Pathology (ModelSQL, ModelView):
 
     def __init__(self):
         super(Pathology, self).__init__()
-        self._sql_constraints += [('code_uniq', 'unique (code)',
+        self._sql_constraints += [('code_uniq', 'unique(code)',
         'The disease code must be unique')]
 
 Pathology()
@@ -454,7 +456,7 @@ class ProcedureCode(ModelSQL, ModelView):
     _name = "gnuhealth.procedure"
     _description = __doc__
 
-    name = fields.Char('Code', required=True )
+    name = fields.Char('Code', required=True)
     description = fields.Char('Long Text', translate=True)
 
 ProcedureCode()
@@ -498,8 +500,10 @@ class Insurance(ModelSQL, ModelView):
 
     name = fields.Many2One('party.party', 'Owner')
     number = fields.Char('Number', required=True)
-    company = fields.Many2One('party.party', 'Insurance Company',required=True,
-     domain=[('is_insurance_company', '=', True)], select=True)
+    company = fields.Many2One('party.party', 'Insurance Company',
+        domain=[
+            ('is_insurance_company', '=', True),
+        ], required=True, select=True)
 
     member_since = fields.Date('Member since')
     member_exp = fields.Date('Expiration date')
@@ -536,7 +540,8 @@ class PartyPatient (ModelSQL, ModelView):
     activation_date = fields.Date('Activation date',
      help="Date of activation of the party")
     alias = fields.Char('Alias', help="Common name that the Party is reffered")
-    ref = fields.Char('SSN', help="Patient Social Security Number or equivalent")
+    ref = fields.Char('SSN',
+        help="Patient Social Security Number or equivalent")
     is_person = fields.Boolean('Person',
      help="Check if the party is a person.")
     is_patient = fields.Boolean('Patient',
@@ -624,8 +629,10 @@ class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
         required=True))
 
     appointment_sequence = fields.Property(fields.Many2One('ir.sequence',
-        'Appointment Sequence', domain=[('code', '=', 'gnuhealth.appointment')],
-        required=True))
+        'Appointment Sequence',
+        domain=[
+            ('code', '=', 'gnuhealth.appointment'),
+        ], required=True))
 
     prescription_sequence = fields.Property(fields.Many2One('ir.sequence',
         'Prescription Sequence',
@@ -647,7 +654,7 @@ class PatientData(ModelSQL, ModelView):
 # When the patient dies, it will show the age at time of death.
 
     def patient_age(self, ids, name):
-    
+
         def compute_age_from_dates(patient_dob, patient_deceased,
             patient_dod, patient_sex):
             now = datetime.now()
@@ -671,11 +678,13 @@ class PatientData(ModelSQL, ModelView):
             if name == 'age':
                 return years_months_days
 
-# Return if the patient is in the period of childbearing age (10 is the caller is
-# childbearing_potential
+# Return if the patient is in the period of childbearing age (10 is the caller
+# is childbearing_potential
 
             if (name == 'childbearing_age'):
-                if ( delta.years >= 11 and delta.years <= 55 and patient_sex =='f'):
+                if (delta.years >= 11 \
+                and delta.years <= 55 \
+                and patient_sex == 'f'):
                     return True
                 else:
                     return False
@@ -766,7 +775,8 @@ class PatientData(ModelSQL, ModelView):
      states={'invisible': Not(Bool(Eval('deceased'))),
       'required': Bool(Eval('deceased'))})
 
-    childbearing_age = fields.Function(fields.Boolean('Potential for Childbearing'), 'patient_age')
+    childbearing_age = fields.Function(fields.Boolean( \
+            'Potential for Childbearing'), 'patient_age')
 
     def get_patient_ssn(self, ids, name):
         res = {}
@@ -779,7 +789,6 @@ class PatientData(ModelSQL, ModelView):
         value = clause[2]
         res.append(('name.ref', clause[1], value))
         return res
-
 
     def get_patient_lastname(self, ids, name):
         res = {}
@@ -796,7 +805,7 @@ class PatientData(ModelSQL, ModelView):
     def __init__(self):
         super(PatientData, self).__init__()
 
-        self._sql_constraints = [('name_uniq', 'unique (name)',
+        self._sql_constraints = [('name_uniq', 'unique(name)',
             'The Patient already exists !')]
 
     def create(self, values):
@@ -829,7 +838,7 @@ PatientData()
 # PATIENT DISESASES INFORMATION
 
 
-class PatientDiseaseInfo (ModelSQL, ModelView):
+class PatientDiseaseInfo(ModelSQL, ModelView):
     "Patient Disease History"
     _description = __doc__
     _name = "gnuhealth.patient.disease"
@@ -894,7 +903,7 @@ PatientDiseaseInfo()
 # PATIENT APPOINTMENT
 
 
-class Appointment (ModelSQL, ModelView):
+class Appointment(ModelSQL, ModelView):
     "Patient Appointments"
     _name = "gnuhealth.appointment"
     _description = __doc__
@@ -997,7 +1006,7 @@ class MedicationTemplate(ModelSQL, ModelView):
         ('hours', 'hours'),
         ('days', 'days'),
         ('weeks', 'weeks'),
-        ('wr', 'when required')
+        ('wr', 'when required'),
         ], 'unit', select=True, sort=False)
     admin_times = fields.Char('Admin hours',
         help='Suggested administration hours. For example, at 08:00, ' \
@@ -1014,7 +1023,8 @@ class MedicationTemplate(ModelSQL, ModelView):
             ('indefinite', 'indefinite')], 'Treatment period',
             help='Period that the patient must take the medication in ' \
             'minutes, hours, days, months, years or indefinately', sort=False)
-    start_treatment = fields.DateTime('Start', help="Date of start of Treatment")
+    start_treatment = fields.DateTime('Start',
+        help="Date of start of Treatment")
     end_treatment = fields.DateTime('End', help="Date of start of Treatment")
 
 MedicationTemplate()
@@ -1048,7 +1058,7 @@ class PatientMedication(ModelSQL, ModelView):
     notes = fields.Text('Extra Info')
     patient = fields.Many2One('gnuhealth.patient', 'Patient')
 
-    def on_change_with_is_active (self, vals):
+    def on_change_with_is_active(self, vals):
         discontinued = vals.get('discontinued')
         course_completed = vals.get('course_completed')
         is_active = True
@@ -1056,23 +1066,23 @@ class PatientMedication(ModelSQL, ModelView):
             is_active = False
         return is_active
 
-    def on_change_with_discontinued (self, vals):
+    def on_change_with_discontinued(self, vals):
         discontinued = vals.get('discontinued')
         is_active = vals.get('is_active')
         course_completed = vals.get('course_completed')
 
         if (is_active or course_completed):
                 discontinued = False
-        return ( discontinued ) 
-        
-    def on_change_with_course_completed (self, vals):
+        return (discontinued)
+
+    def on_change_with_course_completed(self, vals):
         is_active = vals.get('is_active')
         course_completed = vals.get('discontinued')
         discontinued = vals.get('discontinued')
 
         if (is_active or discontinued):
                 course_completed = False
-        return ( course_completed ) 
+        return (course_completed)
 
     def default_is_active(self):
         return True
@@ -1163,9 +1173,8 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
 
         if prescription.prescription_warning_ack:
                 return True
-                
-        return False
 
+        return False
 
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True,
         on_change=['patient'])
@@ -1179,10 +1188,9 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         'name', 'Prescription line')
     notes = fields.Text('Prescription Notes')
 
-    pregnancy_warning = fields.Boolean ('Pregancy Warning', readonly=True) 
-        
-    prescription_warning_ack = fields.Boolean ('Prescription verified') 
+    pregnancy_warning = fields.Boolean('Pregancy Warning', readonly=True)
 
+    prescription_warning_ack = fields.Boolean('Prescription verified')
 
     def __init__(self):
         super(PatientPrescriptionOrder, self).__init__()
@@ -1191,23 +1199,23 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             ('check_prescription_warning', 'drug_pregnancy_warning')]
 
         self._error_messages.update({
-            'drug_pregnancy_warning': '== DRUG AND PREGNANCY VERIFICATION ==\n\n' \
-            '- IS THE PATIENT PREGNANT ? \n' \
-            '- IS PLANNING to BECOME PREGNANT ?\n' \
-            '- HOW MANY WEEKS OF PREGNANCY \n\n' \
-            '- IS THE PATIENT BREASTFEEDING \n\n' \
-            'Verify and check for safety the prescribed drugs\n',
+            'drug_pregnancy_warning': \
+                    '== DRUG AND PREGNANCY VERIFICATION ==\n\n' \
+                    '- IS THE PATIENT PREGNANT ? \n' \
+                    '- IS PLANNING to BECOME PREGNANT ?\n' \
+                    '- HOW MANY WEEKS OF PREGNANCY \n\n' \
+                    '- IS THE PATIENT BREASTFEEDING \n\n' \
+                    'Verify and check for safety the prescribed drugs\n',
         })
 
- 
 # Method that makes the doctor to acknowledge if there is any
 # warning in the prescription
 
-    def on_change_patient(self,vals):
+    def on_change_patient(self, vals):
         preg_warning = False
         presc_warning_ack = True
-        patient_sex=''
-        
+        patient_sex = ''
+
         patient_obj = Pool().get('gnuhealth.patient')
 
         if vals.get('patient'):
@@ -1215,16 +1223,17 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             patient_sex = patient.sex
             patient_age = patient.age
             patient_childbearing_age = patient.childbearing_age
-           
-# Trigger the warning if the patient is at a childbearing age      
+
+# Trigger the warning if the patient is at a childbearing age
         if (patient_childbearing_age):
             preg_warning = True
             presc_warning_ack = False
-      
-        return { 'prescription_warning_ack': presc_warning_ack,
-            'pregnancy_warning': preg_warning }
 
-        
+        return {
+            'prescription_warning_ack': presc_warning_ack,
+            'pregnancy_warning': preg_warning,
+        }
+
     def default_prescription_date(self):
         return datetime.now()
 
@@ -1244,9 +1253,6 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             config.prescription_sequence.id)
 
         return super(PatientPrescriptionOrder, self).create(values)
-
-
-
 
 PatientPrescriptionOrder()
 
@@ -1306,7 +1312,7 @@ class PatientEvaluation(ModelSQL, ModelView):
     _description = __doc__
 
     patient = fields.Many2One('gnuhealth.patient', 'Patient')
-    evaluation_date = fields.Many2One('gnuhealth.appointment', 'Appointment', 
+    evaluation_date = fields.Many2One('gnuhealth.appointment', 'Appointment',
         help='Enter or select the date / ID of the appointment' \
         ' related to this evaluation')
     evaluation_start = fields.DateTime('Start of Evaluation',
@@ -1315,7 +1321,8 @@ class PatientEvaluation(ModelSQL, ModelView):
     next_evaluation = fields.Many2One('gnuhealth.appointment',
         'Next Appointment')
     user_id = fields.Many2One('res.user', 'Last Changed by', readonly=True)
-    derived_from = fields.Many2One('gnuhealth.physician', 'Derived from Doctor',
+    derived_from = fields.Many2One('gnuhealth.physician',
+        'Derived from Doctor',
         help="Physician who escalated / derived the case")
     derived_to = fields.Many2One('gnuhealth.physician', 'Derived to Doctor',
         help="Physician to whom escalate / derive the case")
@@ -1518,7 +1525,8 @@ class PatientEvaluation(ModelSQL, ModelView):
         'Presumptive Diagnosis', help="Presumptive Diagnosis")
     info_diagnosis = fields.Text('Presumptive Diagnosis: Extra Info')
     directions = fields.Text('Plan')
-    actions = fields.One2Many('gnuhealth.directions', 'name', 'Procedures', help="Procedures / Actions to take")
+    actions = fields.One2Many('gnuhealth.directions', 'name', 'Procedures',
+        help="Procedures / Actions to take")
     symptom_pain = fields.Boolean('Pain')
     symptom_pain_intensity = fields.Integer('Pain intensity',
         help="Pain intensity from 0(no pain) to 10(worst possible pain)")
@@ -1674,7 +1682,7 @@ class HospitalOR(ModelSQL, ModelView):
     def __init__(self):
         super(HospitalOR, self).__init__()
 
-        self._sql_constraints = [('name_uniq', 'unique (name, institution)',
+        self._sql_constraints = [('name_uniq', 'unique(name, institution)',
             'The Operating Room code must be unique per Health Center')]
 
 HospitalOR()
@@ -1725,8 +1733,10 @@ class HospitalBed(ModelSQL, ModelView):
     "Hospital Bed"
     _description = __doc__
     _name = "gnuhealth.hospital.bed"
-    name = fields.Many2One('product.product', 'Bed', domain=[('is_bed', '=', True)],
-     required=True,  help="Bed Number")
+    name = fields.Many2One('product.product', 'Bed',
+        domain=[
+            ('is_bed', '=', True),
+        ], required=True,  help="Bed Number")
     ward = fields.Many2One('gnuhealth.hospital.ward',
         'Ward', help="Ward or room")
     bed_type = fields.Selection((('gatch', 'Gatch Bed'),
