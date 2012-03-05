@@ -1,14 +1,19 @@
 # 
+# Translators:
+#   <cmelgosa@thymbra.com>, 2011.
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
-"Project-Id-Version: \n"
+"Project-Id-Version: GNU Health\n"
+"Report-Msgid-Bugs-To: https://savannah.gnu.org/bugs/?group=health\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: meanmicio <lfalcon@gnusolidario.org>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2011-11-22 20:37+0000\n"
+"Last-Translator: cristina <cmelgosa@thymbra.com>\n"
+"Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/GNU_Health/language/es/)\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 msgctxt "error:gnuhealth.newborn:0"
 msgid "The Newborn ID must be unique !"
@@ -463,7 +468,9 @@ msgid "Signed by the health professional"
 msgstr "Firmado por el profesional de salud"
 
 msgctxt "help:gnuhealth.newborn,test_metabolic:0"
-msgid "Test for Fenilketonuria, Congenital Hypothyroidism, Quistic Fibrosis, Galactosemia"
+msgid ""
+"Test for Fenilketonuria, Congenital Hypothyroidism, Quistic Fibrosis, "
+"Galactosemia"
 msgstr "Prueba para Fenilcetonuria, Hipotiroidismo congénito, Fibrosis Quística y Galactosemia"
 
 msgctxt "help:gnuhealth.newborn,weight:0"
@@ -471,7 +478,8 @@ msgid "Weight in grams (g)"
 msgstr "Peso en gramos (g)"
 
 msgctxt "help:gnuhealth.patient.psc,evaluation_date:0"
-msgid "Enter or select the date / ID of the appointment related to this evaluation"
+msgid ""
+"Enter or select the date / ID of the appointment related to this evaluation"
 msgstr "Introduzca o elija la fecha y la identificación de la cita relacionado con esta evaluación"
 
 msgctxt "model:gnuhealth.neonatal.apgar,name:0"
@@ -485,6 +493,10 @@ msgstr "ID del Neonato"
 msgctxt "model:gnuhealth.patient.psc,name:0"
 msgid "Pediatric Symptoms Checklist"
 msgstr "Pediatric Symptoms Checklist"
+
+msgctxt "model:ir.action,name:gnuhealth_action_newborn"
+msgid "Newborn"
+msgstr "Recién nacido"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_edit_newborn"
 msgid "Newborn"
@@ -579,16 +591,16 @@ msgid "Sometimes"
 msgstr "A veces"
 
 msgctxt "selection:gnuhealth.patient.psc,psc_aches_pains:0"
-msgid "Sometimes"
-msgstr "A veces"
-
-msgctxt "selection:gnuhealth.patient.psc,psc_aches_pains:0"
 msgid "Never"
 msgstr "Nunca"
 
 msgctxt "selection:gnuhealth.patient.psc,psc_aches_pains:0"
 msgid "Often"
 msgstr "A menudo"
+
+msgctxt "selection:gnuhealth.patient.psc,psc_aches_pains:0"
+msgid "Sometimes"
+msgstr "A veces"
 
 msgctxt "selection:gnuhealth.patient.psc,psc_act_as_younger:0"
 msgid "Never"
@@ -1049,4 +1061,3 @@ msgstr "Pediatric Symptoms Checklist - PSC"
 msgctxt "view:gnuhealth.patient:0"
 msgid "PSC"
 msgstr "PSC"
-

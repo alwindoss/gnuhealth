@@ -1,14 +1,19 @@
 # 
+# Translators:
+# meanmicio <lfalcon@gnusolidario.org>, 2011.
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
-"Project-Id-Version: \n"
+"Project-Id-Version: GNU Health\n"
+"Report-Msgid-Bugs-To: https://savannah.gnu.org/bugs/?group=health\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2011-11-17 19:00+0000\n"
 "Last-Translator: meanmicio <lfalcon@gnusolidario.org>\n"
-"Language-Team: \n"
+"Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/GNU_Health/language/es/)\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 msgctxt "error:gnuhealth.inpatient.registration:0"
 msgid "Bed is not available"
@@ -78,6 +83,10 @@ msgctxt "field:gnuhealth.patient,patient_status:0"
 msgid "Hospitalization Status"
 msgstr "Status"
 
+msgctxt "field:gnuhealth.sequences,inpatient_registration_sequence:0"
+msgid "Inpatient Sequence"
+msgstr ""
+
 msgctxt "help:gnuhealth.appointment,inpatient_registration_code:0"
 msgid "Enter the patient hospitalization code"
 msgstr "Introducir el código de hospitalización"
@@ -90,13 +99,26 @@ msgctxt "model:gnuhealth.inpatient.registration,name:0"
 msgid "Patient admission History"
 msgstr "Historial de hospitalizaciones"
 
+msgctxt "model:ir.action,name:gnuhealth_action_inpatient_registration"
+msgid "Hospitalizations"
+msgstr ""
+
+msgctxt "model:ir.sequence,name:seq_gnuhealth_inpatient_registration"
+msgid "Inpatient Registration"
+msgstr ""
+
+msgctxt ""
+"model:ir.sequence.type,name:seq_type_gnuhealth_inpatient_registration"
+msgid "Inpatient Registration"
+msgstr ""
+
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_inpatient_add"
 msgid "Hospitalizations"
 msgstr "Hospitalizaciones"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_inpatient_menu"
-msgid "Inpatient"
-msgstr "Hospitalizaciones"
+msgid "Hospitalizations"
+msgstr ""
 
 msgctxt "selection:gnuhealth.inpatient.registration,admission_type:0"
 msgid "Elective"
@@ -193,4 +215,3 @@ msgstr "Admisión del Paciente"
 msgctxt "view:gnuhealth.inpatient.registration:0"
 msgid "You are about to discharge the patient from the health institution."
 msgstr "Está por dar el alta al paciente del centro de salud"
-

@@ -1,14 +1,19 @@
 # 
+# Translators:
+# meanmicio <lfalcon@gnusolidario.org>, 2011.
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
-"Project-Id-Version: \n"
+"Project-Id-Version: GNU Health\n"
+"Report-Msgid-Bugs-To: https://savannah.gnu.org/bugs/?group=health\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2011-11-17 19:04+0000\n"
 "Last-Translator: meanmicio <lfalcon@gnusolidario.org>\n"
-"Language-Team: \n"
+"Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/GNU_Health/language/es/)\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 msgctxt "field:gnuhealth.disease.gene,chromosome:0"
 msgid "Affected Chromosome"
@@ -99,7 +104,9 @@ msgid "Locus of the chromosome"
 msgstr "Locus del cromosoma"
 
 msgctxt "help:gnuhealth.patient.family.diseases,relative:0"
-msgid "First degree = siblings, mother and father; second degree = Uncles, nephews and Nieces; third degree = Grandparents and cousins"
+msgid ""
+"First degree = siblings, mother and father; second degree = Uncles, nephews "
+"and Nieces; third degree = Grandparents and cousins"
 msgstr "Primer grado = hermanos, madre y padre; Segundo grado = Tíos y sobrinos; Tercer grado = Abuelos y primos"
 
 msgctxt "model:gnuhealth.disease.gene,name:0"
@@ -209,4 +216,3 @@ msgstr "Riesgos Genéticos"
 msgctxt "view:gnuhealth.patient:0"
 msgid "Genetics"
 msgstr "Genética"
-
