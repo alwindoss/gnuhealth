@@ -8,7 +8,9 @@
     'website': "http://health.gnu.org",
     'depends': ['ir', 'res', 'product', 'party', 'company'],
     'name_es_ES': 'GNU Health : Sistema Libre de Gestión Hospitalaria y de Salud',
-    'translation': ['locale/es_ES.po', 'locale/fr_FR.po'],
+    'translation': ['locale/es_ES.po', 'locale/fr_FR.po', 'locale/el.po',
+        'locale/fa.po'],
+    
 
     "xml": ["health_view.xml", "data/medicament_categories.xml",
         "data/health_product.xml", "data/WHO_products.xml",
