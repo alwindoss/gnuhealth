@@ -9,7 +9,7 @@
     'depends': ['ir', 'res', 'product', 'party', 'company'],
     'name_es_ES': 'GNU Health : Sistema Libre de Gestión Hospitalaria y de Salud',
     'translation': ['locale/es_ES.po', 'locale/fr_FR.po', 'locale/el.po',
-        'locale/fa.po'],
+        'locale/fa.po','locale/it.po'],
     
 
     "xml": ["health_view.xml", "data/medicament_categories.xml",

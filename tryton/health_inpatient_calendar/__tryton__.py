@@ -32,9 +32,10 @@
         'health_inpatient_calendar_view.xml',
     ],
     'name_es_ES': 'GNU Health : Calendario para Hospitalización',
-#    'translation': [
-#        'locale/es_ES.po',
-#    ],
+
+    'translation': ['locale/es_ES.po', 'locale/fr_FR.po', 'locale/el.po',
+        'locale/fa.po','locale/it.po'],
+
     'description': ''' 
         This module add functionality to connect with a CalDAV client.
         ''',

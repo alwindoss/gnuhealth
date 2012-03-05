@@ -18,6 +18,6 @@ This module adds QR (Quick Recognition) codes to GNU Health objects, like patien
         'health_qrcodes_report.xml',
     ],
     'translation': [
-        'locale/es_ES.po',
+        'locale/es_ES.po', 'locale/it.po'
     ],
 }
