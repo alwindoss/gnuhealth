@@ -40,6 +40,18 @@ class Patient(ModelSQL, ModelView):
             if not patient_data.rh:
                 patient_data.rh = ''
 
+            if not patient_data.sex:
+                patient_data.sex = ''
+
+            if not patient_data.dob:
+                patient_data.sex = ''
+
+            if not patient_data.identification_code:
+                patient_data.identification_code = ''
+
+            if not patient_data.lastname:
+                patient_data.lastname = ''
+
             qr_string = 'ID: ' + patient_data.identification_code \
                 + '\nName: ' + patient_data.lastname + ',' \
                         + patient_data.name.name \
