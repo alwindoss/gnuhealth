@@ -21,7 +21,7 @@ from setuptools import setup
 info = eval(open('__tryton__.py').read())
 major_version, minor_version = 2, 2
 
-requires = ['qrcode']
+requires = []
 for dep in info.get('depends', []):
     if dep.startswith('health'):
         requires.append('trytond_%s == %s' %

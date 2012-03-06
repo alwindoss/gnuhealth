@@ -15,7 +15,6 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import qrcode
 import StringIO
 from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
 from trytond.tools import safe_eval, datetime_strftime
