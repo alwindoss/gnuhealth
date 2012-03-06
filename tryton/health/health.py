@@ -1161,6 +1161,7 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
     "Prescription Order"
     _name = "gnuhealth.prescription.order"
     _description = __doc__
+    _rec_name = 'prescription_id'
 
     def check_prescription_warning(self, ids):
 
