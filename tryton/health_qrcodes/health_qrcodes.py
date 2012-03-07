@@ -19,7 +19,6 @@ import qrcode
 import StringIO
 from trytond.model import ModelView, ModelSQL, fields
 
-
 # Add the QR field and QR image in the patient model
 
 class Patient(ModelSQL, ModelView):

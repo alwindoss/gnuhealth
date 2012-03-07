@@ -676,7 +676,7 @@ class PatientData(ModelSQL, ModelView):
 # Return if the patient is in the period of childbearing age (10 is the caller
 # is childbearing_potential
 
-            if (name == 'childbearing_age'):
+            if (name == 'childbearing_age' and patient_dob):
                 if (delta.years >= 11 \
                 and delta.years <= 55 \
                 and patient_sex == 'f'):
