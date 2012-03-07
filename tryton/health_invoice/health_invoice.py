@@ -20,10 +20,7 @@
 ##############################################################################
 from datetime import datetime
 from trytond.model import ModelView, ModelSQL, fields
-from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
-        PYSONEncoder
-from trytond.pyson import Eval
-from trytond.pool import Pool
+from trytond.pyson import Eval, Equal
 
 
 class PatientData(ModelSQL, ModelView):

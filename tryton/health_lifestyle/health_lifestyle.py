@@ -18,10 +18,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
-from trytond.tools import safe_eval, datetime_strftime
-from trytond.transaction import Transaction
-from trytond.pyson import Eval
+from trytond.model import ModelView, ModelSQL, fields
 
 
 class DrugsRecreational(ModelSQL, ModelView):

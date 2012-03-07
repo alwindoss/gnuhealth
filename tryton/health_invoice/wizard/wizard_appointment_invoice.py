@@ -20,7 +20,7 @@
 ##############################################################################
 import logging
 
-from trytond.model import ModelView, ModelSQL, fields
+from trytond.model import ModelView
 from trytond.wizard import Wizard
 
 logging.basicConfig(level=logging.DEBUG)
