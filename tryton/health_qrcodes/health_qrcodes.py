@@ -31,36 +31,35 @@ class Patient(ModelSQL, ModelView):
         result = {}
         for patient_data in self.browse(ids):
 
-            if not patient_data.ssn:
-                patient_data.ssn = ''
+            patient_ssn = patient_data.ssn or ''
+            
+            patient_blood_type = patient_data.blood_type or ''
 
-            if not patient_data.blood_type:
-                patient_data.blood_type = ''
+            patient_rh = patient_data.rh or ''
 
-            if not patient_data.rh:
-                patient_data.rh = ''
+            patient_sex = patient_data.sex or ''
+            
+            patient_dob = patient_data.dob or ''
 
-            if not patient_data.sex:
-                patient_data.sex = ''
+            patient_id = patient_data.identification_code or ''
 
-            if not patient_data.dob:
-                patient_data.sex = ''
+            if patient_data.lastname:
+                patient_lastname = patient_data.lastname + ', '
+            else:
+                patient_lastname = ''
+                
+            qr_string = 'ID: ' + patient_id \
+                + '\nName: ' + patient_lastname + ',' \
+                    + patient_data.name.name \
+                + '\nSSN: ' + patient_ssn \
+                + '\nSex: ' + patient_sex \
+                + '\nDoB: ' + str(patient_dob) \
+                + '\nBlood Type: ' + patient_blood_type \
+                    + ' ' + patient_rh
 
-            if not patient_data.identification_code:
-                patient_data.identification_code = ''
-
-            if not patient_data.lastname:
-                patient_data.lastname = ''
-
-            qr_string = 'ID: ' + patient_data.identification_code \
-                + '\nName: ' + patient_data.lastname + ',' \
-                        + patient_data.name.name \
-                + '\nSSN: ' + patient_data.ssn \
-                + '\nSex: ' + patient_data.sex \
-                + '\nDoB: ' + str(patient_data.dob) \
-                + '\nDoB: ' + patient_data.blood_type + ' ' + patient_data.rh
 
             qr_image = qrcode.make(qr_string)
+
 
 # Make a PNG image from PIL without the need to create a temp file
             holder = StringIO.StringIO()
@@ -89,16 +88,33 @@ class Newborn(ModelSQL, ModelView):
         result = {}
         for newborn_data in self.browse(ids):
 
-            if not newborn_data.name:
-                newborn_data.name = ''
+            if newborn_data.mother:
+                if newborn_data.mother.name.lastname:
+                    newborn_mother_lastname = newborn_data.mother.name.lastname + ', '
+                else:
+                    newborn_mother_lastname = ''
 
-            qr_string = 'ID: ' + newborn_data.name \
-                + '\nMother: ' + newborn_data.mother.name.lastname + ',' \
-                        + newborn_data.mother.name.name \
-                + '\nMother\'s ID: ' \
-                        + newborn_data.mother.identification_code \
-                + '\nSex: ' + newborn_data.sex \
-                + '\nDoB: ' + str(newborn_data.birth_date)
+                newborn_mother_name = newborn_data.mother.name.name or ''
+
+                newborn_mother_id = newborn_data.mother.identification_code or ''
+
+            else:
+                newborn_mother_lastname = ''
+                newborn_mother_name = ''
+                newborn_mother_id = ''
+                
+            newborn_name = newborn_data.name or ''
+
+            newborn_sex = newborn_data.sex or ''
+            
+            newborn_birth_date = newborn_data.birth_date or ''
+
+            qr_string = 'ID: ' + newborn_name \
+                + '\nMother: ' + newborn_mother_lastname \
+                        + newborn_mother_name \
+                + '\nMother\'s ID: ' + newborn_mother_id \
+                + '\nSex: ' + newborn_sex \
+                + '\nDoB: ' + str(newborn_birth_date)
 
             qr_image = qrcode.make(qr_string)
 
