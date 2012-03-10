@@ -547,12 +547,15 @@ class PartyPatient (ModelSQL, ModelView):
      help="Check if the party is a Medical Center")
     is_insurance_company = fields.Boolean('Insurance Company',
      help="Check if the party is an Insurance Company")
+    is_pharmacy = fields.Boolean('Pharmacy',
+     help="Check if the party is a Pharmacy")
+     
     lastname = fields.Char('Last Name', help="Last Name")
     insurance = fields.One2Many('gnuhealth.insurance', 'name', "Insurance")
     internal_user = fields.Many2One('res.user', 'Internal User',
-     help='In Medical is the user (doctor, nurse) that logins.' \
+     help='In GNU Health is the user (doctor, nurse) that logins.' \
      'When the party is a ' \
-     'doctor or a health proffesional, it will be the user that maps ' \
+     'doctor or a health professional, it will be the user that maps ' \
      'the doctor\'s party name. It must be present.')
     insurance_company_type = fields.Selection([
                             ('state', 'State'),
@@ -1179,7 +1182,8 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         readonly=True, help='Type in the ID of this prescription')
     prescription_date = fields.DateTime('Prescription Date')
     user_id = fields.Many2One('res.user', 'Prescribing Doctor', readonly=True)
-    pharmacy = fields.Many2One('party.party', 'Pharmacy')
+    pharmacy = fields.Many2One('party.party', 'Pharmacy', \
+        domain=[('is_pharmacy', '=', True)])
     prescription_line = fields.One2Many('gnuhealth.prescription.line',
         'name', 'Prescription line')
     notes = fields.Text('Prescription Notes')

@@ -1248,7 +1248,7 @@
 
 							<page string="Health" id="party_gnuhealth" >
 								
-								<group col="10" colspan="4" id="party_specs">
+								<group col="12" colspan="4" id="party_specs">
 									<label name="is_patient"/>
 									<field name="is_patient"/>
 									<label name="is_doctor"/>
@@ -1259,6 +1259,9 @@
 									<field name="is_person"/>
 									<label name="is_insurance_company"/>
 									<field name="is_insurance_company"/>
+									<label name="is_pharmacy"/>
+									<field name="is_pharmacy"/>
+
 								</group>
 
 								<newline/>
