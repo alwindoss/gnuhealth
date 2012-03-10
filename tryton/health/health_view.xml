@@ -1540,7 +1540,11 @@
 								<field name="frequency"/>
 								<label name="frequency_unit"/>
 								<field name="frequency_unit"/>
+                                <label name="frequency_prn"/>
+                                <field name="frequency_prn"/>
+
 							</group>
+
 						</group>
 						<newline/>
 
@@ -2516,6 +2520,9 @@
 							<field name="frequency"/>
 							<label name="frequency_unit"/>
 							<field name="frequency_unit"/>
+							<label name="frequency_prn"/>
+							<field name="frequency_prn"/>
+
 						</group>
 						<newline/>
 						<label name="duration"/>
@@ -2589,7 +2596,6 @@
                             </group>
 						</group>
 						<newline/>
-						<label name="prescription_line" colspan="4"/>
 						<field name="prescription_line" colspan="4"/>
 						<newline/>
 						<group string="Notes" id="group_prescription_notes">

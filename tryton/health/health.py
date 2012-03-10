@@ -1006,6 +1006,8 @@ class MedicationTemplate(ModelSQL, ModelView):
         ('weeks', 'weeks'),
         ('wr', 'when required'),
         ], 'unit', select=True, sort=False)
+    
+    frequency_prn = fields.Boolean ('PRN',help="Use it as needed, pro re nata")
     admin_times = fields.Char('Admin hours',
         help='Suggested administration hours. For example, at 08:00, ' \
         '13:00 and 18:00 can be encoded like 08 13 18')
