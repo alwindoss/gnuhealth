@@ -21,7 +21,7 @@ from setuptools import setup
 info = eval(open('__tryton__.py').read())
 major_version, minor_version = 2, 2
 
-requires = ['qrcode']
+requires = []
 for dep in info.get('depends', []):
     if dep.startswith('health'):
         requires.append('trytond_%s == %s' %
@@ -33,22 +33,22 @@ for dep in info.get('depends', []):
 requires.append('trytond >= %s.%s, < %s.%s' %
     (major_version, minor_version, major_version, minor_version + 1))
 
-setup(name='trytond_health',
+setup(name='trytond_health_qrcodes',
     version=info.get('version', '0.0.1'),
     description=info.get('description', ''),
     author=info.get('author', ''),
     author_email=info.get('email', ''),
     url=info.get('website', ''),
     download_url='http://ftp.gnu.org/gnu/health/',
-    package_dir={'trytond.modules.health': '.'},
+    package_dir={'trytond.modules.health_qrcodes': '.'},
     packages=[
-        'trytond.modules.health',
-        'trytond.modules.health.tests',
+        'trytond.modules.health_qrcodes'
         ],
     package_data={
-        'trytond.modules.health': info.get('xml', []) \
+        'trytond.modules.health_qrcodes': info.get('xml', []) \
             + info.get('translation', []) \
             + ['report/*.odt', 'icons/*.svg'],
+
         },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
@@ -70,7 +70,7 @@ setup(name='trytond_health',
     zip_safe=False,
     entry_points="""
     [trytond.modules]
-    health = trytond.modules.health
+    health_qrcodes = trytond.modules.health_qrcodes
     """,
     test_suite='tests',
     test_loader='trytond.test_loader:Loader',
