@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 {
     'name': 'GNU Health : Genetics',
-    'version': '1.4.3',
+    'version': '1.4.4',
     'author': 'GNU Solidario',
     'email': 'health@gnusolidario.org',
     'website': 'http://health.gnu.org',
