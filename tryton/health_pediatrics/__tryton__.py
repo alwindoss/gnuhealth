@@ -20,7 +20,7 @@
 ##############################################################################
 {
     'name': 'GNU Health: Pediatrics',
-    'version': '1.4.3',
+    'version': '1.4.4',
     'author': 'GNU Solidario',
     'email': 'health@gnusolidario.org',
     'website': 'http://health.gnu.org',
@@ -29,9 +29,8 @@
     ],
 
     'name_es_ES': 'GNU Health : Pediatría',
-    'translation': [
-        'locale/es_ES.po',
-    ],
+    'translation': ['locale/es_ES.po', 'locale/fr_FR.po', 'locale/el.po',
+        'locale/fa.po','locale/it.po'],
 
     'description': '''
 	

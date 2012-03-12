@@ -20,7 +20,7 @@
 ##############################################################################
 {
     'name': 'GNU Health: Gynecology and Obstetrics',  
-    'version': '1.4.3',
+    'version': '1.4.4',
     'author': 'GNU Solidario',
     'email': 'health@gnusolidario.org',
     'website': 'http://health.gnu.org',
@@ -28,9 +28,8 @@
         'health',
     ],
     'name_es_ES': 'GNU Health : Ginecología y Obstetricia',
-    'translation': [
-        'locale/es_ES.po',
-    ],
+    'translation': ['locale/es_ES.po', 'locale/fr_FR.po', 'locale/el.po',
+        'locale/fa.po','locale/it.po'],
 
     'description': '''
 

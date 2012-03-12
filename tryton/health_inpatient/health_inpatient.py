@@ -138,7 +138,7 @@ class InpatientRegistration(ModelSQL, ModelView):
             'button_registration_admission': True,
         })
 
-        _sql_constraints = [
+        self._sql_constraints = [
             ('name_uniq', 'unique(name)',
              'The Registration code already exists')
         ]

@@ -1,14 +1,20 @@
 # 
+# Translators:
+# Carlos  <carloschebair@gmail.com>, 2011.
+# meanmicio <lfalcon@gnusolidario.org>, 2011.
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
-"Project-Id-Version: \n"
+"Project-Id-Version: GNU Health\n"
+"Report-Msgid-Bugs-To: https://savannah.gnu.org/bugs/?group=health\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2011-11-17 19:05+0000\n"
 "Last-Translator: meanmicio <lfalcon@gnusolidario.org>\n"
-"Language-Team: \n"
+"Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/GNU_Health/language/es/)\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 msgctxt "field:gnuhealth.patient,abortions:0"
 msgid "Abortions"
@@ -315,7 +321,9 @@ msgid "Full term pregnancies"
 msgstr "Embarazos a término"
 
 msgctxt "help:gnuhealth.patient,gpa:0"
-msgid "Gravida, Para, Abortus Notation. For example G4P3A1 : 4 Pregnancies, 3 viable and 1 abortion"
+msgid ""
+"Gravida, Para, Abortus Notation. For example G4P3A1 : 4 Pregnancies, 3 "
+"viable and 1 abortion"
 msgstr "Embarazos, Para, Abortus Notation. Por ejemplo G4P3A1 : 4 Embarazos, 3 viables y 1 aborto"
 
 msgctxt "help:gnuhealth.patient,gravida:0"
@@ -359,7 +367,8 @@ msgid "Number of visits to the doctor during pregnancy"
 msgstr "Número de visitas al doctor durante el embarazo"
 
 msgctxt "help:gnuhealth.puerperium.monitor,uterus_involution:0"
-msgid "Distance between the symphysis pubis and the uterine fundus (S-FD) in cm"
+msgid ""
+"Distance between the symphysis pubis and the uterine fundus (S-FD) in cm"
 msgstr "Distancia entre la sínfisis púbica y el fundus uterino (S-FD) en centímetros"
 
 msgctxt "model:gnuhealth.perinatal,name:0"
@@ -565,4 +574,3 @@ msgstr "Principal"
 msgctxt "view:gnuhealth.puerperium.monitor:0"
 msgid "Puerperium Monitor"
 msgstr "Monitor de puerperio"
-

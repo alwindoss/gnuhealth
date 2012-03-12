@@ -20,7 +20,7 @@
 ##############################################################################
 {
     'name': 'GNU Health: Invoice',
-    'version': '1.4.3',
+    'version': '1.4.4',
     'author': 'Silix',
     'website': 'http://health.gnu.org',
     'depends': [
@@ -37,9 +37,8 @@
         'security/access_rights.xml'
     ],
     'name_es_ES': 'GNU Health : Facturación',
-    'translation': [
-        'locale/es_ES.po',
-    ],
+    'translation': ['locale/es_ES.po', 'locale/fr_FR.po', 'locale/el.po',
+        'locale/fa.po','locale/it.po'],
 
     'description': ''' 
         This module add functionality to create invoices for doctor's consulting charge.

@@ -1,3 +1,371 @@
+changeset:   121:ef78bba8a003
+tag:         tip
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sat Mar 10 22:28:05 2012 -0300
+files:       tryton/health/__tryton__.py tryton/health_calendar/__tryton__.py tryton/health_genetics/__tryton__.py tryton/health_gyneco/__tryton__.py tryton/health_icd10/__tryton__.py tryton/health_icd10pcs/__tryton__.py tryton/health_inpatient/__tryton__.py tryton/health_inpatient_calendar/__tryton__.py tryton/health_invoice/__tryton__.py tryton/health_lab/__tryton__.py tryton/health_lifestyle/__tryton__.py tryton/health_pediatrics/__tryton__.py tryton/health_profile/__tryton__.py tryton/health_qrcodes/__tryton__.py tryton/health_socioeconomics/__tryton__.py tryton/health_surgery/__tryton__.py tryton/version
+description:
+Update version number to 1.4.4
+
+
+changeset:   120:d5ccac7ceeb0
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sat Mar 10 17:37:23 2012 -0300
+files:       tryton/health/health_view.xml
+description:
+Add the PRN ("as needed") in the drug prescription and medication form
+
+
+changeset:   119:a57fedf06de9
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sat Mar 10 16:20:09 2012 -0300
+files:       tryton/health/health.py tryton/health/health_view.xml
+description:
+Remove unnecesary label in the prescription form
+
+
+changeset:   118:81ed1f660d41
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sat Mar 10 15:19:11 2012 -0300
+files:       tryton/health/health.py tryton/health/health_view.xml
+description:
+Add the pharmacy field and search domain for the party.
+
+
+changeset:   117:1d880c28be28
+user:        Sebastian Marro <smarro@thymbra.com>
+date:        Sat Mar 10 14:47:12 2012 -0300
+files:       tryton/health_calendar/__init__.py tryton/health_calendar/__tryton__.py tryton/health_calendar/health_calendar.py tryton/health_calendar/setup.py tryton/health_inpatient_calendar/__init__.py tryton/health_inpatient_calendar/__tryton__.py tryton/health_inpatient_calendar/health_inpatient_calendar.py tryton/health_inpatient_calendar/setup.py
+description:
+Update license information for calendar and inpatient_calendar modules
+
+
+changeset:   116:48a994b7edce
+parent:      114:5e2cedc7a89d
+user:        Bruno M. Villasanti <bvillasanti@thymbra.com>
+date:        Wed Mar 07 14:28:38 2012 -0300
+files:       tryton/health_inpatient/health_inpatient.py
+description:
+Fixed wrong SQL constraint declared in Inpatient Registration
+
+Fix bug #35744 : https://savannah.gnu.org/bugs/index.php?35744
+
+
+changeset:   114:5e2cedc7a89d
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Mar 07 02:27:26 2012 -0300
+files:       tryton/health/health.py tryton/health_qrcodes/health_qrcodes.py
+description:
+Fix prescription error when patient age is not set
+
+
+changeset:   113:071b1b708fbe
+parent:      111:3f4dc5198a51
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Mar 07 01:57:25 2012 -0300
+files:       tryton/health_qrcodes/health_qrcodes.py
+description:
+Optimize QR information gathering for both patient and newborn
+
+
+changeset:   111:3f4dc5198a51
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Tue Mar 06 16:21:32 2012 -0300
+files:       tryton/health_qrcodes/health_qrcodes.py
+description:
+Added exceptions when missing fields in QR code generation
+
+
+changeset:   110:9d23f62cd1ca
+user:        Cédric Krier <ced@b2ck.com>
+date:        Tue Mar 06 20:11:34 2012 +0100
+files:       tryton/health/health.py
+description:
+Add missing _rec_name for Prescription Order
+
+Fix bug #35732
+
+
+changeset:   109:a02023a290dc
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Tue Mar 06 14:10:09 2012 -0300
+files:       tryton/health_pediatrics/health_pediatrics.py tryton/health_pediatrics/setup.py
+description:
+Remove QRcodes dependency from pediatrics
+
+
+changeset:   108:e12cbff9fa35
+user:        Sebastian Marro <smarro@thymbra.com>
+date:        Mon Mar 05 18:46:08 2012 -0300
+files:       tryton/health_pediatrics/setup.py tryton/health_qrcodes/setup.py
+description:
+Add qrcode library requirement to setup.py in pediatrics and qrcodes modules
+
+
+changeset:   107:10312aae88e5
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Mar 05 17:55:55 2012 -0300
+files:       tryton/health_lab/locale/it.po
+description:
+Add Italian translation file for laboratory module
+
+
+changeset:   106:63db0d22d306
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Mar 05 17:28:37 2012 -0300
+files:       tryton/health/locale/es_ES.po tryton/health_calendar/locale/es_ES.po tryton/health_genetics/locale/es_ES.po tryton/health_gyneco/locale/es_ES.po tryton/health_inpatient/locale/es_ES.po tryton/health_inpatient_calendar/locale/es_ES.po tryton/health_inpatient_calendar/locale/it.po tryton/health_invoice/locale/es_ES.po tryton/health_lab/locale/es_ES.po tryton/health_lifestyle/locale/es_ES.po tryton/health_pediatrics/locale/es_ES.po tryton/health_socioeconomics/locale/es_ES.po tryton/health_surgery/locale/es_ES.po
+description:
+Update Spanish translation files
+
+
+changeset:   105:71408a1b82e6
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Mar 05 17:15:07 2012 -0300
+files:       tryton/health/__tryton__.py tryton/health/locale/it.po tryton/health_calendar/__tryton__.py tryton/health_calendar/locale/it.po tryton/health_genetics/__tryton__.py tryton/health_genetics/locale/it.po tryton/health_gyneco/__tryton__.py tryton/health_gyneco/locale/it.po tryton/health_inpatient/__tryton__.py tryton/health_inpatient/locale/it.po tryton/health_inpatient_calendar/__tryton__.py tryton/health_invoice/__tryton__.py tryton/health_invoice/locale/it.po tryton/health_lab/__tryton__.py tryton/health_lifestyle/__tryton__.py tryton/health_lifestyle/locale/it.po tryton/health_pediatrics/__tryton__.py tryton/health_pediatrics/locale/it.po tryton/health_qrcodes/__tryton__.py tryton/health_qrcodes/locale/it.po tryton/health_socioeconomics/__tryton__.py tryton/health_socioeconomics/locale/it.po tryton/health_surgery/__tryton__.py tryton/health_surgery/locale/it.po
+description:
+Add Italian translation files
+
+
+changeset:   104:6109411345ce
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Mar 05 16:43:40 2012 -0300
+files:       tryton/health/locale/el.po tryton/health/locale/fa.po tryton/health/locale/fr_FR.po tryton/health_calendar/locale/el.po tryton/health_calendar/locale/fa.po tryton/health_calendar/locale/fr_FR.po tryton/health_genetics/locale/el.po tryton/health_genetics/locale/fa.po tryton/health_genetics/locale/fr_FR.po tryton/health_gyneco/locale/el.po tryton/health_gyneco/locale/fa.po tryton/health_gyneco/locale/fr_FR.po tryton/health_inpatient/locale/el.po tryton/health_inpatient/locale/fa.po tryton/health_inpatient/locale/fr_FR.po tryton/health_inpatient_calendar/locale/el.po tryton/health_inpatient_calendar/locale/fa.po tryton/health_inpatient_calendar/locale/fr_FR.po tryton/health_invoice/locale/el.po tryton/health_invoice/locale/fa.po tryton/health_invoice/locale/fr_FR.po tryton/health_lab/locale/el.po tryton/health_lab/locale/fa.po tryton/health_lab/locale/fr_FR.po tryton/health_lifestyle/locale/el.po tryton/health_lifestyle/locale/fa.po tryton/health_lifestyle/locale/fr_FR.po tryton/health_pediatrics/locale/el.po tryton/health_pediatrics/locale/fa.po tryton/health_pediatrics/locale/fr_FR.po tryton/health_qrcodes/locale/health_qrcodes.pot tryton/health_socioeconomics/locale/el.po tryton/health_socioeconomics/locale/fa.po tryton/health_socioeconomics/locale/fr_FR.po tryton/health_surgery/locale/el.po tryton/health_surgery/locale/fa.po tryton/health_surgery/locale/fr_FR.po
+description:
+Add translation files for French, Greek and Farsi
+
+
+changeset:   103:b8bc9423845b
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Mar 05 16:38:10 2012 -0300
+files:       tryton/health/__tryton__.py
+description:
+Include Greek and Farsi translations
+
+
+changeset:   102:39b8ca06dd0c
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Mar 05 13:41:50 2012 -0300
+files:       tryton/health/__tryton__.py
+description:
+Add French translation
+
+
+changeset:   101:b2cc57e417c5
+user:        Bruno M. Villasanti <bvillasanti@thymbra.com>
+date:        Sat Mar 03 23:44:39 2012 -0300
+files:       tryton/health/health.py
+description:
+health : Pyflakes : Imported but unused modules
+
+
+changeset:   100:94ad14cd1938
+user:        Bruno M. Villasanti <bvillasanti@thymbra.com>
+date:        Sat Mar 03 23:36:06 2012 -0300
+files:       tryton/health/__tryton__.py tryton/health/health.py
+description:
+health : PEP8
+
+
+changeset:   99:a09be719b038
+user:        Bruno M. Villasanti <bvillasanti@thymbra.com>
+date:        Sat Mar 03 01:33:52 2012 -0300
+files:       tryton/health_qrcodes/health_qrcodes.py
+description:
+health_qrcodes : Pyflakes : Imported but unused modules
+
+
+changeset:   98:03ffaaa24bfb
+user:        Bruno M. Villasanti <bvillasanti@thymbra.com>
+date:        Sat Mar 03 01:29:06 2012 -0300
+files:       tryton/health_qrcodes/__tryton__.py tryton/health_qrcodes/health_qrcodes.py tryton/health_qrcodes/health_qrcodes_view.xml
+description:
+health_qrcodes : Tryton formatting code
+
+
+changeset:   97:7de393a95fa4
+user:        Bruno M. Villasanti <bvillasanti@thymbra.com>
+date:        Fri Mar 02 17:25:56 2012 -0300
+files:       tryton/health_qrcodes/__tryton__.py tryton/health_qrcodes/health_qrcodes.py
+description:
+health_qrcodes : PEP8
+
+
+changeset:   96:b8e41cc51d38
+user:        Bruno M. Villasanti <bvillasanti@thymbra.com>
+date:        Thu Mar 01 18:41:56 2012 -0300
+files:       tryton/health_qrcodes/locale/es_ES.po
+description:
+Added missing Spanish translations file in health_qrcodes module
+
+bug #35684 : https://savannah.gnu.org/bugs/?35684
+
+
+changeset:   95:1a9ac32e4f5e
+parent:      93:8bc90c607c74
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Fri Feb 24 17:12:12 2012 -0300
+files:       tryton/health/health.py
+description:
+Add lactation warning in prescription writing ( Chris Larsen )
+
+
+changeset:   93:8bc90c607c74
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Feb 22 23:38:44 2012 -0300
+files:       tryton/health/health.py tryton/health/health_view.xml
+description:
+Add childbearing potential range in the patient model, to be taken into account in prescription writing, health promotion, etc.
+
+
+changeset:   92:f106c13d64f0
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Feb 22 16:05:11 2012 -0300
+files:       tryton/health/health.py
+description:
+Update DSS for prescription
+
+
+changeset:   91:8d4d94b74e48
+parent:      89:072c38741385
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Wed Feb 22 06:55:58 2012 -0300
+files:       tryton/health/health.py tryton/health/health_view.xml
+description:
+Basic DSS on prescription writing (pregnancy)
+
+
+changeset:   89:072c38741385
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Mon Feb 20 20:28:03 2012 -0300
+files:       tryton/health/data/WHO_list_of_essential_medicines.xml tryton/health/health.py tryton/health/health_view.xml
+description:
+Identify by colors the different Medicaments Pregnacy categories
+
+
+changeset:   88:239fe66cfae8
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Feb 19 20:55:58 2012 -0300
+files:       tryton/health/data/WHO_medicaments.xml
+description:
+health: Remove obsolete file WHO_medicaments.xml, now merged into WHO_list_of_essential_medicines.xml
+
+
+changeset:   87:a46a060a784a
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Feb 19 20:52:12 2012 -0300
+files:       tryton/health/data/WHO_list_of_essential_medicines.xml
+description:
+Include Selenium Sulfide pregnancy category
+
+
+changeset:   86:9dd2391af7f2
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Feb 19 20:42:39 2012 -0300
+files:       tryton/health/data/WHO_list_of_essential_medicines.xml
+description:
+Merge FDA pregnancy categories in WHO essential medicines
+
+
+changeset:   85:18c07383ec4b
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Feb 19 16:50:53 2012 -0300
+files:       tryton/health/data/WHO_medicaments.xml
+description:
+Update task http://savannah.gnu.org/task/?11382
+Update FDA pregnacy category for WHO essential medicines
+
+
+changeset:   84:3eaef8c62830
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sat Feb 18 20:50:34 2012 -0300
+files:       tryton/health/data/WHO_medicaments.xml tryton/health_qrcodes/health_qrcodes.py
+description:
+Update task http://savannah.gnu.org/task/?11382
+Update medicament FDA pregnancy categories (some)
+
+
+changeset:   83:98f2164f79ab
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Feb 05 00:36:48 2012 -0300
+files:       tryton/health_qrcodes/health_qrcodes.py tryton/health_qrcodes/health_qrcodes_view.xml tryton/health_qrcodes/report/patient_card.odt
+description:
+health_qrcodes : Improve Patient ID card
+
+
+changeset:   82:33b0ccf972be
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sat Feb 04 21:55:35 2012 -0300
+files:       tryton/health_qrcodes/health_qrcodes.py
+description:
+health_qrcodes : PEP8
+
+
+changeset:   81:0b7b98b22a27
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sat Feb 04 21:44:31 2012 -0300
+files:       tryton/health_qrcodes/report/newborn_card.odt
+description:
+Fix enable print to newborn picture in report
+
+
+changeset:   80:45d0adb9dff4
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sat Feb 04 20:57:05 2012 -0300
+files:       tryton/health_qrcodes/health_qrcodes.py tryton/health_qrcodes/report/newborn_card.odt
+description:
+health_qrcodes : Improve Newborn report
+Include main newborn information into the QR code
+
+
+changeset:   79:b369988c6fbc
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Fri Feb 03 23:24:36 2012 -0300
+files:       tryton/health_qrcodes/__tryton__.py tryton/health_qrcodes/health_qrcodes_report.xml
+description:
+Fix report xml declaration file
+
+
+changeset:   78:217b728fd588
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Fri Feb 03 18:26:50 2012 -0300
+files:       tryton/health/report/prescription_orders.odt tryton/health_pediatrics/report/newborn_card.odt tryton/health_qrcodes/health_qrcodes_report.xml tryton/health_qrcodes/report/newborn_card.odt
+description:
+Initial reporting for Newborn wristbands with QR codes
+Remove unused testing variable from pediatrics module
+
+
+changeset:   77:9325f1322aa3
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Tue Jan 31 13:59:43 2012 -0300
+files:       tryton/health_pediatrics/health_pediatrics.py tryton/health_pediatrics/health_pediatrics_view.xml tryton/health_pediatrics/report/newborn_card.odt tryton/health_qrcodes/COPYING tryton/health_qrcodes/MANIFEST.in tryton/health_qrcodes/README tryton/health_qrcodes/__init__.py tryton/health_qrcodes/__tryton__.py tryton/health_qrcodes/health_qrcodes.py tryton/health_qrcodes/health_qrcodes_report.xml tryton/health_qrcodes/health_qrcodes_view.xml tryton/health_qrcodes/report/newborn_card.odt tryton/health_qrcodes/report/patient_card.odt tryton/health_qrcodes/setup.py
+description:
+Create Health QR Codes (health_qrcodes) module for Patient and Newborn identification
+
+
+changeset:   76:7f54bf5e1ec9
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Jan 29 23:51:02 2012 -0300
+files:       .hgtags
+description:
+Added tag 1.4.3 for changeset 929ee1939ca7
+
+
+changeset:   75:929ee1939ca7
+tag:         1.4.3
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Jan 29 23:10:27 2012 -0300
+files:       tryton/health_pediatrics/setup.py
+description:
+health_pediatrics : FIX setup.py to include the report directory
+
+
+changeset:   74:12ae79f68f11
+user:        Luis Falcon <lfalcon@gnusolidario.org>
+date:        Sun Jan 29 21:42:23 2012 -0300
+files:       tryton/Changelog
+description:
+Updated Changelog
+
+
 ******** VERSION 1.4.3 **********
 changeset:   73:6d134c99fa4a
 tag:         tip

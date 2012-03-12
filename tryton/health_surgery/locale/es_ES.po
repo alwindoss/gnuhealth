@@ -1,14 +1,20 @@
 # 
+# Translators:
+#   <cmelgosa@thymbra.com>, 2011.
+# meanmicio <lfalcon@gnusolidario.org>, 2011.
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
-"Project-Id-Version: \n"
+"Project-Id-Version: GNU Health\n"
+"Report-Msgid-Bugs-To: https://savannah.gnu.org/bugs/?group=health\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: meanmicio <lfalcon@gnusolidario.org>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2011-11-23 15:53+0000\n"
+"Last-Translator: cristina <cmelgosa@thymbra.com>\n"
+"Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/GNU_Health/language/es/)\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 msgctxt "field:gnuhealth.operation,name:0"
 msgid "Surgery"
@@ -33,6 +39,10 @@ msgstr "Cirugías"
 msgctxt "field:gnuhealth.surgery,admission:0"
 msgid "Admission"
 msgstr "Admisión"
+
+msgctxt "field:gnuhealth.surgery,age:0"
+msgid "Patient age"
+msgstr "Edad del paciente"
 
 msgctxt "field:gnuhealth.surgery,anesthetist:0"
 msgid "Anesthetist"
@@ -110,6 +120,10 @@ msgctxt "help:gnuhealth.operation,procedure:0"
 msgid "Procedure Code, for example ICD-10-PCS Code 7-character string"
 msgstr "Código del procedimiento, por ejemplo los 7 caracteres del código ICD-10-PCS"
 
+msgctxt "help:gnuhealth.surgery,age:0"
+msgid "Patient age at the moment of the surgery. Can be estimative"
+msgstr "Edad del paciente al momento de la cirugía. Puede ser estimativa"
+
 msgctxt "help:gnuhealth.surgery,anesthetist:0"
 msgid "Anesthetist in charge"
 msgstr "Anestesista a cargo"
@@ -127,11 +141,15 @@ msgid "Prophylactic antibiotic treatment within the last 60 minutes"
 msgstr "Tratamiento antibiótico profiláctico en los últimos 60 minutos"
 
 msgctxt "help:gnuhealth.surgery,preop_bleeding_risk:0"
-msgid "Check this box if patient has a risk of loosing more than 500 ml in adults of over 7ml/kg in infants. If so, make sure that intravenous access and fluids are available"
+msgid ""
+"Check this box if patient has a risk of loosing more than 500 ml in adults "
+"of over 7ml/kg in infants. If so, make sure that intravenous access and "
+"fluids are available"
 msgstr "Marque esta casilla si el paciente tiene riesgo de perder más de 500 ml en adultos y más de 7ml/kg en niños. Si es así, asegúrese que están disponibles las vías intravenosas y fluidos."
 
 msgctxt "help:gnuhealth.surgery,preop_oximeter:0"
-msgid "Check this box when verified the pulse oximeter is in place and functioning"
+msgid ""
+"Check this box when verified the pulse oximeter is in place and functioning"
 msgstr "Marque esta casilla cuando se haya verificado que el saturómetro está colocado y funcionando"
 
 msgctxt "help:gnuhealth.surgery,preop_site_marking:0"
@@ -143,7 +161,9 @@ msgid "Nursing team has confirmed sterility of the devices and room"
 msgstr "Enfermería ha confirmado la esterilidad de los dispositivos y del quirófano"
 
 msgctxt "help:gnuhealth.surgery,procedures:0"
-msgid "List of the procedures in the surgery. Please enter the first one as the main procedure"
+msgid ""
+"List of the procedures in the surgery. Please enter the first one as the "
+"main procedure"
 msgstr "Lista de procedimientos en la cirugía. Introduzca el primero como el procedimiento principal"
 
 msgctxt "help:gnuhealth.surgery,surgeon:0"
@@ -213,4 +233,3 @@ msgstr "Cirugía"
 msgctxt "view:gnuhealth.surgery:0"
 msgid "Surgical Safety Checklist"
 msgstr "Lista de Control para Seguridad Quirúrgica"
-

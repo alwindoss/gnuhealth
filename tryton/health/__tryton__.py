@@ -20,26 +20,27 @@
 ##############################################################################
 {
 
-	'name' : 'GNU Health : Free Health and Hospital Information System',  
-    'version': '1.4.3',
-	'author' : 'GNU Solidario',
-	'email' : 'health@gnusolidario.org',
-	'website' : "http://health.gnu.org",
-    'depends' : ['ir', 'res', 'product', 'party', 'company'],
+    'name': 'GNU Health : Free Health and Hospital Information System',
+    'version': '1.4.4',
+    'author': 'GNU Solidario',
+    'email': 'health@gnusolidario.org',
+    'website': "http://health.gnu.org",
+    'depends': ['ir', 'res', 'product', 'party', 'company'],
     'name_es_ES': 'GNU Health : Sistema Libre de Gestión Hospitalaria y de Salud',
-    'translation': [
-        'locale/es_ES.po',
-    ],
+    'translation': ['locale/es_ES.po', 'locale/fr_FR.po', 'locale/el.po',
+        'locale/fa.po','locale/it.po'],
+    
 
-	"xml" : ["health_view.xml","data/medicament_categories.xml",
-        "data/health_product.xml","data/WHO_products.xml","data/WHO_list_of_essential_medicines.xml",
-        "data/health_specialties.xml","data/ethnic_groups.xml",
-        "data/occupations.xml","data/dose_units.xml",
-        "data/drug_administration_routes.xml","data/medicament_form.xml",
-        "data/medication_frequencies.xml","data/health_sequences.xml",
-        "security/access_rights.xml","health_report.xml"],
+    "xml": ["health_view.xml", "data/medicament_categories.xml",
+        "data/health_product.xml", "data/WHO_products.xml",
+        "data/WHO_list_of_essential_medicines.xml",
+        "data/health_specialties.xml", "data/ethnic_groups.xml",
+        "data/occupations.xml", "data/dose_units.xml",
+        "data/drug_administration_routes.xml", "data/medicament_form.xml",
+        "data/medication_frequencies.xml", "data/health_sequences.xml",
+        "security/access_rights.xml", "health_report.xml"],
 
-	'description' : """
+    'description': """
 
 About GNU Health
 ----------------------
@@ -82,7 +83,7 @@ GNU Health at a glance:
 
 
 
-Please check the main project at the GNU Savannah (http://savannah.gnu.org/projects/health ) for the latest news and developer releases. 
+Please check the main project at the GNU Savannah (http://savannah.gnu.org/projects/health ) for the latest news and developer releases.
 
 """,
 
@@ -90,7 +91,7 @@ Please check the main project at the GNU Savannah (http://savannah.gnu.org/proje
 Acerca de GNU Health
 ---------------------------------
 
-GNU Health es un sistema libre de Gestión Hospitalaria y de Información de salud que ofrece las siguientes funciones : 
+GNU Health es un sistema libre de Gestión Hospitalaria y de Información de salud que ofrece las siguientes funciones :
 
     * Expediente Médico Electrónico (EMR)
 
@@ -98,7 +99,7 @@ GNU Health es un sistema libre de Gestión Hospitalaria y de Información de sal
 
     * Sistema de Información de Salud
 
-Nuestro objetivo es contribuir con los profesionales de la salud alrededor del mundo para mejorar la calidad de vida de los más necesitados, ofreciendo un sistema libre que optimice la promoción de la salud y la prevención de la enfermedad. 
+Nuestro objetivo es contribuir con los profesionales de la salud alrededor del mundo para mejorar la calidad de vida de los más necesitados, ofreciendo un sistema libre que optimice la promoción de la salud y la prevención de la enfermedad.
 
 
 Características de GNU Health :
@@ -120,7 +121,7 @@ Características de GNU Health :
 
     - Recetas
 
-    - Facturación 
+    - Facturación
 
     - Administración del Paciente (creación, evaluación / consultas, historia ...)
 
