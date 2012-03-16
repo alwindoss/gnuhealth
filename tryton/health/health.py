@@ -16,16 +16,9 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-<<<<<<< local
 #
 ##############################################################################
-=======
->>>>>>> other
 
-<<<<<<< local
-=======
-
->>>>>>> other
 from dateutil.relativedelta import relativedelta
 from datetime import datetime
 
@@ -558,8 +551,8 @@ class PartyPatient (ModelSQL, ModelView):
     is_insurance_company = fields.Boolean('Insurance Company',
      help="Check if the party is an Insurance Company")
     is_pharmacy = fields.Boolean('Pharmacy',
-     help="Check if the party is a Pharmacy")
-     
+        help="Check if the party is a Pharmacy")
+
     lastname = fields.Char('Last Name', help="Last Name")
     insurance = fields.One2Many('gnuhealth.insurance', 'name', "Insurance")
     internal_user = fields.Many2One('res.user', 'Internal User',
@@ -843,8 +836,8 @@ class PatientData(ModelSQL, ModelView):
 
 PatientData()
 
-# PATIENT DISESASES INFORMATION
 
+# PATIENT DISESASES INFORMATION
 
 class PatientDiseaseInfo(ModelSQL, ModelView):
     "Patient Disease History"
@@ -908,8 +901,8 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
 
 PatientDiseaseInfo()
 
-# PATIENT APPOINTMENT
 
+# PATIENT APPOINTMENT
 
 class Appointment(ModelSQL, ModelView):
     "Patient Appointments"
@@ -1016,8 +1009,9 @@ class MedicationTemplate(ModelSQL, ModelView):
         ('weeks', 'weeks'),
         ('wr', 'when required'),
         ], 'unit', select=True, sort=False)
-    
-    frequency_prn = fields.Boolean ('PRN',help="Use it as needed, pro re nata")
+
+    frequency_prn = fields.Boolean ('PRN',
+        help='Use it as needed, pro re nata')
     admin_times = fields.Char('Admin hours',
         help='Suggested administration hours. For example, at 08:00, ' \
         '13:00 and 18:00 can be encoded like 08 13 18')

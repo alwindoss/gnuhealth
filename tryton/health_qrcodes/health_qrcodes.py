@@ -16,25 +16,12 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-<<<<<<< local
 #
 ##############################################################################
-=======
-
->>>>>>> other
 import qrcode
 import StringIO
-<<<<<<< local
-
-
-=======
->>>>>>> other
 from trytond.model import ModelView, ModelSQL, fields
-<<<<<<< local
 
-
-=======
->>>>>>> other
 
 # Add the QR field and QR image in the patient model
 
@@ -48,13 +35,13 @@ class Patient(ModelSQL, ModelView):
         for patient_data in self.browse(ids):
 
             patient_ssn = patient_data.ssn or ''
-            
+
             patient_blood_type = patient_data.blood_type or ''
 
             patient_rh = patient_data.rh or ''
 
             patient_sex = patient_data.sex or ''
-            
+
             patient_dob = patient_data.dob or ''
 
             patient_id = patient_data.identification_code or ''
@@ -63,7 +50,7 @@ class Patient(ModelSQL, ModelView):
                 patient_lastname = patient_data.lastname + ', '
             else:
                 patient_lastname = ''
-                
+
             qr_string = 'ID: ' + patient_id \
                 + '\nName: ' + patient_lastname + ',' \
                     + patient_data.name.name \
@@ -73,9 +60,7 @@ class Patient(ModelSQL, ModelView):
                 + '\nBlood Type: ' + patient_blood_type \
                     + ' ' + patient_rh
 
-
             qr_image = qrcode.make(qr_string)
-
 
 # Make a PNG image from PIL without the need to create a temp file
             holder = StringIO.StringIO()

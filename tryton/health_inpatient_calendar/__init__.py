@@ -1,13 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-<<<<<<< local
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2011  Sebastián Marró <smarro@thymbra.com>
-=======
 #    Copyright (C) 2011-2012  Sebastián Marró <smarro@thymbra.com>
-#    $Id$
->>>>>>> other
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by

@@ -16,16 +16,9 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-<<<<<<< local
 #
 ##############################################################################
 from trytond.model import ModelView, ModelSQL, fields
-=======
-
-import StringIO
-from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
-from trytond.tools import safe_eval, datetime_strftime
->>>>>>> other
 from trytond.transaction import Transaction
 from trytond.pool import Pool
 
