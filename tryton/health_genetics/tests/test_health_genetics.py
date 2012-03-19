@@ -8,12 +8,12 @@ if os.path.isdir(DIR):
 
 import unittest
 import trytond.tests.test_tryton
-from trytond.tests.test_tryton import test_view
+from trytond.tests.test_tryton import test_view, test_depends
 
 
-class MedicalGeneticsTestCase(unittest.TestCase):
+class HealthGeneticsTestCase(unittest.TestCase):
     '''
-    Test MedicalGenetics module.
+    Test HealthGenetics module.
     '''
 
     def setUp(self):
@@ -25,10 +25,16 @@ class MedicalGeneticsTestCase(unittest.TestCase):
         '''
         test_view('health_genetics')
 
+    def test0006depends(self):
+        '''
+        Test depends.
+        '''
+        test_depends()
+
 def suite():
     suite = trytond.tests.test_tryton.suite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(
-        MedicalGeneticsTestCase))
+        HealthGeneticsTestCase))
     return suite
 
 if __name__ == '__main__':

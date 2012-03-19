@@ -133,7 +133,8 @@ class Perinatal(ModelSQL, ModelView):
         ('hh', 'in transit to the hospital'),
         ('th', 'Being transferred to other hospital'),
         ], 'Place of Death', help="Place where the mother died",
-        states={'invisible': Not(Bool(Eval('mother_deceased')))})
+        states={'invisible': Not(Bool(Eval('mother_deceased')))},
+        depends=['mother_deceased'])
 
     mother_deceased = fields.Boolean('Deceased',
         help="Mother died in the process")

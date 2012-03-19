@@ -11,19 +11,19 @@ import trytond.tests.test_tryton
 from trytond.tests.test_tryton import test_view, test_depends
 
 
-class HealthInpatientTestCase(unittest.TestCase):
+class HealthLifestyleTestCase(unittest.TestCase):
     '''
-    Test HealthInpatient module.
+    Test HealthLifestyle module.
     '''
 
     def setUp(self):
-        trytond.tests.test_tryton.install_module('health_inpatient')
+        trytond.tests.test_tryton.install_module('health_lifestyle')
 
     def test0005views(self):
         '''
         Test views.
         '''
-        test_view('health_inpatient')
+        test_view('health_lifestyle')
 
     def test0006depends(self):
         '''
@@ -34,7 +34,7 @@ class HealthInpatientTestCase(unittest.TestCase):
 def suite():
     suite = trytond.tests.test_tryton.suite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(
-        HealthInpatientTestCase))
+        HealthLifestyleTestCase))
     return suite
 
 if __name__ == '__main__':
