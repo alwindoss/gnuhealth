@@ -712,11 +712,12 @@ class PatientData(ModelSQL, ModelView):
     current_insurance = fields.Many2One('gnuhealth.insurance',
         'Insurance', domain=[('name', '=', Eval('name'))],
         help='Insurance information. You may choose from the' \
-        ' different insurances belonging to the patient')
+        ' different insurances belonging to the patient', depends=['name'])
     current_address = fields.Many2One('party.address',
         'Address', domain=[('party', '=', Eval('name'))],
         help='Contact information. You may choose from the' \
-        ' different contacts and addresses this patient has.')
+        ' different contacts and addresses this patient has.',
+        depends=['name'])
     primary_care_doctor = fields.Many2One('gnuhealth.physician',
         'Primary Care Doctor', help="Current primary care / family doctor")
     photo = fields.Binary('Picture')
@@ -768,10 +769,10 @@ class PatientData(ModelSQL, ModelView):
         help="Mark if the patient has died")
     dod = fields.DateTime('Date of Death',
         states={'invisible': Not(Bool(Eval('deceased'))),
-        'required': Bool(Eval('deceased'))})
+        'required': Bool(Eval('deceased'))}, depends=['deceased'])
     cod = fields.Many2One('gnuhealth.pathology', 'Cause of Death',
      states={'invisible': Not(Bool(Eval('deceased'))),
-      'required': Bool(Eval('deceased'))})
+      'required': Bool(Eval('deceased'))}, depends=['deceased'])
 
     childbearing_age = fields.Function(fields.Boolean( \
             'Potential for Childbearing'), 'patient_age')
@@ -1051,8 +1052,8 @@ class PatientMedication(ModelSQL, ModelView):
         on_change_with=['is_active', 'discontinued'])
     discontinued_reason = fields.Char('Reason for discontinuation',
         help="Short description for discontinuing the treatment",
-         states={'invisible': Not(Bool(Eval('discontinued'))),
-         'required': Bool(Eval('discontinued'))})
+        states={'invisible': Not(Bool(Eval('discontinued'))),
+        'required': Bool(Eval('discontinued'))}, depends=['discontinued'])
     adverse_reaction = fields.Text('Adverse Reactions',
         help="Side effects or adverse reactions that the patient experienced")
     notes = fields.Text('Extra Info')

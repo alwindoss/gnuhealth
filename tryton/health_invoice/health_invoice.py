@@ -60,7 +60,8 @@ class Appointment(ModelSQL, ModelView):
         return {}
 
     no_invoice = fields.Boolean('Invoice exempt',
-        states={'invisible': Equal(Eval('validity_status'), 'invoiced')})
+        states={'invisible': Equal(Eval('validity_status'), 'invoiced')},
+        depends=['validity_status'])
     appointment_validity_date = fields.DateTime('Validity Date')
     validity_status = fields.Selection([
         ('invoiced', 'Invoiced'),
@@ -82,7 +83,8 @@ class LabTest(ModelSQL, ModelView):
     _description = __doc__
 
     no_invoice = fields.Boolean('Invoice exempt',
-        states={'invisible': Equal(Eval('invoice_status'), 'invoiced')})
+        states={'invisible': Equal(Eval('invoice_status'), 'invoiced')},
+        depends=['invoice_status'])
     invoice_status = fields.Selection([
         ('invoiced', 'Invoiced'),
         ('tobe', 'To be Invoiced'),
@@ -103,7 +105,8 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
     _description = __doc__
 
     no_invoice = fields.Boolean('Invoice exempt',
-        states={'invisible': Equal(Eval('invoice_status'), 'invoiced')})
+        states={'invisible': Equal(Eval('invoice_status'), 'invoiced')},
+        depends=['invoice_status'])
     invoice_status = fields.Selection([
         ('invoiced', 'Invoiced'),
         ('tobe', 'To be Invoiced'),
