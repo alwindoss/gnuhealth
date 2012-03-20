@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<tryton>
+    <data noupdate="1">
+
+<!-- PRODUCTS DEFINITION-->
+
+        <record id="product_product_sputum_bacilloscopy_analysischarges0" model="product.product">
+            <field name="name">Sputum Bacilloscopy Analysis Charges</field>
+            <field eval="1.0" name="list_price"/>
+            <field name="default_uom" ref="product.uom_unit"/>
+            <field name="type">service</field>
+            <field name="category" ref="health_lab.product_category_labservices0"/>
+        </record>
+
+        <record id="product_product_sputum_culture_lj_analysischarges0" model="product.product">
+            <field name="name">Sputum Lowenstein-Jensen Culture Analysis Charges</field>
+            <field eval="1.0" name="list_price"/>
+            <field name="default_uom" ref="product.uom_unit"/>
+            <field name="type">service</field>
+            <field name="category" ref="health_lab.product_category_labservices0"/>
+        </record>
+
+        <record id="product_product_bactec_culture_analysischarges0" model="product.product">
+            <field name="name">BACTEC Culture Analysis Charges</field>
+            <field eval="1.0" name="list_price"/>
+            <field name="default_uom" ref="product.uom_unit"/>
+            <field name="type">service</field>
+            <field name="category" ref="health_lab.product_category_labservices0"/>
+        </record>
+
+        <record id="product_product_xpert_mtb_rif_analysischarges0" model="product.product">
+            <field name="name">Xpert MTB-RIF Analysis Charges</field>
+            <field eval="1.0" name="list_price"/>
+            <field name="default_uom" ref="product.uom_unit"/>
+            <field name="type">service</field>
+            <field name="category" ref="health_lab.product_category_labservices0"/>
+        </record>
+
+        <record id="product_product_ppd_analysischarges0" model="product.product">
+            <field name="name">Purified Protein Derivative - PPD Analysis Charges</field>
+            <field eval="1.0" name="list_price"/>
+            <field name="default_uom" ref="product.uom_unit"/>
+            <field name="type">service</field>
+            <field name="category" ref="health_lab.product_category_labservices0"/>
+        </record>
+
+<!-- TEST TYPES DEFINITIONS -->
+
+        <record id="gnuhealth_test_sputum_bacilloscopy_analysis0" model="gnuhealth.lab.test_type">
+            <field eval="&quot;&quot;&quot;SSA&quot;&quot;&quot;" name="code"/>
+            <field name="product_id" ref="product_product_sputum_bacilloscopy_analysischarges0"/>
+            <field eval="&quot;&quot;&quot;SPUTUM BACILLOSCOPY ANALYSIS&quot;&quot;&quot;" name="name"/>
+        </record>
+
+
+        <record id="gnuhealth_test_culture_bactec_analysis0" model="gnuhealth.lab.test_type">
+            <field eval="&quot;&quot;&quot;BAC&quot;&quot;&quot;" name="code"/>
+            <field name="product_id" ref="product_product_sputum_culture_analysischarges0"/>
+            <field eval="&quot;&quot;&quot;BACTEC CULTURE ANALYSIS&quot;&quot;&quot;" name="name"/>
+        </record>
+
+        <record id="gnuhealth_test_sputum_culture_lj_analysis0" model="gnuhealth.lab.test_type">
+            <field eval="&quot;&quot;&quot;LJ&quot;&quot;&quot;" name="code"/>
+            <field name="product_id" ref="product_product_sputum_culture_analysischarges0"/>
+            <field eval="&quot;&quot;&quot;SPUTUM LOWENSTEIN-JENSEN CULTURE ANALYSIS&quot;&quot;&quot;" name="name"/>
+        </record>
+
+        <record id="gnuhealth_test_ppd_analysis0" model="gnuhealth.lab.test_type">
+            <field eval="&quot;&quot;&quot;PPD&quot;&quot;&quot;" name="code"/>
+            <field name="product_id" ref="product_product_ppd_analysischarges0"/>
+            <field eval="&quot;&quot;&quot;PPD TEST&quot;&quot;&quot;" name="name"/>
+        </record>
+
+        <record id="gnuhealth_test_xpert_mtb_rif_analysis0" model="gnuhealth.lab.test_type">
+            <field eval="&quot;&quot;&quot;MTBRIF&quot;&quot;&quot;" name="code"/>
+            <field name="product_id" ref="product_product_xpert_mtb_rif_analysischarges0"/>
+            <field eval="&quot;&quot;&quot;Xpert MTB/RIF&quot;&quot;&quot;" name="name"/>
+        </record>
+
+<!-- Lab test Units -->
+
+        <record id="gnuhealth_lab_test_units_mm" model="gnuhealth.lab.test.units">
+            <field eval="&quot;&quot;&quot;mm&quot;&quot;&quot;" name="code"/>
+            <field eval="&quot;&quot;&quot;mm&quot;&quot;&quot;" name="name"/>
+        </record>
+
+<!-- ANALYTES -->
+
+        <record id="gnuhealth_test_critearea_ppd0" model="gnuhealth.lab.test.critearea">
+            <field eval="&quot;&quot;&quot;Induration Size&quot;&quot;&quot;" name="name"/>
+            <field eval="1" name="sequence"/>
+            <field name="test_type_id" ref="gnuhealth_test_ppd_analysis0"/>
+            <field eval="&quot;&quot;&quot;
+Immunocompetent              : &lt; 15 mm
+Immunocompromised        : &lt; 5 mm
+&quot;&quot;&quot;" name="normal_range"/>
+            <field eval="0" name="lower_limit"/>
+            <field eval="15" name="upper_limit"/>
+            <field name="units" ref="gnuhealth_lab_test_units_mm"/>
+        </record>
+
+
+        <record id="gnuhealth_test_critearea_sputum_appearance" model="gnuhealth.lab.test.critearea">
+            <field eval="&quot;&quot;&quot;Macroscopic appearance&quot;&quot;&quot;" name="name"/>
+            <field eval="1" name="sequence"/>
+            <field name="test_type_id" ref="gnuhealth_test_sputum_bacilloscopy_analysis0"/>
+        </record>
+
+        <record id="gnuhealth_test_critearea_sputum_culture" model="gnuhealth.lab.test.critearea">
+            <field eval="&quot;&quot;&quot;Result&quot;&quot;&quot;" name="name"/>
+            <field eval="2" name="sequence"/>
+            <field name="test_type_id" ref="gnuhealth_test_culture_bactec_analysis0"/>
+        </record>
+
+    </data>
+</tryton>
