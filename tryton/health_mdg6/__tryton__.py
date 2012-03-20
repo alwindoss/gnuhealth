@@ -1,13 +1,13 @@
 # -*- encoding: utf-8 -*-
 {
 
-    'name': 'GNU Health MDG 6: Management of HIV/AIDS, Malaria and Tuberculosis',
+    'name': 'GNU Health : MDG 6. HIV/AIDS, Malaria and Tuberculosis',
     'version': '1.4.4',
     'author': 'GNU Solidario',
     'email': 'health@gnusolidario.org',
     'website': "http://health.gnu.org",
-    'depends': ['health_lab'],
-    'name_es_ES': 'GNU Health MDG 6: Gestión para VIH/SIDA, Malaria y Tuberculosis',
+    'depends': ['health','health_lab'],
+    'name_es_ES': 'GNU Health: MDG 6. VIH/SIDA, Malaria y Tuberculosis',
 
     "xml": ["data/lab_test_data.xml"],
 
