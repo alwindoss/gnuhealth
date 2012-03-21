@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
+#    GNU Health: The Free Health and Hospital Information System
 #    Copyright (C) 2011  Adrián Bernardi, Mario Puntin
-#    $Id$
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -18,13 +18,9 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
-from datetime import datetime
+from datetime import timedelta
 from trytond.model import ModelView, ModelSQL, fields
-from trytond.pyson import Eval, Not, Equal, If, In, Bool, Get, Or, And, \
-        PYSONEncoder
-from trytond.pyson import Eval
-from trytond.pool import Pool
+from trytond.pyson import Eval, Equal
 
 
 class PatientData(ModelSQL, ModelView):
@@ -49,19 +45,18 @@ class Appointment(ModelSQL, ModelView):
         default.update({'validity_status': 'tobe'})
         return super(Appointment, self).copy(ids, default=default)
 
-    # TODO
     def on_change_appointment_date(self, apt_date):
         if apt_date:
-            validity_date = datetime.datetime.fromtimestamp(
-                    time.mktime(time.strptime(apt_date, '%Y-%m-%d %H:%M:%S')))
-            validity_date = validity_date + datetime.timedelta(days=7)
-            v = {'appointment_validity_date': str(validity_date)}
-            return {'value': v}
+            validity_date = apt_date['appointment_date']
+            validity_date += timedelta(days=7)
+            return {'appointment_validity_date': validity_date}
         return {}
 
     no_invoice = fields.Boolean('Invoice exempt',
         states={'invisible': Equal(Eval('validity_status'), 'invoiced')},
         depends=['validity_status'])
+    appointment_date = fields.DateTime('Date and Time',
+        on_change=['appointment_date'])
     appointment_validity_date = fields.DateTime('Validity Date')
     validity_status = fields.Selection([
         ('invoiced', 'Invoiced'),
