@@ -425,8 +425,8 @@ class Pathology(ModelSQL, ModelView):
 
     name = fields.Char('Name', required=True, translate=True,
         help='Disease name')
-    code = fields.Char('Code',
-        help='Specific Code for the Disease (eg, ICD-10, SNOMED...\)')
+    code = fields.Char('Code', required=True, 
+        help='Specific Code for the Disease (eg, ICD-10)')
     category = fields.Many2One('gnuhealth.pathology.category', 'Main Category',
         help='Select the main category for this disease This is usually'\
         ' associated to the standard. For instance, the chapter on the ICD-10'\
@@ -586,6 +586,24 @@ class PartyPatient (ModelSQL, ModelView):
             ('ref_uniq', 'UNIQUE(ref)', 'The Patient SSN must be unique'),
         ]
 
+    def write(self, ids, values):
+        # We use this method overwrite to make the fields that have a unique
+        # constraint get the NULL value at PostgreSQL level, and not the value
+        # '' coming from the client
+        if 'ref' in values and not values['ref']:
+            values = values.copy()
+            values['ref'] = None
+        return super(PartyPatient, self).write(ids, values)
+
+    def create(self, values):
+        # We use this method overwrite to make the fields that have a unique
+        # constraint get the NULL value at PostgreSQL level, and not the value
+        # '' coming from the client
+        if 'ref' in values and not values['ref']:
+            values = values.copy()
+            values['ref'] = None
+        return super(PartyPatient, self).create(values)
+
     def get_rec_name(self, ids, name):
         if not ids:
             return {}
@@ -596,6 +614,7 @@ class PartyPatient (ModelSQL, ModelView):
                 name = patient.lastname + ', ' + patient.name
             res[patient.id] = name
         return res
+
 
 PartyPatient()
 
@@ -1619,13 +1638,13 @@ class PatientEvaluation(ModelSQL, ModelView):
     notes = fields.Text('Notes')
 
     def default_loc_eyes(self):
-        return 4
+        return '4'
 
     def default_loc_verbal(self):
-        return 5
+        return '5'
 
     def default_loc_motor(self):
-        return 6
+        return '6'
 
     def default_evaluation_type(self):
         return 'pa'

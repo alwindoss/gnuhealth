@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2011  Adrián Bernardi, Mario Puntin
+#    Copyright (C) 2008-2012  Luis Falcon <lfalcon@gnusolidario.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -19,5 +19,5 @@
 #
 ##############################################################################
 
-from health_invoice import *
-from wizard import *
+from health_services import * 
+from wizard import * 
