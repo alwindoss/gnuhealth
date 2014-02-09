@@ -20,6 +20,7 @@ import re
 import os
 import ConfigParser
 
+
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
@@ -30,7 +31,7 @@ info = dict(config.items('tryton'))
 for key in ('depends', 'extras_depend', 'xml'):
     if key in info:
         info[key] = info[key].strip().splitlines()
-major_version, minor_version = 2, 8
+major_version, minor_version = 3, 0
 
 requires = []
 
@@ -58,9 +59,10 @@ setup(name='trytond_health_reporting',
         'trytond.modules.health_reporting.tests',
         ],
     package_data={
-        'trytond.modules.health_reporting': info.get('xml', []) \
-            + info.get('translation', []) \
-            + ['tryton.cfg', 'doc/*.rst', 'locale/*.po', 'report/*.odt', 'icons/*.svg'],
+        'trytond.modules.health_reporting': info.get('xml', [])
+            + info.get('translation', [])
+            + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
+               'report/*.odt', 'icons/*.svg'],
         },
 
     classifiers=[

@@ -2,7 +2,9 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2013  Luis Falcon <falcon@gnu.org>
+#    Copyright (C) 2008-2014 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2014 GNU Solidario <health@gnusolidario.org>
+#
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -103,7 +105,7 @@ class RequestPatientLabTestStart(ModelView):
 
     date = fields.DateTime('Date')
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
-    doctor = fields.Many2One('gnuhealth.physician', 'Doctor',
+    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Doctor',
         help="Doctor who Request the lab tests.")
     tests = fields.Many2Many('gnuhealth.request-test', 'request', 'test',
         'Tests', required=True)
@@ -124,12 +126,12 @@ class RequestPatientLabTestStart(ModelView):
         User = Pool().get('res.user')
         user = User(Transaction().user)
         login_user_id = int(user.id)
-        cursor.execute('SELECT id FROM party_party WHERE is_doctor=True AND \
+        cursor.execute('SELECT id FROM party_party WHERE is_healthprof=True AND \
             internal_user = %s LIMIT 1', (login_user_id,))
         partner_id = cursor.fetchone()
         if partner_id:
             cursor = Transaction().cursor
-            cursor.execute('SELECT id FROM gnuhealth_physician WHERE \
+            cursor.execute('SELECT id FROM gnuhealth_healthprofessional WHERE \
                 name = %s LIMIT 1', (partner_id[0],))
             doctor_id = cursor.fetchone()
             return int(doctor_id[0])

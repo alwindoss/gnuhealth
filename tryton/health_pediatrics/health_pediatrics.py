@@ -2,7 +2,9 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2013  Luis Falcon <falcon@gnu.org>
+#    Copyright (C) 2008-2014 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2014 GNU Solidario <health@gnusolidario.org>
+#
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -32,15 +34,26 @@ class Newborn(ModelSQL, ModelView):
     __name__ = 'gnuhealth.newborn'
 
     name = fields.Char('Newborn ID')
+    patient = fields.Many2One(
+        'gnuhealth.patient', 'Baby\'s name', required=True,
+        help="Patient associated to this newborn baby")
+
     mother = fields.Many2One('gnuhealth.patient', 'Mother')
-    newborn_name = fields.Char('Baby\'s name')
+    newborn_name = fields.Char('Name at Birth')
     birth_date = fields.DateTime('Date of Birth', required=True)
     photo = fields.Binary('Picture')
+    newborn_sex = fields.Function(fields.Selection([
+        ('m', 'Male'),
+        ('f', 'Female'),
+        ], 'Sex'), 'get_newborn_sex')
+
+    # Sex / Gender at birth.
+
     sex = fields.Selection([
         ('m', 'Male'),
         ('f', 'Female'),
-        ('a', 'Ambiguous genitalia'),
-        ], 'Sex', sort=False, required=True)
+        ], 'Gender at Birth', sort=False, required=True)
+
     cephalic_perimeter = fields.Integer('Cephalic Perimeter',
         help="Perimeter in centimeters (cm)")
     length = fields.Integer('Length', help="Perimeter in centimeters (cm)")
@@ -86,7 +99,7 @@ class Newborn(ModelSQL, ModelView):
     neonatal_palmar_crease = fields.Boolean('Transversal Palmar Crease')
     medication = fields.One2Many('gnuhealth.patient.medication',
         'newborn_id', 'Medication')
-    responsible = fields.Many2One('gnuhealth.physician', 'Doctor in charge',
+    responsible = fields.Many2One('gnuhealth.healthprofessional', 'Doctor in charge',
         help="Signed by the health professional")
     dismissed = fields.DateTime('Discharged')
     bd = fields.Boolean('Stillbirth')
@@ -105,6 +118,10 @@ class Newborn(ModelSQL, ModelView):
         cls._sql_constraints = [
             ('name_uniq', 'unique(name)', 'The Newborn ID must be unique !'),
         ]
+
+    def get_newborn_sex(self, name):
+        if self.patient:
+            return self.patient.sex
 
 
 class NeonatalApgar(ModelSQL, ModelView):

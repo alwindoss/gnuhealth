@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2013  Luis Falcon <lfalcon@gnu.org>
+#    Copyright (C) 2008-2014 Luis Falcon <lfalcon@gnu.org>
 #    Copyright (C) 2013  Sebastián Marro <smarro@thymbra.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -79,7 +79,7 @@ class ImagingTestRequest(Workflow, ModelSQL, ModelView):
     requested_test = fields.Many2One(
         'gnuhealth.imaging.test', 'Test',
         required=True)
-    doctor = fields.Many2One('gnuhealth.physician', 'Doctor', required=True)
+    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Doctor', required=True)
     state = fields.Selection([
         ('draft', 'Draft'),
         ('requested', 'Requested'),
@@ -121,12 +121,12 @@ class ImagingTestRequest(Workflow, ModelSQL, ModelView):
         User = Pool().get('res.user')
         user = User(Transaction().user)
         login_user_id = int(user.id)
-        cursor.execute('SELECT id FROM party_party WHERE is_doctor=True AND \
+        cursor.execute('SELECT id FROM party_party WHERE is_healthprof=True AND \
             internal_user = %s LIMIT 1', (login_user_id,))
         partner_id = cursor.fetchone()
         if partner_id:
             cursor = Transaction().cursor
-            cursor.execute('SELECT id FROM gnuhealth_physician WHERE \
+            cursor.execute('SELECT id FROM gnuhealth_healthprofessional WHERE \
                 name = %s LIMIT 1', (partner_id[0],))
             doctor_id = cursor.fetchone()
             return int(doctor_id[0])
@@ -185,7 +185,7 @@ class ImagingTestResult(ModelSQL, ModelView):
     request = fields.Many2One(
         'gnuhealth.imaging.test.request', 'Request',
         readonly=True)
-    doctor = fields.Many2One('gnuhealth.physician', 'Doctor', required=True)
+    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Doctor', required=True)
     comment = fields.Text('Comment')
     images = fields.One2Many('ir.attachment', 'resource', 'Images')
 

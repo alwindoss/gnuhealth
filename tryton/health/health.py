@@ -2,7 +2,9 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2013  Luis Falcon <falcon@gnu.org>
+#    Copyright (C) 2008-2014 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2014 GNU Solidario <health@gnusolidario.org>
+#
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -19,13 +21,15 @@
 #
 ##############################################################################
 from dateutil.relativedelta import relativedelta
-from datetime import datetime
+from datetime import datetime, timedelta
+from sql import Literal, Join
 from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
 from trytond.wizard import Wizard, StateAction, StateView, Button
 from trytond.transaction import Transaction
-from trytond.backend import TableHandler
+from trytond import backend
 from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal
 from trytond.pool import Pool
+from trytond.tools import datetime_strftime
 
 
 __all__ = [
@@ -164,7 +168,7 @@ class MedicalSpecialty(ModelSQL, ModelView):
 
 class HealthProfessional(ModelSQL, ModelView):
     'Health Professional'
-    __name__ = 'gnuhealth.physician'
+    __name__ = 'gnuhealth.healthprofessional'
 
     @classmethod
     def get_health_professional(cls):
@@ -174,21 +178,21 @@ class HealthProfessional(ModelSQL, ModelView):
         User = Pool().get('res.user')
         user = User(Transaction().user)
         login_user_id = int(user.id)
-        cursor.execute('SELECT id FROM party_party WHERE is_doctor=True AND \
+        cursor.execute('SELECT id FROM party_party WHERE is_healthprof=True AND \
             internal_user = %s LIMIT 1', (login_user_id,))
         partner_id = cursor.fetchone()
         if partner_id:
             cursor = Transaction().cursor
-            cursor.execute('SELECT id FROM gnuhealth_physician WHERE \
+            cursor.execute('SELECT id FROM gnuhealth_healthprofessional WHERE \
                 name = %s LIMIT 1', (partner_id[0],))
-            doctor_id = cursor.fetchone()
-            if (doctor_id):
-                return int(doctor_id[0])
+            healthprof_id = cursor.fetchone()
+            if (healthprof_id):
+                return int(healthprof_id[0])
 
     name = fields.Many2One(
         'party.party', 'Health Professional', required=True,
         domain=[
-            ('is_doctor', '=', True),
+            ('is_healthprof', '=', True),
             ('is_person', '=', True),
             ],
         help='Health Professional\'s Name, from the partner list')
@@ -205,13 +209,6 @@ class HealthProfessional(ModelSQL, ModelView):
 
     info = fields.Text('Extra info')
 
-    def get_rec_name(self, name):
-        if self.name:
-            res = self.name.name
-            if self.name.lastname:
-                res = self.name.lastname + ', ' + self.name.name
-        return res
-
     @classmethod
     def __setup__(cls):
         super(HealthProfessional, cls).__setup__()
@@ -220,11 +217,32 @@ class HealthProfessional(ModelSQL, ModelView):
                 'The health professional must be unique'),
         ]
 
+    def get_rec_name(self, name):
+        if self.name:
+            res = self.name.name
+            if self.name.lastname:
+                res = self.name.lastname + ', ' + self.name.name
+        return res
+
+    @classmethod
+    def __register__(cls, module_name):
+
+        cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
+        # Upgrade to 2.4
+        # Rename gnuhealth_physician to gnuhealth_healthprofessional
+
+        if TableHandler.table_exist(cursor,'gnuhealth_physician'):
+            TableHandler.table_rename(cursor,'gnuhealth_physician', 'gnuhealth_healthprofessional')
+
+        super(HealthProfessional, cls).__register__(module_name)
+
+
 class HealthProfessionalSpecialties(ModelSQL, ModelView):
     'Health Professional Specialties'
     __name__ = 'gnuhealth.hp_specialty'
 
-    name = fields.Many2One('gnuhealth.physician', 'Health Professional')
+    name = fields.Many2One('gnuhealth.healthprofessional', 'Health Professional')
 
     specialty = fields.Many2One(
         'gnuhealth.specialty', 'Specialty', help='Specialty Code')
@@ -236,7 +254,7 @@ class HealthProfessionalSpecialties(ModelSQL, ModelView):
 class PhysicianSP(ModelSQL, ModelView):
     # Add Main Specialty field after from the Health Professional Speciality
     'Health Professional'
-    __name__ = 'gnuhealth.physician'
+    __name__ = 'gnuhealth.healthprofessional'
 
     main_specialty = fields.Many2One(
         'gnuhealth.hp_specialty', 'Main Specialty',
@@ -248,6 +266,7 @@ class PhysicianSP(ModelSQL, ModelView):
         super(PhysicianSP, cls).__register__(module_name)
 
         cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
         table = TableHandler(cursor, cls, module_name)
         # Insert the current "specialty" associated to the HP in the
         # table that keeps the specialties associated to different health
@@ -258,7 +277,7 @@ class PhysicianSP(ModelSQL, ModelView):
             # with the current specialty
             cursor.execute(
                 "INSERT INTO gnuhealth_hp_specialty (name, specialty) \
-                SELECT id, specialty from gnuhealth_physician;")
+                SELECT id, specialty from gnuhealth_healthprofessional;")
             # Drop old specialty column, replaced by main_specialty
             table.drop_column('specialty')
 
@@ -332,6 +351,7 @@ class Family(ModelSQL, ModelView):
         super(Family, cls).__register__(module_name)
 
         cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
         table = TableHandler(cursor, cls, module_name)
         # Remove Operational Sector from the family model
         # The operational Sector is linked to the Domiciliary Unit
@@ -675,12 +695,16 @@ class PathologyGroup(ModelSQL, ModelView):
     desc = fields.Char('Short Description', required=True)
     info = fields.Text('Detailed information')
 
+    members = fields.One2Many ('gnuhealth.disease_group.members',
+        'disease_group','Members', readonly=True)
+
     @classmethod
     def __register__(cls, module_name):
         # Upgrade from GNU Health 1.4.5
         super(PathologyGroup, cls).__register__(module_name)
 
         cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
         table = TableHandler(cursor, cls, module_name)
 
         # Drop old foreign key and change to char name
@@ -751,12 +775,12 @@ class ProcedureCode(ModelSQL, ModelView):
     def search_rec_name(cls, name, clause):
         field = None
         for field in ('name', 'description'):
-            procedures = cls.search([(field,) + clause[1:]], limit=1)
+            procedures = cls.search([(field,) + tuple(clause[1:])], limit=1)
             if procedures:
                 break
         if procedures:
-            return [(field,) + clause[1:]]
-        return [(cls._rec_name,) + clause[1:]]
+            return [(field,) + tuple(clause[1:])]
+        return [(cls._rec_name,) + tuple(clause[1:])]
 
     # Include code + description in result
     def get_rec_name(self, name):
@@ -862,7 +886,7 @@ class PartyPatient (ModelSQL, ModelView):
 
     is_person = fields.Boolean(
         'Person',
-        on_change_with=['is_person', 'is_patient', 'is_doctor'],
+        on_change_with=['is_person', 'is_patient', 'is_healthprof'],
         help='Check if the party is a person.')
 
     is_patient = fields.Boolean(
@@ -870,7 +894,7 @@ class PartyPatient (ModelSQL, ModelView):
         states={'invisible': Not(Bool(Eval('is_person')))},
         help='Check if the party is a patient')
 
-    is_doctor = fields.Boolean(
+    is_healthprof = fields.Boolean(
         'Health Prof',
         states={'invisible': Not(Bool(Eval('is_person')))},
         help='Check if the party is a health professional')
@@ -922,12 +946,12 @@ class PartyPatient (ModelSQL, ModelView):
 
     internal_user = fields.Many2One(
         'res.user', 'Internal User',
-        help='In GNU Health is the user (doctor, nurse) that logins.When the'
-        ' party is a doctor or a health professional, it will be the user'
-        ' that maps the doctor\'s party name. It must be present.',
+        help='In GNU Health is the user (doctor, nurse, ...) that logins.When the'
+        ' party is a health professional, it will be the user'
+        ' that maps the health professional party. It must be present.',
         states={
-            'invisible': Not(Bool(Eval('is_doctor'))),
-            'required': Bool(Eval('is_doctor')),
+            'invisible': Not(Bool(Eval('is_healthprof'))),
+            'required': Bool(Eval('is_healthprof')),
             })
 
     insurance_company_type = fields.Selection([
@@ -982,16 +1006,16 @@ class PartyPatient (ModelSQL, ModelView):
     def search_rec_name(cls, name, clause):
         field = None
         for field in ('name', 'lastname'):
-            parties = cls.search([(field,) + clause[1:]], limit=1)
+            parties = cls.search([(field,) + tuple(clause[1:])], limit=1)
             if parties:
                 break
         if parties:
-            return [(field,) + clause[1:]]
-        return [(cls._rec_name,) + clause[1:]]
+            return [(field,) + tuple(clause[1:])]
+        return [(cls._rec_name,) + tuple(clause[1:])]
 
     def on_change_with_is_person(self):
         # Set is_person if the party is a health professional or a patient
-        if (self.is_doctor or self.is_patient or self.is_person):
+        if (self.is_healthprof or self.is_patient or self.is_person):
             return True
 
     @classmethod
@@ -1004,11 +1028,25 @@ class PartyPatient (ModelSQL, ModelView):
     # Verify that health professional and patient
     # are unchecked when is_person is False
 
-        if not self.is_person and (self.is_patient or self.is_doctor):
+        if not self.is_person and (self.is_patient or self.is_healthprof):
             self.raise_user_error(
                 "The Person field must be set if the party is a health"
                 " professional or a patient")
 
+    @classmethod
+    # Update to version 2.4
+
+    def __register__(cls, module_name):
+
+        cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
+        table = TableHandler(cursor, cls, module_name)
+        # Rename is_doctor to a more general term is_healthprof
+
+        if table.column_exist('is_doctor'):
+            table.column_rename('is_doctor', 'is_healthprof')
+
+        super(PartyPatient, cls).__register__(module_name)
 
 class PartyAddress(ModelSQL, ModelView):
     'Party Address'
@@ -1122,6 +1160,31 @@ class PatientData(ModelSQL, ModelView):
     'Patient related information'
     __name__ = 'gnuhealth.patient'
 
+    def patient_critical_summary(self, name):
+		# Patient Critical Information Summary
+		# The information will be shown in the front page
+
+		critical_info = ""
+		allergies=""
+		other_conditions=""
+		conditions=[]
+		for disease in self.diseases:
+			for member in disease.pathology.groups:
+				'''Retrieve patient allergies'''
+				if (member.disease_group.name == "ALLERGIC"):
+					if disease.pathology.name not in conditions:
+						allergies=allergies + str(disease.pathology.name) + "\n"
+						conditions.append (disease.pathology.name)
+
+			'''Retrieve patient other relevant conditions '''
+			'''Chronic and active'''		
+			if (disease.status == "c" or disease.is_active):
+				if disease.pathology.name not in conditions:
+							other_conditions=other_conditions + \
+							 disease.pathology.name + "\n"
+
+		return allergies + other_conditions
+		
     # Get the patient age in the following format : 'YEARS MONTHS DAYS'
     # It will calculate the age of the patient while the patient is alive.
     # When the patient dies, it will show the age at time of death.
@@ -1208,7 +1271,7 @@ class PatientData(ModelSQL, ModelView):
         In the case of a Domiciliary Unit, just link it to the name of the \
         contact in the address form.")
     primary_care_doctor = fields.Many2One(
-        'gnuhealth.physician',
+        'gnuhealth.healthprofessional',
         'GP', help='Current General Practitioner / Family Doctor')
 
     # Removed in 2.0 . PHOTO It's now a functional field
@@ -1278,11 +1341,17 @@ class PatientData(ModelSQL, ModelView):
 #        'Prescriptions')
 
     diseases = fields.One2Many('gnuhealth.patient.disease', 'name', 'Diseases')
+    critical_summary = fields.Function(fields.Text(
+        'Important disease about patient allergies or procedures',
+        help='Automated summary of patient allergies and '
+		'other critical information'),
+        'patient_critical_summary')
+
     critical_info = fields.Text(
-        'Important disease, allergy or procedures'
-        ' information',
+        'Free text information not included in the automatic summary',
         help='Write any important information on the patient\'s disease,'
         ' surgeries, allergies, ...')
+
 
 # Removed it in 1.6
 # Not used anymore . Now we relate with a shortcut. Clearer
@@ -1364,12 +1433,12 @@ class PatientData(ModelSQL, ModelView):
     def search_rec_name(cls, name, clause):
         field = None
         for field in ('name', 'lastname', 'ssn'):
-            patients = cls.search([(field,) + clause[1:]], limit=1)
+            patients = cls.search([(field,) + tuple(clause[1:])], limit=1)
             if patients:
                 break
         if patients:
-            return [(field,) + clause[1:]]
-        return [(cls._rec_name,) + clause[1:]]
+            return [(field,) + tuple(clause[1:])]
+        return [(cls._rec_name,) + tuple(clause[1:])]
 
     @classmethod
     def create(cls, vlist):
@@ -1397,6 +1466,7 @@ class PatientData(ModelSQL, ModelView):
         super(PatientData, cls).__register__(module_name)
 
         cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
         table = TableHandler(cursor, cls, module_name)
         # Move Date of Birth from patient to party
 
@@ -1481,9 +1551,9 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
         help='Brief, one-line remark of the disease. Longer description will'
         ' go on the Extra info field')
 
-    doctor = fields.Many2One(
-        'gnuhealth.physician',
-        'Physician', help='Physician who treated or diagnosed the patient')
+    healthprof = fields.Many2One(
+        'gnuhealth.healthprofessional',
+        'Health Prof', help='Health Professional who treated or diagnosed the patient')
 
     diagnosed_date = fields.Date('Date of Diagnosis')
     healed_date = fields.Date('Healed')
@@ -1527,37 +1597,69 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
         cls._order.insert(1, ('disease_severity', 'DESC'))
         cls._order.insert(2, ('is_infectious', 'DESC'))
         cls._order.insert(3, ('diagnosed_date', 'DESC'))
-        cls._constraints += [
-            ('validate_disease_period', 'end_date_before_start'),
-            ('validate_treatment_dates', 'end_treatment_date_before_start')]
-
         cls._error_messages.update({
-            'end_date_before_start': 'The HEALED date is BEFORE DIAGNOSED'
-            ' DATE !',
-            'end_treatment_date_before_start': 'The Treatment END DATE is'
-            ' BEFORE the start date!',
+            'end_date_before_start': 'The HEALED date "%(healed_date)s" is'
+            ' BEFORE DIAGNOSED DATE "%(diagnosed_date)s"!',
+            'end_treatment_date_before_start': 'The Treatment END DATE'
+            ' "%(date_stop_treatment)s" is BEFORE the start date'
+            ' "%(date_start_treatment)s"!',
             })
 
     @staticmethod
     def default_is_active():
         return True
 
+    @classmethod
+    def validate(cls, diseases):
+        super(PatientDiseaseInfo, cls).validate(diseases)
+        for disease in diseases:
+            disease.validate_disease_period()
+            disease.validate_treatment_dates()
+
     def validate_disease_period(self):
-        res = True
+        Lang = Pool().get('ir.lang')
+
+        languages = Lang.search([
+            ('code', '=', Transaction().language),
+            ])
         if (self.healed_date and self.diagnosed_date):
             if (self.healed_date < self.diagnosed_date):
-                res = False
-        return res
+                self.raise_user_error('end_date_before_start', {
+                        'healed_date': datetime_strftime(self.healed_date,
+                            str(languages[0].date)),
+                        'diagnosed_date': datetime_strftime(self.diagnosed_date,
+                            str(languages[0].date)),
+                        })
 
     def validate_treatment_dates(self):
+        Lang = Pool().get('ir.lang')
+
+        languages = Lang.search([
+            ('code', '=', Transaction().language),
+            ])
         if (self.date_stop_treatment and self.date_start_treatment):
             if (self.date_stop_treatment < self.date_start_treatment):
-                return False
-            else:
-                return True
-        else:
-            return True
+                self.raise_user_error('end_treatment_date_before_start', {
+                        'date_stop_treatment': datetime_strftime(
+                            self.date_stop_treatment, str(languages[0].date)),
+                        'date_start_treatment': datetime_strftime(
+                            self.date_start_treatment, str(languages[0].date)),
+                        })
 
+
+    # Update to version 2.4
+    @classmethod
+    def __register__(cls, module_name):
+
+        cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
+        table = TableHandler(cursor, cls, module_name)
+        # Rename doctor to healthprof
+
+        if table.column_exist('doctor'):
+            table.column_rename('doctor', 'healthprof')
+
+        super(PatientDiseaseInfo, cls).__register__(module_name)
 
 # PATIENT APPOINTMENT
 class Appointment(ModelSQL, ModelView):
@@ -1566,13 +1668,14 @@ class Appointment(ModelSQL, ModelView):
 
     name = fields.Char('Appointment ID', readonly=True)
 
-    doctor = fields.Many2One(
-        'gnuhealth.physician', 'Physician',
-        select=True, help='Physician\'s Name')
+    healthprof = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Health Prof',
+        select=True, help='Health Professional')
 
     patient = fields.Many2One(
-        'gnuhealth.patient', 'Patient', required=True,
-        select=True, help='Patient Name')
+        'gnuhealth.patient', 'Patient',
+        select=True, help='Patient Name', on_change=['patient'],
+        states={'required': (Eval('state') != 'free')})
 
     appointment_date = fields.DateTime('Date and Time')
 
@@ -1583,10 +1686,11 @@ class Appointment(ModelSQL, ModelView):
 
     speciality = fields.Many2One(
         'gnuhealth.specialty', 'Specialty',
-        on_change_with=['doctor'], help='Medical Specialty / Sector')
+        on_change_with=['healthprof'], help='Medical Specialty / Sector')
 
     state = fields.Selection([
         (None, ''),
+        ('free', 'Free'),
         ('confirmed', 'Confirmed'),
         ('done', 'Done'),
         ('user_cancelled', 'Cancelled by patient'),
@@ -1628,7 +1732,7 @@ class Appointment(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(Appointment, cls).__setup__()
-        cls._order.insert(0, ('name', 'DESC'))
+        cls._order.insert(0, ('appointment_date', 'ASC'))
 
     @classmethod
     def create(cls, vlist):
@@ -1637,15 +1741,38 @@ class Appointment(ModelSQL, ModelView):
 
         vlist = [x.copy() for x in vlist]
         for values in vlist:
-            if not values.get('name'):
+            if values['state'] == 'confirmed' and not values.get('name'):
                 config = Config(1)
                 values['name'] = Sequence.get_id(
                     config.appointment_sequence.id)
 
         return super(Appointment, cls).create(vlist)
 
+    @classmethod
+    def write(cls, appointments, values):
+        Sequence = Pool().get('ir.sequence')
+        Config = Pool().get('gnuhealth.sequences')
+
+        for appointment in appointments:
+            if values.get('state') == 'confirmed' and not values.get('name'):
+                config = Config(1)
+                values['name'] = Sequence.get_id(
+                    config.appointment_sequence.id)
+
+        return super(Appointment, cls).write(appointments, values)
+
+    @classmethod
+    def copy(cls, appointments, default=None):
+        if default is None:
+            default = {}
+        default = default.copy()
+        default['name'] = None
+        default['appointment_date'] = cls.default_appointment_date()
+        default['state'] = cls.default_state()
+        return super(Appointment, cls).copy(appointments, default=default)
+
     @staticmethod
-    def default_doctor():
+    def default_healthprof():
         return HealthProfessional().get_health_professional()
 
     @staticmethod
@@ -1668,11 +1795,17 @@ class Appointment(ModelSQL, ModelView):
     def default_institution():
         return Transaction().context.get('company')
 
+    def on_change_patient(self):
+        res = {'state': 'free'}
+        if self.patient:
+            res = {'state': 'confirmed'}
+        return res
+
     def on_change_with_speciality(self):
         # Return the Current / Main speciality of the Health Professional
         # if this speciality has been specified in the HP record.
-        if (self.doctor and self.doctor.main_specialty):
-            specialty = self.doctor.main_specialty.specialty.id
+        if (self.healthprof and self.healthprof.main_specialty):
+            specialty = self.healthprof.main_specialty.specialty.id
             return specialty
 
     @staticmethod
@@ -1689,7 +1822,7 @@ class Appointment(ModelSQL, ModelView):
         if hp_party_id:
             # Retrieve the health professional Main specialty, if assigned
 
-            health_professional_obj = Pool().get('gnuhealth.physician')
+            health_professional_obj = Pool().get('gnuhealth.healthprofessional')
             health_professional = health_professional_obj.search(
                 [('id', '=', hp_party_id)], limit=1)[0]
             hp_main_specialty = health_professional.main_specialty
@@ -1701,6 +1834,21 @@ class Appointment(ModelSQL, ModelView):
         return self.name
 
 
+    # Update to version 2.4
+    @classmethod
+    def __register__(cls, module_name):
+
+        cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
+        table = TableHandler(cursor, cls, module_name)
+        # Rename doctor to healthprof
+
+        if table.column_exist('doctor'):
+            table.column_rename('doctor', 'healthprof')
+
+        super(Appointment, cls).__register__(module_name)
+
+
 class AppointmentReport(ModelSQL, ModelView):
     'Appointment Report'
     __name__ = 'gnuhealth.appointment.report'
@@ -1708,7 +1856,7 @@ class AppointmentReport(ModelSQL, ModelView):
     identification_code = fields.Char('Identification Code')
     ref = fields.Char('SSN')
     patient = fields.Many2One('gnuhealth.patient', 'Patient')
-    doctor = fields.Many2One('gnuhealth.physician', 'Doctor')
+    healthprof = fields.Many2One('gnuhealth.healthprofessional', 'Health Prof')
     age = fields.Function(fields.Char('Age'), 'get_patient_age')
     sex = fields.Selection([('m', 'Male'), ('f', 'Female')], 'Sex')
     address = fields.Function(fields.Char('Address'), 'get_address')
@@ -1727,30 +1875,39 @@ class AppointmentReport(ModelSQL, ModelView):
 
     @classmethod
     def table_query(cls):
-        where_clause = ' '
-        args = []
-        if Transaction().context.get('date'):
-            where_clause += "AND a.appointment_date >= %s AND " \
-                "a.appointment_date < %s + integer '1' "
-            args.append(Transaction().context['date'])
-            args.append(Transaction().context['date'])
-        if Transaction().context.get('doctor'):
-            where_clause += 'AND a.doctor = %s '
-            args.append(Transaction().context['doctor'])
-        return ('SELECT id, create_uid, create_date, write_uid, write_date, '
-                'identification_code, ref, patient, sex, '
-                'appointment_date, appointment_date_time, doctor '
-                'FROM ('
-                'SELECT a.id, a.create_uid, a.create_date, '
-                'a.write_uid, a.write_date, p.identification_code, '
-                'r.ref, p.id as patient, r.sex, a.appointment_date, '
-                'a.appointment_date as appointment_date_time, '
-                'a.doctor '
-                'FROM gnuhealth_appointment a, '
-                'gnuhealth_patient p, party_party r '
-                'WHERE a.patient = p.id '
-                + where_clause +
-                'AND p.name = r.id) AS ' + cls._table, args)
+        pool = Pool()
+        appointment = pool.get('gnuhealth.appointment').__table__()
+        party = pool.get('party.party').__table__()
+        patient = pool.get('gnuhealth.patient').__table__()
+        join1 = Join(appointment, patient)
+        join1.condition = join1.right.id == appointment.patient
+        join2 = Join(join1, party)
+        join2.condition = join2.right.id == join1.right.name
+        where = Literal(True)
+        if Transaction().context.get('date_start'):
+            where &= (appointment.appointment_date >=
+                    Transaction().context['date_start'])
+        if Transaction().context.get('date_end'):
+            where &= (appointment.appointment_date <
+                    Transaction().context['date_end'] + timedelta(days=1))
+        if Transaction().context.get('healthprof'):
+            where &= \
+                appointment.healthprof == Transaction().context['healthprof']
+
+        return join2.select(
+            appointment.id,
+            appointment.create_uid,
+            appointment.create_date,
+            appointment.write_uid,
+            appointment.write_date,
+            join1.right.identification_code,
+            join2.right.ref,
+            join1.right.id.as_('patient'),
+            join2.right.sex,
+            appointment.appointment_date,
+            appointment.appointment_date.as_('appointment_date_time'),
+            appointment.healthprof,
+            where=where)
 
     def get_address(self, name):
         res = ''
@@ -1784,15 +1941,21 @@ class AppointmentReport(ModelSQL, ModelView):
 class OpenAppointmentReportStart(ModelView):
     'Open Appointment Report'
     __name__ = 'gnuhealth.appointment.report.open.start'
-    date = fields.Date('Date', required=True)
-    doctor = fields.Many2One('gnuhealth.physician', 'Doctor', required=True)
+    date_start = fields.Date('Date Start', required=True)
+    date_end = fields.Date('Date End', required=True)
+    healthprof = fields.Many2One('gnuhealth.healthprofessional', 'Health Prof',
+        required=True)
 
     @staticmethod
-    def default_date():
+    def default_date_start():
         return datetime.now()
 
     @staticmethod
-    def default_doctor():
+    def default_date_end():
+        return datetime.now()
+
+    @staticmethod
+    def default_healthprof():
         return HealthProfessional().get_health_professional()
 
 
@@ -1810,11 +1973,12 @@ class OpenAppointmentReport(Wizard):
 
     def do_open_(self, action):
         action['pyson_context'] = PYSONEncoder().encode({
-            'date': self.start.date,
-            'doctor': self.start.doctor.id,
+            'date_start': self.start.date_start,
+            'date_end': self.start.date_end,
+            'healthprof': self.start.healthprof.id,
             })
-        action['name'] += ' - %s, %s' % (self.start.doctor.name.lastname,
-                                         self.start.doctor.name.name)
+        action['name'] += ' - %s, %s' % (self.start.healthprof.name.lastname,
+                                         self.start.healthprof.name.name)
         return action, {}
 
     def transition_open_(self):
@@ -1843,9 +2007,9 @@ class PatientMedication(ModelSQL, ModelView):
     name = fields.Many2One(
         'gnuhealth.patient', 'Patient', readonly=True)
 
-    doctor = fields.Many2One(
-        'gnuhealth.physician', 'Physician',
-        help='Physician who prescribed the medicament')
+    healthprof = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Prescribed by',
+        help='Health Professional who prescribed the medicament')
 
     is_active = fields.Boolean(
         'Active',
@@ -1948,19 +2112,29 @@ class PatientMedication(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(PatientMedication, cls).__setup__()
-        cls._constraints += [
-            ('validate_medication_dates', 'end_date_before_start'),
-            ]
         cls._error_messages.update({
-            'end_date_before_start': 'The Medication END DATE is BEFORE the'
-            ' start date!',
+            'end_date_before_start': 'The Medication END DATE'
+            ' "%(end_treatment)s" is BEFORE the start date'
+            ' "%(start_treatment)s"!',
             })
 
     @classmethod
     def __register__(cls, module_name):
+
+        # Rename doctor to healthprof
+
+        cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
+        table = TableHandler(cursor, cls, module_name)
+
+        if table.column_exist('doctor'):
+            table.column_rename('doctor', 'healthprof')
+
+
         super(PatientMedication, cls).__register__(module_name)
 
         cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
         table = TableHandler(cursor, cls, module_name)
 
         # Update to version 2.0
@@ -2014,24 +2188,31 @@ class PatientMedication(ModelSQL, ModelView):
     def default_qty():
         return 1
 
+    @classmethod
+    def validate(cls, medications):
+        super(PatientMedication, cls).validate(medications)
+        for medication in medications:
+            medication.validate_medication_dates()
+
     def validate_medication_dates(self):
-        res = True
+        Lang = Pool().get('ir.lang')
+
+        languages = Lang.search([
+            ('code', '=', Transaction().language),
+            ])
         if self.end_treatment:
             if (self.end_treatment < self.start_treatment):
-                res = False
-        return res
-
+                self.raise_user_error('end_date_before_start', {
+                    'start_treatment': datetime_strftime(self.start_treatment,
+                        str(languages[0].date)),
+                    'end_treatment': datetime_strftime(self.end_treatment,
+                        str(languages[0].date)),
+                    })
 
 # PATIENT VACCINATION INFORMATION
 class PatientVaccination(ModelSQL, ModelView):
     'Patient Vaccination information'
     __name__ = 'gnuhealth.vaccination'
-
-    def check_vaccine_expiration_date(self):
-        if self.vaccine_expiration_date:
-            if self.vaccine_expiration_date < datetime.date(self.date):
-                return False
-        return True
 
     name = fields.Many2One('gnuhealth.patient', 'Patient', readonly=True)
 
@@ -2077,16 +2258,11 @@ class PatientVaccination(ModelSQL, ModelView):
             ('dose_uniq', 'UNIQUE(name, vaccine, dose)',
                 'This vaccine dose has been given already to the patient'),
         ]
-        cls._constraints += [
-            ('check_vaccine_expiration_date', 'expired_vaccine'),
-            ('validate_next_dose_date', 'next_dose_before_first'),
-
-        ]
         cls._error_messages.update({
             'expired_vaccine': 'EXPIRED VACCINE. PLEASE INFORM  THE LOCAL '
-            'HEALTH AUTHORITIES AND DO NOT USE IT !!!',
+                'HEALTH AUTHORITIES AND DO NOT USE IT !!!',
             'next_dose_before_first': 'The Vaccine next dose is BEFORE the '
-            'first one !'
+                'first one !'
         })
 
     @staticmethod
@@ -2097,15 +2273,22 @@ class PatientVaccination(ModelSQL, ModelView):
     def default_dose():
         return 1
 
+    @classmethod
+    def validate(cls, vaccines):
+        super(PatientVaccination, cls).validate(vaccines)
+        for vaccine in vaccines:
+            vaccine.check_vaccine_expiration_date()
+            vaccine.validate_next_dose_date()
+
+    def check_vaccine_expiration_date(self):
+        if self.vaccine_expiration_date:
+            if self.vaccine_expiration_date < datetime.date(self.date):
+                self.raise_user_error('expired_vaccine')
+
     def validate_next_dose_date(self):
         if (self.next_dose_date):
             if (self.next_dose_date < self.date):
-                return False
-            else:
-                return True
-        # If the next dose is not available, then keep going.
-        else:
-            return True
+                self.raise_user_error('next_dose_before_first')
 
 
 class PatientPrescriptionOrder(ModelSQL, ModelView):
@@ -2135,16 +2318,12 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
     pregnancy_warning = fields.Boolean('Pregancy Warning', readonly=True)
     prescription_warning_ack = fields.Boolean('Prescription verified')
 
-    doctor = fields.Many2One(
-        'gnuhealth.physician', 'Prescribing Doctor', readonly=True)
+    healthprof = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Prescribed by', readonly=True)
 
     @classmethod
     def __setup__(cls):
         super(PatientPrescriptionOrder, cls).__setup__()
-        cls._constraints += [
-            ('check_prescription_warning', 'drug_pregnancy_warning'),
-            ('check_health_professional', 'health_professional_warning'),
-        ]
         cls._error_messages.update({
             'drug_pregnancy_warning':
             '== DRUG AND PREGNANCY VERIFICATION ==\n\n'
@@ -2157,15 +2336,24 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             'No health professional associated to this user',
         })
 
-    def check_health_professional(self):
-        return self.doctor
+    @classmethod
+    def validate(cls, prescriptions):
+        super(PatientPrescriptionOrder, cls).validate(prescriptions)
+        for prescription in prescriptions:
+            prescription.check_health_professional()
+            prescription.check_prescription_warning()
 
-    @staticmethod
-    def default_doctor():
-        return HealthProfessional().get_health_professional()
+    def check_health_professional(self):
+        if not self.healthprof:
+            self.raise_user_error('health_professional_warning')
 
     def check_prescription_warning(self):
-        return self.prescription_warning_ack
+        if not self.prescription_warning_ack:
+            self.raise_user_error('drug_pregnancy_warning')
+
+    @staticmethod
+    def default_healthprof():
+        return HealthProfessional().get_health_professional()
 
     # Method that makes the doctor to acknowledge if there is any
     # warning in the prescription
@@ -2216,6 +2404,22 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         default['prescription_date'] = cls.default_prescription_date()
         return super(PatientPrescriptionOrder, cls).copy(
             prescriptions, default=default)
+
+
+    @classmethod
+    # Update to version 2.4
+
+    def __register__(cls, module_name):
+
+        cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
+        table = TableHandler(cursor, cls, module_name)
+        # Rename doctor to a healthprof
+
+        if table.column_exist('doctor'):
+            table.column_rename('doctor', 'healthprof')
+
+        super(PatientPrescriptionOrder, cls).__register__(module_name)
 
 
 # PRESCRIPTION LINE
@@ -2330,6 +2534,7 @@ class PrescriptionLine(ModelSQL, ModelView):
         super(PrescriptionLine, cls).__register__(module_name)
 
         cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
         table = TableHandler(cursor, cls, module_name)
 
         # Update to version 2.0
@@ -2423,8 +2628,8 @@ class PatientEvaluation(ModelSQL, ModelView):
         depends=['patient'])
 
     user_id = fields.Many2One('res.user', 'Last Changed by', readonly=True)
-    doctor = fields.Many2One(
-        'gnuhealth.physician', 'Health Prof',
+    healthprof = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Health Prof',
         help="Health professional that initiates the evaluation."
         "This health professional might or might not be the same that"
         " signs and finishes the evaluation."
@@ -2432,7 +2637,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         ", when it becomes read-only", readonly=True)
 
     signed_by = fields.Many2One(
-        'gnuhealth.physician', 'Signed by', readonly=True,
+        'gnuhealth.healthprofessional', 'Signed by', readonly=True,
         states={'invisible': Equal(Eval('state'), 'in_progress')},
         help="Health Professional that signed the patient evaluation document")
 
@@ -2464,12 +2669,12 @@ class PatientEvaluation(ModelSQL, ModelView):
         "if the information provided by the source seems not reliable")
 
     derived_from = fields.Many2One(
-        'gnuhealth.physician', 'Derived from',
-        help='Physician who derived the case')
+        'gnuhealth.healthprofessional', 'Derived from',
+        help='Health Professional who derived the case')
 
     derived_to = fields.Many2One(
-        'gnuhealth.physician', 'Derived to',
-        help='Physician to whom escalate / derive the case')
+        'gnuhealth.healthprofessional', 'Derived to',
+        help='Health Professional to derive the case')
 
     evaluation_type = fields.Selection([
         (None, ''),
@@ -2687,15 +2892,11 @@ class PatientEvaluation(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(PatientEvaluation, cls).__setup__()
-        cls._constraints += [
-            ('check_health_professional', 'health_professional_warning'),
-            ('validate_evaluation_period', 'end_date_before_start'),
-        ]
-
         cls._error_messages.update({
             'health_professional_warning':
-            'No health professional associated to this user',
-            'end_date_before_start': 'End time BEFORE evaluation start'
+                'No health professional associated to this user',
+            'end_date_before_start': 'End time "%(evaluation_endtime)s" BEFORE'
+                ' evaluation start "%(evaluation_start)s"'
         })
 
         cls._buttons.update({
@@ -2704,12 +2905,31 @@ class PatientEvaluation(ModelSQL, ModelView):
             },
         })
 
+    @classmethod
+    def validate(cls, evaluations):
+        super(PatientEvaluation, cls).validate(evaluations)
+        for evaluation in evaluations:
+            evaluation.validate_evaluation_period()
+            evaluation.check_health_professional()
+
     def validate_evaluation_period(self):
-        res = True
+        Lang = Pool().get('ir.lang')
+
+        languages = Lang.search([
+            ('code', '=', Transaction().language),
+            ])
         if (self.evaluation_endtime and self.evaluation_start):
             if (self.evaluation_endtime < self.evaluation_start):
-                res = False
-        return res
+                self.raise_user_error('end_date_before_start', {
+                        'evaluation_start': datetime_strftime(
+                            self.evaluation_start, str(languages[0].date)),
+                        'evaluation_endtime': datetime_strftime(
+                            self.evaluation_endtime, str(languages[0].date)),
+                        })
+
+    def check_health_professional(self):
+        if not self.healthprof:
+            self.raise_user_error('health_professional_warning')
 
     @classmethod
     def write(cls, evaluations, vals):
@@ -2728,7 +2948,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         evaluation_id = evaluations[0]
 
         # Change the state of the evaluation to "Done"
-        # and write the name of the signing doctor
+        # and write the name of the signing health professional
 
         signing_hp = HealthProfessional().get_health_professional()
         if not signing_hp:
@@ -2739,11 +2959,8 @@ class PatientEvaluation(ModelSQL, ModelView):
             'state': 'done',
             'signed_by': signing_hp})
 
-    def check_health_professional(self):
-        return self.doctor
-
     @staticmethod
-    def default_doctor():
+    def default_healthprof():
         return HealthProfessional().get_health_professional()
 
     @staticmethod
@@ -2803,6 +3020,21 @@ class PatientEvaluation(ModelSQL, ModelView):
 
     def get_rec_name(self, name):
         return str(self.evaluation_start)
+
+    @classmethod
+    # Update to version 2.4
+
+    def __register__(cls, module_name):
+
+        cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
+        table = TableHandler(cursor, cls, module_name)
+        # Rename doctor to a healthprof
+
+        if table.column_exist('doctor'):
+            table.column_rename('doctor', 'healthprof')
+
+        super(PatientEvaluation, cls).__register__(module_name)
 
 
 # PATIENT EVALUATION DIRECTIONS
@@ -3038,4 +3270,4 @@ class HospitalBed(ModelSQL, ModelView):
 
     @classmethod
     def search_rec_name(cls, name, clause):
-        return [('name',) + clause[1:]]
+        return [('name',) + tuple(clause[1:])]

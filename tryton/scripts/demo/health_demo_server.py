@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#    Copyright (C) 2008-2013  Luis Falcon
+#    Copyright (C) 2008-2014 Luis Falcon
 #    Copyright (C) 2012-2013  Sebastián Marró
 
 #    This program is free software: you can redistribute it and/or modify
@@ -52,7 +52,7 @@ def LoadBetzFamilyInfo():
     Family = Model.get('gnuhealth.family')
     FamilyMember = Model.get('gnuhealth.family_member')
     Patient = Model.get('gnuhealth.patient')
-    Physician = Model.get('gnuhealth.physician')
+    Physician = Model.get('gnuhealth.healthprofessional')
     MedicalSpecialty = Model.get('gnuhealth.specialty')
     Occupation = Model.get('gnuhealth.occupation')
     Pathology = Model.get('gnuhealth.pathology')
@@ -77,7 +77,7 @@ def LoadBetzFamilyInfo():
     party = Party()
     party.name = 'Cameron'
     party.lastname = 'Cordara'
-    party.is_doctor = True
+    party.is_healthprof = True
     party.is_person = True
     party.sex = 'm'
     party.internal_user, = User.find([('login', '=', 'admin')])

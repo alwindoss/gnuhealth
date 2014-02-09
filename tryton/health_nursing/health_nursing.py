@@ -2,7 +2,9 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2013  Luis Falcon <falcon@gnu.org>
+#    Copyright (C) 2008-2014 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2014 GNU Solidario <health@gnusolidario.org>
+#
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -49,7 +51,7 @@ class PatientRounding(ModelSQL, ModelView):
 
     name = fields.Many2One('gnuhealth.inpatient.registration',
         'Registration Code', required=True)
-    health_professional = fields.Many2One('gnuhealth.physician',
+    health_professional = fields.Many2One('gnuhealth.healthprofessional',
         'Health Professional', readonly=True)
     evaluation_start = fields.DateTime('Start', required=True)
     evaluation_end = fields.DateTime('End', required=True)
@@ -110,16 +112,20 @@ class PatientRounding(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(PatientRounding, cls).__setup__()
-        cls._constraints += [
-            ('check_health_professional', 'health_professional_warning'),
-        ]
         cls._error_messages.update({
             'health_professional_warning':
                     'No health professional associated to this user',
         })
 
+    @classmethod
+    def validate(cls, roundings):
+        super(PatientRounding, cls).validate(roundings)
+        for rounding in roundings:
+            rounding.check_health_professional()
+
     def check_health_professional(self):
-        return self.health_professional
+        if not self.health_professional:
+            self.raise_user_error('health_professional_warning')
 
     @staticmethod
     def default_health_professional():
@@ -127,12 +133,12 @@ class PatientRounding(ModelSQL, ModelView):
         User = Pool().get('res.user')
         user = User(Transaction().user)
         login_user_id = int(user.id)
-        cursor.execute('SELECT id FROM party_party WHERE is_doctor=True AND \
+        cursor.execute('SELECT id FROM party_party WHERE is_healthprof=True AND \
             internal_user = %s LIMIT 1', (login_user_id,))
         partner_id = cursor.fetchone()
         if partner_id:
             cursor = Transaction().cursor
-            cursor.execute('SELECT id FROM gnuhealth_physician WHERE \
+            cursor.execute('SELECT id FROM gnuhealth_healthprofessional WHERE \
                 name = %s LIMIT 1', (partner_id[0],))
             doctor_id = cursor.fetchone()
             return int(doctor_id[0])
@@ -163,9 +169,9 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
     evaluation = fields.Many2One('gnuhealth.patient.evaluation',
         'Related Evaluation', domain=[('patient', '=', Eval('patient'))],
         depends=['patient'])
-    ordering_professional = fields.Many2One('gnuhealth.physician',
+    ordering_professional = fields.Many2One('gnuhealth.healthprofessional',
         'Ordering Physician')
-    health_professional = fields.Many2One('gnuhealth.physician',
+    health_professional = fields.Many2One('gnuhealth.healthprofessional',
         'Health Professional', readonly=True)
     procedures = fields.One2Many('gnuhealth.ambulatory_care_procedure', 'name',
         'Procedures',
@@ -207,17 +213,21 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(PatientAmbulatoryCare, cls).__setup__()
-        cls._constraints += [
-            ('check_health_professional', 'health_professional_warning'),
-        ]
         cls._error_messages.update({
             'health_professional_warning':
                     'No health professional associated to this user',
         })
         cls._order.insert(0, ('session_start', 'DESC'))
 
+    @classmethod
+    def validate(cls, records):
+        super(PatientAmbulatoryCare, cls).validate(records)
+        for record in records:
+            record.check_health_professional()
+
     def check_health_professional(self):
-        return self.health_professional
+        if not self.health_professional:
+            self.raise_user_error('health_professional_warning')
 
     @classmethod
     def create(cls, vlist):
@@ -238,12 +248,12 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
         User = Pool().get('res.user')
         user = User(Transaction().user)
         login_user_id = int(user.id)
-        cursor.execute('SELECT id FROM party_party WHERE is_doctor=True AND \
+        cursor.execute('SELECT id FROM party_party WHERE is_healthprof=True AND \
             internal_user = %s LIMIT 1', (login_user_id,))
         partner_id = cursor.fetchone()
         if partner_id:
             cursor = Transaction().cursor
-            cursor.execute('SELECT id FROM gnuhealth_physician WHERE \
+            cursor.execute('SELECT id FROM gnuhealth_healthprofessional WHERE \
                 name = %s LIMIT 1', (partner_id[0],))
             doctor_id = cursor.fetchone()
             return int(doctor_id[0])

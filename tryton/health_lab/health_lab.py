@@ -2,7 +2,9 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2013  Luis Falcon <falcon@gnu.org>
+#    Copyright (C) 2008-2014 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2014 GNU Solidario <health@gnusolidario.org>
+#
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -84,9 +86,9 @@ class Lab(ModelSQL, ModelView):
         help="Lab test type", required=True, select=True)
     patient = fields.Many2One('gnuhealth.patient', 'Patient',
      help="Patient ID", required=True, select=True)
-    pathologist = fields.Many2One('gnuhealth.physician', 'Pathologist',
+    pathologist = fields.Many2One('gnuhealth.healthprofessional', 'Pathologist',
         help="Pathologist", select=True)
-    requestor = fields.Many2One('gnuhealth.physician', 'Physician',
+    requestor = fields.Many2One('gnuhealth.healthprofessional', 'Physician',
         help="Doctor who requested the test", select=True)
     results = fields.Text('Results')
     diagnosis = fields.Text('Diagnosis')
@@ -209,7 +211,7 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
         ], 'State', readonly=True, select=True)
     patient_id = fields.Many2One('gnuhealth.patient', 'Patient', required=True,
      select=True)
-    doctor_id = fields.Many2One('gnuhealth.physician', 'Doctor',
+    doctor_id = fields.Many2One('gnuhealth.healthprofessional', 'Doctor',
         help="Doctor who Request the lab test.", select=True)
     request = fields.Integer('Request', readonly=True)
     urgent = fields.Boolean('Urgent')
@@ -238,7 +240,7 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
         parties = Pool().get('party.party').search([
                 ('internal_user', '=', uid)])
         if parties:
-            doctors = Pool().get('gnuhealth.physician').search([
+            doctors = Pool().get('gnuhealth.healthprofessional').search([
                     ('name', '=', parties[0].id)])
             if doctors:
                 return doctors[0].id

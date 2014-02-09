@@ -2,7 +2,9 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2013  Luis Falcon <falcon@gnu.org>
+#    Copyright (C) 2008-2014 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2014 GNU Solidario <health@gnusolidario.org>
+#
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -80,9 +82,6 @@ class PatientPregnancy(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(PatientPregnancy, cls).__setup__()
-        cls._constraints += [
-            ('check_patient_current_pregnancy', 'patient_already_pregnant'),
-        ]
         cls._sql_constraints = [
             ('gravida_uniq', 'UNIQUE(name,gravida)', 'The pregancy number must'
                 ' be unique for this patient !'),
@@ -90,6 +89,12 @@ class PatientPregnancy(ModelSQL, ModelView):
         cls._error_messages.update({
             'patient_already_pregnant': 'Our records indicate that the patient'
                 ' is already pregnant !'})
+
+    @classmethod
+    def validate(cls, pregnancies):
+        super(PatientPregnancy, cls).validate(pregnancies)
+        for pregnancy in pregnancies:
+            pregnancy.check_patient_current_pregnancy()
 
     def check_patient_current_pregnancy(self):
         ''' Check for only one current pregnancy in the patient '''
@@ -99,8 +104,7 @@ class PatientPregnancy(ModelSQL, ModelView):
             WHERE (name = %s AND current_pregnancy)",
             (str(self.name.id),))
         if cursor.fetchone()[0] > 1:
-            return False
-        return True
+            self.raise_user_error('patient_already_pregnant')
 
     @staticmethod
     def default_current_pregnancy():

@@ -2,7 +2,9 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2013  Luis Falcon <falcon@gnu.org>
+#    Copyright (C) 2008-2014 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2014 GNU Solidario <health@gnusolidario.org>
+#
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -96,9 +98,9 @@ class InpatientRegistration(ModelSQL, ModelView):
         required=True, select=True)
     discharge_date = fields.DateTime('Expected Discharge Date', required=True,
         select=True)
-    attending_physician = fields.Many2One('gnuhealth.physician',
+    attending_physician = fields.Many2One('gnuhealth.healthprofessional',
         'Attending Physician', select=True)
-    operating_physician = fields.Many2One('gnuhealth.physician',
+    operating_physician = fields.Many2One('gnuhealth.healthprofessional',
         'Operating Physician')
     admission_reason = fields.Many2One('gnuhealth.pathology',
         'Reason for Admission', help="Reason for Admission", select=True)
@@ -112,7 +114,7 @@ class InpatientRegistration(ModelSQL, ModelView):
     medications = fields.One2Many('gnuhealth.inpatient.medication', 'name',
         'Medications')
     therapeutic_diets = fields.One2Many('gnuhealth.inpatient.diet', 'name',
-        'Therapeutic Diets')
+        'Meals / Diet Program')
     diet_belief = fields.Many2One('gnuhealth.diet.belief',
         'Belief', help="Enter the patient belief or religion to choose the \
             proper diet")
@@ -132,9 +134,16 @@ class InpatientRegistration(ModelSQL, ModelView):
         ('cancelled', 'cancelled'),
         ('confirmed', 'confirmed'),
         ('hospitalized', 'hospitalized'),
+        ('done','Done'),
         ), 'Status', select=True)
+        
     bed_transfers = fields.One2Many('gnuhealth.bed.transfer', 'name',
         'Transfer History', readonly=True)
+
+    discharged_by = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Discharged by', readonly=True,
+        states={'invisible': Equal(Eval('state'), 'in_progress')},
+        help="Health Professional that discharged the patient")
 
     @classmethod
     def __setup__(cls):
@@ -197,7 +206,7 @@ class InpatientRegistration(ModelSQL, ModelView):
         registration_id = registrations[0]
         Bed = Pool().get('gnuhealth.hospital.bed')
 
-        cls.write(registrations, {'state': 'free'})
+        cls.write(registrations, {'state': 'done'})
         Bed.write([registration_id.bed], {'state': 'free'})
 
     @classmethod
@@ -235,6 +244,15 @@ class InpatientRegistration(ModelSQL, ModelView):
                     config.inpatient_registration_sequence.id)
         return super(InpatientRegistration, cls).create(vlist)
 
+    @classmethod
+    def write(cls, registrations, vals):
+        # Don't allow to write the record if the evaluation has been done
+        if registrations[0].state == 'done':
+            cls.raise_user_error(
+                "This hospitalization is at state Done\n"
+                "You can no longer modify it.")
+        return super(InpatientRegistration, cls).write(registrations, vals)
+
     @staticmethod
     def default_state():
         return 'free'
@@ -251,13 +269,14 @@ class InpatientRegistration(ModelSQL, ModelView):
     @classmethod
     def search_rec_name(cls, name, clause):
         field = None
+        # Search by Registration Code ID or Patient
         for field in ('name', 'patient'):
-            registrations = cls.search([(field,) + clause[1:]], limit=1)
+            registrations = cls.search([(field,) + tuple(clause[1:])], limit=1)
             if registrations:
                 break
         if registrations:
-            return [(field,) + clause[1:]]
-        return [(cls._rec_name,) + clause[1:]]
+            return [(field,) + tuple(clause[1:])]
+        return [(cls._rec_name,) + tuple(clause[1:])]
 
 
 class BedTransfer(ModelSQL, ModelView):
@@ -412,7 +431,7 @@ class InpatientMedicationLog (ModelSQL, ModelView):
 
     name = fields.Many2One('gnuhealth.inpatient.medication', 'Medication')
     admin_time = fields.DateTime("Date", readonly=True)
-    health_professional = fields.Many2One('gnuhealth.physician',
+    health_professional = fields.Many2One('gnuhealth.healthprofessional',
         'Health Professional', readonly=True)
     dose = fields.Float('Dose',
         help='Amount of medication (eg, 250 mg) per dose')
@@ -424,32 +443,25 @@ class InpatientMedicationLog (ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(InpatientMedicationLog, cls).__setup__()
-        cls._constraints += [
-            ('check_health_professional', 'health_professional_warning'),
-        ]
         cls._error_messages.update({
             'health_professional_warning':
                     'No health professional associated to this user',
         })
 
+    @classmethod
+    def validate(cls, records):
+        super(InpatientMedicationLog, cls).validate(records)
+        for record in records:
+            record.check_health_professional()
+
     def check_health_professional(self):
-        return self.health_professional
+        if not self.health_professional:
+            self.raise_user_error('health_professional_warning')
 
     @staticmethod
     def default_health_professional():
-        cursor = Transaction().cursor
-        User = Pool().get('res.user')
-        user = User(Transaction().user)
-        login_user_id = int(user.id)
-        cursor.execute('SELECT id FROM party_party WHERE is_doctor=True AND \
-            internal_user = %s LIMIT 1', (login_user_id,))
-        partner_id = cursor.fetchone()
-        if partner_id:
-            cursor = Transaction().cursor
-            cursor.execute('SELECT id FROM gnuhealth_physician WHERE \
-                name = %s LIMIT 1', (partner_id[0],))
-            doctor_id = cursor.fetchone()
-            return int(doctor_id[0])
+        pool = Pool()
+        return pool.get('gnuhealth.healthprofessional').get_health_professional()
 
     @staticmethod
     def default_admin_time():

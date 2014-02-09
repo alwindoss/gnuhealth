@@ -2,7 +2,9 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2013  Luis Falcon <falcon@gnu.org>
+#    Copyright (C) 2008-2014 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2014 GNU Solidario <health@gnusolidario.org>
+#
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -22,9 +24,12 @@ from dateutil.relativedelta import relativedelta
 from trytond.model import ModelView, ModelSQL, fields
 from datetime import datetime
 from trytond.transaction import Transaction
-from trytond.backend import TableHandler
+from trytond import backend
+from trytond.pool import Pool
+from trytond.tools import datetime_strftime
+from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal
 
-__all__ = ['RCRI', 'Surgery', 'MedicalOperation', 'MedicalPatient']
+__all__ = ['RCRI', 'Surgery', 'Operation', 'PatientData']
 
 
 class RCRI(ModelSQL, ModelView):
@@ -34,7 +39,7 @@ class RCRI(ModelSQL, ModelView):
     patient = fields.Many2One('gnuhealth.patient', 'Patient ID', required=True)
     rcri_date = fields.DateTime('Date', required=True)
     health_professional = fields.Many2One(
-        'gnuhealth.physician', 'Health Professional',
+        'gnuhealth.healthprofessional', 'Health Professional',
         help="Health professional /"
         "Cardiologist who signed the assesment RCRI")
 
@@ -209,26 +214,36 @@ class Surgery(ModelSQL, ModelView):
         ('r', 'Required'),
         ('u', 'Urgent'),
         ('e', 'Emergency'),
-        ], 'Classification', sort=False)
+        ], 'Urgency', help="Urgency level for this surgery", sort=False)
     surgeon = fields.Many2One(
-        'gnuhealth.physician', 'Surgeon',
+        'gnuhealth.healthprofessional', 'Surgeon',
         help="Surgeon who did the procedure")
 
     anesthetist = fields.Many2One(
-        'gnuhealth.physician', 'Anesthetist',
+        'gnuhealth.healthprofessional', 'Anesthetist',
         help="Anesthetist in charge")
 
     surgery_date = fields.DateTime(
         'Date', help="Start of the Surgery")
 
     surgery_end_date = fields.DateTime(
-        'End', help="End of the Surgery")
+        'End', required=True, help="End of the Surgery")
 
     surgery_length = fields.Function(
         fields.Char(
             'Duration',
             help="Length of the surgery"),
         'surgery_duration')
+
+    state = fields.Selection([
+        ('in_progress', 'In progress'),
+        ('done', 'Done'),
+        ], 'State', readonly=True, sort=False)
+
+    signed_by = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Signed by', readonly=True,
+        states={'invisible': Equal(Eval('state'), 'in_progress')},
+        help="Health Professional that signed this surgery document")
 
     # age is deprecated in GNU Health 2.0
     age = fields.Char(
@@ -302,47 +317,109 @@ class Surgery(ModelSQL, ModelView):
 
     anesthesia_report = fields.Text('Anesthesia Report')
 
+    @staticmethod
+    def default_surgery_date():
+        return datetime.now()
+
+    @staticmethod
+    def default_surgeon():
+        pool = Pool()
+        HealthProf= pool.get('gnuhealth.healthprofessional')
+        surgeon = HealthProf.get_health_professional()
+        return surgeon
+
+    @staticmethod
+    def default_state():
+        return 'in_progress'
+
     @classmethod
     # Update to version 2.0
     def __register__(cls, module_name):
-        super(Surgery, cls).__register__(module_name)
-
         cursor = Transaction().cursor
+        TableHandler = backend.get('TableHandler')
         table = TableHandler(cursor, cls, module_name)
         # Rename the date column to surgery_surgery_date
-
         if table.column_exist('date'):
             table.column_rename('date', 'surgery_date')
+
+        super(Surgery, cls).__register__(module_name)
 
     @classmethod
     def __setup__(cls):
         super(Surgery, cls).__setup__()
-        cls._constraints += [
-            ('validate_surgery_period', 'end_date_before_start')]
-
         cls._error_messages.update({
-            'end_date_before_start': 'End time BEFORE surgery date'})
+            'end_date_before_start': 'End time "%(end_date)s" BEFORE '
+                'surgery date "%(surgery_date)s"'})
+
+        cls._buttons.update({
+            'signsurgery': {
+                'invisible': Equal(Eval('state'), 'done'),
+            },
+        })
+        
+    @classmethod
+    def validate(cls, surgeries):
+        super(Surgery, cls).validate(surgeries)
+        for surgery in surgeries:
+            surgery.validate_surgery_period()
 
     def validate_surgery_period(self):
-        res = True
+        Lang = Pool().get('ir.lang')
+
+        languages = Lang.search([
+            ('code', '=', Transaction().language),
+            ])
         if (self.surgery_end_date and self.surgery_date):
             if (self.surgery_end_date < self.surgery_date):
-                res = False
-        return res
+                self.raise_user_error('end_date_before_start', {
+                        'surgery_date': datetime_strftime(self.surgery_date,
+                            str(languages[0].date)),
+                        'end_date': datetime_strftime(self.surgery_end_date,
+                            str(languages[0].date)),
+                        })
 
 
-class MedicalOperation(ModelSQL, ModelView):
+    @classmethod
+    def write(cls, surgeries, vals):
+        # Don't allow to write the record if the surgery has been signed
+        if surgeries[0].state == 'done':
+            cls.raise_user_error(
+                "This surgery is at state Done and has been signed\n"
+                "You can no longer modify it.")
+        return super(Surgery, cls).write(surgeries, vals)
+
+ # Finish and sign the surgery document, and the surgical act.
+
+    @classmethod
+    @ModelView.button
+    def signsurgery(cls, surgeries):
+        surgery_id = surgeries[0]
+
+        # Sign, change the state of the Surgery to "Done"
+        # and write the name of the signing health professional
+
+        signing_hp = Pool().get('gnuhealth.healthprofessional').get_health_professional()
+        if not signing_hp:
+            cls.raise_user_error(
+                "No health professional associated to this user !")
+
+        cls.write(surgeries, {
+            'state': 'done',
+            'signed_by': signing_hp})
+
+
+class Operation(ModelSQL, ModelView):
     'Operation - Surgical Procedures'
     __name__ = 'gnuhealth.operation'
 
     name = fields.Many2One('gnuhealth.surgery', 'Surgery')
     procedure = fields.Many2One(
         'gnuhealth.procedure', 'Code', required=True, select=True,
-        help="Procedure Code, for example ICD-10-PCS Code 7-character string")
+        help="Procedure Code, for example ICD-10-PCS or ICPM")
     notes = fields.Text('Notes')
 
 
-class MedicalPatient(ModelSQL, ModelView):
+class PatientData(ModelSQL, ModelView):
     __name__ = 'gnuhealth.patient'
 
     surgery = fields.One2Many(

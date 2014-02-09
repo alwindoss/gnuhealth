@@ -30,7 +30,7 @@ info = dict(config.items('tryton'))
 for key in ('depends', 'extras_depend', 'xml'):
     if key in info:
         info[key] = info[key].strip().splitlines()
-major_version, minor_version = 2, 8
+major_version, minor_version = 3, 0
 
 requires = []
 
@@ -60,7 +60,8 @@ setup(name='trytond_health_inpatient_calendar',
     package_data={
         'trytond.modules.health_inpatient_calendar': info.get('xml', []) \
             + info.get('translation', []) \
-            + ['tryton.cfg', 'doc/*.rst', 'locale/*.po', 'report/*.odt', 'icons/*.svg'],
+            + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
+               'report/*.odt', 'icons/*.svg'],
         },
 
     classifiers=[
