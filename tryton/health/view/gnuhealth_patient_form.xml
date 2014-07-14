@@ -4,11 +4,10 @@
     <group string="Main Info" id="patient_main_info">
         <group colspan="3" id="patient_main_info_name">
             <group colspan="3" col="9" id="patient_main_info_3">
-                <field colspan="5" name="name"/>
+                <field colspan="4" name="name"/>
                 <field name="sex" width="60"/>
                 <label name="age"/>
                 <field name="age" width="80"/>
-                <field name="identification_code" width="80"/>
             </group>
             <newline/>
             <group id="critical_info" string="Critical Information">
@@ -42,8 +41,22 @@
                     <group colspan="4" col="8" id="patient_info_2">
                         <label name="dob"/>
                         <field name="dob"/>
-                        <label name="ssn"/>
-                        <field name="ssn"/>
+<!--
+From 2.6 we use the "PUID" (ref) field as the main code.
+We go towards the Unique Person Identifier
+If your patient has different clinical history codes (from different centers)
+you can put them in the Clinical History Number in the alternative IDs of the
+associated Party.
+
+You might also want to use the Health_archives module, to associate the legacy
+code with the unique patient ID.
+
+                        <label name="identification_code"/>
+                        <label name="identification_code"/>
+-->
+                        <label name="puid"/>
+                        <field name="puid"/>
+
                         <label name="blood_type"/>
                         <field name="blood_type" width="20"/>
                         <field name="rh" width="20"/>

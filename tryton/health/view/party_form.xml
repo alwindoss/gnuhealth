@@ -18,9 +18,7 @@
             </group>
             <newline/>
             <group colspan="4" id="person_details" states="{'invisible': Not(Bool(Eval('is_person')))}">
-                <group id="person_demographics" string="Demographics">
-                    <label name="ref"/>
-                    <field name="ref"/>
+                <group yfill="1" id="person_demographics" string="Demographics">
                     <label name="dob"/>
                     <field name="dob"/>
                     <label name="sex"/>
@@ -37,31 +35,45 @@
                     <field name="ethnic_group"/>
                     <label name="alternative_identification"/>
                     <field name="alternative_identification"/>
-                    <label name="unidentified"/>
-                    <field name="unidentified"/>
+                    <newline/>
+                    <field colspan="4" name="alternative_ids"/>
                 </group>
-                <group string="Picture" id="person_picture">
+
+                <group yfill="1" string="Picture" id="person_picture">
                     <field xfill="0" xexpand="1" name="photo" img_width="200" img_height="200" height="200" width="200" widget="image"/>
                 </group>
+
                 <newline/>
             </group>
-            <newline/>
-            <field name="alternative_ids"/>
-            <newline/>
             <group col="6" colspan="2" id="other_party_specs">
+            </group>
+            <newline/>
+            <field name="insurance" colspan="4"/>
+            <newline/>
+            <group id="party_footer" colspan="4" col="10">
+                <label name="unidentified"/>
+                <field name="unidentified"/>
+                <label name="alias"/>
+                <field name="alias"/>
+                <label name="code"/>
+                <field name="code"/>
                 <label name="activation_date"/>
                 <field name="activation_date"/>
                 <label name="internal_user"/>
                 <field name="internal_user"/>
             </group>
-            <newline/>
-            <field name="insurance" colspan="4"/>
         </page>
     </xpath>
     <xpath expr="/form/field[@name=&quot;name&quot;]" position="after">
         <label name="lastname"/>
         <field name="lastname"/>
-        <label name="alias"/>
-        <field name="alias"/>
+    </xpath>
+    
+    <!-- Use the SSN field in the place of the party code -->
+    <xpath expr="/form/label[@name=&quot;code&quot;]" position="replace">
+        <label name="ref"/>
+    </xpath>
+    <xpath expr="/form/field[@name=&quot;code&quot;]" position="replace">
+        <field name="ref"/>
     </xpath>
 </data>

@@ -31,7 +31,7 @@ class DiseaseGene(ModelSQL, ModelView):
     'Disease Genes'
     __name__ = 'gnuhealth.disease.gene'
 
-    name = fields.Char('Official Symbol', select=True)
+    name = fields.Char('Official Symbol', required=True,select=True)
     long_name = fields.Char('Official Long Name', select=True)
     gene_id = fields.Char('Gene ID',
         help="default code from NCBI Entrez database.", select=True)
@@ -43,10 +43,30 @@ class DiseaseGene(ModelSQL, ModelView):
         ('d', 'dominant'),
         ('r', 'recessive'),
         ], 'Dominance', select=True)
-    info = fields.Text('Information', help="Name of the protein(s) affected")
+    info = fields.Text('Information', help="Extra Information")
+
+    @classmethod
+    def __setup__(cls):
+        super(DiseaseGene, cls).__setup__()
+        cls._sql_constraints = [
+            ('name_uniq', 'UNIQUE(name)', 
+            'The Official Symbol name must be unique !'),
+        ]
 
     def get_rec_name(self, name):
         return self.name + ':' + self.long_name
+
+    @classmethod
+    def search_rec_name(cls, name, clause):
+        """ Search for the official and long name"""
+        field = None
+        for field in ('name', 'long_name'):
+            parties = cls.search([(field,) + tuple(clause[1:])], limit=1)
+            if parties:
+                break
+        if parties:
+            return [(field,) + tuple(clause[1:])]
+        return [(cls._rec_name,) + tuple(clause[1:])]
 
 
 class PatientGeneticRisk(ModelSQL, ModelView):
@@ -56,7 +76,7 @@ class PatientGeneticRisk(ModelSQL, ModelView):
     patient = fields.Many2One('gnuhealth.patient', 'Patient', select=True)
     disease_gene = fields.Many2One('gnuhealth.disease.gene',
         'Disease Gene', required=True)
-
+    notes = fields.Char("Notes")
 
 class FamilyDiseases(ModelSQL, ModelView):
     'Family Diseases'
@@ -68,6 +88,7 @@ class FamilyDiseases(ModelSQL, ModelView):
         (None, ''),
         ('m', 'Maternal'),
         ('f', 'Paternal'),
+        ('s', 'Sibling'),
         ], 'Maternal or Paternal', select=True)
 
     relative = fields.Selection([

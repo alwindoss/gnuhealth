@@ -2,28 +2,29 @@
 <form string="Newborn Info">
     <notebook>
         <page string="Main" id="page_newborn_main">
-            <group string="Main" id="group_newborn_main">
+            <group colspan="4" string="Main" id="group_newborn_main">
                 <group id="group_newborn_1">
-                    <label name="name"/>
-                    <field name="name"/>
-                    <label name="patient"/>
-                    <field name="patient"/>
-                    <label name="mother"/>
-                    <field name="mother"/>
-                    <label name="newborn_sex"/>
-                    <field name="newborn_sex"/>
-                    <label name="birth_date"/>
-                    <field name="birth_date"/>
-                    <label name="dismissed"/>
-                    <field name="dismissed"/>
-                    <label name="length"/>
-                    <field name="length"/>
-                    <label name="weight"/>
-                    <field name="weight"/>
-                    <label name="cephalic_perimeter"/>
-                    <field name="cephalic_perimeter"/>
-                    <label name="responsible"/>
-                    <field name="responsible"/>
+                    <group id="newborn_header" colspan="3" col="6">
+                        <label name="patient"/>
+                        <field name="patient"/>
+                        <label name="birth_date"/>
+                        <field name="birth_date"/>
+                        <label name="sex"/>
+                        <field name="sex"/>
+
+                    </group> 
+
+                    <group id="newborn_anthropometrics" colspan="3" col="8">
+                        <label name="mother"/>
+                        <field name="mother"/>
+                        <label name="length"/>
+                        <field name="length"/>
+                        <label name="weight"/>
+                        <field name="weight"/>
+                        <label name="cephalic_perimeter"/>
+                        <field name="cephalic_perimeter"/>
+                    </group> 
+                    <newline/>
                 </group>
                 <group id="group_newborn_photo">
                     <field name="photo" widget="image"/>
@@ -50,11 +51,15 @@
                     <field colspan="3" name="notes"/>
                 </group>
                 <newline/>
-                <group colspan="4" id="group_newborn_identity">
+                <group col="8" id="group_newborn_identity">
 					<label name="newborn_name"/>
 					<field name="newborn_name"/>
-					<label name="sex"/>
-					<field name="sex"/>
+                    <label name="name"/>
+                    <field name="name"/>
+                    <label name="dismissed"/>
+                    <field name="dismissed"/>
+                    <label name="responsible"/>
+                    <field name="responsible"/>
                 </group>
 
             </group>
@@ -120,24 +125,6 @@
                 <field name="test_audition"/>
                 <label name="test_metabolic"/>
                 <field name="test_metabolic"/>
-            </group>
-        </page>
-        <page string="Other" id="page_newborn_other">
-            <group string="Deceased" id="group_newborn_deceased">
-                <group id="group_newborn_deceased_1">
-                    <label name="bd"/>
-                    <field name="bd"/>
-                    <label name="died_at_delivery"/>
-                    <field name="died_at_delivery"/>
-                    <label name="died_at_the_hospital"/>
-                    <field name="died_at_the_hospital"/>
-                    <label name="died_being_transferred"/>
-                    <field name="died_being_transferred"/>
-                    <label name="tod"/>
-                    <field name="tod"/>
-                    <label name="cod"/>
-                    <field name="cod"/>
-                </group>
             </group>
         </page>
     </notebook>

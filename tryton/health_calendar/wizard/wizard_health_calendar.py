@@ -35,9 +35,9 @@ class CreateAppointmentStart(ModelView):
     healthprof = fields.Many2One('gnuhealth.healthprofessional', 'Health Prof',
         required=True)
     specialty = fields.Many2One('gnuhealth.specialty', 'Specialty',
-        required=True, on_change_with=['healthprof'])
-    institution = fields.Many2One('party.party', 'Health Center',
-        domain=[('is_institution', '=', True)], required=True)
+        required=True)
+    institution = fields.Many2One('gnuhealth.institution', 'Institution',
+        required=True)
     institution = fields.Many2One('party.party', 'Health Center',
         domain=[('is_institution', '=', True)], required=True)
     date_start = fields.Date('Start Date', required=True)
@@ -53,6 +53,7 @@ class CreateAppointmentStart(ModelView):
     saturday = fields.Boolean('Saturday')
     sunday = fields.Boolean('Sunday')
 
+    @fields.depends('healthprof')
     def on_change_with_specialty(self):
         # Return the Current / Main speciality of the Health Professional
         # if this speciality has been specified in the HP record.

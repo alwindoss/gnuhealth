@@ -30,7 +30,7 @@ info = dict(config.items('tryton'))
 for key in ('depends', 'extras_depend', 'xml'):
     if key in info:
         info[key] = info[key].strip().splitlines()
-major_version, minor_version = 3, 0
+major_version, minor_version = 3, 2
 
 requires = []
 
@@ -38,7 +38,7 @@ for dep in info.get('depends', []):
     if dep.startswith('health'):
         requires.append('trytond_%s == %s' %
             (dep, info.get('version')))
-    elif not re.match(r'(ir|res|workflow|webdav)(\W|$)', dep):
+    elif not re.match(r'(ir|res|webdav)(\W|$)', dep):
         requires.append('trytond_%s >= %s.%s, < %s.%s' %
             (dep, major_version, minor_version, major_version,
                 minor_version + 1))
@@ -72,7 +72,6 @@ setup(name='trytond_health_ntd',
         'Natural Language :: English',
         'Natural Language :: Spanish',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Topic :: Scientific/Engineering :: Bio-Informatics',
         'Topic :: Scientific/Engineering :: Medical Science Apps.',

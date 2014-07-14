@@ -23,7 +23,8 @@
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.transaction import Transaction
 from trytond.pool import Pool
-
+from datetime import datetime
+from sql import *
 
 __all__ = ['Newborn', 'NeonatalApgar', 'NeonatalMedication',
     'NeonatalCongenitalDiseases', 'PediatricSymptomsChecklist']
@@ -35,12 +36,13 @@ class Newborn(ModelSQL, ModelView):
 
     name = fields.Char('Newborn ID')
     patient = fields.Many2One(
-        'gnuhealth.patient', 'Baby\'s name', required=True,
-        help="Patient associated to this newborn baby")
+        'gnuhealth.patient', 'Baby', required=True,
+        help="Patient associated to this newborn")
 
     mother = fields.Many2One('gnuhealth.patient', 'Mother')
     newborn_name = fields.Char('Name at Birth')
-    birth_date = fields.DateTime('Date of Birth', required=True)
+    birth_date = fields.DateTime('DoB', required=True,
+        help="Date and Time of birth")
     photo = fields.Binary('Picture')
     newborn_sex = fields.Function(fields.Selection([
         ('m', 'Male'),
@@ -52,11 +54,13 @@ class Newborn(ModelSQL, ModelView):
     sex = fields.Selection([
         ('m', 'Male'),
         ('f', 'Female'),
-        ], 'Gender at Birth', sort=False, required=True)
+        ], 'Sex',sort=False, required=True,
+            help="Sex at birth. It might differ from the current patient" \
+            " sex")
 
-    cephalic_perimeter = fields.Integer('Cephalic Perimeter',
-        help="Perimeter in centimeters (cm)")
-    length = fields.Integer('Length', help="Perimeter in centimeters (cm)")
+    cephalic_perimeter = fields.Integer('CP',
+        help="Cephalic Perimeter in centimeters (cm)")
+    length = fields.Integer('Length', help="Length in centimeters (cm)")
     weight = fields.Integer('Weight', help="Weight in grams (g)")
     apgar1 = fields.Integer('APGAR 1st minute')
     apgar5 = fields.Integer('APGAR 5th minute')
@@ -102,6 +106,16 @@ class Newborn(ModelSQL, ModelView):
     responsible = fields.Many2One('gnuhealth.healthprofessional', 'Doctor in charge',
         help="Signed by the health professional")
     dismissed = fields.DateTime('Discharged')
+    notes = fields.Text('Notes')
+
+    # Deprecated. the following fields will be removed in 2.8
+    # Decease information on fetus / newborn are linked now in 
+    # the obstetrics evaluation (prenatal) or patient if result of pregnancy
+    # was a live birth.
+    # The information is no longer shown at the view.
+    # Fields to be removed : bd, died_at_delivery, died_at_the_hospital
+    # died_being_transferred, tod, cod
+    
     bd = fields.Boolean('Stillbirth')
     died_at_delivery = fields.Boolean('Died at delivery room')
     died_at_the_hospital = fields.Boolean('Died at the hospital')
@@ -109,15 +123,62 @@ class Newborn(ModelSQL, ModelView):
         help="The baby died being transferred to another health institution")
     tod = fields.DateTime('Time of Death')
     cod = fields.Many2One('gnuhealth.pathology', 'Cause of death')
-    notes = fields.Text('Notes')
-
+   
     @classmethod
     def __setup__(cls):
         super(Newborn, cls).__setup__()
 
         cls._sql_constraints = [
             ('name_uniq', 'unique(name)', 'The Newborn ID must be unique !'),
+            ('patient_uniq', 'unique(patient)',
+                'There is already a newborn record for this patient'),
         ]
+
+    # Update the birth date on the party model upon writing it on the 
+    # newborn model
+    
+    @classmethod
+    def write(cls, newborns, values):
+        cursor = Transaction().cursor
+        for newborn in newborns:
+            newborn_party_id = newborn.patient.name.id
+            if values.get('birth_date'):
+                born_date = datetime.date(values.get('birth_date'))
+                party = Table('party_party')
+                cursor.execute(*party.update(columns=[party.dob],
+                    values=[born_date], 
+                    where=(party.id == newborn_party_id)))
+                    
+                    
+        return super(Newborn, cls).write(newborns, values)
+
+
+    # Update the birth date on the party model upon CREATING the 
+    # newborn record
+
+    @classmethod
+    def create(cls, vlist):
+        vlist = [x.copy() for x in vlist]
+        patient_table = Table('gnuhealth_patient')
+        cursor = Transaction().cursor
+        
+        for values in vlist:
+            newborn_patient_id = values['patient']
+
+        cursor.execute (*patient_table.select(patient_table.name,
+            where=(patient_table.id == newborn_patient_id)))
+
+        newborn_party_id = cursor.fetchone()
+           
+        if values['birth_date']:
+            born_date = datetime.date(values['birth_date'])
+            party = Table('party_party')
+            cursor.execute(*party.update(columns=[party.dob],
+                values=[born_date], 
+                where=(party.id == newborn_party_id[0])))
+                   
+        return super(Newborn, cls).create(vlist)
+
 
     def get_newborn_sex(self, name):
         if self.patient:
@@ -162,10 +223,10 @@ class NeonatalApgar(ModelSQL, ModelView):
         ('2', 'strong'),
         ], 'Respiration', required=True, sort=False)
 
-    apgar_score = fields.Integer('APGAR Score',
-        on_change_with=['apgar_respiration', 'apgar_activity',
-        'apgar_grimace', 'apgar_pulse', 'apgar_appearance'])
+    apgar_score = fields.Integer('APGAR Score')
 
+    @fields.depends('apgar_respiration', 'apgar_activity', 'apgar_grimace',
+        'apgar_pulse', 'apgar_appearance')
     def on_change_with_apgar_score(self):
         apgar_appearance = self.apgar_appearance or '0'
         apgar_pulse = self.apgar_pulse or '0'
@@ -454,8 +515,19 @@ class PediatricSymptomsChecklist(ModelSQL, ModelView):
         ('2', 'Often'),
         ], 'Refuses to share', sort=False)
 
-    psc_total = fields.Integer('PSC Total',
-        on_change_with=['psc_aches_pains', 'psc_spend_time_alone',
+    psc_total = fields.Integer('PSC Total')
+
+    @staticmethod
+    def default_user_id():
+        User = Pool().get('res.user')
+        user = User(Transaction().user)
+        return int(user.id)
+
+    @staticmethod
+    def default_psc_total():
+        return 0
+
+    @fields.depends('psc_aches_pains', 'psc_spend_time_alone',
         'psc_tires_easily', 'psc_fidgety', 'psc_trouble_with_teacher',
         'psc_less_interest_in_school', 'psc_acts_as_driven_by_motor',
         'psc_daydreams_too_much', 'psc_distracted_easily',
@@ -472,18 +544,7 @@ class PediatricSymptomsChecklist(ModelSQL, ModelView):
         'psc_does_not_show_feelings',
         'psc_does_not_get_people_feelings',
         'psc_teases_others', 'psc_takes_things_from_others',
-        'psc_refuses_to_share'])
-
-    @staticmethod
-    def default_user_id():
-        User = Pool().get('res.user')
-        user = User(Transaction().user)
-        return int(user.id)
-
-    @staticmethod
-    def default_psc_total():
-        return 0
-
+        'psc_refuses_to_share')
     def on_change_with_psc_total(self):
 
         psc_aches_pains = self.psc_aches_pains or '0'
