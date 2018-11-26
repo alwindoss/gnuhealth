@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # GNU Health installer
-# Version for 3.2 series
+# Version for 3.4 series
 
 ##############################################################################
 #
@@ -31,7 +31,7 @@
 #-----------------------------------------------------------------------------
 
 #GNU Health installer version
-VERSION="3.2.2"
+VERSION="3.4.0"
 
 # Colors constants
 NONE="$(tput sgr0)"
@@ -44,13 +44,13 @@ WHITE="\n$(tput setaf 7)"
 INSTDIR="$PWD"
 GNUHEALTH_INST_DIR="$PWD"
 GNUHEALTH_VERSION=$(cat version)
-TRYTON_VERSION="4.2"
+TRYTON_VERSION="4.6"
 TRYTON_BASE_URL="http://downloads.tryton.org"
 
 GNUHEALTH_URL="https://ftp.gnu.org/gnu/health"
 TRANSLATE_URL="http://translate.gnusolidario.org"
 UPDATE_DOWNLOAD_DIR="/tmp/gnuhealth_update"
-TRYTON_PATCHES="security/GNUHEALTH32-SA-2017-1.trytond.patch.asc"
+TRYTON_PATCHES="security/get_login_trytond-46.patch.asc"
 
 
 #-----------------------------------------------------------------------------
@@ -256,10 +256,10 @@ install_python_dependencies() {
     local PIP_STDNUM="python-stdnum"
     local PIP_SIMPLEEVAL="simpleeval"
     local PIP_CONFIGPARSER="configparser"
-    local PIP_PYMONGO="pymongo"
     local PIP_WEBDAV3="pywebdav3-gnuhealth"
     local PIP_BCRYPT="bcrypt"
     local PIP_NUMPY="numpy"
+    local PIP_UNOCONV="unoconv"
 
     # Operating System specific package selection
     # Skip PYTHON-LDAP installation since it tries to install / compile it system-wide
@@ -267,8 +267,8 @@ install_python_dependencies() {
     message "WARNING" "Skipping local PYTHON-LDAP installation. Please refer to the Wikibook to install it"
 
     local PIP_PKGS="$PIP_NUMPY $PIP_PYTZ $PIP_WRAPT $PIP_WERKZEUG $PIP_SIX $PIP_LXML $PIP_RELATORIO $PIP_DATEUTIL $PIP_PSYCOPG2 $PIP_VOBJECT \
-        $PIP_QRCODE $PIP_PYBARCODE $PIP_PILLOW $PIP_CALDAV $PIP_POLIB $PIP_SQL $PIP_STDNUM $PIP_SIMPLEEVAL $PIP_CONFIGPARSER $PIP_PYMONGO \
-        $PIP_WEBDAV3 $PIP_BCRYPT"
+        $PIP_QRCODE $PIP_PYBARCODE $PIP_PILLOW $PIP_CALDAV $PIP_POLIB $PIP_SQL $PIP_STDNUM $PIP_SIMPLEEVAL $PIP_CONFIGPARSER \
+        $PIP_WEBDAV3 $PIP_BCRYPT $PIP_UNOCONV"
     
     message "INFO" "Installing python dependencies with pip-${PIP_VERSION} ..."
 
@@ -359,11 +359,12 @@ install_tryton_modules() {
     message "INFO" "Copying GNU Health modules to the Tryton modules directory..."
     cp -a ${GNUHEALTH_INST_DIR}/health* ${MODULES_DIR} || bailout
     ln -si ${MODULES_DIR}/health* .
+    rm -f ./health_webdav3_server
+    rm -f ./health_caldav
 
-    message "INFO" "Installing Tryton WebDAV related packages..."
-    cp -a ${GNUHEALTH_INST_DIR}/trytond_*webdav3* ${MODULES_DIR} || bailout
-    ln -si ${MODULES_DIR}/trytond_webdav3 ./webdav
-    ln -si ${MODULES_DIR}/trytond_calendar_webdav3 ./calendar
+    message "INFO" "Installing WebDAV related packages..."
+    ln -si ${MODULES_DIR}/health_webdav3_server ./webdav
+    ln -si ${MODULES_DIR}/health_caldav ./calendar
 
     # Copy LICENSE README and version files
     
@@ -419,10 +420,10 @@ apply_patches() {
         for n in ${TRYTON_PATCHES}
         do
             cd ${BASEDIR}/tryton/server/trytond-${TRYTON_VERSION}*
-            patch --dry-run --silent -N -p0 < ${GNUHEALTH_INST_DIR}/patches/${n}
+            patch --dry-run --silent -N -p1 < ${GNUHEALTH_INST_DIR}/patches/${n}
             if [ $? -eq 0 ]; then
                 message "WARNING" "Applying patch ${n} to Tryton kernel"
-                patch -p0 < ${GNUHEALTH_INST_DIR}/patches/${n} || exit 1
+                patch -p1 < ${GNUHEALTH_INST_DIR}/patches/${n} || exit 1
                 message "INFO" "Tryton kernel sucessfully patched"
             else
                 message "INFO" "Patch ${n} already applied or not elegible"
@@ -461,6 +462,24 @@ bash_profile () {
     else
         echo "[[ -f ${PROFILE} ]] && source ${PROFILE}" >> $HOME/.bashrc
     fi
+
+}
+
+startup_script () {
+
+    message "INFO" "Creating or Updating the startup script for GNU Health"
+
+    cd $INSTDIR
+
+    START_GNUHEALTH="$HOME/start_gnuhealth.sh"
+
+    if [[ -e ${START_GNUHEALTH} ]]; then
+        # Make a backup copy of the GNU Health startup script if it exists
+        message "INFO" "GNU Health startup script exists. Making backup to ${START_GNUHEALTH}.bak ."
+        cp ${START_GNUHEALTH} ${START_GNUHEALTH}.bak || bailout
+    fi
+
+    cp start_gnuhealth.sh ${START_GNUHEALTH} ||  bailout
 
 }
 
@@ -518,8 +537,11 @@ install() {
 
     # (7) BASH Profile
     bash_profile
+
+    # (8) Startup script
+    startup_script
     
-    # (8) Clean
+    # (9) Clean
     cleanup
 }
 

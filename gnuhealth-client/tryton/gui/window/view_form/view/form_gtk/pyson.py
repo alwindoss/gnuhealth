@@ -1,4 +1,4 @@
-# This file is part of GNU Health.  The COPYRIGHT file at the top level of
+# This file is part of the GNU Health GTK Client.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
 import gtk
 from .char import Char
@@ -19,7 +19,7 @@ class PYSON(Char):
             return value
         try:
             return self.encoder.encode(eval(value, CONTEXT))
-        except Exception:
+        except (ValueError, TypeError, NameError, SyntaxError):
             return None
 
     def set_value(self, record, field):

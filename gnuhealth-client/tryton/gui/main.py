@@ -1,4 +1,4 @@
-# This file is part of GNU Health.  The COPYRIGHT file at the top level of
+# This file is part of the GNU Health GTK Client.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
 
 import os
@@ -26,7 +26,6 @@ from tryton.gui.window.preference import Preference
 from tryton.gui.window import Limit
 from tryton.gui.window import Email
 from tryton.gui.window.dblogin import DBLogin
-# from tryton.gui.window.tips import Tips
 from tryton.gui.window.about import About
 from tryton.gui.window.shortcuts import Shortcuts
 from tryton.common.cellrendererclickablepixbuf import \
@@ -34,7 +33,15 @@ from tryton.common.cellrendererclickablepixbuf import \
 import tryton.translate as translate
 import tryton.plugins
 from tryton.common.placeholder_entry import PlaceholderEntry
-import pango
+
+import time
+import platform
+from tryton.gui.window.activity import Activity
+from string import lower, split
+from tryton import __version__
+import ast
+
+
 if os.environ.get('GTKOSXAPPLICATION'):
     import gtkosx_application
 else:
@@ -48,8 +55,6 @@ _ = gettext.gettext
 
 
 _MAIN = []
-TAB_SIZE = 120
-
 
 class Main(object):
     window = None
@@ -113,11 +118,17 @@ class Main(object):
         gtk.accel_map_add_entry('<tryton>/Form/Close', gtk.keysyms.W,
                 gtk.gdk.CONTROL_MASK)
         gtk.accel_map_add_entry('<tryton>/Form/Previous Tab',
-            gtk.keysyms.Page_Up, gtk.gdk.CONTROL_MASK)
+            gtk.keysyms.Left, gtk.gdk.CONTROL_MASK)
         gtk.accel_map_add_entry('<tryton>/Form/Next Tab',
-            gtk.keysyms.Page_Down, gtk.gdk.CONTROL_MASK)
+            gtk.keysyms.Right, gtk.gdk.CONTROL_MASK)
         gtk.accel_map_add_entry('<tryton>/Form/Reload', gtk.keysyms.R,
                 gtk.gdk.CONTROL_MASK)
+        gtk.accel_map_add_entry('<tryton>/Form/Attachments', gtk.keysyms.T,
+            gtk.gdk.CONTROL_MASK | gtk.gdk.SHIFT_MASK)
+        gtk.accel_map_add_entry('<tryton>/Form/Notes', gtk.keysyms.O,
+            gtk.gdk.CONTROL_MASK | gtk.gdk.SHIFT_MASK)
+        gtk.accel_map_add_entry('<tryton>/Form/Relate', gtk.keysyms.R,
+            gtk.gdk.CONTROL_MASK | gtk.gdk.SHIFT_MASK)
         gtk.accel_map_add_entry('<tryton>/Form/Actions', gtk.keysyms.E,
                 gtk.gdk.CONTROL_MASK)
         gtk.accel_map_add_entry('<tryton>/Form/Report', gtk.keysyms.P,
@@ -125,13 +136,18 @@ class Main(object):
         gtk.accel_map_add_entry('<tryton>/Form/Search', gtk.keysyms.F,
             gtk.gdk.CONTROL_MASK)
 
+        gtk.accel_map_add_entry('<tryton>/Window/Activity Log', gtk.keysyms.F12,
+            gtk.gdk.SHIFT_MASK)
+
+        gtk.accel_map_add_entry('<tryton>/User/Command Line', gtk.keysyms.Z,
+            gtk.gdk.SHIFT_MASK)
+
         gtk.accel_map_load(os.path.join(get_config_dir(), 'accel.map'))
 
         self.tooltips = common.Tooltips()
 
         self.vbox = gtk.VBox()
         self.window.add(self.vbox)
-
         self.menubar = None
         self.global_search_entry = None
         self.menuitem_user = None
@@ -199,6 +215,10 @@ class Main(object):
 
         _MAIN.append(self)
 
+        self.cli = self.statusbar = self.footer_contents = self.footer = None
+
+        self.cli_position = CONFIG['client.cli_position']
+
     def set_menubar(self):
         if self.menubar:
             self.menubar.destroy()
@@ -255,6 +275,17 @@ class Main(object):
                 self.favorite_set()
         menuitem_favorite.connect('select', favorite_activate)
 
+        #GNU Health Window menu entry
+        menuitem_window = gtk.MenuItem(
+            _('Window'), use_underline=True)
+        menubar.add(menuitem_window)
+
+        menu_window = self._set_menu_window()
+        menuitem_window.set_submenu(menu_window)
+        menu_window.set_accel_group(self.accel_group)
+        menu_window.set_accel_path('<tryton>/Window')
+
+        #Help menu entry
         menuitem_help = gtk.MenuItem(_('_Help'), use_underline=True)
         menubar.add(menuitem_help)
 
@@ -272,6 +303,7 @@ class Main(object):
             menuitem_options.show_all()
             menuitem_favorite.show_all()
             menuitem_help.show_all()
+            menuitem_activity.show_all()
         else:
             self.menubar.show_all()
 
@@ -302,8 +334,10 @@ class Main(object):
                         'ids': [record_id],
                         }, context=self.menu_screen.context.copy())
             else:
-                Window.create(False, model, res_id=record_id,
-                    mode=['form', 'tree'], name=model_name)
+                Window.create(model,
+                    res_id=record_id,
+                    mode=['form', 'tree'],
+                    name=model_name)
             self.global_search_entry.set_text('')
             return True
 
@@ -379,10 +413,28 @@ class Main(object):
         self.global_search_entry.grab_focus()
 
     def set_title(self, value=''):
-        title = CONFIG['client.title']
+        if CONFIG['login.profile']:
+            login_info = CONFIG['login.profile']
+        else:
+            login_info = '%s@%s/%s' % (
+                CONFIG['login.login'],
+                CONFIG['login.host'],
+                CONFIG['login.db'])
+        titles = [CONFIG['client.title'], login_info]
         if value:
-            title += ' - ' + value
-        self.window.set_title(title)
+            titles.append(value)
+        self.window.set_title(' - '.join(titles))
+        try:
+            style_context = self.window.get_style_context()
+        except AttributeError:
+            pass
+        else:
+            for name in style_context.list_classes():
+                if name.startswith('profile-'):
+                    style_context.remove_class(name)
+            if CONFIG['login.profile']:
+                style_context.add_class(
+                    'profile-%s' % CONFIG['login.profile'])
 
     def _set_menu_connection(self):
         menu_connection = gtk.Menu()
@@ -464,6 +516,16 @@ class Main(object):
         imagemenuitem_global_search.set_accel_path(
             '<tryton>/User/Global Search')
         menu_user.add(imagemenuitem_global_search)
+
+        #GNU Health Command line
+        imagemenuitem_command_line = gtk.ImageMenuItem(_('_Command Line'),
+                self.accel_group)
+        imagemenuitem_command_line.set_use_underline(True)
+        imagemenuitem_command_line.connect('activate',
+            lambda *a: self.command_line())
+        imagemenuitem_command_line.set_accel_path('<tryton>/User/Command Line')
+        menu_user.add(imagemenuitem_command_line)
+
         return menu_user
 
     def _set_menu_options(self):
@@ -533,9 +595,8 @@ class Main(object):
         if CONFIG['client.can_change_accelerators']:
             checkmenuitem_accel.set_active(True)
 
-        
         '''
-        # REMOVE PDA MODE 
+        # Remove PDA Mode
         menuitem_mode = gtk.MenuItem(_('_Mode'), use_underline=True)
         menu_options.add(menuitem_mode)
 
@@ -560,7 +621,7 @@ class Main(object):
         radiomenuitem_pda.set_accel_path('<tryton>/Options/Mode/PDA')
         menu_mode.add(radiomenuitem_pda)
         '''
-        
+
         menuitem_form = gtk.MenuItem(_('_Form'), use_underline=True)
         menu_options.add(menuitem_form)
 
@@ -655,15 +716,6 @@ class Main(object):
     def _set_menu_help(self):
         menu_help = gtk.Menu()
 
-        # imagemenuitem_tips = gtk.ImageMenuItem(_('_Tips...'))
-        # imagemenuitem_tips.set_use_underline(True)
-        # image = gtk.Image()
-        # image.set_from_stock('tryton-information', gtk.ICON_SIZE_MENU)
-        # imagemenuitem_tips.set_image(image)
-        # imagemenuitem_tips.connect('activate', self.sig_tips)
-        # imagemenuitem_tips.set_accel_path('<tryton>/Help/Tips')
-        # menu_help.add(imagemenuitem_tips)
-
         imagemenuitem_shortcuts = gtk.ImageMenuItem(
             _('_Keyboard Shortcuts...'))
         imagemenuitem_shortcuts.set_use_underline(True)
@@ -689,6 +741,23 @@ class Main(object):
 
         return menu_help
 
+    # GNU Health Windows entries, including Activity Log
+    def _set_menu_window(self):
+        menu_activity = gtk.Menu()
+
+        imagemenuitem_activity = gtk.ImageMenuItem(
+            _('_Toggle Activity Log'))
+        imagemenuitem_activity.set_use_underline(True)
+        image = gtk.Image()
+        image.set_from_stock('gtk-about', gtk.ICON_SIZE_MENU)
+        imagemenuitem_activity.set_image(image)
+        imagemenuitem_activity.connect('activate', self.sig_activity)
+        imagemenuitem_activity.set_accel_path(
+            '<tryton>/Window/Activity Log')
+        menu_activity.add(imagemenuitem_activity)
+
+        return menu_activity
+
     @staticmethod
     def get_main():
         return _MAIN[0]
@@ -709,8 +778,9 @@ class Main(object):
                 })
 
         def _manage_favorites(widget):
-            Window.create(False, self.menu_screen.model_name + '.favorite',
-                False, mode=['tree', 'form'], name=_('Manage Favorites'))
+            Window.create(self.menu_screen.model_name + '.favorite',
+                mode=['tree', 'form'],
+                name=_('Manage Favorites'))
         try:
             favorites = RPCExecute('model',
                 self.menu_screen.model_name + '.favorite', 'get',
@@ -863,21 +933,31 @@ class Main(object):
             raise
         func = lambda parameters: rpc.login(
             host, port, database, username, parameters, language)
+        self.set_title()  # Adds username/profile while password is asked
         try:
             common.Login(func)
-        except Exception, exception:
-            if (isinstance(exception, TrytonError)
-                    and exception.faultCode == 'QueryCanceled'):
+        except TrytonError, exception:
+            if exception.faultCode == 'QueryCanceled':
                 return
-            if (isinstance(exception, TrytonServerError)
-                    and exception.faultCode.startswith('404')):
+            raise
+        except TrytonServerError, exception:
+            if exception.faultCode.startswith('404'):
                 return self.sig_login()
-            common.process_exception(exception)
-            return
+            raise
         self.get_preferences()
         self.favorite_unset()
         self.menuitem_favorite.set_sensitive(True)
         self.menuitem_user.set_sensitive(True)
+
+        #Add connection successful entry to the Activity log
+        msg = "Connected to GNU Health Server"
+        self.activity_log_entry(msg, 'info')
+
+        # Set the footer
+        self.init_gnuhealth_env()
+
+        self.statusbar.push(self.context_id, "Connected")
+
         if CONFIG.arguments:
             url = CONFIG.arguments.pop()
             self.open_url(url)
@@ -915,13 +995,18 @@ class Main(object):
         self.favorite_unset()
         self.menuitem_favorite.set_sensitive(False)
         self.menuitem_user.set_sensitive(False)
+
+        # Reset GNU Health environment from client
+        self.reset_gnuhealth_env()
+
+        #Add disconnection entry to the Activity log
+        msg = "Disconnected from GNU Health Server"
+        self.activity_log_entry(msg, 'info')
+
         if disconnect:
             rpc.logout()
         return True
 
-#   Remove Tips
-    # def sig_tips(self, *args):
-    #    Tips()
 
     def sig_about(self, widget):
         About()
@@ -929,10 +1014,23 @@ class Main(object):
     def sig_shortcuts(self, widget):
         Shortcuts().run()
 
+    #Toggle GNU Health Activity window
+    def sig_activity(self, widget):
+        if Activity().activity_window.get_visible():
+            Activity().activity_window.hide()
+        else:
+            Activity().activity_window.show_all()
+
+
     def menu_toggle(self):
         expander = self.pane.get_child1()
         if expander:
             expander.set_expanded(not expander.get_expanded())
+
+    def command_line(self):
+        self.cli.grab_focus()
+
+        print ("Command line widget")
 
     @property
     def menu_expander_size(self):
@@ -987,7 +1085,7 @@ class Main(object):
         self.menu_screen = None
         self.menu_expander_clear()
         action = PYSONDecoder().decode(prefs['pyson_menu'])
-        view_ids = False
+        view_ids = []
         if action.get('views', []):
             view_ids = [x[0] for x in action['views']]
         elif action.get('view_id', False):
@@ -997,7 +1095,7 @@ class Main(object):
         action_ctx = decoder.decode(action.get('pyson_context') or '{}')
         domain = decoder.decode(action['pyson_domain'])
         screen = Screen(action['res_model'], mode=['tree'], view_ids=view_ids,
-            domain=domain, context=action_ctx, readonly=True)
+            domain=domain, context=action_ctx, readonly=True, limit=None)
         # Use alternate view to not show search box
         screen.screen_container.alternate_view = True
         screen.switch_view(view_type=screen.current_view.view_type)
@@ -1036,6 +1134,8 @@ class Main(object):
             lambda *a: gobject.idle_add(toggle_favorite, *a), treeview)
         # Unset fixed height mode to add column
         treeview.set_fixed_height_mode(False)
+        treeview.set_property(
+            'enable-grid-lines', gtk.TREE_VIEW_GRID_LINES_NONE)
         treeview.append_column(column)
 
         screen.search_filter()
@@ -1107,10 +1207,6 @@ class Main(object):
         previous_page_id = self.notebook.get_current_page()
         previous_widget = self.notebook.get_nth_page(previous_page_id)
         if previous_widget and hide_current:
-            prev_tab_label = self.notebook.get_tab_label(previous_widget)
-            prev_tab_label.set_size_request(TAB_SIZE / 4, -1)
-            close_button = prev_tab_label.get_children()[-1]
-            close_button.hide()
             page_id = previous_page_id + 1
         else:
             page_id = -1
@@ -1123,21 +1219,12 @@ class Main(object):
             image = gtk.Image()
             image.set_from_stock(page.icon, gtk.ICON_SIZE_SMALL_TOOLBAR)
             hbox.pack_start(image, expand=False, fill=False)
-            noise_size = 2 * icon_w + 3
-        else:
-            noise_size = icon_w + 3
         name = page.name
-        label = gtk.Label(name)
+        label = gtk.Label(common.ellipsize(name, 20))
         self.tooltips.set_tip(label, page.name)
         self.tooltips.enable()
         label.set_alignment(0.0, 0.5)
         hbox.pack_start(label, expand=True, fill=True)
-        layout = label.get_layout()
-        w, h = layout.get_size()
-        if (w // pango.SCALE) > TAB_SIZE - noise_size:
-            label2 = gtk.Label('...')
-            self.tooltips.set_tip(label2, page.name)
-            hbox.pack_start(label2, expand=False, fill=False)
 
         button = gtk.Button()
         img = gtk.Image()
@@ -1154,7 +1241,6 @@ class Main(object):
         button.set_size_request(x, y)
 
         hbox.show_all()
-        hbox.set_size_request(TAB_SIZE, -1)
         label_menu = gtk.Label(page.name)
         label_menu.set_alignment(0.0, 0.5)
         self.notebook.insert_page_menu(page.widget, hbox, label_menu, page_id)
@@ -1228,10 +1314,6 @@ class Main(object):
     def _sig_page_changt(self, notebook, page, page_num):
         self.last_page = self.current_page
         last_form = self.get_page(self.current_page)
-        tab_label = notebook.get_tab_label(notebook.get_nth_page(page_num))
-        tab_label.set_size_request(TAB_SIZE, -1)
-        close_button = tab_label.get_children()[-1]
-        close_button.show()
         if last_form:
             for dialog in last_form.dialogs:
                 dialog.hide()
@@ -1253,8 +1335,8 @@ class Main(object):
         if not urlp.scheme == 'tryton':
             return
         urlp = urlparse('http' + url[6:])
-        hostname, port = map(urllib.unquote,
-            (urlp.netloc.split(':', 1) + [CONFIG.defaults['login.port']])[:2])
+        hostname = common.get_hostname(urlp.netloc)
+        port = common.get_port(urlp.netloc)
         database, path = map(urllib.unquote,
             (urlp.path[1:].split('/', 1) + [''])[:2])
         if (not path or
@@ -1275,18 +1357,19 @@ class Main(object):
             model, path = (path.split('/', 1) + [''])[:2]
             if not model:
                 return
-            res_id = False
+            res_id = None
             mode = None
             try:
                 view_ids = json.loads(params.get('views', 'false'))
                 limit = json.loads(params.get('limit', 'null'))
                 name = json.loads(params.get('name', '""'))
-                search_value = json.loads(params.get('search_value', '{}'),
+                search_value = json.loads(params.get('search_value', '[]'),
                     object_hook=object_hook)
                 domain = json.loads(params.get('domain', '[]'),
                     object_hook=object_hook)
                 context = json.loads(params.get('context', '{}'),
                     object_hook=object_hook)
+                context_model = params.get('context_model')
             except ValueError:
                 return
             if path:
@@ -1296,8 +1379,15 @@ class Main(object):
                     return
                 mode = ['form', 'tree']
             try:
-                Window.create(view_ids, model, res_id=res_id, domain=domain,
-                    context=context, mode=mode, name=name, limit=limit,
+                Window.create(model,
+                    view_ids=view_ids,
+                    res_id=res_id,
+                    domain=domain,
+                    context=context,
+                    context_model=context_model,
+                    mode=mode,
+                    name=name,
+                    limit=limit,
                     search_value=search_value)
             except Exception:
                 # Prevent crashing the client
@@ -1370,3 +1460,172 @@ class Main(object):
                 self._open_url(url)
                 return False
         gobject.idle_add(idle_open_url)
+
+
+    # Initialize GNU Health environment
+    def init_gnuhealth_env(self):
+        # Init GNU HEalth CLI
+        self.cli = None
+        self.cli = gtk.Entry()
+        # Maximum of 64 chars
+        self.cli.set_max_length(64)
+
+        #CLI colors
+        self.cli.modify_base(gtk.STATE_NORMAL, gtk.gdk.color_parse("#03656B"))
+        self.cli.modify_text(gtk.STATE_NORMAL, gtk.gdk.color_parse("#FFFFFF"))
+
+        # Init the GNU Health Status Bar
+        self.statusbar = None
+        self.footer = None
+        self.header = None
+        self.header_contents = None
+        self.footer_contents = None
+        self.statusbar = gtk.Statusbar()
+        self.context_id = self.statusbar.get_context_id("Statusbar")
+        self.header = gtk.HBox()
+        self.header.set_size_request(200,-1)
+
+
+        # Main header
+        self.header = gtk.HBox()
+
+        # Main footer
+        self.footer = gtk.HBox()
+
+        # Create initally a 1x3 table for the footer, leaving the
+        # middle column empty
+        self.footer_contents = gtk.Table(1,3,True)
+
+        # Create initally a 1x3 table for the header
+        self.header_contents = gtk.Table(1,3,True)
+
+        # Set GNU Health Footer
+        self.set_footer()
+
+        cli_position = self.cli_position
+
+        #Default CLI position at top
+        if (not cli_position or cli_position == 'top'):
+            self.header_contents.attach(self.cli, 0, 1, 0, 1)
+            self.header.pack_start(self.header_contents, True, True)
+            self.vbox.pack_start (self.header, False, False)
+
+            self.vbox.reorder_child(self.header, 1)
+            self.header.show_all()
+
+    # Add GNU Health Command Line and Status Bar in footer
+    def set_footer(self):
+        cli = self.cli
+        statusbar = self.statusbar
+        footer_contents = self.footer_contents
+
+        if (self.cli_position == 'bottom'):
+            footer_contents.attach(cli, 0, 1, 0, 1)
+
+        footer_contents.attach(statusbar,2, 3, 0, 1)
+
+        self.footer.pack_start(footer_contents, True, True )
+
+        # Pack the footer table in main vbox
+        self.vbox.pack_start (self.footer, False, False)
+
+        self.footer.show_all()
+        self.vbox.show_all()
+
+        cli.connect('activate', self.activate_cli, self.context_id)
+
+    # Parse the CLI arguments
+    def activate_cli(self, widget, data):
+        #Make the command case-insensitive
+        command = lower((widget.get_text()))
+        if (command == 'sysinfo'):
+            info = "Request : " + command + "\n"
+            client_info = '\n********* CLIENT INFORMATION *********\n\n'
+            server_info = '\n********* SERVER INFORMATION *********\n\n'
+            client_info = client_info + self.get_host_info() + "\n"
+
+            server_info = server_info + \
+                RPCExecute('model','gnuhealth.command',command)
+
+            info = info + client_info + server_info
+            self.activity_log_entry (info, "info")
+        else:
+            if command:
+                self.gnuhealth_cmd(command)
+
+    # GNU Health system activity and status logger
+    def activity_log_entry (self, msg, msg_type):
+        time_stamp = time.strftime("%Y/%m/%d - %H:%M:%S")
+        if (msg_type == "info"):
+            mtype = "[INFO]"
+        elif (msg_type == "info"):
+            mtype = "[WARN]"
+        else:
+            mtype = "[ERROR]"
+
+        log_entry = time_stamp + "  " + mtype + ": " + msg + "\n"
+
+        next_line = Activity.textbuffer.get_end_iter()
+
+        Activity.textbuffer.insert(next_line, log_entry)
+
+
+    # Reset and clean GNU Health environment
+    def reset_gnuhealth_env(self):
+        if self.cli:
+            self.cli.destroy()
+
+        if self.statusbar:
+            self.statusbar.remove_all(self.context_id)
+
+        if self.footer_contents:
+            self.footer_contents.destroy()
+
+        if self.footer:
+            self.footer.destroy()
+
+    def get_host_info(self):
+        info = ""
+        os_header = "\n-- Operating System / Distribution --\n"
+        uname = platform.uname()
+        client_version = "GNU Health GTK Client version: " + __version__
+        pversion = "Python version :" + platform.python_version()
+        if (os.path.isfile('/etc/os-release')):
+            os_version = open('/etc/os-release').read()
+
+        info = info + pversion + '\n' + client_version + '\n' + \
+             os_header + os_version + "Platform / Kernel Info: " + str(uname)
+
+        return info
+
+
+    def gnuhealth_cmd(self,command):
+
+        cmd = split(command)[0]
+        args = split(command)[1:]
+        domain_name = domain = None
+        search_string = '%'
+
+        res = RPCExecute('model', 'gnuhealth.command', 'search_read',
+                [('name', '=', cmd)], limit=1,field_names='model.name')
+
+        if (res):
+            res = res[0]
+            if (res['domain']):
+                domain_name = ast.literal_eval(res['domain'])
+            model_name = res['model']
+            label = res['label']
+            if args:
+                arg1 = args.pop()
+                search_string = "%" + arg1 + "%"
+
+            Window.create(model_name,
+                mode=['tree','form'],
+                name=label,
+                domain=domain_name,
+                limit = CONFIG['client.limit'],
+                search_value = [('rec_name', 'ilike', search_string)]
+                )
+
+        else:
+            common.message(_('Command not found.'))

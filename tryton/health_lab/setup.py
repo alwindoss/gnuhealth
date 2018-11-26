@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#    Copyright (C) 2011-2018 Luis Falcon <falcon@gnu.org>
 #    Copyright (C) 2011 Cédric Krier
 
 #    This program is free software: you can redistribute it and/or modify
@@ -30,24 +31,27 @@ info = dict(config.items('tryton'))
 for key in ('depends', 'extras_depend', 'xml'):
     if key in info:
         info[key] = info[key].strip().splitlines()
-major_version, minor_version = 3, 8
+major_version, minor_version = 4, 6
 
 requires = []
 
 for dep in info.get('depends', []):
-    if dep.startswith('health'):
-        requires.append('trytond_%s == %s' %
-            (dep, info.get('version')))
-    elif not re.match(r'(ir|res|webdav)(\W|$)', dep):
-        requires.append('trytond_%s >= %s.%s, < %s.%s' %
-            (dep, major_version, minor_version, major_version,
-                minor_version + 1))
-requires.append('trytond >= %s.%s, < %s.%s' %
-    (major_version, minor_version, major_version, minor_version + 1))
+    if (dep == 'health'):
+        requires.append('gnuhealth == %s' % (info.get('version')))
 
-setup(name='trytond_health_lab',
+    elif dep.startswith('health_'):
+        health_package = dep.split('_',1)[1]
+        requires.append('gnuhealth_%s == %s' %
+            (health_package, info.get('version')))
+    else: 
+        if not re.match(r'(ir|res|webdav)(\W|$)', dep):
+            requires.append('trytond_%s >= %s.%s, < %s.%s' %
+                (dep, major_version, minor_version, major_version,
+                    minor_version + 1))
+
+setup(name='gnuhealth_lab',
     version=info.get('version', '0.0.1'),
-    description=info.get('description', 'GNU Health Laboratory - LIMS Module'),
+    description=info.get('description', 'Occhiolino LIMS: The GNU Health Laboratory Information Management System'),
     author=info.get('author', 'GNU Solidario'),
     author_email=info.get('email', 'health@gnusolidario.org'),
     url=info.get('website', 'http://health.gnu.org/'),
@@ -65,7 +69,6 @@ setup(name='trytond_health_lab',
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
                'report/*.odt', 'icons/*.svg'],
         },
-
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Plugins',
@@ -76,10 +79,11 @@ setup(name='trytond_health_lab',
         'Natural Language :: English',
         'Natural Language :: Spanish',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Topic :: Scientific/Engineering :: Bio-Informatics',
         'Topic :: Scientific/Engineering :: Medical Science Apps.',
-        ],
+        ],  
+
     license='GPL-3',
     install_requires=requires,
     zip_safe=False,

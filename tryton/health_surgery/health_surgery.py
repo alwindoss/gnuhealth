@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2017 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2017 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2018 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2018 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -22,26 +22,81 @@
 ##############################################################################
 import pytz
 from dateutil.relativedelta import relativedelta
-from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
+from trytond.model import ModelView, ModelSingleton, ModelSQL, fields, \
+    ValueMixin
 from datetime import datetime
 from trytond.transaction import Transaction
 from trytond import backend
 from trytond.pool import Pool
 from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or
-
-__all__ = ['SurgerySequences', 'RCRI', 'Surgery', 'Operation',
-    'SurgeryMainProcedure','SurgerySupply', 'PatientData', 'SurgeryTeam']
-
+from trytond import backend
+from trytond.tools.multivalue import migrate_property
 
 
-class SurgerySequences(ModelSingleton, ModelSQL, ModelView):
-    "Inpatient Registration Sequences for GNU Health"
+__all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup','RCRI', 
+    'Surgery', 'Operation', 'SurgeryMainProcedure','SurgerySupply',
+    'PatientData', 'SurgeryTeam']
+
+sequences = ['surgery_code_sequence']
+
+
+class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
     __name__ = "gnuhealth.sequences"
 
-    surgery_code_sequence = fields.Property(fields.Many2One(
+    surgery_code_sequence = fields.MultiValue(fields.Many2One(
         'ir.sequence', 'Surgery Sequence', required=True,
         domain=[('code', '=', 'gnuhealth.surgery')]))
 
+    @classmethod
+    def multivalue_model(cls, field):
+        pool = Pool()
+
+        if field in sequences:
+            return pool.get('gnuhealth.sequence.setup')
+        return super(GnuHealthSequences, cls).multivalue_model(field)
+
+
+    @classmethod
+    def default_surgery_code_sequence(cls):
+        return cls.multivalue_model(
+            'surgery_code_sequence').default_surgery_code_sequence()
+
+
+# SEQUENCE SETUP
+class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
+    'GNU Health Sequences Setup'
+    __name__ = 'gnuhealth.sequence.setup'
+
+    surgery_code_sequence = fields.Many2One('ir.sequence', 
+        'Surgery Code Sequence', required=True,
+        domain=[('code', '=', 'gnuhealth.surgery')])
+  
+    @classmethod
+    def __register__(cls, module_name):
+        TableHandler = backend.get('TableHandler')
+        exist = TableHandler.table_exist(cls._table)
+
+        super(GnuHealthSequenceSetup, cls).__register__(module_name)
+
+        if not exist:
+            cls._migrate_MultiValue([], [], [])
+
+    @classmethod
+    def _migrate_property(cls, field_names, value_names, fields):
+        field_names.extend(sequences)
+        value_names.extend(sequences)
+        migrate_property(
+            'gnuhealth.sequences', field_names, cls, value_names,
+            fields=fields)
+
+    @classmethod
+    def default_surgery_code_sequence(cls):
+        pool = Pool()
+        ModelData = pool.get('ir.model.data')
+        return ModelData.get_id(
+            'health_surgery', 'seq_gnuhealth_surgery_code')
+    
+# END SEQUENCE SETUP , MIGRATION FROM FIELDS.MultiValue
 
 class RCRI(ModelSQL, ModelView):
     'Revised Cardiac Risk Index'
@@ -165,6 +220,21 @@ class RCRI(ModelSQL, ModelView):
         res = 'Points: ' + str(self.rcri_total) + ' (Class ' + \
             str(self.rcri_class) + ')'
         return res
+
+    @classmethod
+    def __setup__(cls):
+        super(RCRI, cls).__setup__()
+        cls._order.insert(0, ('rcri_date', 'DESC'))
+
+    @classmethod
+    def search_rec_name(cls, name, clause):
+        if clause[1].startswith('!') or clause[1].startswith('not '):
+            bool_op = 'AND'
+        else:
+            bool_op = 'OR'
+        return [bool_op,
+            ('patient',) + tuple(clause[1:]),
+            ]
 
 
 class Surgery(ModelSQL, ModelView):
@@ -430,6 +500,8 @@ class Surgery(ModelSQL, ModelView):
                 'surgery date "%(surgery_date)s"',
             'or_is_not_available': 'Operating Room is not available'})
 
+        cls._order.insert(0, ('surgery_date', 'DESC'))
+
         cls._buttons.update({
             'confirmed': {
                 'invisible': And(Not(Equal(Eval('state'), 'draft')),
@@ -603,6 +675,17 @@ class Surgery(ModelSQL, ModelView):
 
         dt = self.surgery_date
         return datetime.astimezone(dt.replace(tzinfo=pytz.utc), timezone).time()
+
+    @classmethod
+    def search_rec_name(cls, name, clause):
+        if clause[1].startswith('!') or clause[1].startswith('not '):
+            bool_op = 'AND'
+        else:
+            bool_op = 'OR'
+        return [bool_op,
+            ('patient',) + tuple(clause[1:]),
+            ('code',) + tuple(clause[1:]),
+            ]
 
 
 

@@ -1,4 +1,4 @@
-# This file is part of GNU Health.  The COPYRIGHT file at the top level of this
+# This file is part of the GNU Health GTK Client.  The COPYRIGHT file at the top level of this
 # repository contains the full copyright notices and license terms.
 
 import operator
@@ -93,8 +93,6 @@ class DictSelectionEntry(DictEntry):
             lambda w: self.parent_widget._focus_out())
         widget.connect('notify::active',
             lambda w, e: self.parent_widget._focus_out())
-        widget.connect(
-            'scroll-event', lambda c, e: c.emit_stop_by_name('scroll-event'))
         selection_shortcuts(widget)
 
         # setting completion and selection
@@ -387,7 +385,7 @@ class DictWidget(Widget):
             self._sig_add()
 
     def _sig_add(self, *args):
-        context = self.field.context_get(self.record)
+        context = self.field.get_context(self.record)
         value = self.wid_text.get_text().decode('utf-8')
         domain = self.field.domain_get(self.record)
 
@@ -402,7 +400,7 @@ class DictWidget(Widget):
         win.show()
 
     def add_new_keys(self, ids):
-        context = self.field.context_get(self.record)
+        context = self.field.get_context(self.record)
         self.send_modified()
         try:
             new_fields = RPCExecute('model', self.schema_model,
@@ -453,7 +451,6 @@ class DictWidget(Widget):
         for widget in self.fields.values():
             widget.set_readonly(readonly)
         self.wid_text.set_sensitive(not readonly)
-        self.wid_text.set_editable(not readonly)
 
     def _set_button_sensitive(self):
         self.but_add.set_sensitive(bool(
@@ -501,7 +498,7 @@ class DictWidget(Widget):
         self.buttons[key] = remove_but
 
     def add_keys(self, keys):
-        context = self.field.context_get(self.record)
+        context = self.field.get_context(self.record)
         domain = self.field.domain_get(self.record)
         batchlen = min(10, CONFIG['client.limit'])
         for i in xrange(0, len(keys), batchlen):

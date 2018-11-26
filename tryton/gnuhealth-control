@@ -6,7 +6,7 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2017 Luis Falcon <falcon@gnu.org>
+#    Copyright (C) 2008-2018 Luis Falcon <falcon@gnu.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@
 #
 ##############################################################################
 
-VERSION="3.2.1"
+VERSION="3.4.0"
 
 TRYTON_URL="http://downloads.tryton.org"
 GNUHEALTH_URL="https://ftp.gnu.org/gnu/health"
@@ -37,7 +37,7 @@ UPDATE_DOWNLOAD_DIR="/tmp/gnuhealth_update"
 
 PATCH_TRYTON=1
 
-TRYTON_PATCHES="GNUHEALTH32-SA-2017-1.trytond.patch.asc"
+TRYTON_PATCHES="get_login_trytond-46.patch.asc"
 
 usage()
 {
@@ -347,7 +347,7 @@ check_updates()
                 wget --quiet --directory-prefix=${UPDATE_DOWNLOAD_DIR}/ ${GNUHEALTH_URL}/security/${n} || message "ERROR" "Could not get patch"
                 message "INFO" "Checking elegibility of the patch"                
                 cd ${GNUHEALTH_DIR}/tryton/server/trytond-${TRYTON_VERSION}*
-                patch --dry-run --silent -N -p0 < ${UPDATE_DOWNLOAD_DIR}/${n}
+                patch --dry-run --silent -N -p1 < ${UPDATE_DOWNLOAD_DIR}/${n}
                 if [ $? -eq 0 ]; then
                     message "WARNING" "Patch ${n} needs to be applied"
                     NEED_PATCH_TRYTON=1
@@ -421,10 +421,10 @@ install_updates()
                 message "INFO" "Checking elegibility of the patch"                
                 cd ${GNUHEALTH_DIR}/tryton/server/trytond-${TRYTON_VERSION}
                 
-                patch --dry-run --silent -N -p0 < ${UPDATE_DOWNLOAD_DIR}/${n}
+                patch --dry-run --silent -N -p1 < ${UPDATE_DOWNLOAD_DIR}/${n}
                 if [ $? -eq 0 ]; then
                     message "WARNING" "Applying patch ${n} to Tryton kernel"
-                    patch -p0 < ${UPDATE_DOWNLOAD_DIR}/${n} || bailout
+                    patch -p1 < ${UPDATE_DOWNLOAD_DIR}/${n} || bailout
                     message "INFO" "Tryton kernel sucessfully patched"
                 else
                     message "INFO" "Patch ${n} already applied or not elegible"
@@ -464,6 +464,11 @@ relink_mods()
             ln -sf ${GNUHEALTH_DIR}/tryton/server/modules/${mod} ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/ || bailout
         done
 
+        # Remove symlinks health_caldav and health_webdav3_server, that will use the
+        # names calendar and webdav respectively
+        rm -f ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/health_caldav
+        rm -f ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/health_webdav3_server
+
         message "INFO" "Relinking local modules and customizations ..."
 
         local LOCAL_MODS=`cd ${GNUHEALTH_DIR}/tryton/server/modules/local; ls -A`
@@ -474,8 +479,8 @@ relink_mods()
 
         # WEBDAV3 ports for GNU Health.
         message "INFO" "Relinking WebDAV3 related modules"
-        local WEBDAV3="trytond_webdav3"
-        local CALENDAR_WEBDAV3="trytond_calendar_webdav3"
+        local WEBDAV3="health_webdav3_server"
+        local CALENDAR_WEBDAV3="health_caldav"
         ln -sf ${GNUHEALTH_DIR}/tryton/server/modules/${WEBDAV3} ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/webdav || bailout
         ln -sf ${GNUHEALTH_DIR}/tryton/server/modules/${CALENDAR_WEBDAV3} ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/calendar || bailout
 

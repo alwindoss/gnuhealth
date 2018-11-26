@@ -1,4 +1,4 @@
-# This file is part of GNU Health.  The COPYRIGHT file at the top level of
+# This file is part of the GNU Health GTK Client.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
 "Options"
 import ConfigParser
@@ -11,7 +11,7 @@ import locale
 import gtk
 
 from tryton.exceptions import TrytonError
-from tryton import __version__
+from tryton import __version__, SERVER_VERSION
 
 _ = gettext.gettext
 
@@ -35,17 +35,13 @@ class ConfigManager(object):
     def __init__(self):
         short_version = '.'.join(__version__.split('.', 2)[:2])
         demo_server = 'health.gnusolidario.org'
-        demo_database = 'health%s' % short_version
+        demo_database = ''
         self.defaults = {
             'login.profile': demo_server,
             'login.login': 'admin',
-            'login.server': demo_server,
-            'login.port': '8000',
+            'login.host': demo_server,
             'login.db': demo_database,
             'login.expanded': False,
-            'tip.autostart': False,
-            'tip.position': 0,
-            'form.toolbar': True,
             'client.title': 'GNU Health',
             'client.default_width': 900,
             'client.default_height': 750,
@@ -61,13 +57,12 @@ class ConfigManager(object):
             'client.email': '',
             'client.can_change_accelerators': False,
             'client.limit': 1000,
+            'client.cli_position' : 'top',
             'menu.pane': 200,
             'menu.expanded': True,
         }
         self.config = {}
-        self.options = {
-            'login.host': True
-        }
+        self.options = {}
         self.arguments = []
 
     def parse(self):
@@ -86,10 +81,8 @@ class ConfigManager(object):
                 "DEBUG, INFO, WARNING, ERROR, CRITICAL"))
         parser.add_option("-u", "--user", dest="login",
                 help=_("specify the login user"))
-        parser.add_option("-p", "--port", dest="port",
-                help=_("specify the server port"))
-        parser.add_option("-s", "--server", dest="server",
-                help=_("specify the server hostname"))
+        parser.add_option("-s", "--server", dest="host",
+                help=_("specify the server hostname:port"))
         opt, self.arguments = parser.parse_args()
 
         if len(self.arguments) > 1:
@@ -117,7 +110,7 @@ class ConfigManager(object):
                 opt.log_level = 'ERROR'
         logging.getLogger().setLevel(loglevels[opt.log_level.upper()])
 
-        for arg in ('login', 'port', 'server'):
+        for arg in ['login', 'host']:
             if getattr(opt, arg):
                 self.options['login.' + arg] = getattr(opt, arg)
 
@@ -178,11 +171,8 @@ if not os.path.isdir(PIXMAPS_DIR):
     PIXMAPS_DIR = pkg_resources.resource_filename(
         'tryton', 'data/pixmaps/tryton')
 
-TRYTON_ICON = gtk.gdk.pixbuf_new_from_file(
-    os.path.join(PIXMAPS_DIR, 'tryton-icon.png').encode('utf-8'))
 
 GNUHEALTH_ICON = gtk.gdk.pixbuf_new_from_file(
     os.path.join(PIXMAPS_DIR, 'gnuhealth-icon.png').encode('utf-8'))
-
+    
 BANNER = 'banner.png'
-

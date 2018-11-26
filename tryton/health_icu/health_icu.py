@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2017 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2017 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2018 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2018 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -296,10 +296,10 @@ class ApacheII(ModelSQL, ModelView):
 
         # FIO2
         if (self.fio2):
-            # If FiO2 is greater than 0.5, we measure the AaDO2 gradient
+            # If Fi02 is greater than 0.5, we measure the AaDO2 gradient
             # Otherwise, we take into account the Pa02 value
 
-            if (self.aado2 and self.fio2 >= 0.5):
+            if (self.fio2 >= 0.5):
                 if (self.aado2 >= 200 and self.aado2 < 350):
                     total = total + 2
 
@@ -310,15 +310,14 @@ class ApacheII(ModelSQL, ModelView):
                     total = total + 4
 
             else:
-                if (self.pao2):
-                    if (self.pao2 >= 61 and self.pao2 < 71):
-                        total = total + 1
+                if (self.pao2 >= 61 and self.pao2 < 71):
+                    total = total + 1
 
-                    elif (self.pao2 >= 55 and self.pao2 < 61):
-                        total = total + 3
+                elif (self.pao2 >= 55 and self.pao2 < 61):
+                    total = total + 3
 
-                    elif (self.pao2 < 55):
-                        total = total + 4
+                elif (self.pao2 < 55):
+                    total = total + 4
 
         # Arterial pH
         if (self.ph):

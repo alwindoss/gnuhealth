@@ -86,6 +86,44 @@
             <field name="path">icons/stop.svg</field>
         </record>
 
+        <record model="ir.ui.icon" id="gnuhealth_bol_icon">
+            <field name="name">gnuhealth-bol</field>
+            <field name="path">icons/bol.svg</field>
+        </record>
+
+<!-- Create the GNU HEALTH Federation icon -->
+        <record model="ir.ui.icon" id="gnuhealth_federation_icon">
+            <field name="name">health-federation</field>
+            <field name="path">icons/federation.svg</field>
+        </record>
+
+<!-- Replace default Tryton module icons -->
+        
+        <!-- Party -->
+        <record model="ir.ui.icon" id="party_icon">
+            <field name="name">gnuhealth-party</field>
+            <field name="path">icons/tryton-party.svg</field>
+        </record>
+        <menuitem name="Party" sequence="0" id="party.menu_party"
+            icon="gnuhealth-party"/>
+
+        <!-- Currency -->
+        <record model="ir.ui.icon" id="currency_icon">
+            <field name="name">gnuhealth-currency</field>
+            <field name="path">icons/tryton-currency.svg</field>
+        </record>
+        <menuitem name="Currency" id="currency.menu_currency" sequence="3"
+            icon="gnuhealth-currency"/>
+
+        <!-- Product -->
+        <record model="ir.ui.icon" id="product_icon">
+            <field name="name">gnuhealth-product</field>
+            <field name="path">icons/tryton-product.svg</field>
+        </record>
+        <menuitem name="Product" id="product.menu_main_product" sequence="1"
+            icon="gnuhealth-product"/>
+
+
 <!-- Initial Menu -->
         <menuitem name="Health" id="gnuhealth_menu" icon="gnuhealth"/>
         <menuitem name="Demographics" id="gnuhealth_demographics_menu"
@@ -110,6 +148,9 @@
         <menuitem name="Insurances" id="gnuhealth_conf_insurances"
             parent="gnuhealth_conf_misc" icon="gnuhealth-open"/>
 
+        <menuitem name="Federation" id="gnuhealth_conf_federation"
+            sequence="990" parent="health.gnuhealth_conf_menu" 
+            icon="health-federation"/>
 
 <!-- Person Names -->
 
@@ -124,6 +165,56 @@
             <field name="type">tree</field>
             <field name="name">gnuhealth_person_name_tree</field>
         </record>
+
+<!-- Menu for Book of Life section -->
+
+        <menuitem icon="gnuhealth-bol" name="Books of Life"
+            id="gnuhealth_bol" parent="gnuhealth_menu"/>
+
+
+<!-- Page of Life -->
+
+        <record model="ir.ui.view" id="gnuhealth_pol_view">
+            <field name="model">gnuhealth.pol</field>
+            <field name="type">form</field>
+            <field name="name">gnuhealth_pol_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_pol_tree">
+            <field name="model">gnuhealth.pol</field>
+            <field name="type">tree</field>
+            <field name="name">gnuhealth_pol_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="gnuhealth_action_pol">
+            <field name="name">Pages of life</field>
+            <field name="res_model">gnuhealth.pol</field>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_pol_list_view">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="gnuhealth_pol_tree"/>
+            <field name="act_window" ref="gnuhealth_action_pol"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_pol_form_view">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="gnuhealth_pol_view"/>
+            <field name="act_window" ref="gnuhealth_action_pol"/>
+        </record>
+
+        <menuitem action="gnuhealth_action_pol" icon="gnuhealth-list"
+            id="gnuhealth_pol" parent="gnuhealth_bol"/>
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Medication Frequencies -->
 
@@ -2020,6 +2111,77 @@
         <menuitem action="action_gnuhealth_hospital_or_view"
             id="gnuhealth_conf_institution_or_add" icon="gnuhealth-list"
             parent="gnuhealth_conf_institution" sequence="5"/>
+
+
+<!-- GNU Health Commands -->
+
+        <record model="ir.ui.view" id="gnuhealth_command_view">
+            <field name="model">gnuhealth.command</field>
+            <field name="type">form</field>
+            <field name="name">gnuhealth_command</field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_command_tree">
+            <field name="model">gnuhealth.command</field>
+            <field name="type">tree</field>
+            <field name="name">gnuhealth_command_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="action_gnuhealth_command_view">
+            <field name="name">GNU Health Commands</field>
+            <field name="res_model">gnuhealth.command</field>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_gnuhealth_command_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="gnuhealth_command_tree"/>
+            <field name="act_window" ref="action_gnuhealth_command_view"/>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_gnuhealth_command_form">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="gnuhealth_command_view"/>
+            <field name="act_window" ref="action_gnuhealth_command_view"/>
+        </record>
+
+        <menuitem action="action_gnuhealth_command_view"
+            name="GNU Health Commands" id="gnuhealth_conf_commands"
+            parent="gnuhealth_conf_misc" icon="gnuhealth-list"/>
+
+
+<!-- GNU Health Federation Country Config -->
+
+        <record model="ir.ui.view" id="gnuhealth_federation_country_config_view">
+            <field name="model">gnuhealth.federation.country.config</field>
+            <field name="type">form</field>
+            <field name="name">gnuhealth_federation_country_config</field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_federation_country_config_tree">
+            <field name="model">gnuhealth.federation.country.config</field>
+            <field name="type">tree</field>
+            <field name="name">gnuhealth_federation_country_config_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="gnuhealth_action_federation_country_config">
+            <field name="name">Federation Country Configuration</field>
+            <field name="res_model">gnuhealth.federation.country.config</field>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_federation_country_config_list_view">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="gnuhealth_federation_country_config_tree"/>
+            <field name="act_window" ref="gnuhealth_action_federation_country_config"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_federation_country_config_form_view">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="gnuhealth_federation_country_config_view"/>
+            <field name="act_window" ref="gnuhealth_action_federation_country_config"/>
+        </record>
+
+        <menuitem action="gnuhealth_action_federation_country_config" icon="gnuhealth-list"
+            id="gnuhealth_conf_federation_country_config" sequence="10"
+            parent="gnuhealth_conf_federation"/>
 
     </data>
 </tryton>

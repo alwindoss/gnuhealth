@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2017 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2017 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2018 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2018 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -24,6 +24,8 @@ from trytond.model import ModelView, ModelSQL, fields, Unique
 from trytond.transaction import Transaction
 from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
 from trytond import backend
+from trytond.pool import Pool
+from uuid import uuid4
 
 
 __all__ = ['DiseaseGene', 'ProteinDisease', 'GeneVariant','GeneVariantPhenotype',
@@ -35,8 +37,8 @@ class DiseaseGene(ModelSQL, ModelView):
     __name__ = 'gnuhealth.disease.gene'
 
     name = fields.Char('Gene Name', required=True,select=True)
-    protein_name = fields.Char('Protein Code', 
-        help="Encoding Protein Code, such as UniProt protein name", 
+    protein_name = fields.Char('Protein Code',
+        help="Encoding Protein Code, such as UniProt protein name",
         select=True)
     long_name = fields.Char('Official Long Name', translate=True)
     gene_id = fields.Char('Gene ID',
@@ -48,10 +50,10 @@ class DiseaseGene(ModelSQL, ModelView):
     info = fields.Text('Information', help="Extra Information")
     variants = fields.One2Many('gnuhealth.gene.variant', 'name',
      'Variants')
-        
+
     protein_uri = fields.Function(fields.Char("Protein URI"),
      'get_protein_uri')
-    
+
     def get_protein_uri(self, name):
         ret_url=''
         if (self.protein_name):
@@ -70,19 +72,21 @@ class DiseaseGene(ModelSQL, ModelView):
             ]
 
     def get_rec_name(self, name):
-        return self.name + ':' + self.long_name
+        protein = ''
+        if self.protein_name:
+            protein = ' (' + self.protein_name + ') '
+        return self.name + protein + ':' + self.long_name
 
     @classmethod
     def search_rec_name(cls, name, clause):
-        # Search for the official and long name
-        field = None
-        for field in ('name', 'long_name'):
-            parties = cls.search([(field,) + tuple(clause[1:])], limit=1)
-            if parties:
-                break
-        if parties:
-            return [(field,) + tuple(clause[1:])]
-        return [(cls._rec_name,) + tuple(clause[1:])]
+        if clause[1].startswith('!') or clause[1].startswith('not '):
+            bool_op = 'AND'
+        else:
+            bool_op = 'OR'
+        return [bool_op,
+            ('name',) + tuple(clause[1:]),
+            ('long_name',) + tuple(clause[1:]),
+            ]
 
     @classmethod
     # Update to version 3.2
@@ -97,7 +101,7 @@ class DiseaseGene(ModelSQL, ModelView):
         # professionals, gnuhealth.hp_specialty
 
         if table.column_exist('dominance'):
-            # Drop old specialty column
+            # Drop old dominance column
             # which is now part of the gene variant phenotype
             table.drop_column('dominance')
 
@@ -108,7 +112,7 @@ class ProteinDisease(ModelSQL, ModelView):
 
     name = fields.Char('Disease', required=True,select=True,
         help="Uniprot Disease Code")
-        
+
     disease_name = fields.Char('Disease name', translate=True)
     acronym = fields.Char('Acronym', required=True,select=True,
         help="Disease acronym / mnemonics")
@@ -116,11 +120,14 @@ class ProteinDisease(ModelSQL, ModelView):
     disease_uri = fields.Function(fields.Char("Disease URI"),
      'get_disease_uri')
 
-    mim_reference = fields.Char('MIM', help="MIM -Mendelian Inheritance in Man- DB reference)")
+    mim_reference = fields.Char('MIM',
+        help="MIM -Mendelian Inheritance in Man- DB reference")
 
-    gene_variant = fields.One2Many('gnuhealth.gene.variant.phenotype', 'phenotype',
-        'Gene Variants', help="Gene variants involved in this condition")
-        
+    gene_variant = fields.One2Many('gnuhealth.gene.variant.phenotype',
+        'phenotype',
+        'Natural Variant',
+        help="Protein sequence variant(s) involved in this condition")
+
     dominance = fields.Selection([
         (None, ''),
         ('d', 'dominant'),
@@ -129,8 +136,8 @@ class ProteinDisease(ModelSQL, ModelView):
         ], 'Dominance', select=True)
 
 
-    description = fields.Text('Description')        
-    
+    description = fields.Text('Description')
+
 
     def get_disease_uri(self, name):
         ret_url=''
@@ -154,27 +161,26 @@ class ProteinDisease(ModelSQL, ModelView):
 
     @classmethod
     def search_rec_name(cls, name, clause):
-        # Search for the disease code or disease name
-        field = None
-        for field in ('name', 'disease_name'):
-            parties = cls.search([(field,) + tuple(clause[1:])], limit=1)
-            if parties:
-                break
-        if parties:
-            return [(field,) + tuple(clause[1:])]
-        return [(cls._rec_name,) + tuple(clause[1:])]
+        if clause[1].startswith('!') or clause[1].startswith('not '):
+            bool_op = 'AND'
+        else:
+            bool_op = 'OR'
+        return [bool_op,
+            ('name',) + tuple(clause[1:]),
+            ('disease_name',) + tuple(clause[1:]),
+            ]
 
 class GeneVariant(ModelSQL, ModelView):
-    'Gene Sequence Variant'
+    'Natural Variant'
     __name__ = 'gnuhealth.gene.variant'
 
-    name = fields.Many2One('gnuhealth.disease.gene', 'Gene',
-        required=True)
-    variant = fields.Char("Variant", required=True, select=True)
+    name = fields.Many2One('gnuhealth.disease.gene', 'Gene and Protein',
+        required=True, help="Gene and expressing protein (in parenthesis)")
+    variant = fields.Char("Protein Variant", required=True, select=True)
     aa_change = fields.Char('Change', help="Resulting amino acid change")
     phenotypes = fields.One2Many('gnuhealth.gene.variant.phenotype', 'variant',
      'Phenotypes')
-        
+
     @classmethod
     def __setup__(cls):
         super(GeneVariant, cls).__setup__()
@@ -184,24 +190,40 @@ class GeneVariant(ModelSQL, ModelView):
             ('variant_unique', Unique(t,t.variant),
                 'The variant ID must be unique'),
             ('aa_unique', Unique(t,t.variant,t.aa_change),
-                'The resulting AA change for this gene already exists'),
+                'The resulting AA change for this protein already exists'),
             ]
 
     def get_rec_name(self, name):
-        return self.name.rec_name + " : " + self.variant + " : " + self.aa_change
+        #return ' : '.join([self.name.rec_name, self.variant, self.aa_change])
+        return ' : '.join([self.variant, self.aa_change])
+
+    # Allow to search by gene and variant or amino acid change
+    @classmethod
+    def search_rec_name(cls, name, clause):
+        if clause[1].startswith('!') or clause[1].startswith('not '):
+            bool_op = 'AND'
+        else:
+            bool_op = 'OR'
+        return [bool_op,
+            ('name',) + tuple(clause[1:]),
+            ('variant',) + tuple(clause[1:]),
+            ('aa_change',) + tuple(clause[1:]),
+            ]
 
 
 class GeneVariantPhenotype(ModelSQL, ModelView):
-    'Gene Sequence Variant Phenotypes'
+    'Variant Phenotypes'
     __name__ = 'gnuhealth.gene.variant.phenotype'
 
     name = fields.Char('Code', required=True)
     variant = fields.Many2One('gnuhealth.gene.variant', 'Variant',
         required=True)
- 
+
     gene = fields.Function(fields.Many2One(
-        'gnuhealth.disease.gene', 'Gene',
-        depends=['variant']),'get_gene',
+        'gnuhealth.disease.gene', 'Gene & Protein',
+        depends=['variant'],
+        help="Gene and expressing protein (in parenthesis)"),
+        'get_gene',
         searcher='search_gene')
 
     phenotype = fields.Many2One('gnuhealth.protein.disease', 'Phenotype',
@@ -218,15 +240,24 @@ class GeneVariantPhenotype(ModelSQL, ModelView):
             return self.phenotype.rec_name
 
     @classmethod
-    def search_rec_name(cls, name, clause):
-        return [('phenotype',) + tuple(clause[1:])]
-
-    @classmethod
     def search_gene(cls, name, clause):
         res = []
         value = clause[2]
         res.append(('variant.name', clause[1], value))
         return res
+
+    # Allow to search by gene, variant or phenotype
+    @classmethod
+    def search_rec_name(cls, name, clause):
+        if clause[1].startswith('!') or clause[1].startswith('not '):
+            bool_op = 'AND'
+        else:
+            bool_op = 'OR'
+        return [bool_op,
+            ('variant',) + tuple(clause[1:]),
+            ('phenotype',) + tuple(clause[1:]),
+            ('gene',) + tuple(clause[1:]),
+            ]
 
     @classmethod
     def __setup__(cls):
@@ -245,7 +276,7 @@ class PatientGeneticRisk(ModelSQL, ModelView):
 
     patient = fields.Many2One('gnuhealth.patient', 'Patient', select=True)
     disease_gene = fields.Many2One('gnuhealth.disease.gene',
-        'Disease Gene', required=True)
+        'Gene', required=True)
     natural_variant = fields.Many2One('gnuhealth.gene.variant', 'Variant',
         domain=[('name', '=', Eval('disease_gene'))],
         depends=['disease_gene'])
@@ -254,11 +285,77 @@ class PatientGeneticRisk(ModelSQL, ModelView):
         domain=[('variant', '=', Eval('natural_variant'))],
         depends=['natural_variant'])
     onset = fields.Integer('Onset', help="Age in years")
-    
+
     notes = fields.Char("Notes")
 
+    healthprof = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Health prof',
+        help="Health professional")
+
+    institution = fields.Many2One('gnuhealth.institution', 'Institution')
+
+    @staticmethod
+    def default_institution():
+        HealthInst = Pool().get('gnuhealth.institution')
+        institution = HealthInst.get_institution()
+        return institution
+
+    @classmethod
+    def create_genetics_pol(cls,genetic_info):
+        """ Adds an entry in the person Page of Life
+            related to this genetic finding
+        """
+        Pol = Pool().get('gnuhealth.pol')
+        pol = []
+
+
+        vals = {
+            'page': str(uuid4()),
+            'person': genetic_info.patient.name.id,
+            'age': genetic_info.onset and str(genetic_info.onset) + 'y' or '',
+            'federation_account': genetic_info.patient.name.federation_account,
+            'page_type':'medical',
+            'medical_context':'genetics',
+            'relevance':'important',
+            'gene':genetic_info.disease_gene.rec_name,
+            'natural_variant':genetic_info.natural_variant and \
+                genetic_info.natural_variant.aa_change,
+            'summary': genetic_info.notes,
+            'author': genetic_info.healthprof and genetic_info.healthprof.name.rec_name,
+            'node': genetic_info.institution and genetic_info.institution.name.rec_name
+            }
+        if (genetic_info.variant_phenotype):
+            vals['health_condition_text'] = vals['health_condition_text'] = \
+                genetic_info.variant_phenotype.phenotype.rec_name
+
+        pol.append(vals)
+        Pol.create(pol)
+
+    @classmethod
+    def create(cls, vlist):
+
+        # Execute first the creation of PoL
+        genetic_info = super(PatientGeneticRisk, cls).create(vlist)
+
+        cls.create_genetics_pol(genetic_info[0])
+
+        return genetic_info
+
+    @classmethod
+    def search_rec_name(cls, name, clause):
+        if clause[1].startswith('!') or clause[1].startswith('not '):
+            bool_op = 'AND'
+        else:
+            bool_op = 'OR'
+        return [bool_op,
+            ('patient',) + tuple(clause[1:]),
+            ('disease_gene',) + tuple(clause[1:]),
+            ('variant_phenotype',) + tuple(clause[1:]),
+            ]
+
+
 class FamilyDiseases(ModelSQL, ModelView):
-    'Family Diseases'
+    'Family History'
     __name__ = 'gnuhealth.patient.family.diseases'
 
     patient = fields.Many2One('gnuhealth.patient', 'Patient', select=True)

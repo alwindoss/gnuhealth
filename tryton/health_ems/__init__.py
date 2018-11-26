@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2017 Luis Falcon <falcon@gnu.org>
+#    Copyright (C) 2008-2018 Luis Falcon <falcon@gnu.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -26,6 +26,7 @@ from .health_ems import *
 def register():
     Pool.register(
         GnuHealthSequences,
+        GnuHealthSequenceSetup,
         Ambulance,
         SupportRequest,
         AmbulanceSupport,

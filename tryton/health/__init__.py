@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2017 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2017 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2018 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2018 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -31,6 +31,7 @@ def register():
         OperationalArea,
         OperationalSector,
         DomiciliaryUnit,
+        FederationCountryConfig,
         Occupation,
         Ethnicity,
         BirthCertificate,
@@ -76,6 +77,7 @@ def register():
         AlternativePersonID,
         Product,
         GnuHealthSequences,
+        GnuHealthSequenceSetup,
         PatientData,
         PatientDiseaseInfo,
         Appointment,
@@ -93,6 +95,8 @@ def register():
         PatientECG,
         CheckImmunizationStatusInit,
         ProductTemplate,
+        PageOfLife,
+        Commands,
         module='health', type_='model')
     Pool.register(
         OpenAppointmentReport,
