@@ -178,7 +178,7 @@ class Main(Gtk.Application):
 
         self.window = Gtk.ApplicationWindow(application=self, title="GNU Health")
         self.window.set_default_size(960, 720)
-        self.window.maximize()
+        # self.window.maximize()
         self.window.set_position(Gtk.WindowPosition.CENTER)
         self.window.set_resizable(True)
         self.window.set_icon(GNUHEALTH_ICON)
