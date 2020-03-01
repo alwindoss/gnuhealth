@@ -135,6 +135,7 @@ class Main(Gtk.Application):
         self.add_action(action)
         self.set_accels_for_action('app.gh_cli', ['<Primary><Shift>Z'])
 
+
         # Main Menu
         main_menu = Gio.Menu.new()
         file_menu = Gio.Menu.new()
@@ -178,37 +179,13 @@ class Main(Gtk.Application):
 
         self.window = Gtk.ApplicationWindow(application=self, title="GNU Health")
         self.window.set_default_size(960, 720)
-        # self.window.maximize()
         self.window.set_position(Gtk.WindowPosition.CENTER)
         self.window.set_resizable(True)
         self.window.set_icon(GNUHEALTH_ICON)
         self.window.connect("destroy", self.on_quit)
         self.window.connect("delete_event", self.on_quit)
 
-        self.header = Gtk.HeaderBar.new()
-        self.header.set_show_close_button(True)
-        self.window.set_titlebar(self.header)
         self.set_title()
-
-        menu = Gtk.Button.new()
-        menu .set_relief(Gtk.ReliefStyle.NONE)
-        menu.set_image(
-            common.IconFactory.get_image('tryton-menu', Gtk.IconSize.BUTTON))
-        menu.connect('clicked', self.menu_toggle)
-
-        self.header.pack_start(menu)
-
-        favorite = Gtk.MenuButton.new()
-        favorite.set_relief(Gtk.ReliefStyle.NONE)
-        favorite.set_image(common.IconFactory.get_image(
-                'tryton-bookmarks', Gtk.IconSize.BUTTON))
-        self.menu_favorite = Gtk.Menu.new()
-        favorite.set_popup(self.menu_favorite)
-        favorite.connect('clicked', self.favorite_set)
-        self.header.pack_start(favorite)
-
-        self.set_global_search()
-        self.header.pack_start(self.global_search_entry)
 
         self.accel_group = Gtk.AccelGroup()
         self.window.add_accel_group(self.accel_group)
@@ -287,9 +264,12 @@ class Main(Gtk.Application):
         # Register plugins
         tryton.plugins.register()
 
+        # Initialize GNU Health environment
         # GNUHEALTH CLI
         self.cli = self.statusbar = self.footer_contents = self.footer = None
         self.cli_position = CONFIG['client.cli_position']
+
+        self.init_gnuhealth_env()
 
 
         self.set_title()  # Adds username/profile while password is asked
@@ -306,9 +286,6 @@ class Main(Gtk.Application):
         #Add connection successful entry to the Activity log
         msg = "Connected to GNU Health Server"
         self.activity_log_entry(msg, 'info')
-
-        # Set the footer
-        self.init_gnuhealth_env()
 
 
     def gnuhealth_cli(self):
@@ -447,19 +424,8 @@ class Main(Gtk.Application):
         titles = [CONFIG['client.title']]
         if value:
             titles.append(value)
-        self.header.set_title(' - '.join(titles))
-        self.header.set_subtitle(login_info)
-        try:
-            style_context = self.header.get_style_context()
-        except AttributeError:
-            pass
-        else:
-            for name in style_context.list_classes():
-                if name.startswith('profile-'):
-                    style_context.remove_class(name)
-            if CONFIG['login.profile']:
-                style_context.add_class(
-                    'profile-%s' % CONFIG['login.profile'])
+        titles.append(login_info)
+        self.window.set_title(' - '.join(titles))
 
     def favorite_set(self, *args):
         if self.menu_favorite.get_children():
@@ -569,7 +535,7 @@ class Main(Gtk.Application):
                 self.favorite_unset()
             CONFIG['client.lang'] = prefs['language']
         # Set placeholder after language is set to get correct translation
-        self.global_search_entry.set_placeholder_text(_("Action"))
+        self.global_search_entry.set_placeholder_text(_("Global Search"))
         CONFIG.save()
 
     def preferences(self):
@@ -1131,32 +1097,64 @@ class Main(Gtk.Application):
         self.ghheader = Gtk.HBox()
         self.ghheader.set_size_request(200,-1)
 
-
         # Main footer
         self.ghfooter = Gtk.HBox()
 
         # Create initally a 1x3 table for the footer, leaving the
         # middle column empty
-        self.ghfooter_contents = Gtk.Table(1,3,True)
+        self.ghfooter_contents = Gtk.Grid()
 
         # Create initally a 1x3 table for the header
-        self.ghheader_contents = Gtk.Table(1,3,True)
+        self.ghheader_contents = Gtk.Grid()
 
         # Set GNU Health Footer
         self.set_ghfooter()
 
         cli_position = self.cli_position
 
+        # Include the side menu toggle
+        side_menu = Gtk.Button.new()
+        side_menu.set_image(
+            common.IconFactory.get_image('tryton-menu', Gtk.IconSize.BUTTON))
+        side_menu.connect('clicked', self.menu_toggle)
+
+        # End of side-menu toggle
+
+        # Favorite entries
+        favorite = Gtk.MenuButton.new()
+        favorite.set_relief(Gtk.ReliefStyle.NONE)
+        favorite.set_image(common.IconFactory.get_image(
+                'tryton-bookmarks', Gtk.IconSize.BUTTON))
+        self.menu_favorite = Gtk.Menu.new()
+        favorite.set_popup(self.menu_favorite)
+        favorite.connect('clicked', self.favorite_set)
+
+        self.set_global_search()
+
+
+
         #Default CLI position at top
         if (not cli_position or cli_position == 'top'):
-            self.ghheader_contents.attach(self.cli, 0, 1, 0, 1)
-            self.ghheader.pack_start(self.ghheader_contents,expand=True,
-                                fill=True, padding=0)
-            self.vbox.pack_start (self.ghheader,
-                                  expand=False, fill=False, padding=0)
+            self.ghheader_contents.add(self.cli)
+            self.ghheader_contents.attach_next_to(side_menu, self.cli,
+                                                  Gtk.PositionType.RIGHT, 1, 1)
 
-            self.vbox.reorder_child(self.ghheader, 1)
-            self.ghheader.show_all()
+        else:
+            self.ghheader_contents.add(side_menu)
+
+        self.ghheader_contents.attach_next_to(favorite, side_menu,
+                                              Gtk.PositionType.RIGHT, 1, 1)
+        self.ghheader_contents.attach_next_to(self.global_search_entry,
+                                        favorite, Gtk.PositionType.RIGHT, 1, 1)
+
+        self.ghheader.pack_start(self.ghheader_contents,expand=True,
+                            fill=True, padding=0)
+        self.vbox.pack_start (self.ghheader,
+                                expand=False, fill=False, padding=0)
+
+        self.vbox.reorder_child(self.ghheader, 1)
+
+        self.ghheader.show_all()
 
     # Add GNU Health Command Line and Status Bar in footer
     def set_ghfooter(self):
@@ -1165,9 +1163,12 @@ class Main(Gtk.Application):
         ghfooter_contents = self.ghfooter_contents
 
         if (self.cli_position == 'bottom'):
-            ghfooter_contents.attach(cli, 0, 1, 0, 1)
+            ghfooter_contents.add(cli)
+            ghfooter_contents.attach_next_to(statusbar,cli,
+                                             Gtk.PositionType.RIGHT, 1, 1)
 
-        ghfooter_contents.attach(statusbar,2, 3, 0, 1)
+        else:
+            ghfooter_contents.add(statusbar)
 
         self.ghfooter.pack_start(ghfooter_contents, expand=True, fill=True, padding=0)
 
