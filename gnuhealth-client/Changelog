@@ -1,3 +1,34 @@
+changeset:   3545:64ba8c13ba73
+tag:         tip
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Mar 01 13:00:15 2020 +0000
+summary:     GH GTK Client : PEP8 max line
+
+changeset:   3544:003c765a8e24
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Mar 01 12:42:07 2020 +0000
+summary:     GH GTK Client : Fix footer / status bar . Make window header compatible with KDE and other desktops.
+
+changeset:   3543:5e5bbff945d4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Mar 01 09:01:28 2020 +0000
+summary:     GH GTK client : Avoid maximizing window at startup
+
+changeset:   3542:a68aa1e08e3f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Mar 01 08:55:21 2020 +0000
+summary:     GH GTK client : remove fast tabbing from options
+
+changeset:   3541:f288179d2dec
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Mar 01 08:48:58 2020 +0000
+summary:     GH GTK client . bug #57928. Implement menu bar
+
+changeset:   3540:7bb4fa7cd27c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Feb 29 11:38:44 2020 +0000
+summary:     Update dev headers
+
 changeset:   3515:3f626fe3b3f7
 tag:         tip
 user:        Luis Falcon <falcon@gnuhealth.org>
