@@ -55,6 +55,7 @@ class Main(Gtk.Application):
         action = Gio.SimpleAction.new('preferences', None)
         action.connect('activate', lambda *a: self.preferences())
         self.add_action(action)
+        self.set_accels_for_action('app.preferences', ['<Primary><Shift>p'])
 
         action = Gio.SimpleAction.new('menu-search', None)
         action.connect(
@@ -110,7 +111,7 @@ class Main(Gtk.Application):
         action = Gio.SimpleAction.new('shortcuts', None)
         action.connect('activate', lambda *a: self.shortcuts())
         self.add_action(action)
-        self.set_accels_for_action('app.shortcuts', ['<Primary>F1'])
+        self.set_accels_for_action('app.shortcuts', ['<Primary><Shift>F1'])
 
         action = Gio.SimpleAction.new('about', None)
         action.connect('activate', lambda *a: self.about())
@@ -134,40 +135,42 @@ class Main(Gtk.Application):
         self.add_action(action)
         self.set_accels_for_action('app.gh_cli', ['<Primary><Shift>Z'])
 
-
-        menu = Gio.Menu.new()
-        menu.append(_("Preferences..."), 'app.preferences')
-
-        section = Gio.Menu.new()
+        # Main Menu
+        main_menu = Gio.Menu.new()
+        file_menu = Gio.Menu.new()
+        settings_menu = Gio.Menu.new()
+        help_menu = Gio.Menu.new()
         toolbar = Gio.Menu.new()
-        section.append_submenu(_("Toolbar"), toolbar)
+        main_menu.append_submenu(_("File"), file_menu)
+        main_menu.append_submenu(_("Settings"), settings_menu)
+        main_menu.append_submenu(_("Help"), help_menu)
+
+        settings_menu.append(_("Preferences..."), 'app.preferences')
+
+        settings_menu.append_submenu(_("Toolbar"), toolbar)
         toolbar.append(_("Default"), 'app.toolbar::default')
         toolbar.append(_("Text and Icons"), 'app.toolbar::both')
         toolbar.append(_("Text"), 'app.toolbar::text')
         toolbar.append(_("Icons"), 'app.toolbar::icons')
 
         form = Gio.Menu.new()
-        section.append_submenu(_("Form"), form)
+        settings_menu.append_submenu(_("Form"), form)
         form.append(_("Save Width/Height"), 'app.save-width-height')
         form.append(_("Save Tree State"), 'app.save-tree-state')
         form.append(_("Fast Tabbing"), 'app.fast-tabbing')
         form.append(_("Spell Checking"), 'app.spell-checking')
 
-        section.append(_("Search Limit..."), 'app.search-limit')
-        section.append(_("Email..."), 'app.email')
+        settings_menu.append(_("Search Limit..."), 'app.search-limit')
+        settings_menu.append(_("Email..."), 'app.email')
 
-        menu.append_section(_("Options"), section)
 
-        section = Gio.Menu.new()
-        section.append(_("Keyboard Shortcuts..."), 'app.shortcuts')
-        section.append(_("About..."), 'app.about')
-        menu.append_section(_("Help"), section)
+        help_menu.append(_("Keyboard Shortcuts..."), 'app.shortcuts')
+        help_menu.append(_("About..."), 'app.about')
 
-        section = Gio.Menu.new()
-        section.append(_("Quit"), 'app.quit')
-        menu.append_section(None, section)
+        file_menu.append(_("Quit"), 'app.quit')
 
-        self.set_app_menu(menu)
+        self.set_menubar(main_menu)
+
 
     def do_activate(self):
         if self.window:
@@ -193,6 +196,7 @@ class Main(Gtk.Application):
         menu.set_image(
             common.IconFactory.get_image('tryton-menu', Gtk.IconSize.BUTTON))
         menu.connect('clicked', self.menu_toggle)
+
         self.header.pack_start(menu)
 
         favorite = Gtk.MenuButton.new()
