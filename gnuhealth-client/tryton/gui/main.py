@@ -157,7 +157,6 @@ class Main(Gtk.Application):
         settings_menu.append_submenu(_("Form"), form)
         form.append(_("Save Width/Height"), 'app.save-width-height')
         form.append(_("Save Tree State"), 'app.save-tree-state')
-        form.append(_("Fast Tabbing"), 'app.fast-tabbing')
         form.append(_("Spell Checking"), 'app.spell-checking')
 
         settings_menu.append(_("Search Limit..."), 'app.search-limit')
