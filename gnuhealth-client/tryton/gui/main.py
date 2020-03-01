@@ -1100,11 +1100,10 @@ class Main(Gtk.Application):
         # Main footer
         self.ghfooter = Gtk.HBox()
 
-        # Create initally a 1x3 table for the footer, leaving the
-        # middle column empty
+        # Create initally a grid for the footer
         self.ghfooter_contents = Gtk.Grid()
 
-        # Create initally a 1x3 table for the header
+        # Create initally a grid for the header
         self.ghheader_contents = Gtk.Grid()
 
         # Set GNU Health Footer
@@ -1148,9 +1147,9 @@ class Main(Gtk.Application):
                                         favorite, Gtk.PositionType.RIGHT, 1, 1)
 
         self.ghheader.pack_start(self.ghheader_contents,expand=True,
-                            fill=True, padding=0)
+                            fill=True, padding=10)
         self.vbox.pack_start (self.ghheader,
-                                expand=False, fill=False, padding=0)
+                                expand=False, fill=False, padding=10)
 
         self.vbox.reorder_child(self.ghheader, 1)
 
@@ -1170,7 +1169,8 @@ class Main(Gtk.Application):
         else:
             ghfooter_contents.add(statusbar)
 
-        self.ghfooter.pack_start(ghfooter_contents, expand=True, fill=True, padding=0)
+        self.ghfooter.pack_start(ghfooter_contents, expand=True, fill=True,
+                                 padding=0)
 
         # Pack the footer table in main vbox
         self.vbox.pack_start (self.ghfooter, expand=False, fill=False, padding=0)
