@@ -9304,6 +9304,12 @@
 	<field name="disease_group" ref="health.NOTIFIABLE"></field>
 </record>
 
+<!-- COVID19 -->
+<record model="gnuhealth.disease_group.members" id="NOTIFIABLE-U071">
+    <field name="name" ref="U071"></field>
+        <field name="disease_group" ref="health.NOTIFIABLE"></field>
+</record>
+
 <!-- ALLERGIC DISEASES GROUP FROM ICD10 -->
 
 <record model="gnuhealth.disease_group.members" id="ALLERGIC-J30">
@@ -13087,6 +13093,12 @@
 <record model="gnuhealth.disease_group.members" id="INFECTIOUS-B99">
     <field name="name" ref="B99"></field>
 	<field name="disease_group" ref="health.INFECTIOUS"></field>
+</record>
+
+<!-- COVID19 -->
+<record model="gnuhealth.disease_group.members" id="INFECTIOUS-U071">
+    <field name="name" ref="U071"></field>
+        <field name="disease_group" ref="health.INFECTIOUS"></field>
 </record>
 
 <!-- AUTOIMMUNE DISEASES GROUP (DIFFICULT TO BE EXHAUSTIVE!) -->
@@ -19544,6 +19556,13 @@
     <field name="name" ref="J998"></field>
 	<field name="disease_group" ref="health.RESP"></field>
 </record>
+
+<!-- COVID19 -->
+<record model="gnuhealth.disease_group.members" id="RESP-U071">
+    <field name="name" ref="U071"></field>
+        <field name="disease_group" ref="health.RESP"></field>
+</record>
+
 
 <!-- NEUROLOGIC DISEASES GROUP (Category VI) -->
 <record model="gnuhealth.disease_group.members" id="NEUROLOGIC-G00">
