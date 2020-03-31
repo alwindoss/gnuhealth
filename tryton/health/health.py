@@ -3462,10 +3462,19 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
         Pol = Pool().get('gnuhealth.pol')
         pol = []
 
+        def patient_age_at_dx():
+            age_at_dx = ''
+            if condition_info.age:
+                age_at_dx = str(condition_info.age) + 'y'
+            elif (condition_info.name.dob and condition_info.diagnosed_date):
+                age_at_dx = compute_age_from_dates(condition_info.name.dob, None,
+                            None, None, 'age', condition_info.diagnosed_date)
+            return age_at_dx
+
         vals = {
             'page': str(uuid4()),
             'person': condition_info.name.name.id,
-            'age': condition_info.age and str(condition_info.age) + 'y' or '',
+            'age': patient_age_at_dx(),
             'federation_account': condition_info.name.name.federation_account,
             'page_type':'medical',
             'medical_context':'health_condition',
