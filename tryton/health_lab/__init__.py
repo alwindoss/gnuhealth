@@ -40,6 +40,7 @@ def register():
         CreateLabTestOrderInit,
         RequestTest,
         RequestPatientLabTestStart,
+        PatientHealthCondition,
         module='health_lab', type_='model')
     Pool.register(
         CreateLabTestOrder,

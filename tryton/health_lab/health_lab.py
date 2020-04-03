@@ -27,12 +27,12 @@ from trytond.transaction import Transaction
 from trytond.pool import Pool
 from trytond import backend
 from trytond.tools.multivalue import migrate_property
-
+from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
 
 __all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup',
     'PatientData', 'TestType', 'Lab',
     'GnuHealthLabTestUnits', 'GnuHealthTestCritearea',
-    'GnuHealthPatientLabTest']
+    'GnuHealthPatientLabTest','PatientHealthCondition']
 
 sequences = ['lab_sequence', 'lab_request_sequence']
 
@@ -80,7 +80,7 @@ class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
     lab_sequence = fields.Many2One('ir.sequence', 
         'Lab Result Sequence', required=True,
         domain=[('code', '=', 'gnuhealth.lab')])
-  
+
     @classmethod
     def __register__(cls, module_name):
         TableHandler = backend.get('TableHandler')
@@ -112,7 +112,7 @@ class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
         ModelData = pool.get('ir.model.data')
         return ModelData.get_id(
             'health_lab', 'seq_gnuhealth_lab_test')
-    
+
 # END SEQUENCE SETUP , MIGRATION FROM FIELDS.MultiValue
 
 
@@ -193,6 +193,11 @@ class Lab(ModelSQL, ModelView):
         select=True)
     date_analysis = fields.DateTime('Date of the Analysis', select=True)
     request_order = fields.Integer('Request', readonly=True)
+
+    pathology = fields.Many2One(
+        'gnuhealth.pathology', 'Pathology',
+        help='Pathology confirmed / associated to this lab test. '
+            'If set, a new health condition will be generated for the person')
 
     analytes_summary = \
         fields.Function(fields.Text('Summary'),
@@ -415,3 +420,18 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
         default['date'] = cls.default_date()
         return super(GnuHealthPatientLabTest, cls).copy(tests,
             default=default)
+
+class PatientHealthCondition(ModelSQL, ModelView):
+    'Patient Conditions History'
+    __name__ = 'gnuhealth.patient.disease'
+
+    # Adds lab confirmed and the link to the test to the
+    # Patient health Condition
+
+    lab_confirmed = fields.Boolean('Lab Confirmed', help='Confirmed by'
+        ' laboratory test')
+
+    lab_test = fields.Many2One('gnuhealth.lab','Lab Test',
+        domain=[('patient', '=', Eval('name'))], depends=['name'],
+        states={'invisible': Not(Bool(Eval('lab_confirmed')))},
+        help='Lab test that confirmed the condition')

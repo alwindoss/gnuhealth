@@ -194,5 +194,19 @@
             <field name="action" ref="act_patient_lab_history_form1"/>
         </record>
 
+<!-- PATIENT HEALTH CONDITION -->
+
+        <record model="ir.ui.view" id="view_gnuhealth_patient_diseases_view_form">
+            <field name="model">gnuhealth.patient.disease</field>
+            <field name="inherit" ref="health.gnuhealth_patient_diseases_view_form"/>
+            <field name="name">gnuhealth_patient_health_condition_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="tree_gnuhealth_patient_diseases">
+            <field name="model">gnuhealth.patient.disease</field>
+            <field name="inherit" ref="health.gnuhealth_patient_diseases_tree"/>
+            <field name="name">gnuhealth_patient_health_condition_tree</field>
+        </record>
+
     </data>
 </tryton>
