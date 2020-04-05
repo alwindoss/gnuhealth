@@ -3485,8 +3485,10 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
             'node': condition_info.institution and condition_info.institution.name.rec_name
             }
         if (condition_info.pathology):
+            vals['health_condition'] = condition_info.pathology
             vals['health_condition_text'] = condition_info.pathology.rec_name
             vals['health_condition_code'] = condition_info.pathology.code
+
 
         pol.append(vals)
         Pol.create(pol)
