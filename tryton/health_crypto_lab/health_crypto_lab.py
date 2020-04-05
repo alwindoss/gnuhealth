@@ -176,6 +176,12 @@ class LabTest(ModelSQL, ModelView):
         if (document.patient.name.federation_account):
             cls.create_lab_pol (document)
 
+        # Create Health condition to the patient
+        # if there is a confirmed pathology associated and
+        # validated to the lab test result
+        if (document.pathology):
+            cls.create_health_condition (document)
+
     @classmethod
     def get_serial(cls,document):
 
@@ -240,6 +246,27 @@ class LabTest(ModelSQL, ModelView):
         return [('//group[@id="document_digest"]', 'states', {
                 'invisible': Not(Eval('state') == 'validated'),
                 })]
+
+    @classmethod
+    def create_health_condition(cls, lab_info):
+        """ Create the health condition when specified and 
+            validated in the lab test
+        """
+        HealthCondition = Pool().get('gnuhealth.patient.disease')
+        health_condition = []
+
+        vals = {
+            'name': lab_info.patient.id,
+            'pathology': lab_info.pathology,
+            'diagnosed_date': lab_info.date_analysis.date(),
+            'lab_confirmed': True,
+            'lab_test': lab_info.id,
+            'extra_info': lab_info.diagnosis,
+            'healthprof': lab_info.requestor
+            }
+
+        health_condition.append(vals)
+        HealthCondition.create(health_condition)
 
 
     @classmethod
