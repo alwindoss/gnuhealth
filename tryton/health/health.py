@@ -892,7 +892,8 @@ class Party(ModelSQL, ModelView):
     def view_attributes(cls):
         # Hide the group holding all the demographics when the party is not
         # a person
-        return [('//group[@id="person_details"]', 'states', {
+        return super(Party, cls).view_attributes() + [
+                ('//group[@id="person_details"]', 'states', {
                 'invisible': ~Eval('is_person'),
                 })]
 
