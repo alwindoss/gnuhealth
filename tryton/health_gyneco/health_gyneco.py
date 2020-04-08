@@ -671,12 +671,13 @@ class GnuHealthPatient(ModelSQL, ModelView):
                 counter=counter+1
             return stillbirths
 
-
     @classmethod
     def view_attributes(cls):
-        return [('//page[@id="page_gyneco_obs"]', 'states', {
+        return super(GnuHealthPatient, cls).view_attributes() + [
+                ('//page[@id="page_gyneco_obs"]', 'states', {
                 'invisible': Equal(Eval('biological_sex'), 'm'),
                 })]
+
 
 class PatientMenstrualHistory(ModelSQL, ModelView):
     'Menstrual History'
