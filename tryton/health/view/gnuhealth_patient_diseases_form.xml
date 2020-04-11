@@ -56,8 +56,8 @@
         <field name="pcs_code"/>
     </group>
     <newline/>
-    <group string="Related Evaluations" colspan="4" id="group_related_evaluations" yfill="1" yexpand="1">
-        <field name="related_evaluations"/>
+    <group string="Related Evaluations" colspan="4" id="group_related_evaluations">
+        <field name="related_evaluations" height="200"/>
     </group>
     <group string="Extra Info" id="group_disease_extra_info">
         <field name="extra_info" colspan="4"/>
