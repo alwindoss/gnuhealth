@@ -234,11 +234,11 @@ class PatientCAGE(ModelSQL, ModelView):
     evaluation_date = fields.DateTime('Date')
 
     cage_c = fields.Boolean('Hard to Cut down', help='Have you ever felt you '
-        'needed to Cut down on your drinking ?')
+        'needed to Cut down on your drinking?')
     cage_a = fields.Boolean('Angry with Critics', help='Have people Annoyed '
-        'you by criticizing your drinking ?')
+        'you by criticizing your drinking?')
     cage_g = fields.Boolean('Guilt', help='Have you ever felt Guilty about '
-        'drinking ?')
+        'drinking?')
     cage_e = fields.Boolean('Eye-opener', help='Have you ever felt you '
         'needed a drink first thing in the morning (Eye-opener) to steady '
         'your nerves or to get rid of a hangover?')
