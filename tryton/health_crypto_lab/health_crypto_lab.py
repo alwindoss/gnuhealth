@@ -92,9 +92,29 @@ class LabTest(ModelSQL, ModelView):
     validation_date = fields.DateTime('Validated on', readonly=True,
         states = STATES )
 
+    historize = fields.Boolean("Historize",
+                    states = STATES,
+                    depends=['pathology'],
+                    help='If this flag is set'
+                    ' the a new health condition will be added'
+                    ' to the patient history.'
+                    ' Unset it if this lab test is in the context'
+                    ' of a pre-existing condition of the patient.'
+                    ' The condition will be created when the lab test'
+                    ' is confirmed and validated')
+
     @staticmethod
     def default_state():
         return 'draft'
+
+    @staticmethod
+    def default_historize():
+        return False
+
+    @fields.depends('pathology')
+    def on_change_with_historize(self):
+        if (self.pathology):
+            return True
 
     @classmethod
     def __setup__(cls):
@@ -179,7 +199,8 @@ class LabTest(ModelSQL, ModelView):
         # Create Health condition to the patient
         # if there is a confirmed pathology associated and
         # validated to the lab test result
-        if (document.pathology):
+        # The flag historize must also be set
+        if (document.pathology and document.historize):
             cls.create_health_condition (document)
 
     @classmethod
