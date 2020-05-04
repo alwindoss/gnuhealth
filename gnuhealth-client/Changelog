@@ -1,3 +1,90 @@
+changeset:   3604:2b8390eecda9
+tag:         tip
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:59:16 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6742. Do not rely on cursor column for event with renderer
+
+changeset:   3603:578670170a17
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:55:21 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6739. Use empty text for empty Reference in editable tree
+
+changeset:   3602:15de353933f2
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:40:51 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6732. Skip invalid branch of domain without the inverted field
+
+changeset:   3601:87ac854f3ac2
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:39:59 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6729. Filter leaf before preparing reference domain
+
+changeset:   3600:be059871324d
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:39:06 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6726. Add keys method on EvalEnvironment
+
+changeset:   3599:2b1ba0c62e42
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:37:46 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6699. Do not force value in OR-ed clause
+
+changeset:   3598:4a3f363933ff
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:35:39 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6694. Set margin on main notebook widget
+
+changeset:   3597:8519d1666cdb
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:33:18 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6672. Do not detect or set style if there no toolbar
+
+changeset:   3596:0ebc88d9a970
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:31:54 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6666. Use locale context to format date in domain parser
+
+changeset:   3595:9195736b2af4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:30:17 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6649. Do not set all day for datetime instance
+
+changeset:   3594:f60c7bc4918c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:27:53 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6644.  Use locale.localize() and new format to format Decimal
+
+changeset:   3593:cd2c5da1e2d5
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:23:34 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6641. Remove id from screen context and compare proper attributes
+
+changeset:   3592:cf61240f2e0b
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:21:34 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6630. Consider event as all day only for date instances
+
+changeset:   3591:8942523827ed
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:13:44 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6613. Replace sig_quit by on_quit call when canceling login
+
+changeset:   3590:51633570b474
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:10:59 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6611. Ensure all containers set the tooltip
+
+changeset:   3589:6fdf15f6e590
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:06:30 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6609.  Align CENTER instead of FILL when the widget is not expanded
+
+changeset:   3588:21aa23e96452
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 04 17:00:20 2020 +0100
+summary:     GNU Health GTK Client . Apply Tryton patch 6591.  Properly test always checkbox in user warning
+
+
 changeset:   3546:acff636f68f4
 tag:         tip
 user:        Luis Falcon <falcon@gnuhealth.org>
