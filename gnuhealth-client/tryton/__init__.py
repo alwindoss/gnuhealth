@@ -3,6 +3,7 @@
 __version__ = "3.6.8"
 SERVER_VERSION = "5.0.0"
 import gi
+import locale
 
 gi.require_version('Gtk', '3.0')
 gi.require_version('Gdk', '3.0')
@@ -17,3 +18,24 @@ try:
     import goocalendar
 except ImportError:
     pass
+
+if not hasattr(locale, 'localize'):
+    def localize(formatted, grouping=False, monetary=False):
+        if '.' in formatted:
+            seps = 0
+            parts = formatted.split('.')
+            if grouping:
+                parts[0], seps = locale._group(parts[0], monetary=monetary)
+            decimal_point = locale.localeconv()[
+                monetary and 'mon_decimal_point' or 'decimal_point']
+            formatted = decimal_point.join(parts)
+            if seps:
+                formatted = locale._strip_padding(formatted, seps)
+        else:
+            seps = 0
+            if grouping:
+                formatted, seps = locale._group(formatted, monetary=monetary)
+            if seps:
+                formatted = locale._strip_padding(formatted, seps)
+        return formatted
+    setattr(locale, 'localize', localize)
