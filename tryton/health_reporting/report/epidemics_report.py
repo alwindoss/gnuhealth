@@ -26,6 +26,8 @@ from trytond.transaction import Transaction
 from dateutil.relativedelta import relativedelta
 
 from matplotlib import pyplot as plt
+from matplotlib.ticker import MaxNLocator
+
 import io
 
 __all__ = ['InstitutionEpidemicsReport']
@@ -318,9 +320,11 @@ class InstitutionEpidemicsReport(Report):
 
         fig = plt.figure(figsize=(6,3))
         cases_by_day = fig.add_subplot(1, 1, 1)
-        cases_by_day.set_title('New confirmed cases by day')
-        cases_by_day.bar(days,cases_day)
+        cases_by_day.set_title('New cases by day')
+        cases_by_day.plot(days,cases_day, linewidth=2)
         fig.autofmt_xdate()
+        cases_by_day.yaxis.set_major_locator(MaxNLocator(integer=True))
+
         holder = io.BytesIO()
         fig.savefig(holder)
         image_png = holder.getvalue()
