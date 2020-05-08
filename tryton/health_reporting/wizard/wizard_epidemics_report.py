@@ -25,6 +25,7 @@ from trytond.model import ModelView, fields
 from trytond.wizard import Wizard, StateView, StateAction, StateTransition, \
     Button
 from trytond.transaction import Transaction
+from dateutil.relativedelta import relativedelta
 
 __all__ = ['EpidemicsReportStart','EpidemicsReport']
 
@@ -43,7 +44,7 @@ class EpidemicsReportStart(ModelView):
 
     @staticmethod
     def default_start_date():
-        return date.today()
+        return date.today() - relativedelta(days=7)
 
     @staticmethod
     def default_end_date():
