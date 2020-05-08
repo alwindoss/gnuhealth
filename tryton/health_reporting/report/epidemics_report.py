@@ -320,6 +320,7 @@ class InstitutionEpidemicsReport(Report):
         cases_by_day = fig.add_subplot(1, 1, 1)
         cases_by_day.set_title('New confirmed cases by day')
         cases_by_day.bar(days,cases_day)
+        fig.autofmt_xdate()
         holder = io.BytesIO()
         fig.savefig(holder)
         image_png = holder.getvalue()
