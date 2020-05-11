@@ -279,12 +279,30 @@ class InstitutionEpidemicsReport(Report):
         return (image_png)
 
 
+    @classmethod
+    def get_ethnic_groups(cls):
+        #Build a list with the ethnic groups
+        Condition = Pool().get('gnuhealth.ethnicity')
+        ethnic_groups = Condition.search([])
+        ethnicities = []
+        for ethnic_group in ethnic_groups:
+            ethnicities.append(ethnic_group.name)
+        return (ethnicities)
+
 
     @classmethod
     def get_context(cls, records, data):
+
         Condition = Pool().get('gnuhealth.pathology')
 
-        context = super(InstitutionEpidemicsReport, cls).get_context(records, data)
+        ethnic_groups = cls.get_ethnic_groups()
+
+        ethnic_count = {}
+        for ethnic_group in ethnic_groups:
+            ethnic_count[ethnic_group] = 0
+
+        context = super(InstitutionEpidemicsReport, cls).get_context(records,
+                                                                     data)
 
         start_date = data['start_date']
         context['start_date'] = data['start_date']
@@ -366,10 +384,17 @@ class InstitutionEpidemicsReport(Report):
 
         # Global Condition info
         for confirmed_case in confirmed_cases:
+            #Sex distribution
             if (confirmed_case.name.gender == 'f'):
                 cases_f +=1
             else:
                 cases_m +=1
+
+            #Ethnic groups distribution
+            if (confirmed_case.name.name.ethnic_group):
+                ethnicity = confirmed_case.name.name.ethnic_group.name
+                if (ethnicity in ethnic_groups):
+                    ethnic_count[ethnicity] =  ethnic_count[ethnicity] + 1
 
             if not confirmed_case.name.age:
                 non_age_cases +=1
