@@ -24,9 +24,12 @@ from trytond.report import Report
 from trytond.pool import Pool
 from trytond.transaction import Transaction
 from dateutil.relativedelta import relativedelta
+import pytz
 
 from matplotlib import pyplot as plt
 from matplotlib.ticker import MaxNLocator
+
+from trytond.modules.health.health import convert_date_timezone
 
 import io
 
@@ -34,7 +37,6 @@ __all__ = ['InstitutionEpidemicsReport']
 
 class InstitutionEpidemicsReport(Report):
     __name__ = 'gnuhealth.epidemics.report'
-
 
     @classmethod
     def get_population_with_no_dob(cls):
@@ -162,6 +164,113 @@ class InstitutionEpidemicsReport(Report):
         return(aggr)
 
 
+    # Death Certificates by day
+    @classmethod
+    def get_deaths_by_day(cls, start_date, end_date, dx):
+        """ Return number of death related to the condition 
+            Includes both the ultimate case as well as those
+            certificates that have the condition as a leading cause
+        """
+
+        DeathCert = Pool().get('gnuhealth.death_certificate')
+
+        current_day = start_date
+        aggr = []
+        while current_day <= end_date:
+            cur_day_time = datetime.combine((current_day), datetime.min.time())
+
+            utc_from =  convert_date_timezone(cur_day_time, 'utc')
+            utc_to =  convert_date_timezone(cur_day_time +
+                                            relativedelta(days=1), 'utc')
+
+            clause = [
+                ('dod', '>=', utc_from),
+                ('dod', '<', utc_to)
+                ]
+
+            res = DeathCert.search(clause)
+
+            # Reset the cases for each day
+            as_immediate_cause = 0
+            as_underlying_condition = 0
+
+            # Get the immediate cause of death and the underlying conditions
+            # for each certificate on each day.
+
+            for cert in res:
+                if (cert.cod.id == dx):
+                    as_immediate_cause = as_immediate_cause + 1
+                for underlying_condition in cert.underlying_conditions:
+                    if (underlying_condition.condition.id == dx):
+                        as_underlying_condition = as_underlying_condition + 1
+
+            daily_data = {'date':str(current_day),
+                          'certs_day_ic':as_immediate_cause,
+                          'certs_day_uc':as_underlying_condition}
+            aggr.append(daily_data)
+            current_day = current_day + relativedelta(days=1)
+
+        return(aggr)
+
+
+    @classmethod
+    def plot_cases_histogram(cls, start_date, end_date, health_condition):
+        epi_series = cls.get_epi_by_day(start_date, end_date, health_condition)
+
+        days=[]
+        cases_day=[]
+        for day in epi_series:
+            days.append(day['date'])
+            # Confirmed cases by day
+            cases_day.append(day['cases'])
+
+        fig = plt.figure(figsize=(6,3))
+        cases_by_day = fig.add_subplot(1, 1, 1)
+        cases_by_day.set_title('New cases by day')
+        cases_by_day.plot(days,cases_day, linewidth=2)
+        cases_by_day.yaxis.set_major_locator(MaxNLocator(integer=True))
+        fig.autofmt_xdate()
+
+        holder = io.BytesIO()
+        fig.savefig(holder)
+        image_png = holder.getvalue()
+
+        holder.close()
+        return (image_png)
+
+
+    @classmethod
+    def plot_deaths_histogram(cls, start_date, end_date, health_condition):
+        death_certs = cls.get_deaths_by_day(start_date,
+                                            end_date, health_condition)
+
+        days=[]
+        certs_ic_day=[]
+        certs_uc_day=[]
+        for day in death_certs:
+            days.append(day['date'])
+            # Death certificates as an immediate cause
+            certs_ic_day.append(day['certs_day_ic'])
+            # Death certificates as an underlying cause
+            certs_uc_day.append(day['certs_day_uc'])
+
+        fig = plt.figure(figsize=(6,3))
+        deaths_by_day = fig.add_subplot(1, 1, 1)
+        deaths_by_day.set_title('New Deaths by day')
+        deaths_by_day.plot(days,certs_ic_day, linewidth=2)
+        deaths_by_day.plot(days,certs_uc_day, linewidth=2)
+        deaths_by_day.yaxis.set_major_locator(MaxNLocator(integer=True))
+        fig.autofmt_xdate()
+
+        holder = io.BytesIO()
+        fig.savefig(holder)
+        image_png = holder.getvalue()
+
+        holder.close()
+        return (image_png)
+
+
+
     @classmethod
     def get_context(cls, records, data):
         Condition = Pool().get('gnuhealth.pathology')
@@ -232,7 +341,8 @@ class InstitutionEpidemicsReport(Report):
 
         # Get cases within the specified date range
 
-        confirmed_cases = cls.get_confirmed_cases(start_date, end_date, health_condition)
+        confirmed_cases = cls.get_confirmed_cases(start_date, end_date,
+                                                  health_condition)
 
         context['confirmed_cases'] = confirmed_cases
 
@@ -309,27 +419,12 @@ class InstitutionEpidemicsReport(Report):
 
         context['epidemics_dx'] = epidemics_dx
 
-        epi_series = cls.get_epi_by_day(start_date, end_date, health_condition)
+        # New cases by day
+        context['cases_histogram'] = cls.plot_cases_histogram(start_date,
+                                                end_date, health_condition)
 
-        days=[]
-        cases_day=[]
-        for day in epi_series:
-            days.append(day['date'])
-            # Confirmed cases by day
-            cases_day.append(day['cases'])
-
-        fig = plt.figure(figsize=(6,3))
-        cases_by_day = fig.add_subplot(1, 1, 1)
-        cases_by_day.set_title('New cases by day')
-        cases_by_day.plot(days,cases_day, linewidth=2)
-        fig.autofmt_xdate()
-        cases_by_day.yaxis.set_major_locator(MaxNLocator(integer=True))
-
-        holder = io.BytesIO()
-        fig.savefig(holder)
-        image_png = holder.getvalue()
-
-        holder.close()
-        context['histogram'] = image_png
+        # Death certificates by day
+        context['deaths_histogram'] = cls.plot_deaths_histogram(start_date,
+                                                end_date, health_condition)
 
         return context
