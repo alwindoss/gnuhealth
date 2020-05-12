@@ -236,7 +236,7 @@ class InstitutionEpidemicsReport(Report):
         fig.autofmt_xdate()
 
         holder = io.BytesIO()
-        fig.savefig(holder)
+        fig.savefig(holder, format="svg")
         image_png = holder.getvalue()
 
         holder.close()
@@ -272,7 +272,7 @@ class InstitutionEpidemicsReport(Report):
         fig.autofmt_xdate()
 
         holder = io.BytesIO()
-        fig.savefig(holder)
+        fig.savefig(holder, format="svg")
         image_png = holder.getvalue()
 
         holder.close()
@@ -298,7 +298,7 @@ class InstitutionEpidemicsReport(Report):
         fig.autofmt_xdate()
 
         holder = io.BytesIO()
-        fig.savefig(holder)
+        fig.savefig(holder, format="svg")
         image_png = holder.getvalue()
 
         holder.close()
