@@ -317,6 +317,31 @@ class InstitutionEpidemicsReport(Report):
 
 
     @classmethod
+    def plot_cases_socioeconomics(cls,start_date,end_date,ses_count, hc):
+
+        for k, v in list(ses_count.items()):
+            if (v==0):
+                # Remove socioeconomic groups with zero cases from the plot
+                del(ses_count[k])
+
+        title = "Cases by Socioeconomic groups: " + hc.rec_name
+        fig = plt.figure(figsize=(6,3))
+        cases_by_socioeconomics = fig.add_subplot(1, 1, 1)
+        cases_by_socioeconomics.set_title(title)
+        cases_by_socioeconomics.pie(ses_count.values(),
+                               autopct='%1.1f%%',
+                               labels=ses_count.keys())
+
+        fig.autofmt_xdate()
+
+        holder = io.BytesIO()
+        fig.savefig(holder, format="svg")
+        image_png = holder.getvalue()
+
+        holder.close()
+        return (image_png)
+
+    @classmethod
     def get_context(cls, records, data):
 
         Condition = Pool().get('gnuhealth.pathology')
@@ -326,6 +351,12 @@ class InstitutionEpidemicsReport(Report):
         ethnic_count = {}
         for ethnic_group in ethnic_groups:
             ethnic_count[ethnic_group] = 0
+
+        ses_count = {}
+
+        ses_groups = ['lower','lower-middle','middle','upper-middle','upper']
+        for ses_group in ses_groups:
+            ses_count[ses_group] = 0
 
         context = super(InstitutionEpidemicsReport, cls).get_context(records,
                                                                      data)
@@ -422,6 +453,20 @@ class InstitutionEpidemicsReport(Report):
                 if (ethnicity in ethnic_groups):
                     ethnic_count[ethnicity] =  ethnic_count[ethnicity] + 1
 
+            #Socioeconomic groups distribution
+            if (confirmed_case.name.ses):
+                ses_id = confirmed_case.name.ses
+                if (ses_id == '0'):
+                    ses_count['lower'] +=1
+                if (ses_id == '1'):
+                    ses_count['lower-middle'] +=1
+                if (ses_id == '2'):
+                    ses_count['middle'] +=1
+                if (ses_id == '3'):
+                    ses_count['upper-middle'] +=1
+                if (ses_id == '4'):
+                    ses_count['upper'] +=1
+
             if not confirmed_case.name.age:
                 non_age_cases +=1
 
@@ -489,6 +534,10 @@ class InstitutionEpidemicsReport(Report):
         #Cases by ethnic groups
         context['cases_ethnicity'] = cls.plot_cases_ethnicity(start_date,
                                                 end_date,ethnic_count, hc)
+
+        #Cases by Socioeconomic groups
+        context['cases_ses'] = cls.plot_cases_socioeconomics(start_date,
+                                                end_date,ses_count, hc)
 
         # Death certificates by day
         context['deaths_histogram'] = cls.plot_deaths_histogram(start_date,
