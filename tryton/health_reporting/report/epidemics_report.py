@@ -280,6 +280,32 @@ class InstitutionEpidemicsReport(Report):
 
 
     @classmethod
+    def plot_cases_ethnicity(cls,start_date,end_date,ethnic_count, hc):
+
+        for k, v in list(ethnic_count.items()):
+            if (v==0):
+                # Remove ethnicities with zero cases from the plot
+                del(ethnic_count[k])
+
+        title = "Cases by ethnic group: " + hc.rec_name
+        fig = plt.figure(figsize=(6,3))
+        cases_by_ethnicity = fig.add_subplot(1, 1, 1)
+        cases_by_ethnicity.set_title(title)
+        cases_by_ethnicity.pie(ethnic_count.values(),
+                               autopct='%1.1f%%',
+                               labels=ethnic_count.keys())
+
+        fig.autofmt_xdate()
+
+        holder = io.BytesIO()
+        fig.savefig(holder)
+        image_png = holder.getvalue()
+
+        holder.close()
+        return (image_png)
+
+
+    @classmethod
     def get_ethnic_groups(cls):
         #Build a list with the ethnic groups
         Condition = Pool().get('gnuhealth.ethnicity')
@@ -406,7 +432,6 @@ class InstitutionEpidemicsReport(Report):
         context['cases_m'] = cases_m
         context['non_age_cases'] = non_age_cases
 
-
         group_1 = group_2 = group_3 = group_4 = group_5 = 0
         group_1f = group_2f = group_3f = group_4f = group_5f = 0
 
@@ -460,6 +485,10 @@ class InstitutionEpidemicsReport(Report):
         context['cases_histogram'] = cls.plot_cases_histogram(start_date,
                                                 end_date,
                                                 health_condition_id, hc)
+
+        #Cases by ethnic groups
+        context['cases_ethnicity'] = cls.plot_cases_ethnicity(start_date,
+                                                end_date,ethnic_count, hc)
 
         # Death certificates by day
         context['deaths_histogram'] = cls.plot_deaths_histogram(start_date,
