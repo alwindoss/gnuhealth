@@ -159,7 +159,7 @@ class InstitutionEpidemicsReport(Report):
 
             res = Condition.search(clause)
             cases_day = len(res)
-            daily_data = {'date':str(current_day), 'cases':cases_day}
+            daily_data = {'date':current_day, 'cases':cases_day}
             aggr.append(daily_data)
         return(aggr)
 
@@ -204,7 +204,7 @@ class InstitutionEpidemicsReport(Report):
                     if (underlying_condition.condition.id == dx):
                         as_underlying_condition = as_underlying_condition + 1
 
-            daily_data = {'date':str(current_day),
+            daily_data = {'date':current_day,
                           'certs_day_ic':as_immediate_cause,
                           'certs_day_uc':as_underlying_condition}
             aggr.append(daily_data)

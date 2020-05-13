@@ -9,7 +9,7 @@
         </record>
 
         <record model="ir.action.wizard" id="act_wizard_epidemics_report">
-            <field name="name">Epidemiological Surveillancet</field>
+            <field name="name">Epidemiological Surveillance</field>
             <field name="wiz_name">gnuhealth.epidemics.report.open</field>
         </record>
         <!-- Shortcut to report from Institution Model -->
