@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 #  gnuhealth_product_uploader.py
 #  
 #  Copyright 2017 - 2020 Luis Falcon <falcon@gnuhealth.org>
