@@ -57,16 +57,16 @@ class DBListEditor(object):
             Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
         scroll.add(self.profile_tree)
         self.add_button = Gtk.Button()
-        self.add_button.set_image(common.IconFactory.get_image(
-                'tryton-add', Gtk.IconSize.BUTTON))
+        image = Gtk.Image()
+        image.set_from_stock(Gtk.STOCK_ADD, Gtk.IconSize.BUTTON)
+        self.add_button.set_image(image)
         tooltips.set_tip(self.add_button, _("Add new profile"))
         self.add_button.connect('clicked', self.profile_create)
         self.remove_button = Gtk.Button()
-        self.remove_button.set_image(common.IconFactory.get_image(
-                'tryton-remove', Gtk.IconSize.BUTTON))
+        image = Gtk.Image()
+        image.set_from_stock(Gtk.STOCK_REMOVE, Gtk.IconSize.BUTTON)
+        self.remove_button.set_image(image)
         tooltips.set_tip(self.remove_button, _("Remove selected profile"))
-        self.remove_button.get_style_context().add_class(
-            Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION)
         self.remove_button.connect('clicked', self.profile_delete)
         bbox = Gtk.ButtonBox()
         bbox.pack_start(self.remove_button, expand=True, fill=True, padding=0)
