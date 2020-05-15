@@ -2,13 +2,15 @@
 <data>
     <xpath expr="/form/notebook/page[@id=&quot;general_info&quot;]" position="after">
         <page string="Socioeconomics" id="page_socioeconomics">
-            <group string="Current Status" colspan="4" col="6" id="group_ses_holder2">
+            <group string="Current Status" colspan="4" col="8" id="group_ses_holder2">
                 <label name="occupation"/>
                 <field name="occupation"/>
                 <label name="education"/>
                 <field name="education"/>
                 <label name="housing"/>
                 <field name="housing"/>
+                <label name="ses"/>
+                <field name="ses"/>
             </group>
             <newline/>
             <field name="ses_assessments"/>
