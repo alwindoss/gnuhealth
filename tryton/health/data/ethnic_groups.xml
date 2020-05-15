@@ -27,8 +27,13 @@
             <field name="code">AFRICANAMERICAN</field>
         </record>
         <record model="gnuhealth.ethnicity" id="eth7">
-            <field name="name">Indian American</field>
+	    <field name="name">Indian American</field>
             <field name="code">INDIANAMERICAN</field>
+        </record>
+
+        <record model="gnuhealth.ethnicity" id="eth8">
+            <field name="name">Native American</field>
+            <field name="code">NATIVEAMERICAN</field>
         </record>
 
     </data>
