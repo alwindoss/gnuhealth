@@ -214,7 +214,7 @@ class InstitutionEpidemicsReport(Report):
 
 
     @classmethod
-    def plot_cases_histogram(cls, start_date, end_date,
+    def plot_cases_timeseries(cls, start_date, end_date,
                              health_condition_id, hc):
 
         epi_series = cls.get_epi_by_day(start_date,
@@ -231,7 +231,7 @@ class InstitutionEpidemicsReport(Report):
         cases_by_day = fig.add_subplot(1, 1, 1)
         title = 'New cases by day: ' + hc.rec_name
         cases_by_day.set_title(title)
-        cases_by_day.plot(days,cases_day, linewidth=2)
+        cases_by_day.bar(days,cases_day)
         cases_by_day.yaxis.set_major_locator(MaxNLocator(integer=True))
         fig.autofmt_xdate()
 
@@ -244,7 +244,7 @@ class InstitutionEpidemicsReport(Report):
 
 
     @classmethod
-    def plot_deaths_histogram(cls, start_date,
+    def plot_deaths_timeseries(cls, start_date,
                               end_date, health_condition_id, hc):
 
         death_certs = cls.get_deaths_by_day(start_date,
@@ -264,8 +264,8 @@ class InstitutionEpidemicsReport(Report):
         fig = plt.figure(figsize=(6,3))
         deaths_by_day = fig.add_subplot(1, 1, 1)
         deaths_by_day.set_title(title)
-        deaths_by_day.plot(days,certs_ic_day, linewidth=2, label="immediate cause")
-        deaths_by_day.plot(days,certs_uc_day, linewidth=2,label="underlying condition")
+        deaths_by_day.plot(days,certs_ic_day, label="immediate cause")
+        deaths_by_day.plot(days,certs_uc_day, label="underlying condition")
         deaths_by_day.yaxis.set_major_locator(MaxNLocator(integer=True))
         deaths_by_day.legend()
 
@@ -527,7 +527,7 @@ class InstitutionEpidemicsReport(Report):
         context['epidemics_dx'] = epidemics_dx
 
         # New cases by day
-        context['cases_histogram'] = cls.plot_cases_histogram(start_date,
+        context['cases_timeseries'] = cls.plot_cases_timeseries(start_date,
                                                 end_date,
                                                 health_condition_id, hc)
 
@@ -540,7 +540,7 @@ class InstitutionEpidemicsReport(Report):
                                                 end_date,ses_count, hc)
 
         # Death certificates by day
-        context['deaths_histogram'] = cls.plot_deaths_histogram(start_date,
+        context['deaths_timeseries'] = cls.plot_deaths_timeseries(start_date,
                                                 end_date,
                                                 health_condition_id, hc)
 
