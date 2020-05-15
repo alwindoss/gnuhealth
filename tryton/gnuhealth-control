@@ -184,7 +184,7 @@ do_backup()
         bailout
     fi
 
-    touch $LOCKFILE
+    echo $$ > $LOCKFILE 
     
     # Backup start
 
