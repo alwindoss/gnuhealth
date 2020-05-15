@@ -1,3 +1,89 @@
+changeset:   3638:b331784b6f0b
+branch:      stable
+tag:         tip
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:38:33 2020 +0100
+summary:     Update gnuhealth-setup version to 3.6.3
+
+changeset:   3637:b0f6939eeee6
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:38:01 2020 +0100
+summary:     Update GNU Health control center version to 3.6.3
+
+changeset:   3636:7c27b6b2ec13
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:37:10 2020 +0100
+summary:     HMIS. Inlude current socioeconomic status from the SeS and family assessment
+
+changeset:   3635:513b92e93543
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:36:18 2020 +0100
+summary:     HMIS. Update ICD10 codes for COVID-19
+
+changeset:   3634:57974e1cd9cf
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:35:16 2020 +0100
+summary:     HMIS. LIMS. Automatically add the health condition in the patient disease list when lab confirmed
+
+changeset:   3633:2012c46e03f5
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:33:43 2020 +0100
+summary:     HMIS. health. Improve death certificate views
+
+changeset:   3632:0bdead6dd982
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:33:04 2020 +0100
+summary:     HMIS: health. Create method for conversion between UTC and institution local timezones
+
+changeset:   3631:01990dfbf7bc
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:31:22 2020 +0100
+summary:     Health . Update ethnic groups. Use Native American (Indigenous people of the Americas) to distinguish from Indian American (descents from India in the US)
+
+changeset:   3630:2a9162109914
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:29:15 2020 +0100
+summary:     HMIS. Include epidemiological surveillance in 3.6.4
+
+changeset:   3629:95c8538b7ed6
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:27:22 2020 +0100
+summary:     gnuhealth-setup. Include matplotlib in stable branch
+
+changeset:   3628:97b78b65dc6b
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:26:27 2020 +0100
+summary:     gnuhealth-control: Include the process id PID in the lock file
+
+changeset:   3627:3537cf94ac18
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:25:16 2020 +0100
+summary:     HMIS. Update headers in documentation file
+
+changeset:   3626:9a6391ee8e32
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:23:41 2020 +0100
+summary:     HMIS Documentation. Update sample and interfaces to be compatible with 3.6 series
+
+changeset:   3625:c314fde44932
+branch:      stable
+parent:      3579:b81032570e47
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri May 15 23:22:43 2020 +0100
+summary:     HMIS: Include Contact Tracing package in 3.6.4 version
+
 changeset:   3535:0beb4793b164
 branch:      stable
 tag:         tip
