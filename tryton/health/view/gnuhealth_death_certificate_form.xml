@@ -33,7 +33,7 @@
         <field name="cod"/>
     </group>
     <newline/>
-    <field name="underlying_conditions"/>
+    <field height="150" name="underlying_conditions"/>
     <newline/>   
     <group id="group_death_misc" string="Other" colspan="4" col="8">
         <label name="type_of_death"/>
