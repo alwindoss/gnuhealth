@@ -9,5 +9,13 @@
             <field name="extension">pdf</field>
         </record>
 
+        <record model="ir.action.report" id="report_epidemics_information">
+            <field name="name">Epidemiological Surveillance</field>
+            <field name="report_name">gnuhealth.epidemics.report</field>
+            <field name="report">health_reporting/report/epidemics_report.odt</field>
+            <field name="extension">pdf</field>
+        </record>
+
+
     </data>
 </tryton>
