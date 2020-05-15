@@ -196,8 +196,7 @@ class Lab(ModelSQL, ModelView):
 
     pathology = fields.Many2One(
         'gnuhealth.pathology', 'Pathology',
-        help='Pathology confirmed / associated to this lab test. '
-            'If set, a new health condition will be generated for the person')
+        help='Pathology confirmed / associated to this lab test.')
 
     analytes_summary = \
         fields.Function(fields.Text('Summary'),
