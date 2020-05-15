@@ -26,14 +26,14 @@ from proteus import config, Model
 import csv
 import sys
 
-dbname = 'sandbox32'
+dbname = 'health37dev'
 user = 'admin'
 password = 'gnusolidario'
 hostname = 'localhost'
-port = '8069'
+port = '8000'
 
 health_server = \
-    'http://'+user+':'+password+'@'+hostname+':'+port+'/'+dbname
+    'http://'+user+':'+password+'@'+hostname+':'+port+'/'+dbname+'/'
 
 def check_lab_test():
     LabTest = Model.get('gnuhealth.lab')
@@ -41,7 +41,7 @@ def check_lab_test():
 
     # Verify that each test exists at the DB before trying 
     # to upload the results
-    csv_file = csv.reader(open(sys.argv[1], 'rb'))
+    csv_file = csv.reader(open(sys.argv[1], 'r'))
     for line in csv_file:
         test_id = line[0]
         analyte = line[1]
@@ -52,11 +52,11 @@ def check_lab_test():
             ('gnuhealth_lab_id','=',test_id)])):
             exit("ERROR: Analyte %s not found on %s" %(analyte, test_id))
 
-    print "Basic check on test ID and analytes succeeded"
+    print ("Basic check on test ID and analytes succeeded")
             
 def input_results():
     LabTestLine = Model.get('gnuhealth.lab.test.critearea')
-    csv_file = csv.reader(open(sys.argv[1], 'rb'))
+    csv_file = csv.reader(open(sys.argv[1], 'r'))
     for line in csv_file:
         test_id = line[0]
         analyte = line[1]
@@ -70,12 +70,12 @@ def input_results():
 if (len(sys.argv) < 2):
     exit ("You need to specify a CSV file with the lab results")
     
-print "Connecting to GNU Health Server ..."
+print ("Connecting to GNU Health Server ...")
 conf = config.set_xmlrpc(health_server)
-print "Connected !"
+print ("Connected !")
 
-print "Checking integrity of the batch file ..."
+print ("Checking integrity of the batch file ...")
 check_lab_test()
-print "Updating lab results from batch file ..."
+print ("Updating lab results from batch file ...")
 input_results()
-print "Done !"
+print ("Done !")

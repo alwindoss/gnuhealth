@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 #  gnuhealth_product_uploader.py
 #  
 #  Copyright 2017 - 2020 Luis Falcon <falcon@gnuhealth.org>
@@ -22,11 +22,11 @@
 #  
 
 # Requirements
-# Proteus version : 4.2.x
-# pip2 install --user "proteus>=4.2,<4.3"
+# Proteus version : 5.0.x 
+# pip3 install --upgrade --user "proteus>=5.0,<5.1"
 
 # ##### Usage ########
-# python2 ./gnuhealth_product_uploader.py products_file_name.csv
+# python3 ./gnuhealth_product_uploader.py products_file_name.csv
 
 # Product CSV Format
 # Name,List Price,Cost Price,Type,UOM
@@ -39,7 +39,7 @@ import sys
 
 from decimal import Decimal
 
-dbname = 'health32'
+dbname = 'health37dev'
 user = 'admin'
 password = 'gnusolidario'
 hostname = 'localhost'
@@ -52,7 +52,7 @@ health_server = \
 def input_results():
     ProductInfo = Model.get('product.template')
     ProductUOM = Model.get('product.uom')
-    csv_file = csv.reader(open(sys.argv[1], 'rb'))
+    csv_file = csv.reader(open(sys.argv[1], "r"))
     for line in csv_file:
         name = line[0]
         list_price = line[1]
@@ -72,10 +72,10 @@ def input_results():
 if (len(sys.argv) < 2):
     exit ("You need to specify a CSV file with the product list")
     
-print "Connecting to GNU Health Server ..."
+print ("Connecting to GNU Health Server ...")
 conf = config.set_xmlrpc(health_server)
-print "Connected !"
+print ("Connected !")
 
-print "Updating products from batch file ..."
+print ("Updating products from batch file ...")
 input_results()
-print "Done !"
+print ("Done !")
