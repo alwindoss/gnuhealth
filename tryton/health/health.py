@@ -136,6 +136,29 @@ def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
     else:
         return None
 
+# Convert dates from UTC to local timezone and viceversa
+# Datetime values are stored in UTC, so we need conversion
+#
+# TODO: For 3.8, use this method for all the reports that
+#       use datetime fields.
+def convert_date_timezone(sdate, target):
+    Company = Pool().get('company.company')
+
+    institution_timezone = None
+    company_id = Transaction().context.get('company')
+    if company_id:
+        company = Company(company_id)
+        if company.timezone:
+            institution_timezone = pytz.timezone(company.timezone)
+
+    if (target=='utc'):
+        #Convert date to UTC timezone
+        res = institution_timezone.localize(sdate).astimezone(pytz.utc)
+    else:
+        #Convert from UTC to institution local timezone
+        res = pytz.utc.localize(sdate).astimezone(institution_timezone)
+    return res
+
 
 class DomiciliaryUnit(ModelSQL, ModelView):
     'Domiciliary Unit'
