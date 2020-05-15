@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <tryton>
-<data skiptest="1" noupdate="1">
+<data skiptest="1" noupdate="0">
 
 <!-- TODO: SOCIAL, VIOLENCE -->
 
@@ -9310,6 +9310,11 @@
         <field name="disease_group" ref="health.NOTIFIABLE"></field>
 </record>
 
+<record model="gnuhealth.disease_group.members" id="NOTIFIABLE-U072">
+    <field name="name" ref="U072"></field>
+        <field name="disease_group" ref="health.NOTIFIABLE"></field>
+</record>
+
 <!-- ALLERGIC DISEASES GROUP FROM ICD10 -->
 
 <record model="gnuhealth.disease_group.members" id="ALLERGIC-J30">
@@ -13098,6 +13103,11 @@
 <!-- COVID19 -->
 <record model="gnuhealth.disease_group.members" id="INFECTIOUS-U071">
     <field name="name" ref="U071"></field>
+        <field name="disease_group" ref="health.INFECTIOUS"></field>
+</record>
+
+<record model="gnuhealth.disease_group.members" id="INFECTIOUS-U072">
+    <field name="name" ref="U072"></field>
         <field name="disease_group" ref="health.INFECTIOUS"></field>
 </record>
 
@@ -19563,6 +19573,10 @@
         <field name="disease_group" ref="health.RESP"></field>
 </record>
 
+<record model="gnuhealth.disease_group.members" id="RESP-U072">
+    <field name="name" ref="U072"></field>
+        <field name="disease_group" ref="health.RESP"></field>
+</record>
 
 <!-- NEUROLOGIC DISEASES GROUP (Category VI) -->
 <record model="gnuhealth.disease_group.members" id="NEUROLOGIC-G00">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <tryton>
-<data skiptest="1" noupdate="1">
+<data skiptest="1" noupdate="0">
 <record model="gnuhealth.pathology" id="A00">
 	<field name="name">Cholera</field>
 	<field name="code">A00</field>
@@ -58772,8 +58772,14 @@
 	<field name="active">True</field>
 </record>
 <record model="gnuhealth.pathology" id="U071">
-	<field name="name">2019-nCoV acute respiratory disease COVID-19</field>
+	<field name="name">COVID-19, virus identified</field>
 	<field name="code">U07.1</field>
+	<field name="category" ref="icdcat22"></field>
+	<field name="active">True</field>
+</record>
+<record model="gnuhealth.pathology" id="U072">
+	<field name="name">COVID-19, virus not identified</field>
+	<field name="code">U07.2</field>
 	<field name="category" ref="icdcat22"></field>
 	<field name="active">True</field>
 </record>
