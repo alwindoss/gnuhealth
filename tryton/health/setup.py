@@ -34,7 +34,7 @@ for key in ('depends', 'extras_depend', 'xml'):
         info[key] = info[key].strip().splitlines()
 major_version, minor_version = 5, 0
 
-requires = ['pytz','numpy']
+requires = ['pytz','numpy','matplotlib']
 
 for dep in info.get('depends', []):
     if (dep == 'health'):
