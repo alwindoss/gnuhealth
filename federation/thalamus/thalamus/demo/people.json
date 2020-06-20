@@ -1,0 +1,44 @@
+[
+{
+"id": "ITAPYT999HON",
+"lastname": "Cordara",
+"name": "Cameron",
+"gender": "f",
+"dob": "1984-10-05",
+"marital_status":"married",
+"ethnicity":"latino",
+"education":"tertiary",
+"profession":"teacher",
+"password": "$2b$12$Y9rX7PoTHRXhTO1H78Tan.8mVmyayGAUIveiYxu2Qeo0ZDRvJQ8/2",
+"roles":["end_user","health_professional"],
+"active": true
+},
+{
+"id": "ESPGNU777ORG",
+"lastname": "Betz",
+"name": "Ana",
+"gender": "f",
+"dob": "1985-10-04",
+"marital_status":"married",
+"ethnicity":"latino",
+"education":"tertiary",
+"profession":"teacher",
+"password": "$2b$12$cjrKVGYEKUwCmVDCtEnwcegcrmECTmeBz526AAD/ZqMGPWFpHJ4FW",
+"roles":["end_user"],
+"active": true
+},
+{
+"id": "ARGBUE111FAV",
+"lastname": "Root",
+"name": "Admin",
+"gender": "f",
+"dob": "2008-10-12",
+"marital_status":"married",
+"ethnicity":"latino",
+"education":"tertiary",
+"profession":"System Administrator",
+"password": "$2b$12$McKDNgArdHKbUssD1fj64ecpdbJGMIt29ns7DGvqzqIT26W0dtJzi",
+"roles":["root"],
+"active": true
+}
+]
