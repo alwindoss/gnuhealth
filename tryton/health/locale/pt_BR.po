@@ -1,13 +1,15 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-12-28 00:01+0000\n"
-"Last-Translator: rvnovaes <rvnovaes@gmail.com>\n"
+"PO-Revision-Date: 2020-06-22 18:46+0000\n"
+"Last-Translator: Humberto Freitas <humberto.freitas310@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health/pt_BR/>\n"
 "Language: pt_BR\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 "X-POOTLE-MTIME: 1451260884.0\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
@@ -56,11 +58,11 @@ msgstr "O código da família deve ser único!"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The LICENSE ID must be unique"
-msgstr ""
+msgstr "O ID da LICENÇA deve ser único"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
-msgstr ""
+msgstr "O professional de saúde deve ser único"
 
 msgctxt "error:gnuhealth.hospital.bed:"
 msgid "The Bed must be unique per Health Center"
@@ -68,7 +70,7 @@ msgstr "O leito deve ser único por Centro de Saúde"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building code must be unique per Health Center"
-msgstr ""
+msgstr "O código do Edifício deve ser único por Centro de Saúde"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building name must be unique per Health Center"
@@ -172,7 +174,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.patient.ecg:"
 msgid "No health professional associated to this user"
-msgstr ""
+msgstr "Nenhum professional de saúde associado a este usuário"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid ""
