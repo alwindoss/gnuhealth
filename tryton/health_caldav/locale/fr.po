@@ -1,6 +1,15 @@
 # 
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-06-25 08:10+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
+"health_caldav/fr/>\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "error:calendar.calendar:"
 msgid "A user can have only one calendar."
@@ -848,7 +857,7 @@ msgstr "Événement"
 
 msgctxt "model:ir.action,name:act_event_form3"
 msgid "Events"
-msgstr "Événements"
+msgstr "Événement"
 
 msgctxt "model:ir.ui.menu,name:menu_calendar"
 msgid "Calendar"
@@ -860,11 +869,11 @@ msgstr "Calendriers"
 
 msgctxt "model:ir.ui.menu,name:menu_event_form"
 msgid "Events"
-msgstr "Évenement"
+msgstr "Événement"
 
 msgctxt "model:res.group,name:group_calendar_admin"
 msgid "Calendar Administration"
-msgstr "Administration des calendriers"
+msgstr "Administration du Calendrier"
 
 msgctxt "selection:calendar.event,classification:"
 msgid "Confidential"
@@ -1048,11 +1057,11 @@ msgstr "Mercredi"
 
 msgctxt "view:calendar.calendar:"
 msgid "Access Permissions"
-msgstr "Permissions d'accès"
+msgstr "Droits d'accès"
 
 msgctxt "view:calendar.calendar:"
 msgid "General"
-msgstr "Général"
+msgstr "General"
 
 msgctxt "view:calendar.event.exdate:"
 msgid "Time"
@@ -1072,15 +1081,15 @@ msgstr "Catégories"
 
 msgctxt "view:calendar.event:"
 msgid "End Time"
-msgstr "Heure de fin"
+msgstr "Heure de Fin"
 
 msgctxt "view:calendar.event:"
 msgid "General"
-msgstr "Général"
+msgstr "General"
 
 msgctxt "view:calendar.event:"
 msgid "Occurences"
-msgstr "Occurrences"
+msgstr "Occurences"
 
 msgctxt "view:calendar.event:"
 msgid "Start Time"
