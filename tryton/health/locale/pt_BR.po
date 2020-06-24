@@ -1,8 +1,8 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-22 18:46+0000\n"
-"Last-Translator: Humberto Freitas <humberto.freitas310@gmail.com>\n"
+"PO-Revision-Date: 2020-06-25 08:09+0000\n"
+"Last-Translator: Wilker Santana da Silva <wilker@tutamail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -257,9 +257,10 @@ msgctxt "field:gnuhealth.appointment,appointment_type:"
 msgid "Type"
 msgstr "Tipo"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,checked_in_date:"
 msgid "Checked-in Time"
-msgstr ""
+msgstr "Hora de Entrada"
 
 msgctxt "field:gnuhealth.appointment,comments:"
 msgid "Comments"
@@ -351,11 +352,11 @@ msgstr "Criado por"
 
 msgctxt "field:gnuhealth.appointment.report,diagnosis:"
 msgid "Main Codition"
-msgstr ""
+msgstr "Condição Principal"
 
 msgctxt "field:gnuhealth.appointment.report,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Gênero"
 
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
@@ -716,7 +717,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.disease_group.members,name:"
 msgid "Condition"
-msgstr ""
+msgstr "Condição"
 
 msgctxt "field:gnuhealth.disease_group.members,rec_name:"
 msgid "Name"
@@ -1348,7 +1349,7 @@ msgstr "Número do Andar"
 
 msgctxt "field:gnuhealth.hospital.ward,gender:"
 msgid "Gender"
-msgstr "Sexo"
+msgstr "Gênero"
 
 msgctxt "field:gnuhealth.hospital.ward,guest_sofa:"
 msgid "Guest sofa-bed"
@@ -1872,7 +1873,7 @@ msgstr "Instruções de Dosagem"
 
 msgctxt "field:gnuhealth.medicament,form:"
 msgid "Form"
-msgstr ""
+msgstr "Formulário"
 
 msgctxt "field:gnuhealth.medicament,id:"
 msgid "ID"
@@ -1924,15 +1925,16 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.medicament,route:"
 msgid "Administration Route"
-msgstr ""
+msgstr "Via de Administração"
 
 msgctxt "field:gnuhealth.medicament,storage:"
 msgid "Storage Conditions"
 msgstr "Condições de Armazenamento"
 
+#, fuzzy
 msgctxt "field:gnuhealth.medicament,strength:"
 msgid "Strength"
-msgstr ""
+msgstr "Força"
 
 msgctxt "field:gnuhealth.medicament,therapeutic_action:"
 msgid "Therapeutic effect"
@@ -2272,7 +2274,7 @@ msgstr "Consultas"
 
 msgctxt "field:gnuhealth.patient,biological_sex:"
 msgid "Biological Sex"
-msgstr ""
+msgstr "Sexo Biológico"
 
 msgctxt "field:gnuhealth.patient,blood_type:"
 msgid "Blood Type"
@@ -2300,7 +2302,7 @@ msgstr "Informação textual livre não incluída no resumo automático"
 
 msgctxt "field:gnuhealth.patient,critical_summary:"
 msgid "Important health conditions related to this patient"
-msgstr ""
+msgstr "Condições de saúde importantes relacionados a este paciente"
 
 msgctxt "field:gnuhealth.patient,current_address:"
 msgid "Temp. Addr"
@@ -2316,7 +2318,7 @@ msgstr "Falecido"
 
 msgctxt "field:gnuhealth.patient,diseases:"
 msgid "Conditions"
-msgstr ""
+msgstr "Condições"
 
 msgctxt "field:gnuhealth.patient,dob:"
 msgid "DoB"
@@ -2332,7 +2334,7 @@ msgstr "Família"
 
 msgctxt "field:gnuhealth.patient,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Gênero"
 
 msgctxt "field:gnuhealth.patient,general_info:"
 msgid "General Information"
@@ -2464,7 +2466,7 @@ msgstr "Paciente"
 
 msgctxt "field:gnuhealth.patient.disease,pathology:"
 msgid "Condition"
-msgstr ""
+msgstr "Condição"
 
 msgctxt "field:gnuhealth.patient.disease,pcs_code:"
 msgid "Code"
@@ -2508,19 +2510,20 @@ msgstr "Editado por"
 
 msgctxt "field:gnuhealth.patient.ecg,axis:"
 msgid "Axis"
-msgstr ""
+msgstr "Eixo"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.ecg,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Criar Data"
 
 msgctxt "field:gnuhealth.patient.ecg,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Criar Usuário"
 
 msgctxt "field:gnuhealth.patient.ecg,ecg_date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.patient.ecg,ecg_strip:"
 msgid "ECG Strip"
