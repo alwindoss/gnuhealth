@@ -24,11 +24,11 @@
 #
 ##############################################################################
 
-VERSION="3.6.4"
+VERSION="3.6.5"
 
 TRYTON_URL="https://downloads-cdn.tryton.org"
 GNUHEALTH_URL="https://ftp.gnu.org/gnu/health"
-TRANSLATE_URL="http://translate.gnusolidario.org"
+TRANSLATE_URL="http://hosted.weblate.org"
 
 TRYTON_MODULES="account account_invoice account_product company country \
     currency party product stock stock_lot purchase account_invoice_stock \
@@ -519,7 +519,7 @@ getlang() {
 
     cd ${GNUHEALTH_DIR}/tryton/server/modules || bailout
     message "INFO" "Retrieving language pack file for ${lang_to_install}" 
-    wget ${TRANSLATE_URL}/export/?path=/${lang_to_install}/GNUHEALTH/ -O ${lang_download_dir}/${lang_file} || bailout
+    wget ${TRANSLATE_URL}/download-language/${lang_to_install}/gnu-health/?format=zip -O ${lang_download_dir}/${lang_file} || bailout
     message "INFO" "Installing / Updating language files for ${lang_to_install} ..."
 
     ${BSDTAR} --strip-components 3 -xzf ${lang_download_dir}/${lang_file} || bailout
