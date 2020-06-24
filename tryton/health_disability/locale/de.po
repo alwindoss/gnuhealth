@@ -1,98 +1,107 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-06-24 17:47+0000\n"
+"Last-Translator: Christoph <christoph@jurko.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
+"health_disability/de/>\n"
+"Language: de\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "error:gnuhealth.activity_and_participation.category:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "Der Code muss einzigartig sein!"
 
 msgctxt "error:gnuhealth.activity_and_participation:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "Der Code muss einzigartig sein!"
 
 msgctxt "error:gnuhealth.body_function.category:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "Der Code muss einzigartig sein!"
 
 msgctxt "error:gnuhealth.body_function:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "Der Code muss einzigartig sein!"
 
 msgctxt "error:gnuhealth.body_structure.category:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "Der Code muss einzigartig sein!"
 
 msgctxt "error:gnuhealth.body_structure:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "Der Code muss einzigartig sein!"
 
 msgctxt "error:gnuhealth.environmental_factor.category:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "Der Code muss einzigartig sein!"
 
 msgctxt "error:gnuhealth.environmental_factor:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "Der Code muss einzigartig sein!"
 
 msgctxt "field:gnuhealth.activity.assessment,activity_and_participation:"
 msgid "Activity"
-msgstr ""
+msgstr "Aktivität"
 
 msgctxt "field:gnuhealth.activity.assessment,assessment:"
 msgid "Assessment"
-msgstr ""
+msgstr "Bewertung"
 
 msgctxt "field:gnuhealth.activity.assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.activity.assessment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.activity.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.activity.assessment,qualifier1:"
 msgid "Performance"
-msgstr ""
+msgstr "Leistung"
 
 msgctxt "field:gnuhealth.activity.assessment,qualifier2:"
 msgid "Capacity"
-msgstr ""
+msgstr "Kapazität"
 
 msgctxt "field:gnuhealth.activity.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.activity.assessment,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.activity.assessment,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.activity_and_participation,category:"
 msgid "Category"
-msgstr ""
+msgstr "Kategorie"
 
 msgctxt "field:gnuhealth.activity_and_participation,code:"
 msgid "code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.activity_and_participation,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.activity_and_participation,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.activity_and_participation,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.activity_and_participation,name:"
 msgid "A & P"
@@ -100,215 +109,215 @@ msgstr ""
 
 msgctxt "field:gnuhealth.activity_and_participation,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.activity_and_participation,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.activity_and_participation,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,code:"
 msgid "code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.body_function,category:"
 msgid "Category"
-msgstr ""
+msgstr "Kategorie"
 
 msgctxt "field:gnuhealth.body_function,code:"
 msgid "code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.body_function,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.body_function,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.body_function,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_function,name:"
 msgid "Function"
-msgstr ""
+msgstr "Funktion"
 
 msgctxt "field:gnuhealth.body_function,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.body_function,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.body_function,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.body_function.assessment,assessment:"
 msgid "Assessment"
-msgstr ""
+msgstr "Bewertung"
 
 msgctxt "field:gnuhealth.body_function.assessment,body_function:"
 msgid "Body Function"
-msgstr ""
+msgstr "Körperfunktion"
 
 msgctxt "field:gnuhealth.body_function.assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.body_function.assessment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.body_function.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_function.assessment,qualifier:"
 msgid "Qualifier"
-msgstr ""
+msgstr "Einschränkung"
 
 msgctxt "field:gnuhealth.body_function.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.body_function.assessment,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.body_function.assessment,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.body_function.category,code:"
 msgid "code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.body_function.category,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.body_function.category,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.body_function.category,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_function.category,name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.body_function.category,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.body_function.category,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.body_function.category,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.body_structure,category:"
 msgid "Category"
-msgstr ""
+msgstr "Kategorie"
 
 msgctxt "field:gnuhealth.body_structure,code:"
 msgid "code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.body_structure,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.body_structure,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.body_structure,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_structure,name:"
 msgid "Structure"
-msgstr ""
+msgstr "Struktur"
 
 msgctxt "field:gnuhealth.body_structure,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.body_structure,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.body_structure,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.body_structure.assessment,assessment:"
 msgid "Assessment"
-msgstr ""
+msgstr "Bewertung"
 
 msgctxt "field:gnuhealth.body_structure.assessment,body_side:"
 msgid "Side"
-msgstr ""
+msgstr "Seite"
 
 msgctxt "field:gnuhealth.body_structure.assessment,body_structure:"
 msgid "Body Structure"
-msgstr ""
+msgstr "Körperstruktur"
 
 msgctxt "field:gnuhealth.body_structure.assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.body_structure.assessment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.body_structure.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_structure.assessment,qualifier1:"
 msgid "Extent"
-msgstr ""
+msgstr "Umfang"
 
 msgctxt "field:gnuhealth.body_structure.assessment,qualifier2:"
 msgid "Nature"
@@ -316,175 +325,175 @@ msgstr ""
 
 msgctxt "field:gnuhealth.body_structure.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.body_structure.assessment,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.body_structure.assessment,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.body_structure.category,code:"
 msgid "code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.body_structure.category,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.body_structure.category,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.body_structure.category,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_structure.category,name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.body_structure.category,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.body_structure.category,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.body_structure.category,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.environment.assessment,assessment:"
 msgid "Assessment"
-msgstr ""
+msgstr "Bewertung"
 
 msgctxt "field:gnuhealth.environment.assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.environment.assessment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.environment.assessment,environmental_factor:"
 msgid "Environment"
-msgstr ""
+msgstr "Umgebung"
 
 msgctxt "field:gnuhealth.environment.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.environment.assessment,qualifier:"
 msgid "Barriers"
-msgstr ""
+msgstr "Barrieren"
 
 msgctxt "field:gnuhealth.environment.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.environment.assessment,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.environment.assessment,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.environmental_factor,category:"
 msgid "Category"
-msgstr ""
+msgstr "Kategorie"
 
 msgctxt "field:gnuhealth.environmental_factor,code:"
 msgid "code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.environmental_factor,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.environmental_factor,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.environmental_factor,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.environmental_factor,name:"
 msgid "Environment"
-msgstr ""
+msgstr "Umgebung"
 
 msgctxt "field:gnuhealth.environmental_factor,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.environmental_factor,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.environmental_factor,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.environmental_factor.category,code:"
 msgid "code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.environmental_factor.category,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.environmental_factor.category,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.environmental_factor.category,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.environmental_factor.category,name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.environmental_factor.category,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.environmental_factor.category,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.environmental_factor.category,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.patient,amputations:"
 msgid "Amputations"
-msgstr ""
+msgstr "Amputationen"
 
 msgctxt "field:gnuhealth.patient,amputee:"
 msgid "Amputee"
-msgstr ""
+msgstr "Amputierter"
 
 msgctxt "field:gnuhealth.patient,amputee_since:"
 msgid "Since"
-msgstr ""
+msgstr "Seit"
 
 msgctxt "field:gnuhealth.patient,disability:"
 msgid "Disabilities / Barriers"
-msgstr ""
+msgstr "Behinderungen / Barrieren"
 
 msgctxt "field:gnuhealth.patient,disability_assesments:"
 msgid "Assessment"
-msgstr ""
+msgstr "Bewertung"
 
 msgctxt "field:gnuhealth.patient,protheses:"
 msgid "Protheses"
-msgstr ""
+msgstr "Prothesen"
 
 msgctxt "field:gnuhealth.patient,uxo:"
 msgid "UXO"
@@ -492,31 +501,31 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.amputation,amputation_date:"
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 msgctxt "field:gnuhealth.patient.amputation,amputation_level:"
 msgid "Level"
-msgstr ""
+msgstr "Grad"
 
 msgctxt "field:gnuhealth.patient.amputation,body_structure:"
 msgid "Structure"
-msgstr ""
+msgstr "Struktur"
 
 msgctxt "field:gnuhealth.patient.amputation,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Anmerkungen"
 
 msgctxt "field:gnuhealth.patient.amputation,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.patient.amputation,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.patient.amputation,etiology:"
 msgid "Etiology"
-msgstr ""
+msgstr "Ätiologie"
 
 msgctxt "field:gnuhealth.patient.amputation,healthprof:"
 msgid "Health Prof"
@@ -524,11 +533,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.amputation,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.amputation,limb:"
 msgid "Limb"
-msgstr ""
+msgstr "Glied"
 
 msgctxt "field:gnuhealth.patient.amputation,patient:"
 msgid "Patient"
@@ -536,24 +545,24 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.amputation,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.patient.amputation,side:"
 msgid "Side"
-msgstr ""
+msgstr "Seite"
 
 msgctxt "field:gnuhealth.patient.amputation,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.patient.amputation,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt ""
 "field:gnuhealth.patient.disability_assessment,activity_and_participation:"
 msgid "Activities and Participation Impairments"
-msgstr ""
+msgstr "Aktivitäten und Teilhabe Beeinträchtigungen"
 
 msgctxt ""
 "field:gnuhealth.patient.disability_assessment,activity_participation:"
@@ -562,51 +571,51 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disability_assessment,amputee:"
 msgid "Amputee"
-msgstr ""
+msgstr "Amputierter"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,amputee_since:"
 msgid "Since"
-msgstr ""
+msgstr "Seit"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,assessment:"
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,assessment_date:"
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,body_functions:"
 msgid "Body Functions Impairments"
-msgstr ""
+msgstr "Beeinträchtigungen der Körperfunktionen"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,body_structures:"
 msgid "Body Structures Impairments"
-msgstr ""
+msgstr "Beeinträchtigungen der Körperstrukturen"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,cognitive_function:"
 msgid "Cognitive"
-msgstr ""
+msgstr "Kognitiv"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,crutches:"
 msgid "Crutches"
-msgstr ""
+msgstr "Krücken"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,environmental_factor:"
 msgid "Environmental Factors Barriers"
-msgstr ""
+msgstr "Umweltfaktoren Barrieren"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,hand_function:"
 msgid "Hand"
-msgstr ""
+msgstr "Hand"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,healthprof:"
 msgid "Health Prof"
@@ -614,19 +623,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disability_assessment,hearing_function:"
 msgid "Hearing"
-msgstr ""
+msgstr "Hören"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,locomotor_function:"
 msgid "Mobility"
-msgstr ""
+msgstr "Mobilität"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Notizen"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,patient:"
 msgid "Patient"
@@ -634,11 +643,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disability_assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,speech_function:"
 msgid "Speech"
-msgstr ""
+msgstr "Rede"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,uxo:"
 msgid "UXO"
@@ -646,31 +655,31 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disability_assessment,visual_function:"
 msgid "Visual"
-msgstr ""
+msgstr "Visuell"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,wheelchair:"
 msgid "Wheelchair"
-msgstr ""
+msgstr "Rollstuhl"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:gnuhealth.patient.prothesis,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Anmerkungen"
 
 msgctxt "field:gnuhealth.patient.prothesis,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Erstellungsdatum"
 
 msgctxt "field:gnuhealth.patient.prothesis,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.patient.prothesis,healthprof:"
 msgid "Health Prof"
@@ -678,55 +687,55 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.prothesis,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.prothesis,issue_date:"
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 msgctxt "field:gnuhealth.patient.prothesis,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Patient"
 
 msgctxt "field:gnuhealth.patient.prothesis,prothesis:"
 msgid "Prothesis"
-msgstr ""
+msgstr "Prothesen"
 
 msgctxt "field:gnuhealth.patient.prothesis,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.patient.prothesis,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.patient.prothesis,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Letzte Änderung durch"
 
 msgctxt "field:product.product,is_prothesis:"
 msgid "Prothesis"
-msgstr ""
+msgstr "Prothesen"
 
 msgctxt "help:gnuhealth.activity.assessment,qualifier1:"
 msgid "Extent of the difficulty"
-msgstr ""
+msgstr "Ausmaß der Schwierigkeiten"
 
 msgctxt "help:gnuhealth.activity.assessment,qualifier2:"
 msgid "Extent of the dificulty"
-msgstr ""
+msgstr "Ausmaß der Schwierigkeiten"
 
 msgctxt "help:gnuhealth.body_structure.assessment,body_side:"
 msgid "Side of the body, if applies"
-msgstr ""
+msgstr "Körperseite, falls zutreffend"
 
 msgctxt "help:gnuhealth.body_structure.assessment,qualifier1:"
 msgid "Extent of the impairment"
-msgstr ""
+msgstr "Ausmaß der Beeinträchtigung"
 
 msgctxt "help:gnuhealth.body_structure.assessment,qualifier2:"
 msgid "Nature of the change"
-msgstr ""
+msgstr "Art der Änderung"
 
 msgctxt "help:gnuhealth.environment.assessment,qualifier:"
 msgid "Extent of the barriers or facilitators"
@@ -737,10 +746,12 @@ msgid ""
 "Person has had one or more limbs removed by amputation. Includes congenital "
 "conditions"
 msgstr ""
+"Person hat eine oder mehrere Gliedmaßen durch Amputation verloren. Inklusive "
+"angeborener Erkrankungen"
 
 msgctxt "help:gnuhealth.patient,amputee_since:"
 msgid "Date of amputee status"
-msgstr ""
+msgstr "Datum des Amputiertenstatus"
 
 msgctxt "help:gnuhealth.patient,disability:"
 msgid ""
@@ -755,31 +766,31 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.amputation,healthprof:"
 msgid "Authorized health professional"
-msgstr ""
+msgstr "Autorisierte medizinische Fachkraft"
 
 msgctxt "help:gnuhealth.patient.disability_assessment,healthprof:"
 msgid "Authorized health professional"
-msgstr ""
+msgstr "Autorisierte medizinische Fachkraft"
 
 msgctxt "help:gnuhealth.patient.disability_assessment,notes:"
 msgid "Extra Information"
-msgstr ""
+msgstr "Zusatzinformation"
 
 msgctxt "help:gnuhealth.patient.prothesis,healthprof:"
 msgid "Prosthetist or authorized health professional"
-msgstr ""
+msgstr "Orthopädie-Techniker oder autorisierten medizinische Fachkraft"
 
 msgctxt "help:gnuhealth.patient.prothesis,prothesis:"
 msgid "Prosthetic device"
-msgstr ""
+msgstr "Prothetisches Gerät"
 
 msgctxt "help:product.product,is_prothesis:"
 msgid "Check if the product is a prothesis"
-msgstr ""
+msgstr "Prüfen Sie, ob es sich bei dem Produkt um eine Prothese handelt"
 
 msgctxt "model:gnuhealth.activity.assessment,name:"
 msgid "Activity and Participation Assessment"
-msgstr ""
+msgstr "Aktivitäts- und Teilnahmebewertung"
 
 msgctxt "model:gnuhealth.activity_and_participation,name:"
 msgid "Activity limitations and participation restrictions"
