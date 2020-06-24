@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-22 18:46+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"PO-Revision-Date: 2020-06-25 08:10+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_crypto/fr/>\n"
 "Language: fr\n"
@@ -29,11 +29,11 @@ msgstr "Résumé"
 
 msgctxt "field:gnuhealth.birth_certificate,serializer:"
 msgid "Doc String"
-msgstr ""
+msgstr "Doc String"
 
 msgctxt "field:gnuhealth.birth_certificate,serializer_current:"
 msgid "Current Doc"
-msgstr ""
+msgstr "Document actuel"
 
 msgctxt "field:gnuhealth.death_certificate,digest_current:"
 msgid "Current Hash"
@@ -53,11 +53,11 @@ msgstr "Résumé"
 
 msgctxt "field:gnuhealth.death_certificate,serializer:"
 msgid "Doc String"
-msgstr ""
+msgstr "Doc String"
 
 msgctxt "field:gnuhealth.death_certificate,serializer_current:"
 msgid "Current Doc"
-msgstr ""
+msgstr "Document courant"
 
 msgctxt "field:gnuhealth.patient.evaluation,digest_current:"
 msgid "Current Hash"
@@ -77,11 +77,11 @@ msgstr "Résumé"
 
 msgctxt "field:gnuhealth.patient.evaluation,serializer:"
 msgid "Doc String"
-msgstr ""
+msgstr "Doc String"
 
 msgctxt "field:gnuhealth.patient.evaluation,serializer_current:"
 msgid "Current Doc"
-msgstr ""
+msgstr "Document actuel"
 
 msgctxt "field:gnuhealth.prescription.order,digest_current:"
 msgid "Current Hash"
@@ -101,11 +101,11 @@ msgstr "Résumé"
 
 msgctxt "field:gnuhealth.prescription.order,serializer:"
 msgid "Doc String"
-msgstr ""
+msgstr "Doc String"
 
 msgctxt "field:gnuhealth.prescription.order,serializer_current:"
 msgid "Current Doc"
-msgstr ""
+msgstr "Document actuel"
 
 msgctxt "help:gnuhealth.birth_certificate,digest_status:"
 msgid ""
