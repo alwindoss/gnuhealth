@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-26 10:00+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"PO-Revision-Date: 2020-06-26 14:59+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/health/"
 "fr/>\n"
 "Language: fr\n"
@@ -526,9 +526,10 @@ msgctxt "field:gnuhealth.death_certificate,dod:"
 msgid "Date"
 msgstr "Date"
 
+#, fuzzy
 msgctxt "field:gnuhealth.death_certificate,du:"
 msgid "DU"
-msgstr "LH"
+msgstr "UD"
 
 msgctxt "field:gnuhealth.death_certificate,id:"
 msgid "ID"
