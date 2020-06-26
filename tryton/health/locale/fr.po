@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-26 14:59+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"PO-Revision-Date: 2020-06-26 15:56+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/health/"
 "fr/>\n"
 "Language: fr\n"
@@ -2383,7 +2383,6 @@ msgctxt "field:gnuhealth.patient,rec_name:"
 msgid "Name"
 msgstr "Nom"
 
-#, fuzzy
 msgctxt "field:gnuhealth.patient,rh:"
 msgid "Rh"
 msgstr "Rh"
@@ -3466,7 +3465,7 @@ msgstr "Identifiant"
 
 msgctxt "field:gnuhealth.sequences,patient_evaluation_sequence:"
 msgid "Patient Evaluation Sequence"
-msgstr "Séquence de visite médicale du patient"
+msgstr "Séquence de l'évaluation du patient"
 
 msgctxt "field:gnuhealth.sequences,patient_sequence:"
 msgid "Patient Sequence"
@@ -3704,9 +3703,10 @@ msgctxt "field:party.party,dod:"
 msgid "Date of Death"
 msgstr "Date du décès"
 
+#, fuzzy
 msgctxt "field:party.party,du:"
 msgid "DU"
-msgstr "Lieu d'habitation"
+msgstr "UD"
 
 msgctxt "field:party.party,ethnic_group:"
 msgid "Ethnicity"
@@ -3854,7 +3854,7 @@ msgstr "Date et heure du décès"
 
 msgctxt "help:gnuhealth.death_certificate,du:"
 msgid "Domiciliary Unit"
-msgstr "Unité de domiciliation"
+msgstr "Unité de domicile"
 
 msgctxt "help:gnuhealth.death_certificate,signed_by:"
 msgid "Health Professional that signed the death certificate"
@@ -4618,7 +4618,7 @@ msgstr "D'autres conditions secondaires sur le patient"
 
 msgctxt "help:gnuhealth.patient.evaluation,signed_by:"
 msgid "Health Professional that finnished the patient evaluation"
-msgstr "Professionnel de santé qui a terminé l'évaluation du patient"
+msgstr "Professionnel de la santé qui a terminé l'évaluation du patient"
 
 msgctxt "help:gnuhealth.patient.evaluation,signs_and_symptoms:"
 msgid "Enter the Signs and Symptoms for the patient in this evaluation."
@@ -8620,7 +8620,7 @@ msgstr "ECG Patient"
 
 msgctxt "model:gnuhealth.patient.evaluation,name:"
 msgid "Patient Evaluation"
-msgstr "Consultation du patient"
+msgstr "Évaluation du patient"
 
 msgctxt "model:gnuhealth.patient.medication,name:"
 msgid "Patient Medication"
@@ -11722,7 +11722,7 @@ msgstr "Procédure"
 
 msgctxt "view:gnuhealth.secondary_condition:"
 msgid "Patient Evaluation secondary condition"
-msgstr "Examen du patient - affection secondaire"
+msgstr "Évaluation du patient - affection secondaire"
 
 msgctxt "view:gnuhealth.secondary_condition:"
 msgid "Secondary Condition"
