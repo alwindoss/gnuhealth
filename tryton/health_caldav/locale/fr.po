@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-06-28 02:42+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_caldav/fr/>\n"
 "Language: fr\n"
@@ -459,7 +459,7 @@ msgstr "Créé par"
 
 msgctxt "field:calendar.event.attendee,email:"
 msgid "Email"
-msgstr "Email"
+msgstr "Courriel"
 
 msgctxt "field:calendar.event.attendee,event:"
 msgid "Event"
@@ -767,7 +767,7 @@ msgstr "Calendriers"
 
 msgctxt "help:calendar.calendar,owner:"
 msgid "The user must have an email"
-msgstr "L'utilisateur doit avoir une adresse E-mail"
+msgstr "L'utilisateur doit avoir une adresse courriel"
 
 msgctxt "help:calendar.event,uuid:"
 msgid "Universally Unique Identifier"
