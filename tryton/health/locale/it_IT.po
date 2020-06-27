@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-24 14:09+0000\n"
+"PO-Revision-Date: 2020-06-28 02:41+0000\n"
 "Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health/it/>\n"
@@ -192,7 +192,7 @@ msgstr "Nessun professionista sanitario associato a questo utente"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "The evaluation code must be unique !"
-msgstr ""
+msgstr "Il codice di valutazione deve essere unico!"
 
 msgctxt "error:gnuhealth.patient.medication:"
 msgid ""
@@ -234,7 +234,7 @@ msgstr "Nessun professionista sanitario associato a questo utente"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "The Vaccine next dose is BEFORE the first one !"
-msgstr "La prossima dose di vaccino è PRIMA della prima dose !"
+msgstr "La prossima dose di vaccino è PRIMA della prima dose!"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "This vaccine dose has been given already to the patient"
