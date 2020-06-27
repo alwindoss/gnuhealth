@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:10+0000\n"
-"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"PO-Revision-Date: 2020-06-28 02:42+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_archives/fr/>\n"
 "Language: fr\n"
@@ -41,7 +41,7 @@ msgstr "État"
 
 msgctxt "field:gnuhealth.paper_archive,id:"
 msgid "ID"
-msgstr "ID"
+msgstr "Identifiant"
 
 msgctxt "field:gnuhealth.paper_archive,identification_code:"
 msgid "Code"
@@ -49,7 +49,7 @@ msgstr "Code"
 
 msgctxt "field:gnuhealth.paper_archive,legacy:"
 msgid "Legacy Code"
-msgstr "Ancien Code"
+msgstr "Ancien code"
 
 msgctxt "field:gnuhealth.paper_archive,location:"
 msgid "Unit"
@@ -73,33 +73,30 @@ msgstr "Demandé par"
 
 msgctxt "field:gnuhealth.paper_archive,return_date:"
 msgid "Returned Date"
-msgstr "Date de Retour"
+msgstr "Date de retour"
 
 msgctxt "field:gnuhealth.paper_archive,write_date:"
 msgid "Write Date"
-msgstr "Date de Mise à Jour"
+msgstr "Date de mise à jour"
 
 msgctxt "field:gnuhealth.paper_archive,write_uid:"
 msgid "Write User"
-msgstr "Mise à Jour par"
+msgstr "Modifié par"
 
 msgctxt "help:gnuhealth.paper_archive,current_location:"
 msgid "Location / Unit where this clinical history document should reside."
-msgstr ""
-"Emplacement / unité où ce document d'historique clinique devrait résider."
+msgstr "Emplacement/Unité où ce document d'historique clinique devrait résider."
 
 msgctxt "help:gnuhealth.paper_archive,legacy:"
 msgid ""
 "If existing, please enter the old / legacy code associated to this Clinical "
 "History"
 msgstr ""
-"S'il existe, veuillez saisir le code ancien / hérité associé à cet "
-"historique clinique"
+"S'il existe, veuillez saisir l'ancien code associé à cet historique clinique"
 
 msgctxt "help:gnuhealth.paper_archive,location:"
 msgid "Location / Unit where this clinical history document should reside."
-msgstr ""
-"Emplacement / unité où ce document d'historique clinique devrait résider."
+msgstr "Emplacement/Unité où ce document d'historique clinique devrait résider."
 
 msgctxt "help:gnuhealth.paper_archive,patient:"
 msgid "Patient associated to this newborn baby"
@@ -107,15 +104,15 @@ msgstr "Patient associé à ce nouveau-né"
 
 msgctxt "help:gnuhealth.paper_archive,requested_by:"
 msgid "Person who last requested the document"
-msgstr "Personne ayant demandé le document en dernier"
+msgstr "Personne ayant demandé le document pour la dernière fois"
 
 msgctxt "model:gnuhealth.paper_archive,name:"
 msgid "Location of PAPER Patient Clinical History"
-msgstr "Emplacement de la version PAPIER de l'historique Clinique du Patient"
+msgstr "Emplacement de la version PAPIER de l'historique clinique du patient"
 
 msgctxt "model:ir.action,name:gnuhealth_action_paper_archive"
 msgid "Medical Archives"
-msgstr "Archives Médicales"
+msgstr "Archives médicales"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_archives"
 msgid "Archives"
@@ -135,4 +132,4 @@ msgstr "Perdu"
 
 msgctxt "view:gnuhealth.paper_archive:"
 msgid "Patient PAPER Clinical History"
-msgstr "PAPIER d'historique clinique du patient"
+msgstr "Version PAPIER de l'historique clinique du patient"
