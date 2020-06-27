@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:09+0000\n"
-"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"PO-Revision-Date: 2020-06-28 02:41+0000\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_genetics/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr "Le nom officiel du symbole doit être unique"
 
 msgctxt "field:gnuhealth.disease.gene,chromosome:"
 msgid "Affected Chromosome"
-msgstr ""
+msgstr "Chromosome affecté"
 
 msgctxt "field:gnuhealth.disease.gene,create_date:"
 msgid "Create Date"
@@ -53,11 +53,11 @@ msgstr "Nom long officiel"
 
 msgctxt "field:gnuhealth.disease.gene,name:"
 msgid "Official Symbol"
-msgstr ""
+msgstr "Symbole officiel"
 
 msgctxt "field:gnuhealth.disease.gene,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.disease.gene,write_date:"
 msgid "Write Date"
@@ -73,7 +73,7 @@ msgstr "Historique de la famille"
 
 msgctxt "field:gnuhealth.patient,genetic_risks:"
 msgid "Genetic Risks"
-msgstr ""
+msgstr "Risques génétiques"
 
 msgctxt "field:gnuhealth.patient.family.diseases,create_date:"
 msgid "Create Date"
@@ -97,7 +97,7 @@ msgstr "Patient"
 
 msgctxt "field:gnuhealth.patient.family.diseases,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.patient.family.diseases,relative:"
 msgid "Relative"
@@ -125,7 +125,7 @@ msgstr "Créé par"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,disease_gene:"
 msgid "Disease Gene"
-msgstr ""
+msgstr "Gène pathologique"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,id:"
 msgid "ID"
@@ -141,7 +141,7 @@ msgstr "Patient"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,write_date:"
 msgid "Write Date"
