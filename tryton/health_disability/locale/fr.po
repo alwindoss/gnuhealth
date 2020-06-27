@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-06-28 02:42+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_disability/fr/>\n"
 "Language: fr\n"
@@ -73,7 +73,7 @@ msgstr "Capacité"
 
 msgctxt "field:gnuhealth.activity.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.activity.assessment,write_date:"
 msgid "Write Date"
@@ -109,7 +109,7 @@ msgstr "A et P"
 
 msgctxt "field:gnuhealth.activity_and_participation,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.activity_and_participation,write_date:"
 msgid "Write Date"
@@ -141,7 +141,7 @@ msgstr "Nom"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,write_date:"
 msgid "Write Date"
@@ -177,7 +177,7 @@ msgstr "Fonction"
 
 msgctxt "field:gnuhealth.body_function,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.body_function,write_date:"
 msgid "Write Date"
@@ -213,7 +213,7 @@ msgstr "Qualificatif"
 
 msgctxt "field:gnuhealth.body_function.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.body_function.assessment,write_date:"
 msgid "Write Date"
@@ -245,7 +245,7 @@ msgstr "Nom"
 
 msgctxt "field:gnuhealth.body_function.category,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.body_function.category,write_date:"
 msgid "Write Date"
