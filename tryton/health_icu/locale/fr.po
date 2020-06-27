@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:10+0000\n"
-"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"PO-Revision-Date: 2020-06-28 02:42+0000\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_icu/fr/>\n"
 "Language: fr\n"
@@ -95,7 +95,7 @@ msgstr "pH"
 
 msgctxt "field:gnuhealth.icu.apache2,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.icu.apache2,respiratory_rate:"
 msgid "Respiratory Rate"
@@ -171,7 +171,7 @@ msgstr "Oscillation"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,remarks:"
 msgid "Remarks"
@@ -231,7 +231,7 @@ msgstr "Code d'enregistrement"
 
 msgctxt "field:gnuhealth.icu.glasgow,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.icu.glasgow,write_date:"
 msgid "Write Date"
@@ -279,7 +279,7 @@ msgstr "Patients admis aux soins intensifs"
 
 msgctxt "field:gnuhealth.icu.ventilation,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.icu.ventilation,remarks:"
 msgid "Remarks"
@@ -343,7 +343,7 @@ msgstr "Code d'enregistrement"
 
 msgctxt "field:gnuhealth.inpatient.icu,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.inpatient.icu,write_date:"
 msgid "Write Date"
