@@ -1,6 +1,15 @@
 # 
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-06-28 02:41+0000\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/gnu-health/"
+"health_webdav3_server/ca/>\n"
+"Language: ca\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "error:ir.attachment:"
 msgid ""
@@ -12,7 +21,7 @@ msgstr ""
 
 msgctxt "error:webdav.collection:"
 msgid "The collection name must be unique inside a collection!"
-msgstr "El nom del directori ha de ser únic dins del directori."
+msgstr "El nom del directori ha de ser únic dins del directori!"
 
 msgctxt "error:webdav.collection:"
 msgid ""
