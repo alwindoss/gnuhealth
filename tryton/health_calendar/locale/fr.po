@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-27 17:09+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"PO-Revision-Date: 2020-06-28 02:41+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_calendar/fr/>\n"
 "Language: fr\n"
@@ -19,6 +19,7 @@ msgctxt "error:gnuhealth.calendar.create.appointment:"
 msgid "The schedule period should be < 31 days"
 msgstr "La période de planification doit être < à 31 jours"
 
+#, fuzzy
 msgctxt "error:gnuhealth.calendar.create.appointment:"
 msgid ""
 "You need to define a timezone for this company before creating a work schedule.\n"
