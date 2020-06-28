@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-28 02:41+0000\n"
-"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"PO-Revision-Date: 2020-06-28 23:17+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/health/"
 "fr/>\n"
 "Language: fr\n"
@@ -91,8 +91,7 @@ msgstr "Il ne doit y avoir qu'un seul nom d'unité par centre de santé"
 msgctxt "error:gnuhealth.hospital.ward:"
 msgid "The Ward / Room Name must be unique per Health Center"
 msgstr ""
-"Le nom du service / de la chambre doit être unique pour chaque centre de "
-"santé"
+"Le nom du service/de la chambre doit être unique pour chaque centre de santé"
 
 msgctxt "error:gnuhealth.immunization_schedule:"
 msgid "The schedule code must be unique"
@@ -104,11 +103,11 @@ msgstr "Le numéro de posologie doit être unique pour ce vaccin"
 
 msgctxt "error:gnuhealth.institution.operationalsector:"
 msgid "The Operational Sector already exists for this institution"
-msgstr "Le secteur opérationnel existe déjà pour cette institution"
+msgstr "Le secteur opérationnel existe déjà pour cet établissement"
 
 msgctxt "error:gnuhealth.institution.specialties:"
 msgid "The Specialty already exists for this institution"
-msgstr "La spécialité existe déjà pour cette institution"
+msgstr "La spécialité existe déjà pour cet établissement"
 
 msgctxt "error:gnuhealth.institution:"
 msgid "This CODE already exists !"
@@ -116,7 +115,7 @@ msgstr "Ce CODE existe déjà !"
 
 msgctxt "error:gnuhealth.institution:"
 msgid "This Institution already exists !"
-msgstr "Cette institution existe déjà !"
+msgstr "Cet établissement existe déjà !"
 
 msgctxt "error:gnuhealth.insurance:"
 msgid "The number must be unique per insurance company"
@@ -575,7 +574,7 @@ msgstr "État"
 
 msgctxt "field:gnuhealth.death_certificate,type_of_death:"
 msgid "Type of death"
-msgstr "Cause de la mort"
+msgstr "Cause du décès"
 
 msgctxt "field:gnuhealth.death_certificate,underlying_conditions:"
 msgid "Underlying Conditions"
@@ -2287,7 +2286,7 @@ msgstr "En âge de procréer"
 
 msgctxt "field:gnuhealth.patient,cod:"
 msgid "Cause of Death"
-msgstr "Cause de la mort"
+msgstr "Cause du décès"
 
 msgctxt "field:gnuhealth.patient,create_date:"
 msgid "Create Date"
@@ -2327,7 +2326,7 @@ msgstr "Date de naissance"
 
 msgctxt "field:gnuhealth.patient,dod:"
 msgid "Date of Death"
-msgstr "Date de mort"
+msgstr "Date du décès"
 
 msgctxt "field:gnuhealth.patient,family:"
 msgid "Family"
@@ -2499,7 +2498,7 @@ msgstr "Description du traitement"
 
 msgctxt "field:gnuhealth.patient.disease,weeks_of_pregnancy:"
 msgid "Contracted in pregnancy week #"
-msgstr "Contracté pendant la semaine de grossesse N°"
+msgstr "Contracté pendant la semaine de grossesse n°"
 
 msgctxt "field:gnuhealth.patient.disease,write_date:"
 msgid "Write Date"
@@ -3039,7 +3038,7 @@ msgstr "Informations supplémentaires"
 
 msgctxt "field:gnuhealth.patient.medication,prescription:"
 msgid "Prescription"
-msgstr "Prescription"
+msgstr "Ordonnance"
 
 msgctxt "field:gnuhealth.patient.medication,qty:"
 msgid "x"
@@ -3248,7 +3247,7 @@ msgstr "Médicament"
 
 msgctxt "field:gnuhealth.prescription.line,name:"
 msgid "Prescription ID"
-msgstr "Identifiant de prescription"
+msgstr "Identifiant d'ordonnance"
 
 msgctxt "field:gnuhealth.prescription.line,prnt:"
 msgid "Print"
@@ -3508,7 +3507,7 @@ msgstr "Nom"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,sign_or_symptom:"
 msgid "Subjective / Objective"
-msgstr "Subjectif / Objectif"
+msgstr "Subjectif/Objectif"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,write_date:"
 msgid "Write Date"
@@ -3824,7 +3823,7 @@ msgstr "Nom du patient"
 
 msgctxt "help:gnuhealth.appointment,speciality:"
 msgid "Medical Specialty / Sector"
-msgstr "Spécialité médicale / Secteur"
+msgstr "Spécialité médicale/Secteur"
 
 msgctxt "help:gnuhealth.birth_certificate,signed_by:"
 msgid "Person who certifies this birth document"
@@ -3855,13 +3854,13 @@ msgid ""
 "Underlying conditions that initiated the events resulting in death. Please "
 "code them in sequential, chronological order"
 msgstr ""
-"Problèmes de santé sous-jacents qui ont conduits aux événements ayant "
+"Problèmes de santé sous-jacents qui ont conduits aux évènements ayant "
 "entraîné le décès. Veuillez les coder dans un ordre séquentiel et "
 "chronologique"
 
 msgctxt "help:gnuhealth.death_underlying_condition,interval:"
 msgid "Approx Interval onset to death"
-msgstr "Intervalle approximatif jusqu'à la mort"
+msgstr "Intervalle approximatif jusqu'au décès"
 
 msgctxt "help:gnuhealth.drug.form,code:"
 msgid "Please use CAPITAL LETTERS and no spaces"
@@ -4311,7 +4310,7 @@ msgstr "Personne associée à ce patient"
 
 msgctxt "help:gnuhealth.patient,primary_care_doctor:"
 msgid "Current General Practitioner / Family Doctor"
-msgstr "Médecin traitant / Médecin de famille"
+msgstr "Médecin traitant/Médecin de famille"
 
 msgctxt "help:gnuhealth.patient,puid:"
 msgid "Person Unique Identifier"
@@ -4382,7 +4381,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,actions:"
 msgid "Procedures / Actions to take"
-msgstr "Procédures/actions à réaliser"
+msgstr "Procédures/Actions à réaliser"
 
 msgctxt "help:gnuhealth.patient.evaluation,appointment:"
 msgid ""
@@ -4766,7 +4765,7 @@ msgstr "Médicament prescrit"
 
 msgctxt "help:gnuhealth.patient.medication,prescription:"
 msgid "Related prescription"
-msgstr "Prescription connexe"
+msgstr "Ordonnance connexe"
 
 msgctxt "help:gnuhealth.patient.medication,qty:"
 msgid "Quantity of units (eg, 2 capsules) of the medicament"
@@ -4875,7 +4874,7 @@ msgstr "Médicament prescrit"
 
 msgctxt "help:gnuhealth.prescription.line,prnt:"
 msgid "Check this box to print this line of the prescription."
-msgstr "Cochez cette case pour imprimer cette ligne de la prescription."
+msgstr "Cochez cette case pour imprimer cette ligne de l'ordonnance."
 
 msgctxt "help:gnuhealth.prescription.line,qty:"
 msgid "Quantity of units (eg, 2 capsules) of the medicament"
@@ -4908,7 +4907,7 @@ msgstr "Date de début de traitement"
 
 msgctxt "help:gnuhealth.prescription.order,prescription_id:"
 msgid "Type in the ID of this prescription"
-msgstr "Tapez l'identifiant de cette prescription"
+msgstr "Tapez l'identifiant de cette ordonnance"
 
 msgctxt "help:gnuhealth.specialty,code:"
 msgid "ie, ADP. Please use CAPITAL LETTERS and no spaces"
@@ -11072,7 +11071,7 @@ msgstr "Maladie sous-jacente"
 
 msgctxt "view:gnuhealth.death_underlying_condition:"
 msgid "Underlying conditions to death"
-msgstr "Les maladies sous-jacentes à la mort"
+msgstr "Les maladies sous-jacentes au décès"
 
 msgctxt "view:gnuhealth.diagnostic_hypothesis:"
 msgid "Patient Evaluation other diagnostic hypotheses"
