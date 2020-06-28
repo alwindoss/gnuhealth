@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-24 14:09+0000\n"
-"Last-Translator: Christoph <christoph@jurko.de>\n"
+"PO-Revision-Date: 2020-06-28 23:36+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_archives/de/>\n"
 "Language: de\n"
@@ -57,7 +57,7 @@ msgstr "Einheit"
 
 msgctxt "field:gnuhealth.paper_archive,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Patient"
 
 msgctxt "field:gnuhealth.paper_archive,rec_name:"
 msgid "Name"
@@ -113,7 +113,7 @@ msgstr "Person, die das Dokument zuletzt angefordert hat"
 
 msgctxt "model:gnuhealth.paper_archive,name:"
 msgid "Location of PAPER Patient Clinical History"
-msgstr ""
+msgstr "derzeitiger Aufbewahrungsort der PAPIER Krankengeschichte"
 
 msgctxt "model:ir.action,name:gnuhealth_action_paper_archive"
 msgid "Medical Archives"
@@ -137,4 +137,4 @@ msgstr "Verloren"
 
 msgctxt "view:gnuhealth.paper_archive:"
 msgid "Patient PAPER Clinical History"
-msgstr ""
+msgstr "PAPIER Krankengeschichte"
