@@ -1,10 +1,19 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-06-29 16:15+0000\n"
+"Last-Translator: Luis Falcon <falcon@gnuhealth.org>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
+"health_archives/es/>\n"
+"Language: es\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "error:gnuhealth.paper_archive:"
 msgid "The history already exists"
-msgstr ""
+msgstr "La historia clínica ya existe"
 
 msgctxt "error:gnuhealth.paper_archive:"
 msgid "The patient history already exists"
