@@ -1,8 +1,8 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-24 14:08+0000\n"
-"Last-Translator: Paco Vila <paconet.org@gmail.com>\n"
+"PO-Revision-Date: 2020-06-29 15:07+0000\n"
+"Last-Translator: Luis Falcon <falcon@gnuhealth.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health/es/>\n"
 "Language: es\n"
@@ -2545,7 +2545,7 @@ msgstr "Interpretación"
 
 msgctxt "field:gnuhealth.patient.ecg,lead:"
 msgid "Lead"
-msgstr ""
+msgstr "Derivación"
 
 msgctxt "field:gnuhealth.patient.ecg,name:"
 msgid "Patient"
@@ -3038,7 +3038,7 @@ msgstr "Información adicional"
 
 msgctxt "field:gnuhealth.patient.medication,prescription:"
 msgid "Prescription"
-msgstr ""
+msgstr "Receta"
 
 msgctxt "field:gnuhealth.patient.medication,qty:"
 msgid "x"
@@ -3107,11 +3107,11 @@ msgstr "Usuario modificación"
 
 msgctxt "field:gnuhealth.person_name,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Fecha de creación"
 
 msgctxt "field:gnuhealth.person_name,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Creado por"
 
 msgctxt "field:gnuhealth.person_name,date_from:"
 msgid "From"
@@ -3135,7 +3135,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.person_name,party:"
 msgid "Person"
-msgstr ""
+msgstr "Persona"
 
 msgctxt "field:gnuhealth.person_name,prefix:"
 msgid "Prefix"
@@ -3695,7 +3695,7 @@ msgstr "Fecha de la muerte"
 
 msgctxt "field:party.party,du:"
 msgid "DU"
-msgstr ""
+msgstr "UD"
 
 msgctxt "field:party.party,ethnic_group:"
 msgid "Ethnicity"
@@ -3767,7 +3767,7 @@ msgstr "Representación del nombre"
 
 msgctxt "field:party.party,person_names:"
 msgid "Person Names"
-msgstr ""
+msgstr "Nombres"
 
 msgctxt "field:party.party,photo:"
 msgid "Picture"
@@ -4381,6 +4381,7 @@ msgctxt "help:gnuhealth.patient.evaluation,appointment:"
 msgid ""
 "Enter or select the date / ID of the appointment related to this evaluation"
 msgstr ""
+"Introduzca o seleccione la fecha / ID de la cita asociada a esta evaluación"
 
 msgctxt "help:gnuhealth.patient.evaluation,bmi:"
 msgid "Body mass index"
@@ -4452,7 +4453,7 @@ msgstr "Presión diastólica en mmHg"
 
 msgctxt "help:gnuhealth.patient.evaluation,discharge_reason:"
 msgid "Reason for patient discharge"
-msgstr ""
+msgstr "Motivo de alta"
 
 msgctxt "help:gnuhealth.patient.evaluation,evaluation_length:"
 msgid "Duration of the evaluation"
@@ -4468,6 +4469,8 @@ msgstr ""
 msgctxt "help:gnuhealth.patient.evaluation,hba1c:"
 msgid "Last Glycated Hb level. Can be approximative. Expressed in mmol/mol."
 msgstr ""
+"Último valor de hemoglobina glicosilada. Puede ser aproximado. Expresado en "
+"mmol/mol."
 
 msgctxt "help:gnuhealth.patient.evaluation,hdl:"
 msgid ""
@@ -4578,7 +4581,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,related_condition:"
 msgid "Related condition related to this follow-up evaluation"
-msgstr ""
+msgstr "Condición asociada a esta evaluación de seguimiento"
 
 msgctxt "help:gnuhealth.patient.evaluation,reliable_info:"
 msgid ""
@@ -4751,7 +4754,7 @@ msgstr "Medicamento recetado"
 
 msgctxt "help:gnuhealth.patient.medication,prescription:"
 msgid "Related prescription"
-msgstr ""
+msgstr "Receta asociada"
 
 msgctxt "help:gnuhealth.patient.medication,qty:"
 msgid "Quantity of units (eg, 2 capsules) of the medicament"
@@ -5003,6 +5006,8 @@ msgid ""
 "In GNU Health is the user (person) that logins. When the party is a person, "
 "it will be the user that maps the party."
 msgstr ""
+"En GNU Health corresponde al usuario (persona) que se conecta. Cuando el "
+"tercero es una persona, será el usuario asociado a ese tercero."
 
 msgctxt "help:party.party,is_healthprof:"
 msgid "Check if the party is a health professional"
@@ -9685,15 +9690,15 @@ msgstr "/"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "/ Reliability :"
-msgstr ""
+msgstr "/ Fiabilidad:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "15"
-msgstr ""
+msgstr "15"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Female"
