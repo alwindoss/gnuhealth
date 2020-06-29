@@ -28,7 +28,7 @@ VERSION="3.6.5"
 
 TRYTON_URL="https://downloads-cdn.tryton.org"
 GNUHEALTH_URL="https://ftp.gnu.org/gnu/health"
-TRANSLATE_URL="http://hosted.weblate.org"
+TRANSLATE_URL="https://hosted.weblate.org"
 
 TRYTON_MODULES="account account_invoice account_product company country \
     currency party product stock stock_lot purchase account_invoice_stock \
