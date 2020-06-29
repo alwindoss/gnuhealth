@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:11+0000\n"
+"PO-Revision-Date: 2020-06-29 16:15+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_icd10/fr/>\n"
@@ -21,7 +21,7 @@ msgstr "A Vibrio cholerae 01, biovar cholerae"
 
 msgctxt "model:gnuhealth.pathology,name:A001"
 msgid "Cholera due to Vibrio cholerae 01, biovar el tor"
-msgstr ""
+msgstr "Choléra à Vibrio cholerae 01, biovar El Tor"
 
 msgctxt "model:gnuhealth.pathology,name:A009"
 msgid "Cholera, unspecified"
@@ -53,23 +53,23 @@ msgstr "Paratyphoïde, sans précision"
 
 msgctxt "model:gnuhealth.pathology,name:A02"
 msgid "Other Salmonella infections"
-msgstr ""
+msgstr "Autres salmonelloses"
 
 msgctxt "model:gnuhealth.pathology,name:A020"
 msgid "Salmonella gastro-enteritis"
-msgstr ""
+msgstr "Entérite à Salmonella"
 
 msgctxt "model:gnuhealth.pathology,name:A021"
 msgid "Salmonella septicaemia"
-msgstr ""
+msgstr "Sepsis à Salmonella"
 
 msgctxt "model:gnuhealth.pathology,name:A022"
 msgid "Localised Salmonella infections"
-msgstr ""
+msgstr "Infection localisée à Salmonella"
 
 msgctxt "model:gnuhealth.pathology,name:A028"
 msgid "Other specified Salmonella infections"
-msgstr ""
+msgstr "Autres infections précisées à Salmonella"
 
 msgctxt "model:gnuhealth.pathology,name:A029"
 msgid "Salmonella infection, unspecified"
@@ -150,6 +150,8 @@ msgstr "Infection intestinale bactérienne, sans précision"
 msgctxt "model:gnuhealth.pathology,name:A05"
 msgid "Other bacterial foodborne intoxications"
 msgstr ""
+"Autres intoxications bactériennes d'origine alimentaire, non classées "
+"ailleurs"
 
 msgctxt "model:gnuhealth.pathology,name:A050"
 msgid "Foodborne staphylococcal intoxication"
@@ -263,7 +265,7 @@ msgstr "Entérite à rotavirus"
 
 msgctxt "model:gnuhealth.pathology,name:A081"
 msgid "Acute gastro-enteropathy due to Norwalk agent"
-msgstr ""
+msgstr "Gastroentéropathie aigüe due à un norovirus"
 
 msgctxt "model:gnuhealth.pathology,name:A082"
 msgid "Adenoviral enteritis"
@@ -283,7 +285,7 @@ msgstr "Autres infections intestinales précisées"
 
 msgctxt "model:gnuhealth.pathology,name:A09"
 msgid "Diarrhoea and gastro-enteritis of presumed infectious origin"
-msgstr ""
+msgstr "Autres gastroentérites et colites d'origine infectieuse ou non précisée"
 
 msgctxt "model:gnuhealth.pathology,name:A15"
 msgid ""
@@ -459,7 +461,7 @@ msgstr "Tuberculose des os et des articulations"
 
 msgctxt "model:gnuhealth.pathology,name:A181"
 msgid "Tuberculosis of genito-urinary system"
-msgstr ""
+msgstr "Tuberculose de l'appareil génito-urinaire"
 
 msgctxt "model:gnuhealth.pathology,name:A182"
 msgid "Tuberculous peripheral lymphadenopathy"
@@ -563,11 +565,11 @@ msgstr "Tularémie pulmonaire"
 
 msgctxt "model:gnuhealth.pathology,name:A213"
 msgid "Gastro-intestinal tularaemia"
-msgstr ""
+msgstr "Tularémie gastro-intestinale"
 
 msgctxt "model:gnuhealth.pathology,name:A217"
 msgid "Generalised tularaemia"
-msgstr ""
+msgstr "Tularémie généralisée"
 
 msgctxt "model:gnuhealth.pathology,name:A218"
 msgid "Other forms of tularaemia"
@@ -591,11 +593,11 @@ msgstr "Charbon pulmonaire"
 
 msgctxt "model:gnuhealth.pathology,name:A222"
 msgid "Gastro-intestinal anthrax"
-msgstr ""
+msgstr "Charbon gastro-intestinal"
 
 msgctxt "model:gnuhealth.pathology,name:A227"
 msgid "Anthrax septicaemia"
-msgstr ""
+msgstr "Sepsis charbonneux"
 
 msgctxt "model:gnuhealth.pathology,name:A228"
 msgid "Other forms of anthrax"
@@ -683,7 +685,7 @@ msgstr "Erysipéloïde cutanée"
 
 msgctxt "model:gnuhealth.pathology,name:A267"
 msgid "Erysipelothrix septicaemia"
-msgstr ""
+msgstr "Sepsis à Erysipelothrix"
 
 msgctxt "model:gnuhealth.pathology,name:A268"
 msgid "Other forms of erysipeloid"
@@ -735,7 +737,7 @@ msgstr "Anthropozoonose bactérienne, sans précision"
 
 msgctxt "model:gnuhealth.pathology,name:A30"
 msgid "Leprosy [Hansen's disease]"
-msgstr ""
+msgstr "Lèpre [maladie de Hansen]"
 
 msgctxt "model:gnuhealth.pathology,name:A300"
 msgid "Indeterminate leprosy"
@@ -803,7 +805,7 @@ msgstr "Méningite et méningo-encéphalite listériennes"
 
 msgctxt "model:gnuhealth.pathology,name:A327"
 msgid "Listerial septicaemia"
-msgstr ""
+msgstr "Sepsis à Listeria"
 
 msgctxt "model:gnuhealth.pathology,name:A328"
 msgid "Other forms of listeriosis"
@@ -915,55 +917,55 @@ msgstr "Infection méningococcique, sans précision"
 
 msgctxt "model:gnuhealth.pathology,name:A40"
 msgid "Streptococcal septicaemia"
-msgstr ""
+msgstr "Sepsis à streptocoques"
 
 msgctxt "model:gnuhealth.pathology,name:A400"
 msgid "Septicaemia due to streptococcus, group A"
-msgstr ""
+msgstr "Sepsis à streptocoques, groupe A"
 
 msgctxt "model:gnuhealth.pathology,name:A401"
 msgid "Septicaemia due to streptococcus, group B"
-msgstr ""
+msgstr "Sepsis à streptocoques, groupe B"
 
 msgctxt "model:gnuhealth.pathology,name:A402"
 msgid "Septicaemia due to streptococcus, group D"
-msgstr ""
+msgstr "Sepsis à streptocoques, groupe D et entérocoques"
 
 msgctxt "model:gnuhealth.pathology,name:A403"
 msgid "Septicaemia due to Streptococcus pneumoniae"
-msgstr ""
+msgstr "Sepsis à Streptococcus pneumoniae"
 
 msgctxt "model:gnuhealth.pathology,name:A408"
 msgid "Other streptococcal septicaemia"
-msgstr ""
+msgstr "Autres sepsis à streptocoques"
 
 msgctxt "model:gnuhealth.pathology,name:A409"
 msgid "Streptococcal septicaemia, unspecified"
-msgstr ""
+msgstr "Sepsis à streptocoques, sans précision"
 
 msgctxt "model:gnuhealth.pathology,name:A41"
 msgid "Other septicaemia"
-msgstr ""
+msgstr "Autres sepsis"
 
 msgctxt "model:gnuhealth.pathology,name:A410"
 msgid "Septicaemia due to Staphylococcus aureus"
-msgstr ""
+msgstr "Sepsis à staphylocoques dorés"
 
 msgctxt "model:gnuhealth.pathology,name:A411"
 msgid "Septicaemia due to other specified staphylococcus"
-msgstr ""
+msgstr "Sepsis à d'autres staphylocoques précisés"
 
 msgctxt "model:gnuhealth.pathology,name:A412"
 msgid "Septicaemia due to unspecified staphylococcus"
-msgstr ""
+msgstr "Sepsis à staphylocoques non précisés"
 
 msgctxt "model:gnuhealth.pathology,name:A413"
 msgid "Septicaemia due to Haemophilus influenzae"
-msgstr ""
+msgstr "Sepsis à Haemophilus influenzae"
 
 msgctxt "model:gnuhealth.pathology,name:A414"
 msgid "Septicaemia due to anaerobes"
-msgstr ""
+msgstr "Sepsis à microorganismes anaérobies"
 
 msgctxt "model:gnuhealth.pathology,name:A415"
 msgid "Septicaemia due to other Gram-negative organisms"
