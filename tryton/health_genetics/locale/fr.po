@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-28 02:41+0000\n"
-"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"PO-Revision-Date: 2020-06-30 04:53+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_genetics/fr/>\n"
 "Language: fr\n"
@@ -33,11 +33,11 @@ msgstr "Dominance"
 
 msgctxt "field:gnuhealth.disease.gene,gene_id:"
 msgid "Gene ID"
-msgstr "ID Gène"
+msgstr "Identifiant du gène"
 
 msgctxt "field:gnuhealth.disease.gene,id:"
 msgid "ID"
-msgstr "ID"
+msgstr "Identifiant"
 
 msgctxt "field:gnuhealth.disease.gene,info:"
 msgid "Information"
@@ -61,7 +61,7 @@ msgstr "Nom"
 
 msgctxt "field:gnuhealth.disease.gene,write_date:"
 msgid "Write Date"
-msgstr "Date de modification"
+msgstr "Date de mise à jour"
 
 msgctxt "field:gnuhealth.disease.gene,write_uid:"
 msgid "Write User"
@@ -85,7 +85,7 @@ msgstr "Créé par"
 
 msgctxt "field:gnuhealth.patient.family.diseases,id:"
 msgid "ID"
-msgstr "ID"
+msgstr "Identifiant"
 
 msgctxt "field:gnuhealth.patient.family.diseases,name:"
 msgid "Condition"
@@ -105,7 +105,7 @@ msgstr "Relatif"
 
 msgctxt "field:gnuhealth.patient.family.diseases,write_date:"
 msgid "Write Date"
-msgstr "Date de modification"
+msgstr "Date de mise à jour"
 
 msgctxt "field:gnuhealth.patient.family.diseases,write_uid:"
 msgid "Write User"
@@ -129,7 +129,7 @@ msgstr "Gène pathologique"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,id:"
 msgid "ID"
-msgstr "ID"
+msgstr "Identifiant"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,notes:"
 msgid "Notes"
@@ -153,7 +153,7 @@ msgstr "Modifié par"
 
 msgctxt "help:gnuhealth.disease.gene,chromosome:"
 msgid "Name of the affected chromosome"
-msgstr "Nom du chromosome affectés"
+msgstr "Nom du chromosome affecté"
 
 msgctxt "help:gnuhealth.disease.gene,gene_id:"
 msgid "default code from NCBI Entrez database."
