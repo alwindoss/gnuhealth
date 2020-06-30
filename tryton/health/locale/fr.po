@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-29 15:09+0000\n"
+"PO-Revision-Date: 2020-06-30 20:00+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/health/"
 "fr/>\n"
@@ -2666,7 +2666,7 @@ msgstr "Diagnostic principal"
 
 msgctxt "field:gnuhealth.patient.evaluation,diagnostic_hypothesis:"
 msgid "Hypotheses / DDx"
-msgstr "Hypothèses/Diagnostic différentiel"
+msgstr "Hypothèses/Diagnostic différentiel"
 
 msgctxt "field:gnuhealth.patient.evaluation,diastolic:"
 msgid "Diastolic Pressure"
@@ -9165,7 +9165,7 @@ msgstr "Assurances"
 
 msgctxt "model:ir.action,name:gnuhealth_action_insurance_company"
 msgid "Insurance Company"
-msgstr "Compagnie d'assurance"
+msgstr "Compagnie d’assurance"
 
 msgctxt "model:ir.action,name:gnuhealth_action_occupation"
 msgid "Occupations"
