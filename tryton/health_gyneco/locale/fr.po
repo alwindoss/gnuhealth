@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-07-07 14:05+0000\n"
+"PO-Revision-Date: 2020-07-08 15:26+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_gyneco/fr/>\n"
@@ -77,7 +77,7 @@ msgstr "Ménopausée"
 
 msgctxt "field:gnuhealth.patient,menopause:"
 msgid "Menopause age"
-msgstr "âge de la ménopause"
+msgstr "Âge de la ménopause"
 
 msgctxt "field:gnuhealth.patient,menstrual_history:"
 msgid "Menstrual History"
@@ -425,7 +425,7 @@ msgstr "Consultations prénatales"
 
 msgctxt "field:gnuhealth.patient.pregnancy,puerperium_monitor:"
 msgid "Puerperium monitor"
-msgstr "suivi Puerpérium"
+msgstr "Suivi Puerpérium"
 
 msgctxt "field:gnuhealth.patient.pregnancy,rec_name:"
 msgid "Name"
@@ -441,11 +441,11 @@ msgstr "Semaines précédentes"
 
 msgctxt "field:gnuhealth.patient.pregnancy,warning:"
 msgid "Warn"
-msgstr "avertir"
+msgstr "Aavertir"
 
 msgctxt "field:gnuhealth.patient.pregnancy,warning_icon:"
 msgid "Pregnancy warning icon"
-msgstr "icône d'avertissement grossesse"
+msgstr "Icône d'avertissement grossesse"
 
 msgctxt "field:gnuhealth.patient.pregnancy,write_date:"
 msgid "Write Date"
@@ -605,7 +605,7 @@ msgstr "Dystocie"
 
 msgctxt "field:gnuhealth.perinatal,episiotomy:"
 msgid "Episiotomy"
-msgstr "épisiotomie"
+msgstr "Épisiotomie"
 
 msgctxt "field:gnuhealth.perinatal,fetus_presentation:"
 msgid "Fetus Presentation"
@@ -902,7 +902,7 @@ msgstr "Dernière colposcopie"
 msgctxt "help:gnuhealth.patient.colposcopy_history,result:"
 msgid ""
 "Please check the lab test results if the module is             installed"
-msgstr "Veuillez contrôler les résultats du labo si le module est installé."
+msgstr "Veuillez contrôler les résultats du labo si le module est installé"
 
 msgctxt "help:gnuhealth.patient.mammography_history,evaluation_date:"
 msgid "Date"
@@ -919,7 +919,7 @@ msgstr "Dernière mammographie"
 msgctxt "help:gnuhealth.patient.mammography_history,result:"
 msgid ""
 "Please check the lab test results if the module is             installed"
-msgstr "Veuillez contrôler les résultats du labo si le module est installé."
+msgstr "Veuillez contrôler les résultats du labo si le module est installé"
 
 msgctxt "help:gnuhealth.patient.menstrual_history,evaluation_date:"
 msgid "Evaluation Date"
@@ -947,7 +947,7 @@ msgstr "Dernier frottis"
 
 msgctxt "help:gnuhealth.patient.pap_history,result:"
 msgid "Please check the lab results if the module is             installed"
-msgstr "Veuillez contrôler les résultats du labo si le module est installé."
+msgstr "Veuillez contrôler les résultats du labo si le module est installé"
 
 msgctxt "help:gnuhealth.patient.pregnancy,bba:"
 msgid "Born Before Arrival"
@@ -998,7 +998,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.pregnancy,warning:"
 msgid "Check this box if this is pregancy is or was NOT normal"
-msgstr "Cochez si cette grossesse N'EST PAS ou N'A PAS ÉTÉ normale."
+msgstr "Cochez si cette grossesse N'EST PAS ou N'A PAS ÉTÉ normale"
 
 msgctxt "help:gnuhealth.patient.prenatal.evaluation,diabetes:"
 msgid "Check this box if the mother has glucose intolerance or diabetes"
@@ -1188,7 +1188,7 @@ msgstr "hypoménorrhée"
 
 msgctxt "selection:gnuhealth.patient.menstrual_history,volume:"
 msgid "menorrhagia"
-msgstr "Ménorragie"
+msgstr "ménorragie"
 
 msgctxt "selection:gnuhealth.patient.menstrual_history,volume:"
 msgid "normal"
@@ -1393,7 +1393,7 @@ msgstr "Postérieur de l'occiput / céphalique"
 
 msgctxt "selection:gnuhealth.perinatal.monitor,fetus_position:"
 msgid "Transverse Lie"
-msgstr "Présentation transverse; "
+msgstr "Présentation transverse"
 
 msgctxt "selection:gnuhealth.puerperium.monitor,lochia_amount:"
 msgid ""
