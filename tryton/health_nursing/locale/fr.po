@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:10+0000\n"
+"PO-Revision-Date: 2020-07-07 14:05+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_nursing/fr/>\n"
@@ -45,7 +45,7 @@ msgstr "Code"
 
 msgctxt "field:gnuhealth.ambulatory_care_procedure,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.ambulatory_care_procedure,write_date:"
 msgid "Write Date"
@@ -121,7 +121,7 @@ msgstr "Procédures"
 
 msgctxt "field:gnuhealth.patient.ambulatory_care,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.patient.ambulatory_care,respiratory_rate:"
 msgid "Respiratory Rate"
@@ -273,7 +273,7 @@ msgstr "Pompes"
 
 msgctxt "field:gnuhealth.patient.rounding,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.patient.rounding,report_end_date:"
 msgid "End Date"
@@ -365,7 +365,7 @@ msgstr "Code"
 
 msgctxt "field:gnuhealth.rounding_procedure,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.rounding_procedure,write_date:"
 msgid "Write Date"
@@ -596,7 +596,7 @@ msgstr "Administration des soins infirmiers"
 
 msgctxt "model:res.user,name:user_demo_nurse"
 msgid "Health Nurse"
-msgstr ""
+msgstr "Infirmier(e)"
 
 msgctxt "selection:gnuhealth.patient.ambulatory_care,evolution:"
 msgid ""
