@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-07-07 14:05+0000\n"
+"PO-Revision-Date: 2020-07-08 15:26+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_lab/fr/>\n"
@@ -461,7 +461,6 @@ msgctxt ""
 msgid "Blood Group & RH"
 msgstr "Groupe Sanguin et RH"
 
-#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_casts0"
 msgid "Casts"
@@ -603,19 +602,16 @@ msgctxt ""
 msgid "LYM#"
 msgstr "LYM#"
 
-#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mch0"
 msgid "MCH"
 msgstr "TGMH"
 
-#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mchc0"
 msgid "MCHC"
 msgstr "CCMH"
 
-#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mcv0"
 msgid "MCV"
@@ -957,7 +953,6 @@ msgctxt "model:ir.action,name:gnuhealth_action_tree_lab"
 msgid "Lab Tests Results"
 msgstr "Résultats de Tests Labo"
 
-#, fuzzy
 msgctxt "model:ir.action,name:patient_lab_test_request"
 msgid "Request Lab Test"
 msgstr "Demande test de labo"
@@ -1006,7 +1001,6 @@ msgctxt "model:ir.ui.menu,name:menu_gnuhealth_action_list_test"
 msgid "Lab Test Types"
 msgstr "Types de Test Labo"
 
-#, fuzzy
 msgctxt "model:ir.ui.menu,name:menu_patient_lab_test_request"
 msgid "Request Lab Test"
 msgstr "Demande test de labo"
@@ -1063,7 +1057,6 @@ msgctxt "model:res.group,name:group_health_lab_admin"
 msgid "Health lab Administration"
 msgstr "Administration Labo"
 
-#, fuzzy
 msgctxt "model:res.user,name:user_demo_lab"
 msgid "Health Lab"
 msgstr "Labo Santé"
