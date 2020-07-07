@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:10+0000\n"
+"PO-Revision-Date: 2020-07-07 14:05+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_lab/fr/>\n"
@@ -65,7 +65,7 @@ msgstr "Patient"
 
 msgctxt "field:gnuhealth.lab,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.lab,requestor:"
 msgid "Physician"
@@ -129,7 +129,7 @@ msgstr "Référence"
 
 msgctxt "field:gnuhealth.lab.test.critearea,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.lab.test.critearea,remarks:"
 msgid "Remarks"
@@ -193,7 +193,7 @@ msgstr "Unité"
 
 msgctxt "field:gnuhealth.lab.test.units,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.lab.test.units,write_date:"
 msgid "Write Date"
@@ -237,7 +237,7 @@ msgstr "Service"
 
 msgctxt "field:gnuhealth.lab.test_type,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.lab.test_type,write_date:"
 msgid "Write Date"
@@ -281,11 +281,11 @@ msgstr "Patient"
 
 msgctxt "field:gnuhealth.patient.lab.test,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.patient.lab.test,request:"
 msgid "Request"
-msgstr ""
+msgstr "Demande"
 
 msgctxt "field:gnuhealth.patient.lab.test,state:"
 msgid "State"
@@ -406,7 +406,7 @@ msgstr "Médecin qui a demandé ces examens de labo."
 
 msgctxt "model:gnuhealth.lab,name:"
 msgid "Lab Test"
-msgstr ""
+msgstr "Test de labo"
 
 msgctxt "model:gnuhealth.lab.test.create.init,name:"
 msgid "Create Test Report Init"
@@ -465,7 +465,7 @@ msgstr "Groupe Sanguin et RH"
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_casts0"
 msgid "Casts"
-msgstr "Transtypages"
+msgstr "Cylindres"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_chemicalexamination0"
@@ -515,7 +515,7 @@ msgstr "Bilirubine directe"
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_eos0"
 msgid "EOS%"
-msgstr ""
+msgstr "Eosinophiles%"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_epithelialcells0"
@@ -530,7 +530,7 @@ msgstr "Cellules épithéliale"
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_esr0"
 msgid "ESR"
-msgstr ""
+msgstr "Taux de sédimentation des érythrocytes"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_fsh0"
@@ -552,17 +552,17 @@ msgctxt ""
 msgid "Glucose"
 msgstr "Glucose"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_gra0"
 msgid "GRA#"
-msgstr ""
+msgstr "GRA#"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_haemoglobin0"
 msgid "Hemoglobin"
-msgstr ""
+msgstr "Hémoglobine"
 
-#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_hct0"
 msgid "HCT"
@@ -597,25 +597,29 @@ msgctxt ""
 msgid "LYM%"
 msgstr "LYM%"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_lym1"
 msgid "LYM#"
-msgstr ""
+msgstr "LYM#"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mch0"
 msgid "MCH"
-msgstr ""
+msgstr "TGMH"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mchc0"
 msgid "MCHC"
-msgstr ""
+msgstr "CCMH"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mcv0"
 msgid "MCV"
-msgstr ""
+msgstr "VGM"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_microscopicexamination0"
@@ -741,33 +745,30 @@ msgctxt ""
 msgid "Pus Cells"
 msgstr "Cellules couvertes de Pus"
 
-#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_rbc0"
 msgid "RBC"
-msgstr "CGR"
+msgstr "GR"
 
-#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_rbcs0"
 msgid "RBCs"
-msgstr "CGRs"
+msgstr "GR"
 
-#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_rbcs1"
 msgid "RBCs"
-msgstr "CGRs"
+msgstr "GR"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_rbcs2"
 msgid "RBCs"
-msgstr ""
+msgstr "GR"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_rbcs3"
 msgid "RBC's"
-msgstr ""
+msgstr "GR"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_rdwcv0"
@@ -934,11 +935,11 @@ msgstr "Demande - Examen labo"
 
 msgctxt "model:ir.action,name:act_create_lab_test"
 msgid "Create Lab Test"
-msgstr ""
+msgstr "Créer un test de labo"
 
 msgctxt "model:ir.action,name:act_patient_lab_history_form1"
 msgid "Lab Reports"
-msgstr ""
+msgstr "Rapports de Labo"
 
 msgctxt "model:ir.action,name:gnuhealth_action_lab_test_request"
 msgid "Lab Test Requests"
@@ -956,9 +957,10 @@ msgctxt "model:ir.action,name:gnuhealth_action_tree_lab"
 msgid "Lab Tests Results"
 msgstr "Résultats de Tests Labo"
 
+#, fuzzy
 msgctxt "model:ir.action,name:patient_lab_test_request"
 msgid "Request Lab Test"
-msgstr ""
+msgstr "Demande test de labo"
 
 msgctxt "model:ir.action,name:report_patient_labtest_report"
 msgid "Lab Report"
@@ -1004,9 +1006,10 @@ msgctxt "model:ir.ui.menu,name:menu_gnuhealth_action_list_test"
 msgid "Lab Test Types"
 msgstr "Types de Test Labo"
 
+#, fuzzy
 msgctxt "model:ir.ui.menu,name:menu_patient_lab_test_request"
 msgid "Request Lab Test"
-msgstr ""
+msgstr "Demande test de labo"
 
 msgctxt "model:product.category,name:product_category_labservices0"
 msgid "Lab Services"
@@ -1060,9 +1063,10 @@ msgctxt "model:res.group,name:group_health_lab_admin"
 msgid "Health lab Administration"
 msgstr "Administration Labo"
 
+#, fuzzy
 msgctxt "model:res.user,name:user_demo_lab"
 msgid "Health Lab"
-msgstr ""
+msgstr "Labo Santé"
 
 msgctxt "selection:gnuhealth.patient.lab.test,state:"
 msgid "Cancel"
