@@ -1,0 +1,89 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-06-28 02:41+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
+"health_crypto_lab/fr/>\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
+
+msgctxt "field:gnuhealth.lab,digest_current:"
+msgid "Current Hash"
+msgstr "Clé de hachage actuelle"
+
+msgctxt "field:gnuhealth.lab,digest_status:"
+msgid "Altered"
+msgstr "Altérée"
+
+msgctxt "field:gnuhealth.lab,digital_signature:"
+msgid "Digital Signature"
+msgstr "Signature numérique"
+
+msgctxt "field:gnuhealth.lab,document_digest:"
+msgid "Digest"
+msgstr "Résumé"
+
+msgctxt "field:gnuhealth.lab,done_by:"
+msgid "Done by"
+msgstr "Effectué par"
+
+msgctxt "field:gnuhealth.lab,done_date:"
+msgid "Finished on"
+msgstr "Terminé le"
+
+msgctxt "field:gnuhealth.lab,serializer:"
+msgid "Doc String"
+msgstr "Chaîne du document"
+
+msgctxt "field:gnuhealth.lab,serializer_current:"
+msgid "Current Doc"
+msgstr "Document actuel"
+
+msgctxt "field:gnuhealth.lab,state:"
+msgid "State"
+msgstr "État"
+
+msgctxt "field:gnuhealth.lab,validated_by:"
+msgid "Validated by"
+msgstr "Validé par"
+
+msgctxt "field:gnuhealth.lab,validation_date:"
+msgid "Validated on"
+msgstr "Validé le"
+
+msgctxt "help:gnuhealth.lab,digest_status:"
+msgid ""
+"This field will be set whenever parts of the main original document has been"
+" changed. Please note that the verification is done only on selected fields."
+msgstr ""
+"Ce champ sera activé chaque fois que des parties du document d'origine "
+"principal auront été modifiées. Veuillez noter que la vérification n'est "
+"effectuée que sur les champs sélectionnés."
+
+msgctxt "help:gnuhealth.lab,document_digest:"
+msgid "Original Document Digest"
+msgstr "Résumé du document d'origine"
+
+msgctxt "help:gnuhealth.lab,done_by:"
+msgid "Professional who processes this lab test"
+msgstr "Professionnel ayant procédé à ce test en laboratoire"
+
+msgctxt "help:gnuhealth.lab,validated_by:"
+msgid "Professional who validates this lab test"
+msgstr "Professionnel ayant validé ce test en laboratoire"
+
+msgctxt "selection:gnuhealth.lab,state:"
+msgid "Done"
+msgstr "Terminé"
+
+msgctxt "selection:gnuhealth.lab,state:"
+msgid "Draft"
+msgstr "Brouillon"
+
+msgctxt "selection:gnuhealth.lab,state:"
+msgid "Validated"
+msgstr "Validé"
