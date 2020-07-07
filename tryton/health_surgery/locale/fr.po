@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:10+0000\n"
+"PO-Revision-Date: 2020-07-08 15:26+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_surgery/fr/>\n"
@@ -47,7 +47,7 @@ msgstr "Code"
 
 msgctxt "field:gnuhealth.operation,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.operation,write_date:"
 msgid "Write Date"
@@ -119,7 +119,7 @@ msgstr "Score"
 
 msgctxt "field:gnuhealth.rcri,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.rcri,write_date:"
 msgid "Write Date"
@@ -243,7 +243,7 @@ msgstr "Procédures"
 
 msgctxt "field:gnuhealth.surgery,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.surgery,report_surgery_date:"
 msgid "Surgery Date"
@@ -327,7 +327,7 @@ msgstr "Utilisé"
 
 msgctxt "field:gnuhealth.surgery_supply,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.surgery_supply,supply:"
 msgid "Supply"
@@ -363,7 +363,7 @@ msgstr "Notes"
 
 msgctxt "field:gnuhealth.surgery_team,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.surgery_team,role:"
 msgid "Role"
