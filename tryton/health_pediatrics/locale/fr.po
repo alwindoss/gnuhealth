@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:10+0000\n"
+"PO-Revision-Date: 2020-07-09 23:32+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_pediatrics/fr/>\n"
@@ -65,7 +65,7 @@ msgstr "ID du nouveau-né"
 
 msgctxt "field:gnuhealth.neonatal.apgar,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.neonatal.apgar,write_date:"
 msgid "Write Date"
@@ -273,7 +273,7 @@ msgstr "Stimulation"
 
 msgctxt "field:gnuhealth.newborn,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.newborn,sex:"
 msgid "Sex"
@@ -509,7 +509,7 @@ msgstr "S'inquiète beaucoup"
 
 msgctxt "field:gnuhealth.patient.psc,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.patient.psc,user_id:"
 msgid "Health Professional"
