@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-10 17:03+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: el_GR\n"
+"PO-Revision-Date: 2020-07-10 21:47+0000\n"
+"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_icd10/el/>\n"
+"Language: el\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 "X-POOTLE-MTIME: 1452445384.0\n"
 
 msgctxt "model:gnuhealth.pathology,name:A00"
@@ -4755,7 +4757,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:C30"
 msgid "Malignant neoplasm of nasal cavity and middle ear"
-msgstr ""
+msgstr "Κακοήθη νεόπλασμα της ρινικής κοιλότητας και του μέσου ωτός"
 
 #, fuzzy
 msgctxt "model:gnuhealth.pathology,name:C300"
@@ -4769,7 +4771,7 @@ msgstr "Κακοήθη νεοπλάσματα του παγκρέατος"
 
 msgctxt "model:gnuhealth.pathology,name:C31"
 msgid "Malignant neoplasm of accessory sinuses"
-msgstr ""
+msgstr "Κακοήθη νεόπλασμα των βοηθητικών κόλπων"
 
 #, fuzzy
 msgctxt "model:gnuhealth.pathology,name:C310"
@@ -4837,11 +4839,11 @@ msgstr "Κακοήθη νεοπλάσματα των αμυγδαλών"
 
 msgctxt "model:gnuhealth.pathology,name:C33"
 msgid "Malignant neoplasm of trachea"
-msgstr ""
+msgstr "Κακοήθη νεόπλασμα τραχείας"
 
 msgctxt "model:gnuhealth.pathology,name:C34"
 msgid "Malignant neoplasm of bronchus and lung"
-msgstr ""
+msgstr "Κακοήθη νεόπλασμα του βρόγχου και του πνεύμονα"
 
 #, fuzzy
 msgctxt "model:gnuhealth.pathology,name:C340"
@@ -4937,7 +4939,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:C40"
 msgid "Malignant neoplasm of bone and articular cartilage of limbs"
-msgstr ""
+msgstr "Κακοήθη νεόπλασμα των οστών και του αρθρικού χόνδρου των άκρων"
 
 #, fuzzy
 msgctxt "model:gnuhealth.pathology,name:C400"
@@ -4974,6 +4976,7 @@ msgid ""
 "Malignant neoplasm of bone and articular cartilage of other and unspecified "
 "sites"
 msgstr ""
+"Κακοήθη νεόπλασμα οστών και αρθρικός χόνδρος άλλων και μη καθορισμένων θέσεων"
 
 #, fuzzy
 msgctxt "model:gnuhealth.pathology,name:C410"
@@ -5012,7 +5015,7 @@ msgstr "Κακοήθη νεοπλάσματα του ήπατος και των 
 
 msgctxt "model:gnuhealth.pathology,name:C43"
 msgid "Malignant melanoma of skin"
-msgstr ""
+msgstr "Κακοήθης μελάνωμα του δέρματος"
 
 #, fuzzy
 msgctxt "model:gnuhealth.pathology,name:C430"
@@ -33054,7 +33057,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:Q632"
 msgid "Ectopic kidney"
-msgstr ""
+msgstr "Έκτοπος νεφρός"
 
 msgctxt "model:gnuhealth.pathology,name:Q633"
 msgid "Hyperplastic and giant kidney"
@@ -33561,7 +33564,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:Q777"
 msgid "Spondyloepiphyseal dysplasia"
-msgstr ""
+msgstr "Δυσπλασία σπονδυλοεπυψίας"
 
 msgctxt "model:gnuhealth.pathology,name:Q778"
 msgid ""
@@ -33576,43 +33579,43 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:Q78"
 msgid "Other osteochondrodysplasias"
-msgstr ""
+msgstr "Άλλες οστεοχονδροδυσπλασίες"
 
 msgctxt "model:gnuhealth.pathology,name:Q780"
 msgid "Osteogenesis imperfecta"
-msgstr ""
+msgstr "Ατελής οστεογένεση"
 
 msgctxt "model:gnuhealth.pathology,name:Q781"
 msgid "Polyostotic fibrous dysplasia"
-msgstr ""
+msgstr "Πολυοστατική ινώδης δυσπλασία"
 
 msgctxt "model:gnuhealth.pathology,name:Q782"
 msgid "Osteopetrosis"
-msgstr ""
+msgstr "Οστεοπέτρωση"
 
 msgctxt "model:gnuhealth.pathology,name:Q783"
 msgid "Progressive diaphyseal dysplasia"
-msgstr ""
+msgstr "Προοδευτική δυσπλασία της διάφυσης"
 
 msgctxt "model:gnuhealth.pathology,name:Q784"
 msgid "Enchondromatosis"
-msgstr ""
+msgstr "Ενχονδρομάτωση"
 
 msgctxt "model:gnuhealth.pathology,name:Q785"
 msgid "Metaphyseal dysplasia"
-msgstr ""
+msgstr "Μεταφυσική δυσπλασία"
 
 msgctxt "model:gnuhealth.pathology,name:Q786"
 msgid "Multiple congenital exostoses"
-msgstr ""
+msgstr "Πολλαπλές συγγενείς εξοστώσεις"
 
 msgctxt "model:gnuhealth.pathology,name:Q788"
 msgid "Other specified osteochondrodysplasias"
-msgstr ""
+msgstr "Άλλες καθορισμένες οστεοχονδροδυσπλασίες"
 
 msgctxt "model:gnuhealth.pathology,name:Q789"
 msgid "Osteochondrodysplasia, unspecified"
-msgstr ""
+msgstr "Οστεοχονδροδυσπλασία, μη καθορισμένη"
 
 #, fuzzy
 msgctxt "model:gnuhealth.pathology,name:Q79"
@@ -33625,19 +33628,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:Q790"
 msgid "Congenital diaphragmatic hernia"
-msgstr ""
+msgstr "Συγγενής διαφραγματική κήλη"
 
 msgctxt "model:gnuhealth.pathology,name:Q791"
 msgid "Other congenital malformations of diaphragm"
-msgstr ""
+msgstr "Άλλες συγγενείς δυσπλασίες του διαφράγματος"
 
 msgctxt "model:gnuhealth.pathology,name:Q792"
 msgid "Exomphalos"
-msgstr ""
+msgstr "Εξώφαλος"
 
 msgctxt "model:gnuhealth.pathology,name:Q793"
 msgid "Gastroschisis"
-msgstr ""
+msgstr "Γαστροσχισση"
 
 msgctxt "model:gnuhealth.pathology,name:Q794"
 msgid "Prune belly syndrome"
@@ -48832,7 +48835,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W744"
 msgid "Street and highway"
-msgstr ""
+msgstr "Οδός και αυτοκινητόδρομος"
 
 msgctxt "model:gnuhealth.pathology,name:W745"
 msgid "Trade and service area"
@@ -48840,11 +48843,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W746"
 msgid "Industrial and construction area"
-msgstr ""
+msgstr "Βιομηχανική και κατασκευαστική περιοχή"
 
 msgctxt "model:gnuhealth.pathology,name:W747"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W748"
 msgid "Other specified place"
@@ -48868,7 +48871,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W752"
 msgid "School, other institution and public administrative area"
-msgstr ""
+msgstr "Σχολείο, άλλο ίδρυμα και δημόσιος διοικητικός χώρος"
 
 msgctxt "model:gnuhealth.pathology,name:W753"
 msgid "Sports and athletics area"
@@ -48876,7 +48879,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W754"
 msgid "Street and highway"
-msgstr ""
+msgstr "Οδός και αυτοκινητόδρομος"
 
 msgctxt "model:gnuhealth.pathology,name:W755"
 msgid "Trade and service area"
@@ -48884,19 +48887,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W756"
 msgid "Industrial and construction area"
-msgstr ""
+msgstr "Βιομηχανική και κατασκευαστική περιοχή"
 
 msgctxt "model:gnuhealth.pathology,name:W757"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W758"
 msgid "Other specified place"
-msgstr ""
+msgstr "Άλλο καθορισμένο μέρος"
 
 msgctxt "model:gnuhealth.pathology,name:W759"
 msgid "Unspecified place"
-msgstr ""
+msgstr "Απροσδιόριστο μέρος"
 
 msgctxt "model:gnuhealth.pathology,name:W76"
 msgid "Other accidental hanging and strangulation"
@@ -48912,7 +48915,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W762"
 msgid "School, other institution and public administrative area"
-msgstr ""
+msgstr "Σχολείο, άλλο ίδρυμα και δημόσιος διοικητικός χώρος"
 
 msgctxt "model:gnuhealth.pathology,name:W763"
 msgid "Sports and athletics area"
@@ -48920,7 +48923,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W764"
 msgid "Street and highway"
-msgstr ""
+msgstr "Οδός και αυτοκινητόδρομος"
 
 msgctxt "model:gnuhealth.pathology,name:W765"
 msgid "Trade and service area"
@@ -48928,11 +48931,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W766"
 msgid "Industrial and construction area"
-msgstr ""
+msgstr "Βιομηχανική και κατασκευαστική περιοχή"
 
 msgctxt "model:gnuhealth.pathology,name:W767"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W768"
 msgid "Other specified place"
@@ -48976,7 +48979,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W777"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W778"
 msgid "Other specified place"
@@ -49020,7 +49023,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W787"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W788"
 msgid "Other specified place"
@@ -49065,7 +49068,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W797"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W798"
 msgid "Other specified place"
@@ -49111,7 +49114,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W807"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W808"
 msgid "Other specified place"
@@ -49155,7 +49158,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W817"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W818"
 msgid "Other specified place"
@@ -49199,7 +49202,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W837"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W838"
 msgid "Other specified place"
@@ -49243,7 +49246,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W847"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W848"
 msgid "Other specified place"
@@ -49287,7 +49290,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W857"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W858"
 msgid "Other specified place"
@@ -49331,7 +49334,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W867"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W868"
 msgid "Other specified place"
@@ -49419,7 +49422,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W887"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W888"
 msgid "Other specified place"
@@ -49463,7 +49466,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W897"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W898"
 msgid "Other specified place"
@@ -49507,7 +49510,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W907"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W908"
 msgid "Other specified place"
@@ -49551,7 +49554,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W917"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W918"
 msgid "Other specified place"
@@ -49595,7 +49598,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W927"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W928"
 msgid "Other specified place"
@@ -49639,7 +49642,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W937"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W938"
 msgid "Other specified place"
@@ -49683,7 +49686,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W947"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W948"
 msgid "Other specified place"
@@ -49727,7 +49730,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:W997"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:W998"
 msgid "Other specified place"
@@ -49815,7 +49818,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:X017"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:X018"
 msgid "Other specified place"
@@ -49859,7 +49862,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:X027"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:X028"
 msgid "Other specified place"
@@ -49903,7 +49906,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:X037"
 msgid "Farm"
-msgstr ""
+msgstr "Φάρμα"
 
 msgctxt "model:gnuhealth.pathology,name:X038"
 msgid "Other specified place"
