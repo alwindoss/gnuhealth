@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:09+0000\n"
+"PO-Revision-Date: 2020-07-10 21:47+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_imaging/fr/>\n"
@@ -37,7 +37,7 @@ msgstr "Service"
 
 msgctxt "field:gnuhealth.imaging.test,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.imaging.test,test_type:"
 msgid "Type"
@@ -81,7 +81,7 @@ msgstr "Patient"
 
 msgctxt "field:gnuhealth.imaging.test.request,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.imaging.test.request,request:"
 msgid "Request"
@@ -145,7 +145,7 @@ msgstr "Patient"
 
 msgctxt "field:gnuhealth.imaging.test.result,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.imaging.test.result,request:"
 msgid "Request"
@@ -189,7 +189,7 @@ msgstr "Nom"
 
 msgctxt "field:gnuhealth.imaging.test.type,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.imaging.test.type,write_date:"
 msgid "Write Date"
@@ -273,31 +273,31 @@ msgstr "Demande - Examen"
 
 msgctxt "model:ir.action,name:act_imaging_test_request_view"
 msgid "Imaging Test Request"
-msgstr ""
+msgstr "Demande de test d'imagerie"
 
 msgctxt "model:ir.action,name:act_imaging_test_request_view2"
 msgid "Imaging Test Request"
-msgstr ""
+msgstr "Demande de test d'imagerie"
 
 msgctxt "model:ir.action,name:act_imaging_test_result_view"
 msgid "Imaging Test Result"
-msgstr ""
+msgstr "Résultat de test d'imagerie"
 
 msgctxt "model:ir.action,name:act_imaging_test_result_view2"
 msgid "Imaging Test Results"
-msgstr ""
+msgstr "Résultats de test d'imagerie"
 
 msgctxt "model:ir.action,name:act_imaging_test_type_view"
 msgid "Imaging Test Type"
-msgstr ""
+msgstr "Type de test d'imagerie"
 
 msgctxt "model:ir.action,name:act_imaging_test_view"
 msgid "Imaging Test"
-msgstr ""
+msgstr "Test d'imagerie"
 
 msgctxt "model:ir.action,name:patient_imaging_test_request"
 msgid "Request Imaging Test"
-msgstr ""
+msgstr "Demande de test d'imagerie"
 
 msgctxt "model:ir.action,name:wizard_generate_result"
 msgid "Generate Result"
