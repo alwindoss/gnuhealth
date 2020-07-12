@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:09+0000\n"
+"PO-Revision-Date: 2020-07-12 22:41+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_ntd_chagas/fr/>\n"
@@ -85,7 +85,7 @@ msgstr "Date de Peinture"
 
 msgctxt "field:gnuhealth.chagas_du_survey,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgctxt "field:gnuhealth.chagas_du_survey,survey_date:"
 msgid "Date"
@@ -193,77 +193,86 @@ msgstr "Enquête entomologique du Chagas du domicile"
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_bsmear_trypomastigotes"
 msgid "Trypomastigotes"
-msgstr ""
+msgstr "Trypomastigotes"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_elisa_igg"
 msgid "Chagas ELISA Ig-G"
-msgstr ""
+msgstr "Analyse ELISA Ig-G de la maladie de Chagas"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_elisa_igm"
 msgid "Chagas ELISA Ig-M"
-msgstr ""
+msgstr "Analyse ELISA Ig-M de la maladie de Chagas"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_ifa_igg"
 msgid "Chagas IFA Ig-G"
-msgstr ""
+msgstr "Analyse IFA Ig-G de la maladie de Chagas"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_ifa_igm"
 msgid "Chagas IFA Ig-M"
-msgstr ""
+msgstr "Analyse  IFA Ig-M de la maladie de Chagas"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_parasites"
 msgid "T. cruzi in triatomine excreta"
-msgstr ""
+msgstr "T. cruzi in triatomine excreta"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_qpcr"
 msgid "Chagas Realtime Quantitative qPCR"
-msgstr ""
+msgstr "Test qPCR quantitatif en temps Réel de la maladie de Chagas"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_qualitative_pcr"
 msgid "Chagas Qualitative PCR"
-msgstr ""
+msgstr "PCR quantitatif de la maladie de Chagas"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_strout_trypomastigotes"
 msgid "Trypomastigotes"
-msgstr ""
+msgstr "Trypomastigotes"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test_type,name:gnuhealth_test_chagas_bsmear_analysis0"
 msgid "CHAGAS BLOOD SMEAR"
-msgstr ""
+msgstr "FROTTIS SANGUIN DE LA MALADIE DE CHAGAS"
 
 msgctxt ""
 "model:gnuhealth.lab.test_type,name:gnuhealth_test_chagas_elisa_analysis0"
 msgid "CHAGAS ELISA"
-msgstr ""
+msgstr "ANALYSE ELISA DE LA MALADIE DE CHAGAS"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test_type,name:gnuhealth_test_chagas_ifa_analysis0"
 msgid "CHAGAS INDIRECT IMMUNOFLUORESCENCE - IFA"
-msgstr ""
+msgstr "ANALYSE EN IMMUNOFLUORESCENCE INDIRECTE - IFA - DE LA MALADIE DE CHAGAS"
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test_type,name:gnuhealth_test_chagas_pcr_analysis0"
 msgid "CHAGAS PCR"
-msgstr ""
+msgstr "PCR DE LA MALADIE DE CHAGAS"
 
 msgctxt ""
 "model:gnuhealth.lab.test_type,name:gnuhealth_test_chagas_strout_analysis0"
 msgid "CHAGAS STROUT"
 msgstr ""
 
+#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test_type,name:gnuhealth_test_chagas_xenodiagnosis_analysis0"
 msgid "CHAGAS XENODIAGNOSIS"
-msgstr ""
+msgstr "XENODIAGNOSTIC DE LA MALADIE DE CHAGAS"
 
 msgctxt "model:ir.action,name:act_chagas_du_survey_form"
 msgid "Chagas DU Survey"
