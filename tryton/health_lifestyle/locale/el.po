@@ -1,18 +1,20 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-10 17:03+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: el_GR\n"
+"PO-Revision-Date: 2020-07-16 18:29+0000\n"
+"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_lifestyle/el/>\n"
+"Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 "X-POOTLE-MTIME: 1452445403.0\n"
 
 msgctxt "error:gnuhealth.diet.belief:"
 msgid "The Diet code already exists"
-msgstr ""
+msgstr "Ο κωδικός της δίαιτας υπάρχει ήδη"
 
 msgctxt "error:gnuhealth.drugs_recreational:"
 msgid "The Recreational Drug CODE must be unique"
@@ -24,39 +26,39 @@ msgstr ""
 
 msgctxt "field:gnuhealth.diet.belief,code:"
 msgid "Code"
-msgstr ""
+msgstr "Κωδικός"
 
 msgctxt "field:gnuhealth.diet.belief,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.diet.belief,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.diet.belief,description:"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 msgctxt "field:gnuhealth.diet.belief,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.diet.belief,name:"
 msgid "Belief"
-msgstr ""
+msgstr "Πίστη"
 
 msgctxt "field:gnuhealth.diet.belief,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.diet.belief,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Γράψτε την ημερομηνία"
 
 msgctxt "field:gnuhealth.diet.belief,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Γράψτε τν χρήστη"
 
 msgctxt "field:gnuhealth.drugs_recreational,addiction_level:"
 msgid "Dependence"
@@ -108,7 +110,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.drugs_recreational,info:"
 msgid "Extra Info"
-msgstr "Επιπλέον Πληροφορίες"
+msgstr "Επιπλέον πληροφορίες"
 
 msgctxt "field:gnuhealth.drugs_recreational,intoxication_level:"
 msgid "Intoxication"
@@ -248,7 +250,7 @@ msgstr "Τρεχόντως υπό δίαιτα"
 
 msgctxt "field:gnuhealth.patient,diet_belief:"
 msgid "Belief"
-msgstr ""
+msgstr "Πίστη"
 
 msgctxt "field:gnuhealth.patient,diet_info:"
 msgid "Diet info"
@@ -384,7 +386,7 @@ msgstr "Σέβεται τον Κ.Ο.Κ."
 
 msgctxt "field:gnuhealth.patient,vegetarian_type:"
 msgid "Vegetarian"
-msgstr ""
+msgstr "Vegetarian"
 
 msgctxt "field:gnuhealth.patient.cage,cage_a:"
 msgid "Angry with Critics"
@@ -476,39 +478,39 @@ msgstr "Γράψτε τον χρήστη"
 
 msgctxt "field:gnuhealth.vegetarian_types,code:"
 msgid "Code"
-msgstr ""
+msgstr "Κωδικός"
 
 msgctxt "field:gnuhealth.vegetarian_types,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.vegetarian_types,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.vegetarian_types,desc:"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 msgctxt "field:gnuhealth.vegetarian_types,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.vegetarian_types,name:"
 msgid "Vegetarian"
-msgstr ""
+msgstr "Vegetarian"
 
 msgctxt "field:gnuhealth.vegetarian_types,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.vegetarian_types,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Γράψτε την ημερομηνία"
 
 msgctxt "field:gnuhealth.vegetarian_types,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Γράψτε τν χρήστη"
 
 msgctxt "help:gnuhealth.drugs_recreational,code:"
 msgid "Please use CAPITAL LETTERS and no spaces"
@@ -822,15 +824,15 @@ msgstr "Ένοιωσες ποτέ ενοχή για το ότι πίνεις;"
 
 msgctxt "help:gnuhealth.vegetarian_types,code:"
 msgid "Short description"
-msgstr ""
+msgstr "Σύντομη περιγραφή"
 
 msgctxt "help:gnuhealth.vegetarian_types,desc:"
 msgid "Short description"
-msgstr ""
+msgstr "Σύντομη περιγραφή"
 
 msgctxt "help:gnuhealth.vegetarian_types,name:"
 msgid "Vegetarian"
-msgstr ""
+msgstr "Vegetarian"
 
 msgctxt "model:gnuhealth.diet.belief,description:BUDDHIST"
 msgid ""
@@ -888,7 +890,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.diet.belief,name:BUDDHIST"
 msgid "Buddhist"
-msgstr ""
+msgstr "Βουδιστής"
 
 msgctxt "model:gnuhealth.diet.belief,name:EDENIC"
 msgid "Edenic"
@@ -900,7 +902,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.diet.belief,name:HINDU"
 msgid "Hindu"
-msgstr ""
+msgstr "Ινδουιστής"
 
 msgctxt "model:gnuhealth.diet.belief,name:ITAL"
 msgid "I-tal"
@@ -912,7 +914,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.diet.belief,name:MUSLIM"
 msgid "Muslim"
-msgstr ""
+msgstr "Μουσουλμάνος"
 
 msgctxt "model:gnuhealth.drugs_recreational,name:"
 msgid "Recreational Drug"
@@ -1036,7 +1038,7 @@ msgstr "Ο Ασθενής κάνει χρήση Ψυχαγωγικών φαρμ�
 
 msgctxt "model:gnuhealth.vegetarian_types,name:"
 msgid "Vegetarian Types"
-msgstr ""
+msgstr "Τύποι Vegetarian"
 
 msgctxt "model:gnuhealth.vegetarian_types,name:lacto"
 msgid "Lacto vegetarian"
@@ -1056,7 +1058,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.vegetarian_types,name:vegan"
 msgid "Vegan"
-msgstr ""
+msgstr "Vegan"
 
 msgctxt "model:ir.action,name:gnuhealth_action_diet_belief"
 msgid "Belief diets"
@@ -1072,7 +1074,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_diets"
 msgid "Diets"
-msgstr ""
+msgstr "Δίαιτες"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_drugs_recreational"
 msgid "Recreational Drugs"
