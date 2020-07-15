@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-10 17:03+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: el_GR\n"
+"PO-Revision-Date: 2020-07-16 18:29+0000\n"
+"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_icu/el/>\n"
+"Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 "X-POOTLE-MTIME: 1452445393.0\n"
 
 msgctxt "error:gnuhealth.icu.ventilation:"
@@ -33,7 +35,7 @@ msgstr "Βαθμολογία"
 
 msgctxt "field:gnuhealth.icu.apache2,arf:"
 msgid "ARF"
-msgstr ""
+msgstr "ARF"
 
 msgctxt "field:gnuhealth.icu.apache2,chronic_condition:"
 msgid "Chronic condition"
@@ -469,7 +471,7 @@ msgstr "Δεξ."
 
 msgctxt "field:gnuhealth.patient.rounding,sce:"
 msgid "SCE"
-msgstr ""
+msgstr "SCE"
 
 msgctxt "field:gnuhealth.patient.rounding,ssi:"
 msgid "Surgery Site Infection"
@@ -658,7 +660,7 @@ msgstr "Βαθμολογία APACHE II"
 
 msgctxt "model:ir.action,name:action_gnuhealth_icu_ecg_form1"
 msgid "ECGs"
-msgstr ""
+msgstr "ECGs"
 
 msgctxt "model:ir.action,name:action_gnuhealth_icu_glasgow_form"
 msgid "GCS"
@@ -678,7 +680,7 @@ msgstr "Βαθμολογία APACHE II"
 
 msgctxt "model:ir.ui.menu,name:menu_gnuhealth_icu_ecgs_list1"
 msgid "ECGs"
-msgstr ""
+msgstr "ECGs"
 
 msgctxt "model:ir.ui.menu,name:menu_gnuhealth_icu_glasgow_list"
 msgid "GCS"
@@ -901,7 +903,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.rounding,respiration_type:"
 msgid "Deep"
-msgstr ""
+msgstr "Βαθιά"
 
 msgctxt "selection:gnuhealth.patient.rounding,respiration_type:"
 msgid "Intercostal"
