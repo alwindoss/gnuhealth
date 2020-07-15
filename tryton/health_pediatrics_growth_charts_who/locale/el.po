@@ -1,18 +1,27 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-07-16 18:29+0000\n"
+"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_pediatrics_growth_charts_who/el/>\n"
+"Language: el\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,indicator:"
 msgid "Indicator"
@@ -24,35 +33,35 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,month:"
 msgid "Month"
-msgstr ""
+msgstr "Μήνας"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,sex:"
 msgid "Sex"
-msgstr ""
+msgstr "Φύλο"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,type:"
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,value:"
 msgid "Value"
-msgstr ""
+msgstr "Τιμή"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Γράψτε την ημερομηνία"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Γράψτε τν χρήστη"
 
 msgctxt "field:gnuhealth.pediatrics.growth.charts.who.report.open.start,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt ""
 "field:gnuhealth.pediatrics.growth.charts.who.report.open.start,indicator:"
@@ -66,7 +75,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pediatrics.growth.charts.who,name:"
 msgid "Pediatrics Growth Chart WHO"
-msgstr ""
+msgstr "Διάγραμμα ανάπτυξης παιδιατρικής ΠΟΥ"
 
 msgctxt "model:gnuhealth.pediatrics.growth.charts.who.report.open.start,name:"
 msgid "Open Pediatrics Growth Charts WHO Report Start"
@@ -74,7 +83,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_growth_charts_who"
 msgid "Pediatrics Growth Charts WHO"
-msgstr ""
+msgstr "Διάγραμμα ανάπτυξης παιδιατρικής ΠΟΥ"
 
 msgctxt "model:ir.action,name:report_pediatrics_growth_charts_who_bmifa"
 msgid "Pediatrics Growth Charts WHO - BMI for age"
@@ -90,11 +99,11 @@ msgstr ""
 
 msgctxt "model:ir.action,name:wizard_pediatrics_growth_charts_who"
 msgid "Pediatrics Growth Charts WHO"
-msgstr ""
+msgstr "Διάγραμμα ανάπτυξης παιδιατρικής ΠΟΥ"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_growth_charts_who"
 msgid "Pediatrics Growth Charts WHO"
-msgstr ""
+msgstr "Διάγραμμα ανάπτυξης παιδιατρικής ΠΟΥ"
 
 msgctxt "selection:gnuhealth.pediatrics.growth.charts.who,indicator:"
 msgid "Body mass index for age (BMI for age)"
@@ -118,11 +127,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.pediatrics.growth.charts.who,sex:"
 msgid "Female"
-msgstr ""
+msgstr "Θήλυ"
 
 msgctxt "selection:gnuhealth.pediatrics.growth.charts.who,sex:"
 msgid "Male"
-msgstr ""
+msgstr "Άρρεν"
 
 msgctxt ""
 "selection:gnuhealth.pediatrics.growth.charts.who.report.open.start,indicator:"
@@ -152,9 +161,9 @@ msgstr ""
 msgctxt ""
 "wizard_button:gnuhealth.pediatrics.growth.charts.who.report.open,start,choose:"
 msgid "Open"
-msgstr ""
+msgstr "Άνοιγμα"
 
 msgctxt ""
 "wizard_button:gnuhealth.pediatrics.growth.charts.who.report.open,start,end:"
 msgid "Cancel"
-msgstr ""
+msgstr "Ακύρωση"
