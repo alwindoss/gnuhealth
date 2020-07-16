@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-07-08 15:26+0000\n"
+"PO-Revision-Date: 2020-07-16 18:29+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_lab/fr/>\n"
@@ -551,7 +551,6 @@ msgctxt ""
 msgid "Glucose"
 msgstr "Glucose"
 
-#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_gra0"
 msgid "GRA#"
@@ -596,7 +595,6 @@ msgctxt ""
 msgid "LYM%"
 msgstr "LYM%"
 
-#, fuzzy
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_lym1"
 msgid "LYM#"
