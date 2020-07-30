@@ -1,5 +1,5 @@
-Thalamus: The GNU Health Message and Authentication Server
-==========================================================
+Thalamus: The GNU Health Federation Message and Authentication Server
+=====================================================================
 
 The Thalamus project provides a RESTful API hub to all the GNU Health 
 Federation nodes. The main functions are:
@@ -21,7 +21,7 @@ Installation
 ------------
 Thalamus is pip-installable::
 
-  $ pip3 install --upgrade --user thalamus 
+  $ pip3 install --upgrade --user thalamus
  
 Technology
 ----------
@@ -82,91 +82,140 @@ Examples
 
 Retrieve the demographic information of person::
 
-  $ http --verify no --auth ITAPYT999HON:gnusolidario https://localhost:8443/people/ESPGNU777ORG
+  $ http --verify no --auth ARGBUE111FAV:freedom https://federation.gnuhealth.org:8443/people/ESPGNU777ORG
+
 
 Yields to::
 
-    HTTP/1.1 200 OK
-    Connection: close
-    Content-Length: 411
-    Content-Type: application/json
-    Date: Fri, 21 Apr 2017 16:22:38 GMT
-    Server: gunicorn/19.7.1
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Connection: close
+Content-Length: 547
+Content-Type: application/json
+Date: Thu, 30 Jul 2020 12:01:37 GMT
+Server: gunicorn/20.0.0
 
-    {
-        "_id": "ESPGNU777ORG",
-        "active": true,
-        "biological_sex": "female",
-        "dob": "Fri, 04 Oct 1985 13:05:00 GMT",
-        "education": "tertiary",
-        "ethnicity": "latino",
-        "gender": "female",
-        "lastname": "Betz",
-        "marital_status": "married",
-        "name": "Ana",
-        "password": "$2b$12$cjrKVGYEKUwCmVDCtEnwcegcrmECTmeBz526AAD/ZqMGPWFpHJ4FW",
-        "profession": "teacher",
-        "roles": [
+{
+    "_id": "ESPGNU777ORG",
+    "active": true,
+    "dob": "1990-10-04",
+    "education": "tertiary",
+    "ethnicity": "latino",
+    "gender": "f",
+    "id": "ESPGNU777ORG",
+    "lastname": "Betz",
+    "marital_status": "married",
+    "modification_info": {
+        "node": "SPAIN-LASPALMAS-GNUSOLIDARIO-GRAL_HOSPITAL",
+        "timestamp": "2018-11-06 19:24:43.662846",
+        "user": "ITAPYT999HON"
+    },
+    "name": "Ana",
+    "password": "$2b$12$cjrKVGYEKUwCmVDCtEnwcegcrmECTmeBz526AAD/ZqMGPWFpHJ4FW",
+    "profession": "teacher",
+    "roles": [
         "end_user"
-        ]
-        
-    }
+    ]
+}
 
 **Retrieve the demographics information globally**::
 
-  $ http --verify no --auth ITAPYT999HON:gnusolidario https://localhost:8443/people
+  $ http --verify no --auth ARGBUE111FAV:freedom https://federation.gnuhealth.org:8443/people
 
 Yields to::
 
-    HTTP/1.1 200 OK
-    Connection: close
-    Content-Length: 933
-    Content-Type: application/json
-    Date: Fri, 21 Apr 2017 16:31:23 GMT
-    Server: gunicorn/19.7.1
 
-    [
-        {
-            "_id": "ITAPYT999HON",
-            "active": true,
-            "biological_sex": "female",
-            "dob": "Fri, 05 Oct 1984 09:00:00 GMT",
-            "education": "tertiary",
-            "ethnicity": "latino",
-            "gender": "female",
-            "lastname": "Cordara",
-            "marital_status": "married",
-            "name": "Cameron",
-            "password": "$2b$12$Y9rX7PoTHRXhTO1H78Tan.8mVmyayGAUIveiYxu2Qeo0ZDRvJQ8/2",
-            "profession": "teacher",
-            "roles": [
-            "end_user",
-            "health_professional"
-            ]
-            
-        },
-        
-        {
-            "_id": "ESPGNU777ORG",
-            "active": true,
-            "biological_sex": "female",
-            "dob": "Fri, 04 Oct 1985 13:05:00 GMT",
-            "education": "tertiary",
-            "ethnicity": "latino",
-            "gender": "female",
-            "lastname": "Betz",
-            "marital_status": "married",
-            "name": "Ana",
-            "password": "$2b$12$cjrKVGYEKUwCmVDCtEnwcegcrmECTmeBz526AAD/ZqMGPWFpHJ4FW",
-            "profession": "teacher",
-            "roles": [
-            "end_user"
-            ]
-            
-        }
-        
-    ]
-    
+HTTP/1.1 200 OK 
+Access-Control-Allow-Origin: * 
+Connection: close 
+Content-Length: 2715 
+Content-Type: application/json 
+Date: Mon, 20 Jul 2020 18:03:24 GMT 
+Server: gunicorn/20.0.0 
+
+[ 
+   [ 
+       { 
+           "active": true, 
+           "dob": "1984-10-05", 
+           "education": "tertiary", 
+           "ethnicity": "latino", 
+           "gender": "f", 
+           "id": "ITAPYT999HON", 
+           "lastname": "Cordara", 
+           "marital_status": "married", 
+           "name": "Cameron", 
+           "password": "$2b$12$Y9rX7PoTHRXhTO1H78Tan.8mVmyayGAUIveiYxu2Qeo0ZDRvJQ8/2", 
+           "profession": "teacher", 
+           "roles": [ 
+               "end_user", 
+               "health_professional" 
+           ] 
+       } 
+   ],
+  [ 
+       { 
+           "creation_info": { 
+               "node": "SPAIN-LASPALMAS-GNUSOLIDARIO-GRAL_HOSPITAL", 
+               "timestamp": "2019-11-20 10:39:21.162731", 
+               "user": "ITAPYT999HON" 
+           }, 
+           "dob": "1999-10-12", 
+           "gender": "m", 
+           "id": "DEUMOP095IDI", 
+           "lastname": "Dillinger", 
+           "name": "John Doe", 
+           "roles": [ 
+               "end_user" 
+           ] 
+       } 
+   ],
+
+ 
+   [ 
+       { 
+           "active": true, 
+           "dob": "2008-10-12", 
+           "education": "tertiary", 
+           "ethnicity": "latino", 
+           "gender": "f", 
+           "id": "ARGBUE111FAV", 
+           "lastname": "Root", 
+           "marital_status": "married", 
+           "name": "Admin", 
+           "password": "$2b$12$McKDNgArdHKbUssD1fj64ecpdbJGMIt29ns7DGvqzqIT26W0dtJzi", 
+           "profession": "System Administrator", 
+           "roles": [ 
+               "root" 
+           ] 
+       } 
+   ], 
+   [ 
+       { 
+           "_id": "ESPGNU777ORG", 
+           "active": true, 
+           "dob": "1990-10-04", 
+           "education": "tertiary", 
+           "ethnicity": "latino", 
+           "gender": "f", 
+           "id": "ESPGNU777ORG", 
+           "lastname": "Betz", 
+           "marital_status": "married", 
+           "modification_info": { 
+               "node": "SPAIN-LASPALMAS-GNUSOLIDARIO-GRAL_HOSPITAL", 
+               "timestamp": "2018-11-06 19:24:43.662846", 
+               "user": "ITAPYT999HON" 
+           }, 
+           "name": "Ana", 
+           "password": "$2b$12$cjrKVGYEKUwCmVDCtEnwcegcrmECTmeBz526AAD/ZqMGPWFpHJ4FW", 
+           "profession": "teacher", 
+           "roles": [ 
+               "end_user" 
+           ] 
+       } 
+   ], 
+]
+
 
 **Using Python requests**::
 
