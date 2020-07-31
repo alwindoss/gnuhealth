@@ -1036,6 +1036,9 @@ class PageOfLife(ModelSQL, ModelView):
         states={'invisible': Not(Equal(Eval('medical_context'), 'genetics'))})
 
     summary = fields.Char("Summary")
+    measurements = fields.Char("Measurements", readonly=True,
+                               help="Automatically included measurements"
+                               " such vital signs, HR, RR and anthropometrics")
     info = fields.Text("Extended Information")
 
     institution = fields.Many2One('gnuhealth.institution', 'Institution')
@@ -5377,14 +5380,46 @@ class PatientEvaluation(ModelSQL, ModelView):
         Pol = Pool().get('gnuhealth.pol')
         pol = []
 
+        # Create a dictionary with vital signs and other measurements
+        measurements = {}
+        bp = {}
+        if evaluation.systolic:
+            bp['systolic']= evaluation.systolic
+        if evaluation.diastolic:
+            bp['diastolic']= evaluation.diastolic
+
+        if bp:
+            measurements['bp']=bp
+        if evaluation.temperature:
+            measurements['t']=evaluation.temperature
+        if evaluation.bpm:
+            measurements['hr']=evaluation.bpm
+        if evaluation.respiratory_rate:
+            measurements['rr']=evaluation.respiratory_rate
+        if evaluation.osat:
+            measurements['osat']=evaluation.osat
+        if evaluation.glycemia:
+            measurements['bs']=evaluation.glycemia
+        if evaluation.weight:
+            measurements['wt']=evaluation.weight
+        if evaluation.height:
+            measurements['ht']=evaluation.height
+        if evaluation.bmi:
+            measurements['bmi']=evaluation.bmi
+        if evaluation.head_circumference:
+            measurements['hc']=evaluation.head_circumference
+
         assessment = (evaluation.diagnosis and
             evaluation.diagnosis.rec_name) or ''
 
+        measures = str(measurements)
+        print ("--->", measures)
         # Summarize the encounter note taking as SOAP
         soap = \
             "S: " + evaluation.chief_complaint + "\n--\n" + \
                     evaluation.present_illness +"\n" + \
             "O: " + evaluation.evaluation_summary + "\n" + \
+                    measures + "\n" + \
             "A: " + assessment + "\n" + \
             "P: " + evaluation.directions
 
@@ -5399,6 +5434,7 @@ class PatientEvaluation(ModelSQL, ModelView):
             'relevance':'important',
             'summary': evaluation.chief_complaint,
             'info': soap,
+            'measurements': measures,
             'author': evaluation.healthprof.name.rec_name,
             'author_acct': evaluation.healthprof.name.federation_account,
             'node': evaluation.institution.name.name,
