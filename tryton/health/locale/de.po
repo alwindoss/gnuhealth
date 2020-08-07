@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-28 23:16+0000\n"
-"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"PO-Revision-Date: 2020-08-08 06:32+0000\n"
+"Last-Translator: Edgar Hagenbichler <edgar@hagenbichler.at>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/health/"
 "de/>\n"
 "Language: de\n"
@@ -9523,7 +9523,7 @@ msgstr "Termin #"
 
 msgctxt "report:appointment.receipt:"
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 msgctxt "report:appointment.receipt:"
 msgid "Health Professional :"
@@ -9577,7 +9577,7 @@ msgstr "Alter"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Age :"
-msgstr ""
+msgstr "Alter:"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "CODE"
@@ -9713,7 +9713,7 @@ msgstr ": Verwitwet"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Age"
-msgstr ""
+msgstr "Alter"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Allergies and other relevant information"
@@ -9901,7 +9901,7 @@ msgstr "Aktiv"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Age :"
-msgstr ""
+msgstr "Alter:"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Annotations about the patient condition"
@@ -9949,7 +9949,7 @@ msgstr ""
 
 msgctxt "report:patient.conditions_history:"
 msgid "Patient"
-msgstr ""
+msgstr "Patient"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Print Date :"
@@ -9993,7 +9993,7 @@ msgstr "Bericht über wichtige Zustände des Patienten"
 
 msgctxt "report:patient.conditions_history:"
 msgid "s"
-msgstr ""
+msgstr "s"
 
 msgctxt "report:patient.conditions_history:"
 msgid "severe"
@@ -10173,7 +10173,7 @@ msgstr "Adresse"
 
 msgctxt "report:prescription.order:"
 msgid "Age :"
-msgstr ""
+msgstr "Alter:"
 
 msgctxt "report:prescription.order:"
 msgid "Directions"
