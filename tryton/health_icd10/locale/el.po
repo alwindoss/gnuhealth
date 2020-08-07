@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-07-10 21:47+0000\n"
+"PO-Revision-Date: 2020-08-08 06:32+0000\n"
 "Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_icd10/el/>\n"
@@ -18,15 +18,15 @@ msgstr "Χολέρα"
 
 msgctxt "model:gnuhealth.pathology,name:A000"
 msgid "Cholera due to Vibrio cholerae 01, biovar cholerae"
-msgstr "Χολέρα που οφείλεται στο δονάκιο της χολέρας 01, βιότυπος cholerae"
+msgstr "Χολέρα από δονάκιο της χολέρας [Vibrio cholerae] 01, βιότυπος cholerae"
 
 msgctxt "model:gnuhealth.pathology,name:A001"
 msgid "Cholera due to Vibrio cholerae 01, biovar eltor"
-msgstr ""
+msgstr "Χολέρα από στο δονάκιο της χολέρας [Vibrio cholerae] 01, βιότυπος eltor"
 
 msgctxt "model:gnuhealth.pathology,name:A009"
 msgid "Cholera, unspecified"
-msgstr "Διάφορες μορφές χολέρας "
+msgstr "Χολέρα, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A01"
 msgid "Typhoid and paratyphoid fevers"
@@ -50,31 +50,31 @@ msgstr "Παρατυφοειδής πυρετός C"
 
 msgctxt "model:gnuhealth.pathology,name:A014"
 msgid "Paratyphoid fever, unspecified"
-msgstr "Διάφορες μορφές παρατυφοειδούς πυρετού"
+msgstr "Παρατυφοειδής πυρετός, μη καθορισμένος"
 
 msgctxt "model:gnuhealth.pathology,name:A02"
 msgid "Other salmonella infections"
-msgstr ""
+msgstr "Άλλες λοιμώξεις από σαλμονέλλα"
 
 msgctxt "model:gnuhealth.pathology,name:A020"
 msgid "Salmonella enteritis"
-msgstr ""
+msgstr "Εντερίτιδα από σαλμονέλλα"
 
 msgctxt "model:gnuhealth.pathology,name:A021"
 msgid "Salmonella sepsis"
-msgstr ""
+msgstr "Σηψαιμία από σαλμονέλλα"
 
 msgctxt "model:gnuhealth.pathology,name:A022"
 msgid "Localized salmonella infections"
-msgstr ""
+msgstr "Εντοπισμένες λοιμώξεις από σαλμονέλλα"
 
 msgctxt "model:gnuhealth.pathology,name:A028"
 msgid "Other specified salmonella infections"
-msgstr ""
+msgstr "Άλλες καθορισμένες λοιμώξεις από σαλμονέλλα"
 
 msgctxt "model:gnuhealth.pathology,name:A029"
 msgid "Salmonella infection, unspecified"
-msgstr " Διάφορες άλλες λοιμώξεις από Σαλμονέλλα "
+msgstr "Λοίμωξη από σαλμονέλλα, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A03"
 msgid "Shigellosis"
@@ -82,19 +82,19 @@ msgstr "Σιγκέλωση"
 
 msgctxt "model:gnuhealth.pathology,name:A030"
 msgid "Shigellosis due to Shigella dysenteriae"
-msgstr "Σιγκέλλωση που οφείλεται στη Σιγκέλλα της δυσεντερίας"
+msgstr "Σιγκέλλωση από σιγκέλλα της δυσεντερίας [Shigella dysenteriae]"
 
 msgctxt "model:gnuhealth.pathology,name:A031"
 msgid "Shigellosis due to Shigella flexneri"
-msgstr "Σιγκέλλωση που οφείλεται στη Σιγκέλλα flexneri"
+msgstr "Σιγκέλλωση από Shigella flexneri"
 
 msgctxt "model:gnuhealth.pathology,name:A032"
 msgid "Shigellosis due to Shigella boydii"
-msgstr "Σιγκέλλωση που οφείλεται στη Σιγκέλλα boydii"
+msgstr "Σιγκέλλωση από Shigella boydii"
 
 msgctxt "model:gnuhealth.pathology,name:A033"
 msgid "Shigellosis due to Shigella sonnei"
-msgstr "Σιγκέλλωση που οφείλεται στη Σιγκέλλα sonnei"
+msgstr "Σιγκέλλωση από Shigella sonnei"
 
 msgctxt "model:gnuhealth.pathology,name:A038"
 msgid "Other shigellosis"
@@ -102,35 +102,35 @@ msgstr "Διάφορες άλλες σιγκελλώσεις"
 
 msgctxt "model:gnuhealth.pathology,name:A039"
 msgid "Shigellosis, unspecified"
-msgstr "Αλλες Σιγκελλώσεις, μη άλλως καθοριζόμενες"
+msgstr "Σιγκέλλωση, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A04"
 msgid "Other bacterial intestinal infections"
-msgstr "Αλλες μικροβιακές εντερικές λοιμώξεις"
+msgstr "Άλλες μικροβιακές εντερικές λοιμώξεις"
 
 msgctxt "model:gnuhealth.pathology,name:A040"
 msgid "Enteropathogenic Escherichia coli infection"
-msgstr "Λοίμωξη από εντεροπαθογόνο στέλεχος Κολοβακτηριδίου"
+msgstr "Εντερίτιδα από εντεροπαθογόνο κολοβακτηρίδιο [Escherichia coli]"
 
 msgctxt "model:gnuhealth.pathology,name:A041"
 msgid "Enterotoxigenic Escherichia coli infection"
-msgstr "Λοίμωξη από εντεροτοξινογόνο στέλεχος Κολοβακτηριδίου"
+msgstr "Εντερίτιδα από εντεροτοξινογόνο κολοβακτηρίδιο [Escherichia coli]"
 
 msgctxt "model:gnuhealth.pathology,name:A042"
 msgid "Enteroinvasive Escherichia coli infection"
-msgstr "Λοίμωξη από εντεροδιεισδυτικό στέλεχος Κολοβακτηριδίου"
+msgstr "Εντερίτιδα από εντεροδιεισδυτικό κολοβακτηρίδιο [Escherichia coli]"
 
 msgctxt "model:gnuhealth.pathology,name:A043"
 msgid "Enterohaemorrhagic Escherichia coli infection"
-msgstr "Λοίμωξη από εντεροαιμορραγικό στέλεχος Κολοβακτηριδίου"
+msgstr "Εντερίτιδα από εντεροαιμορραγικό κολοβακτηρίδιο [Escherichia coli]"
 
 msgctxt "model:gnuhealth.pathology,name:A044"
 msgid "Other intestinal Escherichia coli infections"
-msgstr "Αλλες λοιμώξεις του εντέρου από Κολοβακτηρίδια"
+msgstr "Άλλες εντερίτιδες από κολοβακτηρίδια"
 
 msgctxt "model:gnuhealth.pathology,name:A045"
 msgid "Campylobacter enteritis"
-msgstr "Εντερίτιδα από Καμπυλοβακτηρίδια"
+msgstr "Εντερίτιδα από καμπυλοβακτηρίδιο"
 
 msgctxt "model:gnuhealth.pathology,name:A046"
 msgid "Enteritis due to Yersinia enterocolitica"
@@ -138,23 +138,24 @@ msgstr "Εντερίτιδα από Yersinia enterecolitica"
 
 msgctxt "model:gnuhealth.pathology,name:A047"
 msgid "Enterocolitis due to Clostridium difficile"
-msgstr "Εντεροκολίτιδα που οφείλεται στο Κλωστηρίδιο το δύσκολο /difficile "
+msgstr "Εντεροκολίτιδα από Clostridium difficile"
 
 msgctxt "model:gnuhealth.pathology,name:A048"
 msgid "Other specified bacterial intestinal infections"
-msgstr "Αλλες συγκεκριμμένες εντερικές βακτηριακές λοιμώξεις"
+msgstr "Άλλες καθορισμένες βακτηριακές εντερικές λοιμώξεις"
 
 msgctxt "model:gnuhealth.pathology,name:A049"
 msgid "Bacterial intestinal infection, unspecified"
-msgstr "Διάφορες άλλες εντερικές βακτηριακές λοιμώξεις, μη άλλως καθοριζόμενες"
+msgstr "Βακτηριακή εντερική λοίμωξη, μη καθοριζόμενη"
 
 msgctxt "model:gnuhealth.pathology,name:A05"
 msgid "Other bacterial foodborne intoxications, not elsewhere classified"
 msgstr ""
+"Άλλες βακτηριακές τροφιμογενείς δηλητηριάσεις, που δεν ταξινομούνται αλλού"
 
 msgctxt "model:gnuhealth.pathology,name:A050"
 msgid "Foodborne staphylococcal intoxication"
-msgstr "Τροφική δηλητηρίαση από Σταφυλόκοκκο"
+msgstr "Τροφική δηλητηρίαση από σταφυλόκοκκο"
 
 msgctxt "model:gnuhealth.pathology,name:A051"
 msgid "Botulism"
@@ -163,26 +164,23 @@ msgstr "Αλλαντίαση"
 msgctxt "model:gnuhealth.pathology,name:A052"
 msgid "Foodborne Clostridium perfringens [Clostridium welchii] intoxication"
 msgstr ""
-"Τροφική δηλητηρίαση από Κλωστηρίδιο το διαθλαστικό [Κλωστηρίδιο welchii]"
+"Τροφιμογενής δηλητηρίαση από Clostridium perfringens [Clostridium welchii]"
 
 msgctxt "model:gnuhealth.pathology,name:A053"
 msgid "Foodborne Vibrio parahaemolyticus intoxication"
-msgstr ""
-"Τροφική δηλητηρίαση από Δονάκιο το παραιμολυτικό /Vibrio parahaemolyticus"
+msgstr "Τροφική δηλητηρίαση από Vibrio parahaemolyticus"
 
 msgctxt "model:gnuhealth.pathology,name:A054"
 msgid "Foodborne Bacillus cereus intoxication"
-msgstr ""
-"Τροφική δηλητηρίαση που οφείλεται στον Βάκιλλο τον κηρόχρου / Bacillus cereus"
+msgstr "Τροφική δηλητηρίαση από Βacillus cereus"
 
 msgctxt "model:gnuhealth.pathology,name:A058"
 msgid "Other specified bacterial foodborne intoxications"
-msgstr "Αλλες συγκεκριμένες βακτηριακές τροφικές δηλητηριάσεις"
+msgstr "Άλλες καθορισμένες βακτηριακές τροφικές δηλητηριάσεις"
 
 msgctxt "model:gnuhealth.pathology,name:A059"
 msgid "Bacterial foodborne intoxication, unspecified"
-msgstr ""
-"Διάφορες άλλες βακτηριακές τροφικές δηλλητηριάσεις, μη άλλως καθοριζόμενες"
+msgstr "Βακτηριακή τροφιμογενής δηλητηρίαση, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A06"
 msgid "Amoebiasis"
@@ -190,15 +188,15 @@ msgstr "Αμοιβάδωση"
 
 msgctxt "model:gnuhealth.pathology,name:A060"
 msgid "Acute amoebic dysentery"
-msgstr "Οξεία δυσεντερία από Αμοιβάδα"
+msgstr "Οξεία αμοιβαδική δυσεντερία"
 
 msgctxt "model:gnuhealth.pathology,name:A061"
 msgid "Chronic intestinal amoebiasis"
-msgstr "Χρονία εσωτερική Αμοιβάδωση"
+msgstr "Χρόνια εντερική αμοιβάδωση"
 
 msgctxt "model:gnuhealth.pathology,name:A062"
 msgid "Amoebic nondysenteric colitis"
-msgstr "Αμοιβαδική μηδυσεντερική κολίτιδα"
+msgstr "Αμοιβαδική μη δυσεντερική κολίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:A063"
 msgid "Amoeboma of intestine"
@@ -206,23 +204,23 @@ msgstr "Αμοιβάδωμα του εντέρου"
 
 msgctxt "model:gnuhealth.pathology,name:A064"
 msgid "Amoebic liver abscess"
-msgstr "Ηπατικό αμοιβαδικό απόστημα"
+msgstr "Αμοιβαδικό ηπατικό απόστημα"
 
 msgctxt "model:gnuhealth.pathology,name:A065"
 msgid "Amoebic lung abscess"
-msgstr "Πνευμονικό αμοιβαδικό απόστημα /J99.8*"
+msgstr "Αμοιβαδικό πνευμονικό απόστημα (J99.8*)"
 
 msgctxt "model:gnuhealth.pathology,name:A066"
 msgid "Amoebic brain abscess"
-msgstr "Εγκεφαλικό αμοιβαδικό απόστημα /G07*"
+msgstr "Αμοιβαδικό εγκεφαλικό απόστημα (G07*)"
 
 msgctxt "model:gnuhealth.pathology,name:A067"
 msgid "Cutaneous amoebiasis"
-msgstr "Δερματική αμοιβάδωση"
+msgstr "Αμοιβάδωση του δέρματος"
 
 msgctxt "model:gnuhealth.pathology,name:A068"
 msgid "Amoebic infection of other sites"
-msgstr "Αμοιβαδικές λοιμώξεις άλλων εντοπίσεων"
+msgstr "Αμοιβαδική λοίμωξη άλλων εντοπίσεων"
 
 msgctxt "model:gnuhealth.pathology,name:A069"
 msgid "Amoebiasis, unspecified"
@@ -230,7 +228,7 @@ msgstr "Διάφορες άλλες αμοιβαδώσεις, μη άλλως κ
 
 msgctxt "model:gnuhealth.pathology,name:A07"
 msgid "Other protozoal intestinal diseases"
-msgstr "Αλλα πρωτοζωικά νοσήματα του εντέρου"
+msgstr "Άλλες πρωτοζωϊκές λοιμώξεις του εντέρου"
 
 msgctxt "model:gnuhealth.pathology,name:A070"
 msgid "Balantidiasis"
@@ -238,7 +236,7 @@ msgstr "Βαλαντιδίαση"
 
 msgctxt "model:gnuhealth.pathology,name:A071"
 msgid "Giardiasis [lambliasis]"
-msgstr "Γκιαρδίαση [Λαμβλίαση]"
+msgstr "Τζιαρντίαση [λαμβλίαση]"
 
 msgctxt "model:gnuhealth.pathology,name:A072"
 msgid "Cryptosporidiosis"
@@ -250,82 +248,86 @@ msgstr "Ισοσπορίαση"
 
 msgctxt "model:gnuhealth.pathology,name:A078"
 msgid "Other specified protozoal intestinal diseases"
-msgstr "Αλλες συγκεκριμμένες εντερικές Πρωτοζωικές λοιμώξεις"
+msgstr "Άλλες καθορισμένες πρωτοζωϊκές εντερικές λοιμώξεις"
 
 msgctxt "model:gnuhealth.pathology,name:A079"
 msgid "Protozoal intestinal disease, unspecified"
-msgstr "Διάφορες άλλες εντερικές πρωτοζωικές λοιμώξεις, μη άλλως καθοριζόμενες"
+msgstr "Πρωτοζωϊκή εντερική λοίμωξη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A08"
 msgid "Viral and other specified intestinal infections"
-msgstr "Ιογενείς και ορισμένες άλλες εντερικές λοιμώξεις"
+msgstr "Ιογενείς και άλλες καθορισμένες εντερικές λοιμώξεις"
 
 msgctxt "model:gnuhealth.pathology,name:A080"
 msgid "Rotaviral enteritis"
-msgstr "Εντερίτιδα απο ιούς Rota"
+msgstr "Εντερίτιδα από ροταϊούς"
 
 msgctxt "model:gnuhealth.pathology,name:A081"
 msgid "Acute gastroenteropathy due to Norwalk agent"
-msgstr ""
+msgstr "Οξεία γαστρεντεροπάθεια από παράγοντα Norwalk"
 
 msgctxt "model:gnuhealth.pathology,name:A082"
 msgid "Adenoviral enteritis"
-msgstr "Εντερίτιδα από Αδενοϊούς"
+msgstr "Εντερίτιδα από αδενοϊό"
 
 msgctxt "model:gnuhealth.pathology,name:A083"
 msgid "Other viral enteritis"
-msgstr "Αλλες ιογενείς εντερίτιδες"
+msgstr "Άλλη ιογενής εντερίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:A084"
 msgid "Viral intestinal infection, unspecified"
-msgstr "Διάφορες ιογενείς εντερικές λοιμώξεις, μη άλλως καθοριζόμενες"
+msgstr "Ιογενής εντερική λοίμωξη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A085"
 msgid "Other specified intestinal infections"
-msgstr "Αλλες συγκεκριμένες εντερικές λοιμώξεις"
+msgstr "Άλλες καθορισμένες εντερικές λοιμώξεις"
 
 msgctxt "model:gnuhealth.pathology,name:A09"
 msgid "Other gastroenteritis and colitis of infectious and unspecified origin"
 msgstr ""
+"Άλλη γαστρεντερίτιδα και κολίτιδα λοιµώδους και µη καθορισµένης προέλευσης"
 
 msgctxt "model:gnuhealth.pathology,name:A090"
 msgid "Other and unspecified gastroenteritis and colitis of infectious origin"
 msgstr ""
+"Άλλη και µη καθορισµένη γαστρεντερίτιδα και κολίτιδα λοιµώδους προέλευσης"
 
 msgctxt "model:gnuhealth.pathology,name:A099"
 msgid "Gastroenteritis and colitis of unspecified origin"
-msgstr ""
+msgstr "Γαστρεντερίτιδα και κολίτιδα µη καθορισµένης προέλευσης"
 
 msgctxt "model:gnuhealth.pathology,name:A15"
 msgid ""
 "Respiratory tuberculosis, bacteriologically and histologically confirmed"
-msgstr "Πνευμονική φυματίωση, μικροβιολογικώς και ιστολογικώς τεκμηριωμένη "
+msgstr ""
+"Φυματίωση του αναπνευστικού συστήματος, βακτηριολογικά και ιστολογικά "
+"επιβεβαιωμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A150"
 msgid ""
 "Tuberculosis of lung, confirmed by sputum microscopy with or without culture"
 msgstr ""
-"Φυματίωση των πνευμόνων, επιβεβαιωμένη με μικροσκοπική εξέταση πτυέλων, με ή "
+"Φυματίωση του πνεύμονα, επιβεβαιωμένη με μικροσκοπική εξέταση πτυέλων με ή "
 "χωρίς καλλιέργεια"
 
 msgctxt "model:gnuhealth.pathology,name:A151"
 msgid "Tuberculosis of lung, confirmed by culture only"
-msgstr "Φυματίωση των πνευμόνων, επιβεβαιωμένη μόνο με καλλιέργεια"
+msgstr "Φυματίωση του πνεύμονα, επιβεβαιωμένη μόνο με καλλιέργεια"
 
 msgctxt "model:gnuhealth.pathology,name:A152"
 msgid "Tuberculosis of lung, confirmed histologically"
-msgstr "Φυματίωση των πνευμόνων, επιβεβαιωμένη ιστολογικά"
+msgstr "Φυματίωση του πνεύμονα, επιβεβαιωμένη ιστολογικά"
 
 msgctxt "model:gnuhealth.pathology,name:A153"
 msgid "Tuberculosis of lung, confirmed by unspecified means"
-msgstr "Φυματίωση των πνευμόνων, επιβεβαιωμένη με διάφορα άλλα μέσα"
+msgstr "Φυματίωση του πνεύμονα, επιβεβαιωμένη με μη καθορισμένα μέσα"
 
 msgctxt "model:gnuhealth.pathology,name:A154"
 msgid ""
 "Tuberculosis of intrathoracic lymph nodes, confirmed bacteriologically and "
 "histologically"
 msgstr ""
-"Φυματίωση των ενδοθωρακικών λεμφαδένων, επιβεβαιωμένη εργαστηριακά και "
+"Φυματίωση των ενδοθωρακικών λεμφαδένων, επιβεβαιωμένη βακτηριολογικά και "
 "ιστολογικά"
 
 msgctxt "model:gnuhealth.pathology,name:A155"
@@ -334,26 +336,26 @@ msgid ""
 "and histologically"
 msgstr ""
 "Φυματίωση του λάρυγγα, της τραχείας και των βρόγχων, επιβεβαιωμένη "
-"εργαστηριακά και ιστολογικά"
+"βακτηριολογικά και ιστολογικά"
 
 msgctxt "model:gnuhealth.pathology,name:A156"
 msgid "Tuberculous pleurisy, confirmed bacteriologically and histologically"
-msgstr "Φυματιώδης πλευρίτιδα, επιβεβαιωμένη εργαστηριακά και ιστολογικά"
+msgstr "Φυματιώδης πλευρίτιδα, επιβεβαιωμένη βακτηριολογικά και ιστολογικά"
 
 msgctxt "model:gnuhealth.pathology,name:A157"
 msgid ""
 "Primary respiratory tuberculosis, confirmed bacteriologically and "
 "histologically"
 msgstr ""
-"Πρωτοπαθής φυματίωση του αναπνευστικού, επιβεβαιωμένη εργαστηριακά και "
-"ιστολογικά "
+"Πρωτοπαθής φυματίωση του αναπνευστικού, επιβεβαιωμένη βακτηριολογικά και "
+"ιστολογικά"
 
 msgctxt "model:gnuhealth.pathology,name:A158"
 msgid ""
 "Other respiratory tuberculosis, confirmed bacteriologically and "
 "histologically"
 msgstr ""
-"Αλλες μορφές φυματίωσης του αναπνευστικού, επιβεβαιωμένες εργαστηριακά και "
+"Άλλες μορφές φυματίωσης του αναπνευστικού, επιβεβαιωμένες βακτηριολογικά και "
 "ιστολογικά"
 
 msgctxt "model:gnuhealth.pathology,name:A159"
@@ -361,33 +363,33 @@ msgid ""
 "Respiratory tuberculosis unspecified, confirmed bacteriologically and "
 "histologically"
 msgstr ""
-"Διάφορες άλλες μη άλλως καθοριζόμενες μορφές φυματίωσης του αναπνευστικού, "
-"επιβεβαιωμένες εργαστηριακά και ιστολογικά"
+"Φυματίωση του αναπνευστικού μη καθορισμένη, επιβεβαιωμένη βακτηριολογικά και "
+"ιστολογικά"
 
 msgctxt "model:gnuhealth.pathology,name:A16"
 msgid ""
 "Respiratory tuberculosis, not confirmed bacteriologically or histologically"
 msgstr ""
-"Πνευμονική φυματίωση,που δεν είναι μικροβιολογικώς ή ιστολογικώς τεκμηριωμένη"
+"Φυματίωση του αναπνευστικού, που δεν έχει επιβεβαιωθεί βακτηριολογικά και "
+"ιστολογικά"
 
 msgctxt "model:gnuhealth.pathology,name:A160"
 msgid "Tuberculosis of lung, bacteriologically and histologically negative"
-msgstr ""
-"Φυματίωση των πνευμόνων με αρνητικά εργαστηριακά και ιστολογικά ευρήματα"
+msgstr "Φυματίωση του πνεύμονα, βακτηριολογικά και ιστολογικά αρνητική"
 
 msgctxt "model:gnuhealth.pathology,name:A161"
 msgid ""
 "Tuberculosis of lung, bacteriological and histological examination not done"
 msgstr ""
-"Φυματίωση των πνευμόνων, χωρίς να έχουν γίνει εργαστηριακές και ιστολογικές "
-"εξετάσεις"
+"Φυματίωση του πνεύμονα, που δεν έχει γίνει βακτηριολογική και ιστολογική "
+"εξέταση"
 
 msgctxt "model:gnuhealth.pathology,name:A162"
 msgid ""
 "Tuberculosis of lung, without mention of bacteriological or histological "
 "confirmation"
 msgstr ""
-"Φυματίωση των πνευμόνων, χωρίς να αναφέρεται εργαστηριακή και ιστολογική "
+"Φυματίωση του πνεύμονα, χωρίς να αναφέρεται βακτηριολογική ή ιστολογική "
 "επιβεβαίωση"
 
 msgctxt "model:gnuhealth.pathology,name:A163"
@@ -395,7 +397,7 @@ msgid ""
 "Tuberculosis of intrathoracic lymph nodes, without mention of "
 "bacteriological or histological confirmation"
 msgstr ""
-"Φυματίωση των ενδοθωρακικών λεμφαδένων, χωρίς να αναφέρεται εργαστηριακή και "
+"Φυματίωση των ενδοθωρακικών λεμφαδένων, χωρίς να αναφέρεται βακτηριολογική ή "
 "ιστολογική επιβεβαίωση"
 
 msgctxt "model:gnuhealth.pathology,name:A164"
@@ -404,14 +406,14 @@ msgid ""
 "bacteriological or histological confirmation"
 msgstr ""
 "Φυματίωση του λάρυγγα, της τραχείας και των βρόγχων, χωρίς να αναφέρεται "
-"εργαστηριακή ή ιστολογική επιβεβαίωση"
+"βακτηριολογική ή ιστολογική επιβεβαίωση"
 
 msgctxt "model:gnuhealth.pathology,name:A165"
 msgid ""
 "Tuberculous pleurisy, without mention of bacteriological or histological "
 "confirmation"
 msgstr ""
-"Φυματιώδης πλευρίτιδα, χωρίς να αναφέρεται εργαστηριακή ή ιστολογική "
+"Φυματιώδης πλευρίτιδα, χωρίς να αναφέρεται βακτηριολογική ή ιστολογική "
 "επιβεβαίωση"
 
 msgctxt "model:gnuhealth.pathology,name:A167"
@@ -419,7 +421,7 @@ msgid ""
 "Primary respiratory tuberculosis without mention of bacteriological or "
 "histological confirmation"
 msgstr ""
-"Πρωτοπαθής φυματίωση του αναπνευστικού, χωρίς να αναφέρεται εργαστηριακή ή "
+"Πρωτοπαθής φυματίωση του αναπνευστικού χωρίς να αναφέρεται βακτηριολογική ή "
 "ιστολογική επιβεβαίωση"
 
 msgctxt "model:gnuhealth.pathology,name:A168"
@@ -427,16 +429,16 @@ msgid ""
 "Other respiratory tuberculosis, without mention of bacteriological or "
 "histological confirmation"
 msgstr ""
-"Αλλες μορφές φυματίωσης του αναπνευστικού, χωρίς να αναφέρεται εργαστηριακή "
-"ή ιστολογική επιβεβαίωση"
+"Άλλες μορφές φυματίωσης του αναπνευστικού, χωρίς να αναφέρεται "
+"βακτηριολογική ή ιστολογική επιβεβαίωση"
 
 msgctxt "model:gnuhealth.pathology,name:A169"
 msgid ""
 "Respiratory tuberculosis unspecified, without mention of bacteriological or "
 "histological confirmation"
 msgstr ""
-"Διάφορες μορφές φυματίωσης του αναπνευστικού, μη άλλως καθοριζόμενες, χωρίς "
-"να αναφέρεται εργαστηριακή ή ιστολογική επιβεβαίωση "
+"Φυματίωση του αναπνευστικού μη καθορισμένη, χωρίς να αναφέρεται "
+"βακτηριολογική ή ιστολογική επιβεβαίωση"
 
 msgctxt "model:gnuhealth.pathology,name:A17"
 msgid "Tuberculosis of nervous system"
@@ -444,19 +446,19 @@ msgstr "Φυματίωση του νευρικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:A170"
 msgid "Tuberculous meningitis"
-msgstr "Φυματιώδης μηνιγγίτιδα / G01"
+msgstr "Φυματιώδης μηνιγγίτιδα / G01*"
 
 msgctxt "model:gnuhealth.pathology,name:A171"
 msgid "Meningeal tuberculoma"
-msgstr "Μηνιγγικό φυμάτωμα / G07"
+msgstr "Μηνιγγικό φυμάτωμα / G07*"
 
 msgctxt "model:gnuhealth.pathology,name:A178"
 msgid "Other tuberculosis of nervous system"
-msgstr "Αλλες μορφές φυματίωσης του νευρικού συστήματος"
+msgstr "Άλλες μορφές φυματίωσης του νευρικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:A179"
 msgid "Tuberculosis of nervous system, unspecified"
-msgstr "Διάφορες μορφές φυματίωσης του νευρικού συστήματος / G99.8*"
+msgstr "Φυματίωση του νευρικού συστήματος, μη καθορισμένη / G99.8*"
 
 msgctxt "model:gnuhealth.pathology,name:A18"
 msgid "Tuberculosis of other organs"
@@ -468,7 +470,7 @@ msgstr "Φυματίωση των οστών και των αρθρώσεων"
 
 msgctxt "model:gnuhealth.pathology,name:A181"
 msgid "Tuberculosis of genitourinary system"
-msgstr ""
+msgstr "Φυματίωση του ουρογεννητικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:A182"
 msgid "Tuberculous peripheral lymphadenopathy"
@@ -476,7 +478,7 @@ msgstr "Φυματιώδης περιφερική λεμφαδενοπάθεια
 
 msgctxt "model:gnuhealth.pathology,name:A183"
 msgid "Tuberculosis of intestines, peritoneum and mesenteric glands"
-msgstr "Φυματίωση του εντέρου, του περιτοναίου και των μεσεντερίων αδένων"
+msgstr "Φυματίωση των εντέρων, του περιτοναίου και των μεσεντέριων αδένων"
 
 msgctxt "model:gnuhealth.pathology,name:A184"
 msgid "Tuberculosis of skin and subcutaneous tissue"
@@ -496,32 +498,31 @@ msgstr "Φυματίωση των επινεφριδίων / E35.1*"
 
 msgctxt "model:gnuhealth.pathology,name:A188"
 msgid "Tuberculosis of other specified organs"
-msgstr "Φυματίωση άλλων συγκεκριμμένων οργάνων"
+msgstr "Φυματίωση άλλων καθορισμένων οργάνων"
 
 msgctxt "model:gnuhealth.pathology,name:A19"
 msgid "Miliary tuberculosis"
-msgstr "Κεγχροειδής φυματίωση"
+msgstr "Κεχροειδής φυματίωση"
 
 msgctxt "model:gnuhealth.pathology,name:A190"
 msgid "Acute miliary tuberculosis of a single specified site"
-msgstr ""
-"Οξεία κεγχροειδής φυματίωση που εντοπίζεται σε μονήρη συγκεκριμένη θέση"
+msgstr "Οξεία κεχροειδής φυματίωση μονήρους καθορισμένης εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:A191"
 msgid "Acute miliary tuberculosis of multiple sites"
-msgstr "Οξεία κεγχροειδής φυματίωση που εντοπίζεται σε πολλές περιοχές "
+msgstr "Οξεία κεχροειδής φυματίωση πολλαπλών εντοπίσεων"
 
 msgctxt "model:gnuhealth.pathology,name:A192"
 msgid "Acute miliary tuberculosis, unspecified"
-msgstr "Οξεία κεγχροειδής φυματίωση διαφόρων εντοπίσεων, μη άλλως καθοριζόμενη"
+msgstr "Οξεία κεχροειδής φυματίωση, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A198"
 msgid "Other miliary tuberculosis"
-msgstr "Αλλες μορφές κεγχροειδούς φυματίωσης"
+msgstr "Άλλη κεχροειδής φυματίωση"
 
 msgctxt "model:gnuhealth.pathology,name:A199"
 msgid "Miliary tuberculosis, unspecified"
-msgstr "Διάφορες άλλες μορφές κεγχροειδούς φυματίωσης, μη άλλως καθοριζόμενες"
+msgstr "Κεχροειδής φυματίωση, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A20"
 msgid "Plague"
@@ -529,31 +530,31 @@ msgstr "Πανώλη"
 
 msgctxt "model:gnuhealth.pathology,name:A200"
 msgid "Bubonic plague"
-msgstr "Βουβωνική Πανώλη"
+msgstr "Βουβωνική πανώλη"
 
 msgctxt "model:gnuhealth.pathology,name:A201"
 msgid "Cellulocutaneous plague"
-msgstr "Κυτταροδερματική Πανώλη"
+msgstr "Κυτταροδερματική πανώλη"
 
 msgctxt "model:gnuhealth.pathology,name:A202"
 msgid "Pneumonic plague"
-msgstr "Πνευμονική Πανώλη"
+msgstr "Πνευμονική πανώλη"
 
 msgctxt "model:gnuhealth.pathology,name:A203"
 msgid "Plague meningitis"
-msgstr "Μηνιγγίτιδα της Πανώλης"
+msgstr "Μηνιγγίτιδα από πανώλη"
 
 msgctxt "model:gnuhealth.pathology,name:A207"
 msgid "Septicaemic plague"
-msgstr "Σηψαιμική Πανώλη"
+msgstr "Σηψαιμική πανώλη"
 
 msgctxt "model:gnuhealth.pathology,name:A208"
 msgid "Other forms of plague"
-msgstr "Αλλες μορφές Πανώλης"
+msgstr "Άλλες μορφές πανώλους"
 
 msgctxt "model:gnuhealth.pathology,name:A209"
 msgid "Plague, unspecified"
-msgstr "Διάφορες μορφές Πανώλης, μη άλλως καθοριζόμενες"
+msgstr "Πανώλης, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A21"
 msgid "Tularaemia"
@@ -561,39 +562,39 @@ msgstr "Τουλαραιμία"
 
 msgctxt "model:gnuhealth.pathology,name:A210"
 msgid "Ulceroglandular tularaemia"
-msgstr "Ελκοαδενωτική Τουλαραιμία"
+msgstr "Ελκοαδενική τουλαραιμία"
 
 msgctxt "model:gnuhealth.pathology,name:A211"
 msgid "Oculoglandular tularaemia"
-msgstr "Οφθαλμοαδενική Τουλαραιμία"
+msgstr "Οφθαλμοαδενική τουλαραιμία"
 
 msgctxt "model:gnuhealth.pathology,name:A212"
 msgid "Pulmonary tularaemia"
-msgstr "Πνευμονική Τουλαραιμία"
+msgstr "Πνευμονική τουλαραιμία"
 
 msgctxt "model:gnuhealth.pathology,name:A213"
 msgid "Gastrointestinal tularaemia"
-msgstr ""
+msgstr "Γαστρεντερική τουλαραιμία"
 
 msgctxt "model:gnuhealth.pathology,name:A217"
 msgid "Generalized tularaemia"
-msgstr ""
+msgstr "Γενικευμένη τουλαραιμία"
 
 msgctxt "model:gnuhealth.pathology,name:A218"
 msgid "Other forms of tularaemia"
-msgstr "Αλλες μορφές Τουλαραιμίας"
+msgstr "Άλλες μορφές τουλαραιμίας"
 
 msgctxt "model:gnuhealth.pathology,name:A219"
 msgid "Tularaemia, unspecified"
-msgstr "Διάφορες μορφές Τουλαραιμίας, μη άλλως καθοριζόμενες"
+msgstr "Τουλαραιμία, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A22"
 msgid "Anthrax"
-msgstr "Ανθρακας"
+msgstr "Άνθρακας"
 
 msgctxt "model:gnuhealth.pathology,name:A220"
 msgid "Cutaneous anthrax"
-msgstr "Δερματικός άνθρακας "
+msgstr "Δερματικός άνθρακας"
 
 msgctxt "model:gnuhealth.pathology,name:A221"
 msgid "Pulmonary anthrax"
@@ -601,48 +602,47 @@ msgstr "Πνευμονικός άνθρακας"
 
 msgctxt "model:gnuhealth.pathology,name:A222"
 msgid "Gastrointestinal anthrax"
-msgstr ""
+msgstr "Γαστρεντερικός άνθρακας"
 
 msgctxt "model:gnuhealth.pathology,name:A227"
 msgid "Anthrax sepsis"
-msgstr ""
+msgstr "Σηψαιμία από άνθρακα"
 
 msgctxt "model:gnuhealth.pathology,name:A228"
 msgid "Other forms of anthrax"
-msgstr "Αλλες μορφές άνθρακα"
+msgstr "Άλλες μορφές άνθρακα"
 
 msgctxt "model:gnuhealth.pathology,name:A229"
 msgid "Anthrax, unspecified"
-msgstr "Διάφορες μορφές άνθρακα, μη άλλως καθοριζόμενες"
+msgstr "Άνθρακας, μη καθορισμένος"
 
 msgctxt "model:gnuhealth.pathology,name:A23"
 msgid "Brucellosis"
-msgstr "Βρουκέλλωση"
+msgstr "ΒρουκέλλωσηΒρουκέλλωση"
 
 msgctxt "model:gnuhealth.pathology,name:A230"
 msgid "Brucellosis due to Brucella melitensis"
-msgstr ""
-"Βρουκέλωση που οφείλεται στη βρουκέλλα του μελιταίου πυρετού / Melitensis"
+msgstr "Βρουκέλωση από Brucella melitensis"
 
 msgctxt "model:gnuhealth.pathology,name:A231"
 msgid "Brucellosis due to Brucella abortus"
-msgstr "Βρουκέλωση που οφείλεται στη Βρουκέλλα abortus "
+msgstr "Βρουκέλωση από Brucella abortus"
 
 msgctxt "model:gnuhealth.pathology,name:A232"
 msgid "Brucellosis due to Brucella suis"
-msgstr "Βρουκέλωση που οφείλεται στη Βρουκέλλα των χοίρων / suis"
+msgstr "Βρουκέλωση από Brucella suis"
 
 msgctxt "model:gnuhealth.pathology,name:A233"
 msgid "Brucellosis due to Brucella canis"
-msgstr "Βρουκέλωση που οφείλεται στη Βρουκέλλα του σκύλου / canis"
+msgstr "Βρουκέλωση από Brucella canis"
 
 msgctxt "model:gnuhealth.pathology,name:A238"
 msgid "Other brucellosis"
-msgstr "Αλλες βρουκελλώσεις"
+msgstr "Άλλη βρουκέλλωση"
 
 msgctxt "model:gnuhealth.pathology,name:A239"
 msgid "Brucellosis, unspecified"
-msgstr "Διάφορες μορφές βορυκελλώσεως, μη άλλως καθοριζόμενες"
+msgstr "Βρουκέλλωση, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A24"
 msgid "Glanders and melioidosis"
@@ -654,7 +654,7 @@ msgstr "Μάλη"
 
 msgctxt "model:gnuhealth.pathology,name:A241"
 msgid "Acute and fulminating melioidosis"
-msgstr "Οξεία και κεραυνοβόλος ψευδομάλη "
+msgstr "Οξεία και κεραυνοβόλος ψευδομάλη"
 
 msgctxt "model:gnuhealth.pathology,name:A242"
 msgid "Subacute and chronic melioidosis"
@@ -662,19 +662,19 @@ msgstr "Υποξεία και χρόνια ψευδομάλη"
 
 msgctxt "model:gnuhealth.pathology,name:A243"
 msgid "Other melioidosis"
-msgstr "Αλλες μορφές ψευδομάλης"
+msgstr "Άλλες μορφές ψευδομάλης"
 
 msgctxt "model:gnuhealth.pathology,name:A244"
 msgid "Melioidosis, unspecified"
-msgstr "Διάφορες μορφές ψευδομάλης, μη άλλως καθοριζόμενες"
+msgstr "Ψευδομάλη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A25"
 msgid "Rat-bite fevers"
-msgstr "Πυρετοί από δήγμα ποντικού"
+msgstr "Πυρετοί από δάγκωμα επίμυος"
 
 msgctxt "model:gnuhealth.pathology,name:A250"
 msgid "Spirillosis"
-msgstr "Σπειρύλλωση"
+msgstr "Σπειρίλλωση"
 
 msgctxt "model:gnuhealth.pathology,name:A251"
 msgid "Streptobacillosis"
@@ -682,27 +682,27 @@ msgstr "Στρεπτοβακίλλωση"
 
 msgctxt "model:gnuhealth.pathology,name:A259"
 msgid "Rat-bite fever, unspecified"
-msgstr "Διάφορες μορφές πυρετού από δείγμα επίμυος, μη άλως καθοριζόμενες"
+msgstr "Πυρετός από δάγκωμα επίμυος, μη καθορισμένος"
 
 msgctxt "model:gnuhealth.pathology,name:A26"
 msgid "Erysipeloid"
-msgstr "Ερυσιπελατοειδές"
+msgstr "Ερυσιπελοειδές"
 
 msgctxt "model:gnuhealth.pathology,name:A260"
 msgid "Cutaneous erysipeloid"
-msgstr "Δερματικό ερυσιπελατοειδές"
+msgstr "Δερματικό ερυσιπελοειδές"
 
 msgctxt "model:gnuhealth.pathology,name:A267"
 msgid "Erysipelothrix sepsis"
-msgstr ""
+msgstr "Σηψαιμία από Erysipelothrix"
 
 msgctxt "model:gnuhealth.pathology,name:A268"
 msgid "Other forms of erysipeloid"
-msgstr "Αλλες μορφές ερυσιπελατοειδούς"
+msgstr "Άλλες μορφές ερυσιπελοειδούς"
 
 msgctxt "model:gnuhealth.pathology,name:A269"
 msgid "Erysipeloid, unspecified"
-msgstr "Διάφορες μορφές ερυσιπελατοειδούς"
+msgstr "Ερυσιπελοειδές, μη καθορισμένο "
 
 msgctxt "model:gnuhealth.pathology,name:A27"
 msgid "Leptospirosis"
@@ -714,15 +714,15 @@ msgstr "Ικτεροαιμορραγική λεπτοσπείρωση"
 
 msgctxt "model:gnuhealth.pathology,name:A278"
 msgid "Other forms of leptospirosis"
-msgstr "Αλλες μορφές λεπτοσπείρωσης"
+msgstr "Άλλες μορφές λεπτοσπείρωσης"
 
 msgctxt "model:gnuhealth.pathology,name:A279"
 msgid "Leptospirosis, unspecified"
-msgstr "Διάφορες μορφές λεπτοσπείρωσης, μη άλλως καθοριζόμενες"
+msgstr "Λεπτοσπείρωση, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A28"
 msgid "Other zoonotic bacterial diseases, not elsewhere classified"
-msgstr "Αλλες μικροβιακές ζωονόσοι, που δεν ταξινομούνται αλλού"
+msgstr "Άλλες βακτηριακές ζωοανθρωπονόσοι, που δεν ταξινομούνται αλλού"
 
 msgctxt "model:gnuhealth.pathology,name:A280"
 msgid "Pasteurellosis"
@@ -730,23 +730,24 @@ msgstr "Παστερέλλωση"
 
 msgctxt "model:gnuhealth.pathology,name:A281"
 msgid "Cat-scratch disease"
-msgstr "Νόσος εξ ονύχων γαλής"
+msgstr "Νόσος από αμυχές γάτας"
 
 msgctxt "model:gnuhealth.pathology,name:A282"
 msgid "Extraintestinal yersiniosis"
-msgstr " Εξωεντερική Γερσινίωση"
+msgstr "Εξωεντερική υερσινίωση"
 
 msgctxt "model:gnuhealth.pathology,name:A288"
 msgid "Other specified zoonotic bacterial diseases, not elsewhere classified"
-msgstr "Αλλες ειδικές βακτηριακές ζωονόσοι που δεν ταξινομούνται αλλού"
+msgstr ""
+"Άλλες καθορισμένες βακτηριακές ζωοανθρωπονόσοι, που δεν ταξινομούνται αλλού"
 
 msgctxt "model:gnuhealth.pathology,name:A289"
 msgid "Zoonotic bacterial disease, unspecified"
-msgstr "Διάφορες βακτηριακές ζωονόσοι, μη άλλως καθοριζόμενες"
+msgstr "Βακτηριακή ζωοανθρωπονόσος, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A30"
 msgid "Leprosy [Hansen disease]"
-msgstr ""
+msgstr "Λέπρα [νόσος του Hansen]"
 
 msgctxt "model:gnuhealth.pathology,name:A300"
 msgid "Indeterminate leprosy"
@@ -754,7 +755,7 @@ msgstr "Ακαθόριστη λέπρα"
 
 msgctxt "model:gnuhealth.pathology,name:A301"
 msgid "Tuberculoid leprosy"
-msgstr "Φυματιοειδής λέπρα"
+msgstr "Φυματιώδης λέπρα"
 
 msgctxt "model:gnuhealth.pathology,name:A302"
 msgid "Borderline tuberculoid leprosy"
@@ -766,7 +767,7 @@ msgstr "Ενδιάμεση λέπρα"
 
 msgctxt "model:gnuhealth.pathology,name:A304"
 msgid "Borderline lepromatous leprosy"
-msgstr "Ενδιάμεση λέπρωματώδης λέπρα"
+msgstr "Ενδιάμεση λεπρωματώδης λέπρα"
 
 msgctxt "model:gnuhealth.pathology,name:A305"
 msgid "Lepromatous leprosy"
@@ -778,7 +779,7 @@ msgstr "Άλλες μορφές λέπρας"
 
 msgctxt "model:gnuhealth.pathology,name:A309"
 msgid "Leprosy, unspecified"
-msgstr "Διάφορες μορφές λέπρας, μη άλλως καθοριζόμενες"
+msgstr "Λέπρα, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A31"
 msgid "Infection due to other mycobacteria"
@@ -794,11 +795,11 @@ msgstr "Δερματική μυκοβακτηριδιακή λοίμωξη"
 
 msgctxt "model:gnuhealth.pathology,name:A318"
 msgid "Other mycobacterial infections"
-msgstr "Αλλες μυκοβακτηριδιακές λοιμώξεις"
+msgstr "Άλλες μυκοβακτηριδιακές λοιμώξεις"
 
 msgctxt "model:gnuhealth.pathology,name:A319"
 msgid "Mycobacterial infection, unspecified"
-msgstr "Διάφορες μυκοβακτηριδιακές λοιμώξεις"
+msgstr "Μυκοβακτηριδιακή λοίμωξη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A32"
 msgid "Listeriosis"
@@ -814,27 +815,27 @@ msgstr "Μηνιγγίτιδα και μηνιγγοεγκεφαλίτιδα α�
 
 msgctxt "model:gnuhealth.pathology,name:A327"
 msgid "Listerial sepsis"
-msgstr ""
+msgstr "Σηψαιμία από λιστέρια"
 
 msgctxt "model:gnuhealth.pathology,name:A328"
 msgid "Other forms of listeriosis"
-msgstr "Αλλες μορφές λιστερίωσης"
+msgstr "Άλλες μορφές λιστερίωσης"
 
 msgctxt "model:gnuhealth.pathology,name:A329"
 msgid "Listeriosis, unspecified"
-msgstr "Διάφορες μορφές λιστερίωσης, μη άλλως καθοριζόμενες"
+msgstr "Λιστερίωση, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A33"
 msgid "Tetanus neonatorum"
-msgstr "Νεογνικός τέτανος"
+msgstr "Τέτανος νεογνικός"
 
 msgctxt "model:gnuhealth.pathology,name:A34"
 msgid "Obstetrical tetanus"
-msgstr "Μαιευτικός τέτανος"
+msgstr "Τέτανος μαιευτικός"
 
 msgctxt "model:gnuhealth.pathology,name:A35"
 msgid "Other tetanus"
-msgstr "Αλλες μορφές τετάνου"
+msgstr "Άλλα είδη τετάνου"
 
 msgctxt "model:gnuhealth.pathology,name:A36"
 msgid "Diphtheria"
@@ -842,7 +843,7 @@ msgstr "Διφθερίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:A360"
 msgid "Pharyngeal diphtheria"
-msgstr " Φαρυγγική διφθερίτιδα"
+msgstr "Φαρυγγική διφθερίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:A361"
 msgid "Nasopharyngeal diphtheria"
@@ -850,19 +851,19 @@ msgstr "Ρινοφαρυγγική διφθερίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:A362"
 msgid "Laryngeal diphtheria"
-msgstr "Λαρυγγική διφθερίτιδα "
+msgstr "Λαρυγγική διφθερίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:A363"
 msgid "Cutaneous diphtheria"
-msgstr "Δερματική διφθερίτιδα "
+msgstr "Δερματική διφθερίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:A368"
 msgid "Other diphtheria"
-msgstr "Αλλες μορφές διφθερίτιδας"
+msgstr "Άλλες μορφές διφθερίτιδας"
 
 msgctxt "model:gnuhealth.pathology,name:A369"
 msgid "Diphtheria, unspecified"
-msgstr "Διάφορες μορφές διφθερίτιδας, μη άλλως καθοριζόμενες"
+msgstr "Διφθερίτιδα, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A37"
 msgid "Whooping cough"
@@ -870,19 +871,19 @@ msgstr "Κοκκύτης"
 
 msgctxt "model:gnuhealth.pathology,name:A370"
 msgid "Whooping cough due to Bordetella pertussis"
-msgstr "Κοκκύτης που οφείλεται στην Bordetella του κοκκύτη"
+msgstr "Κοκκύτης από Bordetella pertussis"
 
 msgctxt "model:gnuhealth.pathology,name:A371"
 msgid "Whooping cough due to Bordetella parapertussis"
-msgstr "Κοκκύτης που οφείλεται στην Bordetella του παρακοκκύτη"
+msgstr "Κοκκύτης από Βordetella parapertussis"
 
 msgctxt "model:gnuhealth.pathology,name:A378"
 msgid "Whooping cough due to other Bordetella species"
-msgstr "Κοκκύτης που οφείλεται σε άλλους τύπους Bordetella"
+msgstr "Κοκκύτης από άλλα είδη Bordetella"
 
 msgctxt "model:gnuhealth.pathology,name:A379"
 msgid "Whooping cough, unspecified"
-msgstr "Διάφορες μορφές κοκκύτη, μη άλλως καθοριζόμενες"
+msgstr "Κοκκύτης, μη καθορισμένος"
 
 msgctxt "model:gnuhealth.pathology,name:A38"
 msgid "Scarlet fever"
@@ -894,19 +895,19 @@ msgstr "Μηνιγγιτιδοκοκκική λοίμωξη"
 
 msgctxt "model:gnuhealth.pathology,name:A390"
 msgid "Meningococcal meningitis"
-msgstr "Μηνιγγιτιδοκοκκική μηνιγγίτιδα"
+msgstr "Μηνιγγιτιδοκοκκική μηνιγγίτιδα / G01*"
 
 msgctxt "model:gnuhealth.pathology,name:A391"
 msgid "Waterhouse-Friderichsen syndrome"
-msgstr "Σύνδρομο του Waterhoure - Friederichsen / E35.1*"
+msgstr "Σύνδρομο Waterhouse-Friederichsen / E35.1*"
 
 msgctxt "model:gnuhealth.pathology,name:A392"
 msgid "Acute meningococcaemia"
-msgstr "Οξεία μηνιγγοκοκκαιμία"
+msgstr "Οξεία μηνιγγιτιδοκοκκική σηψαιμία"
 
 msgctxt "model:gnuhealth.pathology,name:A393"
 msgid "Chronic meningococcaemia"
-msgstr "Χρονία μηνιγγοκοκκαιμία"
+msgstr "Χρονία μηνιγγιτιδοκοκκική σηψαιμία"
 
 msgctxt "model:gnuhealth.pathology,name:A394"
 msgid "Meningococcaemia, unspecified"
@@ -926,67 +927,67 @@ msgstr "Μηνιγγιτιδοκοκκική λοίμωξη, μη καθορισ
 
 msgctxt "model:gnuhealth.pathology,name:A40"
 msgid "Streptococcal sepsis"
-msgstr ""
+msgstr "Στρεπτοκοκκική σηψαιμία"
 
 msgctxt "model:gnuhealth.pathology,name:A400"
 msgid "Sepsis due to streptococcus, group A"
-msgstr ""
+msgstr "Σηψαιμία από Streptococcus, ομάδας A"
 
 msgctxt "model:gnuhealth.pathology,name:A401"
 msgid "Sepsis due to streptococcus, group B"
-msgstr ""
+msgstr "Σηψαιμία από Streptococcus, ομάδας B"
 
 msgctxt "model:gnuhealth.pathology,name:A402"
 msgid "Sepsis due to streptococcus, group D"
-msgstr ""
+msgstr "Σηψαιμία από Streptococcus, ομάδας D"
 
 msgctxt "model:gnuhealth.pathology,name:A403"
 msgid "Sepsis due to Streptococcus pneumoniae"
-msgstr ""
+msgstr "Σηψαιμία από Streptococcus pneumoniae"
 
 msgctxt "model:gnuhealth.pathology,name:A408"
 msgid "Other streptococcal sepsis"
-msgstr ""
+msgstr "Άλλη στρεπτοκοκκική σηψαιμία"
 
 msgctxt "model:gnuhealth.pathology,name:A409"
 msgid "Streptococcal sepsis, unspecified"
-msgstr ""
+msgstr "Στρεπτοκοκκική σηψαιμία, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A41"
 msgid "Other sepsis"
-msgstr ""
+msgstr "Άλλες μορφές σηψαιμίας"
 
 msgctxt "model:gnuhealth.pathology,name:A410"
 msgid "Sepsis due to Staphylococcus aureus"
-msgstr ""
+msgstr "Σηψαιμία από Staphylococcus aureus"
 
 msgctxt "model:gnuhealth.pathology,name:A411"
 msgid "Sepsis due to other specified staphylococcus"
-msgstr ""
+msgstr "Σηψαιμία που οφείλεται σε άλλο καθορισμένο σταφυλόκοκκο"
 
 msgctxt "model:gnuhealth.pathology,name:A412"
 msgid "Sepsis due to unspecified staphylococcus"
-msgstr ""
+msgstr "Σηψαιμία από μη καθορισμένο σταφυλόκοκκο"
 
 msgctxt "model:gnuhealth.pathology,name:A413"
 msgid "Sepsis due to Haemophilus influenzae"
-msgstr ""
+msgstr "Σηψαιμία από Haemophilus influenzae"
 
 msgctxt "model:gnuhealth.pathology,name:A414"
 msgid "Sepsis due to anaerobes"
-msgstr ""
+msgstr "Σηψαιμία από αναερόβια"
 
 msgctxt "model:gnuhealth.pathology,name:A415"
 msgid "Sepsis due to other Gram-negative organisms"
-msgstr ""
+msgstr "Σηψαιμία από άλλους Gram- αρνητικούς μικροοργανισμούς"
 
 msgctxt "model:gnuhealth.pathology,name:A418"
 msgid "Other specified sepsis"
-msgstr ""
+msgstr "Άλλες καθορισμένες μορφές σηψαιμίας"
 
 msgctxt "model:gnuhealth.pathology,name:A419"
 msgid "Sepsis, unspecified"
-msgstr ""
+msgstr "Σηψαιμία, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A42"
 msgid "Actinomycosis"
@@ -1006,7 +1007,7 @@ msgstr "Τραχηλοπροσωπική ακτινομυκητίαση"
 
 msgctxt "model:gnuhealth.pathology,name:A427"
 msgid "Actinomycotic sepsis"
-msgstr ""
+msgstr "Σηψαιμία από ακτινομύκητα"
 
 msgctxt "model:gnuhealth.pathology,name:A428"
 msgid "Other forms of actinomycosis"
@@ -1070,11 +1071,11 @@ msgstr "Αεριογόνος γάγγραινα"
 
 msgctxt "model:gnuhealth.pathology,name:A481"
 msgid "Legionnaires disease"
-msgstr ""
+msgstr "Νόσος των Λεγεωναρίων"
 
 msgctxt "model:gnuhealth.pathology,name:A482"
 msgid "Nonpneumonic Legionnaires disease [Pontiac fever]"
-msgstr ""
+msgstr "Εξωπνευμονική νόσος των Λεγεωναρίων [Πυρετός Pontiac]"
 
 msgctxt "model:gnuhealth.pathology,name:A483"
 msgid "Toxic shock syndrome"
@@ -1094,19 +1095,19 @@ msgstr "Βακτηριακή λοίμωξη μη καθορισμένης εντ
 
 msgctxt "model:gnuhealth.pathology,name:A490"
 msgid "Staphylococcal infection, unspecified site"
-msgstr ""
+msgstr "Σταφυλοκοκκική λοίμωξη, μη καθορισμένης εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:A491"
 msgid "Streptococcal and enterococcal infection, unspecified site"
-msgstr ""
+msgstr "Στρεπτοκοκκική λοίμωξη, μη καθορισμένης εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:A492"
 msgid "Haemophilus influenzae infection, unspecified site"
-msgstr ""
+msgstr "Λοίμωξη από Haemophilus influenzae, μη καθορισμένης εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:A493"
 msgid "Mycoplasma infection, unspecified site"
-msgstr ""
+msgstr "Λοίμωξη από μυκόπλασμα, μη καθορισμένης εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:A498"
 msgid "Other bacterial infections of unspecified site"
@@ -1122,39 +1123,39 @@ msgstr "Συγγενής σύφιλη"
 
 msgctxt "model:gnuhealth.pathology,name:A500"
 msgid "Early congenital syphilis, symptomatic"
-msgstr "Πρώιμη συγγενής συμπτωματική σύφιλη"
+msgstr "Πρώιμη συγγενής σύφιλη, συμπτωματική"
 
 msgctxt "model:gnuhealth.pathology,name:A501"
 msgid "Early congenital syphilis, latent"
-msgstr "Πρώιμη συγγενής λανθάνουσα σύφιλη"
+msgstr "Πρώιμη συγγενής σύφιλη, λανθάνουσα"
 
 msgctxt "model:gnuhealth.pathology,name:A502"
 msgid "Early congenital syphilis, unspecified"
-msgstr "Διάφορες μορφές πρώιμης συγγενούς σύφιλης, μη άλλως καθοριζόμενες"
+msgstr "Πρώιμη συγγενής σύφιλη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A503"
 msgid "Late congenital syphilitic oculopathy"
-msgstr "Οφθαλμοπάθεια της όψιμης συγγενούς σύφιλης"
+msgstr "Όψιμη συγγενής συφιλιδική οφθαλμοπάθεια"
 
 msgctxt "model:gnuhealth.pathology,name:A504"
 msgid "Late congenital neurosyphilis [juvenile neurosyphilis]"
-msgstr "Όψιμη συγγενής νευροσύφιλη [Νεανική νευροσύφιλη]"
+msgstr "Όψιμη συγγενής νευροσύφιλη [νεανική νευροσύφιλη]"
 
 msgctxt "model:gnuhealth.pathology,name:A505"
 msgid "Other late congenital syphilis, symptomatic"
-msgstr "Αλλες μορφές όψιμης συγγενούς συμπτωματικής σύφιλης "
+msgstr "Άλλη όψιμη συγγενής σύφιλη, συμπτωματική"
 
 msgctxt "model:gnuhealth.pathology,name:A506"
 msgid "Late congenital syphilis, latent"
-msgstr "Όψιμη λανθάνουσα συγγενής σύφιλη"
+msgstr "Όψιμη συγγενής σύφιλη, λανθάνουσα"
 
 msgctxt "model:gnuhealth.pathology,name:A507"
 msgid "Late congenital syphilis, unspecified"
-msgstr "Διάφορες μορφές όψιμης συγγενούς σύφιλης, μη άλλως καθοριζόμενες"
+msgstr "Όψιμη συγγενής σύφιλη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A509"
 msgid "Congenital syphilis, unspecified"
-msgstr "Διάφορες μορφές συγγενούς σύφιλης, μη άλλως καθοριζόμενες"
+msgstr "Συγγενής σύφιλη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A51"
 msgid "Early syphilis"
@@ -1162,31 +1163,31 @@ msgstr "Πρώιμη σύφιλη"
 
 msgctxt "model:gnuhealth.pathology,name:A510"
 msgid "Primary genital syphilis"
-msgstr "Πρωτογενής σύφιλη των γεννητικών οργάνων"
+msgstr "Πρωτοπαθής σύφιλη των γεννητικών οργάνων"
 
 msgctxt "model:gnuhealth.pathology,name:A511"
 msgid "Primary anal syphilis"
-msgstr "Πρωτογενής σύφιλη της πρωκτικής χώρας"
+msgstr "Πρωτοπαθής σύφιλη του πρωκτού"
 
 msgctxt "model:gnuhealth.pathology,name:A512"
 msgid "Primary syphilis of other sites"
-msgstr "Πρωτογενής σύφιλη σε άλλες εντοπίσεις"
+msgstr "Πρωτοπαθής σύφιλη άλλων εντοπίσεων"
 
 msgctxt "model:gnuhealth.pathology,name:A513"
 msgid "Secondary syphilis of skin and mucous membranes"
-msgstr "Δευτερογόνος σύφιλη του δέρματος και των βλεννογόνων"
+msgstr "Δευτερογενής σύφιλη του δέρματος και των βλεννογόνων"
 
 msgctxt "model:gnuhealth.pathology,name:A514"
 msgid "Other secondary syphilis"
-msgstr "Άλλες μορφές δευτερογόνου σύφιλης"
+msgstr "Άλλη δευτερογενής σύφιλη"
 
 msgctxt "model:gnuhealth.pathology,name:A515"
 msgid "Early syphilis, latent"
-msgstr "Πρώιμη λανθάνουσα σύφιλη"
+msgstr "Πρώιμη σύφιλη, λανθάνουσα"
 
 msgctxt "model:gnuhealth.pathology,name:A519"
 msgid "Early syphilis, unspecified"
-msgstr "Διάφορες μορφές πρώιμης σύφιλης, μη άλλως καθοριζόμενες"
+msgstr "Πρώιμη σύφιλη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A52"
 msgid "Late syphilis"
@@ -1194,7 +1195,7 @@ msgstr "Όψιμη σύφιλη"
 
 msgctxt "model:gnuhealth.pathology,name:A520"
 msgid "Cardiovascular syphilis"
-msgstr "Σύφιλη του καρδιαγγειακού συστήματος "
+msgstr "Καρδιαγγειακή σύφιλη"
 
 msgctxt "model:gnuhealth.pathology,name:A521"
 msgid "Symptomatic neurosyphilis"
@@ -1284,7 +1285,7 @@ msgstr "Χλαμυδιακό λεμφοκοκκίωμα (αφροδίσιο)"
 
 msgctxt "model:gnuhealth.pathology,name:A56"
 msgid "Other sexually transmitted chlamydial diseases"
-msgstr "Άλλα σεξουαλικώς μεταδιδόμενα χλαμυδιακά νοσήματα "
+msgstr "Άλλα σεξουαλικώς μεταδιδόμενα χλαμυδιακά νοσήματα"
 
 msgctxt "model:gnuhealth.pathology,name:A560"
 msgid "Chlamydial infection of lower genitourinary tract"
@@ -1300,7 +1301,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A563"
 msgid "Chlamydial infection of anus and rectum"
-msgstr "Χλαμυδιακή λοίμωξη του πρωκτού και του ορθού "
+msgstr "Χλαμυδιακή λοίμωξη του πρωκτού και του ορθού"
 
 msgctxt "model:gnuhealth.pathology,name:A564"
 msgid "Chlamydial infection of pharynx"
@@ -1500,7 +1501,7 @@ msgstr "Ενεργό στάδιο του τραχώματος"
 
 msgctxt "model:gnuhealth.pathology,name:A719"
 msgid "Trachoma, unspecified"
-msgstr "Τράχωμα, μη καθορισμένο."
+msgstr "Τράχωμα, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:A74"
 msgid "Other diseases caused by chlamydiae"
@@ -1626,7 +1627,7 @@ msgstr "Οξεία πολιομυελίτιδα, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A81"
 msgid "Atypical virus infections of central nervous system"
-msgstr "Άτυπες ιογενείς λοιμώξεις του κεντρικού νευρικού συστήματος."
+msgstr "Άτυπες ιογενείς λοιμώξεις του κεντρικού νευρικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:A810"
 msgid "Creutzfeldt-Jakob disease"
@@ -1750,7 +1751,7 @@ msgstr "Άλλη καθορισμένη ιογενής εγκεφαλίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:A86"
 msgid "Unspecified viral encephalitis"
-msgstr "Μη καθορισμένη ιογενής εγκεφαλίτιδα "
+msgstr "Μη καθορισμένη ιογενής εγκεφαλίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:A87"
 msgid "Viral meningitis"
@@ -2397,7 +2398,7 @@ msgctxt "model:gnuhealth.pathology,name:B24"
 msgid "Unspecified human immunodeficiency virus [HIV] disease"
 msgstr ""
 "Μη καθορισμένη νόσος από τον ιό της ανοσολογικής ανεπάρκειας του ανθρώπου "
-"[HIV] "
+"[HIV]"
 
 msgctxt "model:gnuhealth.pathology,name:B25"
 msgid "Cytomegaloviral disease"
@@ -2453,11 +2454,11 @@ msgstr "Παρωτίτιδα χωρίς επιπλοκές"
 
 msgctxt "model:gnuhealth.pathology,name:B27"
 msgid "Infectious mononucleosis"
-msgstr "Λοιμώδης μονοπυρήνωση "
+msgstr "Λοιμώδης μονοπυρήνωση"
 
 msgctxt "model:gnuhealth.pathology,name:B270"
 msgid "Gammaherpesviral mononucleosis"
-msgstr "Γραμμαερπητική μονοπυρήνωση "
+msgstr "Γραμμαερπητική μονοπυρήνωση"
 
 msgctxt "model:gnuhealth.pathology,name:B271"
 msgid "Cytomegaloviral mononucleosis"
@@ -2685,7 +2686,7 @@ msgstr "Χρόνια πνευμονική κοκκιδιοειδομυκητία
 
 msgctxt "model:gnuhealth.pathology,name:B382"
 msgid "Pulmonary coccidioidomycosis, unspecified"
-msgstr "Πνευμονική κοκκιδιοειδομυκητίαση, μη καθορισμένη "
+msgstr "Πνευμονική κοκκιδιοειδομυκητίαση, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:B383"
 msgid "Cutaneous coccidioidomycosis"
@@ -2737,7 +2738,7 @@ msgstr "Ιστοπλάσμωση από Histoplasma duboisii"
 
 msgctxt "model:gnuhealth.pathology,name:B399"
 msgid "Histoplasmosis, unspecified"
-msgstr "Ιστοπλάσμωση, μη καθορισμένη "
+msgstr "Ιστοπλάσμωση, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:B40"
 msgid "Blastomycosis"
@@ -2905,7 +2906,7 @@ msgstr "Ζυγομύκωση"
 
 msgctxt "model:gnuhealth.pathology,name:B460"
 msgid "Pulmonary mucormycosis"
-msgstr "Πνευμονική μουκορμυκητίαση "
+msgstr "Πνευμονική μουκορμυκητίαση"
 
 msgctxt "model:gnuhealth.pathology,name:B461"
 msgid "Rhinocerebral mucormycosis"
@@ -2949,7 +2950,7 @@ msgstr "Ακτινομυκήτωμα"
 
 msgctxt "model:gnuhealth.pathology,name:B479"
 msgid "Mycetoma, unspecified"
-msgstr "Μυκήτωμα, μη καθορισμένο "
+msgstr "Μυκήτωμα, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:B48"
 msgid "Other mycoses, not elsewhere classified"
@@ -2993,7 +2994,7 @@ msgstr "Μη καθορισμένη μυκητίαση"
 
 msgctxt "model:gnuhealth.pathology,name:B50"
 msgid "Plasmodium falciparum malaria"
-msgstr "Ελονοσία από Plasmodium falciparum "
+msgstr "Ελονοσία από Plasmodium falciparum"
 
 msgctxt "model:gnuhealth.pathology,name:B500"
 msgid "Plasmodium falciparum malaria with cerebral complications"
@@ -3010,7 +3011,7 @@ msgstr "Ελονοσία από Plasmodium falciparum, μη καθορισμέν
 
 msgctxt "model:gnuhealth.pathology,name:B51"
 msgid "Plasmodium vivax malaria"
-msgstr "Ελονοσία από Plasmodium vivax "
+msgstr "Ελονοσία από Plasmodium vivax"
 
 msgctxt "model:gnuhealth.pathology,name:B510"
 msgid "Plasmodium vivax malaria with rupture of spleen"
@@ -3060,7 +3061,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:B54"
 msgid "Unspecified malaria"
-msgstr "Μη καθορισμένη ελονοσία "
+msgstr "Μη καθορισμένη ελονοσία"
 
 msgctxt "model:gnuhealth.pathology,name:B55"
 msgid "Leishmaniasis"
