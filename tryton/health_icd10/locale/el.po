@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-08 06:32+0000\n"
+"PO-Revision-Date: 2020-08-09 09:32+0000\n"
 "Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_icd10/el/>\n"
@@ -446,11 +446,11 @@ msgstr "Φυματίωση του νευρικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:A170"
 msgid "Tuberculous meningitis"
-msgstr "Φυματιώδης μηνιγγίτιδα / G01*"
+msgstr "Φυματιώδης μηνιγγίτιδα (G01*)"
 
 msgctxt "model:gnuhealth.pathology,name:A171"
 msgid "Meningeal tuberculoma"
-msgstr "Μηνιγγικό φυμάτωμα / G07*"
+msgstr "Μηνιγγικό φυμάτωμα (G07*)"
 
 msgctxt "model:gnuhealth.pathology,name:A178"
 msgid "Other tuberculosis of nervous system"
@@ -458,7 +458,7 @@ msgstr "Άλλες μορφές φυματίωσης του νευρικού σ�
 
 msgctxt "model:gnuhealth.pathology,name:A179"
 msgid "Tuberculosis of nervous system, unspecified"
-msgstr "Φυματίωση του νευρικού συστήματος, μη καθορισμένη / G99.8*"
+msgstr "Φυματίωση του νευρικού συστήματος, μη καθορισμένη (G99.8*)"
 
 msgctxt "model:gnuhealth.pathology,name:A18"
 msgid "Tuberculosis of other organs"
@@ -494,7 +494,7 @@ msgstr "Φυματίωση του ωτός"
 
 msgctxt "model:gnuhealth.pathology,name:A187"
 msgid "Tuberculosis of adrenal glands"
-msgstr "Φυματίωση των επινεφριδίων / E35.1*"
+msgstr "Φυματίωση των επινεφριδίων (E35.1*)"
 
 msgctxt "model:gnuhealth.pathology,name:A188"
 msgid "Tuberculosis of other specified organs"
@@ -702,7 +702,7 @@ msgstr "Άλλες μορφές ερυσιπελοειδούς"
 
 msgctxt "model:gnuhealth.pathology,name:A269"
 msgid "Erysipeloid, unspecified"
-msgstr "Ερυσιπελοειδές, μη καθορισμένο "
+msgstr "Ερυσιπελοειδές, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:A27"
 msgid "Leptospirosis"
@@ -895,11 +895,11 @@ msgstr "Μηνιγγιτιδοκοκκική λοίμωξη"
 
 msgctxt "model:gnuhealth.pathology,name:A390"
 msgid "Meningococcal meningitis"
-msgstr "Μηνιγγιτιδοκοκκική μηνιγγίτιδα / G01*"
+msgstr "Μηνιγγιτιδοκοκκική μηνιγγίτιδα (G01*)"
 
 msgctxt "model:gnuhealth.pathology,name:A391"
 msgid "Waterhouse-Friderichsen syndrome"
-msgstr "Σύνδρομο Waterhouse-Friederichsen / E35.1*"
+msgstr "Σύνδρομο Waterhouse-Friederichsen (E35.1*)"
 
 msgctxt "model:gnuhealth.pathology,name:A392"
 msgid "Acute meningococcaemia"
@@ -1207,53 +1207,57 @@ msgstr "Ασυμπτωματική νευροσύφιλη"
 
 msgctxt "model:gnuhealth.pathology,name:A523"
 msgid "Neurosyphilis, unspecified"
-msgstr "Διάφορες μορφές νευροσύφιλης, μη άλλως καθοριζόμενες"
+msgstr "Νευροσύφιλη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A527"
 msgid "Other symptomatic late syphilis"
-msgstr "Αλλες μορφές συμπτωματικής όψιμης σύφιλης"
+msgstr "Άλλη συμπτωματική όψιμη σύφιλη"
 
 msgctxt "model:gnuhealth.pathology,name:A528"
 msgid "Late syphilis, latent"
-msgstr "Όψιμη λανθάνουσα σύφιλη"
+msgstr "Όψιμη σύφιλη, λανθάνουσα"
 
 msgctxt "model:gnuhealth.pathology,name:A529"
 msgid "Late syphilis, unspecified"
-msgstr "Διάφορες μορφές όψιμης σύφιλης, μη άλλως καθοριζόμενες"
+msgstr "Όψιμη σύφιλη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A53"
 msgid "Other and unspecified syphilis"
-msgstr "Αλλες και διάφορες, μη άλλως καθοριζόμενες, μορφές σύφιλης"
+msgstr "Άλλη και μη καθορισμένη σύφιλη"
 
 msgctxt "model:gnuhealth.pathology,name:A530"
 msgid "Latent syphilis, unspecified as early or late"
-msgstr ""
-"Λανθάνουσα σύφιλη, χωρίς να προσδιορίζεται αν πρόκειται για πρώιμη ή όψιμη"
+msgstr "Λανθάνουσα σύφιλη, μη καθορισμένη ως πρώιμη ή όψιμη"
 
 msgctxt "model:gnuhealth.pathology,name:A539"
 msgid "Syphilis, unspecified"
-msgstr "Διάφορες περιπτώσεις σύφιλης, μη άλλως καθοριζόμενες"
+msgstr "Σύφιλη, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A54"
 msgid "Gonococcal infection"
-msgstr "Γονοκοκκική λοίμωξη"
+msgstr "Γονοκοκκικές λοιμώξεις"
 
 msgctxt "model:gnuhealth.pathology,name:A540"
 msgid ""
 "Gonococcal infection of lower genitourinary tract without periurethral or "
 "accessory gland abscess"
 msgstr ""
+"Γονοκοκκική λοίμωξη του κατώτερου ουρογεννητικού συστήματος χωρίς "
+"περιουρηθρικό απόστημα ή απόστημα των επικουρικών αδένων"
 
 msgctxt "model:gnuhealth.pathology,name:A541"
 msgid ""
 "Gonococcal infection of lower genitourinary tract with periurethral and "
 "accessory gland abscess"
 msgstr ""
+"Γονοκοκκική λοίμωξη του κατώτερου ουρογεννητικού συστήματος με περιουρηθρικό "
+"απόστημα και απόστημα των επικουρικών αδένων"
 
 msgctxt "model:gnuhealth.pathology,name:A542"
 msgid ""
 "Gonococcal pelviperitonitis and other gonococcal genitourinary infections"
 msgstr ""
+"Γονοκοκκική πυελοπεριτονίτιδα και άλλες γονοκοκκικές ουρογεννητικές λοιμώξεις"
 
 msgctxt "model:gnuhealth.pathology,name:A543"
 msgid "Gonococcal infection of eye"
@@ -1289,15 +1293,17 @@ msgstr "Άλλα σεξουαλικώς μεταδιδόμενα χλαμυδι�
 
 msgctxt "model:gnuhealth.pathology,name:A560"
 msgid "Chlamydial infection of lower genitourinary tract"
-msgstr ""
+msgstr "Χλαμυδιακή λοίμωξη του κατώτερου ουρογεννητικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:A561"
 msgid "Chlamydial infection of pelviperitoneum and other genitourinary organs"
 msgstr ""
+"Χλαμυδιακή λοίμωξη του πυελικού περιτοναίου και άλλων οργάνων του "
+"ουρογεννητικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:A562"
 msgid "Chlamydial infection of genitourinary tract, unspecified"
-msgstr ""
+msgstr "Χλαμυδιακή λοίμωξη του ουρογεννητικού συστήματος, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A563"
 msgid "Chlamydial infection of anus and rectum"
@@ -1337,7 +1343,7 @@ msgstr "Τριχομονάδωση, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:A60"
 msgid "Anogenital herpesviral [herpes simplex] infection"
-msgstr ""
+msgstr "Πρωκτογεννητική ερπητική λοίμωξη [από τον ιό του απλού έρπητα]"
 
 msgctxt "model:gnuhealth.pathology,name:A600"
 msgid "Herpesviral infection of genitalia and urogenital tract"
@@ -1373,7 +1379,7 @@ msgstr "Μη καθορισμένο σεξουαλικώς μεταδιδόμε�
 
 msgctxt "model:gnuhealth.pathology,name:A65"
 msgid "Nonvenereal syphilis"
-msgstr ""
+msgstr "Μη αφροδίσια σύφιλη"
 
 msgctxt "model:gnuhealth.pathology,name:A66"
 msgid "Yaws"
@@ -1465,11 +1471,11 @@ msgstr "Άλλες σπειροχαιτικές λοιμώξεις"
 
 msgctxt "model:gnuhealth.pathology,name:A690"
 msgid "Necrotizing ulcerative stomatitis"
-msgstr ""
+msgstr "Νεκρωτική ελκώδης στοματίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:A691"
 msgid "Other Vincent infections"
-msgstr ""
+msgstr "Άλλες λοιμώξεις του Vincent"
 
 msgctxt "model:gnuhealth.pathology,name:A692"
 msgid "Lyme disease"
@@ -1526,12 +1532,12 @@ msgstr "Πυρετός τύφου [typhus fever]"
 msgctxt "model:gnuhealth.pathology,name:A750"
 msgid "Epidemic louse-borne typhus fever due to Rickettsia prowazekii"
 msgstr ""
-"Επιδημικός πυρετός τύφου από  Rickettsia prowazekii που μεταδίδεται με τις "
+"Επιδημικός πυρετός τύφου από Rickettsia prowazekii που μεταδίδεται με τις "
 "φθείρες"
 
 msgctxt "model:gnuhealth.pathology,name:A751"
 msgid "Recrudescent typhus [Brill disease]"
-msgstr ""
+msgstr "Υποτροπιάζων (παροξυσμικός) τύφος [νόσος του Brill]"
 
 msgctxt "model:gnuhealth.pathology,name:A752"
 msgid "Typhus fever due to Rickettsia typhi"
@@ -1559,7 +1565,7 @@ msgstr "Κηλιδοβλατιδώδης πυρετός από Rickettsia conori
 
 msgctxt "model:gnuhealth.pathology,name:A772"
 msgid "Spotted fever due to Rickettsia sibirica"
-msgstr ""
+msgstr "Κηλιδώδης πυρετός από Rickettsia sibirica"
 
 msgctxt "model:gnuhealth.pathology,name:A773"
 msgid "Spotted fever due to Rickettsia australis"
@@ -1684,7 +1690,7 @@ msgstr "Ανατολική εγκεφαλίτιδα των αλόγων"
 
 msgctxt "model:gnuhealth.pathology,name:A833"
 msgid "St Louis encephalitis"
-msgstr ""
+msgstr "Εγκεφαλίτιδα του St. Louis"
 
 msgctxt "model:gnuhealth.pathology,name:A834"
 msgid "Australian encephalitis"
@@ -1815,11 +1821,11 @@ msgstr "Άλλοι ιογενείς πυρετοί που μεταδίδοντα
 
 msgctxt "model:gnuhealth.pathology,name:A920"
 msgid "Chikungunya virus disease"
-msgstr "Ιογενής νόσος  Chikungunya"
+msgstr "Ιογενής νόσος Chikungunya"
 
 msgctxt "model:gnuhealth.pathology,name:A921"
 msgid "O'nyong-nyong fever"
-msgstr "Πυρετός O'nyong-nyong"
+msgstr "Πυρετός O’nyong-nyong"
 
 msgctxt "model:gnuhealth.pathology,name:A922"
 msgid "Venezuelan equine fever"
@@ -1827,7 +1833,7 @@ msgstr "Πυρετός των αλόγων της Βενεζουέλας"
 
 msgctxt "model:gnuhealth.pathology,name:A923"
 msgid "West Nile virus infection"
-msgstr ""
+msgstr "Ιογενής λοίμωξη του Δυτικού Νείλου [West Nile]"
 
 msgctxt "model:gnuhealth.pathology,name:A924"
 msgid "Rift Valley fever"
@@ -1913,23 +1919,23 @@ msgstr "Αιμορραγικός πυρετός από αρεναϊούς, μη 
 
 msgctxt "model:gnuhealth.pathology,name:A97"
 msgid "Dengue"
-msgstr ""
+msgstr "Δάγκειος"
 
 msgctxt "model:gnuhealth.pathology,name:A970"
 msgid "Dengue without warning signs"
-msgstr ""
+msgstr "Δάγκειος χωρίς προειδοποιητικά σημάδια"
 
 msgctxt "model:gnuhealth.pathology,name:A971"
 msgid "Dengue with warning signs"
-msgstr ""
+msgstr "Δάγκειος με προειδοποιητικά σημάδια"
 
 msgctxt "model:gnuhealth.pathology,name:A972"
 msgid "Severe Dengue"
-msgstr ""
+msgstr "Δάγκειος βαριάς μορφής"
 
 msgctxt "model:gnuhealth.pathology,name:A979"
 msgid "Dengue, unspecified"
-msgstr ""
+msgstr "Δάγκειος, απροσδιόριστος"
 
 msgctxt "model:gnuhealth.pathology,name:A98"
 msgid "Other viral haemorrhagic fevers, not elsewhere classified"
@@ -2029,7 +2035,7 @@ msgstr "Ανεμευλογιά με άλλες επιπλοκές"
 
 msgctxt "model:gnuhealth.pathology,name:B019"
 msgid "Varicella without complication"
-msgstr ""
+msgstr "Ανεμευλογιά χωρίς επιπλοκή"
 
 msgctxt "model:gnuhealth.pathology,name:B02"
 msgid "Zoster [herpes zoster]"
@@ -2128,6 +2134,8 @@ msgid ""
 "Other viral infections characterized by skin and mucous membrane lesions, "
 "not elsewhere classified"
 msgstr ""
+"Άλλες ιογενείς λοιμώξεις χαρακτηριζόμενες από βλάβες του δέρματος και των "
+"βλεννογόνων, που δεν ταξινομούνται αλλού"
 
 msgctxt "model:gnuhealth.pathology,name:B080"
 msgid "Other orthopoxvirus infections"
@@ -2158,11 +2166,15 @@ msgid ""
 "Other specified viral infections characterized by skin and mucous membrane "
 "lesions"
 msgstr ""
+"Άλλες καθορισμένες ιογενείς λοιμώξεις χαρακτηριζόμενες από βλάβες του "
+"δέρματος και των βλεννογόνων"
 
 msgctxt "model:gnuhealth.pathology,name:B09"
 msgid ""
 "Unspecified viral infection characterized by skin and mucous membrane lesions"
 msgstr ""
+"Μη καθορισμένες ιογενείς λοιμώξεις χαρακτηριζόμενες από βλάβες του δέρματος "
+"και των βλεννογόνων"
 
 msgctxt "model:gnuhealth.pathology,name:B15"
 msgid "Acute hepatitis A"
@@ -2190,11 +2202,11 @@ msgstr "Οξεία ηπατίτιδα Β με παράγοντα δέλτα (σ�
 
 msgctxt "model:gnuhealth.pathology,name:B162"
 msgid "Acute hepatitis B without delta-agent with hepatic coma"
-msgstr "Οξεία ηπατίτιδα Β χωρίς  παράγοντα δέλτα με ηπατικό κώμα"
+msgstr "Οξεία ηπατίτιδα Β χωρίς παράγοντα δέλτα με ηπατικό κώμα"
 
 msgctxt "model:gnuhealth.pathology,name:B169"
 msgid "Acute hepatitis B without delta-agent and without hepatic coma"
-msgstr "Οξεία ηπατίτιδα Β χωρίς  παράγοντα δέλτα χωρίς ηπατικό κώμα"
+msgstr "Οξεία ηπατίτιδα Β χωρίς παράγοντα δέλτα χωρίς ηπατικό κώμα"
 
 msgctxt "model:gnuhealth.pathology,name:B17"
 msgid "Other acute viral hepatitis"
@@ -2202,7 +2214,7 @@ msgstr "Άλλη οξεία ιογενής ηπατίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:B170"
 msgid "Acute delta-(super)infection of hepatitis B carrier"
-msgstr ""
+msgstr "Οξεία (υπερ)λοίμωξη με παράγοντα δέλτα του φορέα ηπατίτιδας Β"
 
 msgctxt "model:gnuhealth.pathology,name:B171"
 msgid "Acute hepatitis C"
@@ -2218,7 +2230,7 @@ msgstr "Άλλη καθορισμένη οξεία ιογενής ηπατίτι
 
 msgctxt "model:gnuhealth.pathology,name:B179"
 msgid "Acute viral hepatitis, unspecified"
-msgstr ""
+msgstr "Οξεία ιογενής ηπατίτιδα µη καθορισµένη"
 
 msgctxt "model:gnuhealth.pathology,name:B18"
 msgid "Chronic viral hepatitis"
@@ -2250,11 +2262,11 @@ msgstr "Μη καθορισμένη ιογενής ηπατίτιδα"
 
 msgctxt "model:gnuhealth.pathology,name:B190"
 msgid "Unspecified viral hepatitis with hepatic coma"
-msgstr ""
+msgstr "Μη καθορισμένη ιογενής ηπατίτιδα με ηπατικό κώμα"
 
 msgctxt "model:gnuhealth.pathology,name:B199"
 msgid "Unspecified viral hepatitis without hepatic coma"
-msgstr ""
+msgstr "Μη καθορισμένη ιογενής ηπατίτιδα χωρίς ηπατικό κώμα"
 
 msgctxt "model:gnuhealth.pathology,name:B20"
 msgid ""
@@ -2290,7 +2302,7 @@ msgstr "Νόσος HIV που καταλήγει σε άλλες μυκητιά�
 
 msgctxt "model:gnuhealth.pathology,name:B206"
 msgid "HIV disease resulting in Pneumocystis jirovecii pneumonia"
-msgstr ""
+msgstr "Νόσος HIV που καταλήγει σε πνευμονία από Pneumocystis jirovecii"
 
 msgctxt "model:gnuhealth.pathology,name:B207"
 msgid "HIV disease resulting in multiple infections"
@@ -2313,15 +2325,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:B210"
 msgid "HIV disease resulting in Kaposi sarcoma"
-msgstr ""
+msgstr "Νόσος HIV που καταλήγει σε σάρκωμα Kaposi"
 
 msgctxt "model:gnuhealth.pathology,name:B211"
 msgid "HIV disease resulting in Burkitt lymphoma"
-msgstr ""
+msgstr "Νόσος HIV που καταλήγει σε λέμφωμα Burkitt"
 
 msgctxt "model:gnuhealth.pathology,name:B212"
 msgid "HIV disease resulting in other types of non-Hodgkin lymphoma"
-msgstr ""
+msgstr "Νόσος HIV που καταλήγει σε άλλους τύπους μη-Hodgkin λεμφώματος"
 
 msgctxt "model:gnuhealth.pathology,name:B213"
 msgid ""
@@ -2329,7 +2341,7 @@ msgid ""
 "haematopoietic and related tissue"
 msgstr ""
 "Νόσος HIV που καταλήγει σε άλλα κακοήθη νεοπλάσματα του λεμφικού, "
-"αιμοποιητικού και  συσχετιζόμενων ιστών"
+"αιμοποιητικού και συσχετιζόμενων ιστών"
 
 msgctxt "model:gnuhealth.pathology,name:B217"
 msgid "HIV disease resulting in multiple malignant neoplasms"
@@ -2380,7 +2392,7 @@ msgstr "Οξύ σύνδρομο της HIV λοίμωξης"
 
 msgctxt "model:gnuhealth.pathology,name:B231"
 msgid "HIV disease resulting in (persistent) generalized lymphadenopathy"
-msgstr ""
+msgstr "Νόσος HIV που καταλήγει σε (εμμένουσα) γενικευμένη λεμφαδενοπάθεια"
 
 msgctxt "model:gnuhealth.pathology,name:B232"
 msgid ""
