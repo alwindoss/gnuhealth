@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-08 06:32+0000\n"
+"PO-Revision-Date: 2020-08-10 17:32+0000\n"
 "Last-Translator: Edgar Hagenbichler <edgar@hagenbichler.at>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/health/"
 "de/>\n"
@@ -9945,7 +9945,7 @@ msgstr "PATIENT"
 
 msgctxt "report:patient.conditions_history:"
 msgid "PU"
-msgstr ""
+msgstr "PU"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Patient"
@@ -10305,7 +10305,7 @@ msgstr "s"
 
 msgctxt "selection:gnuhealth.appointment,appointment_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.appointment,appointment_type:"
 msgid "Inpatient"
@@ -10317,7 +10317,7 @@ msgstr "Ambulanter Patient"
 
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid "Cancelled by Health Center"
@@ -10349,7 +10349,7 @@ msgstr "Nicht erschienen"
 
 msgctxt "selection:gnuhealth.appointment,urgency:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.appointment,urgency:"
 msgid "Medical Emergency"
@@ -10365,7 +10365,7 @@ msgstr "Dringlich"
 
 msgctxt "selection:gnuhealth.appointment,visit_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.appointment,visit_type:"
 msgid "Followup"
@@ -10389,7 +10389,7 @@ msgstr "Vorsorgeuntersuchung einer Frau"
 
 msgctxt "selection:gnuhealth.appointment.report,gender:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.appointment.report,gender:"
 msgid "Female"
