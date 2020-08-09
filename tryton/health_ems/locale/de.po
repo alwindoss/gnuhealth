@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-24 14:09+0000\n"
-"Last-Translator: Christoph <christoph@jurko.de>\n"
+"PO-Revision-Date: 2020-08-10 17:33+0000\n"
+"Last-Translator: Edgar Hagenbichler <edgar@hagenbichler.at>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/de/>\n"
 "Language: de\n"
@@ -217,7 +217,7 @@ msgstr "Mehrere Verletzte"
 
 msgctxt "field:gnuhealth.support_request,operational_sector:"
 msgid "O. Sector"
-msgstr ""
+msgstr "OP-Sektor"
 
 msgctxt "field:gnuhealth.support_request,operator:"
 msgid "Operator"
@@ -225,7 +225,7 @@ msgstr "Betreiber"
 
 msgctxt "field:gnuhealth.support_request,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Patient"
 
 msgctxt "field:gnuhealth.support_request,patient_age:"
 msgid "Age"
@@ -473,11 +473,11 @@ msgstr "Rettungswagen zu dieser Unterstützungsanfrage"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_support_request"
 msgid "Support Center"
-msgstr ""
+msgstr "Support Center"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "At Hospital"
@@ -513,7 +513,7 @@ msgstr "Zum Krankenhaus"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_function:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_function:"
 msgid "Type A - Patient Transport"
@@ -529,7 +529,7 @@ msgstr "Typ C - Mobile Intensivstation"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Airplane"
@@ -565,7 +565,7 @@ msgstr "Lieferwagen"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "At Hospital"
@@ -601,7 +601,7 @@ msgstr "Zum Krankenhaus"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Acute Coronary Syndrome"
@@ -725,7 +725,7 @@ msgstr "Traumatische Verletzungen"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Commercial Area"
@@ -769,7 +769,7 @@ msgstr "Unbekannt"
 
 msgctxt "selection:gnuhealth.support_request,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.support_request,state:"
 msgid "Closed"
@@ -781,7 +781,7 @@ msgstr "Offen"
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Emergency"
@@ -797,7 +797,7 @@ msgstr "Dringend"
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid "Ambulance"
