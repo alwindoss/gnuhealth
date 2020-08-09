@@ -1,8 +1,8 @@
 # 
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-28 02:42+0000\n"
-"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"PO-Revision-Date: 2020-08-10 17:33+0000\n"
+"Last-Translator: Edgar Hagenbichler <edgar@hagenbichler.at>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_caldav/de/>\n"
 "Language: de\n"
@@ -891,6 +891,8 @@ msgstr "Öffentlich"
 msgctxt "selection:calendar.event,status:"
 msgid ""
 msgstr ""
+"\n"
+" \n"
 
 msgctxt "selection:calendar.event,status:"
 msgid "Cancelled"
@@ -914,7 +916,7 @@ msgstr "Transparent"
 
 msgctxt "selection:calendar.event.attendee,status:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:calendar.event.attendee,status:"
 msgid "Accepted"
@@ -966,7 +968,7 @@ msgstr "Jährlich"
 
 msgctxt "selection:calendar.event.exrule,wkst:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:calendar.event.exrule,wkst:"
 msgid "Friday"
@@ -1026,7 +1028,7 @@ msgstr "Jährlich"
 
 msgctxt "selection:calendar.event.rrule,wkst:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:calendar.event.rrule,wkst:"
 msgid "Friday"
