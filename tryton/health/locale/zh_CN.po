@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 08:16+0000\n"
-"PO-Revision-Date: 2020-07-08 01:29+0000\n"
+"PO-Revision-Date: 2020-08-10 08:48+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -46,7 +46,7 @@ msgstr "姓名不能重复！"
 
 msgctxt "error:gnuhealth.du:"
 msgid "The Domiciliary Unit must be unique !"
-msgstr "现住地址不能重复！"
+msgstr "常住地址不能重复！"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The CODE must be unique !"
@@ -583,7 +583,7 @@ msgstr "日期"
 
 msgctxt "field:gnuhealth.death_certificate,du:"
 msgid "DU"
-msgstr "现住地址"
+msgstr "常住地址"
 
 msgctxt "field:gnuhealth.death_certificate,id:"
 msgid "ID"
@@ -4000,7 +4000,7 @@ msgstr "死亡日期"
 
 msgctxt "field:party.party,du:"
 msgid "DU"
-msgstr "现住地址"
+msgstr "常住地址"
 
 msgctxt "field:party.party,du_address:"
 msgid "Main address"
@@ -4164,7 +4164,7 @@ msgstr "死亡日期时间"
 
 msgctxt "help:gnuhealth.death_certificate,du:"
 msgid "Domiciliary Unit"
-msgstr "现住地址"
+msgstr "常住地址"
 
 msgctxt "help:gnuhealth.death_certificate,signed_by:"
 msgid "Health Professional that signed the death certificate"
@@ -4214,7 +4214,7 @@ msgstr "房屋总面积（平方米）"
 
 msgctxt "help:gnuhealth.du,urladdr:"
 msgid "Locates the DU on the Open Street Map by default"
-msgstr "默认在 Open Street 地图上定位到现住地址"
+msgstr "默认在 Open Street 地图上定位到常住地址"
 
 msgctxt "help:gnuhealth.ethnicity,code:"
 msgid "Please use CAPITAL LETTERS and no spaces"
@@ -4617,7 +4617,7 @@ msgid ""
 "the patient is on vacation, you can put the hotel address.         In the "
 "case of a Domiciliary Unit, just link it to the name of the         contact "
 "in the address form."
-msgstr "这个地址用于临时联络，如果患者正在度假，可以填写酒店地址。如患者在现住地址，可以直接关联常住地址。"
+msgstr "这个地址用于临时联络，如果患者正在度假，可以填写酒店地址。如患者在常住地址，可以直接关联常住地址。"
 
 msgctxt "help:gnuhealth.patient,current_insurance:"
 msgid ""
@@ -5300,11 +5300,11 @@ msgstr "出生日期"
 
 msgctxt "help:party.party,du:"
 msgid "Domiciliary Unit"
-msgstr "现住地址"
+msgstr "常住地址"
 
 msgctxt "help:party.party,du_address:"
 msgid "Main Address, based on the associated DU"
-msgstr "主要地址，基于现住地址"
+msgstr "主要地址，基于常住地址"
 
 msgctxt "help:party.party,father:"
 msgid "Father from the Birth Certificate"
@@ -6081,7 +6081,7 @@ msgstr "动脉内 "
 
 msgctxt "model:gnuhealth.du,name:"
 msgid "Domiciliary Unit"
-msgstr "现住地址"
+msgstr "常住地址"
 
 msgctxt "model:gnuhealth.ethnicity,name:"
 msgid "Ethnicity"
@@ -9461,7 +9461,7 @@ msgstr "药品用药途径"
 
 msgctxt "model:ir.action,name:gnuhealth_action_du"
 msgid "Domiciliary Units"
-msgstr "现住地址"
+msgstr "常住地址"
 
 msgctxt "model:ir.action,name:gnuhealth_action_ethnicity"
 msgid "Ethnicities"
@@ -9785,7 +9785,7 @@ msgstr "人口与家庭"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_du"
 msgid "Domiciliary Units"
-msgstr "现住地址"
+msgstr "常住地址"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_family"
 msgid "Families"
@@ -9837,7 +9837,7 @@ msgstr "处方"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_reporting_menu"
 msgid "Reporting"
-msgstr "报告"
+msgstr "统计报表或报告"
 
 msgctxt "model:ir.ui.menu,name:menu_appointments_report_view_tree"
 msgid "Appointments with Dx Report"
@@ -10724,7 +10724,7 @@ msgstr "门诊患者"
 
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid "Cancelled by Health Center"
@@ -10756,7 +10756,7 @@ msgstr "爽约"
 
 msgctxt "selection:gnuhealth.appointment,urgency:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.appointment,urgency:"
 msgid "Medical Emergency"
@@ -10772,7 +10772,7 @@ msgstr "紧急"
 
 msgctxt "selection:gnuhealth.appointment,visit_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.appointment,visit_type:"
 msgid "Followup"
@@ -10796,7 +10796,7 @@ msgstr "女性日常访视/健康促进/筛查等"
 
 msgctxt "selection:gnuhealth.appointment.report,gender:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.appointment.report,gender:"
 msgid "Female"
@@ -10808,7 +10808,7 @@ msgstr "男"
 
 msgctxt "selection:gnuhealth.birth_certificate,state:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.birth_certificate,state:"
 msgid "Done"
@@ -10824,7 +10824,7 @@ msgstr "签署"
 
 msgctxt "selection:gnuhealth.death_certificate,place_of_death:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.death_certificate,place_of_death:"
 msgid "Health Center"
@@ -10844,7 +10844,7 @@ msgstr "工作"
 
 msgctxt "selection:gnuhealth.death_certificate,state:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.death_certificate,state:"
 msgid "Done"
@@ -10860,7 +10860,7 @@ msgstr "签署"
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Homicide"
@@ -10884,7 +10884,7 @@ msgstr "未确定"
 
 msgctxt "selection:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid "days"
@@ -10908,7 +10908,7 @@ msgstr "年"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Apartment"
@@ -10936,7 +10936,7 @@ msgstr "连栋房屋"
 
 msgctxt "selection:gnuhealth.du,housing:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.du,housing:"
 msgid "Comfortable and good sanitary conditions"
@@ -10960,7 +10960,7 @@ msgstr "小，拥挤，但具有良好的卫生条件"
 
 msgctxt "selection:gnuhealth.du,materials:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.du,materials:"
 msgid "Adobe"
@@ -10984,7 +10984,7 @@ msgstr "木头"
 
 msgctxt "selection:gnuhealth.du,roof_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.du,roof_type:"
 msgid "Adobe"
@@ -11012,7 +11012,7 @@ msgstr "木头"
 
 msgctxt "selection:gnuhealth.hospital.bed,bed_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.hospital.bed,bed_type:"
 msgid "Circo Electric"
@@ -11044,7 +11044,7 @@ msgstr "担架"
 
 msgctxt "selection:gnuhealth.hospital.bed,state:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.hospital.bed,state:"
 msgid "Free"
@@ -11068,7 +11068,7 @@ msgstr "已预定"
 
 msgctxt "selection:gnuhealth.hospital.or,state:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.hospital.or,state:"
 msgid "Confirmed"
@@ -11088,7 +11088,7 @@ msgstr "已占用"
 
 msgctxt "selection:gnuhealth.hospital.ward,gender:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.hospital.ward,gender:"
 msgid "Men Ward"
@@ -11104,7 +11104,7 @@ msgstr "女性病房"
 
 msgctxt "selection:gnuhealth.hospital.ward,state:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.hospital.ward,state:"
 msgid "Beds available"
@@ -11120,7 +11120,7 @@ msgstr "无效"
 
 msgctxt "selection:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid "days"
@@ -11140,7 +11140,7 @@ msgstr "年"
 
 msgctxt "selection:gnuhealth.immunization_schedule_line,scope:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.immunization_schedule_line,scope:"
 msgid "Recommended"
@@ -11156,7 +11156,7 @@ msgstr "系统性"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Clinic"
@@ -11192,7 +11192,7 @@ msgstr "专科医院"
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid "Private"
@@ -11208,7 +11208,7 @@ msgstr "公立"
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid "Level I"
@@ -11232,7 +11232,7 @@ msgstr "V 级"
 
 msgctxt "selection:gnuhealth.insurance,insurance_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.insurance,insurance_type:"
 msgid "Labour Union / Syndical"
@@ -11248,7 +11248,7 @@ msgstr "州立"
 
 msgctxt "selection:gnuhealth.medicament,pregnancy_category:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.medicament,pregnancy_category:"
 msgid "A"
@@ -11276,7 +11276,7 @@ msgstr "X"
 
 msgctxt "selection:gnuhealth.patient,biological_sex:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient,biological_sex:"
 msgid "Female"
@@ -11288,7 +11288,7 @@ msgstr "男"
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid "A"
@@ -11308,7 +11308,7 @@ msgstr "O"
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid "Female"
@@ -11328,7 +11328,7 @@ msgstr "男 -> 女"
 
 msgctxt "selection:gnuhealth.patient,hb:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient,hb:"
 msgid "A-THAL"
@@ -11360,7 +11360,7 @@ msgstr "SS"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Concubinage"
@@ -11388,7 +11388,7 @@ msgstr "丧偶"
 
 msgctxt "selection:gnuhealth.patient,rh:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient,rh:"
 msgid "+"
@@ -11400,7 +11400,7 @@ msgstr "-"
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid "Drug Allergy"
@@ -11420,7 +11420,7 @@ msgstr "其他禁忌"
 
 msgctxt "selection:gnuhealth.patient.disease,disease_severity:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.disease,disease_severity:"
 msgid "Mild"
@@ -11436,7 +11436,7 @@ msgstr "严重"
 
 msgctxt "selection:gnuhealth.patient.disease,status:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.disease,status:"
 msgid "acute"
@@ -11464,7 +11464,7 @@ msgstr "恶化"
 
 msgctxt "selection:gnuhealth.patient.ecg,axis:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.ecg,axis:"
 msgid "Extreme right deviation"
@@ -11484,7 +11484,7 @@ msgstr "电轴右偏"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "I"
@@ -11536,7 +11536,7 @@ msgstr "aVR"
 
 msgctxt "selection:gnuhealth.patient.ecg,pacemaker:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.ecg,pacemaker:"
 msgid "Atrioventricular"
@@ -11552,7 +11552,7 @@ msgstr "窦房结"
 
 msgctxt "selection:gnuhealth.patient.ecg,rhythm:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.ecg,rhythm:"
 msgid "Irregular"
@@ -11564,7 +11564,7 @@ msgstr "规则"
 
 msgctxt "selection:gnuhealth.patient.ecg,st_segment:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.ecg,st_segment:"
 msgid "Depressed"
@@ -11580,7 +11580,7 @@ msgstr "正常"
 
 msgctxt "selection:gnuhealth.patient.evaluation,discharge_reason:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,discharge_reason:"
 msgid "Death"
@@ -11612,7 +11612,7 @@ msgstr "门诊患者"
 
 msgctxt "selection:gnuhealth.patient.evaluation,gender:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,gender:"
 msgid "Female"
@@ -11692,7 +11692,7 @@ msgstr "语言错乱，但字意可辨"
 
 msgctxt "selection:gnuhealth.patient.evaluation,mood:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,mood:"
 msgid "Disgust"
@@ -11728,7 +11728,7 @@ msgstr "伤心"
 
 msgctxt "selection:gnuhealth.patient.evaluation,state:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,state:"
 msgid "Done"
@@ -11744,7 +11744,7 @@ msgstr "已签署"
 
 msgctxt "selection:gnuhealth.patient.evaluation,urgency:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,urgency:"
 msgid "Medical Emergency"
@@ -11760,7 +11760,7 @@ msgstr "紧急"
 
 msgctxt "selection:gnuhealth.patient.evaluation,visit_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,visit_type:"
 msgid "Followup"
@@ -11784,7 +11784,7 @@ msgstr "女性日常访视/健康促进/筛查等"
 
 msgctxt "selection:gnuhealth.patient.medication,duration_period:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.medication,duration_period:"
 msgid "days"
@@ -11812,7 +11812,7 @@ msgstr "年"
 
 msgctxt "selection:gnuhealth.patient.medication,frequency_unit:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.medication,frequency_unit:"
 msgid "days"
@@ -11840,7 +11840,7 @@ msgstr "必要时"
 
 msgctxt "selection:gnuhealth.patient.medication,infusion_rate_units:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.patient.medication,infusion_rate_units:"
 msgid "mL/hour"
@@ -11849,7 +11849,7 @@ msgstr "毫升/小时"
 msgctxt ""
 "selection:gnuhealth.person_alternative_identification,alternative_id_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt ""
 "selection:gnuhealth.person_alternative_identification,alternative_id_type:"
@@ -11878,7 +11878,7 @@ msgstr "护照"
 
 msgctxt "selection:gnuhealth.person_name,prefix:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.person_name,prefix:"
 msgid "Dr"
@@ -11898,7 +11898,7 @@ msgstr "Mrs"
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid "Anonymous"
@@ -11930,7 +11930,7 @@ msgstr "曾用名"
 
 msgctxt "selection:gnuhealth.pol,medical_context:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.pol,medical_context:"
 msgid "Birth"
@@ -11986,7 +11986,7 @@ msgstr "检验"
 
 msgctxt "selection:gnuhealth.pol,page_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.pol,page_type:"
 msgid "Biographical"
@@ -12006,7 +12006,7 @@ msgstr "社会环境"
 
 msgctxt "selection:gnuhealth.pol,relevance:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.pol,relevance:"
 msgid "Critical"
@@ -12022,7 +12022,7 @@ msgstr "一般信息"
 
 msgctxt "selection:gnuhealth.pol,social_context:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.pol,social_context:"
 msgid "Addiction"
@@ -12098,7 +12098,7 @@ msgstr "未投保"
 
 msgctxt "selection:gnuhealth.prescription.line,duration_period:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.prescription.line,duration_period:"
 msgid "days"
@@ -12126,7 +12126,7 @@ msgstr "年"
 
 msgctxt "selection:gnuhealth.prescription.line,frequency_unit:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.prescription.line,frequency_unit:"
 msgid "days"
@@ -12154,7 +12154,7 @@ msgstr "必要时"
 
 msgctxt "selection:gnuhealth.prescription.line,infusion_rate_units:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.prescription.line,infusion_rate_units:"
 msgid "mL/hour"
@@ -12174,7 +12174,7 @@ msgstr "已验证"
 
 msgctxt "selection:gnuhealth.signs_and_symptoms,sign_or_symptom:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.signs_and_symptoms,sign_or_symptom:"
 msgid "Sign"
@@ -12186,7 +12186,7 @@ msgstr "症状"
 
 msgctxt "selection:gnuhealth.vaccination,admin_route:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.vaccination,admin_route:"
 msgid "Intradermal"
@@ -12210,7 +12210,7 @@ msgstr "皮下"
 
 msgctxt "selection:gnuhealth.vaccination,admin_site:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.vaccination,admin_site:"
 msgid "left anterolateral fat of thigh"
@@ -12254,7 +12254,7 @@ msgstr "右侧股外侧肌"
 
 msgctxt "selection:gnuhealth.vaccination,state:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:gnuhealth.vaccination,state:"
 msgid "Done"
@@ -12266,7 +12266,7 @@ msgstr "正在进行"
 
 msgctxt "selection:party.party,gender:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:party.party,gender:"
 msgid "Female"
@@ -12278,7 +12278,7 @@ msgstr "男"
 
 msgctxt "selection:party.party,insurance_company_type:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:party.party,insurance_company_type:"
 msgid "Labour Union / Syndical"
@@ -12294,7 +12294,7 @@ msgstr "国家"
 
 msgctxt "selection:party.party,marital_status:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Concubinage"
@@ -12322,7 +12322,7 @@ msgstr "丧偶"
 
 msgctxt "selection:party.party,name_representation:"
 msgid ""
-msgstr "无"
+msgstr ""
 
 msgctxt "selection:party.party,name_representation:"
 msgid "CJK: Family+Given"
