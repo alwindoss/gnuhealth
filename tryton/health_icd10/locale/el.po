@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-09 09:32+0000\n"
+"PO-Revision-Date: 2020-08-10 17:32+0000\n"
 "Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_icd10/el/>\n"
@@ -2434,7 +2434,7 @@ msgstr "Άλλα νοσήματα από κυτταρομεγαλοϊό"
 
 msgctxt "model:gnuhealth.pathology,name:B259"
 msgid "Cytomegaloviral disease, unspecified"
-msgstr "Νόσος από κυτταρομεγαλοϊό, μη καθορισμένο"
+msgstr "Νόσος από κυτταρομεγαλοϊό, μη καθορισμένη"
 
 msgctxt "model:gnuhealth.pathology,name:B26"
 msgid "Mumps"
@@ -2534,7 +2534,7 @@ msgstr "Λοιμώξεις από ρετροϊούς, που δεν ταξινο
 
 msgctxt "model:gnuhealth.pathology,name:B334"
 msgid "Hantavirus (cardio-)pulmonary syndrome [HPS] [HCPS]"
-msgstr ""
+msgstr "(Καρδιο-)πνευμονικό σύνδρομο από ιό Hantaan [HPS] [HCPS] (J17.1 )"
 
 msgctxt "model:gnuhealth.pathology,name:B338"
 msgid "Other specified viral diseases"
@@ -2546,23 +2546,23 @@ msgstr "Ιογενείς λοιμώξεις μη καθορισμένης εντ
 
 msgctxt "model:gnuhealth.pathology,name:B340"
 msgid "Adenovirus infection, unspecified site"
-msgstr ""
+msgstr "Λοίμωξη από αδενοϊό, μη καθορισμένης εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:B341"
 msgid "Enterovirus infection, unspecified site"
-msgstr ""
+msgstr "Λοίμωξη από εντεροϊό, μη καθορισμένης εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:B342"
 msgid "Coronavirus infection, unspecified site"
-msgstr ""
+msgstr "Λοίμωξη από ιό Corona, μη καθορισμένης εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:B343"
 msgid "Parvovirus infection, unspecified site"
-msgstr ""
+msgstr "Λοίμωξη από ιό Parvo, μη καθορισμένης εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:B344"
 msgid "Papovavirus infection, unspecified site"
-msgstr ""
+msgstr "Λοίμωξη από ιό Papova, μη καθορισμένης εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:B348"
 msgid "Other viral infections of unspecified site"
@@ -2602,7 +2602,7 @@ msgstr "Ανατολική ή Ινδική τριχοφυτία"
 
 msgctxt "model:gnuhealth.pathology,name:B356"
 msgid "Tinea inguinalis [Tinea cruris]"
-msgstr ""
+msgstr "Τριχοφυτία των μηρογεννητικών πτυχών"
 
 msgctxt "model:gnuhealth.pathology,name:B358"
 msgid "Other dermatophytoses"
@@ -2674,7 +2674,7 @@ msgstr "Καντιντιασική ενδοκαρδίτιδα (I39.8* )"
 
 msgctxt "model:gnuhealth.pathology,name:B377"
 msgid "Candidal sepsis"
-msgstr ""
+msgstr "Καντιντιασική σηψαιμία"
 
 msgctxt "model:gnuhealth.pathology,name:B378"
 msgid "Candidiasis of other sites"
@@ -2926,7 +2926,7 @@ msgstr "Ρινοεγκεφαλική μουκορμυκητίαση"
 
 msgctxt "model:gnuhealth.pathology,name:B462"
 msgid "Gastrointestinal mucormycosis"
-msgstr ""
+msgstr "Γαστρεντερική μουκορμυκητίαση"
 
 msgctxt "model:gnuhealth.pathology,name:B463"
 msgid "Cutaneous mucormycosis"
@@ -3113,31 +3113,31 @@ msgstr "Αφρικανική τρυπανοσωμίαση, μη καθορισμ
 
 msgctxt "model:gnuhealth.pathology,name:B57"
 msgid "Chagas disease"
-msgstr ""
+msgstr "Νόσος του Chagas"
 
 msgctxt "model:gnuhealth.pathology,name:B570"
 msgid "Acute Chagas disease with heart involvement"
-msgstr ""
+msgstr "Οξεία νόσος του Chagas με συμμετοχή της καρδιάς (I41.2* , I98.1* )"
 
 msgctxt "model:gnuhealth.pathology,name:B571"
 msgid "Acute Chagas disease without heart involvement"
-msgstr ""
+msgstr "Οξεία νόσος του Chagas χωρίς συμμετοχή της καρδιάς"
 
 msgctxt "model:gnuhealth.pathology,name:B572"
 msgid "Chagas disease (chronic) with heart involvement"
-msgstr ""
+msgstr "Νόσος του Chagas (χρόνια) με συμμετοχή της καρδιάς"
 
 msgctxt "model:gnuhealth.pathology,name:B573"
 msgid "Chagas disease (chronic) with digestive system involvement"
-msgstr ""
+msgstr "Νόσος του Chagas (χρόνια) με συμμετοχή του πεπτικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:B574"
 msgid "Chagas disease (chronic) with nervous system involvement"
-msgstr ""
+msgstr "Νόσος του Chagas (χρόνια) με συμμετοχή του νευρικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:B575"
 msgid "Chagas disease (chronic) with other organ involvement"
-msgstr ""
+msgstr "Νόσος του Chagas (χρόνια) με συμμετοχή άλλου οργάνου"
 
 msgctxt "model:gnuhealth.pathology,name:B58"
 msgid "Toxoplasmosis"
@@ -3185,7 +3185,7 @@ msgstr "Ακανθαμοιβάδωση"
 
 msgctxt "model:gnuhealth.pathology,name:B602"
 msgid "Naegleriasis"
-msgstr ""
+msgstr "Nεγκλερίωση"
 
 msgctxt "model:gnuhealth.pathology,name:B608"
 msgid "Other specified protozoal diseases"
@@ -3207,7 +3207,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:B651"
 msgid "Schistosomiasis due to Schistosoma mansoni [intestinal schistosomiasis]"
-msgstr ""
+msgstr "Σχιστοσωμίαση από Schistosoma mansoni [εντερική σχιστοσωμίαση]"
 
 msgctxt "model:gnuhealth.pathology,name:B652"
 msgid "Schistosomiasis due to Schistosoma japonicum"
@@ -3239,7 +3239,7 @@ msgstr "Κλωνορχίαση"
 
 msgctxt "model:gnuhealth.pathology,name:B662"
 msgid "Dicrocoeliasis"
-msgstr ""
+msgstr "Δικροκοιλίαση"
 
 msgctxt "model:gnuhealth.pathology,name:B663"
 msgid "Fascioliasis"
@@ -3424,7 +3424,7 @@ msgstr "Αγκυλοστομιάσεις"
 
 msgctxt "model:gnuhealth.pathology,name:B760"
 msgid "Ancylostomiasis"
-msgstr ""
+msgstr "Αγκυλοστομίαση"
 
 msgctxt "model:gnuhealth.pathology,name:B761"
 msgid "Necatoriasis"
@@ -3656,7 +3656,7 @@ msgstr "Όψιμα αποτελέσματα της φυματίωσης του �
 
 msgctxt "model:gnuhealth.pathology,name:B901"
 msgid "Sequelae of genitourinary tuberculosis"
-msgstr ""
+msgstr "Όψιμα αποτελέσματα της φυματίωσης του ουρογεννητικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:B902"
 msgid "Sequelae of tuberculosis of bones and joints"
@@ -3783,6 +3783,8 @@ msgid ""
 "Other specified bacterial agents as the cause of diseases classified to "
 "other chapters"
 msgstr ""
+"Άλλοι βακτηριακοί παράγοντες ως η αιτία νοσημάτων που ταξινομούνται σε άλλα "
+"κεφάλαια"
 
 msgctxt "model:gnuhealth.pathology,name:B960"
 msgid ""
@@ -3878,6 +3880,8 @@ msgid ""
 "Respiratory syncytial virus as the cause of diseases classified to other "
 "chapters"
 msgstr ""
+"Συγκυτιακός ιός του αναπνευστικού ως η αιτία νοσημάτων που ταξινομούνται σε "
+"άλλα κεφάλαια"
 
 msgctxt "model:gnuhealth.pathology,name:B975"
 msgid "Reovirus as the cause of diseases classified to other chapters"
@@ -3907,6 +3911,8 @@ msgid ""
 "Other specified infectious agents as the cause of diseases classified to "
 "other chapters"
 msgstr ""
+"Άλλοι καθορισμένοι λοιμογόνοι παράγοντες ως η αιτία νοσημάτων που "
+"ταξινομούνται σε άλλα κεφάλαια"
 
 msgctxt "model:gnuhealth.pathology,name:B980"
 msgid ""
@@ -3928,39 +3934,42 @@ msgstr "Κακόηθες νεόπλασμα του χείλους"
 
 msgctxt "model:gnuhealth.pathology,name:C000"
 msgid "Malignant neoplasm: External upper lip"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Εξωτερικής επιφάνειας του άνω χείλους"
 
 msgctxt "model:gnuhealth.pathology,name:C001"
 msgid "Malignant neoplasm: External lower lip"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Εξωτερικής επιφάνειας του κάτω χείλους"
 
 msgctxt "model:gnuhealth.pathology,name:C002"
 msgid "Malignant neoplasm: External lip, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Εξωτερικής επιφάνειας του χείλους, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C003"
 msgid "Malignant neoplasm: Upper lip, inner aspect"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Εσωτερικής επιφάνειας [βλεννογόνου] του άνω χείλους"
 
 msgctxt "model:gnuhealth.pathology,name:C004"
 msgid "Malignant neoplasm: Lower lip, inner aspect"
 msgstr ""
+"Κακόηθες νεόπλασμα: Εσωτερικής επιφάνειας [βλεννογόνου] του κάτω χείλους"
 
 msgctxt "model:gnuhealth.pathology,name:C005"
 msgid "Malignant neoplasm: Lip, unspecified, inner aspect"
 msgstr ""
+"Κακόηθες νεόπλασμα: Εσωτερικής επιφάνειας [βλεννογόνου] του χείλους, μη "
+"καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C006"
 msgid "Malignant neoplasm: Commissure of lip"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Γωνίας του στόματος [συγχειλίας]"
 
 msgctxt "model:gnuhealth.pathology,name:C008"
 msgid "Malignant neoplasm: Overlapping lesion of lip"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του χείλους"
 
 msgctxt "model:gnuhealth.pathology,name:C009"
 msgid "Malignant neoplasm: Lip, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Χείλους, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C01"
 msgid "Malignant neoplasm of base of tongue"
@@ -3972,31 +3981,33 @@ msgstr "Κακόηθες νεόπλασμα άλλων και μη καθορι�
 
 msgctxt "model:gnuhealth.pathology,name:C020"
 msgid "Malignant neoplasm: Dorsal surface of tongue"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ραχιαίας [άνω] επιφάνειας της γλώσσας"
 
 msgctxt "model:gnuhealth.pathology,name:C021"
 msgid "Malignant neoplasm: Border of tongue"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ορίου της γλώσσας"
 
 msgctxt "model:gnuhealth.pathology,name:C022"
 msgid "Malignant neoplasm: Ventral surface of tongue"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κάτω επιφάνειας της γλώσσας"
 
 msgctxt "model:gnuhealth.pathology,name:C023"
 msgid "Malignant neoplasm: Anterior two-thirds of tongue, part unspecified"
 msgstr ""
+"Κακόηθες νεόπλασμα: Προσθίων δύο τριτημορίων της γλώσσας, μη καθορισμένης "
+"εντόπισης"
 
 msgctxt "model:gnuhealth.pathology,name:C024"
 msgid "Malignant neoplasm: Lingual tonsil"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Γλωσσικής αμυγδαλής"
 
 msgctxt "model:gnuhealth.pathology,name:C028"
 msgid "Malignant neoplasm: Overlapping lesion of tongue"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση της γλώσσας"
 
 msgctxt "model:gnuhealth.pathology,name:C029"
 msgid "Malignant neoplasm: Tongue, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Γλώσσας, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C03"
 msgid "Malignant neoplasm of gum"
@@ -4004,15 +4015,15 @@ msgstr "Κακόηθες νεόπλασμα των ούλων"
 
 msgctxt "model:gnuhealth.pathology,name:C030"
 msgid "Malignant neoplasm: Upper gum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Άνω ούλων"
 
 msgctxt "model:gnuhealth.pathology,name:C031"
 msgid "Malignant neoplasm: Lower gum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κάτω ούλων"
 
 msgctxt "model:gnuhealth.pathology,name:C039"
 msgid "Malignant neoplasm: Gum, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ούλων, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C04"
 msgid "Malignant neoplasm of floor of mouth"
@@ -4020,19 +4031,19 @@ msgstr "Κακόηθες νεόπλασμα του εδάφους του στό�
 
 msgctxt "model:gnuhealth.pathology,name:C040"
 msgid "Malignant neoplasm: Anterior floor of mouth"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πρόσθιου τμήματος του εδάφους του στόματος"
 
 msgctxt "model:gnuhealth.pathology,name:C041"
 msgid "Malignant neoplasm: Lateral floor of mouth"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πλαγίου τμήματος του εδάφους του στόματος"
 
 msgctxt "model:gnuhealth.pathology,name:C048"
 msgid "Malignant neoplasm: Overlapping lesion of floor of mouth"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του εδάφους του στόματος"
 
 msgctxt "model:gnuhealth.pathology,name:C049"
 msgid "Malignant neoplasm: Floor of mouth, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Εδάφους του στόματος, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C05"
 msgid "Malignant neoplasm of palate"
@@ -4040,23 +4051,23 @@ msgstr "Κακόηθες νεόπλασμα της υπερώας"
 
 msgctxt "model:gnuhealth.pathology,name:C050"
 msgid "Malignant neoplasm: Hard palate"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Σκληράς υπερώας"
 
 msgctxt "model:gnuhealth.pathology,name:C051"
 msgid "Malignant neoplasm: Soft palate"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Μαλθακής υπερώας"
 
 msgctxt "model:gnuhealth.pathology,name:C052"
 msgid "Malignant neoplasm: Uvula"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Σταφυλής"
 
 msgctxt "model:gnuhealth.pathology,name:C058"
 msgid "Malignant neoplasm: Overlapping lesion of palate"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση της υπερώας"
 
 msgctxt "model:gnuhealth.pathology,name:C059"
 msgid "Malignant neoplasm: Palate, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Υπερώας, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C06"
 msgid "Malignant neoplasm of other and unspecified parts of mouth"
@@ -4064,465 +4075,476 @@ msgstr "Κακόηθες νεόπλασμα άλλων και μη καθορι�
 
 msgctxt "model:gnuhealth.pathology,name:C060"
 msgid "Malignant neoplasm: Cheek mucosa"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Βλεννογόνου της παρειάς"
 
 msgctxt "model:gnuhealth.pathology,name:C061"
 msgid "Malignant neoplasm: Vestibule of mouth"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Προστομίου"
 
 msgctxt "model:gnuhealth.pathology,name:C062"
 msgid "Malignant neoplasm: Retromolar area"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οπισθογόμφιου περιοχής"
 
 msgctxt "model:gnuhealth.pathology,name:C068"
 msgid ""
 "Malignant neoplasm: Overlapping lesion of other and unspecified parts of "
 "mouth"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση άλλων και μη καθορισμένων "
+"τμημάτων του στόματος"
 
 msgctxt "model:gnuhealth.pathology,name:C069"
 msgid "Malignant neoplasm: Mouth, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Στόματος, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C07"
 msgid "Malignant neoplasm of parotid gland"
-msgstr "Κακοήθη νεοπλάσματα της παρωτίδας"
+msgstr "Κακόηθες νεόπλασμα της παρωτίδας"
 
 msgctxt "model:gnuhealth.pathology,name:C08"
 msgid "Malignant neoplasm of other and unspecified major salivary glands"
-msgstr "Κακοήθη νεοπλάσματα σε διάφορους άλλους μείζονες σιελογόνους αδένες"
+msgstr "Κακόηθες νεόπλασμα σε διάφορους άλλους μείζονες σιελογόνους αδένες"
 
 msgctxt "model:gnuhealth.pathology,name:C080"
 msgid "Malignant neoplasm: Submandibular gland"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Υπογνάθιου αδένα [κάτω γνάθου]"
 
 msgctxt "model:gnuhealth.pathology,name:C081"
 msgid "Malignant neoplasm: Sublingual gland"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Υπογλώσσιου αδένα"
 
 msgctxt "model:gnuhealth.pathology,name:C088"
 msgid "Malignant neoplasm: Overlapping lesion of major salivary glands"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση μειζόνων σιελογόνων αδένων"
 
 msgctxt "model:gnuhealth.pathology,name:C089"
 msgid "Malignant neoplasm: Major salivary gland, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Μείζονος σιελογόνου αδένα, μη καθορισμένου"
 
 msgctxt "model:gnuhealth.pathology,name:C09"
 msgid "Malignant neoplasm of tonsil"
-msgstr "Κακοήθη νεοπλάσματα των αμυγδαλών"
+msgstr "Κακόηθες νεόπλασμα των αμυγδαλών"
 
 msgctxt "model:gnuhealth.pathology,name:C090"
 msgid "Malignant neoplasm: Tonsillar fossa"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Αμυγδαλικού βοθρίου"
 
 msgctxt "model:gnuhealth.pathology,name:C091"
 msgid "Malignant neoplasm: Tonsillar pillar (anterior)(posterior)"
 msgstr ""
+"Κακόηθες νεόπλασμα: Αμυγδαλικής [παρίσθμιας] καμάρας (πρόσθιας) (οπίσθιας)"
 
 msgctxt "model:gnuhealth.pathology,name:C098"
 msgid "Malignant neoplasm: Overlapping lesion of tonsil"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση της αμυγδαλής"
 
 msgctxt "model:gnuhealth.pathology,name:C099"
 msgid "Malignant neoplasm: Tonsil, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Αμυγδαλής, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C10"
 msgid "Malignant neoplasm of oropharynx"
-msgstr "Κακοήθη νεοπλάσματα του στοματοφάρυγγα"
+msgstr "Κακόηθες νεόπλασμα του στοματοφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C100"
 msgid "Malignant neoplasm: Vallecula"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Γλωσσοεπιγλωττιδικού βοθρίου"
 
 msgctxt "model:gnuhealth.pathology,name:C101"
 msgid "Malignant neoplasm: Anterior surface of epiglottis"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πρόσθιας επιφάνειας της επιγλωττίδας"
 
 msgctxt "model:gnuhealth.pathology,name:C102"
 msgid "Malignant neoplasm: Lateral wall of oropharynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πλάγιου τοιχώματος του στοματοφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C103"
 msgid "Malignant neoplasm: Posterior wall of oropharynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οπίσθιου τοιχώματος του στοματοφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C104"
 msgid "Malignant neoplasm: Branchial cleft"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Βραγχιακής σχισμής"
 
 msgctxt "model:gnuhealth.pathology,name:C108"
 msgid "Malignant neoplasm: Overlapping lesion of oropharynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του στοματοφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C109"
 msgid "Malignant neoplasm: Oropharynx, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Στοματοφάρυγγα, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C11"
 msgid "Malignant neoplasm of nasopharynx"
-msgstr "Κακοήθη νεοπλάσματα του ρινοφάρυγγα"
+msgstr "Κακόηθες νεόπλασμα του ρινοφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C110"
 msgid "Malignant neoplasm: Superior wall of nasopharynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Άνω τοιχώματος του ρινοφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C111"
 msgid "Malignant neoplasm: Posterior wall of nasopharynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οπίσθιου τοιχώματος του ρινοφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C112"
 msgid "Malignant neoplasm: Lateral wall of nasopharynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πλάγιου τοιχώματος του ρινοφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C113"
 msgid "Malignant neoplasm: Anterior wall of nasopharynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πρόσθιου τοιχώματος του ρινοφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C118"
 msgid "Malignant neoplasm: Overlapping lesion of nasopharynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του ρινοφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C119"
 msgid "Malignant neoplasm: Nasopharynx, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ρινοφάρυγγα, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C12"
 msgid "Malignant neoplasm of piriform sinus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα του απιοειδούς κόλπου"
 
 msgctxt "model:gnuhealth.pathology,name:C13"
 msgid "Malignant neoplasm of hypopharynx"
-msgstr "Κακοήθη νεοπλάσματα του υποφάρυγγα"
+msgstr "Κακόηθες νεόπλασμα του υποφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C130"
 msgid "Malignant neoplasm: Postcricoid region"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οπισθοκρικοειδούς περιοχής"
 
 msgctxt "model:gnuhealth.pathology,name:C131"
 msgid "Malignant neoplasm: Aryepiglottic fold, hypopharyngeal aspect"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Αρυταινοεπιγλωττιδικής πτυχής, υποφαρυγγικής μοίρας"
 
 msgctxt "model:gnuhealth.pathology,name:C132"
 msgid "Malignant neoplasm: Posterior wall of hypopharynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οπίσθιου τοιχώματος του υποφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C138"
 msgid "Malignant neoplasm: Overlapping lesion of hypopharynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του υποφάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C139"
 msgid "Malignant neoplasm: Hypopharynx, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Υποφάρυγγα, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C14"
 msgid ""
 "Malignant neoplasm of other and ill-defined sites in the lip, oral cavity "
 "and pharynx"
 msgstr ""
-"Κακοήθη νεοπλάσματα άλλων και ill defined εντοπίσεων στα χείλη, τη στοματική "
+"Κακόηθες νεόπλασμα άλλων και ill defined εντοπίσεων στα χείλη, τη στοματική "
 "κοιλότητα και το φάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C140"
 msgid "Malignant neoplasm: Pharynx, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Φάρυγγα, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C142"
 msgid "Malignant neoplasm: Waldeyer ring"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Δακτυλίου του Waldeyer"
 
 msgctxt "model:gnuhealth.pathology,name:C148"
 msgid "Malignant neoplasm: Overlapping lesion of lip, oral cavity and pharynx"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του χείλους, της στοματικής "
+"κοιλότητας και του φάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C15"
 msgid "Malignant neoplasm of oesophagus"
-msgstr "Κακοήθη νεοπλάσματα του οισοφάγου"
+msgstr "Κακόηθες νεόπλασμα του οισοφάγου"
 
 msgctxt "model:gnuhealth.pathology,name:C150"
 msgid "Malignant neoplasm: Cervical part of oesophagus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Τραχηλικής μοίρας του οισοφάγου"
 
 msgctxt "model:gnuhealth.pathology,name:C151"
 msgid "Malignant neoplasm: Thoracic part of oesophagus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Θωρακικής μοίρας του οισοφάγου"
 
 msgctxt "model:gnuhealth.pathology,name:C152"
 msgid "Malignant neoplasm: Abdominal part of oesophagus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κοιλιακής μοίρας του οισοφάγου"
 
 msgctxt "model:gnuhealth.pathology,name:C153"
 msgid "Malignant neoplasm: Upper third of oesophagus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Άνω τριτημόριου του οισοφάγου"
 
 msgctxt "model:gnuhealth.pathology,name:C154"
 msgid "Malignant neoplasm: Middle third of oesophagus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Μέσου τριτημόριου του οισοφάγου"
 
 msgctxt "model:gnuhealth.pathology,name:C155"
 msgid "Malignant neoplasm: Lower third of oesophagus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κάτω τριτημόριου του οισοφάγου"
 
 msgctxt "model:gnuhealth.pathology,name:C158"
 msgid "Malignant neoplasm: Overlapping lesion of oesophagus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του οισοφάγου"
 
 msgctxt "model:gnuhealth.pathology,name:C159"
 msgid "Malignant neoplasm: Oesophagus, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οισοφάγου, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C16"
 msgid "Malignant neoplasm of stomach"
-msgstr "Κακοήθη νεοπλάσματα του στομάχου"
+msgstr "Κακόηθες νεόπλασμα του στομάχου"
 
 msgctxt "model:gnuhealth.pathology,name:C160"
 msgid "Malignant neoplasm: Cardia"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Καρδίας του στομάχου"
 
 msgctxt "model:gnuhealth.pathology,name:C161"
 msgid "Malignant neoplasm: Fundus of stomach"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Θόλου του στομάχου"
 
 msgctxt "model:gnuhealth.pathology,name:C162"
 msgid "Malignant neoplasm: Body of stomach"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Σώματος του στομάχου"
 
 msgctxt "model:gnuhealth.pathology,name:C163"
 msgid "Malignant neoplasm: Pyloric antrum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πυλωρικού άντρου"
 
 msgctxt "model:gnuhealth.pathology,name:C164"
 msgid "Malignant neoplasm: Pylorus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πυλωρού"
 
 msgctxt "model:gnuhealth.pathology,name:C165"
 msgid "Malignant neoplasm: Lesser curvature of stomach, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ελάσσονος τόξου του στομάχου, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C166"
 msgid "Malignant neoplasm: Greater curvature of stomach, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Μείζονος τόξου του στομάχου, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C168"
 msgid "Malignant neoplasm: Overlapping lesion of stomach"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του στομάχου"
 
 msgctxt "model:gnuhealth.pathology,name:C169"
 msgid "Malignant neoplasm: Stomach, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Στομάχου, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C17"
 msgid "Malignant neoplasm of small intestine"
-msgstr "Κακοήθη νεοπλάσματα του λεπτού εντέρου"
+msgstr "Κακόηθες νεόπλασμα του λεπτού εντέρου"
 
 msgctxt "model:gnuhealth.pathology,name:C170"
 msgid "Malignant neoplasm: Duodenum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Δωδεκαδακτύλου"
 
 msgctxt "model:gnuhealth.pathology,name:C171"
 msgid "Malignant neoplasm: Jejunum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Νήστιδας"
 
 msgctxt "model:gnuhealth.pathology,name:C172"
 msgid "Malignant neoplasm: Ileum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ειλεού"
 
 msgctxt "model:gnuhealth.pathology,name:C173"
 msgid "Malignant neoplasm: Meckel diverticulum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Μεκελλείου απόφυσης"
 
 msgctxt "model:gnuhealth.pathology,name:C178"
 msgid "Malignant neoplasm: Overlapping lesion of small intestine"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του λεπτού εντέρου"
 
 msgctxt "model:gnuhealth.pathology,name:C179"
 msgid "Malignant neoplasm: Small intestine, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Λεπτού εντέρου, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C18"
 msgid "Malignant neoplasm of colon"
-msgstr "Κακοήθη νεοπλάσματα που εντοπίζονται στο κόλον"
+msgstr "Κακόηθες νεόπλασμα του παχέος εντέρου [κόλου]"
 
 msgctxt "model:gnuhealth.pathology,name:C180"
 msgid "Malignant neoplasm: Caecum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Τυφλού"
 
 msgctxt "model:gnuhealth.pathology,name:C181"
 msgid "Malignant neoplasm: Appendix"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Σκωληκοειδούς απόφυσης"
 
 msgctxt "model:gnuhealth.pathology,name:C182"
 msgid "Malignant neoplasm: Ascending colon"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ανιόντος κόλου"
 
 msgctxt "model:gnuhealth.pathology,name:C183"
 msgid "Malignant neoplasm: Hepatic flexure"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ηπατικής καμπής"
 
 msgctxt "model:gnuhealth.pathology,name:C184"
 msgid "Malignant neoplasm: Transverse colon"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Εγκάρσιου κόλου"
 
 msgctxt "model:gnuhealth.pathology,name:C185"
 msgid "Malignant neoplasm: Splenic flexure"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Σπληνικής καμπής"
 
 msgctxt "model:gnuhealth.pathology,name:C186"
 msgid "Malignant neoplasm: Descending colon"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κατιόντος κόλου"
 
 msgctxt "model:gnuhealth.pathology,name:C187"
 msgid "Malignant neoplasm: Sigmoid colon"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Σιγμοειδούς κόλου"
 
 msgctxt "model:gnuhealth.pathology,name:C188"
 msgid "Malignant neoplasm: Overlapping lesion of colon"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του παχέος εντέρου [κόλου]"
 
 msgctxt "model:gnuhealth.pathology,name:C189"
 msgid "Malignant neoplasm: Colon, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Παχέος εντέρου [κόλου], μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C19"
 msgid "Malignant neoplasm of rectosigmoid junction"
-msgstr "Κακοήθη νεοπλάσματα της ορθοσιγμοειδικής συμβολής"
+msgstr "Κακόηθες νεόπλασμα της ορθοσιγμοειδικής συμβολής"
 
 msgctxt "model:gnuhealth.pathology,name:C20"
 msgid "Malignant neoplasm of rectum"
-msgstr "Κακοήθη νεοπλάσματα του ορθού"
+msgstr "Κακόηθες νεόπλασμα του ορθού"
 
 msgctxt "model:gnuhealth.pathology,name:C21"
 msgid "Malignant neoplasm of anus and anal canal"
-msgstr "Κακοήθη νεοπλάσματα του πρωκτού και του πρωκτικού σωλήνα"
+msgstr "Κακόηθες νεόπλασμα του πρωκτού και του πρωκτικού σωλήνα"
 
 msgctxt "model:gnuhealth.pathology,name:C210"
 msgid "Malignant neoplasm: Anus, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πρωκτού, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C211"
 msgid "Malignant neoplasm: Anal canal"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πρωκτικού σωλήνα"
 
 msgctxt "model:gnuhealth.pathology,name:C212"
 msgid "Malignant neoplasm: Cloacogenic zone"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κλοακογενούς ζώνης"
 
 msgctxt "model:gnuhealth.pathology,name:C218"
 msgid "Malignant neoplasm: Overlapping lesion of rectum, anus and anal canal"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του ορθού, του πρωκτού και του "
+"πρωκτικού σωλήνα"
 
 msgctxt "model:gnuhealth.pathology,name:C22"
 msgid "Malignant neoplasm of liver and intrahepatic bile ducts"
-msgstr "Κακοήθη νεοπλάσματα του ήπατος και των ενδοηπατικών χολαγγείων"
+msgstr "Κακόηθες νεόπλασμα του ήπατος και των ενδοηπατικών χοληφόρων πόρων"
 
 msgctxt "model:gnuhealth.pathology,name:C220"
 msgid "Malignant neoplasm: Liver cell carcinoma"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Καρκίνωμα ηπατικών κυττάρων"
 
 msgctxt "model:gnuhealth.pathology,name:C221"
 msgid "Malignant neoplasm: Intrahepatic bile duct carcinoma"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Καρκίνωμα του ενδοηπατικού χοληφόρου πόρου"
 
 msgctxt "model:gnuhealth.pathology,name:C222"
 msgid "Malignant neoplasm: Hepatoblastoma"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ηπατοβλάστωμα"
 
 msgctxt "model:gnuhealth.pathology,name:C223"
 msgid "Malignant neoplasm: Angiosarcoma of liver"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Αγγειοσάρκωμα του ήπατος"
 
 msgctxt "model:gnuhealth.pathology,name:C224"
 msgid "Malignant neoplasm: Other sarcomas of liver"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Άλλα σαρκώματα του ήπατος"
 
 msgctxt "model:gnuhealth.pathology,name:C227"
 msgid "Malignant neoplasm: Other specified carcinomas of liver"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Άλλα καθορισμένα καρκινώματα του ήπατος"
 
 msgctxt "model:gnuhealth.pathology,name:C229"
 msgid "Malignant neoplasm: Liver, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ήπατος, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C23"
 msgid "Malignant neoplasm of gallbladder"
-msgstr "Κακοήθης όγκος χοληδόχου κύστεως"
+msgstr "Κακόηθες νεόπλασμα της χοληδόχου κύστης"
 
 msgctxt "model:gnuhealth.pathology,name:C24"
 msgid "Malignant neoplasm of other and unspecified parts of biliary tract"
-msgstr "Κακοήθη νεοπλάσματα άλλων και διαφόρων τμημάτων της χοληφόρου οδού"
+msgstr ""
+"Κακόηθες νεόπλασμα άλλων και μη καθορισμένων τμημάτων της χοληφόρου οδού"
 
 msgctxt "model:gnuhealth.pathology,name:C240"
 msgid "Malignant neoplasm: Extrahepatic bile duct"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Εξωηπατικού χοληφόρου πόρου"
 
 msgctxt "model:gnuhealth.pathology,name:C241"
 msgid "Malignant neoplasm: Ampulla of Vater"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ληκύθου του Vater"
 
 msgctxt "model:gnuhealth.pathology,name:C248"
 msgid "Malignant neoplasm: Overlapping lesion of biliary tract"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση της χοληφόρου οδού"
 
 msgctxt "model:gnuhealth.pathology,name:C249"
 msgid "Malignant neoplasm: Biliary tract, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Χοληφόρου οδού, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C25"
 msgid "Malignant neoplasm of pancreas"
-msgstr "Κακοήθη νεοπλάσματα του παγκρέατος"
+msgstr "Κακόηθες νεόπλασμα του παγκρέατος"
 
 msgctxt "model:gnuhealth.pathology,name:C250"
 msgid "Malignant neoplasm: Head of pancreas"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κεφαλής του παγκρέατος"
 
 msgctxt "model:gnuhealth.pathology,name:C251"
 msgid "Malignant neoplasm: Body of pancreas"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Σώματος του παγκρέατος"
 
 msgctxt "model:gnuhealth.pathology,name:C252"
 msgid "Malignant neoplasm: Tail of pancreas"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ουράς του παγκρέατος"
 
 msgctxt "model:gnuhealth.pathology,name:C253"
 msgid "Malignant neoplasm: Pancreatic duct"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Παγκρεατικού πόρου"
 
 msgctxt "model:gnuhealth.pathology,name:C254"
 msgid "Malignant neoplasm: Endocrine pancreas"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ενδοκρινούς μοίρας του παγκρέατος"
 
 msgctxt "model:gnuhealth.pathology,name:C257"
 msgid "Malignant neoplasm: Other parts of pancreas"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Άλλων τμημάτων του παγκρέατος"
 
 msgctxt "model:gnuhealth.pathology,name:C258"
 msgid "Malignant neoplasm: Overlapping lesion of pancreas"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του παγκρέατος"
 
 msgctxt "model:gnuhealth.pathology,name:C259"
 msgid "Malignant neoplasm: Pancreas, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Παγκρέατος, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C26"
 msgid "Malignant neoplasm of other and ill-defined digestive organs"
 msgstr ""
+"Κακόηθες νεόπλασμα άλλων και ασαφώς καθοριζόμενων οργάνων του πεπτικού "
+"συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:C260"
 msgid "Malignant neoplasm: Intestinal tract, part unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Εντερικού σωλήνα, μη καθορισμένου τμήματος"
 
 msgctxt "model:gnuhealth.pathology,name:C261"
 msgid "Malignant neoplasm: Spleen"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Σπλήνα"
 
 msgctxt "model:gnuhealth.pathology,name:C268"
 msgid "Malignant neoplasm: Overlapping lesion of digestive system"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του πεπτικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:C269"
 msgid "Malignant neoplasm: Ill-defined sites within the digestive system"
 msgstr ""
+"Κακόηθες νεόπλασμα: Ασαφώς καθοριζόμενων εντοπίσεων μέσα στο πεπτικό σύστημα"
 
 msgctxt "model:gnuhealth.pathology,name:C30"
 msgid "Malignant neoplasm of nasal cavity and middle ear"
@@ -4530,11 +4552,11 @@ msgstr "Κακοήθη νεόπλασμα της ρινικής κοιλότητ
 
 msgctxt "model:gnuhealth.pathology,name:C300"
 msgid "Malignant neoplasm: Nasal cavity"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ρινικής κοιλότητας"
 
 msgctxt "model:gnuhealth.pathology,name:C301"
 msgid "Malignant neoplasm: Middle ear"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Μέσου ωτός"
 
 msgctxt "model:gnuhealth.pathology,name:C31"
 msgid "Malignant neoplasm of accessory sinuses"
@@ -4542,55 +4564,57 @@ msgstr "Κακοήθη νεόπλασμα των βοηθητικών κόλπω
 
 msgctxt "model:gnuhealth.pathology,name:C310"
 msgid "Malignant neoplasm: Maxillary sinus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Γναθιαίου κόλπου"
 
 msgctxt "model:gnuhealth.pathology,name:C311"
 msgid "Malignant neoplasm: Ethmoidal sinus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ηθμοειδούς κόλπου"
 
 msgctxt "model:gnuhealth.pathology,name:C312"
 msgid "Malignant neoplasm: Frontal sinus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Μετωπιαίου κόλπου"
 
 msgctxt "model:gnuhealth.pathology,name:C313"
 msgid "Malignant neoplasm: Sphenoidal sinus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Σφηνοειδούς κόλπου"
 
 msgctxt "model:gnuhealth.pathology,name:C318"
 msgid "Malignant neoplasm: Overlapping lesion of accessory sinuses"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση των επικουρικών [παραρινίων] "
+"κόλπων"
 
 msgctxt "model:gnuhealth.pathology,name:C319"
 msgid "Malignant neoplasm: Accessory sinus, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικουρικών [παραρινίων] κόλπων, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C32"
 msgid "Malignant neoplasm of larynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα του λάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C320"
 msgid "Malignant neoplasm: Glottis"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Γλωττίδας"
 
 msgctxt "model:gnuhealth.pathology,name:C321"
 msgid "Malignant neoplasm: Supraglottis"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Υπεργλωττιδικής μοίρας"
 
 msgctxt "model:gnuhealth.pathology,name:C322"
 msgid "Malignant neoplasm: Subglottis"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Υπογλωττιδικής μοίρας"
 
 msgctxt "model:gnuhealth.pathology,name:C323"
 msgid "Malignant neoplasm: Laryngeal cartilage"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Λαρυγγικού χόνδρου"
 
 msgctxt "model:gnuhealth.pathology,name:C328"
 msgid "Malignant neoplasm: Overlapping lesion of larynx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του λάρυγγα"
 
 msgctxt "model:gnuhealth.pathology,name:C329"
 msgid "Malignant neoplasm: Larynx, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Λάρυγγα, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C33"
 msgid "Malignant neoplasm of trachea"
@@ -4602,79 +4626,88 @@ msgstr "Κακοήθη νεόπλασμα του βρόγχου και του π
 
 msgctxt "model:gnuhealth.pathology,name:C340"
 msgid "Malignant neoplasm: Main bronchus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κύριου βρόγχου"
 
 msgctxt "model:gnuhealth.pathology,name:C341"
 msgid "Malignant neoplasm: Upper lobe, bronchus or lung"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Άνω λοβού, βρόγχου ή πνεύμονα"
 
 msgctxt "model:gnuhealth.pathology,name:C342"
 msgid "Malignant neoplasm: Middle lobe, bronchus or lung"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Μέσου λοβού, βρόγχου ή πνεύμονα"
 
 msgctxt "model:gnuhealth.pathology,name:C343"
 msgid "Malignant neoplasm: Lower lobe, bronchus or lung"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κάτω λοβού, βρόγχου ή πνεύμονα"
 
 msgctxt "model:gnuhealth.pathology,name:C348"
 msgid "Malignant neoplasm: Overlapping lesion of bronchus and lung"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του βρόγχου και του πνεύμονα"
 
 msgctxt "model:gnuhealth.pathology,name:C349"
 msgid "Malignant neoplasm: Bronchus or lung, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Βρόγχου ή πνεύμονα, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C37"
 msgid "Malignant neoplasm of thymus"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα του θύμου αδένα"
 
 msgctxt "model:gnuhealth.pathology,name:C38"
 msgid "Malignant neoplasm of heart, mediastinum and pleura"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα της καρδιάς, του μεσοθωράκιου και του υπεζωκότα"
 
 msgctxt "model:gnuhealth.pathology,name:C380"
 msgid "Malignant neoplasm: Heart"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Καρδιάς"
 
 msgctxt "model:gnuhealth.pathology,name:C381"
 msgid "Malignant neoplasm: Anterior mediastinum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πρόσθιου μεσοθωράκιου"
 
 msgctxt "model:gnuhealth.pathology,name:C382"
 msgid "Malignant neoplasm: Posterior mediastinum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οπίσθιου μεσοθωράκιου"
 
 msgctxt "model:gnuhealth.pathology,name:C383"
 msgid "Malignant neoplasm: Mediastinum, part unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Μεσοθωράκιου, μη καθορισμένου τμήματος"
 
 msgctxt "model:gnuhealth.pathology,name:C384"
 msgid "Malignant neoplasm: Pleura"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Υπεζωκότα"
 
 msgctxt "model:gnuhealth.pathology,name:C388"
 msgid "Malignant neoplasm: Overlapping lesion of heart, mediastinum and pleura"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση της καρδιάς, του μεσοθωράκιου και "
+"του υπεζωκότα"
 
 msgctxt "model:gnuhealth.pathology,name:C39"
 msgid ""
 "Malignant neoplasm of other and ill-defined sites in the respiratory system "
 "and intrathoracic organs"
 msgstr ""
+"Κακόηθες νεόπλασμα άλλων και ασαφώς καθοριζόμενων εντοπίσεων του "
+"αναπνευστικού συστήματος και των ενδοθωρακικών οργάνων"
 
 msgctxt "model:gnuhealth.pathology,name:C390"
 msgid "Malignant neoplasm: Upper respiratory tract, part unspecified"
 msgstr ""
+"Κακόηθες νεόπλασμα: Ανώτερης αναπνευστικής οδού, μη καθορισμένου τμήματος"
 
 msgctxt "model:gnuhealth.pathology,name:C398"
 msgid ""
 "Malignant neoplasm: Overlapping lesion of respiratory and intrathoracic "
 "organs"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του αναπνευστικού και των "
+"ενδοθωρακικών οργάνων"
 
 msgctxt "model:gnuhealth.pathology,name:C399"
 msgid "Malignant neoplasm: Ill-defined sites within the respiratory system"
 msgstr ""
+"Κακόηθες νεόπλασμα: Ασαφώς καθοριζόμενων εντοπίσεων μέσα στο αναπνευστικό "
+"σύστημα"
 
 msgctxt "model:gnuhealth.pathology,name:C40"
 msgid "Malignant neoplasm of bone and articular cartilage of limbs"
@@ -4682,323 +4715,369 @@ msgstr "Κακοήθη νεόπλασμα των οστών και του αρθ
 
 msgctxt "model:gnuhealth.pathology,name:C400"
 msgid "Malignant neoplasm: Scapula and long bones of upper limb"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Ωμοπλάτης και μακρών οστών του άνω άκρου"
 
 msgctxt "model:gnuhealth.pathology,name:C401"
 msgid "Malignant neoplasm: Short bones of upper limb"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Βραχέων οστών του άνω άκρου"
 
 msgctxt "model:gnuhealth.pathology,name:C402"
 msgid "Malignant neoplasm: Long bones of lower limb"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Μακρών οστών του κάτω άκρου"
 
 msgctxt "model:gnuhealth.pathology,name:C403"
 msgid "Malignant neoplasm: Short bones of lower limb"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Βραχέων οστών του κάτω άκρου"
 
 msgctxt "model:gnuhealth.pathology,name:C408"
 msgid ""
 "Malignant neoplasm: Overlapping lesion of bone and articular cartilage of "
 "limbs"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση των οστών και των αρθρικών "
+"χόνδρων των άκρων"
 
 msgctxt "model:gnuhealth.pathology,name:C409"
 msgid "Malignant neoplasm: Bone and articular cartilage of limb, unspecified"
 msgstr ""
+"Κακόηθες νεόπλασμα: Οστών και αρθρικών χόνδρων των άκρων, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C41"
 msgid ""
 "Malignant neoplasm of bone and articular cartilage of other and unspecified "
 "sites"
 msgstr ""
-"Κακοήθη νεόπλασμα οστών και αρθρικός χόνδρος άλλων και μη καθορισμένων θέσεων"
+"Κακόηθες νεόπλασμα των οστών και των αρθρικών χόνδρων άλλων και μη "
+"καθορισμένων εντοπίσεων"
 
 msgctxt "model:gnuhealth.pathology,name:C410"
 msgid "Malignant neoplasm: Bones of skull and face"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οστών του κρανίου και του προσώπου"
 
 msgctxt "model:gnuhealth.pathology,name:C411"
 msgid "Malignant neoplasm: Mandible"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κάτω γνάθου"
 
 msgctxt "model:gnuhealth.pathology,name:C412"
 msgid "Malignant neoplasm: Vertebral column"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Σπονδυλικής στήλης"
 
 msgctxt "model:gnuhealth.pathology,name:C413"
 msgid "Malignant neoplasm: Ribs, sternum and clavicle"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Πλευρών, στέρνου και κλείδας"
 
 msgctxt "model:gnuhealth.pathology,name:C414"
 msgid "Malignant neoplasm: Pelvic bones, sacrum and coccyx"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οστών της πυέλου, ιερού οστού και κόκκυγα"
 
 msgctxt "model:gnuhealth.pathology,name:C418"
 msgid "Malignant neoplasm: Overlapping lesion of bone and articular cartilage"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση των οστών και των αρθρικών χόνδρων"
 
 msgctxt "model:gnuhealth.pathology,name:C419"
 msgid "Malignant neoplasm: Bone and articular cartilage, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οστών και αρθρικών χόνδρων, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C43"
 msgid "Malignant melanoma of skin"
-msgstr "Κακοήθης μελάνωμα του δέρματος"
+msgstr "Κακόηθες μελάνωμα του δέρματος"
 
 msgctxt "model:gnuhealth.pathology,name:C430"
 msgid "Malignant neoplasm: Malignant melanoma of lip"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κακόηθες μελάνωμα του χείλους"
 
 msgctxt "model:gnuhealth.pathology,name:C431"
 msgid "Malignant neoplasm: Malignant melanoma of eyelid, including canthus"
 msgstr ""
+"Κακόηθες νεόπλασμα: Κακόηθες μελάνωμα του βλεφάρου, συμπεριλαμβανομένου του "
+"κανθού"
 
 msgctxt "model:gnuhealth.pathology,name:C432"
 msgid ""
 "Malignant neoplasm: Malignant melanoma of ear and external auricular canal"
 msgstr ""
+"Κακόηθες νεόπλασμα: Κακόηθες μελάνωμα του ωτός και του έξω ακουστικού πόρου"
 
 msgctxt "model:gnuhealth.pathology,name:C433"
 msgid ""
 "Malignant neoplasm: Malignant melanoma of other and unspecified parts of face"
 msgstr ""
+"Κακόηθες νεόπλασμα: Κακόηθες μελάνωμα άλλων και μη καθορισμένων τμημάτων του "
+"προσώπου"
 
 msgctxt "model:gnuhealth.pathology,name:C434"
 msgid "Malignant neoplasm: Malignant melanoma of scalp and neck"
 msgstr ""
+"Κακόηθες νεόπλασμα: Κακόηθες μελάνωμα του τριχωτού της κεφαλής και του "
+"τραχήλου"
 
 msgctxt "model:gnuhealth.pathology,name:C435"
 msgid "Malignant neoplasm: Malignant melanoma of trunk"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κακόηθες μελάνωμα του κορμού"
 
 msgctxt "model:gnuhealth.pathology,name:C436"
 msgid ""
 "Malignant neoplasm: Malignant melanoma of upper limb, including shoulder"
 msgstr ""
+"Κακόηθες νεόπλασμα: Κακόηθες μελάνωμα του άνω άκρου, συμπεριλαμβανομένου του "
+"ώμου"
 
 msgctxt "model:gnuhealth.pathology,name:C437"
 msgid "Malignant neoplasm: Malignant melanoma of lower limb, including hip"
 msgstr ""
+"Κακόηθες νεόπλασμα: Κακόηθες μελάνωμα του κάτω άκρου, συμπεριλαμβανομένου "
+"του ισχίου"
 
 msgctxt "model:gnuhealth.pathology,name:C438"
 msgid "Malignant neoplasm: Overlapping malignant melanoma of skin"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτον κακόηθες μελάνωμα του δέρματος"
 
 msgctxt "model:gnuhealth.pathology,name:C439"
 msgid "Malignant neoplasm: Malignant melanoma of skin, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κακόηθες μελάνωμα του δέρματος, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C44"
 msgid "Other malignant neoplasms of skin"
-msgstr ""
+msgstr "Άλλα κακοήθη νεοπλάσματα του δέρματος"
 
 msgctxt "model:gnuhealth.pathology,name:C440"
 msgid "Malignant neoplasm: Skin of lip"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Δέρματος του χείλους"
 
 msgctxt "model:gnuhealth.pathology,name:C441"
 msgid "Malignant neoplasm: Skin of eyelid, including canthus"
 msgstr ""
+"Κακόηθες νεόπλασμα: Δέρματος του βλεφάρου, συμπεριλαμβανομένου του κανθού"
 
 msgctxt "model:gnuhealth.pathology,name:C442"
 msgid "Malignant neoplasm: Skin of ear and external auricular canal"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Δέρματος του ωτός και του έξω ακουστικού πόρου"
 
 msgctxt "model:gnuhealth.pathology,name:C443"
 msgid "Malignant neoplasm: Skin of other and unspecified parts of face"
 msgstr ""
+"Κακόηθες νεόπλασμα: Δέρματος άλλων και μη καθορισμένων τμημάτων του προσώπου"
 
 msgctxt "model:gnuhealth.pathology,name:C444"
 msgid "Malignant neoplasm: Skin of scalp and neck"
 msgstr ""
+"Κακόηθες νεόπλασμα: Δέρματος του τριχωτού της κεφαλής και του τραχήλου "
+"(αυχένα)"
 
 msgctxt "model:gnuhealth.pathology,name:C445"
 msgid "Malignant neoplasm: Skin of trunk"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Δέρματος του κορμού"
 
 msgctxt "model:gnuhealth.pathology,name:C446"
 msgid "Malignant neoplasm: Skin of upper limb, including shoulder"
 msgstr ""
+"Κακόηθες νεόπλασμα: Δέρματος του άνω άκρου, συμπεριλαμβανομένου του ώμου"
 
 msgctxt "model:gnuhealth.pathology,name:C447"
 msgid "Malignant neoplasm: Skin of lower limb, including hip"
 msgstr ""
+"Κακόηθες νεόπλασμα: Δέρματος του κάτω άκρου, συμπεριλαμβανομένου του ισχίου"
 
 msgctxt "model:gnuhealth.pathology,name:C448"
 msgid "Malignant neoplasm: Overlapping lesion of skin"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του δέρματος"
 
 msgctxt "model:gnuhealth.pathology,name:C449"
 msgid "Malignant neoplasm: Malignant neoplasm of skin, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Κακόηθες νεόπλασμα του δέρματος, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C45"
 msgid "Mesothelioma"
-msgstr ""
+msgstr "Μεσοθηλίωμα"
 
 msgctxt "model:gnuhealth.pathology,name:C450"
 msgid "Mesothelioma of pleura"
-msgstr ""
+msgstr "Μεσοθηλίωμα του υπεζωκότα"
 
 msgctxt "model:gnuhealth.pathology,name:C451"
 msgid "Mesothelioma of peritoneum"
-msgstr ""
+msgstr "Μεσοθηλίωμα του περιτόναιου"
 
 msgctxt "model:gnuhealth.pathology,name:C452"
 msgid "Mesothelioma of pericardium"
-msgstr ""
+msgstr "Μεσοθηλίωμα του περικάρδιου"
 
 msgctxt "model:gnuhealth.pathology,name:C457"
 msgid "Mesothelioma of other sites"
-msgstr ""
+msgstr "Μεσοθηλίωμα άλλων εντοπίσεων"
 
 msgctxt "model:gnuhealth.pathology,name:C459"
 msgid "Mesothelioma, unspecified"
-msgstr ""
+msgstr "Μεσοθηλίωμα, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C46"
 msgid "Kaposi sarcoma"
-msgstr ""
+msgstr "Σάρκωμα Kaposi"
 
 msgctxt "model:gnuhealth.pathology,name:C460"
 msgid "Kaposi sarcoma of skin"
-msgstr ""
+msgstr "Σάρκωμα Kaposi του δέρματος"
 
 msgctxt "model:gnuhealth.pathology,name:C461"
 msgid "Kaposi sarcoma of soft tissue"
-msgstr ""
+msgstr "Σάρκωμα Kaposi των μαλακών ιστών"
 
 msgctxt "model:gnuhealth.pathology,name:C462"
 msgid "Kaposi sarcoma of palate"
-msgstr ""
+msgstr "Σάρκωμα Kaposi της υπερώας"
 
 msgctxt "model:gnuhealth.pathology,name:C463"
 msgid "Kaposi sarcoma of lymph nodes"
-msgstr ""
+msgstr "Σάρκωμα Kaposi των λεμφαδένων"
 
 msgctxt "model:gnuhealth.pathology,name:C467"
 msgid "Kaposi sarcoma of other sites"
-msgstr ""
+msgstr "Σάρκωμα Kaposi άλλων εντοπίσεων"
 
 msgctxt "model:gnuhealth.pathology,name:C468"
 msgid "Kaposi sarcoma of multiple organs"
-msgstr ""
+msgstr "Σάρκωμα Kaposi πολλαπλών οργάνων"
 
 msgctxt "model:gnuhealth.pathology,name:C469"
 msgid "Kaposi sarcoma, unspecified"
-msgstr ""
+msgstr "Σάρκωμα Kaposi, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C47"
 msgid "Malignant neoplasm of peripheral nerves and autonomic nervous system"
 msgstr ""
+"Κακόηθες νεόπλασμα των περιφερικών νεύρων και του αυτόνομου νευρικού "
+"συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:C470"
 msgid "Malignant neoplasm: Peripheral nerves of head, face and neck"
 msgstr ""
+"Κακόηθες νεόπλασμα: Περιφερικών νεύρων της κεφαλής, του προσώπου και του "
+"τραχήλου"
 
 msgctxt "model:gnuhealth.pathology,name:C471"
 msgid "Malignant neoplasm: Peripheral nerves of upper limb, including shoulder"
 msgstr ""
+"Κακόηθες νεόπλασμα: Περιφερικών νεύρων του άνω άκρου, συμπεριλαμβανομένου "
+"του ώμου"
 
 msgctxt "model:gnuhealth.pathology,name:C472"
 msgid "Malignant neoplasm: Peripheral nerves of lower limb, including hip"
 msgstr ""
+"Κακόηθες νεόπλασμα: Περιφερικών νεύρων του κάτω άκρου, συμπεριλαμβανομένου "
+"του ισχίου"
 
 msgctxt "model:gnuhealth.pathology,name:C473"
 msgid "Malignant neoplasm: Peripheral nerves of thorax"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Περιφερικών νεύρων του θώρακα"
 
 msgctxt "model:gnuhealth.pathology,name:C474"
 msgid "Malignant neoplasm: Peripheral nerves of abdomen"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Περιφερικών νεύρων της κοιλίας"
 
 msgctxt "model:gnuhealth.pathology,name:C475"
 msgid "Malignant neoplasm: Peripheral nerves of pelvis"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Περιφερικών νεύρων της πυέλου"
 
 msgctxt "model:gnuhealth.pathology,name:C476"
 msgid "Malignant neoplasm: Peripheral nerves of trunk, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Περιφερικών νεύρων του κορμού, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C478"
 msgid ""
 "Malignant neoplasm: Overlapping lesion of peripheral nerves and autonomic "
 "nervous system"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση των περιφερικών νεύρων και του "
+"αυτόνομου νευρικού συστήματος"
 
 msgctxt "model:gnuhealth.pathology,name:C479"
 msgid ""
 "Malignant neoplasm: Peripheral nerves and autonomic nervous system, "
 "unspecified"
 msgstr ""
+"Κακόηθες νεόπλασμα: Περιφερικών νεύρων και του αυτόνομου νευρικού "
+"συστήματος, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C48"
 msgid "Malignant neoplasm of retroperitoneum and peritoneum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα του οπισθοπεριτόναιου και του περιτόναιου"
 
 msgctxt "model:gnuhealth.pathology,name:C480"
 msgid "Malignant neoplasm: Retroperitoneum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Οπισθοπεριτόναιου"
 
 msgctxt "model:gnuhealth.pathology,name:C481"
 msgid "Malignant neoplasm: Specified parts of peritoneum"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Καθορισμένων τμημάτων του περιτόναιου"
 
 msgctxt "model:gnuhealth.pathology,name:C482"
 msgid "Malignant neoplasm: Peritoneum, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Περιτόναιου, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C488"
 msgid ""
 "Malignant neoplasm: Overlapping lesion of retroperitoneum and peritoneum"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του οπισθοπεριτόναιου και του "
+"περιτόναιου"
 
 msgctxt "model:gnuhealth.pathology,name:C49"
 msgid "Malignant neoplasm of other connective and soft tissue"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα άλλου συνδετικού και μαλακών ιστών"
 
 msgctxt "model:gnuhealth.pathology,name:C490"
 msgid "Malignant neoplasm: Connective and soft tissue of head, face and neck"
 msgstr ""
+"Κακόηθες νεόπλασμα: Συνδετικού ιστού και μαλακών ιστών της κεφαλής, του "
+"προσώπου και του τραχήλου"
 
 msgctxt "model:gnuhealth.pathology,name:C491"
 msgid ""
 "Malignant neoplasm: Connective and soft tissue of upper limb, including "
 "shoulder"
 msgstr ""
+"Κακόηθες νεόπλασμα: Συνδετικού ιστού και μαλακών ιστών του άνω άκρου, "
+"συμπεριλαμβανομένου του ώμου"
 
 msgctxt "model:gnuhealth.pathology,name:C492"
 msgid ""
 "Malignant neoplasm: Connective and soft tissue of lower limb, including hip"
 msgstr ""
+"Κακόηθες νεόπλασμα: Συνδετικού ιστού και μαλακών ιστών του κάτω άκρου, "
+"συμπεριλαμβανομένου του ισχίου"
 
 msgctxt "model:gnuhealth.pathology,name:C493"
 msgid "Malignant neoplasm: Connective and soft tissue of thorax"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Συνδετικού ιστού και μαλακών ιστών του θώρακα"
 
 msgctxt "model:gnuhealth.pathology,name:C494"
 msgid "Malignant neoplasm: Connective and soft tissue of abdomen"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Συνδετικού ιστού και μαλακών ιστών της κοιλίας"
 
 msgctxt "model:gnuhealth.pathology,name:C495"
 msgid "Malignant neoplasm: Connective and soft tissue of pelvis"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Συνδετικού ιστού και μαλακών ιστών της πυέλου"
 
 msgctxt "model:gnuhealth.pathology,name:C496"
 msgid "Malignant neoplasm: Connective and soft tissue of trunk, unspecified"
 msgstr ""
+"Κακόηθες νεόπλασμα: Συνδετικού ιστού και μαλακών ιστών του κορμού, μη "
+"καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C498"
 msgid "Malignant neoplasm: Overlapping lesion of connective and soft tissue"
 msgstr ""
+"Κακόηθες νεόπλασμα: Επικαλύπτουσα αλλοίωση του συνδετικού ιστού και των "
+"μαλακών ιστών"
 
 msgctxt "model:gnuhealth.pathology,name:C499"
 msgid "Malignant neoplasm: Connective and soft tissue, unspecified"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα: Συνδετικού ιστού και μαλακών ιστών, μη καθορισμένο"
 
 msgctxt "model:gnuhealth.pathology,name:C50"
 msgid "Malignant neoplasm of breast"
-msgstr ""
+msgstr "Κακόηθες νεόπλασμα του μαστού"
 
 msgctxt "model:gnuhealth.pathology,name:C500"
 msgid "Malignant neoplasm: Nipple and areola"
@@ -53653,7 +53732,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:X68"
 msgid "Intentional self-poisoning by and exposure to pesticides"
-msgstr ""
+msgstr "Σκόπιμη αυτοδηλητηρίαση από και έκθεση σε εντομοκτόνα"
 
 msgctxt "model:gnuhealth.pathology,name:X680"
 msgid "Home"
