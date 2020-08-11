@@ -1,8 +1,8 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-07-16 18:29+0000\n"
-"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
+"PO-Revision-Date: 2020-08-12 13:43+0000\n"
+"Last-Translator: Constantine Mousafiris <kvisitor@gnugr.org>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_icu/el/>\n"
 "Language: el\n"
@@ -167,7 +167,7 @@ msgstr "Επίσκεψη τμήματος"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,oscillation:"
 msgid "Oscillation"
-msgstr ""
+msgstr "δονήσεις"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,rec_name:"
 msgid "Name"
@@ -395,7 +395,7 @@ msgstr "Διάλυση"
 
 msgctxt "field:gnuhealth.patient.rounding,ecg:"
 msgid "Inpatient ECG"
-msgstr ""
+msgstr "ΗΚΓ νοσηλευομένου ασθενούς"
 
 msgctxt "field:gnuhealth.patient.rounding,edema:"
 msgid "Edema"
@@ -491,7 +491,7 @@ msgstr "Ευθυγράμμιση τραχείας"
 
 msgctxt "field:gnuhealth.patient.rounding,tracheal_tug:"
 msgid "Tracheal Tug"
-msgstr ""
+msgstr "Εισολκη τραχείας"
 
 msgctxt "field:gnuhealth.patient.rounding,venous_access:"
 msgid "Venous Access"
@@ -608,7 +608,7 @@ msgstr "Πίεση"
 
 msgctxt "help:gnuhealth.patient.rounding,pupil_consensual_resp:"
 msgid "Pupillary Consensual Response"
-msgstr ""
+msgstr "Ίδια αντανακλαστικά της κόρης άμφω"
 
 msgctxt "help:gnuhealth.patient.rounding,right_pupil:"
 msgid "size in mm of right pupil"
@@ -648,7 +648,7 @@ msgstr "APACHE II"
 
 msgctxt "model:ir.action,name:act_ecg_form1"
 msgid "Inpatient ECGs"
-msgstr ""
+msgstr "ΗΚΓ νοσηλευομένου ασθενούς"
 
 msgctxt "model:ir.action,name:act_glasgow_form1"
 msgid "Glasgow Coma Scale"
