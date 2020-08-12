@@ -1,38 +1,47 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-08-12 19:51+0000\n"
+"Last-Translator: Constantine Mousafiris <kvisitor@gnugr.org>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_icpm/el/>\n"
+"Language: el\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-190"
 msgid "APGAR SCORING OF NEWBORN, WITHOUT OTHER INITIAL MEDICAL EVALUATION"
-msgstr ""
+msgstr "ΒΑΘΜΟΛΟΓΙΑ APGAR ΝΕΟΓΝΟΥ, ΧΩΡΙΣ ΑΛΛΗ ΑΡΧΙΚΗ ΙΑΤΡΙΚΗ ΕΚΤΙΜΗΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-191"
 msgid "INITIAL MEDICAL EVALUATION OF NEWBORN WITHOUT APGAR SCORING"
-msgstr ""
+msgstr "ΑΡΧΙΚΗ ΙΑΤΡΙΚΗ ΕΚΤΙΜΗΣΗ ΝΕΟΓΝΟΥ ΧΩΡΙΣ ΒΑΘΜΟΛΟΓΙΑ APGAR"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-192"
 msgid "APGAR SCORING WITH OTHER MEDICAL EVALUATION OF NEWBORN"
-msgstr ""
+msgstr "ΒΑΘΜΟΛΟΓΙΑ APGAR ΧΩΡΙΣ ΑΛΛΗ ΙΑΤΡΙΚΗ ΕΚΤΙΜΗΣΗ ΤΟΥ ΝΕΟΓΝΟΥ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-193"
 msgid "RECORDING OF BIRTHWEIGHT"
-msgstr ""
+msgstr "ΚΑΤΑΓΡΑΦΗ ΒΑΡΟΥΣ ΓΕΝΝΗΣΗΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-194"
 msgid "RECORDING OF CROWN-HEEL  LENGTH"
-msgstr ""
+msgstr "ΚΑΤΑΓΡΑΦΗ ΜΗΚΟΥΣ  ΣΩΜΑΤΟΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-195"
 msgid "RECORDING OF OTHER NEWBORN MEASUREMENTS"
-msgstr ""
+msgstr "ΚΑΤΑΓΡΑΦΗ ΑΛΛΩΝ ΜΕΤΡΗΣΕΩΝ ΤΟΥ ΝΕΟΓΝΟΥ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-198"
 msgid "SUBSEQUENT CARE OF HEALTHY NEWBORN"
-msgstr ""
+msgstr "ΕΠΟΜΕΝΑ ΒΗΜΑΤΑ ΦΡΟΝΤΙΔΑΣ ΤΟΥ ΥΓΙΟΥΣ ΝΕΟΓΝΟΥ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-199"
 msgid "NOT OTHERWISE SPECIFIED"
-msgstr ""
+msgstr "ΧΩΡΙΣ ΑΛΛΗ ΔΙΕΥΚΡΙΝΙΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-200"
 msgid "SENSORY MAPPING AND TESTING (EXCLUDES AUDITORY(1-23), VISUAL (1-21)"
@@ -40,7 +49,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-201"
 msgid "CLINICAL REFLEX TESTING"
-msgstr ""
+msgstr "ΚΛΙΝΙΚΟΣ ΕΛΕΓΧΟΣ ΑΝΤΑΝΑΚΛΑΣΤΙΚΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-202"
 msgid "TENDON REFLEX TIME RECORDING"
@@ -48,51 +57,51 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-203"
 msgid "NERVE CONDUCTION TESTING"
-msgstr ""
+msgstr "ΔΟΚΙΜΑΣΙΑ ΑΓΩΓΙΜΟΤΗΤΑΣ ΝΕΥΡΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-204"
 msgid "DETERMINATION OF PAIN THRESHOLD"
-msgstr ""
+msgstr "ΚΑΘΟΡΙΣΜΟΣ ΟΥΔΟΥ ΓΙΑ ΤΟΝ ΠΟΝΟ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-205"
 msgid "MUSCLE POWER TESTING"
-msgstr ""
+msgstr "ΔΟΚΙΜΑΣΙΑ ΜΥΪΚΗΣ ΙΣΧΥΟΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-206"
 msgid "EXAMINATION OF CEREBROSPINAL FLUID"
-msgstr ""
+msgstr "ΕΞΕΤΑΣΗ ΕΓΚΕΦΑΛΟΝΩΤΙΑΙΟΥ ΥΓΡΟΥ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-207"
 msgid "ELECTROENCEPHALOGRAPHY"
-msgstr ""
+msgstr "ΗΛΕΚΤΡΟΕΓΚΕΦΑΛΟΓΡΑΦΗΜΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-209"
 msgid "OTHER INSTRUMENTAL NEUROLOGICAL EXAMINATION"
-msgstr ""
+msgstr "ΑΛΛΕΣ ΝΕΥΡΟΛΟΓΙΚΕΣ ΕΞΕΤΑΣΕΙΣ ΜΕ ΣΥΣΚΕΥΕΣ/ΜΗΧΑΝΗΜΑΤΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-210"
 msgid "PERIMETRY, COLOR FIELDS AND VISUAL FIELDS"
-msgstr ""
+msgstr "ΠΕΡΙΜΕΤΡΙΚΗ ΟΡΑΣΗ, ΧΡΩΜΑΤΙΚΑ ΠΕΔΙΑ ΚΑΙ ΟΠΤΙΚΑ ΠΕΔΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-211"
 msgid "VISUAL ACUITY , READING TEST"
-msgstr ""
+msgstr "ΟΠΤΙΚΗ ΟΞΥΤΗΤΑ, ΔΟΚΙΜΑΣΙΑ ΑΝΑΓΝΩΣΗΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-212"
 msgid "VISUAL ACUITY OF INFANTS AND ILLITERATES"
-msgstr ""
+msgstr "ΟΠΤΙΚΗ ΟΞΥΤΗΤΑ ΒΡΕΦΩΝ ΚΑΙ ΜΗ ΕΓΓΡΑΜΜΑΤΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-213"
 msgid "EIKONOMETRIC EXAMINATION, PRESECRIPTION OF ANISEIKONIC LENSES"
-msgstr ""
+msgstr "ΕΙΚΟΝΟΜΕΤΡΙΚΗ ΕΞΕΤΑΣΗ, ΣΥΝΤΑΓΟΓΡΑΦΗΣΗ ΑΝΙΣΟΕΙΚΟΝΙΚΩΝ ΦΑΚΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-214"
 msgid "DARK ADAPTATION VISUAL ACUITY"
-msgstr ""
+msgstr "ΠΡΟΣΑΡΜΟΓΗ ΣΤΟ ΣΚΟΤΟΣ ΟΠΤΙΚΗ ΟΞΥΤΗΤΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-215"
 msgid "COLOR VISION TESTING"
-msgstr ""
+msgstr "ΔΟΚΙΜΑΣΙΑ ΑΝΤΙΛΗΨΗΣ ΧΡΩΜΑΤΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-216"
 msgid "OCULAR MUSCLE BALANCE TESSTING"
@@ -100,68 +109,70 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-220"
 msgid "OPTHALMOLOGY, FUNDUSCOPY"
-msgstr ""
+msgstr "ΟΦΘΑΛΜΙΑΤΡΙΚΗ, ΒΥΘΟΣΚΟΠΗΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-221"
 msgid "SLIT LAMP EXAMINATION"
-msgstr ""
+msgstr "ΕΞΕΤΑΣΗ ΜΕ ΣΧΙΣΜΟΕΙΔΗ ΛΥΧΝΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-224"
 msgid "MEASUREMENT OF CURVATURE OF EYE"
-msgstr ""
+msgstr "ΜΕΤΡΗΣΗ ΚΑΜΠΥΛΟΤΗΤΑΣ ΤΟΥ ΟΦΘΑΛΜΟΥ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-232"
 msgid "CLINICAL TESTS OF HEARING, TUNING FORK TESTS, WHISPERED SPEECH"
-msgstr ""
+msgstr "ΚΛΙΝΙΚΗ ΑΚΟΥΟΜΕΤΡΙΑ, ΔΟΚΙΜΑΣΙΕΣ ΜΕ ΔΙΑΠΑΣΩΝ, ΜΕ ΨΙΘΥΡΙΣΤΗ ΟΜΙΛΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-240"
 msgid "ROUTINE OTOSCOPY, AUROSCOPY"
-msgstr ""
+msgstr "ΩΤΟΣΚΟΠΗΣΗ ΡΟΥΤΙΝΑΣ, ΜΕ ΩΤΟΣΚΟΠΙΟ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-241"
 msgid "MAGNIFYING OTOSCOPY"
-msgstr ""
+msgstr "ΜΕΓΕΘΥΝΤΙΚΗ ΩΤΟΣΚΟΠΗΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-242"
 msgid "OTHER INSTRUMENTAL EXAMINATION OF EAR"
-msgstr ""
+msgstr "ΑΛΛΕΣ ΕΞΕΤΑΣΕΙΣ ΤΟΥ ΑΥΤΙΟΥ  ΜΕ ΤΗ ΒΟΗΘΕΙΑ ΣΥΣΚΕΥΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-243"
 msgid "RHINOSCOPY"
-msgstr ""
+msgstr "ΡΙΝΟΣΚΟΠΗΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-244"
 msgid "TRANSILLUMINATION OF ANTRUM"
-msgstr ""
+msgstr "ΔΙΑΦΑΝΟΣΚΟΠΗΣΗ ΤΟΥ ΙΓΜΟΡΕΙΟΥ ΑΝΤΡΟΥ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-245"
 msgid "OTHER EXAMINATIN OF NOSE"
-msgstr ""
+msgstr "ΑΛΛΗ ΕΞΕΤΑΣΗ ΤΗΣ ΡΙΝΟΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-246"
 msgid "OTHER INSTRUMENTAL EXAMINATION OF THROAT"
-msgstr ""
+msgstr "ΑΛΛΗ ΕΞΕΤΑΣΗ ΤΟΥ ΛΑΙΜΟΥ ΜΕ ΤΗ ΒΟΗΘΕΙΑ ΕΡΓΑΛΕΙΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-249"
 msgid ""
 "INSTRUMENTAL OTORRHINOLARYNGOLOGICAL EXAMINATION, NOT OTHERWISE SPECIFIED"
-msgstr ""
+msgstr "ΕΞΕΤΑΣΗ ΩΡΛ ΜΕ ΤΗ ΒΟΗΘΕΙΑ ΕΡΓΑΛΕΙΩΝ, ΧΩΡΙΣ ΑΛΛΗ ΔΙΕΥΚΡΙΝΙΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-270"
 msgid "JUGULAR VEIN CATHERIZATION"
-msgstr ""
+msgstr "ΚΑΘΕΤΗΡΙΑΣΜΟΣ ΣΦΑΓΙΤΙΔΑΣ ΦΛΕΒΑΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-271"
 msgid "INFERIOR VENA CAVA CATHERIZATION"
-msgstr ""
+msgstr "ΚΑΘΕΤΗΡΙΑΣΜΟΣ ΚΑΤΩ ΚΟΙΛΗΣ ΦΛΕΒΑΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-272"
 msgid "CENTRAL VENOUS PRESSURE (CVP) MEASUREMENT"
-msgstr ""
+msgstr "ΜΕΤΡΗΣΗ ΚΕΝΤΡΙΚΗΣ ΦΛΕΒΙΚΗΣ ΠΙΕΣΗΣ (ΚΦΠ)"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-273"
 msgid "INTRAVENOUS CATHERIZATION OF HEART, CARDIAC CATHERIZATION, UNQUALIFIED"
 msgstr ""
+"ΕΝΔΟΦΛΕΒΙΟΣ ΚΑΘΕΤΗΡΙΑΣΜΟΣ ΚΑΡΔΙΑΣ, ΚΑΡΔΙΑΚΟΣ ΚΑΘΕΤΗΡΙΑΣΜΟΣ, ΜΗ "
+"ΔΙΕΥΚΡΙΝΙΣΜΕΝΟΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-274"
 msgid "TRANSEPTAL CARDIAC CATHERIZATION"
@@ -177,15 +188,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-278"
 msgid "OTHER CATHERIZATION OF HEART"
-msgstr ""
+msgstr "ΑΛΛΟΣ ΚΑΘΕΤΗΡΙΑΣΜΟΣ ΚΑΡΔΙΑΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-279"
 msgid "OTHER DIAGNOSTIC CATHERIZATION OF VESSELS"
-msgstr ""
+msgstr "ΑΛΛΟΣ ΔΙΑΓΝΩΣΤΙΚΟΣ ΚΑΘΕΤΗΡΙΑΣΜΟΣ ΑΓΓΕΙΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-300"
 msgid "DENTAL EXAMINATION"
-msgstr ""
+msgstr "ΟΔΟΝΤΙΑΤΡΙΚΗ ΕΞΕΤΑΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-301"
 msgid "DMF (DISEASED, MISSING, FILLED) CHARTING"
@@ -197,35 +208,35 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-304"
 msgid "BUCCAL EXAMINATION WITH FINGER"
-msgstr ""
+msgstr "ΔΑΚΤΥΛΙΚΗ ΕΞΕΤΑΣΗ ΣΤΟΜΑΤΙΚΗΣ ΚΟΙΛΟΤΗΤΑΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-309"
 msgid "OTHER EXAMINATION OF ORAL CAVITY"
-msgstr ""
+msgstr "ΑΛΛΗ ΕΞΕΤΑΣΗ ΣΤΟΜΑΤΙΚΗΣ ΚΟΙΛΟΤΗΤΑΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-310"
 msgid "PHARYNGEAL EXAMINATION WITH FINGER"
-msgstr ""
+msgstr "ΔΑΚΤΥΛΙΚΗ ΕΞΕΤΑΣΗ ΦΑΡΥΓΓΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-312"
 msgid "RETRIEVAL OF VOMIT FOR ANALYSIS"
-msgstr ""
+msgstr "ΛΗΨΗ ΔΕΙΓΜΑΤΟΣ ΕΜΕΤΟΥ ΓΙΑ ΑΝΑΛΥΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-313"
 msgid "ESOPHAGEAL MANOMETRY"
-msgstr ""
+msgstr "ΜΑΝΟΜΕΤΡΙΑ ΟΙΣΟΦΑΓΟΥ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-319"
 msgid "OTHER INSTRUMENTAL EXAMINATION OF UPPER DIGESTIVE TRACT"
-msgstr ""
+msgstr "ΑΛΛΗ ΕΞΕΤΑΣΗ ΑΝΩΤΕΡΟΥ ΓΑΣΤΡΕΝΤΕΡΙΚΟΥ ΣΥΣΤΗΜΑΤΟΣ ΜΕ ΤΗ ΒΟΗΘΕΙΑ ΕΡΓΑΛΕΙΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-320"
 msgid "DIGITAL EXAMINATION OF RECTUM"
-msgstr ""
+msgstr "ΔΑΚΤΥΛΙΚΗ ΕΞΕΤΑΣΗ ΤΟΥ ΟΡΘΟΥ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-321"
 msgid "ELECTROGASTROGRAM"
-msgstr ""
+msgstr "ΗΛΕΚΤΡΟΓΑΣΤΡΟΓΡΑΦΗΜΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-322"
 msgid "STOMAL CALIBRATION"
@@ -233,27 +244,27 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-329"
 msgid "OTHER INSTRUMENTAL EXAMINATION OF GASTROINTESTINAL TRACT"
-msgstr ""
+msgstr "ΑΛΛΗ ΕΞΕΤΑΣΗ ΤΟΥ ΓΑΣΤΡΕΝΤΕΡΙΚΟΥ ΣΥΣΤΗΜΑΤΟΣ ΜΕ ΤΗ ΒΟΗΘΕΙΑ ΕΡΓΑΛΕΙΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-330"
 msgid "EVALUATION OF BLADDER SENSATION"
-msgstr ""
+msgstr "ΕΚΤΙΜΗΣΗ ΤΗΣ ΑΙΣΘΗΣΗΣ ΤΗΣ ΟΥΡΟΔΟΧΟΥ ΚΥΣΤΕΩΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-331"
 msgid "RESIDUAL URINARY VOLUME"
-msgstr ""
+msgstr "ΥΠΟΛΕΙΜΜΑ ΟΓΚΟΥ ΟΥΡΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-332"
 msgid "DIAGNOSTIC CATHERIZATION OF BLADDER"
-msgstr ""
+msgstr "ΔΙΑΓΝΩΣΤΙΚΟΣ ΚΑΘΕΤΗΡΙΑΣΜΟΣ ΟΥΡΟΔΟΧΟΥ ΚΥΣΤΕΩΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-333"
 msgid "CONTINUOUS FLOW CYSTOMETRY"
-msgstr ""
+msgstr "ΚΥΣΤΕΟΜΕΤΡΙΑ ΣΥΝΕΧΟΥΣ ΡΟΗΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-334"
 msgid "OTHER CYSTOMETRY, AIR CYSTOMETRY AND CYSTOMETROGRAPHY"
-msgstr ""
+msgstr "ΑΛΛΗ ΚΥΣΤΕΟΜΕΤΡΙΑ, ΚΥΣΤΕΟΜΕΤΡΙΑ ΑΕΡΟΣ ΚΑΙ ΚΥΣΤΕΟΜΕΤΡΟΓΡΑΦΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-335"
 msgid "URETHRAL PRESSURE MEASUREMENT"
@@ -265,31 +276,31 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-339"
 msgid "OTHER INSTRUMENTAL EXAMINATION OF THE URINARY TRACT"
-msgstr ""
+msgstr "ΑΛΛΕΣ ΕΞΕΤΑΣΕΙΣ ΟΥΡΟΠΟΙΗΤΙΚΟΥΣΥΣΤΗΜΑΤΟΣ ΜΕ ΤΗ ΒΟΗΘΕΙΑ ΕΡΓΑΛΕΙΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-340"
 msgid "IN-DEPTH CLINICAL EXAMINATION OF MALE GENITAL ORGAN"
-msgstr ""
+msgstr "ΕΝ ΤΩ ΒΑΘΕΙ ΚΛΙΝΙΚΗ ΕΞΕΤΑΣΗ ΓΕΝΝΗΤΙΚΩΝ ΟΡΓΑΝΩΝ ΑΡΡΕΝΟΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-341"
 msgid "COLLECTION OF SEMEN SPECIMEN FOR EXAMINATION"
-msgstr ""
+msgstr "ΣΥΛΛΟΓΗ ΔΕΙΓΜΑΤΟΣ ΣΠΕΡΜΑΤΟΣ ΓΙΑ ΕΞΕΤΑΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-349"
 msgid "OTHER INSTRUMENTAL EXAMINATION OF MALE GENITAL ORGAN"
-msgstr ""
+msgstr "ΑΛΛΗ ΕΞΕΤΑΣΗ ΓΕΝΝΗΤΙΚΩΝ ΟΡΓΑΝΩΝ ΑΡΡΕΝΟΣ ΜΕ ΤΗ ΒΟΗΘΕΙΑ ΕΡΓΑΛΕΙΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-350"
 msgid "INTERNAL CLINICAL GYNECOLOGICAL EXAMINATION "
-msgstr ""
+msgstr "ΕΣΩΤΕΡΙΚΗ ΚΛΙΝΙΚΗ ΓΥΝΑΙΚΟΛΟΓΙΚΗ ΕΞΕΤΑΣΗ "
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-351"
 msgid "ENDOCRINE ASSESSMENT, VAGINAL CYTOLOGY"
-msgstr ""
+msgstr "ΕΝΔΟΚΡΙΝΟΛΟΓΙΚΗ ΕΚΤΙΜΗΣΗ, ΚΟΛΠΙΚΗ ΚΥΤΤΑΡΟΛΟΓΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-352"
 msgid "ENDOCRINE ASSESSMENT, ENDOMETRIAL CYTOLOGY"
-msgstr ""
+msgstr "ΕΝΔΟΚΡΙΝΟΛΟΓΙΚΗ ΕΚΤΙΜΗΣΗ,  ΚΥΤΤΑΡΟΛΟΓΙΑ ΕΝΔΟΜΗΤΡΙΟΥ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-353"
 msgid "POSTCOITAL PLUG EXAMINATION FOR INFERTILITY"
@@ -301,7 +312,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-355"
 msgid "PLACENTAL LOCALIZATION"
-msgstr ""
+msgstr "ΘΕΣΗ ΤΟΥ ΠΛΑΚΟΥΝΤΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-358"
 msgid ""
@@ -313,82 +324,84 @@ msgctxt "model:gnuhealth.procedure,description:icpm_1-359"
 msgid ""
 "OTHER INSTRUMENTAL OBSTETRICAL EXAMINATION (EXCLUDES AMNIOCENTESIS (5-753))"
 msgstr ""
+"ΑΛΛΗ ΜΑΙΕΥΤΙΚΗ ΕΞΕΤΑΣΗ ΜΕ ΤΗ ΒΟΗΘΕΙΑ ΕΡΓΑΛΕΙΩΝ (ΑΠΟΚΛΕΙΕΙ ΤΗΝ ΑΜΝΙΟΚΕΝΤΗΣΗ "
+"(5-753))"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-360"
 msgid "IN-DEPTH CLINICAL EXAMINATION OF MUSCLOSKETAL SYSTEM"
-msgstr ""
+msgstr "ΕΝ ΤΩ ΒΑΘΕΙ ΚΛΙΝΙΚΗ ΕΞΕΤΑΣΗ ΜΥΟΣΚΕΛΕΤΙΚΟΥ ΣΥΣΤΗΜΑΤΟΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-361"
 msgid "MEASUREMENT OF LIMB LENGTHS"
-msgstr ""
+msgstr "ΜΕΤΡΗΣΗ ΜΗΚΟΥΣ ΤΩΝ ΑΚΡΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-362"
 msgid "MEASUREMENT OF RANGE OF MOVEMENT"
-msgstr ""
+msgstr "ΜΕΤΡΗΣΗ ΤΟΥ ΕΥΡΟΥΣ ΚΙΝΗΣΕΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-363"
 msgid "ELECTROMYOGRAPHY"
-msgstr ""
+msgstr "ΗΛΕΚΤΡΟΜΥΟΓΡΑΦΗΜΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-369"
 msgid "OTHER INSTRUMETNAL MUSCULOSKETAL EXAMINATION"
-msgstr ""
+msgstr "ΑΛΛΗ ΕΞΕΤΑΣΗ ΜΥΟΣΚΕΛΕΤΙΚΟΥ ΜΕ ΤΗ ΒΟΗΘΕΙΑ ΕΡΓΑΛΕΙΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-370"
 msgid "SKIN TEMPERATURES MEASUREMENT"
-msgstr ""
+msgstr "ΜΕΤΡΗΣΗ ΘΕΡΜΟΚΡΑΣΙΑΣ ΔΕΡΜΑΤΟΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-379"
 msgid "OTHER INSTRUMENTAL EXAMINATION"
-msgstr ""
+msgstr "ΑΛΛΗ ΕΞΕΤΑΣΗ ΜΕ ΤΗ ΒΟΗΘΕΙΑ ΕΡΓΑΛΕΙΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-400"
 msgid "ADRENAL, PERCUTANEOUS BIOPSY"
-msgstr ""
+msgstr "ΕΠΙΝΕΦΡΙΔΙΑ, ΔΙΑΔΕΡΜΙΚΗ ΒΙΟΨΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-401"
 msgid "BRAIN AND MENINGES PERCUTANEOUS BIOPSY"
-msgstr ""
+msgstr "ΕΓΚΕΦΑΛΟΣ ΚΑΙ ΜΗΝΙΓΓΕΣ ΔΙΑΔΕΡΜΙΚΗ ΒΙΟΨΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-402"
 msgid "NERVE, PERCUTANEOUS BIOPSY"
-msgstr ""
+msgstr "ΝΕΥΡΟ, ΔΙΑΔΕΡΜΙΚΗ ΒΙΟΨΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-409"
 msgid "OTHER NERVOUS OR ENDOCRINE STRUCTURE, PERCUTANEOUS BIOPSY"
-msgstr ""
+msgstr "ΑΛΛΑ ΝΕΥΡΙΚΑ Ή ΕΝΔΟΚΡΙΝΟΛΟΓΙΚΑ ΟΡΓΑΝΑ, ΔΙΑΔΕΡΜΙΚΗ ΒΙΟΨΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-410"
 msgid "EXTERNAL EAR, BIOPSY"
-msgstr ""
+msgstr "ΕΞΩ ΟΥΣ, ΒΙΟΨΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-411"
 msgid "BIOPSY OF EAR BY OTOSCOPY"
-msgstr ""
+msgstr "ΒΙΟΨΙΑ ΩΤΟΣ ΜΕ ΩΤΟΣΚΟΠΗΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-412"
 msgid "SKIN OF EYELID OR EYEBROW, BIOPSY"
-msgstr ""
+msgstr "ΔΕΡΜΑ ΒΛΕΦΑΡΟΥ Ή ΟΦΡΥΟΥ, ΒΙΟΨΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-413"
 msgid "CONJUNCTIVA, BIOPSY"
-msgstr ""
+msgstr "ΕΠΙΠΕΦΥΚΩΣ, ΒΙΟΨΙΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-414"
 msgid "SKIN OF NOSE BY RHINOSCOPY"
-msgstr ""
+msgstr "ΔΕΡΜΑ ΡΙΝΟΣ ΜΕΣΩ ΡΙΝΟΣΚΟΠΗΣΗΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-415"
 msgid "BIOPSY OF NOSE BY RHINOSCOPY"
-msgstr ""
+msgstr "ΒΙΟΨΙΑ ΡΙΝΟΣ ΜΕΣΩ ΡΙΝΟΣΚΟΠΗΣΗΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-420"
 msgid "BIOPSY TO LARYNX"
-msgstr ""
+msgstr "ΒΙΟΨΙΑ ΛΑΡΥΓΓΟΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-421"
 msgid "ORAL CAVITY, BIOPSY. TONNGUE AND PALATE"
-msgstr ""
+msgstr "ΣΤΟΜΑΤΙΚΗ ΚΟΙΛΟΤΗΤΑ, ΒΙΟΨΙΑ. ΓΛΩΣΣΑ ΚΑΙ ΥΠΕΡΩΑ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-422"
 msgid "TONSILS, FAUCES AND ADENOIDS, BIOPSY"
@@ -396,19 +409,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-423"
 msgid "BIOPSY OF PHARYNX, GUM AND UVULA BY PHARYNGOSCOPY"
-msgstr ""
+msgstr "ΒΙΟΨΙΑ ΦΑΡΥΓΓΟΣ, ΟΥΛΩΝ ΚΑΙ ΣΤΑΦΥΛΗΣ ΜΕΣΩ ΦΑΡΥΓΓΟΣΚΟΠΗΣΗΣ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-425"
 msgid "BONE MARROW BIOPSY"
-msgstr ""
+msgstr "ΒΙΟΨΙΑ ΜΥΕΛΟΥ ΤΩΝ ΟΣΤΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-426"
 msgid "LYMPHATIC BIOPSY"
-msgstr ""
+msgstr "ΒΙΟΨΙΑ ΛΕΜΦΑΔΕΝΩΝ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-430"
 msgid "BIOPSY OF TRACHEA BY ENDOSCOPY"
-msgstr ""
+msgstr "ΒΙΟΨΙΑ ΤΡΑΧΕΙΑΣ ΜΕ ΕΝΔΟΣΚΟΠΗΣΗ"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-431"
 msgid "LUNG, PERCUTANEOUS BIOPSY"
