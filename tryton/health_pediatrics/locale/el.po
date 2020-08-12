@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-12 13:43+0000\n"
+"PO-Revision-Date: 2020-08-12 19:51+0000\n"
 "Last-Translator: Constantine Mousafiris <kvisitor@gnugr.org>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_pediatrics/el/>\n"
@@ -58,7 +58,7 @@ msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.neonatal.apgar,id:"
 msgid "ID"
-msgstr "ID"
+msgstr "Κωδικός ταυτοποίησης"
 
 msgctxt "field:gnuhealth.neonatal.apgar,name:"
 msgid "Newborn ID"
@@ -202,7 +202,7 @@ msgstr "Θετικό Ortolani"
 
 msgctxt "field:gnuhealth.newborn,neonatal_palmar_crease:"
 msgid "Transversal Palmar Crease"
-msgstr "Εγκάρσια γραμμή παλάμης"
+msgstr "Μονήρης χειρομαντική γραμμή"
 
 msgctxt "field:gnuhealth.newborn,neonatal_polydactyly:"
 msgid "Polydactyly"
@@ -270,7 +270,7 @@ msgstr "Οξυγόνο"
 
 msgctxt "field:gnuhealth.newborn,reanimation_stimulation:"
 msgid "Stimulation"
-msgstr "Ερεθίσματα"
+msgstr "Παροχή ερεθισμάτων"
 
 msgctxt "field:gnuhealth.newborn,rec_name:"
 msgid "Name"
@@ -278,15 +278,15 @@ msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.newborn,sex:"
 msgid "Sex"
-msgstr "Σεξ"
+msgstr "Φύλο"
 
 msgctxt "field:gnuhealth.newborn,signed_by:"
 msgid "Signed by"
-msgstr ""
+msgstr "Το υπέγραψε ο/η"
 
 msgctxt "field:gnuhealth.newborn,state:"
 msgid "State"
-msgstr ""
+msgstr "Νομός"
 
 msgctxt "field:gnuhealth.newborn,test_audition:"
 msgid "Audition"
@@ -314,7 +314,7 @@ msgstr "VDRL"
 
 msgctxt "field:gnuhealth.newborn,tod:"
 msgid "Time of Death"
-msgstr "Ώρα του θανάτου"
+msgstr "Ώρα θανάτου"
 
 msgctxt "field:gnuhealth.newborn,weight:"
 msgid "Weight"
@@ -386,11 +386,11 @@ msgstr "Φοβάται τις νέες καταστάσεις"
 
 msgctxt "field:gnuhealth.patient.psc,psc_blames_others:"
 msgid "Blames others for his or her troubles"
-msgstr "Ρίχνει φταίξιμο στους άλλους για τα προβλήματά του"
+msgstr "Κατηγορεί άλλους για τα προβλήματά του"
 
 msgctxt "field:gnuhealth.patient.psc,psc_daydreams_too_much:"
 msgid "Daydreams too much"
-msgstr "Ονειρεύεται όρθιος πολύ"
+msgstr "Ονειρεύεται πολύ με τα μάτια ανοιχτά"
 
 msgctxt "field:gnuhealth.patient.psc,psc_distracted_easily:"
 msgid "Distracted easily"
@@ -422,7 +422,7 @@ msgstr "Αισθάνεται πως είναι κακός/ή"
 
 msgctxt "field:gnuhealth.patient.psc,psc_fidgety:"
 msgid "Fidgety, unable to sit still"
-msgstr "Ανήσυχος/η, δε μπορεί να καθήσει στη θέση του/της"
+msgstr "Νευρικός/η, δε μπορεί να καθήσει στη θέση του/της"
 
 msgctxt "field:gnuhealth.patient.psc,psc_fights_with_others:"
 msgid "Fights with other children"
@@ -430,11 +430,11 @@ msgstr "Μαλλώνει με τα άλλα παιδιά"
 
 msgctxt "field:gnuhealth.patient.psc,psc_gets_hurt_often:"
 msgid "Gets hurt frequently"
-msgstr "Χτυπάει συχνά"
+msgstr "Τραυματίζεται συχνά"
 
 msgctxt "field:gnuhealth.patient.psc,psc_having_less_fun:"
 msgid "Seems to be having less fun"
-msgstr "Δε δείχνει να το διασκεδάζει πολύ"
+msgstr "Δείχνει να το διασκεδάζει λιγότερο"
 
 msgctxt "field:gnuhealth.patient.psc,psc_irritable_angry:"
 msgid "Is irritable, angry"
@@ -442,11 +442,11 @@ msgstr "Είναι ευερέθιστος/η, θυμωμένος/η"
 
 msgctxt "field:gnuhealth.patient.psc,psc_less_interest_in_school:"
 msgid "Less interested in school"
-msgstr "Δείχνει λιγώτερο ενδιαφέρον για το Σχολείο"
+msgstr "Δείχνει λιγότερο ενδιαφέρον για το Σχολείο"
 
 msgctxt "field:gnuhealth.patient.psc,psc_less_interested_in_friends:"
 msgid "Less interested in friends"
-msgstr "Δείχνει λιγώτερο ενδιαφέρον για τους φίλους"
+msgstr "Δείχνει λιγότερο ενδιαφέρον για τους φίλους"
 
 msgctxt "field:gnuhealth.patient.psc,psc_refuses_to_share:"
 msgid "Refuses to share"
@@ -470,15 +470,15 @@ msgstr "Παίρνει πράγματα που δεν είναι δικά του
 
 msgctxt "field:gnuhealth.patient.psc,psc_takes_unnecesary_risks:"
 msgid "Takes unnecessary risks"
-msgstr "Αναλμβάνει κινδύνους που δεν είναι απαραίτητοι"
+msgstr "Αναλαμβάνει κινδύνους που δεν είναι απαραίτητοι"
 
 msgctxt "field:gnuhealth.patient.psc,psc_teases_others:"
 msgid "Teases others"
-msgstr "Κοροϊδεύει τους άλλος"
+msgstr "Κοροϊδεύει τους άλλους"
 
 msgctxt "field:gnuhealth.patient.psc,psc_tires_easily:"
 msgid "Tires easily, has little energy"
-msgstr "Εύκολα κουράζεται, πτωχή ενεργητικότητα"
+msgstr "Εύκολα κουράζεται, χωρίς πολλή ενέργεια"
 
 msgctxt "field:gnuhealth.patient.psc,psc_total:"
 msgid "PSC Total"
@@ -490,15 +490,15 @@ msgstr "Δυσκολία συγκέντρωσης"
 
 msgctxt "field:gnuhealth.patient.psc,psc_trouble_sleeping:"
 msgid "Has trouble sleeping"
-msgstr "Δυσκολία να κοιμηθεί"
+msgstr "Δυσκολεύεται να κοιμηθεί"
 
 msgctxt "field:gnuhealth.patient.psc,psc_trouble_with_teacher:"
 msgid "Has trouble with teacher"
-msgstr "Δυσκολία με τον Δάσκαλο"
+msgstr "Έχει προβλήματα με τον Δάσκαλο"
 
 msgctxt "field:gnuhealth.patient.psc,psc_visit_doctor_finds_ok:"
 msgid "Visits the doctor with doctor finding nothing wrong"
-msgstr "Επισκέπτεται το γιατρό, χωρίς να εντοπίζει τίποτε το παθολογικό"
+msgstr "Επισκέπτεται το γιατρό, χωρίς ο γιατρός να βρίσκει τίποτε το παθολογικό"
 
 msgctxt "field:gnuhealth.patient.psc,psc_wants_to_be_with_parents:"
 msgid "Wants to be with you more than before"
@@ -564,7 +564,9 @@ msgctxt "help:gnuhealth.newborn,test_metabolic:"
 msgid ""
 "Test for Fenilketonuria, Congenital Hypothyroidism, Quistic Fibrosis, "
 "Galactosemia"
-msgstr "Δοκιμασία κατά Guthrie"
+msgstr ""
+"Δοκιμασία Guthrie για Φαινυλκετονουρία, Υποθυρεοειδισμό, Κυστική ίνωση, "
+"Γαλακτοζαιμία"
 
 msgctxt "help:gnuhealth.newborn,weight:"
 msgid "Weight in grams (g)"
@@ -635,7 +637,7 @@ msgstr "Λίγη κάμψη"
 
 msgctxt "selection:gnuhealth.neonatal.apgar,apgar_activity:"
 msgid "flexed arms and legs"
-msgstr "κάμψη άνω και κάτω άκρων"
+msgstr "Άνω και Κάτω άκρα σε κάμψη"
 
 msgctxt "selection:gnuhealth.neonatal.apgar,apgar_appearance:"
 msgid "acrocyanosis"
@@ -699,11 +701,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.newborn,state:"
 msgid "Signed"
-msgstr ""
+msgstr "Υπεγράφη"
 
 msgctxt "selection:gnuhealth.newborn,state:"
 msgid "draft"
-msgstr ""
+msgstr "Πρόχειρο"
 
 msgctxt "selection:gnuhealth.patient.psc,psc_absent_from_school:"
 msgid ""
