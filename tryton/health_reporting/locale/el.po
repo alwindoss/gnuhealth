@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-09 09:32+0000\n"
-"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
+"PO-Revision-Date: 2020-08-13 21:33+0000\n"
+"Last-Translator: Constantine Mousafiris <kvisitor@gnugr.org>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_reporting/el/>\n"
 "Language: el\n"
@@ -13,7 +13,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.evaluations.open.start,end_date:"
 msgid "End Date"
-msgstr ""
+msgstr "Ημερομηνία λήξης"
 
 msgctxt "field:gnuhealth.evaluations.open.start,group_by:"
 msgid "Group By"
@@ -25,7 +25,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.evaluations.open.start,start_date:"
 msgid "Start Date"
-msgstr ""
+msgstr "Ημερομηνία Έναρξης"
 
 msgctxt "field:gnuhealth.evaluations_doctor,create_date:"
 msgid "Create Date"
@@ -53,11 +53,11 @@ msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.evaluations_doctor,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Γράψτε την Ημερομηνία"
 
 msgctxt "field:gnuhealth.evaluations_doctor,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Γράψτε τον χρήστη"
 
 msgctxt "field:gnuhealth.evaluations_sector,create_date:"
 msgid "Create Date"
@@ -85,11 +85,11 @@ msgstr "Τομέας"
 
 msgctxt "field:gnuhealth.evaluations_sector,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Γράψτε την Ημερομηνία"
 
 msgctxt "field:gnuhealth.evaluations_sector,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Γράψτε τον χρήστη"
 
 msgctxt "field:gnuhealth.evaluations_specialty,create_date:"
 msgid "Create Date"
@@ -117,11 +117,11 @@ msgstr "Ειδικότητα"
 
 msgctxt "field:gnuhealth.evaluations_specialty,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Γράψτε την Ημερομηνία"
 
 msgctxt "field:gnuhealth.evaluations_specialty,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Γράψτε τον χρήστη"
 
 msgctxt "field:gnuhealth.summary.report.open.start,demographics:"
 msgid "Demographics"
@@ -145,7 +145,7 @@ msgstr "Εκτιμήσεις"
 
 msgctxt "field:gnuhealth.summary.report.open.start,start_date:"
 msgid "Start"
-msgstr ""
+msgstr "Αρχή"
 
 msgctxt "field:gnuhealth.top_diseases,cases:"
 msgid "Cases"
@@ -177,11 +177,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.top_diseases,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Γράψτε τον χρήστη"
 
 msgctxt "field:gnuhealth.top_diseases.open.start,end_date:"
 msgid "End Date"
-msgstr ""
+msgstr "Ημερομηνία λήξης"
 
 msgctxt "field:gnuhealth.top_diseases.open.start,group:"
 msgid "Disease Group"
@@ -197,7 +197,7 @@ msgstr "Αριθμός εγγραφών"
 
 msgctxt "field:gnuhealth.top_diseases.open.start,start_date:"
 msgid "Start Date"
-msgstr ""
+msgstr "Ημερομηνία Έναρξης"
 
 msgctxt "model:gnuhealth.evaluations.open.start,name:"
 msgid "Open Evaluations"
