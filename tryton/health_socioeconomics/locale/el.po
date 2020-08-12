@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-10 17:03+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: el_GR\n"
+"PO-Revision-Date: 2020-08-13 21:32+0000\n"
+"Last-Translator: Constantine Mousafiris <kvisitor@gnugr.org>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_socioeconomics/el/>\n"
+"Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 "X-POOTLE-MTIME: 1452445411.0\n"
 
 msgctxt "field:gnuhealth.patient,domestic_violence:"
@@ -40,7 +42,7 @@ msgstr "Επάγγελμα"
 
 msgctxt "field:gnuhealth.patient,prison_current:"
 msgid "Currently in prison"
-msgstr ""
+msgstr "Τρεχόντως στη φυλακή"
 
 msgctxt "field:gnuhealth.patient,prison_past:"
 msgid "Has been in prison"
@@ -56,7 +58,7 @@ msgstr "Διέκοψε το σχολείο"
 
 msgctxt "field:gnuhealth.patient,ses_assessments:"
 msgid "Assessments"
-msgstr ""
+msgstr "Εκτιμήσεις"
 
 msgctxt "field:gnuhealth.patient,ses_notes:"
 msgid "Extra info"
@@ -84,15 +86,15 @@ msgstr "Δουλεύει από το σπίτι"
 
 msgctxt "field:gnuhealth.ses.assessment,assessment_date:"
 msgid "Date"
-msgstr ""
+msgstr "Ημερομηνία"
 
 msgctxt "field:gnuhealth.ses.assessment,computed_age:"
 msgid "Age"
-msgstr ""
+msgstr "Ηλικία"
 
 msgctxt "field:gnuhealth.ses.assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.ses.assessment,create_uid:"
 msgid "Create User"
