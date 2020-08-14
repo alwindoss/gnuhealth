@@ -1,9 +1,15 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2020-08-15 19:32+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
+"gnu-health/health/nb_NO/>\n"
 "Language: nb_NO\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -481,15 +487,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.command,description:"
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
 msgctxt "field:gnuhealth.command,domain:"
 msgid "Domain"
-msgstr ""
+msgstr "Domene"
 
 msgctxt "field:gnuhealth.command,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.command,internal:"
 msgid "Internal"
@@ -497,15 +503,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.command,label:"
 msgid "Label"
-msgstr ""
+msgstr "Etikett"
 
 msgctxt "field:gnuhealth.command,model:"
 msgid "Model"
-msgstr ""
+msgstr "Modell"
 
 msgctxt "field:gnuhealth.command,name:"
 msgid "Command"
-msgstr ""
+msgstr "Kommando"
 
 msgctxt "field:gnuhealth.command,rec_name:"
 msgid "Record Name"
@@ -521,7 +527,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,age:"
 msgid "Age"
-msgstr ""
+msgstr "Alder"
 
 msgctxt "field:gnuhealth.death_certificate,autopsy:"
 msgid "Autopsy"
@@ -533,15 +539,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,cod:"
 msgid "Cause"
-msgstr ""
+msgstr "Årsak"
 
 msgctxt "field:gnuhealth.death_certificate,code:"
 msgid "Code"
-msgstr ""
+msgstr "Kode"
 
 msgctxt "field:gnuhealth.death_certificate,country:"
 msgid "Country"
-msgstr ""
+msgstr "Land"
 
 msgctxt "field:gnuhealth.death_certificate,country_subdivision:"
 msgid "Subdivision"
@@ -557,7 +563,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,dod:"
 msgid "Date"
-msgstr ""
+msgstr "Dato"
 
 msgctxt "field:gnuhealth.death_certificate,du:"
 msgid "DU"
@@ -573,11 +579,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,name:"
 msgid "Person"
-msgstr ""
+msgstr "Person"
 
 msgctxt "field:gnuhealth.death_certificate,observations:"
 msgid "Observations"
-msgstr ""
+msgstr "Observasjoner"
 
 msgctxt "field:gnuhealth.death_certificate,operational_sector:"
 msgid "Op. Sector"
@@ -585,11 +591,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,place_details:"
 msgid "Details"
-msgstr ""
+msgstr "Detaljer"
 
 msgctxt "field:gnuhealth.death_certificate,place_of_death:"
 msgid "Place"
-msgstr ""
+msgstr "Sted"
 
 msgctxt "field:gnuhealth.death_certificate,rec_name:"
 msgid "Record Name"
@@ -597,7 +603,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,signed_by:"
 msgid "Signed by"
-msgstr ""
+msgstr "Signert av"
 
 msgctxt "field:gnuhealth.death_certificate,state:"
 msgid "State"
@@ -621,7 +627,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_underlying_condition,condition:"
 msgid "Condition"
-msgstr ""
+msgstr "Tilstand"
 
 msgctxt "field:gnuhealth.death_underlying_condition,create_date:"
 msgid "Create Date"
@@ -633,11 +639,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_underlying_condition,death_certificate:"
 msgid "Certificate"
-msgstr ""
+msgstr "Sertifikat"
 
 msgctxt "field:gnuhealth.death_underlying_condition,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.death_underlying_condition,interval:"
 msgid "Interval"
@@ -661,7 +667,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Kommentarer"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,create_date:"
 msgid "Create Date"
@@ -677,7 +683,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,pathology:"
 msgid "Pathology"
@@ -741,15 +747,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.disease_group.members,disease_group:"
 msgid "Group"
-msgstr ""
+msgstr "Gruppe"
 
 msgctxt "field:gnuhealth.disease_group.members,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.disease_group.members,name:"
 msgid "Condition"
-msgstr ""
+msgstr "Tilstand"
 
 msgctxt "field:gnuhealth.disease_group.members,rec_name:"
 msgid "Record Name"
@@ -773,11 +779,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.dose.unit,desc:"
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
 msgctxt "field:gnuhealth.dose.unit,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.dose.unit,name:"
 msgid "Unit"
@@ -1133,7 +1139,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.federation.country.config,country:"
 msgid "Country"
-msgstr ""
+msgstr "Land"
 
 msgctxt "field:gnuhealth.federation.country.config,create_date:"
 msgid "Create Date"
@@ -1297,7 +1303,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.building,name:"
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 msgctxt "field:gnuhealth.hospital.building,rec_name:"
 msgid "Record Name"
@@ -1617,7 +1623,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,vaccine:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Vaksine"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,write_date:"
 msgid "Write Date"
@@ -1697,7 +1703,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.institution,institution_type:"
 msgid "Type"
@@ -1857,19 +1863,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.insurance,name:"
 msgid "Owner"
-msgstr ""
+msgstr "Eier"
 
 msgctxt "field:gnuhealth.insurance,notes:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Ekstra info"
 
 msgctxt "field:gnuhealth.insurance,number:"
 msgid "Number"
-msgstr ""
+msgstr "Nummer"
 
 msgctxt "field:gnuhealth.insurance,plan_id:"
 msgid "Plan"
-msgstr ""
+msgstr "Plan"
 
 msgctxt "field:gnuhealth.insurance,rec_name:"
 msgid "Record Name"
@@ -1937,7 +1943,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,category:"
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 msgctxt "field:gnuhealth.medicament,composition:"
 msgid "Composition"
@@ -2257,19 +2263,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pathology,groups:"
 msgid "Groups"
-msgstr ""
+msgstr "Grupper"
 
 msgctxt "field:gnuhealth.pathology,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.pathology,info:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Ekstra info"
 
 msgctxt "field:gnuhealth.pathology,name:"
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 msgctxt "field:gnuhealth.pathology,protein:"
 msgid "Protein involved"
