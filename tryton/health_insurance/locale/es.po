@@ -1,30 +1,39 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-08-17 23:43+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
+"health_insurance/es/>\n"
+"Language: es\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "error:gnuhealth.insurance.plan.product.policy:"
 msgid "Percentage out of range [0-100]"
-msgstr ""
+msgstr "Porcentaje fuera de rango [0-100]"
 
 msgctxt "error:gnuhealth.insurance.plan.product.policy:"
 msgid "You need a product or category"
-msgstr ""
+msgstr "Necesita un producto o categoria"
 
 msgctxt "field:gnuhealth.health_service,insurance_holder:"
 msgid "Insurance Holder"
-msgstr ""
+msgstr "Titular del Seguro"
 
 msgctxt "field:gnuhealth.health_service,insurance_plan:"
 msgid "Plan"
-msgstr ""
+msgstr "Plan de seguro"
 
 msgctxt "field:gnuhealth.insurance.plan,product_policy:"
 msgid "Policy"
-msgstr ""
+msgstr "Seguro"
 
 msgctxt "field:gnuhealth.insurance.plan.product.policy,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Crear Usuario"
 
 msgctxt "field:gnuhealth.insurance.plan.product.policy,create_uid:"
 msgid "Create User"
