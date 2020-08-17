@@ -1,42 +1,51 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-08-17 23:56+0000\n"
+"Last-Translator: Carlos Scotta <carliscotta@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
+"health_socioeconomics/es/>\n"
+"Language: es\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "field:gnuhealth.patient,domestic_violence:"
 msgid "Domestic violence"
-msgstr ""
+msgstr "Violencia domestica"
 
 msgctxt "field:gnuhealth.patient,drug_addiction:"
 msgid "Drug addiction"
-msgstr ""
+msgstr "Adicción a las drogas"
 
 msgctxt "field:gnuhealth.patient,education:"
 msgid "Education Level"
-msgstr ""
+msgstr "Nivel Educativo"
 
 msgctxt "field:gnuhealth.patient,hostile_area:"
 msgid "Hostile Area"
-msgstr ""
+msgstr "Área hostil"
 
 msgctxt "field:gnuhealth.patient,hours_outside:"
 msgid "Hours outside home"
-msgstr ""
+msgstr "Horas fuera de casa"
 
 msgctxt "field:gnuhealth.patient,housing:"
 msgid "Housing conditions"
-msgstr ""
+msgstr "Condiciones de la vivienda"
 
 msgctxt "field:gnuhealth.patient,occupation:"
 msgid "Occupation"
-msgstr ""
+msgstr "Ocupación"
 
 msgctxt "field:gnuhealth.patient,prison_current:"
 msgid "Currently in prison"
-msgstr ""
+msgstr "Actualmente en prisión"
 
 msgctxt "field:gnuhealth.patient,prison_past:"
 msgid "Has been in prison"
-msgstr ""
+msgstr "Ex-preso"
 
 msgctxt "field:gnuhealth.patient,relative_in_prison:"
 msgid "Relative in prison"
