@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-12 19:51+0000\n"
+"PO-Revision-Date: 2020-08-17 11:33+0000\n"
 "Last-Translator: Constantine Mousafiris <kvisitor@gnugr.org>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_pediatrics/el/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.newborn:"
 msgid "The Newborn ID must be unique"
-msgstr "Ο  Κωδικός Νεογνού πρέπει να είναι μοναδικός"
+msgstr "Ο Κωδικός Νεογνού πρέπει να είναι μοναδικός"
 
 msgctxt "error:gnuhealth.newborn:"
 msgid "There is already a newborn record for this patient"
@@ -378,7 +378,7 @@ msgstr "Συμπεριφέρεται σαν πιο μικρό από την ηλ
 
 msgctxt "field:gnuhealth.patient.psc,psc_acts_as_driven_by_motor:"
 msgid "Acts as if driven by a motor"
-msgstr "Κάνει σαν  να έχει μέσα του μία μηχανή"
+msgstr "Κάνει σαν να έχει μέσα του μία μηχανή"
 
 msgctxt "field:gnuhealth.patient.psc,psc_afraid_of_new_situations:"
 msgid "Is afraid of new situations"
@@ -410,7 +410,7 @@ msgstr "Δε δείχνει αυτό που αισθάνεται"
 
 msgctxt "field:gnuhealth.patient.psc,psc_down_on_self:"
 msgid "Is down on him or herself"
-msgstr "Is down on him or herself"
+msgstr ""
 
 msgctxt "field:gnuhealth.patient.psc,psc_feels_hopeless:"
 msgid "Feels hopeless"
