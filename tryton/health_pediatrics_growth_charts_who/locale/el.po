@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-13 21:32+0000\n"
+"PO-Revision-Date: 2020-08-17 11:33+0000\n"
 "Last-Translator: Constantine Mousafiris <kvisitor@gnugr.org>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_pediatrics_growth_charts_who/el/>\n"
@@ -123,7 +123,7 @@ msgstr "εκατοστιαίες θέσεις"
 
 msgctxt "selection:gnuhealth.pediatrics.growth.charts.who,measure:"
 msgid "z-scores"
-msgstr ""
+msgstr "βαθμολογίες z-scores (με βάση τις αποκλίσεις από τον μέσο όρο)"
 
 msgctxt "selection:gnuhealth.pediatrics.growth.charts.who,sex:"
 msgid "Female"
@@ -156,7 +156,7 @@ msgstr "εκατοστιαίες θέσεις"
 msgctxt ""
 "selection:gnuhealth.pediatrics.growth.charts.who.report.open.start,measure:"
 msgid "z-scores"
-msgstr ""
+msgstr "βαθμολογίες z-scores (με βάση τις αποκλίσεις από τον μέσο όρο)"
 
 msgctxt ""
 "wizard_button:gnuhealth.pediatrics.growth.charts.who.report.open,start,choose:"
