@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-17 23:46+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-08-17 23:48+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_insurance/es/>\n"
 "Language: es\n"
@@ -82,7 +81,7 @@ msgstr "Descuento "
 
 msgctxt "model:gnuhealth.insurance.plan.product.policy,name:"
 msgid "Policy associated to the product on the insurance plan"
-msgstr ""
+msgstr "Nombre de plan de seguro"
 
 msgctxt ""
 "model:ir.action,name:action_gnuhealth_insurance_plan_product_policy_view"
