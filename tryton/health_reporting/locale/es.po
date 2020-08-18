@@ -1,10 +1,19 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-08-18 21:10+0000\n"
+"Last-Translator: Ernesto Ridel <ridelernesto@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
+"health_reporting/es/>\n"
+"Language: es\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "field:gnuhealth.evaluations.open.start,end_date:"
 msgid "End Date"
-msgstr ""
+msgstr "Fecha final"
 
 msgctxt "field:gnuhealth.evaluations.open.start,group_by:"
 msgid "Group By"
@@ -12,19 +21,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.evaluations.open.start,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.evaluations.open.start,start_date:"
 msgid "Start Date"
-msgstr ""
+msgstr "Fecha de inicio"
 
 msgctxt "field:gnuhealth.evaluations_doctor,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Fecha de creación"
 
 msgctxt "field:gnuhealth.evaluations_doctor,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Crear usuario"
 
 msgctxt "field:gnuhealth.evaluations_doctor,doctor:"
 msgid "Doctor"
