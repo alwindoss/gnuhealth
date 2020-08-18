@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 21:19+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-08-18 21:20+0000\n"
+"Last-Translator: Ernesto Ridel <ridelernesto@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_reporting/es/>\n"
 "Language: es\n"
@@ -238,7 +237,7 @@ msgstr "Informe de evaluaciones"
 
 msgctxt "model:ir.action,name:act_evaluations_sector"
 msgid "Evaluations per Sector"
-msgstr ""
+msgstr "Evaluaciones por sector"
 
 msgctxt "model:ir.action,name:act_evaluations_specialty"
 msgid "Evaluations per Specialty"
