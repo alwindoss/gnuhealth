@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 08:16+0000\n"
-"PO-Revision-Date: 2020-08-12 13:43+0000\n"
+"PO-Revision-Date: 2020-08-18 22:32+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -106,7 +106,7 @@ msgstr "疫苗的剂量号不能重复"
 
 msgctxt "error:gnuhealth.institution.operationalsector:"
 msgid "The Operational Sector already exists for this institution"
-msgstr "此业务子区域已经存在"
+msgstr "此卫生子区域已经存在"
 
 msgctxt "error:gnuhealth.institution.specialties:"
 msgid "The Specialty already exists for this institution"
@@ -146,7 +146,7 @@ msgstr "业务邻域不能重复！"
 
 msgctxt "error:gnuhealth.operational_sector:"
 msgid "The operational sector must be unique in each operational area!"
-msgstr "业务区域中包含的子区域不能重复！"
+msgstr "卫生区域中包含的子区域不能重复！"
 
 msgctxt "error:gnuhealth.pathology.category:"
 msgid "The category name must be unique"
@@ -603,7 +603,7 @@ msgstr "观察结果"
 
 msgctxt "field:gnuhealth.death_certificate,operational_sector:"
 msgid "Op. Sector"
-msgstr "业务子区域"
+msgstr "卫生子区域"
 
 msgctxt "field:gnuhealth.death_certificate,place_details:"
 msgid "Details"
@@ -927,7 +927,7 @@ msgstr "海拔"
 
 msgctxt "field:gnuhealth.du,bathrooms:"
 msgid "Bathrooms"
-msgstr "浴室"
+msgstr "浴室数"
 
 msgctxt "field:gnuhealth.du,bedrooms:"
 msgid "Bedrooms"
@@ -951,11 +951,11 @@ msgstr "房屋类型"
 
 msgctxt "field:gnuhealth.du,electricity:"
 msgid "Electrical supply"
-msgstr "供电"
+msgstr "通电"
 
 msgctxt "field:gnuhealth.du,gas:"
 msgid "Gas supply"
-msgstr "供天然气"
+msgstr "通天然气"
 
 msgctxt "field:gnuhealth.du,housing:"
 msgid "Conditions"
@@ -967,7 +967,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.du,internet:"
 msgid "Internet"
-msgstr "因特网"
+msgstr "通互联网"
 
 msgctxt "field:gnuhealth.du,latitude:"
 msgid "Latitude"
@@ -979,7 +979,7 @@ msgstr "经度"
 
 msgctxt "field:gnuhealth.du,materials:"
 msgid "Material"
-msgstr "材质"
+msgstr "房屋材料"
 
 msgctxt "field:gnuhealth.du,members:"
 msgid "Members"
@@ -991,7 +991,7 @@ msgstr "代码"
 
 msgctxt "field:gnuhealth.du,operational_sector:"
 msgid "Operational Sector"
-msgstr "业务子区域"
+msgstr "卫生子区域"
 
 msgctxt "field:gnuhealth.du,picture:"
 msgid "Picture"
@@ -1003,19 +1003,19 @@ msgstr "记录名称"
 
 msgctxt "field:gnuhealth.du,roof_type:"
 msgid "Roof"
-msgstr "屋顶"
+msgstr "屋顶材料"
 
 msgctxt "field:gnuhealth.du,sewers:"
 msgid "Sanitary Sewers"
-msgstr "下水道"
+msgstr "有下水道"
 
 msgctxt "field:gnuhealth.du,telephone:"
 msgid "Telephone"
-msgstr "电话"
+msgstr "有电话"
 
 msgctxt "field:gnuhealth.du,television:"
 msgid "Television"
-msgstr "电视"
+msgstr "有电视"
 
 msgctxt "field:gnuhealth.du,total_surface:"
 msgid "Surface"
@@ -1031,7 +1031,7 @@ msgstr "Open Street 地图"
 
 msgctxt "field:gnuhealth.du,water:"
 msgid "Running Water"
-msgstr "自来水"
+msgstr "通自来水"
 
 msgctxt "field:gnuhealth.du,write_date:"
 msgid "Write Date"
@@ -1739,7 +1739,7 @@ msgstr "手术室"
 
 msgctxt "field:gnuhealth.institution,operational_sectors:"
 msgid "Operational Sector"
-msgstr "业务区域"
+msgstr "卫生区域"
 
 msgctxt "field:gnuhealth.institution,or_number:"
 msgid "ORs"
@@ -1799,7 +1799,7 @@ msgstr "医疗机构"
 
 msgctxt "field:gnuhealth.institution.operationalsector,operational_sector:"
 msgid "Operational Sector"
-msgstr "业务区域"
+msgstr "卫生区域"
 
 msgctxt "field:gnuhealth.institution.operationalsector,rec_name:"
 msgid "Record Name"
@@ -2199,7 +2199,7 @@ msgstr "名称"
 
 msgctxt "field:gnuhealth.operational_area,operational_sector:"
 msgid "Operational Sector"
-msgstr "业务子区域"
+msgstr "卫生子区域"
 
 msgctxt "field:gnuhealth.operational_area,rec_name:"
 msgid "Record Name"
@@ -2231,11 +2231,11 @@ msgstr "其它信息"
 
 msgctxt "field:gnuhealth.operational_sector,name:"
 msgid "Op. Sector"
-msgstr "业务子区域"
+msgstr "卫生子区域"
 
 msgctxt "field:gnuhealth.operational_sector,operational_area:"
 msgid "Operational Area"
-msgstr "业务区域"
+msgstr "卫生区域"
 
 msgctxt "field:gnuhealth.operational_sector,rec_name:"
 msgid "Record Name"
@@ -4370,7 +4370,7 @@ msgstr "如果此医疗卫生机构有手术室，就选中此项"
 
 msgctxt "help:gnuhealth.institution,operational_sectors:"
 msgid "Operational Sectors covered by this institution"
-msgstr "此医疗机构业务覆盖的子区域"
+msgstr "此医疗机构覆盖的卫生子区域"
 
 msgctxt "help:gnuhealth.institution,specialties:"
 msgid "Specialties Provided in this Health Institution"
@@ -4546,7 +4546,7 @@ msgstr "在一个城市或地区，健康业务覆盖的区域"
 
 msgctxt "help:gnuhealth.operational_sector,name:"
 msgid "Region included in an operational area"
-msgstr "业务区域包含的子区域"
+msgstr "卫生区域包含的子区域"
 
 msgctxt "help:gnuhealth.pathology,category:"
 msgid ""
@@ -6173,7 +6173,7 @@ msgstr "医疗机构"
 
 msgctxt "model:gnuhealth.institution.operationalsector,name:"
 msgid "Operational Sectors covered by Institution"
-msgstr "医疗机构业务覆盖的子区域"
+msgstr "医疗机构覆盖的卫生子区域"
 
 msgctxt "model:gnuhealth.institution.specialties,name:"
 msgid "Health Institution Specialties"
@@ -8833,11 +8833,11 @@ msgstr "晶体学"
 
 msgctxt "model:gnuhealth.operational_area,name:"
 msgid "Operational Area"
-msgstr "业务区域"
+msgstr "卫生区域"
 
 msgctxt "model:gnuhealth.operational_sector,name:"
 msgid "Operational Sector"
-msgstr "业务子区域"
+msgstr "卫生子区域"
 
 msgctxt "model:gnuhealth.pathology,name:"
 msgid "Health Conditions"
@@ -9409,7 +9409,7 @@ msgstr "医疗机构"
 
 msgctxt "model:ir.action,name:action_gnuhealth_institution_operationalsector"
 msgid "Operational sectors by institution"
-msgstr "医疗机构业务覆盖的子区域"
+msgstr "医疗机构覆盖的卫生子区域"
 
 msgctxt "model:ir.action,name:action_gnuhealth_institution_specialties"
 msgid "Specialties by institution"
@@ -9517,11 +9517,11 @@ msgstr "职业"
 
 msgctxt "model:ir.action,name:gnuhealth_action_operational_area"
 msgid "Operational Areas"
-msgstr "业务区域"
+msgstr "卫生区域"
 
 msgctxt "model:ir.action,name:gnuhealth_action_operational_sector"
 msgid "Operational Sectors"
-msgstr "业务子区域"
+msgstr "卫生子区域"
 
 msgctxt "model:ir.action,name:gnuhealth_action_pathology_group"
 msgid "Pathology Groups"
@@ -9669,11 +9669,11 @@ msgstr "保险公司"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_edit_operational_area"
 msgid "Operational Areas"
-msgstr "业务区域"
+msgstr "卫生区域"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_edit_operational_sector"
 msgid "Operational Sectors"
-msgstr "业务子区域"
+msgstr "卫生子区域"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_ethnicity"
 msgid "Ethnicities"
@@ -9781,7 +9781,7 @@ msgstr "医学专科"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_demographics_menu"
 msgid "Demographics"
-msgstr "人口统计学相关"
+msgstr "人口统计学"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_du"
 msgid "Domiciliary Units"
@@ -9805,7 +9805,7 @@ msgstr "药品"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_institution_operationalsector"
 msgid "Operational sectors by institution"
-msgstr "医疗机构业务覆盖的子区域"
+msgstr "医疗机构覆盖的卫生子区域"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_institution_specialties"
 msgid "Specialties by institution"
@@ -9821,7 +9821,7 @@ msgstr "医疗机构"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_operational_areas"
 msgid "Operational Areas"
-msgstr "业务区域"
+msgstr "卫生区域"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_patients_menu"
 msgid "Patients"
