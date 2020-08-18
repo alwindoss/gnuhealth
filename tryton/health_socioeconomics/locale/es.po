@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 10:10+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-08-18 10:12+0000\n"
+"Last-Translator: Carlos Scotta <carliscotta@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_socioeconomics/es/>\n"
 "Language: es\n"
@@ -316,15 +315,15 @@ msgstr "Historia de evaluaciones socioeconómicas y familiares"
 
 msgctxt "model:ir.action,name:act_ses_assessment"
 msgid "Socioeconomic and Family Assessment"
-msgstr ""
+msgstr "Evaluación Socioeconómica y Familiar"
 
 msgctxt "model:ir.action,name:act_ses_family_assessment"
 msgid "Socioeconomics and Family Assessment"
-msgstr ""
+msgstr "Evaluación Socioeconómica y Familiar"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_ses_assessment_menu"
 msgid "Socioeconomic Assessments"
-msgstr ""
+msgstr "Evaluación Socioeconómica"
 
 msgctxt "selection:gnuhealth.patient,education:"
 msgid ""
@@ -332,7 +331,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,education:"
 msgid "Incomplete Primary School"
-msgstr ""
+msgstr "Escuela primaria incompleta"
 
 msgctxt "selection:gnuhealth.patient,education:"
 msgid "Incomplete Secondary School"
