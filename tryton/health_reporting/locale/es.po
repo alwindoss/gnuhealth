@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 21:14+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-08-18 21:17+0000\n"
+"Last-Translator: Ernesto Ridel <ridelernesto@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_reporting/es/>\n"
 "Language: es\n"
@@ -162,67 +161,67 @@ msgstr "Crear usuario"
 
 msgctxt "field:gnuhealth.top_diseases,disease:"
 msgid "Disease"
-msgstr ""
+msgstr "Enfermedad"
 
 msgctxt "field:gnuhealth.top_diseases,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.top_diseases,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.top_diseases,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Fecha de modificación"
 
 msgctxt "field:gnuhealth.top_diseases,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Modificado por"
 
 msgctxt "field:gnuhealth.top_diseases.open.start,end_date:"
 msgid "End Date"
-msgstr ""
+msgstr "Fecha final"
 
 msgctxt "field:gnuhealth.top_diseases.open.start,group:"
 msgid "Disease Group"
-msgstr ""
+msgstr "Grupo de enfermedades"
 
 msgctxt "field:gnuhealth.top_diseases.open.start,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.top_diseases.open.start,number_records:"
 msgid "Number of Records"
-msgstr ""
+msgstr "Número de registros"
 
 msgctxt "field:gnuhealth.top_diseases.open.start,start_date:"
 msgid "Start Date"
-msgstr ""
+msgstr "Fecha de inicio"
 
 msgctxt "model:gnuhealth.evaluations.open.start,name:"
 msgid "Open Evaluations"
-msgstr ""
+msgstr "Evaluaciones abiertas"
 
 msgctxt "model:gnuhealth.evaluations_doctor,name:"
 msgid "Evaluations per Doctor"
-msgstr ""
+msgstr "Evaluaciones por médico"
 
 msgctxt "model:gnuhealth.evaluations_sector,name:"
 msgid "Evaluations per Sector"
-msgstr ""
+msgstr "Evaluaciones por sector"
 
 msgctxt "model:gnuhealth.evaluations_specialty,name:"
 msgid "Evaluations per Specialty"
-msgstr ""
+msgstr "Evaluaciones por especialidad"
 
 msgctxt "model:gnuhealth.summary.report.open.start,name:"
 msgid "Summary Report Start"
-msgstr ""
+msgstr "Inicio del reporte"
 
 msgctxt "model:gnuhealth.top_diseases,name:"
 msgid "Top Diseases"
-msgstr ""
+msgstr "Principales enfermedades"
 
 msgctxt "model:gnuhealth.top_diseases.open.start,name:"
 msgid "Open Top Diseases"
