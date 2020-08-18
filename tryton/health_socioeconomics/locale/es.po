@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 10:17+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-08-18 20:44+0000\n"
+"Last-Translator: Carlos Scotta <carliscotta@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_socioeconomics/es/>\n"
 "Language: es\n"
@@ -396,15 +395,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "Primary School"
-msgstr ""
+msgstr "Escuela Primaria"
 
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "Secondary School"
-msgstr ""
+msgstr "Escuela Secundaria"
 
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "University"
-msgstr ""
+msgstr "Universidad"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
 msgid ""
@@ -412,7 +411,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
 msgid "Moderately"
-msgstr ""
+msgstr "Moderado"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
 msgid "None"
@@ -420,7 +419,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
 msgid "Very much"
-msgstr ""
+msgstr "Mucho"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
 msgid ""
@@ -428,7 +427,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
 msgid "Moderately"
-msgstr ""
+msgstr "Moderado"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
 msgid "None"
@@ -436,7 +435,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
 msgid "Very much"
-msgstr ""
+msgstr "Mucho"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
 msgid ""
@@ -444,7 +443,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
 msgid "Moderately"
-msgstr ""
+msgstr "Moderado"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
 msgid "None"
@@ -452,7 +451,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
 msgid "Very much"
-msgstr ""
+msgstr "Mucho"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
 msgid ""
@@ -460,7 +459,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
 msgid "Moderately"
-msgstr ""
+msgstr "Moderado"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
 msgid "None"
@@ -468,7 +467,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
 msgid "Very much"
-msgstr ""
+msgstr "Mucho"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
 msgid ""
@@ -476,7 +475,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
 msgid "Moderately"
-msgstr ""
+msgstr "Moderado"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
 msgid "None"
@@ -484,7 +483,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
 msgid "Very much"
-msgstr ""
+msgstr "Mucho"
 
 msgctxt "selection:gnuhealth.ses.assessment,gender:"
 msgid ""
@@ -492,11 +491,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Femenino"
 
 msgctxt "selection:gnuhealth.ses.assessment,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Masculino"
 
 msgctxt "selection:gnuhealth.ses.assessment,housing:"
 msgid ""
@@ -504,23 +503,23 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,housing:"
 msgid "Comfortable and good sanitary conditions"
-msgstr ""
+msgstr "Confortables y buenas condiciones sanitarias"
 
 msgctxt "selection:gnuhealth.ses.assessment,housing:"
 msgid "Luxury and excellent sanitary conditions"
-msgstr ""
+msgstr "Lujosa y excelentes condiciones sanitarias"
 
 msgctxt "selection:gnuhealth.ses.assessment,housing:"
 msgid "Roomy and excellent sanitary conditions"
-msgstr ""
+msgstr "Espaciosa y excelentes condiciones sanitarias"
 
 msgctxt "selection:gnuhealth.ses.assessment,housing:"
 msgid "Shanty, deficient sanitary conditions"
-msgstr ""
+msgstr "Humilde, deficientes condiciones sanitarias"
 
 msgctxt "selection:gnuhealth.ses.assessment,housing:"
 msgid "Small, crowded but with good sanitary conditions"
-msgstr ""
+msgstr "Pequeña, muchas personas pero buenas condiciones sanitarias"
 
 msgctxt "selection:gnuhealth.ses.assessment,income:"
 msgid ""
