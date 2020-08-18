@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 20:51+0000\n"
+"PO-Revision-Date: 2020-08-18 22:33+0000\n"
 "Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
 "com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
@@ -282,8 +282,7 @@ msgstr ""
 "APGAR Familiar\n"
 "7 - 10: Familia funcional\n"
 "4 - 6: Leve nivel de disfunción\n"
-"0 - 3: Familia disfuncional severa\n"
-"\n"
+"0 - 3: Familia disfuncional severa \n"
 
 msgctxt "help:gnuhealth.ses.assessment,fam_apgar_timesharing:"
 msgid ""
@@ -340,7 +339,7 @@ msgstr "Escuela Secundaria Incompleta"
 
 msgctxt "selection:gnuhealth.patient,education:"
 msgid "None"
-msgstr ""
+msgstr "Ninguna"
 
 msgctxt "selection:gnuhealth.patient,education:"
 msgid "Primary School"
@@ -392,7 +391,7 @@ msgstr "Escuela Secundaria Incompleta"
 
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "None"
-msgstr ""
+msgstr "Ninguna"
 
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "Primary School"
@@ -416,7 +415,7 @@ msgstr "Moderado"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
 msgid "None"
-msgstr ""
+msgstr "Ninguna"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
 msgid "Very much"
@@ -432,7 +431,7 @@ msgstr "Moderado"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
 msgid "None"
-msgstr ""
+msgstr "Ninguna"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
 msgid "Very much"
@@ -448,7 +447,7 @@ msgstr "Moderado"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
 msgid "None"
-msgstr ""
+msgstr "Ninguna"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
 msgid "Very much"
@@ -464,7 +463,7 @@ msgstr "Moderado"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
 msgid "None"
-msgstr ""
+msgstr "Ninguna"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
 msgid "Very much"
@@ -480,7 +479,7 @@ msgstr "Moderado"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
 msgid "None"
-msgstr ""
+msgstr "Ninguna"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
 msgid "Very much"
@@ -588,7 +587,7 @@ msgstr "Escuela Secundaria Incompleta"
 
 msgctxt "selection:party.party,education:"
 msgid "None"
-msgstr ""
+msgstr "Ninguna"
 
 msgctxt "selection:party.party,education:"
 msgid "Primary School"
@@ -644,7 +643,7 @@ msgstr "Notas"
 
 msgctxt "view:gnuhealth.ses.assessment:"
 msgid "Socioeconomics"
-msgstr "Socioeconómico"
+msgstr "Socioeconómicos"
 
 msgctxt "view:gnuhealth.ses.assessment:"
 msgid "Socioeconomics and Family Assessment"
