@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 21:12+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-08-18 21:14+0000\n"
+"Last-Translator: Ernesto Ridel <ridelernesto@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_reporting/es/>\n"
 "Language: es\n"
@@ -102,63 +101,63 @@ msgstr "Crear usuario"
 
 msgctxt "field:gnuhealth.evaluations_specialty,evaluations:"
 msgid "Evaluations"
-msgstr ""
+msgstr "Evaluaciones"
 
 msgctxt "field:gnuhealth.evaluations_specialty,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.evaluations_specialty,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.evaluations_specialty,specialty:"
 msgid "Specialty"
-msgstr ""
+msgstr "Especialidad"
 
 msgctxt "field:gnuhealth.evaluations_specialty,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Fecha de modificación"
 
 msgctxt "field:gnuhealth.evaluations_specialty,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Modificado por"
 
 msgctxt "field:gnuhealth.summary.report.open.start,demographics:"
 msgid "Demographics"
-msgstr ""
+msgstr "Demografia"
 
 msgctxt "field:gnuhealth.summary.report.open.start,end_date:"
 msgid "End"
-msgstr ""
+msgstr "Fin"
 
 msgctxt "field:gnuhealth.summary.report.open.start,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.summary.report.open.start,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Institución"
 
 msgctxt "field:gnuhealth.summary.report.open.start,patient_evaluations:"
 msgid "Evaluations"
-msgstr ""
+msgstr "Evaluaciones"
 
 msgctxt "field:gnuhealth.summary.report.open.start,start_date:"
 msgid "Start"
-msgstr ""
+msgstr "Comenzar"
 
 msgctxt "field:gnuhealth.top_diseases,cases:"
 msgid "Cases"
-msgstr ""
+msgstr "Casos"
 
 msgctxt "field:gnuhealth.top_diseases,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Fecha de creación"
 
 msgctxt "field:gnuhealth.top_diseases,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Crear usuario"
 
 msgctxt "field:gnuhealth.top_diseases,disease:"
 msgid "Disease"
