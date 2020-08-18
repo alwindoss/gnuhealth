@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 21:28+0000\n"
+"PO-Revision-Date: 2020-08-18 22:33+0000\n"
 "Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
 "com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
@@ -18,7 +18,7 @@ msgstr "Fecha final"
 
 msgctxt "field:gnuhealth.evaluations.open.start,group_by:"
 msgid "Group By"
-msgstr ""
+msgstr "Agrupar por"
 
 msgctxt "field:gnuhealth.evaluations.open.start,id:"
 msgid "ID"
@@ -270,7 +270,7 @@ msgstr "Informe Resumido"
 
 msgctxt "model:ir.ui.menu,name:menu_top_diseases_open"
 msgid "Top Diseases"
-msgstr "Principales enfermedades"
+msgstr "Principales Enfermedades"
 
 msgctxt "selection:gnuhealth.evaluations.open.start,group_by:"
 msgid "Doctor"
