@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 21:02+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-08-18 21:04+0000\n"
+"Last-Translator: Ingrid Spessotti <ladeluno@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_ntd_dengue/es/>\n"
 "Language: es\n"
@@ -216,20 +215,20 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_dengue_du_survey_form"
 msgid "Dengue DU Survey"
-msgstr ""
+msgstr "Encuesta de UD de Dengue"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_du_survey"
 msgid "Dengue DU Survey"
-msgstr ""
+msgstr "Encuesta de UD de Dengue"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_du_survey"
 msgid "Dengue DU Survey"
-msgstr ""
+msgstr "Encuesta de UD de Dengue"
 
 msgctxt ""
 "model:product.template,name:product_template_dengue_elisa_igg_analysischarges0"
 msgid "Dengue IgG Charges"
-msgstr ""
+msgstr "Cargos DENGUE IgG"
 
 msgctxt ""
 "model:product.template,name:product_template_dengue_elisa_igm_analysischarges0"
