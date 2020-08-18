@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 10:03+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-08-18 10:05+0000\n"
+"Last-Translator: Carlos Scotta <carliscotta@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_socioeconomics/es/>\n"
 "Language: es\n"
@@ -206,17 +205,17 @@ msgstr "Check si el paciente vive en zonas de hostilidad alta (ej: guerra)"
 
 msgctxt "help:gnuhealth.patient,hours_outside:"
 msgid "Number of hours a day the patient spend outside the house"
-msgstr ""
+msgstr "Cantidad de horas al día que el paciente pasa fuera de la casa"
 
 msgctxt "help:gnuhealth.patient,housing:"
 msgid "Housing and sanitary living conditions"
-msgstr ""
+msgstr "Condiciones de vivienda y sanitarias"
 
 msgctxt "help:gnuhealth.patient,relative_in_prison:"
 msgid ""
 "Check if someone from the nuclear family - parents / sibblings  is or has "
 "been in prison"
-msgstr ""
+msgstr "Check si algún pariente del núcleo familiar está o ha estado en prisión"
 
 msgctxt "help:gnuhealth.patient,ses_assessments:"
 msgid "Socioeconomics and Family assessments history"
