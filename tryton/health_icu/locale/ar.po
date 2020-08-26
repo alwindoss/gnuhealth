@@ -1,14 +1,16 @@
 # Nab3a <asn09@aub.edu.lb>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-08 12:12+0000\n"
-"Last-Translator: Nab3a <asn09@aub.edu.lb>\n"
+"PO-Revision-Date: 2020-08-28 02:15+0000\n"
+"Last-Translator: mohammadA <mohammadAbdulhadi1@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/gnu-health/"
+"health_icu/ar/>\n"
 "Language: ar\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Pootle 2.5.0\n"
+"X-Generator: Weblate 4.2.1-dev\n"
 "X-POOTLE-MTIME: 1452255168.0\n"
 
 msgctxt "error:gnuhealth.icu.ventilation:"
@@ -18,7 +20,7 @@ msgstr "سجلاتنا تُشيرُ بأنّ  المريضة حامل!"
 
 msgctxt "error:gnuhealth.inpatient.icu:"
 msgid "Our records indicate that the patient is already admitted at ICU"
-msgstr "توضح سجلاتنا ان المريض موجود  في وحدة العناية المركزة"
+msgstr "توضح سجلاتنا أن المريض موجود في وحدة العناية المركزة"
 
 msgctxt "field:gnuhealth.icu.apache2,aado2:"
 msgid "A-a DO2"
@@ -42,7 +44,7 @@ msgstr "حالة مزمنة"
 
 msgctxt "field:gnuhealth.icu.apache2,create_date:"
 msgid "Create Date"
-msgstr "أنشئ معلومات "
+msgstr "تاريخ الإنشاء"
 
 msgctxt "field:gnuhealth.icu.apache2,create_uid:"
 msgid "Create User"
@@ -98,7 +100,7 @@ msgstr "الاسم"
 
 msgctxt "field:gnuhealth.icu.apache2,respiratory_rate:"
 msgid "Respiratory Rate"
-msgstr "معدل المعدل التنفسيالجهاز التنفسي "
+msgstr "معدل التنفس"
 
 msgctxt "field:gnuhealth.icu.apache2,score_date:"
 msgid "Date"
@@ -126,7 +128,7 @@ msgstr "كريات الدم البيضاء"
 
 msgctxt "field:gnuhealth.icu.apache2,write_date:"
 msgid "Write Date"
-msgstr "كتابة معلومات"
+msgstr "تاريخ الكتابة"
 
 msgctxt "field:gnuhealth.icu.apache2,write_uid:"
 msgid "Write User"
