@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-10 17:32+0000\n"
+"PO-Revision-Date: 2020-09-02 08:16+0000\n"
 "Last-Translator: Edgar Hagenbichler <edgar@hagenbichler.at>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/health/"
 "de/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.2.1-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -10401,7 +10401,7 @@ msgstr "Männlich"
 
 msgctxt "selection:gnuhealth.birth_certificate,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.birth_certificate,state:"
 msgid "Done"
@@ -10417,7 +10417,7 @@ msgstr "Unterzeichnet"
 
 msgctxt "selection:gnuhealth.death_certificate,place_of_death:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.death_certificate,place_of_death:"
 msgid "Health Center"
@@ -10437,7 +10437,7 @@ msgstr "Arbeit"
 
 msgctxt "selection:gnuhealth.death_certificate,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.death_certificate,state:"
 msgid "Done"
@@ -10453,7 +10453,7 @@ msgstr "Unterzeichnet"
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Homicide"
@@ -10477,7 +10477,7 @@ msgstr "Nicht bestimmt"
 
 msgctxt "selection:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid "days"
@@ -10501,7 +10501,7 @@ msgstr "Jahre"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Apartment"
@@ -10529,7 +10529,7 @@ msgstr "Reihenhaus"
 
 msgctxt "selection:gnuhealth.du,housing:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.du,housing:"
 msgid "Comfortable and good sanitary conditions"
@@ -10553,7 +10553,7 @@ msgstr "Kleine, überfüllte jedoch gute Sanitäreinrichtungen"
 
 msgctxt "selection:gnuhealth.du,materials:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.du,materials:"
 msgid "Adobe"
@@ -10577,7 +10577,7 @@ msgstr "Holz"
 
 msgctxt "selection:gnuhealth.du,roof_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.du,roof_type:"
 msgid "Adobe"
@@ -10605,7 +10605,7 @@ msgstr "Holz"
 
 msgctxt "selection:gnuhealth.hospital.bed,bed_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.hospital.bed,bed_type:"
 msgid "Circo Electric"
@@ -10637,7 +10637,7 @@ msgstr "Trage"
 
 msgctxt "selection:gnuhealth.hospital.bed,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.hospital.bed,state:"
 msgid "Free"
@@ -10661,7 +10661,7 @@ msgstr "Reserviert"
 
 msgctxt "selection:gnuhealth.hospital.or,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.hospital.or,state:"
 msgid "Confirmed"
@@ -10681,7 +10681,7 @@ msgstr "besetzt"
 
 msgctxt "selection:gnuhealth.hospital.ward,gender:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.hospital.ward,gender:"
 msgid "Men Ward"
@@ -10697,7 +10697,7 @@ msgstr "Frauenstation"
 
 msgctxt "selection:gnuhealth.hospital.ward,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.hospital.ward,state:"
 msgid "Beds available"
@@ -10713,7 +10713,7 @@ msgstr "Nicht verfügbar"
 
 msgctxt "selection:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid "days"
@@ -10733,7 +10733,7 @@ msgstr "Jahre"
 
 msgctxt "selection:gnuhealth.immunization_schedule_line,scope:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.immunization_schedule_line,scope:"
 msgid "Recommended"
@@ -10749,7 +10749,7 @@ msgstr "Systematisch"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Clinic"
@@ -10785,7 +10785,7 @@ msgstr "Spezialisiertes Krankenhaus"
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid "Private"
@@ -10801,7 +10801,7 @@ msgstr "Öffentlich"
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid "Level I"
@@ -10825,7 +10825,7 @@ msgstr "Grad V"
 
 msgctxt "selection:gnuhealth.insurance,insurance_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.insurance,insurance_type:"
 msgid "Labour Union / Syndical"
@@ -10841,7 +10841,7 @@ msgstr "Zustand"
 
 msgctxt "selection:gnuhealth.medicament,pregnancy_category:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.medicament,pregnancy_category:"
 msgid "A"
@@ -10869,7 +10869,7 @@ msgstr "X"
 
 msgctxt "selection:gnuhealth.patient,biological_sex:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient,biological_sex:"
 msgid "Female"
@@ -10881,7 +10881,7 @@ msgstr "Männlich"
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid "A"
@@ -10901,7 +10901,7 @@ msgstr "O"
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid "Female"
@@ -10921,7 +10921,7 @@ msgstr "männlich -> weiblich"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Concubinage"
@@ -10949,7 +10949,7 @@ msgstr "Verwitwet"
 
 msgctxt "selection:gnuhealth.patient,rh:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient,rh:"
 msgid "+"
@@ -10961,7 +10961,7 @@ msgstr "-"
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid "Drug Allergy"
@@ -10981,7 +10981,7 @@ msgstr "Sonstige Nebenwirkungen"
 
 msgctxt "selection:gnuhealth.patient.disease,disease_severity:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.disease,disease_severity:"
 msgid "Mild"
@@ -10997,7 +10997,7 @@ msgstr "Schwer"
 
 msgctxt "selection:gnuhealth.patient.disease,status:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.disease,status:"
 msgid "acute"
@@ -11025,7 +11025,7 @@ msgstr "Verschlechtert"
 
 msgctxt "selection:gnuhealth.patient.ecg,axis:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.ecg,axis:"
 msgid "Extreme right deviation"
@@ -11045,7 +11045,7 @@ msgstr "Rechtstyp"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "I"
@@ -11097,7 +11097,7 @@ msgstr "aVR"
 
 msgctxt "selection:gnuhealth.patient.ecg,pacemaker:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.ecg,pacemaker:"
 msgid "Atrioventricular"
@@ -11113,7 +11113,7 @@ msgstr "Sinusknoten"
 
 msgctxt "selection:gnuhealth.patient.ecg,rhythm:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.ecg,rhythm:"
 msgid "Irregular"
@@ -11125,7 +11125,7 @@ msgstr "Regulär"
 
 msgctxt "selection:gnuhealth.patient.ecg,st_segment:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.ecg,st_segment:"
 msgid "Depressed"
@@ -11141,7 +11141,7 @@ msgstr "Normal"
 
 msgctxt "selection:gnuhealth.patient.evaluation,discharge_reason:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.evaluation,discharge_reason:"
 msgid "Death"
@@ -11161,7 +11161,7 @@ msgstr "transferiert"
 
 msgctxt "selection:gnuhealth.patient.evaluation,evaluation_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.evaluation,evaluation_type:"
 msgid "Inpatient"
@@ -11173,7 +11173,7 @@ msgstr "Ambulanter Patient"
 
 msgctxt "selection:gnuhealth.patient.evaluation,gender:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.evaluation,gender:"
 msgid "Female"
@@ -11254,7 +11254,7 @@ msgstr "Unzusammenhängende Worte"
 
 msgctxt "selection:gnuhealth.patient.evaluation,mood:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.evaluation,mood:"
 msgid "Disgust"
@@ -11290,7 +11290,7 @@ msgstr "Traurig"
 
 msgctxt "selection:gnuhealth.patient.evaluation,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.evaluation,state:"
 msgid "Done"
@@ -11306,7 +11306,7 @@ msgstr "Unterzeichnet"
 
 msgctxt "selection:gnuhealth.patient.evaluation,urgency:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.evaluation,urgency:"
 msgid "Medical Emergency"
@@ -11322,7 +11322,7 @@ msgstr "Dringlich"
 
 msgctxt "selection:gnuhealth.patient.evaluation,visit_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.evaluation,visit_type:"
 msgid "Followup"
@@ -11346,7 +11346,7 @@ msgstr "Vorsorgeuntersuchung einer Frau"
 
 msgctxt "selection:gnuhealth.patient.medication,duration_period:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.medication,duration_period:"
 msgid "days"
@@ -11374,7 +11374,7 @@ msgstr "Jahre"
 
 msgctxt "selection:gnuhealth.patient.medication,frequency_unit:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.medication,frequency_unit:"
 msgid "days"
@@ -11402,7 +11402,7 @@ msgstr "wenn nötig"
 
 msgctxt "selection:gnuhealth.patient.medication,infusion_rate_units:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.patient.medication,infusion_rate_units:"
 msgid "mL/hour"
@@ -11411,7 +11411,7 @@ msgstr "mL/Stunde"
 msgctxt ""
 "selection:gnuhealth.person_alternative_identification,alternative_id_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt ""
 "selection:gnuhealth.person_alternative_identification,alternative_id_type:"
@@ -11435,7 +11435,7 @@ msgstr "Pass"
 
 msgctxt "selection:gnuhealth.person_name,prefix:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.person_name,prefix:"
 msgid "Dr"
@@ -11455,7 +11455,7 @@ msgstr "Frau "
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid "Anonymous"
@@ -11475,7 +11475,7 @@ msgstr "Offiziell"
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid "Temp"
-msgstr ""
+msgstr "temporär"
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid "Usual"
@@ -11487,7 +11487,7 @@ msgstr "früher"
 
 msgctxt "selection:gnuhealth.prescription.line,duration_period:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.prescription.line,duration_period:"
 msgid "days"
@@ -11515,7 +11515,7 @@ msgstr "Jahre"
 
 msgctxt "selection:gnuhealth.prescription.line,frequency_unit:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.prescription.line,frequency_unit:"
 msgid "days"
@@ -11543,7 +11543,7 @@ msgstr "wenn nötig"
 
 msgctxt "selection:gnuhealth.prescription.line,infusion_rate_units:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.prescription.line,infusion_rate_units:"
 msgid "mL/hour"
@@ -11559,7 +11559,7 @@ msgstr "Entwurf"
 
 msgctxt "selection:gnuhealth.signs_and_symptoms,sign_or_symptom:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.signs_and_symptoms,sign_or_symptom:"
 msgid "Sign"
@@ -11571,7 +11571,7 @@ msgstr "Symptome"
 
 msgctxt "selection:gnuhealth.vaccination,admin_route:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.vaccination,admin_route:"
 msgid "Intradermal"
@@ -11595,7 +11595,7 @@ msgstr "Subcutan"
 
 msgctxt "selection:gnuhealth.vaccination,admin_site:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.vaccination,admin_site:"
 msgid "left anterolateral fat of thigh"
@@ -11639,7 +11639,7 @@ msgstr "rechter M. vastus lateralis"
 
 msgctxt "selection:gnuhealth.vaccination,state:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:gnuhealth.vaccination,state:"
 msgid "Done"
@@ -11651,7 +11651,7 @@ msgstr "In Bearbeitung"
 
 msgctxt "selection:party.party,gender:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:party.party,gender:"
 msgid "Female"
@@ -11663,7 +11663,7 @@ msgstr "Männlich"
 
 msgctxt "selection:party.party,insurance_company_type:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:party.party,insurance_company_type:"
 msgid "Labour Union / Syndical"
@@ -11679,7 +11679,7 @@ msgstr "Zustand"
 
 msgctxt "selection:party.party,marital_status:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Concubinage"
@@ -11707,7 +11707,7 @@ msgstr "Verwitwet"
 
 msgctxt "selection:party.party,name_representation:"
 msgid ""
-msgstr ""
+msgstr "  "
 
 msgctxt "selection:party.party,name_representation:"
 msgid "Family, Given"
