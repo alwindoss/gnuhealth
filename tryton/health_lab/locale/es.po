@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 22:33+0000\n"
+"PO-Revision-Date: 2020-09-06 23:30+0000\n"
 "Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
 "com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 msgctxt "error:gnuhealth.lab.test.units:"
 msgid "The Unit name must be unique"
@@ -18,19 +18,19 @@ msgstr "El nombre de la unidad debe ser única"
 
 msgctxt "error:gnuhealth.lab.test_type:"
 msgid "The Lab Test code must be unique"
-msgstr ""
+msgstr "El código del Test de Laboratorio debe ser único"
 
 msgctxt "error:gnuhealth.lab:"
 msgid "The test ID code must be unique"
-msgstr ""
+msgstr "El ID del código del test debe ser único"
 
 msgctxt "field:gnuhealth.lab,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Fecha de creación"
 
 msgctxt "field:gnuhealth.lab,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Creado por usuario"
 
 msgctxt "field:gnuhealth.lab,critearea:"
 msgid "Lab Test Critearea"
