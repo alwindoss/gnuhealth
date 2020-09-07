@@ -1,15 +1,16 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-29 15:07+0000\n"
-"Last-Translator: Luis Falcon <falcon@gnuhealth.org>\n"
+"PO-Revision-Date: 2020-09-07 19:04+0000\n"
+"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
+"com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health/es/>\n"
 "Language: es\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 "X-POOTLE-MTIME: 1452251799.0\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
@@ -1905,7 +1906,7 @@ msgstr "Embarazo y lactancia"
 
 msgctxt "field:gnuhealth.medicament,pregnancy_cat_icon:"
 msgid "Preg. Cat. Icon"
-msgstr ""
+msgstr "Icono de Categoría de Embarazo"
 
 msgctxt "field:gnuhealth.medicament,pregnancy_category:"
 msgid "Pregnancy Category"
@@ -2441,7 +2442,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.disease,infectious_disease_icon:"
 msgid "Infect"
-msgstr ""
+msgstr "Infectado"
 
 msgctxt "field:gnuhealth.patient.disease,is_active:"
 msgid "Active disease"
@@ -9762,7 +9763,7 @@ msgstr "Comentarios"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "D"
-msgstr ""
+msgstr "D"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Differential Diagnoses"
@@ -9770,11 +9771,11 @@ msgstr "Diagnóstico diferencial"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Discharge Reason"
-msgstr ""
+msgstr "Razón de Cierre"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "DoB:"
-msgstr ""
+msgstr "FdN:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Ethnicity:"
@@ -9782,71 +9783,71 @@ msgstr "Grupo étnico:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Evaluation Digital Signature"
-msgstr ""
+msgstr "Firma Digital de la Evaluación"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "GCS"
-msgstr ""
+msgstr "GCS"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Heart Rate"
-msgstr ""
+msgstr "Frecuencia Cardíaca"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "History of Present Illness"
-msgstr ""
+msgstr "Historia de la Enfermedad Actual"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Information Source:"
-msgstr ""
+msgstr "Fuente de la Información:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Initiated by"
-msgstr ""
+msgstr "Iniciada por"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Main Condition :"
-msgstr ""
+msgstr "Condición Principal:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Marital Status"
-msgstr ""
+msgstr "Estado Marital"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "OSAT"
-msgstr ""
+msgstr "OSAT"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Occupation :"
-msgstr ""
+msgstr "Ocupación:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Other Conditions"
-msgstr ""
+msgstr "Otras Condiciones"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "P"
-msgstr ""
+msgstr "P"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "PUID"
-msgstr ""
+msgstr "PUID"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Patient :"
-msgstr ""
+msgstr "Paciente:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Plan"
-msgstr ""
+msgstr "Plan"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Print Date:"
-msgstr ""
+msgstr "Fecha de Impresión:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Resp Rate"
-msgstr ""
+msgstr "Frecuencia Respiratoria"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Sex"
@@ -9854,7 +9855,7 @@ msgstr "Sexo"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Signs and Symptoms"
-msgstr ""
+msgstr "Signos y Síntomas"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Temperature"
@@ -9862,7 +9863,7 @@ msgstr "Temperatura"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Treatment"
-msgstr ""
+msgstr "Tratamiento"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Type"
@@ -9890,47 +9891,47 @@ msgstr "ID: "
 
 msgctxt "report:patient.card:"
 msgid "Name:"
-msgstr ""
+msgstr "Nombre:"
 
 msgctxt "report:patient.conditions_history:"
 msgid "& history"
-msgstr ""
+msgstr "& historia"
 
 msgctxt "report:patient.conditions_history:"
 msgid "*"
-msgstr ""
+msgstr "*"
 
 msgctxt "report:patient.conditions_history:"
 msgid ","
-msgstr ""
+msgstr ","
 
 msgctxt "report:patient.conditions_history:"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Active"
-msgstr ""
+msgstr "Activo"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Age :"
-msgstr ""
+msgstr "Edad:"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Annotations about the patient condition"
-msgstr ""
+msgstr "Anotaciones acerca de la condición del paciente"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Automated"
-msgstr ""
+msgstr "Automatizada"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Diagnosed"
-msgstr ""
+msgstr "Diagnosticada"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Disease"
-msgstr ""
+msgstr "Enfermedad"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Female"
