@@ -100,11 +100,9 @@ msgstr ""
 
 msgctxt "help:gnuhealth.contact_tracing,status:"
 msgid ""
-"Unreached: The contact has not been reached yet.\n"
+"Unreached: The contact has not been reached yet."
 "Following up: The contact has been traced, demographics information has been created and followup evaluations status are stored in the evaluations"
 msgstr ""
-"﻿Inaccessible : Le contact n’a pas encore été touché.\n"
-"Suivi : Le contact a été touché, des informations démographiques ont été créées et le statut des évaluations de suivi est enregistré dans les évaluations"
 
 msgctxt "model:gnuhealth.contact_tracing,name:"
 msgid "Person Contacts tracing"
