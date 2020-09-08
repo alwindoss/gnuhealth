@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-08 21:25+0000\n"
+"PO-Revision-Date: 2020-09-09 13:21+0000\n"
 "Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
 "com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
@@ -108,11 +108,12 @@ msgctxt "help:gnuhealth.contact_tracing,patient:"
 msgid "Person suspected or confirmed"
 msgstr "Persona Sospechosa o Confirmada"
 
+#, fuzzy
 msgctxt "help:gnuhealth.contact_tracing,status:"
 msgid ""
 "Unreached: The contact has not been reached yet."
 "Following up: The contact has been traced, demographics information has been created and followup evaluations status are stored in the evaluations"
-msgstr ""
+msgstr "Inalcanzable: El contacto no ha sido contactado aún. Seguimiento: Se ha"
 
 msgctxt "model:gnuhealth.contact_tracing,name:"
 msgid "Person Contacts tracing"
