@@ -2,8 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-09-10 23:44+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"Last-Translator: Carlos Scotta <carliscotta@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_gyneco/es/>\n"
 "Language: es\n"
@@ -19,7 +18,7 @@ msgstr "¡Nuestros registros indican que la paciente ya está embarazada!"
 
 msgctxt "error:gnuhealth.patient.pregnancy:"
 msgid "This pregnancy code for this patient already exists"
-msgstr ""
+msgstr "El código de embarazo para ésta paciente ya existe"
 
 msgctxt "field:gnuhealth.patient,abortions:"
 msgid "Abortions"
@@ -447,7 +446,7 @@ msgstr "Advertencia"
 
 msgctxt "field:gnuhealth.patient.pregnancy,warning_icon:"
 msgid "Pregnancy warning icon"
-msgstr ""
+msgstr "Ícono de advertencia de embarazo"
 
 msgctxt "field:gnuhealth.patient.pregnancy,write_date:"
 msgid "Write Date"
@@ -1234,7 +1233,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.pregnancy,iugr:"
 msgid "Asymmetric"
-msgstr ""
+msgstr "Asimétrico"
 
 msgctxt "selection:gnuhealth.patient.pregnancy,iugr:"
 msgid "Symmetric"
