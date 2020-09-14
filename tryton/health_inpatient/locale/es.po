@@ -1,9 +1,8 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-14 20:04+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-09-14 20:05+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_inpatient/es/>\n"
 "Language: es\n"
@@ -1309,21 +1308,21 @@ msgstr "Borrar"
 
 msgctxt "model:ir.action.act_window.domain,name:act_registration_domain_draft"
 msgid "Cancelled"
-msgstr ""
+msgstr "Cancelado"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_registration_domain_finished"
 msgid "Finished"
-msgstr ""
+msgstr "Finalizado"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_registration_domain_hospitalized"
 msgid "Hospitalized"
-msgstr ""
+msgstr "Hospitalizado"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_inpatient_meal_order"
 msgid "Inpatient Meal Order"
-msgstr ""
+msgstr "Orden de comida para paciente"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_inpatient_registration"
 msgid "Inpatient Registration"
@@ -1331,7 +1330,7 @@ msgstr "Registro de internación"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_inpatient_meal_order"
 msgid "Inpatient Meal Order"
-msgstr ""
+msgstr "Orden de comida para paciente"
 
 msgctxt ""
 "model:ir.sequence.type,name:seq_type_gnuhealth_inpatient_registration"
@@ -1340,11 +1339,11 @@ msgstr "Registro de internación"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_diet_therapeutic"
 msgid "Therapeutic diets"
-msgstr ""
+msgstr "Dietas terapéuticas"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_inpatient_meal"
 msgid "Inpatient Meals"
-msgstr ""
+msgstr "Alimentación para pacientes hospitalizados"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_inpatient_meal_order"
 msgid "Meal Orders"
