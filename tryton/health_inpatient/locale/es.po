@@ -1,9 +1,8 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-14 19:53+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-09-14 19:59+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_inpatient/es/>\n"
 "Language: es\n"
@@ -48,7 +47,7 @@ msgstr "Profesional de la Salud no asociado a este usuario"
 
 msgctxt "error:gnuhealth.inpatient.meal.order:"
 msgid "The Meal Order code already exists"
-msgstr ""
+msgstr "El código de pedido de comida ya existe"
 
 msgctxt "error:gnuhealth.inpatient.medication.log:"
 msgid "No health professional associated to this user"
@@ -676,15 +675,15 @@ msgstr "Hospitalizado"
 
 msgctxt "field:gnuhealth.patient.ecg,inpatient_registration_code:"
 msgid "Inpatient Registration"
-msgstr ""
+msgstr "Registro de pacientes hospitalizados"
 
 msgctxt "field:gnuhealth.patient.evaluation,inpatient_registration_code:"
 msgid "IPC"
-msgstr ""
+msgstr "IPC"
 
 msgctxt "field:gnuhealth.sequences,inpatient_meal_order_sequence:"
 msgid "Inpatient Meal Sequence"
-msgstr ""
+msgstr "Secuencia de comidas para pacientes hospitalizados"
 
 msgctxt "field:gnuhealth.sequences,inpatient_registration_sequence:"
 msgid "Inpatient Sequence"
@@ -700,19 +699,20 @@ msgstr "Observaciones específicas para esta dieta / paciente"
 
 msgctxt "help:gnuhealth.inpatient.meal,name:"
 msgid "Food"
-msgstr ""
+msgstr "Alimentación"
 
 msgctxt "help:gnuhealth.inpatient.meal.order,meal_warning:"
 msgid "The patient has special needs on meals"
-msgstr ""
+msgstr "El paciente tiene necesidades especiales en las comidas."
 
 msgctxt "help:gnuhealth.inpatient.meal.order,meal_warning_ack:"
 msgid "Check if you have verified the warnings on the patient meal items"
 msgstr ""
+"Comprobar si ha verificado las advertencias en los alimentos del paciente"
 
 msgctxt "help:gnuhealth.inpatient.meal.order,order_date:"
 msgid "Order date"
-msgstr ""
+msgstr "Fecha de orden"
 
 msgctxt "help:gnuhealth.inpatient.medication,adverse_reaction:"
 msgid "Side effects or adverse reactions that the patient experienced"
@@ -812,11 +812,11 @@ msgstr "Motivo de admisión"
 
 msgctxt "help:gnuhealth.inpatient.registration,discharge_dx:"
 msgid "Code for Discharge Diagnosis"
-msgstr ""
+msgstr "Código para el diagnóstico de alta"
 
 msgctxt "help:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Reason for patient discharge"
-msgstr ""
+msgstr "Razones para dar el alta al paciente"
 
 msgctxt "help:gnuhealth.inpatient.registration,discharged_by:"
 msgid "Health Professional that discharged the patient"
@@ -824,7 +824,7 @@ msgstr "Profesional de la Salud que dio de baja al paciente"
 
 msgctxt "help:gnuhealth.inpatient.registration,puid:"
 msgid "Person Unique Identifier"
-msgstr ""
+msgstr "Identificador único de persona"
 
 msgctxt "help:gnuhealth.patient,patient_status:"
 msgid "Show the hospitalization status of the patient"
@@ -832,11 +832,11 @@ msgstr "Muestra el estado de la hospitalización del paciente"
 
 msgctxt "help:gnuhealth.patient.ecg,inpatient_registration_code:"
 msgid "Enter the patient hospitalization code"
-msgstr ""
+msgstr "Ingrese el código de hospitalización del paciente"
 
 msgctxt "help:gnuhealth.patient.evaluation,inpatient_registration_code:"
 msgid "Enter the patient hospitalization code"
-msgstr ""
+msgstr "Ingrese el código de hospitalización del paciente"
 
 msgctxt "model:gnuhealth.bed.transfer,name:"
 msgid "Bed transfers"
@@ -1215,15 +1215,15 @@ msgstr "Dieta Hospitalaria"
 
 msgctxt "model:gnuhealth.inpatient.meal,name:"
 msgid "Inpatient Meal"
-msgstr ""
+msgstr "Alimentación para pacientes hospitalizados"
 
 msgctxt "model:gnuhealth.inpatient.meal.order,name:"
 msgid "Inpatient Meal Order"
-msgstr ""
+msgstr "Orden de comida para paciente"
 
 msgctxt "model:gnuhealth.inpatient.meal.order.item,name:"
 msgid "Inpatient Meal Item"
-msgstr ""
+msgstr "Condiciones de comida para paciente"
 
 msgctxt "model:gnuhealth.inpatient.medication,name:"
 msgid "Inpatient Medication"
@@ -1243,7 +1243,7 @@ msgstr "Historial de hospitalizaciones"
 
 msgctxt "model:ir.action,name:act_create_inpatient_evaluation"
 msgid "Create Patient Evaluation"
-msgstr ""
+msgstr "Creación fde Evaluación de paciente"
 
 msgctxt "model:ir.action,name:act_create_patient_bed_transfer"
 msgid "Bed Transfer"
