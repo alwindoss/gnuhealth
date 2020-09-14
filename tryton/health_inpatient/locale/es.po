@@ -2,8 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-09-15 21:36+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_inpatient/es/>\n"
 "Language: es\n"
@@ -1365,23 +1364,23 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.bed.transfer.init,orig_bed_state:"
 msgid "Free"
-msgstr ""
+msgstr "Libre"
 
 msgctxt "selection:gnuhealth.bed.transfer.init,orig_bed_state:"
 msgid "Needs cleaning"
-msgstr ""
+msgstr "Necesita limpieza"
 
 msgctxt "selection:gnuhealth.bed.transfer.init,orig_bed_state:"
 msgid "Not available"
-msgstr ""
+msgstr "No disponible"
 
 msgctxt "selection:gnuhealth.bed.transfer.init,orig_bed_state:"
 msgid "Occupied"
-msgstr ""
+msgstr "Ocupado"
 
 msgctxt "selection:gnuhealth.bed.transfer.init,orig_bed_state:"
 msgid "Reserved"
-msgstr ""
+msgstr "Reservado"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid ""
@@ -1389,23 +1388,23 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid "Breakfast"
-msgstr ""
+msgstr "Desayuno"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid "Dinner"
-msgstr ""
+msgstr "Cena"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid "Lunch"
-msgstr ""
+msgstr "Almuerzo"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid "Snack"
-msgstr ""
+msgstr "Bocadillo"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid "Special order"
-msgstr ""
+msgstr "Orden especial"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid ""
@@ -1413,23 +1412,23 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid "Cancelled"
-msgstr ""
+msgstr "Cancelado"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid "Done"
-msgstr ""
+msgstr "Hecho"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid "Draft"
-msgstr ""
+msgstr "Borrador"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid "Ordered"
-msgstr ""
+msgstr "Ordenado"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid "Processing"
-msgstr ""
+msgstr "En proceso"
 
 msgctxt "selection:gnuhealth.inpatient.medication,frequency_unit:"
 msgid ""
@@ -1489,7 +1488,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Death"
-msgstr ""
+msgstr "Fallecimiento"
 
 msgctxt "selection:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Home / Selfcare"
@@ -1501,7 +1500,7 @@ msgstr "De alta en contra del consejo médico"
 
 msgctxt "selection:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Transferred to another institution"
-msgstr ""
+msgstr "Transferido a otra institución"
 
 msgctxt "selection:gnuhealth.inpatient.registration,state:"
 msgid ""
@@ -1513,7 +1512,7 @@ msgstr "Libre - necesita limpieza"
 
 msgctxt "selection:gnuhealth.inpatient.registration,state:"
 msgid "Finished"
-msgstr ""
+msgstr "Finalizado"
 
 msgctxt "selection:gnuhealth.inpatient.registration,state:"
 msgid "cancelled"
