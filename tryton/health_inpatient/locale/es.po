@@ -2,7 +2,8 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-09-14 20:00+0000\n"
-"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
+"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
+"com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_inpatient/es/>\n"
 "Language: es\n"
@@ -1243,7 +1244,7 @@ msgstr "Historial de hospitalizaciones"
 
 msgctxt "model:ir.action,name:act_create_inpatient_evaluation"
 msgid "Create Patient Evaluation"
-msgstr "Creación fde Evaluación de paciente"
+msgstr "Crear Evaluación de paciente"
 
 msgctxt "model:ir.action,name:act_create_patient_bed_transfer"
 msgid "Bed Transfer"
