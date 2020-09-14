@@ -1,8 +1,9 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-14 19:52+0000\n"
-"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
+"PO-Revision-Date: 2020-09-14 19:53+0000\n"
+"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
+"com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_inpatient/es/>\n"
 "Language: es\n"
@@ -355,7 +356,7 @@ msgstr "Fecha de Modificación"
 
 msgctxt "field:gnuhealth.inpatient.meal.order.item,write_uid:"
 msgid "Write User"
-msgstr "Escribir Usuario"
+msgstr "Modificado por Usuario"
 
 msgctxt "field:gnuhealth.inpatient.medication,admin_times:"
 msgid "Admin times"
