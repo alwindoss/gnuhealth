@@ -1,9 +1,8 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-14 19:40+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-09-14 19:41+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_inpatient/es/>\n"
 "Language: es\n"
@@ -68,7 +67,7 @@ msgstr "Cama no disponible"
 
 msgctxt "error:gnuhealth.inpatient.registration:"
 msgid "Destination bed unavailable"
-msgstr "Cama no disponible"
+msgstr "Designación de cama no disponible"
 
 msgctxt "error:gnuhealth.inpatient.registration:"
 msgid "The Registration code already exists"
@@ -76,7 +75,7 @@ msgstr "El código de registro ya existe"
 
 msgctxt "error:wizard.gnuhealth.inpatient.evaluation:"
 msgid "You need to select an inpatient registration record"
-msgstr ""
+msgstr "Debe seleccionar un registro de registro de paciente hospitalizado"
 
 msgctxt "field:gnuhealth.appointment,inpatient_registration_code:"
 msgid "Inpatient Registration"
