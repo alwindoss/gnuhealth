@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-16 18:12+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-09-16 18:13+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_iss/es/>\n"
 "Language: es\n"
@@ -158,17 +157,19 @@ msgstr "Código de lesiones"
 
 msgctxt "help:gnuhealth.iss,disposition:"
 msgid "Place of occurrance"
-msgstr ""
+msgstr "Lugar de ocurrencia"
 
 msgctxt "help:gnuhealth.iss,drugs:"
 msgid ""
 "Is there evidence of drug use by the injured person in the 6 hours before "
 "the accident ?"
 msgstr ""
+"¿Existe evidencia de consumo de alcohol por parte de la persona lesionada en "
+"las 6 horas previas al accidente?"
 
 msgctxt "help:gnuhealth.iss,injury_date:"
 msgid "Usually the same as the Evaluation"
-msgstr ""
+msgstr "Generalmente la misma evaluación"
 
 msgctxt "help:gnuhealth.iss,injury_method:"
 msgid "Method of Injury"
