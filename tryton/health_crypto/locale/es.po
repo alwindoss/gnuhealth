@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-18 01:36+0000\n"
+"PO-Revision-Date: 2020-09-18 01:38+0000\n"
 "Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_crypto/es/>\n"
@@ -17,15 +17,15 @@ msgstr "Actual Hash"
 
 msgctxt "field:gnuhealth.birth_certificate,digest_status:"
 msgid "Altered"
-msgstr ""
+msgstr "Alterado"
 
 msgctxt "field:gnuhealth.birth_certificate,digital_signature:"
 msgid "Digital Signature"
-msgstr ""
+msgstr "Firma Digital"
 
 msgctxt "field:gnuhealth.birth_certificate,document_digest:"
 msgid "Digest"
-msgstr ""
+msgstr "Asignar"
 
 msgctxt "field:gnuhealth.birth_certificate,serializer:"
 msgid "Doc String"
