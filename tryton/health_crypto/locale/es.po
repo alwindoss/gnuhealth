@@ -1,8 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-18 01:51+0000\n"
-"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
+"PO-Revision-Date: 2020-09-18 01:52+0000\n"
+"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
+"com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_crypto/es/>\n"
 "Language: es\n"
@@ -61,7 +62,7 @@ msgstr "Documento actual"
 
 msgctxt "field:gnuhealth.patient.evaluation,digest_current:"
 msgid "Current Hash"
-msgstr "Actual Hash"
+msgstr "Hash Actual"
 
 msgctxt "field:gnuhealth.patient.evaluation,digest_status:"
 msgid "Altered"
@@ -73,7 +74,7 @@ msgstr "Firma Digital"
 
 msgctxt "field:gnuhealth.patient.evaluation,document_digest:"
 msgid "Digest"
-msgstr ""
+msgstr "Resumen"
 
 msgctxt "field:gnuhealth.patient.evaluation,serializer:"
 msgid "Doc String"
@@ -81,11 +82,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,serializer_current:"
 msgid "Current Doc"
-msgstr ""
+msgstr "Doc Actual"
 
 msgctxt "field:gnuhealth.prescription.order,digest_current:"
 msgid "Current Hash"
-msgstr ""
+msgstr "Hash Actual"
 
 msgctxt "field:gnuhealth.prescription.order,digest_status:"
 msgid "Altered"
@@ -97,7 +98,7 @@ msgstr "Firma Digital"
 
 msgctxt "field:gnuhealth.prescription.order,document_digest:"
 msgid "Digest"
-msgstr ""
+msgstr "Resumen"
 
 msgctxt "field:gnuhealth.prescription.order,serializer:"
 msgid "Doc String"
