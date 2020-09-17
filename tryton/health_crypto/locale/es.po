@@ -2,7 +2,8 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-09-18 01:39+0000\n"
-"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
+"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
+"com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_crypto/es/>\n"
 "Language: es\n"
@@ -37,7 +38,7 @@ msgstr "Documento actual"
 
 msgctxt "field:gnuhealth.death_certificate,digest_current:"
 msgid "Current Hash"
-msgstr "Actual Hash"
+msgstr "Hash Actual"
 
 msgctxt "field:gnuhealth.death_certificate,digest_status:"
 msgid "Altered"
@@ -49,7 +50,7 @@ msgstr "Firma Digital"
 
 msgctxt "field:gnuhealth.death_certificate,document_digest:"
 msgid "Digest"
-msgstr ""
+msgstr "Resumen"
 
 msgctxt "field:gnuhealth.death_certificate,serializer:"
 msgid "Doc String"
