@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-17 20:42+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-09-17 20:44+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_stock/es/>\n"
 "Language: es\n"
@@ -187,11 +186,11 @@ msgstr "Suministros médicos"
 
 msgctxt "field:gnuhealth.patient.rounding.medical_supply,quantity:"
 msgid "Quantity"
-msgstr ""
+msgstr "Cantidad"
 
 msgctxt "field:gnuhealth.patient.rounding.medical_supply,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.patient.rounding.medical_supply,short_comment:"
 msgid "Comment"
@@ -199,71 +198,71 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.rounding.medical_supply,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Fecha de Modificación"
 
 msgctxt "field:gnuhealth.patient.rounding.medical_supply,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Modificado por Usuario"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Fecha de Creación"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Creado por Usuario"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,lot:"
 msgid "Lot"
-msgstr ""
+msgstr "Lote"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,medicament:"
 msgid "Medicament"
-msgstr ""
+msgstr "Medicamento"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,name:"
 msgid "Ambulatory ID"
-msgstr ""
+msgstr "ID Ambulatorio"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,product:"
 msgid "Product"
-msgstr ""
+msgstr "Producto"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,quantity:"
 msgid "Quantity"
-msgstr ""
+msgstr "Cantidad"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,short_comment:"
 msgid "Comment"
-msgstr ""
+msgstr "Comentario"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Fecha de Modificación"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Modificado por Usuario"
 
 msgctxt "field:gnuhealth.prescription.order,moves:"
 msgid "Moves"
-msgstr ""
+msgstr "Movimientos"
 
 msgctxt "field:gnuhealth.prescription.stock.move.init,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.vaccination,location:"
 msgid "Stock Location"
-msgstr ""
+msgstr "Ubicación de stock"
 
 msgctxt "field:gnuhealth.vaccination,lot:"
 msgid "Lot"
