@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-18 01:56+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-09-18 01:59+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_crypto/es/>\n"
 "Language: es\n"
@@ -162,7 +161,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.prescription.order,state:"
 msgid "Validated"
-msgstr ""
+msgstr "Validado"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Altered / current String"
@@ -170,31 +169,31 @@ msgstr ""
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Digital Signature"
-msgstr ""
+msgstr "Firma Digital"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Document validation"
-msgstr ""
+msgstr "Validación de documento"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Generate"
-msgstr ""
+msgstr "Generar"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Generate certificate ?"
-msgstr ""
+msgstr "Generar certificado?"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Generate the certificate"
-msgstr ""
+msgstr "Generar el certificado"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Hashes"
-msgstr ""
+msgstr "Hashes"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Original String"
-msgstr ""
+msgstr "Cadena original"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Altered / current String"
@@ -202,31 +201,31 @@ msgstr ""
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Digital Signature"
-msgstr ""
+msgstr "Firma Digital"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Document validation"
-msgstr ""
+msgstr "Validación de documento"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Generate"
-msgstr ""
+msgstr "Generar"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Generate certificate ?"
-msgstr ""
+msgstr "Generar certificado?"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Generate the certificate"
-msgstr ""
+msgstr "Generar el certificado"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Hashes"
-msgstr ""
+msgstr "Hashes"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Original String"
-msgstr ""
+msgstr "Cadena original"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Altered / current String"
