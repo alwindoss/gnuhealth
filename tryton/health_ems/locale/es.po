@@ -2,7 +2,8 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-09-17 20:00+0000\n"
-"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
+"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
+"com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/es/>\n"
 "Language: es\n"
@@ -273,11 +274,11 @@ msgstr "Mapa OSM"
 
 msgctxt "field:gnuhealth.support_request,write_date:"
 msgid "Write Date"
-msgstr "Fecha modificación"
+msgstr "Fecha de Modificación"
 
 msgctxt "field:gnuhealth.support_request,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Modificado por Usuario"
 
 msgctxt "field:gnuhealth.support_request.log,action:"
 msgid "Activity"
