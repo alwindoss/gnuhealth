@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-17 19:58+0000\n"
-"Last-Translator: Carlos Scotta <carliscotta@gmail.com>\n"
+"PO-Revision-Date: 2020-09-17 19:59+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/es/>\n"
 "Language: es\n"
@@ -193,7 +193,7 @@ msgstr "Incidente"
 
 msgctxt "field:gnuhealth.support_request,event_type:"
 msgid "Event type"
-msgstr ""
+msgstr "Tipo de evento"
 
 msgctxt "field:gnuhealth.support_request,healthcenter:"
 msgid "Calling Institution"
@@ -213,7 +213,7 @@ msgstr "Longitud"
 
 msgctxt "field:gnuhealth.support_request,multiple_casualties:"
 msgid "Multiple Casualties"
-msgstr ""
+msgstr "Multiple Bajas"
 
 msgctxt "field:gnuhealth.support_request,operational_sector:"
 msgid "O. Sector"
@@ -221,7 +221,7 @@ msgstr "Sector Operacional"
 
 msgctxt "field:gnuhealth.support_request,operator:"
 msgid "Operator"
-msgstr ""
+msgstr "Operador"
 
 msgctxt "field:gnuhealth.support_request,patient:"
 msgid "Patient"
@@ -241,7 +241,7 @@ msgstr "Origen"
 
 msgctxt "field:gnuhealth.support_request,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.support_request,request_actions:"
 msgid "Activities"
