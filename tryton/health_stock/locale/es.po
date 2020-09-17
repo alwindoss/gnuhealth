@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-17 20:44+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-09-17 20:45+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_stock/es/>\n"
 "Language: es\n"
@@ -267,27 +266,27 @@ msgstr "Ubicación de stock"
 
 msgctxt "field:gnuhealth.vaccination,lot:"
 msgid "Lot"
-msgstr ""
+msgstr "Lote"
 
 msgctxt "field:gnuhealth.vaccination,moves:"
 msgid "Moves"
-msgstr ""
+msgstr "Movimientos"
 
 msgctxt "field:gnuhealth.vaccination,product:"
 msgid "Product"
-msgstr ""
+msgstr "Producto"
 
 msgctxt "field:gnuhealth.vaccination.stock.move.init,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:party.party,warehouse:"
 msgid "Warehouse"
-msgstr ""
+msgstr "Almacén"
 
 msgctxt "field:stock.lot,expiration_date:"
 msgid "Expiration Date"
-msgstr ""
+msgstr "Fecha de vencimiento"
 
 msgctxt "help:gnuhealth.patient.ambulatory_care.medical_supply,short_comment:"
 msgid "Short comment on the specific drug"
