@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-17 20:32+0000\n"
+"PO-Revision-Date: 2020-09-17 21:07+0000\n"
 "Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
 "com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
@@ -14,7 +14,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.ambulance:"
 msgid "This vehicle ID already exists"
-msgstr "Este  ID de vehiculo ya existe"
+msgstr "Este ID de vehículo ya existe"
 
 msgctxt "error:gnuhealth.support_request:"
 msgid "This Request Code already exists"
@@ -74,7 +74,7 @@ msgstr "Estación"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_type:"
 msgid "Type"
-msgstr "Tipo "
+msgstr "Tipo"
 
 msgctxt "field:gnuhealth.ambulance,write_date:"
 msgid "Write Date"
@@ -282,7 +282,7 @@ msgstr "Modificado por Usuario"
 
 msgctxt "field:gnuhealth.support_request.log,action:"
 msgid "Activity"
-msgstr "Actividad "
+msgstr "Actividad"
 
 msgctxt "field:gnuhealth.support_request.log,create_date:"
 msgid "Create Date"
@@ -398,7 +398,7 @@ msgstr "Registro de actividad de solicitud de soporte"
 
 msgctxt "help:gnuhealth.support_request,request_date:"
 msgid "Date and time of the call for help"
-msgstr "Fecha y hora de la llamada de ayuda."
+msgstr "Fecha y hora de la llamada de ayuda"
 
 msgctxt "help:gnuhealth.support_request,requestor:"
 msgid "Related party (person)"
