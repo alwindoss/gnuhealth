@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-09-17 19:49+0000\n"
-"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
+"Last-Translator: Carlos Scotta <carliscotta@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/es/>\n"
 "Language: es\n"
@@ -97,11 +97,11 @@ msgstr "Usuario de creación"
 
 msgctxt "field:gnuhealth.ambulance.support,healthprofs:"
 msgid "Health Professionals"
-msgstr ""
+msgstr "Profesionales de la salud"
 
 msgctxt "field:gnuhealth.ambulance.support,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.ambulance.support,rec_name:"
 msgid "Name"
@@ -113,7 +113,7 @@ msgstr "SR"
 
 msgctxt "field:gnuhealth.ambulance.support,state:"
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 msgctxt "field:gnuhealth.ambulance.support,write_date:"
 msgid "Write Date"
