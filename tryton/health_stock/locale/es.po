@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-17 20:53+0000\n"
+"PO-Revision-Date: 2020-09-17 21:07+0000\n"
 "Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
 "com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
@@ -291,19 +291,19 @@ msgstr "Fecha de Vencimiento"
 
 msgctxt "help:gnuhealth.patient.ambulatory_care.medical_supply,short_comment:"
 msgid "Short comment on the specific drug"
-msgstr "Breve comentario sobre la droga específica."
+msgstr "Breve comentario sobre la droga específica"
 
 msgctxt "help:gnuhealth.patient.ambulatory_care.medicament,short_comment:"
 msgid "Short comment on the specific drug"
-msgstr "Breve comentario sobre la droga específica."
+msgstr "Breve comentario sobre la droga específica"
 
 msgctxt "help:gnuhealth.patient.rounding.medical_supply,short_comment:"
 msgid "Short comment on the specific drug"
-msgstr "Breve comentario sobre la droga específica."
+msgstr "Breve comentario sobre la droga específica"
 
 msgctxt "help:gnuhealth.patient.rounding.medicament,short_comment:"
 msgid "Short comment on the specific drug"
-msgstr "Breve comentario sobre la droga específica."
+msgstr "Breve comentario sobre la droga específica"
 
 msgctxt "help:gnuhealth.vaccination,lot:"
 msgid "This field includes the lot number and expiration date"
@@ -361,7 +361,7 @@ msgstr "Cancelar"
 msgctxt ""
 "wizard_button:gnuhealth.vaccination.stock.move.create,start,create_stock_move:"
 msgid "Create Stock Move"
-msgstr "Crear de movimiento de Stock"
+msgstr "Crear Movimiento de Stock"
 
 msgctxt "wizard_button:gnuhealth.vaccination.stock.move.create,start,end:"
 msgid "Cancel"
