@@ -1,9 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-17 20:05+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-09-17 20:09+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/es/>\n"
 "Language: es\n"
@@ -362,7 +361,7 @@ msgstr "Estado del Vehículo"
 
 msgctxt "help:gnuhealth.ambulance_hp,healthprof:"
 msgid "Health Professional for this ambulance and support request"
-msgstr ""
+msgstr "Profesional de la salud para esta ambulancia y soporte"
 
 msgctxt "help:gnuhealth.support_request,address:"
 msgid "Free text address / location"
@@ -386,23 +385,23 @@ msgstr ""
 
 msgctxt "help:gnuhealth.support_request,operator:"
 msgid "Operator who took the call / support request"
-msgstr ""
+msgstr "Operador que atendió la llamada / solicitud de soporte"
 
 msgctxt "help:gnuhealth.support_request,place_occurrance:"
 msgid "Place of occurrance"
-msgstr ""
+msgstr "Lugar de ocurrencia"
 
 msgctxt "help:gnuhealth.support_request,request_actions:"
 msgid "Support request activity log"
-msgstr ""
+msgstr "Registro de actividad de solicitud de soporte"
 
 msgctxt "help:gnuhealth.support_request,request_date:"
 msgid "Date and time of the call for help"
-msgstr ""
+msgstr "Fecha y hora de la llamada de ayuda."
 
 msgctxt "help:gnuhealth.support_request,requestor:"
 msgid "Related party (person)"
-msgstr ""
+msgstr "Parte relacionada (persona)"
 
 msgctxt "help:gnuhealth.support_request,urladdr:"
 msgid "Maps the location on Open Street Map"
@@ -410,7 +409,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.support_request.log,action:"
 msgid "Activity log"
-msgstr ""
+msgstr "Registro de actividades"
 
 msgctxt "help:gnuhealth.support_request.log,remarks:"
 msgid "Remarks for this item"
