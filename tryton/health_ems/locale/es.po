@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-09-17 20:17+0000\n"
-"Last-Translator: Carlos Scotta <carliscotta@gmail.com>\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/es/>\n"
 "Language: es\n"
@@ -421,7 +421,7 @@ msgstr "Solicitud de Asistencia"
 
 msgctxt "help:gnuhealth.support_request.log,timestamp:"
 msgid "Date and time of activity"
-msgstr ""
+msgstr "Fecha y hora de actividad"
 
 msgctxt "model:gnuhealth.ambulance,name:"
 msgid "Ambulance"
@@ -485,7 +485,7 @@ msgstr "En el Hospital"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Available / At Station"
-msgstr ""
+msgstr "Disponible / En la estación"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Dispatched"
@@ -573,7 +573,7 @@ msgstr "En el Hospital"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Available / At Station"
-msgstr ""
+msgstr "Disponible / En la estación"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Dispatched"
