@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-17 19:53+0000\n"
-"Last-Translator: Carlos Scotta <carliscotta@gmail.com>\n"
+"PO-Revision-Date: 2020-09-17 19:54+0000\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/es/>\n"
 "Language: es\n"
@@ -161,7 +161,7 @@ msgstr "Secuencia de solicitud de soporte"
 
 msgctxt "field:gnuhealth.support_request,address:"
 msgid "Address"
-msgstr ""
+msgstr "Dirección"
 
 msgctxt "field:gnuhealth.support_request,ambulances:"
 msgid "Ambulances"
@@ -173,11 +173,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request,complaint:"
 msgid "Chief Complaint"
-msgstr ""
+msgstr "Queja principal"
 
 msgctxt "field:gnuhealth.support_request,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Creación fecha"
 
 msgctxt "field:gnuhealth.support_request,create_uid:"
 msgid "Create User"
