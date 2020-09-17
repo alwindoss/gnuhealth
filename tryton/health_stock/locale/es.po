@@ -2,8 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-09-17 20:51+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"Last-Translator: marcia candia <marcia.candia.88@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_stock/es/>\n"
 "Language: es\n"
@@ -343,7 +342,7 @@ msgstr "Crear movimiento de stock de vacunación"
 
 msgctxt "model:ir.action,name:act_prescription_move_form1"
 msgid "Stock Moves [readonly]"
-msgstr ""
+msgstr "Movimientos de Stock"
 
 msgctxt "model:ir.action,name:act_vaccination_move_form1"
 msgid "Stock Moves [readonly]"
