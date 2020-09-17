@@ -2,8 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-09-17 21:07+0000\n"
-"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
-"com>\n"
+"Last-Translator: Carlos Scotta <carliscotta@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/es/>\n"
 "Language: es\n"
@@ -778,7 +777,7 @@ msgstr "Cerrado"
 
 msgctxt "selection:gnuhealth.support_request,state:"
 msgid "Open"
-msgstr "Abierto"
+msgstr "Pendiente"
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid ""
@@ -786,15 +785,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Emergency"
-msgstr ""
+msgstr "Emergencia"
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Low"
-msgstr ""
+msgstr "Bajo"
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Urgent"
-msgstr ""
+msgstr "Urgente"
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid ""
@@ -802,8 +801,8 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid "Ambulance"
-msgstr ""
+msgstr "Ambulancia"
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid "General"
-msgstr ""
+msgstr "General"
