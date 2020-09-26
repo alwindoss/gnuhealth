@@ -139,6 +139,15 @@ class ProteinDisease(ModelSQL, ModelView):
     description = fields.Text('Description')
 
 
+    active = fields.Boolean('Active',help="Whether this code is current."
+            "If you deactivate it, the code will no longer show in the"
+            " protein-related diseases")
+
+    @staticmethod
+    def default_active():
+        return True
+
+
     def get_disease_uri(self, name):
         ret_url=''
         if (self.name):
