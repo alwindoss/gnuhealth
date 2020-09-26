@@ -7,6 +7,8 @@
         <field name="disease_name"/>
         <label name="acronym"/>
         <field name="acronym"/>
+        <label name="active"/>
+        <field name="active"/>
     </group>
     <newline/>
     <group string="Protein and Gene" id="misc_info" colspan="4" col="6">
