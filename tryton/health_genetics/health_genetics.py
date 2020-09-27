@@ -133,7 +133,7 @@ class ProteinDisease(ModelSQL, ModelView):
         ('d', 'dominant'),
         ('r', 'recessive'),
         ('c', 'codominance'),
-        ], 'Dominance', select=True)
+        ], 'Dominance', sort=False, select=True)
 
 
     description = fields.Text('Description')
