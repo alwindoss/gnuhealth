@@ -1,6 +1,16 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-09-29 11:41+0000\n"
+"Last-Translator: Francisco Maria Moyano Casco <moyanocasco.franciscom@gmail."
+"com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
+"health_gyneco/es/>\n"
+"Language: es\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 msgctxt "error:gnuhealth.patient.pregnancy:"
 msgid "Our records indicate that the patient is already pregnant !"
@@ -376,7 +386,7 @@ msgstr "Embarazos"
 
 msgctxt "field:gnuhealth.patient.pregnancy,hb:"
 msgid "Hb"
-msgstr ""
+msgstr "Hb"
 
 msgctxt "field:gnuhealth.patient.pregnancy,healthprof:"
 msgid "Health Prof"
@@ -493,7 +503,7 @@ msgstr "Diabetes"
 msgctxt ""
 "field:gnuhealth.patient.prenatal.evaluation,digestive_activity_signs:"
 msgid "SDA"
-msgstr ""
+msgstr "SDA"
 
 msgctxt "field:gnuhealth.patient.prenatal.evaluation,efw:"
 msgid "EFW"
@@ -597,7 +607,7 @@ msgstr "Nombre"
 
 msgctxt "field:gnuhealth.patient.prenatal.evaluation,urinary_activity_signs:"
 msgid "SUA"
-msgstr ""
+msgstr "SUA"
 
 msgctxt "field:gnuhealth.patient.prenatal.evaluation,vasa_previa:"
 msgid "Vasa Previa"
@@ -990,7 +1000,7 @@ msgstr "Nacido Antes de Llegar"
 
 msgctxt "help:gnuhealth.patient.pregnancy,computed_age:"
 msgid "Computed patient age at the moment of LMP"
-msgstr ""
+msgstr "Edad calculada del paciente en el momento de la UPM"
 
 msgctxt "help:gnuhealth.patient.pregnancy,current_pregnancy:"
 msgid "This field marks the current pregnancy"
@@ -1055,7 +1065,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.prenatal.evaluation,digestive_activity_signs:"
 msgid "Signs of Digestive Systen Activity"
-msgstr ""
+msgstr "Signos de Actividad del Sistema Digestivo"
 
 msgctxt "help:gnuhealth.patient.prenatal.evaluation,efw:"
 msgid "Estimated Fetal Weight"
@@ -1112,7 +1122,7 @@ msgstr "Marque esta casilla si la madre tiene pre-eclampsia"
 
 msgctxt "help:gnuhealth.patient.prenatal.evaluation,urinary_activity_signs:"
 msgid "Signs of Urinary System Activity"
-msgstr ""
+msgstr "Signos de Actividad del Sistema Urinario"
 
 msgctxt "help:gnuhealth.perinatal,abruptio_placentae:"
 msgid "Abruptio Placentae"
@@ -1193,7 +1203,7 @@ msgstr "Monitor de puerperio"
 
 msgctxt "model:ir.action,name:act_pregnancy_form"
 msgid "Obstetric Histories"
-msgstr ""
+msgstr "Historial Obstétrico"
 
 msgctxt "model:ir.action,name:act_pregnancy_form1"
 msgid "Obstetric History"
@@ -1205,7 +1215,7 @@ msgstr "Obstetricia"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_patient_pregnancy"
 msgid "Obstetric Histories"
-msgstr ""
+msgstr "Historial Obstétrico"
 
 msgctxt "model:res.group,name:group_health_gyneco_admin"
 msgid "Health Gynecology and Obstetrics Administration"
@@ -1321,15 +1331,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.pregnancy,hb:"
 msgid "AA"
-msgstr ""
+msgstr "AA"
 
 msgctxt "selection:gnuhealth.patient.pregnancy,hb:"
 msgid "AS"
-msgstr ""
+msgstr "AS"
 
 msgctxt "selection:gnuhealth.patient.pregnancy,hb:"
 msgid "SS"
-msgstr ""
+msgstr "SS"
 
 msgctxt "selection:gnuhealth.patient.pregnancy,iugr:"
 msgid ""
