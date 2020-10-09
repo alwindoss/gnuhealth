@@ -1,34 +1,35 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-28 23:17+0000\n"
-"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"PO-Revision-Date: 2020-10-10 00:50+0000\n"
+"Last-Translator: S <t0kie@mailbox.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_stock/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 msgctxt "error:gnuhealth.prescription.stock.move.create:"
 msgid "Stock moves already exists!."
-msgstr "Es gibt bereits Warenbewegungen!"
+msgstr "Es gibt bereits Warenbewegungen!."
 
 msgctxt "error:gnuhealth.prescription.stock.move.create:"
 msgid "You need to select a pharmacy."
-msgstr "Sie müssen eine Apotheke auswählen"
+msgstr "Sie müssen eine Apotheke auswählen."
 
 msgctxt "error:gnuhealth.vaccination.stock.move.create:"
 msgid "Stock moves already exists!."
-msgstr "Es gibt bereits Warenbewegungen!"
+msgstr "Es gibt bereits Warenbewegungen!."
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid ""
 "EXPIRED VACCINE. PLEASE INFORM  THE LOCAL HEALTH AUTHORITIES AND DO NOT USE "
 "IT !!!"
 msgstr ""
-"ABGELAUFENER IMPFSTOFF! Bitte die Verwaltung informieren und NICHT BENUTZEN"
+"ABGELAUFENER IMPFSTOFF. Bitte die Verwaltung informieren und NICHT BENUTZEN "
+"!!!"
 
 msgctxt "field:gnuhealth.medicament,quantity:"
 msgid "Quantity"
@@ -121,7 +122,7 @@ msgstr "AmbulatoriumsID"
 
 msgctxt "field:gnuhealth.patient.ambulatory_care.medicament,product:"
 msgid "Product"
-msgstr "Product"
+msgstr "Produkt"
 
 msgctxt "field:gnuhealth.patient.ambulatory_care.medicament,quantity:"
 msgid "Quantity"
@@ -229,7 +230,7 @@ msgstr "AmbulatoriumsID"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,product:"
 msgid "Product"
-msgstr "Product"
+msgstr "Produkt"
 
 msgctxt "field:gnuhealth.patient.rounding.medicament,quantity:"
 msgid "Quantity"
@@ -273,7 +274,7 @@ msgstr "Bewegung"
 
 msgctxt "field:gnuhealth.vaccination,product:"
 msgid "Product"
-msgstr "Product"
+msgstr "Produkt"
 
 msgctxt "field:gnuhealth.vaccination.stock.move.init,id:"
 msgid "ID"
@@ -305,7 +306,7 @@ msgstr "Kurzer Kommentar zum jeweiligen Medikament"
 
 msgctxt "help:gnuhealth.vaccination,lot:"
 msgid "This field includes the lot number and expiration date"
-msgstr "Dieses Feld beinhaltet die Chargennummer und das Ablaufdatum."
+msgstr "Dieses Feld beinhaltet die Chargennummer und das Ablaufdatum"
 
 msgctxt "model:gnuhealth.patient.ambulatory_care.medical_supply,name:"
 msgid "Patient Ambulatory Care Medical Supply"
