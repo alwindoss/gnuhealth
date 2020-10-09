@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-02 08:16+0000\n"
-"Last-Translator: Edgar Hagenbichler <edgar@hagenbichler.at>\n"
+"PO-Revision-Date: 2020-10-10 00:50+0000\n"
+"Last-Translator: S <t0kie@mailbox.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/health/"
 "de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -81,25 +81,25 @@ msgstr "Der Stützpunktname muss pro Gesundheitscenter einzigartig sein"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit CODE must be unique per Health Center"
-msgstr "Der Code der Station muss pro Gesundheitseinrichtung eindeutig sein!"
+msgstr "Der Code der Station muss pro Gesundheitseinrichtung eindeutig sein"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit NAME must be unique per Health Center"
-msgstr "Der Name der Station muss pro Gesundheitseinrichtung eindeutig sein!"
+msgstr "Der Name der Station muss pro Gesundheitseinrichtung eindeutig sein"
 
 msgctxt "error:gnuhealth.hospital.ward:"
 msgid "The Ward / Room Name must be unique per Health Center"
 msgstr ""
 "Der Name der Station / des Zimmers muss pro Gesundheitseinrichtung eindeutig "
-"sein!"
+"sein"
 
 msgctxt "error:gnuhealth.immunization_schedule:"
 msgid "The schedule code must be unique"
-msgstr "Der Code des Terminplans muss eindeutig sein!"
+msgstr "Der Code des Terminplans muss eindeutig sein"
 
 msgctxt "error:gnuhealth.immunization_schedule_dose:"
 msgid "The dose number must be unique for this vaccine"
-msgstr "Die Dosisnummer muss eindeutig sein für diesen Impfstoff!"
+msgstr "Die Dosisnummer muss eindeutig sein für diesen Impfstoff"
 
 msgctxt "error:gnuhealth.institution.operationalsector:"
 msgid "The Operational Sector already exists for this institution"
@@ -155,7 +155,7 @@ msgstr "Der Pathologiegruppencode muss eindeutig sein"
 
 msgctxt "error:gnuhealth.pathology:"
 msgid "The disease code must be unique"
-msgstr "Der Krankheitscode muss eindeutig sein!"
+msgstr "Der Krankheitscode muss eindeutig sein"
 
 msgctxt "error:gnuhealth.patient.disease:"
 msgid ""
@@ -187,7 +187,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "No health professional associated to this user"
-msgstr " Diesem Teilnehmer wurde noch kein Gesundheitsdienstleister zugeteilt."
+msgstr "Diesem Teilnehmer wurde noch kein Gesundheitsdienstleister zugeteilt"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "The evaluation code must be unique !"
@@ -229,7 +229,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.prescription.order:"
 msgid "No health professional associated to this user"
-msgstr "Diesem Teilnehmer wurde noch kein Behandler zugeteilt."
+msgstr "Diesem Teilnehmer wurde noch kein Behandler zugeteilt"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "The Vaccine next dose is BEFORE the first one !"
@@ -361,7 +361,7 @@ msgstr "Geschlecht"
 
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
-msgstr "Behandler "
+msgstr "Behandler"
 
 msgctxt "field:gnuhealth.appointment.report,id:"
 msgid "ID"
@@ -401,7 +401,7 @@ msgstr "Datum des Beginns"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,healthprof:"
 msgid "Health Prof"
-msgstr "Behandler "
+msgstr "Behandler"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,id:"
 msgid "ID"
@@ -1118,7 +1118,7 @@ msgstr "Haupt-Fachbereich"
 
 msgctxt "field:gnuhealth.healthprofessional,name:"
 msgid "Health Professional"
-msgstr "Behandler "
+msgstr "Behandler"
 
 msgctxt "field:gnuhealth.healthprofessional,puid:"
 msgid "PUID"
@@ -1774,7 +1774,7 @@ msgstr "Gültig bis"
 
 msgctxt "field:gnuhealth.insurance,member_since:"
 msgid "Member since"
-msgstr "Mitglied seit:"
+msgstr "Mitglied seit"
 
 msgctxt "field:gnuhealth.insurance,name:"
 msgid "Owner"
@@ -1890,7 +1890,7 @@ msgstr "Impfstoff"
 
 msgctxt "field:gnuhealth.medicament,name:"
 msgid "Product"
-msgstr "Product"
+msgstr "Produkt"
 
 msgctxt "field:gnuhealth.medicament,notes:"
 msgid "Extra Info"
@@ -2436,7 +2436,7 @@ msgstr "Geheilt"
 
 msgctxt "field:gnuhealth.patient.disease,healthprof:"
 msgid "Health Prof"
-msgstr "Behandler "
+msgstr "Behandler"
 
 msgctxt "field:gnuhealth.patient.disease,id:"
 msgid "ID"
@@ -2584,7 +2584,7 @@ msgstr "Rhythmus"
 
 msgctxt "field:gnuhealth.patient.ecg,st_segment:"
 msgid "ST Segment"
-msgstr "ST Segment"
+msgstr "ST Strecke"
 
 msgctxt "field:gnuhealth.patient.ecg,twave_inversion:"
 msgid "T wave inversion"
