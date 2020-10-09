@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-10-10 00:50+0000\n"
+"Last-Translator: S <t0kie@mailbox.org>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
+"health_genetics/de/>\n"
+"Language: de\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 msgctxt "error:gnuhealth.disease.gene:"
 msgid "The Official Symbol name must be unique"
@@ -8,7 +17,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.disease.gene,chromosome:"
 msgid "Affected Chromosome"
-msgstr ""
+msgstr "Betroffene Chromosome"
 
 msgctxt "field:gnuhealth.disease.gene,create_date:"
 msgid "Create Date"
