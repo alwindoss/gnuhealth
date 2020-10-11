@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-28 23:17+0000\n"
-"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"PO-Revision-Date: 2020-10-11 08:38+0000\n"
+"Last-Translator: S <t0kie@mailbox.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_inpatient/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 msgctxt "error:gnuhealth.bed.transfer.create:"
 msgid "Destination bed is unavailable"
@@ -17,7 +17,7 @@ msgstr "gewünschtes Bett nicht verfügbar"
 
 msgctxt "error:gnuhealth.bed.transfer.create:"
 msgid "You have chosen more than 1 records. Please choose only one"
-msgstr "Sie haben mehr als 1 Datensatz ausgewählt. Bitte nur einen wählen."
+msgstr "Sie haben mehr als 1 Datensatz ausgewählt. Bitte nur einen wählen"
 
 msgctxt "error:gnuhealth.diet.therapeutic:"
 msgid "The Diet code already exists"
@@ -45,7 +45,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.inpatient.medication.log:"
 msgid "No health professional associated to this user"
-msgstr "Diesem Teilnehmer wurde noch kein Behandler zugeteilt."
+msgstr "Diesem Teilnehmer wurde noch kein Behandler zugeteilt"
 
 msgctxt "error:gnuhealth.inpatient.registration:"
 msgid ""
