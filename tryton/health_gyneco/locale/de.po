@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-28 23:17+0000\n"
-"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"PO-Revision-Date: 2020-10-11 08:38+0000\n"
+"Last-Translator: S <t0kie@mailbox.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_gyneco/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 msgctxt "error:gnuhealth.patient.pregnancy:"
 msgid "Our records indicate that the patient is already pregnant !"
@@ -75,7 +75,7 @@ msgstr "Zeitpunkt der Menarche"
 
 msgctxt "field:gnuhealth.patient,menopausal:"
 msgid "Menopausal"
-msgstr "Menopausal"
+msgstr "Menopause"
 
 msgctxt "field:gnuhealth.patient,menopause:"
 msgid "Menopause age"
