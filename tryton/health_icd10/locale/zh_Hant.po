@@ -1,9 +1,15 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2020-10-12 15:26+0000\n"
+"Last-Translator: marklin0913da248e4cdada422a <marklin0913@protonmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
+"gnu-health/health_icd10/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 msgctxt "model:gnuhealth.pathology,name:A00"
 msgid "Cholera"
@@ -27,7 +33,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A010"
 msgid "Typhoid fever"
-msgstr ""
+msgstr "傷寒"
 
 msgctxt "model:gnuhealth.pathology,name:A011"
 msgid "Paratyphoid fever A"
@@ -47,7 +53,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A02"
 msgid "Other salmonella infections"
-msgstr ""
+msgstr "其他沙門氏菌感染"
 
 msgctxt "model:gnuhealth.pathology,name:A020"
 msgid "Salmonella enteritis"
@@ -71,7 +77,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A03"
 msgid "Shigellosis"
-msgstr ""
+msgstr "志賀氏菌"
 
 msgctxt "model:gnuhealth.pathology,name:A030"
 msgid "Shigellosis due to Shigella dysenteriae"
@@ -151,7 +157,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A051"
 msgid "Botulism"
-msgstr ""
+msgstr "肉毒桿菌"
 
 msgctxt "model:gnuhealth.pathology,name:A052"
 msgid "Foodborne Clostridium perfringens [Clostridium welchii] intoxication"
@@ -175,7 +181,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A06"
 msgid "Amoebiasis"
-msgstr ""
+msgstr "阿米巴病"
 
 msgctxt "model:gnuhealth.pathology,name:A060"
 msgid "Acute amoebic dysentery"
@@ -223,7 +229,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A070"
 msgid "Balantidiasis"
-msgstr ""
+msgstr "平衡病"
 
 msgctxt "model:gnuhealth.pathology,name:A071"
 msgid "Giardiasis [lambliasis]"
@@ -231,11 +237,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A072"
 msgid "Cryptosporidiosis"
-msgstr ""
+msgstr "隱孢子蟲病"
 
 msgctxt "model:gnuhealth.pathology,name:A073"
 msgid "Isosporiasis"
-msgstr ""
+msgstr "孢子蟲病"
 
 msgctxt "model:gnuhealth.pathology,name:A078"
 msgid "Other specified protozoal intestinal diseases"
@@ -263,7 +269,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A083"
 msgid "Other viral enteritis"
-msgstr ""
+msgstr "其他病毒性腸炎"
 
 msgctxt "model:gnuhealth.pathology,name:A084"
 msgid "Viral intestinal infection, unspecified"
@@ -375,11 +381,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A170"
 msgid "Tuberculous meningitis"
-msgstr ""
+msgstr "結核性腦膜炎"
 
 msgctxt "model:gnuhealth.pathology,name:A171"
 msgid "Meningeal tuberculoma"
-msgstr ""
+msgstr "腦膜結核"
 
 msgctxt "model:gnuhealth.pathology,name:A178"
 msgid "Other tuberculosis of nervous system"
@@ -447,7 +453,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A198"
 msgid "Other miliary tuberculosis"
-msgstr ""
+msgstr "其他粟粒性肺結核"
 
 msgctxt "model:gnuhealth.pathology,name:A199"
 msgid "Miliary tuberculosis, unspecified"
@@ -455,39 +461,39 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A20"
 msgid "Plague"
-msgstr ""
+msgstr "鼠疫"
 
 msgctxt "model:gnuhealth.pathology,name:A200"
 msgid "Bubonic plague"
-msgstr ""
+msgstr "鼠疫"
 
 msgctxt "model:gnuhealth.pathology,name:A201"
 msgid "Cellulocutaneous plague"
-msgstr ""
+msgstr "纖維素皮瘟"
 
 msgctxt "model:gnuhealth.pathology,name:A202"
 msgid "Pneumonic plague"
-msgstr ""
+msgstr "肺鼠疫"
 
 msgctxt "model:gnuhealth.pathology,name:A203"
 msgid "Plague meningitis"
-msgstr ""
+msgstr "鼠疫性腦膜炎"
 
 msgctxt "model:gnuhealth.pathology,name:A207"
 msgid "Septicaemic plague"
-msgstr ""
+msgstr "敗血症鼠疫"
 
 msgctxt "model:gnuhealth.pathology,name:A208"
 msgid "Other forms of plague"
-msgstr ""
+msgstr "其他形式鼠疫"
 
 msgctxt "model:gnuhealth.pathology,name:A209"
 msgid "Plague, unspecified"
-msgstr ""
+msgstr "未知鼠疫"
 
 msgctxt "model:gnuhealth.pathology,name:A21"
 msgid "Tularaemia"
-msgstr ""
+msgstr "圖拉貧血"
 
 msgctxt "model:gnuhealth.pathology,name:A210"
 msgid "Ulceroglandular tularaemia"
@@ -499,7 +505,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A212"
 msgid "Pulmonary tularaemia"
-msgstr ""
+msgstr "肺結核"
 
 msgctxt "model:gnuhealth.pathology,name:A213"
 msgid "Gastrointestinal tularaemia"
@@ -519,11 +525,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A22"
 msgid "Anthrax"
-msgstr ""
+msgstr "炭疽病"
 
 msgctxt "model:gnuhealth.pathology,name:A220"
 msgid "Cutaneous anthrax"
-msgstr ""
+msgstr "皮膚炭疽"
 
 msgctxt "model:gnuhealth.pathology,name:A221"
 msgid "Pulmonary anthrax"
@@ -535,19 +541,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A227"
 msgid "Anthrax sepsis"
-msgstr ""
+msgstr "炭疽敗血症"
 
 msgctxt "model:gnuhealth.pathology,name:A228"
 msgid "Other forms of anthrax"
-msgstr ""
+msgstr "其他形式敗血症"
 
 msgctxt "model:gnuhealth.pathology,name:A229"
 msgid "Anthrax, unspecified"
-msgstr ""
+msgstr "未知敗血症"
 
 msgctxt "model:gnuhealth.pathology,name:A23"
 msgid "Brucellosis"
-msgstr ""
+msgstr "波狀熱"
 
 msgctxt "model:gnuhealth.pathology,name:A230"
 msgid "Brucellosis due to Brucella melitensis"
@@ -567,11 +573,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A238"
 msgid "Other brucellosis"
-msgstr ""
+msgstr "其他波狀熱"
 
 msgctxt "model:gnuhealth.pathology,name:A239"
 msgid "Brucellosis, unspecified"
-msgstr ""
+msgstr "未知波狀熱"
 
 msgctxt "model:gnuhealth.pathology,name:A24"
 msgid "Glanders and melioidosis"
@@ -579,7 +585,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A240"
 msgid "Glanders"
-msgstr ""
+msgstr "馬鼻疽"
 
 msgctxt "model:gnuhealth.pathology,name:A241"
 msgid "Acute and fulminating melioidosis"
@@ -591,11 +597,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A243"
 msgid "Other melioidosis"
-msgstr ""
+msgstr "其他馬鼻疽"
 
 msgctxt "model:gnuhealth.pathology,name:A244"
 msgid "Melioidosis, unspecified"
-msgstr ""
+msgstr "未知馬鼻疽"
 
 msgctxt "model:gnuhealth.pathology,name:A25"
 msgid "Rat-bite fevers"
@@ -607,7 +613,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A251"
 msgid "Streptobacillosis"
-msgstr ""
+msgstr "鏈球菌病"
 
 msgctxt "model:gnuhealth.pathology,name:A259"
 msgid "Rat-bite fever, unspecified"
@@ -615,7 +621,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A26"
 msgid "Erysipeloid"
-msgstr ""
+msgstr "二十倍體"
 
 msgctxt "model:gnuhealth.pathology,name:A260"
 msgid "Cutaneous erysipeloid"
@@ -623,19 +629,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A267"
 msgid "Erysipelothrix sepsis"
-msgstr ""
+msgstr "丹毒桿菌敗血症"
 
 msgctxt "model:gnuhealth.pathology,name:A268"
 msgid "Other forms of erysipeloid"
-msgstr ""
+msgstr "其他形式丹毒桿菌敗血症"
 
 msgctxt "model:gnuhealth.pathology,name:A269"
 msgid "Erysipeloid, unspecified"
-msgstr ""
+msgstr "未知丹毒桿菌敗血症"
 
 msgctxt "model:gnuhealth.pathology,name:A27"
 msgid "Leptospirosis"
-msgstr ""
+msgstr "鉤端螺旋體病"
 
 msgctxt "model:gnuhealth.pathology,name:A270"
 msgid "Leptospirosis icterohaemorrhagica"
@@ -643,11 +649,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A278"
 msgid "Other forms of leptospirosis"
-msgstr ""
+msgstr "其他形式鉤端螺旋體病"
 
 msgctxt "model:gnuhealth.pathology,name:A279"
 msgid "Leptospirosis, unspecified"
-msgstr ""
+msgstr "未知鉤端螺旋體病"
 
 msgctxt "model:gnuhealth.pathology,name:A28"
 msgid "Other zoonotic bacterial diseases, not elsewhere classified"
@@ -655,11 +661,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A280"
 msgid "Pasteurellosis"
-msgstr ""
+msgstr "巴氏桿菌病"
 
 msgctxt "model:gnuhealth.pathology,name:A281"
 msgid "Cat-scratch disease"
-msgstr ""
+msgstr "貓抓病"
 
 msgctxt "model:gnuhealth.pathology,name:A282"
 msgid "Extraintestinal yersiniosis"
