@@ -1,10 +1,11 @@
 THE GNU HEALTH FHIR SERVER
 ==========================
 
-The GNU Health Fast Healthcare Interoperability Resources (FHIR) Server allows to query different resources from a 
-running GNU Health HMIS node.
+The GNU Health Fast Healthcare Interoperability Resources (FHIR) Server allows 
+to query different resources from a  running GNU Health HMIS node.
 
-The GH FHIR server runs in Python3 and GNU Health HMIS node 3.6 or higher, and is the continuation of the work done by our colleague Chris Zimmerman.
+The GH FHIR server runs in Python3 and GNU Health HMIS node 3.6 or higher, 
+and is the continuation of the work done by our colleague Chris Zimmerman.
 
 
 Installation
@@ -12,13 +13,15 @@ Installation
 
 The GNU Health FHIR server is pip installable
 
-The server requires Flask and a few of its addons. And, of course, a working GNU Health HMIS instance. 
+The server requires Flask and a few of its addons. And, of course,a working 
+GNU Health HMIS instance. 
 
 
 Configuration
 -------------
 
-The server ships with a simple production config file. However, it needs to be edited.
+The server ships with a simple production config file. However, it needs to 
+be edited.
 
     server/config.py
     ----------------
@@ -33,14 +36,18 @@ There are other options available for Flask and its addons:
 * [Flask-Restful](http://flask-restful.readthedocs.org/en/latest/quickstart.html)
 * [Flask-WTF](https://flask-wtf.readthedocs.org/en/latest/)
 
+
 Security
 --------
 
 Use TLS. Sensitive medical information must be protected and confidential.
 
-By default, all FHIR endpoints except the Conformance statement require user authentication. The user authentication and access follows Tryton's model, respecting model and field access rights.
+By default, all FHIR endpoints except the Conformance statement require user 
+authentication. The user authentication and access follows Tryton's model, 
+respecting model and field access rights.
 
-The same credentials used to sign into GNU Health are used to access the FHIR REST server.
+The same credentials used to sign into GNU Health are used to access the 
+FHIR REST server.
 
 
 GNU Health packages
@@ -57,12 +64,18 @@ GNU Health packages
 - GNU Health Surgery
 - GNU Health ICD10
 
+
 Running the server
 -----------------
 
 For development, you can just run the fhir_server python program.
 
-For production environments, you should run it from a WSGI container, such as gunicorn, uWSGI or tornado.
+For production environments, you should run it from a WSGI container,
+such as gunicorn, uWSGI or tornado.
+
+* server_tornado: Runs the GNUHealth FHIR server behing tornado
+* server_gunicorn: Runs the GNUHealth FHIR server behing tornado
+
 
 
 

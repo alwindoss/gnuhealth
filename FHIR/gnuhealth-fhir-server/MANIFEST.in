@@ -6,5 +6,6 @@ include MANIFEST.in
 include LICENSE
 include COPYRIGHT
 include version
-
+include server/server_tornado
+include server/server_gunicorn
 global-exclude *.pyc

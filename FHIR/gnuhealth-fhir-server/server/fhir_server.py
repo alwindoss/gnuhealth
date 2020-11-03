@@ -27,16 +27,14 @@
 from flask import Flask, g
 from flask_login import current_user, LoginManager, login_required
 from server.common.extensions import tryton, login_manager, Api
-
 from server.common.utils import recordConverter
-#from server.config import ProductionConfig
-#from flask_tryton import Tryton
 
 def before_request():
     """Allows access to user object
         for every request
     """
     g.user = current_user
+
 
 def create_app(config=None):
     app = Flask(__name__)
@@ -127,3 +125,4 @@ def create_app(config=None):
 
 if __name__=="__main__":
     create_app().run(debug=True)
+    
