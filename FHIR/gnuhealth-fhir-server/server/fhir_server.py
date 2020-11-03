@@ -27,6 +27,8 @@ from flask import Flask, g
 from flask_login import current_user, LoginManager, login_required
 from server.common.extensions import tryton, login_manager, Api
 from server.common.utils import recordConverter
+from pathlib import Path
+import os
 
 def before_request():
     """Allows access to user object
@@ -44,7 +46,9 @@ def create_app(config=None):
 
     with app.app_context():
         import logging
-        logging.basicConfig(filename='flask.log', level=logging.INFO,
+        homedir = str(Path.home())
+        logfile = os.path.join(homedir, 'fhir_server.log')
+        logging.basicConfig(filename= logfile, level=logging.INFO,
                 format='%(asctime)s:::%(levelname)s:::%(name)s: %(message)s')
 
         # Initialize tryton
