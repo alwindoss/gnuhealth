@@ -325,7 +325,6 @@ class health_Search:
         Keyword arguments:
         request_args -- url arguments
         """
-        print ("REQUEST ARGS", request_args)
         
         full_search_info=[]
         #for key, values in request_args.iterlists():

@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 ##############################################################################
 #
 #     GNU Health Fast Healthcare Interoperability Resources - FHIR - Server
@@ -60,7 +59,7 @@ setup(name='gnuhealth-fhir-server',
         "Flask>=0.10.1",
         "Flask-Login>=0.3.2",
         "Flask-RESTful>=0.3.2",
-        "flask-tryton>=0.3",
+        "flask-tryton",
         "Flask-WTF>=0.11"
     ],
     packages=find_packages(),
