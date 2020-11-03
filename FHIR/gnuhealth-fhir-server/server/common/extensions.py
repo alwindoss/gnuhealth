@@ -25,4 +25,4 @@ class Resource(restful.Resource):
     method_decorators = [login_required]
 #### /Extensions
 
-__all__=['Resource', 'Api', 'tryton', 'login_manager']
+__all__=['Resource', 'tryton', 'Api', 'login_manager']

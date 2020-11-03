@@ -1,4 +1,4 @@
-from server.resources.mappings import mappings
+from .mappings import mappings
 from server.common import get_userid, tryton
 from server.health_fhir.datastore import find_record
 from server.health_fhir import health_OperationOutcome as error
