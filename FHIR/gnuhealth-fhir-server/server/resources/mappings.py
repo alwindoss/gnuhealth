@@ -1,5 +1,5 @@
 from collections import namedtuple
-from server.common import tryton
+from server.common.extensions import tryton
 from server.health_fhir import health_Condition
 from server.health_fhir import health_DiagnosticReport
 from server.health_fhir import health_FamilyHistory

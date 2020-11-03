@@ -1,6 +1,6 @@
 from flask_restful import Resource
 from server.health_fhir import health_Conformance
-from server.common import tryton
+from server.common.extensions import tryton
 
 institution = tryton.pool.get('party.party')
 

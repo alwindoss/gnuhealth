@@ -1,0 +1,14 @@
+global-include *.py
+global-include *.cfg
+global-include *.rst
+global-include *.html
+global-include *.ini
+global-include *.css
+
+
+include MANIFEST.in
+include LICENSE
+include COPYRIGHT
+include version
+
+global-exclude *.pyc

@@ -4,7 +4,8 @@ THE GNU HEALTH FHIR SERVER
 The GNU Health Fast Healthcare Interoperability Resources (FHIR) Server allows to query different resources from a 
 running GNU Health HMIS node.
 
-The GH FHIR server runs in Python3 and GNU Health HMIS node 3.6 or higher
+The GH FHIR server runs in Python3 and GNU Health HMIS node 3.6 or higher, and is the continuation of the work done by our colleague Chris Zimmerman.
+
 
 Installation
 ------------
@@ -41,13 +42,27 @@ By default, all FHIR endpoints except the Conformance statement require user aut
 
 The same credentials used to sign into GNU Health are used to access the FHIR REST server.
 
+
+GNU Health packages
+-------------------
+
+- User (ships with tryton)
+- Party (ships with tryton)
+- Language (ships with tryton)
+- GNU Health base
+- GNU Health Lab
+- GNU Health Nursing
+- GNU Health ICU
+- GNU Health Inpatient
+- GNU Health Surgery
+- GNU Health ICD10
+
 Running the server
 -----------------
 
-The server ships with a simple script (run_server.py) to run the server using [Tornado](http://www.tornadoweb.org/en/stable/).
+For development, you can just run the fhir_server python program.
 
-As the gnuhealth user, run the server.
+For production environments, you should run it from a WSGI container, such as gunicorn, uWSGI or tornado.
 
-    $ python3 run_server.py
 
 
