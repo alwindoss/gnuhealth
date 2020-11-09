@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-28 23:17+0000\n"
-"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"PO-Revision-Date: 2020-11-10 10:28+0000\n"
+"Last-Translator: S <t0kie@mailbox.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_surgery/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 msgctxt "error:gnuhealth.surgery:"
 msgid "End time \"%(end_date)s\" BEFORE surgery date \"%(surgery_date)s\""
@@ -217,7 +217,7 @@ msgstr "Blutungsrisiko"
 
 msgctxt "field:gnuhealth.surgery,preop_mallampati:"
 msgid "Mallampati Score"
-msgstr "Mallampati Score"
+msgstr "Mallampati Klassifikation"
 
 msgctxt "field:gnuhealth.surgery,preop_oximeter:"
 msgid "Pulse Oximeter in place"
@@ -541,7 +541,7 @@ msgstr "Operation - Chirurgisches Vorgehen"
 
 msgctxt "model:gnuhealth.rcri,name:"
 msgid "Revised Cardiac Risk Index"
-msgstr "Revised Cardiac Risk Index"
+msgstr "Revidierter kardialer Risikoindex"
 
 msgctxt "model:gnuhealth.surgery,name:"
 msgid "Surgery"
