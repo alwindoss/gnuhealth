@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-10 00:50+0000\n"
+"PO-Revision-Date: 2020-11-10 10:28+0000\n"
 "Last-Translator: S <t0kie@mailbox.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/health/"
 "de/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -241,7 +241,7 @@ msgstr "Diese Impfdosis wurde dem Patienten bereits verabreicht"
 
 msgctxt "error:party.party:"
 msgid "The PUID must be unique"
-msgstr "Das bPK muss eindeutig sein!"
+msgstr "Die Personalisierte Benutzer-Identifikation muss eindeutig sein"
 
 msgctxt "error:party.party:"
 msgid "This internal user is already assigned to a party"
@@ -1906,7 +1906,7 @@ msgstr "Schwangerschaft und Stillzeit"
 
 msgctxt "field:gnuhealth.medicament,pregnancy_cat_icon:"
 msgid "Preg. Cat. Icon"
-msgstr "Schwang.Kat.Symb."
+msgstr "Schwang. Kat. Symbol"
 
 msgctxt "field:gnuhealth.medicament,pregnancy_category:"
 msgid "Pregnancy Category"
