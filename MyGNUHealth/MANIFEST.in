@@ -1,0 +1,15 @@
+include mygnuhealth/doc/*.rst
+include mygnuhealth/images/*.png
+include mygnuhealth/images/*.svg
+include mygnuhealth/*.py
+
+include bin/mygnuhealth
+
+include mygnuhealth/qml/*.qml
+
+include MANIFEST.in
+include LICENSE
+include COPYRIGHT
+include version
+
+global-exclude *.pyc
