@@ -1,198 +1,216 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2020-11-15 04:28+0000\n"
+"Last-Translator: Pera Petrovic <srdjan.todorovic.872019@gmail.com>\n"
+"Language-Team: Serbian (cyrillic) <https://hosted.weblate.org/projects/"
+"gnu-health/health/sr_Cyrl/>\n"
 "Language: sr_Cyrl\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4-dev\n"
 
+#, fuzzy
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Потврда већ постоји!"
 
 msgctxt "error:gnuhealth.death_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Потврда већ постоји!"
 
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Јединица мора бити јединствена!"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "ШИФРА мора бити јединствена!"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Јединица мора бити јединствена!"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "ШИФРА мора бити јединствена!"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Назив мора бити јединствен!"
 
 msgctxt "error:gnuhealth.du:"
 msgid "The Domiciliary Unit must be unique !"
-msgstr ""
+msgstr "Домицилијарна јединица мора бити јединствена!"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "ШИФРА мора бити јединствена!"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Назив мора бити јединствен!"
 
 msgctxt "error:gnuhealth.family:"
 msgid "The Family Code must be unique !"
-msgstr ""
+msgstr "Шифра породице мора бити јединственa!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The LICENSE ID must be unique"
-msgstr ""
+msgstr "БРОЈ ЛИЦЕНЦЕ мора бити јединствен"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
-msgstr ""
+msgstr "Здравствени радник мора бити јединствен"
 
 msgctxt "error:gnuhealth.hospital.bed:"
 msgid "The Bed must be unique per Health Center"
-msgstr ""
+msgstr "Кревет мора бити јединствен по Дому здравља"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building code must be unique per Health Center"
-msgstr ""
+msgstr "Шифра зграде мора бити јединствена по Дому здравља"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building name must be unique per Health Center"
-msgstr ""
+msgstr "Назив зграде мора бити јединствено по Дому здравља"
 
 msgctxt "error:gnuhealth.hospital.or:"
 msgid "The Operating Room Name must be unique per Health Center"
-msgstr ""
+msgstr "Назив операционе сале мора бити јединствен за сваки Дом здравља"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit CODE must be unique per Health Center"
-msgstr ""
+msgstr "ШИФРА јединице мора бити јединствена за сваки Дом здравља"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit NAME must be unique per Health Center"
-msgstr ""
+msgstr "НАЗИВ јединице мора бити јединствен по Дому здравља"
 
 msgctxt "error:gnuhealth.hospital.ward:"
 msgid "The Ward / Room Name must be unique per Health Center"
-msgstr ""
+msgstr "Назив одељења / собе мора бити јединственo по Дому здравља"
 
 msgctxt "error:gnuhealth.immunization_schedule:"
 msgid "The schedule code must be unique"
-msgstr ""
+msgstr "Шифра распореда мора бити јединствена"
 
 msgctxt "error:gnuhealth.immunization_schedule_dose:"
 msgid "The dose number must be unique for this vaccine"
-msgstr ""
+msgstr "Број дозе мора бити јединствен за ову вакцину"
 
 msgctxt "error:gnuhealth.institution.operationalsector:"
 msgid "The Operational Sector already exists for this institution"
-msgstr ""
+msgstr "Оперативни сектор већ постоји за ову установу"
 
 msgctxt "error:gnuhealth.institution.specialties:"
 msgid "The Specialty already exists for this institution"
-msgstr ""
+msgstr "Специјалност већ постоји за ову установу"
 
 msgctxt "error:gnuhealth.institution:"
 msgid "This CODE already exists !"
-msgstr ""
+msgstr "Ова ШИФРА већ постоји!"
 
 msgctxt "error:gnuhealth.institution:"
 msgid "This Institution already exists !"
-msgstr ""
+msgstr "Ова установа већ постоји!"
 
 msgctxt "error:gnuhealth.insurance:"
 msgid "The number must be unique per insurance company"
-msgstr ""
+msgstr "Број мора бити јединствен по осигуравајућој компанији"
 
 msgctxt "error:gnuhealth.medication.dosage:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "ШИФРА мора бити јединствена!"
 
 msgctxt "error:gnuhealth.medication.dosage:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Јединица мора бити јединствена!"
 
 msgctxt "error:gnuhealth.occupation:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "ШИФРА мора бити јединствена!"
 
 msgctxt "error:gnuhealth.occupation:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Назив мора бити јединствен!"
 
 msgctxt "error:gnuhealth.operational_area:"
 msgid "The operational area must be unique !"
-msgstr ""
+msgstr "Оперативно подручје мора бити јединствено!"
 
 msgctxt "error:gnuhealth.operational_sector:"
 msgid "The operational sector must be unique in each operational area!"
-msgstr ""
+msgstr "Оперативни сектор мора бити јединствен у свакој оперативној области!"
 
 msgctxt "error:gnuhealth.pathology.category:"
 msgid "The category name must be unique"
-msgstr ""
+msgstr "Назив категорије мора бити јединствен"
 
 msgctxt "error:gnuhealth.pathology.group:"
 msgid "The Pathology Group code must be unique"
-msgstr ""
+msgstr "Шифра патолошке групе мора бити јединствена"
 
 msgctxt "error:gnuhealth.pathology:"
 msgid "The disease code must be unique"
-msgstr ""
+msgstr "Шифра болести мора бити јединствена"
 
 msgctxt "error:gnuhealth.patient.disease:"
 msgid ""
 "The HEALED date \"%(healed_date)s\" is BEFORE DIAGNOSED DATE "
 "\"%(diagnosed_date)s\"!"
 msgstr ""
+"Датум ИЗЛЕЧЕЊА \"%(healed_date)s\" је ПРЕ ДАТУМА ДИЈАГНОСТИКОВАЊА \""
+"%(diagnosed_date)s\"!"
 
 msgctxt "error:gnuhealth.patient.disease:"
 msgid ""
 "The Treatment END DATE \"%(date_stop_treatment)s\" is BEFORE the start date "
 "\"%(date_start_treatment)s\"!"
 msgstr ""
+"ДАТУМ ЗАВРШЕТКА третмана \"%(date_stop_treatment)s\" је ПРЕ датума његовог "
+"почетка \"%(date_start_treatment)s\" !"
 
 msgctxt "error:gnuhealth.patient.ecg:"
 msgid "No health professional associated to this user"
-msgstr ""
+msgstr "Ниједан здравствени радник није повезан са овим корисником"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid ""
 "End time \"%(evaluation_endtime)s\" BEFORE evaluation start "
 "\"%(evaluation_start)s\""
 msgstr ""
+"Време завршетка \"%(evaluation_endtime)s\" пре почетка процене \""
+"%(evaluation_start)s\""
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "No health professional associated to this user"
-msgstr ""
+msgstr "Ниједан здравствени радник није повезан са овим корисником"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "The evaluation code must be unique !"
-msgstr ""
+msgstr "Шифра процене мора бити јединствена!"
 
 msgctxt "error:gnuhealth.patient.medication:"
 msgid ""
 "The Medication END DATE \"%(end_treatment)s\" is BEFORE the start date "
 "\"%(start_treatment)s\"!"
 msgstr ""
+"ДАТУМ ПРЕСТАНКА коришћења лекова \"%(end_treatment)s\" је ПРЕ датума почетка "
+"\"%(start_treatment)s\"!"
 
 msgctxt "error:gnuhealth.patient:"
 msgid "The Patient already exists !"
-msgstr ""
+msgstr "Пацијент већ постоји!"
 
 msgctxt "error:gnuhealth.pol:"
 msgid "The Page must be unique !"
-msgstr ""
+msgstr "Страница мора бити јединствена!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.prescription.order:"
 msgid ""
 "== DRUG AND PREGNANCY VERIFICATION ==\n"
@@ -205,327 +223,369 @@ msgid ""
 "\n"
 "Verify and check for safety the prescribed drugs\n"
 msgstr ""
+"== ПОТВРДА ЛЕКОВА И ТРУДНОЋЕ ==\n"
+"\n"
+"- ДА ЛИ ЈЕ ПАЦИЈЕНТКИЊА ТРУДНА?\n"
+"- ДА ЛИ ПЛАНИРА ТРУДНОЋУ?\n"
+"- КОЛИКО ТЕДНА ТРУДНОСТИ\n"
+"\n"
+"- ДА ЛИ ПАЦИЈЕНТКИЊА ДОЈИ\n"
+"\n"
+"Потврдите и проверите безбедност прописаних лекова\n"
 
 msgctxt "error:gnuhealth.prescription.order:"
 msgid "No health professional associated to this user"
-msgstr ""
+msgstr "Ниједан здравствени радник није повезан са овим корисником"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "The Vaccine next dose is BEFORE the first one !"
-msgstr ""
+msgstr "Следећа доза вакцине је ПРЕ прве!"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "This vaccine dose has been given already to the patient"
-msgstr ""
+msgstr "Ова доза вакцине је већ дата пацијенту"
 
+#, fuzzy
 msgctxt "error:party.party:"
 msgid "The Federation Account must be unique"
-msgstr ""
+msgstr "Рачун федерације мора бити јединствен"
 
 msgctxt "error:party.party:"
 msgid "The PUID must be unique"
-msgstr ""
+msgstr "PUID мора бити јединствен"
 
 msgctxt "error:party.party:"
 msgid "This internal user is already assigned to a party"
 msgstr ""
 
+#, fuzzy
 msgctxt "error:wizard.gnuhealth.appointment.evaluation:"
 msgid "You need to select one Appointment record"
-msgstr ""
+msgstr "Потребно је да изаберете један запис заказаног термина"
 
 msgctxt "field:gnuhealth.appointment,appointment_date:"
 msgid "Date and Time"
-msgstr ""
+msgstr "Датум и време"
 
 msgctxt "field:gnuhealth.appointment,appointment_type:"
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,checked_in_date:"
 msgid "Checked-in Time"
-msgstr ""
+msgstr "Време пријаве"
 
 msgctxt "field:gnuhealth.appointment,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Коментари"
 
 msgctxt "field:gnuhealth.appointment,consultations:"
 msgid "Consultation Services"
-msgstr ""
+msgstr "Консултантске услуге"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Креирај датум"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Креирај корисника"
 
 msgctxt "field:gnuhealth.appointment,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Здравствени радник"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ЈМБГ"
 
 msgctxt "field:gnuhealth.appointment,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,name:"
 msgid "Appointment ID"
-msgstr ""
+msgstr "МБ заказаног термина"
 
 msgctxt "field:gnuhealth.appointment,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Пацијент"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Име записа"
 
 msgctxt "field:gnuhealth.appointment,speciality:"
 msgid "Specialty"
-msgstr ""
+msgstr "Специјалност"
 
 msgctxt "field:gnuhealth.appointment,state:"
 msgid "State"
-msgstr ""
+msgstr "Држава"
 
 msgctxt "field:gnuhealth.appointment,urgency:"
 msgid "Urgency"
-msgstr ""
+msgstr "Хитност"
 
 msgctxt "field:gnuhealth.appointment,visit_type:"
 msgid "Visit"
-msgstr ""
+msgstr "Посета"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Датум уписа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Упиши корисника"
 
 msgctxt "field:gnuhealth.appointment.report,address:"
 msgid "Address"
-msgstr ""
+msgstr "Адреса"
 
 msgctxt "field:gnuhealth.appointment.report,age:"
 msgid "Age"
-msgstr ""
+msgstr "Старост"
 
 msgctxt "field:gnuhealth.appointment.report,appointment_date:"
 msgid "Date"
-msgstr ""
+msgstr "Датум"
 
 msgctxt "field:gnuhealth.appointment.report,appointment_date_time:"
 msgid "Date and Time"
-msgstr ""
+msgstr "Датум и време"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Креирај датум"
 
 msgctxt "field:gnuhealth.appointment.report,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Креирај корисника"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,diagnosis:"
 msgid "Main Codition"
-msgstr ""
+msgstr "Главно стање"
 
 msgctxt "field:gnuhealth.appointment.report,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Пол"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Здравствени радник"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,id:"
 msgid "ID"
-msgstr ""
+msgstr "ЈМБГ"
 
 msgctxt "field:gnuhealth.appointment.report,insurance:"
 msgid "Insurance"
-msgstr ""
+msgstr "Осигурање"
 
 msgctxt "field:gnuhealth.appointment.report,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Пацијент"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Име записа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,ref:"
 msgid "PUID"
-msgstr ""
+msgstr "PUID"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Датум уписа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Упиши корисника"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,date_end:"
 msgid "Date End"
-msgstr ""
+msgstr "Датум завршетка"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,date_start:"
 msgid "Date Start"
-msgstr ""
+msgstr "Датум почетка"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Здравствени радник"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report.open.start,id:"
 msgid "ID"
-msgstr ""
+msgstr "ЈМБГ"
 
 msgctxt "field:gnuhealth.birth_certificate,certification_date:"
 msgid "Signed on"
-msgstr ""
+msgstr "Пријављен"
 
 msgctxt "field:gnuhealth.birth_certificate,code:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.birth_certificate,country:"
 msgid "Country"
-msgstr ""
+msgstr "Земља"
 
 msgctxt "field:gnuhealth.birth_certificate,country_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "Административна јединица"
 
+#, fuzzy
 msgctxt "field:gnuhealth.birth_certificate,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Креирај датум"
 
 msgctxt "field:gnuhealth.birth_certificate,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Креирај корисника"
 
 msgctxt "field:gnuhealth.birth_certificate,dob:"
 msgid "Date of Birth"
-msgstr ""
+msgstr "Датум рођења"
 
 msgctxt "field:gnuhealth.birth_certificate,father:"
 msgid "Father"
-msgstr ""
+msgstr "Отац"
 
+#, fuzzy
 msgctxt "field:gnuhealth.birth_certificate,id:"
 msgid "ID"
-msgstr ""
+msgstr "ЈМБГ"
 
 msgctxt "field:gnuhealth.birth_certificate,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.birth_certificate,mother:"
 msgid "Mother"
-msgstr ""
+msgstr "Мајка"
 
 msgctxt "field:gnuhealth.birth_certificate,name:"
 msgid "Person"
-msgstr ""
+msgstr "Особа"
 
 msgctxt "field:gnuhealth.birth_certificate,observations:"
 msgid "Observations"
-msgstr ""
+msgstr "Запажања"
 
+#, fuzzy
 msgctxt "field:gnuhealth.birth_certificate,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Име записа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.birth_certificate,signed_by:"
 msgid "Certifier"
-msgstr ""
+msgstr "Потврђивач"
 
 msgctxt "field:gnuhealth.birth_certificate,state:"
 msgid "State"
-msgstr ""
+msgstr "Држава"
 
+#, fuzzy
 msgctxt "field:gnuhealth.birth_certificate,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Датум уписа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.birth_certificate,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Упиши корисника"
 
+#, fuzzy
 msgctxt "field:gnuhealth.check_immunization_status.init,id:"
 msgid "ID"
-msgstr ""
+msgstr "ЈМБГ"
 
 msgctxt ""
 "field:gnuhealth.check_immunization_status.init,immunization_schedule:"
 msgid "Schedule"
-msgstr ""
+msgstr "Распоред"
 
+#, fuzzy
 msgctxt "field:gnuhealth.command,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Креирај датум"
 
+#, fuzzy
 msgctxt "field:gnuhealth.command,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Креирај корисника"
 
 msgctxt "field:gnuhealth.command,description:"
 msgid "Description"
-msgstr ""
+msgstr "Опис"
 
 msgctxt "field:gnuhealth.command,domain:"
 msgid "Domain"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:gnuhealth.command,id:"
 msgid "ID"
-msgstr ""
+msgstr "ЈМБГ"
 
+#, fuzzy
 msgctxt "field:gnuhealth.command,internal:"
 msgid "Internal"
-msgstr ""
+msgstr "Интерни"
 
 msgctxt "field:gnuhealth.command,label:"
 msgid "Label"
-msgstr ""
+msgstr "Ознака"
 
 msgctxt "field:gnuhealth.command,model:"
 msgid "Model"
-msgstr ""
+msgstr "Модел"
 
 msgctxt "field:gnuhealth.command,name:"
 msgid "Command"
-msgstr ""
+msgstr "Команда"
 
+#, fuzzy
 msgctxt "field:gnuhealth.command,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Име записа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.command,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Датум уписа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.command,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Упиши корисника"
 
 msgctxt "field:gnuhealth.death_certificate,age:"
 msgid "Age"
-msgstr ""
+msgstr "Старост"
 
 msgctxt "field:gnuhealth.death_certificate,autopsy:"
 msgid "Autopsy"
-msgstr ""
+msgstr "Обдукција"
 
 msgctxt "field:gnuhealth.death_certificate,certification_date:"
 msgid "Certified on"
@@ -533,79 +593,84 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,cod:"
 msgid "Cause"
-msgstr ""
+msgstr "Узрок"
 
 msgctxt "field:gnuhealth.death_certificate,code:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.death_certificate,country:"
 msgid "Country"
-msgstr ""
+msgstr "Земља"
 
 msgctxt "field:gnuhealth.death_certificate,country_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "Административна јединица"
 
+#, fuzzy
 msgctxt "field:gnuhealth.death_certificate,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Креирај датум"
 
+#, fuzzy
 msgctxt "field:gnuhealth.death_certificate,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Креирај корисника"
 
 msgctxt "field:gnuhealth.death_certificate,dod:"
 msgid "Date"
-msgstr ""
+msgstr "Датум"
 
+#, fuzzy
 msgctxt "field:gnuhealth.death_certificate,du:"
 msgid "DU"
-msgstr ""
+msgstr "ДЈ"
 
+#, fuzzy
 msgctxt "field:gnuhealth.death_certificate,id:"
 msgid "ID"
-msgstr ""
+msgstr "ЈМБГ"
 
 msgctxt "field:gnuhealth.death_certificate,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.death_certificate,name:"
 msgid "Person"
-msgstr ""
+msgstr "Особа"
 
 msgctxt "field:gnuhealth.death_certificate,observations:"
 msgid "Observations"
-msgstr ""
+msgstr "Запажања"
 
 msgctxt "field:gnuhealth.death_certificate,operational_sector:"
 msgid "Op. Sector"
-msgstr ""
+msgstr "Оп. Сектор"
 
 msgctxt "field:gnuhealth.death_certificate,place_details:"
 msgid "Details"
-msgstr ""
+msgstr "Детаљи"
 
 msgctxt "field:gnuhealth.death_certificate,place_of_death:"
 msgid "Place"
-msgstr ""
+msgstr "Место"
 
+#, fuzzy
 msgctxt "field:gnuhealth.death_certificate,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Име записа"
 
 msgctxt "field:gnuhealth.death_certificate,signed_by:"
 msgid "Signed by"
-msgstr ""
+msgstr "Потписано од стране"
 
 msgctxt "field:gnuhealth.death_certificate,state:"
 msgid "State"
-msgstr ""
+msgstr "Држава"
 
 msgctxt "field:gnuhealth.death_certificate,type_of_death:"
 msgid "Type of death"
-msgstr ""
+msgstr "Тип смрти"
 
 msgctxt "field:gnuhealth.death_certificate,underlying_conditions:"
 msgid "Underlying Conditions"
@@ -613,7 +678,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Датум уписа"
 
 msgctxt "field:gnuhealth.death_certificate,write_uid:"
 msgid "Write User"
@@ -621,7 +686,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_underlying_condition,condition:"
 msgid "Condition"
-msgstr ""
+msgstr "Стање"
 
 msgctxt "field:gnuhealth.death_underlying_condition,create_date:"
 msgid "Create Date"
@@ -631,9 +696,10 @@ msgctxt "field:gnuhealth.death_underlying_condition,create_uid:"
 msgid "Create User"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:gnuhealth.death_underlying_condition,death_certificate:"
 msgid "Certificate"
-msgstr ""
+msgstr "Потврда"
 
 msgctxt "field:gnuhealth.death_underlying_condition,id:"
 msgid "ID"
@@ -673,7 +739,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,evaluation:"
 msgid "Evaluation"
-msgstr ""
+msgstr "Процена"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,id:"
 msgid "ID"
@@ -681,7 +747,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,pathology:"
 msgid "Pathology"
-msgstr ""
+msgstr "Патологија"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,rec_name:"
 msgid "Record Name"
@@ -715,9 +781,10 @@ msgctxt "field:gnuhealth.directions,name:"
 msgid "Evaluation"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:gnuhealth.directions,procedure:"
 msgid "Procedure"
-msgstr ""
+msgstr "Процедура"
 
 msgctxt "field:gnuhealth.directions,rec_name:"
 msgid "Record Name"
@@ -773,7 +840,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.dose.unit,desc:"
 msgid "Description"
-msgstr ""
+msgstr "Опис"
 
 msgctxt "field:gnuhealth.dose.unit,id:"
 msgid "ID"
@@ -861,19 +928,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,address_city:"
 msgid "City"
-msgstr ""
+msgstr "Град"
 
 msgctxt "field:gnuhealth.du,address_country:"
 msgid "Country"
-msgstr ""
+msgstr "Земља"
 
 msgctxt "field:gnuhealth.du,address_district:"
 msgid "District"
-msgstr ""
+msgstr "Округ"
 
 msgctxt "field:gnuhealth.du,address_municipality:"
 msgid "Municipality"
-msgstr ""
+msgstr "Општина"
 
 msgctxt "field:gnuhealth.du,address_repr:"
 msgid "DU Address"
@@ -881,35 +948,35 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,address_street:"
 msgid "Street"
-msgstr ""
+msgstr "Улица"
 
 msgctxt "field:gnuhealth.du,address_street_bis:"
 msgid "Apartment"
-msgstr ""
+msgstr "Стан"
 
 msgctxt "field:gnuhealth.du,address_street_number:"
 msgid "Number"
-msgstr ""
+msgstr "Број"
 
 msgctxt "field:gnuhealth.du,address_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "Административна јединица"
 
 msgctxt "field:gnuhealth.du,address_zip:"
 msgid "Zip Code"
-msgstr ""
+msgstr "Поштански број"
 
 msgctxt "field:gnuhealth.du,altitude:"
 msgid "Altitude"
-msgstr ""
+msgstr "Висина"
 
 msgctxt "field:gnuhealth.du,bathrooms:"
 msgid "Bathrooms"
-msgstr ""
+msgstr "Купатила"
 
 msgctxt "field:gnuhealth.du,bedrooms:"
 msgid "Bedrooms"
-msgstr ""
+msgstr "Спаваће собе"
 
 msgctxt "field:gnuhealth.du,create_date:"
 msgid "Create Date"
@@ -925,15 +992,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,dwelling:"
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 msgctxt "field:gnuhealth.du,electricity:"
 msgid "Electrical supply"
-msgstr ""
+msgstr "Електрично снабдевање"
 
 msgctxt "field:gnuhealth.du,gas:"
 msgid "Gas supply"
-msgstr ""
+msgstr "Снабдевање гасом"
 
 msgctxt "field:gnuhealth.du,housing:"
 msgid "Conditions"
@@ -945,15 +1012,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,internet:"
 msgid "Internet"
-msgstr ""
+msgstr "Интернет"
 
 msgctxt "field:gnuhealth.du,latitude:"
 msgid "Latitude"
-msgstr ""
+msgstr "Географска ширина"
 
 msgctxt "field:gnuhealth.du,longitude:"
 msgid "Longitude"
-msgstr ""
+msgstr "Географска дужина"
 
 msgctxt "field:gnuhealth.du,materials:"
 msgid "Material"
@@ -961,11 +1028,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,members:"
 msgid "Members"
-msgstr ""
+msgstr "Чланови"
 
 msgctxt "field:gnuhealth.du,name:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.du,operational_sector:"
 msgid "Operational Sector"
@@ -973,7 +1040,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,picture:"
 msgid "Picture"
-msgstr ""
+msgstr "Слика"
 
 msgctxt "field:gnuhealth.du,rec_name:"
 msgid "Record Name"
@@ -981,23 +1048,23 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,roof_type:"
 msgid "Roof"
-msgstr ""
+msgstr "Кров"
 
 msgctxt "field:gnuhealth.du,sewers:"
 msgid "Sanitary Sewers"
-msgstr ""
+msgstr "Санитарне канализације"
 
 msgctxt "field:gnuhealth.du,telephone:"
 msgid "Telephone"
-msgstr ""
+msgstr "Телефон"
 
 msgctxt "field:gnuhealth.du,television:"
 msgid "Television"
-msgstr ""
+msgstr "Телевизија"
 
 msgctxt "field:gnuhealth.du,total_surface:"
 msgid "Surface"
-msgstr ""
+msgstr "Површина"
 
 msgctxt "field:gnuhealth.du,trash:"
 msgid "Trash recollection"
@@ -1009,7 +1076,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,water:"
 msgid "Running Water"
-msgstr ""
+msgstr "Текућа вода"
 
 msgctxt "field:gnuhealth.du,write_date:"
 msgid "Write Date"
@@ -1021,7 +1088,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ethnicity,code:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.ethnicity,create_date:"
 msgid "Create Date"
@@ -1037,11 +1104,12 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ethnicity,name:"
 msgid "Name"
-msgstr ""
+msgstr "Назив"
 
+#, fuzzy
 msgctxt "field:gnuhealth.ethnicity,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Напомене"
 
 msgctxt "field:gnuhealth.ethnicity,rec_name:"
 msgid "Record Name"
@@ -1069,15 +1137,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.family,info:"
 msgid "Extra Information"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.family,members:"
 msgid "Family Members"
-msgstr ""
+msgstr "Чланови породице"
 
 msgctxt "field:gnuhealth.family,name:"
 msgid "Family"
-msgstr ""
+msgstr "Породица"
 
 msgctxt "field:gnuhealth.family,rec_name:"
 msgid "Record Name"
@@ -1105,7 +1173,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.family_member,name:"
 msgid "Family"
-msgstr ""
+msgstr "Породица"
 
 msgctxt "field:gnuhealth.family_member,party:"
 msgid "Party"
@@ -1117,7 +1185,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.family_member,role:"
 msgid "Role"
-msgstr ""
+msgstr "Улога"
 
 msgctxt "field:gnuhealth.family_member,write_date:"
 msgid "Write Date"
@@ -1129,11 +1197,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.federation.country.config,code:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.federation.country.config,country:"
 msgid "Country"
-msgstr ""
+msgstr "Земља"
 
 msgctxt "field:gnuhealth.federation.country.config,create_date:"
 msgid "Create Date"
@@ -1153,7 +1221,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.federation.country.config,use_citizenship:"
 msgid "Use Citizenship"
-msgstr ""
+msgstr "Користи држављанство"
 
 msgctxt "field:gnuhealth.federation.country.config,write_date:"
 msgid "Write Date"
@@ -1185,19 +1253,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.healthprofessional,info:"
 msgid "Extra info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.healthprofessional,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.healthprofessional,main_specialty:"
 msgid "Main Specialty"
-msgstr ""
+msgstr "Главна специјалност"
 
 msgctxt "field:gnuhealth.healthprofessional,name:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Здравствени радник"
 
 msgctxt "field:gnuhealth.healthprofessional,puid:"
 msgid "PUID"
@@ -1209,7 +1277,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.healthprofessional,specialties:"
 msgid "Specialties"
-msgstr ""
+msgstr "Специјалности"
 
 msgctxt "field:gnuhealth.healthprofessional,write_date:"
 msgid "Write Date"
@@ -1221,7 +1289,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.bed,bed_type:"
 msgid "Bed Type"
-msgstr ""
+msgstr "Тип кревета"
 
 msgctxt "field:gnuhealth.hospital.bed,create_date:"
 msgid "Create Date"
@@ -1233,7 +1301,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.bed,extra_info:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.hospital.bed,id:"
 msgid "ID"
@@ -1241,11 +1309,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.bed,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.hospital.bed,name:"
 msgid "Bed"
-msgstr ""
+msgstr "Кревет"
 
 msgctxt "field:gnuhealth.hospital.bed,rec_name:"
 msgid "Record Name"
@@ -1253,11 +1321,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.bed,state:"
 msgid "Status"
-msgstr ""
+msgstr "Статус"
 
 msgctxt "field:gnuhealth.hospital.bed,telephone_number:"
 msgid "Telephone Number"
-msgstr ""
+msgstr "Број телефона"
 
 msgctxt "field:gnuhealth.hospital.bed,ward:"
 msgid "Ward"
@@ -1273,7 +1341,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.building,code:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.hospital.building,create_date:"
 msgid "Create Date"
@@ -1285,7 +1353,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.building,extra_info:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.hospital.building,id:"
 msgid "ID"
@@ -1293,11 +1361,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.building,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.hospital.building,name:"
 msgid "Name"
-msgstr ""
+msgstr "Назив"
 
 msgctxt "field:gnuhealth.hospital.building,rec_name:"
 msgid "Record Name"
@@ -1313,7 +1381,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.or,building:"
 msgid "Building"
-msgstr ""
+msgstr "Зграда"
 
 msgctxt "field:gnuhealth.hospital.or,create_date:"
 msgid "Create Date"
@@ -1325,7 +1393,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.or,extra_info:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.hospital.or,id:"
 msgid "ID"
@@ -1333,11 +1401,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.or,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.hospital.or,name:"
 msgid "Name"
-msgstr ""
+msgstr "Назив"
 
 msgctxt "field:gnuhealth.hospital.or,rec_name:"
 msgid "Record Name"
@@ -1345,11 +1413,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.or,state:"
 msgid "Status"
-msgstr ""
+msgstr "Статус"
 
 msgctxt "field:gnuhealth.hospital.or,unit:"
 msgid "Unit"
-msgstr ""
+msgstr "Јединица"
 
 msgctxt "field:gnuhealth.hospital.or,write_date:"
 msgid "Write Date"
@@ -1361,7 +1429,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.unit,code:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.hospital.unit,create_date:"
 msgid "Create Date"
@@ -1373,7 +1441,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.unit,extra_info:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.hospital.unit,id:"
 msgid "ID"
@@ -1381,11 +1449,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.unit,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.hospital.unit,name:"
 msgid "Name"
-msgstr ""
+msgstr "Назив"
 
 msgctxt "field:gnuhealth.hospital.unit,rec_name:"
 msgid "Record Name"
@@ -1401,15 +1469,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,ac:"
 msgid "Air Conditioning"
-msgstr ""
+msgstr "Климатизација"
 
 msgctxt "field:gnuhealth.hospital.ward,bio_hazard:"
 msgid "Bio Hazard"
-msgstr ""
+msgstr "Биолошка опасност"
 
 msgctxt "field:gnuhealth.hospital.ward,building:"
 msgid "Building"
-msgstr ""
+msgstr "Зграда"
 
 msgctxt "field:gnuhealth.hospital.ward,create_date:"
 msgid "Create Date"
@@ -1421,15 +1489,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,extra_info:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.hospital.ward,floor:"
 msgid "Floor Number"
-msgstr ""
+msgstr "Број спрата"
 
 msgctxt "field:gnuhealth.hospital.ward,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Пол"
 
 msgctxt "field:gnuhealth.hospital.ward,guest_sofa:"
 msgid "Guest sofa-bed"
@@ -1441,23 +1509,24 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.hospital.ward,internet:"
 msgid "Internet Access"
-msgstr ""
+msgstr "Приступ интернету"
 
 msgctxt "field:gnuhealth.hospital.ward,microwave:"
 msgid "Microwave"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:gnuhealth.hospital.ward,name:"
 msgid "Name"
-msgstr ""
+msgstr "Име"
 
 msgctxt "field:gnuhealth.hospital.ward,number_of_beds:"
 msgid "Number of beds"
-msgstr ""
+msgstr "Број кревета"
 
 msgctxt "field:gnuhealth.hospital.ward,private:"
 msgid "Private"
@@ -1465,7 +1534,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,private_bathroom:"
 msgid "Private Bathroom"
-msgstr ""
+msgstr "Приватно купатило"
 
 msgctxt "field:gnuhealth.hospital.ward,rec_name:"
 msgid "Record Name"
@@ -1473,23 +1542,23 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,refrigerator:"
 msgid "Refrigerator"
-msgstr ""
+msgstr "Фрижидер"
 
 msgctxt "field:gnuhealth.hospital.ward,state:"
 msgid "Status"
-msgstr ""
+msgstr "Статус"
 
 msgctxt "field:gnuhealth.hospital.ward,telephone:"
 msgid "Telephone access"
-msgstr ""
+msgstr "Телефонски приступ"
 
 msgctxt "field:gnuhealth.hospital.ward,tv:"
 msgid "Television"
-msgstr ""
+msgstr "Телевизија"
 
 msgctxt "field:gnuhealth.hospital.ward,unit:"
 msgid "Unit"
-msgstr ""
+msgstr "Јединица"
 
 msgctxt "field:gnuhealth.hospital.ward,write_date:"
 msgid "Write Date"
@@ -1513,7 +1582,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hp_specialty,name:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Здравствени радник"
 
 msgctxt "field:gnuhealth.hp_specialty,rec_name:"
 msgid "Record Name"
@@ -1521,7 +1590,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hp_specialty,specialty:"
 msgid "Specialty"
-msgstr ""
+msgstr "Специјалност"
 
 msgctxt "field:gnuhealth.hp_specialty,write_date:"
 msgid "Write Date"
@@ -1533,11 +1602,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule,active:"
 msgid "Active"
-msgstr ""
+msgstr "Активно"
 
 msgctxt "field:gnuhealth.immunization_schedule,country:"
 msgid "Country"
-msgstr ""
+msgstr "Земља"
 
 msgctxt "field:gnuhealth.immunization_schedule,create_date:"
 msgid "Create Date"
@@ -1549,7 +1618,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule,desc:"
 msgid "Description"
-msgstr ""
+msgstr "Опис"
 
 msgctxt "field:gnuhealth.immunization_schedule,id:"
 msgid "ID"
@@ -1561,11 +1630,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule,sched:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.immunization_schedule,vaccines:"
 msgid "Vaccines"
-msgstr ""
+msgstr "Вакцине"
 
 msgctxt "field:gnuhealth.immunization_schedule,write_date:"
 msgid "Write Date"
@@ -1577,15 +1646,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule,year:"
 msgid "Year"
-msgstr ""
+msgstr "Година"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,age_dose:"
 msgid "Age"
-msgstr ""
+msgstr "Старост"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid "Time Unit"
-msgstr ""
+msgstr "Временска јединица"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,create_date:"
 msgid "Create Date"
@@ -1597,7 +1666,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,dose_number:"
 msgid "Dose"
-msgstr ""
+msgstr "Доза"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,id:"
 msgid "ID"
@@ -1607,17 +1676,18 @@ msgctxt "field:gnuhealth.immunization_schedule_dose,rec_name:"
 msgid "Record Name"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:gnuhealth.immunization_schedule_dose,remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "Примедбе"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,sched:"
 msgid "Schedule"
-msgstr ""
+msgstr "Распоред"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,vaccine:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Вакцина"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,write_date:"
 msgid "Write Date"
@@ -1637,7 +1707,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule_line,doses:"
 msgid "Doses"
-msgstr ""
+msgstr "Дозе"
 
 msgctxt "field:gnuhealth.immunization_schedule_line,id:"
 msgid "ID"
@@ -1649,11 +1719,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule_line,remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "Примедбе"
 
 msgctxt "field:gnuhealth.immunization_schedule_line,sched:"
 msgid "Schedule"
-msgstr ""
+msgstr "Распоред"
 
 msgctxt "field:gnuhealth.immunization_schedule_line,scope:"
 msgid "Scope"
@@ -1661,7 +1731,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule_line,vaccine:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Вакцина"
 
 msgctxt "field:gnuhealth.immunization_schedule_line,write_date:"
 msgid "Write Date"
@@ -1673,11 +1743,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,beds:"
 msgid "Beds"
-msgstr ""
+msgstr "Кревети"
 
 msgctxt "field:gnuhealth.institution,code:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.institution,create_date:"
 msgid "Create Date"
@@ -1689,11 +1759,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,extra_info:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.institution,heliport:"
 msgid "Heliport"
-msgstr ""
+msgstr "Хелидром"
 
 msgctxt "field:gnuhealth.institution,id:"
 msgid "ID"
@@ -1701,23 +1771,23 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,institution_type:"
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 msgctxt "field:gnuhealth.institution,main_specialty:"
 msgid "Specialty"
-msgstr ""
+msgstr "Специјалност"
 
 msgctxt "field:gnuhealth.institution,name:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.institution,operating_room:"
 msgid "Operating Room"
-msgstr ""
+msgstr "Операциона сала"
 
 msgctxt "field:gnuhealth.institution,operational_sectors:"
 msgid "Operational Sector"
-msgstr ""
+msgstr "Оперативни сектор"
 
 msgctxt "field:gnuhealth.institution,or_number:"
 msgid "ORs"
@@ -1725,11 +1795,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,picture:"
 msgid "Picture"
-msgstr ""
+msgstr "Slika"
 
 msgctxt "field:gnuhealth.institution,public_level:"
 msgid "Public Level"
-msgstr ""
+msgstr "Јавни ниво"
 
 msgctxt "field:gnuhealth.institution,rec_name:"
 msgid "Record Name"
@@ -1737,7 +1807,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,specialties:"
 msgid "Specialties"
-msgstr ""
+msgstr "Специјалности"
 
 msgctxt "field:gnuhealth.institution,teaching:"
 msgid "Teaching"
@@ -1749,7 +1819,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,trauma_level:"
 msgid "Trauma Level"
-msgstr ""
+msgstr "Ниво трауме"
 
 msgctxt "field:gnuhealth.institution,write_date:"
 msgid "Write Date"
@@ -1773,11 +1843,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution.operationalsector,name:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.institution.operationalsector,operational_sector:"
 msgid "Operational Sector"
-msgstr ""
+msgstr "Оперативни сектор"
 
 msgctxt "field:gnuhealth.institution.operationalsector,rec_name:"
 msgid "Record Name"
@@ -1805,7 +1875,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution.specialties,name:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.institution.specialties,rec_name:"
 msgid "Record Name"
@@ -1813,7 +1883,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution.specialties,specialty:"
 msgid "Specialty"
-msgstr ""
+msgstr "Специјалност"
 
 msgctxt "field:gnuhealth.institution.specialties,write_date:"
 msgid "Write Date"
@@ -1825,11 +1895,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.insurance,category:"
 msgid "Category"
-msgstr ""
+msgstr "Kатегорија"
 
 msgctxt "field:gnuhealth.insurance,company:"
 msgid "Insurance Company"
-msgstr ""
+msgstr "Осигуравајућа компанија"
 
 msgctxt "field:gnuhealth.insurance,create_date:"
 msgid "Create Date"
@@ -1845,31 +1915,31 @@ msgstr ""
 
 msgctxt "field:gnuhealth.insurance,insurance_type:"
 msgid "Insurance Type"
-msgstr ""
+msgstr "Врста осигурања"
 
 msgctxt "field:gnuhealth.insurance,member_exp:"
 msgid "Expiration date"
-msgstr ""
+msgstr "Рок трајања"
 
 msgctxt "field:gnuhealth.insurance,member_since:"
 msgid "Member since"
-msgstr ""
+msgstr "Члан од"
 
 msgctxt "field:gnuhealth.insurance,name:"
 msgid "Owner"
-msgstr ""
+msgstr "Власник"
 
 msgctxt "field:gnuhealth.insurance,notes:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.insurance,number:"
 msgid "Number"
-msgstr ""
+msgstr "Број"
 
 msgctxt "field:gnuhealth.insurance,plan_id:"
 msgid "Plan"
-msgstr ""
+msgstr "План"
 
 msgctxt "field:gnuhealth.insurance,rec_name:"
 msgid "Record Name"
@@ -1885,7 +1955,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.insurance.plan,company:"
 msgid "Insurance Company"
-msgstr ""
+msgstr "Осигуравајућа компанија"
 
 msgctxt "field:gnuhealth.insurance.plan,create_date:"
 msgid "Create Date"
@@ -1901,15 +1971,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.insurance.plan,is_default:"
 msgid "Default plan"
-msgstr ""
+msgstr "Подразумевани план"
 
 msgctxt "field:gnuhealth.insurance.plan,name:"
 msgid "Plan"
-msgstr ""
+msgstr "План"
 
 msgctxt "field:gnuhealth.insurance.plan,notes:"
 msgid "Extra info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.insurance.plan,rec_name:"
 msgid "Record Name"
@@ -1929,19 +1999,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,active_component:"
 msgid "Active component"
-msgstr ""
+msgstr "Активна компонента"
 
 msgctxt "field:gnuhealth.medicament,adverse_reaction:"
 msgid "Adverse Reactions"
-msgstr ""
+msgstr "Нежељене реакције"
 
 msgctxt "field:gnuhealth.medicament,category:"
 msgid "Category"
-msgstr ""
+msgstr "Kатегорија"
 
 msgctxt "field:gnuhealth.medicament,composition:"
 msgid "Composition"
-msgstr ""
+msgstr "Састав"
 
 msgctxt "field:gnuhealth.medicament,create_date:"
 msgid "Create Date"
@@ -1953,11 +2023,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,dosage:"
 msgid "Dosage Instructions"
-msgstr ""
+msgstr "Упутства за дозирање"
 
 msgctxt "field:gnuhealth.medicament,form:"
 msgid "Form"
-msgstr ""
+msgstr "Образац"
 
 msgctxt "field:gnuhealth.medicament,id:"
 msgid "ID"
@@ -1965,27 +2035,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,indications:"
 msgid "Indication"
-msgstr ""
+msgstr "Индикација"
 
 msgctxt "field:gnuhealth.medicament,is_vaccine:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Вакцина"
 
 msgctxt "field:gnuhealth.medicament,name:"
 msgid "Product"
-msgstr ""
+msgstr "Производ"
 
 msgctxt "field:gnuhealth.medicament,notes:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.medicament,overdosage:"
 msgid "Overdosage"
-msgstr ""
+msgstr "Предозирање"
 
 msgctxt "field:gnuhealth.medicament,pregnancy:"
 msgid "Pregnancy and Lactancy"
-msgstr ""
+msgstr "Трудноћа и лактација"
 
 msgctxt "field:gnuhealth.medicament,pregnancy_cat_icon:"
 msgid "Preg. Cat. Icon"
@@ -1993,7 +2063,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,pregnancy_category:"
 msgid "Pregnancy Category"
-msgstr ""
+msgstr "Категорија трудноће"
 
 msgctxt "field:gnuhealth.medicament,pregnancy_warning:"
 msgid "Pregnancy Warning"
@@ -2001,7 +2071,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,presentation:"
 msgid "Presentation"
-msgstr ""
+msgstr "Презентација"
 
 msgctxt "field:gnuhealth.medicament,rec_name:"
 msgid "Record Name"
@@ -2009,39 +2079,39 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,route:"
 msgid "Administration Route"
-msgstr ""
+msgstr "Рута администрације"
 
 msgctxt "field:gnuhealth.medicament,sol_conc:"
 msgid "Concentration"
-msgstr ""
+msgstr "Концентрација"
 
 msgctxt "field:gnuhealth.medicament,sol_conc_unit:"
 msgid "Unit"
-msgstr ""
+msgstr "Јединица"
 
 msgctxt "field:gnuhealth.medicament,sol_vol:"
 msgid "Volume"
-msgstr ""
+msgstr "Запремина"
 
 msgctxt "field:gnuhealth.medicament,sol_vol_unit:"
 msgid "Unit"
-msgstr ""
+msgstr "Јединица"
 
 msgctxt "field:gnuhealth.medicament,storage:"
 msgid "Storage Conditions"
-msgstr ""
+msgstr "Услови складиштења"
 
 msgctxt "field:gnuhealth.medicament,strength:"
 msgid "Strength"
-msgstr ""
+msgstr "Снага"
 
 msgctxt "field:gnuhealth.medicament,therapeutic_action:"
 msgid "Therapeutic effect"
-msgstr ""
+msgstr "Терапеутски ефекат"
 
 msgctxt "field:gnuhealth.medicament,unit:"
 msgid "dose unit"
-msgstr ""
+msgstr "дозна јединица"
 
 msgctxt "field:gnuhealth.medicament,write_date:"
 msgid "Write Date"
@@ -2053,7 +2123,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament.category,childs:"
 msgid "Children"
-msgstr ""
+msgstr "Деца"
 
 msgctxt "field:gnuhealth.medicament.category,create_date:"
 msgid "Create Date"
@@ -2069,11 +2139,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament.category,name:"
 msgid "Name"
-msgstr ""
+msgstr "Назив"
 
 msgctxt "field:gnuhealth.medicament.category,parent:"
 msgid "Parent"
-msgstr ""
+msgstr "Родитељ"
 
 msgctxt "field:gnuhealth.medicament.category,rec_name:"
 msgid "Record Name"
@@ -2089,11 +2159,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medication.dosage,abbreviation:"
 msgid "Abbreviation"
-msgstr ""
+msgstr "Скраћеница"
 
 msgctxt "field:gnuhealth.medication.dosage,code:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.medication.dosage,create_date:"
 msgid "Create Date"
@@ -2109,7 +2179,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medication.dosage,name:"
 msgid "Frequency"
-msgstr ""
+msgstr "Учесталост"
 
 msgctxt "field:gnuhealth.medication.dosage,rec_name:"
 msgid "Record Name"
@@ -2141,7 +2211,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.occupation,name:"
 msgid "Name"
-msgstr ""
+msgstr "Назив"
 
 msgctxt "field:gnuhealth.occupation,rec_name:"
 msgid "Record Name"
@@ -2169,15 +2239,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.operational_area,info:"
 msgid "Extra Information"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.operational_area,name:"
 msgid "Name"
-msgstr ""
+msgstr "Назив"
 
 msgctxt "field:gnuhealth.operational_area,operational_sector:"
 msgid "Operational Sector"
-msgstr ""
+msgstr "Оперативни сектор"
 
 msgctxt "field:gnuhealth.operational_area,rec_name:"
 msgid "Record Name"
@@ -2205,15 +2275,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.operational_sector,info:"
 msgid "Extra Information"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.operational_sector,name:"
 msgid "Op. Sector"
-msgstr ""
+msgstr "Оп. Сектор"
 
 msgctxt "field:gnuhealth.operational_sector,operational_area:"
 msgid "Operational Area"
-msgstr ""
+msgstr "Оперативно подручје"
 
 msgctxt "field:gnuhealth.operational_sector,rec_name:"
 msgid "Record Name"
@@ -2821,11 +2891,12 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,glycemia:"
 msgid "Glycemia"
-msgstr ""
+msgstr "Гликемија"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.evaluation,hba1c:"
 msgid "Glycated Hemoglobin"
-msgstr ""
+msgstr "Гликирани хемоглобин"
 
 msgctxt "field:gnuhealth.patient.evaluation,hdl:"
 msgid "Last HDL"
@@ -2833,7 +2904,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,head_circumference:"
 msgid "Head"
-msgstr ""
+msgstr "Глава"
 
 msgctxt "field:gnuhealth.patient.evaluation,healthprof:"
 msgid "Health Prof"
@@ -2841,11 +2912,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,height:"
 msgid "Height"
-msgstr ""
+msgstr "Висина"
 
 msgctxt "field:gnuhealth.patient.evaluation,hip:"
 msgid "Hip"
-msgstr ""
+msgstr "Кук"
 
 msgctxt "field:gnuhealth.patient.evaluation,id:"
 msgid "ID"
@@ -2853,23 +2924,24 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,info_diagnosis:"
 msgid "Presumptive Diagnosis: Extra Info"
-msgstr ""
+msgstr "Претпостављена дијагноза: додатне информације"
 
 msgctxt "field:gnuhealth.patient.evaluation,information_source:"
 msgid "Source"
-msgstr ""
+msgstr "Извор"
 
 msgctxt "field:gnuhealth.patient.evaluation,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.evaluation,judgment:"
 msgid "Judgment"
-msgstr ""
+msgstr "Суд"
 
 msgctxt "field:gnuhealth.patient.evaluation,knowledge_current_events:"
 msgid "Knowledge of Current Events"
-msgstr ""
+msgstr "Знање о актуелним догађајима"
 
 msgctxt "field:gnuhealth.patient.evaluation,ldl:"
 msgid "Last LDL"
@@ -2877,71 +2949,75 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,loc:"
 msgid "Glasgow"
-msgstr ""
+msgstr "Глазгов"
 
 msgctxt "field:gnuhealth.patient.evaluation,loc_eyes:"
 msgid "Glasgow - Eyes"
-msgstr ""
+msgstr "Глазгов - Очи"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.evaluation,loc_motor:"
 msgid "Glasgow - Motor"
-msgstr ""
+msgstr "Глазгов - Мотор"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.evaluation,loc_verbal:"
 msgid "Glasgow - Verbal"
-msgstr ""
+msgstr "Глазгов - Вербални"
 
 msgctxt "field:gnuhealth.patient.evaluation,malnutrition:"
 msgid "Malnutrition"
-msgstr ""
+msgstr "Неухрањеност"
 
 msgctxt "field:gnuhealth.patient.evaluation,memory:"
 msgid "Memory"
-msgstr ""
+msgstr "Меморија"
 
 msgctxt "field:gnuhealth.patient.evaluation,mood:"
 msgid "Mood"
-msgstr ""
+msgstr "Расположење"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.evaluation,next_evaluation:"
 msgid "Next Appointment"
-msgstr ""
+msgstr "Следећи заказани термин"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.evaluation,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Белешке"
 
 msgctxt "field:gnuhealth.patient.evaluation,notes_complaint:"
 msgid "Complaint details"
-msgstr ""
+msgstr "Детаљи жалбе"
 
 msgctxt "field:gnuhealth.patient.evaluation,object_recognition:"
 msgid "Object Recognition"
-msgstr ""
+msgstr "Препознавање објекта"
 
 msgctxt "field:gnuhealth.patient.evaluation,orientation:"
 msgid "Orientation"
-msgstr ""
+msgstr "Оријентација"
 
 msgctxt "field:gnuhealth.patient.evaluation,osat:"
 msgid "Oxygen Saturation"
-msgstr ""
+msgstr "Засићеност кисеоником"
 
 msgctxt "field:gnuhealth.patient.evaluation,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Пацијент"
 
 msgctxt "field:gnuhealth.patient.evaluation,praxis:"
 msgid "Praxis"
-msgstr ""
+msgstr "Пракса"
 
 msgctxt "field:gnuhealth.patient.evaluation,present_illness:"
 msgid "Present Illness"
-msgstr ""
+msgstr "Присутна болест"
 
 msgctxt "field:gnuhealth.patient.evaluation,psychological_assessment:"
 msgid "Psychological Assessment"
-msgstr ""
+msgstr "Психолошка процена"
 
 msgctxt "field:gnuhealth.patient.evaluation,rec_name:"
 msgid "Record Name"
@@ -2949,23 +3025,23 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,related_condition:"
 msgid "Related condition"
-msgstr ""
+msgstr "Сродно стање"
 
 msgctxt "field:gnuhealth.patient.evaluation,reliable_info:"
 msgid "Reliable"
-msgstr ""
+msgstr "Поуздан"
 
 msgctxt "field:gnuhealth.patient.evaluation,report_evaluation_date:"
 msgid "Evaluation Date"
-msgstr ""
+msgstr "Датум процене"
 
 msgctxt "field:gnuhealth.patient.evaluation,report_evaluation_time:"
 msgid "Evaluation Time"
-msgstr ""
+msgstr "Време процене"
 
 msgctxt "field:gnuhealth.patient.evaluation,respiratory_rate:"
 msgid "Respiratory Rate"
-msgstr ""
+msgstr "Респираторна стопа"
 
 msgctxt "field:gnuhealth.patient.evaluation,secondary_conditions:"
 msgid "Other Conditions"
@@ -2977,15 +3053,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,signs_and_symptoms:"
 msgid "Signs and Symptoms"
-msgstr ""
+msgstr "Знаци и симптоми"
 
 msgctxt "field:gnuhealth.patient.evaluation,specialty:"
 msgid "Specialty"
-msgstr ""
+msgstr "Специјалност"
 
 msgctxt "field:gnuhealth.patient.evaluation,state:"
 msgid "State"
-msgstr ""
+msgstr "Држава"
 
 msgctxt "field:gnuhealth.patient.evaluation,systolic:"
 msgid "Systolic Pressure"
@@ -2997,39 +3073,39 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,temperature:"
 msgid "Temperature"
-msgstr ""
+msgstr "Температура"
 
 msgctxt "field:gnuhealth.patient.evaluation,tremor:"
 msgid "Tremor"
-msgstr ""
+msgstr "Подрхтавање"
 
 msgctxt "field:gnuhealth.patient.evaluation,urgency:"
 msgid "Urgency"
-msgstr ""
+msgstr "Хитност"
 
 msgctxt "field:gnuhealth.patient.evaluation,user_id:"
 msgid "Last Changed by"
-msgstr ""
+msgstr "Последњи пут промењено од стране"
 
 msgctxt "field:gnuhealth.patient.evaluation,violent:"
 msgid "Violent Behaviour"
-msgstr ""
+msgstr "Насилно понашање"
 
 msgctxt "field:gnuhealth.patient.evaluation,visit_type:"
 msgid "Visit"
-msgstr ""
+msgstr "Посета"
 
 msgctxt "field:gnuhealth.patient.evaluation,vocabulary:"
 msgid "Vocabulary"
-msgstr ""
+msgstr "Речник"
 
 msgctxt "field:gnuhealth.patient.evaluation,wait_time:"
 msgid "Patient wait time"
-msgstr ""
+msgstr "Време чекања пацијента"
 
 msgctxt "field:gnuhealth.patient.evaluation,weight:"
 msgid "Weight"
-msgstr ""
+msgstr "Тежина"
 
 msgctxt "field:gnuhealth.patient.evaluation,whr:"
 msgid "WHR"
@@ -3045,15 +3121,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.medication,admin_times:"
 msgid "Admin hours"
-msgstr ""
+msgstr "Радно време администратора"
 
 msgctxt "field:gnuhealth.patient.medication,adverse_reaction:"
 msgid "Adverse Reactions"
-msgstr ""
+msgstr "Нежељене реакције"
 
 msgctxt "field:gnuhealth.patient.medication,common_dosage:"
 msgid "Frequency"
-msgstr ""
+msgstr "Учесталост"
 
 msgctxt "field:gnuhealth.patient.medication,course_completed:"
 msgid "Course Completed"
@@ -3069,39 +3145,39 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.medication,discontinued:"
 msgid "Discontinued"
-msgstr ""
+msgstr "Прекинуто"
 
 msgctxt "field:gnuhealth.patient.medication,discontinued_reason:"
 msgid "Reason for discontinuation"
-msgstr ""
+msgstr "Разлог за прекид"
 
 msgctxt "field:gnuhealth.patient.medication,dose:"
 msgid "Dose"
-msgstr ""
+msgstr "Доза"
 
 msgctxt "field:gnuhealth.patient.medication,dose_unit:"
 msgid "dose unit"
-msgstr ""
+msgstr "дозна јединица"
 
 msgctxt "field:gnuhealth.patient.medication,duration:"
 msgid "Treatment duration"
-msgstr ""
+msgstr "Трајање лечења"
 
 msgctxt "field:gnuhealth.patient.medication,duration_period:"
 msgid "Treatment period"
-msgstr ""
+msgstr "Период лечења"
 
 msgctxt "field:gnuhealth.patient.medication,end_treatment:"
 msgid "End"
-msgstr ""
+msgstr "Крај"
 
 msgctxt "field:gnuhealth.patient.medication,form:"
 msgid "Form"
-msgstr ""
+msgstr "Образац"
 
 msgctxt "field:gnuhealth.patient.medication,frequency:"
 msgid "Frequency"
-msgstr ""
+msgstr "Учесталост"
 
 msgctxt "field:gnuhealth.patient.medication,frequency_prn:"
 msgid "PRN"
@@ -3109,7 +3185,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.medication,frequency_unit:"
 msgid "unit"
-msgstr ""
+msgstr "јединица"
 
 msgctxt "field:gnuhealth.patient.medication,healthprof:"
 msgid "Health Prof"
@@ -3121,47 +3197,49 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.medication,indication:"
 msgid "Indication"
-msgstr ""
+msgstr "Индикација"
 
 msgctxt "field:gnuhealth.patient.medication,infusion:"
 msgid "Infusion"
-msgstr ""
+msgstr "Инфузија"
 
 msgctxt "field:gnuhealth.patient.medication,infusion_rate:"
 msgid "Rate"
-msgstr ""
+msgstr "Стопа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.medication,infusion_rate_units:"
 msgid "Unit Rate"
-msgstr ""
+msgstr "Јединична стопа"
 
 msgctxt "field:gnuhealth.patient.medication,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.medication,is_active:"
 msgid "Active"
-msgstr ""
+msgstr "Активно"
 
 msgctxt "field:gnuhealth.patient.medication,medicament:"
 msgid "Medicament"
-msgstr ""
+msgstr "Медикамент"
 
 msgctxt "field:gnuhealth.patient.medication,name:"
 msgid "Patient"
-msgstr ""
+msgstr "Пацијент"
 
 msgctxt "field:gnuhealth.patient.medication,notes:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Додатне информације"
 
 msgctxt "field:gnuhealth.patient.medication,prescription:"
 msgid "Prescription"
-msgstr ""
+msgstr "Рецепт"
 
 msgctxt "field:gnuhealth.patient.medication,qty:"
 msgid "x"
-msgstr ""
+msgstr "x"
 
 msgctxt "field:gnuhealth.patient.medication,rec_name:"
 msgid "Record Name"
@@ -3169,11 +3247,12 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.medication,route:"
 msgid "Administration Route"
-msgstr ""
+msgstr "Рута администрације"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.medication,start_treatment:"
 msgid "Start"
-msgstr ""
+msgstr "Почетак"
 
 msgctxt "field:gnuhealth.patient.medication,write_date:"
 msgid "Write Date"
@@ -3190,11 +3269,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.person_alternative_identification,code:"
 msgid "Code"
-msgstr ""
+msgstr "Шифрa"
 
 msgctxt "field:gnuhealth.person_alternative_identification,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Коментари"
 
 msgctxt "field:gnuhealth.person_alternative_identification,create_date:"
 msgid "Create Date"
@@ -3410,7 +3489,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.prescription.line,common_dosage:"
 msgid "Frequency"
-msgstr ""
+msgstr "Учесталост"
 
 msgctxt "field:gnuhealth.prescription.line,create_date:"
 msgid "Create Date"
@@ -3454,7 +3533,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.prescription.line,frequency_unit:"
 msgid "unit"
-msgstr ""
+msgstr "јединица"
 
 msgctxt "field:gnuhealth.prescription.line,id:"
 msgid "ID"
@@ -4907,7 +4986,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.medication,common_dosage:"
 msgid "Common / standard dosage frequency for this medicament"
-msgstr ""
+msgstr "Уобичајена / стандардна учесталост дозирања за овај медикамент"
 
 msgctxt "help:gnuhealth.patient.medication,discontinued_reason:"
 msgid "Short description for discontinuing the treatment"
@@ -4946,10 +5025,13 @@ msgid ""
 "Time in between doses the patient must wait (ie, for 1 pill each 8 hours, "
 "put here 8 and select \"hours\" in the unit field"
 msgstr ""
+"Време између доза које пацијент мора да сачека (тј. 1 таблету сваких 8 сати, "
+"ставите овде 8 и у пољу јединице изаберите \"сати\""
 
+#, fuzzy
 msgctxt "help:gnuhealth.patient.medication,frequency_prn:"
 msgid "Use it as needed, pro re nata"
-msgstr ""
+msgstr "Користите га по потреби, про ре ната"
 
 msgctxt "help:gnuhealth.patient.medication,healthprof:"
 msgid "Health Professional who prescribed or reviewed the medicament"
@@ -5081,10 +5163,13 @@ msgid ""
 "Time in between doses the patient must wait (ie, for 1 pill each 8 hours, "
 "put here 8 and select \"hours\" in the unit field"
 msgstr ""
+"Време између доза које пацијент мора да сачека (тј. 1 таблету сваких 8 сати, "
+"ставите овде 8 и у пољу јединице изаберите \"сати\""
 
+#, fuzzy
 msgctxt "help:gnuhealth.prescription.line,frequency_prn:"
 msgid "Use it as needed, pro re nata"
-msgstr ""
+msgstr "Користите га по потреби, про ре ната"
 
 msgctxt "help:gnuhealth.prescription.line,indication:"
 msgid ""
@@ -5550,17 +5635,18 @@ msgctxt "model:gnuhealth.drug.form,name:GUM"
 msgid "Gum chewable"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.drug.form,name:IER"
 msgid "Insert extended release"
-msgstr ""
+msgstr "Уметни продужено издање"
 
 msgctxt "model:gnuhealth.drug.form,name:IMP"
 msgid "Implant"
-msgstr ""
+msgstr "Имплант"
 
 msgctxt "model:gnuhealth.drug.form,name:INS"
 msgid "Insert"
-msgstr ""
+msgstr "Убаци"
 
 msgctxt "model:gnuhealth.drug.form,name:JAM"
 msgid "Jam"
@@ -5568,11 +5654,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:KIT"
 msgid "Kit"
-msgstr ""
+msgstr "Опрема"
 
 msgctxt "model:gnuhealth.drug.form,name:LEF"
 msgid "Leaf"
-msgstr ""
+msgstr "Лист"
 
 msgctxt "model:gnuhealth.drug.form,name:LIP"
 msgid "Liposome"
@@ -5580,11 +5666,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:LIQ"
 msgid "Liquid"
-msgstr ""
+msgstr "Течност"
 
 msgctxt "model:gnuhealth.drug.form,name:LOT"
 msgid "Lotion"
-msgstr ""
+msgstr "Лосион"
 
 msgctxt "model:gnuhealth.drug.form,name:LOZ"
 msgid "Lozenge"
@@ -5592,7 +5678,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:MWH"
 msgid "Mouthwash gargle"
-msgstr ""
+msgstr "Течност за испирање уста"
 
 msgctxt "model:gnuhealth.drug.form,name:ONT"
 msgid "Ointment"
@@ -5620,7 +5706,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:PEN"
 msgid "Pencil"
-msgstr ""
+msgstr "Оловка"
 
 msgctxt "model:gnuhealth.drug.form,name:PIC"
 msgid "Piece chewable"
@@ -5628,11 +5714,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:PLS"
 msgid "Plaster"
-msgstr ""
+msgstr "Гипс"
 
 msgctxt "model:gnuhealth.drug.form,name:PMD"
 msgid "Metered dose pump"
-msgstr ""
+msgstr "Пумпа са одмереном дозом"
 
 msgctxt "model:gnuhealth.drug.form,name:PMX"
 msgid "Drug premix"
@@ -5644,7 +5730,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:POW"
 msgid "Powder"
-msgstr ""
+msgstr "Прах"
 
 msgctxt "model:gnuhealth.drug.form,name:PSS"
 msgid "Powder sustained release"
@@ -5664,7 +5750,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:PWSO"
 msgid "Powder for solution"
-msgstr ""
+msgstr "Прах за раствор"
 
 msgctxt "model:gnuhealth.drug.form,name:RING"
 msgid "Ring slow release"
@@ -5676,7 +5762,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:SHP"
 msgid "Shampoo"
-msgstr ""
+msgstr "Шампон"
 
 msgctxt "model:gnuhealth.drug.form,name:SLT"
 msgid "Tablet sublingual"
@@ -5688,11 +5774,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:SOL"
 msgid "Solution"
-msgstr ""
+msgstr "Решење"
 
 msgctxt "model:gnuhealth.drug.form,name:SOP"
 msgid "Soap bar"
-msgstr ""
+msgstr "Сапун"
 
 msgctxt "model:gnuhealth.drug.form,name:SPCAP"
 msgid "Sprinkle capsule"
@@ -5700,11 +5786,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:SPG"
 msgid "Sponge"
-msgstr ""
+msgstr "Сунђер"
 
 msgctxt "model:gnuhealth.drug.form,name:SPR"
 msgid "Spray"
-msgstr ""
+msgstr "Спреј"
 
 msgctxt "model:gnuhealth.drug.form,name:SPS"
 msgid "Suppository sustained release"
@@ -5738,13 +5824,14 @@ msgctxt "model:gnuhealth.drug.form,name:SUP"
 msgid "Suppository"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.drug.form,name:SUS"
 msgid "Suspension"
-msgstr ""
+msgstr "Суспензија"
 
 msgctxt "model:gnuhealth.drug.form,name:SUT"
 msgid "Suture"
-msgstr ""
+msgstr "Шав"
 
 msgctxt "model:gnuhealth.drug.form,name:SWA"
 msgid "Swab"
@@ -5752,7 +5839,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:SYR"
 msgid "Syrup"
-msgstr ""
+msgstr "Сируп"
 
 msgctxt "model:gnuhealth.drug.form,name:TAB"
 msgid "Tablet"
@@ -5764,7 +5851,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:TAP"
 msgid "Tape"
-msgstr ""
+msgstr "Трака"
 
 msgctxt "model:gnuhealth.drug.form,name:TDIS"
 msgid "Tablet dispersible"
@@ -5780,19 +5867,20 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.form,name:TEA"
 msgid "Tea herbal"
-msgstr ""
+msgstr "Биљни чај"
 
 msgctxt "model:gnuhealth.drug.form,name:TPT"
 msgid "Toothpaste"
-msgstr ""
+msgstr "Паста за зубе"
 
 msgctxt "model:gnuhealth.drug.form,name:TRD"
 msgid "Tablet rapid dissolve"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.drug.form,name:UNS"
 msgid "Unassigned"
-msgstr ""
+msgstr "Нераспоређени"
 
 msgctxt "model:gnuhealth.drug.form,name:WAF"
 msgid "Wafer"
@@ -5804,11 +5892,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.route,name:"
 msgid "Drug Administration Route"
-msgstr ""
+msgstr "Рута за администрацију лекова"
 
 msgctxt "model:gnuhealth.drug.route,name:route_1"
 msgid "Apply Externally "
-msgstr ""
+msgstr "Примени споља "
 
 msgctxt "model:gnuhealth.drug.route,name:route_10"
 msgid "Intrabursal "
@@ -5872,11 +5960,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.route,name:route_24"
 msgid "Mouth/Throat "
-msgstr ""
+msgstr "Уста/грло "
 
 msgctxt "model:gnuhealth.drug.route,name:route_25"
 msgid "Mucous Membrane"
-msgstr ""
+msgstr "Слузокожа"
 
 msgctxt "model:gnuhealth.drug.route,name:route_26"
 msgid "Nasal"
@@ -5894,9 +5982,10 @@ msgctxt "model:gnuhealth.drug.route,name:route_29"
 msgid "Nasotrachial Tube"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.drug.route,name:route_3"
 msgid "Dental "
-msgstr ""
+msgstr "Стоматолошка "
 
 msgctxt "model:gnuhealth.drug.route,name:route_30"
 msgid "Ophthalmic"
@@ -5908,7 +5997,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.route,name:route_32"
 msgid "Other/Miscellaneous"
-msgstr ""
+msgstr "Остало/Разно"
 
 msgctxt "model:gnuhealth.drug.route,name:route_33"
 msgid "Perfusion"
@@ -5948,11 +6037,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.route,name:route_41"
 msgid "Tracheostomy"
-msgstr ""
+msgstr "Трахеостомија"
 
 msgctxt "model:gnuhealth.drug.route,name:route_42"
 msgid "Transdermal"
-msgstr ""
+msgstr "Трансдермално"
 
 msgctxt "model:gnuhealth.drug.route,name:route_43"
 msgid "Translingual"
@@ -5962,9 +6051,10 @@ msgctxt "model:gnuhealth.drug.route,name:route_44"
 msgid "Urethral"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.drug.route,name:route_45"
 msgid "Vaginal"
-msgstr ""
+msgstr "Вагинални"
 
 msgctxt "model:gnuhealth.drug.route,name:route_46"
 msgid "Ventimask"
@@ -5972,7 +6062,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.drug.route,name:route_47"
 msgid "Wound"
-msgstr ""
+msgstr "Рана"
 
 msgctxt "model:gnuhealth.drug.route,name:route_5"
 msgid "Endotrachial Tube"
@@ -5994,25 +6084,29 @@ msgctxt "model:gnuhealth.drug.route,name:route_9"
 msgid "Intra-arterial "
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.du,name:"
 msgid "Domiciliary Unit"
-msgstr ""
+msgstr "Домицилна јединица"
 
 msgctxt "model:gnuhealth.ethnicity,name:"
 msgid "Ethnicity"
-msgstr ""
+msgstr "Етничка припадност"
 
+#, fuzzy
 msgctxt "model:gnuhealth.ethnicity,name:eth1"
 msgid "Black"
-msgstr ""
+msgstr "Црнац"
 
+#, fuzzy
 msgctxt "model:gnuhealth.ethnicity,name:eth2"
 msgid "Asian"
-msgstr ""
+msgstr "Азијат"
 
+#, fuzzy
 msgctxt "model:gnuhealth.ethnicity,name:eth3"
 msgid "White"
-msgstr ""
+msgstr "Белац"
 
 msgctxt "model:gnuhealth.ethnicity,name:eth4"
 msgid "Middle-East"
@@ -6024,7 +6118,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.ethnicity,name:eth6"
 msgid "African American"
-msgstr ""
+msgstr "Афроамериканац"
 
 msgctxt "model:gnuhealth.ethnicity,name:eth7"
 msgid "Indian American"
@@ -6032,11 +6126,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.family,name:"
 msgid "Family"
-msgstr ""
+msgstr "Породица"
 
 msgctxt "model:gnuhealth.family_member,name:"
 msgid "Family Member"
-msgstr ""
+msgstr "Члан породице"
 
 msgctxt "model:gnuhealth.federation.country.config,name:"
 msgid "Federation Account Country"
@@ -6044,71 +6138,72 @@ msgstr ""
 
 msgctxt "model:gnuhealth.healthprofessional,name:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Здравствени радник"
 
 msgctxt "model:gnuhealth.hospital.bed,name:"
 msgid "Hospital Bed"
-msgstr ""
+msgstr "Болнички кревет"
 
 msgctxt "model:gnuhealth.hospital.building,name:"
 msgid "Hospital Building"
-msgstr ""
+msgstr "Зграда болнице"
 
 msgctxt "model:gnuhealth.hospital.or,name:"
 msgid "Operating Room"
-msgstr ""
+msgstr "Операциона сала"
 
 msgctxt "model:gnuhealth.hospital.unit,name:"
 msgid "Hospital Unit"
-msgstr ""
+msgstr "Болничка јединица"
 
 msgctxt "model:gnuhealth.hospital.ward,name:"
 msgid "Hospital Ward"
-msgstr ""
+msgstr "Болничко одељење"
 
 msgctxt "model:gnuhealth.hp_specialty,name:"
 msgid "Health Professional Specialties"
-msgstr ""
+msgstr "Специјалности здравственог радника"
 
 msgctxt "model:gnuhealth.immunization_schedule,name:"
 msgid "Immunization Schedule"
-msgstr ""
+msgstr "Распоред имунизације"
 
+#, fuzzy
 msgctxt "model:gnuhealth.immunization_schedule_dose,name:"
 msgid "Immunization Schedule Dose"
-msgstr ""
+msgstr "Доза по распореду имунизације"
 
 msgctxt "model:gnuhealth.immunization_schedule_line,name:"
 msgid "Immunization Schedule Line"
-msgstr ""
+msgstr "Линија распореда имунизације"
 
 msgctxt "model:gnuhealth.institution,name:"
 msgid "Health Institution"
-msgstr ""
+msgstr "Здравствена установа"
 
 msgctxt "model:gnuhealth.institution.operationalsector,name:"
 msgid "Operational Sectors covered by Institution"
-msgstr ""
+msgstr "Оперативни сектори обухваћени установом"
 
 msgctxt "model:gnuhealth.institution.specialties,name:"
 msgid "Health Institution Specialties"
-msgstr ""
+msgstr "Специјалности здравствене установе"
 
 msgctxt "model:gnuhealth.insurance,name:"
 msgid "Insurance"
-msgstr ""
+msgstr "Осигурање"
 
 msgctxt "model:gnuhealth.insurance.plan,name:"
 msgid "Insurance Plan"
-msgstr ""
+msgstr "План осигурања"
 
 msgctxt "model:gnuhealth.medicament,name:"
 msgid "Medicament"
-msgstr ""
+msgstr "Медикамент"
 
 msgctxt "model:gnuhealth.medicament.category,name:"
 msgid "Medicament Category"
-msgstr ""
+msgstr "Категорија медикамента"
 
 msgctxt "model:gnuhealth.medication.dosage,name:"
 msgid "Medication Common Frequencies"
@@ -6116,99 +6211,99 @@ msgstr ""
 
 msgctxt "model:gnuhealth.medication.dosage,name:20050000"
 msgid "every two weeks"
-msgstr ""
+msgstr "сваке две недеље"
 
 msgctxt "model:gnuhealth.medication.dosage,name:225750008"
 msgid "every 2 hours"
-msgstr ""
+msgstr "свака 2 сата"
 
 msgctxt "model:gnuhealth.medication.dosage,name:225756002"
 msgid "every 4 hours"
-msgstr ""
+msgstr "свака 4 сата"
 
 msgctxt "model:gnuhealth.medication.dosage,name:225760004"
 msgid "every other day"
-msgstr ""
+msgstr "сваки други дан"
 
 msgctxt "model:gnuhealth.medication.dosage,name:225769003"
 msgid "1 time per week"
-msgstr ""
+msgstr "1 пут недељно"
 
 msgctxt "model:gnuhealth.medication.dosage,name:229797004"
 msgid "1 time per day"
-msgstr ""
+msgstr "1 пут дневно"
 
 msgctxt "model:gnuhealth.medication.dosage,name:229798009"
 msgid "3 times per day"
-msgstr ""
+msgstr "3 пута дневно"
 
 msgctxt "model:gnuhealth.medication.dosage,name:229799001"
 msgid "2 times per day"
-msgstr ""
+msgstr "2 пута дневно"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307439001"
 msgid "4 times per day"
-msgstr ""
+msgstr "4 пута дневно"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307468000"
 msgid "every 6 hours"
-msgstr ""
+msgstr "сваких 6 сати"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307469008"
 msgid "every 8 hours"
-msgstr ""
+msgstr "сваких 8 сати"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307470009"
 msgid "every 12 hours"
-msgstr ""
+msgstr "сваких 12 сати"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307472001"
 msgid "1 time per day in the morning"
-msgstr ""
+msgstr "1 пут дневно ујутру"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307475004"
 msgid "every month"
-msgstr ""
+msgstr "сваког месеца"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307476003"
 msgid "every 28 days"
-msgstr ""
+msgstr "сваких 28 дана"
 
 msgctxt "model:gnuhealth.medication.dosage,name:396142006"
 msgid "1 time per day at bedtime"
-msgstr ""
+msgstr "1 пут дневно пре спавања"
 
 msgctxt "model:gnuhealth.medication.dosage,name:396145008"
 msgid "3 times per day, before meals"
-msgstr ""
+msgstr "3 пута дневно, пре оброка"
 
 msgctxt "model:gnuhealth.medication.dosage,name:396146009"
 msgid "3 times per day, with meals"
-msgstr ""
+msgstr "3 пута дневно, уз оброке"
 
 msgctxt "model:gnuhealth.medication.dosage,name:396147000"
 msgid "1 time per day in the evening"
-msgstr ""
+msgstr "1 пут дневно увече"
 
 msgctxt "model:gnuhealth.medication.dosage,name:420449005"
 msgid "as needed"
-msgstr ""
+msgstr "по потреби"
 
 msgctxt "model:gnuhealth.medication.dosage,name:422114001"
 msgid "1 time"
-msgstr ""
+msgstr "1 пут"
 
 msgctxt "model:gnuhealth.occupation,name:"
 msgid "Occupation"
-msgstr ""
+msgstr "Занимање"
 
 msgctxt "model:gnuhealth.occupation,name:occ1"
 msgid "Unemployed"
-msgstr ""
+msgstr "Незапослен"
 
 msgctxt "model:gnuhealth.occupation,name:occ10"
 msgid "Ballerina"
-msgstr ""
+msgstr "Балерина"
 
 msgctxt "model:gnuhealth.occupation,name:occ100"
 msgid "Curator"
@@ -6232,15 +6327,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ105"
 msgid "Dancer"
-msgstr ""
+msgstr "Плесач"
 
 msgctxt "model:gnuhealth.occupation,name:occ106"
 msgid "Dance instructor"
-msgstr ""
+msgstr "Инструктор плеса"
 
 msgctxt "model:gnuhealth.occupation,name:occ107"
 msgid "Database administrator (DBA)"
-msgstr ""
+msgstr "Администратор базе података (DBA)"
 
 msgctxt "model:gnuhealth.occupation,name:occ108"
 msgid "Deputy (law enforcement)"
@@ -6252,11 +6347,12 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ11"
 msgid "Bassist"
-msgstr ""
+msgstr "Басиста"
 
+#, fuzzy
 msgctxt "model:gnuhealth.occupation,name:occ110"
 msgid "Demographer"
-msgstr ""
+msgstr "Демограф"
 
 msgctxt "model:gnuhealth.occupation,name:occ111"
 msgid "Demolitionist"
@@ -6264,19 +6360,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ112"
 msgid "Dentist"
-msgstr ""
+msgstr "Стоматолог"
 
 msgctxt "model:gnuhealth.occupation,name:occ113"
 msgid "Dermatologist"
-msgstr ""
+msgstr "Дерматолог"
 
 msgctxt "model:gnuhealth.occupation,name:occ114"
 msgid "Designer"
-msgstr ""
+msgstr "Дизајнер"
 
 msgctxt "model:gnuhealth.occupation,name:occ115"
 msgid "Detective"
-msgstr ""
+msgstr "Детектив"
 
 msgctxt "model:gnuhealth.occupation,name:occ116"
 msgid "Diamantaire"
@@ -6292,7 +6388,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ119"
 msgid "Diplomat"
-msgstr ""
+msgstr "Дипломата"
 
 msgctxt "model:gnuhealth.occupation,name:occ12"
 msgid "Boatswain"
@@ -6300,7 +6396,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ120"
 msgid "Director"
-msgstr ""
+msgstr "Директор"
 
 msgctxt "model:gnuhealth.occupation,name:occ121"
 msgid "Disc jockey"
@@ -6316,7 +6412,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ124"
 msgid "Diver"
-msgstr ""
+msgstr "Ронилац"
 
 msgctxt "model:gnuhealth.occupation,name:occ125"
 msgid "Dock labourer"
@@ -6328,7 +6424,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ127"
 msgid "Doctor (PhD)"
-msgstr ""
+msgstr "Доктор (доктор наука)"
 
 msgctxt "model:gnuhealth.occupation,name:occ128"
 msgid "Doctor of Education"
@@ -6348,7 +6444,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ131"
 msgid "Dog breeder"
-msgstr ""
+msgstr "Узгајивач паса"
 
 msgctxt "model:gnuhealth.occupation,name:occ132"
 msgid "Dogcatcher"
@@ -6356,7 +6452,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ133"
 msgid "Dog walker"
-msgstr ""
+msgstr "Шетач паса"
 
 msgctxt "model:gnuhealth.occupation,name:occ134"
 msgid "Domestic worker"
@@ -6368,15 +6464,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ136"
 msgid "Donkey Trainer"
-msgstr ""
+msgstr "Тренер магараца"
 
 msgctxt "model:gnuhealth.occupation,name:occ137"
 msgid "Doorman"
-msgstr ""
+msgstr "Вратар"
 
 msgctxt "model:gnuhealth.occupation,name:occ138"
 msgid "Draftsman"
-msgstr ""
+msgstr "Цртач"
 
 msgctxt "model:gnuhealth.occupation,name:occ139"
 msgid "Dramatist"
@@ -6384,7 +6480,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ14"
 msgid "Bookseller"
-msgstr ""
+msgstr "Продавац књига"
 
 msgctxt "model:gnuhealth.occupation,name:occ140"
 msgid "Dramaturg"
@@ -6406,9 +6502,10 @@ msgctxt "model:gnuhealth.occupation,name:occ144"
 msgid "Drill instructor"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.occupation,name:occ145"
 msgid "Driver"
-msgstr ""
+msgstr "Возач"
 
 msgctxt "model:gnuhealth.occupation,name:occ146"
 msgid "Drug dealer"
@@ -11672,7 +11769,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,visit_type:"
 msgid ""
-msgstr ""
+msgstr " "
 
 msgctxt "selection:gnuhealth.patient.evaluation,visit_type:"
 msgid "Followup"
@@ -12775,4 +12872,4 @@ msgstr ""
 
 msgctxt "wizard_button:gnuhealth.check_immunization_status,start,end:"
 msgid "Cancel"
-msgstr ""
+msgstr "Откажи"
