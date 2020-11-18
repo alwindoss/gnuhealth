@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-17 01:39+0000\n"
+"PO-Revision-Date: 2020-11-18 08:29+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_contact_tracing/zh_Hans/>\n"
@@ -37,7 +37,7 @@ msgstr "创建用户"
 
 msgctxt "field:gnuhealth.contact_tracing,du:"
 msgid "Dom.Unit"
-msgstr "常住地址"
+msgstr "现住地址"
 
 msgctxt "field:gnuhealth.contact_tracing,exposure_risk:"
 msgid "Exposure"
@@ -89,7 +89,7 @@ msgstr "机场，会议，演唱会，..."
 
 msgctxt "help:gnuhealth.contact_tracing,du:"
 msgid "Domiciliary Unit"
-msgstr "常住地址"
+msgstr "现住地址"
 
 msgctxt "help:gnuhealth.contact_tracing,exposure_time:"
 msgid "Exposure time in minutes"
