@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2020-11-18 08:29+0000\n"
+"PO-Revision-Date: 2020-11-20 02:28+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_federation/zh_Hans/>\n"
@@ -123,7 +123,7 @@ msgstr "创建用户"
 
 msgctxt "field:gnuhealth.federation.queue,federation_locator:"
 msgid "Fed ID"
-msgstr "健康信息平台ID"
+msgstr "GNU Health 信息平台ID"
 
 msgctxt "field:gnuhealth.federation.queue,id:"
 msgid "ID"
@@ -179,7 +179,7 @@ msgstr "同步"
 
 msgctxt "help:gnuhealth.federation.config,enabled:"
 msgid "Mark if the node is active in the Federation"
-msgstr "如果当前节点已经在健康信息平台中激活，就作标记"
+msgstr "如果当前节点已经在 GNU Health 信息平台中启用，就作标记"
 
 msgctxt "help:gnuhealth.federation.config,host:"
 msgid "GNU Health Thalamus server"
@@ -187,7 +187,7 @@ msgstr "GNU Health Thalamus 消息服务器"
 
 msgctxt "help:gnuhealth.federation.config,password:"
 msgid "Password of the institution admin user in the Federation"
-msgstr "健康信息平台分配给医疗机构管理员的帐户和密码"
+msgstr "GNU Health 信息平台分配给医疗机构管理员的帐户和密码"
 
 msgctxt "help:gnuhealth.federation.config,port:"
 msgid "Thalamus port"
@@ -209,7 +209,7 @@ msgstr "如果证书是由CA机构颁发的，就选中此选项，自签证书�
 
 msgctxt "help:gnuhealth.federation.object,enabled:"
 msgid "Check if the model is active to participate on the Federation"
-msgstr "如果模型已经加入健康信息平台，就选中此项目"
+msgstr "如果模型数据要上传到 GNU Health 信息平台，就选中此项"
 
 msgctxt "help:gnuhealth.federation.object,fields:"
 msgid ""
@@ -217,7 +217,7 @@ msgid ""
 "federation.\n"
 "Each line will have the format field:endpoint:key"
 msgstr ""
-"加入健康信息平台的本地模型的字段组成的列表。\n"
+"本地模型字段组成的列表，这些模型的数据要上传到 GNU Health 信息平台。\n"
 "每行都使用格式：field:endpoint:key”"
 
 msgctxt "help:gnuhealth.federation.object,model:"
@@ -232,7 +232,7 @@ msgctxt "help:gnuhealth.federation.queue,federation_locator:"
 msgid ""
 "Unique locator in Federation, such as person Federation account or Page of "
 "Life code"
-msgstr "健康信息平台中独一无二的定位器，例如：健康信息平台帐号或者健康档案页编码"
+msgstr "GNU Health 信息平台用到的统一定位标识，例如：GNU Health 信息平台帐号或者健康档案页代码"
 
 msgctxt "help:gnuhealth.federation.queue,model:"
 msgid "Source Model"
@@ -256,35 +256,35 @@ msgstr "传递给 URL 的后缀"
 
 msgctxt "help:gnuhealth.pol,fsync:"
 msgid "If active, this record information will be sent to the Federation"
-msgstr "如果激活，此记录信息将发送到健康信息平台"
+msgstr "如果激活，此记录信息将发送到 GNU Health 信息平台"
 
 msgctxt "help:party.party,fsync:"
 msgid "If active, this record information will be sent to the Federation"
-msgstr "如果激活，此记录信息将发送到健康信息平台"
+msgstr "如果激活，此记录信息将发送到 GNU Health 信息平台"
 
 msgctxt "model:gnuhealth.federation.config,name:"
 msgid "Federation Node Configuration"
-msgstr "健康信息平台节点配置"
+msgstr "GNU Health 信息平台节点设置"
 
 msgctxt "model:gnuhealth.federation.object,name:"
 msgid "Federation Object"
-msgstr "健康信息平台对象"
+msgstr "GNU Health 信息平台对象"
 
 msgctxt "model:gnuhealth.federation.queue,name:"
 msgid "Federation Queue"
-msgstr "健康信息平台消息队列"
+msgstr "GNU Health 信息平台消息队列"
 
 msgctxt "model:ir.action,name:gnuhealth_action_federation_config"
 msgid "Node Configuration"
-msgstr "节点配置"
+msgstr "GNU Health 信息平台-节点设置"
 
 msgctxt "model:ir.action,name:gnuhealth_action_federation_object"
 msgid "Federation Objects"
-msgstr "健康信息平台对象"
+msgstr "GNU Health 信息平台-对象"
 
 msgctxt "model:ir.action,name:gnuhealth_action_federation_queue"
 msgid "Federation Queue Manager"
-msgstr "健康信息平台消息队列管理器"
+msgstr "GNU Health 信息平台消息队列管理器"
 
 msgctxt "model:ir.action.act_window.domain,name:act_gnuhealth_fedq_domain_all"
 msgid "All"
@@ -306,23 +306,23 @@ msgstr "已发送"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_federation_config"
 msgid "Node Configuration"
-msgstr "节点设置"
+msgstr "平台节点设置"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_federation_object"
 msgid "Federation Objects"
-msgstr "健康信息平台对象"
+msgstr "平台对象"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_federation_queue"
 msgid "Federation Queue Manager"
-msgstr "健康信息平台消息队列管理器"
+msgstr "平台消息队列管理器"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_federation"
 msgid "Federation"
-msgstr "健康信息平台"
+msgstr "GNU Health 信息平台"
 
 msgctxt "model:res.group,name:group_health_federation_admin"
 msgid "Health Federation Administration"
-msgstr "Health 健康信息平台管理"
+msgstr "GNU Health 信息平台管理"
 
 msgctxt "selection:gnuhealth.federation.queue,method:"
 msgid ""
@@ -382,4 +382,4 @@ msgstr "发送按钮"
 
 msgctxt "view:gnuhealth.federation.queue:"
 msgid "Send the record to the Federation"
-msgstr "将此记录发送到健康信息平台"
+msgstr "将此记录发送到 GNU Health 信息平台"
