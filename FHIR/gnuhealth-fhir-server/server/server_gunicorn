@@ -1,2 +1,0 @@
-#!/bin/bash
-gunicorn 'fhir_server:create_app()'
