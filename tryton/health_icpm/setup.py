@@ -67,7 +67,7 @@ setup(name='gnuhealth_icpm',
         'trytond.modules.health_icpm': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.odt', 'icons/*.svg'],
+               'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[

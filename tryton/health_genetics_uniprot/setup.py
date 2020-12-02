@@ -66,7 +66,7 @@ setup(name='gnuhealth_genetics_uniprot',
         'trytond.modules.health_genetics_uniprot': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.odt', 'icons/*.svg'],
+               'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[

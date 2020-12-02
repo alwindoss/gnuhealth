@@ -68,7 +68,7 @@ setup(name='gnuhealth_archives',
         'trytond.modules.health_archives': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.odt', 'icons/*.svg'],
+               'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[

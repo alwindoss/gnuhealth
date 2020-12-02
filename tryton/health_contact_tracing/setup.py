@@ -68,7 +68,7 @@ setup(name='gnuhealth_contact_tracing',
         'trytond.modules.health_contact_tracing': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.odt', 'icons/*.svg'],
+               'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[
