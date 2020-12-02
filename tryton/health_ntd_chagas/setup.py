@@ -67,7 +67,7 @@ setup(name='gnuhealth_ntd_chagas',
         'trytond.modules.health_ntd_chagas': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.odt', 'icons/*.svg'],
+               'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[

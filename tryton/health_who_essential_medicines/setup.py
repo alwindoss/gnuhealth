@@ -67,7 +67,7 @@ setup(name='gnuhealth_who_essential_medicines',
         'trytond.modules.health_who_essential_medicines': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.odt', 'icons/*.svg'],
+               'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[

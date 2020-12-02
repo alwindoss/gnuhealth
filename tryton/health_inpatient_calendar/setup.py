@@ -67,7 +67,7 @@ setup(name='gnuhealth_inpatient_calendar',
         'trytond.modules.health_inpatient_calendar': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.odt', 'icons/*.svg'],
+               'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[
