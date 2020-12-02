@@ -5,7 +5,7 @@
             <field name="name">ID Cards - QR</field>
             <field name="model">gnuhealth.patient</field>
             <field name="report_name">patient.qrcard</field>
-            <field name="report">health_qrcodes/report/patient_card.odt</field>
+            <field name="report">health_qrcodes/report/patient_card.fodt</field>
             <field name="extension">pdf</field>
         </record>
         <record model="ir.action.keyword" id="report_qrcard_patient">
@@ -18,7 +18,7 @@
             <field name="name">Newborn ID - QR</field>
             <field name="model">gnuhealth.newborn</field>
             <field name="report_name">newborn.qrcard</field>
-            <field name="report">health_qrcodes/report/newborn_card.odt</field>
+            <field name="report">health_qrcodes/report/newborn_card.fodt</field>
             <field name="extension">pdf</field>
         </record>
         <record model="ir.action.keyword" id="report_qrcard_newborn">
@@ -31,7 +31,7 @@
             <field name="name">Test Labels</field>
             <field name="model">gnuhealth.lab</field>
             <field name="report_name">labtest.qrlabel</field>
-            <field name="report">health_qrcodes/report/labtest_qrcode.odt</field>
+            <field name="report">health_qrcodes/report/labtest_qrcode.fodt</field>
             <field name="extension">pdf</field>
         </record>
         <record model="ir.action.keyword" id="report_qrcode_labtest">
@@ -44,7 +44,7 @@
             <field name="name">Code39 barcode label</field>
             <field name="model">gnuhealth.lab</field>
             <field name="report_name">labtest.barcode39</field>
-            <field name="report">health_qrcodes/report/barcode39.odt</field>
+            <field name="report">health_qrcodes/report/barcode39.fodt</field>
             <field name="extension">pdf</field>
         </record>
         <record model="ir.action.keyword" id="report_barcode39_labtest">
@@ -58,7 +58,7 @@
             <field name="name">Appointment QRCODE</field>
             <field name="model">gnuhealth.appointment</field>
             <field name="report_name">appointment.qrcodel</field>
-            <field name="report">health_qrcodes/report/appointment_qrcode.odt</field>
+            <field name="report">health_qrcodes/report/appointment_qrcode.fodt</field>
             <field name="extension">pdf</field>
         </record>
         <record model="ir.action.keyword" id="report_qrcode_appointment_qrcode">
