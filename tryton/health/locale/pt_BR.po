@@ -1,7 +1,7 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:09+0000\n"
+"PO-Revision-Date: 2020-12-04 18:56+0000\n"
 "Last-Translator: Wilker Santana da Silva <wilker@tutamail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health/pt_BR/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 "X-POOTLE-MTIME: 1451260884.0\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
@@ -1942,7 +1942,7 @@ msgstr "Efeito terapêutico"
 
 msgctxt "field:gnuhealth.medicament,unit:"
 msgid "dose unit"
-msgstr ""
+msgstr "Unidade de Dose"
 
 msgctxt "field:gnuhealth.medicament,write_date:"
 msgid "Write Date"
