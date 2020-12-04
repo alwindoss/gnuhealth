@@ -70,7 +70,7 @@ setup(name='gnuhealth_webdav3_server',
         ],
     package_data={
         'trytond.modules.webdav': (info.get('xml', [])
-            + ['tryton.cfg', 'view/*.xml', 'locale/*.po', '*.odt',
+            + ['tryton.cfg', 'view/*.xml', 'locale/*.po', '*.fodt',
                 'icons/*.svg', 'tests/*.rst']),
         },
     scripts=['bin/gnuhealth-webdav-server'],

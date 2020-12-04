@@ -5,7 +5,7 @@
             <field name="name">Nursing rounds</field>
             <field name="model">gnuhealth.patient.rounding</field>
             <field name="report_name">patient.rounding.report</field>
-            <field name="report">health_nursing/report/round_report.odt</field>
+            <field name="report">health_nursing/report/round_report.fodt</field>
             <field name="extension">pdf</field>
         </record>
         <record model="ir.action.keyword" id="report_nursing_round">
