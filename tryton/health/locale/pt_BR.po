@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2020-12-04 18:56+0000\n"
-"Last-Translator: Wilker Santana da Silva <wilker@tutamail.com>\n"
+"Last-Translator: José Bran <greenleaves@disroot.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -190,7 +190,7 @@ msgstr "Nenhum profissional de saúde está associado a este usuário"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "The evaluation code must be unique !"
-msgstr ""
+msgstr "O código de avaliação deve ser único!"
 
 msgctxt "error:gnuhealth.patient.medication:"
 msgid ""
@@ -243,7 +243,7 @@ msgstr "A IDUP deve ser única"
 
 msgctxt "error:party.party:"
 msgid "This internal user is already assigned to a party"
-msgstr ""
+msgstr "Este usuário interno já pertence a uma entidade"
 
 msgctxt "error:wizard.gnuhealth.appointment.evaluation:"
 msgid "You need to select one Appointment record"
@@ -1265,7 +1265,7 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.hospital.or,state:"
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 msgctxt "field:gnuhealth.hospital.or,unit:"
 msgid "Unit"
@@ -1905,7 +1905,7 @@ msgstr "Gestante e Lactante"
 
 msgctxt "field:gnuhealth.medicament,pregnancy_cat_icon:"
 msgid "Preg. Cat. Icon"
-msgstr ""
+msgstr "Icone categoria gestação"
 
 msgctxt "field:gnuhealth.medicament,pregnancy_category:"
 msgid "Pregnancy Category"
