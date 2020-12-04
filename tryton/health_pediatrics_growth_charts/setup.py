@@ -67,7 +67,7 @@ setup(name='gnuhealth_pediatrics_growth_charts',
         'trytond.modules.health_pediatrics_growth_charts': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.odt', 'icons/*.svg'],
+               'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[

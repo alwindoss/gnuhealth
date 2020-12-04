@@ -6,7 +6,7 @@
             <field name="name">Lab Report</field>
             <field name="model">gnuhealth.lab</field>
             <field name="report_name">patient.labtest.report</field>
-            <field name="report">health_lab/report/labtest_report.odt</field>
+            <field name="report">health_lab/report/labtest_report.fodt</field>
             <field name="extension">pdf</field>
         </record>
         <record model="ir.action.keyword" id="report_patient_labtest_report_keyword">

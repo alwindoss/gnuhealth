@@ -5,7 +5,7 @@
             <field name="name">Surgery Report</field>
             <field name="model">gnuhealth.surgery</field>
             <field name="report_name">surgery</field>
-            <field name="report">health_surgery/report/surgery_report.odt</field>
+            <field name="report">health_surgery/report/surgery_report.fodt</field>
             <field name="extension">pdf</field>
         </record>
         <record model="ir.action.keyword" id="report_surgery">

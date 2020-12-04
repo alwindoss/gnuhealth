@@ -67,7 +67,7 @@ setup(name='gnuhealth_icd10pcs',
         'trytond.modules.health_icd10pcs': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.odt', 'icons/*.svg'],
+               'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[
