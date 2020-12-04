@@ -1,7 +1,7 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-04 18:56+0000\n"
+"PO-Revision-Date: 2020-12-05 19:29+0000\n"
 "Last-Translator: José Bran <greenleaves@disroot.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health/pt_BR/>\n"
@@ -2482,7 +2482,7 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.patient.disease,related_evaluations:"
 msgid "Related Evaluations"
-msgstr ""
+msgstr "Exames Relacionados"
 
 msgctxt "field:gnuhealth.patient.disease,short_comment:"
 msgid "Remarks"
@@ -2490,7 +2490,7 @@ msgstr "Observação"
 
 msgctxt "field:gnuhealth.patient.disease,status:"
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 msgctxt "field:gnuhealth.patient.disease,treatment_description:"
 msgid "Treatment Description"
@@ -2512,10 +2512,9 @@ msgctxt "field:gnuhealth.patient.ecg,axis:"
 msgid "Axis"
 msgstr "Eixo"
 
-#, fuzzy
 msgctxt "field:gnuhealth.patient.ecg,create_date:"
 msgid "Create Date"
-msgstr "Criar Data"
+msgstr "Crear Data"
 
 msgctxt "field:gnuhealth.patient.ecg,create_uid:"
 msgid "Create User"
