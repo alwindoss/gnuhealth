@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+
+        <!-- Load Procedure wizard -->
+        <record model="ir.action.wizard" id="load_procedure">
+            <field name="name">Load Procedure</field>
+            <field name="wiz_name">gnuhealth.dentistry.load.procedure</field>
+            <field name="model">gnuhealth.dentistry.treatment</field>
+        </record>
+
+        <record model="ir.ui.view" id="load_procedure_start_view_form">
+            <field name="model">gnuhealth.dentistry.load.procedure.start</field>
+            <field name="type">form</field>
+            <field name="name">load_procedure_start_form</field>
+        </record>
+
+    </data>
+</tryton>

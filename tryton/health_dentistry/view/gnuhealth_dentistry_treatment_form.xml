@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<form>
+    <group string="Header" colspan="4" col="8" id="patient_dentistry_header">
+        <label name="patient"/>
+        <field name="patient"/>
+        <label name="treatment_date"/>
+        <field name="treatment_date"/>
+        <label name="healthprof"/>
+        <field name="healthprof"/>
+    </group>
+    <button name="load_procedure" string="Load Procedure"
+        icon="tryton-launch" colspan="2"/>
+    <button name="set_odontogram" string="Set Odontogram"
+        icon="tryton-launch" colspan="2"/>
+    <field name="procedures" colspan="4"/>
+    <group string="Extra Info" id="dentistry_extra_info" colspan="4">
+        <field name="notes"/>
+    </group>
+    <group colspan="4" col="6" id="group_state">
+        <label name="state"/>
+        <field name="state"/>
+        <label name="signed_by"/>
+        <field name="signed_by"/>
+        <button name="end_treatment" help="End this treatment" string="Done"
+            icon="tryton-ok" confirm="End this treatment?"/>
+    </group>
+</form>
