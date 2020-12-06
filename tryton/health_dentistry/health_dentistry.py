@@ -1,12 +1,14 @@
 ##############################################################################
 #
-#    GNU Health: Hospital Information System (HIS) component
+#    GNU Health. Hospital Information System (HIS) component.
 #
-#                 ***  Dentisty Package ***
+#                       ***  Dentistry Package  ***
 #
+#    Copyright (C) 2020 National University of Entre Rios, Argentina (UNER)
+#                  School of Engineering <saludpublica@ingenieria.uner.edu.ar>
 #    Copyright (C) 2020 Mario Puntin <mario@silix.com.ar>
 #    Copyright (C) 2020 GNU Solidario <health@gnusolidario.org>
-#
+
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or

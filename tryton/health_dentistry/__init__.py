@@ -2,8 +2,10 @@
 #
 #    GNU Health. Hospital Information System (HIS) component.
 #
-#                    Dentistry Package
+#                       ***  Dentistry Package  ***
 #
+#    Copyright (C) 2020 National University of Entre Rios, Argentina (UNER)
+#                  School of Engineering <saludpublica@ingenieria.uner.edu.ar>
 #    Copyright (C) 2020 Mario Puntin <mario@silix.com.ar>
 #    Copyright (C) 2020 GNU Solidario <health@gnusolidario.org>
 #
