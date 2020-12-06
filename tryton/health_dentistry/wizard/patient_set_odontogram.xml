@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is part of health_dentistry module for Tryton.
+The COPYRIGHT file at the top level of this repository contains
+the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <!-- Set Odontogram wizard -->
+        <record model="ir.action.wizard" id="wizard_set_odontogram">
+            <field name="name">Set Odontogram</field>
+            <field name="wiz_name">gnuhealth.dentistry.set.odontogram</field>
+            <field name="model">gnuhealth.patient</field>
+        </record>
+
+        <record model="ir.ui.view" id="set_odontogram_start_view_form">
+            <field name="model">gnuhealth.dentistry.set.odontogram.start</field>
+            <field name="type">form</field>
+            <field name="name">set_odontogram_start_form</field>
+        </record>
+
+    </data>
+</tryton>
