@@ -5413,7 +5413,6 @@ class PatientEvaluation(ModelSQL, ModelView):
             evaluation.diagnosis.rec_name) or ''
 
         measures = str(measurements)
-        print ("--->", measures)
         # Summarize the encounter note taking as SOAP
         soap = \
             "S: " + evaluation.chief_complaint + "\n--\n" + \
