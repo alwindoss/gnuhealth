@@ -11,6 +11,9 @@
                 <field name="category"/>
                 <label name="active"/>
                 <field name="active"/>
+                <newline/>
+                <label name="uri"/>
+                <field colspan="6" name="uri" widget="url"/>
             </group>
             <newline/>
             <field name="groups"/>

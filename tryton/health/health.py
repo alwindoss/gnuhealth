@@ -2345,7 +2345,7 @@ class Pathology(ModelSQL, ModelView):
     category = fields.Many2One(
         'gnuhealth.pathology.category', 'Main Category',
         help='Select the main category for this disease This is usually'
-        ' associated to the standard. For instance, the chapter on the ICD-10'
+        ' associated to the standard. For instance, the chapter on the ICD'
         ' will be the main category for de disease')
 
     groups = fields.One2Many(
@@ -2358,6 +2358,8 @@ class Pathology(ModelSQL, ModelView):
         'Protein involved', help='Name of the protein(s) affected')
     gene = fields.Char('Gene', help='Name of the gene(s) affected')
     info = fields.Text('Extra Info')
+
+    uri = fields.Char('URI', help="Resource / Entity URL address")
 
     active = fields.Boolean('Active', select=True)
 
