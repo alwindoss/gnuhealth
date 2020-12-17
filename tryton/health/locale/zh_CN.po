@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 08:16+0000\n"
-"PO-Revision-Date: 2020-11-26 01:29+0000\n"
+"PO-Revision-Date: 2020-12-18 06:29+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -5993,7 +5993,7 @@ msgstr "耳的"
 
 msgctxt "model:gnuhealth.drug.route,name:route_32"
 msgid "Other/Miscellaneous"
-msgstr "其他/杂项"
+msgstr "其它"
 
 msgctxt "model:gnuhealth.drug.route,name:route_33"
 msgid "Perfusion"
@@ -9745,7 +9745,7 @@ msgstr "配置"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_misc"
 msgid "Misc"
-msgstr "杂项"
+msgstr "其它"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_occupation"
 msgid "Occupations"
@@ -11412,11 +11412,11 @@ msgstr "食物过敏"
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid "Misc Allergy"
-msgstr "其他过敏"
+msgstr "其它过敏"
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid "Misc Contraindication"
-msgstr "其他禁忌"
+msgstr "其它禁忌"
 
 msgctxt "selection:gnuhealth.patient.disease,disease_severity:"
 msgid ""
@@ -12734,7 +12734,7 @@ msgstr "药品"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Misc"
-msgstr "杂项"
+msgstr "其它"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Notepad"
@@ -12766,7 +12766,7 @@ msgstr "药品及适应症"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Misc"
-msgstr "杂项"
+msgstr "其它"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Specific Dosage"
