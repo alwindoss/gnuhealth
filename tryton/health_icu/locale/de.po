@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-11 08:38+0000\n"
-"Last-Translator: S <t0kie@mailbox.org>\n"
+"PO-Revision-Date: 2020-12-25 21:43+0000\n"
+"Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_icu/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.4.1-dev\n"
 
 msgctxt "error:gnuhealth.icu.ventilation:"
 msgid ""
@@ -320,7 +320,7 @@ msgstr "Entlassen"
 
 msgctxt "field:gnuhealth.inpatient.icu,icu_admission_date:"
 msgid "ICU Admission"
-msgstr " ICU Aufnahme"
+msgstr "ICU Aufnahme"
 
 msgctxt "field:gnuhealth.inpatient.icu,icu_discharge_date:"
 msgid "Discharge"
