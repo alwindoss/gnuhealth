@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-11 08:38+0000\n"
-"Last-Translator: S <t0kie@mailbox.org>\n"
+"PO-Revision-Date: 2020-12-25 21:38+0000\n"
+"Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_socioeconomics/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.4.1-dev\n"
 
 msgctxt "field:gnuhealth.patient,domestic_violence:"
 msgid "Domestic violence"
@@ -121,7 +121,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ses.assessment,fam_apgar_help:"
 msgid "Help from family"
-msgstr ""
+msgstr "Von Familie unterstützt"
 
 msgctxt "field:gnuhealth.ses.assessment,fam_apgar_score:"
 msgid "Score"
@@ -133,11 +133,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ses.assessment,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Geschlecht"
 
 msgctxt "field:gnuhealth.ses.assessment,health_professional:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Gesundheitsfachkraft"
 
 msgctxt "field:gnuhealth.ses.assessment,housing:"
 msgid "Housing conditions"
@@ -161,11 +161,11 @@ msgstr "Beruf"
 
 msgctxt "field:gnuhealth.ses.assessment,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Patient"
 
 msgctxt "field:gnuhealth.ses.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.ses.assessment,ses:"
 msgid "Socioeconomics"
