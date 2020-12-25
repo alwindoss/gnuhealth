@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-10 10:28+0000\n"
-"Last-Translator: S <t0kie@mailbox.org>\n"
+"PO-Revision-Date: 2020-12-25 21:49+0000\n"
+"Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/health/"
 "de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.4.1-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -3856,7 +3856,7 @@ msgid ""
 "Underlying conditions that initiated the events resulting in death. Please "
 "code them in sequential, chronological order"
 msgstr ""
-"Zugrundeliegende Krankheitszustände die die zum Tode führenden Ereignisse "
+"Zugrundeliegende Krankheitszustände die zum Tode führenden Ereignisse "
 "initiiert haben. Bitte in chronologischer Abfolge codieren"
 
 msgctxt "help:gnuhealth.death_underlying_condition,interval:"
@@ -9527,7 +9527,7 @@ msgstr "Datum"
 
 msgctxt "report:appointment.receipt:"
 msgid "Health Professional :"
-msgstr "Gesundheitsfachkraft"
+msgstr "Gesundheitsfachkraft :"
 
 msgctxt "report:appointment.receipt:"
 msgid "Institution"
@@ -9625,7 +9625,7 @@ msgstr "Patient"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Print Date"
-msgstr "Druckdatum:"
+msgstr "Druckdatum"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Remarks"
@@ -9785,7 +9785,7 @@ msgstr "Anamnese zur jetzigen Erkrankung"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Information Source:"
-msgstr "Informationsquelle"
+msgstr "Informationsquelle:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Initiated by"
@@ -9793,7 +9793,7 @@ msgstr "veranlasst von"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Main Condition :"
-msgstr "Hauptzustand"
+msgstr "Hauptzustand:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Marital Status"
@@ -9857,7 +9857,7 @@ msgstr "Typ"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "ate:"
-msgstr "aß"
+msgstr "aß:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "rocedures"
@@ -10245,7 +10245,7 @@ msgstr "Verschreibungs-ID"
 
 msgctxt "report:prescription.order:"
 msgid "Prescription date :"
-msgstr "Verschreibungsdatum"
+msgstr "Verschreibungsdatum:"
 
 msgctxt "report:prescription.order:"
 msgid "Qty"
