@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-26 17:19+0000\n"
+"PO-Revision-Date: 2020-12-26 17:37+0000\n"
 "Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_surgery/de/>\n"
@@ -201,7 +201,7 @@ msgstr "Patient"
 
 msgctxt "field:gnuhealth.surgery,postoperative_dx:"
 msgid "Post-op dx"
-msgstr ""
+msgstr "Post-Op-Diag"
 
 msgctxt "field:gnuhealth.surgery,preop_antibiotics:"
 msgid "Antibiotic Prophylaxis"
@@ -682,19 +682,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Weiblich"
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Female -> Male"
-msgstr ""
+msgstr "weiblich -> männlich"
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Male"
-msgstr ""
+msgstr "männlich"
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Male -> Female"
-msgstr ""
+msgstr "männlich -> weiblich"
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid ""
@@ -702,33 +702,39 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid "PS 1 : Normal healthy patient"
-msgstr ""
+msgstr "PS 1 : Normaler gesunder Patient"
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid "PS 2 : Patients with mild systemic disease"
-msgstr ""
+msgstr "PS 2 : Patienten mit leichter systemischer Erkrankung"
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid "PS 3 : Patients with severe systemic disease"
-msgstr ""
+msgstr "PS 3: Patienten mit schwerer systemischer Erkrankung"
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid ""
 "PS 4 : Patients with severe systemic disease that is a constant threat to "
 "life "
 msgstr ""
+"PS 4: Patienten mit schwerer systemischer Erkrankung, die eine ständige "
+"Bedrohung für das Leben darstellt "
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid ""
 "PS 5 : Moribund patients who are not expected to survive without the "
 "operation"
 msgstr ""
+"PS 5: Moribunde Patienten, die ohne Operation voraussichtlich nicht "
+"überleben würden"
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid ""
 "PS 6 : A declared brain-dead patient who organs are being removed for donor "
 "purposes"
 msgstr ""
+"PS 6: Ein für hirntot erklärter Patient, dem Organe zu Spenderzwecken "
+"entnommen werden"
 
 msgctxt "selection:gnuhealth.surgery,preop_mallampati:"
 msgid ""
@@ -736,29 +742,35 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,preop_mallampati:"
 msgid "Class 1: Full visibility of tonsils, uvula and soft palate"
-msgstr ""
+msgstr "Klasse 1: Volle Sichtbarkeit von Mandeln, Zäpfchen und weichem Gaumen"
 
+#, fuzzy
 msgctxt "selection:gnuhealth.surgery,preop_mallampati:"
 msgid ""
 "Class 2: Visibility of hard and soft palate, upper portion of tonsils and "
 "uvula"
 msgstr ""
+"Klasse 2: Sichtbarkeit von hartem und weichem Gaumen, oberem Teil der "
+"Mandeln und des Zäpfchens"
 
+#, fuzzy
 msgctxt "selection:gnuhealth.surgery,preop_mallampati:"
 msgid "Class 3: Soft and hard palate and base of the uvula are visible"
 msgstr ""
+"Klasse 3: Weicher und harter Gaumen sowie die Basis des Zäpfchens sind "
+"sichtbar"
 
 msgctxt "selection:gnuhealth.surgery,preop_mallampati:"
 msgid "Class 4: Only Hard Palate visible"
-msgstr ""
+msgstr "Klasse 4: Nur harter Gaumen sichtbar"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Cancelled"
-msgstr ""
+msgstr "Abgesagt"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Confirmed"
-msgstr ""
+msgstr "Bestätigt"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Done"
