@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-26 17:38+0000\n"
+"PO-Revision-Date: 2020-12-26 17:45+0000\n"
 "Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_surgery/de/>\n"
@@ -85,7 +85,7 @@ msgstr "Vorerkrankungen zerebrovaskuläre Erkrankungen"
 
 msgctxt "field:gnuhealth.rcri,rcri_class:"
 msgid "RCRI Class"
-msgstr "RCRI Class"
+msgstr "RCRI-Klasse"
 
 msgctxt "field:gnuhealth.rcri,rcri_congestive_history:"
 msgid "History of congestive heart disease"
@@ -129,7 +129,7 @@ msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.sequences,surgery_code_sequence:"
 msgid "Surgery Sequence"
-msgstr ""
+msgstr "Ablauf der Operation"
 
 msgctxt "field:gnuhealth.surgery,admission:"
 msgid "Admission"
@@ -193,7 +193,7 @@ msgstr "OP-Saal"
 
 msgctxt "field:gnuhealth.surgery,pathology:"
 msgid "Condition"
-msgstr ""
+msgstr "Zustand"
 
 msgctxt "field:gnuhealth.surgery,patient:"
 msgid "Patient"
@@ -259,9 +259,10 @@ msgctxt "field:gnuhealth.surgery,state:"
 msgid "State"
 msgstr "Zustand"
 
+#, fuzzy
 msgctxt "field:gnuhealth.surgery,supplies:"
 msgid "Supplies"
-msgstr ""
+msgstr "Material"
 
 msgctxt "field:gnuhealth.surgery,surgeon:"
 msgid "Surgeon"
@@ -329,7 +330,7 @@ msgstr "Name"
 
 msgctxt "field:gnuhealth.surgery_supply,supply:"
 msgid "Supply"
-msgstr ""
+msgstr "Versorgung"
 
 msgctxt "field:gnuhealth.surgery_supply,write_date:"
 msgid "Write Date"
@@ -373,7 +374,7 @@ msgstr "Mitglied"
 
 msgctxt "field:gnuhealth.surgery_team,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Speicherdatum"
 
 msgctxt "field:gnuhealth.surgery_team,write_uid:"
 msgid "Write User"
@@ -399,6 +400,7 @@ msgstr ""
 "Beinhaltet andy suprainguinale vaskuläre, intraperitoneale oder "
 "intrathorakale Verfahren"
 
+#, fuzzy
 msgctxt "help:gnuhealth.rcri,rcri_ischemic_history:"
 msgid ""
 "history of MI or a positive exercise test, current         complaint of "
@@ -407,6 +409,12 @@ msgid ""
 "prior coronary revascularization procedure         unless one of the other "
 "criteria for ischemic heart disease is         present"
 msgstr ""
+"Herzinfarkt in der Vorgeschichte oder positiver Belastungstest, aktuelle "
+"Beschwerden über Schmerzen in der Brust, die als sekundär zu einer "
+"Myokardischämie angesehen werden, Anwendung einer Nitrattherapie oder EKG "
+"mit pathologischen Q-Wellen; frühere koronare Revaskularisationen zählen "
+"nicht, es sei denn, eines der anderen Kriterien für eine ischämische "
+"Herzerkrankung liegt vor"
 
 msgctxt "help:gnuhealth.rcri,rcri_kidney_history:"
 msgid "Preoperative serum creatinine >2.0 mg/dL (177 mol/L)"
@@ -442,7 +450,7 @@ msgstr "Dringlichkeit für diese Operation"
 
 msgctxt "help:gnuhealth.surgery,code:"
 msgid "Health Center code / sequence"
-msgstr ""
+msgstr "Gesundheitszentrum Code / Reihenfolge"
 
 msgctxt "help:gnuhealth.surgery,computed_age:"
 msgid "Computed patient age at the moment of the surgery"
@@ -622,11 +630,11 @@ msgstr "Abgeschlossen"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_surgery_code"
 msgid "Surgery"
-msgstr ""
+msgstr "Chirurgie"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_surgery_code"
 msgid "Surgery"
-msgstr ""
+msgstr "Chirurgie"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_surgery_menu"
 msgid "Surgeries"
@@ -782,28 +790,29 @@ msgstr "Entwurf"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "In Progress"
-msgstr ""
+msgstr "Laufend"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Signed"
-msgstr ""
+msgstr "Abgeschlossen"
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid ""
 msgstr ""
 
+#, fuzzy
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Clean . Class I"
-msgstr ""
+msgstr "Sauber . Klasse I"
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Clean-Contaminated . Class II"
-msgstr ""
+msgstr "Sauber-verschmutzt . Klasse II"
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Contaminated . Class III"
-msgstr ""
+msgstr "Verschmutzt . Klasse III"
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Dirty-Infected . Class IV"
-msgstr ""
+msgstr "Schmutzig-infiziert . Klasse IV"
