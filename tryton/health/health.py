@@ -967,6 +967,7 @@ class PageOfLife(ModelSQL, ModelView):
         ('health_condition', 'Health Condition'),
         ('encounter', 'Encounter'),
         ('procedure', 'Procedure'),
+        ('self_monitoring', 'Self monitoring'),
         ('immunization','Immunization'),
         ('prescription', 'Prescription'),
         ('surgery', 'Surgery'),
