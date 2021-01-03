@@ -4863,45 +4863,45 @@ class PatientEvaluation(ModelSQL, ModelView):
 
     glycemia = fields.Float(
         'Glycemia',
-        help='Last blood glucose level. Can be approximative. Expressed in mg/dL or mmol/L.',
+        help='Blood glucose level (mg/dL)',
         states = STATES)
 
     hba1c = fields.Float(
-        'Glycated Hemoglobin',
-        help='Last Glycated Hb level. Can be approximative. Expressed in mmol/mol.',
+        'HbA1c',
+        help='Last Glycated Hemoglobin HbA1c level(mmol/mol)',
         states = STATES)
 
     cholesterol_total = fields.Integer(
         'Last Cholesterol',
-        help='Last cholesterol reading. Can be approximative. Expressed in mg/dL or mmol/L.',
+        help='Last cholesterol reading (mg/dL)',
         states = STATES)
 
     hdl = fields.Integer(
-        'Last HDL',
-        help='Last HDL Cholesterol reading. Can be approximative. Expressed in mg/dL or mmol/L.',
+        'HDL',
+        help='Last HDL Cholesterol reading (mg/dL)',
         states = STATES)
 
     ldl = fields.Integer(
-        'Last LDL',
-        help='Last LDL Cholesterol reading. Can be approximative. Expressed in mg/dL or mmol/L.',
+        'LDL',
+        help='Last LDL Cholesterol reading (mg/dL)',
         states = STATES)
 
     tag = fields.Integer(
-        'Last TAGs',
-        help='Triacylglycerol(triglicerides) level. Can be approximative. Expressed in mg/dL or mmol/L.',
+        'TAGs',
+        help='Last Triglicerides level, (mg/dL)',
         states = STATES)
 
     systolic = fields.Integer('Systolic Pressure',
-        help='Systolic pressure expressed in mmHg',
+        help='Systolic pressure (mmHg)',
         states = STATES)
 
     diastolic = fields.Integer('Diastolic Pressure',
-        help='Diastolic pressure expressed in mmHg',
+        help='Diastolic pressure (mmHg)',
         states = STATES)
 
     bpm = fields.Integer(
         'Heart Rate',
-        help='Heart rate expressed in beats per minute',
+        help='Heart rate (beats per minute)',
         states = STATES)
 
     respiratory_rate = fields.Integer(
@@ -5402,7 +5402,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         if evaluation.osat:
             measurements['osat']=evaluation.osat
         if evaluation.glycemia:
-            measurements['bs']=evaluation.glycemia
+            measurements['bg']=evaluation.glycemia
         if evaluation.weight:
             measurements['wt']=evaluation.weight
         if evaluation.height:
