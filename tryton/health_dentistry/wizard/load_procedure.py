@@ -12,7 +12,7 @@ class LoadProcedureStart(ModelView):
     __name__ = 'gnuhealth.dentistry.load.procedure.start'
 
     procedure = fields.Many2One('gnuhealth.dentistry.procedure',
-        'Procedure', required=True)
+                                'Procedure', required=True)
     root = fields.Boolean('Root')
     occlusal = fields.Boolean('Occlusal')
     vestibular = fields.Boolean('Vestibular')
@@ -86,10 +86,9 @@ class LoadProcedure(Wizard):
     __name__ = 'gnuhealth.dentistry.load.procedure'
 
     start = StateView('gnuhealth.dentistry.load.procedure.start',
-        'health_dentistry.load_procedure_start_view_form', [
-            Button('Cancel', 'end', 'tryton-cancel'),
-            Button('Load', 'load', 'tryton-ok', default=True),
-            ])
+                      'health_dentistry.load_procedure_start_view_form',
+                      [Button('Cancel', 'end', 'tryton-cancel'),
+                       Button('Load', 'load', 'tryton-ok', default=True)])
     load = StateTransition()
 
     def default_start(self, fields):
