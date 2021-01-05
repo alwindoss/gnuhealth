@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# This file is part health_dentistry module for Tryton.
+# This file is part health_dentistry module for GNU Health.
 # The COPYRIGHT file at the top level of this repository contains
 # the full copyright notices and license terms.
 import json
@@ -45,8 +45,8 @@ primary_surfaces = [
 
 def tooth_surface(label, help, tooth):
     return fields.Boolean(label, help=help,
-        states={'readonly': ~In(Eval(tooth), ['D', 'F'])},
-        depends=[tooth])
+                          states={'readonly': ~In(Eval(tooth), ['D', 'F'])},
+                          depends=[tooth])
 
 
 class SetOdontogramStart(ModelView):
@@ -380,10 +380,9 @@ class SetOdontogram(Wizard):
     __name__ = 'gnuhealth.dentistry.set.odontogram'
 
     start = StateView('gnuhealth.dentistry.set.odontogram.start',
-        'health_dentistry.set_odontogram_start_view_form', [
-            Button('Cancel', 'end', 'tryton-cancel'),
-            Button('Set', 'set_', 'tryton-ok', default=True),
-            ])
+                      'health_dentistry.set_odontogram_start_view_form',
+                      [Button('Cancel', 'end', 'tryton-cancel'),
+                       Button('Set', 'set_', 'tryton-ok', default=True)])
     set_ = StateTransition()
 
     def default_start(self, fields):
