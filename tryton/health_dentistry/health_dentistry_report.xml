@@ -6,7 +6,7 @@
             <field name="name">Dentistry Procedures</field>
             <field name="model">gnuhealth.patient</field>
             <field name="report_name">health_dentistry.procedure.report</field>
-            <field name="report">health_dentistry/report/procedures_report.odt</field>
+            <field name="report">health_dentistry/report/procedures_report.fodt</field>
             <field name="extension">pdf</field>
         </record>
 
