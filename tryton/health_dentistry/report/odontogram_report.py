@@ -18,7 +18,7 @@ class Odontogram(Report):
     radius = 37
     pieces = {
         '18': (37, 37), '17': (118, 37), '16': (199, 37), '15': (280, 37),
-        '14': (229, 37), '13': (310, 37), '12': (391, 37), '11': (472, 37),
+        '14': (361, 37), '13': (442, 37), '12': (523, 37), '11': (604, 37),
         '21': (744, 37), '22': (825, 37), '23': (906, 37), '24': (987, 37),
         '25': (1068, 37), '26': (1149, 37), '27': (1230, 37), '28': (1311, 37),
         '48': (37, 360), '47': (118, 360), '46': (199, 360), '45': (280, 360),
@@ -37,29 +37,79 @@ class Odontogram(Report):
         }
 
     @classmethod
-    def plot_extraction(cls, piece, status, im):
-        missing_color = (5, 11, 50)  # deep blue
-        for_extraction_color = (90, 0, 15)  # red
+    def plot_extraction(cls, piece_center, status, im):
+        missing_color = "#0000ff"  # blue
+        for_extraction_color = "#ff0000"  # red
         if (status == 'M'):
             color = missing_color
         else:
             color = for_extraction_color
 
-        xcenter, ycenter = piece
+        xcenter, ycenter = piece_center
         llc = {'x': xcenter - 30, 'y': ycenter + 30}
         urc = {'x': xcenter + 30, 'y': ycenter - 30}
         ulc = {'x': xcenter - 30, 'y': ycenter - 30}
         lrc = {'x': xcenter + 30, 'y': ycenter + 30}
-
-        # We'll use this for the tooth filling.
-        # ImageDraw.floodfill(im, xy=piece, value=(255, 0, 255), thresh=200)
-
         draw = ImageDraw.Draw(im)
         draw.line((llc['x'], llc['y'], urc['x'], urc['y']),
                   fill=color, width=10)
 
         draw.line((ulc['x'], ulc['y'], lrc['x'], lrc['y']),
                   fill=color, width=10)
+
+        return (im)
+
+    @classmethod
+    def plot_decayed(cls, tooth, piece_center, status, im):
+        x, y = piece_center
+        filling = (0, 0, 255)  # blue
+        decayed = (255, 0, 0)  # red
+
+        # Pick the color for decay of filling
+        if status['ts'] == 'D':
+            color = decayed
+        else:
+            color = filling
+
+        position = (x, y)  # Center of the tooth
+        draw = ImageDraw.Draw(im)
+
+        tregions = status.copy()
+        tregions.pop('ts')  # Delete ts element and focus on the tooth areas
+
+        # Set the section of the filling / decay
+        # Maxillar / upper region
+        if (tooth in range(11, 28) or tooth in range(51, 65)):
+            print(tooth, tregions)
+            for key in tregions.keys():
+                if (key in ['o', 'i']):  # Occlusal or Incisal
+                    position = (x, y)  # Center of the tooth
+                if (key == 'v'):  # Vestibular
+                    position = (x, y - 25)
+                if (key == 'p'):  # Palatine
+                    position = (x, y + 25)
+                if (key == 'd'):  # Distal
+                    position = (x - 25, y)
+                if (key == 'm'):  # Mesial
+                    position = (x + 25, y)
+
+                ImageDraw.floodfill(im, xy=position, value=color, thresh=200)
+
+        # Mandibular / lower region
+        if (tooth in range(31, 48) or tooth in range(71, 85)):
+            for key in tregions.keys():
+                if (key in ['o', 'i']):  # Occlusal or Incisal
+                    position = (x, y)  # Center of the tooth
+                if (key == 'l'):  # Lingual
+                    position = (x, y - 25)
+                if (key == 'v'):  # Vestibular
+                    position = (x, y + 25)
+                if (key == 'm'):  # Mesial
+                    position = (x - 25, y)
+                if (key == 'd'):  # Distal
+                    position = (x + 25, y)
+
+                ImageDraw.floodfill(im, xy=position, value=color, thresh=200)
 
         return (im)
 
@@ -72,8 +122,16 @@ class Odontogram(Report):
         im = Image.open(filename)
 
         dschema = json.loads(dental_schema)
-        
+
         for tooth, values in dschema.items():
+            # Decayed or filled tooth
+            # Plot it first to avoid wrong surface filling if overlapping with
+            # other symbols
+            if (values['ts'] in ('D', 'F')):
+                status = dschema[tooth]  # Get all the keys (ts, o, m, d, ...)
+                cls.plot_decayed(int(tooth), cls.pieces[tooth], status, im)
+
+            # Missing or set for extraction tooth
             if (values['ts'] in ('M', 'E')):
                 status = values['ts']
                 cls.plot_extraction(cls.pieces[tooth], status, im)
