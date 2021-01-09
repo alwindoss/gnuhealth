@@ -1,6 +1,10 @@
 # This file is part health_dentistry module for GNU Health HMIS component
 # The COPYRIGHT file at the top level of this repository contains
 # the full copyright notices and license terms.
+import io
+import os
+from PIL import Image, ImageDraw
+
 from collections import defaultdict
 
 from trytond.pool import Pool
@@ -39,6 +43,23 @@ class DentistryProcedureReport(Report):
                     })
         return result
 
+    # Odontogram
+    @classmethod
+    def plot_odontogram(cls):
+
+        report_dir = os.path.dirname(os.path.abspath(__file__))
+
+        filename = os.path.join(report_dir, 'odontogram_template.png')
+        im = Image.open(filename)
+        ImageDraw.floodfill(im, xy=(25, 7), value=(255, 0, 255), thresh=200)
+
+        holder = io.BytesIO()
+        im.save(holder, 'png')
+        im.save("result_odonto.png")
+        image_png = holder.getvalue()
+        holder.close()
+        return (image_png)
+
     @classmethod
     def get_context(cls, records, data):
         pool = Pool()
@@ -47,4 +68,6 @@ class DentistryProcedureReport(Report):
             records, data)
         context['today'] = Date.today()
         context['digest_treatments'] = cls.digest_treatments
+        context['patient_odontogram'] = cls.plot_odontogram()
+
         return context

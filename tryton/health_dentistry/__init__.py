@@ -30,6 +30,7 @@ from . import health_dentistry
 from .wizard import patient_set_odontogram
 from .wizard import load_procedure
 from .report import procedures_report
+from .report import odontogram_report
 
 
 def register():
@@ -47,4 +48,5 @@ def register():
         module='health_dentistry', type_='wizard')
     Pool.register(
         procedures_report.DentistryProcedureReport,
+        odontogram_report.Odontogram,
         module='health_dentistry', type_='report')
