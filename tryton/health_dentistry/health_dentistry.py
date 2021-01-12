@@ -4,11 +4,11 @@
 #
 #                       ***  Dentistry Package  ***
 #
-#    Copyright (C) 2020 National University of Entre Rios, Argentina (UNER)
-#                  School of Engineering <saludpublica@ingenieria.uner.edu.ar>
+#    Copyright (C) 2020-2021 National University of Entre Rios (UNER)
+#    School of Engineering <saludpublica@ingenieria.uner.edu.ar>
 #    Copyright (C) 2020 Mario Puntin <mario@silix.com.ar>
-#    Copyright (C) 2020 GNU Solidario <health@gnusolidario.org>
-
+#    Copyright (C) 2020-2021 GNU Solidario <health@gnusolidario.org>
+#
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -33,7 +33,7 @@ from trytond.pool import Pool, PoolMeta
 
 
 __all__ = ['PatientData', 'DentistryTreatment', 'DentistryProcedure',
-    'TreatmentProcedure']
+           'TreatmentProcedure']
 
 
 TOOTH_STATE = [
@@ -83,16 +83,16 @@ class PatientData (metaclass=PoolMeta):
     teeth3 = fields.Function(fields.Char('Quadrant 3'), 'get_status')
     teeth4 = fields.Function(fields.Char('Quadrant 4'), 'get_status')
     use_primary_schema = fields.Boolean('Primary Schema',
-        help='Use Primary Schema')
+                                        help='Use Primary Schema')
     teeth5 = fields.Function(fields.Char('Quadrant 5'), 'get_status_primary')
     teeth6 = fields.Function(fields.Char('Quadrant 6'), 'get_status_primary')
     teeth7 = fields.Function(fields.Char('Quadrant 7'), 'get_status_primary')
     teeth8 = fields.Function(fields.Char('Quadrant 8'), 'get_status_primary')
     dmft_index = fields.Function(fields.Integer('DMFT Index'),
-        'get_dmft_index')
-    dmft_index_primary = fields.Function(fields.Integer('dmft index',
-        help='dmft index for primary teeth',
-        states={'invisible': ~Eval('use_primary_schema')}),
+                                 'get_dmft_index')
+    dmft_index_primary = fields.Function(
+        fields.Integer('dmft index', help='dmft index for primary teeth',
+                       states={'invisible': ~Eval('use_primary_schema')}),
         'get_dmft_index_primary')
 
     @classmethod
@@ -189,15 +189,18 @@ class DentistryTreatment(ModelSQL, ModelView):
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
     treatment_date = fields.Date('Date', states=STATES)
     healthprof = fields.Many2One('gnuhealth.healthprofessional',
-        'Health Prof', help="Health professional", states=STATES)
+                                 'Health Prof', help="Health professional",
+                                 states=STATES)
     procedures = fields.One2Many('gnuhealth.dentistry.treatment.procedure',
-        'treatment', 'Procedures', states=STATES)
+                                 'treatment', 'Procedures', states=STATES)
     notes = fields.Text('Notes', help="Extra Information", states=STATES)
     procedures_info = fields.Function(fields.Char("Procedures info"),
-        'get_procedures_info')
-    signed_by = fields.Many2One('gnuhealth.healthprofessional',
+                                      'get_procedures_info')
+    signed_by = fields.Many2One(
+        'gnuhealth.healthprofessional',
         'Signed by', readonly=True,
-        states={'invisible': Equal(Eval('state'), 'pending')},
+        states={'invisible': Equal(Eval('state'),
+                                   'pending')},
         help="Health Professional that finished the treatment")
     state = fields.Selection([
         ('pending', 'Pending'),
@@ -278,7 +281,8 @@ class DentistryProcedure(ModelSQL, ModelView):
     __name__ = 'gnuhealth.dentistry.procedure'
 
     name = fields.Char('Procedure', required=True, translate=True)
-    code = fields.Char('Code', required=True, translate=True,
+    code = fields.Char(
+        'Code', required=True, translate=True,
         help='Please use CAPITAL LETTERS and no spaces')
 
     @classmethod
@@ -298,10 +302,10 @@ class TreatmentProcedure(ModelSQL, ModelView):
     __name__ = 'gnuhealth.dentistry.treatment.procedure'
 
     treatment = fields.Many2One('gnuhealth.dentistry.treatment', 'Treatment',
-        required=True)
+                                required=True)
     tooth = fields.Selection(TREATMENT_TEETH, 'Tooth')
     procedure = fields.Many2One('gnuhealth.dentistry.procedure', 'Procedure',
-        required=True)
+                                required=True)
     root = fields.Boolean('Root')
     occlusal = fields.Boolean('Occlusal')
     vestibular = fields.Boolean('Vestibular')
