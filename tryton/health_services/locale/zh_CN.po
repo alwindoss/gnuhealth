@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 01:37+0000\n"
-"PO-Revision-Date: 2020-12-30 05:29+0000\n"
+"PO-Revision-Date: 2021-01-12 03:32+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_services/zh_Hans/>\n"
@@ -26,11 +26,11 @@ msgstr "没有与此患者相关的收费项目"
 
 msgctxt "error:gnuhealth.service.invoice.create:"
 msgid "No invoice address associated"
-msgstr "没有关联的凭据地址"
+msgstr "没有关联的凭证地址"
 
 msgctxt "error:gnuhealth.service.invoice.create:"
 msgid "Service already invoiced"
-msgstr "服务已开凭据"
+msgstr "服务已开凭证"
 
 msgctxt "field:account.invoice,health_service:"
 msgid "Health Service"
@@ -66,7 +66,7 @@ msgstr "医疗机构"
 
 msgctxt "field:gnuhealth.health_service,invoice_to:"
 msgid "Invoice to"
-msgstr "凭据单位"
+msgstr "凭证单位"
 
 msgctxt "field:gnuhealth.health_service,name:"
 msgid "ID"
@@ -146,7 +146,7 @@ msgstr "结束日期"
 
 msgctxt "field:gnuhealth.health_service.line,to_invoice:"
 msgid "Invoice"
-msgstr "凭据"
+msgstr "凭证"
 
 msgctxt "field:gnuhealth.health_service.line,write_date:"
 msgid "Write Date"
@@ -178,7 +178,7 @@ msgstr "服务条目"
 
 msgctxt "help:account.invoice,patient:"
 msgid "Patient in the invoice"
-msgstr "凭据上面显示的患者"
+msgstr "凭证上面显示的患者"
 
 msgctxt "help:gnuhealth.health_service,service_line:"
 msgid "Service Line"
@@ -203,15 +203,15 @@ msgstr "健康服务"
 
 msgctxt "model:gnuhealth.service.invoice.init,name:"
 msgid "Create Service Invoice Init"
-msgstr "创建初始的服务凭据"
+msgstr "创建初始的服务凭证"
 
 msgctxt "model:ir.action,name:act_create_health_service_invoice"
 msgid "Create Health Service Invoice"
-msgstr "创建健康服务凭据"
+msgstr "创建健康服务凭证"
 
 msgctxt "model:ir.action,name:act_invoice_related_form1"
 msgid "Related Invoice"
-msgstr "服务相关凭据"
+msgstr "服务相关凭证"
 
 msgctxt "model:ir.action,name:act_service_form1"
 msgid "Services"
@@ -223,7 +223,7 @@ msgstr "健康服务"
 
 msgctxt "model:ir.action,name:gnuhealth_action_health_service_invoices"
 msgid "Created invoices"
-msgstr "已开凭据列表"
+msgstr "已开凭证列表"
 
 msgctxt "model:ir.action,name:report_health_services_report"
 msgid "Services Report"
@@ -242,7 +242,7 @@ msgstr "草案"
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_gnuhealth_service_domain_invoiced"
 msgid "Invoiced"
-msgstr "已开凭据"
+msgstr "已开凭证"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_health_service"
 msgid "Health Service"
@@ -254,7 +254,7 @@ msgstr "健康服务"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_health_service_invoices_menu"
 msgid "Created invoices"
-msgstr "已开凭据列表"
+msgstr "已开凭证列表"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_health_service_menu"
 msgid "Health services"
@@ -310,11 +310,11 @@ msgstr "医疗机构: "
 
 msgctxt "report:health_services.report:"
 msgid "Invoice"
-msgstr "凭据"
+msgstr "凭证"
 
 msgctxt "report:health_services.report:"
 msgid "Invoice to :"
-msgstr "凭据单位:"
+msgstr "凭证单位:"
 
 msgctxt "report:health_services.report:"
 msgid "PUID"
@@ -362,7 +362,7 @@ msgstr "草案"
 
 msgctxt "selection:gnuhealth.health_service,state:"
 msgid "Invoiced"
-msgstr "已开凭据"
+msgstr "已开凭证"
 
 msgctxt "view:account.invoice:"
 msgid "Health"
@@ -386,16 +386,16 @@ msgstr "更新服务"
 
 msgctxt "view:gnuhealth.service.invoice.init:"
 msgid "Create Invoices"
-msgstr "创建凭据"
+msgstr "创建凭证"
 
 msgctxt "view:gnuhealth.service.invoice.init:"
 msgid "Do you want to generate the Invoice(s) ?"
-msgstr "是否要生成凭据？"
+msgstr "是否要生成凭证？"
 
 msgctxt ""
 "wizard_button:gnuhealth.service.invoice.create,start,create_service_invoice:"
 msgid "Create Invoice"
-msgstr "创建凭据"
+msgstr "创建凭证"
 
 msgctxt "wizard_button:gnuhealth.service.invoice.create,start,end:"
 msgid "Cancel"
