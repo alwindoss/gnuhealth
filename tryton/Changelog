@@ -1,3 +1,135 @@
+changeset:   4564:91c3472379cc
+tag:         tip
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Jan 10 14:02:07 2021 +0000
+summary:     Odontogram: Minor x-axis offset corrections
+
+changeset:   4563:a2faf7950f21
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 09 21:40:28 2021 +0000
+summary:     dentistry: Finished basic odontogram report / chart
+
+changeset:   4562:f940fbd698cb
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 09 02:48:52 2021 +0000
+summary:     dentistry: Create odontogram graphical report. Initial Missing and for extraction symbols
+
+changeset:   4561:8a523d99b63a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 05 15:54:07 2021 +0000
+summary:     health_dentistry: COnvert to FODT format the procedutes report
+
+changeset:   4560:0e543a51bff5
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 05 15:38:24 2021 +0000
+summary:     health_dentistry: PEP8
+
+changeset:   4557:5c60a1d9b816
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Jan 03 00:07:44 2021 +0000
+summary:     Update measurements and abbreviations in evaluation model
+
+changeset:   4553:c6478410611a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Dec 28 23:12:29 2020 +0000
+summary:     Add self-monitoring context within the Medical domain in the Page of Life
+
+changeset:   4535:0fbad843bd2d
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Dec 10 22:26:22 2020 +0000
+summary:     health_icd11: Include ICD-11 diseases, main chapter and URI
+
+changeset:   4534:917675d3d5a4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Dec 09 22:13:20 2020 +0000
+summary:     health_icd11: Include ICD-11 chapters
+
+changeset:   4531:f0767a6593ef
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Dec 09 20:56:40 2020 +0000
+summary:     health: include disease entity URL
+
+changeset:   4530:7dc609a825f0
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Dec 09 20:01:15 2020 +0000
+summary:     health: remove debugging info
+
+changeset:   4529:acde886075af
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Dec 09 13:51:21 2020 +0000
+summary:     task #15560: Include WHO ICD11 package. Initial structure
+
+changeset:   4524:6a93dc436278
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Dec 06 15:22:24 2020 +0000
+summary:     Dentistry: Update headers and GPL, including the National University of Entre Rios - UNER
+
+changeset:   4523:ffafb3d05b77
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Dec 05 22:04:10 2020 +0000
+summary:     Dentistry: Initial commit
+
+changeset:   4520:39b8a0b27ce8
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Dec 04 19:32:36 2020 +0000
+summary:     Report: Add binary ODT format for reports related to bug bug #59619: Charts don't work under flat XML ODT - fodt - files
+
+changeset:   4519:4bcf1e358e86
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Dec 04 19:30:12 2020 +0000
+summary:     Move to the parent dir health_pediatrics_growth_charts_who_report.xml report declaration file
+
+changeset:   4513:5f8239d693e5
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Dec 04 10:04:04 2020 +0000
+summary:     Reporting: Temporarily use binary ODT format in reports that use native ODT charts associated to tables
+
+changeset:   4512:096efed8e50c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Dec 02 22:24:14 2020 +0000
+summary:     Task #15720: HMIS: Convert the reports to FODT format. Update MANIFEST.in and setup.py
+
+changeset:   4511:9873412a7ded
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Dec 02 21:57:37 2020 +0000
+summary:     Report engine. Complete task #15720: HMIS: Convert the reports to FODT format
+
+changeset:   4507:698d499b1810
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 22:00:27 2020 +0000
+summary:     Move GTK HIS client plugins to its own repository at OSDN
+
+changeset:   4506:d76a9edfd092
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 21:51:44 2020 +0000
+summary:     Move PyWEBDAV server to its own repository at OSDN
+
+changeset:   4505:bf95bfe67b02
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 18:18:43 2020 +0000
+summary:     Move Thalamus to its own repository at OSDN
+
+changeset:   4504:9de85821e878
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 18:17:47 2020 +0000
+summary:     Move Federation Portal to its own repository at OSDN
+
+changeset:   4503:8dc8d350969a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 18:13:37 2020 +0000
+summary:     Move FHIR server component to own repository at OSDN
+
+changeset:   4502:10ac766c5c66
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 17:47:33 2020 +0000
+summary:     Move MyGNUHealth component to own repository at OSDN
+
+changeset:   4501:dba7661fdf18
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 17:45:14 2020 +0000
+summary:     Remove HIS component client. Moved it to own repository at OSDN
+
+
 changeset:   3464:c168199e9f18
 tag:         tip
 user:        Luis Falcon <falcon@gnuhealth.org>
