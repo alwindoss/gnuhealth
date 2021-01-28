@@ -1,14 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # GNU Health HMIS node installer
-# Version for 3.6 series
+# Version for 3.8 series
 
 ##############################################################################
 #
 #    GNU Health Installer
 #
-#    Copyright (C) 2008-2020  Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2008-2020  GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2021  Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2021  GNU Solidario <health@gnusolidario.org>
 #    Copyright (C) 2014 Bruno M. Villasanti <bvillasanti@thymbra.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -31,7 +31,8 @@
 #-----------------------------------------------------------------------------
 
 #GNU Health HMIS installer version
-VERSION="3.6.3"
+
+VERSION="3.8.0"
 
 # Colors constants
 NONE="$(tput sgr0)"

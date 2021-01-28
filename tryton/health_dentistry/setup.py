@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #    Copyright (C) 2011-2021 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
 #    Copyright (C) 2011 Cédric Krier
 
 #    This program is free software: you can redistribute it and/or modify
@@ -16,13 +16,13 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from setuptools import setup
 import re
 import os
 import configparser
+from setuptools import setup
 
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname), encoding="UTF-8").read()
+
+long_desc = open('README.rst').read()
 
 config = configparser.ConfigParser()
 config.readfp(open('tryton.cfg'))
@@ -33,41 +33,50 @@ for key in ('depends', 'extras_depend', 'xml'):
         info[key] = info[key].strip().splitlines()
 major_version, minor_version = 5, 0
 
-requires = []
+requires = ['pytz', 'numpy']
 
 for dep in info.get('depends', []):
-    if (dep == 'health'):
-        requires.append('gnuhealth == %s' % (info.get('version')))
+    if (dep == 'health_dentistry'):
+        requires.append('gnuhealth_dentistry == %s' % (info.get('version')))
 
-    elif dep.startswith('health_'):
-        health_package = dep.split('_',1)[1]
-        requires.append('gnuhealth_%s == %s' %
-            (health_package, info.get('version')))
-    else: 
+    elif dep.startswith('health_dentistry_'):
+        health_dentistry_package = dep.split('_', 1)[1]
+        requires.append('gnuhealth_dentistry_%s == %s' %
+                        (health_dentistry_package, info.get('version')))
+    else:
         if not re.match(r'(ir|res|webdav)(\W|$)', dep):
             requires.append('trytond_%s >= %s.%s, < %s.%s' %
-                (dep, major_version, minor_version, major_version,
-                    minor_version + 1))
+                            (dep, major_version, minor_version, major_version,
+                             minor_version + 1))
 
-setup(name='gnuhealth_disability',
+requires.append('trytond >= %s.%s, < %s.%s' %
+                (major_version, minor_version, major_version,
+                 minor_version + 1))
+
+setup(
+    name='gnuhealth_dentistry',
     version=info.get('version', '0.0.1'),
-    description=info.get('description', 'GNU Health package for patient Functioning and disability, including WHO ICF'),
-    long_description=read('README'),
+    description=info.get('description',
+                         'GNU Health: Dentistry Package'),
+    long_description=long_desc,
     author='GNU Solidario',
-    author_email='health@gnusolidario.org',
-    url='https://www.gnuhealth.org',
-    download_url='http://ftp.gnu.org/gnu/health/',
-    package_dir={'trytond.modules.health_disability': '.'},
+    author_email='health_dentistry@gnusolidario.org',
+    url='https://www.gnuhealth_dentistry.org',
+    download_url='http://ftp.gnu.org/gnu/health_dentistry/',
+    package_dir={'trytond.modules.health_dentistry': '.'},
     packages=[
-        'trytond.modules.health_disability',
-        'trytond.modules.health_disability.tests',
+        'trytond.modules.health_dentistry',
+        'trytond.modules.health_dentistry.tests',
+        'trytond.modules.health_dentistry.wizard',
+        'trytond.modules.health_dentistry.report',
         ],
 
     package_data={
-        'trytond.modules.health_disability': info.get('xml', []) \
-            + info.get('translation', []) \
-            + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.fodt', 'icons/*.svg'],
+        'trytond.modules.health_dentistry': info.get('xml', []) +
+        info.get('translation', []) +
+        ['tryton.cfg', 'view/*.xml', 'doc/*.rst',
+            'locale/*.po', 'report/*.fodt', 'icons/*.svg',
+            'report/*.png'],
         },
 
     classifiers=[
@@ -86,11 +95,14 @@ setup(name='gnuhealth_disability',
         ],
     license='GPL-3',
     install_requires=requires,
+    extras_require={
+        'Pillow': ['Pillow'],
+        },
     zip_safe=False,
     entry_points="""
     [trytond.modules]
-    health_disability = trytond.modules.health_disability
+    health_dentistry = trytond.modules.health_dentistry
     """,
     test_suite='tests',
     test_loader='trytond.test_loader:Loader',
-    )
+)
