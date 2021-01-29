@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2021-01-30 20:41+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Last-Translator: Ömer Faruk Çakmak <omerfarukckmk@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gnu-health/"
 "health/tr/>\n"
 "Language: tr\n"
@@ -13,11 +13,11 @@ msgstr ""
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Belge zaten mevcut!"
 
 msgctxt "error:gnuhealth.death_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Belge zaten mevcut!"
 
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
@@ -193,7 +193,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.patient:"
 msgid "The Patient already exists !"
-msgstr ""
+msgstr "Hasta zaten mevcut!"
 
 msgctxt "error:gnuhealth.pol:"
 msgid "The Page must be unique !"
@@ -246,7 +246,7 @@ msgstr "Tarih ve Saat"
 
 msgctxt "field:gnuhealth.appointment,appointment_type:"
 msgid "Type"
-msgstr ""
+msgstr "Tür"
 
 msgctxt "field:gnuhealth.appointment,checked_in_date:"
 msgid "Checked-in Time"
@@ -254,11 +254,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Yorumlar"
 
 msgctxt "field:gnuhealth.appointment,consultations:"
 msgid "Consultation Services"
-msgstr ""
+msgstr "Danışma Hizmetleri"
 
 msgctxt "field:gnuhealth.appointment,create_date:"
 msgid "Create Date"
@@ -278,7 +278,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.appointment,name:"
 msgid "Appointment ID"
@@ -286,7 +286,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "field:gnuhealth.appointment,rec_name:"
 msgid "Record Name"
@@ -302,11 +302,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment,urgency:"
 msgid "Urgency"
-msgstr ""
+msgstr "Acillik"
 
 msgctxt "field:gnuhealth.appointment,visit_type:"
 msgid "Visit"
-msgstr ""
+msgstr "Ziyaret"
 
 msgctxt "field:gnuhealth.appointment,write_date:"
 msgid "Write Date"
@@ -318,15 +318,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment.report,address:"
 msgid "Address"
-msgstr ""
+msgstr "Adres"
 
 msgctxt "field:gnuhealth.appointment.report,age:"
 msgid "Age"
-msgstr ""
+msgstr "Yaş"
 
 msgctxt "field:gnuhealth.appointment.report,appointment_date:"
 msgid "Date"
-msgstr ""
+msgstr "Tarih"
 
 msgctxt "field:gnuhealth.appointment.report,appointment_date_time:"
 msgid "Date and Time"
@@ -346,7 +346,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment.report,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Cinsiyet"
 
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
@@ -358,11 +358,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment.report,insurance:"
 msgid "Insurance"
-msgstr ""
+msgstr "Sigorta"
 
 msgctxt "field:gnuhealth.appointment.report,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "field:gnuhealth.appointment.report,rec_name:"
 msgid "Record Name"
@@ -406,7 +406,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.birth_certificate,country:"
 msgid "Country"
-msgstr ""
+msgstr "Ülke"
 
 msgctxt "field:gnuhealth.birth_certificate,country_subdivision:"
 msgid "Subdivision"
@@ -422,11 +422,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.birth_certificate,dob:"
 msgid "Date of Birth"
-msgstr ""
+msgstr "Doğum Tarihi"
 
 msgctxt "field:gnuhealth.birth_certificate,father:"
 msgid "Father"
-msgstr ""
+msgstr "Babası"
 
 msgctxt "field:gnuhealth.birth_certificate,id:"
 msgid "ID"
@@ -434,11 +434,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.birth_certificate,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.birth_certificate,mother:"
 msgid "Mother"
-msgstr ""
+msgstr "Annesi"
 
 msgctxt "field:gnuhealth.birth_certificate,name:"
 msgid "Person"
@@ -527,11 +527,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,age:"
 msgid "Age"
-msgstr ""
+msgstr "Yaş"
 
 msgctxt "field:gnuhealth.death_certificate,autopsy:"
 msgid "Autopsy"
-msgstr ""
+msgstr "Otopsi"
 
 msgctxt "field:gnuhealth.death_certificate,certification_date:"
 msgid "Certified on"
@@ -539,7 +539,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,cod:"
 msgid "Cause"
-msgstr ""
+msgstr "Sebep"
 
 msgctxt "field:gnuhealth.death_certificate,code:"
 msgid "Code"
@@ -547,7 +547,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,country:"
 msgid "Country"
-msgstr ""
+msgstr "Ülke"
 
 msgctxt "field:gnuhealth.death_certificate,country_subdivision:"
 msgid "Subdivision"
@@ -563,7 +563,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,dod:"
 msgid "Date"
-msgstr ""
+msgstr "Tarih"
 
 msgctxt "field:gnuhealth.death_certificate,du:"
 msgid "DU"
@@ -575,7 +575,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.death_certificate,name:"
 msgid "Person"
@@ -591,11 +591,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,place_details:"
 msgid "Details"
-msgstr ""
+msgstr "Ayrıntılar"
 
 msgctxt "field:gnuhealth.death_certificate,place_of_death:"
 msgid "Place"
-msgstr ""
+msgstr "Yer"
 
 msgctxt "field:gnuhealth.death_certificate,rec_name:"
 msgid "Record Name"
@@ -611,7 +611,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,type_of_death:"
 msgid "Type of death"
-msgstr ""
+msgstr "Ölüm türü"
 
 msgctxt "field:gnuhealth.death_certificate,underlying_conditions:"
 msgid "Underlying Conditions"
@@ -667,7 +667,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Yorumlar"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,create_date:"
 msgid "Create Date"
@@ -687,7 +687,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,pathology:"
 msgid "Pathology"
-msgstr ""
+msgstr "Patoloji"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,rec_name:"
 msgid "Record Name"
@@ -703,7 +703,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.directions,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Yorumlar"
 
 msgctxt "field:gnuhealth.directions,create_date:"
 msgid "Create Date"
@@ -867,11 +867,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,address_city:"
 msgid "City"
-msgstr ""
+msgstr "Şehir"
 
 msgctxt "field:gnuhealth.du,address_country:"
 msgid "Country"
-msgstr ""
+msgstr "Ülke"
 
 msgctxt "field:gnuhealth.du,address_district:"
 msgid "District"
@@ -887,7 +887,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,address_street:"
 msgid "Street"
-msgstr ""
+msgstr "Cadde"
 
 msgctxt "field:gnuhealth.du,address_street_bis:"
 msgid "Apartment"
@@ -903,7 +903,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,address_zip:"
 msgid "Zip Code"
-msgstr ""
+msgstr "Posta Kodu"
 
 msgctxt "field:gnuhealth.du,altitude:"
 msgid "Altitude"
@@ -911,11 +911,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,bathrooms:"
 msgid "Bathrooms"
-msgstr ""
+msgstr "Banyolar"
 
 msgctxt "field:gnuhealth.du,bedrooms:"
 msgid "Bedrooms"
-msgstr ""
+msgstr "Yatak Odaları"
 
 msgctxt "field:gnuhealth.du,create_date:"
 msgid "Create Date"
@@ -951,7 +951,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,internet:"
 msgid "Internet"
-msgstr ""
+msgstr "İnternet"
 
 msgctxt "field:gnuhealth.du,latitude:"
 msgid "Latitude"
@@ -979,7 +979,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,picture:"
 msgid "Picture"
-msgstr ""
+msgstr "Resim"
 
 msgctxt "field:gnuhealth.du,rec_name:"
 msgid "Record Name"
@@ -995,11 +995,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,telephone:"
 msgid "Telephone"
-msgstr ""
+msgstr "Telefon"
 
 msgctxt "field:gnuhealth.du,television:"
 msgid "Television"
-msgstr ""
+msgstr "Televizyon"
 
 msgctxt "field:gnuhealth.du,total_surface:"
 msgid "Surface"
@@ -1015,7 +1015,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,water:"
 msgid "Running Water"
-msgstr ""
+msgstr "Şebeke Suyu"
 
 msgctxt "field:gnuhealth.du,write_date:"
 msgid "Write Date"
@@ -1043,7 +1043,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ethnicity,name:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "field:gnuhealth.ethnicity,notes:"
 msgid "Notes"
@@ -1079,11 +1079,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.family,members:"
 msgid "Family Members"
-msgstr ""
+msgstr "Aile Üyeleri"
 
 msgctxt "field:gnuhealth.family,name:"
 msgid "Family"
-msgstr ""
+msgstr "Aile"
 
 msgctxt "field:gnuhealth.family,rec_name:"
 msgid "Record Name"
@@ -1139,7 +1139,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.federation.country.config,country:"
 msgid "Country"
-msgstr ""
+msgstr "Ülke"
 
 msgctxt "field:gnuhealth.federation.country.config,create_date:"
 msgid "Create Date"
@@ -1195,15 +1195,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.healthprofessional,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.healthprofessional,main_specialty:"
 msgid "Main Specialty"
-msgstr ""
+msgstr "Uzmanlık Alanı"
 
 msgctxt "field:gnuhealth.healthprofessional,name:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Sağlık Çalışanı"
 
 msgctxt "field:gnuhealth.healthprofessional,puid:"
 msgid "PUID"
@@ -1227,7 +1227,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.bed,bed_type:"
 msgid "Bed Type"
-msgstr ""
+msgstr "Yatak Türü"
 
 msgctxt "field:gnuhealth.hospital.bed,create_date:"
 msgid "Create Date"
@@ -1247,11 +1247,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.bed,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.hospital.bed,name:"
 msgid "Bed"
-msgstr ""
+msgstr "Yatak"
 
 msgctxt "field:gnuhealth.hospital.bed,rec_name:"
 msgid "Record Name"
@@ -1263,7 +1263,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.bed,telephone_number:"
 msgid "Telephone Number"
-msgstr ""
+msgstr "Telefon Numarası"
 
 msgctxt "field:gnuhealth.hospital.bed,ward:"
 msgid "Ward"
@@ -1299,11 +1299,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.building,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.hospital.building,name:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "field:gnuhealth.hospital.building,rec_name:"
 msgid "Record Name"
@@ -1319,7 +1319,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.or,building:"
 msgid "Building"
-msgstr ""
+msgstr "Bina"
 
 msgctxt "field:gnuhealth.hospital.or,create_date:"
 msgid "Create Date"
@@ -1339,11 +1339,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.or,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.hospital.or,name:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "field:gnuhealth.hospital.or,rec_name:"
 msgid "Record Name"
@@ -1387,11 +1387,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.unit,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.hospital.unit,name:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "field:gnuhealth.hospital.unit,rec_name:"
 msgid "Record Name"
@@ -1407,7 +1407,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,ac:"
 msgid "Air Conditioning"
-msgstr ""
+msgstr "Havalandırma"
 
 msgctxt "field:gnuhealth.hospital.ward,bio_hazard:"
 msgid "Bio Hazard"
@@ -1415,7 +1415,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,building:"
 msgid "Building"
-msgstr ""
+msgstr "Bina"
 
 msgctxt "field:gnuhealth.hospital.ward,create_date:"
 msgid "Create Date"
@@ -1435,7 +1435,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Cinsiyet"
 
 msgctxt "field:gnuhealth.hospital.ward,guest_sofa:"
 msgid "Guest sofa-bed"
@@ -1447,11 +1447,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.hospital.ward,internet:"
 msgid "Internet Access"
-msgstr ""
+msgstr "İnternet Erişimi"
 
 msgctxt "field:gnuhealth.hospital.ward,microwave:"
 msgid "Microwave"
@@ -1459,15 +1459,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,name:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "field:gnuhealth.hospital.ward,number_of_beds:"
 msgid "Number of beds"
-msgstr ""
+msgstr "Yatak sayısı"
 
 msgctxt "field:gnuhealth.hospital.ward,private:"
 msgid "Private"
-msgstr ""
+msgstr "Özel"
 
 msgctxt "field:gnuhealth.hospital.ward,private_bathroom:"
 msgid "Private Bathroom"
@@ -1479,7 +1479,7 @@ msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.hospital.ward,refrigerator:"
 msgid "Refrigerator"
-msgstr ""
+msgstr "Buzdolabı"
 
 msgctxt "field:gnuhealth.hospital.ward,state:"
 msgid "Status"
@@ -1487,11 +1487,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,telephone:"
 msgid "Telephone access"
-msgstr ""
+msgstr "Telefon erişimi"
 
 msgctxt "field:gnuhealth.hospital.ward,tv:"
 msgid "Television"
-msgstr ""
+msgstr "Televizyon"
 
 msgctxt "field:gnuhealth.hospital.ward,unit:"
 msgid "Unit"
@@ -1519,7 +1519,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hp_specialty,name:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Sağlık Çalışanı"
 
 msgctxt "field:gnuhealth.hp_specialty,rec_name:"
 msgid "Record Name"
@@ -1527,7 +1527,7 @@ msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.hp_specialty,specialty:"
 msgid "Specialty"
-msgstr ""
+msgstr "Uzmanlık"
 
 msgctxt "field:gnuhealth.hp_specialty,write_date:"
 msgid "Write Date"
@@ -1539,11 +1539,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule,active:"
 msgid "Active"
-msgstr ""
+msgstr "Etkin"
 
 msgctxt "field:gnuhealth.immunization_schedule,country:"
 msgid "Country"
-msgstr ""
+msgstr "Ülke"
 
 msgctxt "field:gnuhealth.immunization_schedule,create_date:"
 msgid "Create Date"
@@ -1571,7 +1571,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule,vaccines:"
 msgid "Vaccines"
-msgstr ""
+msgstr "Aşılar"
 
 msgctxt "field:gnuhealth.immunization_schedule,write_date:"
 msgid "Write Date"
@@ -1583,11 +1583,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule,year:"
 msgid "Year"
-msgstr ""
+msgstr "Yıl"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,age_dose:"
 msgid "Age"
-msgstr ""
+msgstr "Yaş"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid "Time Unit"
@@ -1623,7 +1623,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,vaccine:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Aşı"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,write_date:"
 msgid "Write Date"
@@ -1667,7 +1667,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule_line,vaccine:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Aşı"
 
 msgctxt "field:gnuhealth.immunization_schedule_line,write_date:"
 msgid "Write Date"
@@ -1679,7 +1679,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,beds:"
 msgid "Beds"
-msgstr ""
+msgstr "Yataklar"
 
 msgctxt "field:gnuhealth.institution,code:"
 msgid "Code"
@@ -1699,7 +1699,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,heliport:"
 msgid "Heliport"
-msgstr ""
+msgstr "Helikopter Pisti"
 
 msgctxt "field:gnuhealth.institution,id:"
 msgid "ID"
@@ -1707,19 +1707,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,institution_type:"
 msgid "Type"
-msgstr ""
+msgstr "Tür"
 
 msgctxt "field:gnuhealth.institution,main_specialty:"
 msgid "Specialty"
-msgstr ""
+msgstr "Uzmanlık"
 
 msgctxt "field:gnuhealth.institution,name:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.institution,operating_room:"
 msgid "Operating Room"
-msgstr ""
+msgstr "Ameliyathane"
 
 msgctxt "field:gnuhealth.institution,operational_sectors:"
 msgid "Operational Sector"
@@ -1731,7 +1731,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,picture:"
 msgid "Picture"
-msgstr ""
+msgstr "Resim"
 
 msgctxt "field:gnuhealth.institution,public_level:"
 msgid "Public Level"
@@ -1751,7 +1751,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution,trauma_center:"
 msgid "Trauma Center"
-msgstr ""
+msgstr "Travma Merkezi"
 
 msgctxt "field:gnuhealth.institution,trauma_level:"
 msgid "Trauma Level"
@@ -1779,7 +1779,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution.operationalsector,name:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.institution.operationalsector,operational_sector:"
 msgid "Operational Sector"
@@ -1811,7 +1811,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution.specialties,name:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.institution.specialties,rec_name:"
 msgid "Record Name"
@@ -1819,7 +1819,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.institution.specialties,specialty:"
 msgid "Specialty"
-msgstr ""
+msgstr "Uzmanlık"
 
 msgctxt "field:gnuhealth.institution.specialties,write_date:"
 msgid "Write Date"
@@ -1831,11 +1831,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.insurance,category:"
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 msgctxt "field:gnuhealth.insurance,company:"
 msgid "Insurance Company"
-msgstr ""
+msgstr "Sigorta Şirketi"
 
 msgctxt "field:gnuhealth.insurance,create_date:"
 msgid "Create Date"
@@ -1851,7 +1851,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.insurance,insurance_type:"
 msgid "Insurance Type"
-msgstr ""
+msgstr "Sigorta Türü"
 
 msgctxt "field:gnuhealth.insurance,member_exp:"
 msgid "Expiration date"
@@ -1891,7 +1891,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.insurance.plan,company:"
 msgid "Insurance Company"
-msgstr ""
+msgstr "Sigorta Şirketi"
 
 msgctxt "field:gnuhealth.insurance.plan,create_date:"
 msgid "Create Date"
@@ -1943,7 +1943,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,category:"
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 msgctxt "field:gnuhealth.medicament,composition:"
 msgid "Composition"
@@ -1975,11 +1975,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,is_vaccine:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Aşı"
 
 msgctxt "field:gnuhealth.medicament,name:"
 msgid "Product"
-msgstr ""
+msgstr "Ürün"
 
 msgctxt "field:gnuhealth.medicament,notes:"
 msgid "Extra Info"
@@ -2003,7 +2003,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,pregnancy_warning:"
 msgid "Pregnancy Warning"
-msgstr ""
+msgstr "Hamilelik Uyarısı"
 
 msgctxt "field:gnuhealth.medicament,presentation:"
 msgid "Presentation"
@@ -2035,7 +2035,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,storage:"
 msgid "Storage Conditions"
-msgstr ""
+msgstr "Depolama Koşulları"
 
 msgctxt "field:gnuhealth.medicament,strength:"
 msgid "Strength"
@@ -2059,7 +2059,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament.category,childs:"
 msgid "Children"
-msgstr ""
+msgstr "Çocuklar"
 
 msgctxt "field:gnuhealth.medicament.category,create_date:"
 msgid "Create Date"
@@ -2075,11 +2075,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament.category,name:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "field:gnuhealth.medicament.category,parent:"
 msgid "Parent"
-msgstr ""
+msgstr "Ebeveyn"
 
 msgctxt "field:gnuhealth.medicament.category,rec_name:"
 msgid "Record Name"
@@ -2095,7 +2095,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medication.dosage,abbreviation:"
 msgid "Abbreviation"
-msgstr ""
+msgstr "Kısaltma"
 
 msgctxt "field:gnuhealth.medication.dosage,code:"
 msgid "Code"
@@ -2147,7 +2147,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.occupation,name:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "field:gnuhealth.occupation,rec_name:"
 msgid "Record Name"
@@ -2179,7 +2179,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.operational_area,name:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "field:gnuhealth.operational_area,operational_sector:"
 msgid "Operational Sector"
@@ -2239,7 +2239,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pathology,category:"
 msgid "Main Category"
-msgstr ""
+msgstr "Ana Kategori"
 
 msgctxt "field:gnuhealth.pathology,chromosome:"
 msgid "Affected Chromosome"
@@ -2259,7 +2259,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pathology,gene:"
 msgid "Gene"
-msgstr ""
+msgstr "Gen"
 
 msgctxt "field:gnuhealth.pathology,groups:"
 msgid "Groups"
@@ -2275,7 +2275,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pathology,name:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "field:gnuhealth.pathology,protein:"
 msgid "Protein involved"
@@ -2311,7 +2311,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pathology.category,name:"
 msgid "Category Name"
-msgstr ""
+msgstr "Kategori Adı"
 
 msgctxt "field:gnuhealth.pathology.category,parent:"
 msgid "Parent Category"
@@ -2343,7 +2343,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pathology.group,desc:"
 msgid "Short Description"
-msgstr ""
+msgstr "Kısa Açıklama"
 
 msgctxt "field:gnuhealth.pathology.group,id:"
 msgid "ID"
@@ -2351,15 +2351,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pathology.group,info:"
 msgid "Detailed information"
-msgstr ""
+msgstr "Ayrıntılı Bilgi"
 
 msgctxt "field:gnuhealth.pathology.group,members:"
 msgid "Members"
-msgstr ""
+msgstr "Üyeler"
 
 msgctxt "field:gnuhealth.pathology.group,name:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "field:gnuhealth.pathology.group,rec_name:"
 msgid "Record Name"
@@ -2379,19 +2379,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,age:"
 msgid "Age"
-msgstr ""
+msgstr "Yaş"
 
 msgctxt "field:gnuhealth.patient,appointments:"
 msgid "Appointments"
-msgstr ""
+msgstr "Randevular"
 
 msgctxt "field:gnuhealth.patient,biological_sex:"
 msgid "Biological Sex"
-msgstr ""
+msgstr "Biyolojik Cinsiyet"
 
 msgctxt "field:gnuhealth.patient,blood_type:"
 msgid "Blood Type"
-msgstr ""
+msgstr "Kan Grubu"
 
 msgctxt "field:gnuhealth.patient,childbearing_age:"
 msgid "Potential for Childbearing"
@@ -2399,7 +2399,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,cod:"
 msgid "Cause of Death"
-msgstr ""
+msgstr "Ölüm Sebebi"
 
 msgctxt "field:gnuhealth.patient,create_date:"
 msgid "Create Date"
@@ -2423,11 +2423,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,current_insurance:"
 msgid "Insurance"
-msgstr ""
+msgstr "Sigorta"
 
 msgctxt "field:gnuhealth.patient,deceased:"
 msgid "Deceased"
-msgstr ""
+msgstr "Ölmüş"
 
 msgctxt "field:gnuhealth.patient,diseases:"
 msgid "Conditions"
@@ -2439,19 +2439,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,dod:"
 msgid "Date of Death"
-msgstr ""
+msgstr "Ölüm Tarihi"
 
 msgctxt "field:gnuhealth.patient,family:"
 msgid "Family"
-msgstr ""
+msgstr "Aile"
 
 msgctxt "field:gnuhealth.patient,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Cinsiyet"
 
 msgctxt "field:gnuhealth.patient,general_info:"
 msgid "General Information"
-msgstr ""
+msgstr "Genel Bilgi"
 
 msgctxt "field:gnuhealth.patient,hb:"
 msgid "Hb"
@@ -2467,7 +2467,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,marital_status:"
 msgid "Marital Status"
-msgstr ""
+msgstr "Medeni Hal"
 
 msgctxt "field:gnuhealth.patient,medications:"
 msgid "Medications"
@@ -2475,11 +2475,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,name:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "field:gnuhealth.patient,photo:"
 msgid "Picture"
-msgstr ""
+msgstr "Resim"
 
 msgctxt "field:gnuhealth.patient,primary_care_doctor:"
 msgid "GP"
@@ -2495,11 +2495,11 @@ msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.patient,rh:"
 msgid "Rh"
-msgstr ""
+msgstr "Rh"
 
 msgctxt "field:gnuhealth.patient,vaccinations:"
 msgid "Vaccinations"
-msgstr ""
+msgstr "Aşılamalar"
 
 msgctxt "field:gnuhealth.patient,write_date:"
 msgid "Write Date"
@@ -2515,7 +2515,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disease,allergy_type:"
 msgid "Allergy type"
-msgstr ""
+msgstr "Alerji türü"
 
 msgctxt "field:gnuhealth.patient.disease,create_date:"
 msgid "Create Date"
@@ -2535,11 +2535,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disease,diagnosed_date:"
 msgid "Date of Diagnosis"
-msgstr ""
+msgstr "Tanı Tarihi"
 
 msgctxt "field:gnuhealth.patient.disease,disease_severity:"
 msgid "Severity"
-msgstr ""
+msgstr "Şiddet"
 
 msgctxt "field:gnuhealth.patient.disease,extra_info:"
 msgid "Extra Info"
@@ -2563,7 +2563,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disease,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.patient.disease,is_active:"
 msgid "Active disease"
@@ -2571,11 +2571,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disease,is_allergy:"
 msgid "Allergic Disease"
-msgstr ""
+msgstr "Alerjik Hastalık"
 
 msgctxt "field:gnuhealth.patient.disease,is_infectious:"
 msgid "Infectious Disease"
-msgstr ""
+msgstr "Bulaşıcı Hastalık"
 
 msgctxt "field:gnuhealth.patient.disease,is_on_treatment:"
 msgid "Currently on Treatment"
@@ -2583,7 +2583,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disease,name:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "field:gnuhealth.patient.disease,pathology:"
 msgid "Condition"
@@ -2595,7 +2595,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disease,pregnancy_warning:"
 msgid "Pregnancy warning"
-msgstr ""
+msgstr "Hamilelik uyarısı"
 
 msgctxt "field:gnuhealth.patient.disease,rec_name:"
 msgid "Record Name"
@@ -2615,7 +2615,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disease,treatment_description:"
 msgid "Treatment Description"
-msgstr ""
+msgstr "Tedavi Açıklaması"
 
 msgctxt "field:gnuhealth.patient.disease,weeks_of_pregnancy:"
 msgid "Contracted in pregnancy week #"
@@ -2643,7 +2643,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.ecg,ecg_date:"
 msgid "Date"
-msgstr ""
+msgstr "Tarih"
 
 msgctxt "field:gnuhealth.patient.ecg,ecg_strip:"
 msgid "ECG Strip"
@@ -2659,7 +2659,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.ecg,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.patient.ecg,interpretation:"
 msgid "Interpretation"
@@ -2671,11 +2671,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.ecg,name:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "field:gnuhealth.patient.ecg,pacemaker:"
 msgid "Pacemaker"
-msgstr ""
+msgstr "Kalp Pili"
 
 msgctxt "field:gnuhealth.patient.ecg,pr:"
 msgid "PR"
@@ -2699,7 +2699,7 @@ msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.patient.ecg,rhythm:"
 msgid "Rhythm"
-msgstr ""
+msgstr "Ritim"
 
 msgctxt "field:gnuhealth.patient.ecg,st_segment:"
 msgid "ST Segment"
@@ -2719,7 +2719,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,abdominal_circ:"
 msgid "Waist"
-msgstr ""
+msgstr "Bel"
 
 msgctxt "field:gnuhealth.patient.evaluation,abstraction:"
 msgid "Abstraction"
@@ -2731,15 +2731,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,appointment:"
 msgid "Appointment"
-msgstr ""
+msgstr "Randevu"
 
 msgctxt "field:gnuhealth.patient.evaluation,bmi:"
 msgid "BMI"
-msgstr ""
+msgstr "Vücut Kitle İndeksi"
 
 msgctxt "field:gnuhealth.patient.evaluation,bpm:"
 msgid "Heart Rate"
-msgstr ""
+msgstr "Kalp Hızı"
 
 msgctxt "field:gnuhealth.patient.evaluation,calculation_ability:"
 msgid "Calculation Ability"
@@ -2759,7 +2759,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,computed_age:"
 msgid "Age"
-msgstr ""
+msgstr "Yaş"
 
 msgctxt "field:gnuhealth.patient.evaluation,create_date:"
 msgid "Create Date"
@@ -2771,7 +2771,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,dehydration:"
 msgid "Dehydration"
-msgstr ""
+msgstr "Dehidrasyon"
 
 msgctxt "field:gnuhealth.patient.evaluation,derived_from:"
 msgid "Derived from"
@@ -2819,19 +2819,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_type:"
 msgid "Type"
-msgstr ""
+msgstr "Tür"
 
 msgctxt "field:gnuhealth.patient.evaluation,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Cinsiyet"
 
 msgctxt "field:gnuhealth.patient.evaluation,glycemia:"
 msgid "Glycemia"
-msgstr ""
+msgstr "Glisemi"
 
 msgctxt "field:gnuhealth.patient.evaluation,hba1c:"
 msgid "Glycated Hemoglobin"
-msgstr ""
+msgstr "Glikozillenmiş Hemoglobin"
 
 msgctxt "field:gnuhealth.patient.evaluation,hdl:"
 msgid "Last HDL"
@@ -2839,7 +2839,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,head_circumference:"
 msgid "Head"
-msgstr ""
+msgstr "Baş"
 
 msgctxt "field:gnuhealth.patient.evaluation,healthprof:"
 msgid "Health Prof"
@@ -2847,11 +2847,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,height:"
 msgid "Height"
-msgstr ""
+msgstr "Boy"
 
 msgctxt "field:gnuhealth.patient.evaluation,hip:"
 msgid "Hip"
-msgstr ""
+msgstr "Kalça"
 
 msgctxt "field:gnuhealth.patient.evaluation,id:"
 msgid "ID"
@@ -2867,7 +2867,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.patient.evaluation,judgment:"
 msgid "Judgment"
@@ -2899,15 +2899,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,malnutrition:"
 msgid "Malnutrition"
-msgstr ""
+msgstr "Kötü Beslenme"
 
 msgctxt "field:gnuhealth.patient.evaluation,memory:"
 msgid "Memory"
-msgstr ""
+msgstr "Hafıza"
 
 msgctxt "field:gnuhealth.patient.evaluation,mood:"
 msgid "Mood"
-msgstr ""
+msgstr "Ruh Hali"
 
 msgctxt "field:gnuhealth.patient.evaluation,next_evaluation:"
 msgid "Next Appointment"
@@ -2931,11 +2931,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,osat:"
 msgid "Oxygen Saturation"
-msgstr ""
+msgstr "Oksijen Doygunluğu"
 
 msgctxt "field:gnuhealth.patient.evaluation,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "field:gnuhealth.patient.evaluation,praxis:"
 msgid "Praxis"
@@ -2943,7 +2943,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,present_illness:"
 msgid "Present Illness"
-msgstr ""
+msgstr "Mevcut Hastalık"
 
 msgctxt "field:gnuhealth.patient.evaluation,psychological_assessment:"
 msgid "Psychological Assessment"
@@ -2971,7 +2971,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,respiratory_rate:"
 msgid "Respiratory Rate"
-msgstr ""
+msgstr "Solunum Hızı"
 
 msgctxt "field:gnuhealth.patient.evaluation,secondary_conditions:"
 msgid "Other Conditions"
@@ -2987,7 +2987,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,specialty:"
 msgid "Specialty"
-msgstr ""
+msgstr "Uzmanlık"
 
 msgctxt "field:gnuhealth.patient.evaluation,state:"
 msgid "State"
@@ -2995,7 +2995,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,systolic:"
 msgid "Systolic Pressure"
-msgstr ""
+msgstr "Sistolik Basınç"
 
 msgctxt "field:gnuhealth.patient.evaluation,tag:"
 msgid "Last TAGs"
@@ -3035,7 +3035,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,weight:"
 msgid "Weight"
-msgstr ""
+msgstr "Ağırlık"
 
 msgctxt "field:gnuhealth.patient.evaluation,whr:"
 msgid "WHR"
@@ -3083,7 +3083,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.medication,dose:"
 msgid "Dose"
-msgstr ""
+msgstr "Doz"
 
 msgctxt "field:gnuhealth.patient.medication,dose_unit:"
 msgid "dose unit"
@@ -3091,7 +3091,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.medication,duration:"
 msgid "Treatment duration"
-msgstr ""
+msgstr "Tedavı süresi"
 
 msgctxt "field:gnuhealth.patient.medication,duration_period:"
 msgid "Treatment period"
@@ -3143,7 +3143,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.medication,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.patient.medication,is_active:"
 msgid "Active"
@@ -3155,7 +3155,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.medication,name:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "field:gnuhealth.patient.medication,notes:"
 msgid "Extra Info"
@@ -3163,7 +3163,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.medication,prescription:"
 msgid "Prescription"
-msgstr ""
+msgstr "Reçete"
 
 msgctxt "field:gnuhealth.patient.medication,qty:"
 msgid "x"
@@ -3200,7 +3200,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.person_alternative_identification,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Yorumlar"
 
 msgctxt "field:gnuhealth.person_alternative_identification,create_date:"
 msgid "Create Date"
@@ -3288,7 +3288,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pol,age:"
 msgid "Age"
-msgstr ""
+msgstr "Yaş"
 
 msgctxt "field:gnuhealth.pol,author:"
 msgid "Author"
@@ -3308,11 +3308,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pol,gene:"
 msgid "Gene"
-msgstr ""
+msgstr "Gen"
 
 msgctxt "field:gnuhealth.pol,health_condition:"
 msgid "Health Condition"
-msgstr ""
+msgstr "Sağlık Durumu"
 
 msgctxt "field:gnuhealth.pol,health_condition_code:"
 msgid "Code"
@@ -3320,7 +3320,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pol,health_condition_text:"
 msgid "Health Condition"
-msgstr ""
+msgstr "Sağlık Durumu"
 
 msgctxt "field:gnuhealth.pol,id:"
 msgid "ID"
@@ -3332,7 +3332,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pol,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.pol,medical_context:"
 msgid "Medical Context"
@@ -3348,11 +3348,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pol,page:"
 msgid "Page"
-msgstr ""
+msgstr "Sayfa"
 
 msgctxt "field:gnuhealth.pol,page_date:"
 msgid "Date"
-msgstr ""
+msgstr "Tarih"
 
 msgctxt "field:gnuhealth.pol,page_type:"
 msgid "Page type"
@@ -3428,7 +3428,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.prescription.line,dose:"
 msgid "Dose"
-msgstr ""
+msgstr "Doz"
 
 msgctxt "field:gnuhealth.prescription.line,dose_unit:"
 msgid "dose unit"
@@ -3436,7 +3436,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.prescription.line,duration:"
 msgid "Treatment duration"
-msgstr ""
+msgstr "Tedavı süresi"
 
 msgctxt "field:gnuhealth.prescription.line,duration_period:"
 msgid "Treatment period"
@@ -3520,7 +3520,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.prescription.line,short_comment:"
 msgid "Comment"
-msgstr ""
+msgstr "Yorum"
 
 msgctxt "field:gnuhealth.prescription.line,start_treatment:"
 msgid "Start"
@@ -3556,19 +3556,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.prescription.order,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "field:gnuhealth.prescription.order,pharmacy:"
 msgid "Pharmacy"
-msgstr ""
+msgstr "Eczane"
 
 msgctxt "field:gnuhealth.prescription.order,pregnancy_warning:"
 msgid "Pregnancy Warning"
-msgstr ""
+msgstr "Hamilelik Uyarısı"
 
 msgctxt "field:gnuhealth.prescription.order,prescription_date:"
 msgid "Prescription Date"
-msgstr ""
+msgstr "Reçete Tarihi"
 
 msgctxt "field:gnuhealth.prescription.order,prescription_id:"
 msgid "Prescription ID"
@@ -3588,7 +3588,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.prescription.order,report_prescription_date:"
 msgid "Prescription Date"
-msgstr ""
+msgstr "Reçete Tarihi"
 
 msgctxt "field:gnuhealth.prescription.order,report_prescription_time:"
 msgid "Prescription Time"
@@ -3644,7 +3644,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.secondary_condition,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Yorumlar"
 
 msgctxt "field:gnuhealth.secondary_condition,create_date:"
 msgid "Create Date"
@@ -3664,7 +3664,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.secondary_condition,pathology:"
 msgid "Pathology"
-msgstr ""
+msgstr "Patoloji"
 
 msgctxt "field:gnuhealth.secondary_condition,rec_name:"
 msgid "Record Name"
@@ -3764,7 +3764,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.signs_and_symptoms,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Yorumlar"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,create_date:"
 msgid "Create Date"
@@ -3816,7 +3816,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.specialty,name:"
 msgid "Specialty"
-msgstr ""
+msgstr "Uzmanlık"
 
 msgctxt "field:gnuhealth.specialty,rec_name:"
 msgid "Record Name"
@@ -3840,7 +3840,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.vaccination,amount:"
 msgid "Amount"
-msgstr ""
+msgstr "Miktar"
 
 msgctxt "field:gnuhealth.vaccination,create_date:"
 msgid "Create Date"
@@ -3852,7 +3852,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.vaccination,date:"
 msgid "Date"
-msgstr ""
+msgstr "Tarih"
 
 msgctxt "field:gnuhealth.vaccination,dose:"
 msgid "Dose #"
@@ -3868,11 +3868,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.vaccination,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:gnuhealth.vaccination,name:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "field:gnuhealth.vaccination,next_dose_date:"
 msgid "Next Dose"
@@ -3900,7 +3900,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.vaccination,vaccine:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Aşı"
 
 msgctxt "field:gnuhealth.vaccination,vaccine_expiration_date:"
 msgid "Expiration date"
@@ -3920,15 +3920,15 @@ msgstr ""
 
 msgctxt "field:party.address,is_school:"
 msgid "School"
-msgstr ""
+msgstr "Okul"
 
 msgctxt "field:party.address,is_work:"
 msgid "Work"
-msgstr ""
+msgstr "İş"
 
 msgctxt "field:party.address,relationship:"
 msgid "Relationship"
-msgstr ""
+msgstr "İlişki"
 
 msgctxt "field:party.address,relative_id:"
 msgid "Contact"
@@ -3948,7 +3948,7 @@ msgstr ""
 
 msgctxt "field:party.party,age:"
 msgid "Age"
-msgstr ""
+msgstr "Yaş"
 
 msgctxt "field:party.party,alternative_identification:"
 msgid "Alternative IDs"
@@ -3960,19 +3960,19 @@ msgstr ""
 
 msgctxt "field:party.party,birth_certificate:"
 msgid "Birth Certificate"
-msgstr ""
+msgstr "Doğum Belgesi"
 
 msgctxt "field:party.party,citizenship:"
 msgid "Citizenship"
-msgstr ""
+msgstr "Yurttaşlık"
 
 msgctxt "field:party.party,death_certificate:"
 msgid "Death Certificate"
-msgstr ""
+msgstr "Ölüm Belgesi"
 
 msgctxt "field:party.party,deceased:"
 msgid "Deceased"
-msgstr ""
+msgstr "Ölü"
 
 msgctxt "field:party.party,dob:"
 msgid "DoB"
@@ -3980,7 +3980,7 @@ msgstr ""
 
 msgctxt "field:party.party,dod:"
 msgid "Date of Death"
-msgstr ""
+msgstr "Ölüm Tarihi"
 
 msgctxt "field:party.party,du:"
 msgid "DU"
@@ -3996,7 +3996,7 @@ msgstr ""
 
 msgctxt "field:party.party,father:"
 msgid "Father"
-msgstr ""
+msgstr "Baba"
 
 msgctxt "field:party.party,fed_country:"
 msgid "Prefix"
@@ -4008,15 +4008,15 @@ msgstr ""
 
 msgctxt "field:party.party,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Cinsiyet"
 
 msgctxt "field:party.party,insurance:"
 msgid "Insurances"
-msgstr ""
+msgstr "Sigortalar"
 
 msgctxt "field:party.party,insurance_company_type:"
 msgid "Insurance Type"
-msgstr ""
+msgstr "Sigorta Türü"
 
 msgctxt "field:party.party,insurance_plan_ids:"
 msgid "Insurance Plans"
@@ -4032,15 +4032,15 @@ msgstr ""
 
 msgctxt "field:party.party,is_institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "field:party.party,is_insurance_company:"
 msgid "Insurance Company"
-msgstr ""
+msgstr "Sigorta Şirketi"
 
 msgctxt "field:party.party,is_patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "field:party.party,is_person:"
 msgid "Person"
@@ -4048,7 +4048,7 @@ msgstr ""
 
 msgctxt "field:party.party,is_pharmacy:"
 msgid "Pharmacy"
-msgstr ""
+msgstr "Eczane"
 
 msgctxt "field:party.party,lastname:"
 msgid "Family names"
@@ -4056,11 +4056,11 @@ msgstr ""
 
 msgctxt "field:party.party,marital_status:"
 msgid "Marital Status"
-msgstr ""
+msgstr "Medeni Hal"
 
 msgctxt "field:party.party,mother:"
 msgid "Mother"
-msgstr ""
+msgstr "Anne"
 
 msgctxt "field:party.party,name_representation:"
 msgid "Name Representation"
@@ -4072,7 +4072,7 @@ msgstr ""
 
 msgctxt "field:party.party,photo:"
 msgid "Picture"
-msgstr ""
+msgstr "Resim"
 
 msgctxt "field:party.party,ref:"
 msgid "PUID"
@@ -4088,27 +4088,27 @@ msgstr ""
 
 msgctxt "field:product.product,is_bed:"
 msgid "Bed"
-msgstr ""
+msgstr "Yatak"
 
 msgctxt "field:product.product,is_insurance_plan:"
 msgid "Insurance Plan"
-msgstr ""
+msgstr "Sigorta Planı"
 
 msgctxt "field:product.product,is_medical_supply:"
 msgid "Medical Supply"
-msgstr ""
+msgstr "Tıbbi Malzeme"
 
 msgctxt "field:product.product,is_medicament:"
 msgid "Medicament"
-msgstr ""
+msgstr "İlaç"
 
 msgctxt "field:product.product,is_vaccine:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Aşı"
 
 msgctxt "help:gnuhealth.appointment,consultations:"
 msgid "Consultation Services"
-msgstr ""
+msgstr "Danışma Hizmetleri"
 
 msgctxt "help:gnuhealth.appointment,healthprof:"
 msgid "Health Professional"
@@ -4120,11 +4120,11 @@ msgstr ""
 
 msgctxt "help:gnuhealth.appointment,patient:"
 msgid "Patient Name"
-msgstr ""
+msgstr "Hasta Adı"
 
 msgctxt "help:gnuhealth.appointment,speciality:"
 msgid "Medical Specialty / Sector"
-msgstr ""
+msgstr "Tıbbi Uzmanlık/Sektör"
 
 msgctxt "help:gnuhealth.birth_certificate,signed_by:"
 msgid "Person who certifies this birth document"
@@ -4136,7 +4136,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.death_certificate,autopsy:"
 msgid "Check this box if autopsy has been done"
-msgstr ""
+msgstr "Otopsi yapıldıysa bu kutuyu işaretleyin"
 
 msgctxt "help:gnuhealth.death_certificate,cod:"
 msgid "Immediate Cause of Death"
@@ -4152,7 +4152,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.death_certificate,signed_by:"
 msgid "Health Professional that signed the death certificate"
-msgstr ""
+msgstr "Ölüm belgesini imzalayan Sağlık Çalışanı"
 
 msgctxt "help:gnuhealth.death_certificate,underlying_conditions:"
 msgid ""
@@ -4174,7 +4174,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.du,address_country:"
 msgid "Country"
-msgstr ""
+msgstr "Ülke"
 
 msgctxt "help:gnuhealth.du,address_district:"
 msgid "Neighborhood, Village, Barrio...."
@@ -4249,11 +4249,11 @@ msgstr ""
 
 msgctxt "help:gnuhealth.hospital.bed,institution:"
 msgid "Health Institution"
-msgstr ""
+msgstr "Sağlık Kurumu"
 
 msgctxt "help:gnuhealth.hospital.bed,name:"
 msgid "Bed Number"
-msgstr ""
+msgstr "Yatak Sayısı"
 
 msgctxt "help:gnuhealth.hospital.bed,telephone_number:"
 msgid "Telephone number / Extension"
@@ -4273,7 +4273,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.hospital.or,institution:"
 msgid "Health Institution"
-msgstr ""
+msgstr "Sağlık Kurumu"
 
 msgctxt "help:gnuhealth.hospital.or,name:"
 msgid "Name of the Operating Room"
@@ -4281,7 +4281,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.hospital.unit,institution:"
 msgid "Health Institution"
-msgstr ""
+msgstr "Sağlık Kurumu"
 
 msgctxt "help:gnuhealth.hospital.unit,name:"
 msgid "Name of the unit, eg Neonatal, Intensive Care, ..."
@@ -4293,7 +4293,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.hospital.ward,institution:"
 msgid "Health Institution"
-msgstr ""
+msgstr "Sağlık Kurumu"
 
 msgctxt "help:gnuhealth.hospital.ward,name:"
 msgid "Ward / Room code"
@@ -4321,7 +4321,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.immunization_schedule_dose,vaccine:"
 msgid "Vaccine Name"
-msgstr ""
+msgstr "Aşı Adı"
 
 msgctxt "help:gnuhealth.immunization_schedule_line,sched:"
 msgid "Schedule Name"
@@ -4329,7 +4329,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.immunization_schedule_line,vaccine:"
 msgid "Vaccine Name"
-msgstr ""
+msgstr "Aşı Adı"
 
 msgctxt "help:gnuhealth.institution,code:"
 msgid "Institution code"
@@ -4367,7 +4367,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.insurance,plan_id:"
 msgid "Insurance company plan"
-msgstr ""
+msgstr "Sigorta şirketi planı"
 
 msgctxt "help:gnuhealth.insurance.plan,is_default:"
 msgid ""
@@ -4401,7 +4401,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.medicament,name:"
 msgid "Product Name"
-msgstr ""
+msgstr "Ürün Adı"
 
 msgctxt "help:gnuhealth.medicament,overdosage:"
 msgid "Overdosage"
@@ -4502,7 +4502,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.pathology,chromosome:"
 msgid "chromosome number"
-msgstr ""
+msgstr "kromozom sayısı"
 
 msgctxt "help:gnuhealth.pathology,code:"
 msgid "Specific Code for the Disease (eg, ICD-10)"
@@ -4510,7 +4510,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.pathology,gene:"
 msgid "Name of the gene(s) affected"
-msgstr ""
+msgstr "Etkilenen gen(ler)in adı"
 
 msgctxt "help:gnuhealth.pathology,groups:"
 msgid ""
@@ -4589,7 +4589,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient,marital_status:"
 msgid "Marital Status"
-msgstr ""
+msgstr "Medeni Hal"
 
 msgctxt "help:gnuhealth.patient,name:"
 msgid "Person associated to this patient"
@@ -4609,11 +4609,11 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.disease,date_start_treatment:"
 msgid "Start of treatment date"
-msgstr ""
+msgstr "Tedavinin başlama tarihi"
 
 msgctxt "help:gnuhealth.patient.disease,date_stop_treatment:"
 msgid "End of treatment date"
-msgstr ""
+msgstr "Tedavinin bitiş tarihi"
 
 msgctxt "help:gnuhealth.patient.disease,healthprof:"
 msgid "Health Professional"
@@ -4673,7 +4673,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,bmi:"
 msgid "Body mass index"
-msgstr ""
+msgstr "Vücut kitle indeksi"
 
 msgctxt "help:gnuhealth.patient.evaluation,bpm:"
 msgid "Heart rate expressed in beats per minute"
@@ -4941,7 +4941,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.medication,end_treatment:"
 msgid "Date of start of Treatment"
-msgstr ""
+msgstr "Tedavinin başlangıç tarihi"
 
 msgctxt "help:gnuhealth.patient.medication,form:"
 msgid "Drug form, such as tablet or gel"
@@ -4995,7 +4995,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.medication,start_treatment:"
 msgid "Date of start of Treatment"
-msgstr ""
+msgstr "Tedavinin başlangıç tarihi"
 
 msgctxt "help:gnuhealth.person_name,family:"
 msgid "Family / Surname."
@@ -5019,7 +5019,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.pol,gene:"
 msgid "Gene / protein"
-msgstr ""
+msgstr "Gen/protein"
 
 msgctxt "help:gnuhealth.pol,page:"
 msgid "Page of Life"
@@ -5076,7 +5076,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.prescription.line,end_treatment:"
 msgid "Date of start of Treatment"
-msgstr ""
+msgstr "Tedavinin başlangıç tarihi"
 
 msgctxt "help:gnuhealth.prescription.line,form:"
 msgid "Drug form, such as tablet or gel"
@@ -5137,7 +5137,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.prescription.line,start_treatment:"
 msgid "Date of start of Treatment"
-msgstr ""
+msgstr "Tedavinin başlangıç tarihi"
 
 msgctxt "help:gnuhealth.prescription.order,prescription_id:"
 msgid "Type in the ID of this prescription"
@@ -5222,7 +5222,7 @@ msgstr ""
 
 msgctxt "help:party.party,dob:"
 msgid "Date of Birth"
-msgstr ""
+msgstr "Doğum Tarihi"
 
 msgctxt "help:party.party,du:"
 msgid "Domiciliary Unit"
@@ -5338,7 +5338,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.birth_certificate,name:"
 msgid "Birth Certificate"
-msgstr ""
+msgstr "Doğum Belgesi"
 
 msgctxt "model:gnuhealth.check_immunization_status.init,name:"
 msgid "Check Immunization Status Init"
@@ -5346,11 +5346,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.command,name:"
 msgid "GNU Health Commands"
-msgstr ""
+msgstr "GNU Health Komutları"
 
 msgctxt "model:gnuhealth.death_certificate,name:"
 msgid "Death Certificate"
-msgstr ""
+msgstr "Ölüm Belgesi"
 
 msgctxt "model:gnuhealth.death_underlying_condition,name:"
 msgid "Underlying Conditions"
@@ -5370,27 +5370,27 @@ msgstr ""
 
 msgctxt "model:gnuhealth.dose.unit,desc:kg"
 msgid "kilogram"
-msgstr ""
+msgstr "kilogram"
 
 msgctxt "model:gnuhealth.dose.unit,desc:l"
 msgid "liter"
-msgstr ""
+msgstr "litre"
 
 msgctxt "model:gnuhealth.dose.unit,desc:mg"
 msgid "milligram"
-msgstr ""
+msgstr "miligram"
 
 msgctxt "model:gnuhealth.dose.unit,desc:ml"
 msgid "milliliter"
-msgstr ""
+msgstr "mililitre"
 
 msgctxt "model:gnuhealth.dose.unit,desc:mmol"
 msgid "millimol"
-msgstr ""
+msgstr "milimol"
 
 msgctxt "model:gnuhealth.dose.unit,desc:ug"
 msgid "microgram"
-msgstr ""
+msgstr "mikrogram"
 
 msgctxt "model:gnuhealth.dose.unit,desc:unit"
 msgid "unit"
@@ -5402,19 +5402,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.dose.unit,name:kg"
 msgid "kg"
-msgstr ""
+msgstr "kg"
 
 msgctxt "model:gnuhealth.dose.unit,name:l"
 msgid "L"
-msgstr ""
+msgstr "L"
 
 msgctxt "model:gnuhealth.dose.unit,name:mg"
 msgid "mg"
-msgstr ""
+msgstr "mg"
 
 msgctxt "model:gnuhealth.dose.unit,name:ml"
 msgid "mL"
-msgstr ""
+msgstr "mL"
 
 msgctxt "model:gnuhealth.dose.unit,name:mmol"
 msgid "mmol"
@@ -6050,7 +6050,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.healthprofessional,name:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Sağlık Çalışanı"
 
 msgctxt "model:gnuhealth.hospital.bed,name:"
 msgid "Hospital Bed"
@@ -6090,7 +6090,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.institution,name:"
 msgid "Health Institution"
-msgstr ""
+msgstr "Sağlık Kurumu"
 
 msgctxt "model:gnuhealth.institution.operationalsector,name:"
 msgid "Operational Sectors covered by Institution"
@@ -6102,11 +6102,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.insurance,name:"
 msgid "Insurance"
-msgstr ""
+msgstr "Sigorta"
 
 msgctxt "model:gnuhealth.insurance.plan,name:"
 msgid "Insurance Plan"
-msgstr ""
+msgstr "Sigorta Planı"
 
 msgctxt "model:gnuhealth.medicament,name:"
 msgid "Medicament"
@@ -6122,79 +6122,79 @@ msgstr ""
 
 msgctxt "model:gnuhealth.medication.dosage,name:20050000"
 msgid "every two weeks"
-msgstr ""
+msgstr "iki saatte bir"
 
 msgctxt "model:gnuhealth.medication.dosage,name:225750008"
 msgid "every 2 hours"
-msgstr ""
+msgstr "2 saatte bir"
 
 msgctxt "model:gnuhealth.medication.dosage,name:225756002"
 msgid "every 4 hours"
-msgstr ""
+msgstr "4 saatte bir"
 
 msgctxt "model:gnuhealth.medication.dosage,name:225760004"
 msgid "every other day"
-msgstr ""
+msgstr "gün aşırı"
 
 msgctxt "model:gnuhealth.medication.dosage,name:225769003"
 msgid "1 time per week"
-msgstr ""
+msgstr "haftada 1 kez"
 
 msgctxt "model:gnuhealth.medication.dosage,name:229797004"
 msgid "1 time per day"
-msgstr ""
+msgstr "günde 1 kez"
 
 msgctxt "model:gnuhealth.medication.dosage,name:229798009"
 msgid "3 times per day"
-msgstr ""
+msgstr "günde 3 kez"
 
 msgctxt "model:gnuhealth.medication.dosage,name:229799001"
 msgid "2 times per day"
-msgstr ""
+msgstr "günde 2 kez"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307439001"
 msgid "4 times per day"
-msgstr ""
+msgstr "günde 4 kez"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307468000"
 msgid "every 6 hours"
-msgstr ""
+msgstr "6 saatte bir"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307469008"
 msgid "every 8 hours"
-msgstr ""
+msgstr "8 saatte bir"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307470009"
 msgid "every 12 hours"
-msgstr ""
+msgstr "12 saatte bir"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307472001"
 msgid "1 time per day in the morning"
-msgstr ""
+msgstr "günde 1 kez, sabahları"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307475004"
 msgid "every month"
-msgstr ""
+msgstr "ayda bir"
 
 msgctxt "model:gnuhealth.medication.dosage,name:307476003"
 msgid "every 28 days"
-msgstr ""
+msgstr "28 günde bir"
 
 msgctxt "model:gnuhealth.medication.dosage,name:396142006"
 msgid "1 time per day at bedtime"
-msgstr ""
+msgstr "günde 1 kez, yatmadan önce"
 
 msgctxt "model:gnuhealth.medication.dosage,name:396145008"
 msgid "3 times per day, before meals"
-msgstr ""
+msgstr "günde 3 kez, yemekten önce"
 
 msgctxt "model:gnuhealth.medication.dosage,name:396146009"
 msgid "3 times per day, with meals"
-msgstr ""
+msgstr "günde 3 kez, yemekle birlikte"
 
 msgctxt "model:gnuhealth.medication.dosage,name:396147000"
 msgid "1 time per day in the evening"
-msgstr ""
+msgstr "günde 1 kez, akşamları"
 
 msgctxt "model:gnuhealth.medication.dosage,name:420449005"
 msgid "as needed"
@@ -6202,19 +6202,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.medication.dosage,name:422114001"
 msgid "1 time"
-msgstr ""
+msgstr "1 kez"
 
 msgctxt "model:gnuhealth.occupation,name:"
 msgid "Occupation"
-msgstr ""
+msgstr "Meslek"
 
 msgctxt "model:gnuhealth.occupation,name:occ1"
 msgid "Unemployed"
-msgstr ""
+msgstr "İşsiz"
 
 msgctxt "model:gnuhealth.occupation,name:occ10"
 msgid "Ballerina"
-msgstr ""
+msgstr "Balerin"
 
 msgctxt "model:gnuhealth.occupation,name:occ100"
 msgid "Curator"
@@ -6270,7 +6270,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ112"
 msgid "Dentist"
-msgstr ""
+msgstr "Dişçi"
 
 msgctxt "model:gnuhealth.occupation,name:occ113"
 msgid "Dermatologist"
@@ -6290,7 +6290,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ117"
 msgid "Dictator"
-msgstr ""
+msgstr "Diktatör"
 
 msgctxt "model:gnuhealth.occupation,name:occ118"
 msgid "Dietician"
@@ -6322,7 +6322,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ124"
 msgid "Diver"
-msgstr ""
+msgstr "Dalgıç"
 
 msgctxt "model:gnuhealth.occupation,name:occ125"
 msgid "Dock labourer"
@@ -6378,7 +6378,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ137"
 msgid "Doorman"
-msgstr ""
+msgstr "Kapıcı"
 
 msgctxt "model:gnuhealth.occupation,name:occ138"
 msgid "Draftsman"
@@ -6390,7 +6390,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ14"
 msgid "Bookseller"
-msgstr ""
+msgstr "Kitapçı"
 
 msgctxt "model:gnuhealth.occupation,name:occ140"
 msgid "Dramaturg"
@@ -6398,15 +6398,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ141"
 msgid "Draper"
-msgstr ""
+msgstr "Kumaşçı"
 
 msgctxt "model:gnuhealth.occupation,name:occ142"
 msgid "Drayman"
-msgstr ""
+msgstr "Arabacı"
 
 msgctxt "model:gnuhealth.occupation,name:occ143"
 msgid "Dressmaker"
-msgstr ""
+msgstr "Terzi"
 
 msgctxt "model:gnuhealth.occupation,name:occ144"
 msgid "Drill instructor"
@@ -6414,11 +6414,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ145"
 msgid "Driver"
-msgstr ""
+msgstr "Sürücü"
 
 msgctxt "model:gnuhealth.occupation,name:occ146"
 msgid "Drug dealer"
-msgstr ""
+msgstr "Uyuşturucu satıcısı"
 
 msgctxt "model:gnuhealth.occupation,name:occ147"
 msgid "Drummer"
@@ -6438,19 +6438,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ150"
 msgid "Dustman"
-msgstr ""
+msgstr "Çöpçü"
 
 msgctxt "model:gnuhealth.occupation,name:occ151"
 msgid "Dyer"
-msgstr ""
+msgstr "Boyacı"
 
 msgctxt "model:gnuhealth.occupation,name:occ152"
 msgid "Ecologist"
-msgstr ""
+msgstr "Çevrebilimci"
 
 msgctxt "model:gnuhealth.occupation,name:occ153"
 msgid "Economist"
-msgstr ""
+msgstr "İktisatçı"
 
 msgctxt "model:gnuhealth.occupation,name:occ154"
 msgid "Editor"
@@ -6466,15 +6466,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ157"
 msgid "Egyptologist"
-msgstr ""
+msgstr "Eski Mısır Bilimcisi"
 
 msgctxt "model:gnuhealth.occupation,name:occ158"
 msgid "Electrical engineer"
-msgstr ""
+msgstr "Elektrik mühendisi"
 
 msgctxt "model:gnuhealth.occupation,name:occ159"
 msgid "Electrician"
-msgstr ""
+msgstr "Elektrikçi"
 
 msgctxt "model:gnuhealth.occupation,name:occ16"
 msgid "Cab driver"
@@ -6486,11 +6486,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ161"
 msgid "Embalmer"
-msgstr ""
+msgstr "Mumyalayıcı"
 
 msgctxt "model:gnuhealth.occupation,name:occ162"
 msgid "Embryologist"
-msgstr ""
+msgstr "Embriyolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ163"
 msgid "Emergency Medical Technician (EMT)"
@@ -6502,7 +6502,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ165"
 msgid "Engineer"
-msgstr ""
+msgstr "Mühendis"
 
 msgctxt "model:gnuhealth.occupation,name:occ166"
 msgid "Engraver"
@@ -6518,11 +6518,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ169"
 msgid "Entomologist"
-msgstr ""
+msgstr "Böcekbilimci"
 
 msgctxt "model:gnuhealth.occupation,name:occ17"
 msgid "Cop"
-msgstr ""
+msgstr "Polis"
 
 msgctxt "model:gnuhealth.occupation,name:occ170"
 msgid "Entrepreneur"
@@ -6542,7 +6542,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ174"
 msgid "Estate Agent"
-msgstr ""
+msgstr "Emlakçı"
 
 msgctxt "model:gnuhealth.occupation,name:occ175"
 msgid "Esthetician"
@@ -6550,15 +6550,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ176"
 msgid "Ethnologist"
-msgstr ""
+msgstr "Etnograf"
 
 msgctxt "model:gnuhealth.occupation,name:occ177"
 msgid "Ethologist"
-msgstr ""
+msgstr "Etolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ178"
 msgid "Etymologist"
-msgstr ""
+msgstr "Kökenbilimci"
 
 msgctxt "model:gnuhealth.occupation,name:occ179"
 msgid "Evangelist"
@@ -6594,27 +6594,27 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ186"
 msgid "Falconer"
-msgstr ""
+msgstr "Doğancı"
 
 msgctxt "model:gnuhealth.occupation,name:occ187"
 msgid "Farmer"
-msgstr ""
+msgstr "Çiftçi"
 
 msgctxt "model:gnuhealth.occupation,name:occ188"
 msgid "Farrier"
-msgstr ""
+msgstr "Nalbant"
 
 msgctxt "model:gnuhealth.occupation,name:occ189"
 msgid "Fashion designer"
-msgstr ""
+msgstr "Moda tasarımcısı"
 
 msgctxt "model:gnuhealth.occupation,name:occ19"
 msgid "Calligrapher"
-msgstr ""
+msgstr "Hattat"
 
 msgctxt "model:gnuhealth.occupation,name:occ190"
 msgid "FBI Agent"
-msgstr ""
+msgstr "FBI Ajanı"
 
 msgctxt "model:gnuhealth.occupation,name:occ191"
 msgid "Fellmonger"
@@ -6638,7 +6638,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ196"
 msgid "Financial adviser"
-msgstr ""
+msgstr "Mali müşavir"
 
 msgctxt "model:gnuhealth.occupation,name:occ197"
 msgid "Financial analyst"
@@ -6674,7 +6674,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ203"
 msgid "Firefighter"
-msgstr ""
+msgstr "İtfaiyeci"
 
 msgctxt "model:gnuhealth.occupation,name:occ204"
 msgid "First Mate"
@@ -6686,7 +6686,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ206"
 msgid "Fisherman"
-msgstr ""
+msgstr "Balıkçı"
 
 msgctxt "model:gnuhealth.occupation,name:occ207"
 msgid "Fitter"
@@ -6694,7 +6694,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ208"
 msgid "Flautist"
-msgstr ""
+msgstr "Flütçü"
 
 msgctxt "model:gnuhealth.occupation,name:occ209"
 msgid "Flavorist"
@@ -6722,7 +6722,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ215"
 msgid "Florist"
-msgstr ""
+msgstr "Çiçekçi"
 
 msgctxt "model:gnuhealth.occupation,name:occ217"
 msgid "Flutist"
@@ -6746,7 +6746,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ221"
 msgid "Furrier"
-msgstr ""
+msgstr "Kürkçü"
 
 msgctxt "model:gnuhealth.occupation,name:occ222"
 msgid "Gamekeeper"
@@ -6766,7 +6766,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ226"
 msgid "Gardener"
-msgstr ""
+msgstr "Bahçıvan"
 
 msgctxt "model:gnuhealth.occupation,name:occ227"
 msgid "Gate-keeper"
@@ -6786,27 +6786,27 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ230"
 msgid "General"
-msgstr ""
+msgstr "General"
 
 msgctxt "model:gnuhealth.occupation,name:occ231"
 msgid "Geodesist"
-msgstr ""
+msgstr "Jeodesist"
 
 msgctxt "model:gnuhealth.occupation,name:occ232"
 msgid "Geographer"
-msgstr ""
+msgstr "Coğrafyacı"
 
 msgctxt "model:gnuhealth.occupation,name:occ233"
 msgid "Geologist"
-msgstr ""
+msgstr "Jeolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ234"
 msgid "Geometer"
-msgstr ""
+msgstr "Geometrici"
 
 msgctxt "model:gnuhealth.occupation,name:occ235"
 msgid "Geophysicist"
-msgstr ""
+msgstr "Jeofizikçi"
 
 msgctxt "model:gnuhealth.occupation,name:occ236"
 msgid "Government agent"
@@ -6818,7 +6818,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ238"
 msgid "Grammarian"
-msgstr ""
+msgstr "Gramerci"
 
 msgctxt "model:gnuhealth.occupation,name:occ239"
 msgid "Graphic artist"
@@ -6826,7 +6826,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ24"
 msgid "Cardiologist"
-msgstr ""
+msgstr "Kardiyolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ240"
 msgid "Gravedigger"
@@ -6858,7 +6858,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ247"
 msgid "Gynecologist"
-msgstr ""
+msgstr "Jinekolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ248"
 msgid "Garrett"
@@ -6870,7 +6870,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ25"
 msgid "Carpenter"
-msgstr ""
+msgstr "Marangoz"
 
 msgctxt "model:gnuhealth.occupation,name:occ250"
 msgid "Harpist"
@@ -6894,7 +6894,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ255"
 msgid "Hatter"
-msgstr ""
+msgstr "Şapkacı"
 
 msgctxt "model:gnuhealth.occupation,name:occ256"
 msgid "Hayward"
@@ -6910,7 +6910,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ26"
 msgid "Cartographer"
-msgstr ""
+msgstr "Haritacı"
 
 msgctxt "model:gnuhealth.occupation,name:occ260"
 msgid "Herder"
@@ -6938,15 +6938,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ266"
 msgid "House painter"
-msgstr ""
+msgstr "Badanacı"
 
 msgctxt "model:gnuhealth.occupation,name:occ267"
 msgid "Housewife"
-msgstr ""
+msgstr "Ev hanımı"
 
 msgctxt "model:gnuhealth.occupation,name:occ268"
 msgid "Hunter"
-msgstr ""
+msgstr "Avcı"
 
 msgctxt "model:gnuhealth.occupation,name:occ269"
 msgid "Hydraulic engineer"
@@ -7038,11 +7038,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ289"
 msgid "Inventor"
-msgstr ""
+msgstr "Mucit"
 
 msgctxt "model:gnuhealth.occupation,name:occ29"
 msgid "Cashier"
-msgstr ""
+msgstr "Kasiyer"
 
 msgctxt "model:gnuhealth.occupation,name:occ290"
 msgid "Investigator"
@@ -7090,11 +7090,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ30"
 msgid "Celebrity"
-msgstr ""
+msgstr "Ünlü"
 
 msgctxt "model:gnuhealth.occupation,name:occ300"
 msgid "Journalist"
-msgstr ""
+msgstr "Gazeteci"
 
 msgctxt "model:gnuhealth.occupation,name:occ301"
 msgid "Jurist"
@@ -7102,7 +7102,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ302"
 msgid "Judge"
-msgstr ""
+msgstr "Hakim"
 
 msgctxt "model:gnuhealth.occupation,name:occ303"
 msgid "Kinesiologist"
@@ -7110,7 +7110,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ304"
 msgid "King"
-msgstr ""
+msgstr "Kral"
 
 msgctxt "model:gnuhealth.occupation,name:occ305"
 msgid "Lab Assistant"
@@ -7146,7 +7146,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ312"
 msgid "Lawyer"
-msgstr ""
+msgstr "Avukat"
 
 msgctxt "model:gnuhealth.occupation,name:occ313"
 msgid "Leadworker"
@@ -7166,7 +7166,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ317"
 msgid "Librarian"
-msgstr ""
+msgstr "Kütüphaneci"
 
 msgctxt "model:gnuhealth.occupation,name:occ318"
 msgid "Library technical assistant"
@@ -7198,7 +7198,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ324"
 msgid "Linguist"
-msgstr ""
+msgstr "Dilbilimci"
 
 msgctxt "model:gnuhealth.occupation,name:occ325"
 msgid "Loan officer"
@@ -7210,15 +7210,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ327"
 msgid "Locksmith"
-msgstr ""
+msgstr "Çilingir"
 
 msgctxt "model:gnuhealth.occupation,name:occ328"
 msgid "Logistician"
-msgstr ""
+msgstr "Lojistikçi"
 
 msgctxt "model:gnuhealth.occupation,name:occ329"
 msgid "Lumberjack"
-msgstr ""
+msgstr "Oduncu"
 
 msgctxt "model:gnuhealth.occupation,name:occ33"
 msgid "CEO (Chief Executive Officer)"
@@ -7234,7 +7234,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ332"
 msgid "Magician"
-msgstr ""
+msgstr "Sihirbaz"
 
 msgctxt "model:gnuhealth.occupation,name:occ333"
 msgid "Magistrate"
@@ -7318,7 +7318,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ351"
 msgid "Mathematician"
-msgstr ""
+msgstr "Matematikçi"
 
 msgctxt "model:gnuhealth.occupation,name:occ352"
 msgid "Matron"
@@ -7382,7 +7382,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ366"
 msgid "Milkman "
-msgstr ""
+msgstr "Sütçü "
 
 msgctxt "model:gnuhealth.occupation,name:occ367"
 msgid "Miller"
@@ -7390,7 +7390,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ368"
 msgid "Miner"
-msgstr ""
+msgstr "Madenci"
 
 msgctxt "model:gnuhealth.occupation,name:occ369"
 msgid "Model"
@@ -7454,7 +7454,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ384"
 msgid "Musician"
-msgstr ""
+msgstr "Müzisyen"
 
 msgctxt "model:gnuhealth.occupation,name:occ385"
 msgid "Nanny"
@@ -7510,15 +7510,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ399"
 msgid "Nurse"
-msgstr ""
+msgstr "Hemşire"
 
 msgctxt "model:gnuhealth.occupation,name:occ4"
 msgid "Astronaut"
-msgstr ""
+msgstr "Astronot"
 
 msgctxt "model:gnuhealth.occupation,name:occ40"
 msgid "Chef "
-msgstr ""
+msgstr "Aşçı "
 
 msgctxt "model:gnuhealth.occupation,name:occ400"
 msgid "Nursemaid"
@@ -7650,7 +7650,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ43"
 msgid "Chemist"
-msgstr ""
+msgstr "Kimyacı"
 
 msgctxt "model:gnuhealth.occupation,name:occ430"
 msgid "Peddler"
@@ -7686,7 +7686,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ438"
 msgid "Pharmacist"
-msgstr ""
+msgstr "Eczacı"
 
 msgctxt "model:gnuhealth.occupation,name:occ439"
 msgid "Philanthropist"
@@ -7734,7 +7734,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ449"
 msgid "Pianist"
-msgstr ""
+msgstr "Piyanist"
 
 msgctxt "model:gnuhealth.occupation,name:occ45"
 msgid "Chief Mate"
@@ -7746,11 +7746,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ451"
 msgid "Pilot"
-msgstr ""
+msgstr "Pilot"
 
 msgctxt "model:gnuhealth.occupation,name:occ452"
 msgid "Pirate"
-msgstr ""
+msgstr "Korsan"
 
 msgctxt "model:gnuhealth.occupation,name:occ453"
 msgid "Plastic surgeon"
@@ -7766,7 +7766,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ456"
 msgid "Poet"
-msgstr ""
+msgstr "Şair"
 
 msgctxt "model:gnuhealth.occupation,name:occ457"
 msgid "Police"
@@ -7822,7 +7822,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ469"
 msgid "Professor"
-msgstr ""
+msgstr "Profesör"
 
 msgctxt "model:gnuhealth.occupation,name:occ47"
 msgid "Chiropodist"
@@ -7846,11 +7846,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ474"
 msgid "Prostitute"
-msgstr ""
+msgstr "Orospu"
 
 msgctxt "model:gnuhealth.occupation,name:occ475"
 msgid "Psychiatrist"
-msgstr ""
+msgstr "Psikiyatr"
 
 msgctxt "model:gnuhealth.occupation,name:occ476"
 msgid "Psychodramatist"
@@ -7858,7 +7858,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ477"
 msgid "Psychologist"
-msgstr ""
+msgstr "Psikolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ478"
 msgid "Public Relations Officer"
@@ -7954,7 +7954,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ5"
 msgid "Archaeologist"
-msgstr ""
+msgstr "Arkeolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ50"
 msgid "Church usher"
@@ -7998,7 +7998,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ51"
 msgid "CIA Agent"
-msgstr ""
+msgstr "CIA Ajanı"
 
 msgctxt "model:gnuhealth.occupation,name:occ510"
 msgid "School Principal"
@@ -8010,7 +8010,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ512"
 msgid "Scientist"
-msgstr ""
+msgstr "Bilim adamı"
 
 msgctxt "model:gnuhealth.occupation,name:occ513"
 msgid "Scout"
@@ -8074,7 +8074,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ527"
 msgid "Shepherd"
-msgstr ""
+msgstr "Çoban"
 
 msgctxt "model:gnuhealth.occupation,name:occ528"
 msgid "Shaman"
@@ -8102,7 +8102,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ533"
 msgid "Singer"
-msgstr ""
+msgstr "Şarkıcı"
 
 msgctxt "model:gnuhealth.occupation,name:occ536"
 msgid "Social worker"
@@ -8118,7 +8118,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ539"
 msgid "Software engineer"
-msgstr ""
+msgstr "Yazılım mühendisi"
 
 msgctxt "model:gnuhealth.occupation,name:occ54"
 msgid "Civil engineer"
@@ -8134,7 +8134,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ542"
 msgid "Soldier"
-msgstr ""
+msgstr "Asker"
 
 msgctxt "model:gnuhealth.occupation,name:occ543"
 msgid "Solicitor"
@@ -8218,7 +8218,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ562"
 msgid "Student"
-msgstr ""
+msgstr "Öğrenci"
 
 msgctxt "model:gnuhealth.occupation,name:occ564"
 msgid "Stunt coordinator"
@@ -8250,7 +8250,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ571"
 msgid "Swimmer"
-msgstr ""
+msgstr "Yüzücü"
 
 msgctxt "model:gnuhealth.occupation,name:occ572"
 msgid "Switchboard operator"
@@ -8290,7 +8290,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ581"
 msgid "Taxi-driver"
-msgstr ""
+msgstr "Taksici"
 
 msgctxt "model:gnuhealth.occupation,name:occ582"
 msgid "Taxonomist"
@@ -8302,7 +8302,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ584"
 msgid "Teacher"
-msgstr ""
+msgstr "Öğretmen"
 
 msgctxt "model:gnuhealth.occupation,name:occ585"
 msgid "Technician"
@@ -8354,7 +8354,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ596"
 msgid "Theologian"
-msgstr ""
+msgstr "İlahiyatçı"
 
 msgctxt "model:gnuhealth.occupation,name:occ597"
 msgid "Therapist"
@@ -8366,7 +8366,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ6"
 msgid "Architect"
-msgstr ""
+msgstr "Mimar"
 
 msgctxt "model:gnuhealth.occupation,name:occ60"
 msgid "Coachman"
@@ -8398,7 +8398,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ606"
 msgid "Translator"
-msgstr ""
+msgstr "Çevirmen"
 
 msgctxt "model:gnuhealth.occupation,name:occ607"
 msgid "Treasurer"
@@ -8478,7 +8478,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ624"
 msgid "Veterinarian"
-msgstr ""
+msgstr "Veteriner"
 
 msgctxt "model:gnuhealth.occupation,name:occ625"
 msgid "Vibraphonist"
@@ -8518,7 +8518,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ633"
 msgid "Waiter"
-msgstr ""
+msgstr "Garson"
 
 msgctxt "model:gnuhealth.occupation,name:occ634"
 msgid "Warder"
@@ -8794,7 +8794,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology.group,name:HEART"
 msgid "HEART"
-msgstr ""
+msgstr "KALP"
 
 msgctxt "model:gnuhealth.pathology.group,name:INFECTIOUS"
 msgid "INFECTIOUS"
@@ -8818,7 +8818,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology.group,name:NUTRITION"
 msgid "NUTRITION"
-msgstr ""
+msgstr "BESLENME"
 
 msgctxt "model:gnuhealth.pathology.group,name:OBSGYN"
 msgid "GYNECOLOGY and OBSTETRICS"
@@ -8910,243 +8910,243 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:"
 msgid "Medical Specialty"
-msgstr ""
+msgstr "Tıbbi Uzmanlık"
 
 msgctxt "model:gnuhealth.specialty,name:10"
 msgid "Clinical Neurophysiology"
-msgstr ""
+msgstr "Klinik Nörofizyoloji"
 
 msgctxt "model:gnuhealth.specialty,name:11"
 msgid "Dermatology"
-msgstr ""
+msgstr "Deri Bilimi (Dermatoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:12"
 msgid "Nutrition"
-msgstr ""
+msgstr "Beslenme"
 
 msgctxt "model:gnuhealth.specialty,name:13"
 msgid "Embryology"
-msgstr ""
+msgstr "Embriyoloji"
 
 msgctxt "model:gnuhealth.specialty,name:14"
 msgid "Emergency medicine"
-msgstr ""
+msgstr "Acil tıp"
 
 msgctxt "model:gnuhealth.specialty,name:15"
 msgid "Endocrinology"
-msgstr ""
+msgstr "İç Salgı Bilimi (Endokrinoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:16"
 msgid "Family Medicine"
-msgstr ""
+msgstr "Aile Hekimliği"
 
 msgctxt "model:gnuhealth.specialty,name:17"
 msgid "Forensic Medicine"
-msgstr ""
+msgstr "Adli Tıp"
 
 msgctxt "model:gnuhealth.specialty,name:18"
 msgid "Gastroenterology"
-msgstr ""
+msgstr "Sindirim Bilimi (Gastroenteroloji)"
 
 msgctxt "model:gnuhealth.specialty,name:19"
 msgid "General surgery"
-msgstr ""
+msgstr "Genel cerrahi"
 
 msgctxt "model:gnuhealth.specialty,name:2"
 msgid "Anatomy"
-msgstr ""
+msgstr "Anatomi"
 
 msgctxt "model:gnuhealth.specialty,name:20"
 msgid "Genetics"
-msgstr ""
+msgstr "Kalıtım Bilimi (Genetik)"
 
 msgctxt "model:gnuhealth.specialty,name:21"
 msgid "Geriatrics"
-msgstr ""
+msgstr "Yaşlılık Bilimi (Geriatri)"
 
 msgctxt "model:gnuhealth.specialty,name:22"
 msgid "Gynecology"
-msgstr ""
+msgstr "Kadın Hastalıkları (Jinekoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:23"
 msgid "Hematology"
-msgstr ""
+msgstr "Kan Bilimi (Hematoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:24"
 msgid "Hepatology"
-msgstr ""
+msgstr "Karaciğer Bilimi (Hepatoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:25"
 msgid "Histology"
-msgstr ""
+msgstr "Doku Bilimi (Histoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:26"
 msgid "Immunology"
-msgstr ""
+msgstr "Bağışıklık Bilimi (İmmünoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:27"
 msgid "Infectious disease"
-msgstr ""
+msgstr "Bulaşıcı Hastalıklar"
 
 msgctxt "model:gnuhealth.specialty,name:28"
 msgid "Intensive care medicine"
-msgstr ""
+msgstr "Yoğun Bakım"
 
 msgctxt "model:gnuhealth.specialty,name:29"
 msgid "Maxillofacial surgery"
-msgstr ""
+msgstr "Çene Cerrahisi (Maksillofasiyal Cerrahi)"
 
 msgctxt "model:gnuhealth.specialty,name:3"
 msgid "Andrology"
-msgstr ""
+msgstr "Androloji"
 
 msgctxt "model:gnuhealth.specialty,name:30"
 msgid "Nephrology"
-msgstr ""
+msgstr "Böbrek Bilimi (Nefroloji)"
 
 msgctxt "model:gnuhealth.specialty,name:31"
 msgid "Neurology"
-msgstr ""
+msgstr "Sinir Bilimi (Nöroloji)"
 
 msgctxt "model:gnuhealth.specialty,name:32"
 msgid "Neurosurgery"
-msgstr ""
+msgstr "Beyin Cerrahisi"
 
 msgctxt "model:gnuhealth.specialty,name:33"
 msgid "Nursing"
-msgstr ""
+msgstr "Hemşirelik"
 
 msgctxt "model:gnuhealth.specialty,name:34"
 msgid "Obstetrics and gynecology"
-msgstr ""
+msgstr "Doğum Bilimi ve Kadın Hastalıkları"
 
 msgctxt "model:gnuhealth.specialty,name:35"
 msgid "Oncology"
-msgstr ""
+msgstr "Tümör Bilimi (Onkoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:36"
 msgid "Ophthalmology"
-msgstr ""
+msgstr "Göz Bilimi (Oftalmoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:37"
 msgid "Orthopedic surgery"
-msgstr ""
+msgstr "Ortopedik Cerrahi"
 
 msgctxt "model:gnuhealth.specialty,name:38"
 msgid "Otolaryngology - ENT"
-msgstr ""
+msgstr "Kulak Burun Boğaz"
 
 msgctxt "model:gnuhealth.specialty,name:39"
 msgid "Palliative care"
-msgstr ""
+msgstr "Palyatif Bakım"
 
 msgctxt "model:gnuhealth.specialty,name:4"
 msgid "Alternative Medicine"
-msgstr ""
+msgstr "Alternatif Tıp"
 
 msgctxt "model:gnuhealth.specialty,name:40"
 msgid "Pathology"
-msgstr ""
+msgstr "Patoloji"
 
 msgctxt "model:gnuhealth.specialty,name:41"
 msgid "Pediatrics"
-msgstr ""
+msgstr "Pediyatri"
 
 msgctxt "model:gnuhealth.specialty,name:42"
 msgid "Pediatric surgery"
-msgstr ""
+msgstr "Çocuk Cerrahisi"
 
 msgctxt "model:gnuhealth.specialty,name:43"
 msgid "Pharmacology"
-msgstr ""
+msgstr "İlaç Bilimi (Farmakoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:44"
 msgid "Physical medicine and rehabilitation"
-msgstr ""
+msgstr "Fizik Tedavi ve Rehabilitasyon"
 
 msgctxt "model:gnuhealth.specialty,name:45"
 msgid "Plastic surgery"
-msgstr ""
+msgstr "Estetik Cerrahi"
 
 msgctxt "model:gnuhealth.specialty,name:46"
 msgid "Proctology"
-msgstr ""
+msgstr "Proktoloji"
 
 msgctxt "model:gnuhealth.specialty,name:47"
 msgid "Psychiatry"
-msgstr ""
+msgstr "Psikiyatri"
 
 msgctxt "model:gnuhealth.specialty,name:48"
 msgid "Pulmonology"
-msgstr ""
+msgstr "Göğüs Hastalıkları (Pulmonoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:49"
 msgid "Radiology"
-msgstr ""
+msgstr "Işın Bilimi (Radyoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:5"
 msgid "Anesthesiology"
-msgstr ""
+msgstr "Anestezi Bilimi (Anesteziyoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:50"
 msgid "Rheumatology"
-msgstr ""
+msgstr "Romatoloji"
 
 msgctxt "model:gnuhealth.specialty,name:51"
 msgid "Stomatology"
-msgstr ""
+msgstr "Ağız Bilimi (Stomatoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:52"
 msgid "Surgical oncology"
-msgstr ""
+msgstr "Cerrahi Onkoloji"
 
 msgctxt "model:gnuhealth.specialty,name:53"
 msgid "Thoracic surgery"
-msgstr ""
+msgstr "Göğüs Cerrahisi"
 
 msgctxt "model:gnuhealth.specialty,name:54"
 msgid "Toxicology"
-msgstr ""
+msgstr "Toksikoloji"
 
 msgctxt "model:gnuhealth.specialty,name:55"
 msgid "Transplant surgery"
-msgstr ""
+msgstr "Organ Nakli"
 
 msgctxt "model:gnuhealth.specialty,name:56"
 msgid "Trauma surgery"
-msgstr ""
+msgstr "Travma Cerrahisi"
 
 msgctxt "model:gnuhealth.specialty,name:57"
 msgid "Urgent Care Medicine"
-msgstr ""
+msgstr "Acil Sağlık Hizmetleri"
 
 msgctxt "model:gnuhealth.specialty,name:58"
 msgid "Urology"
-msgstr ""
+msgstr "Üroloji"
 
 msgctxt "model:gnuhealth.specialty,name:59"
 msgid "Vascular surgery"
-msgstr ""
+msgstr "Damar Cerrahisi (Vasküler Cerrahi)"
 
 msgctxt "model:gnuhealth.specialty,name:6"
 msgid "Biochemistry"
-msgstr ""
+msgstr "Biyokimya"
 
 msgctxt "model:gnuhealth.specialty,name:60"
 msgid "General Practitioner"
-msgstr ""
+msgstr "Pratisyen"
 
 msgctxt "model:gnuhealth.specialty,name:61"
 msgid "Internal Medicine"
-msgstr ""
+msgstr "İç Hastalıkları"
 
 msgctxt "model:gnuhealth.specialty,name:62"
 msgid "Speech Therapy / Phonoaudiology"
-msgstr ""
+msgstr "Konuşma Tedavisi"
 
 msgctxt "model:gnuhealth.specialty,name:63"
 msgid "Psychology"
-msgstr ""
+msgstr "Ruh Bilimi (Psikoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:64"
 msgid "Pain Medicine"
@@ -9154,27 +9154,27 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:65"
 msgid "Integrative Medicine"
-msgstr ""
+msgstr "Bütünleyici Tıp"
 
 msgctxt "model:gnuhealth.specialty,name:66"
 msgid "Neonatology"
-msgstr ""
+msgstr "Yenidoğan Bilimi (Neonatoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:67"
 msgid "Cardiothoracic Surgery"
-msgstr ""
+msgstr "Göğüs Kalp Damar Cerrahisi"
 
 msgctxt "model:gnuhealth.specialty,name:68"
 msgid "Obstetrics"
-msgstr ""
+msgstr "Doğum Bilimi"
 
 msgctxt "model:gnuhealth.specialty,name:7"
 msgid "Cardiology"
-msgstr ""
+msgstr "Yürek Bilimi (Kardiyoloji)"
 
 msgctxt "model:gnuhealth.specialty,name:70"
 msgid "Primary Care"
-msgstr ""
+msgstr "Temel Bakım"
 
 msgctxt "model:gnuhealth.specialty,name:71"
 msgid "Family Planning (Primary Care)"
@@ -9226,19 +9226,19 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_bed_view"
 msgid "Beds"
-msgstr ""
+msgstr "Yataklar"
 
 msgctxt "model:ir.action,name:act_birth_cert_form"
 msgid "Birth certificates"
-msgstr ""
+msgstr "Doğum belgeleri"
 
 msgctxt "model:ir.action,name:act_birth_cert_form1"
 msgid "Birth Certificate"
-msgstr ""
+msgstr "Doğum Belgesi"
 
 msgctxt "model:ir.action,name:act_building_view"
 msgid "Buildings"
-msgstr ""
+msgstr "Binalar"
 
 msgctxt "model:ir.action,name:act_check_immunization_status"
 msgid "Immunization Status Report"
@@ -9254,11 +9254,11 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_death_cert_form"
 msgid "Death certificates"
-msgstr ""
+msgstr "Ölüm belgeleri"
 
 msgctxt "model:ir.action,name:act_death_cert_form1"
 msgid "Death Certificate"
-msgstr ""
+msgstr "Ölüm Belgesi"
 
 msgctxt "model:ir.action,name:act_ecg_view"
 msgid "ECGs"
@@ -9290,7 +9290,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_vaccination_form1"
 msgid "Vaccinations"
-msgstr ""
+msgstr "Aşılamalar"
 
 msgctxt "model:ir.action,name:act_ward_view"
 msgid "Wards"
@@ -9298,7 +9298,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:action_gnuhealth_appointment_view"
 msgid "Appointments"
-msgstr ""
+msgstr "Randevular"
 
 msgctxt "model:ir.action,name:action_gnuhealth_command_view"
 msgid "GNU Health Commands"
@@ -9306,15 +9306,15 @@ msgstr ""
 
 msgctxt "model:ir.action,name:action_gnuhealth_hospital_bed_view"
 msgid "Beds"
-msgstr ""
+msgstr "Yataklar"
 
 msgctxt "model:ir.action,name:action_gnuhealth_hospital_building_view"
 msgid "Buildings"
-msgstr ""
+msgstr "Binalar"
 
 msgctxt "model:ir.action,name:action_gnuhealth_hospital_or_view"
 msgid "Operating Rooms"
-msgstr ""
+msgstr "Ameliyathaneler"
 
 msgctxt "model:ir.action,name:action_gnuhealth_hospital_unit_view"
 msgid "Units"
@@ -9326,7 +9326,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:action_gnuhealth_institution"
 msgid "Institutions"
-msgstr ""
+msgstr "Kurumlar"
 
 msgctxt "model:ir.action,name:action_gnuhealth_institution_operationalsector"
 msgid "Operational sectors by institution"
@@ -9342,7 +9342,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:action_gnuhealth_pathology_category_tree"
 msgid "Disease categories"
-msgstr ""
+msgstr "Hastalık kategorileri"
 
 msgctxt "model:ir.action,name:action_gnuhealth_patient_evaluation_view"
 msgid "Patient Evaluations [readonly]"
@@ -9350,11 +9350,11 @@ msgstr ""
 
 msgctxt "model:ir.action,name:action_gnuhealth_patient_view"
 msgid "Patients"
-msgstr ""
+msgstr "Hastalar"
 
 msgctxt "model:ir.action,name:action_gnuhealth_prescription_view"
 msgid "Prescriptions"
-msgstr ""
+msgstr "Reçeteler"
 
 msgctxt "model:ir.action,name:action_gnuhealth_procedure_view"
 msgid "Procedures"
@@ -9390,11 +9390,11 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_family"
 msgid "Families"
-msgstr ""
+msgstr "Aileler"
 
 msgctxt "model:ir.action,name:gnuhealth_action_family_member"
 msgid "Family Members"
-msgstr ""
+msgstr "Aile Üyeleri"
 
 msgctxt "model:ir.action,name:gnuhealth_action_federation_country_config"
 msgid "Federation Country Configuration"
@@ -9406,7 +9406,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_healthprofessional"
 msgid "Health Professionals"
-msgstr ""
+msgstr "Sağlık Çalışanları"
 
 msgctxt "model:ir.action,name:gnuhealth_action_hp_specialty"
 msgid "Specialties by health professionals"
@@ -9418,7 +9418,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_immunization_schedule_dose"
 msgid "Vaccine Doses"
-msgstr ""
+msgstr "Aşı Dozları"
 
 msgctxt "model:ir.action,name:gnuhealth_action_immunization_schedule_line"
 msgid "Schedule Vaccines"
@@ -9426,11 +9426,11 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_insurance"
 msgid "Insurances"
-msgstr ""
+msgstr "Sigortalar"
 
 msgctxt "model:ir.action,name:gnuhealth_action_insurance_company"
 msgid "Insurance Company"
-msgstr ""
+msgstr "Sigorta Şirketi"
 
 msgctxt "model:ir.action,name:gnuhealth_action_occupation"
 msgid "Occupations"
@@ -9490,7 +9490,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:report_prescription_order"
 msgid "Prescription"
-msgstr ""
+msgstr "Reçete"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_gnuhealth_appointment_domain_all"
@@ -9523,7 +9523,7 @@ msgstr ""
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_patient"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_patient_evaluation"
 msgid "Patient Evaluation"
@@ -9535,11 +9535,11 @@ msgstr ""
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_appointment"
 msgid "Appointment"
-msgstr ""
+msgstr "Randevu"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_patient"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_patient_evaluation"
 msgid "Patient Evaluation"
@@ -9547,11 +9547,11 @@ msgstr ""
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_prescription"
 msgid "Prescription"
-msgstr ""
+msgstr "Reçete"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_appointment_menu"
 msgid "Appointments"
-msgstr ""
+msgstr "Randevular"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_bol"
 msgid "Books of Life"
@@ -9559,7 +9559,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_commands"
 msgid "GNU Health Commands"
-msgstr ""
+msgstr "GNU Health Komutları"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_dosage"
 msgid "Medication Frequencies"
@@ -9579,11 +9579,11 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_edit_insurance"
 msgid "Insurances"
-msgstr ""
+msgstr "Sigortalar"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_edit_insurance_company"
 msgid "Insurance Company"
-msgstr ""
+msgstr "Sigorta Şirketi"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_edit_operational_area"
 msgid "Operational Areas"
@@ -9607,7 +9607,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_healthprofessionals"
 msgid "Health Professionals"
-msgstr ""
+msgstr "Sağlık Çalışanları"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_immunization_schedule"
 msgid "Immunization Schedule"
@@ -9615,7 +9615,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_immunization_schedule_dose"
 msgid "Vaccine Doses"
-msgstr ""
+msgstr "Aşı Dozları"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_immunization_schedule_line"
 msgid "Schedule Vaccines"
@@ -9623,19 +9623,19 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_institution"
 msgid "Institutions"
-msgstr ""
+msgstr "Kurumlar"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_institution_bed_add"
 msgid "Beds"
-msgstr ""
+msgstr "Yataklar"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_institution_building_add"
 msgid "Buildings"
-msgstr ""
+msgstr "Binalar"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_institution_or_add"
 msgid "Operating Rooms"
-msgstr ""
+msgstr "Ameliyathaneler"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_institution_unit_add"
 msgid "Units"
@@ -9647,7 +9647,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_insurances"
 msgid "Insurances"
-msgstr ""
+msgstr "Sigortalar"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_medicament_category"
 msgid "Medicament categories"
@@ -9675,11 +9675,11 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_pathology_categories"
 msgid "Categories"
-msgstr ""
+msgstr "Kategoriler"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_pathology_category"
 msgid "Disease categories"
-msgstr ""
+msgstr "Hastalık kategorileri"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_pathology_group"
 msgid "Pathology Groups"
@@ -9695,7 +9695,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_specialty"
 msgid "Medical Specialties"
-msgstr ""
+msgstr "Tıbbi Uzmanlıklar"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_demographics_menu"
 msgid "Demographics"
@@ -9707,11 +9707,11 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_family"
 msgid "Families"
-msgstr ""
+msgstr "Aileler"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_family_member"
 msgid "Family Members"
-msgstr ""
+msgstr "Aile Üyeleri"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_hp_specialty"
 msgid "Specialties by health professionals"
@@ -9731,11 +9731,11 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_menu"
 msgid "Health"
-msgstr ""
+msgstr "Sağlık"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_menu_institution"
 msgid "Institutions"
-msgstr ""
+msgstr "Kurumlar"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_operational_areas"
 msgid "Operational Areas"
@@ -9743,7 +9743,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_patients_menu"
 msgid "Patients"
-msgstr ""
+msgstr "Hastalar"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_pol"
 msgid "Pages of life"
@@ -9751,7 +9751,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_prescription_menu"
 msgid "Prescriptions"
-msgstr ""
+msgstr "Reçeteler"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_reporting_menu"
 msgid "Reporting"
@@ -9763,11 +9763,11 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:menu_birth_cert"
 msgid "Birth certificates"
-msgstr ""
+msgstr "Doğum belgeleri"
 
 msgctxt "model:ir.ui.menu,name:menu_death_cert"
 msgid "Death certificates"
-msgstr ""
+msgstr "Ölüm belgeleri"
 
 msgctxt "model:ir.ui.menu,name:menu_gnuhealth_patient_evaluation_list"
 msgid "Patient Evaluations [readonly]"
@@ -9783,7 +9783,7 @@ msgstr ""
 
 msgctxt "model:product.category,name:prod_insurance"
 msgid "Insurances"
-msgstr ""
+msgstr "Sigortalar"
 
 msgctxt "model:res.group,name:group_health_admin"
 msgid "Health Administration"
@@ -9807,27 +9807,27 @@ msgstr ""
 
 msgctxt "report:appointment.receipt:"
 msgid ","
-msgstr ""
+msgstr ","
 
 msgctxt "report:appointment.receipt:"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 msgctxt "report:appointment.receipt:"
 msgid "Appointment #"
-msgstr ""
+msgstr "Randevu#"
 
 msgctxt "report:appointment.receipt:"
 msgid "Date :"
-msgstr ""
+msgstr "Tarih:"
 
 msgctxt "report:appointment.receipt:"
 msgid "Health Professional :"
-msgstr ""
+msgstr "Sağlık Çalışanı:"
 
 msgctxt "report:appointment.receipt:"
 msgid "Institution"
-msgstr ""
+msgstr "Kurum"
 
 msgctxt "report:appointment.receipt:"
 msgid "Instructions / Notes :"
@@ -9839,11 +9839,11 @@ msgstr ""
 
 msgctxt "report:appointment.receipt:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "report:appointment.receipt:"
 msgid "Specialty"
-msgstr ""
+msgstr "Uzmanlık"
 
 msgctxt "report:appointment.receipt:"
 msgid "You must present this receipt and your"
@@ -9855,7 +9855,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid ""
@@ -9866,7 +9866,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Age"
-msgstr ""
+msgstr "Yaş"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "CODE"
@@ -9874,11 +9874,11 @@ msgstr ""
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Dose"
-msgstr ""
+msgstr "Doz"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Dose #"
-msgstr ""
+msgstr "Doz #"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "FOR SCHEDULE"
@@ -9886,7 +9886,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Female"
-msgstr ""
+msgstr "Dişi"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "ID"
@@ -9902,7 +9902,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Male"
-msgstr ""
+msgstr "Erkek"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "P"
@@ -9914,7 +9914,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Print Date"
@@ -9934,7 +9934,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Aşı"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "and the"
@@ -9966,11 +9966,11 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ","
-msgstr ""
+msgstr ","
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "/"
-msgstr ""
+msgstr "/"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "/ Reliability :"
@@ -9978,35 +9978,35 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "15"
-msgstr ""
+msgstr "15"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Female"
-msgstr ""
+msgstr ": Dişi"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Male"
-msgstr ""
+msgstr ": Erkek"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Married"
-msgstr ""
+msgstr ": Evli"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Separated"
-msgstr ""
+msgstr ": Ayrılmış"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Single"
-msgstr ""
+msgstr ": Bekar"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Widow"
-msgstr ""
+msgstr ": Dul"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Allergies and other relevant information"
@@ -10038,7 +10038,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Comments"
-msgstr ""
+msgstr "Yorumlar"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "D"
@@ -10058,7 +10058,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "E-Mail:"
-msgstr ""
+msgstr "E-Posta:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Ethnicity:"
@@ -10074,7 +10074,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Heart Rate"
-msgstr ""
+msgstr "Kalp Hızı"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "History of Present Illness"
@@ -10082,7 +10082,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Information Source:"
-msgstr ""
+msgstr "Bilgi Kaynağı:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Initiated by"
@@ -10094,7 +10094,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Marital Status"
-msgstr ""
+msgstr "Medeni Hal"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "OSAT"
@@ -10102,7 +10102,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Occupation :"
-msgstr ""
+msgstr "Meslek :"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Other Conditions"
@@ -10118,11 +10118,11 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Patient :"
-msgstr ""
+msgstr "Hasta :"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Phone:"
-msgstr ""
+msgstr "Telefon :"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Plan"
@@ -10138,7 +10138,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Sex"
-msgstr ""
+msgstr "Cinsiyet"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Signs and Symptoms"
@@ -10150,11 +10150,11 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Treatment"
-msgstr ""
+msgstr "Tedavi"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Type"
-msgstr ""
+msgstr "Tür"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "ate:"
@@ -10166,7 +10166,7 @@ msgstr ""
 
 msgctxt "report:patient.card:"
 msgid "Blood type :"
-msgstr ""
+msgstr "Kan grubu :"
 
 msgctxt "report:patient.card:"
 msgid "DoB:"
@@ -10178,7 +10178,7 @@ msgstr ""
 
 msgctxt "report:patient.card:"
 msgid "Name:"
-msgstr ""
+msgstr "Ad :"
 
 msgctxt "report:patient.conditions_history:"
 msgid "*"
@@ -10198,7 +10198,7 @@ msgstr ""
 
 msgctxt "report:patient.conditions_history:"
 msgid "Age:"
-msgstr ""
+msgstr "Yaş:"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Annotations about the patient"
@@ -10214,7 +10214,7 @@ msgstr ""
 
 msgctxt "report:patient.conditions_history:"
 msgid "Female"
-msgstr ""
+msgstr "Dişi"
 
 msgctxt "report:patient.conditions_history:"
 msgid "HEALTH CONDITIONS"
@@ -10222,7 +10222,7 @@ msgstr ""
 
 msgctxt "report:patient.conditions_history:"
 msgid "Health Condition"
-msgstr ""
+msgstr "Sağlık Durumu"
 
 msgctxt "report:patient.conditions_history:"
 msgid "ID"
@@ -10230,19 +10230,19 @@ msgstr ""
 
 msgctxt "report:patient.conditions_history:"
 msgid "Infectious"
-msgstr ""
+msgstr "Bulaşıcı"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Male"
-msgstr ""
+msgstr "Erkek"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgctxt "report:patient.conditions_history:"
 msgid "PATIENT"
-msgstr ""
+msgstr "HASTA"
 
 msgctxt "report:patient.conditions_history:"
 msgid "PU"
@@ -10262,7 +10262,7 @@ msgstr ""
 
 msgctxt "report:patient.conditions_history:"
 msgid "Severity"
-msgstr ""
+msgstr "Şiddet"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Status"
@@ -10306,11 +10306,11 @@ msgstr ""
 
 msgctxt "report:patient.medication:"
 msgid ","
-msgstr ""
+msgstr ","
 
 msgctxt "report:patient.medication:"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 msgctxt "report:patient.medication:"
 msgid "Active"
@@ -10318,11 +10318,11 @@ msgstr ""
 
 msgctxt "report:patient.medication:"
 msgid "Age :"
-msgstr ""
+msgstr "Yaş :"
 
 msgctxt "report:patient.medication:"
 msgid "E-Mail:"
-msgstr ""
+msgstr "E-Posta:"
 
 msgctxt "report:patient.medication:"
 msgid "End"
@@ -10330,7 +10330,7 @@ msgstr ""
 
 msgctxt "report:patient.medication:"
 msgid "Female"
-msgstr ""
+msgstr "Dişi"
 
 msgctxt "report:patient.medication:"
 msgid "ID :"
@@ -10342,7 +10342,7 @@ msgstr ""
 
 msgctxt "report:patient.medication:"
 msgid "Male"
-msgstr ""
+msgstr "Erkek"
 
 msgctxt "report:patient.medication:"
 msgid "Medicament"
@@ -10358,11 +10358,11 @@ msgstr ""
 
 msgctxt "report:patient.medication:"
 msgid "Patient :"
-msgstr ""
+msgstr "Hasta :"
 
 msgctxt "report:patient.medication:"
 msgid "Phone:"
-msgstr ""
+msgstr "Telefon :"
 
 msgctxt "report:patient.medication:"
 msgid "Prescribed by"
@@ -10386,7 +10386,7 @@ msgstr ""
 
 msgctxt "report:patient.vaccination:"
 msgid "Age :"
-msgstr ""
+msgstr "Yaş :"
 
 msgctxt "report:patient.vaccination:"
 msgid "Date"
@@ -10402,11 +10402,11 @@ msgstr ""
 
 msgctxt "report:patient.vaccination:"
 msgid "Female"
-msgstr ""
+msgstr "Dişi"
 
 msgctxt "report:patient.vaccination:"
 msgid "HISTORY"
-msgstr ""
+msgstr "GEÇMİŞ"
 
 msgctxt "report:patient.vaccination:"
 msgid "ID"
@@ -10414,7 +10414,7 @@ msgstr ""
 
 msgctxt "report:patient.vaccination:"
 msgid "Male"
-msgstr ""
+msgstr "Erkek"
 
 msgctxt "report:patient.vaccination:"
 msgid "Next Dose"
@@ -10426,7 +10426,7 @@ msgstr ""
 
 msgctxt "report:patient.vaccination:"
 msgid "PATIENT"
-msgstr ""
+msgstr "HASTA"
 
 msgctxt "report:patient.vaccination:"
 msgid "PU"
@@ -10434,7 +10434,7 @@ msgstr ""
 
 msgctxt "report:patient.vaccination:"
 msgid "Patient"
-msgstr ""
+msgstr "Hasta"
 
 msgctxt "report:patient.vaccination:"
 msgid "Print"
@@ -10442,11 +10442,11 @@ msgstr ""
 
 msgctxt "report:patient.vaccination:"
 msgid "VACCINATION"
-msgstr ""
+msgstr "AŞILAMA"
 
 msgctxt "report:patient.vaccination:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Aşı"
 
 msgctxt "report:prescription.order:"
 msgid "("
@@ -10474,7 +10474,7 @@ msgstr ""
 
 msgctxt "report:prescription.order:"
 msgid "Address"
-msgstr ""
+msgstr "Adres"
 
 msgctxt "report:prescription.order:"
 msgid "Days"
@@ -10490,7 +10490,7 @@ msgstr ""
 
 msgctxt "report:prescription.order:"
 msgid "Dose"
-msgstr ""
+msgstr "Doz"
 
 msgctxt "report:prescription.order:"
 msgid "Duration"
@@ -10510,11 +10510,11 @@ msgstr ""
 
 msgctxt "report:prescription.order:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Sağlık Çalışanı"
 
 msgctxt "report:prescription.order:"
 msgid "Hours"
-msgstr ""
+msgstr "Saat"
 
 msgctxt "report:prescription.order:"
 msgid "Indefinite"
@@ -10550,7 +10550,7 @@ msgstr ""
 
 msgctxt "report:prescription.order:"
 msgid "Patient :"
-msgstr ""
+msgstr "Hasta :"
 
 msgctxt "report:prescription.order:"
 msgid "Patient Contact Information"
@@ -10590,7 +10590,7 @@ msgstr ""
 
 msgctxt "report:prescription.order:"
 msgid "Signature"
-msgstr ""
+msgstr "İmza"
 
 msgctxt "report:prescription.order:"
 msgid "Start"
@@ -10718,11 +10718,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.appointment.report,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Dişi"
 
 msgctxt "selection:gnuhealth.appointment.report,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Erkek"
 
 msgctxt "selection:gnuhealth.birth_certificate,state:"
 msgid ""
@@ -10782,11 +10782,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Homicide"
-msgstr ""
+msgstr "Katl"
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Natural"
-msgstr ""
+msgstr "Doğal"
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Pending Investigation"
@@ -10794,7 +10794,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Suicide"
-msgstr ""
+msgstr "İntihar"
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Undetermined"
@@ -10830,7 +10830,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Apartment"
-msgstr ""
+msgstr "Apartman"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Building"
@@ -10894,7 +10894,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.du,materials:"
 msgid "Stone"
-msgstr ""
+msgstr "Taş"
 
 msgctxt "selection:gnuhealth.du,materials:"
 msgid "Wood"
@@ -11114,7 +11114,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid "Private"
-msgstr ""
+msgstr "Özel"
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid "Private - State"
@@ -11122,7 +11122,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid "Public"
-msgstr ""
+msgstr "Kamu"
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid ""
@@ -11198,11 +11198,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,biological_sex:"
 msgid "Female"
-msgstr ""
+msgstr "Dişi"
 
 msgctxt "selection:gnuhealth.patient,biological_sex:"
 msgid "Male"
-msgstr ""
+msgstr "Erkek"
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid ""
@@ -11230,7 +11230,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Dişi"
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid "Female -> Male"
@@ -11238,7 +11238,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Erkek"
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid "Male -> Female"
@@ -11286,23 +11286,23 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Divorced"
-msgstr ""
+msgstr "Boşanmış"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Married"
-msgstr ""
+msgstr "Evli"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Separated"
-msgstr ""
+msgstr "Ayrılmış"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Single"
-msgstr ""
+msgstr "Bekar"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Widowed"
-msgstr ""
+msgstr "Dul"
 
 msgctxt "selection:gnuhealth.patient,rh:"
 msgid ""
@@ -11310,11 +11310,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,rh:"
 msgid "+"
-msgstr ""
+msgstr "+"
 
 msgctxt "selection:gnuhealth.patient,rh:"
 msgid "-"
-msgstr ""
+msgstr "-"
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid ""
@@ -11630,11 +11630,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,mood:"
 msgid "Happy"
-msgstr ""
+msgstr "Mutlu"
 
 msgctxt "selection:gnuhealth.patient.evaluation,mood:"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 msgctxt "selection:gnuhealth.patient.evaluation,mood:"
 msgid "Rage"
@@ -11642,7 +11642,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,mood:"
 msgid "Sad"
-msgstr ""
+msgstr "Üzgün"
 
 msgctxt "selection:gnuhealth.patient.evaluation,state:"
 msgid ""
@@ -11944,7 +11944,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.pol,social_context:"
 msgid "Addiction"
-msgstr ""
+msgstr "Bağımlılık"
 
 msgctxt "selection:gnuhealth.pol,social_context:"
 msgid "Bullying"
@@ -11956,7 +11956,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.pol,social_context:"
 msgid "Education"
-msgstr ""
+msgstr "Eğitim"
 
 msgctxt "selection:gnuhealth.pol,social_context:"
 msgid "Family functionality"
@@ -11996,7 +11996,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.pol,social_context:"
 msgid "War"
-msgstr ""
+msgstr "Savaş"
 
 msgctxt "selection:gnuhealth.pol,social_context:"
 msgid "Working conditions"
@@ -12188,11 +12188,11 @@ msgstr ""
 
 msgctxt "selection:party.party,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Dişi"
 
 msgctxt "selection:party.party,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Erkek"
 
 msgctxt "selection:party.party,insurance_company_type:"
 msgid ""
@@ -12204,11 +12204,11 @@ msgstr ""
 
 msgctxt "selection:party.party,insurance_company_type:"
 msgid "Private"
-msgstr ""
+msgstr "Özel"
 
 msgctxt "selection:party.party,insurance_company_type:"
 msgid "State"
-msgstr ""
+msgstr "Devlet"
 
 msgctxt "selection:party.party,marital_status:"
 msgid ""
@@ -12220,23 +12220,23 @@ msgstr ""
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Divorced"
-msgstr ""
+msgstr "Boşanmış"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Married"
-msgstr ""
+msgstr "Evli"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Separated"
-msgstr ""
+msgstr "Ayrılmış"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Single"
-msgstr ""
+msgstr "Bekar"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Widowed"
-msgstr ""
+msgstr "Dul"
 
 msgctxt "selection:party.party,name_representation:"
 msgid ""
@@ -12264,11 +12264,11 @@ msgstr ""
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Date"
-msgstr ""
+msgstr "Tarih"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Information"
-msgstr ""
+msgstr "Bilgi"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "No show"
@@ -12296,15 +12296,15 @@ msgstr ""
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Sign"
-msgstr ""
+msgstr "İmzala"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Sign Birth Certificate ?"
-msgstr ""
+msgstr "Doğum Belgesi İmzalansın mı?"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Sign the certificate"
-msgstr ""
+msgstr "Belgeyi imzala"
 
 msgctxt "view:gnuhealth.check_immunization_status.init:"
 msgid "Immunization status Report"
@@ -12384,7 +12384,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Dosage"
-msgstr ""
+msgstr "Dozaj"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Extra Info"
@@ -12416,7 +12416,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Pregnancy"
-msgstr ""
+msgstr "Hamilelik"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Presentation"
@@ -12424,7 +12424,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Product"
-msgstr ""
+msgstr "Ürün"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Route"
@@ -12472,7 +12472,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.disease:"
 msgid "Pregnancy"
-msgstr ""
+msgstr "Hamilelik"
 
 msgctxt "view:gnuhealth.patient.disease:"
 msgid "Related Evaluations"
@@ -12592,7 +12592,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Dosage"
-msgstr ""
+msgstr "Dozaj"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Extra Info"
@@ -12624,7 +12624,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Treatment duration"
-msgstr ""
+msgstr "Tedavı süresi"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Treatment period"
@@ -12672,7 +12672,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Dosage"
-msgstr ""
+msgstr "Dozaj"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Form and Administration Route"
@@ -12716,7 +12716,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.signs_and_symptoms:"
 msgid "Comments"
-msgstr ""
+msgstr "Yorumlar"
 
 msgctxt "view:gnuhealth.signs_and_symptoms:"
 msgid "Sign or Symptom"
@@ -12728,7 +12728,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Dose"
-msgstr ""
+msgstr "Doz"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Finish and sign this vaccination ? It will become read-only !"
@@ -12748,7 +12748,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Vaccination"
-msgstr ""
+msgstr "Aşılama"
 
 msgctxt "view:party.party:"
 msgid "Demographics"
@@ -12756,15 +12756,15 @@ msgstr ""
 
 msgctxt "view:party.party:"
 msgid "Health"
-msgstr ""
+msgstr "Sağlık"
 
 msgctxt "view:party.party:"
 msgid "Picture"
-msgstr ""
+msgstr "Resim"
 
 msgctxt "view:product.product:"
 msgid "Health"
-msgstr ""
+msgstr "Sağlık"
 
 msgctxt "wizard_button:gnuhealth.appointment.report.open,start,end:"
 msgid "Cancel"
