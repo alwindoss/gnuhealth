@@ -1,9 +1,15 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-01-30 20:41+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/gnu-health/"
+"health/tr/>\n"
 "Language: tr\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -236,7 +242,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment,appointment_date:"
 msgid "Date and Time"
-msgstr ""
+msgstr "Tarih ve Saat"
 
 msgctxt "field:gnuhealth.appointment,appointment_type:"
 msgid "Type"
@@ -288,7 +294,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment,speciality:"
 msgid "Specialty"
-msgstr ""
+msgstr "Uzmanlık"
 
 msgctxt "field:gnuhealth.appointment,state:"
 msgid "State"
@@ -324,7 +330,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment.report,appointment_date_time:"
 msgid "Date and Time"
-msgstr ""
+msgstr "Tarih ve Saat"
 
 msgctxt "field:gnuhealth.appointment.report,create_date:"
 msgid "Create Date"
@@ -497,7 +503,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.command,label:"
 msgid "Label"
-msgstr ""
+msgstr "Etiket"
 
 msgctxt "field:gnuhealth.command,model:"
 msgid "Model"
@@ -597,7 +603,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_certificate,signed_by:"
 msgid "Signed by"
-msgstr ""
+msgstr "İmzalayan"
 
 msgctxt "field:gnuhealth.death_certificate,state:"
 msgid "State"
@@ -641,11 +647,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.death_underlying_condition,interval:"
 msgid "Interval"
-msgstr ""
+msgstr "Aralık"
 
 msgctxt "field:gnuhealth.death_underlying_condition,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid "Unit"
@@ -685,7 +691,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,write_date:"
 msgid "Write Date"
@@ -721,7 +727,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.directions,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.directions,write_date:"
 msgid "Write Date"
@@ -753,7 +759,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.disease_group.members,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.disease_group.members,write_date:"
 msgid "Write Date"
@@ -785,7 +791,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.dose.unit,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.dose.unit,write_date:"
 msgid "Write Date"
@@ -1341,7 +1347,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.or,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.hospital.or,state:"
 msgid "Status"
@@ -1389,7 +1395,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.unit,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.hospital.unit,write_date:"
 msgid "Write Date"
@@ -1469,7 +1475,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hospital.ward,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.hospital.ward,refrigerator:"
 msgid "Refrigerator"
@@ -1517,7 +1523,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.hp_specialty,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.hp_specialty,specialty:"
 msgid "Specialty"
@@ -1557,7 +1563,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.immunization_schedule,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.immunization_schedule,sched:"
 msgid "Code"
@@ -1873,7 +1879,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.insurance,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.insurance,write_date:"
 msgid "Write Date"
@@ -1913,7 +1919,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.insurance.plan,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.insurance.plan,write_date:"
 msgid "Write Date"
@@ -2005,7 +2011,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.medicament,route:"
 msgid "Administration Route"
@@ -2077,7 +2083,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medicament.category,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.medicament.category,write_date:"
 msgid "Write Date"
@@ -2113,7 +2119,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.medication.dosage,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.medication.dosage,write_date:"
 msgid "Write Date"
@@ -2145,7 +2151,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.occupation,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.occupation,write_date:"
 msgid "Write Date"
@@ -2181,7 +2187,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.operational_area,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.operational_area,write_date:"
 msgid "Write Date"
@@ -2217,7 +2223,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.operational_sector,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.operational_sector,write_date:"
 msgid "Write Date"
@@ -2277,7 +2283,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pathology,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.pathology,write_date:"
 msgid "Write Date"
@@ -2313,7 +2319,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pathology.category,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.pathology.category,write_date:"
 msgid "Write Date"
@@ -2357,7 +2363,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.pathology.group,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.pathology.group,write_date:"
 msgid "Write Date"
@@ -2485,7 +2491,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.patient,rh:"
 msgid "Rh"
@@ -2593,7 +2599,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disease,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.patient.disease,related_evaluations:"
 msgid "Related Evaluations"
@@ -2689,7 +2695,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.ecg,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.patient.ecg,rhythm:"
 msgid "Rhythm"
@@ -3886,7 +3892,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.vaccination,signed_by:"
 msgid "Signed by"
-msgstr ""
+msgstr "İmzalayan"
 
 msgctxt "field:gnuhealth.vaccination,state:"
 msgid "State"
