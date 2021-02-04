@@ -1,15 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-09 13:21+0000\n"
-"Last-Translator: IvanDan <ivandanza@gmail.com>\n"
+"PO-Revision-Date: 2021-02-04 11:42+0000\n"
+"Last-Translator: Saverio Napolitano <savi.napolitano@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health/it/>\n"
 "Language: it_IT\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 "X-POOTLE-MTIME: 1452251637.0\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
@@ -246,7 +246,7 @@ msgstr "Il PUID deve essere unico"
 
 msgctxt "error:party.party:"
 msgid "This internal user is already assigned to a party"
-msgstr ""
+msgstr "Questo utente interno è già assegnato ad un gruppo"
 
 msgctxt "error:wizard.gnuhealth.appointment.evaluation:"
 msgid "You need to select one Appointment record"
