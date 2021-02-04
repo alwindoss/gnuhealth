@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-13 21:33+0000\n"
-"Last-Translator: Constantine Mousafiris <kvisitor@gnugr.org>\n"
+"PO-Revision-Date: 2021-02-05 01:38+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_reporting/el/>\n"
 "Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 msgctxt "field:gnuhealth.evaluations.open.start,end_date:"
 msgid "End Date"
@@ -285,7 +285,7 @@ msgstr "Ειδικότητα"
 
 msgctxt "wizard_button:gnuhealth.evaluations.open,start,end:"
 msgid "Cancel"
-msgstr "Aκύρωση"
+msgstr "Ακύρωση"
 
 msgctxt "wizard_button:gnuhealth.evaluations.open,start,select:"
 msgid "Open"
@@ -293,7 +293,7 @@ msgstr "Άνοιγμα"
 
 msgctxt "wizard_button:gnuhealth.summary.report.open,start,end:"
 msgid "Cancel"
-msgstr "Aκύρωση"
+msgstr "Ακύρωση"
 
 msgctxt "wizard_button:gnuhealth.summary.report.open,start,open_:"
 msgid "Open"
@@ -301,7 +301,7 @@ msgstr "Άνοιγμα"
 
 msgctxt "wizard_button:gnuhealth.top_diseases.open,start,end:"
 msgid "Cancel"
-msgstr "Aκύρωση"
+msgstr "Ακύρωση"
 
 msgctxt "wizard_button:gnuhealth.top_diseases.open,start,open_:"
 msgid "Open"
