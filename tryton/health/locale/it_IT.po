@@ -1,8 +1,8 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-04 11:53+0000\n"
-"Last-Translator: IvanDan <ivandanza@gmail.com>\n"
+"PO-Revision-Date: 2021-02-05 01:38+0000\n"
+"Last-Translator: Saverio Napolitano <savi.napolitano@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health/it/>\n"
 "Language: it_IT\n"
@@ -262,7 +262,7 @@ msgstr "Tipo"
 
 msgctxt "field:gnuhealth.appointment,checked_in_date:"
 msgid "Checked-in Time"
-msgstr ""
+msgstr "Orario check-in"
 
 msgctxt "field:gnuhealth.appointment,comments:"
 msgid "Comments"
@@ -410,7 +410,7 @@ msgstr "Identificazione"
 
 msgctxt "field:gnuhealth.birth_certificate,certification_date:"
 msgid "Signed on"
-msgstr ""
+msgstr "Firmato il"
 
 msgctxt "field:gnuhealth.birth_certificate,code:"
 msgid "Code"
@@ -497,10 +497,9 @@ msgctxt "field:gnuhealth.death_certificate,autopsy:"
 msgid "Autopsy"
 msgstr "Autopsia"
 
-#, fuzzy
 msgctxt "field:gnuhealth.death_certificate,certification_date:"
 msgid "Certified on"
-msgstr "Certificato in data"
+msgstr "Certificato il"
 
 msgctxt "field:gnuhealth.death_certificate,cod:"
 msgid "Cause"
