@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-04 11:42+0000\n"
+"PO-Revision-Date: 2021-02-04 11:53+0000\n"
 "Last-Translator: Saverio Napolitano <savi.napolitano@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health/it/>\n"
@@ -358,7 +358,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment.report,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Sesso"
 
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
@@ -559,7 +559,7 @@ msgstr "Dettagli"
 
 msgctxt "field:gnuhealth.death_certificate,place_of_death:"
 msgid "Place"
-msgstr ""
+msgstr "Luogo"
 
 msgctxt "field:gnuhealth.death_certificate,rec_name:"
 msgid "Name"
