@@ -1,15 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-17 20:37+0000\n"
-"Last-Translator: Constantine Mousafiris <kvisitor@gnugr.org>\n"
+"PO-Revision-Date: 2021-02-09 12:34+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/health/"
 "el/>\n"
 "Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 "X-POOTLE-MTIME: 1452445349.0\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
@@ -2148,7 +2148,7 @@ msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.pathology,create_uid:"
 msgid "Create User"
-msgstr "Γράψτε τον χρήστη"
+msgstr "Δημιουργία Χρήστη"
 
 msgctxt "field:gnuhealth.pathology,gene:"
 msgid "Gene"
@@ -3018,7 +3018,7 @@ msgstr "Συχνότητα"
 
 msgctxt "field:gnuhealth.patient.medication,infusion_rate_units:"
 msgid "Unit Rate"
-msgstr ""
+msgstr "Μονάδα συχνότητας"
 
 msgctxt "field:gnuhealth.patient.medication,institution:"
 msgid "Institution"
@@ -9912,7 +9912,7 @@ msgstr "Ταυτότητα:"
 
 msgctxt "report:patient.card:"
 msgid "Name:"
-msgstr ""
+msgstr "Όνομα:"
 
 msgctxt "report:patient.conditions_history:"
 msgid "& history"
