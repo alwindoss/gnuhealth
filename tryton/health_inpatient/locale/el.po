@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-08 13:58+0000\n"
+"PO-Revision-Date: 2021-02-09 12:34+0000\n"
 "Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_inpatient/el/>\n"
@@ -220,11 +220,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.inpatient.meal,diet_therapeutic:"
 msgid "Diet"
-msgstr ""
+msgstr "Δίαιτα"
 
 msgctxt "field:gnuhealth.inpatient.meal,diet_vegetarian:"
 msgid "Vegetarian"
-msgstr ""
+msgstr "Χορτοφάγος"
 
 msgctxt "field:gnuhealth.inpatient.meal,id:"
 msgid "ID"
@@ -232,15 +232,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.inpatient.meal,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Ίδρυμα"
 
 msgctxt "field:gnuhealth.inpatient.meal,name:"
 msgid "Food"
-msgstr ""
+msgstr "Τροφή"
 
 msgctxt "field:gnuhealth.inpatient.meal,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.inpatient.meal,write_date:"
 msgid "Write Date"
@@ -252,15 +252,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.inpatient.meal.order,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Ημερομηνία δημιουργίας"
 
 msgctxt "field:gnuhealth.inpatient.meal.order,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία Χρήστη"
 
 msgctxt "field:gnuhealth.inpatient.meal.order,health_professional:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Επαγγελματίας Υγείας"
 
 msgctxt "field:gnuhealth.inpatient.meal.order,id:"
 msgid "ID"
