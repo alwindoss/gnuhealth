@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-09 09:32+0000\n"
-"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
+"PO-Revision-Date: 2021-02-08 13:58+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/el/>\n"
 "Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 msgctxt "error:gnuhealth.ambulance:"
 msgid "This vehicle ID already exists"
@@ -21,7 +21,7 @@ msgstr "Αυτός ο κωδικός αιτήματος υπάρχει ήδη"
 
 msgctxt "field:gnuhealth.ambulance,active:"
 msgid "Active"
-msgstr "Ενεργός"
+msgstr "Ενεργό"
 
 msgctxt "field:gnuhealth.ambulance,create_date:"
 msgid "Create Date"
