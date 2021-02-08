@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-28 02:15+0000\n"
-"Last-Translator: Loukas Skouroliakos <skouroliakoslouk@gmail.com>\n"
+"PO-Revision-Date: 2021-02-09 12:34+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
 "health_ophthalmology/el/>\n"
 "Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,computed_age:"
 msgid "Age"
@@ -17,7 +17,7 @@ msgstr "Ηλικία"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,create_date:"
 msgid "Create Date"
-msgstr "Δημιουργία Ημερομηνίας"
+msgstr "Ημερομηνία δημιουργίας"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,create_uid:"
 msgid "Create User"
@@ -33,7 +33,7 @@ msgstr "Φύλο"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,health_professional:"
 msgid "Health Professional"
-msgstr "Επαγγελματίας υγείας"
+msgstr "Επαγγελματίας Υγείας"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,id:"
 msgid "ID"
@@ -221,7 +221,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.findings,name:"
 msgid "Evaluation"
-msgstr "Αξιολόγηση"
+msgstr "Εκτίμηση"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,rec_name:"
 msgid "Name"
@@ -445,7 +445,7 @@ msgstr "Οφθαλμολογική αναφορά του GNU Health"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Health Professional :"
-msgstr "Επαγγελματίας υγείας :"
+msgstr "Επαγγελματίας Υγείας :"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Left Eye"
