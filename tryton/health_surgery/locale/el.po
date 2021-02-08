@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-10 17:03+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: el_GR\n"
+"PO-Revision-Date: 2021-02-09 12:34+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_surgery/el/>\n"
+"Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 "X-POOTLE-MTIME: 1452445415.0\n"
 
 msgctxt "error:gnuhealth.surgery:"
@@ -26,7 +28,7 @@ msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.operation,create_uid:"
 msgid "Create User"
-msgstr "Δημιουργία χρήστη"
+msgstr "Δημιουργία Χρήστη"
 
 msgctxt "field:gnuhealth.operation,id:"
 msgid "ID"
@@ -326,7 +328,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery_supply,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.surgery_supply,supply:"
 msgid "Supply"
@@ -362,15 +364,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery_team,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.surgery_team,role:"
 msgid "Role"
-msgstr ""
+msgstr "Ρόλος"
 
 msgctxt "field:gnuhealth.surgery_team,team_member:"
 msgid "Member"
-msgstr ""
+msgstr "Μέλος"
 
 msgctxt "field:gnuhealth.surgery_team,write_date:"
 msgid "Write Date"
