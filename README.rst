@@ -3,7 +3,7 @@
 GNU Health HMIS: Libre Hospital Management and Health Information System
 ========================================================================
  
-The GNU Health HMIS provides the following functionality:
+The GNU Health HMIS component provides the following functionality:
 
 #. **Hospital Management Information System (HMIS)**
 #. **Electronic Medical Record (EMR)**
