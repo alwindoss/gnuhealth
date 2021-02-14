@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #    Copyright (C) 2011-2021 Luis Falcon <falcon@gnuhealth.org>
 #    Copyright (C) 2011 Cédric Krier
 

@@ -60,7 +60,7 @@ setup(
     version=info.get('version', '0.0.1'),
     description=info.get('description', 'GNU Health: Libre Hospital and Health'
                          'Information System'),
-    long_description=read('README'),
+    long_description=read('README.rst'),
     author='GNU Solidario',
     author_email='health@gnusolidario.org',
     url='https://www.gnuhealth.org',

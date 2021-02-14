@@ -51,7 +51,6 @@ from trytond.tools.multivalue import migrate_property
 from trytond.rpc import RPC
 
 
-
 from uuid import uuid4
 import string
 import random
@@ -59,32 +58,33 @@ import pytz
 
 __all__ = [
     'OperationalArea', 'OperationalSector', 'Occupation',
-    'Ethnicity','DomiciliaryUnit','FederationCountryConfig',
-    'BirthCertificate','DeathCertificate','Party','ContactMechanism',
-    'PersonName','PartyAddress','DrugDoseUnits', 'MedicationFrequency',
+    'Ethnicity', 'DomiciliaryUnit', 'FederationCountryConfig',
+    'BirthCertificate', 'DeathCertificate', 'Party', 'ContactMechanism',
+    'PersonName', 'PartyAddress', 'DrugDoseUnits', 'MedicationFrequency',
     'DrugForm', 'DrugRoute',
-    'MedicalSpecialty','HealthInstitution', 'HealthInstitutionSpecialties',
-    'HealthInstitutionOperationalSector','HealthInstitutionO2M',
-    'HospitalBuilding', 'HospitalUnit','HospitalOR', 'HospitalWard',
-    'HospitalBed', 'HealthProfessional','HealthProfessionalSpecialties',
+    'MedicalSpecialty', 'HealthInstitution', 'HealthInstitutionSpecialties',
+    'HealthInstitutionOperationalSector', 'HealthInstitutionO2M',
+    'HospitalBuilding', 'HospitalUnit', 'HospitalOR', 'HospitalWard',
+    'HospitalBed', 'HealthProfessional', 'HealthProfessionalSpecialties',
     'PhysicianSP', 'Family', 'FamilyMember', 'MedicamentCategory',
     'Medicament', 'ImmunizationSchedule', 'ImmunizationScheduleLine',
     'ImmunizationScheduleDose', 'PathologyCategory', 'PathologyGroup',
     'Pathology', 'DiseaseMembers', 'ProcedureCode',
-    'BirthCertExtraInfo','DeathCertExtraInfo', 'DeathUnderlyingCondition',
+    'BirthCertExtraInfo', 'DeathCertExtraInfo', 'DeathUnderlyingCondition',
     'InsurancePlan', 'Insurance', 'AlternativePersonID',
-    'Product', 'GnuHealthSequences', 'GnuHealthSequenceSetup','PatientData',
-    'PatientDiseaseInfo','Appointment', 'AppointmentReport',
+    'Product', 'GnuHealthSequences', 'GnuHealthSequenceSetup', 'PatientData',
+    'PatientDiseaseInfo', 'Appointment', 'AppointmentReport',
     'OpenAppointmentReportStart', 'OpenAppointmentReport',
     'PatientPrescriptionOrder', 'PrescriptionLine', 'PatientMedication',
-    'PatientVaccination','PatientEvaluation',
+    'PatientVaccination', 'PatientEvaluation',
     'Directions', 'SecondaryCondition', 'DiagnosticHypothesis',
     'SignsAndSymptoms', 'PatientECG', 'ProductTemplate', 'PageOfLife',
-    'Commands','Modules']
+    'Commands', 'Modules']
 
 
 sequences = ['patient_sequence', 'patient_evaluation_sequence',
-            'appointment_sequence', 'prescription_sequence']
+             'appointment_sequence', 'prescription_sequence']
+
 
 def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
     """ Get the person's age.
@@ -101,7 +101,7 @@ def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
 
     if dob:
         start = datetime.strptime(str(dob), '%Y-%m-%d')
-        end = datetime.strptime(str(today),'%Y-%m-%d')
+        end = datetime.strptime(str(today), '%Y-%m-%d')
 
         if extra_date:
             end = datetime.strptime(str(extra_date), '%Y-%m-%d')
@@ -111,7 +111,6 @@ def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
                         str(dod), '%Y-%m-%d %H:%M:%S')
 
         rdelta = relativedelta(end, start)
-
 
         years_months_days = str(rdelta.years) + 'y ' \
             + str(rdelta.months) + 'm ' \
@@ -141,6 +140,8 @@ def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
 #
 # TODO: For 3.8, use this method for all the reports that
 #       use datetime fields.
+
+
 def convert_date_timezone(sdate, target):
     Company = Pool().get('company.company')
 
@@ -151,11 +152,11 @@ def convert_date_timezone(sdate, target):
         if company.timezone:
             institution_timezone = pytz.timezone(company.timezone)
 
-    if (target=='utc'):
-        #Convert date to UTC timezone
+    if (target == 'utc'):
+        # Convert date to UTC timezone
         res = institution_timezone.localize(sdate).astimezone(pytz.utc)
     else:
-        #Convert from UTC to institution local timezone
+        # Convert from UTC to institution local timezone
         res = pytz.utc.localize(sdate).astimezone(institution_timezone)
     return res
 
@@ -167,13 +168,13 @@ class DomiciliaryUnit(ModelSQL, ModelView):
     def get_parent(self, subdivision):
         # Recursively get the parent subdivisions
         if (subdivision.parent):
-            return str(subdivision.rec_name) +'\n'+ \
+            return str(subdivision.rec_name) + '\n' + \
                 str(self.get_parent(subdivision.parent))
         else:
             return subdivision.rec_name
 
     def get_du_address(self, name):
-        du_addr=''
+        du_addr = ''
         # Street
         if (self.address_street):
             du_addr = str(self.address_street) + ' ' + \
@@ -186,11 +187,11 @@ class DomiciliaryUnit(ModelSQL, ModelView):
 
         # Zip Code
         if (self.address_zip):
-            du_addr = du_addr +" - "+ self.address_zip
+            du_addr = du_addr + " - " + self.address_zip
 
         # Country
         if (self.address_country):
-            du_addr = du_addr +"\n"+ self.address_country.rec_name
+            du_addr = du_addr + "\n" + self.address_country.rec_name
 
         return du_addr
 
@@ -230,7 +231,7 @@ class DomiciliaryUnit(ModelSQL, ModelView):
 
     # Text Representation
     address_repr = fields.Function(fields.Text("DU Address"),
-        'get_du_address')
+                                   'get_du_address')
 
     # Infrastructure
 
@@ -289,14 +290,13 @@ class DomiciliaryUnit(ModelSQL, ModelView):
     members = fields.One2Many('party.party', 'du', 'Members', readonly=True)
 
     @fields.depends('latitude', 'longitude', 'address_street',
-        'address_street_number', 'address_district', 'address_municipality',
-        'address_city', 'address_zip', 'address_subdivision',
-        'address_country')
+                    'address_street_number', 'address_district',
+                    'address_municipality', 'address_city',
+                    'address_zip', 'address_subdivision', 'address_country')
     def on_change_with_urladdr(self):
         # Generates the URL to be used in OpenStreetMap
         #   If latitude and longitude are known, use them.
         #   Otherwise, use street, municipality, city, and so on.
-
 
         parts = OrderedDict()
         parts['scheme'] = 'http'
@@ -313,7 +313,8 @@ class DomiciliaryUnit(ModelSQL, ModelView):
                                         'mlon': self.longitude})
 
         else:
-            state = country = postalcode = city = municipality = street = number = ''
+            state = country = postalcode = city = municipality = \
+                street = number = ''
             if self.address_street_number is not None:
                 number = str(self.address_street_number)
             if self.address_street:
@@ -385,7 +386,6 @@ class Party(ModelSQL, ModelView):
     def person_age(self, name):
         return compute_age_from_dates(self.dob, self.deceased,
                               self.dod, self.gender, name, None)
-
 
     def get_du_address(self, name):
         if (self.du):
