@@ -1,10 +1,19 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-03-04 10:50+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
+"health_imaging/es/>\n"
+"Language: es\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5.1-dev\n"
 
 msgctxt "field:gnuhealth.imaging.test,code:"
 msgid "Code"
-msgstr ""
+msgstr "Código"
 
 msgctxt "field:gnuhealth.imaging.test,create_date:"
 msgid "Create Date"
