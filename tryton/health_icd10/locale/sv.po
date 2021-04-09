@@ -1,13 +1,19 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-04-10 22:27+0000\n"
+"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/gnu-health/"
+"health_icd10/sv/>\n"
 "Language: sv\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 msgctxt "model:gnuhealth.pathology,name:A00"
 msgid "Cholera"
-msgstr ""
+msgstr "Kolera"
 
 msgctxt "model:gnuhealth.pathology,name:A000"
 msgid "Cholera due to Vibrio cholerae 01, biovar cholerae"
@@ -19,35 +25,35 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A009"
 msgid "Cholera, unspecified"
-msgstr ""
+msgstr "Kolera, icke angiven"
 
 msgctxt "model:gnuhealth.pathology,name:A01"
 msgid "Typhoid and paratyphoid fevers"
-msgstr ""
+msgstr "Tyfoid och paratyfoid-feber"
 
 msgctxt "model:gnuhealth.pathology,name:A010"
 msgid "Typhoid fever"
-msgstr ""
+msgstr "Tyfoid-feber"
 
 msgctxt "model:gnuhealth.pathology,name:A011"
 msgid "Paratyphoid fever A"
-msgstr ""
+msgstr "Paratyfoid-feber A"
 
 msgctxt "model:gnuhealth.pathology,name:A012"
 msgid "Paratyphoid fever B"
-msgstr ""
+msgstr "Paratyfoid-feber B"
 
 msgctxt "model:gnuhealth.pathology,name:A013"
 msgid "Paratyphoid fever C"
-msgstr ""
+msgstr "Paratyfoid-feber C"
 
 msgctxt "model:gnuhealth.pathology,name:A014"
 msgid "Paratyphoid fever, unspecified"
-msgstr ""
+msgstr "Paratyfoid-feber, icke angiven"
 
 msgctxt "model:gnuhealth.pathology,name:A02"
 msgid "Other salmonella infections"
-msgstr ""
+msgstr "Andra salmonella-infektioner"
 
 msgctxt "model:gnuhealth.pathology,name:A020"
 msgid "Salmonella enteritis"
@@ -55,19 +61,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A021"
 msgid "Salmonella sepsis"
-msgstr ""
+msgstr "Salmonella-sepsis"
 
 msgctxt "model:gnuhealth.pathology,name:A022"
 msgid "Localized salmonella infections"
-msgstr ""
+msgstr "Lokaliserad salmonella-infektioner"
 
 msgctxt "model:gnuhealth.pathology,name:A028"
 msgid "Other specified salmonella infections"
-msgstr ""
+msgstr "Andra angivna salmonella-infektioner"
 
 msgctxt "model:gnuhealth.pathology,name:A029"
 msgid "Salmonella infection, unspecified"
-msgstr ""
+msgstr "Salmonella-infektion, icke angiven"
 
 msgctxt "model:gnuhealth.pathology,name:A03"
 msgid "Shigellosis"
@@ -99,7 +105,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A04"
 msgid "Other bacterial intestinal infections"
-msgstr ""
+msgstr "Andra bakteriella tarm-infektioner"
 
 msgctxt "model:gnuhealth.pathology,name:A040"
 msgid "Enteropathogenic Escherichia coli infection"
@@ -144,6 +150,7 @@ msgstr ""
 msgctxt "model:gnuhealth.pathology,name:A05"
 msgid "Other bacterial foodborne intoxications, not elsewhere classified"
 msgstr ""
+"Andra bakteriella matburna berusningar, ej klassificerad någon annanstans"
 
 msgctxt "model:gnuhealth.pathology,name:A050"
 msgid "Foodborne staphylococcal intoxication"
@@ -151,7 +158,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A051"
 msgid "Botulism"
-msgstr ""
+msgstr "Botulism"
 
 msgctxt "model:gnuhealth.pathology,name:A052"
 msgid "Foodborne Clostridium perfringens [Clostridium welchii] intoxication"
@@ -175,11 +182,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A06"
 msgid "Amoebiasis"
-msgstr ""
+msgstr "Amöbiasis"
 
 msgctxt "model:gnuhealth.pathology,name:A060"
 msgid "Acute amoebic dysentery"
-msgstr ""
+msgstr "Akut amöbisk dysenteri"
 
 msgctxt "model:gnuhealth.pathology,name:A061"
 msgid "Chronic intestinal amoebiasis"
@@ -195,15 +202,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A064"
 msgid "Amoebic liver abscess"
-msgstr ""
+msgstr "Amöbisk lever-böld"
 
 msgctxt "model:gnuhealth.pathology,name:A065"
 msgid "Amoebic lung abscess"
-msgstr ""
+msgstr "Amöbisk lung-böld"
 
 msgctxt "model:gnuhealth.pathology,name:A066"
 msgid "Amoebic brain abscess"
-msgstr ""
+msgstr "Amöbisk hjärn-böld"
 
 msgctxt "model:gnuhealth.pathology,name:A067"
 msgid "Cutaneous amoebiasis"
