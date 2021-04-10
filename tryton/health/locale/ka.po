@@ -1,101 +1,107 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-04-10 22:27+0000\n"
+"Last-Translator: George Kiria <ggkiria@gmail.com>\n"
+"Language-Team: Georgian <https://hosted.weblate.org/projects/gnu-health/"
+"health/ka/>\n"
 "Language: ka\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "სერტიფიკატი არსებობს!"
 
 msgctxt "error:gnuhealth.death_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "სერტიფიკატი არსებობს!"
 
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "ერთეული უნდა იყოს უნიკალური!"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "კოდი უნდა იყოს უნიკალური!"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "ერთეული უნდა იყოს უნიკალური!"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "კოდი უნდა იყოს უნიკალური!"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "დასახელება უნდა იყოს უნიკალური!"
 
 msgctxt "error:gnuhealth.du:"
 msgid "The Domiciliary Unit must be unique !"
-msgstr ""
+msgstr "შენობა უნიკალურად უნდა იყოს აღწერილი!"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "კოდი უნდა იყოს უნიკალური!"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "დასახელება უნდა იყოს უნიკალური!"
 
 msgctxt "error:gnuhealth.family:"
 msgid "The Family Code must be unique !"
-msgstr ""
+msgstr "გვარი უნდა იყოს უნიკალური!"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The LICENSE ID must be unique"
-msgstr ""
+msgstr "ლიცენზია უნდა იუოს უნიკალური"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
-msgstr ""
+msgstr "მედმუშაკი უნდა იყოს უნიკალური"
 
 msgctxt "error:gnuhealth.hospital.bed:"
 msgid "The Bed must be unique per Health Center"
-msgstr ""
+msgstr "მედ დაწესებულებაში ლოგინის აღწერა უნიკალურია"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building code must be unique per Health Center"
-msgstr ""
+msgstr "შენობის იდენტიფიკატორი უნდა იყოს უნიკალური თვითოეულ სამედიცნო ცენტრში"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building name must be unique per Health Center"
-msgstr ""
+msgstr "სამედიცინო ცენტრში შენობის დასახელება უნდა იუოს უნიკალური"
 
 msgctxt "error:gnuhealth.hospital.or:"
 msgid "The Operating Room Name must be unique per Health Center"
-msgstr ""
+msgstr "სამედიცინო ცენტრის ფარგლებში საოპერაციოს დასახელება უნდა იყოს უნიკალური"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit CODE must be unique per Health Center"
-msgstr ""
+msgstr "სამედიცინო ცენტრში ერთეულის კოდი უნდა იყოს უნიკალური"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit NAME must be unique per Health Center"
-msgstr ""
+msgstr "სამედიცინო ცენტრში ერთეულის დასახელება უნდა იყოს უნიკალური"
 
 msgctxt "error:gnuhealth.hospital.ward:"
 msgid "The Ward / Room Name must be unique per Health Center"
-msgstr ""
+msgstr "სამედიცინო ცენტრში პალატის / ოთახის სახელი უნდა იყოს უნიკალური"
 
 msgctxt "error:gnuhealth.immunization_schedule:"
 msgid "The schedule code must be unique"
-msgstr ""
+msgstr "განრიგის კოდი უნდა იყოს უნიკალური"
 
 msgctxt "error:gnuhealth.immunization_schedule_dose:"
 msgid "The dose number must be unique for this vaccine"
-msgstr ""
+msgstr "ამ ვაქცინისთვის დოზის ნომერი უნდა იყოს უნიკალური"
 
 msgctxt "error:gnuhealth.institution.operationalsector:"
 msgid "The Operational Sector already exists for this institution"
-msgstr ""
+msgstr "საოპერაციო სექტორი არსებობს"
 
 msgctxt "error:gnuhealth.institution.specialties:"
 msgid "The Specialty already exists for this institution"
