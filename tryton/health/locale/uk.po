@@ -1,197 +1,237 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-04-22 16:32+0000\n"
+"Last-Translator: Vadym Tkachuk <vadymtkachuk@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/gnu-health/"
+"health/uk/>\n"
 "Language: uk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Свідоцтво про народження уже існує!"
 
 msgctxt "error:gnuhealth.death_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Свідоцтво про смерть уже існує!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Одиниця повинна бути унікальною!"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "Цей КОД повинен бути унікальним!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Одиниця вимірювання має бути унікальною!"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "КОД має бути унікальним!"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Ім'я має бути унікальним!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.du:"
 msgid "The Domiciliary Unit must be unique !"
-msgstr ""
+msgstr "Підрозділ допомоги на дому повинен бути унікальним!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "Цей КОД має бути унікальним!"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Ім'я має бути унікальним!"
 
 msgctxt "error:gnuhealth.family:"
 msgid "The Family Code must be unique !"
-msgstr ""
+msgstr "Код сім'ї має бути унікальним!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The LICENSE ID must be unique"
-msgstr ""
+msgstr "Код ліцензії (LICENSE ID) повинен бути унікальним"
 
+#, fuzzy
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
-msgstr ""
+msgstr "Медичний працівник повинен бути унікальним"
 
+#, fuzzy
 msgctxt "error:gnuhealth.hospital.bed:"
 msgid "The Bed must be unique per Health Center"
-msgstr ""
+msgstr "Ліжко має бути унікальним для кожного медичного центру"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building code must be unique per Health Center"
-msgstr ""
+msgstr "Код будівлі має бути унікальним для кожного Центру здоров'я"
 
+#, fuzzy
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building name must be unique per Health Center"
-msgstr ""
+msgstr "Назва будівлі має бути унікальною для кожного медичного центру"
 
+#, fuzzy
 msgctxt "error:gnuhealth.hospital.or:"
 msgid "The Operating Room Name must be unique per Health Center"
-msgstr ""
+msgstr "Назва операційної має бути унікальною для кожного медичного центру"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit CODE must be unique per Health Center"
-msgstr ""
+msgstr "Код підрозділу має бути унікальним для кожного Центру здоров'я"
 
+#, fuzzy
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit NAME must be unique per Health Center"
 msgstr ""
+"Назва блоку (Unit NAME) має бути унікальним для кожного медичного центру"
 
+#, fuzzy
 msgctxt "error:gnuhealth.hospital.ward:"
 msgid "The Ward / Room Name must be unique per Health Center"
-msgstr ""
+msgstr "Назва палати / кімнати має бути унікальною для кожного медичного центру"
 
 msgctxt "error:gnuhealth.immunization_schedule:"
 msgid "The schedule code must be unique"
-msgstr ""
+msgstr "Код розкладу повинен бути унікальним"
 
+#, fuzzy
 msgctxt "error:gnuhealth.immunization_schedule_dose:"
 msgid "The dose number must be unique for this vaccine"
-msgstr ""
+msgstr "Номер дози повинен бути унікальним для цієї вакцини"
 
 msgctxt "error:gnuhealth.institution.operationalsector:"
 msgid "The Operational Sector already exists for this institution"
-msgstr ""
+msgstr "Для цієї установи операційний сектор вже існує"
 
+#, fuzzy
 msgctxt "error:gnuhealth.institution.specialties:"
 msgid "The Specialty already exists for this institution"
-msgstr ""
+msgstr "Для цієї установи вже існує спеціальність"
 
 msgctxt "error:gnuhealth.institution:"
 msgid "This CODE already exists !"
-msgstr ""
+msgstr "Цей КОД уже існує!"
 
 msgctxt "error:gnuhealth.institution:"
 msgid "This Institution already exists !"
-msgstr ""
+msgstr "Ця установа уже існує!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.insurance:"
 msgid "The number must be unique per insurance company"
-msgstr ""
+msgstr "Номер повинен бути унікальним для кожної страхової компанії"
 
 msgctxt "error:gnuhealth.medication.dosage:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "Цей КОД має бути унікальним!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.medication.dosage:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Одиниця вимірювання має бути унікальною!"
 
 msgctxt "error:gnuhealth.occupation:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "Цей КОД повинен бути унікальним!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.occupation:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Ім'я має бути унікальним!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.operational_area:"
 msgid "The operational area must be unique !"
-msgstr ""
+msgstr "Операційна зона повинна бути унікальною!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.operational_sector:"
 msgid "The operational sector must be unique in each operational area!"
-msgstr ""
+msgstr "Операційний сектор повинен бути унікальним у кожній операційній зоні!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.pathology.category:"
 msgid "The category name must be unique"
-msgstr ""
+msgstr "Назва категорії повинна бути унікальною"
 
 msgctxt "error:gnuhealth.pathology.group:"
 msgid "The Pathology Group code must be unique"
-msgstr ""
+msgstr "Код групи патологій має бути унікальним"
 
 msgctxt "error:gnuhealth.pathology:"
 msgid "The disease code must be unique"
-msgstr ""
+msgstr "Код захворювання повинен бути унікальним"
 
 msgctxt "error:gnuhealth.patient.disease:"
 msgid ""
 "The HEALED date \"%(healed_date)s\" is BEFORE DIAGNOSED DATE "
 "\"%(diagnosed_date)s\"!"
 msgstr ""
+"Дата зцілення \"%(healed_date)s\" передує даті діагностування \""
+"%(diagnosed_date)s\"!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.patient.disease:"
 msgid ""
 "The Treatment END DATE \"%(date_stop_treatment)s\" is BEFORE the start date "
 "\"%(date_start_treatment)s\"!"
 msgstr ""
+"ДАТА ЗАКІНЧЕННЯ ЛІКУВАННЯ \"% (date_stop_treatment) s\"  ПЕРЕДУЄ ДАТІ "
+"ПОЧАТКУ ЛІКУВАННЯ \"% (date_start_treatment) s\"!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.patient.ecg:"
 msgid "No health professional associated to this user"
-msgstr ""
+msgstr "Жоден медичний працівник не пов’язаний із цим користувачем"
 
+#, fuzzy
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid ""
 "End time \"%(evaluation_endtime)s\" BEFORE evaluation start "
 "\"%(evaluation_start)s\""
 msgstr ""
+"Час завершення \"%(evaluation_endtime)s\" ПЕРЕД початком оцінювання \""
+"%(evaluation_start)s\""
 
+#, fuzzy
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "No health professional associated to this user"
-msgstr ""
+msgstr "Жоден медичний працівник не пов’язаний з цим користувачем"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "The evaluation code must be unique !"
-msgstr ""
+msgstr "Код оцінки повинен бути унікальним!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.patient.medication:"
 msgid ""
 "The Medication END DATE \"%(end_treatment)s\" is BEFORE the start date "
 "\"%(start_treatment)s\"!"
 msgstr ""
+"Дата завершення прийому ліків \"%(end_treatment)s\" перед датою початку \""
+"%(start_treatment)s\"!"
 
 msgctxt "error:gnuhealth.patient:"
 msgid "The Patient already exists !"
-msgstr ""
+msgstr "Пацієнт вже існує!"
 
 msgctxt "error:gnuhealth.pol:"
 msgid "The Page must be unique !"
-msgstr ""
+msgstr "Сторінка повинна бути унікальною!"
 
 msgctxt "error:gnuhealth.prescription.order:"
 msgid ""
@@ -208,7 +248,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.prescription.order:"
 msgid "No health professional associated to this user"
-msgstr ""
+msgstr "Жоден медичний працівник не  пов’язаний із цим користувачем"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "The Vaccine next dose is BEFORE the first one !"
@@ -416,11 +456,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.birth_certificate,dob:"
 msgid "Date of Birth"
-msgstr ""
+msgstr "Дата народження"
 
 msgctxt "field:gnuhealth.birth_certificate,father:"
 msgid "Father"
-msgstr ""
+msgstr "Батько"
 
 msgctxt "field:gnuhealth.birth_certificate,id:"
 msgid "ID"
@@ -4153,6 +4193,8 @@ msgid ""
 "Underlying conditions that initiated the events resulting in death. Please "
 "code them in sequential, chronological order"
 msgstr ""
+"Основні умови, що ініціювали події, що призвели до смерті. Будь ласка,  "
+"запишіть  їх у послідовному, хронологічному порядку"
 
 msgctxt "help:gnuhealth.death_underlying_condition,interval:"
 msgid "Approx Interval onset to death"
@@ -4217,6 +4259,8 @@ msgstr ""
 msgctxt "help:gnuhealth.federation.country.config,country:"
 msgid "Country code to be use as the prefix for the FederationID account."
 msgstr ""
+"Код країни, який буде використовуватися як префікс для облікового запису "
+"FederationID."
 
 msgctxt "help:gnuhealth.federation.country.config,use_citizenship:"
 msgid ""
@@ -4224,6 +4268,9 @@ msgid ""
 "the default country code will be the person citizenship.\n"
 "This feature is reserved for future use"
 msgstr ""
+"Якщо цей параметр встановлений\n"
+"кодом країни буде громадянство особи.\n"
+"Ця функція зарезервована для майбутнього використання"
 
 msgctxt "help:gnuhealth.healthprofessional,code:"
 msgid "License ID"
@@ -4500,7 +4547,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.pathology,code:"
 msgid "Specific Code for the Disease (eg, ICD-10)"
-msgstr ""
+msgstr "Конкретний код захворювання (наприклад, ICD-10)"
 
 msgctxt "help:gnuhealth.pathology,gene:"
 msgid "Name of the gene(s) affected"
@@ -4511,6 +4558,8 @@ msgid ""
 "Specify the groups this pathology belongs. Some automated processes act upon"
 " the code of the group"
 msgstr ""
+"Вкажіть групи, до яких відноситься ця патологія. Деякі автоматизовані "
+"процеси діють за кодом групи"
 
 msgctxt "help:gnuhealth.pathology,name:"
 msgid "Health condition name"
@@ -4689,7 +4738,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,code:"
 msgid "Unique code that         identifies the evaluation"
-msgstr ""
+msgstr "Унікальний код, який ідентифікує оцінку"
 
 msgctxt "help:gnuhealth.patient.evaluation,computed_age:"
 msgid "Computed patient age at the moment of the evaluation"
@@ -4715,6 +4764,8 @@ msgid ""
 "Presumptive Diagnosis. If no diagnosis can be made, encode the main sign or "
 "symptom."
 msgstr ""
+"Попередній діагноз. Якщо діагноз встановити не вдається, запишіть  основну "
+"ознаку або симптом."
 
 msgctxt "help:gnuhealth.patient.evaluation,diagnostic_hypothesis:"
 msgid "Other Diagnostic Hypotheses / Differential Diagnosis (DDx)"
@@ -12702,7 +12753,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Notes"
-msgstr ""
+msgstr "Примітки"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Patient and Health Professional Information"
@@ -12722,7 +12773,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Dose"
-msgstr ""
+msgstr "Доза"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Finish and sign this vaccination ? It will become read-only !"
