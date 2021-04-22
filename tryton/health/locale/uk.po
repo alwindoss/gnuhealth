@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-22 16:48+0000\n"
+"PO-Revision-Date: 2021-04-22 16:50+0000\n"
 "Last-Translator: Vadym Tkachuk <vadymtkachuk@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gnu-health/"
 "health/uk/>\n"
@@ -468,7 +468,7 @@ msgstr "Створити дату"
 
 msgctxt "field:gnuhealth.birth_certificate,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Створити користувача"
 
 msgctxt "field:gnuhealth.birth_certificate,dob:"
 msgid "Date of Birth"
@@ -480,19 +480,19 @@ msgstr "Батько"
 
 msgctxt "field:gnuhealth.birth_certificate,id:"
 msgid "ID"
-msgstr ""
+msgstr "Ідентифікатор (ID)"
 
 msgctxt "field:gnuhealth.birth_certificate,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
 msgctxt "field:gnuhealth.birth_certificate,mother:"
 msgid "Mother"
-msgstr ""
+msgstr "Матір"
 
 msgctxt "field:gnuhealth.birth_certificate,name:"
 msgid "Person"
-msgstr ""
+msgstr "Особа"
 
 msgctxt "field:gnuhealth.birth_certificate,observations:"
 msgid "Observations"
