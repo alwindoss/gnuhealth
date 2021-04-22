@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-22 16:32+0000\n"
+"PO-Revision-Date: 2021-04-22 16:48+0000\n"
 "Last-Translator: Vadym Tkachuk <vadymtkachuk@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gnu-health/"
 "health/uk/>\n"
@@ -252,203 +252,219 @@ msgstr "Жоден медичний працівник не  пов’язани
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "The Vaccine next dose is BEFORE the first one !"
-msgstr ""
+msgstr "Наступна доза вакцини - ДО першої!"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "This vaccine dose has been given already to the patient"
-msgstr ""
+msgstr "Ця доза вакцини вже була введена пацієнту"
 
+#, fuzzy
 msgctxt "error:party.party:"
 msgid "The Federation Account must be unique"
-msgstr ""
+msgstr "Обліковий запис федерації має бути унікальним"
 
 msgctxt "error:party.party:"
 msgid "The PUID must be unique"
-msgstr ""
+msgstr "PUID повинен бути унікальним"
 
+#, fuzzy
 msgctxt "error:party.party:"
 msgid "This internal user is already assigned to a party"
-msgstr ""
+msgstr "Цьому внутрішньому користувачу вже призначено сторону"
 
+#, fuzzy
 msgctxt "error:wizard.gnuhealth.appointment.evaluation:"
 msgid "You need to select one Appointment record"
-msgstr ""
+msgstr "Вам потрібно вибрати один запис на прийом"
 
 msgctxt "field:gnuhealth.appointment,appointment_date:"
 msgid "Date and Time"
-msgstr ""
+msgstr "Дата й час"
 
 msgctxt "field:gnuhealth.appointment,appointment_type:"
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 msgctxt "field:gnuhealth.appointment,checked_in_date:"
 msgid "Checked-in Time"
-msgstr ""
+msgstr "Час перевірки"
 
 msgctxt "field:gnuhealth.appointment,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Коментарі"
 
 msgctxt "field:gnuhealth.appointment,consultations:"
 msgid "Consultation Services"
-msgstr ""
+msgstr "Консультаційні послуги"
 
 msgctxt "field:gnuhealth.appointment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Створити дату"
 
 msgctxt "field:gnuhealth.appointment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Створити користувача"
 
 msgctxt "field:gnuhealth.appointment,healthprof:"
 msgid "Health Prof"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,id:"
 msgid "ID"
-msgstr ""
+msgstr "Ідентифікатор (ID)"
 
 msgctxt "field:gnuhealth.appointment,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Установа"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,name:"
 msgid "Appointment ID"
-msgstr ""
+msgstr "Ідентифікатор прийому у лікаря"
 
 msgctxt "field:gnuhealth.appointment,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Пацієнт(ка)"
 
 msgctxt "field:gnuhealth.appointment,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Назва запису"
 
 msgctxt "field:gnuhealth.appointment,speciality:"
 msgid "Specialty"
-msgstr ""
+msgstr "Спеціальність"
 
 msgctxt "field:gnuhealth.appointment,state:"
 msgid "State"
-msgstr ""
+msgstr "Держава"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,urgency:"
 msgid "Urgency"
-msgstr ""
+msgstr "Невідкладний випадок"
 
 msgctxt "field:gnuhealth.appointment,visit_type:"
 msgid "Visit"
-msgstr ""
+msgstr "Відвідування"
 
 msgctxt "field:gnuhealth.appointment,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Дата запису"
 
 msgctxt "field:gnuhealth.appointment,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Записати користувача"
 
 msgctxt "field:gnuhealth.appointment.report,address:"
 msgid "Address"
-msgstr ""
+msgstr "Адреса"
 
 msgctxt "field:gnuhealth.appointment.report,age:"
 msgid "Age"
-msgstr ""
+msgstr "Вік"
 
 msgctxt "field:gnuhealth.appointment.report,appointment_date:"
 msgid "Date"
-msgstr ""
+msgstr "Дата"
 
 msgctxt "field:gnuhealth.appointment.report,appointment_date_time:"
 msgid "Date and Time"
-msgstr ""
+msgstr "Дата й час"
 
 msgctxt "field:gnuhealth.appointment.report,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Створити дату"
 
 msgctxt "field:gnuhealth.appointment.report,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Створити користувача"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,diagnosis:"
 msgid "Main Codition"
-msgstr ""
+msgstr "Основна кодиція"
 
 msgctxt "field:gnuhealth.appointment.report,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Стать"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Практикуючий лікар"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.appointment.report,insurance:"
 msgid "Insurance"
-msgstr ""
+msgstr "Страхування"
 
 msgctxt "field:gnuhealth.appointment.report,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Пацієнт(ка)"
 
 msgctxt "field:gnuhealth.appointment.report,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Назва запису"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,ref:"
 msgid "PUID"
-msgstr ""
+msgstr "PUID"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Записати дату"
 
 msgctxt "field:gnuhealth.appointment.report,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Записати користувача"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,date_end:"
 msgid "Date End"
-msgstr ""
+msgstr "Дата завершення"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report.open.start,date_start:"
 msgid "Date Start"
-msgstr ""
+msgstr "Дата початку"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report.open.start,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Практикуючий лікар"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment.report.open.start,id:"
 msgid "ID"
-msgstr ""
+msgstr "Ідентифікатор (ID)"
 
+#, fuzzy
 msgctxt "field:gnuhealth.birth_certificate,certification_date:"
 msgid "Signed on"
-msgstr ""
+msgstr "Підписано"
 
 msgctxt "field:gnuhealth.birth_certificate,code:"
 msgid "Code"
-msgstr ""
+msgstr "Код"
 
 msgctxt "field:gnuhealth.birth_certificate,country:"
 msgid "Country"
-msgstr ""
+msgstr "Країна"
 
 msgctxt "field:gnuhealth.birth_certificate,country_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "Підрозділ"
 
+#, fuzzy
 msgctxt "field:gnuhealth.birth_certificate,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Створити дату"
 
 msgctxt "field:gnuhealth.birth_certificate,create_uid:"
 msgid "Create User"
