@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-24 16:03+0000\n"
+"PO-Revision-Date: 2021-04-25 13:56+0000\n"
 "Last-Translator: George Kiria <ggkiria@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/gnu-health/"
 "health/ka/>\n"
@@ -283,588 +283,588 @@ msgstr "წარმოქმნის თარიღი"
 
 msgctxt "field:gnuhealth.appointment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "მომხმარებლის შექმნა"
 
 msgctxt "field:gnuhealth.appointment,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "ჯანდაცვის პროფესორი"
 
 msgctxt "field:gnuhealth.appointment,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.appointment,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "დაწესებულება"
 
 msgctxt "field:gnuhealth.appointment,name:"
 msgid "Appointment ID"
-msgstr ""
+msgstr "დანიშვნის აიდი"
 
 msgctxt "field:gnuhealth.appointment,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "პაციენტი"
 
 msgctxt "field:gnuhealth.appointment,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.appointment,speciality:"
 msgid "Specialty"
-msgstr ""
+msgstr "სპეციალობა"
 
 msgctxt "field:gnuhealth.appointment,state:"
 msgid "State"
-msgstr ""
+msgstr "მდგომარეობა"
 
 msgctxt "field:gnuhealth.appointment,urgency:"
 msgid "Urgency"
-msgstr ""
+msgstr "გადაუდებელი ვითარება"
 
 msgctxt "field:gnuhealth.appointment,visit_type:"
 msgid "Visit"
-msgstr ""
+msgstr "ვიზიტი"
 
 msgctxt "field:gnuhealth.appointment,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.appointment,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.appointment.report,address:"
 msgid "Address"
-msgstr ""
+msgstr "მისამართი"
 
 msgctxt "field:gnuhealth.appointment.report,age:"
 msgid "Age"
-msgstr ""
+msgstr "ასაკი"
 
 msgctxt "field:gnuhealth.appointment.report,appointment_date:"
 msgid "Date"
-msgstr ""
+msgstr "თარიღი"
 
 msgctxt "field:gnuhealth.appointment.report,appointment_date_time:"
 msgid "Date and Time"
-msgstr ""
+msgstr "თარიღი და დრო"
 
 msgctxt "field:gnuhealth.appointment.report,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.appointment.report,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.appointment.report,diagnosis:"
 msgid "Main Codition"
-msgstr ""
+msgstr "ძირითადი მდგომარეობა"
 
 msgctxt "field:gnuhealth.appointment.report,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "სქესი"
 
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "ჯანდაცვის პროფესორი"
 
 msgctxt "field:gnuhealth.appointment.report,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.appointment.report,insurance:"
 msgid "Insurance"
-msgstr ""
+msgstr "დაზღვევა"
 
 msgctxt "field:gnuhealth.appointment.report,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "პაციენტი"
 
 msgctxt "field:gnuhealth.appointment.report,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.appointment.report,ref:"
 msgid "PUID"
-msgstr ""
+msgstr "PUID"
 
 msgctxt "field:gnuhealth.appointment.report,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.appointment.report,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,date_end:"
 msgid "Date End"
-msgstr ""
+msgstr "თარიღის ბოლო"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,date_start:"
 msgid "Date Start"
-msgstr ""
+msgstr "თარიღის დასაწყისი"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "ჯანდაცვის პროფესორი"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.birth_certificate,certification_date:"
 msgid "Signed on"
-msgstr ""
+msgstr "ხელმოწერილი"
 
 msgctxt "field:gnuhealth.birth_certificate,code:"
 msgid "Code"
-msgstr ""
+msgstr "კოდი"
 
 msgctxt "field:gnuhealth.birth_certificate,country:"
 msgid "Country"
-msgstr ""
+msgstr "ქვეყანა"
 
 msgctxt "field:gnuhealth.birth_certificate,country_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "ქვედანაყოფი"
 
 msgctxt "field:gnuhealth.birth_certificate,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.birth_certificate,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.birth_certificate,dob:"
 msgid "Date of Birth"
-msgstr ""
+msgstr "დაბადების თარიღი"
 
 msgctxt "field:gnuhealth.birth_certificate,father:"
 msgid "Father"
-msgstr ""
+msgstr "მამა"
 
 msgctxt "field:gnuhealth.birth_certificate,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.birth_certificate,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "დაწესებულება"
 
 msgctxt "field:gnuhealth.birth_certificate,mother:"
 msgid "Mother"
-msgstr ""
+msgstr "დედა"
 
 msgctxt "field:gnuhealth.birth_certificate,name:"
 msgid "Person"
-msgstr ""
+msgstr "პიროვნება"
 
 msgctxt "field:gnuhealth.birth_certificate,observations:"
 msgid "Observations"
-msgstr ""
+msgstr "კვლევები"
 
 msgctxt "field:gnuhealth.birth_certificate,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.birth_certificate,signed_by:"
 msgid "Certifier"
-msgstr ""
+msgstr "სერტიფიკატორი"
 
 msgctxt "field:gnuhealth.birth_certificate,state:"
 msgid "State"
-msgstr ""
+msgstr "მდგომარეობა"
 
 msgctxt "field:gnuhealth.birth_certificate,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.birth_certificate,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.check_immunization_status.init,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt ""
 "field:gnuhealth.check_immunization_status.init,immunization_schedule:"
 msgid "Schedule"
-msgstr ""
+msgstr "განრიგი"
 
 msgctxt "field:gnuhealth.command,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.command,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.command,description:"
 msgid "Description"
-msgstr ""
+msgstr "აღწერა"
 
 msgctxt "field:gnuhealth.command,domain:"
 msgid "Domain"
-msgstr ""
+msgstr "დომენი"
 
 msgctxt "field:gnuhealth.command,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.command,internal:"
 msgid "Internal"
-msgstr ""
+msgstr "შინაგანი"
 
 msgctxt "field:gnuhealth.command,label:"
 msgid "Label"
-msgstr ""
+msgstr "იარლიყი"
 
 msgctxt "field:gnuhealth.command,model:"
 msgid "Model"
-msgstr ""
+msgstr "მოდელი"
 
 msgctxt "field:gnuhealth.command,name:"
 msgid "Command"
-msgstr ""
+msgstr "ბრძანება"
 
 msgctxt "field:gnuhealth.command,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.command,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.command,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.death_certificate,age:"
 msgid "Age"
-msgstr ""
+msgstr "ასაკი"
 
 msgctxt "field:gnuhealth.death_certificate,autopsy:"
 msgid "Autopsy"
-msgstr ""
+msgstr "გაკვეთა"
 
 msgctxt "field:gnuhealth.death_certificate,certification_date:"
 msgid "Certified on"
-msgstr ""
+msgstr "სერთიფიცირებულია"
 
 msgctxt "field:gnuhealth.death_certificate,cod:"
 msgid "Cause"
-msgstr ""
+msgstr "მიზეზი"
 
 msgctxt "field:gnuhealth.death_certificate,code:"
 msgid "Code"
-msgstr ""
+msgstr "კოდი"
 
 msgctxt "field:gnuhealth.death_certificate,country:"
 msgid "Country"
-msgstr ""
+msgstr "ქვეყანა"
 
 msgctxt "field:gnuhealth.death_certificate,country_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "ქვედანაყოფი"
 
 msgctxt "field:gnuhealth.death_certificate,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.death_certificate,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.death_certificate,dod:"
 msgid "Date"
-msgstr ""
+msgstr "თარიღი"
 
 msgctxt "field:gnuhealth.death_certificate,du:"
 msgid "DU"
-msgstr ""
+msgstr "DU"
 
 msgctxt "field:gnuhealth.death_certificate,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.death_certificate,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "დაწესებულება"
 
 msgctxt "field:gnuhealth.death_certificate,name:"
 msgid "Person"
-msgstr ""
+msgstr "პიროვნება"
 
 msgctxt "field:gnuhealth.death_certificate,observations:"
 msgid "Observations"
-msgstr ""
+msgstr "კვლევები"
 
 msgctxt "field:gnuhealth.death_certificate,operational_sector:"
 msgid "Op. Sector"
-msgstr ""
+msgstr "ოპ. სექტორი"
 
 msgctxt "field:gnuhealth.death_certificate,place_details:"
 msgid "Details"
-msgstr ""
+msgstr "დეტალები"
 
 msgctxt "field:gnuhealth.death_certificate,place_of_death:"
 msgid "Place"
-msgstr ""
+msgstr "ადგილი"
 
 msgctxt "field:gnuhealth.death_certificate,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.death_certificate,signed_by:"
 msgid "Signed by"
-msgstr ""
+msgstr "ხელმოწერილია"
 
 msgctxt "field:gnuhealth.death_certificate,state:"
 msgid "State"
-msgstr ""
+msgstr "მდგომარეობა"
 
 msgctxt "field:gnuhealth.death_certificate,type_of_death:"
 msgid "Type of death"
-msgstr ""
+msgstr "სიკვდილის მიზეზი"
 
 msgctxt "field:gnuhealth.death_certificate,underlying_conditions:"
 msgid "Underlying Conditions"
-msgstr ""
+msgstr "ძირითადი პირობები"
 
 msgctxt "field:gnuhealth.death_certificate,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.death_certificate,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.death_underlying_condition,condition:"
 msgid "Condition"
-msgstr ""
+msgstr "კონდიცია"
 
 msgctxt "field:gnuhealth.death_underlying_condition,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.death_underlying_condition,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.death_underlying_condition,death_certificate:"
 msgid "Certificate"
-msgstr ""
+msgstr "სერთიფიკატი"
 
 msgctxt "field:gnuhealth.death_underlying_condition,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.death_underlying_condition,interval:"
 msgid "Interval"
-msgstr ""
+msgstr "ინტერვალი"
 
 msgctxt "field:gnuhealth.death_underlying_condition,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid "Unit"
-msgstr ""
+msgstr "ერთეული"
 
 msgctxt "field:gnuhealth.death_underlying_condition,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.death_underlying_condition,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "კომენტარები"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,evaluation:"
 msgid "Evaluation"
-msgstr ""
+msgstr "შეფასება"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,pathology:"
 msgid "Pathology"
-msgstr ""
+msgstr "პათოლოგია"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.directions,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "კომენტარები"
 
 msgctxt "field:gnuhealth.directions,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.directions,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.directions,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.directions,name:"
 msgid "Evaluation"
-msgstr ""
+msgstr "შეფასება"
 
 msgctxt "field:gnuhealth.directions,procedure:"
 msgid "Procedure"
-msgstr ""
+msgstr "პროცედურა"
 
 msgctxt "field:gnuhealth.directions,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.directions,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.directions,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.disease_group.members,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.disease_group.members,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.disease_group.members,disease_group:"
 msgid "Group"
-msgstr ""
+msgstr "ჯგუფი"
 
 msgctxt "field:gnuhealth.disease_group.members,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.disease_group.members,name:"
 msgid "Condition"
-msgstr ""
+msgstr "კონდიცია"
 
 msgctxt "field:gnuhealth.disease_group.members,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.disease_group.members,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.disease_group.members,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.dose.unit,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.dose.unit,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.dose.unit,desc:"
 msgid "Description"
-msgstr ""
+msgstr "აღწერა"
 
 msgctxt "field:gnuhealth.dose.unit,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.dose.unit,name:"
 msgid "Unit"
-msgstr ""
+msgstr "ერთეული"
 
 msgctxt "field:gnuhealth.dose.unit,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.dose.unit,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.dose.unit,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.drug.form,code:"
 msgid "Code"
-msgstr ""
+msgstr "კოდი"
 
 msgctxt "field:gnuhealth.drug.form,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.drug.form,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.drug.form,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.drug.form,name:"
 msgid "Form"
-msgstr ""
+msgstr "ფორმა"
 
 msgctxt "field:gnuhealth.drug.form,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.drug.form,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.drug.form,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.drug.route,code:"
 msgid "Code"
-msgstr ""
+msgstr "კოდი"
 
 msgctxt "field:gnuhealth.drug.route,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.drug.route,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.drug.route,id:"
 msgid "ID"
-msgstr ""
+msgstr "აიდი"
 
 msgctxt "field:gnuhealth.drug.route,name:"
 msgid "Route"
