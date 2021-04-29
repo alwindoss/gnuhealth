@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-07-10 21:48+0000\n"
+"PO-Revision-Date: 2021-04-30 15:23+0000\n"
 "Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_icd10/fr/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 msgctxt "model:gnuhealth.pathology,name:A00"
 msgid "Cholera"
@@ -1843,7 +1843,7 @@ msgstr "Fièvre de la vallée du Rift"
 
 msgctxt "model:gnuhealth.pathology,name:A925"
 msgid "Zika virus disease"
-msgstr ""
+msgstr "Maladie due au virus Zika"
 
 msgctxt "model:gnuhealth.pathology,name:A928"
 msgid "Other specified mosquito-borne viral fevers"
@@ -2990,7 +2990,7 @@ msgstr "Pénicilliose"
 
 msgctxt "model:gnuhealth.pathology,name:B485"
 msgid "Pneumocystosis (J17.2*)"
-msgstr ""
+msgstr "Pneumocystose"
 
 msgctxt "model:gnuhealth.pathology,name:B487"
 msgid "Opportunistic mycoses"
@@ -8754,43 +8754,43 @@ msgstr "Diabète sucré de type 1"
 
 msgctxt "model:gnuhealth.pathology,name:E100"
 msgid "Type 1 diabetes mellitus: With coma"
-msgstr ""
+msgstr "Diabète sucré de type 1, avec coma"
 
 msgctxt "model:gnuhealth.pathology,name:E101"
 msgid "Type 1 diabetes mellitus: With ketoacidosis"
-msgstr ""
+msgstr "Diabète sucré de type 1, avec acidocétose"
 
 msgctxt "model:gnuhealth.pathology,name:E102"
 msgid "Type 1 diabetes mellitus: With renal complications"
-msgstr ""
+msgstr "Diabète sucré de type 1, avec complications rénales"
 
 msgctxt "model:gnuhealth.pathology,name:E103"
 msgid "Type 1 diabetes mellitus: With ophthalmic complications"
-msgstr ""
+msgstr "Diabète sucré de type 1, avec complications oculaires"
 
 msgctxt "model:gnuhealth.pathology,name:E104"
 msgid "Type 1 diabetes mellitus: With neurological complications"
-msgstr ""
+msgstr "Diabète sucré de type 1, avec complications neurologiques"
 
 msgctxt "model:gnuhealth.pathology,name:E105"
 msgid "Type 1 diabetes mellitus: With peripheral circulatory complications"
-msgstr ""
+msgstr "Diabète sucré de type 1, avec complications vasculaires périphériques"
 
 msgctxt "model:gnuhealth.pathology,name:E106"
 msgid "Type 1 diabetes mellitus: With other specified complications"
-msgstr ""
+msgstr "Diabète sucré de type 1, avec autres complications précisées"
 
 msgctxt "model:gnuhealth.pathology,name:E107"
 msgid "Type 1 diabetes mellitus: With multiple complications"
-msgstr ""
+msgstr "Diabète sucré de type 1, avec complications multiples"
 
 msgctxt "model:gnuhealth.pathology,name:E108"
 msgid "Type 1 diabetes mellitus: With unspecified complications"
-msgstr ""
+msgstr "Diabète sucré de type 1, avec complications non précisées"
 
 msgctxt "model:gnuhealth.pathology,name:E109"
 msgid "Type 1 diabetes mellitus: Without complications"
-msgstr ""
+msgstr "Diabète sucré de type 1, sans complication"
 
 msgctxt "model:gnuhealth.pathology,name:E11"
 msgid "Type 2 diabetes mellitus"
@@ -8798,43 +8798,43 @@ msgstr "Diabète sucré de type 2"
 
 msgctxt "model:gnuhealth.pathology,name:E110"
 msgid "Type 2 diabetes mellitus: With coma"
-msgstr ""
+msgstr "Diabète sucré de type 2, avec coma"
 
 msgctxt "model:gnuhealth.pathology,name:E111"
 msgid "Type 2 diabetes mellitus: With ketoacidosis"
-msgstr ""
+msgstr "Diabète sucré de type 2, avec acidocétose"
 
 msgctxt "model:gnuhealth.pathology,name:E112"
 msgid "Type 2 diabetes mellitus: With renal complications"
-msgstr ""
+msgstr "Diabète sucré de type 2, avec complications rénales"
 
 msgctxt "model:gnuhealth.pathology,name:E113"
 msgid "Type 2 diabetes mellitus: With ophthalmic complications"
-msgstr ""
+msgstr "Diabète sucré de type 2, avec complications oculaires"
 
 msgctxt "model:gnuhealth.pathology,name:E114"
 msgid "Type 2 diabetes mellitus: With neurological complications"
-msgstr ""
+msgstr "Diabète sucré de type 2, avec complications neurologiques"
 
 msgctxt "model:gnuhealth.pathology,name:E115"
 msgid "Type 2 diabetes mellitus: With peripheral circulatory complications"
-msgstr ""
+msgstr "Diabète sucré de type 2, avec complications vasculaires périphériques"
 
 msgctxt "model:gnuhealth.pathology,name:E116"
 msgid "Type 2 diabetes mellitus: With other specified complications"
-msgstr ""
+msgstr "Diabète sucré de type 2, avec autres complications précisées"
 
 msgctxt "model:gnuhealth.pathology,name:E117"
 msgid "Type 2 diabetes mellitus: With multiple complications"
-msgstr ""
+msgstr "Diabète sucré de type 2, avec complications multiples"
 
 msgctxt "model:gnuhealth.pathology,name:E118"
 msgid "Type 2 diabetes mellitus: With unspecified complications"
-msgstr ""
+msgstr "Diabète sucré de type 2, avec complications non précisées"
 
 msgctxt "model:gnuhealth.pathology,name:E119"
 msgid "Type 2 diabetes mellitus: Without complications"
-msgstr ""
+msgstr "Diabète sucré de type 2, sans complication"
 
 msgctxt "model:gnuhealth.pathology,name:E12"
 msgid "Malnutrition-related diabetes mellitus"
@@ -8842,15 +8842,15 @@ msgstr "Diabète sucré de malnutrition"
 
 msgctxt "model:gnuhealth.pathology,name:E120"
 msgid "Malnutrition-related diabetes mellitus: With coma"
-msgstr ""
+msgstr "Diabète sucré de malnutrition, avec coma"
 
 msgctxt "model:gnuhealth.pathology,name:E121"
 msgid "Malnutrition-related diabetes mellitus: With ketoacidosis"
-msgstr ""
+msgstr "Diabète sucré de malnutrition, avec acidocétose"
 
 msgctxt "model:gnuhealth.pathology,name:E122"
 msgid "Malnutrition-related diabetes mellitus: With renal complications"
-msgstr ""
+msgstr "Diabète sucré de malnutrition, avec complications rénales"
 
 msgctxt "model:gnuhealth.pathology,name:E123"
 msgid "Malnutrition-related diabetes mellitus: With ophthalmic complications"
