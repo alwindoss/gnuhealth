@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-02 21:34+0000\n"
+"PO-Revision-Date: 2021-06-13 06:32+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gnu-health/"
 "health/id/>\n"
@@ -8434,11 +8434,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ614"
 msgid "Undertaker"
-msgstr ""
+msgstr "Pengurus"
 
 msgctxt "model:gnuhealth.occupation,name:occ615"
 msgid "Ufologist"
-msgstr ""
+msgstr "Ahli Ufologi"
 
 msgctxt "model:gnuhealth.occupation,name:occ616"
 msgid "Undercover agent"
@@ -8454,15 +8454,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ619"
 msgid "Urologist"
-msgstr ""
+msgstr "Ahli Urologi"
 
 msgctxt "model:gnuhealth.occupation,name:occ62"
 msgid "Cobbler"
-msgstr ""
+msgstr "Tukang sepatu"
 
 msgctxt "model:gnuhealth.occupation,name:occ620"
 msgid "Urban planner"
-msgstr ""
+msgstr "Perencana kota"
 
 msgctxt "model:gnuhealth.occupation,name:occ621"
 msgid "Usher"
@@ -8494,7 +8494,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ628"
 msgid "Video game developer"
-msgstr ""
+msgstr "Pengembang video gim"
 
 msgctxt "model:gnuhealth.occupation,name:occ629"
 msgid "Vintner"
@@ -8514,15 +8514,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ632"
 msgid "Vocalist"
-msgstr ""
+msgstr "Vokalis"
 
 msgctxt "model:gnuhealth.occupation,name:occ633"
 msgid "Waiter"
-msgstr ""
+msgstr "Pelayan"
 
 msgctxt "model:gnuhealth.occupation,name:occ634"
 msgid "Warder"
-msgstr ""
+msgstr "Sipir"
 
 msgctxt "model:gnuhealth.occupation,name:occ635"
 msgid "Weaponsmith"
@@ -8530,27 +8530,27 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ636"
 msgid "Weatherman"
-msgstr ""
+msgstr "Peramal cuaca"
 
 msgctxt "model:gnuhealth.occupation,name:occ637"
 msgid "Weaver"
-msgstr ""
+msgstr "Penenun"
 
 msgctxt "model:gnuhealth.occupation,name:occ638"
 msgid "Webmaster"
-msgstr ""
+msgstr "Webmaster"
 
 msgctxt "model:gnuhealth.occupation,name:occ639"
 msgid "Web developer"
-msgstr ""
+msgstr "Pengembang web"
 
 msgctxt "model:gnuhealth.occupation,name:occ64"
 msgid "Columnist"
-msgstr ""
+msgstr "Kolumnis"
 
 msgctxt "model:gnuhealth.occupation,name:occ640"
 msgid "Web designer"
-msgstr ""
+msgstr "Desainer web"
 
 msgctxt "model:gnuhealth.occupation,name:occ641"
 msgid "Welder"
@@ -8578,7 +8578,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ647"
 msgid "Writer"
-msgstr ""
+msgstr "Penulis"
 
 msgctxt "model:gnuhealth.occupation,name:occ648"
 msgid "Xylophonist"
@@ -8586,23 +8586,23 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ649"
 msgid "X-ray technician"
-msgstr ""
+msgstr "Teknisi sinar-X"
 
 msgctxt "model:gnuhealth.occupation,name:occ65"
 msgid "Comedian"
-msgstr ""
+msgstr "Pelawak"
 
 msgctxt "model:gnuhealth.occupation,name:occ651"
 msgid "Youth worker"
-msgstr ""
+msgstr "Pekerja muda"
 
 msgctxt "model:gnuhealth.occupation,name:occ652"
 msgid "Zookeeper"
-msgstr ""
+msgstr "Penjaga kebun binatang"
 
 msgctxt "model:gnuhealth.occupation,name:occ653"
 msgid "Zoologist"
-msgstr ""
+msgstr "Ahli ilmu hewan"
 
 msgctxt "model:gnuhealth.occupation,name:occ66"
 msgid "Compasssmith"
@@ -8654,7 +8654,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ77"
 msgid "Consultant"
-msgstr ""
+msgstr "Konsultan"
 
 msgctxt "model:gnuhealth.occupation,name:occ78"
 msgid "Contract Manager"
@@ -8710,7 +8710,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ9"
 msgid "Artist"
-msgstr ""
+msgstr "Artis"
 
 msgctxt "model:gnuhealth.occupation,name:occ90"
 msgid "Court jester"
@@ -8762,23 +8762,23 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:"
 msgid "Health Conditions"
-msgstr ""
+msgstr "Kondisi Kesehatan"
 
 msgctxt "model:gnuhealth.pathology.category,name:"
 msgid "Disease Categories"
-msgstr ""
+msgstr "Kategori Penyakit"
 
 msgctxt "model:gnuhealth.pathology.group,name:"
 msgid "Pathology Groups"
-msgstr ""
+msgstr "Kelompok Patologi"
 
 msgctxt "model:gnuhealth.pathology.group,name:ALLERGIC"
 msgid "ALLERGIC"
-msgstr ""
+msgstr "ALERGI"
 
 msgctxt "model:gnuhealth.pathology.group,name:AUTOIMMUNE"
 msgid "AUTOIMMUNE"
-msgstr ""
+msgstr "AUTOIMUN"
 
 msgctxt "model:gnuhealth.pathology.group,name:CONNECTIVE"
 msgid "CONNECTIVE TISSUE and MUSCULOSKELETAL"
@@ -8818,7 +8818,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology.group,name:NUTRITION"
 msgid "NUTRITION"
-msgstr ""
+msgstr "NUTRISI"
 
 msgctxt "model:gnuhealth.pathology.group,name:OBSGYN"
 msgid "GYNECOLOGY and OBSTETRICS"
@@ -8874,11 +8874,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.person_name,name:"
 msgid "Person Name"
-msgstr ""
+msgstr "Nama Pasien"
 
 msgctxt "model:gnuhealth.pol,name:"
 msgid "Page of Life"
-msgstr ""
+msgstr "Riwayat Hidup"
 
 msgctxt "model:gnuhealth.prescription.line,name:"
 msgid "Prescription Line"
@@ -8918,15 +8918,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:11"
 msgid "Dermatology"
-msgstr ""
+msgstr "Dermatologi"
 
 msgctxt "model:gnuhealth.specialty,name:12"
 msgid "Nutrition"
-msgstr ""
+msgstr "Nutrisi"
 
 msgctxt "model:gnuhealth.specialty,name:13"
 msgid "Embryology"
-msgstr ""
+msgstr "Embriologi"
 
 msgctxt "model:gnuhealth.specialty,name:14"
 msgid "Emergency medicine"
@@ -8934,7 +8934,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:15"
 msgid "Endocrinology"
-msgstr ""
+msgstr "Endokrinologi"
 
 msgctxt "model:gnuhealth.specialty,name:16"
 msgid "Family Medicine"
@@ -8942,51 +8942,51 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:17"
 msgid "Forensic Medicine"
-msgstr ""
+msgstr "Kedokteran Forensik"
 
 msgctxt "model:gnuhealth.specialty,name:18"
 msgid "Gastroenterology"
-msgstr ""
+msgstr "Gastroenterologi"
 
 msgctxt "model:gnuhealth.specialty,name:19"
 msgid "General surgery"
-msgstr ""
+msgstr "Bedah umum"
 
 msgctxt "model:gnuhealth.specialty,name:2"
 msgid "Anatomy"
-msgstr ""
+msgstr "Anatomi"
 
 msgctxt "model:gnuhealth.specialty,name:20"
 msgid "Genetics"
-msgstr ""
+msgstr "Genetik"
 
 msgctxt "model:gnuhealth.specialty,name:21"
 msgid "Geriatrics"
-msgstr ""
+msgstr "Geriatri"
 
 msgctxt "model:gnuhealth.specialty,name:22"
 msgid "Gynecology"
-msgstr ""
+msgstr "Ginekologi"
 
 msgctxt "model:gnuhealth.specialty,name:23"
 msgid "Hematology"
-msgstr ""
+msgstr "Hematologi"
 
 msgctxt "model:gnuhealth.specialty,name:24"
 msgid "Hepatology"
-msgstr ""
+msgstr "Hepatologi"
 
 msgctxt "model:gnuhealth.specialty,name:25"
 msgid "Histology"
-msgstr ""
+msgstr "Histologi"
 
 msgctxt "model:gnuhealth.specialty,name:26"
 msgid "Immunology"
-msgstr ""
+msgstr "Imunologi"
 
 msgctxt "model:gnuhealth.specialty,name:27"
 msgid "Infectious disease"
-msgstr ""
+msgstr "Penyakit menular"
 
 msgctxt "model:gnuhealth.specialty,name:28"
 msgid "Intensive care medicine"
@@ -8998,19 +8998,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:3"
 msgid "Andrology"
-msgstr ""
+msgstr "Andrologi"
 
 msgctxt "model:gnuhealth.specialty,name:30"
 msgid "Nephrology"
-msgstr ""
+msgstr "Nefrologi"
 
 msgctxt "model:gnuhealth.specialty,name:31"
 msgid "Neurology"
-msgstr ""
+msgstr "Neurologi"
 
 msgctxt "model:gnuhealth.specialty,name:32"
 msgid "Neurosurgery"
-msgstr ""
+msgstr "Bedah saraf"
 
 msgctxt "model:gnuhealth.specialty,name:33"
 msgid "Nursing"
@@ -9018,47 +9018,47 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:34"
 msgid "Obstetrics and gynecology"
-msgstr ""
+msgstr "Obstetri dan Ginekologi"
 
 msgctxt "model:gnuhealth.specialty,name:35"
 msgid "Oncology"
-msgstr ""
+msgstr "Onkologi"
 
 msgctxt "model:gnuhealth.specialty,name:36"
 msgid "Ophthalmology"
-msgstr ""
+msgstr "Oftalmologi"
 
 msgctxt "model:gnuhealth.specialty,name:37"
 msgid "Orthopedic surgery"
-msgstr ""
+msgstr "Bedah ortopedi"
 
 msgctxt "model:gnuhealth.specialty,name:38"
 msgid "Otolaryngology - ENT"
-msgstr ""
+msgstr "Otolaringologi - THT"
 
 msgctxt "model:gnuhealth.specialty,name:39"
 msgid "Palliative care"
-msgstr ""
+msgstr "Perawatan paliatif"
 
 msgctxt "model:gnuhealth.specialty,name:4"
 msgid "Alternative Medicine"
-msgstr ""
+msgstr "Pengobatan Alternatif"
 
 msgctxt "model:gnuhealth.specialty,name:40"
 msgid "Pathology"
-msgstr ""
+msgstr "Patologi"
 
 msgctxt "model:gnuhealth.specialty,name:41"
 msgid "Pediatrics"
-msgstr ""
+msgstr "Pediatri"
 
 msgctxt "model:gnuhealth.specialty,name:42"
 msgid "Pediatric surgery"
-msgstr ""
+msgstr "Bedah anak"
 
 msgctxt "model:gnuhealth.specialty,name:43"
 msgid "Pharmacology"
-msgstr ""
+msgstr "Farmakologi"
 
 msgctxt "model:gnuhealth.specialty,name:44"
 msgid "Physical medicine and rehabilitation"
@@ -9122,7 +9122,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:58"
 msgid "Urology"
-msgstr ""
+msgstr "Urologi"
 
 msgctxt "model:gnuhealth.specialty,name:59"
 msgid "Vascular surgery"
@@ -9170,7 +9170,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:7"
 msgid "Cardiology"
-msgstr ""
+msgstr "Kardiologi"
 
 msgctxt "model:gnuhealth.specialty,name:70"
 msgid "Primary Care"
@@ -10662,7 +10662,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid "Done"
-msgstr ""
+msgstr "Selesai"
 
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid "Free"
@@ -10682,11 +10682,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.appointment,urgency:"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 msgctxt "selection:gnuhealth.appointment,urgency:"
 msgid "Urgent"
-msgstr ""
+msgstr "Darurat"
 
 msgctxt "selection:gnuhealth.appointment,visit_type:"
 msgid ""
@@ -10718,11 +10718,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.appointment.report,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Perempuan"
 
 msgctxt "selection:gnuhealth.appointment.report,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Laki-laki"
 
 msgctxt "selection:gnuhealth.birth_certificate,state:"
 msgid ""
@@ -10730,7 +10730,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.birth_certificate,state:"
 msgid "Done"
-msgstr ""
+msgstr "Selesai"
 
 msgctxt "selection:gnuhealth.birth_certificate,state:"
 msgid "Draft"
@@ -10750,15 +10750,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.death_certificate,place_of_death:"
 msgid "Home"
-msgstr ""
+msgstr "Rumah"
 
 msgctxt "selection:gnuhealth.death_certificate,place_of_death:"
 msgid "Public place"
-msgstr ""
+msgstr "Tempat publik"
 
 msgctxt "selection:gnuhealth.death_certificate,place_of_death:"
 msgid "Work"
-msgstr ""
+msgstr "Tempat kerja"
 
 msgctxt "selection:gnuhealth.death_certificate,state:"
 msgid ""
@@ -10766,15 +10766,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.death_certificate,state:"
 msgid "Done"
-msgstr ""
+msgstr "Selesai"
 
 msgctxt "selection:gnuhealth.death_certificate,state:"
 msgid "Draft"
-msgstr ""
+msgstr "Draft"
 
 msgctxt "selection:gnuhealth.death_certificate,state:"
 msgid "Signed"
-msgstr ""
+msgstr "Ditandatangani"
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid ""
@@ -10782,23 +10782,23 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Homicide"
-msgstr ""
+msgstr "Pembunuhan"
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Natural"
-msgstr ""
+msgstr "Alami"
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Pending Investigation"
-msgstr ""
+msgstr "Investigasi Tertunda"
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Suicide"
-msgstr ""
+msgstr "Bunuh diri"
 
 msgctxt "selection:gnuhealth.death_certificate,type_of_death:"
 msgid "Undetermined"
-msgstr ""
+msgstr "Belum ditentukan"
 
 msgctxt "selection:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid ""
@@ -10806,23 +10806,23 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid "days"
-msgstr ""
+msgstr "hari"
 
 msgctxt "selection:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid "hours"
-msgstr ""
+msgstr "jam"
 
 msgctxt "selection:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid "minutes"
-msgstr ""
+msgstr "menit"
 
 msgctxt "selection:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid "months"
-msgstr ""
+msgstr "bulan"
 
 msgctxt "selection:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid "years"
-msgstr ""
+msgstr "tahun"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid ""
@@ -10830,15 +10830,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Apartment"
-msgstr ""
+msgstr "Apartemen"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Building"
-msgstr ""
+msgstr "Bangunan"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Factory"
-msgstr ""
+msgstr "Pabrik"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Mobile House"
@@ -10886,19 +10886,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.du,materials:"
 msgid "Concrete"
-msgstr ""
+msgstr "Beton"
 
 msgctxt "selection:gnuhealth.du,materials:"
 msgid "Mud / Straw"
-msgstr ""
+msgstr "Lumpur / Jerami"
 
 msgctxt "selection:gnuhealth.du,materials:"
 msgid "Stone"
-msgstr ""
+msgstr "Batu"
 
 msgctxt "selection:gnuhealth.du,materials:"
 msgid "Wood"
-msgstr ""
+msgstr "Kayu"
 
 msgctxt "selection:gnuhealth.du,roof_type:"
 msgid ""
@@ -12220,15 +12220,15 @@ msgstr ""
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Divorced"
-msgstr ""
+msgstr "Bercerai"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Married"
-msgstr ""
+msgstr "Menikah"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Separated"
-msgstr ""
+msgstr "Berpisah"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Single"
@@ -12236,7 +12236,7 @@ msgstr "Lajang"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Widowed"
-msgstr ""
+msgstr "Menjanda"
 
 msgctxt "selection:party.party,name_representation:"
 msgid ""
@@ -12260,15 +12260,15 @@ msgstr ""
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Checked in"
-msgstr ""
+msgstr "Check in"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Date"
-msgstr ""
+msgstr "Tanggal"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Information"
-msgstr ""
+msgstr "Informasi"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "No show"
@@ -12292,7 +12292,7 @@ msgstr "Utama"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Observations"
-msgstr ""
+msgstr "Observasi"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Sign"
@@ -12308,23 +12308,23 @@ msgstr ""
 
 msgctxt "view:gnuhealth.check_immunization_status.init:"
 msgid "Immunization status Report"
-msgstr ""
+msgstr "Laporan status imunisasi"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Cause"
-msgstr ""
+msgstr "Sebab"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Main"
-msgstr ""
+msgstr "Utama"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Observations"
-msgstr ""
+msgstr "Observasi"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Other"
-msgstr ""
+msgstr "Lainnya"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Place"
@@ -12344,11 +12344,11 @@ msgstr ""
 
 msgctxt "view:gnuhealth.du:"
 msgid "Infrastructure"
-msgstr ""
+msgstr "Infrastruktur"
 
 msgctxt "view:gnuhealth.family:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Info Ekstra"
 
 msgctxt "view:gnuhealth.family:"
 msgid "Members"
@@ -12356,7 +12356,7 @@ msgstr "Anggota"
 
 msgctxt "view:gnuhealth.healthprofessional:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Info Ekstra"
 
 msgctxt "view:gnuhealth.hospital.bed:"
 msgid "Click when Bed has been fixed / cleaned"
@@ -12384,11 +12384,11 @@ msgstr ""
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Dosage"
-msgstr ""
+msgstr "Dosis"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Info Ekstra"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Form"
@@ -12412,15 +12412,15 @@ msgstr ""
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Overdose"
-msgstr ""
+msgstr "Overdosis"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Pregnancy"
-msgstr ""
+msgstr "Kehamilan"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Presentation"
-msgstr ""
+msgstr "Presentasi"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Product"
@@ -12432,23 +12432,23 @@ msgstr ""
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Solution"
-msgstr ""
+msgstr "Solusi"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Storage"
-msgstr ""
+msgstr "Penyimpanan"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "strength"
-msgstr ""
+msgstr "kekuatan"
 
 msgctxt "view:gnuhealth.pathology.group:"
 msgid "Extra Information"
-msgstr ""
+msgstr "Informasi Ekstra"
 
 msgctxt "view:gnuhealth.pathology:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Info Ekstra"
 
 msgctxt "view:gnuhealth.pathology:"
 msgid "Genetics"
@@ -12480,11 +12480,11 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.disease:"
 msgid "Therapy"
-msgstr ""
+msgstr "Terapi"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Anthropometry"
-msgstr ""
+msgstr "Antropometri"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Chief Complaint"
@@ -12524,7 +12524,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Glucose and Lipids Profile"
-msgstr ""
+msgstr "Profil Glukosa dan Lipid"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Header"
@@ -12568,15 +12568,15 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Time"
-msgstr ""
+msgstr "Waktu"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Treatment Plan"
-msgstr ""
+msgstr "Rencana Perawatan"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Vital Signs"
-msgstr ""
+msgstr "Tanda-tanda Vital"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Administration"
@@ -12608,7 +12608,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Notes"
-msgstr ""
+msgstr "Catatan"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Prescribed or Reviewed by Health Professional"
@@ -12620,15 +12620,15 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Treatment duration"
-msgstr ""
+msgstr "Durasi perawatan"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Treatment period"
-msgstr ""
+msgstr "Periode perawatan"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Critical Information"
@@ -12660,7 +12660,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.pol:"
 msgid "Context"
-msgstr ""
+msgstr "Konteks"
 
 msgctxt "view:gnuhealth.pol:"
 msgid "Extended Information"
@@ -12684,7 +12684,7 @@ msgstr "Medikasi dan Kondisi"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Misc"
-msgstr ""
+msgstr "Lainnya"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Specific Dosage"
