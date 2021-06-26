@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-13 06:32+0000\n"
+"PO-Revision-Date: 2021-06-27 07:32+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gnu-health/"
 "health/id/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.7.1-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -21,43 +21,43 @@ msgstr "Sertifikat sudah ada !"
 
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Unit harus unik!"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "KODE harus unik!"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Unit harus unik!"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "KODE harus unik!"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Nama harus unik!"
 
 msgctxt "error:gnuhealth.du:"
 msgid "The Domiciliary Unit must be unique !"
-msgstr ""
+msgstr "Unit Domisili harus unik!"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "KODE harus unik!"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Nama harus unik!"
 
 msgctxt "error:gnuhealth.family:"
 msgid "The Family Code must be unique !"
-msgstr ""
+msgstr "Kode Keluarga harus unik!"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The LICENSE ID must be unique"
-msgstr ""
+msgstr "ID LISENSI harus unik"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
@@ -109,11 +109,11 @@ msgstr ""
 
 msgctxt "error:gnuhealth.institution:"
 msgid "This CODE already exists !"
-msgstr ""
+msgstr "KODE ini sudah ada !"
 
 msgctxt "error:gnuhealth.institution:"
 msgid "This Institution already exists !"
-msgstr ""
+msgstr "Institusi ini sudah ada !"
 
 msgctxt "error:gnuhealth.insurance:"
 msgid "The number must be unique per insurance company"
@@ -12492,11 +12492,11 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Clinical"
-msgstr ""
+msgstr "Klinis"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Clinical and Physical exam"
-msgstr ""
+msgstr "Pemeriksaan klinis dan fisik"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Date"
@@ -12532,23 +12532,23 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Information on Diagnosis"
-msgstr ""
+msgstr "Informasi Diagnosis"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Main Condition"
-msgstr ""
+msgstr "Kondisi Utama"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Main Info"
-msgstr ""
+msgstr "Info Utama"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Mental"
-msgstr ""
+msgstr "Mental"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Mental Assessment and Impairments"
-msgstr ""
+msgstr "Penilaian Mental dan Gangguan"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Nutrition"
@@ -12588,11 +12588,11 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Common Dosage"
-msgstr ""
+msgstr "Dosis Umum"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Dosage"
-msgstr ""
+msgstr "Dosis"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Extra Info"
@@ -12604,7 +12604,7 @@ msgstr "Info Umum"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Medication"
-msgstr ""
+msgstr "Medikasi"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Notes"
@@ -12648,15 +12648,15 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Medication"
-msgstr ""
+msgstr "Medikasi"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Misc"
-msgstr ""
+msgstr "Lainnya"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Notepad"
-msgstr ""
+msgstr "Catatan"
 
 msgctxt "view:gnuhealth.pol:"
 msgid "Context"
@@ -12700,11 +12700,11 @@ msgstr "Buat"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Create prescription ?"
-msgstr ""
+msgstr "Buat resep?"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Create the prescription"
-msgstr ""
+msgstr "Membuat resep"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Notes"
