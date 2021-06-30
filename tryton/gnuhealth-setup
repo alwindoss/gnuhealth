@@ -45,7 +45,7 @@ WHITE="\n$(tput setaf 7)"
 INSTDIR="$PWD"
 GNUHEALTH_INST_DIR="$PWD"
 GNUHEALTH_VERSION=$(cat version)
-TRYTON_VERSION="5.0"
+TRYTON_VERSION="6.0"
 
 TRYTON_BASE_URL="https://downloads-cdn.tryton.org"
 
