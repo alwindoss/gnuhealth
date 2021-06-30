@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <tryton>
-<data noupdate="0" skiptest="1">
+<data noupdate="0">
 <!-- Genes and associated proteins from UniProt -->
 <record model="gnuhealth.disease.gene" id="health_genetics.AARS2">
 	<field name="protein_name">Q5JTZ9</field>

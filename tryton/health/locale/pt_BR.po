@@ -1,13 +1,15 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-12-28 00:01+0000\n"
-"Last-Translator: rvnovaes <rvnovaes@gmail.com>\n"
+"PO-Revision-Date: 2020-12-06 22:29+0000\n"
+"Last-Translator: José Bran <greenleaves@disroot.org>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health/pt_BR/>\n"
 "Language: pt_BR\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4-dev\n"
 "X-POOTLE-MTIME: 1451260884.0\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
@@ -56,11 +58,11 @@ msgstr "O código da família deve ser único!"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The LICENSE ID must be unique"
-msgstr ""
+msgstr "O ID da LICENÇA deve ser único"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
-msgstr ""
+msgstr "O professional de saúde deve ser único"
 
 msgctxt "error:gnuhealth.hospital.bed:"
 msgid "The Bed must be unique per Health Center"
@@ -68,7 +70,7 @@ msgstr "O leito deve ser único por Centro de Saúde"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building code must be unique per Health Center"
-msgstr ""
+msgstr "O código do Edifício deve ser único por Centro de Saúde"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building name must be unique per Health Center"
@@ -172,7 +174,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.patient.ecg:"
 msgid "No health professional associated to this user"
-msgstr ""
+msgstr "Nenhum professional de saúde associado a este usuário"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid ""
@@ -188,7 +190,7 @@ msgstr "Nenhum profissional de saúde está associado a este usuário"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "The evaluation code must be unique !"
-msgstr ""
+msgstr "O código de avaliação deve ser único!"
 
 msgctxt "error:gnuhealth.patient.medication:"
 msgid ""
@@ -241,7 +243,7 @@ msgstr "A IDUP deve ser única"
 
 msgctxt "error:party.party:"
 msgid "This internal user is already assigned to a party"
-msgstr ""
+msgstr "Este usuário interno já pertence a uma entidade"
 
 msgctxt "error:wizard.gnuhealth.appointment.evaluation:"
 msgid "You need to select one Appointment record"
@@ -255,9 +257,10 @@ msgctxt "field:gnuhealth.appointment,appointment_type:"
 msgid "Type"
 msgstr "Tipo"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,checked_in_date:"
 msgid "Checked-in Time"
-msgstr ""
+msgstr "Hora de Entrada"
 
 msgctxt "field:gnuhealth.appointment,comments:"
 msgid "Comments"
@@ -337,23 +340,23 @@ msgstr "Data"
 
 msgctxt "field:gnuhealth.appointment.report,appointment_date_time:"
 msgid "Date and Time"
-msgstr "Data e Hora"
+msgstr "Data e hora"
 
 msgctxt "field:gnuhealth.appointment.report,create_date:"
 msgid "Create Date"
-msgstr "Data de criação"
+msgstr "Criar data"
 
 msgctxt "field:gnuhealth.appointment.report,create_uid:"
 msgid "Create User"
-msgstr "Criado por"
+msgstr "Criar usuário"
 
 msgctxt "field:gnuhealth.appointment.report,diagnosis:"
 msgid "Main Codition"
-msgstr ""
+msgstr "Doença principal"
 
 msgctxt "field:gnuhealth.appointment.report,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Gênero"
 
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
@@ -714,7 +717,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.disease_group.members,name:"
 msgid "Condition"
-msgstr ""
+msgstr "Condição"
 
 msgctxt "field:gnuhealth.disease_group.members,rec_name:"
 msgid "Name"
@@ -1262,7 +1265,7 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.hospital.or,state:"
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 msgctxt "field:gnuhealth.hospital.or,unit:"
 msgid "Unit"
@@ -1346,7 +1349,7 @@ msgstr "Número do Andar"
 
 msgctxt "field:gnuhealth.hospital.ward,gender:"
 msgid "Gender"
-msgstr "Sexo"
+msgstr "Gênero"
 
 msgctxt "field:gnuhealth.hospital.ward,guest_sofa:"
 msgid "Guest sofa-bed"
@@ -1870,7 +1873,7 @@ msgstr "Instruções de Dosagem"
 
 msgctxt "field:gnuhealth.medicament,form:"
 msgid "Form"
-msgstr ""
+msgstr "Formulário"
 
 msgctxt "field:gnuhealth.medicament,id:"
 msgid "ID"
@@ -1902,7 +1905,7 @@ msgstr "Gestante e Lactante"
 
 msgctxt "field:gnuhealth.medicament,pregnancy_cat_icon:"
 msgid "Preg. Cat. Icon"
-msgstr ""
+msgstr "Icone categoria gestação"
 
 msgctxt "field:gnuhealth.medicament,pregnancy_category:"
 msgid "Pregnancy Category"
@@ -1922,15 +1925,16 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.medicament,route:"
 msgid "Administration Route"
-msgstr ""
+msgstr "Via de Administração"
 
 msgctxt "field:gnuhealth.medicament,storage:"
 msgid "Storage Conditions"
 msgstr "Condições de Armazenamento"
 
+#, fuzzy
 msgctxt "field:gnuhealth.medicament,strength:"
 msgid "Strength"
-msgstr ""
+msgstr "Força"
 
 msgctxt "field:gnuhealth.medicament,therapeutic_action:"
 msgid "Therapeutic effect"
@@ -1938,7 +1942,7 @@ msgstr "Efeito terapêutico"
 
 msgctxt "field:gnuhealth.medicament,unit:"
 msgid "dose unit"
-msgstr ""
+msgstr "Unidade de dose"
 
 msgctxt "field:gnuhealth.medicament,write_date:"
 msgid "Write Date"
@@ -2270,7 +2274,7 @@ msgstr "Consultas"
 
 msgctxt "field:gnuhealth.patient,biological_sex:"
 msgid "Biological Sex"
-msgstr ""
+msgstr "Sexo Biológico"
 
 msgctxt "field:gnuhealth.patient,blood_type:"
 msgid "Blood Type"
@@ -2298,7 +2302,7 @@ msgstr "Informação textual livre não incluída no resumo automático"
 
 msgctxt "field:gnuhealth.patient,critical_summary:"
 msgid "Important health conditions related to this patient"
-msgstr ""
+msgstr "Condições de saúde importantes relacionados a este paciente"
 
 msgctxt "field:gnuhealth.patient,current_address:"
 msgid "Temp. Addr"
@@ -2314,7 +2318,7 @@ msgstr "Falecido"
 
 msgctxt "field:gnuhealth.patient,diseases:"
 msgid "Conditions"
-msgstr ""
+msgstr "Condições"
 
 msgctxt "field:gnuhealth.patient,dob:"
 msgid "DoB"
@@ -2330,7 +2334,7 @@ msgstr "Família"
 
 msgctxt "field:gnuhealth.patient,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Gênero"
 
 msgctxt "field:gnuhealth.patient,general_info:"
 msgid "General Information"
@@ -2462,7 +2466,7 @@ msgstr "Paciente"
 
 msgctxt "field:gnuhealth.patient.disease,pathology:"
 msgid "Condition"
-msgstr ""
+msgstr "Condição"
 
 msgctxt "field:gnuhealth.patient.disease,pcs_code:"
 msgid "Code"
@@ -2478,7 +2482,7 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.patient.disease,related_evaluations:"
 msgid "Related Evaluations"
-msgstr ""
+msgstr "Exames Relacionados"
 
 msgctxt "field:gnuhealth.patient.disease,short_comment:"
 msgid "Remarks"
@@ -2486,7 +2490,7 @@ msgstr "Observação"
 
 msgctxt "field:gnuhealth.patient.disease,status:"
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 msgctxt "field:gnuhealth.patient.disease,treatment_description:"
 msgid "Treatment Description"
@@ -2506,19 +2510,19 @@ msgstr "Editado por"
 
 msgctxt "field:gnuhealth.patient.ecg,axis:"
 msgid "Axis"
-msgstr ""
+msgstr "Eixo"
 
 msgctxt "field:gnuhealth.patient.ecg,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Crear Data"
 
 msgctxt "field:gnuhealth.patient.ecg,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Criar Usuário"
 
 msgctxt "field:gnuhealth.patient.ecg,ecg_date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.patient.ecg,ecg_strip:"
 msgid "ECG Strip"

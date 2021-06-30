@@ -1,42 +1,51 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-06-25 08:10+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
+"health_ophthalmology/fr/>\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,computed_age:"
 msgid "Age"
-msgstr ""
+msgstr "Âge"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Créer une date"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Créé par"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,findings:"
 msgid "Findings"
-msgstr ""
+msgstr "Résultats"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Sexe"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,health_professional:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Professionnel de santé"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,iop_method:"
 msgid "Method"
-msgstr ""
+msgstr "Méthode"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,laxis:"
 msgid "Axis"
-msgstr ""
+msgstr "Axe"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,lbcva:"
 msgid "LBCVA"
@@ -44,7 +53,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,lbcva_axis:"
 msgid "Axis"
-msgstr ""
+msgstr "Axe"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,lbcva_cylinder:"
 msgid "CYL"
@@ -96,15 +105,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Patient"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,raxis:"
 msgid "Axis"
-msgstr ""
+msgstr "Axe"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,rbcva:"
 msgid "RBCVA"
@@ -112,7 +121,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,rbcva_axis:"
 msgid "Axis"
-msgstr ""
+msgstr "Axe"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,rbcva_cylinder:"
 msgid "CYL"
@@ -168,51 +177,51 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,signed_by:"
 msgid "Signed by"
-msgstr ""
+msgstr "Signé par"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,state:"
 msgid "State"
-msgstr ""
+msgstr "État"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,visit_date:"
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Date de Mise à Jour"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Mise à Jour par"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,affected_eye:"
 msgid "Eye"
-msgstr ""
+msgstr "Oeil"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Date de création"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Créé par"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Structure"
-msgstr ""
+msgstr "Structure"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,finding:"
 msgid "Finding"
-msgstr ""
+msgstr "Résultat"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,name:"
 msgid "Evaluation"
-msgstr ""
+msgstr "Évaluation"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,rec_name:"
 msgid "Name"
@@ -220,43 +229,43 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.findings,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Date de Mise à Jour"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Mise à Jour par"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,computed_age:"
 msgid "Computed patient age at the moment of the evaluation"
-msgstr ""
+msgstr "Age calculé du patient au moment de l'évaluation"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,health_professional:"
 msgid "Health professional / Ophthalmologist / OptoMetrist"
-msgstr ""
+msgstr "Professionnel de santé/Ophtalmologiste/Optométriste"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,iop_method:"
 msgid "Tonometry / Intraocular pressure reading method"
-msgstr ""
+msgstr "Tonométrie / Méthode de lecture sous pression intraoculaire"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,laxis:"
 msgid "Left Eye Axis"
-msgstr ""
+msgstr "Axe de l'œil gauche"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lbcva:"
 msgid "Left Eye Best Corrected VA"
-msgstr ""
+msgstr "Acuité Visuelle Corrigée  de l'Oeil Gauche"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lbcva_axis:"
 msgid "Left Eye Best Corrected Axis"
-msgstr ""
+msgstr "Axe de l'oeil gauche corrigé au mieux"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lbcva_cylinder:"
 msgid "Left Eye Best Corrected Cylinder"
-msgstr ""
+msgstr "Cylindre de l'oeil gauche corrigé au mieux"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lbcva_nv:"
 msgid "Left Eye Best Corrected Near Vision"
-msgstr ""
+msgstr "Vision de près de l'oeil gauche corrigée au mieux"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lbcva_nv_add:"
 msgid "Left Eye Best Corrected NV Add"
@@ -264,23 +273,23 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lbcva_spherical:"
 msgid "Left Eye Best Corrected Spherical"
-msgstr ""
+msgstr "Sphère de l'oeil gauche corrigée au mieux"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lcylinder:"
 msgid "Left Eye Cylinder"
-msgstr ""
+msgstr "Cylindre de l'oeil gauche"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,ldva:"
 msgid "Left Eye Vision of Patient without aid"
-msgstr ""
+msgstr "Vision oculaire gauche du patient sans aide"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,ldva_aid:"
 msgid "Vision with glasses or contact lens"
-msgstr ""
+msgstr "Vision avec lunettes ou lentilles de contact"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,ldva_pinhole:"
 msgid "Left Eye Vision Using Pin Hole"
-msgstr ""
+msgstr "Vision de l'œil gauche à l'aide d'un trou d'épingle"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,liop:"
 msgid "Left Intraocular Pressure in mmHg"
@@ -288,7 +297,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lnv:"
 msgid "Left Eye Near Vision"
-msgstr ""
+msgstr "Vision de près de l'oeil gauche"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lnv_add:"
 msgid "Left Eye Best Corrected NV Add"
@@ -296,27 +305,27 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lspherical:"
 msgid "Left Eye Spherical"
-msgstr ""
+msgstr "Sphère de l'oeil gauche"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,raxis:"
 msgid "Right Eye Axis"
-msgstr ""
+msgstr "Axe de l'œil droit"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rbcva:"
 msgid "Right Eye Best Corrected VA"
-msgstr ""
+msgstr "Accuité Visuelle Corrigée au mieux de l'Oeil droit"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rbcva_axis:"
 msgid "Right Eye Best Corrected Axis"
-msgstr ""
+msgstr "Axe de l'oeil droit corrigé au mieux"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rbcva_cylinder:"
 msgid "Right Eye Best Corrected Cylinder"
-msgstr ""
+msgstr "Cylindre de l'oeil droit corrigé au mieux"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rbcva_nv:"
 msgid "Right Eye Best Corrected Near Vision"
-msgstr ""
+msgstr "Vision de près de l'oeil droit corrigée au mieux"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rbcva_nv_add:"
 msgid "Right Eye Best Corrected NV Add"
@@ -324,19 +333,19 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rbcva_spherical:"
 msgid "Right Eye Best Corrected Spherical"
-msgstr ""
+msgstr "Sphère de l'oeil droit corrigé au mieux"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rcylinder:"
 msgid "Right Eye Cylinder"
-msgstr ""
+msgstr "Cylindre de l'oeil droit"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rdva:"
 msgid "Right Eye Vision of Patient without aid"
-msgstr ""
+msgstr "Vision de l'œil droit du patient sans aide"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rdva_aid:"
 msgid "Vision with glasses or contact lens"
-msgstr ""
+msgstr "Vision avec lunettes ou lentilles de contact"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rdva_pinhole:"
 msgid "Right Eye Vision Using Pin Hole"
@@ -348,7 +357,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rnv:"
 msgid "Right Eye Near Vision"
-msgstr ""
+msgstr "Vision de près de l'œil droit"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rnv_add:"
 msgid "Right Eye Best Corrected NV Add"
@@ -356,11 +365,11 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rspherical:"
 msgid "Right Eye Spherical"
-msgstr ""
+msgstr "Sphère de l'oeil droit"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,signed_by:"
 msgid "Health Professional that finished the patient evaluation"
-msgstr ""
+msgstr "Professionnel de la santé qui a terminé l'évaluation du patient"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,visit_date:"
 msgid "Date of Consultation"
@@ -384,7 +393,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_evaluation_form1"
 msgid "Ophthalmologic Evaluations"
-msgstr ""
+msgstr "Évaluations Ophtalmologique "
 
 msgctxt "model:ir.action,name:act_ophthal_form"
 msgid "Ophthalmology Evaluation"
@@ -396,7 +405,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_ophthalmology_evaluation_menu"
 msgid "Ophthalmologic evaluations"
-msgstr ""
+msgstr "Évaluations Ophtalmologique"
 
 msgctxt "report:ophthalmology.card:"
 msgid "ADD"
@@ -492,11 +501,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Féminin"
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Masculin"
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,iop_method:"
 msgid ""
@@ -1192,11 +1201,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,state:"
 msgid "Done"
-msgstr ""
+msgstr "Effectué"
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,state:"
 msgid "In progress"
-msgstr ""
+msgstr "En cours"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,affected_eye:"
 msgid ""
@@ -1224,11 +1233,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Conjunctiva"
-msgstr ""
+msgstr "Conjonctive"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Cornea"
-msgstr ""
+msgstr "Cornée"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Fundus Disc"
@@ -1264,11 +1273,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Other"
-msgstr ""
+msgstr "Autre"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Pupil"
-msgstr ""
+msgstr "Pupille"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Vitreous"

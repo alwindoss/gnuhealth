@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-10 17:03+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: el_GR\n"
+"PO-Revision-Date: 2021-02-09 12:34+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_inpatient/el/>\n"
+"Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 "X-POOTLE-MTIME: 1452445397.0\n"
 
 msgctxt "error:gnuhealth.bed.transfer.create:"
@@ -218,11 +220,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.inpatient.meal,diet_therapeutic:"
 msgid "Diet"
-msgstr ""
+msgstr "Δίαιτα"
 
 msgctxt "field:gnuhealth.inpatient.meal,diet_vegetarian:"
 msgid "Vegetarian"
-msgstr ""
+msgstr "Χορτοφάγος"
 
 msgctxt "field:gnuhealth.inpatient.meal,id:"
 msgid "ID"
@@ -230,15 +232,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.inpatient.meal,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Ίδρυμα"
 
 msgctxt "field:gnuhealth.inpatient.meal,name:"
 msgid "Food"
-msgstr ""
+msgstr "Τροφή"
 
 msgctxt "field:gnuhealth.inpatient.meal,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.inpatient.meal,write_date:"
 msgid "Write Date"
@@ -250,15 +252,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.inpatient.meal.order,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Ημερομηνία δημιουργίας"
 
 msgctxt "field:gnuhealth.inpatient.meal.order,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία Χρήστη"
 
 msgctxt "field:gnuhealth.inpatient.meal.order,health_professional:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Επαγγελματίας Υγείας"
 
 msgctxt "field:gnuhealth.inpatient.meal.order,id:"
 msgid "ID"
@@ -418,7 +420,7 @@ msgstr "Ένδειξη"
 
 msgctxt "field:gnuhealth.inpatient.medication,is_active:"
 msgid "Active"
-msgstr "Ενεργός"
+msgstr "Ενεργό"
 
 msgctxt "field:gnuhealth.inpatient.medication,log_history:"
 msgid "Log History"

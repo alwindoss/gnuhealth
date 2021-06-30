@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-02-09 12:34+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_services/el/>\n"
+"Language: el\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 msgctxt "error:gnuhealth.health_service:"
 msgid "The Service ID must be unique"
@@ -20,11 +29,11 @@ msgstr ""
 
 msgctxt "field:account.invoice,health_service:"
 msgid "Health Service"
-msgstr ""
+msgstr "Υπηρεσία υγείας"
 
 msgctxt "field:account.invoice,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Ασθενής"
 
 msgctxt "field:gnuhealth.health_service,create_date:"
 msgid "Create Date"
@@ -36,43 +45,43 @@ msgstr ""
 
 msgctxt "field:gnuhealth.health_service,desc:"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 msgctxt "field:gnuhealth.health_service,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.health_service,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Ίδρυμα"
 
 msgctxt "field:gnuhealth.health_service,invoice_to:"
 msgid "Invoice to"
-msgstr ""
+msgstr "Τιμολόγιο σε"
 
 msgctxt "field:gnuhealth.health_service,name:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.health_service,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Ασθενής"
 
 msgctxt "field:gnuhealth.health_service,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.health_service,service_date:"
 msgid "Date"
-msgstr ""
+msgstr "Ημερομηνία"
 
 msgctxt "field:gnuhealth.health_service,service_line:"
 msgid "Service Line"
-msgstr ""
+msgstr "Γραμμή υπηρεσίας"
 
 msgctxt "field:gnuhealth.health_service,state:"
 msgid "State"
-msgstr ""
+msgstr "Κατάσταση"
 
 msgctxt "field:gnuhealth.health_service,write_date:"
 msgid "Write Date"
@@ -84,51 +93,51 @@ msgstr ""
 
 msgctxt "field:gnuhealth.health_service.line,appointment:"
 msgid "Appointment"
-msgstr ""
+msgstr "Ραντεβού"
 
 msgctxt "field:gnuhealth.health_service.line,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.health_service.line,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.health_service.line,desc:"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 msgctxt "field:gnuhealth.health_service.line,from_date:"
 msgid "From"
-msgstr ""
+msgstr "Από"
 
 msgctxt "field:gnuhealth.health_service.line,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.health_service.line,name:"
 msgid "Service"
-msgstr ""
+msgstr "Υπηρεσία"
 
 msgctxt "field:gnuhealth.health_service.line,product:"
 msgid "Product"
-msgstr ""
+msgstr "Προϊόν"
 
 msgctxt "field:gnuhealth.health_service.line,qty:"
 msgid "Qty"
-msgstr ""
+msgstr "Τεμ"
 
 msgctxt "field:gnuhealth.health_service.line,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.health_service.line,to_date:"
 msgid "To"
-msgstr ""
+msgstr "Προς"
 
 msgctxt "field:gnuhealth.health_service.line,to_invoice:"
 msgid "Invoice"
-msgstr ""
+msgstr "Τιμολόγιο"
 
 msgctxt "field:gnuhealth.health_service.line,write_date:"
 msgid "Write Date"
@@ -140,7 +149,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.prescription.order,service:"
 msgid "Service"
-msgstr ""
+msgstr "Υπηρεσία"
 
 msgctxt "field:gnuhealth.sequences,health_service_sequence:"
 msgid "Health Service Sequence"
@@ -148,7 +157,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.service.invoice.init,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "help:account.invoice,health_service:"
 msgid "The service entry"
@@ -156,28 +165,30 @@ msgstr ""
 
 msgctxt "help:account.invoice,patient:"
 msgid "Patient in the invoice"
-msgstr ""
+msgstr "Ασθενής στο τιμολόγιο"
 
 msgctxt "help:gnuhealth.health_service,service_line:"
 msgid "Service Line"
-msgstr ""
+msgstr "Γραμμή υπηρεσίας"
 
 msgctxt "help:gnuhealth.health_service.line,appointment:"
 msgid ""
 "Enter or select the date / ID of the appointment related to this evaluation"
 msgstr ""
+"Εισαγάγετε ή επιλέξτε την ημερομηνία / ID του ραντεβού που σχετίζεται με "
+"αυτήν την εκτίμηση"
 
 msgctxt "help:gnuhealth.prescription.order,service:"
 msgid "Service document associated to this prescription"
-msgstr ""
+msgstr "Έγγραφο υπηρεσίας που σχετίζεται με αυτήν τη συνταγή"
 
 msgctxt "model:gnuhealth.health_service,name:"
 msgid "Health Service"
-msgstr ""
+msgstr "Υπηρεσία υγείας"
 
 msgctxt "model:gnuhealth.health_service.line,name:"
 msgid "Health Service"
-msgstr ""
+msgstr "Υπηρεσία υγείας"
 
 msgctxt "model:gnuhealth.service.invoice.init,name:"
 msgid "Create Service Invoice Init"
@@ -189,11 +200,11 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_invoice_related_form1"
 msgid "Related Invoice"
-msgstr ""
+msgstr "Σχετικό τιμολόγιο"
 
 msgctxt "model:ir.action,name:gnuhealth_action_health_service"
 msgid "Health services"
-msgstr ""
+msgstr "Υπηρεσίες υγείας"
 
 msgctxt "model:ir.action,name:gnuhealth_action_health_service_invoices"
 msgid "Created invoices"
@@ -201,15 +212,15 @@ msgstr ""
 
 msgctxt "model:ir.action,name:report_health_services_report"
 msgid "Services Report"
-msgstr ""
+msgstr "Αναφορά υπηρεσιών"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_health_service"
 msgid "Health Service"
-msgstr ""
+msgstr "Υπηρεσία υγείας"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_health_service"
 msgid "Health Service"
-msgstr ""
+msgstr "Υπηρεσία υγείας"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_health_service_invoices_menu"
 msgid "Created invoices"
@@ -217,11 +228,11 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_health_service_menu"
 msgid "Health services"
-msgstr ""
+msgstr "Υπηρεσίες υγείας"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_services_menu"
 msgid "Health Services"
-msgstr ""
+msgstr "Υπηρεσίες υγείας"
 
 msgctxt "model:res.group,name:group_health_services_admin"
 msgid "Health Services Administration"
@@ -229,11 +240,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.health_service,state:"
 msgid "Draft"
-msgstr ""
+msgstr "Πρόχειρο"
 
 msgctxt "selection:gnuhealth.health_service,state:"
 msgid "Invoiced"
-msgstr ""
+msgstr "Τιμολογημένο"
 
 msgctxt ""
 "wizard_button:gnuhealth.service.invoice.create,start,create_service_invoice:"
@@ -242,4 +253,4 @@ msgstr ""
 
 msgctxt "wizard_button:gnuhealth.service.invoice.create,start,end:"
 msgid "Cancel"
-msgstr ""
+msgstr "Άκυρο"

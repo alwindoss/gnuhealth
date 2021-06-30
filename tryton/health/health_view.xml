@@ -2148,6 +2148,22 @@
             name="GNU Health Commands" id="gnuhealth_conf_commands"
             parent="gnuhealth_conf_misc" icon="gnuhealth-list"/>
 
+
+        <!-- Modules: Include description information for each package -->
+
+        <record model="ir.ui.view" id="view_module_form">
+            <field name="model">ir.module</field>
+            <field name="inherit" ref="ir.module_view_form"/>
+            <field name="name">module_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="view_module_tree">
+            <field name="model">ir.module</field>
+            <field name="inherit" ref="ir.module_view_tree"/>
+            <field name="name">module_tree</field>
+        </record>
+
+
 <!-- GNU Health Federation Country Config -->
 
         <record model="ir.ui.view" id="gnuhealth_federation_country_config_view">

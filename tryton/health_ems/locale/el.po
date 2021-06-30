@@ -1,70 +1,79 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-02-08 13:58+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_ems/el/>\n"
+"Language: el\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 msgctxt "error:gnuhealth.ambulance:"
 msgid "This vehicle ID already exists"
-msgstr ""
+msgstr "Αυτό το αναγνωριστικό οχήματος υπάρχει ήδη"
 
 msgctxt "error:gnuhealth.support_request:"
 msgid "This Request Code already exists"
-msgstr ""
+msgstr "Αυτός ο κωδικός αιτήματος υπάρχει ήδη"
 
 msgctxt "field:gnuhealth.ambulance,active:"
 msgid "Active"
-msgstr ""
+msgstr "Ενεργό"
 
 msgctxt "field:gnuhealth.ambulance,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.ambulance,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.ambulance,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.ambulance,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.ambulance,state:"
 msgid "Status"
-msgstr ""
+msgstr "Κατάσταση"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_brand:"
 msgid "Brand"
-msgstr ""
+msgstr "Μάρκα"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_function:"
 msgid "Function"
-msgstr ""
+msgstr "Λειτουργία"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_identifier:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_model:"
 msgid "Model"
-msgstr ""
+msgstr "Μοντέλο"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_odometer:"
 msgid "Odometer"
-msgstr ""
+msgstr "Οδόμετρο"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "Παρατηρήσεις"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_station:"
 msgid "Station"
-msgstr ""
+msgstr "Σταθμός"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_type:"
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 msgctxt "field:gnuhealth.ambulance,write_date:"
 msgid "Write Date"
@@ -76,27 +85,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,ambulance:"
 msgid "Ambulance"
-msgstr ""
+msgstr "Ασθενοφόρο"
 
 msgctxt "field:gnuhealth.ambulance.support,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.ambulance.support,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.ambulance.support,healthprofs:"
 msgid "Health Professionals"
-msgstr ""
+msgstr "Επαγγελματίες υγείας"
 
 msgctxt "field:gnuhealth.ambulance.support,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.ambulance.support,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.ambulance.support,sr:"
 msgid "SR"
@@ -104,7 +113,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,state:"
 msgid "Status"
-msgstr ""
+msgstr "Κατάσταση"
 
 msgctxt "field:gnuhealth.ambulance.support,write_date:"
 msgid "Write Date"
@@ -116,11 +125,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance_hp,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.ambulance_hp,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.ambulance_hp,healthprof:"
 msgid "Health Prof"
@@ -128,7 +137,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance_hp,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.ambulance_hp,name:"
 msgid "SR"
@@ -136,7 +145,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance_hp,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.ambulance_hp,write_date:"
 msgid "Write Date"
@@ -148,19 +157,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.sequences,support_request_code_sequence:"
 msgid "Support Request Sequence"
-msgstr ""
+msgstr "Ακολουθία αιτήματος υποστήριξης"
 
 msgctxt "field:gnuhealth.support_request,address:"
 msgid "Address"
-msgstr ""
+msgstr "Διεύθυνση"
 
 msgctxt "field:gnuhealth.support_request,ambulances:"
 msgid "Ambulances"
-msgstr ""
+msgstr "Ασθενοφόρα"
 
 msgctxt "field:gnuhealth.support_request,code:"
 msgid "Code"
-msgstr ""
+msgstr "Κωδικός"
 
 msgctxt "field:gnuhealth.support_request,complaint:"
 msgid "Chief Complaint"
@@ -168,43 +177,43 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.support_request,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.support_request,evaluation:"
 msgid "Evaluation"
-msgstr ""
+msgstr "Εκτίμηση"
 
 msgctxt "field:gnuhealth.support_request,event_specific:"
 msgid "Incident"
-msgstr ""
+msgstr "Περιστατικό"
 
 msgctxt "field:gnuhealth.support_request,event_type:"
 msgid "Event type"
-msgstr ""
+msgstr "Τύπος συμβάντος"
 
 msgctxt "field:gnuhealth.support_request,healthcenter:"
 msgid "Calling Institution"
-msgstr ""
+msgstr "Κλήση ιδρύματος"
 
 msgctxt "field:gnuhealth.support_request,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.support_request,latitude:"
 msgid "Latidude"
-msgstr ""
+msgstr "Γεωγραφικό πλάτος"
 
 msgctxt "field:gnuhealth.support_request,longitude:"
 msgid "Longitude"
-msgstr ""
+msgstr "Γεωγραφικό μήκος"
 
 msgctxt "field:gnuhealth.support_request,multiple_casualties:"
 msgid "Multiple Casualties"
-msgstr ""
+msgstr "Πολλαπλές απώλειες"
 
 msgctxt "field:gnuhealth.support_request,operational_sector:"
 msgid "O. Sector"
@@ -212,47 +221,47 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request,operator:"
 msgid "Operator"
-msgstr ""
+msgstr "Τηλεφωνητής"
 
 msgctxt "field:gnuhealth.support_request,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Ασθενής"
 
 msgctxt "field:gnuhealth.support_request,patient_age:"
 msgid "Age"
-msgstr ""
+msgstr "Ηλικία"
 
 msgctxt "field:gnuhealth.support_request,patient_sex:"
 msgid "Sex"
-msgstr ""
+msgstr "Φύλο"
 
 msgctxt "field:gnuhealth.support_request,place_occurrance:"
 msgid "Origin"
-msgstr ""
+msgstr "Προέλευση"
 
 msgctxt "field:gnuhealth.support_request,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.support_request,request_actions:"
 msgid "Activities"
-msgstr ""
+msgstr "Δραστηριότητες"
 
 msgctxt "field:gnuhealth.support_request,request_date:"
 msgid "Date"
-msgstr ""
+msgstr "Ημερομηνία"
 
 msgctxt "field:gnuhealth.support_request,request_extra_info:"
 msgid "Details"
-msgstr ""
+msgstr "Λεπτομέρειες"
 
 msgctxt "field:gnuhealth.support_request,requestor:"
 msgid "Requestor"
-msgstr ""
+msgstr "Αιτών"
 
 msgctxt "field:gnuhealth.support_request,state:"
 msgid "State"
-msgstr ""
+msgstr "Κατάσταση"
 
 msgctxt "field:gnuhealth.support_request,urgency:"
 msgid "Urgency"
@@ -260,7 +269,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request,urladdr:"
 msgid "OSM Map"
-msgstr ""
+msgstr "Χάρτης OSM"
 
 msgctxt "field:gnuhealth.support_request,write_date:"
 msgid "Write Date"
@@ -272,27 +281,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,action:"
 msgid "Activity"
-msgstr ""
+msgstr "Δραστηριότητα"
 
 msgctxt "field:gnuhealth.support_request.log,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.support_request.log,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.support_request.log,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.support_request.log,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.support_request.log,remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "Παρατηρήσεις"
 
 msgctxt "field:gnuhealth.support_request.log,sr:"
 msgid "SR"
@@ -300,7 +309,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,timestamp:"
 msgid "Time"
-msgstr ""
+msgstr "Ώρα"
 
 msgctxt "field:gnuhealth.support_request.log,write_date:"
 msgid "Write Date"
@@ -312,47 +321,47 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ambulance,state:"
 msgid "Vehicle status"
-msgstr ""
+msgstr "Κατάσταση οχήματος"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_brand:"
 msgid "Ambulance maker"
-msgstr ""
+msgstr "Κατασκευαστής ασθενοφόρου"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_function:"
 msgid "Vehicle main functionality"
-msgstr ""
+msgstr "Κύρια λειτουργικότητα του οχήματος"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_identifier:"
 msgid "Ambulance license number or other type of ID"
-msgstr ""
+msgstr "Αριθμός άδειας ασθενοφόρου ή άλλος τύπος ταυτότητας"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_model:"
 msgid "Ambulance model"
-msgstr ""
+msgstr "Μοντέλο ασθενοφόρου"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_odometer:"
 msgid "Current odometer reading"
-msgstr ""
+msgstr "Τρέχουσα ένδειξη οδόμετρου"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_station:"
 msgid "Station / Base of the vehicle"
-msgstr ""
+msgstr "Σταθμός / βάση του οχήματος"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_type:"
 msgid "Type of vehicle"
-msgstr ""
+msgstr "Τύπος του οχήματος"
 
 msgctxt "help:gnuhealth.ambulance.support,sr:"
 msgid "Support Request"
-msgstr ""
+msgstr "Αίτημα υποστήριξης"
 
 msgctxt "help:gnuhealth.ambulance.support,state:"
 msgid "Vehicle status"
-msgstr ""
+msgstr "Κατάσταση οχήματος"
 
 msgctxt "help:gnuhealth.ambulance_hp,healthprof:"
 msgid "Health Professional for this ambulance and support request"
-msgstr ""
+msgstr "Επαγγελματίας υγείας για αυτό το αίτημα ασθενοφόρων και υποστήριξης"
 
 msgctxt "help:gnuhealth.support_request,address:"
 msgid "Free text address / location"
@@ -360,35 +369,35 @@ msgstr ""
 
 msgctxt "help:gnuhealth.support_request,ambulances:"
 msgid "Ambulances requested in this Support Request"
-msgstr ""
+msgstr "Ασθενοφόρα που ζητήθηκαν σε αυτό το αίτημα υποστήριξης"
 
 msgctxt "help:gnuhealth.support_request,code:"
 msgid "Request Code"
-msgstr ""
+msgstr "Κωδικός αίτησης"
 
 msgctxt "help:gnuhealth.support_request,evaluation:"
 msgid "Related Patient Evaluation"
-msgstr ""
+msgstr "Σχετιζόμενη εκτίμηση ασθενούς"
 
 msgctxt "help:gnuhealth.support_request,operational_sector:"
 msgid "Operational Sector"
-msgstr ""
+msgstr "Λειτουργικός τομέας"
 
 msgctxt "help:gnuhealth.support_request,operator:"
 msgid "Operator who took the call / support request"
-msgstr ""
+msgstr "Τηλεφωνητής που έλαβε την κλήση / το αίτημα υποστήριξης"
 
 msgctxt "help:gnuhealth.support_request,place_occurrance:"
 msgid "Place of occurrance"
-msgstr ""
+msgstr "Τόπος εμφάνισης"
 
 msgctxt "help:gnuhealth.support_request,request_actions:"
 msgid "Support request activity log"
-msgstr ""
+msgstr "Ιστορικό αιτημάτων υποστήριξης"
 
 msgctxt "help:gnuhealth.support_request,request_date:"
 msgid "Date and time of the call for help"
-msgstr ""
+msgstr "Ημερομηνία και ώρα της κλήσης για βοήθεια"
 
 msgctxt "help:gnuhealth.support_request,requestor:"
 msgid "Related party (person)"
@@ -396,31 +405,31 @@ msgstr ""
 
 msgctxt "help:gnuhealth.support_request,urladdr:"
 msgid "Maps the location on Open Street Map"
-msgstr ""
+msgstr "Χάρτες της τοποθεσίας στο Open Street Map"
 
 msgctxt "help:gnuhealth.support_request.log,action:"
 msgid "Activity log"
-msgstr ""
+msgstr "Ιστορικό δραστηριοτήτων"
 
 msgctxt "help:gnuhealth.support_request.log,remarks:"
 msgid "Remarks for this item"
-msgstr ""
+msgstr "Παρατηρήσεις για αυτό το αντικείμενο"
 
 msgctxt "help:gnuhealth.support_request.log,sr:"
 msgid "Support Request"
-msgstr ""
+msgstr "Αίτημα υποστήριξης"
 
 msgctxt "help:gnuhealth.support_request.log,timestamp:"
 msgid "Date and time of activity"
-msgstr ""
+msgstr "Ημερομηνία και ώρα της δραστηριότητας"
 
 msgctxt "model:gnuhealth.ambulance,name:"
 msgid "Ambulance"
-msgstr ""
+msgstr "Ασθενοφόρο"
 
 msgctxt "model:gnuhealth.ambulance.support,name:"
 msgid "Ambulance associated to a Support Request"
-msgstr ""
+msgstr "Ασθενοφόρο που σχετίζεται με αίτημα υποστήριξης"
 
 msgctxt "model:gnuhealth.ambulance_hp,name:"
 msgid "Ambulance Health Professionals"
@@ -432,39 +441,39 @@ msgstr ""
 
 msgctxt "model:gnuhealth.support_request.log,name:"
 msgid "Ambulance associated to a Support Request"
-msgstr ""
+msgstr "Ασθενοφόρο που σχετίζεται με αίτημα υποστήριξης"
 
 msgctxt "model:ir.action,name:gnuhealth_action_ambulance"
 msgid "Ambulances"
-msgstr ""
+msgstr "Ασθενοφόρα"
 
 msgctxt "model:ir.action,name:gnuhealth_action_ambulance_support"
 msgid "Ambulance in Support Requests"
-msgstr ""
+msgstr "Ασθενοφόρο σε αιτήματα υποστήριξης"
 
 msgctxt "model:ir.action,name:gnuhealth_action_support_request"
 msgid "Support Center"
-msgstr ""
+msgstr "Κέντρο υποστήριξης"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_support_request_code"
 msgid "Support Request"
-msgstr ""
+msgstr "Αίτημα υποστήριξης"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_support_request_code"
 msgid "Support Request"
-msgstr ""
+msgstr "Αίτημα υποστήριξης"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_ambulance"
 msgid "Ambulances"
-msgstr ""
+msgstr "Ασθενοφόρα"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_ambulance_sr"
 msgid "Ambulance in Support Requests"
-msgstr ""
+msgstr "Ασθενοφόρο σε αιτήματα υποστήριξης"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_support_request"
 msgid "Support Center"
-msgstr ""
+msgstr "Κέντρο υποστήριξης"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid ""
@@ -472,35 +481,35 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "At Hospital"
-msgstr ""
+msgstr "Στο νοσοκομείο"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Available / At Station"
-msgstr ""
+msgstr "Διαθέσιμο / Στον σταθμό"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Dispatched"
-msgstr ""
+msgstr "Απεστάλη"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "En Route"
-msgstr ""
+msgstr "Καθ 'οδόν"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "On Location"
-msgstr ""
+msgstr "Στην τοποθεσία"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Out of service"
-msgstr ""
+msgstr "Εκτός υπηρεσίας"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Returning"
-msgstr ""
+msgstr "Επιστροφή"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "To Hospital"
-msgstr ""
+msgstr "Στο νοσοκομείο"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_function:"
 msgid ""
@@ -524,19 +533,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Airplane"
-msgstr ""
+msgstr "Αεροπλάνο"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Bicycle"
-msgstr ""
+msgstr "Ποδήλατο"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Boat"
-msgstr ""
+msgstr "Σκάφος"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Car"
-msgstr ""
+msgstr "Αυτοκίνητο"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Drone"
@@ -544,15 +553,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Helicopter"
-msgstr ""
+msgstr "Ελικόπτερο"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Motorcycle"
-msgstr ""
+msgstr "Μοτοσυκλέτα"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Van"
-msgstr ""
+msgstr "Βαν"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid ""
@@ -560,35 +569,35 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "At Hospital"
-msgstr ""
+msgstr "Στο νοσοκομείο"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Available / At Station"
-msgstr ""
+msgstr "Διαθέσιμο / Στον σταθμό"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Dispatched"
-msgstr ""
+msgstr "Απεστάλη"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "En Route"
-msgstr ""
+msgstr "Καθ 'οδόν"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "On Location"
-msgstr ""
+msgstr "Στην τοποθεσία"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Out of service"
-msgstr ""
+msgstr "Εκτός υπηρεσίας"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Returning"
-msgstr ""
+msgstr "Επιστροφή"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "To Hospital"
-msgstr ""
+msgstr "Στο νοσοκομείο"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid ""
@@ -596,31 +605,31 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Acute Coronary Syndrome"
-msgstr ""
+msgstr "Οξύ στεφανιαίο σύνδρομο"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Acute illness"
-msgstr ""
+msgstr "Οξεία ασθένεια"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Acute pain"
-msgstr ""
+msgstr "Οξύς πόνος"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Allergic reaction"
-msgstr ""
+msgstr "Αλλεργική αντίδραση"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Bullying, battering"
-msgstr ""
+msgstr "Εκφοβισμός, κτυπήματα"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Choke"
-msgstr ""
+msgstr "Πνιγμός"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Chronic illness"
-msgstr ""
+msgstr "Χρόνια ασθένεια"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Deceased person"
@@ -628,7 +637,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Domestic violence"
-msgstr ""
+msgstr "Ενδοοικογενειακή βία"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Drug intoxication"
@@ -636,75 +645,75 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Endocrine event (diabetes, adrenal crisis, ..)"
-msgstr ""
+msgstr "Ενδοκρινικό συμβάν (διαβήτης, κρίση επινεφριδίων, ..)"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Environmental event (weather, animals, ...)"
-msgstr ""
+msgstr "Περιβαλλοντική εκδήλωση (καιρός, ζώα, ...)"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Explosion"
-msgstr ""
+msgstr "Έκρηξη"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Eye, Ear and Nose event"
-msgstr ""
+msgstr "Συμβάν ματιών, αυτιών και μύτης"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Fall"
-msgstr ""
+msgstr "Πτώση"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Fire"
-msgstr ""
+msgstr "Φωτιά"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Food intoxication"
-msgstr ""
+msgstr "Τροφική δηλητηρίαση"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Gas intoxication"
-msgstr ""
+msgstr "Δηλητηρίαση από αέριο"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Gastrointestinal event"
-msgstr ""
+msgstr "Γαστρεντερικό συμβάν"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Near drowning"
-msgstr ""
+msgstr "Κοντά στο πνιγμό"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Neurological event (stroke, TIA, seizure, ...)"
-msgstr ""
+msgstr "Νευρολογικό συμβάν (εγκεφαλικό επεισόδιο, TIA, κρίση, ...)"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Other specified"
-msgstr ""
+msgstr "Άλλο καθορισμένο"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Pregnancy related event"
-msgstr ""
+msgstr "Συμβάν σχετικά με την εγκυμοσύνη"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Psychiatric event"
-msgstr ""
+msgstr "Ψυχιατρικό συμβάν"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Respiratory distress"
-msgstr ""
+msgstr "Αναπνευστική δυσφορία"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Robbery, violent assault"
-msgstr ""
+msgstr "Ληστεία, βίαιη επίθεση"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Sexual assault"
-msgstr ""
+msgstr "Σεξουαλική επίθεση"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Suicide attempt"
-msgstr ""
+msgstr "Απόπειρα αυτοκτονίας"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Transportation accident"
@@ -720,43 +729,43 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Commercial Area"
-msgstr ""
+msgstr "Εμπορική περιοχή"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Home"
-msgstr ""
+msgstr "Σπίτι"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Institution"
-msgstr ""
+msgstr "Ίδρυμα"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Public Building"
-msgstr ""
+msgstr "Δημόσιο κτήριο"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Public transportation"
-msgstr ""
+msgstr "Δημόσιες συγκοινωνίες"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Recreational Area"
-msgstr ""
+msgstr "Χώρος αναψυχής"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "School"
-msgstr ""
+msgstr "Σχολείο"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Sports event"
-msgstr ""
+msgstr "Αθλητικό γεγονός"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Street"
-msgstr ""
+msgstr "Δρόμος"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Unknown"
-msgstr ""
+msgstr "Άγνωστο"
 
 msgctxt "selection:gnuhealth.support_request,state:"
 msgid ""
@@ -773,6 +782,8 @@ msgstr ""
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid ""
 msgstr ""
+"\n"
+"Πρόσωπο που ζήτησε τελευταία το έγγραφο"
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Emergency"
@@ -784,7 +795,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Urgent"
-msgstr ""
+msgstr "Επείγον"
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid ""
@@ -792,8 +803,8 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid "Ambulance"
-msgstr ""
+msgstr "Ασθενοφόρο"
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid "General"
-msgstr ""
+msgstr "Γενικά"

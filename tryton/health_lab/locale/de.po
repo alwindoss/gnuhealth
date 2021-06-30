@@ -1,106 +1,115 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-06-28 23:17+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
+"health_lab/de/>\n"
+"Language: de\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "error:gnuhealth.lab.test.units:"
 msgid "The Unit name must be unique"
-msgstr ""
+msgstr "Der Name der Einheit muss eindeutig sein"
 
 msgctxt "error:gnuhealth.lab.test_type:"
 msgid "The Lab Test code must be unique"
-msgstr ""
+msgstr "Der Code der Laboruntersuchung muss eindeutig sein"
 
 msgctxt "error:gnuhealth.lab:"
 msgid "The test ID code must be unique"
-msgstr ""
+msgstr "Die Untersuchungs-ID muss eindeutig sein"
 
 msgctxt "field:gnuhealth.lab,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Datum erstellen"
 
 msgctxt "field:gnuhealth.lab,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.lab,critearea:"
 msgid "Lab Test Critearea"
-msgstr ""
+msgstr "Laboruntersuchungskriterien"
 
 msgctxt "field:gnuhealth.lab,date_analysis:"
 msgid "Date of the Analysis"
-msgstr ""
+msgstr "Datum der Analyse"
 
 msgctxt "field:gnuhealth.lab,date_requested:"
 msgid "Date requested"
-msgstr ""
+msgstr "Datum der Anfrage"
 
 msgctxt "field:gnuhealth.lab,diagnosis:"
 msgid "Diagnosis"
-msgstr ""
+msgstr "Diagnose"
 
 msgctxt "field:gnuhealth.lab,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.lab,name:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.lab,pathologist:"
 msgid "Pathologist"
-msgstr ""
+msgstr "Pathologe"
 
 msgctxt "field:gnuhealth.lab,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Patient"
 
 msgctxt "field:gnuhealth.lab,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.lab,requestor:"
 msgid "Physician"
-msgstr ""
+msgstr "Arzt"
 
 msgctxt "field:gnuhealth.lab,results:"
 msgid "Results"
-msgstr ""
+msgstr "Ergebnisse"
 
 msgctxt "field:gnuhealth.lab,test:"
 msgid "Test type"
-msgstr ""
+msgstr "Art des Tests"
 
 msgctxt "field:gnuhealth.lab,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Datum schreiben"
 
 msgctxt "field:gnuhealth.lab,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.lab.test.create.init,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.lab.test.critearea,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Datum erstellen"
 
 msgctxt "field:gnuhealth.lab.test.critearea,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.lab.test.critearea,excluded:"
 msgid "Excluded"
-msgstr ""
+msgstr "ausgeschlossen"
 
 msgctxt "field:gnuhealth.lab.test.critearea,gnuhealth_lab_id:"
 msgid "Test Cases"
-msgstr ""
+msgstr "Testfälle"
 
 msgctxt "field:gnuhealth.lab.test.critearea,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.lab.test.critearea,lab_warning_icon:"
 msgid "Lab Warning Icon"
@@ -108,259 +117,260 @@ msgstr ""
 
 msgctxt "field:gnuhealth.lab.test.critearea,lower_limit:"
 msgid "Lower Limit"
-msgstr ""
+msgstr "Unterer Grenzwert"
 
 msgctxt "field:gnuhealth.lab.test.critearea,name:"
 msgid "Analyte"
-msgstr ""
+msgstr "Untersuchungsmaterial"
 
 msgctxt "field:gnuhealth.lab.test.critearea,normal_range:"
 msgid "Reference"
-msgstr ""
+msgstr "Referenz"
 
 msgctxt "field:gnuhealth.lab.test.critearea,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.lab.test.critearea,remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "Bemerkungen"
 
 msgctxt "field:gnuhealth.lab.test.critearea,result:"
 msgid "Value"
-msgstr ""
+msgstr "Wert"
 
 msgctxt "field:gnuhealth.lab.test.critearea,result_text:"
 msgid "Result - Text"
-msgstr ""
+msgstr "Ergebnistext"
 
 msgctxt "field:gnuhealth.lab.test.critearea,sequence:"
 msgid "Sequence"
-msgstr ""
+msgstr "Reihenfolge"
 
 msgctxt "field:gnuhealth.lab.test.critearea,test_type_id:"
 msgid "Test type"
-msgstr ""
+msgstr "Testart"
 
 msgctxt "field:gnuhealth.lab.test.critearea,units:"
 msgid "Units"
-msgstr ""
+msgstr "Einheiten"
 
 msgctxt "field:gnuhealth.lab.test.critearea,upper_limit:"
 msgid "Upper Limit"
-msgstr ""
+msgstr "Oberer Grenzwert"
 
 msgctxt "field:gnuhealth.lab.test.critearea,warning:"
 msgid "Warn"
-msgstr ""
+msgstr "Warnen"
 
 msgctxt "field:gnuhealth.lab.test.critearea,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Datum schreiben"
 
 msgctxt "field:gnuhealth.lab.test.critearea,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.lab.test.units,code:"
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.lab.test.units,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Datum erstellen"
 
 msgctxt "field:gnuhealth.lab.test.units,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.lab.test.units,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.lab.test.units,name:"
 msgid "Unit"
-msgstr ""
+msgstr "Einheit"
 
 msgctxt "field:gnuhealth.lab.test.units,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.lab.test.units,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Datum schreiben"
 
 msgctxt "field:gnuhealth.lab.test.units,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.lab.test_type,code:"
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 msgctxt "field:gnuhealth.lab.test_type,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Datum erstellen"
 
 msgctxt "field:gnuhealth.lab.test_type,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.lab.test_type,critearea:"
 msgid "Test Cases"
-msgstr ""
+msgstr "Testfälle"
 
 msgctxt "field:gnuhealth.lab.test_type,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.lab.test_type,info:"
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 msgctxt "field:gnuhealth.lab.test_type,name:"
 msgid "Test"
-msgstr ""
+msgstr "Test"
 
 msgctxt "field:gnuhealth.lab.test_type,product_id:"
 msgid "Service"
-msgstr ""
+msgstr "Service"
 
 msgctxt "field:gnuhealth.lab.test_type,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.lab.test_type,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Datum schreiben"
 
 msgctxt "field:gnuhealth.lab.test_type,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.patient,lab_test_ids:"
 msgid "Lab Tests Required"
-msgstr ""
+msgstr "Laboruntersuchung erforderlich"
 
 msgctxt "field:gnuhealth.patient.lab.test,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Datum erstellen"
 
 msgctxt "field:gnuhealth.patient.lab.test,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.patient.lab.test,date:"
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 msgctxt "field:gnuhealth.patient.lab.test,doctor_id:"
 msgid "Doctor"
-msgstr ""
+msgstr "Arzt"
 
 msgctxt "field:gnuhealth.patient.lab.test,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.lab.test,name:"
 msgid "Test Type"
-msgstr ""
+msgstr "Untersuchungstyp"
 
 msgctxt "field:gnuhealth.patient.lab.test,patient_id:"
 msgid "Patient"
-msgstr ""
+msgstr "Patient"
 
 msgctxt "field:gnuhealth.patient.lab.test,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.patient.lab.test,request:"
 msgid "Request"
-msgstr ""
+msgstr "Anfrage"
 
 msgctxt "field:gnuhealth.patient.lab.test,state:"
 msgid "State"
-msgstr ""
+msgstr "Zustand"
 
 msgctxt "field:gnuhealth.patient.lab.test,urgent:"
 msgid "Urgent"
-msgstr ""
+msgstr "Dringlich"
 
 msgctxt "field:gnuhealth.patient.lab.test,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Datum schreiben"
 
 msgctxt "field:gnuhealth.patient.lab.test,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Benutzer erstellen"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,date:"
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,doctor:"
 msgid "Doctor"
-msgstr ""
+msgstr "Arzt"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Patient"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,tests:"
 msgid "Tests"
-msgstr ""
+msgstr "Tests"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,urgent:"
 msgid "Urgent"
-msgstr ""
+msgstr "Dringlich"
 
 msgctxt "field:gnuhealth.request-test,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.request-test,request:"
 msgid "Request"
-msgstr ""
+msgstr "Anfrage"
 
 msgctxt "field:gnuhealth.request-test,test:"
 msgid "Test"
-msgstr ""
+msgstr "Untersuchung"
 
 msgctxt "field:gnuhealth.sequences,lab_request_sequence:"
 msgid "Patient Lab Request Sequence"
-msgstr ""
+msgstr "Patient Labor Blockanforderung"
 
 msgctxt "field:gnuhealth.sequences,lab_sequence:"
 msgid "Lab Sequence"
-msgstr ""
+msgstr "Laborblock"
 
 msgctxt "help:gnuhealth.lab,name:"
 msgid "Lab result ID"
-msgstr ""
+msgstr "ID des Laborergebnisses"
 
 msgctxt "help:gnuhealth.lab,pathologist:"
 msgid "Pathologist"
-msgstr ""
+msgstr "Pathologe"
 
 msgctxt "help:gnuhealth.lab,patient:"
 msgid "Patient ID"
-msgstr ""
+msgstr "ID des Patienten"
 
 msgctxt "help:gnuhealth.lab,requestor:"
 msgid "Doctor who requested the test"
-msgstr ""
+msgstr "Arzt, der die Untersuchung angefordert hat"
 
 msgctxt "help:gnuhealth.lab,test:"
 msgid "Lab test type"
-msgstr ""
+msgstr "Typ der Laboruntersuchung"
 
 msgctxt "help:gnuhealth.lab.test.critearea,excluded:"
 msgid "Select this option when this analyte is excluded from the test"
 msgstr ""
+"Wähle diese Option wenn diese Probe von der Untersuchung ausgeschlossen ist"
 
 msgctxt "help:gnuhealth.lab.test.critearea,result_text:"
 msgid ""
@@ -376,31 +386,31 @@ msgstr ""
 
 msgctxt "help:gnuhealth.lab.test_type,code:"
 msgid "Short name - code for the test"
-msgstr ""
+msgstr "Kurzbezeichnung - Code für die Untersuchung"
 
 msgctxt "help:gnuhealth.lab.test_type,name:"
 msgid "Test type, eg X-Ray, hemogram,biopsy..."
-msgstr ""
+msgstr "Untersuchungstyp, zB Röntgen, Blutausstrich, Biopsie ..."
 
 msgctxt "help:gnuhealth.patient.lab.test,doctor_id:"
 msgid "Doctor who Request the lab test."
-msgstr ""
+msgstr "Arzt, der die Laboruntersuchung angeordnet hat"
 
 msgctxt "help:gnuhealth.patient.lab.test.request.start,doctor:"
 msgid "Doctor who Request the lab tests."
-msgstr ""
+msgstr "Arzt, der die Laboruntersuchung angefordert hat"
 
 msgctxt "model:gnuhealth.lab,name:"
 msgid "Lab Test"
-msgstr ""
+msgstr "Laboruntersuchtung"
 
 msgctxt "model:gnuhealth.lab.test.create.init,name:"
 msgid "Create Test Report Init"
-msgstr ""
+msgstr "Erzeuge Untersuchungsbericht Init"
 
 msgctxt "model:gnuhealth.lab.test.critearea,name:"
 msgid "Lab Test Critearea"
-msgstr ""
+msgstr "Laboruntersuchungskriterien"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_agratio0"
@@ -857,11 +867,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.lab.test.units,name:"
 msgid "Lab Test Units"
-msgstr ""
+msgstr "Laboruntersuchungs-Einheiten"
 
 msgctxt "model:gnuhealth.lab.test_type,name:"
 msgid "Type of Lab test"
-msgstr ""
+msgstr "Art der Laboruntersuchung"
 
 msgctxt ""
 "model:gnuhealth.lab.test_type,name:gnuhealth_test_completebloodcount0"
@@ -903,107 +913,107 @@ msgstr ""
 
 msgctxt "model:gnuhealth.patient.lab.test,name:"
 msgid "Patient Lab Test"
-msgstr ""
+msgstr "Patient Laboruntersuchung"
 
 msgctxt "model:gnuhealth.patient.lab.test.request.start,name:"
 msgid "Request Patient Lab Test Start"
-msgstr ""
+msgstr "Anforderung Patient Laboruntersuchung Start"
 
 msgctxt "model:gnuhealth.request-test,name:"
 msgid "Request - Test"
-msgstr ""
+msgstr "Anfrage - Test"
 
 msgctxt "model:ir.action,name:act_create_lab_test"
 msgid "Create Lab Test"
-msgstr ""
+msgstr "Laboruntersuchung anlegen"
 
 msgctxt "model:ir.action,name:act_patient_lab_history_form1"
 msgid "Lab Reports"
-msgstr ""
+msgstr "Laborberichte"
 
 msgctxt "model:ir.action,name:gnuhealth_action_lab_test_request"
 msgid "Lab Test Requests"
-msgstr ""
+msgstr "Laboruntersuchungs-Anforderungen"
 
 msgctxt "model:ir.action,name:gnuhealth_action_lab_unit"
 msgid "Lab Test Units"
-msgstr ""
+msgstr "Laboruntersuchungs-Einheiten"
 
 msgctxt "model:ir.action,name:gnuhealth_action_list_test"
 msgid "Lab Test Types"
-msgstr ""
+msgstr "Laboruntersuchungen"
 
 msgctxt "model:ir.action,name:gnuhealth_action_tree_lab"
 msgid "Lab Tests Results"
-msgstr ""
+msgstr "Ergebnisse der Laboruntersuchung"
 
 msgctxt "model:ir.action,name:patient_lab_test_request"
 msgid "Request Lab Test"
-msgstr ""
+msgstr "Anforderung Laboruntersuchung"
 
 msgctxt "model:ir.action,name:report_patient_labtest_report"
 msgid "Lab Report"
-msgstr ""
+msgstr "Laborbericht"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_lab_request"
 msgid "Lab Request"
-msgstr ""
+msgstr "Anforderung Labor"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_lab_test"
 msgid "Lab Test"
-msgstr ""
+msgstr "Laboruntersuchung"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_lab_request"
 msgid "Lab Request"
-msgstr ""
+msgstr "Anfoderung Labor"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_lab_test"
 msgid "Lab Test"
-msgstr ""
+msgstr "Laboruntersuchung"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_action_lab_tree"
 msgid "Lab Tests Results"
-msgstr ""
+msgstr "Ergebnisse der Laboruntersuchung"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_laboratory"
 msgid "Laboratory"
-msgstr ""
+msgstr "Labor"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_laboratory_menu"
 msgid "Laboratory"
-msgstr ""
+msgstr "Labor"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_labtest_request"
 msgid "Lab Test Requests"
-msgstr ""
+msgstr "Laboruntersuchungs-Anforderungen"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_labtest_unit"
 msgid "Lab Test Units"
-msgstr ""
+msgstr "Laboruntersuchungs-Einheiten"
 
 msgctxt "model:ir.ui.menu,name:menu_gnuhealth_action_list_test"
 msgid "Lab Test Types"
-msgstr ""
+msgstr "Laboruntersuchungen"
 
 msgctxt "model:ir.ui.menu,name:menu_patient_lab_test_request"
 msgid "Request Lab Test"
-msgstr ""
+msgstr "Anforderung Laboruntersuchung"
 
 msgctxt "model:product.category,name:product_category_labservices0"
 msgid "Lab Services"
-msgstr ""
+msgstr "Labor-Leistungen"
 
 msgctxt "model:product.template,name:product_template_bloodcounttestcharges0"
 msgid "Blood count test charges"
-msgstr ""
+msgstr "Gebühren für die Untersuchung des Blutbildes"
 
 msgctxt "model:product.template,name:product_template_endocrinology0"
 msgid "Endocrinology"
-msgstr ""
+msgstr "Endokrinologie"
 
 msgctxt "model:product.template,name:product_template_haematologycharges0"
 msgid "Haematology Charges"
-msgstr ""
+msgstr "Gebühren für die Blutanalyse"
 
 msgctxt ""
 "model:product.template,name:product_template_liverfunctiontestcharges0"
@@ -1022,7 +1032,7 @@ msgstr ""
 
 msgctxt "model:product.template,name:product_template_semenanalysischarges0"
 msgid "Semen Analysis Charges"
-msgstr ""
+msgstr "Gebühren für die Samenanalyse"
 
 msgctxt ""
 "model:product.template,name:product_template_stoolexaminationcharges0"
@@ -1031,48 +1041,48 @@ msgstr ""
 
 msgctxt "model:product.template,name:product_template_urineanalysischarges0"
 msgid "Urine Analysis charges"
-msgstr ""
+msgstr "Gebühren für die Urinanalyse"
 
 msgctxt "model:res.group,name:group_health_lab"
 msgid "Health Lab"
-msgstr ""
+msgstr "Health Labor"
 
 msgctxt "model:res.group,name:group_health_lab_admin"
 msgid "Health lab Administration"
-msgstr ""
+msgstr "Health Labor Administration"
 
 msgctxt "model:res.user,name:user_demo_lab"
 msgid "Health Lab"
-msgstr ""
+msgstr "Health Labor"
 
 msgctxt "selection:gnuhealth.patient.lab.test,state:"
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 msgctxt "selection:gnuhealth.patient.lab.test,state:"
 msgid "Draft"
-msgstr ""
+msgstr "Entwurf"
 
 msgctxt "selection:gnuhealth.patient.lab.test,state:"
 msgid "Ordered"
-msgstr ""
+msgstr "Angefordert"
 
 msgctxt "selection:gnuhealth.patient.lab.test,state:"
 msgid "Tested"
-msgstr ""
+msgstr "Untersucht"
 
 msgctxt "wizard_button:gnuhealth.lab.test.create,start,create_lab_test:"
 msgid "Create Test Order"
-msgstr ""
+msgstr "Untersuchung anfordern"
 
 msgctxt "wizard_button:gnuhealth.lab.test.create,start,end:"
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 msgctxt "wizard_button:gnuhealth.patient.lab.test.request,start,end:"
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 msgctxt "wizard_button:gnuhealth.patient.lab.test.request,start,request:"
 msgid "Request"
-msgstr ""
+msgstr "Anfrage"

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+
+        <record model="res.user" id="user_demo_dentist">
+            <field name="name">Health Dentist</field>
+            <field name="login">demo_dentist</field>
+            <field name="password">gnusolidario</field>
+        </record>
+
+        <record model="res.group" id="group_health_dentist">
+            <field name="name">Health Dentist</field>
+        </record>
+
+        <record model="res.user-res.group" id="user_dentist_group_dentist">
+            <field name="user" ref="user_demo_dentist"/>
+            <field name="group" ref="group_health_dentist"/>
+        </record>
+
+        <!-- Access to Menus -->
+        <record model="ir.ui.menu-res.group" id="menu_health_group_dentist">
+            <field name="menu" ref="health.gnuhealth_menu"/>
+            <field name="group" ref="group_health_dentist"/>
+        </record>
+        <record model="ir.ui.menu-res.group" id="menu_patients_group_dentist">
+            <field name="menu" ref="health.gnuhealth_patients_menu"/>
+            <field name="group" ref="group_health_dentist"/>
+        </record>
+
+        <!-- Default access rights to models -->
+        <record model="ir.model.access" id="access_health_dentistry_patient">
+            <field name="model" search="[('model', '=', 'gnuhealth.dentistry.treatment')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_health_dentistry_procedure">
+            <field name="model" search="[('model', '=', 'gnuhealth.dentistry.procedure')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_health_dentistry_treatment_procedure">
+            <field name="model" search="[('model', '=', 'gnuhealth.dentistry.treatment.procedure')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <!-- Default access rights to fields -->
+        <record model="ir.model.field.access" id="access_health_patient_all_field_use_primary_schema">
+            <field name="field" search="[('model.model', '=', 'gnuhealth.patient'), ('name', '=', 'use_primary_schema')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+        </record>
+
+        <!-- Access rights to models for the health admin group -->
+        <record model="ir.model.access" id="access_health_dentist_treatment_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.dentistry.treatment')]"/>
+            <field name="group" ref="health.group_health_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_health_dentist_procedure_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.dentistry.procedure')]"/>
+            <field name="group" ref="health.group_health_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_health_dentist_treatment_procedure_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.dentistry.treatment.procedure')]"/>
+            <field name="group" ref="health.group_health_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <!-- Access rights to models for the health dentist group -->
+        <record model="ir.model.access" id="access_health_dentist_treatment_dentist">
+            <field name="model" search="[('model', '=', 'gnuhealth.dentistry.treatment')]"/>
+            <field name="group" ref="group_health_dentist"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_health_dentist_procedure_dentist">
+            <field name="model" search="[('model', '=', 'gnuhealth.dentistry.procedure')]"/>
+            <field name="group" ref="group_health_dentist"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_health_dentist_treatment_procedure_dentist">
+            <field name="model" search="[('model', '=', 'gnuhealth.dentistry.treatment.procedure')]"/>
+            <field name="group" ref="group_health_dentist"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_health_patient_dentist">
+            <field name="model" search="[('model', '=', 'gnuhealth.patient')]"/>
+            <field name="group" ref="group_health_dentist"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <!-- Access rights to fields for the health dentist group -->
+        <record model="ir.model.field.access" id="access_health_patient_dentist_field_use_primary_schema">
+            <field name="field" search="[('model.model', '=', 'gnuhealth.patient'), ('name', '=', 'use_primary_schema')]"/>
+            <field name="group" ref="group_health_dentist"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+        </record>
+
+        <!-- Access rights to button Set Odontogram -->
+        <record model="ir.model.button-res.group" id="patient_set_odontogram_group_health_admin">
+            <field name="button" ref="patient_set_odontogram_button"/>
+            <field name="group" ref="health.group_health_admin"/>
+        </record>
+
+        <record model="ir.model.button-res.group" id="patient_set_odontogram_group_dentist">
+            <field name="button" ref="patient_set_odontogram_button"/>
+            <field name="group" ref="group_health_dentist"/>
+        </record>
+
+    </data>
+</tryton>

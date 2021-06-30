@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#    Copyright (C) 2017-2020 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2017-2020 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2017-2021 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2017-2021 GNU Solidario <health@gnusolidario.org>
 #    Copyright (C) 2012-2017 Cédric Krier
 
 #    This program is free software: you can redistribute it and/or modify
@@ -70,7 +70,7 @@ setup(name='gnuhealth_webdav3_server',
         ],
     package_data={
         'trytond.modules.webdav': (info.get('xml', [])
-            + ['tryton.cfg', 'view/*.xml', 'locale/*.po', '*.odt',
+            + ['tryton.cfg', 'view/*.xml', 'locale/*.po', '*.fodt',
                 'icons/*.svg', 'tests/*.rst']),
         },
     scripts=['bin/gnuhealth-webdav-server'],

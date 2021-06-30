@@ -1,18 +1,20 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-10 17:03+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: el_GR\n"
+"PO-Revision-Date: 2020-08-17 11:33+0000\n"
+"Last-Translator: Constantine Mousafiris <kvisitor@gnugr.org>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_stock/el/>\n"
+"Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 "X-POOTLE-MTIME: 1452445414.0\n"
 
 msgctxt "error:gnuhealth.prescription.stock.move.create:"
 msgid "Stock moves already exists!."
-msgstr "Οι κινήσεις αποθήκης υπάρχουν ήδη."
+msgstr "Οι κινήσεις αποθεμάτων αποθήκης υπάρχουν ήδη!"
 
 msgctxt "error:gnuhealth.prescription.stock.move.create:"
 msgid "You need to select a pharmacy."
@@ -20,7 +22,7 @@ msgstr "Πρέπει να επιλέξετε ένα φαρμακείο."
 
 msgctxt "error:gnuhealth.vaccination.stock.move.create:"
 msgid "Stock moves already exists!."
-msgstr "Οι κινήσεις αποθεμάτων υπάρχουν ήδη."
+msgstr "Οι κινήσεις υλικού αποθήκης υπάρχουν ήδη!"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid ""
@@ -330,7 +332,7 @@ msgstr "Δημιουργία Init μετακίνησης συνταγογραφ�
 
 msgctxt "model:gnuhealth.vaccination.stock.move.init,name:"
 msgid "Create Vaccination Stock Move Init"
-msgstr ""
+msgstr "Δημιουργία init για Κίνηση αποθεμάτων αποθήκης για Εμβόλια"
 
 msgctxt "model:ir.action,name:act_create_prescription_stock_move"
 msgid "Create Prescription Stock Move"
@@ -342,16 +344,16 @@ msgstr "Δημιουργία κίνησης Αποθεμάτων Εμβολίω�
 
 msgctxt "model:ir.action,name:act_prescription_move_form1"
 msgid "Stock Moves [readonly]"
-msgstr ""
+msgstr "Κινήσεις αποθεμάτων αποθήκης [μόνο για ανάγνωση]"
 
 msgctxt "model:ir.action,name:act_vaccination_move_form1"
 msgid "Stock Moves [readonly]"
-msgstr ""
+msgstr "Κινήσεις αποθεμάτων αποθήκης [μόνο για ανάγνωση]"
 
 msgctxt ""
 "wizard_button:gnuhealth.prescription.stock.move.create,start,create_stock_move:"
 msgid "Create Stock Move"
-msgstr "Δημιουργία μετακίνησης υλικού"
+msgstr "Δημιουργία Κίνησης υλικού αποθήκης"
 
 msgctxt "wizard_button:gnuhealth.prescription.stock.move.create,start,end:"
 msgid "Cancel"

@@ -3,14 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-23 01:29+0000\n"
-"PO-Revision-Date: 2019-10-27 10:41+0800\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-07-08 01:30+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_inpatient/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.2-dev\n"
 "X-Pootle-Path: /zh_CN/GNUHEALTH/health_inpatient/locale/zh_CN.po\n"
 "X-Pootle-Revision: 43834\n"
 
@@ -430,7 +432,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.inpatient.medication,indication:"
 msgid "Indication"
-msgstr "适应证"
+msgstr "适应症"
 
 msgctxt "field:gnuhealth.inpatient.medication,is_active:"
 msgid "Active"
@@ -450,7 +452,7 @@ msgstr "住院编号"
 
 msgctxt "field:gnuhealth.inpatient.medication,qty:"
 msgid "x"
-msgstr "每次数量"
+msgstr "每次用量"
 
 msgctxt "field:gnuhealth.inpatient.medication,rec_name:"
 msgid "Record Name"
@@ -498,7 +500,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.inpatient.medication.admin_time,name:"
 msgid "Medication"
-msgstr "药物"
+msgstr "药品"
 
 msgctxt "field:gnuhealth.inpatient.medication.admin_time,rec_name:"
 msgid "Record Name"
@@ -546,7 +548,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.inpatient.medication.log,name:"
 msgid "Medication"
-msgstr "药物"
+msgstr "药品"
 
 msgctxt "field:gnuhealth.inpatient.medication.log,rec_name:"
 msgid "Record Name"
@@ -630,7 +632,7 @@ msgstr "医疗机构"
 
 msgctxt "field:gnuhealth.inpatient.registration,medications:"
 msgid "Medications"
-msgstr "药物"
+msgstr "药品"
 
 msgctxt "field:gnuhealth.inpatient.registration,name:"
 msgid "Registration Code"
@@ -746,7 +748,7 @@ msgstr "剂量（如250毫克）"
 
 msgctxt "help:gnuhealth.inpatient.medication,dose_unit:"
 msgid "Unit of measure for the medication to be taken"
-msgstr "待服用药物的计量单位"
+msgstr "待用药品的计量单位"
 
 msgctxt "help:gnuhealth.inpatient.medication,end_treatment:"
 msgid "Date of start of Treatment"
@@ -772,9 +774,7 @@ msgctxt "help:gnuhealth.inpatient.medication,indication:"
 msgid ""
 "Choose a disease for this medicament from the disease list. It can be an "
 "existing disease of the patient or a prophylactic."
-msgstr ""
-"从疾病列表中选择一种疾病，对应当前药物。这种药物可以用于治疗或者预防这种疾"
-"病。"
+msgstr "从疾病列表中选择一种疾病与当前药品对应。此药品可以用于治疗或者预防这种疾病。"
 
 msgctxt "help:gnuhealth.inpatient.medication,is_active:"
 msgid "Check if the patient is currently taking the medication"
@@ -782,7 +782,7 @@ msgstr "如果病人当前服用此药品，就选中此项"
 
 msgctxt "help:gnuhealth.inpatient.medication,medicament:"
 msgid "Prescribed Medicament"
-msgstr "处方药物"
+msgstr "处方药"
 
 msgctxt "help:gnuhealth.inpatient.medication,qty:"
 msgid "Quantity of units (eg, 2 capsules) of the medicament"
@@ -802,7 +802,7 @@ msgstr "剂量（如250毫克）"
 
 msgctxt "help:gnuhealth.inpatient.medication.admin_time,dose_unit:"
 msgid "Unit of measure for the medication to be taken"
-msgstr "待服药物计量单位"
+msgstr "待用药品计量单位"
 
 msgctxt "help:gnuhealth.inpatient.medication.admin_time,remarks:"
 msgid "specific remarks for this dose"
@@ -814,7 +814,7 @@ msgstr "剂量（如250毫克）"
 
 msgctxt "help:gnuhealth.inpatient.medication.log,dose_unit:"
 msgid "Unit of measure for the medication to be taken"
-msgstr "待服药物计量单位"
+msgstr "待用药品计量单位"
 
 msgctxt "help:gnuhealth.inpatient.medication.log,remarks:"
 msgid "specific remarks for this dose"
@@ -1210,15 +1210,15 @@ msgstr "住院用餐项目"
 
 msgctxt "model:gnuhealth.inpatient.medication,name:"
 msgid "Inpatient Medication"
-msgstr "住院药物治疗"
+msgstr "住院药品治疗"
 
 msgctxt "model:gnuhealth.inpatient.medication.admin_time,name:"
 msgid "Inpatient Medication Admin Times"
-msgstr "住院药物给药时间"
+msgstr "住院用药时间"
 
 msgctxt "model:gnuhealth.inpatient.medication.log,name:"
 msgid "Inpatient Medication Log History"
-msgstr "住院药物治疗史"
+msgstr "住院用药史"
 
 msgctxt "model:gnuhealth.inpatient.registration,name:"
 msgid "Patient admission History"
@@ -1438,7 +1438,7 @@ msgstr "周"
 
 msgctxt "selection:gnuhealth.inpatient.medication,frequency_unit:"
 msgid "when required"
-msgstr "需要时"
+msgstr "必要时"
 
 msgctxt "selection:gnuhealth.inpatient.registration,admission_type:"
 msgid ""
@@ -1450,7 +1450,7 @@ msgstr "非急需"
 
 msgctxt "selection:gnuhealth.inpatient.registration,admission_type:"
 msgid "Emergency"
-msgstr "紧急"
+msgstr "急诊"
 
 msgctxt "selection:gnuhealth.inpatient.registration,admission_type:"
 msgid "Maternity"
@@ -1478,11 +1478,11 @@ msgstr "回家/自我保健"
 
 msgctxt "selection:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Left against medical advice"
-msgstr "拒绝医疗建议"
+msgstr "非医嘱离院"
 
 msgctxt "selection:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Transferred to another institution"
-msgstr "转院"
+msgstr "医嘱转院"
 
 msgctxt "selection:gnuhealth.inpatient.registration,state:"
 msgid ""
@@ -1574,7 +1574,7 @@ msgstr "一般信息"
 
 msgctxt "view:gnuhealth.inpatient.medication:"
 msgid "Medication"
-msgstr "药物"
+msgstr "药品"
 
 msgctxt "view:gnuhealth.inpatient.medication:"
 msgid "Status"
@@ -1586,7 +1586,7 @@ msgstr "治疗期"
 
 msgctxt "view:gnuhealth.inpatient.registration:"
 msgid "Administrative data"
-msgstr "用药途径数据"
+msgstr "住院管理数据"
 
 msgctxt "view:gnuhealth.inpatient.registration:"
 msgid "Admission"
@@ -1594,7 +1594,7 @@ msgstr "入院类型"
 
 msgctxt "view:gnuhealth.inpatient.registration:"
 msgid "Admit the patient in the health institution and assign the bed"
-msgstr "给病人办理住院，安排床位 "
+msgstr "给患者办理住院并安排床位"
 
 msgctxt "view:gnuhealth.inpatient.registration:"
 msgid "Cancel"
@@ -1606,7 +1606,7 @@ msgstr "取消住院登记"
 
 msgctxt "view:gnuhealth.inpatient.registration:"
 msgid "Cancel the patient registration process ?"
-msgstr "取消患者住院登记"
+msgstr "取消此患者的住院登记？"
 
 msgctxt "view:gnuhealth.inpatient.registration:"
 msgid "Care Plan"
@@ -1626,7 +1626,7 @@ msgstr "已确认"
 
 msgctxt "view:gnuhealth.inpatient.registration:"
 msgid "Confirm Registration / Make the reservation"
-msgstr "确认登记 / 预订"
+msgstr "确认登记 / 预留"
 
 msgctxt "view:gnuhealth.inpatient.registration:"
 msgid "Confirm that the bed has been cleaned and is now ready to use"
@@ -1650,7 +1650,7 @@ msgstr "出院计划"
 
 msgctxt "view:gnuhealth.inpatient.registration:"
 msgid "Medication Plan"
-msgstr "用药计划"
+msgstr "医嘱用药"
 
 msgctxt "view:gnuhealth.inpatient.registration:"
 msgid "Notes"

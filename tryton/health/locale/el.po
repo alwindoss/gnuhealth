@@ -1,26 +1,28 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-10 17:02+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: el_GR\n"
+"PO-Revision-Date: 2021-02-09 12:34+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/health/"
+"el/>\n"
+"Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 "X-POOTLE-MTIME: 1452445349.0\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Το πιστοποιητικό υπάρχει ήδη !"
 
 msgctxt "error:gnuhealth.death_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Το πιστοποιητικό υπάρχει ήδη !"
 
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
-msgstr "Η Μονάδα πρέπει να είναι μοναδική !"
+msgstr "Η μονάδα πρέπει να είναι μοναδική !"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The CODE must be unique !"
@@ -28,7 +30,7 @@ msgstr "Ο ΚΩΔΙΚΟΣ πρέπει να είναι μοναδικός !"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The Unit must be unique !"
-msgstr "Η Μονάδα πρέπει να είναι μοναδική !"
+msgstr "Η μονάδα πρέπει να είναι μοναδική !"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The CODE must be unique !"
@@ -36,7 +38,7 @@ msgstr "Ο ΚΩΔΙΚΟΣ πρέπει να είναι μοναδικός !"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The Name must be unique !"
-msgstr "Το Όνομα πρέπει να είναι μοναδικό !"
+msgstr "Το όνομα πρέπει να είναι μοναδικό !"
 
 msgctxt "error:gnuhealth.du:"
 msgid "The Domiciliary Unit must be unique !"
@@ -48,7 +50,7 @@ msgstr "Ο ΚΩΔΙΚΟΣ πρέπει να είναι μοναδικός !"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The Name must be unique !"
-msgstr "Το Όνομα πρέπει να είναι μοναδικό !"
+msgstr "Το όνομα πρέπει να είναι μοναδικό !"
 
 msgctxt "error:gnuhealth.family:"
 msgid "The Family Code must be unique !"
@@ -56,28 +58,28 @@ msgstr "Ο οικογενειακός κωδικός πρέπει να είνα�
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The LICENSE ID must be unique"
-msgstr ""
+msgstr "Ο Κωδικός ταυτοποίησης ΑΔΕΙΑΣ πρέπει να είναι μοναδικός"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
-msgstr ""
+msgstr "Ο Επαγγελματίας Υγείας πρέπει να είναι μοναδικός"
 
 msgctxt "error:gnuhealth.hospital.bed:"
 msgid "The Bed must be unique per Health Center"
-msgstr "Η Κλίνη πρέπει να είναι μοναδική ανά Κέντρο Υγείας"
+msgstr "Η κλίνη πρέπει να είναι μοναδική ανά Κέντρο Υγείας"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building code must be unique per Health Center"
-msgstr ""
+msgstr "Ο Κωδικός Κτιρίου πρέπει να είναι μοναδικός για το κάθε Κέντρο Υγείας"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building name must be unique per Health Center"
-msgstr "Το όνομα Κτιρίου πρέπει να είναι μοναδικό ανά Κέντρο Υγείας"
+msgstr "Το όνομα κτιρίου πρέπει να είναι μοναδικό ανά Κέντρο Υγείας"
 
 msgctxt "error:gnuhealth.hospital.or:"
 msgid "The Operating Room Name must be unique per Health Center"
 msgstr ""
-"Το όνομα Χειρουργικής Αίθουσας πρέπει να είναι μοναδικό ανά Κέντρο Υγείας"
+"Το όνομα χειρουργικής αίθουσας πρέπει να είναι μοναδικό ανά Κέντρο Υγείας"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit CODE must be unique per Health Center"
@@ -85,7 +87,7 @@ msgstr "Ο ΚΩΔΙΚΟΣ Μονάδος πρέπει να είναι μοναδ
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit NAME must be unique per Health Center"
-msgstr "Το Όνομα Μονάδος πρέπει να είναι μοναδικό ανά Κέντρο Υγείας"
+msgstr "Το όνομα μονάδος πρέπει να είναι μοναδικό ανά Κέντρο Υγείας"
 
 msgctxt "error:gnuhealth.hospital.ward:"
 msgid "The Ward / Room Name must be unique per Health Center"
@@ -93,7 +95,7 @@ msgstr "Το Όνομα Τμήματος / Δωματίου πρέπει να ε
 
 msgctxt "error:gnuhealth.immunization_schedule:"
 msgid "The schedule code must be unique"
-msgstr ""
+msgstr "Ο Κωδικός Προγράμματος πρέπει να είναι μοναδικός"
 
 msgctxt "error:gnuhealth.immunization_schedule_dose:"
 msgid "The dose number must be unique for this vaccine"
@@ -101,15 +103,15 @@ msgstr "Ο αριθμός δόσης πρέπει να είναι μοναδικ
 
 msgctxt "error:gnuhealth.institution.operationalsector:"
 msgid "The Operational Sector already exists for this institution"
-msgstr "Ο Επιχειρησιακός Τομέας ήδη υπάρχει για το ίδρυμα αυτό"
+msgstr "Ο επιχειρησιακός τομέας υπάρχει ήδη για το ίδρυμα αυτό"
 
 msgctxt "error:gnuhealth.institution.specialties:"
 msgid "The Specialty already exists for this institution"
-msgstr "Η Ειδικότητα υπάρχει ήδη για το ίδρυμα αυτό"
+msgstr "Η ειδικότητα υπάρχει ήδη για το ίδρυμα αυτό"
 
 msgctxt "error:gnuhealth.institution:"
 msgid "This CODE already exists !"
-msgstr ""
+msgstr "Αυτός ο ΚΩΔΙΚΟΣ ήδη υπάρχει !"
 
 msgctxt "error:gnuhealth.institution:"
 msgid "This Institution already exists !"
@@ -125,7 +127,7 @@ msgstr "Ο ΚΩΔΙΚΟΣ πρέπει να είναι μοναδικός !"
 
 msgctxt "error:gnuhealth.medication.dosage:"
 msgid "The Unit must be unique !"
-msgstr "Η Μονάδα πρέπει να είναι μοναδική!"
+msgstr "Η μονάδα πρέπει να είναι μοναδική !"
 
 msgctxt "error:gnuhealth.occupation:"
 msgid "The CODE must be unique !"
@@ -133,7 +135,7 @@ msgstr "Ο ΚΩΔΙΚΟΣ πρέπει να είναι μοναδικός !"
 
 msgctxt "error:gnuhealth.occupation:"
 msgid "The Name must be unique !"
-msgstr "ο Όνομα πρέπει να είναι μοναδικό !"
+msgstr "Το όνομα πρέπει να είναι μοναδικό !"
 
 msgctxt "error:gnuhealth.operational_area:"
 msgid "The operational area must be unique !"
@@ -151,7 +153,7 @@ msgstr "Η κατηγορία ονόματος πρέπει να είναι μο
 
 msgctxt "error:gnuhealth.pathology.group:"
 msgid "The Pathology Group code must be unique"
-msgstr ""
+msgstr "Ο Κωδικός Παθολογίας/Νόσου πρέπει να είναι μοναδικός"
 
 msgctxt "error:gnuhealth.pathology:"
 msgid "The disease code must be unique"
@@ -170,12 +172,12 @@ msgid ""
 "The Treatment END DATE \"%(date_stop_treatment)s\" is BEFORE the start date "
 "\"%(date_start_treatment)s\"!"
 msgstr ""
-"Η ΗΜΕΡΟΜΗΝΙΑ ΤΕΛΟΥΣ θεραπείας \"%(date_stop_treatment)s\" είναι ΠΡΙΝ την "
-"ημερομηνία έναρξης \"%(date_start_treatment)s\"!"
+"Η ΗΜΕΡΟΜΗΝΙΑ ΤΕΡΜΑΤΙΣΜΟΥ θεραπείας \"%(date_stop_treatment)s\" είναι ΠΡΙΝ "
+"την ημερομηνία έναρξης \"%(date_start_treatment)s\"!"
 
 msgctxt "error:gnuhealth.patient.ecg:"
 msgid "No health professional associated to this user"
-msgstr ""
+msgstr "Κανένας επαγγελματίας υγείας δεν συνδέεται με αυτό τον χρήστη"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid ""
@@ -191,15 +193,15 @@ msgstr "Δεν υπάρχει συσχετισμένος επαγγελματί�
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "The evaluation code must be unique !"
-msgstr ""
+msgstr "Ο κωδικός εκτίμησης πρέπει να είναι μοναδικός !"
 
 msgctxt "error:gnuhealth.patient.medication:"
 msgid ""
 "The Medication END DATE \"%(end_treatment)s\" is BEFORE the start date "
 "\"%(start_treatment)s\"!"
 msgstr ""
-"Η ΗΜΕΡΟΜΗΝΙΑ ΤΕΛΟΥΣ φαρμακευτικής αγωγής \"%(end_treatment)s\" είναι ΠΡΙΝ από "
-"την ημερομηνία έναρξης \"%(start_treatment)s\"!"
+"Η ΗΜΕΡΟΜΗΝΙΑ ΤΕΡΜΑΤΙΣΜΟΥ φαρμακευτικής αγωγής \"%(end_treatment)s\" είναι "
+"ΠΡΙΝ από την ημερομηνία έναρξης \"%(start_treatment)s\"!"
 
 msgctxt "error:gnuhealth.patient:"
 msgid "The Patient already exists !"
@@ -219,7 +221,7 @@ msgid ""
 msgstr ""
 "== ΦΑΡΜΑΚΑ ΚΑΙ ΕΛΕΓΧΟΣ ΕΓΚΥΜΟΣΥΝΗΣ ==\n"
 "\n"
-"- ΜΗΠΩΣ ΕΙΝΑΙ ΕΓΓΥΟΣ Η ΑΣΘΕΝΗΣ ; \n"
+"- ΜΗΠΩΣ Η ΑΣΘΕΝΗΣ ΕΙΝΑΙ ΕΓΓΥΟΣ ; \n"
 "- ΜΗΠΩΣ ΠΡΟΓΡΑΜΜΑΤΙΖΕΙ ΝΑ ΜΕΙΝΕΙ ΕΓΓΥΟΣ;\n"
 "- ΣΤΙΣ ΠΟΣΕΣ ΕΒΔΟΜΑΔΕΣ ΕΓΓΥΜΟΣYΝΗΣ ΒΡΙΣΚΕΤΑΙ; \n"
 "\n"
@@ -233,15 +235,15 @@ msgstr "Δεν υπάρχει συσχετισμένος επαγγελματί�
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "The Vaccine next dose is BEFORE the first one !"
-msgstr "Η επόμενη δόση του εμβολίου είναι ΠΡΙΝ την πρώτη!"
+msgstr "Η επόμενη δόση του εμβολίου προκύπτει ΠΡΙΝ από την πρώτη δόση !"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "This vaccine dose has been given already to the patient"
-msgstr "Αυτή η δόση εμβολίου έχει ήδη δοθεί στον ασθενή"
+msgstr "Αυτή η δόση εμβολίου έχει ήδη χορηγηθεί στον ασθενή"
 
 msgctxt "error:party.party:"
 msgid "The PUID must be unique"
-msgstr ""
+msgstr "Ο Ατομικός Κωδικός Ταυτοποίησης πρέπει να είναι μοναδικός"
 
 msgctxt "error:party.party:"
 msgid "This internal user is already assigned to a party"
@@ -249,11 +251,11 @@ msgstr ""
 
 msgctxt "error:wizard.gnuhealth.appointment.evaluation:"
 msgid "You need to select one Appointment record"
-msgstr "Πρέπει να επιλέξετε μια καταχώρηση Ραντεβού"
+msgstr "Πρέπει να επιλέξετε μια καταχώρηση ραντεβού"
 
 msgctxt "field:gnuhealth.appointment,appointment_date:"
 msgid "Date and Time"
-msgstr "Ημερομηνία και Χρόνος"
+msgstr "Ημερομηνία και Ώρα"
 
 msgctxt "field:gnuhealth.appointment,appointment_type:"
 msgid "Type"
@@ -285,7 +287,7 @@ msgstr "Επαγγ. Υγείας"
 
 msgctxt "field:gnuhealth.appointment,id:"
 msgid "ID"
-msgstr "ID"
+msgstr "Κωδικός ταυτοποίησης"
 
 msgctxt "field:gnuhealth.appointment,institution:"
 msgid "Institution"
@@ -293,7 +295,7 @@ msgstr "Ίδρυμα"
 
 msgctxt "field:gnuhealth.appointment,name:"
 msgid "Appointment ID"
-msgstr "Κωδικός ID ραντεβού"
+msgstr "Κωδικός ραντεβού"
 
 msgctxt "field:gnuhealth.appointment,patient:"
 msgid "Patient"
@@ -353,11 +355,11 @@ msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.appointment.report,diagnosis:"
 msgid "Main Codition"
-msgstr ""
+msgstr "Κύρια πάθηση"
 
 msgctxt "field:gnuhealth.appointment.report,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Φύλλο"
 
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
@@ -381,7 +383,7 @@ msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.appointment.report,ref:"
 msgid "PUID"
-msgstr ""
+msgstr "Ατομικός Κωδικός Ταυτοποίησης"
 
 msgctxt "field:gnuhealth.appointment.report,write_date:"
 msgid "Write Date"
@@ -421,7 +423,7 @@ msgstr "Χώρα"
 
 msgctxt "field:gnuhealth.birth_certificate,country_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "Υποτομέας"
 
 msgctxt "field:gnuhealth.birth_certificate,create_date:"
 msgid "Create Date"
@@ -494,15 +496,15 @@ msgstr "Ηλικία"
 
 msgctxt "field:gnuhealth.death_certificate,autopsy:"
 msgid "Autopsy"
-msgstr ""
+msgstr "Αυτοψία"
 
 msgctxt "field:gnuhealth.death_certificate,certification_date:"
 msgid "Certified on"
-msgstr ""
+msgstr "Πιστοποιήθηκε στις"
 
 msgctxt "field:gnuhealth.death_certificate,cod:"
 msgid "Cause"
-msgstr ""
+msgstr "Αιτία"
 
 msgctxt "field:gnuhealth.death_certificate,code:"
 msgid "Code"
@@ -514,7 +516,7 @@ msgstr "Χώρα"
 
 msgctxt "field:gnuhealth.death_certificate,country_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "Υποτομέας"
 
 msgctxt "field:gnuhealth.death_certificate,create_date:"
 msgid "Create Date"
@@ -566,7 +568,7 @@ msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.death_certificate,signed_by:"
 msgid "Signed by"
-msgstr "Υπεγράφη από τον/την"
+msgstr "Υπεγράφη από"
 
 msgctxt "field:gnuhealth.death_certificate,state:"
 msgid "State"
@@ -578,7 +580,7 @@ msgstr "Τύπος θανάτου"
 
 msgctxt "field:gnuhealth.death_certificate,underlying_conditions:"
 msgid "Underlying Conditions"
-msgstr ""
+msgstr "Υποκείμενες παθήσεις"
 
 msgctxt "field:gnuhealth.death_certificate,write_date:"
 msgid "Write Date"
@@ -590,7 +592,7 @@ msgstr "Γράψτε τον χρήστη"
 
 msgctxt "field:gnuhealth.death_underlying_condition,condition:"
 msgid "Condition"
-msgstr ""
+msgstr "Πάθηση"
 
 msgctxt "field:gnuhealth.death_underlying_condition,create_date:"
 msgid "Create Date"
@@ -602,7 +604,7 @@ msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.death_underlying_condition,death_certificate:"
 msgid "Certificate"
-msgstr ""
+msgstr "Πιστοποίηση"
 
 msgctxt "field:gnuhealth.death_underlying_condition,id:"
 msgid "ID"
@@ -610,7 +612,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.death_underlying_condition,interval:"
 msgid "Interval"
-msgstr ""
+msgstr "Διάστημα"
 
 msgctxt "field:gnuhealth.death_underlying_condition,rec_name:"
 msgid "Name"
@@ -718,7 +720,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.disease_group.members,name:"
 msgid "Condition"
-msgstr ""
+msgstr "Πάθηση"
 
 msgctxt "field:gnuhealth.disease_group.members,rec_name:"
 msgid "Name"
@@ -1122,7 +1124,7 @@ msgstr "Επαγγελματίας Υγείας"
 
 msgctxt "field:gnuhealth.healthprofessional,puid:"
 msgid "PUID"
-msgstr ""
+msgstr "Ατομικός Κωδικός Ταυτοποίησης"
 
 msgctxt "field:gnuhealth.healthprofessional,rec_name:"
 msgid "Name"
@@ -1350,11 +1352,11 @@ msgstr "Αριθμός ορόφου"
 
 msgctxt "field:gnuhealth.hospital.ward,gender:"
 msgid "Gender"
-msgstr "Γένος"
+msgstr "Φύλλο"
 
 msgctxt "field:gnuhealth.hospital.ward,guest_sofa:"
 msgid "Guest sofa-bed"
-msgstr "Βοηθητικό καναποκρέββατο συνοδού"
+msgstr "Καναπές-κρεββάτι συνοδού"
 
 msgctxt "field:gnuhealth.hospital.ward,id:"
 msgid "ID"
@@ -1378,11 +1380,11 @@ msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.hospital.ward,number_of_beds:"
 msgid "Number of beds"
-msgstr "Αιθμός κλινών"
+msgstr "Αριθμός κλινών"
 
 msgctxt "field:gnuhealth.hospital.ward,private:"
 msgid "Private"
-msgstr "Ιδιώτης"
+msgstr "Ιδιωτικό"
 
 msgctxt "field:gnuhealth.hospital.ward,private_bathroom:"
 msgid "Private Bathroom"
@@ -1670,7 +1672,7 @@ msgstr "Κέντρο Τραυματολογίας"
 
 msgctxt "field:gnuhealth.institution,trauma_level:"
 msgid "Trauma Level"
-msgstr ""
+msgstr "Επίπεδο τραύματος"
 
 msgctxt "field:gnuhealth.institution,write_date:"
 msgid "Write Date"
@@ -1874,7 +1876,7 @@ msgstr "Οδηγίες δοσολογίας"
 
 msgctxt "field:gnuhealth.medicament,form:"
 msgid "Form"
-msgstr ""
+msgstr "Φόρμα"
 
 msgctxt "field:gnuhealth.medicament,id:"
 msgid "ID"
@@ -1926,7 +1928,7 @@ msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.medicament,route:"
 msgid "Administration Route"
-msgstr ""
+msgstr "Οδός χορήγησης"
 
 msgctxt "field:gnuhealth.medicament,storage:"
 msgid "Storage Conditions"
@@ -1934,7 +1936,7 @@ msgstr "Συνθήκες φύλαξης"
 
 msgctxt "field:gnuhealth.medicament,strength:"
 msgid "Strength"
-msgstr ""
+msgstr "Ισχύς"
 
 msgctxt "field:gnuhealth.medicament,therapeutic_action:"
 msgid "Therapeutic effect"
@@ -1942,7 +1944,7 @@ msgstr "Θεραπευυτικό αποτέλεσμα"
 
 msgctxt "field:gnuhealth.medicament,unit:"
 msgid "dose unit"
-msgstr ""
+msgstr "μονάδα δοσολογίας"
 
 msgctxt "field:gnuhealth.medicament,write_date:"
 msgid "Write Date"
@@ -2146,7 +2148,7 @@ msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.pathology,create_uid:"
 msgid "Create User"
-msgstr "Γράψτε τον χρήστη"
+msgstr "Δημιουργία Χρήστη"
 
 msgctxt "field:gnuhealth.pathology,gene:"
 msgid "Gene"
@@ -2274,7 +2276,7 @@ msgstr "Ραντεβού"
 
 msgctxt "field:gnuhealth.patient,biological_sex:"
 msgid "Biological Sex"
-msgstr ""
+msgstr "Βιολογικό φύλο"
 
 msgctxt "field:gnuhealth.patient,blood_type:"
 msgid "Blood Type"
@@ -2304,7 +2306,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,critical_summary:"
 msgid "Important health conditions related to this patient"
-msgstr ""
+msgstr "Σημαντικά θέματα υγείας που σχετίζονται με αυτό τον ασθενή"
 
 msgctxt "field:gnuhealth.patient,current_address:"
 msgid "Temp. Addr"
@@ -2320,7 +2322,7 @@ msgstr "Απεβίωσε"
 
 msgctxt "field:gnuhealth.patient,diseases:"
 msgid "Conditions"
-msgstr ""
+msgstr "Παθήσεις"
 
 msgctxt "field:gnuhealth.patient,dob:"
 msgid "DoB"
@@ -2336,7 +2338,7 @@ msgstr "Οικογένεια"
 
 msgctxt "field:gnuhealth.patient,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Φύλλο"
 
 msgctxt "field:gnuhealth.patient,general_info:"
 msgid "General Information"
@@ -2372,7 +2374,7 @@ msgstr "Γενικός Ιατρός"
 
 msgctxt "field:gnuhealth.patient,puid:"
 msgid "PUID"
-msgstr ""
+msgstr "Ατομικός Κωδικός Ταυτοποίησης"
 
 msgctxt "field:gnuhealth.patient,rec_name:"
 msgid "Name"
@@ -2468,7 +2470,7 @@ msgstr "Ασθενής"
 
 msgctxt "field:gnuhealth.patient.disease,pathology:"
 msgid "Condition"
-msgstr ""
+msgstr "Πάθηση"
 
 msgctxt "field:gnuhealth.patient.disease,pcs_code:"
 msgid "Code"
@@ -2484,7 +2486,7 @@ msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.patient.disease,related_evaluations:"
 msgid "Related Evaluations"
-msgstr ""
+msgstr "Σχετικές εκτιμήσεις"
 
 msgctxt "field:gnuhealth.patient.disease,short_comment:"
 msgid "Remarks"
@@ -2512,63 +2514,63 @@ msgstr "Γράψτε τν χρήστη"
 
 msgctxt "field:gnuhealth.patient.ecg,axis:"
 msgid "Axis"
-msgstr ""
+msgstr "Άξονας"
 
 msgctxt "field:gnuhealth.patient.ecg,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.patient.ecg,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.patient.ecg,ecg_date:"
 msgid "Date"
-msgstr ""
+msgstr "Ημερομηνία"
 
 msgctxt "field:gnuhealth.patient.ecg,ecg_strip:"
 msgid "ECG Strip"
-msgstr ""
+msgstr "Ταινία ΗΚΓ"
 
 msgctxt "field:gnuhealth.patient.ecg,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Επαγγ. Υγείας"
 
 msgctxt "field:gnuhealth.patient.ecg,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.ecg,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Ίδρυμα"
 
 msgctxt "field:gnuhealth.patient.ecg,interpretation:"
 msgid "Interpretation"
-msgstr ""
+msgstr "Ερμηνεία"
 
 msgctxt "field:gnuhealth.patient.ecg,lead:"
 msgid "Lead"
-msgstr ""
+msgstr "Απαγωγή ΗΚΓ"
 
 msgctxt "field:gnuhealth.patient.ecg,name:"
 msgid "Patient"
-msgstr ""
+msgstr "Ασθενής"
 
 msgctxt "field:gnuhealth.patient.ecg,pacemaker:"
 msgid "Pacemaker"
-msgstr ""
+msgstr "Βηματοδότης"
 
 msgctxt "field:gnuhealth.patient.ecg,pr:"
 msgid "PR"
-msgstr ""
+msgstr "Διάστημα PR"
 
 msgctxt "field:gnuhealth.patient.ecg,qrs:"
 msgid "QRS"
-msgstr ""
+msgstr "Σύμπλεγμα QRS"
 
 msgctxt "field:gnuhealth.patient.ecg,qt:"
 msgid "QT"
-msgstr ""
+msgstr "Διάστημα QT"
 
 msgctxt "field:gnuhealth.patient.ecg,rate:"
 msgid "Rate"
@@ -2576,27 +2578,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.ecg,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.patient.ecg,rhythm:"
 msgid "Rhythm"
-msgstr ""
+msgstr "Ρυθμός"
 
 msgctxt "field:gnuhealth.patient.ecg,st_segment:"
 msgid "ST Segment"
-msgstr ""
+msgstr "Διάστημα ST"
 
 msgctxt "field:gnuhealth.patient.ecg,twave_inversion:"
 msgid "T wave inversion"
-msgstr ""
+msgstr "Αναστροφή κύματος Τ"
 
 msgctxt "field:gnuhealth.patient.ecg,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Γράψτε την Ημερομηνία"
 
 msgctxt "field:gnuhealth.patient.ecg,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Γράψτε τον χρήστη"
 
 msgctxt "field:gnuhealth.patient.evaluation,abdominal_circ:"
 msgid "Waist"
@@ -2612,11 +2614,11 @@ msgstr "Ιατρικές πράξεις/ διαδικασίες"
 
 msgctxt "field:gnuhealth.patient.evaluation,appointment:"
 msgid "Appointment"
-msgstr ""
+msgstr "Ραντεβού"
 
 msgctxt "field:gnuhealth.patient.evaluation,bmi:"
 msgid "BMI"
-msgstr ""
+msgstr "ΔΜΣ"
 
 msgctxt "field:gnuhealth.patient.evaluation,bpm:"
 msgid "Heart Rate"
@@ -2636,11 +2638,11 @@ msgstr "Τελευτεία χοληστερίνη"
 
 msgctxt "field:gnuhealth.patient.evaluation,code:"
 msgid "Code"
-msgstr ""
+msgstr "Κωδικός"
 
 msgctxt "field:gnuhealth.patient.evaluation,computed_age:"
 msgid "Age"
-msgstr ""
+msgstr "Ηλικία"
 
 msgctxt "field:gnuhealth.patient.evaluation,create_date:"
 msgid "Create Date"
@@ -2664,7 +2666,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.evaluation,diagnosis:"
 msgid "Main Condition"
-msgstr ""
+msgstr "Κύρια πάθηση"
 
 msgctxt "field:gnuhealth.patient.evaluation,diagnostic_hypothesis:"
 msgid "Hypotheses / DDx"
@@ -2680,7 +2682,7 @@ msgstr "Πλάνο"
 
 msgctxt "field:gnuhealth.patient.evaluation,discharge_reason:"
 msgid "Discharge Reason"
-msgstr ""
+msgstr "Λόγος εξιτηρίου"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_endtime:"
 msgid "End"
@@ -2688,7 +2690,7 @@ msgstr "Τέλος"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_length:"
 msgid "Evaluation length"
-msgstr ""
+msgstr "Διάρκεια εκτίμησης"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_start:"
 msgid "Start"
@@ -2696,7 +2698,7 @@ msgstr "Αρχή"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_summary:"
 msgid "Clinical and physical"
-msgstr ""
+msgstr "Κλινική και φυσική"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_type:"
 msgid "Type"
@@ -2704,7 +2706,7 @@ msgstr "Είδος"
 
 msgctxt "field:gnuhealth.patient.evaluation,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Φύλλο"
 
 msgctxt "field:gnuhealth.patient.evaluation,glycemia:"
 msgid "Glycemia"
@@ -2720,7 +2722,7 @@ msgstr "Τελευταία HDL"
 
 msgctxt "field:gnuhealth.patient.evaluation,head_circumference:"
 msgid "Head"
-msgstr ""
+msgstr "Κεφαλή"
 
 msgctxt "field:gnuhealth.patient.evaluation,healthprof:"
 msgid "Health Prof"
@@ -2832,7 +2834,7 @@ msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.patient.evaluation,related_condition:"
 msgid "Related condition"
-msgstr ""
+msgstr "Σχετική πάθηση"
 
 msgctxt "field:gnuhealth.patient.evaluation,reliable_info:"
 msgid "Reliable"
@@ -2844,7 +2846,7 @@ msgstr "Ημερομηνία εκτίμησης"
 
 msgctxt "field:gnuhealth.patient.evaluation,report_evaluation_time:"
 msgid "Evaluation Time"
-msgstr ""
+msgstr "Χρόνος εκτίμησης"
 
 msgctxt "field:gnuhealth.patient.evaluation,respiratory_rate:"
 msgid "Respiratory Rate"
@@ -2852,7 +2854,7 @@ msgstr "Αναπνευστική συχνότητα"
 
 msgctxt "field:gnuhealth.patient.evaluation,secondary_conditions:"
 msgid "Other Conditions"
-msgstr ""
+msgstr "Άλλες παθήσεις"
 
 msgctxt "field:gnuhealth.patient.evaluation,signed_by:"
 msgid "Health Prof"
@@ -2908,7 +2910,7 @@ msgstr "Λεξιλόγιο"
 
 msgctxt "field:gnuhealth.patient.evaluation,wait_time:"
 msgid "Patient wait time"
-msgstr ""
+msgstr "Χρόνος αναμονής ασθενούς"
 
 msgctxt "field:gnuhealth.patient.evaluation,weight:"
 msgid "Weight"
@@ -3016,7 +3018,7 @@ msgstr "Συχνότητα"
 
 msgctxt "field:gnuhealth.patient.medication,infusion_rate_units:"
 msgid "Unit Rate"
-msgstr ""
+msgstr "Μονάδα συχνότητας"
 
 msgctxt "field:gnuhealth.patient.medication,institution:"
 msgid "Institution"
@@ -3040,7 +3042,7 @@ msgstr "Πρόσθετες πληροφορίες"
 
 msgctxt "field:gnuhealth.patient.medication,prescription:"
 msgid "Prescription"
-msgstr ""
+msgstr "Συνταγή"
 
 msgctxt "field:gnuhealth.patient.medication,qty:"
 msgid "x"
@@ -3109,15 +3111,15 @@ msgstr "Γράψτε τον χρήστη"
 
 msgctxt "field:gnuhealth.person_name,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.person_name,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.person_name,date_from:"
 msgid "From"
-msgstr ""
+msgstr "Από"
 
 msgctxt "field:gnuhealth.person_name,date_to:"
 msgid "To"
@@ -3125,43 +3127,43 @@ msgstr ""
 
 msgctxt "field:gnuhealth.person_name,family:"
 msgid "Family"
-msgstr ""
+msgstr "Οικογένεια"
 
 msgctxt "field:gnuhealth.person_name,given:"
 msgid "Given"
-msgstr ""
+msgstr "Δοθέντα"
 
 msgctxt "field:gnuhealth.person_name,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.person_name,party:"
 msgid "Person"
-msgstr ""
+msgstr "Άτομο"
 
 msgctxt "field:gnuhealth.person_name,prefix:"
 msgid "Prefix"
-msgstr ""
+msgstr "Πρόθεμα"
 
 msgctxt "field:gnuhealth.person_name,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.person_name,suffix:"
 msgid "Suffix"
-msgstr ""
+msgstr "Επίθημα"
 
 msgctxt "field:gnuhealth.person_name,use:"
 msgid "Use"
-msgstr ""
+msgstr "Χρήση"
 
 msgctxt "field:gnuhealth.person_name,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Γράψτε την Ημερομηνία"
 
 msgctxt "field:gnuhealth.person_name,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Γράψτε τον χρήστη"
 
 msgctxt "field:gnuhealth.prescription.line,add_to_history:"
 msgid "Hist"
@@ -3233,7 +3235,7 @@ msgstr "Ένδειξη"
 
 msgctxt "field:gnuhealth.prescription.line,infusion:"
 msgid "Infusion"
-msgstr ""
+msgstr "Έγχυση"
 
 msgctxt "field:gnuhealth.prescription.line,infusion_rate:"
 msgid "Rate"
@@ -3273,7 +3275,7 @@ msgstr "Αριθμός επαναγομώσεων #"
 
 msgctxt "field:gnuhealth.prescription.line,review:"
 msgid "Valid Until"
-msgstr ""
+msgstr "Ισχύει μέχρι"
 
 msgctxt "field:gnuhealth.prescription.line,route:"
 msgid "Administration Route"
@@ -3457,7 +3459,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.sequences,patient_evaluation_sequence:"
 msgid "Patient Evaluation Sequence"
-msgstr ""
+msgstr "Αλληλουχία εκτίμησης ασθενούς"
 
 msgctxt "field:gnuhealth.sequences,patient_sequence:"
 msgid "Patient Sequence"
@@ -3557,7 +3559,7 @@ msgstr "Οδός"
 
 msgctxt "field:gnuhealth.vaccination,admin_site:"
 msgid "Admin Site"
-msgstr ""
+msgstr "Γραφεία Διοίκησης"
 
 msgctxt "field:gnuhealth.vaccination,amount:"
 msgid "Amount"
@@ -3661,7 +3663,7 @@ msgstr "Ημερομηνία ενεργοποίησης"
 
 msgctxt "field:party.party,age:"
 msgid "Age"
-msgstr ""
+msgstr "Ηλικία"
 
 msgctxt "field:party.party,alternative_identification:"
 msgid "Alternative IDs"
@@ -3673,7 +3675,7 @@ msgstr "Εναλλακτικές ταυτότητες"
 
 msgctxt "field:party.party,birth_certificate:"
 msgid "Birth Certificate"
-msgstr ""
+msgstr "Πιστοποιητικό γεννήσεως"
 
 msgctxt "field:party.party,citizenship:"
 msgid "Citizenship"
@@ -3681,7 +3683,7 @@ msgstr "Υπηκοότητα"
 
 msgctxt "field:party.party,death_certificate:"
 msgid "Death Certificate"
-msgstr ""
+msgstr "Πιστοποιητικό θανάτου"
 
 msgctxt "field:party.party,deceased:"
 msgid "Deceased"
@@ -3693,15 +3695,15 @@ msgstr "Ημερομ. γενν."
 
 msgctxt "field:party.party,dod:"
 msgid "Date of Death"
-msgstr ""
+msgstr "Ημερομηνία θανάτου"
 
 msgctxt "field:party.party,du:"
 msgid "DU"
-msgstr ""
+msgstr "Οικιακή Μονάδα DU"
 
 msgctxt "field:party.party,ethnic_group:"
 msgid "Ethnicity"
-msgstr ""
+msgstr "Εθνικότητα"
 
 msgctxt "field:party.party,father:"
 msgid "Father"
@@ -3709,7 +3711,7 @@ msgstr "Πατέρας"
 
 msgctxt "field:party.party,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Φύλλο"
 
 msgctxt "field:party.party,insurance:"
 msgid "Insurances"
@@ -3753,7 +3755,7 @@ msgstr "Φαρμακείο"
 
 msgctxt "field:party.party,lastname:"
 msgid "Family names"
-msgstr ""
+msgstr "Επίθετα"
 
 msgctxt "field:party.party,marital_status:"
 msgid "Marital Status"
@@ -3769,7 +3771,7 @@ msgstr ""
 
 msgctxt "field:party.party,person_names:"
 msgid "Person Names"
-msgstr ""
+msgstr "Ονόματα ατόμου"
 
 msgctxt "field:party.party,photo:"
 msgid "Picture"
@@ -3777,11 +3779,11 @@ msgstr "Εικόνα"
 
 msgctxt "field:party.party,ref:"
 msgid "PUID"
-msgstr ""
+msgstr "Ατομικός Κωδικός Ταυτοποίησης"
 
 msgctxt "field:party.party,residence:"
 msgid "Residence"
-msgstr ""
+msgstr "Τόπος κατοικίας"
 
 msgctxt "field:party.party,unidentified:"
 msgid "Unidentified"
@@ -3829,19 +3831,19 @@ msgstr "Ιατρική ειδικότητα / Τομέας"
 
 msgctxt "help:gnuhealth.birth_certificate,signed_by:"
 msgid "Person who certifies this birth document"
-msgstr ""
+msgstr "Άτομο που υπέγραψε αυτό το πιστοποιητικό γέννησης"
 
 msgctxt "help:gnuhealth.death_certificate,autopsy:"
 msgid "Check this box if autopsy has been done"
-msgstr ""
+msgstr "Τσεκάρετε αυτό το κουτάκι αν έγινε αυτοψία"
 
 msgctxt "help:gnuhealth.death_certificate,cod:"
 msgid "Immediate Cause of Death"
-msgstr ""
+msgstr "'Αμεση αιτία θανάτου"
 
 msgctxt "help:gnuhealth.death_certificate,dod:"
 msgid "Date and time of Death"
-msgstr ""
+msgstr "Ημερομηνία και ώρα θανάτου"
 
 msgctxt "help:gnuhealth.death_certificate,du:"
 msgid "Domiciliary Unit"
@@ -3849,13 +3851,15 @@ msgstr "Κατοικία"
 
 msgctxt "help:gnuhealth.death_certificate,signed_by:"
 msgid "Health Professional that signed the death certificate"
-msgstr ""
+msgstr "Επαγγελματίας υγείας που υπέγραψε το πιστοποιητικό θανάτου"
 
 msgctxt "help:gnuhealth.death_certificate,underlying_conditions:"
 msgid ""
 "Underlying conditions that initiated the events resulting in death. Please "
 "code them in sequential, chronological order"
 msgstr ""
+"Υποκείμενα προβλήματα που έδωσαν έναυσμα στα γεγονότα που οδήγησαν στον "
+"θάνατο. Παρακαλώ κωδικοποιήστε τα με διαδοχική, χρονολογική σειρά"
 
 msgctxt "help:gnuhealth.death_underlying_condition,interval:"
 msgid "Approx Interval onset to death"
@@ -3887,11 +3891,12 @@ msgstr "Συνθήκες υγιεινής και διαβίωσης"
 
 msgctxt "help:gnuhealth.du,total_surface:"
 msgid "Surface in sq. meters"
-msgstr "Επιφάνεια σε τ.μ."
+msgstr "Επιφάνεια (σε τ.μ.)"
 
 msgctxt "help:gnuhealth.du,urladdr:"
 msgid "Locates the DU on the Open Street Map by default"
 msgstr ""
+"Εντοπισμός της Οικογενειακής Μονάδας DU στον χάρτη Open Street από προεπιλογή"
 
 msgctxt "help:gnuhealth.ethnicity,code:"
 msgid "Please use CAPITAL LETTERS and no spaces"
@@ -3915,7 +3920,7 @@ msgstr "Πατέρας, Μητέρα, Αδέλφια ..."
 
 msgctxt "help:gnuhealth.healthprofessional,code:"
 msgid "License ID"
-msgstr "Κωδικός ID αδείας "
+msgstr "Κωδικός αδείας"
 
 msgctxt "help:gnuhealth.healthprofessional,institution:"
 msgid "Main institution where she/he works"
@@ -3927,7 +3932,7 @@ msgstr "Όνομα επαγγελματία Υγείας από την λίστ�
 
 msgctxt "help:gnuhealth.healthprofessional,puid:"
 msgid "Person Unique Identifier"
-msgstr ""
+msgstr "Μοναδικός Κωδικός ταυτοποίησης ατόμου"
 
 msgctxt "help:gnuhealth.hospital.bed,institution:"
 msgid "Health Institution"
@@ -3947,7 +3952,7 @@ msgstr "Τμήμα ή Κλινική"
 
 msgctxt "help:gnuhealth.hospital.building,institution:"
 msgid "Health Institution of this building"
-msgstr ""
+msgstr "Νοσηλευτική/Υγειονομική δομή σε αυτό το κτίριο"
 
 msgctxt "help:gnuhealth.hospital.building,name:"
 msgid "Name of the building within the institution"
@@ -3995,11 +4000,11 @@ msgstr "Κωδικός ειδικότητας"
 
 msgctxt "help:gnuhealth.immunization_schedule,desc:"
 msgid "Short Description for this immunization schedule"
-msgstr ""
+msgstr "Σύντομη περιγραφή αυτού του προγράμματος ανοσοποίησης"
 
 msgctxt "help:gnuhealth.immunization_schedule,sched:"
 msgid "Code for this immunization schedule"
-msgstr ""
+msgstr "Κωδικός για αυτό το πρόγραμμα ανοσοποίησης"
 
 msgctxt "help:gnuhealth.immunization_schedule_dose,vaccine:"
 msgid "Vaccine Name"
@@ -4007,7 +4012,7 @@ msgstr "Όνομα εμβολίου"
 
 msgctxt "help:gnuhealth.immunization_schedule_line,sched:"
 msgid "Schedule Name"
-msgstr ""
+msgstr "Όνομα προγράμματος"
 
 msgctxt "help:gnuhealth.immunization_schedule_line,vaccine:"
 msgid "Vaccine Name"
@@ -4022,6 +4027,8 @@ msgid ""
 "Choose the speciality in the case of Specialized Hospitals or where this "
 "center excels"
 msgstr ""
+"Επιλέξτε την ειδικότητα, αν πρόκειται για Εξειδικευμένα Νοσοκομεία ή όπου "
+"διακρίνεται αυτό το Κέντρο"
 
 msgctxt "help:gnuhealth.institution,name:"
 msgid "Party Associated to this Health Institution"
@@ -4030,18 +4037,19 @@ msgstr ""
 msgctxt "help:gnuhealth.institution,operating_room:"
 msgid "Check this box if the institution has operating rooms"
 msgstr ""
+"Επιλέξτε αυτό το κουτάκι αν το Νοσηλευτικό Ίδρυμα ίδρυμα διαθέτει Χειρουργεία"
 
 msgctxt "help:gnuhealth.institution,operational_sectors:"
 msgid "Operational Sectors covered by this institution"
-msgstr ""
+msgstr "Επιχειρησιακοί τομείς που καλύπτονται σε αυτό το Νοσηλευτικό Ίδρυμα"
 
 msgctxt "help:gnuhealth.institution,specialties:"
 msgid "Specialties Provided in this Health Institution"
-msgstr ""
+msgstr "Ειδικότητες που προσφέρει αυτό το Νοσηλευτικό Ίδρυμα"
 
 msgctxt "help:gnuhealth.institution,teaching:"
 msgid "Mark if this is a teaching institution"
-msgstr ""
+msgstr "Τσεκάρετε εδώ αν αυτό είναι Πανεπιστημιακό Νοσοκομείο"
 
 msgctxt "help:gnuhealth.insurance,category:"
 msgid "Insurance company category"
@@ -4077,7 +4085,7 @@ msgstr "Δοσολογία/ Ενδείξεις"
 
 msgctxt "help:gnuhealth.medicament,form:"
 msgid "Drug form, such as tablet, suspension, liquid .."
-msgstr ""
+msgstr "Είδος φαρμάκου, όπως δισκία, σιρόπι, εναιώρημα ..."
 
 msgctxt "help:gnuhealth.medicament,indications:"
 msgid "Indications"
@@ -4150,11 +4158,11 @@ msgstr "Συσκευασία"
 
 msgctxt "help:gnuhealth.medicament,route:"
 msgid "Drug administration route code."
-msgstr ""
+msgstr "Κωδικός για οδό χορήγησης φαρμάκου."
 
 msgctxt "help:gnuhealth.medicament,strength:"
 msgid "Amount of medication (eg, 250 mg) per dose"
-msgstr ""
+msgstr "Ποσότητα φαρμάκου (πχ., 250 mg) ανά δόση"
 
 msgctxt "help:gnuhealth.medicament,therapeutic_action:"
 msgid "Therapeutic action"
@@ -4162,7 +4170,7 @@ msgstr "Θεραπευτικές ενέργειες"
 
 msgctxt "help:gnuhealth.medicament,unit:"
 msgid "Unit of measure for the medication to be taken"
-msgstr ""
+msgstr "Μονάδα μέτρησης για το φάρμακο που πρέπει να χορηγηθεί"
 
 msgctxt "help:gnuhealth.medication.dosage,abbreviation:"
 msgid "Dosage abbreviation, such as tid in the US or tds in the UK"
@@ -4174,6 +4182,8 @@ msgid ""
 "Dosage Code,for example: SNOMED 229798009 = 3 times per day.Please use "
 "CAPITAL LETTERS and no spaces"
 msgstr ""
+"Κωδικός δοσολογίας, πχ., SNOMED 229798009 = 3 φορές ημερησίως. Παρακαλώ "
+"χρησιμοποιήστε ΚΕΦΑΛΑΙΑ ΓΡΑΜΜΑΤΑ και χωρίς διαστήματα"
 
 msgctxt "help:gnuhealth.medication.dosage,name:"
 msgid "Common frequency name"
@@ -4245,18 +4255,23 @@ msgctxt "help:gnuhealth.patient,biological_sex:"
 msgid ""
 "Biological sex. By defaults it takes the value from the neonatal information"
 msgstr ""
+"Βιολογικό φύλο. Από προεπιλογή αντλεί την τιμή από τις νεογνικές πληροφορίες"
 
 msgctxt "help:gnuhealth.patient,critical_info:"
 msgid ""
 "Write any important information on the patient's condition, surgeries, "
 "allergies, ..."
 msgstr ""
+"Γράψτε οποιαδήποτε σημαντική πληροφορία για το πρόβλημα του ασθενούς, "
+"χειρουργεία, αλλεργίες, ..."
 
 msgctxt "help:gnuhealth.patient,critical_summary:"
 msgid ""
 "Automated summary of patient important health conditions other critical "
 "information"
 msgstr ""
+"Αυτοματοποιημένη περίληψη ασθενούς Σημαντικά προβλήματα υγείας Άλλες "
+"κρίσιμες πληροφορίες"
 
 msgctxt "help:gnuhealth.patient,current_address:"
 msgid ""
@@ -4300,7 +4315,7 @@ msgstr "Τρέχων οικογενειακός γιατρός/ Γενικός �
 
 msgctxt "help:gnuhealth.patient,puid:"
 msgid "Person Unique Identifier"
-msgstr ""
+msgstr "Μοναδικός Κωδικός Ταυτοποίησης Ατόμου"
 
 msgctxt "help:gnuhealth.patient.disease,age:"
 msgid "Patient age at the moment of the diagnosis. Can be estimative"
@@ -4316,7 +4331,7 @@ msgstr "Τέλος περιόδου θεραπείας"
 
 msgctxt "help:gnuhealth.patient.disease,healthprof:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Επαγγελματίας Υγείας"
 
 msgctxt "help:gnuhealth.patient.disease,is_infectious:"
 msgid "Check if the patient has an infectious / transmissible disease"
@@ -4324,7 +4339,7 @@ msgstr "Ελέγξτε αν ο ασθενής έχει κάποιο λοιμώδ
 
 msgctxt "help:gnuhealth.patient.disease,pathology:"
 msgid "Condition"
-msgstr ""
+msgstr "Πάθηση"
 
 msgctxt "help:gnuhealth.patient.disease,pcs_code:"
 msgid "Procedure code, for example, ICD-10-PCS Code 7-character string"
@@ -4336,27 +4351,27 @@ msgid ""
 "Extra info field"
 msgstr ""
 "Σύντομη παρατήρηση, σε μία γραμμή, για το νόσημα. Οι μεγαλύτερες "
-"παρατηρήσεις θα τοποθετηθούν στο πεδίο Πρόσθετες πληροφορίες."
+"παρατηρήσεις θα τοποθετηθούν στο πεδίο Πρόσθετες πληροφορίες"
 
 msgctxt "help:gnuhealth.patient.ecg,healthprof:"
 msgid "Health Professional who performed the ECG"
-msgstr ""
+msgstr "Επαγγελματίας υγείας που έκανε το ΗΚΓ"
 
 msgctxt "help:gnuhealth.patient.ecg,pr:"
 msgid "Duration of PR interval in milliseconds"
-msgstr ""
+msgstr "Διάρκεια του διαστήματος PR σε milliseconds"
 
 msgctxt "help:gnuhealth.patient.ecg,qrs:"
 msgid "Duration of QRS interval in milliseconds"
-msgstr ""
+msgstr "Διάρκεια του διαστήματος QRS σε milliseconds"
 
 msgctxt "help:gnuhealth.patient.ecg,qt:"
 msgid "Duration of QT interval in milliseconds"
-msgstr ""
+msgstr "Διάρκεια του διαστήματος QT σε milliseconds"
 
 msgctxt "help:gnuhealth.patient.evaluation,abdominal_circ:"
 msgid "Waist circumference in centimeters"
-msgstr ""
+msgstr "Περίμετρος μέσης σε εκατοστά"
 
 msgctxt "help:gnuhealth.patient.evaluation,abstraction:"
 msgid ""
@@ -4373,10 +4388,12 @@ msgctxt "help:gnuhealth.patient.evaluation,appointment:"
 msgid ""
 "Enter or select the date / ID of the appointment related to this evaluation"
 msgstr ""
+"Εισάγετε ή επιλέξτε ημερομηνία/ Κωδικό του ραντεβού που σχετίζεται με αυτή "
+"την εκτίμηση"
 
 msgctxt "help:gnuhealth.patient.evaluation,bmi:"
 msgid "Body mass index"
-msgstr ""
+msgstr "Δείκτης Μάζας Σώματος"
 
 msgctxt "help:gnuhealth.patient.evaluation,bpm:"
 msgid "Heart rate expressed in beats per minute"
@@ -4397,14 +4414,16 @@ msgid ""
 "Last cholesterol reading. Can be approximative. Expressed in mg/dL or "
 "mmol/L."
 msgstr ""
+"Τελευταία μέτρηση χοληστερίνης. Μπορεί να είναι κατά προσέγγιση. Εκφράζεται "
+"σε mg/dL ή σε mmol/L."
 
 msgctxt "help:gnuhealth.patient.evaluation,code:"
 msgid "Unique code that         identifies the evaluation"
-msgstr ""
+msgstr "Μοναδικός κωδικός που         ταυτοποιεί αυτή την εκτίμηση"
 
 msgctxt "help:gnuhealth.patient.evaluation,computed_age:"
 msgid "Computed patient age at the moment of the evaluation"
-msgstr ""
+msgstr "Υπολογισμένη ηλικία ασθενούς κατά τη στιγμή της εκτίμησης"
 
 msgctxt "help:gnuhealth.patient.evaluation,dehydration:"
 msgid ""
@@ -4438,35 +4457,41 @@ msgstr "Άλλες διαγνωστικές υποθέσεις / Διαφορι�
 
 msgctxt "help:gnuhealth.patient.evaluation,diastolic:"
 msgid "Diastolic pressure expressed in mmHg"
-msgstr ""
+msgstr "Διαστολική πίεση εκφρασμένη σε mmHg"
 
 msgctxt "help:gnuhealth.patient.evaluation,discharge_reason:"
 msgid "Reason for patient discharge"
-msgstr ""
+msgstr "Λόγος εξιτηρίου ασθενή"
 
 msgctxt "help:gnuhealth.patient.evaluation,evaluation_length:"
 msgid "Duration of the evaluation"
-msgstr ""
+msgstr "Διάρκεια της αξιολόγησης"
 
 msgctxt "help:gnuhealth.patient.evaluation,glycemia:"
 msgid ""
 "Last blood glucose level. Can be approximative. Expressed in mg/dL or "
 "mmol/L."
 msgstr ""
+"Τελευταία μέτρηση επιπέδου γλυκόζης. Μπορεί να είναι κατά προσέγγιση. "
+"Εκφράζεται σε mg/dL ή σε mmol/L."
 
 msgctxt "help:gnuhealth.patient.evaluation,hba1c:"
 msgid "Last Glycated Hb level. Can be approximative. Expressed in mmol/mol."
 msgstr ""
+"Τελευταία μέτρηση γλυκοζυλιωμένης Hb. Μπορεί να είναι κατά προσέγγιση. "
+"Εκφράζεται σε mmol/mol."
 
 msgctxt "help:gnuhealth.patient.evaluation,hdl:"
 msgid ""
 "Last HDL Cholesterol reading. Can be approximative. Expressed in mg/dL or "
 "mmol/L."
 msgstr ""
+"Τελευταία μέτρηση Χοληστερίνης HDL. Μπορεί να είναι κατά προσέγγιση. "
+"Εκφράζεται σε mg/dL ή σε mmol/L."
 
 msgctxt "help:gnuhealth.patient.evaluation,head_circumference:"
 msgid "Head circumference in centimeters"
-msgstr ""
+msgstr "Περίμετρος κεφαλής σε εκατοστά"
 
 msgctxt "help:gnuhealth.patient.evaluation,healthprof:"
 msgid ""
@@ -4477,16 +4502,16 @@ msgid ""
 msgstr ""
 "Ο επαγγελματίας υγείας που άρχισε την εκτίμηση. Μπορεί να είναι ο ίδιος ή "
 "όχι με εκείνον που υπογράφει και ολοκληρώνει την εκτίμηση. Η εκτίμηση "
-"παραμένει σε κατάσταση προόδου, μέχρι ότου υπογραφεί, οπότε και καθίσταται "
-"μόνο προς ανάγνωση."
+"συνεχίζει να εμφανίζεται 'υπό διεξαγωγή', μέχρι ότου υπογραφεί, οπότε και "
+"καθίσταται προσβάσιμη μόνο προς-ανάγνωση"
 
 msgctxt "help:gnuhealth.patient.evaluation,height:"
 msgid "Height in centimeters"
-msgstr ""
+msgstr "Ύψος σε εκατοστά"
 
 msgctxt "help:gnuhealth.patient.evaluation,hip:"
 msgid "Hip circumference in centimeters"
-msgstr ""
+msgstr "Περίμετρος ισχίων σε εκατοστά"
 
 msgctxt "help:gnuhealth.patient.evaluation,information_source:"
 msgid "Source ofInformation, eg : Self, relative, friend ..."
@@ -4513,6 +4538,8 @@ msgid ""
 "Last LDL Cholesterol reading. Can be approximative. Expressed in mg/dL or "
 "mmol/L."
 msgstr ""
+"Τελευταία μέτρηση Χοληστερίνης LDL. Μπορεί να είναι κατά προσέγγιση. "
+"Εκφράζεται σε mg/dL ή σε mmol/L."
 
 msgctxt "help:gnuhealth.patient.evaluation,loc:"
 msgid ""
@@ -4557,7 +4584,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,osat:"
 msgid "Arterial oxygen saturation expressed as a percentage"
-msgstr ""
+msgstr "Κορεσμός αρτηριακού οξυγόνου που εκφράζεται σαν ποσοστό"
 
 msgctxt "help:gnuhealth.patient.evaluation,praxis:"
 msgid "Check this box if the patient is unable to make voluntarymovements"
@@ -4566,7 +4593,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,related_condition:"
 msgid "Related condition related to this follow-up evaluation"
-msgstr ""
+msgstr "Σχετική πάθηση που συνδέεται με αυτή την επίσκεψη παρακολούθησης"
 
 msgctxt "help:gnuhealth.patient.evaluation,reliable_info:"
 msgid ""
@@ -4582,25 +4609,28 @@ msgstr "Αναπνευστικός ρυθμός σε αναπνοές ανά λ�
 
 msgctxt "help:gnuhealth.patient.evaluation,secondary_conditions:"
 msgid "Other  conditions found on the patient"
-msgstr ""
+msgstr "Άλλες  παθήσεις που διαπιστώθηκαν στον ασθενή"
 
 msgctxt "help:gnuhealth.patient.evaluation,signed_by:"
 msgid "Health Professional that finnished the patient evaluation"
-msgstr ""
+msgstr "Επαγγελματίας υγείας που ολοκλήρωσε την εκτίμηση ασθενούς"
 
 msgctxt "help:gnuhealth.patient.evaluation,signs_and_symptoms:"
 msgid "Enter the Signs and Symptoms for the patient in this evaluation."
-msgstr "Εισάγετε τα Σημεία και τα Συμπτώματα του ασθενούς, σε αυτή την εκτίμηση"
+msgstr ""
+"Εισάγετε τα Σημεία και τα Συμπτώματα για τον ασθενή σε αυτή την εκτίμηση."
 
 msgctxt "help:gnuhealth.patient.evaluation,systolic:"
 msgid "Systolic pressure expressed in mmHg"
-msgstr ""
+msgstr "Συστολική πίεση εκφρασμένη σε mmHg"
 
 msgctxt "help:gnuhealth.patient.evaluation,tag:"
 msgid ""
 "Triacylglycerol(triglicerides) level. Can be approximative. Expressed in "
 "mg/dL or mmol/L."
 msgstr ""
+"Επίπεδο Τριακυλγλυκερόλης (τριγλυκεριδίων). Μπορεί να είναι κατά προσέγγιση. "
+"Εκφράζεται σε mg/dL ή σε mmol//L."
 
 msgctxt "help:gnuhealth.patient.evaluation,temperature:"
 msgid "Temperature in celcius"
@@ -4628,11 +4658,11 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,wait_time:"
 msgid "How long the patient waited"
-msgstr ""
+msgstr "Πόση ώρα περίμενε ο ασθενής"
 
 msgctxt "help:gnuhealth.patient.evaluation,weight:"
 msgid "Weight in kilos"
-msgstr ""
+msgstr "Βάρος σε κιλά"
 
 msgctxt "help:gnuhealth.patient.evaluation,whr:"
 msgid ""
@@ -4640,6 +4670,10 @@ msgid ""
 "Men : < 0.9 Normal // 0.9 - 0.99 Overweight // > 1 Obesity \n"
 "Women : < 0.8 Normal // 0.8 - 0.84 Overweight // > 0.85 Obesity"
 msgstr ""
+"Αναλογία περιμέτρου Μέσης-Ισχίων. Τιμές αναφοράς:\n"
+"Άνδρες : < 0.9 Φυσιολογικά όρια // 0.9 - 0.99 Υπέρβαροι // > 1 Παχύσαρκοι \n"
+"Γυναίκες : < 0.8 Φυσιολογικά όρια // 0.8 - 0.84 Υπέρβαρες // > 0.85 "
+"Παχύσαρκες"
 
 msgctxt "help:gnuhealth.patient.medication,admin_times:"
 msgid ""
@@ -4675,7 +4709,7 @@ msgid ""
 "months, years or indefinately"
 msgstr ""
 "Η περίοδος για την οποία ο ασθενής πρέπει να λάβει το φάρμακο, σε λεπτά, "
-"ώρες, ημέρες, μήνες, έτη, ή επ' αόριστον."
+"ώρες, ημέρες, μήνες, έτη ή επ' αόριστον"
 
 msgctxt "help:gnuhealth.patient.medication,duration_period:"
 msgid ""
@@ -4683,7 +4717,7 @@ msgid ""
 "months, years or indefinately"
 msgstr ""
 "Περίοδος για την οποία ο ασθενής πρέπει να λάβει το φάρμακο σε λεπτά, ώρες, "
-"ημέρες, μήνες, έτη, ή επ' αόριστον."
+"ημέρες, μήνες, έτη, ή επ' αόριστον"
 
 msgctxt "help:gnuhealth.patient.medication,end_treatment:"
 msgid "Date of start of Treatment"
@@ -4708,7 +4742,7 @@ msgstr "Να χρησιμοποιείται επί ανάγκης, Pro Re Nata"
 
 msgctxt "help:gnuhealth.patient.medication,healthprof:"
 msgid "Health Professional who prescribed or reviewed the medicament"
-msgstr ""
+msgstr "Επαγγελματίας υγείας που συνταγογράφησε ή αναθεώρησε το φάρμακο"
 
 msgctxt "help:gnuhealth.patient.medication,indication:"
 msgid ""
@@ -4724,6 +4758,8 @@ msgid ""
 "Mark if the medication is in the form of infusion Intravenous, Gastrostomy "
 "tube, nasogastric, etc..."
 msgstr ""
+"Τσεκάρετε αν το φάρμακο είναι σε μορφή ενδοφλέβιας έγχυσης, σωλήνα "
+"γαστροστομίας, ρινογαστρικού, κλπ..."
 
 msgctxt "help:gnuhealth.patient.medication,is_active:"
 msgid "Check if the patient is currently taking the medication"
@@ -4735,7 +4771,7 @@ msgstr "Φάρμακο που συνταγογραφήθηκε"
 
 msgctxt "help:gnuhealth.patient.medication,prescription:"
 msgid "Related prescription"
-msgstr ""
+msgstr "Σχετική συνταγή"
 
 msgctxt "help:gnuhealth.patient.medication,qty:"
 msgid "Quantity of units (eg, 2 capsules) of the medicament"
@@ -4743,7 +4779,7 @@ msgstr "Ποσότητα μονάδων (πχ, 2 καψούλες) του φαρ
 
 msgctxt "help:gnuhealth.patient.medication,route:"
 msgid "Drug administration route code."
-msgstr "Κωδικός για την οδό χορήγησης του φαρμάκου"
+msgstr "Κωδικός για την οδό χορήγησης του φαρμάκου."
 
 msgctxt "help:gnuhealth.patient.medication,start_treatment:"
 msgid "Date of start of Treatment"
@@ -4751,11 +4787,11 @@ msgstr "Ημερομηνία κατά την έναρξη της Αγωγής"
 
 msgctxt "help:gnuhealth.person_name,family:"
 msgid "Family / Surname."
-msgstr ""
+msgstr "Επίθετο."
 
 msgctxt "help:gnuhealth.person_name,given:"
 msgid "Given / First name. May include middle name"
-msgstr ""
+msgstr "Όμομα. Μπορεί να περιλαμβάνει και Μεσαίο όνομα"
 
 msgctxt "help:gnuhealth.person_name,party:"
 msgid "Related party (person)"
@@ -4763,7 +4799,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.prescription.line,add_to_history:"
 msgid "Include this medication in the patient medication history"
-msgstr ""
+msgstr "Αυτό το φάρμακο να περιληφθεί στο φαρμακευτικό ιστορικό ασθενούς"
 
 msgctxt "help:gnuhealth.prescription.line,admin_times:"
 msgid ""
@@ -4791,7 +4827,7 @@ msgid ""
 "months, years or indefinately"
 msgstr ""
 "Η περίοδος για την οποία ο ασθενής πρέπει να λάβει το φάρμακο, σε λεπτά, "
-"ώρες, ημέρες, μήνες, έτη, ή επ' αόριστον."
+"ώρες, ημέρες, μήνες, έτη, ή επ' αόριστον"
 
 msgctxt "help:gnuhealth.prescription.line,duration_period:"
 msgid ""
@@ -4799,7 +4835,7 @@ msgid ""
 "months, years or indefinately"
 msgstr ""
 "Περίοδος για την οποία ο ασθενής πρέπει να λάβει το φάρμακο σε λεπτά, ώρες, "
-"ημέρες, μήνες, έτη, ή επ' αόριστον."
+"ημέρες, μήνες, έτη, ή επ' αόριστον"
 
 msgctxt "help:gnuhealth.prescription.line,end_treatment:"
 msgid "Date of start of Treatment"
@@ -4836,6 +4872,8 @@ msgid ""
 "Mark if the medication is in the form of infusion Intravenous, Gastrostomy "
 "tube, nasogastric, etc..."
 msgstr ""
+"Τσεκάρετε αν το φάρμακο είναι σε μορφή ενδοφλέβιας έγχυσης, σωλήνα "
+"γαστροστομίας, ρινογαστρικού, κλπ..."
 
 msgctxt "help:gnuhealth.prescription.line,medicament:"
 msgid "Prescribed Medicament"
@@ -4862,10 +4900,12 @@ msgid ""
 "Until this date, the patient         usually can ask for a refill / reorder "
 "of this medicament"
 msgstr ""
+"Μέχρι αυτή την ημερομηνία, ο ασθενής         συνήθως μπορεί να ζητήσει για "
+"συμπλήρωση / επανασυνταγογράφηση αυτού του φαρμάκου"
 
 msgctxt "help:gnuhealth.prescription.line,route:"
 msgid "Drug administration route code."
-msgstr "Κωδικός για την οδό χορήγησης του φαρμάκου"
+msgstr "Κωδικός για την οδό χορήγησης του φαρμάκου."
 
 msgctxt "help:gnuhealth.prescription.line,short_comment:"
 msgid "Short comment on the specific drug"
@@ -4893,16 +4933,19 @@ msgid ""
 "Amount of vaccine administered, in mL . The dose per mL             (eg, "
 "mcg, EL.U ..) can be found at the related medicament"
 msgstr ""
+"Δόση εμβολίου που χορηγήθηκε, σε mL. Η δόση ανά mL             (πχ, mcg, "
+"EL.U ..) μπορεί να βρεθεί στο  σχετικό φάρμακο"
 
 msgctxt "help:gnuhealth.vaccination,healthprof:"
 msgid ""
 "Health Professional who administered or reviewed the vaccine          "
 "information"
 msgstr ""
+"Επαγγελματίας υγείας που χορήγησε ή αναθεώρησε τις πληροφορίες για το εμβόλιο"
 
 msgctxt "help:gnuhealth.vaccination,signed_by:"
 msgid "Health Professional that signed the vaccination document"
-msgstr ""
+msgstr "Επαγγελματίας υγείας που υπέγραψε το έγγραφο εμβολιασμών"
 
 msgctxt "help:gnuhealth.vaccination,vaccine:"
 msgid ""
@@ -4911,6 +4954,11 @@ msgid ""
 " etc.. This  information must always be present. If available, please copy /"
 " scan the vaccine leaflet and attach it to this record"
 msgstr ""
+"Όνομα εμβολίου. Βεβαιωθείτε πως το εμβόλιο έχει όλες τις κατάλληλες "
+"πληροφορίες σε επίπεδο προϊόντος. Πληροφορίες όπως εταιρεία, κωδικό "
+"προμηθευτή, κωδικό παρακολούθησης, κλπ.. Αυτές οι πληροφορίες πρέπει πάντα "
+"να υπάρχουν. Αν είναι διαθέσιμο, παρακαλώ κάντε ένα αντίγραφο/σάρωση του "
+"φυλλαδίου του εμβολίου και επισυνάψτε το σε αυτό τον φάκελο"
 
 msgctxt "help:gnuhealth.vaccination,vaccine_lot:"
 msgid ""
@@ -4948,6 +4996,8 @@ msgid ""
 "Other types of identification, not the official PUID . Examples : Passport, "
 "foreign ID,.."
 msgstr ""
+"Άλλοι τρόποι ταυτοποίησης, όχι ο επίσημος Μοναδικός Κωδικός Ταυτοποίησης "
+"Ατόμου. Παραδείγματα: Διαβατήριο, ταυτότητα, ..."
 
 msgctxt "help:party.party,citizenship:"
 msgid "Country of Citizenship"
@@ -4955,7 +5005,7 @@ msgstr "Χώρα υπηκοότητας"
 
 msgctxt "help:party.party,deceased:"
 msgid "The information is updated from the Death Certificate"
-msgstr ""
+msgstr "Οι πληροφορίες έχουν ενημερωθεί από το Πιστοποιητικό θανάτου"
 
 msgctxt "help:party.party,dob:"
 msgid "Date of Birth"
@@ -4963,15 +5013,15 @@ msgstr "Ημερομηνία γεννήσεως"
 
 msgctxt "help:party.party,du:"
 msgid "Domiciliary Unit"
-msgstr ""
+msgstr "Οικιακή Μονάδα"
 
 msgctxt "help:party.party,father:"
 msgid "Father from the Birth Certificate"
-msgstr ""
+msgstr "Πατέρας από το Πιστοποιητικό Γέννησης"
 
 msgctxt "help:party.party,insurance:"
 msgid "Insurance Plans associated to this party"
-msgstr ""
+msgstr "Πλάνα ασφαλιστικής κάλυψης που σχετίζονται με αυτό το άτομο"
 
 msgctxt "help:party.party,internal_user:"
 msgid ""
@@ -4985,7 +5035,7 @@ msgstr "Ελέγξτε αν το εμπλεκόμενο μέρος είναι ε
 
 msgctxt "help:party.party,is_institution:"
 msgid "Check if the party is a Health Care Institution"
-msgstr ""
+msgstr "Τσεκάρετε αν το εμπλεκόμενο μέρος είναι ένα Νοσηλευτικό Ίδρυμα"
 
 msgctxt "help:party.party,is_insurance_company:"
 msgid "Check if the party is an Insurance Company"
@@ -5005,15 +5055,15 @@ msgstr "Ελέγξτε αν το εμπλεκόμενο μέρος είναι έ
 
 msgctxt "help:party.party,lastname:"
 msgid "Family or last names"
-msgstr ""
+msgstr "Επίθετα"
 
 msgctxt "help:party.party,mother:"
 msgid "Mother from the Birth Certificate"
-msgstr ""
+msgstr "Μητέρα από το Πιστοποιητικό Γέννησης"
 
 msgctxt "help:party.party,ref:"
 msgid "Person Unique Identifier"
-msgstr ""
+msgstr "Μοναδικός Κωδικός Ταυτοποίησης Ατόμου"
 
 msgctxt "help:party.party,residence:"
 msgid "Country of Residence"
@@ -5057,7 +5107,7 @@ msgstr "Κατάσταση ανοιχτών ραντεβού"
 
 msgctxt "model:gnuhealth.birth_certificate,name:"
 msgid "Birth Certificate"
-msgstr ""
+msgstr "Πιστοποιητικό γέννησης"
 
 msgctxt "model:gnuhealth.check_immunization_status.init,name:"
 msgid "Check Immunization Status Init"
@@ -5065,11 +5115,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.death_certificate,name:"
 msgid "Death Certificate"
-msgstr ""
+msgstr "Πιστοποιητικό θανάτου"
 
 msgctxt "model:gnuhealth.death_underlying_condition,name:"
 msgid "Underlying Conditions"
-msgstr ""
+msgstr "Υποκείμενες παθήσεις"
 
 msgctxt "model:gnuhealth.diagnostic_hypothesis,name:"
 msgid "Other Diagnostic Hypothesis"
@@ -5321,7 +5371,7 @@ msgstr "Αλοιφή"
 
 msgctxt "model:gnuhealth.drug.form,name:OVU"
 msgid "Ovules"
-msgstr "Ovules"
+msgstr "Κολπικά υπόθετα"
 
 msgctxt "model:gnuhealth.drug.form,name:PAD"
 msgid "Pad"
@@ -5361,7 +5411,7 @@ msgstr "Προαναμεμειγμένο φάρμακο"
 
 msgctxt "model:gnuhealth.drug.form,name:POR"
 msgid "Pellet (oral)"
-msgstr "Δισκίο (στοματικά) "
+msgstr "Δισκίο (στοματικά)"
 
 msgctxt "model:gnuhealth.drug.form,name:POW"
 msgid "Powder"
@@ -5389,11 +5439,11 @@ msgstr "Σκόνη για Διάλυμα"
 
 msgctxt "model:gnuhealth.drug.form,name:RING"
 msgid "Ring slow release"
-msgstr "Δακτύλιος επιβραδ. αποδέσμ."
+msgstr "Δακτύλιος βραδείας αποδέσμευσης"
 
 msgctxt "model:gnuhealth.drug.form,name:SDR"
 msgid "Suspension delayed release"
-msgstr "Εναιώρημα επιβραδ. αποδέσμ."
+msgstr "Εναιώρημα βραδείας αποδέσμευσης"
 
 msgctxt "model:gnuhealth.drug.form,name:SHP"
 msgid "Shampoo"
@@ -5429,15 +5479,15 @@ msgstr "Εκνέφωμα/ Σπρέυ"
 
 msgctxt "model:gnuhealth.drug.form,name:SPS"
 msgid "Suppository sustained release"
-msgstr "Υπόθετο επιβραδ. αποδέσμ."
+msgstr "Υπόθετο βραδείας αποδέσμευσης"
 
 msgctxt "model:gnuhealth.drug.form,name:SRC"
 msgid "Sustained release capsule"
-msgstr "Κάψουλα επιβραδ. αποδέσμ."
+msgstr "Κάψουλα βραδείας αποδέσμευσης"
 
 msgctxt "model:gnuhealth.drug.form,name:SRD"
 msgid "Disc sustained release"
-msgstr "Δίσκος παρατετ. αποδέσμ."
+msgstr "Δίσκος παρατετ. αποδέσμευσης"
 
 msgctxt "model:gnuhealth.drug.form,name:SRS"
 msgid "Syrup sustained release"
@@ -5445,7 +5495,7 @@ msgstr "Σιρόπι"
 
 msgctxt "model:gnuhealth.drug.form,name:SRT"
 msgid "Sustained release tablet"
-msgstr "Δισκίο παρατετ. αποδέσμ."
+msgstr "Δισκίο παρατετ. αποδέσμευσης"
 
 msgctxt "model:gnuhealth.drug.form,name:STK"
 msgid "Stick"
@@ -5497,7 +5547,7 @@ msgstr "Διαστολέας θηλής"
 
 msgctxt "model:gnuhealth.drug.form,name:TDR"
 msgid "Tablet delayed release"
-msgstr "Δισκίο επιβραδ. αποδέσμ."
+msgstr "Δισκίο επιβραδ. αποδέσμευσης"
 
 msgctxt "model:gnuhealth.drug.form,name:TEA"
 msgid "Tea herbal"
@@ -5521,7 +5571,7 @@ msgstr "Όστια"
 
 msgctxt "model:gnuhealth.drug.form,name:WIP"
 msgid "Wipe "
-msgstr "Τολύπιον"
+msgstr "Τολύπιον "
 
 msgctxt "model:gnuhealth.drug.route,name:"
 msgid "Drug Administration Route"
@@ -5533,7 +5583,7 @@ msgstr "Εφαρμόζεται εξωτερικά "
 
 msgctxt "model:gnuhealth.drug.route,name:route_10"
 msgid "Intrabursal "
-msgstr "εντός του θυλάκου"
+msgstr "Εντός του θυλάκου "
 
 msgctxt "model:gnuhealth.drug.route,name:route_11"
 msgid "Intracardiac "
@@ -5577,11 +5627,11 @@ msgstr "Στοματικά "
 
 msgctxt "model:gnuhealth.drug.route,name:route_20"
 msgid "Intrasynovial "
-msgstr "Ενδαρθρική"
+msgstr "Ενδαρθρική "
 
 msgctxt "model:gnuhealth.drug.route,name:route_21"
 msgid "Intrathecal "
-msgstr "ενδοραχιαία"
+msgstr "Ενδοραχιαία "
 
 msgctxt "model:gnuhealth.drug.route,name:route_22"
 msgid "Intrauterine "
@@ -5689,7 +5739,7 @@ msgstr "Κολπικά"
 
 msgctxt "model:gnuhealth.drug.route,name:route_46"
 msgid "Ventimask"
-msgstr "Ventimask"
+msgstr "Μάσκα Ventimask"
 
 msgctxt "model:gnuhealth.drug.route,name:route_47"
 msgid "Wound"
@@ -5789,11 +5839,11 @@ msgstr "Ειδικότητες του επαγγελματία υγείας"
 
 msgctxt "model:gnuhealth.immunization_schedule,name:"
 msgid "Immunization Schedule"
-msgstr ""
+msgstr "Πρόγραμμα εμβολιασμών"
 
 msgctxt "model:gnuhealth.immunization_schedule_dose,name:"
 msgid "Immunization Schedule Dose"
-msgstr ""
+msgstr "Δόσεις εμβολιαστικού προγράμματος"
 
 msgctxt "model:gnuhealth.immunization_schedule_line,name:"
 msgid "Immunization Schedule Line"
@@ -5805,11 +5855,11 @@ msgstr "Υγειονομικό Ίδρυμα"
 
 msgctxt "model:gnuhealth.institution.operationalsector,name:"
 msgid "Operational Sectors covered by Institution"
-msgstr ""
+msgstr "Επιχειρησιακοί Τομείς που καλύπτονται ανά Νοσηλευτικό Ίδρυμα"
 
 msgctxt "model:gnuhealth.institution.specialties,name:"
 msgid "Health Institution Specialties"
-msgstr ""
+msgstr "Ειδικότητες στο Νοσηλευτικό Ίδρυμα"
 
 msgctxt "model:gnuhealth.insurance,name:"
 msgid "Insurance"
@@ -5933,7 +5983,7 @@ msgstr "Έφορος"
 
 msgctxt "model:gnuhealth.occupation,name:occ101"
 msgid "Currier"
-msgstr ""
+msgstr "Βυρσοδέψης"
 
 msgctxt "model:gnuhealth.occupation,name:occ102"
 msgid "Custodian"
@@ -6081,7 +6131,7 @@ msgstr "Οικιακός εργάτης"
 
 msgctxt "model:gnuhealth.occupation,name:occ135"
 msgid "Dominatrix"
-msgstr ""
+msgstr "Αφέντρα"
 
 msgctxt "model:gnuhealth.occupation,name:occ136"
 msgid "Donkey Trainer"
@@ -6377,7 +6427,7 @@ msgstr "Χρηματιοστής"
 
 msgctxt "model:gnuhealth.occupation,name:occ201"
 msgid "Fire marshal"
-msgstr "Fire marshal"
+msgstr "Υπεύθυνος πυρόσβεσης"
 
 msgctxt "model:gnuhealth.occupation,name:occ202"
 msgid "Fire officer"
@@ -6925,7 +6975,7 @@ msgstr "Κλειδαράς"
 
 msgctxt "model:gnuhealth.occupation,name:occ328"
 msgid "Logistician"
-msgstr "Logistician"
+msgstr "Υπεύθυνος προμηθειών"
 
 msgctxt "model:gnuhealth.occupation,name:occ329"
 msgid "Lumberjack"
@@ -7073,7 +7123,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ361"
 msgid "Mesmerist"
-msgstr ""
+msgstr "Υπνωτιστής"
 
 msgctxt "model:gnuhealth.occupation,name:occ362"
 msgid "Messenger"
@@ -7093,7 +7143,7 @@ msgstr "Μαία"
 
 msgctxt "model:gnuhealth.occupation,name:occ366"
 msgid "Milkman "
-msgstr "Γαλατάς"
+msgstr "Γαλατάς "
 
 msgctxt "model:gnuhealth.occupation,name:occ367"
 msgid "Miller"
@@ -7149,7 +7199,7 @@ msgstr "Διασώστης Ορέων"
 
 msgctxt "model:gnuhealth.occupation,name:occ38"
 msgid "Cheerleader"
-msgstr ""
+msgstr "Μαζορέτα"
 
 msgctxt "model:gnuhealth.occupation,name:occ380"
 msgid "Mountaineer"
@@ -7227,6 +7277,7 @@ msgctxt "model:gnuhealth.occupation,name:occ4"
 msgid "Astronaut"
 msgstr "Αστροναύτης"
 
+#, fuzzy
 msgctxt "model:gnuhealth.occupation,name:occ40"
 msgid "Chef "
 msgstr "Chef "
@@ -7333,7 +7384,9 @@ msgstr "Εκπαιδευτής αλεξιπτώτου"
 
 msgctxt "model:gnuhealth.occupation,name:occ423"
 msgid "Paralegal"
-msgstr "Paralegal"
+msgstr ""
+"Προσωπικό Νομικού γραφείου εξειδικευμένο σε παροχή νομικών υπηρεσιών "
+"(paralegal)"
 
 msgctxt "model:gnuhealth.occupation,name:occ424"
 msgid "Paramedic"
@@ -8201,7 +8254,7 @@ msgstr "Εφημέριος"
 
 msgctxt "model:gnuhealth.occupation,name:occ627"
 msgid "Video editor"
-msgstr ""
+msgstr "Ειδικός στην επεξεργασία video"
 
 msgctxt "model:gnuhealth.occupation,name:occ628"
 msgid "Video game developer"
@@ -8473,7 +8526,7 @@ msgstr "Επιχειρησιακός Τομέας"
 
 msgctxt "model:gnuhealth.pathology,name:"
 msgid "Health Conditions"
-msgstr ""
+msgstr "Προβλήματα υγείας"
 
 msgctxt "model:gnuhealth.pathology.category,name:"
 msgid "Disease Categories"
@@ -8529,7 +8582,7 @@ msgstr "ΚΟΙΝΟΠΟΙΗΣΙΜΟ"
 
 msgctxt "model:gnuhealth.pathology.group,name:NUTRITION"
 msgid "NUTRITION"
-msgstr ""
+msgstr "ΔΙΑΤΡΟΦΗ"
 
 msgctxt "model:gnuhealth.pathology.group,name:OBSGYN"
 msgid "GYNECOLOGY and OBSTETRICS"
@@ -8565,11 +8618,11 @@ msgstr "Πληροφορίες σχετικές με τον ασθενή"
 
 msgctxt "model:gnuhealth.patient.disease,name:"
 msgid "Patient Conditions History"
-msgstr ""
+msgstr "Ιστορικό Παθήσεων Ασθενούς"
 
 msgctxt "model:gnuhealth.patient.ecg,name:"
 msgid "Patient ECG"
-msgstr ""
+msgstr "ΗΚΓ ασθενούς"
 
 msgctxt "model:gnuhealth.patient.evaluation,name:"
 msgid "Patient Evaluation"
@@ -8585,7 +8638,7 @@ msgstr "Εναλλακτικό ανανγνωριστικό ID προσώπου"
 
 msgctxt "model:gnuhealth.person_name,name:"
 msgid "Person Name"
-msgstr ""
+msgstr "Όνομα προσώπου"
 
 msgctxt "model:gnuhealth.prescription.line,name:"
 msgid "Prescription Line"
@@ -8841,19 +8894,19 @@ msgstr "Ιατρός Γενικής Ιατρικής"
 
 msgctxt "model:gnuhealth.specialty,name:61"
 msgid "Internal Medicine"
-msgstr ""
+msgstr "Εσωτερική Παθολογία"
 
 msgctxt "model:gnuhealth.specialty,name:62"
 msgid "Speech Therapy / Phonoaudiology"
-msgstr ""
+msgstr "Λογοθεραπεία / Ακουστικο-φωνητική παθολογία"
 
 msgctxt "model:gnuhealth.specialty,name:63"
 msgid "Psychology"
-msgstr ""
+msgstr "Ψυχολογία"
 
 msgctxt "model:gnuhealth.specialty,name:64"
 msgid "Pain Medicine"
-msgstr ""
+msgstr "Ιατρική αντιμετώπισης πόνου"
 
 msgctxt "model:gnuhealth.specialty,name:65"
 msgid "Integrative Medicine"
@@ -8865,7 +8918,7 @@ msgstr "Νεογνολογία"
 
 msgctxt "model:gnuhealth.specialty,name:67"
 msgid "Cardiothoracic Surgery"
-msgstr ""
+msgstr "Καρδιο-θωρακική επέμβαση"
 
 msgctxt "model:gnuhealth.specialty,name:68"
 msgid "Obstetrics"
@@ -8877,15 +8930,15 @@ msgstr "Καρδιολογία"
 
 msgctxt "model:gnuhealth.specialty,name:70"
 msgid "Primary Care"
-msgstr ""
+msgstr "Πρωτοβάθμια φροντίδα"
 
 msgctxt "model:gnuhealth.specialty,name:71"
 msgid "Family Planning (Primary Care)"
-msgstr ""
+msgstr "Οικογενειακός προγραμματισμός (Πρωτοβάθμια φροντίδα)"
 
 msgctxt "model:gnuhealth.specialty,name:72"
 msgid "Social Services"
-msgstr ""
+msgstr "Κοινωνικές υπηρεσίες"
 
 msgctxt "model:gnuhealth.specialty,name:73"
 msgid "Oral Medicine (Primary Care)"
@@ -8893,11 +8946,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:74"
 msgid "Child Health (Primary Care)"
-msgstr ""
+msgstr "Παιδιατρική υγεία (Πρωτοβάθμια φροντίδα)"
 
 msgctxt "model:gnuhealth.specialty,name:75"
 msgid "Woman Health (Primary Care)"
-msgstr ""
+msgstr "Γυναικολογική υγεία (Πρωτοβάθμια φροντίδα)"
 
 msgctxt "model:gnuhealth.specialty,name:8"
 msgid "Cardiovascular surgery"
@@ -8933,11 +8986,11 @@ msgstr "Κλίνες"
 
 msgctxt "model:ir.action,name:act_birth_cert_form"
 msgid "Birth certificates"
-msgstr ""
+msgstr "Πιστοποιητικά γέννησης"
 
 msgctxt "model:ir.action,name:act_birth_cert_form1"
 msgid "Birth Certificate"
-msgstr ""
+msgstr "Πιστοποιητικό γέννησης"
 
 msgctxt "model:ir.action,name:act_building_view"
 msgid "Buildings"
@@ -8945,11 +8998,11 @@ msgstr "Κτίρια"
 
 msgctxt "model:ir.action,name:act_check_immunization_status"
 msgid "Immunization Status Report"
-msgstr ""
+msgstr "Ιατρική έκθεση για την Εμβολιακή κάλυψη"
 
 msgctxt "model:ir.action,name:act_condition_form1"
 msgid "Conditions"
-msgstr ""
+msgstr "Παθήσεις"
 
 msgctxt "model:ir.action,name:act_create_patient_evaluation"
 msgid "Create Patient Evaluation"
@@ -8957,7 +9010,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_death_cert_form"
 msgid "Death certificates"
-msgstr ""
+msgstr "Πιστοποιητικά θανάτου"
 
 msgctxt "model:ir.action,name:act_death_cert_form1"
 msgid "Death Certificate"
@@ -8965,7 +9018,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_ecg_view"
 msgid "ECGs"
-msgstr ""
+msgstr "ΗΚΓ"
 
 msgctxt "model:ir.action,name:act_evaluation_form1"
 msgid "Evaluations"
@@ -9025,7 +9078,7 @@ msgstr "Κλινικές"
 
 msgctxt "model:ir.action,name:action_gnuhealth_institution"
 msgid "Institutions"
-msgstr ""
+msgstr "Ιδρύματα"
 
 msgctxt "model:ir.action,name:action_gnuhealth_institution_operationalsector"
 msgid "Operational sectors by institution"
@@ -9033,7 +9086,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:action_gnuhealth_institution_specialties"
 msgid "Specialties by institution"
-msgstr ""
+msgstr "Ειδικότητες ανά Νοσηλευτικό Ίδρυμα"
 
 msgctxt "model:ir.action,name:action_gnuhealth_medicament_category_tree"
 msgid "Medicament categories"
@@ -9097,7 +9150,7 @@ msgstr "Οικογεν. Μέλη"
 
 msgctxt "model:ir.action,name:gnuhealth_action_form_pathology"
 msgid "Conditions"
-msgstr ""
+msgstr "Παθήσεις"
 
 msgctxt "model:ir.action,name:gnuhealth_action_healthprofessional"
 msgid "Health Professionals"
@@ -9113,7 +9166,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_immunization_schedule_dose"
 msgid "Vaccine Doses"
-msgstr ""
+msgstr "Δόσεις εμβολίων"
 
 msgctxt "model:ir.action,name:gnuhealth_action_immunization_schedule_line"
 msgid "Schedule Vaccines"
@@ -9157,7 +9210,7 @@ msgstr "Απόδειξη ραντεβού"
 
 msgctxt "model:ir.action,name:report_immunization_status"
 msgid "Immunization Status Report"
-msgstr ""
+msgstr "Ιατρική έκθεση για την Εμβολιακή κάλυψη"
 
 msgctxt "model:ir.action,name:report_patient_card"
 msgid "ID Cards"
@@ -9169,7 +9222,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:report_patient_evaluation"
 msgid "Patient Evaluation Summary"
-msgstr ""
+msgstr "Περίληψη εκτίμησης ασθενούς"
 
 msgctxt "model:ir.action,name:report_patient_medication"
 msgid "Medications"
@@ -9206,7 +9259,7 @@ msgstr "Δωρεάν"
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_gnuhealth_appointment_domain_noshow"
 msgid "No Shows"
-msgstr ""
+msgstr "Αριθμός ασθενών που δεν προσήλθαν"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_appointment"
 msgid "Appointment"
@@ -9234,7 +9287,7 @@ msgstr "Ασθενής"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_patient_evaluation"
 msgid "Patient Evaluation"
-msgstr ""
+msgstr "Εκτίμηση ασθενούς"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_prescription"
 msgid "Prescription"
@@ -9290,15 +9343,15 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_immunization_schedule_dose"
 msgid "Vaccine Doses"
-msgstr ""
+msgstr "Δόσεις εμβολίων"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_immunization_schedule_line"
 msgid "Schedule Vaccines"
-msgstr ""
+msgstr "Πρόγραμμα εμβολιασμών"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_institution"
 msgid "Institutions"
-msgstr ""
+msgstr "Ιδρύματα"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_institution_bed_add"
 msgid "Beds"
@@ -9346,7 +9399,7 @@ msgstr "Επαγγέλματα"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_pathology"
 msgid "Conditions"
-msgstr ""
+msgstr "Παθήσεις"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_pathology_categories"
 msgid "Categories"
@@ -9362,7 +9415,7 @@ msgstr "Ομάδες Παθολογίας"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_pathology_pathology"
 msgid "Conditions"
-msgstr ""
+msgstr "Παθήσεις"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_procedure"
 msgid "Procedures"
@@ -9402,7 +9455,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_institution_specialties"
 msgid "Specialties by institution"
-msgstr ""
+msgstr "Ειδικότητες ανά Νοσηλευτικό Ίδρυμα"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_menu"
 msgid "Health"
@@ -9414,7 +9467,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_operational_areas"
 msgid "Operational Areas"
-msgstr "Operational Areas"
+msgstr "Επιχειρησιακοί Τομείς"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_patients_menu"
 msgid "Patients"
@@ -9434,11 +9487,11 @@ msgstr "Κατάσταση Ραντεβού"
 
 msgctxt "model:ir.ui.menu,name:menu_birth_cert"
 msgid "Birth certificates"
-msgstr ""
+msgstr "Πιστοποιητικά γέννησης"
 
 msgctxt "model:ir.ui.menu,name:menu_death_cert"
 msgid "Death certificates"
-msgstr ""
+msgstr "Πιστοποιητικά θανάτου"
 
 msgctxt "model:ir.ui.menu,name:menu_gnuhealth_patient_evaluation_list"
 msgid "Patient Evaluations [readonly]"
@@ -9522,7 +9575,7 @@ msgstr "Οδηγίες/Σημειώσεις :"
 
 msgctxt "report:appointment.receipt:"
 msgid "PUID"
-msgstr ""
+msgstr "Ατομικός Κωδικός Ταυτοποίησης"
 
 msgctxt "report:appointment.receipt:"
 msgid "Patient"
@@ -9538,7 +9591,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "(Complete Listing)"
-msgstr ""
+msgstr "(Πλήρης κατάλογος)"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid ":"
@@ -9561,7 +9614,7 @@ msgstr "Ηλικία :"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "CODE"
-msgstr ""
+msgstr "ΚΩΔΙΚΟΣ"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Dose"
@@ -9585,7 +9638,7 @@ msgstr "ID"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "IMMUNIZATION STATUS"
-msgstr ""
+msgstr "ΚΑΤΑΣΤΑΣΗ ΕΜΒΟΛΙΩΝ"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Important notice"
@@ -9613,7 +9666,7 @@ msgstr "Παρατηρήσεις"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Showing"
-msgstr ""
+msgstr "Δείχνει"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Status"
@@ -9629,7 +9682,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "mmunization status corresponding to the"
-msgstr ""
+msgstr "κατάσταση εμβολίων αντιστοιχεί σε"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "only"
@@ -9637,7 +9690,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "person age"
-msgstr ""
+msgstr "ηλικία ατόμου"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "selected schedule"
@@ -9649,7 +9702,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ","
-msgstr ""
+msgstr ","
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "/"
@@ -9657,15 +9710,15 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "/ Reliability :"
-msgstr ""
+msgstr "/ Αξιοπιστία :"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "15"
-msgstr ""
+msgstr "15"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Female"
@@ -9673,7 +9726,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Male"
-msgstr ""
+msgstr ": Άρρην"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Married"
@@ -9681,67 +9734,69 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Separated"
-msgstr ""
+msgstr ": Διεζευγμένος/η"
 
+#, fuzzy
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Single"
-msgstr ""
+msgstr ": Single"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid ": Widow"
-msgstr ""
+msgstr ": Χήρος/α"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Age"
-msgstr ""
+msgstr "Ηλικία"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Allergies and other relevant information"
-msgstr ""
+msgstr "Αλλεργίες και άλλες σημαντικές πληροφορίες"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "BMI"
-msgstr ""
+msgstr "ΔΜΣ"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "BP : (Sys / dias)"
-msgstr ""
+msgstr "ΑΠ : (Συστολ / Διαστολ)"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Chief Complaint"
-msgstr ""
+msgstr "Κύριο πρόβλημα"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Clinical and Physical examination"
-msgstr ""
+msgstr "Κλινική και Φυσική εξέταση"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Clinical finding"
-msgstr ""
+msgstr "Κλινικό εύρημα"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Code :"
-msgstr ""
+msgstr "Κωδικός :"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Comments"
-msgstr ""
+msgstr "Σχόλια"
 
+#, fuzzy
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "D"
-msgstr ""
+msgstr "D"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Differential Diagnoses"
-msgstr ""
+msgstr "Διαφορική Διάγνωση"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Discharge Reason"
-msgstr ""
+msgstr "Λόγος εξιτηρίου"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "DoB:"
-msgstr ""
+msgstr "Hμερ. Γένν.:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Ethnicity:"
@@ -9857,7 +9912,7 @@ msgstr "Ταυτότητα:"
 
 msgctxt "report:patient.card:"
 msgid "Name:"
-msgstr ""
+msgstr "Όνομα:"
 
 msgctxt "report:patient.conditions_history:"
 msgid "& history"
@@ -9865,15 +9920,15 @@ msgstr ""
 
 msgctxt "report:patient.conditions_history:"
 msgid "*"
-msgstr ""
+msgstr "*"
 
 msgctxt "report:patient.conditions_history:"
 msgid ","
-msgstr ""
+msgstr ","
 
 msgctxt "report:patient.conditions_history:"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Active"
@@ -9881,7 +9936,7 @@ msgstr ""
 
 msgctxt "report:patient.conditions_history:"
 msgid "Age :"
-msgstr ""
+msgstr "Ηλικία :"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Annotations about the patient condition"
@@ -10593,7 +10648,7 @@ msgstr "Circo Electric"
 
 msgctxt "selection:gnuhealth.hospital.bed,bed_type:"
 msgid "Clinitron"
-msgstr "Clinitron"
+msgstr "Ειδική κλίνη Clinitron"
 
 msgctxt "selection:gnuhealth.hospital.bed,bed_type:"
 msgid "Electric"
@@ -10777,7 +10832,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid "Public"
-msgstr ""
+msgstr "Δημόσιο"
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid ""
@@ -10853,11 +10908,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,biological_sex:"
 msgid "Female"
-msgstr ""
+msgstr "Θήλυ"
 
 msgctxt "selection:gnuhealth.patient,biological_sex:"
 msgid "Male"
-msgstr ""
+msgstr "Άρρεν"
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid ""
@@ -11029,51 +11084,51 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "I"
-msgstr ""
+msgstr "I"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "II"
-msgstr ""
+msgstr "II"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "III"
-msgstr ""
+msgstr "III"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V1"
-msgstr ""
+msgstr "V1"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V2"
-msgstr ""
+msgstr "V2"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V3"
-msgstr ""
+msgstr "V3"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V4"
-msgstr ""
+msgstr "V4"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V5"
-msgstr ""
+msgstr "V5"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V6"
-msgstr ""
+msgstr "V6"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "aVF"
-msgstr ""
+msgstr "aVF"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "aVL"
-msgstr ""
+msgstr "aVL"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "aVR"
-msgstr ""
+msgstr "aVR"
 
 msgctxt "selection:gnuhealth.patient.ecg,pacemaker:"
 msgid ""
@@ -11081,11 +11136,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.ecg,pacemaker:"
 msgid "Atrioventricular"
-msgstr ""
+msgstr "Κολποκοιλιακή"
 
 msgctxt "selection:gnuhealth.patient.ecg,pacemaker:"
 msgid "Purkinje"
-msgstr ""
+msgstr "Purkinje"
 
 msgctxt "selection:gnuhealth.patient.ecg,pacemaker:"
 msgid "Sinus Node"
@@ -11137,7 +11192,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,discharge_reason:"
 msgid "Transferred to another institution"
-msgstr ""
+msgstr "Μεταφέρθηκε σε άλλο ίδρυμα"
 
 msgctxt "selection:gnuhealth.patient.evaluation,evaluation_type:"
 msgid ""
@@ -11157,19 +11212,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.evaluation,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Θήλυ"
 
 msgctxt "selection:gnuhealth.patient.evaluation,gender:"
 msgid "Female -> Male"
-msgstr ""
+msgstr "Θήλυ -> Άρρεν"
 
 msgctxt "selection:gnuhealth.patient.evaluation,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Άρρεν"
 
 msgctxt "selection:gnuhealth.patient.evaluation,gender:"
 msgid "Male -> Female"
-msgstr ""
+msgstr "Άρρεν -> Θήλυ"
 
 msgctxt "selection:gnuhealth.patient.evaluation,loc_eyes:"
 msgid "Does not Open Eyes"
@@ -11197,11 +11252,11 @@ msgstr "Έκταση στα επώδυνα ερεθίσματα - απάντησ
 
 msgctxt "selection:gnuhealth.patient.evaluation,loc_motor:"
 msgid "Flexion / Withdrawal to painful stimuli"
-msgstr "Κάμψη / Απόσυρση "
+msgstr "Κάμψη / Απόσυρση με επώδυνα ερεθίσματα"
 
 msgctxt "selection:gnuhealth.patient.evaluation,loc_motor:"
 msgid "Localizes painful stimuli"
-msgstr "Εντοπίζει "
+msgstr "Εντοπίζει επώδυνα ερεθίσματα"
 
 msgctxt "selection:gnuhealth.patient.evaluation,loc_motor:"
 msgid "Makes no movement"
@@ -11385,7 +11440,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.medication,infusion_rate_units:"
 msgid "mL/hour"
-msgstr ""
+msgstr "mL/ώρα"
 
 msgctxt ""
 "selection:gnuhealth.person_alternative_identification,alternative_id_type:"
@@ -11395,7 +11450,7 @@ msgstr ""
 msgctxt ""
 "selection:gnuhealth.person_alternative_identification,alternative_id_type:"
 msgid "Country of origin ID"
-msgstr ""
+msgstr "ID χώρας προέλευσης"
 
 msgctxt ""
 "selection:gnuhealth.person_alternative_identification,alternative_id_type:"
@@ -11418,19 +11473,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.person_name,prefix:"
 msgid "Dr"
-msgstr ""
+msgstr "Δρ."
 
 msgctxt "selection:gnuhealth.person_name,prefix:"
 msgid "Miss"
-msgstr ""
+msgstr "Δις"
 
 msgctxt "selection:gnuhealth.person_name,prefix:"
 msgid "Mr"
-msgstr ""
+msgstr "Κος"
 
 msgctxt "selection:gnuhealth.person_name,prefix:"
 msgid "Mrs"
-msgstr ""
+msgstr "Κα"
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid ""
@@ -11438,7 +11493,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid "Anonymous"
-msgstr ""
+msgstr "Ανώνυμος"
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid "Maiden"
@@ -11446,11 +11501,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid "Nickname"
-msgstr ""
+msgstr "Ψευδώνυμο"
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid "Official"
-msgstr ""
+msgstr "Επίσημο"
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid "Temp"
@@ -11462,7 +11517,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.person_name,use:"
 msgid "old"
-msgstr ""
+msgstr "παλαιό"
 
 msgctxt "selection:gnuhealth.prescription.line,duration_period:"
 msgid ""
@@ -11526,15 +11581,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.prescription.line,infusion_rate_units:"
 msgid "mL/hour"
-msgstr ""
+msgstr "mL/ώρα"
 
 msgctxt "selection:gnuhealth.prescription.order,state:"
 msgid "Done"
-msgstr ""
+msgstr "Ολοκληρώθηκε"
 
 msgctxt "selection:gnuhealth.prescription.order,state:"
 msgid "Draft"
-msgstr ""
+msgstr "Πρόχειρο"
 
 msgctxt "selection:gnuhealth.signs_and_symptoms,sign_or_symptom:"
 msgid ""
@@ -11626,7 +11681,7 @@ msgstr "Έγινε"
 
 msgctxt "selection:gnuhealth.vaccination,state:"
 msgid "In Progress"
-msgstr ""
+msgstr "Σε εξέλιξη"
 
 msgctxt "selection:party.party,gender:"
 msgid ""
@@ -11634,11 +11689,11 @@ msgstr ""
 
 msgctxt "selection:party.party,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Θήλυ"
 
 msgctxt "selection:party.party,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Άρρεν"
 
 msgctxt "selection:party.party,insurance_company_type:"
 msgid ""
@@ -11718,7 +11773,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Date"
-msgstr ""
+msgstr "Ημερομηνία"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Information"
@@ -12050,7 +12105,7 @@ msgstr "Πρόσθετες πληροφορίες"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Form"
-msgstr ""
+msgstr "Φόρμα"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Indications"
@@ -12058,7 +12113,7 @@ msgstr "Ενδείξεις"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Main"
-msgstr ""
+msgstr "Κύριο"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Main Info"
@@ -12070,7 +12125,7 @@ msgstr "Σημειώσεις"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Overdose"
-msgstr ""
+msgstr "Υπερδοσία"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Pregnancy"
@@ -12082,7 +12137,7 @@ msgstr "Παρουσίαση"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Product"
-msgstr ""
+msgstr "Προϊόν"
 
 msgctxt "view:gnuhealth.medicament:"
 msgid "Route"
@@ -12222,19 +12277,19 @@ msgstr "Κλινικά"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Clinical and Physical exam"
-msgstr ""
+msgstr "Κλινική και φυσική εξέταση"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Discharge"
-msgstr ""
+msgstr "Εξιτήριο"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Discharge patient / End this evaluation ?"
-msgstr ""
+msgstr "Εξιτήριο ασθενούς / Τερματισμός της αξιολόγησης;"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Discharge patient / end this evaluation"
-msgstr ""
+msgstr "Εξιτήριο ασθενούς / τερματισμός της αξιολόγησης"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Evaluations"
@@ -12242,11 +12297,11 @@ msgstr "Εκτιμήσεις"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Πρόσθετες ππληροφορίες"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Glasgow Coma Scale"
-msgstr "Glasgow Coma Scale"
+msgstr "Βαθμολογία Κλίμακας Γλασκώβης"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Glucose and Lipids Profile"
@@ -12254,7 +12309,7 @@ msgstr "Προφίλ Γλυκόζης και Λιπιδίων"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Header"
-msgstr ""
+msgstr "Κεφαλίδα"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Information on Diagnosis"
@@ -12282,7 +12337,7 @@ msgstr "Διατροφή"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Other information related to this evaluation"
-msgstr ""
+msgstr "Άλλες πληροφορίες που σχετίζονται με αυτήν την αξιολόγηση"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Patient Evaluation"
@@ -12418,7 +12473,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Misc"
-msgstr ""
+msgstr "Διάφορα"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Prescription Line"
@@ -12434,19 +12489,19 @@ msgstr "Ειδική δοσολογία"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Treatment time"
-msgstr ""
+msgstr "Χρόνος θεραπείας"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Create"
-msgstr ""
+msgstr "Δημιουργία"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Create prescription ?"
-msgstr ""
+msgstr "Δημιουργία συνταγής;"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Create the prescription"
-msgstr ""
+msgstr "Δημιουργία συνταγής"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Notes"
@@ -12522,11 +12577,11 @@ msgstr ""
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Vaccination"
-msgstr ""
+msgstr "Εμβολιασμός"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Vaccination History"
-msgstr ""
+msgstr "Ιστορικό εμβολιασμών"
 
 msgctxt "view:party.party:"
 msgid "Demographics"
@@ -12555,7 +12610,7 @@ msgstr "Ανοικτό"
 msgctxt ""
 "wizard_button:gnuhealth.check_immunization_status,start,check_immunization_status:"
 msgid "Immunization Status"
-msgstr ""
+msgstr "Κατάσταση ανοσοποίησης"
 
 msgctxt "wizard_button:gnuhealth.check_immunization_status,start,end:"
 msgid "Cancel"

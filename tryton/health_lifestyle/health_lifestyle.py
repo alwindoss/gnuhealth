@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2020 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2020 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -234,11 +234,11 @@ class PatientCAGE(ModelSQL, ModelView):
     evaluation_date = fields.DateTime('Date')
 
     cage_c = fields.Boolean('Hard to Cut down', help='Have you ever felt you '
-        'needed to Cut down on your drinking ?')
+        'needed to Cut down on your drinking?')
     cage_a = fields.Boolean('Angry with Critics', help='Have people Annoyed '
-        'you by criticizing your drinking ?')
+        'you by criticizing your drinking?')
     cage_g = fields.Boolean('Guilt', help='Have you ever felt Guilty about '
-        'drinking ?')
+        'drinking?')
     cage_e = fields.Boolean('Eye-opener', help='Have you ever felt you '
         'needed a drink first thing in the morning (Eye-opener) to steady '
         'your nerves or to get rid of a hangover?')

@@ -56,6 +56,9 @@
     <separator string="Extended Information" id="separator_extra_info" colspan="4"/>
     <newline/>
     <field name="info" colspan="4"/>
+    <newline/>
+    <separator string="Measurements" id="separator_measurements" colspan="4"/>
+    <field name="measurements" colspan="4"/>
     <group id="pol_footer" colspan="4" col="10">
         <label name="page"/>
         <field name="page"/>

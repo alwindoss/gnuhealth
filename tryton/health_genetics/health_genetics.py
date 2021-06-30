@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2020 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2020 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -133,10 +133,19 @@ class ProteinDisease(ModelSQL, ModelView):
         ('d', 'dominant'),
         ('r', 'recessive'),
         ('c', 'codominance'),
-        ], 'Dominance', select=True)
+        ], 'Dominance', sort=False, select=True)
 
 
     description = fields.Text('Description')
+
+
+    active = fields.Boolean('Active',help="Whether this code is current."
+            "If you deactivate it, the code will no longer show in the"
+            " protein-related diseases")
+
+    @staticmethod
+    def default_active():
+        return True
 
 
     def get_disease_uri(self, name):

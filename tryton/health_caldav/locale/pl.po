@@ -1,22 +1,33 @@
 # 
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-09-26 21:30+0000\n"
+"Last-Translator: Atrate <Atrate@protonmail.com>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/gnu-health/"
+"health_caldav/pl/>\n"
+"Language: pl\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 msgctxt "error:calendar.calendar:"
 msgid "A user can have only one calendar."
-msgstr ""
+msgstr "Użytkownik może mieć tylko jeden kalendarz."
 
+#, fuzzy
 msgctxt "error:calendar.calendar:"
 msgid "Calendar name \"%s\" can not end with .ics"
-msgstr ""
+msgstr "Nazwa kalendarza \"%s\" nie może kończyć się na .ics"
 
 msgctxt "error:calendar.calendar:"
 msgid "The name of calendar must be unique."
-msgstr ""
+msgstr "Nazwa kalendarza musi być unikalna."
 
 msgctxt "error:calendar.category:"
 msgid "The name of calendar category must be unique."
-msgstr ""
+msgstr "Nazwa kategorii kalendarza musi być unikalna."
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Invalid \"By Day\" in recurrence rule \"%s\""
@@ -120,19 +131,20 @@ msgstr ""
 
 msgctxt "field:calendar.calendar,description:"
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
+#, fuzzy
 msgctxt "field:calendar.calendar,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:calendar.calendar,name:"
 msgid "Name"
-msgstr ""
+msgstr "Nazwa"
 
 msgctxt "field:calendar.calendar,owner:"
 msgid "Owner"
-msgstr ""
+msgstr "Właściciel"
 
 msgctxt "field:calendar.calendar,read_users:"
 msgid "Read Users"
@@ -142,9 +154,10 @@ msgctxt "field:calendar.calendar,rec_name:"
 msgid "Name"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:calendar.calendar,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Data zapisu"
 
 msgctxt "field:calendar.calendar,write_uid:"
 msgid "Write User"
@@ -208,9 +221,10 @@ msgctxt "field:calendar.calendar-write-res.user,rec_name:"
 msgid "Name"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:calendar.calendar-write-res.user,user:"
 msgid "User"
-msgstr ""
+msgstr "Użytkownik"
 
 msgctxt "field:calendar.calendar-write-res.user,write_date:"
 msgid "Write Date"
@@ -423,9 +437,10 @@ msgctxt "field:calendar.event.alarm,id:"
 msgid "ID"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:calendar.event.alarm,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nazwa"
 
 msgctxt "field:calendar.event.alarm,valarm:"
 msgid "valarm"

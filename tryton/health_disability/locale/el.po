@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-02-09 12:34+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_disability/el/>\n"
+"Language: el\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 msgctxt "error:gnuhealth.activity_and_participation.category:"
 msgid "The code must be unique !"
@@ -44,27 +53,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.activity.assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.activity.assessment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.activity.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.activity.assessment,qualifier1:"
 msgid "Performance"
-msgstr ""
+msgstr "Επίδοση"
 
 msgctxt "field:gnuhealth.activity.assessment,qualifier2:"
 msgid "Capacity"
-msgstr ""
+msgstr "Χωρητικότητα"
 
 msgctxt "field:gnuhealth.activity.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.activity.assessment,write_date:"
 msgid "Write Date"
@@ -76,23 +85,23 @@ msgstr ""
 
 msgctxt "field:gnuhealth.activity_and_participation,category:"
 msgid "Category"
-msgstr ""
+msgstr "Κατηγορία"
 
 msgctxt "field:gnuhealth.activity_and_participation,code:"
 msgid "code"
-msgstr ""
+msgstr "κωδικός"
 
 msgctxt "field:gnuhealth.activity_and_participation,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.activity_and_participation,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.activity_and_participation,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.activity_and_participation,name:"
 msgid "A & P"
@@ -100,7 +109,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.activity_and_participation,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.activity_and_participation,write_date:"
 msgid "Write Date"
@@ -112,27 +121,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.activity_and_participation.category,code:"
 msgid "code"
-msgstr ""
+msgstr "κωδικός"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.activity_and_participation.category,write_date:"
 msgid "Write Date"
@@ -144,31 +153,31 @@ msgstr ""
 
 msgctxt "field:gnuhealth.body_function,category:"
 msgid "Category"
-msgstr ""
+msgstr "Κατηγορία"
 
 msgctxt "field:gnuhealth.body_function,code:"
 msgid "code"
-msgstr ""
+msgstr "κωδικός"
 
 msgctxt "field:gnuhealth.body_function,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.body_function,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.body_function,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_function,name:"
 msgid "Function"
-msgstr ""
+msgstr "Λειτουργία"
 
 msgctxt "field:gnuhealth.body_function,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.body_function,write_date:"
 msgid "Write Date"
@@ -180,7 +189,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.body_function.assessment,assessment:"
 msgid "Assessment"
-msgstr ""
+msgstr "Αξιολόγηση"
 
 msgctxt "field:gnuhealth.body_function.assessment,body_function:"
 msgid "Body Function"
@@ -188,15 +197,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.body_function.assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.body_function.assessment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.body_function.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_function.assessment,qualifier:"
 msgid "Qualifier"
@@ -204,7 +213,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.body_function.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.body_function.assessment,write_date:"
 msgid "Write Date"
@@ -216,27 +225,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.body_function.category,code:"
 msgid "code"
-msgstr ""
+msgstr "κωδικός"
 
 msgctxt "field:gnuhealth.body_function.category,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.body_function.category,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.body_function.category,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_function.category,name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.body_function.category,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.body_function.category,write_date:"
 msgid "Write Date"
@@ -248,31 +257,31 @@ msgstr ""
 
 msgctxt "field:gnuhealth.body_structure,category:"
 msgid "Category"
-msgstr ""
+msgstr "Κατηγορία"
 
 msgctxt "field:gnuhealth.body_structure,code:"
 msgid "code"
-msgstr ""
+msgstr "κωδικός"
 
 msgctxt "field:gnuhealth.body_structure,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.body_structure,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.body_structure,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_structure,name:"
 msgid "Structure"
-msgstr ""
+msgstr "Δομή"
 
 msgctxt "field:gnuhealth.body_structure,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.body_structure,write_date:"
 msgid "Write Date"
@@ -284,39 +293,39 @@ msgstr ""
 
 msgctxt "field:gnuhealth.body_structure.assessment,assessment:"
 msgid "Assessment"
-msgstr ""
+msgstr "Αξιολόγηση"
 
 msgctxt "field:gnuhealth.body_structure.assessment,body_side:"
 msgid "Side"
-msgstr ""
+msgstr "Πλευρά"
 
 msgctxt "field:gnuhealth.body_structure.assessment,body_structure:"
 msgid "Body Structure"
-msgstr ""
+msgstr "Δομή σώματος"
 
 msgctxt "field:gnuhealth.body_structure.assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.body_structure.assessment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.body_structure.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_structure.assessment,qualifier1:"
 msgid "Extent"
-msgstr ""
+msgstr "Έκταση"
 
 msgctxt "field:gnuhealth.body_structure.assessment,qualifier2:"
 msgid "Nature"
-msgstr ""
+msgstr "Φύση"
 
 msgctxt "field:gnuhealth.body_structure.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.body_structure.assessment,write_date:"
 msgid "Write Date"
@@ -328,27 +337,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.body_structure.category,code:"
 msgid "code"
-msgstr ""
+msgstr "κωδικός"
 
 msgctxt "field:gnuhealth.body_structure.category,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.body_structure.category,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.body_structure.category,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.body_structure.category,name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.body_structure.category,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.body_structure.category,write_date:"
 msgid "Write Date"
@@ -360,31 +369,31 @@ msgstr ""
 
 msgctxt "field:gnuhealth.environment.assessment,assessment:"
 msgid "Assessment"
-msgstr ""
+msgstr "Αξιολόγηση"
 
 msgctxt "field:gnuhealth.environment.assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.environment.assessment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.environment.assessment,environmental_factor:"
 msgid "Environment"
-msgstr ""
+msgstr "Περιβάλλον"
 
 msgctxt "field:gnuhealth.environment.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.environment.assessment,qualifier:"
 msgid "Barriers"
-msgstr ""
+msgstr "Φραγμοί"
 
 msgctxt "field:gnuhealth.environment.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.environment.assessment,write_date:"
 msgid "Write Date"
@@ -396,31 +405,31 @@ msgstr ""
 
 msgctxt "field:gnuhealth.environmental_factor,category:"
 msgid "Category"
-msgstr ""
+msgstr "Κατηγορία"
 
 msgctxt "field:gnuhealth.environmental_factor,code:"
 msgid "code"
-msgstr ""
+msgstr "κωδικός"
 
 msgctxt "field:gnuhealth.environmental_factor,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.environmental_factor,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.environmental_factor,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.environmental_factor,name:"
 msgid "Environment"
-msgstr ""
+msgstr "Περιβάλλον"
 
 msgctxt "field:gnuhealth.environmental_factor,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.environmental_factor,write_date:"
 msgid "Write Date"
@@ -432,27 +441,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.environmental_factor.category,code:"
 msgid "code"
-msgstr ""
+msgstr "κωδικός"
 
 msgctxt "field:gnuhealth.environmental_factor.category,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.environmental_factor.category,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.environmental_factor.category,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.environmental_factor.category,name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.environmental_factor.category,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.environmental_factor.category,write_date:"
 msgid "Write Date"
@@ -464,23 +473,23 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,amputations:"
 msgid "Amputations"
-msgstr ""
+msgstr "Ακρωτηριασμοί"
 
 msgctxt "field:gnuhealth.patient,amputee:"
 msgid "Amputee"
-msgstr ""
+msgstr "Ακρωτηριασμένος"
 
 msgctxt "field:gnuhealth.patient,amputee_since:"
 msgid "Since"
-msgstr ""
+msgstr "Από"
 
 msgctxt "field:gnuhealth.patient,disability:"
 msgid "Disabilities / Barriers"
-msgstr ""
+msgstr "Αναπηρίες / Φραγμοί"
 
 msgctxt "field:gnuhealth.patient,disability_assesments:"
 msgid "Assessment"
-msgstr ""
+msgstr "Αξιολόγηση"
 
 msgctxt "field:gnuhealth.patient,protheses:"
 msgid "Protheses"
@@ -492,51 +501,51 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.amputation,amputation_date:"
 msgid "Date"
-msgstr ""
+msgstr "Ημερομηνία"
 
 msgctxt "field:gnuhealth.patient.amputation,amputation_level:"
 msgid "Level"
-msgstr ""
+msgstr "Επίπεδο"
 
 msgctxt "field:gnuhealth.patient.amputation,body_structure:"
 msgid "Structure"
-msgstr ""
+msgstr "Δομή"
 
 msgctxt "field:gnuhealth.patient.amputation,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Σχόλια"
 
 msgctxt "field:gnuhealth.patient.amputation,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.patient.amputation,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.patient.amputation,etiology:"
 msgid "Etiology"
-msgstr ""
+msgstr "Αιτιολογία"
 
 msgctxt "field:gnuhealth.patient.amputation,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Επαγγελματίας υγείας"
 
 msgctxt "field:gnuhealth.patient.amputation,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.amputation,limb:"
 msgid "Limb"
-msgstr ""
+msgstr "Μέλος"
 
 msgctxt "field:gnuhealth.patient.amputation,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Ασθενής"
 
 msgctxt "field:gnuhealth.patient.amputation,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.patient.amputation,side:"
 msgid "Side"
@@ -562,19 +571,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disability_assessment,amputee:"
 msgid "Amputee"
-msgstr ""
+msgstr "Ακρωτηριασμένος"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,amputee_since:"
 msgid "Since"
-msgstr ""
+msgstr "Από"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,assessment:"
 msgid "Code"
-msgstr ""
+msgstr "Κωδικός"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,assessment_date:"
 msgid "Date"
-msgstr ""
+msgstr "Ημερομηνία"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,body_functions:"
 msgid "Body Functions Impairments"
@@ -590,15 +599,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disability_assessment,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,crutches:"
 msgid "Crutches"
-msgstr ""
+msgstr "Πατερίτσες"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,environmental_factor:"
 msgid "Environmental Factors Barriers"
@@ -606,39 +615,39 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disability_assessment,hand_function:"
 msgid "Hand"
-msgstr ""
+msgstr "Χέρι"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Επαγγελματίας υγείας"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,hearing_function:"
 msgid "Hearing"
-msgstr ""
+msgstr "Ακοή"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,locomotor_function:"
 msgid "Mobility"
-msgstr ""
+msgstr "Κινητικότητα"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Σημειώσεις"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Ασθενής"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,speech_function:"
 msgid "Speech"
-msgstr ""
+msgstr "Ομιλία"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,uxo:"
 msgid "UXO"
@@ -646,11 +655,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disability_assessment,visual_function:"
 msgid "Visual"
-msgstr ""
+msgstr "Όραση"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,wheelchair:"
 msgid "Wheelchair"
-msgstr ""
+msgstr "Αναπηρικό αμαξίδιο"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,write_date:"
 msgid "Write Date"
@@ -662,31 +671,31 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.prothesis,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Σχόλια"
 
 msgctxt "field:gnuhealth.patient.prothesis,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.patient.prothesis,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.patient.prothesis,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Επαγγελματίας υγείας"
 
 msgctxt "field:gnuhealth.patient.prothesis,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.prothesis,issue_date:"
 msgid "Date"
-msgstr ""
+msgstr "Ημερομηνία"
 
 msgctxt "field:gnuhealth.patient.prothesis,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Ασθενής"
 
 msgctxt "field:gnuhealth.patient.prothesis,prothesis:"
 msgid "Prothesis"
@@ -694,7 +703,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.prothesis,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 msgctxt "field:gnuhealth.patient.prothesis,write_date:"
 msgid "Write Date"
@@ -755,15 +764,15 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.amputation,healthprof:"
 msgid "Authorized health professional"
-msgstr ""
+msgstr "Εξουσιοδοτημένος επαγγελματίας υγείας"
 
 msgctxt "help:gnuhealth.patient.disability_assessment,healthprof:"
 msgid "Authorized health professional"
-msgstr ""
+msgstr "Εξουσιοδοτημένος επαγγελματίας υγείας"
 
 msgctxt "help:gnuhealth.patient.disability_assessment,notes:"
 msgid "Extra Information"
-msgstr ""
+msgstr "Πρόσθετες πληροφορίες"
 
 msgctxt "help:gnuhealth.patient.prothesis,healthprof:"
 msgid "Prosthetist or authorized health professional"
@@ -791,7 +800,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.body_function,name:"
 msgid "Body Functions"
-msgstr ""
+msgstr "Λειτουργίες σώματος"
 
 msgctxt "model:gnuhealth.body_function.assessment,name:"
 msgid "Body Functions Assessment"
@@ -803,7 +812,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.body_structure,name:"
 msgid "Body Functions"
-msgstr ""
+msgstr "Λειτουργίες σώματος"
 
 msgctxt "model:gnuhealth.body_structure.assessment,name:"
 msgid "Body Functions Assessment"
@@ -827,7 +836,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.patient.amputation,name:"
 msgid "Amputation"
-msgstr ""
+msgstr "Ακρωτηριασμός"
 
 msgctxt "model:gnuhealth.patient.disability_assessment,name:"
 msgid "Patient Disability Information"
@@ -835,7 +844,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.patient.prothesis,name:"
 msgid "Amputation"
-msgstr ""
+msgstr "Ακρωτηριασμός"
 
 msgctxt "model:ir.action,name:act_patient_disability_assessment_form"
 msgid "Disability Assessment"
@@ -1180,11 +1189,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.amputation,etiology:"
 msgid "Infection"
-msgstr ""
+msgstr "Λοίμωξη"
 
 msgctxt "selection:gnuhealth.patient.amputation,etiology:"
 msgid "Neoplasia"
-msgstr ""
+msgstr "Νεοπλασία"
 
 msgctxt "selection:gnuhealth.patient.amputation,etiology:"
 msgid "Peripherial Vascular Disease"
@@ -1426,7 +1435,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.body_function:"
 msgid "Body Function"
-msgstr ""
+msgstr "Λειτουργία σώματος"
 
 msgctxt "view:gnuhealth.body_structure.assessment:"
 msgid "Body Structure Assessment"
@@ -1434,7 +1443,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.body_structure:"
 msgid "Body Structure"
-msgstr ""
+msgstr "Δομή σώματος"
 
 msgctxt "view:gnuhealth.environment.assessment:"
 msgid "Environmental Factors Assessment"
@@ -1458,7 +1467,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.disability_assessment:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Επιπλέον πληροφορίες"
 
 msgctxt "view:gnuhealth.patient.disability_assessment:"
 msgid "Header"

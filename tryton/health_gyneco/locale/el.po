@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-10 17:02+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: el_GR\n"
+"PO-Revision-Date: 2021-02-09 12:34+0000\n"
+"Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/gnu-health/"
+"health_gyneco/el/>\n"
+"Language: el\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 "X-POOTLE-MTIME: 1452445357.0\n"
 
 msgctxt "error:gnuhealth.patient.pregnancy:"
@@ -172,7 +174,7 @@ msgstr "Δημιουργία ημερομηνίας"
 
 msgctxt "field:gnuhealth.patient.mammography_history,create_uid:"
 msgid "Create User"
-msgstr "Δημιουργία ημερομηνίας"
+msgstr "Δημιουργία Χρήστη"
 
 msgctxt "field:gnuhealth.patient.mammography_history,evaluation:"
 msgid "Evaluation"
@@ -300,7 +302,7 @@ msgstr "Δημιουργία χρήστη"
 
 msgctxt "field:gnuhealth.patient.pap_history,evaluation:"
 msgid "Evaluation"
-msgstr "Εκτίμση"
+msgstr "Εκτίμηση"
 
 msgctxt "field:gnuhealth.patient.pap_history,evaluation_date:"
 msgid "Date"

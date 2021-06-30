@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#    Copyright (C) 2008-2020 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2020 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
 #    Copyright (C) 2011 Cédric Krier
 
 #    This program is free software: you can redistribute it and/or modify
@@ -68,7 +68,7 @@ setup(name='gnuhealth_archives',
         'trytond.modules.health_archives': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.odt', 'icons/*.svg'],
+               'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[

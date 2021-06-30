@@ -1,1382 +1,1513 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-06-25 08:10+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
+"health_icd9procs/fr/>\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-01"
 msgid "Therapeutic ultrasound of vessels of head and neck"
-msgstr ""
+msgstr "Échographie thérapeutique des vaisseaux de la tête et du cou"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-02"
 msgid "Therapeutic ultrasound of heart"
-msgstr ""
+msgstr "Échographie thérapeutique du cœur"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-03"
 msgid "Therapeutic ultrasound of peripheral vascular vessels"
-msgstr ""
+msgstr "Échographie thérapeutique des vaisseaux vasculaires périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-09"
 msgid "Other therapeutic ultrasound"
-msgstr ""
+msgstr "Autres échographies thérapeutiques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-10"
 msgid "Implantation of chemotherapeutic agent"
-msgstr ""
+msgstr "Implantation of chemotherapeutic agent"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-11"
 msgid "Infusion of drotrecogin alfa (activated)"
-msgstr ""
+msgstr "Infusion de drotrecogine alfa (activée)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-12"
 msgid "Administration of inhaled nitric oxide"
-msgstr ""
+msgstr "Administration d'oxyde nitrique inhalé"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-13"
 msgid "Injection or infusion of nesiritide"
-msgstr ""
+msgstr "Injection ou perfusion de nesiritide"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-14"
 msgid "Injection or infusion of oxazolidinone class of antibiotics"
-msgstr ""
+msgstr "Injection ou perfusion d'antibiotiques de type oxazolidinone"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-15"
 msgid "High-dose infusion interleukin-2 [IL-2]"
-msgstr ""
+msgstr "Perfusion à dose élevée d'interleukine-2 [IL-2]"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-16"
 msgid ""
 "Pressurized treatment of venous bypass graft [conduit] with pharmaceutical "
 "substance"
 msgstr ""
+"Traitement sous pression du pontage veineux[conduit] avec une substance "
+"pharmaceutique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-17"
 msgid "Infusion of vasopressor agent"
-msgstr ""
+msgstr "Infusion d’agent vasopresseur"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-18"
 msgid "Infusion of immunosuppressive antibody therapy"
-msgstr ""
+msgstr "Infusion de thérapie par anticorps immunosuppresseurs"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-19"
 msgid "Disruption of blood brain barrier via infusion [BBBD]"
-msgstr ""
+msgstr "Perturbation de la barrière hémato-encéphalique par perfusion[BBBD]."
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-21"
 msgid "Intravascular imaging of extracranial cerebral vessels"
-msgstr ""
+msgstr "Imagerie intravasculaire des vaisseaux cérébraux extracrâniens"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-22"
 msgid "Intravascular imaging of intrathoracic vessels"
-msgstr ""
+msgstr "Imagerie intravasculaire des vaisseaux intrathoraciques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-23"
 msgid "Intravascular imaging of peripheral vessels"
-msgstr ""
+msgstr "Imagerie intravasculaire des vaisseaux périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-24"
 msgid "Intravascular imaging of coronary vessels"
-msgstr ""
+msgstr "Imagerie intravasculaire des vaisseaux coronaires"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-25"
 msgid "Intravascular imaging of renal vessels"
-msgstr ""
+msgstr "Imagerie intravasculaire des vaisseaux rénaux"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-28"
 msgid "Intravascular imaging, other specified vessel(s)"
-msgstr ""
+msgstr "Imagerie intravasculaire, autre (s) vaisseau (s) spécifié (s)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-29"
 msgid "Intravascular imaging, unspecified vessel(s)"
-msgstr ""
+msgstr "Imagerie intravasculaire, vaisseau (s) non précisé (s)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-31"
 msgid "Computer assisted surgery with CT/CTA"
-msgstr ""
+msgstr "Chirurgie assistée par ordinateur avec CT / CTA"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-32"
 msgid "Computer assisted surgery with MR/MRA"
-msgstr ""
+msgstr "Chirurgie assistée par ordinateur avec MR / MRS"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-33"
 msgid "Computer assisted surgery with fluoroscopy"
-msgstr ""
+msgstr "Chirurgie assistée par ordinateur avec fluoroscopie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-34"
 msgid "Imageless computer assisted surgery"
-msgstr ""
+msgstr "Chirurgie assistée par ordinateur sans image"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-35"
 msgid "Computer assisted surgery with multiple datasets"
-msgstr ""
+msgstr "Chirurgie assistée par ordinateur avec plusieurs jeux de données"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-39"
 msgid "Other computer assisted surgery"
-msgstr ""
+msgstr "Autre chirurgie assistée par ordinateur"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-40"
 msgid "Procedure on single vessel"
-msgstr ""
+msgstr "Procédure sur un seul vaisseau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-41"
 msgid "Procedure on two vessels"
-msgstr ""
+msgstr "Procédure sur deux vaisseau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-42"
 msgid "Procedure on three vessels"
-msgstr ""
+msgstr "Procédure sur trois vaisseaux"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-43"
 msgid "Procedure on four or more vessels"
-msgstr ""
+msgstr "Procédure sur quatre vaisseaux ou plus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-44"
 msgid "Procedure on vessel bifurcation"
-msgstr ""
+msgstr "Procédure de bifurcation du vaisseau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-45"
 msgid "Insertion of one vascular stent"
-msgstr ""
+msgstr "Insertion d'une endoprothèse vasculaire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-46"
 msgid "Insertion of two vascular stents"
-msgstr ""
+msgstr "Pose de deux endoprothèses vasculaires"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-47"
 msgid "Insertion of three vascular stents"
-msgstr ""
+msgstr "Pose de trois endoprothèses vasculaires"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-48"
 msgid "Insertion of four or more vascular stents"
-msgstr ""
+msgstr "Pose de quatre endoprothèses vasculaires ou plus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-49"
 msgid "Supersaturated oxygen therapy"
-msgstr ""
+msgstr "Oxygénothérapie sursaturée"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-50"
 msgid ""
 "Implantation of cardiac resynchronization pacemaker without mention of "
 "defibrillation, total system [CRT-P]"
 msgstr ""
+"Implantation d’un stimulateur cardiaque de resynchronisation sans mention de "
+"défibrillation, système complet[CRT-P]."
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-51"
 msgid ""
 "Implantation of cardiac resynchronization defibrillator, total system "
 "[CRT-D]"
 msgstr ""
+"Implantation du défibrillateur de resynchronisation cardiaque, système "
+"complet [CRT-D]"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-52"
 msgid ""
 "Implantation or replacement of transvenous lead [electrode] into left "
 "ventricular coronary venous system"
 msgstr ""
+"Implantation ou remplacement de sonde[électrode] dans le système veineux "
+"coronarien ventriculaire gauche."
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-53"
 msgid ""
 "Implantation or replacement of cardiac resynchronization pacemaker pulse "
 "generator only [CRT-P]"
 msgstr ""
+"Implantation ou remplacement du générateur d’impulsions du stimulateur "
+"cardiaque de resynchronisation cardiaque uniquement[CRT-P]."
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-54"
 msgid ""
 "Implantation or replacement of cardiac resynchronization defibrillator pulse"
 " generator only [CRT-D]"
 msgstr ""
+"Implantation ou remplacement du générateur d’impulsions du défibrillateur "
+"par resynchronisation cardiaque uniquement [CRT-D]"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-55"
 msgid "Insertion of drug-eluting stent(s) of other peripheral vessel(s)"
 msgstr ""
+"Insertion d’endoprothèse(s) à élution médicamenteuse(s) d’autres vaisseaux "
+"périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-56"
 msgid ""
 "Insertion or replacement of implantable pressure sensor with lead for "
 "intracardiac or great vessel hemodynamic monitoring"
 msgstr ""
+"Insertion ou remplacement d’un capteur de pression implantable avec sonde "
+"pour la surveillance hémodynamique intracardiaque ou des grands vaisseaux "
+"sanguins"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-57"
 msgid ""
 "Implantation or replacement of subcutaneous device for intracardiac or great"
 " vessel hemodynamic monitoring"
 msgstr ""
+"Implantation ou remplacement d’un dispositif sous-cutané pour la "
+"surveillance hémodynamique intracardiaque ou des grands vaisseaux sanguins"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-58"
 msgid ""
 "Insertion of intra-aneurysm sac pressure monitoring device (intraoperative)"
 msgstr ""
+"Pose d’un dispositif de surveillance de la pression du sac intra-anévrysmal "
+"(peropératoire)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-59"
 msgid "Intravascular pressure measurement of coronary arteries"
-msgstr ""
+msgstr "Mesure de la pression intravasculaire des artères coronaires"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-60"
 msgid "Insertion of drug-eluting stent(s) of superficial femoral artery"
 msgstr ""
+"Pose d’endoprothèse(s) à élution médicamenteuse(s) de l’artère fémorale "
+"superficielle"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-61"
 msgid "Percutaneous angioplasty of extracranial vessel(s)"
-msgstr ""
+msgstr "Angioplastie percutanée des vaisseaux extracrâniens"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-62"
 msgid "Percutaneous angioplasty of intracranial vessel(s)"
-msgstr ""
+msgstr "Angioplastie percutanée des vaisseaux intracrâniens"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-63"
 msgid "Percutaneous insertion of carotid artery stent(s)"
-msgstr ""
+msgstr "Pose percutanée d’une sténose carotidienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-64"
 msgid "Percutaneous insertion of other extracranial artery stent(s)"
-msgstr ""
+msgstr "Pose percutanée d’autres sténoses carotidiennes extracrânienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-65"
 msgid "Percutaneous insertion of intracranial vascular stent(s)"
-msgstr ""
+msgstr "Pose percutanée d’endoprothèse(s) vasculaire(s) intracrânienne(s)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-66"
 msgid "Percutaneous transluminal coronary angioplasty [PTCA]"
-msgstr ""
+msgstr "Angioplastie coronaire transluminale percutanée [ACTP]"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-67"
 msgid "Intravascular pressure measurement of intrathoracic arteries"
-msgstr ""
+msgstr "Mesure de la pression intravasculaire des artères intrathoraciques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-68"
 msgid "Intravascular pressure measurement of peripheral arteries"
-msgstr ""
+msgstr "Mesure de la pression intravasculaire des artères périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-69"
 msgid ""
 "Intravascular pressure measurement, other specified and unspecified vessels"
 msgstr ""
+"Mesure de la pression intravasculaire, autres vaisseaux précisés et non "
+"spécifiés"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-70"
 msgid "Revision of hip replacement, both acetabular and femoral components"
 msgstr ""
+"Révision du remplacement de la hanche, tant au niveau acétabulaire que "
+"fémoral"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-71"
 msgid "Revision of hip replacement, acetabular component"
-msgstr ""
+msgstr "Révision du remplacement de la hanche, composant acétabulaire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-72"
 msgid "Revision of hip replacement, femoral component"
-msgstr ""
+msgstr "Révision du remplacement de la hanche, composante fémorale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-73"
 msgid "Revision of hip replacement, acetabular liner and/or femoral head only"
 msgstr ""
+"Révision du remplacement de la hanche, de la membrane acétabulaire et / ou "
+"de la tête fémorale uniquement"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-74"
 msgid "Hip bearing surface, metal-on-polyethylene"
-msgstr ""
+msgstr "Surface d’appui de la hanche, métal sur polyéthylène"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-75"
 msgid "Hip bearing surface, metal-on-metal"
-msgstr ""
+msgstr "Surface d’appui de la hanche, métal sur métal"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-76"
 msgid "Hip bearing surface, ceramic-on-ceramic"
-msgstr ""
+msgstr "Surface d’appui de la hanche, céramique sur céramique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-77"
 msgid "Hip bearing surface, ceramic-on-polyethylene"
-msgstr ""
+msgstr "Surface d’appui de la hanche, céramique sur polyéthylène"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-80"
 msgid "Revision of knee replacement, total (all components)"
-msgstr ""
+msgstr "Révision de la prothèse de genou, au complet (toutes composantes)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-81"
 msgid "Revision of knee replacement, tibial component"
-msgstr ""
+msgstr "Révision de la prothèse de genou, composant tibial"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-82"
 msgid "Revision of knee replacement, femoral component"
-msgstr ""
+msgstr "Révision de remplacement du genou, composant fémoral"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-83"
 msgid "Revision of knee replacement, patellar component"
-msgstr ""
+msgstr "Révision d’une prothèse du genou, composante rotulienne"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-84"
 msgid "Revision of total knee replacement, tibial insert (liner)"
-msgstr ""
+msgstr "Révision de la prothèse totale du genou, insert tibial (liner)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-85"
 msgid "Resurfacing hip, total, acetabulum and femoral head"
 msgstr ""
+"Resurfaçage de la hanche, du total, de l’acétabulum et de la tête fémorale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-86"
 msgid "Resurfacing hip, partial, femoral head"
-msgstr ""
+msgstr "Resurfaçage de la hanche, partielle, tête fémorale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-87"
 msgid "Resurfacing hip, partial, acetabulum"
-msgstr ""
+msgstr "Resurfaçage partiel de la hanche, du cotyle et de l’acétabule"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-91"
 msgid "Transplant from live related donor"
-msgstr ""
+msgstr "Transplantation de Transplantation d’un donneur vivant apparenté"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-92"
 msgid "Transplant from live non-related donor"
-msgstr ""
+msgstr "Transplantation d’un donneur vivant non apparenté"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-93"
 msgid "Transplant from cadaver"
-msgstr ""
+msgstr "Greffe de cadavre"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-94"
 msgid "Intra-operative neurophysiologic monitoring"
-msgstr ""
+msgstr "Surveillance neurophysiologique peropératoire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-95"
 msgid "Injection or infusion of glucarpidase"
-msgstr ""
+msgstr "Injection ou perfusion de glucarpidase"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-96"
 msgid "Infusion of 4-Factor Prothrombin Complex Concentrate"
-msgstr ""
+msgstr "Infusion de concentré de complexe prothrombique à 4 facteurs"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-01"
 msgid "Cisternal puncture"
-msgstr ""
+msgstr "Ponction cisternale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-02"
 msgid "Ventriculopuncture through previously implanted catheter"
-msgstr ""
+msgstr "Ponction ventriculaire au moyen d’un cathéter déjà implanté"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-09"
 msgid "Other cranial puncture"
-msgstr ""
+msgstr "Autre ponction crânienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-10"
 msgid "Intracranial pressure monitoring"
-msgstr ""
+msgstr "Surveillance de la pression intracrânienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-11"
 msgid "Closed [percutaneous] [needle] biopsy of cerebral meninges"
-msgstr ""
+msgstr "Biopsie fermée[percutanée][aiguille] des méninges cérébrales"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-12"
 msgid "Open biopsy of cerebral meninges"
-msgstr ""
+msgstr "Biopsie ouverte des méninges cérébrales"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-13"
 msgid "Closed [percutaneous] [needle] biopsy of brain"
-msgstr ""
+msgstr "Biopsie du cerveau [à l’aiguille] fermée [percutanée]"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-14"
 msgid "Open biopsy of brain"
-msgstr ""
+msgstr "Biopsie ouverte du cerveau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-15"
 msgid "Biopsy of skull"
-msgstr ""
+msgstr "Biopsie du crâne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-16"
 msgid "Intracranial oxygen monitoring"
-msgstr ""
+msgstr "Surveillance de l’oxygène intracrânien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-17"
 msgid "Brain temperature monitoring"
-msgstr ""
+msgstr "Surveillance de la température du cerveau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-18"
 msgid "Other diagnostic procedures on brain and cerebral meninges"
 msgstr ""
+"Autres procédures de diagnostic sur le cerveau et les méninges cérébrales"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-19"
 msgid "Other diagnostic procedures on skull"
-msgstr ""
+msgstr "Autres procédures de diagnostic sur le crâne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-20"
 msgid "Cranial implantation or replacement of neurostimulator pulse generator"
 msgstr ""
+"Implantation crânienne ou remplacement du générateur d’impulsions "
+"neurostimulateur"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-21"
 msgid "Incision and drainage of cranial sinus"
-msgstr ""
+msgstr "Incision et drainage du sinus crânien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-22"
 msgid "Removal of intracranial neurostimulator lead(s)"
-msgstr ""
+msgstr "Retrait de(s) électrode(s)du neurostimulateur intracrânien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-23"
 msgid "Reopening of craniotomy site"
-msgstr ""
+msgstr "Réouverture du site de craniotomie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-24"
 msgid "Other craniotomy"
-msgstr ""
+msgstr "Autre craniotomie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-25"
 msgid "Other craniectomy"
-msgstr ""
+msgstr "Autres craniectomies"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-26"
 msgid "Insertion of catheter(s) into cranial cavity or tissue"
-msgstr ""
+msgstr "Pose de cathéter(s) dans la cavité crânienne ou le tissu crânien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-27"
 msgid "Removal of catheter(s) from cranial cavity or tissue"
-msgstr ""
+msgstr "Retrait du (des) cathéter (s) de la cavité ou du tissu crânien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-28"
 msgid "Placement of intracerebral catheter(s) via burr hole(s)"
 msgstr ""
+"Placement du (des) cathéter(s) intracérébraux par l’intermédiaire d’un (de) "
+"trous de fraise."
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-29"
 msgid "Removal of cranial neurostimulator pulse generator"
-msgstr ""
+msgstr "Retrait du générateur d’impulsions du neurostimulateur crânien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-31"
 msgid "Incision of cerebral meninges"
-msgstr ""
+msgstr "Incision des méninges cérébrales"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-32"
 msgid "Lobotomy and tractotomy"
-msgstr ""
+msgstr "Lobotomie et tractotomie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-39"
 msgid "Other incision of brain"
-msgstr ""
+msgstr "Autre incision du cerveau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-41"
 msgid "Operations on thalamus"
-msgstr ""
+msgstr "Opérations sur le thalamus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-42"
 msgid "Operations on globus pallidus"
-msgstr ""
+msgstr "Opérations sur le globus pallidus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-51"
 msgid "Excision of lesion or tissue of cerebral meninges"
-msgstr ""
+msgstr "Excision de lésion ou de tissu des méninges cérébrales"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-52"
 msgid "Hemispherectomy"
-msgstr ""
+msgstr "Hémisphérectomie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-53"
 msgid "Lobectomy of brain"
-msgstr ""
+msgstr "Lobectomie du cerveau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-59"
 msgid "Other excision or destruction of lesion or tissue of brain"
-msgstr ""
+msgstr "Autre excision ou destruction de lésion ou de tissu du cerveau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_01-6"
 msgid "Excision of lesion of skull"
-msgstr ""
+msgstr "Excision d’une lésion du crâne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-01"
 msgid "Opening of cranial suture"
-msgstr ""
+msgstr "Ouverture de la suture crânienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-02"
 msgid "Elevation of skull fracture fragments"
-msgstr ""
+msgstr "Élévation des fragments de fracture du crâne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-03"
 msgid "Formation of cranial bone flap"
-msgstr ""
+msgstr "Formation d’un lambeau osseux crânien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-04"
 msgid "Bone graft to skull"
-msgstr ""
+msgstr "Greffe osseuse sur le crâne."
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-05"
 msgid "Insertion of skull plate"
-msgstr ""
+msgstr "Insertion de la plaque crânienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-06"
 msgid "Other cranial osteoplasty"
-msgstr ""
+msgstr "Autre ostéoplastie crânienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-07"
 msgid "Removal of skull plate"
-msgstr ""
+msgstr "Retrait de la plaque crânienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-11"
 msgid "Simple suture of dura mater of brain"
-msgstr ""
+msgstr "Suture simple de la dure-mère du cerveau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-12"
 msgid "Other repair of cerebral meninges"
-msgstr ""
+msgstr "Autres réparations des méninges cérébrales"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-13"
 msgid "Ligation of meningeal vessel"
-msgstr ""
+msgstr "Ligature d’un vaisseau méningé"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-14"
 msgid "Choroid plexectomy"
-msgstr ""
+msgstr "Plexectomie choroïde"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-21"
 msgid "Insertion or replacement of external ventricular drain [EVD]"
-msgstr ""
+msgstr "Insertion ou remplacement du drain ventriculaire externe"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-22"
 msgid "Intracranial ventricular shunt or anastomosis"
-msgstr ""
+msgstr "Dérivation ou anastomose ventriculaire intracrânienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-31"
 msgid "Ventricular shunt to structure in head and neck"
-msgstr ""
+msgstr "Shunt ventriculaire pour la structure de la tête et du cou"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-32"
 msgid "Ventricular shunt to circulatory system"
-msgstr ""
+msgstr "Dérivation ventriculaire vers le système circulatoire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-33"
 msgid "Ventricular shunt to thoracic cavity"
-msgstr ""
+msgstr "Shunt ventriculaire à la cavité thoracique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-34"
 msgid "Ventricular shunt to abdominal cavity and organs"
-msgstr ""
+msgstr "Shunt ventriculaire vers la cavité abdominale et les organes"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-35"
 msgid "Ventricular shunt to urinary system"
-msgstr ""
+msgstr "Shunt ventriculaire au système urinaire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-39"
 msgid "Ventricular shunt to extracranial site NEC"
-msgstr ""
+msgstr "Shunt ventriculaire au site extracrânien NEC"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-41"
 msgid "Irrigation and exploration of ventricular shunt"
-msgstr ""
+msgstr "Irrigation et exploration du shunt ventriculaire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-42"
 msgid "Replacement of ventricular shunt"
-msgstr ""
+msgstr "Remplacement du shunt ventriculaire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-43"
 msgid "Removal of ventricular shunt"
-msgstr ""
+msgstr "Retrait du shunt ventriculaire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-91"
 msgid "Lysis of cortical adhesions"
-msgstr ""
+msgstr "Lyse des adhérences corticales"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-92"
 msgid "Repair of brain"
-msgstr ""
+msgstr "Réparation du cerveau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-93"
 msgid "Implantation or replacement of intracranial neurostimulator lead(s)"
 msgstr ""
+"Implantation ou remplacement de la sonde neurostimulatrice intracrânienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-94"
 msgid "Insertion or replacement of skull tongs or halo traction device"
 msgstr ""
+"Insertion ou remplacement d’une pince crânienne ou d’un dispositif de "
+"traction à halo"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-95"
 msgid "Removal of skull tongs or halo traction device"
-msgstr ""
+msgstr "Enlèvement de la pince crânienne ou du dispositif de traction halo"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-96"
 msgid "Insertion of sphenoidal electrodes"
-msgstr ""
+msgstr "Insertion d’électrodes sphénoïdales"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_02-99"
 msgid "Other operations on skull, brain, and cerebral meninges"
 msgstr ""
+"Autres interventions sur le crâne, le cerveau et les méninges cérébrales"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-01"
 msgid "Removal of foreign body from spinal canal"
-msgstr ""
+msgstr "Enlèvement d’un corps étranger du canal rachidien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-02"
 msgid "Reopening of laminectomy site"
-msgstr ""
+msgstr "Réouverture du site de laminectomie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-09"
 msgid "Other exploration and decompression of spinal canal"
-msgstr ""
+msgstr "Autre exploration et décompression du canal rachidien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-1"
 msgid "Division of intraspinal nerve root"
-msgstr ""
+msgstr "Division de la racine du nerf intra-spinal"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-21"
 msgid "Percutaneous chordotomy"
-msgstr ""
+msgstr "Chordotomie percutanée"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-29"
 msgid "Other chordotomy"
-msgstr ""
+msgstr "Autre cordotomie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-31"
 msgid "Spinal tap"
-msgstr ""
+msgstr "La ponction lombaire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-32"
 msgid "Biopsy of spinal cord or spinal meninges"
-msgstr ""
+msgstr "Biopsie de la moelle épinière ou des méninges rachidiennes"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-39"
 msgid "Other diagnostic procedures on spinal cord and spinal canal structures"
 msgstr ""
+"Autres procédures de diagnostic sur les structures de la moelle épinière et "
+"du canal rachidien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-4"
 msgid "Excision or destruction of lesion of spinal cord or spinal meninges"
 msgstr ""
+"Excision ou destruction d’une lésion de la moelle épinière ou des méninges "
+"rachidiennes"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-51"
 msgid "Repair of spinal meningocele"
-msgstr ""
+msgstr "Réparation de la méningocèle rachidienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-52"
 msgid "Repair of spinal myelomeningocele"
-msgstr ""
+msgstr "Réparation de la myéloméningocèle spinale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-53"
 msgid "Repair of vertebral fracture"
-msgstr ""
+msgstr "Réparation d’une fracture vertébrale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-59"
 msgid "Other repair and plastic operations on spinal cord structures"
 msgstr ""
+"Autres réparations et opérations plastiques sur les structures de la moelle "
+"épinière"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-6"
 msgid "Lysis of adhesions of spinal cord and nerve roots"
-msgstr ""
+msgstr "Lyse des adhérences de la moelle épinière et des racines nerveuses"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-71"
 msgid "Spinal subarachnoid-peritoneal shunt"
-msgstr ""
+msgstr "Shunt spinal sous-arachnoïdien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-72"
 msgid "Spinal subarachnoid-ureteral shunt"
-msgstr ""
+msgstr "Shunt spinal sous-arachnoïdien-urétéral"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-79"
 msgid "Other shunt of spinal theca"
-msgstr ""
+msgstr "Autre shunt de la thèque rachidienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-8"
 msgid "Injection of destructive agent into spinal canal"
-msgstr ""
+msgstr "Injection d’un agent destructeur dans le canal rachidien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-90"
 msgid ""
 "Insertion of catheter into spinal canal for infusion of therapeutic or "
 "palliative substances"
 msgstr ""
+"Insertion d’un cathéter dans le canal rachidien pour la perfusion de "
+"substances thérapeutiques ou palliatives"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-91"
 msgid "Injection of anesthetic into spinal canal for analgesia"
-msgstr ""
+msgstr "Injection d’anesthésique dans le canal rachidien pour analgésie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-92"
 msgid "Injection of other agent into spinal canal"
-msgstr ""
+msgstr "Injection d’un autre agent dans le canal rachidien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-93"
 msgid "Implantation or replacement of spinal neurostimulator lead(s)"
 msgstr ""
+"Implantation ou remplacement de sonde(s) neurostimulatrice(s) spinale(s)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-94"
 msgid "Removal of spinal neurostimulator lead(s)"
-msgstr ""
+msgstr "Retrait de l’électrode ou des électrodes du neurostimulateur rachidien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-95"
 msgid "Spinal blood patch"
-msgstr ""
+msgstr "Plaque de sang rachidien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-96"
 msgid "Percutaneous denervation of facet"
-msgstr ""
+msgstr "Dénervation percutanée de la facette"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-97"
 msgid "Revision of spinal thecal shunt"
-msgstr ""
+msgstr "Révision du shunt spinal thecal"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-98"
 msgid "Removal of spinal thecal shunt"
-msgstr ""
+msgstr "Enlèvement du shunt spinal thecal"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_03-99"
 msgid "Other operations on spinal cord and spinal canal structures"
 msgstr ""
+"Autres interventions sur la moelle épinière et les structures du canal "
+"rachidien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-01"
 msgid "Excision of acoustic neuroma"
-msgstr ""
+msgstr "Excision du neurinome acoustique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-02"
 msgid "Division of trigeminal nerve"
-msgstr ""
+msgstr "Division du nerf trijumeau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-03"
 msgid "Division or crushing of other cranial and peripheral nerves"
-msgstr ""
+msgstr "Division ou écrasement d’autres nerfs crâniens et périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-04"
 msgid "Other incision of cranial and peripheral nerves"
-msgstr ""
+msgstr "Autre incision des nerfs crâniens et périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-05"
 msgid "Gasserian ganglionectomy"
-msgstr ""
+msgstr "Ganglionectomie gasserienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-06"
 msgid "Other cranial or peripheral ganglionectomy"
-msgstr ""
+msgstr "Autre ganglionectomie crânienne ou périphérique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-07"
 msgid "Other excision or avulsion of cranial and peripheral nerves"
-msgstr ""
+msgstr "Autres excisions ou avulsions des nerfs crâniens et périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-11"
 msgid ""
 "Closed [percutaneous] [needle] biopsy of cranial or peripheral nerve or "
 "ganglion"
 msgstr ""
+"Biopsie [percutanée] [à l’aiguille] fermée d’un nerf ou d’un ganglion "
+"crânien ou périphérique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-12"
 msgid "Open biopsy of cranial or peripheral nerve or ganglion"
-msgstr ""
+msgstr "Biopsie ouverte de nerf ou de ganglion crânien ou périphérique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-19"
 msgid ""
 "Other diagnostic procedures on cranial and peripheral nerves and ganglia"
 msgstr ""
+"Autres procédures de diagnostic sur les nerfs crâniens et périphériques et "
+"les ganglions"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-2"
 msgid "Destruction of cranial and peripheral nerves"
-msgstr ""
+msgstr "Destruction des nerfs crâniens et périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-3"
 msgid "Suture of cranial and peripheral nerves"
-msgstr ""
+msgstr "Suture des nerfs crâniens et périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-41"
 msgid "Decompression of trigeminal nerve root"
-msgstr ""
+msgstr "Décompression de la racine du nerf trijumeau"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-42"
 msgid "Other cranial nerve decompression"
-msgstr ""
+msgstr "Autre décompression des nerfs crâniens"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-43"
 msgid "Release of carpal tunnel"
-msgstr ""
+msgstr "Libération du canal carpien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-44"
 msgid "Release of tarsal tunnel"
-msgstr ""
+msgstr "Libération du tunnel tarsien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-49"
 msgid "Other peripheral nerve or ganglion decompression or lysis of adhesions"
 msgstr ""
+"Décompression des autres nerfs périphériques ou des ganglions ou lyse des "
+"adhérences"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-5"
 msgid "Cranial or peripheral nerve graft"
-msgstr ""
+msgstr "Greffe de nerf crânien ou périphérique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-6"
 msgid "Transposition of cranial and peripheral nerves"
-msgstr ""
+msgstr "Transposition des nerfs crâniens et périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-71"
 msgid "Hypoglossal-facial anastomosis"
-msgstr ""
+msgstr "Anastomose hypoglosso-faciale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-72"
 msgid "Accessory-facial anastomosis"
-msgstr ""
+msgstr "Anastomose faciale accessoire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-73"
 msgid "Accessory-hypoglossal anastomosis"
-msgstr ""
+msgstr "Anastomose accessoire-hypoglossale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-74"
 msgid "Other anastomosis of cranial or peripheral nerve"
-msgstr ""
+msgstr "Autres anastomoses du nerf crânien ou périphérique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-75"
 msgid "Revision of previous repair of cranial and peripheral nerves"
 msgstr ""
+"Révision de la réparation antérieure des nerfs crâniens et périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-76"
 msgid "Repair of old traumatic injury of cranial and peripheral nerves"
 msgstr ""
+"Réparation d’anciennes lésions traumatiques des nerfs crâniens et "
+"périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-79"
 msgid "Other neuroplasty"
-msgstr ""
+msgstr "Autre neuroplastie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-80"
 msgid "Peripheral nerve injection, not otherwise specified"
-msgstr ""
+msgstr "Injection du nerf périphérique, non spécifiée ailleurs"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-81"
 msgid "Injection of anesthetic into peripheral nerve for analgesia"
-msgstr ""
+msgstr "Injection d’anesthésique dans le nerf périphérique pour analgésie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-89"
 msgid "Injection of other agent, except neurolytic"
-msgstr ""
+msgstr "Injection d’un autre agent, sauf neurolytique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-91"
 msgid "Neurectasis"
-msgstr ""
+msgstr "Neurectasie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-92"
 msgid "Implantation or replacement of peripheral neurostimulator lead(s)"
 msgstr ""
+"Implantation ou remplacement de sonde(s) neurostimulante(s) périphérique(s)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-93"
 msgid "Removal of peripheral neurostimulator lead(s)"
-msgstr ""
+msgstr "Retrait de la (des) dérivation(s) du neurostimulateur périphérique(s)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_04-99"
 msgid "Other operations on cranial and peripheral nerves"
-msgstr ""
+msgstr "Autres interventions sur les nerfs crâniens et périphériques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-0"
 msgid "Division of sympathetic nerve or ganglion"
-msgstr ""
+msgstr "Division du nerf sympathique ou du ganglion sympathique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-11"
 msgid "Biopsy of sympathetic nerve or ganglion"
-msgstr ""
+msgstr "Biopsie du nerf sympathique ou du ganglion sympathique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-19"
 msgid "Other diagnostic procedures on sympathetic nerves or ganglia"
 msgstr ""
+"Autres interventions diagnostiques sur les nerfs sympathiques ou les "
+"ganglions lymphatiques"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-21"
 msgid "Sphenopalatine ganglionectomy"
-msgstr ""
+msgstr "Ganglionectomie Sphénopalatine"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-22"
 msgid "Cervical sympathectomy"
-msgstr ""
+msgstr "Sympathectomie cervicale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-23"
 msgid "Lumbar sympathectomy"
-msgstr ""
+msgstr "Sympathectomie lombaire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-24"
 msgid "Presacral sympathectomy"
-msgstr ""
+msgstr "Sympathectomie présacrale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-25"
 msgid "Periarterial sympathectomy"
-msgstr ""
+msgstr "Sympathectomie périartérielle"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-29"
 msgid "Other sympathectomy and ganglionectomy"
-msgstr ""
+msgstr "Autre sympathectomie et ganglionectomie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-31"
 msgid "Injection of anesthetic into sympathetic nerve for analgesia"
-msgstr ""
+msgstr "Injection d’un anesthésique dans le nerf sympathique pour l’analgésie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-32"
 msgid "Injection of neurolytic agent into sympathetic nerve"
-msgstr ""
+msgstr "Injection d’un agent neurolytique dans le nerf sympathique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-39"
 msgid "Other injection into sympathetic nerve or ganglion"
-msgstr ""
+msgstr "Autre injection dans le nerf ou le ganglion sympathique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-81"
 msgid "Repair of sympathetic nerve or ganglion"
-msgstr ""
+msgstr "Réparation du nerf sympathique ou du ganglion"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-89"
 msgid "Other operations on sympathetic nerves or ganglia"
-msgstr ""
+msgstr "Autres opérations sur les nerfs sympathiques ou les ganglions"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_05-9"
 msgid "Other operations on nervous system"
-msgstr ""
+msgstr "Autres opérations sur le système nerveux"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-01"
 msgid "Aspiration of thyroid field"
-msgstr ""
+msgstr "Aspiration du champ thyroïdien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-02"
 msgid "Reopening of wound of thyroid field"
-msgstr ""
+msgstr "Réouverture de la plaie du champ thyroïdien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-09"
 msgid "Other incision of thyroid field"
-msgstr ""
+msgstr "Autre incision du champ thyroïdien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-11"
 msgid "Closed [percutaneous] [needle] biopsy of thyroid gland"
-msgstr ""
+msgstr "Biopsie [percutanée] [à l’aiguille] fermée de la glande thyroïde"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-12"
 msgid "Open biopsy of thyroid gland"
-msgstr ""
+msgstr "Biopsie ouverte de la glande thyroïde"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-13"
 msgid "Biopsy of parathyroid gland"
-msgstr ""
+msgstr "Biopsie de la glande parathyroïde"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-19"
 msgid "Other diagnostic procedures on thyroid and parathyroid glands"
 msgstr ""
+"Autres procédures de diagnostic sur la thyroïde et les glandes parathyroïdes"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-2"
 msgid "Unilateral thyroid lobectomy"
-msgstr ""
+msgstr "Lobectomie thyroïdienne unilatérale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-31"
 msgid "Excision of lesion of thyroid"
-msgstr ""
+msgstr "Excision de la thyroïde"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-39"
 msgid "Other partial thyroidectomy"
-msgstr ""
+msgstr "Autre thyroïdectomie partielle"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-4"
 msgid "Complete thyroidectomy"
-msgstr ""
+msgstr "Thyroïdectomie complète"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-50"
 msgid "Substernal thyroidectomy, not otherwise specified"
-msgstr ""
+msgstr "Thyroïdectomie sous-sternale, non spécifiée ailleurs"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-51"
 msgid "Partial substernal thyroidectomy"
-msgstr ""
+msgstr "Thyroïdectomie partielle sous-sternale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-52"
 msgid "Complete substernal thyroidectomy"
-msgstr ""
+msgstr "Thyroïdectomie complète sous-sternale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-6"
 msgid "Excision of lingual thyroid"
-msgstr ""
+msgstr "Excision de la thyroïde linguale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-7"
 msgid "Excision of thyroglossal duct or tract"
-msgstr ""
+msgstr "Excision du canal ou du tractus thyroglossal"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-81"
 msgid "Complete parathyroidectomy"
-msgstr ""
+msgstr "Parathyroïdectomie complète"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-89"
 msgid "Other parathyroidectomy"
-msgstr ""
+msgstr "Autre parathyroïdectomie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-91"
 msgid "Division of thyroid isthmus"
-msgstr ""
+msgstr "Division de l’isthme thyroïdien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-92"
 msgid "Ligation of thyroid vessels"
-msgstr ""
+msgstr "Ligature des vaisseaux thyroïdiens"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-93"
 msgid "Suture of thyroid gland"
-msgstr ""
+msgstr "Suture de la glande thyroïde"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-94"
 msgid "Thyroid tissue reimplantation"
-msgstr ""
+msgstr "Réimplantation de tissu thyroïdien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-95"
 msgid "Parathyroid tissue reimplantation"
-msgstr ""
+msgstr "Réimplantation de tissu parathyroïdien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-98"
 msgid "Other operations on thyroid glands"
-msgstr ""
+msgstr "Autres interventions sur les glandes thyroïdiennes"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_06-99"
 msgid "Other operations on parathyroid glands"
-msgstr ""
+msgstr "Autres interventions sur les glandes parathyroïdes"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-00"
 msgid "Exploration of adrenal field, not otherwise specified"
-msgstr ""
+msgstr "Exploration du champ surrénalien, non spécifiée ailleurs"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-01"
 msgid "Unilateral exploration of adrenal field"
-msgstr ""
+msgstr "Exploration unilatérale du champ surrénalien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-02"
 msgid "Bilateral exploration of adrenal field"
-msgstr ""
+msgstr "Exploration bilatérale du champ surrénalien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-11"
 msgid "Closed [percutaneous] [needle] biopsy of adrenal gland"
-msgstr ""
+msgstr "Biopsie [percutanée] [à l’aiguille] fermée de la glande surrénale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-12"
 msgid "Open biopsy of adrenal gland"
-msgstr ""
+msgstr "Biopsie ouverte de la glande surrénale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-13"
 msgid "Biopsy of pituitary gland, transfrontal approach"
-msgstr ""
+msgstr "Biopsie de l’hypophyse, approche transfrontalière"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-14"
 msgid "Biopsy of pituitary gland, transsphenoidal approach"
-msgstr ""
+msgstr "Biopsie de l’hypophyse, approche transsphénoïdale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-15"
 msgid "Biopsy of pituitary gland, unspecified approach"
-msgstr ""
+msgstr "Biopsie de l’hypophyse, approche non précisée"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-16"
 msgid "Biopsy of thymus"
-msgstr ""
+msgstr "Biopsie du thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-17"
 msgid "Biopsy of pineal gland"
-msgstr ""
+msgstr "Biopsie de la glande pinéale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-19"
 msgid ""
 "Other diagnostic procedures on adrenal glands, pituitary gland, pineal "
 "gland, and thymus"
 msgstr ""
+"Autres procédures de diagnostic sur les glandes surrénales, l’hypophyse, la "
+"glande pinéale et le thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-21"
 msgid "Excision of lesion of adrenal gland"
-msgstr ""
+msgstr "Excision d’une lésion de la glande surrénale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-22"
 msgid "Unilateral adrenalectomy"
-msgstr ""
+msgstr "Surrénalectomie unilatérale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-29"
 msgid "Other partial adrenalectomy"
-msgstr ""
+msgstr "Autre surrénalectomie partielle"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-3"
 msgid "Bilateral adrenalectomy"
-msgstr ""
+msgstr "Surrénalectomie bilatérale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-41"
 msgid "Incision of adrenal gland"
-msgstr ""
+msgstr "Incision de la glande surrénale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-42"
 msgid "Division of nerves to adrenal glands"
-msgstr ""
+msgstr "Division des nerfs en glandes surrénales"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-43"
 msgid "Ligation of adrenal vessels"
-msgstr ""
+msgstr "Ligature des vaisseaux surrénaliens"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-44"
 msgid "Repair of adrenal gland"
-msgstr ""
+msgstr "Réparation de la glande surrénale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-45"
 msgid "Reimplantation of adrenal tissue"
-msgstr ""
+msgstr "Réimplantation du tissu surrénalien"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-49"
 msgid "Other operations on adrenal glands, nerves, and vessels"
 msgstr ""
+"Autres opérations sur les glandes surrénales, les nerfs et les vaisseaux "
+"surrénaux"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-51"
 msgid "Exploration of pineal field"
-msgstr ""
+msgstr "Exploration du champ pinéal"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-52"
 msgid "Incision of pineal gland"
-msgstr ""
+msgstr "Incision de la glande pinéale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-53"
 msgid "Partial excision of pineal gland"
-msgstr ""
+msgstr "Excision partielle de la glande pinéale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-54"
 msgid "Total excision of pineal gland"
-msgstr ""
+msgstr "Excision totale de la glande pinéale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-59"
 msgid "Other operations on pineal gland"
-msgstr ""
+msgstr "Autres opérations sur la glande pinéale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-61"
 msgid "Partial excision of pituitary gland, transfrontal approach"
-msgstr ""
+msgstr "Excision partielle de l’hypophyse, approche transfrontalière"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-62"
 msgid "Partial excision of pituitary gland, transsphenoidal approach"
-msgstr ""
+msgstr "Excision partielle de l’hypophyse, approche transsphénoïdale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-63"
 msgid "Partial excision of pituitary gland, unspecified approach"
-msgstr ""
+msgstr "Excision partielle de l’hypophyse, approche non précisée"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-64"
 msgid "Total excision of pituitary gland, transfrontal approach"
-msgstr ""
+msgstr "Excision totale de l’hypophyse, approche transfrontalière"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-65"
 msgid "Total excision of pituitary gland, transsphenoidal approach"
-msgstr ""
+msgstr "Excision totale de l’hypophyse, approche transsphénoïdale"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-68"
 msgid "Total excision of pituitary gland, other specified approach"
-msgstr ""
+msgstr "Excision totale de l’hypophyse, autre approche précisée"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-69"
 msgid "Total excision of pituitary gland, unspecified approach"
-msgstr ""
+msgstr "Excision totale de l’hypophyse, approche non spécifiée"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-71"
 msgid "Exploration of pituitary fossa"
-msgstr ""
+msgstr "Exploration de l’hypophyse"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-72"
 msgid "Incision of pituitary gland"
-msgstr ""
+msgstr "Incision de l’hypophyse"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-79"
 msgid "Other operations on hypophysis"
-msgstr ""
+msgstr "Autres opérations sur l’hypophyse"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-80"
 msgid "Thymectomy, not otherwise specified"
-msgstr ""
+msgstr "Thymectomie, non spécifiée ailleurs"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-81"
 msgid "Other partial excision of thymus"
-msgstr ""
+msgstr "Autre excision partielle du thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-82"
 msgid "Other total excision of thymus"
-msgstr ""
+msgstr "Autre excision totale du thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-83"
 msgid "Thoracoscopic partial excision of thymus"
-msgstr ""
+msgstr "Excision partielle thoracoscopique du thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-84"
 msgid "Thoracoscopic total excision of thymus"
-msgstr ""
+msgstr "Excision totale thoracoscopique du thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-91"
 msgid "Exploration of thymus field"
-msgstr ""
+msgstr "Exploration du champ de thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-92"
 msgid "Other incision of thymus"
-msgstr ""
+msgstr "Autre incision du thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-93"
 msgid "Repair of thymus"
-msgstr ""
+msgstr "Réparation du thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-94"
 msgid "Transplantation of thymus"
-msgstr ""
+msgstr "Transplantation de thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-95"
 msgid "Thoracoscopic incision of thymus"
-msgstr ""
+msgstr "Incision thoracoscopique du thymus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-98"
 msgid "Other and unspecified thoracoscopic operations on thymus"
-msgstr ""
+msgstr "Opérations thoracoscopiques sur le thymus, autres et non spécifiées"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_07-99"
 msgid "Other and unspecified operations on thymus"
-msgstr ""
+msgstr "Opérations sur le thymus, autres et sans précision"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-01"
 msgid "Incision of lid margin"
-msgstr ""
+msgstr "Incision du bord du paupière"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-02"
 msgid "Severing of blepharorrhaphy"
-msgstr ""
+msgstr "Incision de blépharoplastie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-09"
 msgid "Other incision of eyelid"
-msgstr ""
+msgstr "Autre incision de la paupière"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-11"
 msgid "Biopsy of eyelid"
-msgstr ""
+msgstr "Biopsie de la paupière"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-19"
 msgid "Other diagnostic procedures on eyelid"
-msgstr ""
+msgstr "Autres procédures de diagnostic sur la paupière"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-20"
 msgid "Removal of lesion of eyelid, not otherwise specified"
-msgstr ""
+msgstr "Enlèvement de la lésion de la paupière, non spécifié ailleurs"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-21"
 msgid "Excision of chalazion"
-msgstr ""
+msgstr "Excision du chalazion"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-22"
 msgid "Excision of other minor lesion of eyelid"
-msgstr ""
+msgstr "Excision d’une autre lésion mineure de la paupière"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-23"
 msgid "Excision of major lesion of eyelid, partial-thickness"
-msgstr ""
+msgstr "Excision d’une lésion majeure de la paupière, épaisseur partielle"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-24"
 msgid "Excision of major lesion of eyelid, full-thickness"
-msgstr ""
+msgstr "Excision d’une lésion majeure de la paupière, pleine épaisseur"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-25"
 msgid "Destruction of lesion of eyelid"
-msgstr ""
+msgstr "Destruction d’une lésion de la paupière"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-31"
 msgid "Repair of blepharoptosis by frontalis muscle technique with suture"
 msgstr ""
+"Réparation de la blépharoptose par la technique du muscle frontalis avec "
+"suture"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-32"
 msgid ""
 "Repair of blepharoptosis by frontalis muscle technique with fascial sling"
 msgstr ""
+"Réparation de la blépharoptose par la technique du muscle frontalis avec "
+"écharpe fasciale"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-33"
 msgid ""
 "Repair of blepharoptosis by resection or advancement of levator muscle or "
 "aponeurosis"
 msgstr ""
+"Réparation de la blépharoptose par résection ou avancement du muscle "
+"releveur ou aponévrose"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-34"
 msgid "Repair of blepharoptosis by other levator muscle techniques"
 msgstr ""
+"Réparation de la blépharoptose par d’autres techniques musculaires levantes"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-35"
 msgid "Repair of blepharoptosis by tarsal technique"
-msgstr ""
+msgstr "Réparation de la blépharoptose par technique tarsienne"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-36"
 msgid "Repair of blepharoptosis by other techniques"
-msgstr ""
+msgstr "Réparation de la blépharoptose par d’autres techniques"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-37"
 msgid "Reduction of overcorrection of ptosis"
-msgstr ""
+msgstr "Réduction de la surcorrection de la ptose"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-38"
 msgid "Correction of lid retraction"
-msgstr ""
+msgstr "Correction de la rétraction du couvercle"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-41"
 msgid "Repair of entropion or ectropion by thermocauterization"
-msgstr ""
+msgstr "Réparation d’entropion ou d’ectropion par thermocautérisation"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-42"
 msgid "Repair of entropion or ectropion by suture technique"
-msgstr ""
+msgstr "Réparation d’entropion ou d’ectropion par suture"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-43"
 msgid "Repair of entropion or ectropion with wedge resection"
-msgstr ""
+msgstr "Réparation d’entropion ou d’ectropion avec résection par coin"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-44"
 msgid "Repair of entropion or ectropion with lid reconstruction"
-msgstr ""
+msgstr "Réparation d’entropion ou d’ectropion avec reconstruction des paupières"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-49"
 msgid "Other repair of entropion or ectropion"
-msgstr ""
+msgstr "Autre réparation d’entropion ou d’ectropion"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-51"
 msgid "Canthotomy"
-msgstr ""
+msgstr "Canthotomie"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-52"
 msgid "Blepharorrhaphy"
-msgstr ""
+msgstr "Blepharorrhaphie"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-59"
 msgid "Other adjustment of lid position"
-msgstr ""
+msgstr "Autre ajustement de la position de la paupière"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-61"
 msgid "Reconstruction of eyelid with skin flap or graft"
-msgstr ""
+msgstr "Reconstruction de la paupière avec lambeau ou greffe de peau"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-62"
 msgid "Reconstruction of eyelid with mucous membrane flap or graft"
 msgstr ""
+"Reconstruction de la paupière avec un lambeau ou une greffe de membrane "
+"muqueuse"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-63"
 msgid "Reconstruction of eyelid with hair follicle graft"
-msgstr ""
+msgstr "Reconstruction de la paupière avec greffe de follicule pileux"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-64"
 msgid "Reconstruction of eyelid with tarsoconjunctival flap"
-msgstr ""
+msgstr "Reconstruction de la paupière avec lambeau tarsoconjonctival"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-69"
 msgid "Other reconstruction of eyelid with flaps or grafts"
-msgstr ""
+msgstr "Autre reconstruction de paupière avec des lambeaux ou des greffes"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-70"
 msgid "Reconstruction of eyelid, not otherwise specified"
-msgstr ""
+msgstr "Reconstruction de la paupière, non spécifiée ailleurs"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-71"
 msgid "Reconstruction of eyelid involving lid margin, partial-thickness"
 msgstr ""
+"Reconstruction de la paupière avec bord de la paupière, épaisseur partielle"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-72"
 msgid "Other reconstruction of eyelid, partial-thickness"
-msgstr ""
+msgstr "Autre reconstruction de la paupière, épaisseur partielle"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-73"
 msgid "Reconstruction of eyelid involving lid margin, full-thickness"
 msgstr ""
+"Reconstruction de la paupière avec bord de la paupière, pleine épaisseur"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-74"
 msgid "Other reconstruction of eyelid, full-thickness"
-msgstr ""
+msgstr "Autre reconstruction de la paupière, pleine épaisseur"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-81"
 msgid "Linear repair of laceration of eyelid or eyebrow"
-msgstr ""
+msgstr "Réparation linéaire de lacération de la paupière ou du sourcil"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-82"
 msgid "Repair of laceration involving lid margin, partial-thickness"
 msgstr ""
+"Réparation d’une lacération au niveau du bord de la paupière, épaisseur "
+"partielle"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-83"
 msgid "Other repair of laceration of eyelid, partial-thickness"
-msgstr ""
+msgstr "Autre réparation de lacération de la paupière, d’épaisseur partielle"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-84"
 msgid "Repair of laceration involving lid margin, full-thickness"
 msgstr ""
+"Réparation d’une lacération impliquant la marge du couvercle, pleine "
+"épaisseur"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-85"
 msgid "Other repair of laceration of eyelid, full-thickness"
-msgstr ""
+msgstr "Autre réparation de lacération de la paupière, pleine épaisseur"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_08-86"
 msgid "Lower eyelid rhytidectomy"
-msgstr ""
+msgstr "Rhytidectomie de la paupière inférieure"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-87"
 msgid "Upper eyelid rhytidectomy"
-msgstr ""
+msgstr "Rhytidectomie des paupières supérieures"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-89"
 msgid "Other eyelid repair"
-msgstr ""
+msgstr "Autre réparation des paupières"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-91"
 msgid "Electrosurgical epilation of eyelid"
-msgstr ""
+msgstr "Épilation électrochirurgicale de la paupière"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_08-92"
 msgid "Cryosurgical epilation of eyelid"
@@ -2158,15 +2289,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_14-81"
 msgid "Implantation of epiretinal visual prosthesis"
-msgstr ""
+msgstr "Implantation d'une prothèse visuelle épirétinienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_14-82"
 msgid "Removal of epiretinal visual prosthesis"
-msgstr ""
+msgstr "Enlèvement de la prothèse visuelle épirétinienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_14-83"
 msgid "Revision or replacement of epiretinal visual prosthesis"
-msgstr ""
+msgstr "Révision ou remplacement de la prothèse visuelle épirétinienne"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_14-9"
 msgid "Other operations on retina, choroid, and posterior chamber"
@@ -8353,7 +8484,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_64-3"
 msgid "Amputation of penis"
-msgstr ""
+msgstr "Amputation du pénis"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_64-41"
 msgid "Suture of laceration of penis"
@@ -8636,9 +8767,10 @@ msgctxt "model:gnuhealth.procedure,description:cie9_66-61"
 msgid "Excision or destruction of lesion of fallopian tube"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_66-62"
 msgid "Salpingectomy with removal of tubal pregnancy"
-msgstr ""
+msgstr "Salpingectomie avec suppression de la grossesse tubaire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_66-63"
 msgid "Bilateral partial salpingectomy, not otherwise specified"
@@ -8742,7 +8874,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_67-4"
 msgid "Amputation of cervix"
-msgstr ""
+msgstr "Amputation du col utérin"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_67-51"
 msgid "Transabdominal cerclage of cervix"
@@ -8870,7 +9002,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_69-01"
 msgid "Dilation and curettage for termination of pregnancy"
-msgstr ""
+msgstr "Dilatation et curetage pour interruption de grossesse"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_69-02"
 msgid "Dilation and curettage following delivery or abortion"
@@ -8918,7 +9050,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_69-51"
 msgid "Aspiration curettage of uterus for termination of pregnancy"
-msgstr ""
+msgstr "Curetage de l'utérus par aspiration pour interruption de grossesse"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_69-52"
 msgid "Aspiration curettage following delivery or abortion"
@@ -9346,7 +9478,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_74-3"
 msgid "Removal of extratubal ectopic pregnancy"
-msgstr ""
+msgstr "Removal of extratubal ectopic pregnancy"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_74-4"
 msgid "Cesarean section of other specified type"
@@ -9354,7 +9486,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_74-91"
 msgid "Hysterotomy to terminate pregnancy"
-msgstr ""
+msgstr "Hystérectomie pour interrompre la grossesse"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_74-99"
 msgid "Other cesarean section of unspecified type"
@@ -11944,19 +12076,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-00"
 msgid "Upper limb amputation, not otherwise specified"
-msgstr ""
+msgstr "Amputation des membres supérieurs, non spécifiée ailleurs"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-01"
 msgid "Amputation and disarticulation of finger"
-msgstr ""
+msgstr "Amputation et désarticulation du doigt"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-02"
 msgid "Amputation and disarticulation of thumb"
-msgstr ""
+msgstr "Amputation et désarticulation du pouce"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-03"
 msgid "Amputation through hand"
-msgstr ""
+msgstr "Amputation à la main"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-04"
 msgid "Disarticulation of wrist"
@@ -11964,7 +12096,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-05"
 msgid "Amputation through forearm"
-msgstr ""
+msgstr "Amputation par l'avant-bras"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-06"
 msgid "Disarticulation of elbow"
@@ -11972,7 +12104,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-07"
 msgid "Amputation through humerus"
-msgstr ""
+msgstr "Amputation par l'humérus"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-08"
 msgid "Disarticulation of shoulder"
@@ -11980,19 +12112,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-09"
 msgid "Interthoracoscapular amputation"
-msgstr ""
+msgstr "Amputation interthoracoscapulaire"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-10"
 msgid "Lower limb amputation, not otherwise specified"
-msgstr ""
+msgstr "Amputation des membres inférieurs, non spécifiée ailleurs"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-11"
 msgid "Amputation of toe"
-msgstr ""
+msgstr "Amputation de l'orteil"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-12"
 msgid "Amputation through foot"
-msgstr ""
+msgstr "Amputation par le pied"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-13"
 msgid "Disarticulation of ankle"
@@ -12000,11 +12132,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-14"
 msgid "Amputation of ankle through malleoli of tibia and fibula"
-msgstr ""
+msgstr "Amputation de la cheville par les malléoles du tibia et du péroné"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-15"
 msgid "Other amputation below knee"
-msgstr ""
+msgstr "Autre amputation sous le genou"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-16"
 msgid "Disarticulation of knee"
@@ -12012,7 +12144,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-17"
 msgid "Amputation above knee"
-msgstr ""
+msgstr "Amputation au-dessus du genou"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-18"
 msgid "Disarticulation of hip"
@@ -12020,7 +12152,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-19"
 msgid "Abdominopelvic amputation"
-msgstr ""
+msgstr "Amputation abdominopélvique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-21"
 msgid "Thumb reattachment"
@@ -12060,7 +12192,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-3"
 msgid "Revision of amputation stump"
-msgstr ""
+msgstr "Révision de la souche d'amputation"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-40"
 msgid ""
@@ -12214,7 +12346,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-91"
 msgid "Amputation, not otherwise specified"
-msgstr ""
+msgstr "Amputation non spécifiée ailleurs"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_84-92"
 msgid "Separation of equal conjoined twins"
@@ -13388,7 +13520,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_89-26"
 msgid "Gynecological examination"
-msgstr ""
+msgstr "Examen gynécologique"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_89-29"
 msgid "Other nonoperative genitourinary system measurements"
@@ -13548,7 +13680,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_89-7"
 msgid "General physical examination"
-msgstr ""
+msgstr "Examen physique général"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_89-8"
 msgid "Autopsy"
@@ -14500,7 +14632,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_93-09"
 msgid "Other diagnostic physical therapy procedure"
-msgstr ""
+msgstr "Autre diagnostique de procédure de kinésithérapie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_93-11"
 msgid "Assisting exercise"
@@ -14532,7 +14664,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_93-18"
 msgid "Breathing exercise"
-msgstr ""
+msgstr "Exercice de respiration"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_93-19"
 msgid "Exercise, not elsewhere classified"
@@ -14602,13 +14734,14 @@ msgctxt "model:gnuhealth.procedure,description:cie9_93-37"
 msgid "Prenatal training"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_93-38"
 msgid "Combined physical therapy without mention of the components"
-msgstr ""
+msgstr "Kinésithérapie associée sana mention des composants"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_93-39"
 msgid "Other physical therapy"
-msgstr ""
+msgstr "Autre kinésithérapie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_93-41"
 msgid "Spinal traction using skull device"
@@ -14995,7 +15128,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_95-03"
 msgid "Extended ophthalmologic work-up"
-msgstr ""
+msgstr "Traitement ophtalmologique étendu"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_95-04"
 msgid "Eye examination under anesthesia"
@@ -15003,7 +15136,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_95-05"
 msgid "Visual field study"
-msgstr ""
+msgstr "Étude de champ visuel"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_95-06"
 msgid "Color vision study"
@@ -15087,7 +15220,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_95-36"
 msgid "Ophthalmologic counseling and instruction"
-msgstr ""
+msgstr "Conseil et instruction en ophtalmologie"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_95-41"
 msgid "Audiometry"
@@ -15764,11 +15897,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_99-12"
 msgid "Immunization for allergy"
-msgstr ""
+msgstr "Immunisation contre les allergies"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_99-13"
 msgid "Immunization for autoimmune disease"
-msgstr ""
+msgstr "Vaccination contre les maladies auto-immunes"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_99-14"
 msgid "Injection or infusion of immunoglobulin"

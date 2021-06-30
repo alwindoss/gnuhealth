@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2020 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011-2020 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2021 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
 #    Copyright (C) 2015 Cédric Krier
 #    Copyright (C) 2014-2015 Chris Zimmerman <siv@riseup.net>
 #
@@ -51,7 +51,6 @@ from trytond.tools.multivalue import migrate_property
 from trytond.rpc import RPC
 
 
-
 from uuid import uuid4
 import string
 import random
@@ -59,32 +58,33 @@ import pytz
 
 __all__ = [
     'OperationalArea', 'OperationalSector', 'Occupation',
-    'Ethnicity','DomiciliaryUnit','FederationCountryConfig',
-    'BirthCertificate','DeathCertificate','Party','ContactMechanism',
-    'PersonName','PartyAddress','DrugDoseUnits', 'MedicationFrequency',
+    'Ethnicity', 'DomiciliaryUnit', 'FederationCountryConfig',
+    'BirthCertificate', 'DeathCertificate', 'Party', 'ContactMechanism',
+    'PersonName', 'PartyAddress', 'DrugDoseUnits', 'MedicationFrequency',
     'DrugForm', 'DrugRoute',
-    'MedicalSpecialty','HealthInstitution', 'HealthInstitutionSpecialties',
-    'HealthInstitutionOperationalSector','HealthInstitutionO2M',
-    'HospitalBuilding', 'HospitalUnit','HospitalOR', 'HospitalWard',
-    'HospitalBed', 'HealthProfessional','HealthProfessionalSpecialties',
+    'MedicalSpecialty', 'HealthInstitution', 'HealthInstitutionSpecialties',
+    'HealthInstitutionOperationalSector', 'HealthInstitutionO2M',
+    'HospitalBuilding', 'HospitalUnit', 'HospitalOR', 'HospitalWard',
+    'HospitalBed', 'HealthProfessional', 'HealthProfessionalSpecialties',
     'PhysicianSP', 'Family', 'FamilyMember', 'MedicamentCategory',
     'Medicament', 'ImmunizationSchedule', 'ImmunizationScheduleLine',
     'ImmunizationScheduleDose', 'PathologyCategory', 'PathologyGroup',
     'Pathology', 'DiseaseMembers', 'ProcedureCode',
-    'BirthCertExtraInfo','DeathCertExtraInfo', 'DeathUnderlyingCondition',
+    'BirthCertExtraInfo', 'DeathCertExtraInfo', 'DeathUnderlyingCondition',
     'InsurancePlan', 'Insurance', 'AlternativePersonID',
-    'Product', 'GnuHealthSequences', 'GnuHealthSequenceSetup','PatientData',
-    'PatientDiseaseInfo','Appointment', 'AppointmentReport',
+    'Product', 'GnuHealthSequences', 'GnuHealthSequenceSetup', 'PatientData',
+    'PatientDiseaseInfo', 'Appointment', 'AppointmentReport',
     'OpenAppointmentReportStart', 'OpenAppointmentReport',
     'PatientPrescriptionOrder', 'PrescriptionLine', 'PatientMedication',
-    'PatientVaccination','PatientEvaluation',
+    'PatientVaccination', 'PatientEvaluation',
     'Directions', 'SecondaryCondition', 'DiagnosticHypothesis',
     'SignsAndSymptoms', 'PatientECG', 'ProductTemplate', 'PageOfLife',
-    'Commands']
+    'Commands', 'Modules']
 
 
 sequences = ['patient_sequence', 'patient_evaluation_sequence',
-            'appointment_sequence', 'prescription_sequence']
+             'appointment_sequence', 'prescription_sequence']
+
 
 def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
     """ Get the person's age.
@@ -101,7 +101,7 @@ def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
 
     if dob:
         start = datetime.strptime(str(dob), '%Y-%m-%d')
-        end = datetime.strptime(str(today),'%Y-%m-%d')
+        end = datetime.strptime(str(today), '%Y-%m-%d')
 
         if extra_date:
             end = datetime.strptime(str(extra_date), '%Y-%m-%d')
@@ -111,7 +111,6 @@ def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
                         str(dod), '%Y-%m-%d %H:%M:%S')
 
         rdelta = relativedelta(end, start)
-
 
         years_months_days = str(rdelta.years) + 'y ' \
             + str(rdelta.months) + 'm ' \
@@ -141,6 +140,8 @@ def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
 #
 # TODO: For 3.8, use this method for all the reports that
 #       use datetime fields.
+
+
 def convert_date_timezone(sdate, target):
     Company = Pool().get('company.company')
 
@@ -151,11 +152,11 @@ def convert_date_timezone(sdate, target):
         if company.timezone:
             institution_timezone = pytz.timezone(company.timezone)
 
-    if (target=='utc'):
-        #Convert date to UTC timezone
+    if (target == 'utc'):
+        # Convert date to UTC timezone
         res = institution_timezone.localize(sdate).astimezone(pytz.utc)
     else:
-        #Convert from UTC to institution local timezone
+        # Convert from UTC to institution local timezone
         res = pytz.utc.localize(sdate).astimezone(institution_timezone)
     return res
 
@@ -167,13 +168,13 @@ class DomiciliaryUnit(ModelSQL, ModelView):
     def get_parent(self, subdivision):
         # Recursively get the parent subdivisions
         if (subdivision.parent):
-            return str(subdivision.rec_name) +'\n'+ \
+            return str(subdivision.rec_name) + '\n' + \
                 str(self.get_parent(subdivision.parent))
         else:
             return subdivision.rec_name
 
     def get_du_address(self, name):
-        du_addr=''
+        du_addr = ''
         # Street
         if (self.address_street):
             du_addr = str(self.address_street) + ' ' + \
@@ -186,11 +187,11 @@ class DomiciliaryUnit(ModelSQL, ModelView):
 
         # Zip Code
         if (self.address_zip):
-            du_addr = du_addr +" - "+ self.address_zip
+            du_addr = du_addr + " - " + self.address_zip
 
         # Country
         if (self.address_country):
-            du_addr = du_addr +"\n"+ self.address_country.rec_name
+            du_addr = du_addr + "\n" + self.address_country.rec_name
 
         return du_addr
 
@@ -230,7 +231,7 @@ class DomiciliaryUnit(ModelSQL, ModelView):
 
     # Text Representation
     address_repr = fields.Function(fields.Text("DU Address"),
-        'get_du_address')
+                                   'get_du_address')
 
     # Infrastructure
 
@@ -289,14 +290,13 @@ class DomiciliaryUnit(ModelSQL, ModelView):
     members = fields.One2Many('party.party', 'du', 'Members', readonly=True)
 
     @fields.depends('latitude', 'longitude', 'address_street',
-        'address_street_number', 'address_district', 'address_municipality',
-        'address_city', 'address_zip', 'address_subdivision',
-        'address_country')
+                    'address_street_number', 'address_district',
+                    'address_municipality', 'address_city',
+                    'address_zip', 'address_subdivision', 'address_country')
     def on_change_with_urladdr(self):
         # Generates the URL to be used in OpenStreetMap
         #   If latitude and longitude are known, use them.
         #   Otherwise, use street, municipality, city, and so on.
-
 
         parts = OrderedDict()
         parts['scheme'] = 'http'
@@ -313,7 +313,8 @@ class DomiciliaryUnit(ModelSQL, ModelView):
                                         'mlon': self.longitude})
 
         else:
-            state = country = postalcode = city = municipality = street = number = ''
+            state = country = postalcode = city = municipality = \
+                street = number = ''
             if self.address_street_number is not None:
                 number = str(self.address_street_number)
             if self.address_street:
@@ -385,7 +386,6 @@ class Party(ModelSQL, ModelView):
     def person_age(self, name):
         return compute_age_from_dates(self.dob, self.deceased,
                               self.dod, self.gender, name, None)
-
 
     def get_du_address(self, name):
         if (self.du):
@@ -967,6 +967,7 @@ class PageOfLife(ModelSQL, ModelView):
         ('health_condition', 'Health Condition'),
         ('encounter', 'Encounter'),
         ('procedure', 'Procedure'),
+        ('self_monitoring', 'Self monitoring'),
         ('immunization','Immunization'),
         ('prescription', 'Prescription'),
         ('surgery', 'Surgery'),
@@ -1036,6 +1037,9 @@ class PageOfLife(ModelSQL, ModelView):
         states={'invisible': Not(Equal(Eval('medical_context'), 'genetics'))})
 
     summary = fields.Char("Summary")
+    measurements = fields.Char("Measurements", readonly=True,
+                               help="Automatically included measurements"
+                               " such vital signs, HR, RR and anthropometrics")
     info = fields.Text("Extended Information")
 
     institution = fields.Many2One('gnuhealth.institution', 'Institution')
@@ -2342,7 +2346,7 @@ class Pathology(ModelSQL, ModelView):
     category = fields.Many2One(
         'gnuhealth.pathology.category', 'Main Category',
         help='Select the main category for this disease This is usually'
-        ' associated to the standard. For instance, the chapter on the ICD-10'
+        ' associated to the standard. For instance, the chapter on the ICD'
         ' will be the main category for de disease')
 
     groups = fields.One2Many(
@@ -2355,6 +2359,8 @@ class Pathology(ModelSQL, ModelView):
         'Protein involved', help='Name of the protein(s) affected')
     gene = fields.Char('Gene', help='Name of the gene(s) affected')
     info = fields.Text('Extra Info')
+
+    uri = fields.Char('URI', help="Resource / Entity URL address")
 
     active = fields.Boolean('Active', select=True)
 
@@ -4857,45 +4863,45 @@ class PatientEvaluation(ModelSQL, ModelView):
 
     glycemia = fields.Float(
         'Glycemia',
-        help='Last blood glucose level. Can be approximative. Expressed in mg/dL or mmol/L.',
+        help='Blood glucose level (mg/dL)',
         states = STATES)
 
     hba1c = fields.Float(
-        'Glycated Hemoglobin',
-        help='Last Glycated Hb level. Can be approximative. Expressed in mmol/mol.',
+        'HbA1c',
+        help='Last Glycated Hemoglobin HbA1c level(mmol/mol)',
         states = STATES)
 
     cholesterol_total = fields.Integer(
         'Last Cholesterol',
-        help='Last cholesterol reading. Can be approximative. Expressed in mg/dL or mmol/L.',
+        help='Last cholesterol reading (mg/dL)',
         states = STATES)
 
     hdl = fields.Integer(
-        'Last HDL',
-        help='Last HDL Cholesterol reading. Can be approximative. Expressed in mg/dL or mmol/L.',
+        'HDL',
+        help='Last HDL Cholesterol reading (mg/dL)',
         states = STATES)
 
     ldl = fields.Integer(
-        'Last LDL',
-        help='Last LDL Cholesterol reading. Can be approximative. Expressed in mg/dL or mmol/L.',
+        'LDL',
+        help='Last LDL Cholesterol reading (mg/dL)',
         states = STATES)
 
     tag = fields.Integer(
-        'Last TAGs',
-        help='Triacylglycerol(triglicerides) level. Can be approximative. Expressed in mg/dL or mmol/L.',
+        'TAGs',
+        help='Last Triglicerides level, (mg/dL)',
         states = STATES)
 
     systolic = fields.Integer('Systolic Pressure',
-        help='Systolic pressure expressed in mmHg',
+        help='Systolic pressure (mmHg)',
         states = STATES)
 
     diastolic = fields.Integer('Diastolic Pressure',
-        help='Diastolic pressure expressed in mmHg',
+        help='Diastolic pressure (mmHg)',
         states = STATES)
 
     bpm = fields.Integer(
         'Heart Rate',
-        help='Heart rate expressed in beats per minute',
+        help='Heart rate (beats per minute)',
         states = STATES)
 
     respiratory_rate = fields.Integer(
@@ -5377,14 +5383,45 @@ class PatientEvaluation(ModelSQL, ModelView):
         Pol = Pool().get('gnuhealth.pol')
         pol = []
 
+        # Create a dictionary with vital signs and other measurements
+        measurements = {}
+        bp = {}
+        if evaluation.systolic:
+            bp['systolic']= evaluation.systolic
+        if evaluation.diastolic:
+            bp['diastolic']= evaluation.diastolic
+
+        if bp:
+            measurements['bp']=bp
+        if evaluation.temperature:
+            measurements['t']=evaluation.temperature
+        if evaluation.bpm:
+            measurements['hr']=evaluation.bpm
+        if evaluation.respiratory_rate:
+            measurements['rr']=evaluation.respiratory_rate
+        if evaluation.osat:
+            measurements['osat']=evaluation.osat
+        if evaluation.glycemia:
+            measurements['bg']=evaluation.glycemia
+        if evaluation.weight:
+            measurements['wt']=evaluation.weight
+        if evaluation.height:
+            measurements['ht']=evaluation.height
+        if evaluation.bmi:
+            measurements['bmi']=evaluation.bmi
+        if evaluation.head_circumference:
+            measurements['hc']=evaluation.head_circumference
+
         assessment = (evaluation.diagnosis and
             evaluation.diagnosis.rec_name) or ''
 
+        measures = str(measurements)
         # Summarize the encounter note taking as SOAP
         soap = \
             "S: " + evaluation.chief_complaint + "\n--\n" + \
                     evaluation.present_illness +"\n" + \
             "O: " + evaluation.evaluation_summary + "\n" + \
+                    measures + "\n" + \
             "A: " + assessment + "\n" + \
             "P: " + evaluation.directions
 
@@ -5399,6 +5436,7 @@ class PatientEvaluation(ModelSQL, ModelView):
             'relevance':'important',
             'summary': evaluation.chief_complaint,
             'info': soap,
+            'measurements': measures,
             'author': evaluation.healthprof.name.rec_name,
             'author_acct': evaluation.healthprof.name.federation_account,
             'node': evaluation.institution.name.name,
@@ -5657,3 +5695,9 @@ class Commands(ModelSQL, ModelView):
         cls.__rpc__.update({
                 'sysinfo': RPC(check_access=False),
                 })
+
+class Modules(ModelSQL, ModelView):
+    __name__ = 'ir.module'
+
+    # Add the module description field
+    description = fields.Char("Description")

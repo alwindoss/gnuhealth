@@ -1,144 +1,134 @@
-changeset:   4079:68ec2f0b0929
-branch:      stable
-tag:         tip
-parent:      3655:1ffe5dc1e7d4
-user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri Aug 21 12:48:31 2020 +0100
-summary:     HMIS: Update to 3.6.5 including ICD10 codes 2020
-
-changeset:   3639:d7a52011bdd4
-branch:      stable
+changeset:   4564:91c3472379cc
 tag:         tip
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:49:28 2020 +0100
-summary:     Update changelog and version
+date:        Sun Jan 10 14:02:07 2021 +0000
+summary:     Odontogram: Minor x-axis offset corrections
 
-changeset:   3638:b331784b6f0b
-branch:      stable
-tag:         tip
+changeset:   4563:a2faf7950f21
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:38:33 2020 +0100
-summary:     Update gnuhealth-setup version to 3.6.3
+date:        Sat Jan 09 21:40:28 2021 +0000
+summary:     dentistry: Finished basic odontogram report / chart
 
-changeset:   3637:b0f6939eeee6
-branch:      stable
+changeset:   4562:f940fbd698cb
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:38:01 2020 +0100
-summary:     Update GNU Health control center version to 3.6.3
+date:        Sat Jan 09 02:48:52 2021 +0000
+summary:     dentistry: Create odontogram graphical report. Initial Missing and for extraction symbols
 
-changeset:   3636:7c27b6b2ec13
-branch:      stable
+changeset:   4561:8a523d99b63a
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:37:10 2020 +0100
-summary:     HMIS. Inlude current socioeconomic status from the SeS and family assessment
+date:        Tue Jan 05 15:54:07 2021 +0000
+summary:     health_dentistry: COnvert to FODT format the procedutes report
 
-changeset:   3635:513b92e93543
-branch:      stable
+changeset:   4560:0e543a51bff5
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:36:18 2020 +0100
-summary:     HMIS. Update ICD10 codes for COVID-19
+date:        Tue Jan 05 15:38:24 2021 +0000
+summary:     health_dentistry: PEP8
 
-changeset:   3634:57974e1cd9cf
-branch:      stable
+changeset:   4557:5c60a1d9b816
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:35:16 2020 +0100
-summary:     HMIS. LIMS. Automatically add the health condition in the patient disease list when lab confirmed
+date:        Sun Jan 03 00:07:44 2021 +0000
+summary:     Update measurements and abbreviations in evaluation model
 
-changeset:   3633:2012c46e03f5
-branch:      stable
+changeset:   4553:c6478410611a
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:33:43 2020 +0100
-summary:     HMIS. health. Improve death certificate views
+date:        Mon Dec 28 23:12:29 2020 +0000
+summary:     Add self-monitoring context within the Medical domain in the Page of Life
 
-changeset:   3632:0bdead6dd982
-branch:      stable
+changeset:   4535:0fbad843bd2d
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:33:04 2020 +0100
-summary:     HMIS: health. Create method for conversion between UTC and institution local timezones
+date:        Thu Dec 10 22:26:22 2020 +0000
+summary:     health_icd11: Include ICD-11 diseases, main chapter and URI
 
-changeset:   3631:01990dfbf7bc
-branch:      stable
+changeset:   4534:917675d3d5a4
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:31:22 2020 +0100
-summary:     Health . Update ethnic groups. Use Native American (Indigenous people of the Americas) to distinguish from Indian American (descents from India in the US)
+date:        Wed Dec 09 22:13:20 2020 +0000
+summary:     health_icd11: Include ICD-11 chapters
 
-changeset:   3630:2a9162109914
-branch:      stable
+changeset:   4531:f0767a6593ef
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:29:15 2020 +0100
-summary:     HMIS. Include epidemiological surveillance in 3.6.4
+date:        Wed Dec 09 20:56:40 2020 +0000
+summary:     health: include disease entity URL
 
-changeset:   3629:95c8538b7ed6
-branch:      stable
+changeset:   4530:7dc609a825f0
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:27:22 2020 +0100
-summary:     gnuhealth-setup. Include matplotlib in stable branch
+date:        Wed Dec 09 20:01:15 2020 +0000
+summary:     health: remove debugging info
 
-changeset:   3628:97b78b65dc6b
-branch:      stable
+changeset:   4529:acde886075af
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:26:27 2020 +0100
-summary:     gnuhealth-control: Include the process id PID in the lock file
+date:        Wed Dec 09 13:51:21 2020 +0000
+summary:     task #15560: Include WHO ICD11 package. Initial structure
 
-changeset:   3627:3537cf94ac18
-branch:      stable
+changeset:   4524:6a93dc436278
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:25:16 2020 +0100
-summary:     HMIS. Update headers in documentation file
+date:        Sun Dec 06 15:22:24 2020 +0000
+summary:     Dentistry: Update headers and GPL, including the National University of Entre Rios - UNER
 
-changeset:   3626:9a6391ee8e32
-branch:      stable
+changeset:   4523:ffafb3d05b77
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:23:41 2020 +0100
-summary:     HMIS Documentation. Update sample and interfaces to be compatible with 3.6 series
+date:        Sat Dec 05 22:04:10 2020 +0000
+summary:     Dentistry: Initial commit
 
-changeset:   3625:c314fde44932
-branch:      stable
-parent:      3579:b81032570e47
+changeset:   4520:39b8a0b27ce8
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri May 15 23:22:43 2020 +0100
-summary:     HMIS: Include Contact Tracing package in 3.6.4 version
+date:        Fri Dec 04 19:32:36 2020 +0000
+summary:     Report: Add binary ODT format for reports related to bug bug #59619: Charts don't work under flat XML ODT - fodt - files
 
-changeset:   3535:0beb4793b164
-branch:      stable
-tag:         tip
+changeset:   4519:4bcf1e358e86
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri Feb 28 09:29:16 2020 +0000
-summary:     Update headers date
+date:        Fri Dec 04 19:30:12 2020 +0000
+summary:     Move to the parent dir health_pediatrics_growth_charts_who_report.xml report declaration file
 
-changeset:   3534:0ed6bd4f8ff2
-branch:      stable
+changeset:   4513:5f8239d693e5
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri Feb 28 09:00:14 2020 +0000
-summary:     Add novel coronavirus COVID-19 code to ICD10 codes
+date:        Fri Dec 04 10:04:04 2020 +0000
+summary:     Reporting: Temporarily use binary ODT format in reports that use native ODT charts associated to tables
 
-changeset:   3533:2ec0ba5ff228
-branch:      stable
+changeset:   4512:096efed8e50c
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri Feb 28 09:08:40 2020 +0000
-summary:     Update GNU Health setup and GNU Health control center to latest stable versions
+date:        Wed Dec 02 22:24:14 2020 +0000
+summary:     Task #15720: HMIS: Convert the reports to FODT format. Update MANIFEST.in and setup.py
 
-changeset:   3532:532fa62c22ce
-branch:      stable
-parent:      3509:939726d84c0f
+changeset:   4511:9873412a7ded
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Wed Jan 29 18:47:33 2020 +0000
-summary:     HMIS node : Fix bug #57695: Traceback when creating a page of life associated to an empty evaluation
+date:        Wed Dec 02 21:57:37 2020 +0000
+summary:     Report engine. Complete task #15720: HMIS: Convert the reports to FODT format
 
-changeset:   3531:8d095d57282a
+changeset:   4507:698d499b1810
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Fri Feb 28 09:00:14 2020 +0000
-summary:     Add novel coronavirus COVID-19 code to ICD10 codes
+date:        Thu Nov 26 22:00:27 2020 +0000
+summary:     Move GTK HIS client plugins to its own repository at OSDN
 
-changeset:   3530:de5562e36e8f
+changeset:   4506:d76a9edfd092
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Thu Feb 27 10:37:01 2020 +0000
-summary:     gnuhealth-setup : Update header
+date:        Thu Nov 26 21:51:44 2020 +0000
+summary:     Move PyWEBDAV server to its own repository at OSDN
 
-changeset:   3529:e689dbe7ac98
+changeset:   4505:bf95bfe67b02
 user:        Luis Falcon <falcon@gnuhealth.org>
-date:        Thu Feb 27 10:29:31 2020 +0000
-summary:     gnuhealth-setup : Use werkzeug < 1.0 on installations
+date:        Thu Nov 26 18:18:43 2020 +0000
+summary:     Move Thalamus to its own repository at OSDN
+
+changeset:   4504:9de85821e878
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 18:17:47 2020 +0000
+summary:     Move Federation Portal to its own repository at OSDN
+
+changeset:   4503:8dc8d350969a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 18:13:37 2020 +0000
+summary:     Move FHIR server component to own repository at OSDN
+
+changeset:   4502:10ac766c5c66
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 17:47:33 2020 +0000
+summary:     Move MyGNUHealth component to own repository at OSDN
+
+changeset:   4501:dba7661fdf18
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 26 17:45:14 2020 +0000
+summary:     Remove HIS component client. Moved it to own repository at OSDN
+
 
 changeset:   3464:c168199e9f18
 tag:         tip

@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<tryton>
+<data>
+
+<!-- ICD-11 disease chapters -->
+
+    <record model="gnuhealth.pathology.category" id="icd11cat1">
+		<field name="name">1A00–1H0Z Certain infectious or parasitic diseases</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11cat2">
+		<field name="name">2A00–2F9Z Neoplasms</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11cat3">
+		<field name="name">3A00–3C0Z Diseases of the blood or blood-forming organs</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11cat4">
+		<field name="name">4A00–4B4Z Diseases of the immune system</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11cat5">
+		<field name="name">5A00–5D46 Endocrine, nutritional or metabolic diseases</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11cat6">
+		<field name="name">6A00–6E8Z Mental, behavioural or neurodevelopmental disorders</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11cat7">
+		<field name="name">7A00–7B2Z Sleep-wake disorders</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11cat8">
+		<field name="name">8A00–8E7Z Diseases of the nervous system</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11cat9">
+		<field name="name">9A00–9E1Z Diseases of the visual system</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catA">
+		<field name="name">AA00–AC0Z Diseases of the ear or mastoid process</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catB">
+		<field name="name">BA00–BE2Z Diseases of the circulatory system</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catC">
+		<field name="name">CA00–CB7Z Diseases of the respiratory system</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catD">
+		<field name="name">DA00–DE2Z Diseases of the digestive system</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catE">
+		<field name="name">EA00–EM0Z Diseases of the skin</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catF">
+		<field name="name">FA00–FC0Z Diseases of the musculoskeletal system or connective tissue</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catG">
+		<field name="name">GA00–GC8Z Diseases of the genitourinary system</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catH">
+		<field name="name">HA00–HA8Z Conditions related to sexual health</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catJ">
+		<field name="name">JA00–JB6Z Pregnancy, childbirth or the puerperium</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catK">
+		<field name="name">KA00–KD5Z Certain conditions originating in the perinatal period</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catL">
+		<field name="name">LA00–LD9Z Developmental anomalies</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catM">
+		<field name="name">MA00–MH2Y Symptoms, signs or clinical findings, not elsewhere classified</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catN">
+		<field name="name">NA00–NF2Z Injury, poisoning or certain other consequences of external causes</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catP">
+		<field name="name">PA00–PL2Z External causes of morbidity or mortality</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catQ">
+		<field name="name">QA00–QF4Z Factors influencing health status or contact with health services</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catR">
+		<field name="name">RA00–RA26 Codes for special purposes</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catS">
+		<field name="name">SA00–SJ3Z Supplementary Chapter Traditional Medicine Conditions - Module I</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catV">
+		<field name="name">VA00–VC50 Supplementary section for functioning assessment</field>
+	</record>
+
+    <record model="gnuhealth.pathology.category" id="icd11catX">
+		<field name="name">X...–X... Extension Codes</field>
+	</record>
+
+</data>
+</tryton>

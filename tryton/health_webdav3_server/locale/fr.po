@@ -1,6 +1,15 @@
 # 
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2020-06-25 08:09+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
+"health_webdav3_server/fr/>\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 msgctxt "error:ir.attachment:"
 msgid ""
@@ -152,7 +161,7 @@ msgstr "Collections"
 
 msgctxt "model:ir.ui.menu,name:menu_share_list"
 msgid "Shares"
-msgstr "Partages"
+msgstr "Partage"
 
 msgctxt "model:ir.ui.menu,name:menu_webdav"
 msgid "WebDAV"
