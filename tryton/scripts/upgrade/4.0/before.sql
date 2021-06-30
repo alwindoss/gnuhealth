@@ -26,7 +26,7 @@ ALTER TABLE "account_payment_sepa_message" ALTER COLUMN "message" TYPE BYTEA USI
 -- 5.4 -> 5.6
 -- [SQL] update project status based on previous state
 UPDATE project_work SET status = db_id FROM ir_model_data WHERE module = 'project' AND fs_id = 'work_open_status' AND state = 'opened';
-UPDATE project_work SET status = db_id FROM ir_model_data WHERE module = 'project' and fs_id
+UPDATE project_work SET status = db_id FROM ir_model_data WHERE module = 'project' and fs_id = 'work_done_status' AND state = 'done';
 
 -- [SQL] before update, the foreign key of shipment_party of sale amendment must be recreated
 ALTER TABLE sale_amendment_line DROP CONSTRAINT sale_amendment_line_shipment_party_fkey;
