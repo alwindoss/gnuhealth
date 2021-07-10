@@ -1,3 +1,6 @@
+-- Rename webdav to health_webdav3_server
+
+
 -- 5.0 -> 5.2
 -- [SQL] Remove error translations:
 DELETE FROM "ir_translation" WHERE "type" = 'error';
