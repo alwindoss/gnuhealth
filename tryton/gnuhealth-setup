@@ -32,7 +32,7 @@
 
 #GNU Health HMIS installer version
 
-VERSION="3.8.0"
+VERSION="3.9.0"
 
 # Colors constants
 NONE="$(tput sgr0)"
@@ -45,7 +45,7 @@ WHITE="\n$(tput setaf 7)"
 INSTDIR="$PWD"
 GNUHEALTH_INST_DIR="$PWD"
 GNUHEALTH_VERSION=$(cat version)
-TRYTON_VERSION="5.0"
+TRYTON_VERSION="6.0"
 
 TRYTON_BASE_URL="https://downloads-cdn.tryton.org"
 
@@ -235,7 +235,7 @@ install_python_dependencies() {
     local PIP_LXML="lxml"
     local PIP_RELATORIO="relatorio"
     local PIP_WRAPT="wrapt"
-    local PIP_WERKZEUG="werkzeug<1.0"
+    local PIP_WERKZEUG="werkzeug<2"
     local PIP_DATEUTIL="python-dateutil"
     local PIP_PSYCOPG2="psycopg2-binary"
     local PIP_PYTZ="pytz"
@@ -256,7 +256,6 @@ install_python_dependencies() {
     local PIP_NUMPY="numpy"
     local PIP_UNOCONV="unoconv"
     local PIP_MAGIC="python-magic"
-    local PIP_PASSLIB="passlib"
     local PIP_BEREN="beren"
     local PIP_PENDULUM="pendulum"
     local PIP_MATPLOTLIB="matplotlib"
