@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-07-16 15:37+0000\n"
+"PO-Revision-Date: 2021-07-21 03:01+0000\n"
 "Last-Translator: George Kiria <ggkiria@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/gnu-health/"
 "health/ka/>\n"
@@ -3417,7 +3417,7 @@ msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.pol,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.prescription.line,add_to_history:"
 msgid "Hist"
@@ -3425,51 +3425,51 @@ msgstr ""
 
 msgctxt "field:gnuhealth.prescription.line,admin_times:"
 msgid "Admin hours"
-msgstr ""
+msgstr "ადმინის საათები"
 
 msgctxt "field:gnuhealth.prescription.line,allow_substitution:"
 msgid "Allow substitution"
-msgstr ""
+msgstr "ჩანაცვლების დაშვება"
 
 msgctxt "field:gnuhealth.prescription.line,common_dosage:"
 msgid "Frequency"
-msgstr ""
+msgstr "სიხშირე"
 
 msgctxt "field:gnuhealth.prescription.line,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.prescription.line,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.prescription.line,dose:"
 msgid "Dose"
-msgstr ""
+msgstr "დოზა"
 
 msgctxt "field:gnuhealth.prescription.line,dose_unit:"
 msgid "dose unit"
-msgstr ""
+msgstr "დოზის ერთეული"
 
 msgctxt "field:gnuhealth.prescription.line,duration:"
 msgid "Treatment duration"
-msgstr ""
+msgstr "მკურნალობის ხანგრძლივობა"
 
 msgctxt "field:gnuhealth.prescription.line,duration_period:"
 msgid "Treatment period"
-msgstr ""
+msgstr "მკურნალობის პერიოდი"
 
 msgctxt "field:gnuhealth.prescription.line,end_treatment:"
 msgid "End"
-msgstr ""
+msgstr "დასასრული"
 
 msgctxt "field:gnuhealth.prescription.line,form:"
 msgid "Form"
-msgstr ""
+msgstr "ფორმა"
 
 msgctxt "field:gnuhealth.prescription.line,frequency:"
 msgid "Frequency"
-msgstr ""
+msgstr "სიხშირე"
 
 msgctxt "field:gnuhealth.prescription.line,frequency_prn:"
 msgid "PRN"
@@ -3477,339 +3477,339 @@ msgstr ""
 
 msgctxt "field:gnuhealth.prescription.line,frequency_unit:"
 msgid "unit"
-msgstr ""
+msgstr "ერთეული"
 
 msgctxt "field:gnuhealth.prescription.line,id:"
 msgid "ID"
-msgstr ""
+msgstr "პირადობის მოწმობა"
 
 msgctxt "field:gnuhealth.prescription.line,indication:"
 msgid "Indication"
-msgstr ""
+msgstr "მითითება"
 
 msgctxt "field:gnuhealth.prescription.line,infusion:"
 msgid "Infusion"
-msgstr ""
+msgstr "ინფუზია"
 
 msgctxt "field:gnuhealth.prescription.line,infusion_rate:"
 msgid "Rate"
-msgstr ""
+msgstr "შეფასება"
 
 msgctxt "field:gnuhealth.prescription.line,infusion_rate_units:"
 msgid "Unit Rate"
-msgstr ""
+msgstr "ერთეულის კურსი"
 
 msgctxt "field:gnuhealth.prescription.line,medicament:"
 msgid "Medicament"
-msgstr ""
+msgstr "მედიკამენტები"
 
 msgctxt "field:gnuhealth.prescription.line,name:"
 msgid "Prescription ID"
-msgstr ""
+msgstr "რეცეპტის ID"
 
 msgctxt "field:gnuhealth.prescription.line,prnt:"
 msgid "Print"
-msgstr ""
+msgstr "ბეჭდვა"
 
 msgctxt "field:gnuhealth.prescription.line,qty:"
 msgid "x"
-msgstr ""
+msgstr "x"
 
 msgctxt "field:gnuhealth.prescription.line,quantity:"
 msgid "Units"
-msgstr ""
+msgstr "ერთეულები"
 
 msgctxt "field:gnuhealth.prescription.line,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩანაწერის სახელი"
 
 msgctxt "field:gnuhealth.prescription.line,refills:"
 msgid "Refills #"
-msgstr ""
+msgstr "შევსება #"
 
 msgctxt "field:gnuhealth.prescription.line,review:"
 msgid "Valid Until"
-msgstr ""
+msgstr "ძალაშია სანამ"
 
 msgctxt "field:gnuhealth.prescription.line,route:"
 msgid "Administration Route"
-msgstr ""
+msgstr "ადმინისტრაციული მარშრუტი"
 
 msgctxt "field:gnuhealth.prescription.line,short_comment:"
 msgid "Comment"
-msgstr ""
+msgstr "კომენტარი"
 
 msgctxt "field:gnuhealth.prescription.line,start_treatment:"
 msgid "Start"
-msgstr ""
+msgstr "დაწყება"
 
 msgctxt "field:gnuhealth.prescription.line,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.prescription.line,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.prescription.order,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.prescription.order,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.prescription.order,healthprof:"
 msgid "Prescribed by"
-msgstr ""
+msgstr "დანიშნულია"
 
 msgctxt "field:gnuhealth.prescription.order,id:"
 msgid "ID"
-msgstr ""
+msgstr "პირადობის მოწმობა"
 
 msgctxt "field:gnuhealth.prescription.order,notes:"
 msgid "Prescription Notes"
-msgstr ""
+msgstr "რეცეპტით შენიშვნები"
 
 msgctxt "field:gnuhealth.prescription.order,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "პაციენტი"
 
 msgctxt "field:gnuhealth.prescription.order,pharmacy:"
 msgid "Pharmacy"
-msgstr ""
+msgstr "აფთიაქი"
 
 msgctxt "field:gnuhealth.prescription.order,pregnancy_warning:"
 msgid "Pregnancy Warning"
-msgstr ""
+msgstr "გაფრთხილება ორსულობის შესახებ"
 
 msgctxt "field:gnuhealth.prescription.order,prescription_date:"
 msgid "Prescription Date"
-msgstr ""
+msgstr "დანიშვნის თარიღი"
 
 msgctxt "field:gnuhealth.prescription.order,prescription_id:"
 msgid "Prescription ID"
-msgstr ""
+msgstr "რეცეპტის ID"
 
 msgctxt "field:gnuhealth.prescription.order,prescription_line:"
 msgid "Prescription line"
-msgstr ""
+msgstr "დანიშნულების ხაზი"
 
 msgctxt "field:gnuhealth.prescription.order,prescription_warning_ack:"
 msgid "Prescription verified"
-msgstr ""
+msgstr "დანიშნულება დადასტურებულია"
 
 msgctxt "field:gnuhealth.prescription.order,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩანაწერის სახელი"
 
 msgctxt "field:gnuhealth.prescription.order,report_prescription_date:"
 msgid "Prescription Date"
-msgstr ""
+msgstr "დანიშვნის თარიღი"
 
 msgctxt "field:gnuhealth.prescription.order,report_prescription_time:"
 msgid "Prescription Time"
-msgstr ""
+msgstr "დანიშნულების დრო"
 
 msgctxt "field:gnuhealth.prescription.order,state:"
 msgid "State"
-msgstr ""
+msgstr "მდგომარეობა"
 
 msgctxt "field:gnuhealth.prescription.order,user_id:"
 msgid "Prescribing Doctor"
-msgstr ""
+msgstr "ექიმის დანიშვნა"
 
 msgctxt "field:gnuhealth.prescription.order,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.prescription.order,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.procedure,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.procedure,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.procedure,description:"
 msgid "Long Text"
-msgstr ""
+msgstr "გრძელი ტექსტი"
 
 msgctxt "field:gnuhealth.procedure,id:"
 msgid "ID"
-msgstr ""
+msgstr "პირადობის მოწმობა"
 
 msgctxt "field:gnuhealth.procedure,name:"
 msgid "Code"
-msgstr ""
+msgstr "კოდი"
 
 msgctxt "field:gnuhealth.procedure,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩანაწერის სახელი"
 
 msgctxt "field:gnuhealth.procedure,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.procedure,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.secondary_condition,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "კომენტარები"
 
 msgctxt "field:gnuhealth.secondary_condition,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.secondary_condition,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.secondary_condition,evaluation:"
 msgid "Evaluation"
-msgstr ""
+msgstr "შეფასება"
 
 msgctxt "field:gnuhealth.secondary_condition,id:"
 msgid "ID"
-msgstr ""
+msgstr "პირადობის მოწმობა"
 
 msgctxt "field:gnuhealth.secondary_condition,pathology:"
 msgid "Pathology"
-msgstr ""
+msgstr "პათოლოგია"
 
 msgctxt "field:gnuhealth.secondary_condition,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩაწერის სახელი"
 
 msgctxt "field:gnuhealth.secondary_condition,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.secondary_condition,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.sequence.setup,appointment_sequence:"
 msgid "Appointment Sequence"
-msgstr ""
+msgstr "დანიშვნის თანმიმდევრობა"
 
 msgctxt "field:gnuhealth.sequence.setup,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.sequence.setup,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.sequence.setup,id:"
 msgid "ID"
-msgstr ""
+msgstr "პირადობის მოწმობა"
 
 msgctxt "field:gnuhealth.sequence.setup,patient_evaluation_sequence:"
 msgid "Patient Evaluation Sequence"
-msgstr ""
+msgstr "პაციენტის შეფასების თანმიმდევრობა"
 
 msgctxt "field:gnuhealth.sequence.setup,patient_sequence:"
 msgid "Patient Sequence"
-msgstr ""
+msgstr "პაციენტის თანმიმდევრობა"
 
 msgctxt "field:gnuhealth.sequence.setup,prescription_sequence:"
 msgid "Prescription Sequence"
-msgstr ""
+msgstr "რეცეპტის მიმდევრობა"
 
 msgctxt "field:gnuhealth.sequence.setup,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩანაწერის სახელი"
 
 msgctxt "field:gnuhealth.sequence.setup,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.sequence.setup,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.sequences,appointment_sequence:"
 msgid "Appointment Sequence"
-msgstr ""
+msgstr "დანიშვნის თანმიმდევრობა"
 
 msgctxt "field:gnuhealth.sequences,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.sequences,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.sequences,id:"
 msgid "ID"
-msgstr ""
+msgstr "პირადობის მოწმობა"
 
 msgctxt "field:gnuhealth.sequences,patient_evaluation_sequence:"
 msgid "Patient Evaluation Sequence"
-msgstr ""
+msgstr "პაციენტის შეფასების თანმიმდევრობა"
 
 msgctxt "field:gnuhealth.sequences,patient_sequence:"
 msgid "Patient Sequence"
-msgstr ""
+msgstr "პაციენტის თანმიმდევრობა"
 
 msgctxt "field:gnuhealth.sequences,prescription_sequence:"
 msgid "Prescription Sequence"
-msgstr ""
+msgstr "რეცეპტის მიმდევრობა"
 
 msgctxt "field:gnuhealth.sequences,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩანაწერის სახელი"
 
 msgctxt "field:gnuhealth.sequences,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.sequences,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,clinical:"
 msgid "Sign or Symptom"
-msgstr ""
+msgstr "ნიშანი ან სიმპტომი"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "კომენტარები"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "შექმენით თარიღი"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "შექმენით მომხმარებელი"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,evaluation:"
 msgid "Evaluation"
-msgstr ""
+msgstr "შეფასება"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,id:"
 msgid "ID"
-msgstr ""
+msgstr "პირადობის მოწმობა"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "ჩანაწერის სახელი"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,sign_or_symptom:"
 msgid "Subjective / Objective"
-msgstr ""
+msgstr "სუბიექტური / ობიექტური"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "დაწერეთ თარიღი"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,write_uid:"
 msgid "Write User"
