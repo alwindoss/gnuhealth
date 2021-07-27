@@ -24,4 +24,4 @@ def register():
         Collection,
         Share,
         Attachment,
-        module='webdav', type_='model')
+        module='health_webdav3_server', type_='model')
