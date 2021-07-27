@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-27 07:32+0000\n"
+"PO-Revision-Date: 2021-07-16 15:37+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gnu-health/"
 "health/id/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.1-dev\n"
+"X-Generator: Weblate 4.7.2-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -61,7 +61,7 @@ msgstr "ID LISENSI harus unik"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
-msgstr ""
+msgstr "Profesional kesehatan harus unik"
 
 msgctxt "error:gnuhealth.hospital.bed:"
 msgid "The Bed must be unique per Health Center"
@@ -93,11 +93,11 @@ msgstr ""
 
 msgctxt "error:gnuhealth.immunization_schedule:"
 msgid "The schedule code must be unique"
-msgstr ""
+msgstr "Kode jadwal harus unik"
 
 msgctxt "error:gnuhealth.immunization_schedule_dose:"
 msgid "The dose number must be unique for this vaccine"
-msgstr ""
+msgstr "Nomor dosis harus unik untuk vaksin ini"
 
 msgctxt "error:gnuhealth.institution.operationalsector:"
 msgid "The Operational Sector already exists for this institution"
@@ -121,11 +121,11 @@ msgstr ""
 
 msgctxt "error:gnuhealth.medication.dosage:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "KODE harus unik !"
 
 msgctxt "error:gnuhealth.medication.dosage:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Unit harus unik !"
 
 msgctxt "error:gnuhealth.occupation:"
 msgid "The CODE must be unique !"
@@ -133,49 +133,55 @@ msgstr ""
 
 msgctxt "error:gnuhealth.occupation:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Nama harus unik !"
 
 msgctxt "error:gnuhealth.operational_area:"
 msgid "The operational area must be unique !"
-msgstr ""
+msgstr "Area operasional harus unik !"
 
 msgctxt "error:gnuhealth.operational_sector:"
 msgid "The operational sector must be unique in each operational area!"
-msgstr ""
+msgstr "Sektor operasional harus unik di setiap area operasional!"
 
 msgctxt "error:gnuhealth.pathology.category:"
 msgid "The category name must be unique"
-msgstr ""
+msgstr "Nama kategori harus unik"
 
 msgctxt "error:gnuhealth.pathology.group:"
 msgid "The Pathology Group code must be unique"
-msgstr ""
+msgstr "Kode Grup Patologi harus unik"
 
 msgctxt "error:gnuhealth.pathology:"
 msgid "The disease code must be unique"
-msgstr ""
+msgstr "Kode penyakit harus unik"
 
 msgctxt "error:gnuhealth.patient.disease:"
 msgid ""
 "The HEALED date \"%(healed_date)s\" is BEFORE DIAGNOSED DATE "
 "\"%(diagnosed_date)s\"!"
 msgstr ""
+"Tanggal SEMBUH \"%(healed_date) s\" ADALAH SEBELUM TANGGAL DIDIAGNOSIS \""
+"%(diagnosed_date)s\"!"
 
 msgctxt "error:gnuhealth.patient.disease:"
 msgid ""
 "The Treatment END DATE \"%(date_stop_treatment)s\" is BEFORE the start date "
 "\"%(date_start_treatment)s\"!"
 msgstr ""
+"Tanggal Akhir Perawatan \"%(date_stop_treatment)s\" adalah SEBELUM tanggal "
+"mulai \"%(date_start_treatment)s\"!"
 
 msgctxt "error:gnuhealth.patient.ecg:"
 msgid "No health professional associated to this user"
-msgstr ""
+msgstr "Tidak ada profesional kesehatan yang terkait dengan pengguna ini"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid ""
 "End time \"%(evaluation_endtime)s\" BEFORE evaluation start "
 "\"%(evaluation_start)s\""
 msgstr ""
+"Waktu akhir \"%(evaluation_endtime) s\" SEBELUM evaluasi dimulai \""
+"%(evaluation_start)s\""
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "No health professional associated to this user"
@@ -6542,31 +6548,31 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ174"
 msgid "Estate Agent"
-msgstr ""
+msgstr "Agen Perumahan"
 
 msgctxt "model:gnuhealth.occupation,name:occ175"
 msgid "Esthetician"
-msgstr ""
+msgstr "Ahli kecantikan"
 
 msgctxt "model:gnuhealth.occupation,name:occ176"
 msgid "Ethnologist"
-msgstr ""
+msgstr "Ahli Etnologi"
 
 msgctxt "model:gnuhealth.occupation,name:occ177"
 msgid "Ethologist"
-msgstr ""
+msgstr "Ahli etologi"
 
 msgctxt "model:gnuhealth.occupation,name:occ178"
 msgid "Etymologist"
-msgstr ""
+msgstr "Ahli Etimologi"
 
 msgctxt "model:gnuhealth.occupation,name:occ179"
 msgid "Evangelist"
-msgstr ""
+msgstr "Penginjil"
 
 msgctxt "model:gnuhealth.occupation,name:occ18"
 msgid "Cabinet-maker"
-msgstr ""
+msgstr "Pembuat kabinet"
 
 msgctxt "model:gnuhealth.occupation,name:occ180"
 msgid "Exchequer"
@@ -6574,15 +6580,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ181"
 msgid "Executive"
-msgstr ""
+msgstr "Eksekutif"
 
 msgctxt "model:gnuhealth.occupation,name:occ182"
 msgid "Exotic dancer"
-msgstr ""
+msgstr "Penari eksotis"
 
 msgctxt "model:gnuhealth.occupation,name:occ183"
 msgid "Expressman"
-msgstr ""
+msgstr "Tukang ekspres"
 
 msgctxt "model:gnuhealth.occupation,name:occ184"
 msgid "Exterminator"
@@ -6590,7 +6596,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ185"
 msgid "Extra"
-msgstr ""
+msgstr "Ekstra"
 
 msgctxt "model:gnuhealth.occupation,name:occ186"
 msgid "Falconer"
@@ -6598,7 +6604,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ187"
 msgid "Farmer"
-msgstr ""
+msgstr "Petani"
 
 msgctxt "model:gnuhealth.occupation,name:occ188"
 msgid "Farrier"
@@ -6606,15 +6612,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ189"
 msgid "Fashion designer"
-msgstr ""
+msgstr "Perancang busana"
 
 msgctxt "model:gnuhealth.occupation,name:occ19"
 msgid "Calligrapher"
-msgstr ""
+msgstr "Kaligrafer"
 
 msgctxt "model:gnuhealth.occupation,name:occ190"
 msgid "FBI Agent"
-msgstr ""
+msgstr "Agen FBI"
 
 msgctxt "model:gnuhealth.occupation,name:occ191"
 msgid "Fellmonger"
@@ -6630,31 +6636,31 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ194"
 msgid "Film director"
-msgstr ""
+msgstr "Sutradara film"
 
 msgctxt "model:gnuhealth.occupation,name:occ195"
 msgid "Film producer"
-msgstr ""
+msgstr "Produser film"
 
 msgctxt "model:gnuhealth.occupation,name:occ196"
 msgid "Financial adviser"
-msgstr ""
+msgstr "Penasihat keuangan"
 
 msgctxt "model:gnuhealth.occupation,name:occ197"
 msgid "Financial analyst"
-msgstr ""
+msgstr "Analis keuangan"
 
 msgctxt "model:gnuhealth.occupation,name:occ198"
 msgid "Financial manager"
-msgstr ""
+msgstr "Manajer keuangan"
 
 msgctxt "model:gnuhealth.occupation,name:occ199"
 msgid "Financial planner"
-msgstr ""
+msgstr "Perencana keuangan"
 
 msgctxt "model:gnuhealth.occupation,name:occ2"
 msgid "Administrator"
-msgstr ""
+msgstr "Administrator"
 
 msgctxt "model:gnuhealth.occupation,name:occ20"
 msgid "Call girl"
@@ -6670,11 +6676,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ202"
 msgid "Fire officer"
-msgstr ""
+msgstr "Petugas pemadam kebakaran"
 
 msgctxt "model:gnuhealth.occupation,name:occ203"
 msgid "Firefighter"
-msgstr ""
+msgstr "Pemadam kebakaran"
 
 msgctxt "model:gnuhealth.occupation,name:occ204"
 msgid "First Mate"
@@ -6682,11 +6688,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ205"
 msgid "Fishmonger"
-msgstr ""
+msgstr "Penjual ikan"
 
 msgctxt "model:gnuhealth.occupation,name:occ206"
 msgid "Fisherman"
-msgstr ""
+msgstr "Nelayan"
 
 msgctxt "model:gnuhealth.occupation,name:occ207"
 msgid "Fitter"
@@ -6702,19 +6708,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ21"
 msgid "Cameraman"
-msgstr ""
+msgstr "Juru kamera"
 
 msgctxt "model:gnuhealth.occupation,name:occ211"
 msgid "Flight attendant"
-msgstr ""
+msgstr "Pramugari, pramugara"
 
 msgctxt "model:gnuhealth.occupation,name:occ212"
 msgid "Flight engineer"
-msgstr ""
+msgstr "Insinyur penerbangan"
 
 msgctxt "model:gnuhealth.occupation,name:occ213"
 msgid "Flight instructor"
-msgstr ""
+msgstr "Instruktur penerbangan"
 
 msgctxt "model:gnuhealth.occupation,name:occ214"
 msgid "Floor manager"
@@ -6722,7 +6728,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ215"
 msgid "Florist"
-msgstr ""
+msgstr "Penjual bunga"
 
 msgctxt "model:gnuhealth.occupation,name:occ217"
 msgid "Flutist"
@@ -6730,15 +6736,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ218"
 msgid "Foreman"
-msgstr ""
+msgstr "Mandor"
 
 msgctxt "model:gnuhealth.occupation,name:occ219"
 msgid "Forensic scientist"
-msgstr ""
+msgstr "Ilmuwan forensik"
 
 msgctxt "model:gnuhealth.occupation,name:occ22"
 msgid "Camp Counselor"
-msgstr ""
+msgstr "Konselor Perkemahan"
 
 msgctxt "model:gnuhealth.occupation,name:occ220"
 msgid "Fruiterer"
@@ -6758,47 +6764,47 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ224"
 msgid "Game designer"
-msgstr ""
+msgstr "Desainer permainan"
 
 msgctxt "model:gnuhealth.occupation,name:occ225"
 msgid "Garbage collector"
-msgstr ""
+msgstr "Pengumpul sampah"
 
 msgctxt "model:gnuhealth.occupation,name:occ226"
 msgid "Gardener"
-msgstr ""
+msgstr "Tukang kebun"
 
 msgctxt "model:gnuhealth.occupation,name:occ227"
 msgid "Gate-keeper"
-msgstr ""
+msgstr "Penjaga gerbang"
 
 msgctxt "model:gnuhealth.occupation,name:occ228"
 msgid "Gemcutter"
-msgstr ""
+msgstr "Pemotong permata"
 
 msgctxt "model:gnuhealth.occupation,name:occ229"
 msgid "Genealogist"
-msgstr ""
+msgstr "Ahli silsilah"
 
 msgctxt "model:gnuhealth.occupation,name:occ23"
 msgid "Car designer"
-msgstr ""
+msgstr "Desainer mobil"
 
 msgctxt "model:gnuhealth.occupation,name:occ230"
 msgid "General"
-msgstr ""
+msgstr "Umum"
 
 msgctxt "model:gnuhealth.occupation,name:occ231"
 msgid "Geodesist"
-msgstr ""
+msgstr "Ahli geodesi"
 
 msgctxt "model:gnuhealth.occupation,name:occ232"
 msgid "Geographer"
-msgstr ""
+msgstr "Geografer"
 
 msgctxt "model:gnuhealth.occupation,name:occ233"
 msgid "Geologist"
-msgstr ""
+msgstr "Ahli geologi"
 
 msgctxt "model:gnuhealth.occupation,name:occ234"
 msgid "Geometer"
@@ -6806,31 +6812,31 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ235"
 msgid "Geophysicist"
-msgstr ""
+msgstr "Ahli geofisika"
 
 msgctxt "model:gnuhealth.occupation,name:occ236"
 msgid "Government agent"
-msgstr ""
+msgstr "Agen pemerintah"
 
 msgctxt "model:gnuhealth.occupation,name:occ237"
 msgid "Governor"
-msgstr ""
+msgstr "Gubernur"
 
 msgctxt "model:gnuhealth.occupation,name:occ238"
 msgid "Grammarian"
-msgstr ""
+msgstr "Ahli tatabahasa"
 
 msgctxt "model:gnuhealth.occupation,name:occ239"
 msgid "Graphic artist"
-msgstr ""
+msgstr "Seniman grafis"
 
 msgctxt "model:gnuhealth.occupation,name:occ24"
 msgid "Cardiologist"
-msgstr ""
+msgstr "Ahli jantung"
 
 msgctxt "model:gnuhealth.occupation,name:occ240"
 msgid "Gravedigger"
-msgstr ""
+msgstr "Penggali kuburan"
 
 msgctxt "model:gnuhealth.occupation,name:occ241"
 msgid "Grenadier"
@@ -6838,19 +6844,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ242"
 msgid "Greengrocer"
-msgstr ""
+msgstr "Penjual sayur"
 
 msgctxt "model:gnuhealth.occupation,name:occ243"
 msgid "Grocer"
-msgstr ""
+msgstr "Penjual bahan makanan"
 
 msgctxt "model:gnuhealth.occupation,name:occ244"
 msgid "Guide"
-msgstr ""
+msgstr "Pemandu"
 
 msgctxt "model:gnuhealth.occupation,name:occ245"
 msgid "Guitarist"
-msgstr ""
+msgstr "Gitaris"
 
 msgctxt "model:gnuhealth.occupation,name:occ246"
 msgid "Gunsmith"
@@ -6858,7 +6864,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ247"
 msgid "Gynecologist"
-msgstr ""
+msgstr "Ginekolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ248"
 msgid "Garrett"
@@ -6910,7 +6916,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ26"
 msgid "Cartographer"
-msgstr ""
+msgstr "Kartografer"
 
 msgctxt "model:gnuhealth.occupation,name:occ260"
 msgid "Herder"
@@ -6918,11 +6924,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ261"
 msgid "Historian"
-msgstr ""
+msgstr "Sejarawan"
 
 msgctxt "model:gnuhealth.occupation,name:occ262"
 msgid "Historiographer"
-msgstr ""
+msgstr "Historiografer"
 
 msgctxt "model:gnuhealth.occupation,name:occ263"
 msgid "Hosier"
@@ -6930,7 +6936,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ264"
 msgid "Horse trainer"
-msgstr ""
+msgstr "Pelatih kuda"
 
 msgctxt "model:gnuhealth.occupation,name:occ265"
 msgid "Hotelier"
@@ -6942,39 +6948,39 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ267"
 msgid "Housewife"
-msgstr ""
+msgstr "Ibu rumah tangga"
 
 msgctxt "model:gnuhealth.occupation,name:occ268"
 msgid "Hunter"
-msgstr ""
+msgstr "Pemburu"
 
 msgctxt "model:gnuhealth.occupation,name:occ269"
 msgid "Hydraulic engineer"
-msgstr ""
+msgstr "Insinyur hidrolik"
 
 msgctxt "model:gnuhealth.occupation,name:occ27"
 msgid "Cartoonist"
-msgstr ""
+msgstr "Kartunis"
 
 msgctxt "model:gnuhealth.occupation,name:occ270"
 msgid "Illuminator"
-msgstr ""
+msgstr "Iluminator"
 
 msgctxt "model:gnuhealth.occupation,name:occ271"
 msgid "Illusionist"
-msgstr ""
+msgstr "Ilusionis"
 
 msgctxt "model:gnuhealth.occupation,name:occ272"
 msgid "Illustrator"
-msgstr ""
+msgstr "Ilustrator"
 
 msgctxt "model:gnuhealth.occupation,name:occ273"
 msgid "Importer"
-msgstr ""
+msgstr "Importir"
 
 msgctxt "model:gnuhealth.occupation,name:occ274"
 msgid "Industrial designer"
-msgstr ""
+msgstr "Desainer industri"
 
 msgctxt "model:gnuhealth.occupation,name:occ275"
 msgid "Industrial engineer"
@@ -6982,19 +6988,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ276"
 msgid "Industrialist"
-msgstr ""
+msgstr "Industrialis"
 
 msgctxt "model:gnuhealth.occupation,name:occ277"
 msgid "Infantryman"
-msgstr ""
+msgstr "Infanteri"
 
 msgctxt "model:gnuhealth.occupation,name:occ278"
 msgid "Information Architect"
-msgstr ""
+msgstr "Arsitek Informasi"
 
 msgctxt "model:gnuhealth.occupation,name:occ279"
 msgid "Information Technologist"
-msgstr ""
+msgstr "Ahli Teknologi Informasi"
 
 msgctxt "model:gnuhealth.occupation,name:occ28"
 msgid "Cartwright"
@@ -7018,11 +7024,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ284"
 msgid "Intelligence officer"
-msgstr ""
+msgstr "Petugas intelijen"
 
 msgctxt "model:gnuhealth.occupation,name:occ285"
 msgid "Interior designer"
-msgstr ""
+msgstr "Desainer interior"
 
 msgctxt "model:gnuhealth.occupation,name:occ286"
 msgid "Internist"
@@ -7086,35 +7092,35 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ3"
 msgid "Agronomist"
-msgstr ""
+msgstr "Ahli agronomi"
 
 msgctxt "model:gnuhealth.occupation,name:occ30"
 msgid "Celebrity"
-msgstr ""
+msgstr "Selebriti"
 
 msgctxt "model:gnuhealth.occupation,name:occ300"
 msgid "Journalist"
-msgstr ""
+msgstr "Jurnalis"
 
 msgctxt "model:gnuhealth.occupation,name:occ301"
 msgid "Jurist"
-msgstr ""
+msgstr "Ahli hukum"
 
 msgctxt "model:gnuhealth.occupation,name:occ302"
 msgid "Judge"
-msgstr ""
+msgstr "Hakim"
 
 msgctxt "model:gnuhealth.occupation,name:occ303"
 msgid "Kinesiologist"
-msgstr ""
+msgstr "Ahli kinesiologi"
 
 msgctxt "model:gnuhealth.occupation,name:occ304"
 msgid "King"
-msgstr ""
+msgstr "Raja"
 
 msgctxt "model:gnuhealth.occupation,name:occ305"
 msgid "Lab Assistant"
-msgstr ""
+msgstr "Asisten Lab"
 
 msgctxt "model:gnuhealth.occupation,name:occ306"
 msgid "Laborer"
@@ -12616,7 +12622,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Specific Dosage"
-msgstr ""
+msgstr "Dosis Spesifik"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Status"
@@ -12640,11 +12646,11 @@ msgstr "Informasi Umum"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Main"
-msgstr ""
+msgstr "Utama"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Main Info"
-msgstr ""
+msgstr "Info Utama"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Medication"
@@ -12664,19 +12670,19 @@ msgstr "Konteks"
 
 msgctxt "view:gnuhealth.pol:"
 msgid "Extended Information"
-msgstr ""
+msgstr "Informasi Tambahan"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Common Dosage"
-msgstr ""
+msgstr "Dosis Umum"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Dosage"
-msgstr ""
+msgstr "Dosis"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Form and Administration Route"
-msgstr ""
+msgstr "Formulir dan Jalur Administrasi"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Medication and Condition"
@@ -12736,7 +12742,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Notes"
-msgstr ""
+msgstr "Catatan"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Sign"
@@ -12744,7 +12750,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Sign and close the vaccination"
-msgstr ""
+msgstr "Tanda tangani dan tutup vaksinasi"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Vaccination"
