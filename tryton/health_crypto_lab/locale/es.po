@@ -1,19 +1,19 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-04 10:50+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"PO-Revision-Date: 2021-07-28 01:55+0000\n"
+"Last-Translator: light lrc <lrc572lrc@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_crypto_lab/es/>\n"
 "Language: es\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5.1-dev\n"
+"X-Generator: Weblate 4.7.2-dev\n"
 
 msgctxt "field:gnuhealth.lab,digest_current:"
 msgid "Current Hash"
-msgstr ""
+msgstr "Hash actual"
 
 msgctxt "field:gnuhealth.lab,digest_status:"
 msgid "Altered"
