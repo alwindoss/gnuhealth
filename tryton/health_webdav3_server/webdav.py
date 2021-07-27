@@ -22,6 +22,8 @@ from trytond.config import config
 from trytond.pyson import Eval
 from trytond.tools import grouped_slice
 
+from .exceptions import InvalidAttachmentName
+
 __all__ = [
     'Collection', 'Share', 'Attachment',
     ]
@@ -60,13 +62,8 @@ class Collection(ModelSQL, ModelView):
         table = cls.__table__()
         cls._sql_constraints += [
             ('name_parent_uniq', Unique(table, table.name, table.parent),
-                'The collection name must be unique inside a collection!'),
+                'health_webdav3_server.msg_collection_file_name'),
         ]
-        cls._error_messages.update({
-                'collection_file_name': ('You can not create a collection '
-                    'named "%(parent)s" in collection "%(child)s" because '
-                    'there is already a file with that name.'),
-                })
         cls.ext2mime = {
             '.png': 'image/png',
             '.odt': 'application/vnd.oasis.opendocument.text',
@@ -104,10 +101,13 @@ class Collection(ModelSQL, ModelView):
                     ])
                 for attachment in attachments:
                     if attachment.name == collection.name:
-                        cls.raise_user_error('collection_file_name', {
-                                'parent': collection.parent.rec_name,
-                                'child': collection.rec_name,
-                                })
+                       raise InvalidAttachmentName(
+                                        gettext('health.webdav3_server'
+                                                '.collection_attachment_name',
+                                                attachment = attachment.rec_name,
+                                                collection = collection.rec_name))
+
+
 
     @classmethod
     def _uri2object(cls, uri, object_name=__name__, object_id=None,
@@ -705,16 +705,6 @@ class Attachment(ModelSQL, ModelView):
             depends=['path']), 'get_shares', 'set_shares')
 
     @classmethod
-    def __setup__(cls):
-        super(Attachment, cls).__setup__()
-        cls._error_messages.update({
-                'collection_attachment_name': ('You can not create an '
-                    'attachment named "%(attachment)s" in collection '
-                    '"%(collection)s" because there is already a collection '
-                    'with that name.')
-                })
-
-    @classmethod
     def validate(cls, attachments):
         super(Attachment, cls).validate(attachments)
         cls.check_collection(attachments)
@@ -731,11 +721,11 @@ class Attachment(ModelSQL, ModelView):
                     collection = Collection(int(record_id))
                     for child in collection.childs:
                         if child.name == attachment.name:
-                            cls.raise_user_error(
-                                'collection_attachment_name', {
-                                    'attachment': attachment.rec_name,
-                                    'collection': collection.rec_name,
-                                    })
+                            raise InvalidAttachmentName(
+                                gettext('health.webdav3_server'
+                                        '.collection_attachment_name',
+                                        attachment = attachment.rec_name,
+                                        collection = collection.rec_name))
 
     @classmethod
     def get_path(cls, attachments, name):
