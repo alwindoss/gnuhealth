@@ -18,7 +18,6 @@ from pywebdav.lib.utils import get_urifilename, quote_uri
 from pywebdav.lib.davcmd import copyone, copytree, moveone, movetree, \
     delone, deltree
 from trytond.security import login
-from trytond import __version__
 from trytond.pool import Pool
 from trytond.transaction import Transaction
 from trytond.cache import Cache
@@ -251,7 +250,7 @@ class TrytonDAVInterface(iface.dav_interface):
             res += '</ul>'
             res += '<hr noshade>'
             res += ('<em>Powered by <a href="http://www.tryton.org/">'
-                'Tryton</a> version %s</em>' % __version__)
+                'GNU Health</a> version %s</em>' % os.environ['GNUHEALTH_VERSION'])
             res += '</body>'
             res += '</html>'
             return res

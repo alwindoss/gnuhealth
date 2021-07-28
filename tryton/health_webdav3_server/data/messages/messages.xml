@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- This file is part of GNU Health.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_collection_file_name">
+            <field name="text">You can not create a collection named "%(parent)s" in collection "%(child)s" because there is already a file with that name.</field>
+        </record>
+        <record model="ir.message" id="msg_collection_unique">
+            <field name="text">The collection name must be unique inside</field>
+        </record>
+     </data>
+</tryton>
