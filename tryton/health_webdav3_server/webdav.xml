@@ -107,6 +107,7 @@ this repository contains the full copyright notices and license terms. -->
             id="menu_share_list"/>
 
         <record model="ir.rule.group" id="rule_group_share">
+            <field name="name">share</field>
             <field name="model" search="[('model', '=', 'webdav.share')]"/>
             <field name="global_p" eval="False"/>
             <field name="default_p" eval="True"/>
@@ -123,6 +124,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record model="ir.rule.group" id="rule_group_share_admin">
+            <field name="name">share_admin</field>
             <field name="model" search="[('model', '=', 'webdav.share')]"/>
             <field name="global_p" eval="False"/>
             <field name="default_p" eval="False"/>

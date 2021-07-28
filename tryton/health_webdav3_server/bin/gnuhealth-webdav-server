@@ -48,4 +48,4 @@ def parse_commandline():
 
 if __name__ == '__main__':
     options = parse_commandline()
-    server.TrytonWebdavServer(options).run()
+    server.GNUHealthWebdavServer(options).run()
