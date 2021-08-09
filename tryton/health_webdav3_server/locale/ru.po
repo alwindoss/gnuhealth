@@ -1,15 +1,24 @@
 # 
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-08-08 15:33+0000\n"
+"Last-Translator: Vladislav Basargin <bazarassa@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/gnu-health/"
+"health_webdav3_server/ru/>\n"
+"Language: ru\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8-dev\n"
 
-#, fuzzy
 msgctxt "error:ir.attachment:"
 msgid ""
 "You can not create an attachment named \"%(attachment)s\" in collection "
 "\"%(collection)s\" because there is already a collection with that name."
 msgstr ""
-"Вы не можете создать коллекцию \"%(parent)s\" в коллекции \"%(child)s\" так "
-"как существует файл с таким именем."
+"Вы не можете создать вложение с именем \"%(attachment)s\" в коллекции \""
+"%(collection)s\", так как уже существует коллекция с таким же назвванием."
 
 msgctxt "error:webdav.collection:"
 msgid "The collection name must be unique inside a collection!"
