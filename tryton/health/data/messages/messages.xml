@@ -9,6 +9,11 @@ this repository contains the full copyright notices and license terms. -->
             <field name="text">The HEALED date "%(healed_date)s" is BEFORE DIAGNOSED DATE "%(diagnosed_date)s"!</field>
         <record model="ir.message" id="msg_end_treatment_before_start">
             <field name="text">The Treatment END DATE "%(date_stop_treatment)s" is BEFORE the start date "%(date_start_treatment)s"</field>
+        <record model="ir.message" id="msg_med_end_date_before_start">
+            <field name="text">The Medication END DATE "%(end_treatment)s" is BEFORE the start date "%(start_treatment)s"!</field>
+        </record>
+        <record model="ir.message" id="msg_next_dose_before_first">
+            <field name="text">The vaccine next dose is BEFORE the first one!</field>
         </record>
     </data>
 </tryton>

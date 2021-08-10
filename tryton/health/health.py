@@ -55,7 +55,8 @@ from trytond.rpc import RPC
 from trytond.i18n import gettext
 
 from .exceptions import (
-    WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart
+    WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart,
+    MedEndDateBeforeStart, NextDoseBeforeFirst
     )
 
 try:
@@ -4028,10 +4029,10 @@ class PatientMedication(ModelSQL, ModelView):
 
     infusion = fields.Boolean(
         'Infusion',
-        help='Mark if the medication is in the form of infusion' \
-        ' Intravenous, Gastrostomy tube, nasogastric, etc...' )
-    infusion_rate = fields.Float('Rate',
-            states={'invisible': Not(Bool(Eval('infusion')))})
+        help='Mark if the medication is in the form of infusion'
+        ' Intravenous, Gastrostomy tube, nasogastric, etc...')
+    infusion_rate = fields.Float(
+        'Rate', states={'invisible': Not(Bool(Eval('infusion')))})
 
     infusion_rate_units = fields.Selection([
         (None, ''),
@@ -4049,11 +4050,6 @@ class PatientMedication(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(PatientMedication, cls).__setup__()
-        cls._error_messages.update({
-            'end_date_before_start': 'The Medication END DATE'
-            ' "%(end_treatment)s" is BEFORE the start date'
-            ' "%(start_treatment)s"!',
-            })
         cls._order.insert(0, ('is_active', 'DESC'))
         cls._order.insert(1, ('start_treatment', 'DESC'))
 
@@ -4094,7 +4090,7 @@ class PatientMedication(ModelSQL, ModelView):
     @staticmethod
     def default_healthprof():
         pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
+        HealthProf = pool.get('gnuhealth.healthprofessional')
         return HealthProf.get_health_professional()
 
     @classmethod
@@ -4111,13 +4107,14 @@ class PatientMedication(ModelSQL, ModelView):
             ])
         if self.end_treatment:
             if (self.end_treatment < self.start_treatment):
-                self.raise_user_error('end_date_before_start', {
-                    'start_treatment': Lang.strftime(self.start_treatment,
-                        language.code, language.date),
-                    'end_treatment': Lang.strftime(self.end_treatment,
-                        language.code, language.date),
-                    })
-
+                raise MedEndDateBeforeStart(gettext(
+                    'health.msg_med_end_date_before_start',
+                    start_treatment=Lang.strftime(
+                        self.start_treatment, language.code, language.date),
+                    end_treatment=Lang.strftime(
+                        self.end_treatment, language.code, language.date),
+                    )
+                )
 
 
 # PATIENT VACCINATION INFORMATION
@@ -4194,8 +4191,7 @@ class PatientVaccination(ModelSQL, ModelView):
         ('lpua', 'left posterolateral fat of upper arm'),
         ('rpua', 'right posterolateral fat of upper arm'),
         ('lfa', 'left fore arm'),
-        ('rfa', 'right fore arm')],'Admin Site')
-
+        ('rfa', 'right fore arm')], 'Admin Site')
 
     state = fields.Selection([
         (None, ''),
@@ -4212,7 +4208,7 @@ class PatientVaccination(ModelSQL, ModelView):
     @staticmethod
     def default_healthprof():
         pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
+        HealthProf = pool.get('gnuhealth.healthprofessional')
         return HealthProf.get_health_professional()
 
     @staticmethod
@@ -4232,18 +4228,13 @@ class PatientVaccination(ModelSQL, ModelView):
         super(PatientVaccination, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('dose_uniq', Unique(t,t.name, t.vaccine, t.dose),
+            ('dose_uniq', Unique(t, t.name, t.vaccine, t.dose),
                 'This vaccine dose has been given already to the patient'),
             ]
-        cls._error_messages.update({
-            'next_dose_before_first': 'The Vaccine next dose is BEFORE the '
-                'first one !'
-            })
 
         cls._buttons.update({
             'sign': {'invisible': Equal(Eval('state'), 'done')}
             })
-
 
     @classmethod
     @ModelView.button
@@ -4280,7 +4271,9 @@ class PatientVaccination(ModelSQL, ModelView):
     def validate_next_dose_date(self):
         if (self.next_dose_date):
             if (self.next_dose_date < self.date):
-                self.raise_user_error('next_dose_before_first')
+                raise NextDoseBeforeFirst(
+                    gettext('health.msg_next_dose_before_first')
+                    )
 
 
 class PatientPrescriptionOrder(ModelSQL, ModelView):
