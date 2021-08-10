@@ -1,12 +1,13 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    GNU Health: The Free Health and Hospital Information System
+#    GNU Health HMIS: The Free Health and Hospital Information System
 #    Copyright (C) 2008-2021 Luis Falcon <falcon@gnuhealth.org>
 #    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
 #    Copyright (C) 2015 Cédric Krier
 #    Copyright (C) 2014-2015 Chris Zimmerman <siv@riseup.net>
 #
+#    The GNU Health HMIS component is part of the GNU Health project
+#    www.gnuhealth.org
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -22,19 +23,21 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+
+import platform
+import os
+import string
+import random
+import pytz
+
 from dateutil.relativedelta import relativedelta
 from datetime import datetime, timedelta, date
 from urllib.parse import urlencode
 from urllib.parse import urlunparse
 from collections import OrderedDict
 from io import BytesIO
-import platform
-import os
+from uuid import uuid4
 
-try:
-    from PIL import Image
-except ImportError:
-    Image = None
 from sql import Literal, Join, Table, Null
 from sql.functions import Overlay, Position
 
@@ -49,12 +52,17 @@ from trytond.tools import grouped_slice, reduce_ids
 from trytond.backend import name as backend_name
 from trytond.tools.multivalue import migrate_property
 from trytond.rpc import RPC
+from trytond.i18n import gettext
 
+from .exceptions import (
+    WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart
+    )
 
-from uuid import uuid4
-import string
-import random
-import pytz
+try:
+    from PIL import Image
+except ImportError:
+    Image = None
+
 
 __all__ = [
     'OperationalArea', 'OperationalSector', 'Occupation',
@@ -783,11 +791,11 @@ class Party(ModelSQL, ModelView):
 
         cls._order.insert(0, ('lastname', 'ASC'))
         cls._order.insert(1, ('name', 'ASC'))
-        #Sort to be used when called from other models.
+        # Sort to be used when called from other models.
         cls._order_name = 'lastname'
 
     def get_rec_name(self, name):
-        #Display name on the following sequence
+        # Display name on the following sequence
         # 1 - Oficial Name from PersonName with the name representation
         # If not offficial name :
         # 2 - Last name, First name
@@ -803,7 +811,7 @@ class Party(ModelSQL, ModelView):
                 given = pname.given or ''
                 family = pname.family or ''
 
-                res=''
+                res = ''
                 if pname.use == 'official':
                     if self.name_representation == 'pgfs':
                         res = prefix + given + ' ' + family + suffix
@@ -881,14 +889,15 @@ class Party(ModelSQL, ModelView):
                 * < 200 (future generations :) )
         """
         if (self.dob):
-            years,months,days = \
+            years, months, days = \
                 compute_age_from_dates(self.dob, self.deceased,
-                              self.dod, self.gender, 'raw_age', None)
+                                       self.dod, self.gender, 'raw_age', None)
 
             if (not self.deceased):
                 if (years < 0 or months < 0 or days < 0) or years > 200:
-                    self.raise_user_error(
-                        "Wrong date of birth for a living person")
+                    raise WrongDateofBirth(
+                        gettext('health.msg_wrong_date_of_birth')
+                        )
 
     def check_person(self):
         # Verify that health professional and patient
@@ -3398,7 +3407,6 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
         'gnuhealth.patient.evaluation', 'related_condition',
         'Related Evaluations', readonly=True)
 
-
     institution = fields.Many2One('gnuhealth.institution', 'Institution')
 
     @staticmethod
@@ -3407,7 +3415,6 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
         institution = HealthInst.get_institution()
         return institution
 
-
     @classmethod
     def __setup__(cls):
         super(PatientDiseaseInfo, cls).__setup__()
@@ -3415,13 +3422,6 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
         cls._order.insert(1, ('disease_severity', 'DESC'))
         cls._order.insert(2, ('is_infectious', 'DESC'))
         cls._order.insert(3, ('diagnosed_date', 'DESC'))
-        cls._error_messages.update({
-            'end_date_before_start': 'The HEALED date "%(healed_date)s" is'
-            ' BEFORE DIAGNOSED DATE "%(diagnosed_date)s"!',
-            'end_treatment_date_before_start': 'The Treatment END DATE'
-            ' "%(date_stop_treatment)s" is BEFORE the start date'
-            ' "%(date_start_treatment)s"!',
-            })
 
     @staticmethod
     def default_is_active():
@@ -3442,12 +3442,16 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
             ])
         if (self.healed_date and self.diagnosed_date):
             if (self.healed_date < self.diagnosed_date):
-                self.raise_user_error('end_date_before_start', {
-                        'healed_date': Lang.strftime(self.healed_date,
-                            language.code, language.date),
-                        'diagnosed_date': Lang.strftime(self.diagnosed_date,
-                            language.code, language.date),
-                        })
+                raise DateHealedBeforeDx(
+                    gettext('health.msg_healed_before_dx',
+                            healed_date=Lang.strftime(
+                                self.healed_date,
+                                language.code, language.date),
+                            diagnosed_date=Lang.strftime(
+                                self.diagnosed_date,
+                                language.code, language.date),
+                            )
+                    )
 
     def validate_treatment_dates(self):
         Lang = Pool().get('ir.lang')
@@ -3457,15 +3461,16 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
             ])
         if (self.date_stop_treatment and self.date_start_treatment):
             if (self.date_stop_treatment < self.date_start_treatment):
-                self.raise_user_error('end_treatment_date_before_start', {
-                        'date_stop_treatment': Lang.strftime(
-                            self.date_stop_treatment,
-                            language.code, language.date),
-                        'date_start_treatment': Lang.strftime(
-                            self.date_start_treatment,
-                            language.code, language.date),
-                        })
-
+                raise EndTreatmenDatetBeforeStart(
+                    gettext('health.msg_end_treatment_before_start',
+                            date_stop_treatment=Lang.strftime(
+                                self.date_stop_treatment,
+                                language.code, language.date),
+                            date_start_treatment=Lang.strftime(
+                                self.date_start_treatment,
+                                language.code, language.date),
+                            )
+                    )
 
     # Show warning on infectious disease
     infectious_disease_icon = \
@@ -3485,7 +3490,7 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
         return self.pathology.rec_name
 
     @classmethod
-    def create_health_condition_pol(cls,condition_info):
+    def create_health_condition_pol(cls, condition_info):
         """ Adds an entry in the person Page of Life
             related to this person health condition
         """
@@ -3497,8 +3502,9 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
             if condition_info.age:
                 age_at_dx = str(condition_info.age) + 'y'
             elif (condition_info.name.dob and condition_info.diagnosed_date):
-                age_at_dx = compute_age_from_dates(condition_info.name.dob, None,
-                            None, None, 'age', condition_info.diagnosed_date)
+                age_at_dx = compute_age_from_dates(
+                    condition_info.name.dob, None, None, None,
+                    'age', condition_info.diagnosed_date)
             return age_at_dx
 
         vals = {
@@ -3506,19 +3512,20 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
             'person': condition_info.name.name.id,
             'age': patient_age_at_dx(),
             'federation_account': condition_info.name.name.federation_account,
-            'page_type':'medical',
-            'medical_context':'health_condition',
-            'relevance':'important',
+            'page_type': 'medical',
+            'medical_context': 'health_condition',
+            'relevance': 'important',
             'summary': condition_info.short_comment,
             'info': condition_info.extra_info,
-            'author': condition_info.healthprof and condition_info.healthprof.name.rec_name,
-            'node': condition_info.institution and condition_info.institution.name.rec_name
+            'author': condition_info.healthprof and
+            condition_info.healthprof.name.rec_name,
+            'node': condition_info.institution and
+            condition_info.institution.name.rec_name
             }
         if (condition_info.pathology):
             vals['health_condition'] = condition_info.pathology
             vals['health_condition_text'] = condition_info.pathology.rec_name
             vals['health_condition_code'] = condition_info.pathology.code
-
 
         pol.append(vals)
         Pol.create(pol)
@@ -3625,7 +3632,6 @@ class Appointment(ModelSQL, ModelView):
     def no_show(cls, appointments):
         cls.write(appointments, {
             'state': 'no_show'})
-
 
     @classmethod
     def search_rec_name(cls, name, clause):
