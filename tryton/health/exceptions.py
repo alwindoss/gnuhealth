@@ -14,3 +14,11 @@ class DateHealedBeforeDx(ValidationError):
 
 class EndTreatmentDateBeforeStart(ValidationError):
     pass
+
+
+class MedEndDateBeforeStart(ValidationError):
+    pass
+
+
+class NextDoseBeforeFirst(ValidationError):
+    pass
