@@ -20,5 +20,8 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_no_associated_health_professional">
             <field name="text">There is no health professional associated to this user</field>
         </record>
+        <record model="ir.message" id="msg_end_evaluation_time_before_start">
+            <field name="text">End time "%(evaluation_endtime)s" BEFORE evaluation start "%(evaluation_start)s"</field>
+        </record>
     </data>
 </tryton>

@@ -30,3 +30,6 @@ class DrugPregnancySafetyCheck(ValidationError):
 
 class NoAssociatedHealthProfessional(ValidationError):
     pass
+
+class EvaluationEndBeforeStart(ValidationError):
+    pass
