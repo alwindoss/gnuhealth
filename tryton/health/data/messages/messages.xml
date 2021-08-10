@@ -14,6 +14,11 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <record model="ir.message" id="msg_next_dose_before_first">
             <field name="text">The vaccine next dose is BEFORE the first one!</field>
+        <record model="ir.message" id="msg_drug_pregnancy_safety_check">
+            <field name="text">Verify and check for safety in pregnancy the prescribed drugs</field>
+        </record>
+        <record model="ir.message" id="msg_no_associated_health_professional">
+            <field name="text">There is no health professional associated to this user</field>
         </record>
     </data>
 </tryton>

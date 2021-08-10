@@ -22,3 +22,11 @@ class MedEndDateBeforeStart(ValidationError):
 
 class NextDoseBeforeFirst(ValidationError):
     pass
+
+
+class DrugPregnancySafetyCheck(ValidationError):
+    pass
+
+
+class NoAssociatedHealthProfessional(ValidationError):
+    pass
