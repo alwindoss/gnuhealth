@@ -23,5 +23,9 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_end_evaluation_time_before_start">
             <field name="text">End time "%(evaluation_endtime)s" BEFORE evaluation start "%(evaluation_start)s"</field>
         </record>
+        <record model="ir.message" id="msg_no_appointment_selected">
+            <field name="text">You need to select one appointment</field>
+        </record>
+
     </data>
 </tryton>
