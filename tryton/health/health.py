@@ -2172,6 +2172,7 @@ class Medicament(ModelSQL, ModelView):
     def check_xml_record(cls, records, values):
         return True
 
+
 class ImmunizationScheduleDose(ModelSQL, ModelView):
     'Immunization Schedule Dose'
     __name__ = 'gnuhealth.immunization_schedule_dose'
@@ -2179,15 +2180,15 @@ class ImmunizationScheduleDose(ModelSQL, ModelView):
     vaccine = fields.Many2One(
         'gnuhealth.immunization_schedule_line', 'Vaccine', required=True,
         help='Vaccine Name')
-    dose_number = fields.Integer('Dose',required=True)
-    age_dose = fields.Integer('Age',required=True)
+    dose_number = fields.Integer('Dose', required=True)
+    age_dose = fields.Integer('Age', required=True)
     age_unit = fields.Selection([
-        (None,''),
-        ('days','days'),
-        ('weeks','weeks'),
-        ('months','months'),
-        ('years','years'),
-        ],'Time Unit',required=True)
+        (None, ''),
+        ('days', 'days'),
+        ('weeks', 'weeks'),
+        ('months', 'months'),
+        ('years', 'years'),
+        ], 'Time Unit', required=True)
 
     remarks = fields.Char('Remarks')
 
@@ -2210,16 +2211,16 @@ class ImmunizationScheduleDose(ModelSQL, ModelView):
         super(ImmunizationScheduleDose, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('number_uniq', Unique(t,t.dose_number,t.vaccine),
+            ('number_uniq', Unique(t, t.dose_number, t.vaccine),
                 'The dose number must be unique for this vaccine'),
         ]
         cls._order.insert(0, ('vaccine', 'ASC'))
         cls._order.insert(1, ('dose_number', 'ASC'))
 
+
 class ImmunizationScheduleLine(ModelSQL, ModelView):
     'Immunization Schedule Line'
     __name__ = 'gnuhealth.immunization_schedule_line'
-
 
     sched = fields.Many2One(
         'gnuhealth.immunization_schedule', 'Schedule', required=True,
@@ -2232,15 +2233,15 @@ class ImmunizationScheduleLine(ModelSQL, ModelView):
 
     scope = fields.Selection([
         (None, ''),
-        ('systematic','Systematic'),
-        ('recommended','Recommended'),
-        ('highrisk','Risk groups'),
-        ],'Scope', sort=False)
+        ('systematic', 'Systematic'),
+        ('recommended', 'Recommended'),
+        ('highrisk', 'Risk groups'),
+        ], 'Scope', sort=False)
 
     remarks = fields.Char('Remarks')
 
-    doses = fields.One2Many ('gnuhealth.immunization_schedule_dose',
-        'vaccine','Doses')
+    doses = fields.One2Many('gnuhealth.immunization_schedule_dose',
+                            'vaccine', 'Doses')
 
     def get_rec_name(self, name):
         return (self.vaccine.name.name)
@@ -2249,21 +2250,25 @@ class ImmunizationScheduleLine(ModelSQL, ModelView):
     def default_scope():
         return 'systematic'
 
+
 class ImmunizationSchedule(ModelSQL, ModelView):
     'Immunization Schedule'
     __name__ = 'gnuhealth.immunization_schedule'
 
     sched = fields.Char('Code',
-     help="Code for this immunization schedule", required=True)
-    country = fields.Many2One('country.country','Country')
+                        help="Code for this immunization schedule",
+                        required=True)
+
+    country = fields.Many2One('country.country', 'Country')
     year = fields.Integer('Year')
     active = fields.Boolean('Active')
 
-    vaccines = fields.One2Many ('gnuhealth.immunization_schedule_line',
-        'sched','Vaccines')
+    vaccines = fields.One2Many('gnuhealth.immunization_schedule_line',
+                               'sched', 'Vaccines')
 
     desc = fields.Char('Description',
-     help="Short Description for this immunization schedule", required=True)
+                       help="Short Description for this immunization schedule",
+                       required=True)
 
     def get_rec_name(self, name):
         return (self.sched)
@@ -2277,9 +2282,10 @@ class ImmunizationSchedule(ModelSQL, ModelView):
         super(ImmunizationSchedule, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('sched_uniq', Unique(t,t.sched),
-                'The schedule code must be unique'),
+            ('sched_uniq', Unique(t, t.sched),
+             'The schedule code must be unique'),
         ]
+
 
 class PathologyCategory(tree(separator=' / '), ModelSQL, ModelView):
     'Disease Categories'
@@ -2312,8 +2318,8 @@ class PathologyCategory(tree(separator=' / '), ModelSQL, ModelView):
         super(PathologyCategory, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints += [
-            ('name_uniq', Unique(t,t.name),
-            'The category name must be unique'),
+            ('name_uniq', Unique(t, t.name),
+             'The category name must be unique'),
         ]
 
 
@@ -2332,16 +2338,16 @@ class PathologyGroup(ModelSQL, ModelView):
     desc = fields.Char('Short Description', required=True)
     info = fields.Text('Detailed information')
 
-    members = fields.One2Many ('gnuhealth.disease_group.members',
-        'disease_group','Members', readonly=True)
+    members = fields.One2Many('gnuhealth.disease_group.members',
+                              'disease_group', 'Members', readonly=True)
 
     @classmethod
     def __setup__(cls):
         super(PathologyGroup, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints += [
-            ('code_uniq', Unique(t,t.code),
-            'The Pathology Group code must be unique'),
+            ('code_uniq', Unique(t, t.code),
+             'The Pathology Group code must be unique'),
         ]
 
 
@@ -2391,16 +2397,17 @@ class Pathology(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('code',) + tuple(clause[1:]),
-            ('name',) + tuple(clause[1:]),
-            ]
+                ('code',) + tuple(clause[1:]),
+                ('name',) + tuple(clause[1:]),
+                ]
 
     @classmethod
     def __setup__(cls):
         super(Pathology, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints += [
-            ('code_uniq', Unique(t,t.code), 'The disease code must be unique'),
+            ('code_uniq', Unique(t, t.code),
+             'The disease code must be unique'),
         ]
 
 
@@ -2433,13 +2440,13 @@ class ProcedureCode(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('name',) + tuple(clause[1:]),
-            ('description',) + tuple(clause[1:]),
-            ]
+                ('name',) + tuple(clause[1:]),
+                ('description',) + tuple(clause[1:]),
+                ]
+
 
 # Add institution attribute AFTER registering the Health Institution
 # Health Professionals and underlying conditions
-
 class BirthCertExtraInfo (ModelSQL, ModelView):
     'Birth Certificate'
     __name__ = 'gnuhealth.birth_certificate'
@@ -2448,16 +2455,16 @@ class BirthCertExtraInfo (ModelSQL, ModelView):
 
     institution = fields.Many2One(
         'gnuhealth.institution', 'Institution',
-        states = STATES )
+        states=STATES)
 
     signed_by = fields.Many2One(
         'gnuhealth.healthprofessional',
         'Certifier', readonly=True, help='Person who certifies this'
         ' birth document',
-        states = STATES )
+        states=STATES)
 
     certification_date = fields.DateTime('Signed on', readonly=True,
-        states = STATES )
+                                         states=STATES)
 
     @staticmethod
     def default_institution():
@@ -2465,12 +2472,13 @@ class BirthCertExtraInfo (ModelSQL, ModelView):
 
     @fields.depends('institution')
     def on_change_institution(self):
-        country=None
-        subdivision=None
+        country = None
+        subdivision = None
         if (self.institution and self.institution.name.addresses[0].country):
             country = self.institution.name.addresses[0].country.id
 
-        if (self.institution and self.institution.name.addresses[0].subdivision):
+        if (self.institution and self.institution.name.addresses[0].
+                subdivision):
             subdivision = self.institution.name.addresses[0].subdivision.id
 
         self.country = country
@@ -2482,7 +2490,7 @@ class BirthCertExtraInfo (ModelSQL, ModelView):
         pool = Pool()
         HealthProfessional = pool.get('gnuhealth.healthprofessional')
         Person = pool.get('party.party')
-        party=[]
+        party = []
 
         # Change the state of the birth certificate to "Signed"
         # and write the name of the certifying health professional
@@ -2500,7 +2508,7 @@ class BirthCertExtraInfo (ModelSQL, ModelView):
         party.append(certificates[0].name)
 
         Person.write(party, {
-            'birth_certificate': certificates[0].id })
+            'birth_certificate': certificates[0].id})
 
 
 class DeathCertExtraInfo (ModelSQL, ModelView):
@@ -2511,7 +2519,7 @@ class DeathCertExtraInfo (ModelSQL, ModelView):
 
     institution = fields.Many2One(
         'gnuhealth.institution', 'Institution',
-        states = STATES)
+        states=STATES)
 
     signed_by = fields.Many2One(
         'gnuhealth.healthprofessional', 'Signed by', readonly=True,
@@ -2523,14 +2531,14 @@ class DeathCertExtraInfo (ModelSQL, ModelView):
     cod = fields.Many2One(
         'gnuhealth.pathology', 'Cause',
         required=True, help="Immediate Cause of Death",
-        states = STATES)
+        states=STATES)
 
     underlying_conditions = fields.One2Many(
         'gnuhealth.death_underlying_condition',
         'death_certificate', 'Underlying Conditions', help='Underlying'
         ' conditions that initiated the events resulting in death.'
         ' Please code them in sequential, chronological order',
-        states = STATES)
+        states=STATES)
 
     @staticmethod
     def default_institution():
@@ -2542,12 +2550,13 @@ class DeathCertExtraInfo (ModelSQL, ModelView):
 
     @fields.depends('institution')
     def on_change_institution(self):
-        country=None
-        subdivision=None
+        country = None
+        subdivision = None
         if (self.institution and self.institution.name.addresses[0].country):
             country = self.institution.name.addresses[0].country.id
 
-        if (self.institution and self.institution.name.addresses[0].subdivision):
+        if (self.institution and self.institution.name.addresses[0].
+                subdivision):
             subdivision = self.institution.name.addresses[0].subdivision.id
 
         self.country = country
@@ -2565,7 +2574,7 @@ class DeathCertExtraInfo (ModelSQL, ModelView):
 
         # It also set the associated party attribute deceased to True.
 
-        party=[]
+        party = []
 
         signing_hp = HealthProfessional.get_health_professional()
         if not signing_hp:
@@ -2597,7 +2606,7 @@ class DeathUnderlyingCondition(ModelSQL, ModelView):
         'gnuhealth.pathology', 'Condition', required=True)
 
     interval = fields.Integer('Interval', help='Approx Interval'
-        ' onset to death', required=True)
+                              ' onset to death', required=True)
 
     unit_of_time = fields.Selection([
         (None, ''),
@@ -2607,6 +2616,7 @@ class DeathUnderlyingCondition(ModelSQL, ModelView):
         ('months', 'months'),
         ('years', 'years'),
         ], 'Unit', select=True, sort=False, required=True)
+
 
 class InsurancePlan(ModelSQL, ModelView):
     'Insurance Plan'
@@ -2676,9 +2686,10 @@ class Insurance(ModelSQL, ModelView):
         super(Insurance, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('number_uniq', Unique(t,t.number,t.company),
-                'The number must be unique per insurance company'),
+            ('number_uniq', Unique(t, t.number, t.company),
+             'The number must be unique per insurance company'),
         ]
+
 
 class AlternativePersonID (ModelSQL, ModelView):
     'Alternative person ID'
@@ -2706,36 +2717,31 @@ class BirthCertificate (ModelSQL, ModelView):
     STATES = {'readonly': Eval('state') == 'done'}
 
     name = fields.Many2One('party.party', 'Person',
-        required=True,
-        domain=[('is_person', '=', True),],
-        states = {'readonly': Eval('id', 0) > 0})
+                           required=True, domain=[('is_person', '=', True), ],
+                           states={'readonly': Eval('id', 0) > 0})
 
     mother = fields.Many2One('party.party', 'Mother',
-        domain=[('is_person', '=', True),],
-        states = STATES )
-
+                             domain=[('is_person', '=', True), ],
+                             states=STATES)
 
     father = fields.Many2One('party.party', 'Father',
-        domain=[('is_person', '=', True),],
-        states = STATES )
+                             domain=[('is_person', '=', True), ],
+                             states=STATES)
 
-    code = fields.Char('Code', required=True,
-        states = STATES )
+    code = fields.Char('Code', required=True, states=STATES)
 
-    dob = fields.Date('Date of Birth', required=True,
-        states = STATES )
+    dob = fields.Date('Date of Birth', required=True, states=STATES)
 
-    observations = fields.Text('Observations',
-        states = STATES )
+    observations = fields.Text('Observations', states=STATES)
 
-    country = fields.Many2One('country.country','Country', required=True,
-        states = STATES )
+    country = fields.Many2One('country.country', 'Country', required=True,
+                              states=STATES)
 
     country_subdivision = fields.Many2One(
         'country.subdivision', 'Subdivision',
         domain=[('country', '=', Eval('country'))],
         depends=['country'],
-        states = STATES )
+        states=STATES)
 
     state = fields.Selection([
         (None, ''),
@@ -2743,7 +2749,6 @@ class BirthCertificate (ModelSQL, ModelView):
         ('signed', 'Signed'),
         ('done', 'Done'),
         ], 'State', readonly=True, sort=False)
-
 
     @staticmethod
     def default_state():
@@ -2755,21 +2760,19 @@ class BirthCertificate (ModelSQL, ModelView):
             dob = self.name.dob
             return dob
 
-
     @classmethod
     def __setup__(cls):
         super(BirthCertificate, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('name_uniq', Unique(t,t.name), 'Certificate already exists !'),
-            ('code_uniq', Unique(t,t.code), 'Certificate already exists !'),
+            ('name_uniq', Unique(t, t.name), 'Certificate already exists !'),
+            ('code_uniq', Unique(t, t.code), 'Certificate already exists !'),
         ]
 
         cls._buttons.update({
             'sign': {'invisible': Or(Equal(Eval('state'), 'signed'),
-                Equal(Eval('state'), 'done'))}
+                                     Equal(Eval('state'), 'done'))}
         })
-
 
     @classmethod
     def validate(cls, certificates):
@@ -2779,7 +2782,7 @@ class BirthCertificate (ModelSQL, ModelView):
 
     def validate_dob(self):
         if (self.name.dob != self.dob):
-                        self.raise_user_error(
+            self.raise_user_error(
                 "The date on the Party differs from the certificate !")
 
 
@@ -2790,19 +2793,18 @@ class DeathCertificate (ModelSQL, ModelView):
     STATES = {'readonly': Eval('state') == 'done'}
 
     name = fields.Many2One('party.party', 'Person', required=True,
-        domain=[('is_person', '=', True),],
-        states = STATES)
+                           domain=[('is_person', '=', True), ],
+                           states=STATES)
 
-    code = fields.Char('Code', required=True,
-        states = STATES)
+    code = fields.Char('Code', required=True, states=STATES)
 
     autopsy = fields.Boolean('Autopsy', help="Check this box "
-        "if autopsy has been done",
-        states = STATES)
+                             "if autopsy has been done",
+                             states=STATES)
 
     dod = fields.DateTime('Date', required=True,
-        help="Date and time of Death",
-        states = STATES)
+                          help="Date and time of Death",
+                          states=STATES)
 
     type_of_death = fields.Selection(
         [
@@ -2813,7 +2815,7 @@ class DeathCertificate (ModelSQL, ModelView):
             ('undetermined', 'Undetermined'),
             ('pending_investigation', 'Pending Investigation'),
         ], 'Type of death', required=True, sort=False,
-        states = STATES)
+        states=STATES)
 
     place_of_death = fields.Selection(
         [
@@ -2823,32 +2825,32 @@ class DeathCertificate (ModelSQL, ModelView):
             ('public_place', 'Public place'),
             ('health_center', 'Health Center'),
         ], 'Place', required=True, sort=False,
-        states = STATES)
+        states=STATES)
 
     operational_sector = fields.Many2One(
         'gnuhealth.operational_sector', 'Op. Sector',
-        states = STATES)
+        states=STATES)
 
     du = fields.Many2One(
         'gnuhealth.du', 'DU', help="Domiciliary Unit",
-        states = STATES)
+        states=STATES)
 
     place_details = fields.Char('Details',
-        states = STATES)
+                                states=STATES)
 
-    country = fields.Many2One('country.country','Country', required=True,
-        states = STATES)
+    country = fields.Many2One('country.country', 'Country', required=True,
+                              states=STATES)
 
     country_subdivision = fields.Many2One(
         'country.subdivision', 'Subdivision',
         domain=[('country', '=', Eval('country'))],
         depends=['country'],
-        states = STATES)
+        states=STATES)
 
-    age = fields.Function(fields.Char('Age'),'get_age_at_death')
+    age = fields.Function(fields.Char('Age'), 'get_age_at_death')
 
     observations = fields.Text('Observations',
-        states = STATES)
+                               states=STATES)
 
     state = fields.Selection([
         (None, ''),
@@ -2861,23 +2863,21 @@ class DeathCertificate (ModelSQL, ModelView):
     def default_state():
         return 'draft'
 
-
     @classmethod
     def __setup__(cls):
         super(DeathCertificate, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('name_uniq', Unique(t,t.name), 'Certificate already exists !'),
-            ('code_uniq', Unique(t,t.code), 'Certificate already exists !'),
+            ('name_uniq', Unique(t, t.name), 'Certificate already exists !'),
+            ('code_uniq', Unique(t, t.code), 'Certificate already exists !'),
         ]
 
         cls._buttons.update({
             'sign': {'invisible': Or(Equal(Eval('state'), 'signed'),
-                Equal(Eval('state'), 'done'))}
+                                     Equal(Eval('state'), 'done'))}
             })
 
-
-    def get_age_at_death(self,name):
+    def get_age_at_death(self, name):
         if (self.name.dob):
             delta = relativedelta(self.dod, self.name.dob)
             years_months_days = str(delta.years) + 'y ' \
@@ -2929,7 +2929,6 @@ class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, ValueMixin):
         'ir.sequence', 'Prescription Sequence', required=True,
         domain=[('code', '=', 'gnuhealth.prescription.order')]))
 
-
     @classmethod
     def multivalue_model(cls, field):
         pool = Pool()
@@ -2938,17 +2937,16 @@ class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, ValueMixin):
             return pool.get('gnuhealth.sequence.setup')
         return super(GnuHealthSequences, cls).multivalue_model(field)
 
-
     @classmethod
     def default_patient_sequence(cls):
         return cls.multivalue_model(
             'patient_sequence').default_patient_sequence()
 
-
     @classmethod
     def default_patient_evaluation_sequence(cls):
         return cls.multivalue_model(
-            'patient_evaluation_sequence').default_patient_evaluation_sequence()
+            'patient_evaluation_sequence').\
+                default_patient_evaluation_sequence()
 
     @classmethod
     def default_appointment_sequence(cls):
@@ -2961,28 +2959,25 @@ class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, ValueMixin):
             'prescription_sequence').default_prescription_sequence()
 
 
-
 # SEQUENCE SETUP
 class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
     "GNU Health Sequence Setup"
     __name__ = 'gnuhealth.sequence.setup'
 
-    patient_sequence = fields.Many2One('ir.sequence', 'Patient Sequence',
-        required=True,
+    patient_sequence = fields.Many2One(
+        'ir.sequence', 'Patient Sequence', required=True,
         domain=[('code', '=', 'gnuhealth.patient')])
 
-
-    patient_evaluation_sequence = fields.Many2One('ir.sequence',
-        'Patient Evaluation Sequence', required=True,
+    patient_evaluation_sequence = fields.Many2One(
+        'ir.sequence', 'Patient Evaluation Sequence', required=True,
         domain=[('code', '=', 'gnuhealth.patient.evaluation')])
 
-
-    appointment_sequence = fields.Many2One('ir.sequence',
-        'Appointment Sequence', required=True,
+    appointment_sequence = fields.Many2One(
+        'ir.sequence', 'Appointment Sequence', required=True,
         domain=[('code', '=', 'gnuhealth.appointment')])
 
-    prescription_sequence = fields.Many2One('ir.sequence',
-        'Prescription Sequence', required=True,
+    prescription_sequence = fields.Many2One(
+        'ir.sequence', 'Prescription Sequence', required=True,
         domain=[('code', '=', 'gnuhealth.prescription.order')])
 
     @classmethod
