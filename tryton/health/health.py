@@ -56,7 +56,8 @@ from trytond.i18n import gettext
 
 from .exceptions import (
     WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart,
-    MedEndDateBeforeStart, NextDoseBeforeFirst
+    MedEndDateBeforeStart, NextDoseBeforeFirst, DrugPregnancySafetyCheck,
+    NoAssociatedHealthProfessional
     )
 
 try:
@@ -4327,18 +4328,6 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(PatientPrescriptionOrder, cls).__setup__()
-        cls._error_messages.update({
-            'drug_pregnancy_warning':
-            '== DRUG AND PREGNANCY VERIFICATION ==\n\n'
-            '- IS THE PATIENT PREGNANT ? \n'
-            '- IS PLANNING to BECOME PREGNANT ?\n'
-            '- HOW MANY WEEKS OF PREGNANCY \n\n'
-            '- IS THE PATIENT BREASTFEEDING \n\n'
-            'Verify and check for safety the prescribed drugs\n',
-            'health_professional_warning':
-            'No health professional associated to this user',
-        })
-
         cls._order.insert(0, ('prescription_date', 'DESC'))
 
         cls._buttons.update({
@@ -4354,11 +4343,15 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
 
     def check_health_professional(self):
         if not self.healthprof:
-            self.raise_user_error('health_professional_warning')
+            raise NoAssociatedHealthProfessional(gettext(
+                ('health.msg_no_associated_health_professional'))
+            )
 
     def check_prescription_warning(self):
         if not self.prescription_warning_ack:
-            self.raise_user_error('drug_pregnancy_warning')
+            raise DrugPregnancySafetyCheck(gettext(
+                'health.msg_drug_pregnancy_safety_check')
+                )
 
     @staticmethod
     def default_healthprof():
@@ -4381,7 +4374,6 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
 
         self.prescription_warning_ack = presc_warning_ack
         self.pregnancy_warning = preg_warning
-
 
     @staticmethod
     def default_prescription_date():
