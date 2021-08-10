@@ -57,7 +57,7 @@ from trytond.i18n import gettext
 from .exceptions import (
     WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart,
     MedEndDateBeforeStart, NextDoseBeforeFirst, DrugPregnancySafetyCheck,
-    NoAssociatedHealthProfessional
+    NoAssociatedHealthProfessional, EvaluationEndBeforeStart
     )
 
 try:
@@ -4400,7 +4400,8 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
                 timezone = pytz.timezone(company.timezone)
 
         dt = self.prescription_date
-        return datetime.astimezone(dt.replace(tzinfo=pytz.utc), timezone).date()
+        return datetime.astimezone(dt.replace(tzinfo=pytz.utc),
+                                   timezone).date()
 
     def get_report_prescription_time(self, name):
         Company = Pool().get('company.company')
@@ -5160,12 +5161,14 @@ class PatientEvaluation(ModelSQL, ModelView):
             ])
         if (self.evaluation_endtime and self.evaluation_start):
             if (self.evaluation_endtime < self.evaluation_start):
-                self.raise_user_error('end_date_before_start', {
-                        'evaluation_start': Lang.strftime(
+                raise EvaluationEndBeforeStart(gettext(
+                    'health.msg_end_evaluation_time_before_start',
+                    evaluation_start=Lang.strftime(
                             self.evaluation_start, language.code, language.date),
-                        'evaluation_endtime': Lang.strftime(
+                    evaluation_endtime=Lang.strftime(
                             self.evaluation_endtime, language.code, language.date),
-                        })
+                        )
+                    )
 
     def check_health_professional(self):
         if not self.healthprof:
@@ -5299,13 +5302,6 @@ class PatientEvaluation(ModelSQL, ModelView):
             ]
 
         cls._order.insert(0, ('evaluation_start', 'DESC'))
-
-        cls._error_messages.update({
-            'health_professional_warning':
-                'No health professional associated to this user',
-            'end_date_before_start': 'End time "%(evaluation_endtime)s" BEFORE'
-                ' evaluation start "%(evaluation_start)s"'
-        })
 
         cls._buttons.update({
             'end_evaluation': {'invisible': Or(Equal(Eval('state'), 'signed'),
@@ -5608,8 +5604,9 @@ class PatientECG(ModelSQL, ModelView):
 
     def check_health_professional(self):
         if not self.healthprof:
-            self.raise_user_error('health_professional_warning')
-
+            raise NoAssociatedHealthProfessional(gettext(
+                ('health.msg_no_associated_health_professional'))
+            )
 
     # Return the ECG Interpretation with main components
     def get_rec_name(self, name):
@@ -5621,10 +5618,6 @@ class PatientECG(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(PatientECG, cls).__setup__()
-        cls._error_messages.update({
-            'health_professional_warning':
-                'No health professional associated to this user',
-        })
         cls._order.insert(0, ('ecg_date', 'DESC'))
 
     @classmethod
