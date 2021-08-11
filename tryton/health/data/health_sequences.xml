@@ -6,11 +6,10 @@
 
         <record id="seq_type_gnuhealth_patient_evaluation" model="ir.sequence.type">
             <field name="name">Patient Evaluation</field>
-            <field name="code">gnuhealth.patient.evaluation</field>
         </record>
         <record id="seq_gnuhealth_patient_evaluation" model="ir.sequence">
             <field name="name">Patient Evaluation</field>
-            <field name="code">gnuhealth.patient.evaluation</field>
+            <field name="sequence_type" ref="seq_type_gnuhealth_patient_evaluation"></field>
             <field name="prefix">EVAL ${year}/</field>
             <field name="padding">6</field>
             <field name="number_increment" eval="1"/>
@@ -21,11 +20,10 @@
 
         <record id="seq_type_gnuhealth_prescription" model="ir.sequence.type">
             <field name="name">Prescription</field>
-            <field name="code">gnuhealth.prescription.order</field>
         </record>
         <record id="seq_gnuhealth_prescription" model="ir.sequence">
             <field name="name">Prescription</field>
-            <field name="code">gnuhealth.prescription.order</field>
+            <field name="sequence_type" ref="seq_type_gnuhealth_prescription"></field>
             <field name="prefix">PRES ${year}/</field>
             <field name="padding">6</field>
             <field name="number_increment" eval="1"/>
@@ -35,11 +33,10 @@
 
         <record id="seq_type_gnuhealth_appointment" model="ir.sequence.type">
             <field name="name">Appointment</field>
-            <field name="code">gnuhealth.appointment</field>
         </record>
         <record id="seq_gnuhealth_appointment" model="ir.sequence">
             <field name="name">Appointment</field>
-            <field name="code">gnuhealth.appointment</field>
+            <field name="sequence_type" ref="seq_type_gnuhealth_appointment"></field>
             <field name="prefix">APP ${year}/</field>
             <field eval="0" name="padding"/>
         </record>
@@ -49,11 +46,10 @@
 
         <record id="seq_type_gnuhealth_patient" model="ir.sequence.type">
             <field name="name">Patient</field>
-            <field name="code">gnuhealth.patient</field>
         </record>
         <record id="seq_gnuhealth_patient" model="ir.sequence">
             <field name="name">Patient</field>
-            <field name="code">gnuhealth.patient</field>
+            <field name="sequence_type" ref="seq_type_gnuhealth_patient"></field>
             <field name="prefix">PAC</field>
             <field name="padding">3</field>
         </record>
