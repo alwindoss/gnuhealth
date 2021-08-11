@@ -642,7 +642,7 @@ class Party(ModelSQL, ModelView):
         actions = iter(args)
         args = []
         for parties, vals in zip(actions, actions):
-            given_name=family_name = ''
+            given_name = family_name = ''
             vals = vals.copy()
             person_id = parties[0].id
             # We set the value to None to make the fields that have a
@@ -1408,7 +1408,6 @@ class HealthInstitution(ModelSQL, ModelView):
     def get_institution(cls):
         # Retrieve the institution associated to this GNU Health instance
         # That is associated to the Company.
-
         company = Transaction().context.get('company')
 
         cursor = Transaction().connection.cursor()
@@ -1894,8 +1893,9 @@ class HealthProfessional(ModelSQL, ModelView):
             if (healthprof_id):
                 return int(healthprof_id[0])
         else:
-            cls.raise_user_error(
-                "No Health Professional associated to this user")
+            raise NoAssociatedHealthProfessional(gettext(
+                ('health.msg_no_associated_health_professional'))
+            )
 
     name = fields.Many2One(
         'party.party', 'Health Professional', required=True,
@@ -3066,7 +3066,6 @@ class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
 # END SEQUENCE SETUP , MIGRATION FROM FIELDS.PROPERTY
 
 
-
 # PATIENT GENERAL INFORMATION
 class PatientData(ModelSQL, ModelView):
     'Patient related information'
@@ -3077,23 +3076,24 @@ class PatientData(ModelSQL, ModelView):
         # The information will be shown in the front page
 
         critical_info = ""
-        allergies=""
-        other_conditions=""
+        allergies = ""
+        other_conditions = ""
         conditions=[]
         for disease in self.diseases:
             for member in disease.pathology.groups:
                 '''Retrieve patient allergies'''
                 if (member.disease_group.name == "ALLERGIC"):
                     if disease.pathology.name not in conditions:
-                        allergies=allergies + disease.pathology.rec_name + "\n"
-                        conditions.append (disease.pathology.rec_name)
+                        allergies = f"{allergies}" \
+                                    f"{disease.pathology.rec_name}\n"
+                        conditions.append(disease.pathology.rec_name)
 
             '''Retrieve patient other relevant conditions '''
             '''Chronic and active'''
             if (disease.status == "c" or disease.is_active):
                 if disease.pathology.name not in conditions:
-                            other_conditions=other_conditions + \
-                             disease.pathology.rec_name + "\n"
+                    other_conditions = f"{other_conditions} " \
+                                       f"{disease.pathology.rec_name}\n"
 
         return allergies + other_conditions
 
@@ -3103,7 +3103,7 @@ class PatientData(ModelSQL, ModelView):
             ('is_patient', '=', True),
             ('is_person', '=', True),
             ],
-        states = {'readonly': Eval('id', 0) > 0},
+        states={'readonly': Eval('id', 0) > 0},
         help="Person associated to this patient")
 
     lastname = fields.Function(
@@ -3153,16 +3153,17 @@ class PatientData(ModelSQL, ModelView):
         (None, ''),
         ('m', 'Male'),
         ('f', 'Female'),
-        ('f-m','Female -> Male'),
-        ('m-f','Male -> Female'),
+        ('f-m', 'Female -> Male'),
+        ('m-f', 'Male -> Female'),
         ], 'Gender'), 'get_patient_gender')
 
     biological_sex = fields.Selection([
         (None, ''),
         ('m', 'Male'),
         ('f', 'Female'),
-        ], 'Biological Sex', help="Biological sex. By defaults it takes the value" \
-            " from the neonatal information")
+        ], 'Biological Sex',
+        help="Biological sex. By defaults it takes the value"
+             " from the neonatal information")
 
     # Removed in 2.0 . MARITAL STATUS It's now a functional field
     # Retrieves the information from the party.
@@ -3177,7 +3178,7 @@ class PatientData(ModelSQL, ModelView):
             ('d', 'Divorced'),
             ('x', 'Separated'),
             ], 'Marital Status', sort=False, help="Marital Status"),
-            'get_patient_marital_status')
+        'get_patient_marital_status')
 
     blood_type = fields.Selection([
         (None, ''),
@@ -3203,14 +3204,14 @@ class PatientData(ModelSQL, ModelView):
         ('athal', 'A-THAL'),
         ('bthal', 'B-THAL'),
         ], 'Hb',
-        help="Clinically relevant Hemoglobin types\n" \
-            "AA = Normal Hemoglobin\n"
-            "AS = Sickle Cell Trait\n"
-            "SS = Sickle Cell Anemia\n"
-            "AC = Sickle Cell Hemoglobin C Disease\n"
-            "CC = Hemoglobin C Disease\n"
-            "A-THAL = A Thalassemia groups\n"
-            "B-THAL = B Thalassemia groups\n"
+        help="Clinically relevant Hemoglobin types\n"
+             "AA = Normal Hemoglobin\n"
+             "AS = Sickle Cell Trait\n"
+             "SS = Sickle Cell Anemia\n"
+             "AC = Sickle Cell Hemoglobin C Disease\n"
+             "CC = Hemoglobin C Disease\n"
+             "A-THAL = A Thalassemia groups\n"
+             "B-THAL = B Thalassemia groups\n"
         )
 
     vaccinations = fields.One2Many(
@@ -3218,8 +3219,9 @@ class PatientData(ModelSQL, ModelView):
     medications = fields.One2Many(
         'gnuhealth.patient.medication', 'name', 'Medications')
 
-    diseases = fields.One2Many('gnuhealth.patient.disease', 'name',
-     'Conditions', readonly=True)
+    diseases = fields.One2Many(
+        'gnuhealth.patient.disease', 'name',
+        'Conditions', readonly=True)
 
     critical_summary = fields.Function(fields.Text(
         'Important health conditions related to this patient',
@@ -3232,27 +3234,25 @@ class PatientData(ModelSQL, ModelView):
         help='Write any important information on the patient\'s condition,'
         ' surgeries, allergies, ...')
 
-
     general_info = fields.Text(
         'General Information',
         help='General information about the patient')
 
-    deceased = fields.Function(fields.Boolean('Deceased'),
-        'check_is_alive')
+    deceased = fields.Function(fields.Boolean('Deceased'), 'check_is_alive')
 
     dod = fields.Function(fields.DateTime(
         'Date of Death',
         states={
             'invisible': Not(Bool(Eval('deceased'))),
             },
-        depends=['deceased']),'get_dod')
+        depends=['deceased']), 'get_dod')
 
     cod = fields.Function(fields.Many2One(
         'gnuhealth.pathology', 'Cause of Death',
         states={
             'invisible': Not(Bool(Eval('deceased'))),
             },
-        depends=['deceased']),'get_cod')
+        depends=['deceased']), 'get_cod')
 
     childbearing_age = fields.Function(
         fields.Boolean('Potential for Childbearing'), 'get_childbearing_age')
@@ -3271,11 +3271,9 @@ class PatientData(ModelSQL, ModelView):
         super(PatientData, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('name_uniq', Unique(t,t.name), 'The Patient already exists !'),
+            ('name_uniq', Unique(t, t.name), 'The Patient already exists !'),
         ]
         cls._order.insert(0, ('name', 'ASC'))
-
-
 
     def get_patient_dob(self, name):
         return self.name.dob
@@ -3308,8 +3306,8 @@ class PatientData(ModelSQL, ModelView):
         return self.name.age
 
     def get_childbearing_age(self, name):
-        return compute_age_from_dates(self.dob, self.deceased,
-                              self.dod, self.gender, name, None)
+        return compute_age_from_dates(
+            self.dob, self.deceased, self.dod, self.gender, name, None)
 
     def get_dod(self, name):
         if (self.deceased):
@@ -3319,16 +3317,14 @@ class PatientData(ModelSQL, ModelView):
         if (self.deceased):
             return self.name.death_certificate.cod.id
 
-
     # Show the gender upon entering the individual
     @fields.depends('name')
     def on_change_name(self):
-        gender=None
-        age=None
+        gender = None
+        age = None
         if (self.name):
             self.gender = self.name.gender
             self.age = self.name.age
-
 
     @classmethod
     def search_patient_puid(cls, name, clause):
@@ -3352,7 +3348,6 @@ class PatientData(ModelSQL, ModelView):
             return self.name.rec_name
 
     # Search by the patient name, lastname or PUID
-
     @classmethod
     def search_rec_name(cls, name, clause):
         if clause[1].startswith('!') or clause[1].startswith('not '):
@@ -3360,10 +3355,10 @@ class PatientData(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('puid',) + tuple(clause[1:]),
-            ('name',) + tuple(clause[1:]),
-            ('lastname',) + tuple(clause[1:]),
-            ]
+                ('puid',) + tuple(clause[1:]),
+                ('name',) + tuple(clause[1:]),
+                ('lastname',) + tuple(clause[1:]),
+                ]
 
 
 # PATIENT CONDITIONS INFORMATION
@@ -3395,7 +3390,8 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
 
     healthprof = fields.Many2One(
         'gnuhealth.healthprofessional',
-        'Health Prof', help='Health Professional who treated or diagnosed the patient')
+        'Health Prof',
+        help='Health Professional who treated or diagnosed the patient')
 
     diagnosed_date = fields.Date('Date of Diagnosis')
     healed_date = fields.Date('Healed')
@@ -3573,6 +3569,7 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
 
         return health_condition_info
 
+
 # PATIENT APPOINTMENT
 class Appointment(ModelSQL, ModelView):
     'Patient Appointments'
@@ -3673,9 +3670,9 @@ class Appointment(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('name',) + tuple(clause[1:]),
-            ('patient',) + tuple(clause[1:]),
-            ]
+                ('name',) + tuple(clause[1:]),
+                ('patient',) + tuple(clause[1:]),
+                ]
 
     @classmethod
     def create(cls, vlist):
@@ -3702,7 +3699,7 @@ class Appointment(ModelSQL, ModelView):
                 values['name'] = Sequence.get_id(
                     config.appointment_sequence.id)
 
-            #Update the checked-in time only if unset
+            # Update the checked-in time only if unset
             if values.get('state') == 'checked_in' \
                     and values.get('checked_in_date') is None:
                 values['checked_in_date'] = datetime.now()
@@ -3776,9 +3773,12 @@ class Appointment(ModelSQL, ModelView):
         if hp_party_id:
             # Retrieve the health professional Main specialty, if assigned
 
-            health_professional_obj = Pool().get('gnuhealth.healthprofessional')
+            health_professional_obj = Pool().get
+            ('gnuhealth.healthprofessional')
+
             health_professional = health_professional_obj.search(
                 [('id', '=', hp_party_id)], limit=1)[0]
+
             hp_main_specialty = health_professional.main_specialty
 
             if hp_main_specialty:
@@ -3830,10 +3830,10 @@ class AppointmentReport(ModelSQL, ModelView):
         where = Literal(True)
         if Transaction().context.get('date_start'):
             where &= (appointment.appointment_date >=
-                    Transaction().context['date_start'])
+                      Transaction().context['date_start'])
         if Transaction().context.get('date_end'):
             where &= (appointment.appointment_date <
-                    Transaction().context['date_end'] + timedelta(days=1))
+                      Transaction().context['date_end'] + timedelta(days=1))
         if Transaction().context.get('healthprof'):
             where &= \
                 appointment.healthprof == Transaction().context['healthprof']
@@ -4316,13 +4316,13 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
     STATES = {'readonly': Not(Eval('state') == 'draft')}
 
     patient = fields.Many2One(
-        'gnuhealth.patient', 'Patient', required=True, states = STATES)
+        'gnuhealth.patient', 'Patient', required=True, states=STATES)
 
     prescription_id = fields.Char(
         'Prescription ID',
         readonly=True, help='Type in the ID of this prescription')
 
-    prescription_date = fields.DateTime('Prescription Date', states = STATES)
+    prescription_date = fields.DateTime('Prescription Date', states=STATES)
 
     user_id = fields.Many2One('res.user', 'Prescribing Doctor', readonly=True)
 
@@ -4335,12 +4335,12 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
 
     prescription_line = fields.One2Many(
         'gnuhealth.prescription.line', 'name', 'Prescription line',
-            states = STATES)
+        states=STATES)
 
-    notes = fields.Text('Prescription Notes', states = STATES)
+    notes = fields.Text('Prescription Notes', states=STATES)
     pregnancy_warning = fields.Boolean('Pregnancy Warning', readonly=True)
     prescription_warning_ack = fields.Boolean('Prescription verified',
-        states = STATES)
+                                              states=STATES)
 
     healthprof = fields.Many2One(
         'gnuhealth.healthprofessional', 'Prescribed by', readonly=True)
@@ -4354,7 +4354,7 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         ('draft', 'Draft'),
         ('done', 'Done'),
         ('validated', 'Validated'),
-        ], 'State', readonly=True, sort=False, states = STATES)
+        ], 'State', readonly=True, sort=False, states=STATES)
 
     @classmethod
     def __setup__(cls):
@@ -4445,10 +4445,11 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
                 timezone = pytz.timezone(company.timezone)
 
         dt = self.prescription_date
-        return datetime.astimezone(dt.replace(tzinfo=pytz.utc), timezone).time()
+        return datetime.astimezone(dt.replace(tzinfo=pytz.utc),
+                                   timezone).time()
 
     @classmethod
-    def create_prescription_pol(cls,prescription_info):
+    def create_prescription_pol(cls, prescription_info):
         """ Adds an entry in the person Page of Life
             related to this person prescription
         """
@@ -4463,13 +4464,13 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             'page': str(uuid4()),
             'person': prescription_info.patient.name.id,
             'page_date': prescription_info.prescription_date,
-            'federation_account': \
+            'federation_account':
                 prescription_info.patient.name.federation_account,
-            'page_type':'medical',
-            'medical_context':'prescription',
-            'relevance':'important',
+            'page_type': 'medical',
+            'medical_context': 'prescription',
+            'relevance': 'important',
             'info': plines,
-            'author': prescription_info.healthprof and \
+            'author': prescription_info.healthprof and
                 prescription_info.healthprof.name.rec_name,
             }
 
@@ -4500,7 +4501,6 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         return super(PatientPrescriptionOrder, cls).copy(
             prescriptions, default=default)
 
-
     @classmethod
     @ModelView.button
     def create_prescription(cls, prescriptions):
@@ -4509,12 +4509,11 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         # Change the state of the prescription to "Done"
 
         cls.write(prescriptions, {
-            'state': 'done',})
+            'state': 'done', })
 
         # Create prescription PoL if the person has a federation account.
         if (prescription.patient.name.federation_account):
-            cls.create_prescription_pol (prescription)
-
+            cls.create_prescription_pol(prescription)
 
     @classmethod
     def search_rec_name(cls, name, clause):
@@ -4523,9 +4522,9 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('patient',) + tuple(clause[1:]),
-            ('prescription_id',) + tuple(clause[1:]),
-            ]
+                ('patient',) + tuple(clause[1:]),
+                ('prescription_id',) + tuple(clause[1:]),
+                ]
 
 
 # PRESCRIPTION LINE
@@ -4539,8 +4538,9 @@ class PrescriptionLine(ModelSQL, ModelView):
 #        'Medication Template')
 
     name = fields.Many2One('gnuhealth.prescription.order', 'Prescription ID')
-    review = fields.DateTime('Valid Until', help="Until this date, the patient \
-        usually can ask for a refill / reorder of this medicament")
+    review = fields.DateTime('Valid Until', help="Until this date, the patient"
+                             "usually can ask for a refill / "
+                             "reorder of this medicament")
 
     quantity = fields.Integer(
         'Units',
@@ -4640,13 +4640,12 @@ class PrescriptionLine(ModelSQL, ModelView):
         help='Period that the patient must take the medication in minutes,'
         ' hours, days, months, years or indefinately')
 
-
     infusion = fields.Boolean(
         'Infusion',
-        help='Mark if the medication is in the form of infusion' \
-        ' Intravenous, Gastrostomy tube, nasogastric, etc...' )
-    infusion_rate = fields.Float('Rate',
-            states={'invisible': Not(Bool(Eval('infusion')))})
+        help='Mark if the medication is in the form of infusion'
+        ' Intravenous, Gastrostomy tube, nasogastric, etc...')
+    infusion_rate = fields.Float(
+        'Rate', states={'invisible': Not(Bool(Eval('infusion')))})
 
     infusion_rate_units = fields.Selection([
         (None, ''),
@@ -4739,9 +4738,9 @@ class PatientEvaluation(ModelSQL, ModelView):
 
     def patient_age_at_evaluation(self, name):
         if (self.patient.name.dob and self.evaluation_start):
-            return compute_age_from_dates(self.patient.name.dob, None,
-                        None, None, 'age', self.evaluation_start.date())
-
+            return compute_age_from_dates(
+                self.patient.name.dob, None, None, None, 'age',
+                self.evaluation_start.date())
 
     def evaluation_duration(self, name):
         if (self.evaluation_endtime and self.evaluation_start):
@@ -4752,29 +4751,28 @@ class PatientEvaluation(ModelSQL, ModelView):
         if self.appointment:
             if self.appointment.checked_in_date:
                 if self.appointment.checked_in_date < self.evaluation_start:
-                    return self.evaluation_start-self.appointment.checked_in_date
+                    return self.evaluation_start - \
+                        self.appointment.checked_in_date
 
     code = fields.Char('Code', help="Unique code that \
         identifies the evaluation")
 
-    patient = fields.Many2One('gnuhealth.patient', 'Patient',
-        states = STATES)
+    patient = fields.Many2One('gnuhealth.patient', 'Patient', states=STATES)
 
     appointment = fields.Many2One(
         'gnuhealth.appointment', 'Appointment',
         domain=[('patient', '=', Eval('patient'))], depends=['patient'],
         help='Enter or select the date / ID of the appointment related to'
-        ' this evaluation',
-        states = STATES)
+        ' this evaluation', states=STATES)
 
-    related_condition = fields.Many2One('gnuhealth.patient.disease', 'Related condition',
+    related_condition = fields.Many2One(
+        'gnuhealth.patient.disease', 'Related condition',
         domain=[('name', '=', Eval('patient'))], depends=['patient'],
         help="Related condition related to this follow-up evaluation",
-        states = {'invisible': (Eval('visit_type') != 'followup')})
+        states={'invisible': (Eval('visit_type') != 'followup')})
 
-    evaluation_start = fields.DateTime('Start', required=True,
-        states = STATES)
-    evaluation_endtime = fields.DateTime('End', states = STATES)
+    evaluation_start = fields.DateTime('Start', required=True, states=STATES)
+    evaluation_endtime = fields.DateTime('End', states=STATES)
 
     evaluation_length = fields.Function(
         fields.TimeDelta(
@@ -4782,8 +4780,9 @@ class PatientEvaluation(ModelSQL, ModelView):
             help="Duration of the evaluation"),
         'evaluation_duration')
 
-    wait_time = fields.Function(fields.TimeDelta('Patient wait time',
-        help="How long the patient waited"),
+    wait_time = fields.Function(
+        fields.TimeDelta('Patient wait time',
+                         help="How long the patient waited"),
         'get_wait_time')
 
     state = fields.Selection([
@@ -4796,8 +4795,7 @@ class PatientEvaluation(ModelSQL, ModelView):
     next_evaluation = fields.Many2One(
         'gnuhealth.appointment',
         'Next Appointment', domain=[('patient', '=', Eval('patient'))],
-        depends=['patient'],
-        states = STATES)
+        depends=['patient'], states=STATES)
 
     user_id = fields.Many2One('res.user', 'Last Changed by', readonly=True)
     healthprof = fields.Many2One(
@@ -4814,7 +4812,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         help="Health Professional that finished the patient evaluation")
 
     specialty = fields.Many2One('gnuhealth.specialty', 'Specialty',
-        states = STATES)
+        states=STATES)
 
     visit_type = fields.Selection([
         (None, ''),
@@ -4824,7 +4822,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         ('well_woman', 'Well Woman visit'),
         ('well_man', 'Well Man visit'),
         ], 'Visit', sort=False,
-        states = STATES)
+        states=STATES)
 
     urgency = fields.Selection([
         (None, ''),
@@ -4832,55 +4830,54 @@ class PatientEvaluation(ModelSQL, ModelView):
         ('b', 'Urgent'),
         ('c', 'Medical Emergency'),
         ], 'Urgency', sort=False,
-        states = STATES)
+        states=STATES)
 
     computed_age = fields.Function(fields.Char(
             'Age',
             help="Computed patient age at the moment of the evaluation"),
             'patient_age_at_evaluation')
 
-
     gender = fields.Function(fields.Selection([
         (None, ''),
         ('m', 'Male'),
         ('f', 'Female'),
-        ('f-m','Female -> Male'),
-        ('m-f','Male -> Female'),
+        ('f-m', 'Female -> Male'),
+        ('m-f', 'Male -> Female'),
         ], 'Gender'), 'get_patient_gender', searcher='search_patient_gender')
 
     information_source = fields.Char(
         'Source', help="Source of"
         "Information, eg : Self, relative, friend ...",
-        states = STATES)
+        states=STATES)
 
     reliable_info = fields.Boolean(
         'Reliable', help="Uncheck this option"
         "if the information provided by the source seems not reliable",
-        states = STATES)
+        states=STATES)
 
     derived_from = fields.Many2One(
         'gnuhealth.healthprofessional', 'Derived from',
         help='Health Professional who derived the case',
-        states = STATES)
+        states=STATES)
 
     derived_to = fields.Many2One(
         'gnuhealth.healthprofessional', 'Derived to',
         help='Health Professional to derive the case',
-        states = STATES)
+        states=STATES)
 
     evaluation_type = fields.Selection([
         (None, ''),
         ('outpatient', 'Outpatient'),
         ('inpatient', 'Inpatient'),
         ], 'Type', sort=False,
-        states = STATES)
+        states=STATES)
 
     chief_complaint = fields.Char('Chief Complaint', help='Chief Complaint',
-        states = STATES)
+        states=STATES)
     notes_complaint = fields.Text('Complaint details',
-        states = STATES)
+        states=STATES)
     present_illness = fields.Text('Present Illness',
-        states = STATES)
+        states=STATES)
     evaluation_summary = fields.Text('Clinical and physical',
         states = STATES)
 
@@ -4892,50 +4889,52 @@ class PatientEvaluation(ModelSQL, ModelView):
     hba1c = fields.Float(
         'HbA1c',
         help='Last Glycated Hemoglobin HbA1c level(mmol/mol)',
-        states = STATES)
+        states=STATES)
 
     cholesterol_total = fields.Integer(
         'Last Cholesterol',
         help='Last cholesterol reading (mg/dL)',
-        states = STATES)
+        states=STATES)
 
     hdl = fields.Integer(
         'HDL',
         help='Last HDL Cholesterol reading (mg/dL)',
-        states = STATES)
+        states=STATES)
 
     ldl = fields.Integer(
         'LDL',
         help='Last LDL Cholesterol reading (mg/dL)',
-        states = STATES)
+        states=STATES)
 
     tag = fields.Integer(
         'TAGs',
         help='Last Triglicerides level, (mg/dL)',
-        states = STATES)
+        states=STATES)
 
-    systolic = fields.Integer('Systolic Pressure',
+    systolic = fields.Integer(
+        'Systolic Pressure',
         help='Systolic pressure (mmHg)',
-        states = STATES)
+        states=STATES)
 
-    diastolic = fields.Integer('Diastolic Pressure',
+    diastolic = fields.Integer(
+        'Diastolic Pressure',
         help='Diastolic pressure (mmHg)',
-        states = STATES)
+        states=STATES)
 
     bpm = fields.Integer(
         'Heart Rate',
         help='Heart rate (beats per minute)',
-        states = STATES)
+        states=STATES)
 
     respiratory_rate = fields.Integer(
         'Respiratory Rate',
         help='Respiratory rate expressed in breaths per minute',
-        states = STATES)
+        states=STATES)
 
     osat = fields.Integer(
         'Oxygen Saturation',
         help='Arterial oxygen saturation expressed as a percentage',
-        states = STATES)
+        states=STATES)
 
     malnutrition = fields.Boolean(
         'Malnutrition',
@@ -4943,7 +4942,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         ' associated  to a disease, please encode the correspondent disease'
         ' on the patient disease history. For example, Moderate'
         ' protein-energy malnutrition, E44.0 in ICD-10 encoding',
-        states = STATES)
+        states=STATES)
 
     dehydration = fields.Boolean(
         'Dehydration',
@@ -4951,42 +4950,42 @@ class PatientEvaluation(ModelSQL, ModelView):
         ' associated  to a disease, please encode the  correspondent disease'
         ' on the patient disease history. For example, Volume Depletion, E86'
         ' in ICD-10 encoding',
-        states = STATES)
+        states=STATES)
 
     temperature = fields.Float(
         'Temperature',
         help='Temperature in celcius',
-        states = STATES)
+        states=STATES)
 
-    weight = fields.Float('Weight', digits=(3,2),help='Weight in kilos',
-        states = STATES)
+    weight = fields.Float('Weight', digits=(3, 2), help='Weight in kilos',
+                          states=STATES)
 
-    height = fields.Float('Height', digits=(3,1), help='Height in centimeters',
-        states = STATES)
+    height = fields.Float('Height', digits=(3, 1),
+                          help='Height in centimeters', states=STATES)
 
     bmi = fields.Float(
-        'BMI', digits=(2,2),
+        'BMI', digits=(2, 2),
         help='Body mass index',
-        states = STATES)
+        states=STATES)
 
     head_circumference = fields.Float(
         'Head',
         help='Head circumference in centimeters',
-        states = STATES)
+        states=STATES)
 
-    abdominal_circ = fields.Float('Waist', digits=(3,1),
-        help='Waist circumference in centimeters',
-        states = STATES)
+    abdominal_circ = fields.Float('Waist', digits=(3, 1),
+                                  help='Waist circumference in centimeters',
+                                  states=STATES)
 
-    hip = fields.Float('Hip', digits=(3,1),
-        help='Hip circumference in centimeters',
-        states = STATES)
+    hip = fields.Float('Hip', digits=(3, 1),
+                       help='Hip circumference in centimeters',
+                       states=STATES)
 
     whr = fields.Float(
-        'WHR', digits=(2,2),help='Waist to hip ratio . Reference values:\n'
+        'WHR', digits=(2, 2), help='Waist to hip ratio . Reference values:\n'
         'Men : < 0.9 Normal // 0.9 - 0.99 Overweight // > 1 Obesity \n'
         'Women : < 0.8 Normal // 0.8 - 0.84 Overweight // > 0.85 Obesity',
-        states = STATES)
+        states=STATES)
 
     # DEPRECATION NOTE : SIGNS AND SYMPTOMS FIELDS TO BE REMOVED IN 1.6 .
     # NOW WE USE A O2M OBJECT TO MAKE IT MORE SCALABLE, CLEARER AND FUNCTIONAL
@@ -4995,14 +4994,14 @@ class PatientEvaluation(ModelSQL, ModelView):
         'Glasgow',
         help='Level of Consciousness - on Glasgow Coma Scale :  < 9 severe -'
         ' 9-12 Moderate, > 13 minor',
-        states = STATES)
+        states=STATES)
     loc_eyes = fields.Selection([
         ('1', 'Does not Open Eyes'),
         ('2', 'Opens eyes in response to painful stimuli'),
         ('3', 'Opens eyes in response to voice'),
         ('4', 'Opens eyes spontaneously'),
         ], 'Glasgow - Eyes', sort=False,
-        states = STATES)
+        states=STATES)
     loc_verbal = fields.Selection([
         ('1', 'Makes no sounds'),
         ('2', 'Incomprehensible sounds'),
@@ -5010,7 +5009,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         ('4', 'Confused, disoriented'),
         ('5', 'Oriented, converses normally'),
         ], 'Glasgow - Verbal', sort=False,
-        states = STATES)
+        states=STATES)
     loc_motor = fields.Selection([
         ('1', 'Makes no movement'),
         ('2', 'Extension to painful stimuli - decerebrate response -'),
@@ -5019,19 +5018,19 @@ class PatientEvaluation(ModelSQL, ModelView):
         ('5', 'Localizes painful stimuli'),
         ('6', 'Obeys commands'),
         ], 'Glasgow - Motor', sort=False,
-        states = STATES)
+        states=STATES)
 
     tremor = fields.Boolean(
         'Tremor',
         help='If associated  to a disease, please encode it on the patient'
         ' disease history',
-        states = STATES)
+        states=STATES)
 
     violent = fields.Boolean(
         'Violent Behaviour',
         help='Check this box if the patient is aggressive or violent at the'
         ' moment',
-        states = STATES)
+        states=STATES)
 
     mood = fields.Selection([
         (None, ''),
@@ -5044,115 +5043,113 @@ class PatientEvaluation(ModelSQL, ModelView):
         ('e', 'Euphoria'),
         ('fl', 'Flat'),
         ], 'Mood', sort=False,
-        states = STATES)
+        states=STATES)
 
     orientation = fields.Boolean(
         'Orientation',
         help='Check this box if the patient is disoriented in time and/or'
         ' space',
-        states = STATES)
+        states=STATES)
 
     memory = fields.Boolean(
         'Memory',
         help='Check this box if the patient has problems in short or long'
         ' term memory',
-        states = STATES)
+        states=STATES)
 
     knowledge_current_events = fields.Boolean(
         'Knowledge of Current Events',
         help='Check this box if the patient can not respond to public'
         ' notorious events',
-        states = STATES)
+        states=STATES)
 
     judgment = fields.Boolean(
         'Judgment',
         help='Check this box if the patient can not interpret basic scenario'
         ' solutions',
-        states = STATES)
+        states=STATES)
 
     abstraction = fields.Boolean(
         'Abstraction',
         help='Check this box if the patient presents abnormalities in'
         ' abstract reasoning',
-        states = STATES)
+        states=STATES)
 
     vocabulary = fields.Boolean(
         'Vocabulary',
         help='Check this box if the patient lacks basic intelectual capacity,'
         ' when she/he can not describe elementary objects',
-        states = STATES)
+        states=STATES)
 
     calculation_ability = fields.Boolean(
         'Calculation Ability',
         help='Check this box if the patient can not do simple arithmetic'
         ' problems',
-        states = STATES)
+        states=STATES)
 
     object_recognition = fields.Boolean(
         'Object Recognition',
         help='Check this box if the patient suffers from any sort of gnosia'
         ' disorders, such as agnosia, prosopagnosia ...',
-        states = STATES)
+        states=STATES)
 
     praxis = fields.Boolean(
         'Praxis',
         help='Check this box if the patient is unable to make voluntary'
         'movements',
-        states = STATES)
+        states=STATES)
 
     diagnosis = fields.Many2One(
         'gnuhealth.pathology', 'Main Condition',
         help='Presumptive Diagnosis. If no diagnosis can be made'
         ', encode the main sign or symptom.',
-        states = STATES)
+        states=STATES)
 
     secondary_conditions = fields.One2Many(
         'gnuhealth.secondary_condition',
         'evaluation', 'Other Conditions', help='Other '
         ' conditions found on the patient',
-        states = STATES)
+        states=STATES)
 
     diagnostic_hypothesis = fields.One2Many(
         'gnuhealth.diagnostic_hypothesis',
         'evaluation', 'Hypotheses / DDx', help='Other Diagnostic Hypotheses /'
         ' Differential Diagnosis (DDx)',
-        states = STATES)
+        states=STATES)
 
     signs_and_symptoms = fields.One2Many(
         'gnuhealth.signs_and_symptoms',
         'evaluation', 'Signs and Symptoms', help='Enter the Signs and Symptoms'
         ' for the patient in this evaluation.',
-        states = STATES)
+        states=STATES)
 
     psychological_assessment = fields.Text("Psychological Assessment",
-        states = STATES)
+                                           states=STATES)
 
     info_diagnosis = fields.Text('Presumptive Diagnosis: Extra Info',
-        states = STATES)
-    directions = fields.Text('Plan',
-        states = STATES)
+                                 states=STATES)
+    directions = fields.Text('Plan', states=STATES)
 
     actions = fields.One2Many(
         'gnuhealth.directions', 'name', 'Procedures',
         help='Procedures / Actions to take',
-        states = STATES)
+        states=STATES)
 
-    notes = fields.Text('Notes',
-        states = STATES)
+    notes = fields.Text('Notes', states=STATES)
 
     discharge_reason = fields.Selection([
         (None, ''),
-        ('home','Home / Selfcare'),
-        ('transfer','Transferred to another institution'),
-        ('against_advice','Left against medical advice'),
-        ('death','Death')],
+        ('home', 'Home / Selfcare'),
+        ('transfer', 'Transferred to another institution'),
+        ('against_advice', 'Left against medical advice'),
+        ('death', 'Death')],
         'Discharge Reason', required=True, sort=False,
         states={'invisible': Equal(Eval('state'), 'in_progress'),
-            'readonly': Eval('state') == 'signed'},
+                'readonly': Eval('state') == 'signed'},
         help="Reason for patient discharge")
 
     institution = fields.Many2One('gnuhealth.institution', 'Institution',
-        states = STATES)
+                                  states=STATES)
 
     report_evaluation_date = fields.Function(fields.Date(
         'Evaluation Date'), 'get_report_evaluation_date')
@@ -5161,7 +5158,8 @@ class PatientEvaluation(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        health_inst = HealthInstitution()
+        return health_inst.get_institution()
 
     @staticmethod
     def default_discharge_reason():
@@ -5195,16 +5193,17 @@ class PatientEvaluation(ModelSQL, ModelView):
                 raise EvaluationEndBeforeStart(gettext(
                     'health.msg_end_evaluation_time_before_start',
                     evaluation_start=Lang.strftime(
-                            self.evaluation_start, language.code, language.date),
+                            self.evaluation_start, language.code,
+                            language.date),
                     evaluation_endtime=Lang.strftime(
-                            self.evaluation_endtime, language.code, language.date),
+                            self.evaluation_endtime, language.code,
+                            language.date),
                         )
                     )
 
     def check_health_professional(self):
         if not self.healthprof:
             self.raise_user_error('health_professional_warning')
-
 
     @staticmethod
     def default_healthprof():
@@ -5240,34 +5239,32 @@ class PatientEvaluation(ModelSQL, ModelView):
     def on_change_with_bmi(self):
         if self.height and self.weight:
             if (self.height > 0):
-                return round(self.weight / ((self.height / 100) ** 2),2)
+                return round(self.weight / ((self.height / 100) ** 2), 2)
             return 0
 
     @fields.depends('weight', 'height', 'bmi')
     def on_change_bmi(self):
         if self.height and self.weight:
             if (self.height > 0):
-                self.bmi = round(self.weight / ((self.height / 100) ** 2),2)
+                self.bmi = round(self.weight / ((self.height / 100) ** 2), 2)
         elif (self.height and not self.weight):
-            self.weight = round((((self.height / 100) ** 2) * self.bmi),2)
+            self.weight = round((((self.height / 100) ** 2) * self.bmi), 2)
 
         elif (self.weight and not self.height):
-            self.height = round(((self.weight / self.bmi)**(0.5)*100),2)
+            self.height = round(((self.weight / self.bmi)**(0.5)*100), 2)
 
     @fields.depends('loc_verbal', 'loc_motor', 'loc_eyes')
     def on_change_with_loc(self):
         return int(self.loc_motor) + int(self.loc_eyes) + int(self.loc_verbal)
 
-
     # Show the gender and age upon entering the patient
     # These two are function fields (don't exist at DB level)
     @fields.depends('patient')
     def on_change_patient(self):
-        gender=None
-        age=''
+        gender = None
+        age = ''
         self.gender = self.patient.gender
         self.computed_age = self.patient.age
-
 
     @staticmethod
     def default_information_source():
@@ -5288,7 +5285,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         hip = self.hip
         if waist and hip:
             if (hip > 0):
-                whr = round((waist / hip),2)
+                whr = round((waist / hip), 2)
             else:
                 whr = 0
             return whr
@@ -5307,7 +5304,8 @@ class PatientEvaluation(ModelSQL, ModelView):
                 timezone = pytz.timezone(company.timezone)
 
         dt = self.evaluation_start
-        return datetime.astimezone(dt.replace(tzinfo=pytz.utc), timezone).date()
+        return datetime.astimezone(
+            dt.replace(tzinfo=pytz.utc), timezone).date()
 
     def get_report_evaluation_time(self, name):
         Company = Pool().get('company.company')
@@ -5320,7 +5318,8 @@ class PatientEvaluation(ModelSQL, ModelView):
                 timezone = pytz.timezone(company.timezone)
 
         dt = self.evaluation_start
-        return datetime.astimezone(dt.replace(tzinfo=pytz.utc), timezone).time()
+        return datetime.astimezone(
+            dt.replace(tzinfo=pytz.utc), timezone).time()
 
     @classmethod
     def __setup__(cls):
@@ -5328,7 +5327,7 @@ class PatientEvaluation(ModelSQL, ModelView):
 
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code_unique', Unique(t,t.code),
+            ('code_unique', Unique(t, t.code),
                 'The evaluation code must be unique !'),
             ]
 
@@ -5336,7 +5335,7 @@ class PatientEvaluation(ModelSQL, ModelView):
 
         cls._buttons.update({
             'end_evaluation': {'invisible': Or(Equal(Eval('state'), 'signed'),
-                Equal(Eval('state'), 'done'))}
+                                               Equal(Eval('state'), 'done'))}
             })
 
     @classmethod
@@ -5353,9 +5352,7 @@ class PatientEvaluation(ModelSQL, ModelView):
 
         return super(PatientEvaluation, cls).create(vlist)
 
-
     # End the evaluation and discharge the patient
-
     @classmethod
     @ModelView.button
     def end_evaluation(cls, evaluations):
@@ -5365,10 +5362,9 @@ class PatientEvaluation(ModelSQL, ModelView):
 
         evaluation_id = evaluations[0]
 
-        patient_app=[]
+        patient_app = []
 
         # Change the state of the evaluation to "Done"
-
         signing_hp = HealthProfessional.get_health_professional()
 
         cls.write(evaluations, {
@@ -5391,7 +5387,7 @@ class PatientEvaluation(ModelSQL, ModelView):
         # discharging the patient
         # The patient needs to have a federation account
         if (evaluation_id.patient.name.federation_account):
-            cls.create_evaluation_pol (evaluation_id)
+            cls.create_evaluation_pol(evaluation_id)
 
     @classmethod
     def create_evaluation_pol(cls, evaluation):
@@ -5405,43 +5401,43 @@ class PatientEvaluation(ModelSQL, ModelView):
         measurements = {}
         bp = {}
         if evaluation.systolic:
-            bp['systolic']= evaluation.systolic
+            bp['systolic'] = evaluation.systolic
         if evaluation.diastolic:
-            bp['diastolic']= evaluation.diastolic
+            bp['diastolic'] = evaluation.diastolic
 
         if bp:
-            measurements['bp']=bp
+            measurements['bp'] = bp
         if evaluation.temperature:
-            measurements['t']=evaluation.temperature
+            measurements['t'] = evaluation.temperature
         if evaluation.bpm:
-            measurements['hr']=evaluation.bpm
+            measurements['hr'] = evaluation.bpm
         if evaluation.respiratory_rate:
-            measurements['rr']=evaluation.respiratory_rate
+            measurements['rr'] = evaluation.respiratory_rate
         if evaluation.osat:
-            measurements['osat']=evaluation.osat
+            measurements['osat'] = evaluation.osat
         if evaluation.glycemia:
-            measurements['bg']=evaluation.glycemia
+            measurements['bg'] = evaluation.glycemia
         if evaluation.weight:
-            measurements['wt']=evaluation.weight
+            measurements['wt'] = evaluation.weight
         if evaluation.height:
-            measurements['ht']=evaluation.height
+            measurements['ht'] = evaluation.height
         if evaluation.bmi:
-            measurements['bmi']=evaluation.bmi
+            measurements['bmi'] = evaluation.bmi
         if evaluation.head_circumference:
-            measurements['hc']=evaluation.head_circumference
+            measurements['hc'] = evaluation.head_circumference
 
         assessment = (evaluation.diagnosis and
-            evaluation.diagnosis.rec_name) or ''
+                      evaluation.diagnosis.rec_name) or ''
 
         measures = str(measurements)
         # Summarize the encounter note taking as SOAP
         soap = \
-            "S: " + evaluation.chief_complaint + "\n--\n" + \
-                    evaluation.present_illness +"\n" + \
-            "O: " + evaluation.evaluation_summary + "\n" + \
-                    measures + "\n" + \
-            "A: " + assessment + "\n" + \
-            "P: " + evaluation.directions
+            f"S: {evaluation.chief_complaint}\n--\n"
+        f"{evaluation.present_illness}\n"
+        f"O: {evaluation.evaluation_summary}\n"
+        f"        {measures}\n"
+        f"A: {assessment}\n"
+        f"P: {evaluation.directions}"
 
         vals = {
             'page': str(uuid4()),
@@ -5449,9 +5445,9 @@ class PatientEvaluation(ModelSQL, ModelView):
             'page_date': evaluation.evaluation_start,
             'age': evaluation.computed_age,
             'federation_account': evaluation.patient.name.federation_account,
-            'page_type':'medical',
-            'medical_context':'encounter',
-            'relevance':'important',
+            'page_type': 'medical',
+            'medical_context': 'encounter',
+            'relevance': 'important',
             'summary': evaluation.chief_complaint,
             'info': soap,
             'measurements': measures,
@@ -5474,9 +5470,10 @@ class PatientEvaluation(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('patient',) + tuple(clause[1:]),
-            ('code',) + tuple(clause[1:]),
-            ]
+                ('patient',) + tuple(clause[1:]),
+                ('code',) + tuple(clause[1:]),
+                ]
+
 
 # PATIENT EVALUATION DIRECTIONS
 class Directions(ModelSQL, ModelView):
@@ -5540,13 +5537,14 @@ class SignsAndSymptoms(ModelSQL, ModelView):
 
     comments = fields.Char('Comments')
 
+
 # ECG
 class PatientECG(ModelSQL, ModelView):
     'Patient ECG'
     __name__ = 'gnuhealth.patient.ecg'
 
     name = fields.Many2One('gnuhealth.patient',
-        'Patient', required=True)
+                           'Patient', required=True)
 
     ecg_date = fields.DateTime('Date', required=True)
     lead = fields.Selection([
@@ -5591,7 +5589,7 @@ class PatientECG(ModelSQL, ModelView):
 
     pr = fields.Integer('PR', help="Duration of PR interval in milliseconds")
     qrs = fields.Integer('QRS',
-        help="Duration of QRS interval in milliseconds")
+                         help="Duration of QRS interval in milliseconds")
     qt = fields.Integer('QT', help="Duration of QT interval in milliseconds")
     st_segment = fields.Selection([
         (None, ''),
@@ -5645,7 +5643,6 @@ class PatientECG(ModelSQL, ModelView):
             res = str(self.interpretation) + ' // Rate ' + str(self.rate)
         return res
 
-
     @classmethod
     def __setup__(cls):
         super(PatientECG, cls).__setup__()
@@ -5658,8 +5655,9 @@ class PatientECG(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('name',) + tuple(clause[1:]),
-            ]
+                ('name',) + tuple(clause[1:]),
+                ]
+
 
 class ProductTemplate(ModelSQL, ModelView):
     __name__ = 'product.template'
@@ -5670,6 +5668,7 @@ class ProductTemplate(ModelSQL, ModelView):
     @classmethod
     def check_xml_record(cls, records, values):
         return True
+
 
 class Commands(ModelSQL, ModelView):
     'GNU Health Commands'
@@ -5682,13 +5681,14 @@ class Commands(ModelSQL, ModelView):
     domain = fields.Char('Domain')
     description = fields.Char("Description")
 
+    @staticmethod
     def sysinfo():
         # Get Server side information
         info = ''
         os_header = "\n-- Operating System / Distribution --\n"
         uname = platform.uname()
         pversion = "Python version: " + str(platform.python_version()) + "\n\n"
-        #Get OS version.
+        # Get OS version.
         if (os.path.isfile('/etc/os-release')):
             os_version = open('/etc/os-release').read()
         # Get relevant environment variables
@@ -5696,11 +5696,12 @@ class Commands(ModelSQL, ModelView):
         gnuhealth_version = "GNU Health Server version: " + \
             os.environ['GNUHEALTH_VERSION'] + "\n"
 
-        tryton_version = "Tryton server: " + os.environ['TRYTON_VERSION'] + "\n"
+        tryton_version = f"Tryton server: {os.environ['TRYTON_VERSION']}\n"
 
-        info = info + gnuhealth_version + tryton_version + gnuhealth_os_user + \
-            pversion + \
-            os_header + os_version + "Platform / Kernel Info: " + str(uname) + '\n'
+        info = \
+            f"{info} {gnuhealth_version} {tryton_version} {gnuhealth_os_user}"
+        f" {pversion} {os_header} {os_version}\n"
+        f"Platform / Kernel Info: {str(uname)}\n"
 
         return info
 
@@ -5710,6 +5711,7 @@ class Commands(ModelSQL, ModelView):
         cls.__rpc__.update({
                 'sysinfo': RPC(check_access=False),
                 })
+
 
 class Modules(ModelSQL, ModelView):
     __name__ = 'ir.module'
