@@ -53,6 +53,8 @@ from trytond.backend import name as backend_name
 from trytond.tools.multivalue import migrate_property
 from trytond.rpc import RPC
 from trytond.i18n import gettext
+from trytond.pyson import Id
+
 
 from .exceptions import (
     WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart,
@@ -2996,19 +2998,24 @@ class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
 
     patient_sequence = fields.Many2One(
         'ir.sequence', 'Patient Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.patient')])
+        domain=[('sequence_type', '=', Id
+                 ('patient', 'seq_type_gnuhealth_patient'))])
 
     patient_evaluation_sequence = fields.Many2One(
         'ir.sequence', 'Patient Evaluation Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.patient.evaluation')])
+        domain=[('sequence_type', '=', Id
+                 ('patient_evaluation',
+                  'seq_type_gnuhealth_patient_evaluation'))])
 
     appointment_sequence = fields.Many2One(
         'ir.sequence', 'Appointment Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.appointment')])
+        domain=[('sequence_type', '=', Id
+                 ('appointment', 'seq_type_gnuhealth_appointment'))])
 
     prescription_sequence = fields.Many2One(
         'ir.sequence', 'Prescription Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.prescription.order')])
+        domain=[('sequence_type', '=', Id
+                 ('prescription', 'seq_type_gnuhealth_prescription'))])
 
     @classmethod
     def __register__(cls, module_name):
