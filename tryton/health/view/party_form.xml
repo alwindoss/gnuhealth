@@ -75,16 +75,16 @@
             </group>
         </page>
     </xpath>
-    <xpath expr="/form/field[@name=&quot;name&quot;]" position="after">
+    <xpath expr="/form/group/field[@name=&quot;name&quot;]" position="after">
         <label name="lastname"/>
         <field name="lastname"/>
     </xpath>
     
     <!-- Use the SSN field in the place of the party code -->
-    <xpath expr="/form/label[@name=&quot;code&quot;]" position="replace">
+    <xpath expr="/form/group/label[@name=&quot;code&quot;]" position="replace">
         <label name="ref"/>
     </xpath>
-    <xpath expr="/form/field[@name=&quot;code&quot;]" position="replace">
+    <xpath expr="/form/group/field[@name=&quot;code&quot;]" position="replace">
         <field name="ref"/>
     </xpath>
 
