@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-12 13:47+0000\n"
+"PO-Revision-Date: 2021-08-13 15:33+0000\n"
 "Last-Translator: George Kiria <ggkiria@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/gnu-health/"
 "health/ka/>\n"
@@ -9242,7 +9242,7 @@ msgstr "სტომატოლოგია"
 
 msgctxt "model:gnuhealth.specialty,name:52"
 msgid "Surgical oncology"
-msgstr ""
+msgstr "ქირურგიული ონკოლოგია"
 
 msgctxt "model:gnuhealth.specialty,name:53"
 msgid "Thoracic surgery"
@@ -9250,31 +9250,31 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:54"
 msgid "Toxicology"
-msgstr ""
+msgstr "ტოქსიკოლოგია"
 
 msgctxt "model:gnuhealth.specialty,name:55"
 msgid "Transplant surgery"
-msgstr ""
+msgstr "გადანერგვის ოპერაცია"
 
 msgctxt "model:gnuhealth.specialty,name:56"
 msgid "Trauma surgery"
-msgstr ""
+msgstr "ტრავმის ოპერაცია"
 
 msgctxt "model:gnuhealth.specialty,name:57"
 msgid "Urgent Care Medicine"
-msgstr ""
+msgstr "გადაუდებელი დახმარების მედიცინა"
 
 msgctxt "model:gnuhealth.specialty,name:58"
 msgid "Urology"
-msgstr ""
+msgstr "უროლოგია"
 
 msgctxt "model:gnuhealth.specialty,name:59"
 msgid "Vascular surgery"
-msgstr ""
+msgstr "სისხლძარღვთა ქირურგია"
 
 msgctxt "model:gnuhealth.specialty,name:6"
 msgid "Biochemistry"
-msgstr ""
+msgstr "ბიოქიმია"
 
 msgctxt "model:gnuhealth.specialty,name:60"
 msgid "General Practitioner"
@@ -9282,7 +9282,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:61"
 msgid "Internal Medicine"
-msgstr ""
+msgstr "შინაგანი მედიცინა"
 
 msgctxt "model:gnuhealth.specialty,name:62"
 msgid "Speech Therapy / Phonoaudiology"
@@ -9290,7 +9290,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:63"
 msgid "Psychology"
-msgstr ""
+msgstr "ფსიქოლოგია"
 
 msgctxt "model:gnuhealth.specialty,name:64"
 msgid "Pain Medicine"
@@ -9314,55 +9314,55 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:7"
 msgid "Cardiology"
-msgstr ""
+msgstr "კარდიოლოგია"
 
 msgctxt "model:gnuhealth.specialty,name:70"
 msgid "Primary Care"
-msgstr ""
+msgstr "პირველადი მოვლა"
 
 msgctxt "model:gnuhealth.specialty,name:71"
 msgid "Family Planning (Primary Care)"
-msgstr ""
+msgstr "ოჯახის დაგეგმვა (პირველადი მოვლა)"
 
 msgctxt "model:gnuhealth.specialty,name:72"
 msgid "Social Services"
-msgstr ""
+msgstr "სოციალური სერვისები"
 
 msgctxt "model:gnuhealth.specialty,name:73"
 msgid "Oral Medicine (Primary Care)"
-msgstr ""
+msgstr "ორალური მედიცინა (პირველადი მოვლა)"
 
 msgctxt "model:gnuhealth.specialty,name:74"
 msgid "Child Health (Primary Care)"
-msgstr ""
+msgstr "ბავშვთა ჯანმრთელობა (პირველადი მოვლა)"
 
 msgctxt "model:gnuhealth.specialty,name:75"
 msgid "Woman Health (Primary Care)"
-msgstr ""
+msgstr "ქალის ჯანმრთელობა (პირველადი მოვლა)"
 
 msgctxt "model:gnuhealth.specialty,name:8"
 msgid "Cardiovascular surgery"
-msgstr ""
+msgstr "გულ -სისხლძარღვთა ქირურგია"
 
 msgctxt "model:gnuhealth.specialty,name:9"
 msgid "Clinical laboratory sciences"
-msgstr ""
+msgstr "კლინიკური ლაბორატორიული მეცნიერებები"
 
 msgctxt "model:gnuhealth.vaccination,name:"
 msgid "Patient Vaccination information"
-msgstr ""
+msgstr "ინფორმაცია პაციენტის ვაქცინაციის შესახებ"
 
 msgctxt "model:ir.action,name:act_app_evaluation"
 msgid "Patient Evaluation"
-msgstr ""
+msgstr "პაციენტის შეფასება"
 
 msgctxt "model:ir.action,name:act_appointment_form1"
 msgid "Appointments"
-msgstr ""
+msgstr "დანიშვნები"
 
 msgctxt "model:ir.action,name:act_appointment_report_patient"
 msgid "Patient"
-msgstr ""
+msgstr "პაციენტი"
 
 msgctxt "model:ir.action,name:act_appointments_report_view_tree"
 msgid "Appointments with Dx Report"
@@ -9370,39 +9370,39 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_bed_view"
 msgid "Beds"
-msgstr ""
+msgstr "საწოლები"
 
 msgctxt "model:ir.action,name:act_birth_cert_form"
 msgid "Birth certificates"
-msgstr ""
+msgstr "დაბადების მოწმობები"
 
 msgctxt "model:ir.action,name:act_birth_cert_form1"
 msgid "Birth Certificate"
-msgstr ""
+msgstr "დაბადების მოწმობა"
 
 msgctxt "model:ir.action,name:act_building_view"
 msgid "Buildings"
-msgstr ""
+msgstr "შენობები"
 
 msgctxt "model:ir.action,name:act_check_immunization_status"
 msgid "Immunization Status Report"
-msgstr ""
+msgstr "იმუნიზაციის სტატუსის ანგარიში"
 
 msgctxt "model:ir.action,name:act_condition_form1"
 msgid "Conditions"
-msgstr ""
+msgstr "პირობები"
 
 msgctxt "model:ir.action,name:act_create_patient_evaluation"
 msgid "Create Patient Evaluation"
-msgstr ""
+msgstr "შექმენით პაციენტის შეფასება"
 
 msgctxt "model:ir.action,name:act_death_cert_form"
 msgid "Death certificates"
-msgstr ""
+msgstr "გარდაცვალების მოწმობები"
 
 msgctxt "model:ir.action,name:act_death_cert_form1"
 msgid "Death Certificate"
-msgstr ""
+msgstr "გარდაცვალების მოწმობა"
 
 msgctxt "model:ir.action,name:act_ecg_view"
 msgid "ECGs"
@@ -9410,19 +9410,19 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_evaluation_form1"
 msgid "Evaluations"
-msgstr ""
+msgstr "შეფასებები"
 
 msgctxt "model:ir.action,name:act_medicament_by_category"
 msgid "Medicament by Category"
-msgstr ""
+msgstr "მედიკამენტები კატეგორიის მიხედვით"
 
 msgctxt "model:ir.action,name:act_or_view"
 msgid "Operating Rooms"
-msgstr ""
+msgstr "საოპერაციო ოთახები"
 
 msgctxt "model:ir.action,name:act_people_form"
 msgid "People"
-msgstr ""
+msgstr "ხალხი"
 
 msgctxt "model:ir.action,name:act_prescription_form1"
 msgid "Prescriptions"
@@ -9430,19 +9430,19 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_unit_view"
 msgid "Units"
-msgstr ""
+msgstr "ერთეულები"
 
 msgctxt "model:ir.action,name:act_vaccination_form1"
 msgid "Vaccinations"
-msgstr ""
+msgstr "ვაქცინაცია"
 
 msgctxt "model:ir.action,name:act_ward_view"
 msgid "Wards"
-msgstr ""
+msgstr "პალატები"
 
 msgctxt "model:ir.action,name:action_gnuhealth_appointment_view"
 msgid "Appointments"
-msgstr ""
+msgstr "დანიშვნები"
 
 msgctxt "model:ir.action,name:action_gnuhealth_command_view"
 msgid "GNU Health Commands"
@@ -9450,59 +9450,59 @@ msgstr ""
 
 msgctxt "model:ir.action,name:action_gnuhealth_hospital_bed_view"
 msgid "Beds"
-msgstr ""
+msgstr "საწოლები"
 
 msgctxt "model:ir.action,name:action_gnuhealth_hospital_building_view"
 msgid "Buildings"
-msgstr ""
+msgstr "შენობები"
 
 msgctxt "model:ir.action,name:action_gnuhealth_hospital_or_view"
 msgid "Operating Rooms"
-msgstr ""
+msgstr "საოპერაციო ოთახები"
 
 msgctxt "model:ir.action,name:action_gnuhealth_hospital_unit_view"
 msgid "Units"
-msgstr ""
+msgstr "ერთეულები"
 
 msgctxt "model:ir.action,name:action_gnuhealth_hospital_ward_view"
 msgid "Wards"
-msgstr ""
+msgstr "პალატები"
 
 msgctxt "model:ir.action,name:action_gnuhealth_institution"
 msgid "Institutions"
-msgstr ""
+msgstr "ინსტიტუცია"
 
 msgctxt "model:ir.action,name:action_gnuhealth_institution_operationalsector"
 msgid "Operational sectors by institution"
-msgstr ""
+msgstr "ოპერატიული სექტორები დაწესებულებების მიხედვით"
 
 msgctxt "model:ir.action,name:action_gnuhealth_institution_specialties"
 msgid "Specialties by institution"
-msgstr ""
+msgstr "სპეციალობები დაწესებულების მიხედვით"
 
 msgctxt "model:ir.action,name:action_gnuhealth_medicament_category_tree"
 msgid "Medicament categories"
-msgstr ""
+msgstr "მედიკამენტების კატეგორიები"
 
 msgctxt "model:ir.action,name:action_gnuhealth_pathology_category_tree"
 msgid "Disease categories"
-msgstr ""
+msgstr "დაავადების კატეგორიები"
 
 msgctxt "model:ir.action,name:action_gnuhealth_patient_evaluation_view"
 msgid "Patient Evaluations [readonly]"
-msgstr ""
+msgstr "პაციენტის შეფასება [მხოლოდ წაკითხვისთვის]"
 
 msgctxt "model:ir.action,name:action_gnuhealth_patient_view"
 msgid "Patients"
-msgstr ""
+msgstr "პაციენტები"
 
 msgctxt "model:ir.action,name:action_gnuhealth_prescription_view"
 msgid "Prescriptions"
-msgstr ""
+msgstr "დანიშნულება"
 
 msgctxt "model:ir.action,name:action_gnuhealth_procedure_view"
 msgid "Procedures"
-msgstr ""
+msgstr "პროცედურები"
 
 msgctxt "model:ir.action,name:appointments_report_open"
 msgid "Appointments with Dx Report"
@@ -9510,19 +9510,19 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_dosage"
 msgid "Medication Frequencies"
-msgstr ""
+msgstr "მედიკამენტების სიხშირე"
 
 msgctxt "model:ir.action,name:gnuhealth_action_dose"
 msgid "Drug Dose Units"
-msgstr ""
+msgstr "წამლის დოზის ერთეული"
 
 msgctxt "model:ir.action,name:gnuhealth_action_drug_form"
 msgid "Drug Forms"
-msgstr ""
+msgstr "წამლის ფორმა"
 
 msgctxt "model:ir.action,name:gnuhealth_action_drug_route"
 msgid "Drug Administration Routes"
-msgstr ""
+msgstr "წამლის ადმინისტრაციის მარშრუტი"
 
 msgctxt "model:ir.action,name:gnuhealth_action_du"
 msgid "Domiciliary Units"
@@ -9530,27 +9530,27 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_ethnicity"
 msgid "Ethnicities"
-msgstr ""
+msgstr "ეთნიკურობები"
 
 msgctxt "model:ir.action,name:gnuhealth_action_family"
 msgid "Families"
-msgstr ""
+msgstr "ოჯახები"
 
 msgctxt "model:ir.action,name:gnuhealth_action_family_member"
 msgid "Family Members"
-msgstr ""
+msgstr "ოჯახის წევრი"
 
 msgctxt "model:ir.action,name:gnuhealth_action_federation_country_config"
 msgid "Federation Country Configuration"
-msgstr ""
+msgstr "ფედერაციის ქვეყნის კონფიგურაცია"
 
 msgctxt "model:ir.action,name:gnuhealth_action_form_pathology"
 msgid "Conditions"
-msgstr ""
+msgstr "პირობები"
 
 msgctxt "model:ir.action,name:gnuhealth_action_healthprofessional"
 msgid "Health Professionals"
-msgstr ""
+msgstr "ჯანდაცვის პროფესიონალები"
 
 msgctxt "model:ir.action,name:gnuhealth_action_hp_specialty"
 msgid "Specialties by health professionals"
@@ -9558,23 +9558,23 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_immunization_schedule"
 msgid "Immunization Schedule"
-msgstr ""
+msgstr "იმუნიზაციის გრაფიკი"
 
 msgctxt "model:ir.action,name:gnuhealth_action_immunization_schedule_dose"
 msgid "Vaccine Doses"
-msgstr ""
+msgstr "ვაქცინის დოზები"
 
 msgctxt "model:ir.action,name:gnuhealth_action_immunization_schedule_line"
 msgid "Schedule Vaccines"
-msgstr ""
+msgstr "დაგეგმეთ ვაქცინები"
 
 msgctxt "model:ir.action,name:gnuhealth_action_insurance"
 msgid "Insurances"
-msgstr ""
+msgstr "დაზღვევები"
 
 msgctxt "model:ir.action,name:gnuhealth_action_insurance_company"
 msgid "Insurance Company"
-msgstr ""
+msgstr "სადაზღვევო კომპანია"
 
 msgctxt "model:ir.action,name:gnuhealth_action_occupation"
 msgid "Occupations"
@@ -9582,15 +9582,15 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_operational_area"
 msgid "Operational Areas"
-msgstr ""
+msgstr "ოპერაციული არეები"
 
 msgctxt "model:ir.action,name:gnuhealth_action_operational_sector"
 msgid "Operational Sectors"
-msgstr ""
+msgstr "ოპერატიული სექტორი"
 
 msgctxt "model:ir.action,name:gnuhealth_action_pathology_group"
 msgid "Pathology Groups"
-msgstr ""
+msgstr "პათოლოგიის ჯგუფები"
 
 msgctxt "model:ir.action,name:gnuhealth_action_pol"
 msgid "Pages of life"
@@ -9598,23 +9598,23 @@ msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_specialty"
 msgid "Medical Specialties"
-msgstr ""
+msgstr "სამედიცინო სპეციალობები"
 
 msgctxt "model:ir.action,name:gnuhealth_action_view_medicament"
 msgid "Medicaments"
-msgstr ""
+msgstr "მედიკამენტი"
 
 msgctxt "model:ir.action,name:report_appointment_receipt"
 msgid "Appointment Receipt"
-msgstr ""
+msgstr "დანიშვნის ქვითარი"
 
 msgctxt "model:ir.action,name:report_immunization_status"
 msgid "Immunization Status Report"
-msgstr ""
+msgstr "იმუნიზაციის სტატუსის ანგარიში"
 
 msgctxt "model:ir.action,name:report_patient_card"
 msgid "ID Cards"
-msgstr ""
+msgstr "პირადობის მოწმობები"
 
 msgctxt "model:ir.action,name:report_patient_disease"
 msgid "Health Conditions"
@@ -9622,7 +9622,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:report_patient_evaluation"
 msgid "Patient Evaluation Summary"
-msgstr ""
+msgstr "პაციენტის შეფასების შეჯამება"
 
 msgctxt "model:ir.action,name:report_patient_medication"
 msgid "Medications"
@@ -9630,64 +9630,64 @@ msgstr ""
 
 msgctxt "model:ir.action,name:report_patient_vaccination"
 msgid "Vaccinations"
-msgstr ""
+msgstr "ვაქცინაცია"
 
 msgctxt "model:ir.action,name:report_prescription_order"
 msgid "Prescription"
-msgstr ""
+msgstr "დანიშნულება"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_gnuhealth_appointment_domain_all"
 msgid "All"
-msgstr ""
+msgstr "ყველა"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_gnuhealth_appointment_domain_checkedin"
 msgid "Checked in"
-msgstr ""
+msgstr "შემოწმებულია"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_gnuhealth_appointment_domain_confirmed"
 msgid "Confirmed"
-msgstr ""
+msgstr "დადასტურდა"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_gnuhealth_appointment_domain_free"
 msgid "Free"
-msgstr ""
+msgstr "უფასო"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_gnuhealth_appointment_domain_noshow"
 msgid "No Shows"
-msgstr ""
+msgstr "გადაცემები არ არის"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_appointment"
 msgid "Appointment"
-msgstr ""
+msgstr "დანიშვნა"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_patient"
 msgid "Patient"
-msgstr ""
+msgstr "პაციენტი"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_patient_evaluation"
 msgid "Patient Evaluation"
-msgstr ""
+msgstr "პაციენტის შეფასება"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_prescription"
 msgid "Prescription"
-msgstr ""
+msgstr "დანიშნულება"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_appointment"
 msgid "Appointment"
-msgstr ""
+msgstr "დანიშვნა"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_patient"
 msgid "Patient"
-msgstr ""
+msgstr "პაციენტი"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_patient_evaluation"
 msgid "Patient Evaluation"
-msgstr ""
+msgstr "პაციენტის შეფასება"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_prescription"
 msgid "Prescription"
