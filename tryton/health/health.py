@@ -41,8 +41,8 @@ from uuid import uuid4
 from sql import Literal, Join, Table, Null
 from sql.functions import Overlay, Position
 
-from trytond.model import ModelView, ModelSingleton, ModelSQL, \
-    ValueMixin, fields, Unique, tree
+from trytond.model import (ModelView, ModelSingleton, ModelSQL,
+                           ValueMixin, MultiValueMixin, fields, Unique, tree)
 from trytond.wizard import Wizard, StateAction, StateView, Button
 from trytond.transaction import Transaction
 from trytond import backend
@@ -55,12 +55,13 @@ from trytond.rpc import RPC
 from trytond.i18n import gettext
 from trytond.pyson import Id
 
-
 from .exceptions import (
     WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart,
     MedEndDateBeforeStart, NextDoseBeforeFirst, DrugPregnancySafetyCheck,
     NoAssociatedHealthProfessional, EvaluationEndBeforeStart
     )
+
+from .core import get_institution, compute_age_from_dates
 
 try:
     from PIL import Image
@@ -84,7 +85,7 @@ __all__ = [
     'Pathology', 'DiseaseMembers', 'ProcedureCode',
     'BirthCertExtraInfo', 'DeathCertExtraInfo', 'DeathUnderlyingCondition',
     'InsurancePlan', 'Insurance', 'AlternativePersonID',
-    'Product', 'GnuHealthSequences', 'GnuHealthSequenceSetup', 'PatientData',
+    'Product', 'PatientData',
     'PatientDiseaseInfo', 'Appointment', 'AppointmentReport',
     'OpenAppointmentReportStart', 'OpenAppointmentReport',
     'PatientPrescriptionOrder', 'PrescriptionLine', 'PatientMedication',
@@ -92,85 +93,6 @@ __all__ = [
     'Directions', 'SecondaryCondition', 'DiagnosticHypothesis',
     'SignsAndSymptoms', 'PatientECG', 'ProductTemplate', 'PageOfLife',
     'Commands', 'Modules']
-
-
-sequences = ['patient_sequence', 'patient_evaluation_sequence',
-             'appointment_sequence', 'prescription_sequence']
-
-
-def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
-    """ Get the person's age.
-
-    Calculate the current age of the patient or age at time of death.
-
-    Returns:
-    If caller == 'age': str in Y-M-D,
-       caller == 'childbearing_age': boolean,
-       caller == 'raw_age': [Y, M, D]
-
-    """
-    today = datetime.today().date()
-
-    if dob:
-        start = datetime.strptime(str(dob), '%Y-%m-%d')
-        end = datetime.strptime(str(today), '%Y-%m-%d')
-
-        if extra_date:
-            end = datetime.strptime(str(extra_date), '%Y-%m-%d')
-
-        if deceased and dod:
-            end = datetime.strptime(
-                        str(dod), '%Y-%m-%d %H:%M:%S')
-
-        rdelta = relativedelta(end, start)
-
-        years_months_days = str(rdelta.years) + 'y ' \
-            + str(rdelta.months) + 'm ' \
-            + str(rdelta.days) + 'd'
-
-    else:
-        return None
-
-    if caller == 'age':
-        return years_months_days
-
-    elif caller == 'childbearing_age':
-        if (rdelta.years >= 11
-           and rdelta.years <= 55 and gender == 'f'):
-            return True
-        else:
-            return False
-
-    elif caller == 'raw_age':
-        return [rdelta.years, rdelta.months, rdelta.days]
-
-    else:
-        return None
-
-# Convert dates from UTC to local timezone and viceversa
-# Datetime values are stored in UTC, so we need conversion
-#
-# TODO: For 3.8, use this method for all the reports that
-#       use datetime fields.
-
-
-def convert_date_timezone(sdate, target):
-    Company = Pool().get('company.company')
-
-    institution_timezone = None
-    company_id = Transaction().context.get('company')
-    if company_id:
-        company = Company(company_id)
-        if company.timezone:
-            institution_timezone = pytz.timezone(company.timezone)
-
-    if (target == 'utc'):
-        # Convert date to UTC timezone
-        res = institution_timezone.localize(sdate).astimezone(pytz.utc)
-    else:
-        # Convert from UTC to institution local timezone
-        res = pytz.utc.localize(sdate).astimezone(institution_timezone)
-    return res
 
 
 class DomiciliaryUnit(ModelSQL, ModelView):
@@ -1079,7 +1001,7 @@ class PageOfLife(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     @staticmethod
     def default_page():
@@ -1584,7 +1506,7 @@ class HospitalBuilding(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     @classmethod
     def __setup__(cls):
@@ -1617,7 +1539,7 @@ class HospitalUnit(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     @classmethod
     def __setup__(cls):
@@ -1667,7 +1589,7 @@ class HospitalOR(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     @staticmethod
     def default_state():
@@ -1748,7 +1670,7 @@ class HospitalWard(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     @classmethod
     def __setup__(cls):
@@ -1816,7 +1738,7 @@ class HospitalBed(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     def get_rec_name(self, name):
         if self.name:
@@ -1931,7 +1853,7 @@ class HealthProfessional(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     @classmethod
     def search_hp_puid(cls, name, clause):
@@ -2500,7 +2422,7 @@ class BirthCertExtraInfo (ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     @fields.depends('institution')
     def on_change_institution(self):
@@ -2574,7 +2496,7 @@ class DeathCertExtraInfo (ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     @staticmethod
     def default_state():
@@ -2939,131 +2861,6 @@ class Product(ModelSQL, ModelView):
     def check_xml_record(cls, records, values):
         return True
 
-
-# GNU HEALTH SEQUENCES
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, ValueMixin):
-    'Standard Sequences for GNU Health'
-    __name__ = 'gnuhealth.sequences'
-
-    patient_sequence = fields.MultiValue(fields.Many2One(
-        'ir.sequence', 'Patient Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.patient')]))
-
-    patient_evaluation_sequence = fields.MultiValue(fields.Many2One(
-        'ir.sequence', 'Patient Evaluation Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.patient.evaluation')]))
-
-    appointment_sequence = fields.MultiValue(fields.Many2One(
-        'ir.sequence', 'Appointment Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.appointment')]))
-
-    prescription_sequence = fields.MultiValue(fields.Many2One(
-        'ir.sequence', 'Prescription Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.prescription.order')]))
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-    @classmethod
-    def default_patient_sequence(cls):
-        return cls.multivalue_model(
-            'patient_sequence').default_patient_sequence()
-
-    @classmethod
-    def default_patient_evaluation_sequence(cls):
-        return cls.multivalue_model(
-            'patient_evaluation_sequence').\
-                default_patient_evaluation_sequence()
-
-    @classmethod
-    def default_appointment_sequence(cls):
-        return cls.multivalue_model(
-            'appointment_sequence').default_appointment_sequence()
-
-    @classmethod
-    def default_prescription_sequence(cls):
-        return cls.multivalue_model(
-            'prescription_sequence').default_prescription_sequence()
-
-
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    "GNU Health Sequence Setup"
-    __name__ = 'gnuhealth.sequence.setup'
-
-    patient_sequence = fields.Many2One(
-        'ir.sequence', 'Patient Sequence', required=True,
-        domain=[('sequence_type', '=', Id
-                 ('patient', 'seq_type_gnuhealth_patient'))])
-
-    patient_evaluation_sequence = fields.Many2One(
-        'ir.sequence', 'Patient Evaluation Sequence', required=True,
-        domain=[('sequence_type', '=', Id
-                 ('patient_evaluation',
-                  'seq_type_gnuhealth_patient_evaluation'))])
-
-    appointment_sequence = fields.Many2One(
-        'ir.sequence', 'Appointment Sequence', required=True,
-        domain=[('sequence_type', '=', Id
-                 ('appointment', 'seq_type_gnuhealth_appointment'))])
-
-    prescription_sequence = fields.Many2One(
-        'ir.sequence', 'Prescription Sequence', required=True,
-        domain=[('sequence_type', '=', Id
-                 ('prescription', 'seq_type_gnuhealth_prescription'))])
-
-    @classmethod
-    def __register__(cls, module_name):
-        exist = backend.TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_property([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_patient_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health', 'seq_gnuhealth_patient')
-
-    @classmethod
-    def default_patient_evaluation_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health', 'seq_gnuhealth_patient_evaluation')
-
-    @classmethod
-    def default_appointment_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health', 'seq_gnuhealth_appointment')
-
-    @classmethod
-    def default_prescription_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health', 'seq_gnuhealth_prescription')
-
-
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.PROPERTY
 
 
 # PATIENT GENERAL INFORMATION
@@ -3740,7 +3537,7 @@ class Appointment(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     @fields.depends('patient')
     def on_change_patient(self):
@@ -4730,7 +4527,7 @@ class PrescriptionLine(ModelSQL, ModelView):
         return super(PrescriptionLine, cls).create(vlist)
 
 
-class PatientEvaluation(ModelSQL, ModelView):
+class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
     'Patient Evaluation'
     __name__ = 'gnuhealth.patient.evaluation'
 
@@ -4873,18 +4670,14 @@ class PatientEvaluation(ModelSQL, ModelView):
         states=STATES)
 
     chief_complaint = fields.Char('Chief Complaint', help='Chief Complaint',
-        states=STATES)
-    notes_complaint = fields.Text('Complaint details',
-        states=STATES)
-    present_illness = fields.Text('Present Illness',
-        states=STATES)
-    evaluation_summary = fields.Text('Clinical and physical',
-        states = STATES)
+                                  states=STATES)
+    notes_complaint = fields.Text('Complaint details', states=STATES)
+    present_illness = fields.Text('Present Illness', states=STATES)
+    evaluation_summary = fields.Text('Clinical and physical', states=STATES)
 
     glycemia = fields.Float(
         'Glycemia',
-        help='Blood glucose level (mg/dL)',
-        states = STATES)
+        help='Blood glucose level (mg/dL)', states=STATES)
 
     hba1c = fields.Float(
         'HbA1c',
@@ -5158,8 +4951,8 @@ class PatientEvaluation(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        health_inst = HealthInstitution()
-        return health_inst.get_institution()
+        # health_inst = HealthInstitution()
+        return get_institution()
 
     @staticmethod
     def default_discharge_reason():
@@ -5339,16 +5132,20 @@ class PatientEvaluation(ModelSQL, ModelView):
             })
 
     @classmethod
-    def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
+    def generate_code(cls, **pattern):
         Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'patient_evaluation_sequence', **pattern)
+        if sequence:
+            return sequence.get()
 
+    @classmethod
+    def create(cls, vlist):
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('code'):
-                config = Config(1)
-                values['code'] = Sequence.get_id(
-                    config.patient_evaluation_sequence.id)
+                values['code'] = cls.generate_code()
 
         return super(PatientEvaluation, cls).create(vlist)
 
@@ -5617,7 +5414,7 @@ class PatientECG(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        return HealthInstitution().get_institution()
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
