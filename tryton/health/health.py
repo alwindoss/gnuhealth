@@ -58,10 +58,12 @@ from trytond.pyson import Id
 from .exceptions import (
     WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart,
     MedEndDateBeforeStart, NextDoseBeforeFirst, DrugPregnancySafetyCheck,
-    NoAssociatedHealthProfessional, EvaluationEndBeforeStart
+    EvaluationEndBeforeStart
     )
 
-from .core import get_institution, compute_age_from_dates
+from .core import (get_institution, compute_age_from_dates,
+                   get_health_professional)
+
 
 try:
     from PIL import Image
@@ -1796,29 +1798,6 @@ class HealthProfessional(ModelSQL, ModelView):
     'Health Professional'
     __name__ = 'gnuhealth.healthprofessional'
 
-    @classmethod
-    def get_health_professional(cls):
-        # Get the professional associated to the internal user id
-        # that logs into GNU Health
-        cursor = Transaction().connection.cursor()
-        User = Pool().get('res.user')
-        user = User(Transaction().user)
-        login_user_id = int(user.id)
-        cursor.execute('SELECT id FROM party_party WHERE is_healthprof=True \
-            AND internal_user = %s LIMIT 1', (login_user_id,))
-        partner_id = cursor.fetchone()
-        if partner_id:
-            cursor = Transaction().connection.cursor()
-            cursor.execute('SELECT id FROM gnuhealth_healthprofessional WHERE \
-                name = %s LIMIT 1', (partner_id[0],))
-            healthprof_id = cursor.fetchone()
-            if (healthprof_id):
-                return int(healthprof_id[0])
-        else:
-            raise NoAssociatedHealthProfessional(gettext(
-                ('health.msg_no_associated_health_professional'))
-            )
-
     name = fields.Many2One(
         'party.party', 'Health Professional', required=True,
         domain=[
@@ -2449,7 +2428,7 @@ class BirthCertExtraInfo (ModelSQL, ModelView):
         # Change the state of the birth certificate to "Signed"
         # and write the name of the certifying health professional
 
-        signing_hp = HealthProfessional.get_health_professional()
+        signing_hp = get_health_professional()
         if not signing_hp:
             cls.raise_user_error(
                 "No health professional associated to this user !")
@@ -2530,7 +2509,7 @@ class DeathCertExtraInfo (ModelSQL, ModelView):
 
         party = []
 
-        signing_hp = HealthProfessional.get_health_professional()
+        signing_hp = get_health_professional()
         if not signing_hp:
             cls.raise_user_error(
                 "No health professional associated to this user !")
@@ -3308,9 +3287,7 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-        return HealthProfessional.get_health_professional()
+        return get_health_professional()
 
     def get_rec_name(self, name):
         return self.pathology.rec_name
@@ -3472,30 +3449,25 @@ class Appointment(ModelSQL, ModelView):
                 ]
 
     @classmethod
-    def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
+    def generate_code(cls, **pattern):
         Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'appointment_sequence', **pattern)
+        if sequence:
+            return sequence.get()
 
+    @classmethod
+    def create(cls, vlist):
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if values['state'] == 'confirmed' and not values.get('name'):
-                config = Config(1)
-                values['name'] = Sequence.get_id(
-                    config.appointment_sequence.id)
-
+                values['name'] = cls.generate_code()
         return super(Appointment, cls).create(vlist)
 
     @classmethod
     def write(cls, appointments, values):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         for appointment in appointments:
-            if values.get('state') == 'confirmed' and not values.get('name'):
-                config = Config(1)
-                values['name'] = Sequence.get_id(
-                    config.appointment_sequence.id)
-
             # Update the checked-in time only if unset
             if values.get('state') == 'checked_in' \
                     and values.get('checked_in_date') is None:
@@ -3515,9 +3487,7 @@ class Appointment(ModelSQL, ModelView):
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-        return HealthProfessional.get_health_professional()
+        return get_health_professional()
 
     @staticmethod
     def default_urgency():
@@ -3561,25 +3531,23 @@ class Appointment(ModelSQL, ModelView):
         # It will be overwritten if the health professional is modified in
         # this view, the on_change_with will take effect.
 
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
+        # Retrieve the health professional Main specialty, if assigned
 
-        # Get Party ID associated to the Health Professional
-        hp_party_id = HealthProfessional.get_health_professional()
+        hp_party_id = get_health_professional()
 
         if hp_party_id:
             # Retrieve the health professional Main specialty, if assigned
-
-            health_professional_obj = Pool().get
-            ('gnuhealth.healthprofessional')
-
+            health_professional_obj = Pool().get(
+                'gnuhealth.healthprofessional')
             health_professional = health_professional_obj.search(
                 [('id', '=', hp_party_id)], limit=1)[0]
-
             hp_main_specialty = health_professional.main_specialty
 
             if hp_main_specialty:
                 return hp_main_specialty.specialty.id
+
+        if hp_main_specialty:
+            return hp_main_specialty.specialty.id
 
     def get_rec_name(self, name):
         return self.name
@@ -3589,9 +3557,6 @@ class AppointmentReport(ModelSQL, ModelView):
     'Appointment Report'
     __name__ = 'gnuhealth.appointment.report'
 
-    # 2.6 Remove the legacy internal identification code for the institution
-    # It's now as part of the party alternative ID (medical_record)
-    # identification_code = fields.Char('Identification Code')
     ref = fields.Char('PUID')
     patient = fields.Many2One('gnuhealth.patient', 'Patient')
     healthprof = fields.Many2One('gnuhealth.healthprofessional', 'Health Prof')
@@ -3695,9 +3660,7 @@ class OpenAppointmentReportStart(ModelView):
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-        return HealthProfessional.get_health_professional()
+        return get_health_professional()
 
 
 class OpenAppointmentReport(Wizard):
@@ -3912,15 +3875,11 @@ class PatientMedication(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf = pool.get('gnuhealth.healthprofessional')
-        return HealthProf.get_health_professional()
+        return get_health_professional()
 
     @classmethod
     def validate(cls, medications):
@@ -4036,9 +3995,7 @@ class PatientVaccination(ModelSQL, ModelView):
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf = pool.get('gnuhealth.healthprofessional')
-        return HealthProf.get_health_professional()
+        return get_health_professional()
 
     @staticmethod
     def default_state():
@@ -4070,13 +4027,7 @@ class PatientVaccination(ModelSQL, ModelView):
     def sign(cls, vaccinations):
         # Change the state of the vaccination to "Done"
         # and write the name of the signing health professional
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-
-        signing_hp = HealthProfessional.get_health_professional()
-        if not signing_hp:
-            cls.raise_user_error(
-                "No health professional associated to this user !")
+        signing_hp = get_health_professional()
 
         cls.write(vaccinations, {
             'state': 'done',
@@ -4185,7 +4136,7 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
     def default_healthprof():
         pool = Pool()
         HealthProfessional = pool.get('gnuhealth.healthprofessional')
-        return HealthProfessional.get_health_professional()
+        return get_health_professional()
 
     # Method that makes the doctor to acknowledge if there is any
     # warning in the prescription
@@ -4275,17 +4226,20 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         Pol.create(pol)
 
     @classmethod
-    def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
+    def generate_code(cls, **pattern):
         Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'prescription_sequence', **pattern)
+        if sequence:
+            return sequence.get()
 
+    @classmethod
+    def create(cls, vlist):
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('prescription_id'):
-                config = Config(1)
-                values['prescription_id'] = Sequence.get_id(
-                    config.prescription_sequence.id)
-
+                values['prescription_id'] = cls.generate_code()
         return super(PatientPrescriptionOrder, cls).create(vlist)
 
     @classmethod
@@ -5000,9 +4954,7 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-        return HealthProfessional.get_health_professional()
+        return get_health_professional()
 
     @staticmethod
     def default_loc_eyes():
@@ -5162,7 +5114,7 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
         patient_app = []
 
         # Change the state of the evaluation to "Done"
-        signing_hp = HealthProfessional.get_health_professional()
+        signing_hp = get_health_professional()
 
         cls.write(evaluations, {
             'state': 'done',
@@ -5418,9 +5370,7 @@ class PatientECG(ModelSQL, ModelView):
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-        return HealthProfessional.get_health_professional()
+        return get_health_professional()
 
     @classmethod
     def validate(cls, ecgs):

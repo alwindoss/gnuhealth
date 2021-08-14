@@ -30,6 +30,8 @@ from datetime import datetime
 from trytond.transaction import Transaction
 from trytond.pool import Pool
 
+from .exceptions import (NoAssociatedHealthProfessional)
+
 
 def convert_date_timezone(sdate, target):
     """
@@ -121,3 +123,26 @@ def get_institution():
         institution_id = cursor.fetchone()
         if (institution_id):
             return int(institution_id[0])
+
+
+def get_health_professional():
+    # Get the professional associated to the internal user id
+    # that logs into GNU Health
+    cursor = Transaction().connection.cursor()
+    User = Pool().get('res.user')
+    user = User(Transaction().user)
+    login_user_id = int(user.id)
+    cursor.execute('SELECT id FROM party_party WHERE is_healthprof=True \
+        AND internal_user = %s LIMIT 1', (login_user_id,))
+    partner_id = cursor.fetchone()
+    if partner_id:
+        cursor = Transaction().connection.cursor()
+        cursor.execute('SELECT id FROM gnuhealth_healthprofessional WHERE \
+            name = %s LIMIT 1', (partner_id[0],))
+        healthprof_id = cursor.fetchone()
+        if (healthprof_id):
+            return int(healthprof_id[0])
+    else:
+        raise NoAssociatedHealthProfessional(gettext(
+            ('health.msg_no_associated_health_professional'))
+        )
