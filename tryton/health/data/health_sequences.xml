@@ -2,6 +2,18 @@
 <tryton>
     <data skiptest="1">
 
+<!-- Sequences for Patient -->
+        <!-- Not used anymore -->
+        <record id="seq_type_gnuhealth_patient" model="ir.sequence.type">
+            <field name="name">Patient</field>
+        </record>
+        <record id="seq_gnuhealth_patient" model="ir.sequence">
+            <field name="name">Patient</field>
+            <field name="sequence_type" ref="seq_type_gnuhealth_patient"></field>
+            <field name="prefix">PAC</field>
+            <field name="padding">3</field>
+        </record>
+
 <!-- Sequences for Patient Evaluation -->
 
         <record id="seq_type_gnuhealth_patient_evaluation" model="ir.sequence.type">
@@ -41,18 +53,5 @@
             <field eval="0" name="padding"/>
         </record>
 
-        
-<!-- Sequences for Patient -->
-
-        <record id="seq_type_gnuhealth_patient" model="ir.sequence.type">
-            <field name="name">Patient</field>
-        </record>
-        <record id="seq_gnuhealth_patient" model="ir.sequence">
-            <field name="name">Patient</field>
-            <field name="sequence_type" ref="seq_type_gnuhealth_patient"></field>
-            <field name="prefix">PAC</field>
-            <field name="padding">3</field>
-        </record>
-        
     </data>
 </tryton>

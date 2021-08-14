@@ -100,7 +100,10 @@ def register():
         health.Modules,
         wizard.wizard_check_immunization_status.CheckImmunizationStatusInit,
         sequences.GnuHealthSequences,
+        sequences.PatientSequence,
         sequences.PatientEvaluationSequence,
+        sequences.AppointmentSequence,
+        sequences.PrescriptionSequence,
         module='health', type_='model')
 
     Pool.register(
