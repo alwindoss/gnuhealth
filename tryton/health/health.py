@@ -5432,23 +5432,26 @@ class Commands(ModelSQL, ModelView):
     def sysinfo():
         # Get Server side information
         info = ''
-        os_header = "\n-- Operating System / Distribution --\n"
+        os_header = f"\n-- Operating System / Distribution --\n"
         uname = platform.uname()
-        pversion = "Python version: " + str(platform.python_version()) + "\n\n"
-        # Get OS version.
-        if (os.path.isfile('/etc/os-release')):
-            os_version = open('/etc/os-release').read()
+        pversion = f"Python version: {str(platform.python_version())}\n"
+        # Get OS version and related info.
+        os_info = ''
+        with open('/etc/os-release') as f:
+            os_release = f.readlines()
+            for line in os_release:
+                os_info = os_info + str(line)
         # Get relevant environment variables
-        gnuhealth_os_user = "GNU Health user: " + os.environ['USER'] + "\n"
-        gnuhealth_version = "GNU Health Server version: " + \
-            os.environ['GNUHEALTH_VERSION'] + "\n"
+        gnuhealth_os_user = f"GNU Health user: {os.environ['USER']}\n"
+        gnuhealth_version = f"GNU Health Server version:" \
+                            f"{os.environ['GNUHEALTH_VERSION']}\n"
 
         tryton_version = f"Tryton server: {os.environ['TRYTON_VERSION']}\n"
 
-        info = \
-            f"{info} {gnuhealth_version} {tryton_version} {gnuhealth_os_user}"
-        f" {pversion} {os_header} {os_version}\n"
-        f"Platform / Kernel Info: {str(uname)}\n"
+        info = f"{info} {gnuhealth_version} {tryton_version}" \
+               f"{gnuhealth_os_user}\n{pversion}\n" \
+               f"{os_header}\n{os_info}\n" \
+               f"Platform / Kernel Info: {str(uname)}\n"
 
         return info
 
