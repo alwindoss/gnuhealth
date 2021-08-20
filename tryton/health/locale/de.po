@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-30 15:23+0000\n"
-"Last-Translator: Edgar Hagenbichler <edgar@hagenbichler.at>\n"
+"PO-Revision-Date: 2021-08-20 12:03+0000\n"
+"Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/health/"
 "de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -281,7 +281,7 @@ msgstr "Erstellt durch"
 
 msgctxt "field:gnuhealth.appointment,healthprof:"
 msgid "Health Prof"
-msgstr "Behandler "
+msgstr "Behandler"
 
 msgctxt "field:gnuhealth.appointment,id:"
 msgid "ID"
@@ -2724,7 +2724,7 @@ msgstr "Kopf"
 
 msgctxt "field:gnuhealth.patient.evaluation,healthprof:"
 msgid "Health Prof"
-msgstr "Behandler "
+msgstr "Behandler"
 
 msgctxt "field:gnuhealth.patient.evaluation,height:"
 msgid "Height"
@@ -2856,7 +2856,7 @@ msgstr "Andere Zustände"
 
 msgctxt "field:gnuhealth.patient.evaluation,signed_by:"
 msgid "Health Prof"
-msgstr "Behandler "
+msgstr "Behandler"
 
 msgctxt "field:gnuhealth.patient.evaluation,signs_and_symptoms:"
 msgid "Signs and Symptoms"
@@ -2996,7 +2996,7 @@ msgstr "Einheit"
 
 msgctxt "field:gnuhealth.patient.medication,healthprof:"
 msgid "Health Prof"
-msgstr "Behandler "
+msgstr "Behandler"
 
 msgctxt "field:gnuhealth.patient.medication,id:"
 msgid "ID"
@@ -3581,7 +3581,7 @@ msgstr "Dosierung #"
 
 msgctxt "field:gnuhealth.vaccination,healthprof:"
 msgid "Health Prof"
-msgstr "Behandler "
+msgstr "Behandler"
 
 msgctxt "field:gnuhealth.vaccination,id:"
 msgid "ID"
