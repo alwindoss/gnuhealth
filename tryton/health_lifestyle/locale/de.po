@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-28 23:17+0000\n"
-"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"PO-Revision-Date: 2021-08-20 12:03+0000\n"
+"Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_lifestyle/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 msgctxt "error:gnuhealth.diet.belief:"
 msgid "The Diet code already exists"
@@ -49,7 +49,7 @@ msgstr "Glaube"
 
 msgctxt "field:gnuhealth.diet.belief,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.diet.belief,write_date:"
 msgid "Write Date"
@@ -125,7 +125,7 @@ msgstr "Name"
 
 msgctxt "field:gnuhealth.drugs_recreational,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.drugs_recreational,reinforcement_level:"
 msgid "Reinforcement"
@@ -433,7 +433,7 @@ msgstr "Patient"
 
 msgctxt "field:gnuhealth.patient.cage,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.patient.cage,write_date:"
 msgid "Write Date"
@@ -461,7 +461,7 @@ msgstr "Patient"
 
 msgctxt "field:gnuhealth.patient.recreational_drugs,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.patient.recreational_drugs,recreational_drug:"
 msgid "Recreational Drug"
@@ -501,7 +501,7 @@ msgstr "Vegetarier"
 
 msgctxt "field:gnuhealth.vegetarian_types,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgctxt "field:gnuhealth.vegetarian_types,write_date:"
 msgid "Write Date"
