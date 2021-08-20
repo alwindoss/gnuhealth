@@ -1,15 +1,15 @@
 # 
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-10 17:33+0000\n"
-"Last-Translator: Edgar Hagenbichler <edgar@hagenbichler.at>\n"
+"PO-Revision-Date: 2021-08-20 12:03+0000\n"
+"Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_caldav/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 msgctxt "error:calendar.calendar:"
 msgid "A user can have only one calendar."
@@ -908,11 +908,11 @@ msgstr "Unter Vorbehalt"
 
 msgctxt "selection:calendar.event,transp:"
 msgid "Opaque"
-msgstr "Opak"
+msgstr "Undurchsichtig"
 
 msgctxt "selection:calendar.event,transp:"
 msgid "Transparent"
-msgstr "Transparent"
+msgstr "Durchsichtig"
 
 msgctxt "selection:calendar.event.attendee,status:"
 msgid ""
