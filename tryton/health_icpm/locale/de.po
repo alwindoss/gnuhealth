@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-08-20 12:03+0000\n"
+"Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
+"health_icpm/de/>\n"
+"Language: de\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-190"
 msgid "APGAR SCORING OF NEWBORN, WITHOUT OTHER INITIAL MEDICAL EVALUATION"
@@ -16,7 +25,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-193"
 msgid "RECORDING OF BIRTHWEIGHT"
-msgstr ""
+msgstr "ERFASSUNG DES GEBURTSGEWICHTS"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-194"
 msgid "RECORDING OF CROWN-HEEL  LENGTH"
@@ -24,7 +33,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-195"
 msgid "RECORDING OF OTHER NEWBORN MEASUREMENTS"
-msgstr ""
+msgstr "ERFASSUNG ANDERER NEUGEBORENEN-MESSUNGEN"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-198"
 msgid "SUBSEQUENT CARE OF HEALTHY NEWBORN"
