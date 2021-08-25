@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-05-16 14:19+0000\n"
-"Last-Translator: yusuf <yusuf.aydemir@pisilinux.org>\n"
+"PO-Revision-Date: 2021-08-26 11:35+0000\n"
+"Last-Translator: ToldYouThat <itoldyouthat@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gnu-health/"
 "health/tr/>\n"
 "Language: tr\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.8.1-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -267,7 +267,7 @@ msgstr "Tür"
 
 msgctxt "field:gnuhealth.appointment,checked_in_date:"
 msgid "Checked-in Time"
-msgstr ""
+msgstr "Giriş Saati"
 
 msgctxt "field:gnuhealth.appointment,comments:"
 msgid "Comments"
@@ -291,15 +291,16 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment,id:"
 msgid "ID"
-msgstr ""
+msgstr "KİMLİĞİ"
 
 msgctxt "field:gnuhealth.appointment,institution:"
 msgid "Institution"
 msgstr "Kurum"
 
+#, fuzzy
 msgctxt "field:gnuhealth.appointment,name:"
 msgid "Appointment ID"
-msgstr ""
+msgstr "Randevu Numarası"
 
 msgctxt "field:gnuhealth.appointment,patient:"
 msgid "Patient"
