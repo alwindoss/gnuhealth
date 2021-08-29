@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-14 14:24+0000\n"
+"PO-Revision-Date: 2021-08-29 06:16+0000\n"
 "Last-Translator: George Kiria <ggkiria@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/gnu-health/"
 "health/ka/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.8.1-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -2436,7 +2436,7 @@ msgstr "ამ პაციენტთან დაკავშირებუ�
 
 msgctxt "field:gnuhealth.patient,current_address:"
 msgid "Temp. Addr"
-msgstr ""
+msgstr "დროებითი მისამართი"
 
 msgctxt "field:gnuhealth.patient,current_insurance:"
 msgid "Insurance"
@@ -2452,7 +2452,7 @@ msgstr "პირობები"
 
 msgctxt "field:gnuhealth.patient,dob:"
 msgid "DoB"
-msgstr ""
+msgstr "დაბადებ."
 
 msgctxt "field:gnuhealth.patient,dod:"
 msgid "Date of Death"
@@ -2636,7 +2636,7 @@ msgstr "მკურნალობის აღწერა"
 
 msgctxt "field:gnuhealth.patient.disease,weeks_of_pregnancy:"
 msgid "Contracted in pregnancy week #"
-msgstr ""
+msgstr "დაავადდა ორსულობის კვირა#"
 
 msgctxt "field:gnuhealth.patient.disease,write_date:"
 msgid "Write Date"
@@ -2648,7 +2648,7 @@ msgstr "დაწერეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.patient.ecg,axis:"
 msgid "Axis"
-msgstr ""
+msgstr "ღერძი"
 
 msgctxt "field:gnuhealth.patient.ecg,create_date:"
 msgid "Create Date"
@@ -2664,7 +2664,7 @@ msgstr "თარიღი"
 
 msgctxt "field:gnuhealth.patient.ecg,ecg_strip:"
 msgid "ECG Strip"
-msgstr ""
+msgstr "ECG ზოლი"
 
 msgctxt "field:gnuhealth.patient.ecg,healthprof:"
 msgid "Health Prof"
@@ -2700,11 +2700,11 @@ msgstr "პიარი"
 
 msgctxt "field:gnuhealth.patient.ecg,qrs:"
 msgid "QRS"
-msgstr ""
+msgstr "QRS"
 
 msgctxt "field:gnuhealth.patient.ecg,qt:"
 msgid "QT"
-msgstr ""
+msgstr "QT"
 
 msgctxt "field:gnuhealth.patient.ecg,rate:"
 msgid "Rate"
@@ -2720,7 +2720,7 @@ msgstr "რიტმი"
 
 msgctxt "field:gnuhealth.patient.ecg,st_segment:"
 msgid "ST Segment"
-msgstr ""
+msgstr "ST Segment"
 
 msgctxt "field:gnuhealth.patient.ecg,twave_inversion:"
 msgid "T wave inversion"
@@ -3012,7 +3012,7 @@ msgstr "მდგომარეობა"
 
 msgctxt "field:gnuhealth.patient.evaluation,systolic:"
 msgid "Systolic Pressure"
-msgstr ""
+msgstr "სისტოლური წნევა"
 
 msgctxt "field:gnuhealth.patient.evaluation,tag:"
 msgid "Last TAGs"
