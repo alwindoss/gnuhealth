@@ -618,7 +618,7 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
-   <text:p text:style-name="P1"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;test in objects&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P1"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;test in records&quot;&gt;</text:placeholder></text:p>
    <text:p text:style-name="P1"/>
    <table:table table:name="Table3" table:style-name="Table3">
     <table:table-column table:style-name="Table3.A"/>

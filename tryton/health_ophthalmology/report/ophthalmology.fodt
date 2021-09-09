@@ -420,7 +420,7 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
    <text:p text:style-name="P7"/>
-   <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;ophthalmology  in objects&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;ophthalmology  in records&quot;&gt;</text:placeholder></text:p>
    <table:table table:name="Table1" table:style-name="Table1">
     <table:table-column table:style-name="Table1.A"/>
     <table:table-column table:style-name="Table1.B"/>
