@@ -438,7 +438,7 @@
    </text:sequence-decls>
    <text:p text:style-name="Standard"/>
    <text:p text:style-name="Standard"/>
-   <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;patient in objects&quot;&gt;</text:placeholder></text:p>
+   <text:p text:style-name="P2"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;patient in records&quot;&gt;</text:placeholder></text:p>
    <table:table table:name="Tabla1" table:style-name="Tabla1">
     <table:table-column table:style-name="Tabla1.A"/>
     <table:table-column table:style-name="Tabla1.B"/>
