@@ -1,17 +1,24 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-09-18 20:36+0000\n"
+"Last-Translator: Mateusz Skórka <mateusz@skorka.hub.pl>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/gnu-health/health/"
+"pl/>\n"
 "Language: pl\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Certyfikat już istnieje!"
 
 msgctxt "error:gnuhealth.death_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Certyfikat już istnieje!"
 
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
