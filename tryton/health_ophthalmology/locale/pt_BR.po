@@ -1,10 +1,19 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-09-22 08:38+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health_ophthalmology/pt_BR/>\n"
+"Language: pt_BR\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,computed_age:"
 msgid "Age"
-msgstr ""
+msgstr "Idade"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,create_date:"
 msgid "Create Date"
@@ -36,7 +45,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,laxis:"
 msgid "Axis"
-msgstr ""
+msgstr "Eixo"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,lbcva:"
 msgid "LBCVA"
@@ -44,7 +53,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,lbcva_axis:"
 msgid "Axis"
-msgstr ""
+msgstr "Eixo"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,lbcva_cylinder:"
 msgid "CYL"
@@ -100,7 +109,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Paciente"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,raxis:"
 msgid "Axis"
@@ -148,7 +157,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,riop:"
 msgid "RIOP"
@@ -176,7 +185,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,visit_date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,write_date:"
 msgid "Write Date"
@@ -188,7 +197,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.findings,affected_eye:"
 msgid "Eye"
-msgstr ""
+msgstr "Olho"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,create_date:"
 msgid "Create Date"
@@ -276,7 +285,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,ldva_aid:"
 msgid "Vision with glasses or contact lens"
-msgstr ""
+msgstr "Visão com óculos ou lentes de contato"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,ldva_pinhole:"
 msgid "Left Eye Vision Using Pin Hole"
@@ -336,7 +345,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rdva_aid:"
 msgid "Vision with glasses or contact lens"
-msgstr ""
+msgstr "Visão com óculos ou lentes de contato"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,rdva_pinhole:"
 msgid "Right Eye Vision Using Pin Hole"
@@ -368,7 +377,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.findings,affected_eye:"
 msgid "Affected eye"
-msgstr ""
+msgstr "Olho afetado"
 
 msgctxt "help:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Affected eye structure"
@@ -404,11 +413,11 @@ msgstr ""
 
 msgctxt "report:ophthalmology.card:"
 msgid "Age :"
-msgstr ""
+msgstr "Idade :"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Axis"
-msgstr ""
+msgstr "Eixo"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Cyl"
@@ -424,7 +433,7 @@ msgstr ""
 
 msgctxt "report:ophthalmology.card:"
 msgid "Date :"
-msgstr ""
+msgstr "Data :"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Female"
@@ -504,15 +513,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,iop_method:"
 msgid "Goldman tonometry"
-msgstr ""
+msgstr "Tonometria de Goldman"
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,iop_method:"
 msgid "Non-contact tonometry"
-msgstr ""
+msgstr "Tonometria de não-contato"
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,iop_method:"
 msgid "Schiotz tonometry"
-msgstr ""
+msgstr "Tonometria de Schiotz"
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,lbcva:"
 msgid ""
@@ -1208,11 +1217,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,affected_eye:"
 msgid "left"
-msgstr ""
+msgstr "esquerdo"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,affected_eye:"
 msgid "right"
-msgstr ""
+msgstr "direito"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid ""
@@ -1244,7 +1253,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Iris"
-msgstr ""
+msgstr "Íris"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Lens"
@@ -1252,7 +1261,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Lid"
-msgstr ""
+msgstr "Pálpebra"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Macula"
@@ -1268,7 +1277,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Pupil"
-msgstr ""
+msgstr "Pupila"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Vitreous"
@@ -1308,7 +1317,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Optometry"
-msgstr ""
+msgstr "Optometria"
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Optometry form"
@@ -1316,7 +1325,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Refraction"
-msgstr ""
+msgstr "Refração"
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Right Eye"
@@ -1328,7 +1337,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Tonometry"
-msgstr ""
+msgstr "Tonometria"
 
 msgctxt "view:gnuhealth.ophthalmology.findings:"
 msgid "Findings"
