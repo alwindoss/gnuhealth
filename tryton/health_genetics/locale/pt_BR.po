@@ -1,13 +1,15 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-12-28 00:01+0000\n"
-"Last-Translator: rvnovaes <rvnovaes@gmail.com>\n"
+"PO-Revision-Date: 2021-09-24 14:41+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health_genetics/pt_BR/>\n"
 "Language: pt_BR\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 "X-POOTLE-MTIME: 1451260884.0\n"
 
 msgctxt "error:gnuhealth.disease.gene:"
@@ -88,7 +90,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.family.diseases,name:"
 msgid "Condition"
-msgstr ""
+msgstr "Condição"
 
 msgctxt "field:gnuhealth.patient.family.diseases,patient:"
 msgid "Patient"
@@ -172,30 +174,33 @@ msgid ""
 "Second degree = Uncles, nephews and Nieces\n"
 "Third degree = Grandparents and cousins"
 msgstr ""
+"Primeiro grau = irmãos, mãe e pai\n"
+"Segundo grau = Tios, sobrinhos e sobrinhas\n"
+"Terceiro grau = avós e primos"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:01/02/01"
 msgid "febrile convulsions 1"
-msgstr ""
+msgstr "convulsões febris 1"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:01/02/02"
 msgid "febrile convulsions 2"
-msgstr ""
+msgstr "convulsões febris 2"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:01/02/04"
 msgid "febrile convulsions 4"
-msgstr ""
+msgstr "convulsões febris 4"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:01/02/05"
 msgid "febrile convulsions 5"
-msgstr ""
+msgstr "convulsões febris 5"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:01/02/06"
 msgid "febrile convulsions 6"
-msgstr ""
+msgstr "convulsões febris 6"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:01/02/07"
 msgid "febrile convulsions 7"
-msgstr ""
+msgstr "convulsões febris 7"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:01/02/09"
 msgid "Febrile convulsions, familial, 9"
@@ -6273,7 +6278,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FSGS4"
 msgid "Focal segmental glomerulosclerosis 4"
-msgstr ""
+msgstr "Glomerulosclerose segmentar focal 4"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FSHB"
 msgid "follicle stimulating hormone, beta polypeptide"
@@ -6281,7 +6286,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FSHMD1A"
 msgid "facioscapulohumeral muscular dystrophy 1A"
-msgstr ""
+msgstr "distrofia muscular fácio-escápulo-umeral 1A"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FSHR"
 msgid "follicle stimulating hormone receptor"
@@ -6289,7 +6294,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FST"
 msgid "follistatin"
-msgstr ""
+msgstr "folistatina"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FSTL3"
 msgid "follistatin-like 3 (secreted glycoprotein)"
@@ -6301,11 +6306,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FTH1"
 msgid "ferritin, heavy polypeptide 1"
-msgstr ""
+msgstr "ferritina, polipeptídeo pesado 1"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FTL"
 msgid "ferritin, light polypeptide"
-msgstr ""
+msgstr "ferritina, polipeptídeo leve"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FTO"
 msgid "fat mass and obesity associated"
@@ -6353,11 +6358,12 @@ msgstr ""
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FXN"
 msgid "frataxin"
-msgstr ""
+msgstr "frataxina"
 
+#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:FXYD2"
 msgid "FXYD domain containing ion transport regulator 2"
-msgstr ""
+msgstr "Domínio FXYD contendo regulador de transporte iônico 2"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:FZD4"
 msgid "frizzled homolog 4 (Drosophila)"
@@ -6369,23 +6375,24 @@ msgstr ""
 
 msgctxt "model:gnuhealth.disease.gene,long_name:G6PC"
 msgid "glucose-6-phosphatase, catalytic subunit"
-msgstr ""
+msgstr "glicose-6-fosfatase, subunidade catalítica"
 
+#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:G6PC2"
 msgid "glucose-6-phosphatase, catalytic, 2"
-msgstr ""
+msgstr "glicose-6-fosfatase, catalítica, 2"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:G6PC3"
 msgid "glucose 6 phosphatase, catalytic, 3"
-msgstr ""
+msgstr "glicose 6 fosfatase, catalítica, 3"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:G6PD"
 msgid "glucose-6-phosphate dehydrogenase"
-msgstr ""
+msgstr "glicose-6-fosfato desidrogenase"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GAA"
 msgid "glucosidase, alpha; acid"
-msgstr ""
+msgstr "glucosidase, alfa; ácida"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GAB2"
 msgid "GRB2-associated binding protein 2"
@@ -6399,33 +6406,36 @@ msgctxt "model:gnuhealth.disease.gene,long_name:GABRA1"
 msgid "gamma-aminobutyric acid (GABA) A receptor, alpha 1"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:GABRA2"
 msgid "gamma-aminobutyric acid (GABA) A receptor, alpha 2"
-msgstr ""
+msgstr "Ácido gama-aminobutírico (GABA) receptor tipo A, alfa 2"
 
+#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:GABRB3"
 msgid "gamma-aminobutyric acid (GABA) A receptor, beta 3"
-msgstr ""
+msgstr "Ácido gama-aminobutírico (GABA) receptor tipo A, beta 3"
 
+#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:GABRD"
 msgid "gamma-aminobutyric acid (GABA) A receptor, delta"
-msgstr ""
+msgstr "Ácido gama-aminobutírico (GABA) receptor tipo A, delta"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GABRG2"
 msgid "gamma-aminobutyric acid (GABA) A receptor, gamma 2"
-msgstr ""
+msgstr "Ácido gama-aminobutírico (GABA) receptor tipo A, gama 2"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GAD1"
 msgid "glutamate decarboxylase 1 (brain, 67kDa)"
-msgstr ""
+msgstr "glutamato descarboxilase 1 (cérebro, 67kDa)"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GAD2"
 msgid "glutamate decarboxylase 2 (pancreatic islets and brain, 65kDa)"
-msgstr ""
+msgstr "glutamato descarboxilase 2 (ilhotas pancreáticas e cérebro, 65kDa)"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GALC"
 msgid "galactosylceramidase"
-msgstr ""
+msgstr "galactosilceramidase"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GALE"
 msgid "UDP-galactose-4-epimerase"
@@ -6433,7 +6443,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GALK1"
 msgid "galactokinase 1"
-msgstr ""
+msgstr "galactoquinase 1"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GALNS"
 msgid "galactosamine (N-acetyl)-6-sulfate sulfatase"
@@ -6447,19 +6457,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GALT"
 msgid "galactose-1-phosphate uridylyltransferase"
-msgstr ""
+msgstr "galactose-1-fosfato uridililtransferase"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GAMT"
 msgid "guanidinoacetate N-methyltransferase"
-msgstr ""
+msgstr "guanidinoacetato N-metiltransferase"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GAN"
 msgid "gigaxonin"
-msgstr ""
+msgstr "gigaxonina"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GARS"
 msgid "glycyl-tRNA synthetase"
-msgstr ""
+msgstr "glicil-tRNA sintetase"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GATA1"
 msgid "GATA binding protein 1 (globin transcription factor 1)"
@@ -6479,11 +6489,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GATM"
 msgid "glycine amidinotransferase (L-arginine:glycine amidinotransferase)"
-msgstr ""
+msgstr "glicina amidinotransferase (L-arginina:glicina amidinotransferase)"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GBA"
 msgid "glucosidase, beta; acid (includes glucosylceramidase)"
-msgstr ""
+msgstr "glucosidase, beta; ácida (inclui glucosilceramidase)"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GBA3"
 msgid "glucosidase, beta, acid 3 (cytosolic)"
