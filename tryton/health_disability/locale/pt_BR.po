@@ -1,42 +1,51 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-09-24 14:41+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health_disability/pt_BR/>\n"
+"Language: pt_BR\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 msgctxt "error:gnuhealth.activity_and_participation.category:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "O código precisa ser único !"
 
 msgctxt "error:gnuhealth.activity_and_participation:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "O código precisa ser único !"
 
 msgctxt "error:gnuhealth.body_function.category:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "O código precisa ser único !"
 
 msgctxt "error:gnuhealth.body_function:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "O código precisa ser único !"
 
 msgctxt "error:gnuhealth.body_structure.category:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "O código precisa ser único !"
 
 msgctxt "error:gnuhealth.body_structure:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "O código precisa ser único !"
 
 msgctxt "error:gnuhealth.environmental_factor.category:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "O código precisa ser único !"
 
 msgctxt "error:gnuhealth.environmental_factor:"
 msgid "The code must be unique !"
-msgstr ""
+msgstr "O código precisa ser único !"
 
 msgctxt "field:gnuhealth.activity.assessment,activity_and_participation:"
 msgid "Activity"
-msgstr ""
+msgstr "Atividade"
 
 msgctxt "field:gnuhealth.activity.assessment,assessment:"
 msgid "Assessment"
@@ -52,7 +61,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.activity.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.activity.assessment,qualifier1:"
 msgid "Performance"
@@ -60,11 +69,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.activity.assessment,qualifier2:"
 msgid "Capacity"
-msgstr ""
+msgstr "Capacidade"
 
 msgctxt "field:gnuhealth.activity.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.activity.assessment,write_date:"
 msgid "Write Date"
