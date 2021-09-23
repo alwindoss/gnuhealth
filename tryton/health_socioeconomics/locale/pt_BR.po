@@ -1,13 +1,15 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-12-28 00:01+0000\n"
-"Last-Translator: rvnovaes <rvnovaes@gmail.com>\n"
+"PO-Revision-Date: 2021-09-24 14:41+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health_socioeconomics/pt_BR/>\n"
 "Language: pt_BR\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 "X-POOTLE-MTIME: 1451260884.0\n"
 
 msgctxt "field:gnuhealth.patient,domestic_violence:"
@@ -84,11 +86,11 @@ msgstr "Trabalha em casa"
 
 msgctxt "field:gnuhealth.ses.assessment,assessment_date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.ses.assessment,computed_age:"
 msgid "Age"
-msgstr ""
+msgstr "Idade"
 
 msgctxt "field:gnuhealth.ses.assessment,create_date:"
 msgid "Create Date"
@@ -132,11 +134,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ses.assessment,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Gênero"
 
 msgctxt "field:gnuhealth.ses.assessment,health_professional:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Profissional de Saúde"
 
 msgctxt "field:gnuhealth.ses.assessment,housing:"
 msgid "Housing conditions"
@@ -144,27 +146,28 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ses.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
+#, fuzzy
 msgctxt "field:gnuhealth.ses.assessment,income:"
 msgid "Income"
-msgstr ""
+msgstr "Renda"
 
 msgctxt "field:gnuhealth.ses.assessment,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 msgctxt "field:gnuhealth.ses.assessment,occupation:"
 msgid "Occupation"
-msgstr ""
+msgstr "Profissão"
 
 msgctxt "field:gnuhealth.ses.assessment,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Paciente"
 
 msgctxt "field:gnuhealth.ses.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.ses.assessment,ses:"
 msgid "Socioeconomics"
@@ -172,7 +175,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ses.assessment,signed_by:"
 msgid "Signed by"
-msgstr ""
+msgstr "Assinado por"
 
 msgctxt "field:gnuhealth.ses.assessment,state:"
 msgid "State"
