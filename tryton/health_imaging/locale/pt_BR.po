@@ -1,10 +1,19 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-09-25 23:35+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health_imaging/pt_BR/>\n"
+"Language: pt_BR\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 msgctxt "field:gnuhealth.imaging.test,code:"
 msgid "Code"
-msgstr ""
+msgstr "Código"
 
 msgctxt "field:gnuhealth.imaging.test,create_date:"
 msgid "Create Date"
@@ -16,23 +25,23 @@ msgstr ""
 
 msgctxt "field:gnuhealth.imaging.test,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.imaging.test,name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.imaging.test,product:"
 msgid "Service"
-msgstr ""
+msgstr "Serviço"
 
 msgctxt "field:gnuhealth.imaging.test,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.imaging.test,test_type:"
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 msgctxt "field:gnuhealth.imaging.test,write_date:"
 msgid "Write Date"
@@ -44,7 +53,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.imaging.test.request,comment:"
 msgid "Comment"
-msgstr ""
+msgstr "Comentário"
 
 msgctxt "field:gnuhealth.imaging.test.request,create_date:"
 msgid "Create Date"
@@ -56,23 +65,24 @@ msgstr ""
 
 msgctxt "field:gnuhealth.imaging.test.request,date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
+#, fuzzy
 msgctxt "field:gnuhealth.imaging.test.request,doctor:"
 msgid "Doctor"
-msgstr ""
+msgstr "Médico"
 
 msgctxt "field:gnuhealth.imaging.test.request,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.imaging.test.request,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Paciente"
 
 msgctxt "field:gnuhealth.imaging.test.request,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.imaging.test.request,request:"
 msgid "Request"
@@ -88,7 +98,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.imaging.test.request,urgent:"
 msgid "Urgent"
-msgstr ""
+msgstr "Urgente"
 
 msgctxt "field:gnuhealth.imaging.test.request,write_date:"
 msgid "Write Date"
@@ -100,7 +110,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.imaging.test.result,comment:"
 msgid "Comment"
-msgstr ""
+msgstr "Comentário"
 
 msgctxt "field:gnuhealth.imaging.test.result,create_date:"
 msgid "Create Date"
@@ -112,43 +122,44 @@ msgstr ""
 
 msgctxt "field:gnuhealth.imaging.test.result,date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.imaging.test.result,doctor:"
 msgid "Doctor"
-msgstr ""
+msgstr "Médico"
 
 msgctxt "field:gnuhealth.imaging.test.result,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.imaging.test.result,images:"
 msgid "Images"
-msgstr ""
+msgstr "Imagens"
 
 msgctxt "field:gnuhealth.imaging.test.result,number:"
 msgid "Number"
-msgstr ""
+msgstr "Número"
 
 msgctxt "field:gnuhealth.imaging.test.result,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Paciente"
 
 msgctxt "field:gnuhealth.imaging.test.result,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.imaging.test.result,request:"
 msgid "Request"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:gnuhealth.imaging.test.result,request_date:"
 msgid "Requested Date"
-msgstr ""
+msgstr "Data Solicitada"
 
 msgctxt "field:gnuhealth.imaging.test.result,requested_test:"
 msgid "Test"
-msgstr ""
+msgstr "Exame"
 
 msgctxt "field:gnuhealth.imaging.test.result,write_date:"
 msgid "Write Date"
@@ -160,7 +171,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.imaging.test.type,code:"
 msgid "Code"
-msgstr ""
+msgstr "Código"
 
 msgctxt "field:gnuhealth.imaging.test.type,create_date:"
 msgid "Create Date"
@@ -172,15 +183,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.imaging.test.type,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.imaging.test.type,name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.imaging.test.type,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.imaging.test.type,write_date:"
 msgid "Write Date"
@@ -192,31 +203,31 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.imaging.test.request.start,date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.patient.imaging.test.request.start,doctor:"
 msgid "Doctor"
-msgstr ""
+msgstr "Médico"
 
 msgctxt "field:gnuhealth.patient.imaging.test.request.start,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.imaging.test.request.start,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Paciente"
 
 msgctxt "field:gnuhealth.patient.imaging.test.request.start,tests:"
 msgid "Tests"
-msgstr ""
+msgstr "Exames"
 
 msgctxt "field:gnuhealth.patient.imaging.test.request.start,urgent:"
 msgid "Urgent"
-msgstr ""
+msgstr "Urgente"
 
 msgctxt "field:gnuhealth.request-imaging-test,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.request-imaging-test,request:"
 msgid "Request"
@@ -224,7 +235,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.request-imaging-test,test:"
 msgid "Test"
-msgstr ""
+msgstr "Exame"
 
 msgctxt "field:gnuhealth.sequences,imaging_request_sequence:"
 msgid "Imaging Request Sequence"
@@ -240,7 +251,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.imaging.test,name:"
 msgid "Imaging Test"
-msgstr ""
+msgstr "Exame de Imagem"
 
 msgctxt "model:gnuhealth.imaging.test.request,name:"
 msgid "Imaging Test Request"
@@ -248,11 +259,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.imaging.test.result,name:"
 msgid "Imaging Test Result"
-msgstr ""
+msgstr "Resultado do Exame de Imagem"
 
 msgctxt "model:gnuhealth.imaging.test.type,name:"
 msgid "Imaging Test Type"
-msgstr ""
+msgstr "Tipo do Exame de Imagem"
 
 msgctxt "model:gnuhealth.patient.imaging.test.request.start,name:"
 msgid "Request Patient Imaging Test Start"
@@ -276,15 +287,15 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_imaging_test_result_view2"
 msgid "Imaging Test Results"
-msgstr ""
+msgstr "Resultados do Exame de Imagem"
 
 msgctxt "model:ir.action,name:act_imaging_test_type_view"
 msgid "Imaging Test Type"
-msgstr ""
+msgstr "Tipo do Exame de Imagem"
 
 msgctxt "model:ir.action,name:act_imaging_test_view"
 msgid "Imaging Test"
-msgstr ""
+msgstr "Exame de Imagem"
 
 msgctxt "model:ir.action,name:patient_imaging_test_request"
 msgid "Request Imaging Test"
@@ -292,7 +303,7 @@ msgstr ""
 
 msgctxt "model:ir.action,name:wizard_generate_result"
 msgid "Generate Result"
-msgstr ""
+msgstr "Gerar Resultado"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_imaging_test_request_domain_all"
@@ -302,12 +313,12 @@ msgstr ""
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_imaging_test_request_domain_done"
 msgid "Done"
-msgstr ""
+msgstr "Feito"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_imaging_test_request_domain_draft"
 msgid "Draft"
-msgstr ""
+msgstr "Rascunho"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_imaging_test_request_domain_requested"
@@ -316,7 +327,7 @@ msgstr ""
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_imaging_test"
 msgid "Imaging Test"
-msgstr ""
+msgstr "Exame de Imagem"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_imaging_test_request"
 msgid "Imaging Test Request"
@@ -324,7 +335,7 @@ msgstr ""
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_imaging_test"
 msgid "Imaging Test"
-msgstr ""
+msgstr "Exame de Imagem"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_imaging_test_request"
 msgid "Imaging Test Request"
@@ -344,15 +355,15 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:menu_imaging_test_result_view"
 msgid "Imaging Test Result"
-msgstr ""
+msgstr "Resultado do Exame de Imagem"
 
 msgctxt "model:ir.ui.menu,name:menu_imaging_test_type"
 msgid "Imaging Test Type"
-msgstr ""
+msgstr "Tipo do Exame de Imagem"
 
 msgctxt "model:ir.ui.menu,name:menu_imaging_test_view"
 msgid "Imaging Test"
-msgstr ""
+msgstr "Exame de Imagem"
 
 msgctxt "model:ir.ui.menu,name:menu_patient_imaging_test_request"
 msgid "Request Imaging Test"
@@ -384,11 +395,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.imaging.test.request,state:"
 msgid "Done"
-msgstr ""
+msgstr "Feito"
 
 msgctxt "selection:gnuhealth.imaging.test.request,state:"
 msgid "Draft"
-msgstr ""
+msgstr "Rascunho"
 
 msgctxt "selection:gnuhealth.imaging.test.request,state:"
 msgid "Requested"
@@ -396,7 +407,7 @@ msgstr ""
 
 msgctxt "wizard_button:gnuhealth.patient.imaging.test.request,start,end:"
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 msgctxt "wizard_button:gnuhealth.patient.imaging.test.request,start,request:"
 msgid "Request"
