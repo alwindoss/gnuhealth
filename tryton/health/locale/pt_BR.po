@@ -1,7 +1,7 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-24 14:41+0000\n"
+"PO-Revision-Date: 2021-09-25 23:35+0000\n"
 "Last-Translator: Vinicius Monego <monego@posteo.net>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health/pt_BR/>\n"
@@ -2528,9 +2528,10 @@ msgctxt "field:gnuhealth.patient.ecg,ecg_strip:"
 msgid "ECG Strip"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.ecg,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Prof. de Saúde"
 
 msgctxt "field:gnuhealth.patient.ecg,id:"
 msgid "ID"
@@ -3107,11 +3108,12 @@ msgstr "Editado por"
 
 msgctxt "field:gnuhealth.person_name,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Criar Data"
 
+#, fuzzy
 msgctxt "field:gnuhealth.person_name,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Criar Usuário"
 
 msgctxt "field:gnuhealth.person_name,date_from:"
 msgid "From"
@@ -3125,9 +3127,10 @@ msgctxt "field:gnuhealth.person_name,family:"
 msgid "Family"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:gnuhealth.person_name,given:"
 msgid "Given"
-msgstr ""
+msgstr "Primeiro"
 
 msgctxt "field:gnuhealth.person_name,id:"
 msgid "ID"
@@ -3696,7 +3699,7 @@ msgstr ""
 
 msgctxt "field:party.party,du:"
 msgid "DU"
-msgstr ""
+msgstr "UD"
 
 msgctxt "field:party.party,ethnic_group:"
 msgid "Ethnicity"
@@ -3752,7 +3755,7 @@ msgstr "Farmácia"
 
 msgctxt "field:party.party,lastname:"
 msgid "Family names"
-msgstr ""
+msgstr "Sobrenomes"
 
 msgctxt "field:party.party,marital_status:"
 msgid "Marital Status"
@@ -4580,9 +4583,10 @@ msgid "Check this box if the patient is unable to make voluntarymovements"
 msgstr ""
 "Marque esta caixa se o paciente é incapaz de fazer movimentos voluntários"
 
+#, fuzzy
 msgctxt "help:gnuhealth.patient.evaluation,related_condition:"
 msgid "Related condition related to this follow-up evaluation"
-msgstr ""
+msgstr "Condição relacionada relacionada a essa avaliação de acompanhamento"
 
 msgctxt "help:gnuhealth.patient.evaluation,reliable_info:"
 msgid ""
@@ -4772,11 +4776,11 @@ msgstr "Data do início do Tratamento"
 
 msgctxt "help:gnuhealth.person_name,family:"
 msgid "Family / Surname."
-msgstr ""
+msgstr "Sobrenome."
 
 msgctxt "help:gnuhealth.person_name,given:"
 msgid "Given / First name. May include middle name"
-msgstr ""
+msgstr "Primeiro nome. Pode incluir o nome do meio"
 
 msgctxt "help:gnuhealth.person_name,party:"
 msgid "Related party (person)"
@@ -4991,7 +4995,7 @@ msgstr "Data do Nascimento"
 
 msgctxt "help:party.party,du:"
 msgid "Domiciliary Unit"
-msgstr ""
+msgstr "Unidade Domiciliar"
 
 msgctxt "help:party.party,father:"
 msgid "Father from the Birth Certificate"
@@ -5033,7 +5037,7 @@ msgstr "Verifique se o partido é uma farmácia"
 
 msgctxt "help:party.party,lastname:"
 msgid "Family or last names"
-msgstr ""
+msgstr "Sobrenomes"
 
 msgctxt "help:party.party,mother:"
 msgid "Mother from the Birth Certificate"
@@ -9740,18 +9744,18 @@ msgstr "IMC"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "BP : (Sys / dias)"
-msgstr ""
+msgstr "PS : (Sis / dias)"
 
 #, fuzzy
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Chief Complaint"
 msgstr "Maior Queixa"
 
+#, fuzzy
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Clinical and Physical examination"
-msgstr ""
+msgstr "Exame Clínico e Físico"
 
-#, fuzzy
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Clinical finding"
 msgstr "Achado clínico"
@@ -9782,15 +9786,16 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Ethnicity:"
-msgstr ""
+msgstr "Etnia:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Evaluation Digital Signature"
 msgstr ""
 
+#, fuzzy
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "GCS"
-msgstr ""
+msgstr "ECG"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Heart Rate"
@@ -9854,7 +9859,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Sex"
-msgstr ""
+msgstr "Sexo"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Signs and Symptoms"
@@ -9974,7 +9979,7 @@ msgstr ""
 
 msgctxt "report:patient.conditions_history:"
 msgid "Remarks"
-msgstr ""
+msgstr "Observações"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Severity"
@@ -10344,9 +10349,10 @@ msgctxt "selection:gnuhealth.appointment,state:"
 msgid "Cancelled by patient"
 msgstr "Cancelado pelo paciente"
 
+#, fuzzy
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid "Checked in"
-msgstr ""
+msgstr "Deu entrada"
 
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid "Confirmed"
@@ -12285,9 +12291,10 @@ msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Evaluations"
 msgstr "Avaliações"
 
+#, fuzzy
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Informações Adicionais"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Glasgow Coma Scale"
@@ -12458,9 +12465,10 @@ msgctxt "view:gnuhealth.prescription.line:"
 msgid "Form and Administration Route"
 msgstr "Forma e Via de Administração"
 
+#, fuzzy
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Medication and Condition"
-msgstr ""
+msgstr "Medicação e Condição"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Misc"
