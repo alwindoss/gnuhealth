@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-07-16 15:37+0000\n"
+"PO-Revision-Date: 2021-10-06 11:05+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gnu-health/"
 "health/id/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.2-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -8512,7 +8512,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ630"
 msgid "Violinist"
-msgstr ""
+msgstr "Pemain biola"
 
 msgctxt "model:gnuhealth.occupation,name:occ631"
 msgid "Violist"
@@ -8532,7 +8532,7 @@ msgstr "Sipir"
 
 msgctxt "model:gnuhealth.occupation,name:occ635"
 msgid "Weaponsmith"
-msgstr ""
+msgstr "Tukang senjata"
 
 msgctxt "model:gnuhealth.occupation,name:occ636"
 msgid "Weatherman"
@@ -8580,7 +8580,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ646"
 msgid "Winemaker"
-msgstr ""
+msgstr "Pembuat Wine"
 
 msgctxt "model:gnuhealth.occupation,name:occ647"
 msgid "Writer"
@@ -8616,7 +8616,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ67"
 msgid "Composer"
-msgstr ""
+msgstr "Komposer"
 
 msgctxt "model:gnuhealth.occupation,name:occ68"
 msgid "Computer engineer"
@@ -8624,7 +8624,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ69"
 msgid "Computer programmer"
-msgstr ""
+msgstr "Programmer komputer"
 
 msgctxt "model:gnuhealth.occupation,name:occ7"
 msgid "Auditor"
@@ -8636,7 +8636,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ71"
 msgid "Conductor (music)"
-msgstr ""
+msgstr "Konduktor (musik)"
 
 msgctxt "model:gnuhealth.occupation,name:occ72"
 msgid "Constable"
@@ -8700,7 +8700,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ86"
 msgid "Cosmonaut"
-msgstr ""
+msgstr "Kosmonot"
 
 msgctxt "model:gnuhealth.occupation,name:occ87"
 msgid "Costermonger"
@@ -8712,7 +8712,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ89"
 msgid "Courier"
-msgstr ""
+msgstr "Kurir"
 
 msgctxt "model:gnuhealth.occupation,name:occ9"
 msgid "Artist"
@@ -8748,7 +8748,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ97"
 msgid "Cryptographer"
-msgstr ""
+msgstr "Kriptografer"
 
 msgctxt "model:gnuhealth.occupation,name:occ98"
 msgid "Cryptozoologist"
@@ -8760,7 +8760,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.operational_area,name:"
 msgid "Operational Area"
-msgstr ""
+msgstr "Area Operasional"
 
 msgctxt "model:gnuhealth.operational_sector,name:"
 msgid "Operational Sector"
@@ -8804,11 +8804,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology.group,name:INFECTIOUS"
 msgid "INFECTIOUS"
-msgstr ""
+msgstr "INFEKSIUS"
 
 msgctxt "model:gnuhealth.pathology.group,name:METABOLIC"
 msgid "METABOLIC"
-msgstr ""
+msgstr "METABOLIK"
 
 msgctxt "model:gnuhealth.pathology.group,name:NEOPLASIC"
 msgid "NEOPLASIC"
@@ -8816,7 +8816,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology.group,name:NEUROLOGIC"
 msgid "NEUROLOGIC"
-msgstr ""
+msgstr "NEUROLOGIS"
 
 msgctxt "model:gnuhealth.pathology.group,name:NOTIFIABLE"
 msgid "NOTIFIABLE"
@@ -8844,7 +8844,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology.group,name:SOCIAL"
 msgid "SOCIAL AND FAMILY"
-msgstr ""
+msgstr "SOSIAL DAN KELUARGA"
 
 msgctxt "model:gnuhealth.pathology.group,name:VASCULAR"
 msgid "VASCULAR"
@@ -8860,11 +8860,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.patient.disease,name:"
 msgid "Patient Conditions History"
-msgstr ""
+msgstr "Riwayat Kondisi Pasien"
 
 msgctxt "model:gnuhealth.patient.ecg,name:"
 msgid "Patient ECG"
-msgstr ""
+msgstr "Pasien ECG"
 
 msgctxt "model:gnuhealth.patient.evaluation,name:"
 msgid "Patient Evaluation"
@@ -8872,7 +8872,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.patient.medication,name:"
 msgid "Patient Medication"
-msgstr ""
+msgstr "Medikasi Pasien"
 
 msgctxt "model:gnuhealth.person_alternative_identification,name:"
 msgid "Alternative person ID"
@@ -8916,7 +8916,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.specialty,name:"
 msgid "Medical Specialty"
-msgstr ""
+msgstr "Spesialisasi Medis"
 
 msgctxt "model:gnuhealth.specialty,name:10"
 msgid "Clinical Neurophysiology"
@@ -11032,15 +11032,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.hospital.ward,state:"
 msgid "Beds available"
-msgstr ""
+msgstr "Kamar tersedia"
 
 msgctxt "selection:gnuhealth.hospital.ward,state:"
 msgid "Full"
-msgstr ""
+msgstr "Penuh"
 
 msgctxt "selection:gnuhealth.hospital.ward,state:"
 msgid "Not available"
-msgstr ""
+msgstr "Tidak tersedia"
 
 msgctxt "selection:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid ""
@@ -11048,19 +11048,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid "days"
-msgstr ""
+msgstr "hari"
 
 msgctxt "selection:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid "months"
-msgstr ""
+msgstr "bulan"
 
 msgctxt "selection:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid "weeks"
-msgstr ""
+msgstr "minggu"
 
 msgctxt "selection:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid "years"
-msgstr ""
+msgstr "tahun"
 
 msgctxt "selection:gnuhealth.immunization_schedule_line,scope:"
 msgid ""
@@ -11068,15 +11068,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.immunization_schedule_line,scope:"
 msgid "Recommended"
-msgstr ""
+msgstr "Direkomendasikan"
 
 msgctxt "selection:gnuhealth.immunization_schedule_line,scope:"
 msgid "Risk groups"
-msgstr ""
+msgstr "Kelompok risiko"
 
 msgctxt "selection:gnuhealth.immunization_schedule_line,scope:"
 msgid "Systematic"
-msgstr ""
+msgstr "Sistematis"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid ""
@@ -11084,15 +11084,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Clinic"
-msgstr ""
+msgstr "Klinik"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Doctor office"
-msgstr ""
+msgstr "Kantor dokter"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "General Hospital"
-msgstr ""
+msgstr "Rumah sakit umum"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Hospice"
@@ -11128,7 +11128,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid "Public"
-msgstr ""
+msgstr "Publik"
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid ""
@@ -11164,11 +11164,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.insurance,insurance_type:"
 msgid "Private"
-msgstr ""
+msgstr "Swasta"
 
 msgctxt "selection:gnuhealth.insurance,insurance_type:"
 msgid "State"
-msgstr ""
+msgstr "Negeri"
 
 msgctxt "selection:gnuhealth.medicament,pregnancy_category:"
 msgid ""
@@ -11204,11 +11204,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,biological_sex:"
 msgid "Female"
-msgstr ""
+msgstr "Perempuan"
 
 msgctxt "selection:gnuhealth.patient,biological_sex:"
 msgid "Male"
-msgstr ""
+msgstr "Laki-laki"
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid ""
@@ -11216,19 +11216,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid "A"
-msgstr ""
+msgstr "A"
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid "AB"
-msgstr ""
+msgstr "AB"
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid "B"
-msgstr ""
+msgstr "B"
 
 msgctxt "selection:gnuhealth.patient,blood_type:"
 msgid "O"
-msgstr ""
+msgstr "O"
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid ""
