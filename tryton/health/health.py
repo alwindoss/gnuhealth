@@ -398,6 +398,10 @@ class Party(ModelSQL, ModelView):
         (None, ''),
         ('m', 'Male'),
         ('f', 'Female'),
+        ('nb', 'Non-binary'),
+        ('other', 'Other'),
+        ('nd', 'Non disclosed'),
+        ('u', 'Unknown')
         ], 'Gender', states={'required': Bool(Eval('is_person'))})
 
     photo = fields.Binary('Picture')
