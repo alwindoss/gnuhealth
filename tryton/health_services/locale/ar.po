@@ -1,14 +1,16 @@
 # Nab3a <asn09@aub.edu.lb>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-08 12:33+0000\n"
-"Last-Translator: Nab3a <asn09@aub.edu.lb>\n"
+"PO-Revision-Date: 2021-10-23 21:53+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/gnu-health/"
+"health_services/ar/>\n"
 "Language: ar\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Pootle 2.5.0\n"
+"X-Generator: Weblate 4.9-dev\n"
 "X-POOTLE-MTIME: 1452256434.0\n"
 
 msgctxt "error:gnuhealth.health_service:"
@@ -53,7 +55,7 @@ msgstr "الهوية"
 
 msgctxt "field:gnuhealth.health_service,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "المؤسسة"
 
 msgctxt "field:gnuhealth.health_service,invoice_to:"
 msgid "Invoice to"
@@ -165,7 +167,7 @@ msgstr ""
 
 msgctxt "help:account.invoice,patient:"
 msgid "Patient in the invoice"
-msgstr ""
+msgstr "المريض في الفاتورة"
 
 msgctxt "help:gnuhealth.health_service,service_line:"
 msgid "Service Line"
@@ -206,7 +208,7 @@ msgstr "الخدمات الصحية"
 
 msgctxt "model:ir.action,name:gnuhealth_action_health_service_invoices"
 msgid "Created invoices"
-msgstr ""
+msgstr "الفواتير المُنشأة"
 
 msgctxt "model:ir.action,name:report_health_services_report"
 msgid "Services Report"
