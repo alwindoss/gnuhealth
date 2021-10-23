@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-26 21:18+0000\n"
-"Last-Translator: S <t0kie@mailbox.org>\n"
+"PO-Revision-Date: 2021-10-23 21:53+0000\n"
+"Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_surgery/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 msgctxt "error:gnuhealth.surgery:"
 msgid "End time \"%(end_date)s\" BEFORE surgery date \"%(surgery_date)s\""
@@ -259,7 +259,6 @@ msgctxt "field:gnuhealth.surgery,state:"
 msgid "State"
 msgstr "Zustand"
 
-#, fuzzy
 msgctxt "field:gnuhealth.surgery,supplies:"
 msgid "Supplies"
 msgstr "Material"
@@ -485,7 +484,6 @@ msgctxt "help:gnuhealth.surgery,preop_oximeter:"
 msgid "Pulse oximeter is in place and functioning"
 msgstr "Pulsoximeter platziert und funktionstüchtig"
 
-#, fuzzy
 msgctxt "help:gnuhealth.surgery,preop_rcri:"
 msgid ""
 "Patient Revised Cardiac Risk Index\n"
