@@ -1,6 +1,16 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-10-23 21:53+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/gnu-health/"
+"health_ems/ar/>\n"
+"Language: ar\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 msgctxt "error:gnuhealth.ambulance:"
 msgid "This vehicle ID already exists"
@@ -12,11 +22,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,active:"
 msgid "Active"
-msgstr ""
+msgstr "نشط"
 
 msgctxt "field:gnuhealth.ambulance,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "تاريخ الإنشاء"
 
 msgctxt "field:gnuhealth.ambulance,create_uid:"
 msgid "Create User"
@@ -24,15 +34,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,id:"
 msgid "ID"
-msgstr ""
+msgstr "المعرّف ID"
 
 msgctxt "field:gnuhealth.ambulance,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "الإسم"
 
 msgctxt "field:gnuhealth.ambulance,state:"
 msgid "Status"
-msgstr ""
+msgstr "الحالة"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_brand:"
 msgid "Brand"
@@ -40,7 +50,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,vehicle_function:"
 msgid "Function"
-msgstr ""
+msgstr "الوظيفة"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_identifier:"
 msgid "ID"
@@ -76,11 +86,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,ambulance:"
 msgid "Ambulance"
-msgstr ""
+msgstr "سيارة إسعاف"
 
 msgctxt "field:gnuhealth.ambulance.support,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "تاريخ الإنشاء"
 
 msgctxt "field:gnuhealth.ambulance.support,create_uid:"
 msgid "Create User"
