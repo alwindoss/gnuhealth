@@ -1,26 +1,35 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2021-10-27 01:36+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health_icd9procs/pt_BR/>\n"
+"Language: pt_BR\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-01"
 msgid "Therapeutic ultrasound of vessels of head and neck"
-msgstr ""
+msgstr "Ultrassom terapêutico dos vasos da cabeça e pescoço"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-02"
 msgid "Therapeutic ultrasound of heart"
-msgstr ""
+msgstr "Ultrassom terapêutico do coração"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-03"
 msgid "Therapeutic ultrasound of peripheral vascular vessels"
-msgstr ""
+msgstr "Ultrassom terapêutico dos vasos vasculares periféricos"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-09"
 msgid "Other therapeutic ultrasound"
-msgstr ""
+msgstr "Outro ultrassom terapêutico"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-10"
 msgid "Implantation of chemotherapeutic agent"
-msgstr ""
+msgstr "Implantação de agente quimioterápico"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-11"
 msgid "Infusion of drotrecogin alfa (activated)"
@@ -28,19 +37,19 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-12"
 msgid "Administration of inhaled nitric oxide"
-msgstr ""
+msgstr "Administração de óxido nítrico inalado"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-13"
 msgid "Injection or infusion of nesiritide"
-msgstr ""
+msgstr "Injeção ou infusão de nesiritida"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-14"
 msgid "Injection or infusion of oxazolidinone class of antibiotics"
-msgstr ""
+msgstr "Injeção ou infusão de antibióticos da classe oxazolidinona"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-15"
 msgid "High-dose infusion interleukin-2 [IL-2]"
-msgstr ""
+msgstr "Infusão de alta dose de interleucina-2 [IL-2]"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-16"
 msgid ""
@@ -50,7 +59,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-17"
 msgid "Infusion of vasopressor agent"
-msgstr ""
+msgstr "Infusão de agente vasopressor"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-18"
 msgid "Infusion of immunosuppressive antibody therapy"
@@ -62,31 +71,31 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-21"
 msgid "Intravascular imaging of extracranial cerebral vessels"
-msgstr ""
+msgstr "Imagem intravascular de vasos cerebrais extracranianos"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-22"
 msgid "Intravascular imaging of intrathoracic vessels"
-msgstr ""
+msgstr "Imagem intravascular de vasos intratorácicos"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-23"
 msgid "Intravascular imaging of peripheral vessels"
-msgstr ""
+msgstr "Imagem intravascular de vasos periféricos"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-24"
 msgid "Intravascular imaging of coronary vessels"
-msgstr ""
+msgstr "Imagem intravascular de vasos coronários"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-25"
 msgid "Intravascular imaging of renal vessels"
-msgstr ""
+msgstr "Imagem intravascular de vasos renais"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-28"
 msgid "Intravascular imaging, other specified vessel(s)"
-msgstr ""
+msgstr "Imagem intravascular, outro(s) vaso(s) especificado(s)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-29"
 msgid "Intravascular imaging, unspecified vessel(s)"
-msgstr ""
+msgstr "Imagem intravascular, vaso (s)não especificado(s)"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-31"
 msgid "Computer assisted surgery with CT/CTA"
@@ -112,25 +121,27 @@ msgctxt "model:gnuhealth.procedure,description:cie9_00-39"
 msgid "Other computer assisted surgery"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-40"
 msgid "Procedure on single vessel"
-msgstr ""
+msgstr "Procedimento em vaso único"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-41"
 msgid "Procedure on two vessels"
-msgstr ""
+msgstr "Procedimento em dois vasos"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-42"
 msgid "Procedure on three vessels"
-msgstr ""
+msgstr "Procedimento em três vasos"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-43"
 msgid "Procedure on four or more vessels"
-msgstr ""
+msgstr "Procedimento em quatro ou mais vasos"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-44"
 msgid "Procedure on vessel bifurcation"
-msgstr ""
+msgstr "Procedimento em bifurcação de vaso"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-45"
 msgid "Insertion of one vascular stent"
@@ -152,17 +163,23 @@ msgctxt "model:gnuhealth.procedure,description:cie9_00-49"
 msgid "Supersaturated oxygen therapy"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-50"
 msgid ""
 "Implantation of cardiac resynchronization pacemaker without mention of "
 "defibrillation, total system [CRT-P]"
 msgstr ""
+"Implante de marcapasso de ressincronização cardíaca sem menção à "
+"desfibrilação, sistema total [CRT-P]"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-51"
 msgid ""
 "Implantation of cardiac resynchronization defibrillator, total system "
 "[CRT-D]"
 msgstr ""
+"Implantação de desfibrilador de ressincronização cardíaca, sistema total "
+"[CRT-D]"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-52"
 msgid ""
@@ -205,7 +222,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-59"
 msgid "Intravascular pressure measurement of coronary arteries"
-msgstr ""
+msgstr "Medição da pressão intravascular das artérias coronárias"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-60"
 msgid "Insertion of drug-eluting stent(s) of superficial femoral artery"
@@ -217,36 +234,45 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-62"
 msgid "Percutaneous angioplasty of intracranial vessel(s)"
-msgstr ""
+msgstr "Angioplastia percutânea dos vaso(s) intracraniano(s)"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-63"
 msgid "Percutaneous insertion of carotid artery stent(s)"
-msgstr ""
+msgstr "Inserção percutânea de stent(s) de artéria carótida"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-64"
 msgid "Percutaneous insertion of other extracranial artery stent(s)"
-msgstr ""
+msgstr "Inserção percutânea de outro(s) stent(s) de artéria extracraniana"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-65"
 msgid "Percutaneous insertion of intracranial vascular stent(s)"
-msgstr ""
+msgstr "Inserção percutânea de stent(s) vascular(es) intracraniano(s)"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-66"
 msgid "Percutaneous transluminal coronary angioplasty [PTCA]"
-msgstr ""
+msgstr "Angioplastia coronária transluminal percutânea [PTCA]"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-67"
 msgid "Intravascular pressure measurement of intrathoracic arteries"
-msgstr ""
+msgstr "Medição da pressão intravascular das artérias intratorácicas"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-68"
 msgid "Intravascular pressure measurement of peripheral arteries"
-msgstr ""
+msgstr "Medição da pressão intravascular das artérias periféricas"
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_00-69"
 msgid ""
 "Intravascular pressure measurement, other specified and unspecified vessels"
 msgstr ""
+"Medição da pressão intravascular, outros vasos especificados e não "
+"especificados"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_00-70"
 msgid "Revision of hip replacement, both acetabular and femoral components"
@@ -16042,24 +16068,26 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:cie9_99-94"
 msgid "Prostatic massage"
-msgstr ""
+msgstr "Massagem prostática"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_99-95"
 msgid "Stretching of foreskin"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_99-96"
 msgid "Collection of sperm for artificial insemination"
-msgstr ""
+msgstr "Coleta de esperma para inseminação artificial"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_99-97"
 msgid "Fitting of denture"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:gnuhealth.procedure,description:cie9_99-98"
 msgid "Extraction of milk from lactating breast"
-msgstr ""
+msgstr "Extração de leite da mama em lactação"
 
 msgctxt "model:gnuhealth.procedure,description:cie9_99-99"
 msgid "Other miscellaneous procedures"
-msgstr ""
+msgstr "Outros procedimentos diversos"
