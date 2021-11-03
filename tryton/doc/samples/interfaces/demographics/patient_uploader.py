@@ -111,20 +111,23 @@ counter=0
 
 if (len(sys.argv) < 4):
     exit ("usage: ./patient_uploader <csv_file> \
-        <hostname:port> <dbname> <user:password>")
+        <hostname> <port> <user> <password> <dbname>")
 
 csv_file = csv.reader(open(sys.argv[1], 'r'))
 
 # Set the connection params
-hostname_port = sys.argv[2]
-user_pwd = sys.argv[3]
-dbname = sys.argv[4]
+hostname = sys.argv[2]
+port = sys.argv[3]
+user = sys.argv[4]
+passwd = sys.argv[5]
+dbname = sys.argv[6]
 
-health_server = \
-    'http://'+user_pwd+'@'+hostname_port+'/'+dbname+'/'
+health_server = 'http://'+user+':'+passwd+'@'+hostname+':'+port+'/'+dbname+'/'
 
 print ("Connecting to GNU Health Server ...")
 conf = pconfig.set_xmlrpc(health_server)
+# Use XML RPC using session
+#conf = pconfig.set_xmlrpc_session(health_server, username=user, password=passwd)
 print ("Connected !")
 
 next(csv_file) #Skip header
