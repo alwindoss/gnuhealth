@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-03 19:04+0000\n"
+"PO-Revision-Date: 2021-11-03 19:13+0000\n"
 "Last-Translator: jxpedro <jpsm@tutanota.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health_iss/pt_BR/>\n"
@@ -197,7 +197,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.iss,place_occurrance:"
 msgid "Place of occurrance"
-msgstr ""
+msgstr "Local de ocorrência"
 
 msgctxt "help:gnuhealth.iss,safety_gear:"
 msgid "Use of Safety Gear - Helmet, safety belt..."
@@ -237,7 +237,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,alcohol:"
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 msgctxt "selection:gnuhealth.iss,alcohol:"
 msgid "Suspected"
@@ -245,11 +245,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,alcohol:"
 msgid "Unknown"
-msgstr ""
+msgstr "Desconhecido"
 
 msgctxt "selection:gnuhealth.iss,alcohol:"
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 msgctxt "selection:gnuhealth.iss,disposition:"
 msgid ""
@@ -297,7 +297,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,drugs:"
 msgid "Unknown"
-msgstr ""
+msgstr "Desconhecido"
 
 msgctxt "selection:gnuhealth.iss,drugs:"
 msgid "Yes"
@@ -309,7 +309,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,injury_method:"
 msgid "Blunt object"
-msgstr ""
+msgstr "Objeto contundente"
 
 msgctxt "selection:gnuhealth.iss,injury_method:"
 msgid "Choking/strangulation"
@@ -329,11 +329,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,injury_method:"
 msgid "Sexual Assault"
-msgstr ""
+msgstr "Agressão Sexual"
 
 msgctxt "selection:gnuhealth.iss,injury_method:"
 msgid "Sharp objects"
-msgstr ""
+msgstr "Objetos pontiagudos"
 
 msgctxt "selection:gnuhealth.iss,injury_method:"
 msgid "Unknown"
@@ -353,11 +353,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,injury_type:"
 msgid "Suicide Attempt"
-msgstr ""
+msgstr "Tentativa de Suicídio"
 
 msgctxt "selection:gnuhealth.iss,injury_type:"
 msgid "Violence"
-msgstr ""
+msgstr "Violência"
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid ""
@@ -381,7 +381,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Car"
-msgstr ""
+msgstr "Carro"
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Motorbike"
@@ -389,7 +389,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Other"
-msgstr ""
+msgstr "Outro"
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Pedestrian"
@@ -397,7 +397,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Taxi"
-msgstr ""
+msgstr "Táxi"
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Train"
@@ -437,7 +437,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Car"
-msgstr ""
+msgstr "Carro"
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Motorbike"
@@ -453,7 +453,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Taxi"
-msgstr ""
+msgstr "Táxi"
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Train"
@@ -461,7 +461,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Truck / Heavy vehicle"
-msgstr ""
+msgstr "Camião / Veículo pesado"
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Unknown"
