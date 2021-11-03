@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2021-11-03 19:03+0000\n"
-"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Last-Translator: jxpedro <jpsm@tutanota.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health_iss/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.iss,code:"
 msgid "Code"
-msgstr ""
+msgstr "Código"
 
 msgctxt "field:gnuhealth.iss,complaint:"
 msgid "Chief Complaint"
-msgstr ""
+msgstr "Queixa Principal"
 
 msgctxt "field:gnuhealth.iss,create_date:"
 msgid "Create Date"
@@ -49,7 +49,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.iss,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.iss,injury_date:"
 msgid "Injury Date"
@@ -57,7 +57,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.iss,injury_details:"
 msgid "Details"
-msgstr ""
+msgstr "Detalhes"
 
 msgctxt "field:gnuhealth.iss,injury_method:"
 msgid "Method"
@@ -69,11 +69,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.iss,latitude:"
 msgid "Latidude"
-msgstr ""
+msgstr "Latitude"
 
 msgctxt "field:gnuhealth.iss,longitude:"
 msgid "Longitude"
-msgstr ""
+msgstr "Longitude"
 
 msgctxt "field:gnuhealth.iss,mva_counterpart:"
 msgid "Counterpart"
@@ -89,7 +89,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.iss,name:"
 msgid "Evaluation"
-msgstr ""
+msgstr "Avaliação"
 
 msgctxt "field:gnuhealth.iss,operational_sector:"
 msgid "O. Sector"
@@ -97,11 +97,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.iss,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Paciente"
 
 msgctxt "field:gnuhealth.iss,patient_age:"
 msgid "Age"
-msgstr ""
+msgstr "Idade"
 
 msgctxt "field:gnuhealth.iss,patient_sex:"
 msgid "Sex"
@@ -148,6 +148,8 @@ msgid ""
 "Is there evidence of alcohol use by the injured person in the 6 hours before"
 " the accident ?"
 msgstr ""
+"Existe evidência de consumo de álcool pela pessoa ferida nas 6 horas que "
+"antecederam o acidente?"
 
 msgctxt "help:gnuhealth.iss,code:"
 msgid "Injury Code"
