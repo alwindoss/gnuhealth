@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-24 14:41+0000\n"
+"PO-Revision-Date: 2021-11-04 22:33+0000\n"
 "Last-Translator: Vinicius Monego <monego@posteo.net>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health_ophthalmology/pt_BR/>\n"
@@ -209,15 +209,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Structure"
-msgstr ""
+msgstr "Estrutura"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,finding:"
 msgid "Finding"
-msgstr ""
+msgstr "Achado"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,name:"
 msgid "Evaluation"
@@ -225,7 +225,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ophthalmology.findings,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,write_date:"
 msgid "Write Date"
@@ -241,11 +241,11 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,health_professional:"
 msgid "Health professional / Ophthalmologist / OptoMetrist"
-msgstr ""
+msgstr "Profissional de saúde / Oftalmologista / Optometrista"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,iop_method:"
 msgid "Tonometry / Intraocular pressure reading method"
-msgstr ""
+msgstr "Tonometria / Método de leitura de pressão intraocular"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,laxis:"
 msgid "Left Eye Axis"
@@ -373,7 +373,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,visit_date:"
 msgid "Date of Consultation"
-msgstr ""
+msgstr "Data da Consulta"
 
 msgctxt "help:gnuhealth.ophthalmology.findings,affected_eye:"
 msgid "Affected eye"
@@ -437,7 +437,7 @@ msgstr "Data :"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Female"
-msgstr ""
+msgstr "Feminino"
 
 msgctxt "report:ophthalmology.card:"
 msgid "GNU Health Ophthalmology Report"
@@ -445,15 +445,15 @@ msgstr ""
 
 msgctxt "report:ophthalmology.card:"
 msgid "Health Professional :"
-msgstr ""
+msgstr "Profissional de Saúde :"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Left Eye"
-msgstr ""
+msgstr "Olho Esquerdo"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Male"
-msgstr ""
+msgstr "Masculino"
 
 msgctxt "report:ophthalmology.card:"
 msgid "NV"
@@ -465,19 +465,19 @@ msgstr ""
 
 msgctxt "report:ophthalmology.card:"
 msgid "Patient Name :"
-msgstr ""
+msgstr "Nome do Paciente :"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Right Eye"
-msgstr ""
+msgstr "Olho Direito"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Sex :"
-msgstr ""
+msgstr "Sexo :"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Signature"
-msgstr ""
+msgstr "Assinatura"
 
 msgctxt "report:ophthalmology.card:"
 msgid "Spherical"
@@ -501,11 +501,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Feminino"
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Masculino"
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,iop_method:"
 msgid ""
@@ -1205,7 +1205,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.evaluation,state:"
 msgid "In progress"
-msgstr ""
+msgstr "Em andamento"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,affected_eye:"
 msgid ""
@@ -1213,7 +1213,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,affected_eye:"
 msgid "both"
-msgstr ""
+msgstr "ambos"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,affected_eye:"
 msgid "left"
@@ -1229,15 +1229,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Anterior Chamber"
-msgstr ""
+msgstr "Câmara Anterior"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Conjunctiva"
-msgstr ""
+msgstr "Conjuntiva"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Cornea"
-msgstr ""
+msgstr "Córnea"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Fundus Disc"
@@ -1257,7 +1257,7 @@ msgstr "Íris"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Lens"
-msgstr ""
+msgstr "Lente"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Lid"
@@ -1265,7 +1265,7 @@ msgstr "Pálpebra"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Macula"
-msgstr ""
+msgstr "Mácula"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Naso-lacrimal system"
@@ -1281,7 +1281,7 @@ msgstr "Pupila"
 
 msgctxt "selection:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Vitreous"
-msgstr ""
+msgstr "Vítreo"
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Best Corrected Visual Acuity"
@@ -1301,11 +1301,11 @@ msgstr ""
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Left Eye"
-msgstr ""
+msgstr "Olho Esquerdo"
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Left Eye "
-msgstr ""
+msgstr "Olho Esquerdo "
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Notes"
@@ -1329,11 +1329,11 @@ msgstr "Refração"
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Right Eye"
-msgstr ""
+msgstr "Olho Direito"
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Right Eye "
-msgstr ""
+msgstr "Olho Dirieito "
 
 msgctxt "view:gnuhealth.ophthalmology.evaluation:"
 msgid "Tonometry"
@@ -1341,4 +1341,4 @@ msgstr "Tonometria"
 
 msgctxt "view:gnuhealth.ophthalmology.findings:"
 msgid "Findings"
-msgstr ""
+msgstr "Achados"
