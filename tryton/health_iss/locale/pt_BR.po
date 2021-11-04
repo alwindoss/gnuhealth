@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-04 22:33+0000\n"
-"Last-Translator: jxpedro <jpsm@tutanota.com>\n"
+"PO-Revision-Date: 2021-11-04 22:34+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health_iss/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -441,7 +441,7 @@ msgstr "Carro"
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Motorbike"
-msgstr "Moto"
+msgstr "Motocicleta"
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Other"
@@ -449,7 +449,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Pedestrian"
-msgstr ""
+msgstr "Pedestre"
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Taxi"
@@ -457,7 +457,7 @@ msgstr "Táxi"
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Train"
-msgstr ""
+msgstr "Trem"
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Truck / Heavy vehicle"
@@ -603,9 +603,10 @@ msgctxt "selection:gnuhealth.iss,violence_circumstances:"
 msgid "Committing a crime (other)"
 msgstr ""
 
+#, fuzzy
 msgctxt "selection:gnuhealth.iss,violence_circumstances:"
 msgid "Drug Related"
-msgstr ""
+msgstr "Relacionado com Drogas"
 
 msgctxt "selection:gnuhealth.iss,violence_circumstances:"
 msgid "Fight"
@@ -621,7 +622,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,violence_circumstances:"
 msgid "Robbery"
-msgstr ""
+msgstr "Roubo"
 
 msgctxt "selection:gnuhealth.iss,violence_circumstances:"
 msgid "Sexual Assault"
