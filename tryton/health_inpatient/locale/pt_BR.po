@@ -1,13 +1,15 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-12-28 00:01+0000\n"
-"Last-Translator: rvnovaes <rvnovaes@gmail.com>\n"
+"PO-Revision-Date: 2021-11-04 22:34+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health_inpatient/pt_BR/>\n"
 "Language: pt_BR\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 "X-POOTLE-MTIME: 1451260884.0\n"
 
 msgctxt "error:gnuhealth.bed.transfer.create:"
@@ -218,19 +220,20 @@ msgstr ""
 
 msgctxt "field:gnuhealth.inpatient.meal,diet_therapeutic:"
 msgid "Diet"
-msgstr ""
+msgstr "Dieta"
 
+#, fuzzy
 msgctxt "field:gnuhealth.inpatient.meal,diet_vegetarian:"
 msgid "Vegetarian"
-msgstr ""
+msgstr "Vegetariana"
 
 msgctxt "field:gnuhealth.inpatient.meal,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.inpatient.meal,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Instituição"
 
 msgctxt "field:gnuhealth.inpatient.meal,name:"
 msgid "Food"
@@ -238,7 +241,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.inpatient.meal,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.inpatient.meal,write_date:"
 msgid "Write Date"
@@ -1380,19 +1383,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid "Breakfast"
-msgstr ""
+msgstr "Café da manhã"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid "Dinner"
-msgstr ""
+msgstr "Jantar"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid "Lunch"
-msgstr ""
+msgstr "Almoço"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid "Snack"
-msgstr ""
+msgstr "Lanche"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,mealtime:"
 msgid "Special order"
@@ -1402,9 +1405,10 @@ msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid ""
 msgstr ""
 
+#, fuzzy
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid "Cancelled"
-msgstr ""
+msgstr "Cancelado"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid "Done"
@@ -1488,11 +1492,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Left against medical advice"
-msgstr ""
+msgstr "Foi embora contra a orientação médica"
 
 msgctxt "selection:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Transferred to another institution"
-msgstr ""
+msgstr "Transferido para outra instituição"
 
 msgctxt "selection:gnuhealth.inpatient.registration,state:"
 msgid ""
