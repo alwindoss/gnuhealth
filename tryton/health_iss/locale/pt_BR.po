@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-04 20:58+0000\n"
-"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"PO-Revision-Date: 2021-11-04 21:10+0000\n"
+"Last-Translator: jxpedro <jpsm@tutanota.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health_iss/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -125,11 +125,11 @@ msgstr "Equipamento de segurança"
 
 msgctxt "field:gnuhealth.iss,urladdr:"
 msgid "OSM Map"
-msgstr ""
+msgstr "Mapa OSM"
 
 msgctxt "field:gnuhealth.iss,victim_perpetrator:"
 msgid "Relationship"
-msgstr ""
+msgstr "Relação"
 
 msgctxt "field:gnuhealth.iss,violence_circumstances:"
 msgid "Context"
@@ -209,7 +209,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.iss,victim_perpetrator:"
 msgid "Victim - Perpetrator relationship"
-msgstr ""
+msgstr "Relação vítima - agressor"
 
 msgctxt "help:gnuhealth.iss,violence_circumstances:"
 msgid "Precipitating Factor"
@@ -369,11 +369,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Bicycle"
-msgstr ""
+msgstr "Bicicleta"
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Boat / Ship"
-msgstr ""
+msgstr "Barco / Navio"
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Bus"
@@ -385,7 +385,7 @@ msgstr "Carro"
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Motorbike"
-msgstr ""
+msgstr "Moto"
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Other"
