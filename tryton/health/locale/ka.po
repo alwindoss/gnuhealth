@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-29 06:16+0000\n"
+"PO-Revision-Date: 2021-11-12 18:52+0000\n"
 "Last-Translator: George Kiria <ggkiria@gmail.com>\n"
 "Language-Team: Georgian <https://hosted.weblate.org/projects/gnu-health/"
 "health/ka/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8.1-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -2068,11 +2068,11 @@ msgstr "დოზის ერთეული"
 
 msgctxt "field:gnuhealth.medicament,write_date:"
 msgid "Write Date"
-msgstr "დაწერეთ თარიღი"
+msgstr "შეიყვანეთ თარიღი"
 
 msgctxt "field:gnuhealth.medicament,write_uid:"
 msgid "Write User"
-msgstr "დაწერეთ მომხმარებლი"
+msgstr "შეიყვანეთ მომხმარებელი"
 
 msgctxt "field:gnuhealth.medicament.category,childs:"
 msgid "Children"
@@ -2500,7 +2500,7 @@ msgstr "სურათი"
 
 msgctxt "field:gnuhealth.patient,primary_care_doctor:"
 msgid "GP"
-msgstr ""
+msgstr "GP"
 
 msgctxt "field:gnuhealth.patient,puid:"
 msgid "PUID"
@@ -2752,7 +2752,7 @@ msgstr "დანიშვნა"
 
 msgctxt "field:gnuhealth.patient.evaluation,bmi:"
 msgid "BMI"
-msgstr ""
+msgstr "BMI"
 
 msgctxt "field:gnuhealth.patient.evaluation,bpm:"
 msgid "Heart Rate"
@@ -3016,7 +3016,7 @@ msgstr "სისტოლური წნევა"
 
 msgctxt "field:gnuhealth.patient.evaluation,tag:"
 msgid "Last TAGs"
-msgstr ""
+msgstr "ბოლო TAGs"
 
 msgctxt "field:gnuhealth.patient.evaluation,temperature:"
 msgid "Temperature"
@@ -3024,7 +3024,7 @@ msgstr "ტემპერატურა"
 
 msgctxt "field:gnuhealth.patient.evaluation,tremor:"
 msgid "Tremor"
-msgstr ""
+msgstr "ტრემორი"
 
 msgctxt "field:gnuhealth.patient.evaluation,urgency:"
 msgid "Urgency"
