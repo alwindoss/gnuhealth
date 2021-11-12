@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-06 11:05+0000\n"
+"PO-Revision-Date: 2021-11-12 18:52+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gnu-health/"
 "health/id/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -7944,23 +7944,23 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ496"
 msgid "Reporter"
-msgstr ""
+msgstr "Reporter"
 
 msgctxt "model:gnuhealth.occupation,name:occ497"
 msgid "Respiratory Therapist"
-msgstr ""
+msgstr "Terapis Pernapasan"
 
 msgctxt "model:gnuhealth.occupation,name:occ498"
 msgid "Restaurateur"
-msgstr ""
+msgstr "Pemilik restoran"
 
 msgctxt "model:gnuhealth.occupation,name:occ499"
 msgid "Retailer"
-msgstr ""
+msgstr "Pengecer"
 
 msgctxt "model:gnuhealth.occupation,name:occ5"
 msgid "Archaeologist"
-msgstr ""
+msgstr "Arkeolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ50"
 msgid "Church usher"
@@ -7976,7 +7976,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ503"
 msgid "Salesperson"
-msgstr ""
+msgstr "Pramuniaga"
 
 msgctxt "model:gnuhealth.occupation,name:occ504"
 msgid "Salaryman"
@@ -8004,7 +8004,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ51"
 msgid "CIA Agent"
-msgstr ""
+msgstr "Agen CIA"
 
 msgctxt "model:gnuhealth.occupation,name:occ510"
 msgid "School Principal"
@@ -8016,7 +8016,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ512"
 msgid "Scientist"
-msgstr ""
+msgstr "Ilmuwan"
 
 msgctxt "model:gnuhealth.occupation,name:occ513"
 msgid "Scout"
@@ -8072,7 +8072,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ525"
 msgid "Sex worker"
-msgstr ""
+msgstr "Pekerja seks"
 
 msgctxt "model:gnuhealth.occupation,name:occ526"
 msgid "Sheepshearer"
@@ -8108,15 +8108,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ533"
 msgid "Singer"
-msgstr ""
+msgstr "Penyanyi"
 
 msgctxt "model:gnuhealth.occupation,name:occ536"
 msgid "Social worker"
-msgstr ""
+msgstr "Pekerja sosial"
 
 msgctxt "model:gnuhealth.occupation,name:occ537"
 msgid "Sociologists"
-msgstr ""
+msgstr "Sosiolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ538"
 msgid "Software architect"
@@ -8160,7 +8160,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ547"
 msgid "Specialist"
-msgstr ""
+msgstr "Spesialis"
 
 msgctxt "model:gnuhealth.occupation,name:occ548"
 msgid "Speech therapist"
@@ -8196,15 +8196,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ556"
 msgid "Street artist"
-msgstr ""
+msgstr "Seniman jalanan"
 
 msgctxt "model:gnuhealth.occupation,name:occ557"
 msgid "Street musician"
-msgstr ""
+msgstr "Musisi jalanan"
 
 msgctxt "model:gnuhealth.occupation,name:occ558"
 msgid "Street vendor"
-msgstr ""
+msgstr "PKL"
 
 msgctxt "model:gnuhealth.occupation,name:occ559"
 msgid "Stringer"
@@ -8224,11 +8224,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ562"
 msgid "Student"
-msgstr ""
+msgstr "Siswa"
 
 msgctxt "model:gnuhealth.occupation,name:occ564"
 msgid "Stunt coordinator"
-msgstr ""
+msgstr "Koordinator aksi"
 
 msgctxt "model:gnuhealth.occupation,name:occ565"
 msgid "Stunt double"
@@ -10916,23 +10916,23 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.du,roof_type:"
 msgid "Concrete"
-msgstr ""
+msgstr "Beton"
 
 msgctxt "selection:gnuhealth.du,roof_type:"
 msgid "Mud"
-msgstr ""
+msgstr "Lumpur"
 
 msgctxt "selection:gnuhealth.du,roof_type:"
 msgid "Stone"
-msgstr ""
+msgstr "Batu"
 
 msgctxt "selection:gnuhealth.du,roof_type:"
 msgid "Thatched"
-msgstr ""
+msgstr "Jerami"
 
 msgctxt "selection:gnuhealth.du,roof_type:"
 msgid "Wood"
-msgstr ""
+msgstr "Kayu"
 
 msgctxt "selection:gnuhealth.hospital.bed,bed_type:"
 msgid ""
@@ -10948,7 +10948,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.hospital.bed,bed_type:"
 msgid "Electric"
-msgstr ""
+msgstr "Elektrik"
 
 msgctxt "selection:gnuhealth.hospital.bed,bed_type:"
 msgid "Gatch Bed"
@@ -10972,19 +10972,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.hospital.bed,state:"
 msgid "Free"
-msgstr ""
+msgstr "Kosong"
 
 msgctxt "selection:gnuhealth.hospital.bed,state:"
 msgid "Needs cleaning"
-msgstr ""
+msgstr "Perlu dibersihkan"
 
 msgctxt "selection:gnuhealth.hospital.bed,state:"
 msgid "Not available"
-msgstr ""
+msgstr "Tidak tersedia"
 
 msgctxt "selection:gnuhealth.hospital.bed,state:"
 msgid "Occupied"
-msgstr ""
+msgstr "Terisi"
 
 msgctxt "selection:gnuhealth.hospital.bed,state:"
 msgid "Reserved"
@@ -10996,19 +10996,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.hospital.or,state:"
 msgid "Confirmed"
-msgstr ""
+msgstr "Dikonfirmasi"
 
 msgctxt "selection:gnuhealth.hospital.or,state:"
 msgid "Free"
-msgstr ""
+msgstr "Kosong"
 
 msgctxt "selection:gnuhealth.hospital.or,state:"
 msgid "Not available"
-msgstr ""
+msgstr "Tidak tersedia"
 
 msgctxt "selection:gnuhealth.hospital.or,state:"
 msgid "Occupied"
-msgstr ""
+msgstr "Terisi"
 
 msgctxt "selection:gnuhealth.hospital.ward,gender:"
 msgid ""
@@ -11112,7 +11112,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Specialized Hospital"
-msgstr ""
+msgstr "Rumah Sakit Khusus"
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid ""
@@ -11120,11 +11120,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid "Private"
-msgstr ""
+msgstr "Swasta"
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid "Private - State"
-msgstr ""
+msgstr "Swasta - Negara"
 
 msgctxt "selection:gnuhealth.institution,public_level:"
 msgid "Public"
@@ -11136,23 +11136,23 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid "Level I"
-msgstr ""
+msgstr "Level I"
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid "Level II"
-msgstr ""
+msgstr "Level II"
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid "Level III"
-msgstr ""
+msgstr "Level III"
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid "Level IV"
-msgstr ""
+msgstr "Level IV"
 
 msgctxt "selection:gnuhealth.institution,trauma_level:"
 msgid "Level V"
-msgstr ""
+msgstr "Level V"
 
 msgctxt "selection:gnuhealth.insurance,insurance_type:"
 msgid ""
@@ -11236,19 +11236,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Perempuan"
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid "Female -> Male"
-msgstr ""
+msgstr "Perempuan -> Laki-laki"
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Laki-laki"
 
 msgctxt "selection:gnuhealth.patient,gender:"
 msgid "Male -> Female"
-msgstr ""
+msgstr "Laki-laki -> Perempuan"
 
 msgctxt "selection:gnuhealth.patient,hb:"
 msgid ""
@@ -11292,19 +11292,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Divorced"
-msgstr ""
+msgstr "Cerai"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Married"
-msgstr ""
+msgstr "Menikah"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Separated"
-msgstr ""
+msgstr "Pisah"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Single"
-msgstr ""
+msgstr "Lajang"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Widowed"
@@ -11328,19 +11328,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid "Drug Allergy"
-msgstr ""
+msgstr "Alergi Obat"
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid "Food Allergy"
-msgstr ""
+msgstr "Alergi Makanan"
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid "Misc Allergy"
-msgstr ""
+msgstr "Alergi Lainnya"
 
 msgctxt "selection:gnuhealth.patient.disease,allergy_type:"
 msgid "Misc Contraindication"
-msgstr ""
+msgstr "Kontraindikasi Lain-lain"
 
 msgctxt "selection:gnuhealth.patient.disease,disease_severity:"
 msgid ""
@@ -11364,27 +11364,27 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.disease,status:"
 msgid "acute"
-msgstr ""
+msgstr "akut"
 
 msgctxt "selection:gnuhealth.patient.disease,status:"
 msgid "chronic"
-msgstr ""
+msgstr "kronis"
 
 msgctxt "selection:gnuhealth.patient.disease,status:"
 msgid "healed"
-msgstr ""
+msgstr "sembuh"
 
 msgctxt "selection:gnuhealth.patient.disease,status:"
 msgid "improving"
-msgstr ""
+msgstr "membaik"
 
 msgctxt "selection:gnuhealth.patient.disease,status:"
 msgid "unchanged"
-msgstr ""
+msgstr "tidak berubah"
 
 msgctxt "selection:gnuhealth.patient.disease,status:"
 msgid "worsening"
-msgstr ""
+msgstr "memburuk"
 
 msgctxt "selection:gnuhealth.patient.ecg,axis:"
 msgid ""
@@ -11412,43 +11412,43 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "I"
-msgstr ""
+msgstr "I"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "II"
-msgstr ""
+msgstr "II"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "III"
-msgstr ""
+msgstr "III"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V1"
-msgstr ""
+msgstr "V1"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V2"
-msgstr ""
+msgstr "V2"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V3"
-msgstr ""
+msgstr "V3"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V4"
-msgstr ""
+msgstr "V4"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V5"
-msgstr ""
+msgstr "V5"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "V6"
-msgstr ""
+msgstr "V6"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "aVF"
-msgstr ""
+msgstr "aVF"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "aVL"
