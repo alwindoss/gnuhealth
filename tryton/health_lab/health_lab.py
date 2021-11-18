@@ -38,87 +38,6 @@ __all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup',
     'GnuHealthLabTestUnits', 'GnuHealthTestCritearea',
     'GnuHealthPatientLabTest','PatientHealthCondition']
 
-sequences = ['lab_sequence', 'lab_request_sequence']
-
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
-    "Standard Sequences for GNU Health"
-    __name__ = "gnuhealth.sequences"
-
-    lab_sequence = fields.MultiValue(fields.Many2One('ir.sequence',
-        'Lab Sequence', domain=[('code', '=', 'gnuhealth.lab')],
-        required=True))
-    lab_request_sequence = fields.MultiValue(fields.Many2One('ir.sequence',
-        'Patient Lab Request Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.patient.lab.test')]))
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-
-    @classmethod
-    def default_lab_request_sequence(cls):
-        return cls.multivalue_model(
-            'lab_request_sequence').default_lab_request_sequence()
-
-    @classmethod
-    def default_lab_sequence(cls):
-        return cls.multivalue_model(
-            'lab_sequence').default_lab_sequence()
-
-
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    'GNU Health Sequences Setup'
-    __name__ = 'gnuhealth.sequence.setup'
-
-    lab_request_sequence = fields.Many2One('ir.sequence', 
-        'Lab Request Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.patient.lab.test')])
-
-
-    lab_sequence = fields.Many2One('ir.sequence', 
-        'Lab Result Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.lab')])
-
-    @classmethod
-    def __register__(cls, module_name):
-        exist = backend.TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_MultiValue([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_lab_request_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_lab', 'seq_gnuhealth_lab_request')
-
-    @classmethod
-    def default_lab_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_lab', 'seq_gnuhealth_lab_test')
-
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.MultiValue
-
-
 
 class PatientData(ModelSQL, ModelView):
     'Patient lab tests'
@@ -239,6 +158,15 @@ class Lab(ModelSQL, ModelView):
         return datetime.now()
 
     @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'lab_test_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
+    @classmethod
     def create(cls, vlist):
         Sequence = Pool().get('ir.sequence')
         Config = Pool().get('gnuhealth.sequences')
@@ -246,9 +174,7 @@ class Lab(ModelSQL, ModelView):
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('name'):
-                config = Config(1)
-                values['name'] = Sequence.get_id(
-                    config.lab_sequence.id)
+                values['name'] = cls.generate_code()
 
         return super(Lab, cls).create(vlist)
 
@@ -400,16 +326,23 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
             return False
 
     @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'lab_request_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
+    @classmethod
     def create(cls, vlist):
         Sequence = Pool().get('ir.sequence')
         Config = Pool().get('gnuhealth.sequences')
 
         vlist = [x.copy() for x in vlist]
         for values in vlist:
-            if not values.get('request'):
-                config = Config(1)
-                values['request'] = Sequence.get_id(
-                    config.lab_request_sequence.id)
+            if not values.get('name'):
+                values['name'] = cls.generate_code()
 
         return super(GnuHealthPatientLabTest, cls).create(vlist)
 
