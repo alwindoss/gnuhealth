@@ -5,6 +5,9 @@
 #    Copyright (C) 2008-2021 Luis Falcon <falcon@gnuhealth.org>
 #    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
 #
+#    The GNU Health HMIS component is part of the GNU Health project
+#    www.gnuhealth.org
+#
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -28,6 +31,7 @@ from trytond.pool import Pool
 from trytond import backend
 from trytond.tools.multivalue import migrate_property
 from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
+
 
 __all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup',
     'PatientData', 'TestType', 'Lab',
@@ -83,8 +87,7 @@ class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
 
     @classmethod
     def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        exist = TableHandler.table_exist(cls._table)
+        exist = backend.TableHandler.table_exist(cls._table)
 
         super(GnuHealthSequenceSetup, cls).__register__(module_name)
 
