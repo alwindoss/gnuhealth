@@ -6,6 +6,7 @@
     <field name="date" widget="time"/>
     <field name="patient_id" expand="1"/>
     <field name="doctor_id" expand="1"/>
+    <field name="context" expand="1"/>
     <field name="state" readonly="1" expand="1"/>
     <field name="urgent"/>
 </tree>

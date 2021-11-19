@@ -108,6 +108,9 @@ class RequestPatientLabTestStart(ModelView):
 
     date = fields.DateTime('Date')
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
+    context = fields.Many2One('gnuhealth.pathology', 'Context',
+        help="Health context for this order. It can be a suspected or"
+             " existing health condition, a regular health checkup, ...")
     doctor = fields.Many2One('gnuhealth.healthprofessional', 'Doctor',
         help="Doctor who Request the lab tests.")
     tests = fields.Many2Many('gnuhealth.request-test', 'request', 'test',
@@ -157,6 +160,8 @@ class RequestPatientLabTest(Wizard):
             lab_test['patient_id'] = self.start.patient.id
             if self.start.doctor:
                 lab_test['doctor_id'] = self.start.doctor.id
+            if self.start.context:
+                lab_test['context'] = self.start.context.id
             lab_test['date'] = self.start.date
             lab_test['urgent'] = self.start.urgent
             lab_tests.append(lab_test)
