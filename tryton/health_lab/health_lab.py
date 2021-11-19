@@ -291,6 +291,10 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
      select=True)
     doctor_id = fields.Many2One('gnuhealth.healthprofessional', 'Doctor',
         help="Doctor who Request the lab test.", select=True)
+    context = fields.Many2One('gnuhealth.pathology', 'Context',
+        help="Health context for this order. It can be a suspected or"
+             " existing health condition, a regular health checkup, ...",
+             select=True)
     request = fields.Integer('Order', readonly=True)
     urgent = fields.Boolean('Urgent')
 
