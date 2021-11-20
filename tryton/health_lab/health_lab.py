@@ -33,7 +33,7 @@ from trytond.tools.multivalue import migrate_property
 from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
 
 
-__all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup',
+__all__ = [
     'PatientData', 'TestType', 'Lab',
     'GnuHealthLabTestUnits', 'GnuHealthTestCritearea',
     'GnuHealthPatientLabTest','PatientHealthCondition']
