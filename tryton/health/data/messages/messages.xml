@@ -5,15 +5,19 @@ this repository contains the full copyright notices and license terms. -->
     <data grouped="1">
         <record model="ir.message" id="msg_wrong_date_of_birth">
             <field name="text">Wrong date of birth for a living person</field>
+        </record>
         <record model="ir.message" id="msg_healed_before_dx">
             <field name="text">The HEALED date "%(healed_date)s" is BEFORE DIAGNOSED DATE "%(diagnosed_date)s"!</field>
+        </record>
         <record model="ir.message" id="msg_end_treatment_before_start">
             <field name="text">The Treatment END DATE "%(date_stop_treatment)s" is BEFORE the start date "%(date_start_treatment)s"</field>
+        </record>
         <record model="ir.message" id="msg_med_end_date_before_start">
             <field name="text">The Medication END DATE "%(end_treatment)s" is BEFORE the start date "%(start_treatment)s"!</field>
         </record>
         <record model="ir.message" id="msg_next_dose_before_first">
             <field name="text">The vaccine next dose is BEFORE the first one!</field>
+        </record>
         <record model="ir.message" id="msg_drug_pregnancy_safety_check">
             <field name="text">Verify and check for safety in pregnancy the prescribed drugs</field>
         </record>
@@ -26,6 +30,5 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_no_appointment_selected">
             <field name="text">You need to select one appointment</field>
         </record>
-
     </data>
 </tryton>
