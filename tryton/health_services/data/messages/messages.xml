@@ -9,6 +9,9 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_no_service_associated">
             <field name="text">You need to associate a service</field>
         </record>
+        <record model="ir.message" id="msg_no_product_associated">
+            <field name="text">You need to associate a product</field>
+        </record>
         <record model="ir.message" id="msg_no_invoice_address">
             <field name="text">No invoice adress</field>
         </record>

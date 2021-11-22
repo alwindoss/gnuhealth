@@ -10,6 +10,9 @@ class ServiceAlreadyInvoiced(ValidationError):
 class NoServiceAssociated(UserError):
     pass
 
+class NoProductAssociated(UserError):
+    pass
+
 class NoInvoiceAddress(UserError):
     pass
 

@@ -33,8 +33,8 @@ from trytond.i18n import gettext
 from trytond.pyson import Id
 
 from .exceptions import (
-    ServiceAlreadyInvoiced, NoServiceAssociated, NoInvoiceAddress,
-    NoPaymentTerm
+    ServiceAlreadyInvoiced, NoServiceAssociated, NoProductAssociated,
+    NoInvoiceAddress, NoPaymentTerm
     )
 
 
@@ -225,3 +225,75 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         service_data ['service_line'] = service_lines
                 
         HealthService.write(hservice, service_data)
+
+
+""" Include  Patient Evaluation service"""
+
+class PatientEvaluation(ModelSQL, ModelView):
+    'Patient Evaluation'
+    __name__ = 'gnuhealth.patient.evaluation'
+
+    service = fields.Many2One(
+        'gnuhealth.health_service', 'Service',
+        domain=[('patient', '=', Eval('patient'))], depends=['patient'],
+        states = {'readonly': Equal(Eval('state'), 'done')},
+        help="Service document associated to this evaluation")
+
+    product = fields.Many2One('product.product', 'Product')
+
+    """
+    @staticmethod
+    def default_product():
+        return get_institution()
+    """
+
+    @classmethod
+    def __setup__(cls):
+        super(PatientEvaluation, cls).__setup__()
+        cls._buttons.update({
+            'update_service': {
+                'readonly': Equal(Eval('state'), 'done'),
+            },
+            })
+
+
+    @classmethod
+    @ModelView.button
+    def update_service(cls, evaluations):
+        pool = Pool()
+        HealthService = pool.get('gnuhealth.health_service')
+
+        hservice = []
+        evaluation = evaluations[0]
+
+        if not evaluation.service:
+            raise NoServiceAssociated(
+                    gettext('health_service.msg_no_service_associated'))
+
+        if not evaluation.product:
+            raise NoProductAssociated(
+                    gettext('health_service.msg_no_product_associated'))
+
+
+        service_data = {}
+        service_lines = []
+
+        # Add the evaluation to the service document line
+
+        service_lines.append(('create', [{
+            'product': evaluation.product.id,
+            'desc': 'Medical evaluation services',
+            'qty': 1
+            }]))
+
+
+        hservice.append(evaluation.service)
+
+        description = "Medical evaluation services"
+        service_data ['desc'] =  description
+        service_data ['service_line'] = service_lines
+
+        HealthService.write(hservice, service_data)
+
+
+

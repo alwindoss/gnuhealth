@@ -41,6 +41,7 @@ def register():
         invoice.Invoice,
         invoice.InvoiceLine,
         health_services.PatientPrescriptionOrder,
+        health_services.PatientEvaluation,
         module='health_services', type_='model')
     Pool.register(
         wizard.CreateServiceInvoice,
