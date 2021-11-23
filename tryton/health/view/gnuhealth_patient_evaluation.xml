@@ -40,26 +40,9 @@
                 <field name="diagnosis" colspan="4"/>
             </group>
             <newline/>
-            <field name="secondary_conditions" colspan="4"/>
-            <field name="diagnostic_hypothesis" colspan="2"/>
-            <field name="actions" colspan="2"/>
-            <newline/>
             <group string="Treatment Plan" colspan="4" id="group_treatment_plan">
                 <field name="directions" colspan="4"/>
             </group>
-            <newline/>    
-            <group colspan="4" col="10" id="group_eval_misc">
-                <label name="state"/>
-                <field name="state"/>
-                <label name="evaluation_start"/>
-                <field name="evaluation_start"/>
-                <label name="evaluation_endtime"/>
-                <field name="evaluation_endtime"/>
-                <label name="discharge_reason"/>
-                <field name="discharge_reason"/>
-                <button name="end_evaluation" help="Discharge patient / end this evaluation" string="Discharge" icon="tryton-go-next" confirm="Discharge patient / End this evaluation ?"/>
-            </group>
-
         </page>
         <page string="Clinical" id="page_patient_evaluation_signs">
             <group colspan="4" col="6" string="Vital Signs" id="group_patient_evaluation_vital_signs">
@@ -160,36 +143,54 @@
                 <field name="praxis"/>
             </group>
         </page>
-        <page string="Extra Info" id="page_patient_evaluation_extra_info">
+        <page string="Dx and Procedures" id="page_patient_evaluation_extra_info">
             <separator string="Information on Diagnosis" colspan="2" id="separator_evaluation_diagnosis_1"/>
             <newline/>
             <field name="info_diagnosis" colspan="4"/>
             <newline/>
-            <separator string="Other information related to this evaluation" colspan="4" id="separator_evaluation_diagnosis_1"/>
-            <field name="notes" colspan="4"/>               
-            <newline/>
-            <label name="institution"/>               
-            <field name="institution" colspan="3"/>               
-            <newline/>
-
-            <label name="evaluation_type"/>
-            <field name="evaluation_type"/>
-            <label name="specialty"/>
-            <field name="specialty"/>
-            <label name="urgency"/>
-            <field name="urgency"/>
-            <newline/>
-
-            <label name="appointment"/>
-            <field name="appointment"/>
-            <label name="wait_time"/>
-            <field name="wait_time"/>
-            <label name="derived_from"/>
-            <field name="derived_from"/>
-            <label name="next_evaluation"/>
-            <field name="next_evaluation"/>
-            <label name="derived_to"/>
-            <field name="derived_to"/>
+            <field name="secondary_conditions" colspan="2"/>
+            <field name="diagnostic_hypothesis" colspan="2"/>
+            <field name="actions" colspan="4"/>
         </page>
+        <page string="Administrative" id="page_patient_evaluation_administrative">
+            <group id='group_patient_evaluation_appointment' colspan="4" col="10">
+                <label name="urgency"/>
+                <field name="urgency"/>
+                <label name="appointment"/>
+                <field name="appointment"/>
+                <label name="next_evaluation"/>
+                <field name="next_evaluation"/>
+                <label name="derived_from"/>
+                <field name="derived_from"/>
+                <label name="derived_to"/>
+                <field name="derived_to"/>
+            </group>
+            <separator string="Other information related to this evaluation" colspan="4" id="separator_evaluation_diagnosis_1"/>
+            <field name="notes" colspan="4"/>
+            <newline/>
+            <group id='group_patient_evaluation_institution_info' colspan="4" col="8">
+                <field name="institution" colspan="2"/>
+                <label name="specialty"/>
+                <field name="specialty"/>
+                <label name="evaluation_type"/>
+                <field name="evaluation_type"/>
+                <label name="wait_time"/>
+                <field name="wait_time"/>
+            </group>
+        </page>
+
     </notebook>
+    <newline/>
+    <group colspan="4" col="10" id="group_eval_misc">
+        <label name="state"/>
+        <field name="state"/>
+        <label name="evaluation_start"/>
+        <field name="evaluation_start"/>
+        <label name="evaluation_endtime"/>
+        <field name="evaluation_endtime"/>
+        <label name="discharge_reason"/>
+        <field name="discharge_reason"/>
+        <button name="end_evaluation" help="Discharge patient / end this evaluation" string="Discharge" icon="tryton-go-next" confirm="Discharge patient / End this evaluation ?"/>
+    </group>
+
 </form>
