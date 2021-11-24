@@ -16,4 +16,8 @@
     <field name="to_date"/>
     <label name="appointment"/>
     <field name="appointment"/>
+    <label name="action_required"/>
+    <field name="action_required"/>
+    <label name="remarks"/>
+    <field name="remarks"/>
 </form>
