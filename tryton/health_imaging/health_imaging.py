@@ -30,99 +30,11 @@ from trytond.pool import Pool
 from trytond import backend
 from trytond.tools.multivalue import migrate_property
 
+from trytond.modules.health.core import get_health_professional
 
 __all__ = [
-    'GnuHealthSequences', 'GnuHealthSequenceSetup','ImagingTestType', 
+    'ImagingTestType',
     'ImagingTest', 'ImagingTestRequest', 'ImagingTestResult']
-
-sequences = ['imaging_request_sequence', 'imaging_sequence']
-
-
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
-    "GNU Health Sequences"
-    __name__ = "gnuhealth.sequences"
-
-    imaging_request_sequence = fields.MultiValue(
-        fields.Many2One(
-            'ir.sequence',
-            'Imaging Request Sequence',
-            domain=[('code', '=', 'gnuhealth.imaging.test.request')],
-            required=True))
-
-    imaging_sequence = fields.MultiValue(
-        fields.Many2One(
-            'ir.sequence',
-            'Imaging Sequence',
-            domain=[('code', '=', 'gnuhealth.imaging.test.result')],
-            required=True))
-
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-
-    @classmethod
-    def default_imaging_request_sequence(cls):
-        return cls.multivalue_model(
-            'imaging_request_sequence').default_imaging_request_sequence()
-
-    @classmethod
-    def default_imaging_sequence(cls):
-        return cls.multivalue_model(
-            'imaging_sequence').default_imaging_sequence()
-
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    'GNU Health Sequences Setup'
-    __name__ = 'gnuhealth.sequence.setup'
-
-    imaging_request_sequence = fields.Many2One('ir.sequence', 
-        'Imaging Request Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.imaging.test.request')])
-
-
-    imaging_sequence = fields.Many2One('ir.sequence', 
-        'Imaging Result Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.imaging.test.result')])
-  
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        exist = TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_property([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_imaging_request_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_imaging', 'seq_gnuhealth_imaging_test_request')
-
-    @classmethod
-    def default_imaging_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_imaging', 'seq_gnuhealth_imaging_test')
-    
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.PROPERTY
 
 
 class ImagingTestType(ModelSQL, ModelView):
@@ -197,23 +109,24 @@ class ImagingTestRequest(Workflow, ModelSQL, ModelView):
 
     @staticmethod
     def default_doctor():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        hp = HealthProf.get_health_professional()
-        return hp
+        return health_professional()
+
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'imaging_request_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
 
     @classmethod
     def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('request'):
                 config = Config(1)
-                values['request'] = Sequence.get_id(
-                    config.imaging_request_sequence.id)
-
+                values['request'] = cls.generate_code()
         return super(ImagingTestRequest, cls).create(vlist)
 
     @classmethod
@@ -261,17 +174,20 @@ class ImagingTestResult(ModelSQL, ModelView):
     images = fields.One2Many('ir.attachment', 'resource', 'Images')
 
     @classmethod
-    def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
+    def generate_code(cls, **pattern):
         Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'imaging_test_sequence', **pattern)
+        if sequence:
+            return sequence.get()
 
+    @classmethod
+    def create(cls, vlist):
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('name'):
-                config = Config(1)
-                values['number'] = Sequence.get_id(
-                    config.imaging_sequence.id)
-
+                 values['number'] = cls.generate_code()
         return super(ImagingTestResult, cls).create(vlist)
 
     @classmethod
