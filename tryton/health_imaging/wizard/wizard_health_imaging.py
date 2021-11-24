@@ -27,6 +27,8 @@ from trytond.transaction import Transaction
 from trytond.pyson import PYSONEncoder
 from trytond.pool import Pool
 
+from trytond.modules.health.core import get_health_professional
+
 __all__ = ['WizardGenerateResult', 'RequestImagingTest',
     'RequestPatientImagingTestStart', 'RequestPatientImagingTest']
 
@@ -95,14 +97,7 @@ class RequestPatientImagingTestStart(ModelView):
 
     @staticmethod
     def default_doctor():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        hp = HealthProf.get_health_professional()
-        if not hp:
-            RequestPatientImagingTestStart.raise_user_error(
-                "No health professional associated to this user !")
-        return hp
-
+        return get_health_professional()
 
 class RequestPatientImagingTest(Wizard):
     'Request Patient Imaging Test'
@@ -115,13 +110,18 @@ class RequestPatientImagingTest(Wizard):
             ])
     request = StateTransition()
 
+    def generate_code(self, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'imaging_request_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
+
     def transition_request(self):
         ImagingTestRequest = Pool().get('gnuhealth.imaging.test.request')
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
-        config = Config(1)
-        request_number = Sequence.get_id(config.imaging_request_sequence.id)
+        request_number = self.generate_code()
         imaging_tests = []
         for test in self.start.tests:
             imaging_test = {}
