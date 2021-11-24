@@ -139,6 +139,13 @@ class HealthServiceLine(ModelSQL, ModelView):
     qty = fields.Integer('Qty')
     from_date = fields.Date('From')
     to_date = fields.Date('To')
+    action_required = fields.Boolean('Action required', help='This optional field'
+                            ' is used in the context of validation'
+                            ' on the service line. Mark it if there'
+                            ' is any administrative or other type'
+                            ' that needs action')
+
+    remarks = fields.Char('Remarks')
 
     @staticmethod
     def default_qty():
