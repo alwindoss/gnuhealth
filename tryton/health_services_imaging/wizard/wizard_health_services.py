@@ -68,6 +68,8 @@ class RequestPatientImagingTest(Wizard):
             imaging_test['patient'] = self.start.patient.id
             if self.start.doctor:
                 imaging_test['doctor'] = self.start.doctor.id
+            if self.start.context:
+                imaging_test['context'] = self.start.context.id
             imaging_test['date'] = self.start.date
             imaging_test['urgent'] = self.start.urgent
             if self.start.service:

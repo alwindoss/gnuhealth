@@ -12,6 +12,8 @@
     <field name="requested_test"/>
     <label name="doctor"/>
     <field name="doctor"/>
+    <label name="context"/>
+    <field name="context"/>
     <group col="5" colspan="4" id="imaging_request_buttons">
         <label name="state"/>
         <field name="state"/>
