@@ -2644,6 +2644,8 @@ class AlternativePersonID (ModelSQL, ModelView):
             ('other', 'Other'),
         ], 'ID type', required=True, sort=False,)
 
+    expiration_date = fields.Date('Expiration date')
+
     comments = fields.Char('Comments')
 
 
