@@ -105,7 +105,7 @@ class Lab(ModelSQL, ModelView):
      help="Patient ID", required=True, select=True)
     pathologist = fields.Many2One('gnuhealth.healthprofessional', 'Pathologist',
         help="Pathologist", select=True)
-    requestor = fields.Many2One('gnuhealth.healthprofessional', 'Physician',
+    requestor = fields.Many2One('gnuhealth.healthprofessional', 'Health prof',
         help="Doctor who requested the test", select=True)
     results = fields.Text('Results')
     diagnosis = fields.Text('Diagnosis')
@@ -114,7 +114,7 @@ class Lab(ModelSQL, ModelView):
     date_requested = fields.DateTime('Date requested', required=True,
         select=True)
     date_analysis = fields.DateTime('Date of the Analysis', select=True)
-    request_order = fields.Integer('Request', readonly=True)
+    request_order = fields.Integer('Order', readonly=True)
 
     pathology = fields.Many2One(
         'gnuhealth.pathology', 'Pathology',
