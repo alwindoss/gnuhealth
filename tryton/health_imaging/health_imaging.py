@@ -54,7 +54,7 @@ class ImagingTest(ModelSQL, ModelView):
     test_type = fields.Many2One(
         'gnuhealth.imaging.test.type', 'Type',
         required=True)
-    product = fields.Many2One('product.product', 'Service', required=True)
+    product = fields.Many2One('product.product', 'Product', required=True)
 
     active = fields.Boolean('Active', select=True)
 
@@ -71,14 +71,14 @@ class ImagingTestRequest(Workflow, ModelSQL, ModelView):
     requested_test = fields.Many2One(
         'gnuhealth.imaging.test', 'Test',
         required=True)
-    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Doctor', required=True)
+    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Health prof', required=True)
     state = fields.Selection([
         ('draft', 'Draft'),
         ('requested', 'Requested'),
         ('done', 'Done'),
         ], 'State', readonly=True)
-    comment = fields.Text('Comment')
-    request = fields.Char('Request', readonly=True)
+    comment = fields.Text('Additional Information')
+    request = fields.Char('Order', readonly=True)
     urgent = fields.Boolean('Urgent')
 
     @classmethod
@@ -109,7 +109,7 @@ class ImagingTestRequest(Workflow, ModelSQL, ModelView):
 
     @staticmethod
     def default_doctor():
-        return health_professional()
+        return get_health_professional()
 
     def generate_code(cls, **pattern):
         Config = Pool().get('gnuhealth.sequences')
@@ -169,8 +169,10 @@ class ImagingTestResult(ModelSQL, ModelView):
     request = fields.Many2One(
         'gnuhealth.imaging.test.request', 'Request',
         readonly=True)
-    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Doctor', required=True)
-    comment = fields.Text('Comment')
+    order = fields.Char('Order',
+                        help="The order ID containing this particular imaging study")
+    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Health prof', required=True)
+    comment = fields.Text('Additional Information')
     images = fields.One2Many('ir.attachment', 'resource', 'Images')
 
     @classmethod

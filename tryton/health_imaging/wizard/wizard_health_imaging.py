@@ -53,6 +53,7 @@ class WizardGenerateResult(Wizard):
                 'request_date': request.date,
                 'requested_test': request.requested_test,
                 'request': request.id,
+                'order': request.request,
                 'doctor': request.doctor})
         results = Result.create(request_data)
 
@@ -80,8 +81,8 @@ class RequestPatientImagingTestStart(ModelView):
 
     date = fields.DateTime('Date')
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
-    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Doctor',
-        required=True, help="Doctor who Request the lab tests.")
+    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Health prof',
+        required=True, help="Health professionalwho requests the lab tests.")
     tests = fields.Many2Many('gnuhealth.request-imaging-test', 'request',
         'test', 'Tests', required=True)
     urgent = fields.Boolean('Urgent')

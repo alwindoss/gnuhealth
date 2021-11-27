@@ -12,6 +12,8 @@
     <field name="request_date"/>
     <label name="doctor"/>
     <field name="doctor"/>
+    <label name="order"/>
+    <field name="order"/>
     <label name="request"/>
     <field name="request"/>
     <notebook>
