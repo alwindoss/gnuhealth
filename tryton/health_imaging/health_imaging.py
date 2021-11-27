@@ -77,6 +77,12 @@ class ImagingTestRequest(Workflow, ModelSQL, ModelView):
         ('requested', 'Requested'),
         ('done', 'Done'),
         ], 'State', readonly=True)
+
+    context = fields.Many2One('gnuhealth.pathology', 'Context',
+        help="Health context for this order. It can be a suspected or"
+             " existing health condition, a regular health checkup, ...",
+             select=True)
+
     comment = fields.Text('Additional Information')
     request = fields.Char('Order', readonly=True)
     urgent = fields.Boolean('Urgent')
