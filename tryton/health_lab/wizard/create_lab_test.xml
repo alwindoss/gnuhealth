@@ -25,7 +25,7 @@
             <field name="name">patient_lab_test_request_start_form</field>
         </record>
         <record model="ir.action.wizard" id="patient_lab_test_request">
-            <field name="name">Lab: Request new order</field>
+            <field name="name">Lab: New order</field>
             <field name="wiz_name">gnuhealth.patient.lab.test.request</field>
         </record>
 
