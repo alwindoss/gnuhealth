@@ -22,21 +22,23 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_surgery import *
-from .report import *
+from . import health_surgery
+from . import report
+from . import sequences
+from . import exceptions
 
 def register():
     Pool.register(
-		GnuHealthSequences,
-        GnuHealthSequenceSetup,
-        RCRI,
-        Surgery,
-        Operation,
-        SurgeryMainProcedure,
-        SurgerySupply,
-        PatientData,
-        SurgeryTeam,
+		sequences.GnuHealthSequences,
+        sequences.SurgeryCodeSequence,
+        health_surgery.RCRI,
+        health_surgery.Surgery,
+        health_surgery.Operation,
+        health_surgery.SurgeryMainProcedure,
+        health_surgery.SurgerySupply,
+        health_surgery.PatientData,
+        health_surgery.SurgeryTeam,
         module='health_surgery', type_='model')
     Pool.register(
-        SurgeryReport,
+        report.SurgeryReport,
         module='health_surgery', type_='report')
