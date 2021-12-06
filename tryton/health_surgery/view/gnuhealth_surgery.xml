@@ -31,17 +31,7 @@
         <field name="anesthetist"/>
     </group>
     <newline/>
-    <group string="Patient Surgical Risk assessment" id="group_patient_surgery_risk" colspan="4" col="8">
-        <label name="preop_asa"/>
-        <field name="preop_asa" width="150"/>
-        <label name="preop_rcri"/>
-        <field name="preop_rcri"/>
-        <label name="preop_mallampati"/>
-        <field name="preop_mallampati" width="150"/>
-        <label name="surgical_wound"/>
-        <field name="surgical_wound"/>
-    </group>
-    <newline/>
+
     <group string="Preoperative checklist" id="group_preoperative_checklist" colspan="4" col="10">
         <label name="preop_bleeding_risk"/>
         <field name="preop_bleeding_risk"/>
@@ -55,9 +45,29 @@
         <field name="preop_sterility"/>
     </group>
     <newline/>
-    <field name="procedures" colspan="2"/>
-    <field name="supplies" colspan="2"/>
-    <newline/>
+    <notebook id="surgery_notebook">
+        <page id="risk_assessment_page" string="Risk Assessment">
+            <group string="Patient Surgical Risk assessment" id="group_patient_surgery_risk" colspan="4">
+                <label name="preop_asa"/>
+                <field name="preop_asa"/>
+                <label name="preop_mallampati"/>
+                <field name="preop_mallampati"/>
+                <label name="preop_rcri"/>
+                <field name="preop_rcri"/>
+                <label name="surgical_wound"/>
+                <field name="surgical_wound"/>
+            </group>
+        </page>
+        <page id="procedures_page" string="Procedures">
+            <field name="procedures" colspan="4"/>
+        </page>
+        <page id="supplies_page" string="Supplies">
+            <field name="supplies"/>
+        </page>
+        <page id="team_page" string="Team">
+            <field name="surgery_team" colspan="4"/>
+        </page>
+    </notebook>
     <group string="Main Procedure" id="main_procedure_group" colspan="4">
         <field name="main_procedure"/>
     </group>
@@ -67,8 +77,6 @@
     <newline/>
     <field name="extra_info" colspan="2"/>
     <field name="anesthesia_report" colspan="2"/>
-    <newline/>
-    <field name="surgery_team" colspan="4"/>
     <newline/>
     <group id="end_surgery" colspan="4" col="14">
         <label name="surgery_end_date"/>
