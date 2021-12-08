@@ -1,13 +1,20 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-12-09 21:51+0000\n"
+"Last-Translator: Taras Panchenko <top39@ukr.net>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/gnu-health/"
+"health_icd10/uk/>\n"
 "Language: uk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 msgctxt "model:gnuhealth.pathology,name:A00"
 msgid "Cholera"
-msgstr ""
+msgstr "Холера"
 
 msgctxt "model:gnuhealth.pathology,name:A000"
 msgid "Cholera due to Vibrio cholerae 01, biovar cholerae"
@@ -151,7 +158,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A051"
 msgid "Botulism"
-msgstr ""
+msgstr "Ботулізм"
 
 msgctxt "model:gnuhealth.pathology,name:A052"
 msgid "Foodborne Clostridium perfringens [Clostridium welchii] intoxication"
@@ -175,7 +182,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:A06"
 msgid "Amoebiasis"
-msgstr ""
+msgstr "Амебіаз"
 
 msgctxt "model:gnuhealth.pathology,name:A060"
 msgid "Acute amoebic dysentery"
@@ -39959,11 +39966,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.pathology,name:U071"
 msgid "COVID-19, virus identified"
-msgstr ""
+msgstr "COVID-19, ідентифікований вірус"
 
 msgctxt "model:gnuhealth.pathology,name:U072"
 msgid "COVID-19, virus not identified"
-msgstr ""
+msgstr "COVID-19, неідентифікований вірус"
 
 msgctxt "model:gnuhealth.pathology,name:U073"
 msgid "Emergency use of U07.3"
