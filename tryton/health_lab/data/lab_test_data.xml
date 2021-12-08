@@ -9,7 +9,6 @@
         <record id="product_template_semenanalysischarges0" model="product.template">
             <field name="name">Semen Analysis Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -17,7 +16,6 @@
         <record id="product_template_bloodcounttestcharges0" model="product.template">
             <field name="name">Blood count test charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -25,7 +23,6 @@
         <record id="product_template_liverfunctiontestcharges0" model="product.template">
             <field name="name">Liver Function test charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -33,7 +30,6 @@
         <record id="product_template_stoolexaminationcharges0" model="product.template">
             <field name="name">Stool Examination Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -41,7 +37,6 @@
         <record id="product_template_renalfunctiontestcharges0" model="product.template">
             <field name="name">Renal Function test charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -49,7 +44,6 @@
         <record id="product_template_haematologycharges0" model="product.template">
             <field name="name">Haematology Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -57,7 +51,6 @@
         <record id="product_template_peripheralsmearexaminationcharges0" model="product.template">
             <field name="name">Peripheral Smear Examination Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -65,7 +58,6 @@
         <record id="product_template_urineanalysischarges0" model="product.template">
             <field name="name">Urine Analysis charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -73,7 +65,6 @@
         <record id="product_template_endocrinology0" model="product.template">
             <field name="name">Endocrinology</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>

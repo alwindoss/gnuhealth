@@ -20,11 +20,17 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from trytond.modules.company import CompanyReport
+
+from trytond.pool import Pool
+from . import health_services_imaging
+from . import wizard
 
 
-__all__ = ['LabTestReport']
-
-
-class LabTestReport(CompanyReport):
-    __name__ = 'patient.labtest.report'
+def register():
+    Pool.register(
+    health_services_imaging.ImagingTestRequest,
+	wizard.RequestPatientImagingTestStart,
+        module='health_services_imaging', type_='model')
+    Pool.register(
+        wizard.RequestPatientImagingTest,
+        module='health_services_imaging', type_='wizard')

@@ -22,30 +22,28 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_lab import *
-from .report import *
-from .wizard import *
-
+from . import health_lab
+from . import report
+from . import wizard
+from . import sequences
 
 def register():
     Pool.register(
-        GnuHealthSequences,
-        GnuHealthSequenceSetup,
-        PatientData,
-        TestType,
-        Lab,
-        GnuHealthLabTestUnits,
-        GnuHealthTestCritearea,
-        GnuHealthPatientLabTest,
-        CreateLabTestOrderInit,
-        RequestTest,
-        RequestPatientLabTestStart,
-        PatientHealthCondition,
+        health_lab.PatientData,
+        health_lab.TestType,
+        health_lab.Lab,
+        health_lab.GnuHealthLabTestUnits,
+        health_lab.GnuHealthTestCritearea,
+        health_lab.GnuHealthPatientLabTest,
+        wizard.CreateLabTestOrderInit,
+        wizard.RequestPatientLabTestStart,
+        wizard.RequestTest,
+        health_lab.PatientHealthCondition,
+        sequences.GnuHealthSequences,
+        sequences.LabRequestSequence,
+        sequences.LabTestSequence,
         module='health_lab', type_='model')
     Pool.register(
-        CreateLabTestOrder,
-        RequestPatientLabTest,
+        wizard.CreateLabTestOrder,
+        wizard.RequestPatientLabTest,
         module='health_lab', type_='wizard')
-    Pool.register(
-        LabTestReport,
-        module='health_lab', type_='report')

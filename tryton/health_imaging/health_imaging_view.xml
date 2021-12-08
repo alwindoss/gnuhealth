@@ -179,7 +179,7 @@
             <field name="name">patient_imaging_test_request_start_form</field>
         </record>
         <record model="ir.action.wizard" id="patient_imaging_test_request">
-            <field name="name">Dx Imaging - New</field>
+            <field name="name">Dx Imaging - New order</field>
             <field name="wiz_name">gnuhealth.patient.imaging.test.request</field>
         </record>
 

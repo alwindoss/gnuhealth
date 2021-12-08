@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -30,6 +29,8 @@ from trytond.pool import Pool
 __all__ = ['CreateLabTestOrderInit', 'CreateLabTestOrder', 'RequestTest',
     'RequestPatientLabTestStart', 'RequestPatientLabTest']
 
+
+from trytond.modules.health.core import get_health_professional
 
 class CreateLabTestOrderInit(ModelView):
     'Create Test Report Init'
@@ -107,8 +108,11 @@ class RequestPatientLabTestStart(ModelView):
 
     date = fields.DateTime('Date')
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
-    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Doctor',
-        help="Doctor who Request the lab tests.")
+    context = fields.Many2One('gnuhealth.pathology', 'Context',
+        help="Health context for this order. It can be a suspected or"
+             " existing health condition, a regular health checkup, ...")
+    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Health prof',
+        help="Health professional who ordered the lab tests.")
     tests = fields.Many2Many('gnuhealth.request-test', 'request', 'test',
         'Tests', required=True)
     urgent = fields.Boolean('Urgent')
@@ -124,13 +128,7 @@ class RequestPatientLabTestStart(ModelView):
 
     @staticmethod
     def default_doctor():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        hp = HealthProf.get_health_professional()
-        if not hp:
-            RequestPatientLabTestStart.raise_user_error(
-                "No health professional associated to this user !")
-        return hp
+        return get_health_professional()
 
 class RequestPatientLabTest(Wizard):
     'Request Patient Lab Test'
@@ -143,13 +141,17 @@ class RequestPatientLabTest(Wizard):
             ])
     request = StateTransition()
 
+    def generate_code(self, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'lab_request_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
     def transition_request(self):
         PatientLabTest = Pool().get('gnuhealth.patient.lab.test')
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
-        config = Config(1)
-        request_number = Sequence.get_id(config.lab_request_sequence.id)
+        request_number = self.generate_code()
         lab_tests = []
         for test in self.start.tests:
             lab_test = {}
@@ -158,6 +160,8 @@ class RequestPatientLabTest(Wizard):
             lab_test['patient_id'] = self.start.patient.id
             if self.start.doctor:
                 lab_test['doctor_id'] = self.start.doctor.id
+            if self.start.context:
+                lab_test['context'] = self.start.context.id
             lab_test['date'] = self.start.date
             lab_test['urgent'] = self.start.urgent
             lab_tests.append(lab_test)

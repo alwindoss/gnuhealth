@@ -1,11 +1,12 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    GNU Health: The Free Health and Hospital Information System
+#    GNU Health HMIS: The Free Health and Hospital Information System
 #    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
 #    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
 #
-#
+#    The GNU Health HMIS component is part of the GNU Health project
+#    www.gnuhealth.org
+
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -32,71 +33,19 @@ from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or
 from trytond import backend
 from trytond.tools.multivalue import migrate_property
 
+from trytond.i18n import gettext
+from trytond.pyson import Id
 
-__all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup','RCRI', 
-    'Surgery', 'Operation', 'SurgeryMainProcedure','SurgerySupply',
-    'PatientData', 'SurgeryTeam']
+from .exceptions import (
+    EndDateBeforeStart, ORNotAvailable, OperatingRoomAndDateRequired,
+    SurgeryDone
+    )
 
-sequences = ['surgery_code_sequence']
+from trytond.modules.health.core import get_health_professional, \
+    get_institution
 
-
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
-    __name__ = "gnuhealth.sequences"
-
-    surgery_code_sequence = fields.MultiValue(fields.Many2One(
-        'ir.sequence', 'Surgery Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.surgery')]))
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-
-    @classmethod
-    def default_surgery_code_sequence(cls):
-        return cls.multivalue_model(
-            'surgery_code_sequence').default_surgery_code_sequence()
-
-
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    'GNU Health Sequences Setup'
-    __name__ = 'gnuhealth.sequence.setup'
-
-    surgery_code_sequence = fields.Many2One('ir.sequence', 
-        'Surgery Code Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.surgery')])
-  
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        exist = TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_MultiValue([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_surgery_code_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_surgery', 'seq_gnuhealth_surgery_code')
-    
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.MultiValue
+__all__ = ['RCRI', 'Surgery', 'Operation', 'SurgeryMainProcedure',
+           'SurgerySupply', 'PatientData', 'SurgeryTeam']
 
 class RCRI(ModelSQL, ModelView):
     'Revised Cardiac Risk Index'
@@ -438,9 +387,7 @@ class Surgery(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_surgery_date():
@@ -448,9 +395,7 @@ class Surgery(ModelSQL, ModelView):
 
     @staticmethod
     def default_surgeon():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        surgeon = HealthProf.get_health_professional()
+        surgeon = get_health_professional()
         return surgeon
 
     @staticmethod
@@ -478,27 +423,29 @@ class Surgery(ModelSQL, ModelView):
         self.computed_age = self.patient.age
 
 
+
+
+    @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'surgery_code_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
     @classmethod
     def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('code'):
-                config = Config(1)
-                values['code'] = Sequence.get_id(
-                    config.surgery_code_sequence.id)
+                values['code'] = cls.generate_code()
         return super(Surgery, cls).create(vlist)
 
 
     @classmethod
     def __setup__(cls):
         super(Surgery, cls).__setup__()
-        cls._error_messages.update({
-            'end_date_before_start': 'End time "%(end_date)s" BEFORE '
-                'surgery date "%(surgery_date)s"',
-            'or_is_not_available': 'Operating Room is not available'})
 
         cls._order.insert(0, ('surgery_date', 'DESC'))
 
@@ -536,23 +483,15 @@ class Surgery(ModelSQL, ModelView):
             ])
         if (self.surgery_end_date and self.surgery_date):
             if (self.surgery_end_date < self.surgery_date):
-                self.raise_user_error('end_date_before_start', {
-                        'surgery_date': Lang.strftime(self.surgery_date,
-                            language.code,
-                            language.date),
-                        'end_date': Lang.strftime(self.surgery_end_date,
-                            language.code,
-                            language.date),
-                        })
-
+                raise EndDateBeforeStart(
+                    gettext('health_surgery.msg_end_date_before_start'))
 
     @classmethod
     def write(cls, surgeries, vals):
         # Don't allow to write the record if the surgery has been signed
         if surgeries[0].state == 'signed':
-            cls.raise_user_error(
-                "This surgery is at state Done and has been signed\n"
-                "You can no longer modify it.")
+            raise EndDateBeforeStart(
+                gettext('health_surgery.msg_surgery_is_done'))
         return super(Surgery, cls).write(surgeries, vals)
 
     ## Method to check for availability and make the Operating Room reservation
@@ -567,8 +506,8 @@ class Surgery(ModelSQL, ModelView):
 
         # Operating Room and end surgery time check
         if (not surgery_id.operating_room or not surgery_id.surgery_end_date):
-            cls.raise_user_error("Operating Room and estimated end time  "
-            "are needed in order to confirm the surgery")
+            raise OperatingRoomAndDateRequired(
+                    gettext('health_surgery.msg_or_and_time_needed'))
 
         or_id = surgery_id.operating_room.id
         cursor.execute("SELECT COUNT(*) \
@@ -583,10 +522,12 @@ class Surgery(ModelSQL, ModelView):
         res = cursor.fetchone()
         if (surgery_id.surgery_end_date <
             surgery_id.surgery_date):
-            cls.raise_user_error("The Surgery end date must later than the \
-                Start")
+                raise EndDateBeforeStart(
+                    gettext('health_surgery.msg_end_date_before_start'))
         if res[0] > 0:
-            cls.raise_user_error('or_is_not_available')
+            raise ORNotAvailable(
+                    gettext('health_surgery.msg_or_is_not_available'))
+
         else:
             cls.write(surgeries, {'state': 'confirmed'})
  
@@ -641,10 +582,7 @@ class Surgery(ModelSQL, ModelView):
         # Sign, change the state of the Surgery to "Signed"
         # and write the name of the signing health professional
 
-        signing_hp = Pool().get('gnuhealth.healthprofessional').get_health_professional()
-        if not signing_hp:
-            cls.raise_user_error(
-                "No health professional associated to this user !")
+        signing_hp = get_health_professional()
 
         cls.write(surgeries, {
             'state': 'signed',
