@@ -2644,6 +2644,8 @@ class AlternativePersonID (ModelSQL, ModelView):
             ('other', 'Other'),
         ], 'ID type', required=True, sort=False,)
 
+    expiration_date = fields.Date('Expiration date')
+
     comments = fields.Char('Comments')
 
 
@@ -4859,7 +4861,8 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
     secondary_conditions = fields.One2Many(
         'gnuhealth.secondary_condition',
         'evaluation', 'Other Conditions', help='Other '
-        ' conditions found on the patient',
+        ' conditions found on the patient in the context'
+        ' of this evaluation',
         states=STATES)
 
     diagnostic_hypothesis = fields.One2Many(

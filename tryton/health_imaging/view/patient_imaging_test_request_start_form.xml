@@ -6,6 +6,8 @@
     <field name="urgent"/>
     <label name="patient"/>
     <field name="patient"/>
+    <label name="context"/>
+    <field name="context"/>
     <label name="doctor"/>
     <field name="doctor" widget="selection"/>
     <newline/>

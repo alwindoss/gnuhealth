@@ -9,7 +9,6 @@
         <record id="product_template_ultrasoundcharges" model="product.template">
             <field name="name">Ultrasound charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -17,7 +16,6 @@
         <record id="product_template_mricharges" model="product.template">
             <field name="name">MRI charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -25,7 +23,6 @@
         <record id="product_template_xraycharges" model="product.template">
             <field name="name">X-ray charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -33,7 +30,6 @@
         <record id="product_template_ctscancharges" model="product.template">
             <field name="name">CT Scan charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -41,7 +37,6 @@
         <record id="product_template_petscancharges" model="product.template">
             <field name="name">PET Scan charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -113,7 +108,6 @@
                 <field name="template" ref="product_template_petscancharges"/>
                 <field name="category" ref="product_category_imagingservices"/>
         </record>
-
 
     </data>
 </tryton>

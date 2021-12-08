@@ -29,6 +29,7 @@ from dateutil.relativedelta import relativedelta
 from datetime import datetime
 from trytond.transaction import Transaction
 from trytond.pool import Pool
+from trytond.i18n import gettext
 
 from .exceptions import (NoAssociatedHealthProfessional)
 

@@ -11,6 +11,8 @@
     <field name="patient_id"/>
     <label name="doctor_id"/>
     <field name="doctor_id"/>
+    <label name="context"/>
+    <field name="context"/>
     <label name="urgent"/>
     <field name="urgent"/>
     <label name="state"/>

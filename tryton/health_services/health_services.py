@@ -29,73 +29,17 @@ from trytond.pyson import Eval, Equal
 from trytond.pool import Pool
 from trytond import backend
 from trytond.tools.multivalue import migrate_property
+from trytond.i18n import gettext
+from trytond.pyson import Id
+
+from .exceptions import (
+    ServiceAlreadyInvoiced, NoServiceAssociated, NoProductAssociated,
+    NoInvoiceAddress, NoPaymentTerm
+    )
 
 
-__all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup',
-    'HealthService', 'HealthServiceLine', 'PatientPrescriptionOrder']
+__all__ = ['HealthService', 'HealthServiceLine', 'PatientPrescriptionOrder']
 
-sequences = ['health_service_sequence']
-
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
-    "Standard Sequences for GNU Health"
-    __name__ = "gnuhealth.sequences"
-
-    health_service_sequence = fields.MultiValue(fields.Many2One('ir.sequence',
-        'Health Service Sequence', domain=[
-            ('code', '=', 'gnuhealth.health_service')
-        ], required=True))
-
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-    @classmethod
-    def default_health_service_sequence(cls):
-        return cls.multivalue_model(
-            'health_service_sequence').default_health_service_sequence()
-
-
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    'GNU Health Sequences Setup'
-    __name__ = 'gnuhealth.sequence.setup'
-
-    health_service_sequence = fields.Many2One('ir.sequence', 
-        'Health Service Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.health_service')])
-
-  
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        exist = TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_MultiValue([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_health_service_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_services', 'seq_gnuhealth_health_service')
-    
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.MultiValue
 
 
 class HealthService(ModelSQL, ModelView):
@@ -161,17 +105,22 @@ class HealthService(ModelSQL, ModelView):
     def button_set_to_draft(cls, services):
         cls.write(services, {'state': 'draft'})
 
+
+    @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'health_service_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
     @classmethod
     def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('name'):
-                config = Config(1)
-                values['name'] = Sequence.get_id(
-                    config.health_service_sequence.id)
+                values['name'] = cls.generate_code()
         return super(HealthService, cls).create(vlist)
 
 
@@ -190,6 +139,13 @@ class HealthServiceLine(ModelSQL, ModelView):
     qty = fields.Integer('Qty')
     from_date = fields.Date('From')
     to_date = fields.Date('To')
+    action_required = fields.Boolean('Action required', help='This optional field'
+                            ' is used in the context of validation'
+                            ' on the service line. Mark it if there'
+                            ' is any administrative or other type'
+                            ' that needs action')
+
+    remarks = fields.Char('Remarks')
 
     @staticmethod
     def default_qty():
@@ -214,9 +170,8 @@ class HealthServiceLine(ModelSQL, ModelView):
     def validate_invoice_status(self):
         if (self.name):
             if (self.name.state == 'invoiced'):
-                self.raise_user_error(
-                    "This service has been invoiced.\n"
-                    "You can no longer modify service lines.")
+                raise ServiceAlreadyInvoiced(
+                    gettext('health_service.msg_service_already_invoiced'))
 
 
 """ Add Prescription order charges to service model """
@@ -251,7 +206,9 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         prescription = prescriptions[0]
 
         if not prescription.service:
-            cls.raise_user_error("Need to associate a service !")
+            raise NoServiceAssociated(
+                    gettext('health_service.msg_no_service_associated'))
+
 
         service_data = {}
         service_lines = []
@@ -275,3 +232,75 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
         service_data ['service_line'] = service_lines
                 
         HealthService.write(hservice, service_data)
+
+
+""" Include  Patient Evaluation service"""
+
+class PatientEvaluation(ModelSQL, ModelView):
+    'Patient Evaluation'
+    __name__ = 'gnuhealth.patient.evaluation'
+
+    service = fields.Many2One(
+        'gnuhealth.health_service', 'Service',
+        domain=[('patient', '=', Eval('patient'))], depends=['patient'],
+        states = {'readonly': Equal(Eval('state'), 'done')},
+        help="Service document associated to this evaluation")
+
+    product = fields.Many2One('product.product', 'Product')
+
+    """
+    @staticmethod
+    def default_product():
+        return get_institution()
+    """
+
+    @classmethod
+    def __setup__(cls):
+        super(PatientEvaluation, cls).__setup__()
+        cls._buttons.update({
+            'update_service': {
+                'readonly': Equal(Eval('state'), 'done'),
+            },
+            })
+
+
+    @classmethod
+    @ModelView.button
+    def update_service(cls, evaluations):
+        pool = Pool()
+        HealthService = pool.get('gnuhealth.health_service')
+
+        hservice = []
+        evaluation = evaluations[0]
+
+        if not evaluation.service:
+            raise NoServiceAssociated(
+                    gettext('health_service.msg_no_service_associated'))
+
+        if not evaluation.product:
+            raise NoProductAssociated(
+                    gettext('health_service.msg_no_product_associated'))
+
+
+        service_data = {}
+        service_lines = []
+
+        # Add the evaluation to the service document line
+
+        service_lines.append(('create', [{
+            'product': evaluation.product.id,
+            'desc': 'Medical evaluation services',
+            'qty': 1
+            }]))
+
+
+        hservice.append(evaluation.service)
+
+        description = "Medical evaluation services"
+        service_data ['desc'] =  description
+        service_data ['service_line'] = service_lines
+
+        HealthService.write(hservice, service_data)
+
+
+

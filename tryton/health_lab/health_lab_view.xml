@@ -163,7 +163,7 @@
         </record>
 
         <record model="ir.action.act_window" id="gnuhealth_action_tree_lab">
-            <field name="name">Lab Tests Results</field>
+            <field name="name">Lab Results</field>
             <field name="res_model">gnuhealth.lab</field>
         </record>
         <record model="ir.action.act_window.view" id="gnuhealth_action_tree_lab_tree_view">
@@ -180,10 +180,10 @@
         <menuitem parent="gnuhealth_laboratory_menu" action="gnuhealth_action_tree_lab"
             id="gnuhealth_action_lab_tree" sequence="30" icon="gnuhealth-list"/>
 
-<!-- Shortcut to the Lab Reports from the Patient -->
+<!-- Shortcut to the Lab results from the Patient -->
 
         <record model="ir.action.act_window" id="act_patient_lab_history_form1">
-            <field name="name">Lab: Reports</field>
+            <field name="name">Lab: Results</field>
             <field name="res_model">gnuhealth.lab</field>
             <field name="domain" eval="[('patient', '=', Eval('active_id'))]" pyson="1"/>
         </record>

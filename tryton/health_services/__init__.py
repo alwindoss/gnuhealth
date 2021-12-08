@@ -11,6 +11,9 @@
 #    the Free Software Foundation, either version 3 of the License, or
 #    (at your option) any later version.
 #
+#    The GNU Health HMIS component is part of the GNU Health project
+#    www.gnuhealth.org
+#
 #    This program is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -22,22 +25,24 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_services import *
-from .wizard import *
-from .invoice import *
+from . import sequences
+from . import health_services
+from . import wizard
+from . import invoice
 
 
 def register():
     Pool.register(
-        GnuHealthSequences,
-        GnuHealthSequenceSetup,
-        HealthService,
-        HealthServiceLine,
-        CreateServiceInvoiceInit,
-        Invoice,
-        InvoiceLine,
-        PatientPrescriptionOrder,
+        sequences.GnuHealthSequences,
+        sequences.HealthServiceSequence,
+        health_services.HealthService,
+        health_services.HealthServiceLine,
+        wizard.CreateServiceInvoiceInit,
+        invoice.Invoice,
+        invoice.InvoiceLine,
+        health_services.PatientPrescriptionOrder,
+        health_services.PatientEvaluation,
         module='health_services', type_='model')
     Pool.register(
-        CreateServiceInvoice,
+        wizard.CreateServiceInvoice,
         module='health_services', type_='wizard')
