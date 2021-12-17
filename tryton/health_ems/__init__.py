@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -20,16 +19,17 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_ems import *
-
+from . import health_ems
+from . import sequences
 
 def register():
     Pool.register(
-        GnuHealthSequences,
-        GnuHealthSequenceSetup,
-        Ambulance,
-        SupportRequest,
-        AmbulanceSupport,
-        AmbulanceHealthProfessional,
-        SupportRequestLog,
+        sequences.GnuHealthSequences,
+        sequences.SupportRequestSequence,
+        health_ems.Ambulance,
+        health_ems.SupportRequest,
+        health_ems.AmbulanceSupport,
+        health_ems.AmbulanceHealthProfessional,
+        health_ems.SupportRequestLog,
         module='health_ems', type_='model')
+
