@@ -15,8 +15,15 @@ from trytond.pyson import If, Bool, Eval, PYSONEncoder
 from trytond.transaction import Transaction
 from trytond.cache import Cache
 from trytond.pool import Pool
-from .exceptions import InvalidCalendarExtension
 from trytond.i18n import gettext
+
+from .exceptions import (
+    InvalidCalendarExtension, InvalidRecurrence,
+    InvalidBySecond, InvalidByMinute,
+    InvalidByHour, InvalidByDay,
+    InvalidByMonthDay, InvalidByWeekNumber,
+    InvalidByYearDay,
+    InvalidByMonth, InvalidByPosition)
 
 __all__ = ['Calendar', 'ReadUser', 'WriteUser', 'Category', 'Location',
     'Event', 'EventCategory', 'AlarmMixin', 'EventAlarm', 'AttendeeMixin',
@@ -469,9 +476,6 @@ class Event(ModelSQL, ModelView):
                 Unique(t, t.uuid, t.calendar, t.recurrence),
                 'UUID and recurrence must be unique in a calendar.'),
             ]
-        cls._error_messages.update({
-                'invalid_recurrence': 'Recurrence "%s" can not be recurrent.',
-                })
 
     @staticmethod
     def default_uuid():
@@ -527,7 +531,8 @@ class Event(ModelSQL, ModelView):
                     or self.exdates \
                     or self.exrules \
                     or self.occurences:
-                self.raise_user_error('invalid_recurrence', (self.rec_name,))
+                raise InvalidRecurrence(
+                    gettext('health_caldav.msg_invalid_recurrence'))
 
     @classmethod
     def view_attributes(cls):
@@ -1669,24 +1674,6 @@ class RRuleMixin(Model):
                     (t.until == Null) | (t.count == Null) | (t.count == 0)),
                 'Only one of "until" and "count" can be set.'),
             ]
-        cls._error_messages.update({
-                'invalid_bysecond': ('Invalid "By Second" in recurrence rule '
-                    '"%s"'),
-                'invalid_byminute': ('Invalid "By Minute" in recurrence rule '
-                    '"%s"'),
-                'invalid_byhour': 'Invalid "By Hour" in recurrence rule "%s"',
-                'invalid_byday': 'Invalid "By Day" in recurrence rule "%s"',
-                'invalid_bymonthday': ('Invalid "By Month Day" in recurrence '
-                    'rule "%s"'),
-                'invalid_byyearday': ('Invalid "By Year Day" in recurrence '
-                    'rule "%s"'),
-                'invalid_byweekno': ('Invalid "By Week Number" in recurrence '
-                    'rule "%s"'),
-                'invalid_bymonth': (
-                    'Invalid "By Month" in recurrence rule "%s"'),
-                'invalid_bysetpos': (
-                    'Invalid "By Position" in recurrence rule "%s"'),
-                })
 
     @classmethod
     def validate(cls, rules):
@@ -1710,7 +1697,9 @@ class RRuleMixin(Model):
                 except Exception:
                     second = -1
                 if not (second >= 0 and second <= 59):
-                    self.raise_user_error('invalid_bysecond', (self.rec_name,))
+                    raise InvalidBySecond(
+                        gettext('health_caldav.msg_invalid_bysecond'))
+
 
     def check_byminute(self):
         if self.byminute:
@@ -1720,7 +1709,8 @@ class RRuleMixin(Model):
                 except Exception:
                     minute = -1
                 if not (minute >= 0 and minute <= 59):
-                    self.raise_user_error('invalid_byminute', (self.rec_name,))
+                    raise InvalidByMinute(
+                        gettext('health_caldav.msg_invalid_byminute'))
 
     def check_byhour(self):
         if self.byhour:
@@ -1730,14 +1720,16 @@ class RRuleMixin(Model):
                 except Exception:
                     hour = -1
                 if not (hour >= 0 and hour <= 23):
-                    self.raise_user_error('invalid_byhour', (self.rec_name,))
+                    raise InvalidByHour(
+                        gettext('health_caldav.msg_invalid_byhour'))
 
     def check_byday(self):
         if self.byday:
             for weekdaynum in self.byday.split(','):
                 weekday = weekdaynum[-2:]
                 if weekday not in ('SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'):
-                    self.raise_user_error('invalid_byday', (self.rec_name,))
+                    raise InvalidByDay(
+                        gettext('health_caldav.msg_invalid_byday'))
                 ordwk = weekday[:-2]
                 if not ordwk:
                     continue
@@ -1746,7 +1738,8 @@ class RRuleMixin(Model):
                 except Exception:
                     ordwk = -1
                 if not (abs(ordwk) >= 1 and abs(ordwk) <= 53):
-                    self.raise_user_error('invalid_byday', (self.rec_name,))
+                    raise InvalidByDay(
+                        gettext('health_caldav.msg_invalid_byday'))
 
     def check_bymonthday(self):
         if self.bymonthday:
@@ -1756,8 +1749,8 @@ class RRuleMixin(Model):
                 except Exception:
                     monthdaynum = -100
                 if not (abs(monthdaynum) >= 1 and abs(monthdaynum) <= 31):
-                    self.raise_user_error('invalid_bymonthday', (
-                            self.rec_name,))
+                    raise InvalidByMonthDay(
+                        gettext('health_caldav.msg_invalid_bymonthday'))
 
     def check_byyearday(self):
         if self.byyearday:
@@ -1767,8 +1760,8 @@ class RRuleMixin(Model):
                 except Exception:
                     yeardaynum = -1000
                 if not (abs(yeardaynum) >= 1 and abs(yeardaynum) <= 366):
-                    self.raise_user_error('invalid_byyearday',
-                        (self.rec_name,))
+                    raise InvalidByYearDay(
+                        gettext('health_caldav.msg_invalid_byyearday'))
 
     def check_byweekno(self):
         if self.byweekno:
@@ -1778,7 +1771,8 @@ class RRuleMixin(Model):
                 except Exception:
                     weeknum = -100
                 if not (abs(weeknum) >= 1 and abs(weeknum) <= 53):
-                    self.raise_user_error('invalid_byweekno', (self.rec_name,))
+                    raise InvalidByWeekNumber(
+                        gettext('health_caldav.msg_invalid_byweeknumber'))
 
     def check_bymonth(self):
         if self.bymonth:
@@ -1788,7 +1782,8 @@ class RRuleMixin(Model):
                 except Exception:
                     monthnum = -1
                 if not (monthnum >= 1 and monthnum <= 12):
-                    self.raise_user_error('invalid_bymonth', (self.rec_name,))
+                    raise InvalidByMonth(
+                        gettext('health_caldav.msg_invalid_bymonth'))
 
     def check_bysetpos(self):
         if self.bysetpos:
@@ -1798,7 +1793,8 @@ class RRuleMixin(Model):
                 except Exception:
                     setposday = -1000
                 if not (abs(setposday) >= 1 and abs(setposday) <= 366):
-                    self.raise_user_error('invalid_bysetpos', (self.rec_name,))
+                    raise InvalidBySetPosition(
+                        gettext('health_caldav.msg_invalid_bysetpos'))
 
     def _rule2update(self):
         res = {}
