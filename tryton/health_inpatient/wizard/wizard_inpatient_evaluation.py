@@ -27,6 +27,7 @@ from trytond.transaction import Transaction
 from trytond.pool import Pool
 from trytond.pyson import PYSONEncoder
 
+from ..exceptions import NoRecordSelected
 
 __all__ = ['CreateInpatientEvaluation']
 
@@ -45,8 +46,9 @@ class CreateInpatientEvaluation(Wizard):
             reg_id = \
                 Pool().get('gnuhealth.inpatient.registration').browse([inpatient_registration])[0]
         except:
-            self.raise_user_error('no_record_selected')
-            
+            raise NoRecordSelected(
+                gettext('health_inpatient.msg_no_record_selected'))
+
         patient = reg_id.patient.id
 
         
@@ -63,11 +65,3 @@ class CreateInpatientEvaluation(Wizard):
             
         return action, {}
         
-    @classmethod
-    def __setup__(cls):
-        super(CreateInpatientEvaluation, cls).__setup__()
-        cls._error_messages.update({
-            'no_record_selected':
-                'You need to select an inpatient registration record',
-        })
-

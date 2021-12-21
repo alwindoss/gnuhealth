@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- This file is part of GNU Health.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_no_associated_health_professional">
+            <field name="text">There is no health professional associated to this user</field>
+        </record>
+    </data>
+</tryton>

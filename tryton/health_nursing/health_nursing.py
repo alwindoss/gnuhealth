@@ -29,94 +29,17 @@ from trytond.transaction import Transaction
 from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
 from trytond import backend
 from trytond.tools.multivalue import migrate_property
+from trytond.i18n import gettext
+from trytond.pyson import Id
+from trytond.modules.health.core import get_health_professional
 
+from .exceptions import (
+    NoAssociatedHealthProfessional
+    )
 
-__all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup',
+__all__ = [
     'PatientRounding', 'RoundingProcedure',
     'PatientAmbulatoryCare', 'AmbulatoryCareProcedure']
-
-sequences = ['ambulatory_care_sequence', 'patient_rounding_sequence']
-
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
-    "Standard Sequences for GNU Health"
-    __name__ = "gnuhealth.sequences"
-
-    ambulatory_care_sequence = fields.MultiValue(fields.Many2One('ir.sequence',
-        'Health Ambulatory Care', domain=[
-            ('code', '=', 'gnuhealth.ambulatory_care')
-        ]))
-
-    patient_rounding_sequence = fields.MultiValue(fields.Many2One('ir.sequence',
-        'Health Rounding', domain=[
-            ('code', '=', 'gnuhealth.patient.rounding')
-        ]))
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-    @classmethod
-    def default_patient_rounding_sequence(cls):
-        return cls.multivalue_model(
-            'patient_rounding_sequence').default_patient_rounding_sequence()
-
-    @classmethod
-    def default_ambulatory_care_sequence(cls):
-        return cls.multivalue_model(
-            'ambulatory_care_sequence').default_ambulatory_care_sequence()
-
-
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    'GNU Health Sequences Setup'
-    __name__ = 'gnuhealth.sequence.setup'
-
-    patient_rounding_sequence = fields.Many2One('ir.sequence', 
-        'Patient Rounding Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.patient.rounding')])
-
-
-    ambulatory_care_sequence = fields.Many2One('ir.sequence', 
-        'Ambulatory Care Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.patient.ambulatory_care')])
-  
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        exist = TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_MultiValue([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_patient_rounding_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_nursing', 'seq_gnuhealth_patient_rounding')
-
-    @classmethod
-    def default_ambulatory_care_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_nursing', 'seq_gnuhealth_ambulatory_care')
-    
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.MultiValue
 
 
 # Class : PatientRounding
@@ -223,10 +146,7 @@ class PatientRounding(ModelSQL, ModelView):
 
     @staticmethod
     def default_health_professional():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        healthprof = HealthProf.get_health_professional()
-        return healthprof
+        return get_health_professional()
 
     @staticmethod
     def default_evaluation_start():
@@ -239,10 +159,6 @@ class PatientRounding(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(PatientRounding, cls).__setup__()
-        cls._error_messages.update({
-            'health_professional_warning':
-                    'No health professional associated to this user',
-        })
         cls._buttons.update({
             'end_rounding': {
                 'invisible': ~Eval('state').in_(['draft']),
@@ -266,17 +182,22 @@ class PatientRounding(ModelSQL, ModelView):
             'evaluation_end': datetime.now()
             })
 
+
+    @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'patient_rounding_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
     @classmethod
     def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('code'):
-                config = Config(1)
-                values['code'] = Sequence.get_id(
-                    config.patient_rounding_sequence.id)
+                values['code'] = cls.generate_code()
         return super(PatientRounding, cls).create(vlist)
 
 
@@ -288,7 +209,8 @@ class PatientRounding(ModelSQL, ModelView):
 
     def check_health_professional(self):
         if not self.health_professional:
-            self.raise_user_error('health_professional_warning')
+            raise NoAssociatedHealthProfessional(
+                gettext('health.msg_no_associated_health_professional'))
 
     def get_report_start_date(self, name):
         Company = Pool().get('company.company')
@@ -448,10 +370,6 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(PatientAmbulatoryCare, cls).__setup__()
-        cls._error_messages.update({
-            'health_professional_warning':
-                    'No health professional associated to this user',
-        })
         cls._buttons.update({
             'end_session': {
                 'invisible': ~Eval('state').in_(['draft']),
@@ -483,20 +401,27 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
 
     def check_health_professional(self):
         if not self.health_professional:
-            self.raise_user_error('health_professional_warning')
+            raise NoAssociatedHealthProfessional(
+                gettext('health.msg_no_associated_health_professional'))
+
+
+    @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'ambulatory_care_sequence', **pattern)
+        if sequence:
+            return sequence.get()
 
     @classmethod
     def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('name'):
-                config = Config(1)
-                values['name'] = Sequence.get_id(
-                    config.ambulatory_care_sequence.id)
+                values['name'] = cls.generate_code()
         return super(PatientAmbulatoryCare, cls).create(vlist)
+
 
     @classmethod
     def copy(cls, ambulatorycares, default=None):

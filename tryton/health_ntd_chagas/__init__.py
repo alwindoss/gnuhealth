@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,11 +21,12 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_ntd_chagas import *
+from . import health_ntd_chagas
+from . import sequences
 
 def register():
     Pool.register(
-        ChagasDUSurvey,
-        GnuHealthSequences,
-        GnuHealthSequenceSetup,
+        health_ntd_chagas.ChagasDUSurvey,
+        sequences.GnuHealthSequences,
+        sequences.ChagasDUSurveySequence,
         module='health_ntd_chagas', type_='model')

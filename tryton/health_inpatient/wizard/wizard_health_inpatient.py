@@ -26,7 +26,7 @@ from trytond.model import ModelView, fields
 from trytond.wizard import Wizard, StateTransition, StateView, Button
 from trytond.transaction import Transaction
 from trytond.pool import Pool
-
+from ..exceptions import DestinationBedNotavailable, ManyRecordsChosen
 
 __all__ = ['CreateBedTransferInit', 'CreateBedTransfer']
 
@@ -65,13 +65,6 @@ class CreateBedTransfer(Wizard):
     create_bed_transfer = StateTransition()
 
 
-    @classmethod
-    def __setup__(cls):
-        super(CreateBedTransfer, cls).__setup__()
-        cls._error_messages.update({
-            'bed_unavailable': 'Destination bed is unavailable',
-            'choose_one': 'You have chosen more than 1 records. Please choose only one'})
-
     def transition_create_bed_transfer(self):
         inpatient_registrations = Pool().get('gnuhealth.inpatient.registration')
         bed = Pool().get('gnuhealth.hospital.bed')
@@ -81,7 +74,8 @@ class CreateBedTransfer(Wizard):
 
         # Don't allow mass changes. Work on a single record
         if len(registrations) > 1 :
-            self.raise_user_error('choose_one')
+            raise ManyRecordsChosen(
+                gettext('health_inpatient.msg_many_records_chosen'))
 
         registration = registrations[0]
         current_bed = registration.bed
@@ -118,7 +112,8 @@ class CreateBedTransfer(Wizard):
 
 
         else:
-            self.raise_user_error('bed_unavailable')
+            raise DestinationBedNotAvailable(
+                gettext('health_inpatient.msg_destination_bed_not_available'))
 
         return 'end'
 

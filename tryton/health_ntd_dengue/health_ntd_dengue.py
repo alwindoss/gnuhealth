@@ -30,70 +30,7 @@ from trytond.tools.multivalue import migrate_property
 
 
 
-__all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup', 'DengueDUSurvey']
-
-sequences = ['dengue_du_survey_sequence']
-
-
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
-    __name__ = 'gnuhealth.sequences'
-
-    dengue_du_survey_sequence = fields.MultiValue(fields.Many2One(
-        'ir.sequence',
-        'Dengue Survey Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.dengue_du_survey')]))
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-
-    @classmethod
-    def default_dengue_du_survey_sequence(cls):
-        return cls.multivalue_model(
-            'dengue_du_survey_sequence').default_dengue_du_survey_sequence()
-
-
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    'GNU Health Sequences Setup'
-    __name__ = 'gnuhealth.sequence.setup'
-
-    dengue_du_survey_sequence = fields.Many2One('ir.sequence', 
-        'Dengue DU Survey Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.dengue_du_survey')])
-  
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        exist = TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_MultiValue([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_dengue_du_survey_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_ntd_dengue', 'seq_gnuhealth_du_survey')
-    
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.MultiValue
-
+__all__ = ['DengueDUSurvey']
 
 class DengueDUSurvey(ModelSQL, ModelView):
     'Dengue DU Survey'
@@ -164,16 +101,20 @@ class DengueDUSurvey(ModelSQL, ModelView):
     def default_survey_date():
         return datetime.now()
 
+
+    @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'dengue_du_survey_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
     @classmethod
     def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('name'):
-                config = Config(1)
-                values['name'] = Sequence.get_id(
-                    config.dengue_du_survey_sequence.id)
-
+                values['name'] = cls.generate_code()
         return super(DengueDUSurvey, cls).create(vlist)
