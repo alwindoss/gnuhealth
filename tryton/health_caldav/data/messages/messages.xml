@@ -6,5 +6,35 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_invalid_calendar_extension">
             <field name="text">The calendar name can not have the icd extension</field>
         </record>
+        <record model="ir.message" id="msg_invalid_recurrence">
+            <field name="text">This recurrence can not be recurrent</field>
+        </record>
+        <record model="ir.message" id="msg_invalid_bysecond">
+            <field name="text">Invalid *By Second* in recurrence rule "%(self.rec_name,)s"</field>
+        </record>
+        <record model="ir.message" id="msg_invalid_byminute">
+            <field name="text">Invalid *By Minute* in recurrence rule "%(self.rec_name,)s"</field>
+        </record>
+        <record model="ir.message" id="msg_invalid_byhour">
+            <field name="text">Invalid *By Hour* in recurrence rule "%(self.rec_name,)s"</field>
+        </record>
+        <record model="ir.message" id="msg_invalid_byday">
+            <field name="text">Invalid *By Day* in recurrence rule "%(self.rec_name,)s"</field>
+        </record>
+        <record model="ir.message" id="msg_invalid_bymonthday">
+            <field name="text">Invalid *By Month Day* in recurrence rule "%(self.rec_name,)s"</field>
+        </record>
+        <record model="ir.message" id="msg_invalid_byyearday">
+            <field name="text">Invalid *By Year Day* in recurrence rule "%(self.rec_name,)s"</field>
+        </record>
+        <record model="ir.message" id="msg_invalid_byweeknumber">
+            <field name="text">Invalid *By Week Number* in recurrence rule "%(self.rec_name,)s"</field>
+        </record>
+        <record model="ir.message" id="msg_invalid_bymonth">
+            <field name="text">Invalid *By Month* in recurrence rule "%(self.rec_name,)s"</field>
+        </record>
+        <record model="ir.message" id="msg_invalid_bysetpos">
+            <field name="text">Invalid *By Position* in recurrence rule "%(self.rec_name,)s"</field>
+        </record>
     </data>
 </tryton>
