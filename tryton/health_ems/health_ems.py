@@ -34,76 +34,16 @@ from trytond.model import ModelView, ModelSingleton, ModelSQL, \
 from trytond.pool import Pool
 from trytond import backend
 from trytond.tools.multivalue import migrate_property
+from trytond.i18n import gettext
+from trytond.pyson import Id
 
+from trytond.modules.health.core import get_health_professional
 
 
 __all__ = [
-    'GnuHealthSequences','GnuHealthSequenceSetup',
     'Ambulance','SupportRequest', 'AmbulanceSupport',
     'AmbulanceHealthProfessional','SupportRequestLog']
 
-sequences = ['support_request_code_sequence']
-
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, ValueMixin):
-    'GNU Health Sequences'
-    __name__ = "gnuhealth.sequences"
-
-    support_request_code_sequence = fields.MultiValue(fields.Many2One(
-        'ir.sequence', 'Support Request Sequence', 
-        domain=[('code', '=', 'gnuhealth.support_request')],
-        required=True))
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-
-    @classmethod
-    def default_support_request_code_sequence(cls):
-        return cls.multivalue_model(
-            'support_request_code_sequence').default_support_request_code_sequence()
-
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    'GNU Health Sequences Setup'
-    __name__ = 'gnuhealth.sequence.setup'
-
-    support_request_code_sequence = fields.Many2One('ir.sequence', 
-        'Support Request Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.support_request')])
-
-  
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        exist = TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_property([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_support_request_code_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_ems', 'seq_gnuhealth_support_request_code')
-
-    
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.PROPERTY
 
 class Ambulance (ModelSQL, ModelView):
     'Ambulance'
@@ -323,10 +263,7 @@ class SupportRequest (ModelSQL, ModelView):
 
     @staticmethod
     def default_operator():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        operator = HealthProf.get_health_professional()
-        return operator
+        return get_health_professional()
 
     @staticmethod
     def default_state():
@@ -347,18 +284,22 @@ class SupportRequest (ModelSQL, ModelView):
 
         return ret_url
 
+
+    @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'support_request_code_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
     @classmethod
     def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('code'):
-                config = Config(1)
-                values['code'] = Sequence.get_id(
-                    config.support_request_code_sequence.id)
-
+                values['code'] = cls.generate_code()
         return super(SupportRequest, cls).create(vlist)
 
 

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- This file is part of GNU Health.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_no_associated_health_professional">
+            <field name="text">There is no health professional associated to this user</field>
+        </record>
+        <record model="ir.message" id="msg_bed_is_not_available">
+            <field name="text">Bed is not available</field>
+        </record>
+        <record model="ir.message" id="msg_destination_bed_not_available">
+            <field name="text">Destination bed is not available</field>
+        </record>
+        <record model="ir.message" id="msg_discharge_reason_needed">
+            <field name="text">Admission and Discharge reasons as well as Discharge Dx are needed</field>
+        </record>
+        <record model="ir.message" id="msg_discharge_befor_admission">
+            <field name="text">The Discharge date must later than the admission</field>
+        </record>
+        <record model="ir.message" id="msg_need_timezone">
+            <field name="text">Need timezone</field>
+        </record>
+        <record model="ir.message" id="msg_special_meal_needs">
+            <field name="text">This patient has special meal needs</field>
+        </record>
+        <record model="ir.message" id="msg_many_records_chosen">
+            <field name="text">You have chosen more than 1 record. Please choose only one</field>
+        </record>
+        <record model="ir.message" id="msg_no_record_selected">
+            <field name="text">You need to select one record</field>
+        </record>
+    </data>
+</tryton>
