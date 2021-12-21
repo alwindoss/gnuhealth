@@ -15,6 +15,8 @@ from trytond.pyson import If, Bool, Eval, PYSONEncoder
 from trytond.transaction import Transaction
 from trytond.cache import Cache
 from trytond.pool import Pool
+from .exceptions import InvalidCalendarExtension
+from trytond.i18n import gettext
 
 __all__ = ['Calendar', 'ReadUser', 'WriteUser', 'Category', 'Location',
     'Event', 'EventCategory', 'AlarmMixin', 'EventAlarm', 'AttendeeMixin',
@@ -51,9 +53,6 @@ class Calendar(ModelSQL, ModelView):
                 'A user can have only one calendar.'),
             ]
         cls._order.insert(0, ('name', 'ASC'))
-        cls._error_messages.update({
-                'invalid_name': 'Calendar name "%s" can not end with .ics',
-                })
 
     @classmethod
     def create(cls, vlist):
@@ -85,7 +84,9 @@ class Calendar(ModelSQL, ModelView):
         Check the name doesn't end with .ics
         '''
         if self.name.endswith('.ics'):
-            self.raise_user_error('invalid_name', (self.name,))
+            raise InvalidCalendarExtension(
+                gettext('health_caldav.msg_invalid_calendar_extension'))
+
 
     @classmethod
     def get_name(cls, name):
