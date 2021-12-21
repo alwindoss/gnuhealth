@@ -22,15 +22,16 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_nursing import *
-
+from . import health_nursing
+from . import sequences
 
 def register():
     Pool.register(
-        GnuHealthSequences,
-        GnuHealthSequenceSetup,
-        PatientRounding,
-        RoundingProcedure,
-        PatientAmbulatoryCare,
-        AmbulatoryCareProcedure,
+        health_nursing.PatientRounding,
+        health_nursing.RoundingProcedure,
+        health_nursing.PatientAmbulatoryCare,
+        health_nursing.AmbulatoryCareProcedure,
+        sequences.GnuHealthSequences,
+        sequences.AmbulatoryCareSequence,
+        sequences.PatientRoundingSequence,
         module='health_nursing', type_='model')
