@@ -22,11 +22,12 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_ntd_dengue import *
+from . import health_ntd_dengue
+from . import sequences
 
 def register():
     Pool.register(
-        DengueDUSurvey,
-        GnuHealthSequences,
-        GnuHealthSequenceSetup,
+        health_ntd_dengue.DengueDUSurvey,
+        sequences.GnuHealthSequences,
+        sequences.DengueDUSurveySequence,
         module='health_ntd_dengue', type_='model')
