@@ -30,108 +30,25 @@ from trytond.pool import Pool
 from trytond.pyson import Eval, Not, Bool, And, Equal, Or
 from trytond import backend
 from trytond.tools.multivalue import migrate_property
+from trytond.pyson import Id
+from trytond.modules.health.core import get_health_professional, get_institution
 
 import pytz
 
+from .exceptions import (
+    NoAssociatedHealthProfessional, BedIsNotAvailable,
+    DischargeReasonNeeded, DischargeBeforeAdmission,
+    DestinationBedNotavailable, NeedTimeZone,
+    AdmissionMustBeToday, SpecialMealNeeds
+    )
 
 
-__all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup',
+__all__ = [
     'DietTherapeutic','InpatientRegistration', 
     'BedTransfer', 'Appointment', 'PatientEvaluation', 'PatientData',
     'InpatientMedication', 'InpatientMedicationAdminTimes',
     'InpatientMedicationLog', 'InpatientDiet', 'InpatientMeal',
     'InpatientMealOrder','InpatientMealOrderItem', 'ECG']
-
-
-sequences = ['inpatient_registration_sequence',
-            'inpatient_meal_order_sequence']
-
-
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, ValueMixin):
-    'GNU Health Sequences'
-    __name__ = 'gnuhealth.sequences'
-
-    inpatient_registration_sequence = fields.MultiValue(fields.Many2One(
-        'ir.sequence', 'Inpatient Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.inpatient.registration')]))
-
-    inpatient_meal_order_sequence = fields.MultiValue(fields.Many2One(
-        'ir.sequence', 'Inpatient Meal Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.inpatient.meal.order')]))
-
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-
-    @classmethod
-    def default_inpatient_registration_sequence(cls):
-        return cls.multivalue_model(
-            'inpatient_registration_sequence').default_inpatient_registration_sequence()
-
-
-    @classmethod
-    def default_inpatient_meal_order_sequence(cls):
-        return cls.multivalue_model(
-            'inpatient_meal_order_sequence').default_inpatient_meal_order_sequence()
-
-    
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    'GNU Health Sequences Setup'
-    __name__ = 'gnuhealth.sequence.setup'
-
-    inpatient_registration_sequence = fields.Many2One('ir.sequence', 
-        'Inpatient Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.inpatient.registration')])
-
-
-    inpatient_meal_order_sequence = fields.Many2One('ir.sequence',
-        'Inpatient Meal Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.inpatient.meal.order')])
-
-  
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        exist = TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_property([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_inpatient_registration_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_inpatient', 'seq_gnuhealth_inpatient_registration')
-
-    @classmethod
-    def default_inpatient_meal_order_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_inpatient', 'seq_gnuhealth_inpatient_meal_order')
-    
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.PROPERTY
-
-
-
 
 # Therapeutic Diet types
 
@@ -243,9 +160,7 @@ class InpatientRegistration(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     def get_patient_puid(self, name):
         return self.patient.name.ref
@@ -266,12 +181,6 @@ class InpatientRegistration(ModelSQL, ModelView):
                 'The Registration code already exists'),
             ]
 
-        cls._error_messages.update({
-                'bed_is_not_available': 'Bed is not available',
-                'discharge_reason_needed': 'Admission and Discharge reasons \n'
-                'as well as Discharge Dx are needed',
-                'destination_bed_unavailable': 'Destination bed unavailable',
-                'need_timezone':'You need to set up the company timezone'})
         cls._buttons.update({
                 'confirmed': {
                     'invisible': And(Not(Equal(Eval('state'), 'free')),
@@ -313,10 +222,12 @@ class InpatientRegistration(ModelSQL, ModelView):
         res = cursor.fetchone()
         if (registration_id.discharge_date.date() <
             registration_id.hospitalization_date.date()):
-            cls.raise_user_error("The Discharge date must later than the " \
-                "Admission")
+                raise DischargeBeforeAdmission(
+                    gettext('health_inpatient.msg_discharge_befor_admission'))
+
         if res[0] > 0:
-            cls.raise_user_error('bed_is_not_available')
+            raise BedIsNotAvailable(
+                gettext('health_inpatient.msg_bed_is_not_available'))
         else:
             cls.write(registrations, {'state': 'confirmed'})
             Bed.write([registration_id.bed], {'state': 'reserved'})
@@ -327,10 +238,10 @@ class InpatientRegistration(ModelSQL, ModelView):
         registration_id = registrations[0]
         Bed = Pool().get('gnuhealth.hospital.bed')
 
-        signing_hp = Pool().get('gnuhealth.healthprofessional').get_health_professional()
+        signing_hp = get_health_professional()
         if not signing_hp:
-            cls.raise_user_error(
-                "No health professional associated to this user !")
+            raise NoAssociatedHealthProfessional(
+                gettext('health_inpatient.msg_no_associated_health_professional'))
 
         cls.write(registrations, {'state': 'done',
             'discharged_by': signing_hp})
@@ -377,26 +288,33 @@ class InpatientRegistration(ModelSQL, ModelView):
 
                 if (registration_id.hospitalization_date.date() !=
                     dt_local.date()):
-                    cls.raise_user_error("The Admission date must be today")
+                    raise AdmissionMustBeToday(
+                        gettext('health_inpatient.msg_admission_must_be_today'))
                 else:
                     cls.write(registrations, {'state': 'hospitalized'})
                     Bed.write([registration_id.bed], {'state': 'occupied'})
 
             else:
-               cls.raise_user_error('need_timezone')
+                raise NeedTimeZone(
+                    gettext('health_inpatient.msg_need_timezone'))
+
+
+    @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'inpatient_registration_sequence', **pattern)
+        if sequence:
+            return sequence.get()
 
     @classmethod
     def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('name'):
-                config = Config(1)
-                values['name'] = Sequence.get_id(
-                    config.inpatient_registration_sequence.id)
-        return super(InpatientRegistration, cls).create(vlist)
+                values['name'] = cls.generate_code()
+        return super(PatientAmbulatoryCare, cls).create(vlist)
 
     @staticmethod
     def default_state():
@@ -413,7 +331,8 @@ class InpatientRegistration(ModelSQL, ModelView):
         if ((not self.discharge_reason or not self.discharge_dx
             or not self.admission_reason)
             and self.state == 'done'):
-                self.raise_user_error('discharge_reason_needed')
+                raise DischargeReasonNeeded(
+                    gettext('health_inpatient.msg_discharge_reason_needed'))
 
     
     # Format Registration ID : Patient : Bed
@@ -646,14 +565,6 @@ class InpatientMedicationLog (ModelSQL, ModelView):
         help='specific remarks for this dose')
 
     @classmethod
-    def __setup__(cls):
-        super(InpatientMedicationLog, cls).__setup__()
-        cls._error_messages.update({
-            'health_professional_warning':
-                    'No health professional associated to this user',
-        })
-
-    @classmethod
     def validate(cls, records):
         super(InpatientMedicationLog, cls).validate(records)
         for record in records:
@@ -661,12 +572,12 @@ class InpatientMedicationLog (ModelSQL, ModelView):
 
     def check_health_professional(self):
         if not self.health_professional:
-            self.raise_user_error('health_professional_warning')
+            raise NoAssociatedHealthProfessional(
+                gettext('health.msg_no_associated_health_professional'))
 
     @staticmethod
     def default_health_professional():
-        pool = Pool()
-        return pool.get('gnuhealth.healthprofessional').get_health_professional()
+        return get_health_professional()
 
     @staticmethod
     def default_admin_time():
@@ -780,21 +691,27 @@ class InpatientMealOrder (ModelSQL, ModelView):
 
     @staticmethod
     def default_health_professional():
-        pool = Pool()
-        return pool.get('gnuhealth.healthprofessional').get_health_professional()
+        return get_health_professional()
+
+
+
+    @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'inpatient_meal_order_sequence', **pattern)
+        if sequence:
+            return sequence.get()
 
     @classmethod
     def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('meal_order'):
-                config = Config(1)
-                values['meal_order'] = Sequence.get_id(
-                    config.inpatient_meal_order_sequence.id)
+                values['meal_order'] = cls.generate_code()
         return super(InpatientMealOrder, cls).create(vlist)
+
 
     @classmethod
     def validate(cls, meal_orders):
@@ -805,11 +722,13 @@ class InpatientMealOrder (ModelSQL, ModelView):
             
     def check_meal_order_warning(self):
         if not self.meal_warning_ack and self.meal_warning:
-            self.raise_user_error('meal_order_warning')
+            raise SpecialMealNeeds(
+                gettext('health_inpatient.msg_special_meal_needs'))
 
     def check_health_professional(self):
         if not self.health_professional:
-            self.raise_user_error('health_professional_warning')
+            raise NoAssociatedHealthProfessional(
+                gettext('health.msg_no_associated_health_professional'))
 
 
     @fields.depends('name')
@@ -837,16 +756,6 @@ class InpatientMealOrder (ModelSQL, ModelView):
 
         cls._buttons.update({
             'done': {'invisible': Not(Equal(Eval('state'), 'ordered'))}
-            })
-
-        cls._error_messages.update({
-            'meal_order_warning':
-            '===== MEAL WARNING ! =====\n\n\n'
-            'This patient has special meal needs \n\n'
-            'Check and acknowledge that\n'
-            'the meal items in this order are correct \n\n',
-            'health_professional_warning':
-            'No health professional associated to this user',
             })
 
         t = cls.__table__()
