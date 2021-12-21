@@ -31,6 +31,7 @@ from trytond.pyson import Eval, Not, Bool, And, Equal, Or
 from trytond import backend
 from trytond.tools.multivalue import migrate_property
 from trytond.pyson import Id
+from trytond.i18n import gettext
 from trytond.modules.health.core import get_health_professional, get_institution
 
 import pytz
@@ -314,7 +315,7 @@ class InpatientRegistration(ModelSQL, ModelView):
         for values in vlist:
             if not values.get('name'):
                 values['name'] = cls.generate_code()
-        return super(PatientAmbulatoryCare, cls).create(vlist)
+        return super(InpatientRegistration, cls).create(vlist)
 
     @staticmethod
     def default_state():
@@ -338,9 +339,7 @@ class InpatientRegistration(ModelSQL, ModelView):
     # Format Registration ID : Patient : Bed
     def get_rec_name(self, name):
         if self.patient:
-            return self.name + ':' + self.bed.rec_name + ':' \
-                + self.patient.rec_name 
-                
+            return f'{self.name}:{self.bed.rec_name}:{self.patient.rec_name}'
         else:
             return self.name
 

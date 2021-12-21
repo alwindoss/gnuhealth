@@ -35,12 +35,12 @@ from trytond.tools.multivalue import migrate_property
 inpatient_registration_sequence = fields.Many2One(
     'ir.sequence', 'Inpatient Registration Sequence', required=True,
     domain=[('sequence_type', '=', Id(
-        'health', 'seq_type_gnuhealth_inpatient_registration'))])
+        'health_inpatient', 'seq_type_gnuhealth_inpatient_registration'))])
 
 inpatient_meal_order_sequence = fields.Many2One(
-    'ir.sequence', 'Patient Rounding Sequence', required=True,
+    'ir.sequence', 'Inpatient Meal order Sequence', required=True,
     domain=[('sequence_type', '=', Id(
-        'health', 'seq_gnuhealth_inpatient_registration'))])
+        'health_inpatient', 'seq_type_gnuhealth_inpatient_meal_order'))])
 
 
 
@@ -61,8 +61,8 @@ class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, MultiValueMixin):
         pool = Pool()
         ModelData = pool.get('ir.model.data')
         try:
-            return ModelData.get_id('health',
-                                    'seq_gnuhealth_patient')
+            return ModelData.get_id('health_inpatient',
+                                    'seq_gnuhealth_inpatient_registration')
         except KeyError:
             return None
 
@@ -71,8 +71,8 @@ class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, MultiValueMixin):
         pool = Pool()
         ModelData = pool.get('ir.model.data')
         try:
-            return ModelData.get_id('health',
-                                    'seq_gnuhealth_patient_evaluation')
+            return ModelData.get_id('health_inpatient',
+                                    'seq_gnuhealth_inpatient_meal_order')
         except KeyError:
             return None
 
