@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-12-21 19:52+0000\n"
-"Last-Translator: Mulyatno Saimi <pa.mulyatno@gmail.com>\n"
+"PO-Revision-Date: 2022-01-01 23:53+0000\n"
+"Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gnu-health/"
 "health/id/>\n"
 "Language: id\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10\n"
+"X-Generator: Weblate 4.10.1\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -77,7 +77,7 @@ msgstr "Nama Gedung harus unik setiap pusat kesehatan"
 
 msgctxt "error:gnuhealth.hospital.or:"
 msgid "The Operating Room Name must be unique per Health Center"
-msgstr "Nama ruang operasi harus unik setiap  pusat kesehatan"
+msgstr "Nama ruang operasi harus unik setiap pusat kesehatan"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit CODE must be unique per Health Center"
@@ -247,15 +247,15 @@ msgstr "Akun Federasi harus unik"
 
 msgctxt "error:party.party:"
 msgid "The PUID must be unique"
-msgstr ""
+msgstr "PUID harus unik"
 
 msgctxt "error:party.party:"
 msgid "This internal user is already assigned to a party"
-msgstr ""
+msgstr "Pengguna internal ini sudah ditugaskan ke suatu pihak"
 
 msgctxt "error:wizard.gnuhealth.appointment.evaluation:"
 msgid "You need to select one Appointment record"
-msgstr ""
+msgstr "Anda harus memilih satu catatan Janji Temu"
 
 msgctxt "field:gnuhealth.appointment,appointment_date:"
 msgid "Date and Time"
@@ -267,7 +267,7 @@ msgstr "Jenis"
 
 msgctxt "field:gnuhealth.appointment,checked_in_date:"
 msgid "Checked-in Time"
-msgstr ""
+msgstr "Waktu Check-in"
 
 msgctxt "field:gnuhealth.appointment,comments:"
 msgid "Comments"
@@ -315,7 +315,7 @@ msgstr "Spesialis"
 
 msgctxt "field:gnuhealth.appointment,state:"
 msgid "State"
-msgstr ""
+msgstr "Kondisi"
 
 msgctxt "field:gnuhealth.appointment,urgency:"
 msgid "Urgency"
@@ -327,11 +327,11 @@ msgstr "Kunjungan"
 
 msgctxt "field:gnuhealth.appointment,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tulis Tanggal"
 
 msgctxt "field:gnuhealth.appointment,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.appointment.report,address:"
 msgid "Address"
@@ -391,11 +391,11 @@ msgstr "PUID"
 
 msgctxt "field:gnuhealth.appointment.report,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tulis Tanggal"
 
 msgctxt "field:gnuhealth.appointment.report,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,date_end:"
 msgid "Date End"
@@ -427,7 +427,7 @@ msgstr "Negara"
 
 msgctxt "field:gnuhealth.birth_certificate,country_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "Subdivisi"
 
 msgctxt "field:gnuhealth.birth_certificate,create_date:"
 msgid "Create Date"
@@ -475,11 +475,11 @@ msgstr "Pemberi Sertifikat"
 
 msgctxt "field:gnuhealth.birth_certificate,state:"
 msgid "State"
-msgstr ""
+msgstr "Negara"
 
 msgctxt "field:gnuhealth.birth_certificate,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.birth_certificate,write_uid:"
 msgid "Write User"
@@ -496,11 +496,11 @@ msgstr "Jadwal"
 
 msgctxt "field:gnuhealth.command,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Tanggal Buat"
 
 msgctxt "field:gnuhealth.command,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.command,description:"
 msgid "Description"
@@ -528,7 +528,7 @@ msgstr "Model"
 
 msgctxt "field:gnuhealth.command,name:"
 msgid "Command"
-msgstr ""
+msgstr "Perintah"
 
 msgctxt "field:gnuhealth.command,rec_name:"
 msgid "Record Name"
@@ -896,43 +896,43 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,address_municipality:"
 msgid "Municipality"
-msgstr ""
+msgstr "Kotamadya"
 
 msgctxt "field:gnuhealth.du,address_repr:"
 msgid "DU Address"
-msgstr ""
+msgstr "Alamat DU"
 
 msgctxt "field:gnuhealth.du,address_street:"
 msgid "Street"
-msgstr ""
+msgstr "Jalan"
 
 msgctxt "field:gnuhealth.du,address_street_bis:"
 msgid "Apartment"
-msgstr ""
+msgstr "Apartemen"
 
 msgctxt "field:gnuhealth.du,address_street_number:"
 msgid "Number"
-msgstr ""
+msgstr "Nomor"
 
 msgctxt "field:gnuhealth.du,address_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "Subdivisi"
 
 msgctxt "field:gnuhealth.du,address_zip:"
 msgid "Zip Code"
-msgstr ""
+msgstr "Kode Pos"
 
 msgctxt "field:gnuhealth.du,altitude:"
 msgid "Altitude"
-msgstr ""
+msgstr "Ketinggian"
 
 msgctxt "field:gnuhealth.du,bathrooms:"
 msgid "Bathrooms"
-msgstr ""
+msgstr "Kamar mandi"
 
 msgctxt "field:gnuhealth.du,bedrooms:"
 msgid "Bedrooms"
-msgstr ""
+msgstr "Kamar tidur"
 
 msgctxt "field:gnuhealth.du,create_date:"
 msgid "Create Date"
@@ -944,59 +944,59 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,desc:"
 msgid "Desc"
-msgstr ""
+msgstr "Desk"
 
 msgctxt "field:gnuhealth.du,dwelling:"
 msgid "Type"
-msgstr ""
+msgstr "Tipe"
 
 msgctxt "field:gnuhealth.du,electricity:"
 msgid "Electrical supply"
-msgstr ""
+msgstr "Pasokan listrik"
 
 msgctxt "field:gnuhealth.du,gas:"
 msgid "Gas supply"
-msgstr ""
+msgstr "Pasokan gas"
 
 msgctxt "field:gnuhealth.du,housing:"
 msgid "Conditions"
-msgstr ""
+msgstr "Kondisi"
 
 msgctxt "field:gnuhealth.du,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.du,internet:"
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 msgctxt "field:gnuhealth.du,latitude:"
 msgid "Latitude"
-msgstr ""
+msgstr "Lintang"
 
 msgctxt "field:gnuhealth.du,longitude:"
 msgid "Longitude"
-msgstr ""
+msgstr "Bujur"
 
 msgctxt "field:gnuhealth.du,materials:"
 msgid "Material"
-msgstr ""
+msgstr "Bahan"
 
 msgctxt "field:gnuhealth.du,members:"
 msgid "Members"
-msgstr ""
+msgstr "Anggota"
 
 msgctxt "field:gnuhealth.du,name:"
 msgid "Code"
-msgstr ""
+msgstr "Kode"
 
 msgctxt "field:gnuhealth.du,operational_sector:"
 msgid "Operational Sector"
-msgstr ""
+msgstr "Sektor Operasional"
 
 msgctxt "field:gnuhealth.du,picture:"
 msgid "Picture"
-msgstr ""
+msgstr "Gambar"
 
 msgctxt "field:gnuhealth.du,rec_name:"
 msgid "Record Name"
@@ -1004,35 +1004,35 @@ msgstr ""
 
 msgctxt "field:gnuhealth.du,roof_type:"
 msgid "Roof"
-msgstr ""
+msgstr "Atap"
 
 msgctxt "field:gnuhealth.du,sewers:"
 msgid "Sanitary Sewers"
-msgstr ""
+msgstr "Selokan Sanitasi"
 
 msgctxt "field:gnuhealth.du,telephone:"
 msgid "Telephone"
-msgstr ""
+msgstr "Telepon"
 
 msgctxt "field:gnuhealth.du,television:"
 msgid "Television"
-msgstr ""
+msgstr "Televisi"
 
 msgctxt "field:gnuhealth.du,total_surface:"
 msgid "Surface"
-msgstr ""
+msgstr "Permukaan"
 
 msgctxt "field:gnuhealth.du,trash:"
 msgid "Trash recollection"
-msgstr ""
+msgstr "Pengumpulan Sampah"
 
 msgctxt "field:gnuhealth.du,urladdr:"
 msgid "OSM Map"
-msgstr ""
+msgstr "Peta OSM"
 
 msgctxt "field:gnuhealth.du,water:"
 msgid "Running Water"
-msgstr ""
+msgstr "Air Mengalir"
 
 msgctxt "field:gnuhealth.du,write_date:"
 msgid "Write Date"
@@ -1044,7 +1044,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ethnicity,code:"
 msgid "Code"
-msgstr ""
+msgstr "Kode"
 
 msgctxt "field:gnuhealth.ethnicity,create_date:"
 msgid "Create Date"
@@ -1056,15 +1056,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ethnicity,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.ethnicity,name:"
 msgid "Name"
-msgstr ""
+msgstr "Nama"
 
 msgctxt "field:gnuhealth.ethnicity,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Catatan"
 
 msgctxt "field:gnuhealth.ethnicity,rec_name:"
 msgid "Record Name"
@@ -1088,19 +1088,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.family,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.family,info:"
 msgid "Extra Information"
-msgstr ""
+msgstr "Informasi tambahan"
 
 msgctxt "field:gnuhealth.family,members:"
 msgid "Family Members"
-msgstr ""
+msgstr "Anggota Keluarga"
 
 msgctxt "field:gnuhealth.family,name:"
 msgid "Family"
-msgstr ""
+msgstr "Keluarga"
 
 msgctxt "field:gnuhealth.family,rec_name:"
 msgid "Record Name"
@@ -1124,15 +1124,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.family_member,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.family_member,name:"
 msgid "Family"
-msgstr ""
+msgstr "Keluarga"
 
 msgctxt "field:gnuhealth.family_member,party:"
 msgid "Party"
-msgstr ""
+msgstr "Pihak"
 
 msgctxt "field:gnuhealth.family_member,rec_name:"
 msgid "Record Name"
