@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,16 +21,16 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_icu import *
+from . import health_icu
 
 
 def register():
     Pool.register(
-        InpatientRegistration,
-        InpatientIcu,
-        Glasgow,
-        ApacheII,
-        MechanicalVentilation,
-        ChestDrainageAssessment,
-        PatientRounding,
+        health_icu.InpatientRegistration,
+        health_icu.InpatientIcu,
+        health_icu.Glasgow,
+        health_icu.ApacheII,
+        health_icu.MechanicalVentilation,
+        health_icu.ChestDrainageAssessment,
+        health_icu.PatientRounding,
         module='health_icu', type_='model')
