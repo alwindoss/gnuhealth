@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-12-12 06:53+0000\n"
-"Last-Translator: PhD. Ayhan YALÇINSOY <ayhanyalcinsoy@pisilinux.org>\n"
+"PO-Revision-Date: 2022-01-10 22:52+0000\n"
+"Last-Translator: Jupe Rings <ringsjupe@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gnu-health/"
 "health/tr/>\n"
 "Language: tr\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -287,20 +287,19 @@ msgstr "Kullanıcı oluştur"
 
 msgctxt "field:gnuhealth.appointment,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Sağlık Uzmanı"
 
 msgctxt "field:gnuhealth.appointment,id:"
 msgid "ID"
-msgstr "KİMLİĞİ"
+msgstr "Kimlik"
 
 msgctxt "field:gnuhealth.appointment,institution:"
 msgid "Institution"
 msgstr "Kurum"
 
-#, fuzzy
 msgctxt "field:gnuhealth.appointment,name:"
 msgid "Appointment ID"
-msgstr "Randevu Numarası"
+msgstr "Randevu Kimliği"
 
 msgctxt "field:gnuhealth.appointment,patient:"
 msgid "Patient"
@@ -368,11 +367,11 @@ msgstr "Cinsiyet"
 
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Sağlık Uzmanı"
 
 msgctxt "field:gnuhealth.appointment.report,id:"
 msgid "ID"
-msgstr ""
+msgstr "Kimlik"
 
 msgctxt "field:gnuhealth.appointment.report,insurance:"
 msgid "Insurance"
@@ -409,11 +408,11 @@ msgstr "baslangıç tarihi"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Sağlık Uzmanı"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,id:"
 msgid "ID"
-msgstr ""
+msgstr "Kimlik"
 
 msgctxt "field:gnuhealth.birth_certificate,certification_date:"
 msgid "Signed on"
@@ -449,7 +448,7 @@ msgstr "Babası"
 
 msgctxt "field:gnuhealth.birth_certificate,id:"
 msgid "ID"
-msgstr ""
+msgstr "Kimlik"
 
 msgctxt "field:gnuhealth.birth_certificate,institution:"
 msgid "Institution"
