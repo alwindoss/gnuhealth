@@ -7,8 +7,8 @@
 #    Copyright (C) 2020-2021 National University of Entre Rios (UNER)
 #                  School of Engineering <saludpublica@ingenieria.uner.edu.ar>
 #    Copyright (C) 2020 Mario Puntin <mario@silix.com.ar>
-#    Copyright (C) 2020-2021 GNU Solidario <health@gnusolidario.org>
-#    Copyright (C) 2020-2021 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2020-2022 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2020-2022 Luis Falcon <falcon@gnuhealth.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -27,11 +27,8 @@
 
 from trytond.pool import Pool
 from . import health_dentistry
-from .wizard import patient_set_odontogram
-from .wizard import load_procedure
-from .report import procedures_report
-from .report import odontogram_report
-
+from . import wizard
+from . import report
 
 def register():
     Pool.register(
@@ -39,14 +36,14 @@ def register():
         health_dentistry.DentistryTreatment,
         health_dentistry.DentistryProcedure,
         health_dentistry.TreatmentProcedure,
-        patient_set_odontogram.SetOdontogramStart,
-        load_procedure.LoadProcedureStart,
+        wizard.patient_set_odontogram.SetOdontogramStart,
+        wizard.load_procedure.LoadProcedureStart,
         module='health_dentistry', type_='model')
     Pool.register(
-        patient_set_odontogram.SetOdontogram,
-        load_procedure.LoadProcedure,
+        wizard.patient_set_odontogram.SetOdontogram,
+        wizard.load_procedure.LoadProcedure,
         module='health_dentistry', type_='wizard')
     Pool.register(
-        procedures_report.DentistryProcedureReport,
-        odontogram_report.Odontogram,
+        report.procedures_report.DentistryProcedureReport,
+        report.odontogram_report.Odontogram,
         module='health_dentistry', type_='report')
