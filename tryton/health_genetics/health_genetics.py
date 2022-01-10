@@ -271,6 +271,8 @@ class GeneVariantPhenotype(ModelSQL, ModelView):
                 ('gene',) + tuple(clause[1:]),
                 ]
 
+    """
+    FIXME : NEED TO Fix the values to unpack.
     @classmethod
     def __setup__(cls):
         super(GeneVariantPhenotype, cls).__setup__()
@@ -280,7 +282,7 @@ class GeneVariantPhenotype(ModelSQL, ModelView):
                                 'code', Unique(t, t.name),
                                 'This code already exists',
                                ]
-
+    """
 
 class PatientGeneticRisk(ModelSQL, ModelView):
     'Patient Genetic Information'
