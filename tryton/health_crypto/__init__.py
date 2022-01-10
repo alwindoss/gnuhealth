@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,13 +21,13 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_crypto import *
+from . import health_crypto
 
 
 def register():
     Pool.register(
-        PatientPrescriptionOrder,
-        BirthCertificate,
-        DeathCertificate,
-        PatientEvaluation,
+        health_crypto.PatientPrescriptionOrder,
+        health_crypto.BirthCertificate,
+        health_crypto.DeathCertificate,
+        health_crypto.PatientEvaluation,
         module='health_crypto', type_='model')
