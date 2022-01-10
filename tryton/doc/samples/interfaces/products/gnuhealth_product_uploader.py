@@ -2,7 +2,7 @@
 #  gnuhealth_product_uploader.py
 #  
 #  Copyright 2017 - 2020 Luis Falcon <falcon@gnuhealth.org>
-#  Copyright 2011-2021 GNU Solidario <health@gnusolidario.org>
+#  Copyright 2011-2022 GNU Solidario <health@gnusolidario.org>
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
