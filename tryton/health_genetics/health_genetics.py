@@ -21,41 +21,43 @@
 #
 ##############################################################################
 from trytond.model import ModelView, ModelSQL, fields, Unique
-from trytond.transaction import Transaction
-from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
-from trytond import backend
+from trytond.pyson import Eval
 from trytond.pool import Pool
 from uuid import uuid4
 
 
-__all__ = ['DiseaseGene', 'ProteinDisease', 'GeneVariant','GeneVariantPhenotype',
-            'PatientGeneticRisk', 'FamilyDiseases', 'GnuHealthPatient']
+__all__ = ['DiseaseGene', 'ProteinDisease', 'GeneVariant',
+           'GeneVariantPhenotype',
+           'PatientGeneticRisk', 'FamilyDiseases', 'GnuHealthPatient']
 
 
 class DiseaseGene(ModelSQL, ModelView):
     'Disease Genes'
     __name__ = 'gnuhealth.disease.gene'
 
-    name = fields.Char('Gene Name', required=True,select=True)
+    name = fields.Char('Gene Name', required=True, select=True)
     protein_name = fields.Char('Protein Code',
-        help="Encoding Protein Code, such as UniProt protein name",
-        select=True)
+                               help="Encoding Protein Code, \
+                               such as UniProt protein name",
+                               select=True)
     long_name = fields.Char('Official Long Name', translate=True)
     gene_id = fields.Char('Gene ID',
-        help="default code from NCBI Entrez database.", select=True)
+                          help="default code from NCBI Entrez database.",
+                          select=True)
     chromosome = fields.Char('Chromosome',
-        help="Name of the affected chromosome", select=True)
+                             help="Name of the affected chromosome",
+                             select=True)
     location = fields.Char('Location', help="Locus of the chromosome")
 
     info = fields.Text('Information', help="Extra Information")
     variants = fields.One2Many('gnuhealth.gene.variant', 'name',
-     'Variants')
+                               'Variants')
 
     protein_uri = fields.Function(fields.Char("Protein URI"),
-     'get_protein_uri')
+                                  'get_protein_uri')
 
     def get_protein_uri(self, name):
-        ret_url=''
+        ret_url = ''
         if (self.protein_name):
             ret_url = 'http://www.uniprot.org/uniprot/' + \
                 str(self.protein_name)
@@ -67,7 +69,7 @@ class DiseaseGene(ModelSQL, ModelView):
 
         t = cls.__table__()
         cls._sql_constraints = [
-            ('name_unique', Unique(t,t.name),
+            ('name_unique', Unique(t, t.name),
                 'The Official Symbol name must be unique'),
             ]
 
@@ -84,16 +86,17 @@ class DiseaseGene(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('name',) + tuple(clause[1:]),
-            ('long_name',) + tuple(clause[1:]),
-            ]
+                ('name',) + tuple(clause[1:]),
+                ('long_name',) + tuple(clause[1:]),
+                ]
 
+    """
+    #Obsoleted. Old (3.2) migration
     @classmethod
     # Update to version 3.2
     def __register__(cls, module_name):
         super(DiseaseGene, cls).__register__(module_name)
 
-        cursor = Transaction().connection.cursor()
         TableHandler = backend.get('TableHandler')
         table = TableHandler(cls, module_name)
         # Insert the current "specialty" associated to the HP in the
@@ -104,29 +107,32 @@ class DiseaseGene(ModelSQL, ModelView):
             # Drop old dominance column
             # which is now part of the gene variant phenotype
             table.drop_column('dominance')
+    """
 
 
 class ProteinDisease(ModelSQL, ModelView):
     'Protein related disorders'
     __name__ = 'gnuhealth.protein.disease'
 
-    name = fields.Char('Disease', required=True,select=True,
-        help="Uniprot Disease Code")
+    name = fields.Char('Disease', required=True, select=True,
+                       help="Uniprot Disease Code")
 
     disease_name = fields.Char('Disease name', translate=True)
-    acronym = fields.Char('Acronym', required=True,select=True,
-        help="Disease acronym / mnemonics")
+    acronym = fields.Char('Acronym', required=True, select=True,
+                          help="Disease acronym / mnemonics")
 
     disease_uri = fields.Function(fields.Char("Disease URI"),
-     'get_disease_uri')
+                                  'get_disease_uri')
 
     mim_reference = fields.Char('MIM',
-        help="MIM -Mendelian Inheritance in Man- DB reference")
+                                help="MIM - "
+                                "Mendelian Inheritance in Man- DB reference")
 
     gene_variant = fields.One2Many('gnuhealth.gene.variant.phenotype',
-        'phenotype',
-        'Natural Variant',
-        help="Protein sequence variant(s) involved in this condition")
+                                   'phenotype',
+                                   'Natural Variant',
+                                   help="Protein sequence variant(s) "
+                                        "involved in this condition")
 
     dominance = fields.Selection([
         (None, ''),
@@ -135,21 +141,19 @@ class ProteinDisease(ModelSQL, ModelView):
         ('c', 'codominance'),
         ], 'Dominance', sort=False, select=True)
 
-
     description = fields.Text('Description')
 
-
-    active = fields.Boolean('Active',help="Whether this code is current."
-            "If you deactivate it, the code will no longer show in the"
-            " protein-related diseases")
+    active = fields.Boolean('Active', help="Whether this code is current."
+                            "If you deactivate it, the code will "
+                            "no longer show in the"
+                            " protein-related diseases")
 
     @staticmethod
     def default_active():
         return True
 
-
     def get_disease_uri(self, name):
-        ret_url=''
+        ret_url = ''
         if (self.name):
             ret_url = 'http://www.uniprot.org/diseases/' + \
                 str(self.name)
@@ -161,7 +165,7 @@ class ProteinDisease(ModelSQL, ModelView):
 
         t = cls.__table__()
         cls._sql_constraints = [
-            ('name_unique', Unique(t,t.name),
+            ('name_unique', Unique(t, t.name),
                 'The Disease Code  name must be unique'),
             ]
 
@@ -175,20 +179,22 @@ class ProteinDisease(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('name',) + tuple(clause[1:]),
-            ('disease_name',) + tuple(clause[1:]),
-            ]
+                ('name',) + tuple(clause[1:]),
+                ('disease_name',) + tuple(clause[1:]),
+                ]
+
 
 class GeneVariant(ModelSQL, ModelView):
     'Natural Variant'
     __name__ = 'gnuhealth.gene.variant'
 
     name = fields.Many2One('gnuhealth.disease.gene', 'Gene and Protein',
-        required=True, help="Gene and expressing protein (in parenthesis)")
+                           required=True,
+                           help="Gene and expressing protein (in parenthesis)")
     variant = fields.Char("Protein Variant", required=True, select=True)
     aa_change = fields.Char('Change', help="Resulting amino acid change")
     phenotypes = fields.One2Many('gnuhealth.gene.variant.phenotype', 'variant',
-     'Phenotypes')
+                                 'Phenotypes')
 
     @classmethod
     def __setup__(cls):
@@ -196,14 +202,13 @@ class GeneVariant(ModelSQL, ModelView):
 
         t = cls.__table__()
         cls._sql_constraints = [
-            ('variant_unique', Unique(t,t.variant),
+            ('variant_unique', Unique(t, t.variant),
                 'The variant ID must be unique'),
-            ('aa_unique', Unique(t,t.variant,t.aa_change),
+            ('aa_unique', Unique(t, t.variant, t.aa_change),
                 'The resulting AA change for this protein already exists'),
             ]
 
     def get_rec_name(self, name):
-        #return ' : '.join([self.name.rec_name, self.variant, self.aa_change])
         return ' : '.join([self.variant, self.aa_change])
 
     # Allow to search by gene and variant or amino acid change
@@ -214,10 +219,10 @@ class GeneVariant(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('name',) + tuple(clause[1:]),
-            ('variant',) + tuple(clause[1:]),
-            ('aa_change',) + tuple(clause[1:]),
-            ]
+                ('name',) + tuple(clause[1:]),
+                ('variant',) + tuple(clause[1:]),
+                ('aa_change',) + tuple(clause[1:]),
+                ]
 
 
 class GeneVariantPhenotype(ModelSQL, ModelView):
@@ -226,7 +231,7 @@ class GeneVariantPhenotype(ModelSQL, ModelView):
 
     name = fields.Char('Code', required=True)
     variant = fields.Many2One('gnuhealth.gene.variant', 'Variant',
-        required=True)
+                              required=True)
 
     gene = fields.Function(fields.Many2One(
         'gnuhealth.disease.gene', 'Gene & Protein',
@@ -236,13 +241,11 @@ class GeneVariantPhenotype(ModelSQL, ModelView):
         searcher='search_gene')
 
     phenotype = fields.Many2One('gnuhealth.protein.disease', 'Phenotype',
-        required=True)
-
+                                required=True)
 
     def get_gene(self, name):
         if (self.variant):
             return self.variant.name.id
-
 
     def get_rec_name(self, name):
         if self.phenotype:
@@ -263,10 +266,10 @@ class GeneVariantPhenotype(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('variant',) + tuple(clause[1:]),
-            ('phenotype',) + tuple(clause[1:]),
-            ('gene',) + tuple(clause[1:]),
-            ]
+                ('variant',) + tuple(clause[1:]),
+                ('phenotype',) + tuple(clause[1:]),
+                ('gene',) + tuple(clause[1:]),
+                ]
 
     @classmethod
     def __setup__(cls):
@@ -274,9 +277,9 @@ class GeneVariantPhenotype(ModelSQL, ModelView):
 
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code', Unique(t,t.name),
-                'This code already exists'),
-            ]
+                                'code', Unique(t, t.name),
+                                'This code already exists',
+                               ]
 
 
 class PatientGeneticRisk(ModelSQL, ModelView):
@@ -285,14 +288,18 @@ class PatientGeneticRisk(ModelSQL, ModelView):
 
     patient = fields.Many2One('gnuhealth.patient', 'Patient', select=True)
     disease_gene = fields.Many2One('gnuhealth.disease.gene',
-        'Gene', required=True)
+                                   'Gene', required=True)
     natural_variant = fields.Many2One('gnuhealth.gene.variant', 'Variant',
-        domain=[('name', '=', Eval('disease_gene'))],
-        depends=['disease_gene'])
-    variant_phenotype = fields.Many2One('gnuhealth.gene.variant.phenotype',\
-        'Phenotype',
-        domain=[('variant', '=', Eval('natural_variant'))],
-        depends=['natural_variant'])
+                                      domain=[('name', '=',
+                                              Eval('disease_gene'))],
+                                      depends=['disease_gene'])
+
+    variant_phenotype = fields.Many2One('gnuhealth.gene.variant.phenotype',
+                                        'Phenotype',
+                                        domain=[('variant', '=',
+                                                Eval('natural_variant'))],
+                                        depends=['natural_variant'])
+
     onset = fields.Integer('Onset', help="Age in years")
 
     notes = fields.Char("Notes")
@@ -310,28 +317,29 @@ class PatientGeneticRisk(ModelSQL, ModelView):
         return institution
 
     @classmethod
-    def create_genetics_pol(cls,genetic_info):
+    def create_genetics_pol(cls, genetic_info):
         """ Adds an entry in the person Page of Life
             related to this genetic finding
         """
         Pol = Pool().get('gnuhealth.pol')
         pol = []
 
-
         vals = {
             'page': str(uuid4()),
             'person': genetic_info.patient.name.id,
             'age': genetic_info.onset and str(genetic_info.onset) + 'y' or '',
             'federation_account': genetic_info.patient.name.federation_account,
-            'page_type':'medical',
-            'medical_context':'genetics',
-            'relevance':'important',
-            'gene':genetic_info.disease_gene.rec_name,
-            'natural_variant':genetic_info.natural_variant and \
-                genetic_info.natural_variant.aa_change,
+            'page_type': 'medical',
+            'medical_context': 'genetics',
+            'relevance': 'important',
+            'gene': genetic_info.disease_gene.rec_name,
+            'natural_variant': genetic_info.natural_variant and
+                               genetic_info.natural_variant.aa_change,
             'summary': genetic_info.notes,
-            'author': genetic_info.healthprof and genetic_info.healthprof.name.rec_name,
-            'node': genetic_info.institution and genetic_info.institution.name.rec_name
+            'author': genetic_info.healthprof and
+            genetic_info.healthprof.name.rec_name,
+            'node': genetic_info.institution and
+            genetic_info.institution.name.rec_name
             }
         if (genetic_info.variant_phenotype):
             vals['health_condition_text'] = vals['health_condition_text'] = \
@@ -357,10 +365,10 @@ class PatientGeneticRisk(ModelSQL, ModelView):
         else:
             bool_op = 'OR'
         return [bool_op,
-            ('patient',) + tuple(clause[1:]),
-            ('disease_gene',) + tuple(clause[1:]),
-            ('variant_phenotype',) + tuple(clause[1:]),
-            ]
+                ('patient',) + tuple(clause[1:]),
+                ('disease_gene',) + tuple(clause[1:]),
+                ('variant_phenotype',) + tuple(clause[1:]),
+                ]
 
 
 class FamilyDiseases(ModelSQL, ModelView):
@@ -390,17 +398,18 @@ class FamilyDiseases(ModelSQL, ModelView):
         ('cousin', 'Cousin'),
         ], 'Relative',
         help='First degree = siblings, mother and father\n'
-            'Second degree = Uncles, nephews and Nieces\n'
-            'Third degree = Grandparents and cousins',
+             'Second degree = Uncles, nephews and Nieces\n'
+             'Third degree = Grandparents and cousins',
         required=True)
 
 
 class GnuHealthPatient (ModelSQL, ModelView):
-    'Add to the Medical patient_data class (gnuhealth.patient) the genetic ' \
-    'and family risks'
+    """
+    Add to the Medical patient_data class (gnuhealth.patient) the genetic
+    and family risks"""
     __name__ = 'gnuhealth.patient'
 
     genetic_risks = fields.One2Many('gnuhealth.patient.genetic.risk',
-        'patient', 'Genetic Information')
+                                    'patient', 'Genetic Information')
     family_history = fields.One2Many('gnuhealth.patient.family.diseases',
-        'patient', 'Family History')
+                                     'patient', 'Family History')
