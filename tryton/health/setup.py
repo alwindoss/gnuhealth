@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-#    Copyright (C) 2011-2021 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2011-2022 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #    Copyright (C) 2011 Cédric Krier
 
 #    This program is free software: you can redistribute it and/or modify

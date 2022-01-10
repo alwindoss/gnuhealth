@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -21,4 +20,5 @@
 #
 ##############################################################################
 
-from .wizard_health_services import *
+from . import patient_set_odontogram 
+from . import load_procedure
