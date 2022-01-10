@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,16 +21,16 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_genetics import *
+from . import health_genetics
 
 
 def register():
     Pool.register(
-        DiseaseGene,
-        ProteinDisease,
-        GeneVariant,
-        GeneVariantPhenotype,
-        PatientGeneticRisk,
-        FamilyDiseases,
-        GnuHealthPatient,
+        health_genetics.DiseaseGene,
+        health_genetics.ProteinDisease,
+        health_genetics.GeneVariant,
+        health_genetics.GeneVariantPhenotype,
+        health_genetics.PatientGeneticRisk,
+        health_genetics.FamilyDiseases,
+        health_genetics.GnuHealthPatient,
         module='health_genetics', type_='model')
