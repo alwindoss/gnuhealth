@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,11 +21,11 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_socioeconomics import *
+from .  import health_socioeconomics
 
 def register():
     Pool.register(
-        Party,
-        PatientSESAssessment,
-        GnuHealthPatient,
+        health_socioeconomics.Party,
+        health_socioeconomics.PatientSESAssessment,
+        health_socioeconomics.GnuHealthPatient,
         module='health_socioeconomics', type_='model')
