@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,9 +21,10 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .report import *
+from . import report
+
 
 def register():
     Pool.register(
-        PatientEvaluationReport,
+        report.patient_evaluation_report.PatientEvaluationReport,
         module='health_history', type_='report')
