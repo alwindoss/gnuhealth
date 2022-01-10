@@ -7,7 +7,7 @@
 #    Copyright (C) 2020-2021 National University of Entre Rios (UNER)
 #    School of Engineering <saludpublica@ingenieria.uner.edu.ar>
 #    Copyright (C) 2020 Mario Puntin <mario@silix.com.ar>
-#    Copyright (C) 2020-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2020-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -29,8 +29,9 @@ from collections import defaultdict
 
 from trytond.model import ModelView, ModelSQL, fields, Unique
 from trytond.pyson import Eval, Equal
-from trytond.pool import Pool, PoolMeta
+from trytond.pool import PoolMeta
 
+from trytond.modules.health.core import get_health_professional
 
 __all__ = ['PatientData', 'DentistryTreatment', 'DentistryProcedure',
            'TreatmentProcedure']
@@ -244,10 +245,7 @@ class DentistryTreatment(ModelSQL, ModelView):
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf = pool.get('gnuhealth.healthprofessional')
-        hp = HealthProf.get_health_professional()
-        return hp
+        return get_health_professional()
 
     @classmethod
     def get_procedures_info(cls, treatments, names):
@@ -267,9 +265,7 @@ class DentistryTreatment(ModelSQL, ModelView):
     @classmethod
     @ModelView.button
     def end_treatment(cls, treatments):
-        HealthProf = Pool().get('gnuhealth.healthprofessional')
-
-        signing_hp = HealthProf.get_health_professional()
+        signing_hp = get_health_professional()
         cls.write(treatments, {
             'state': 'done',
             'signed_by': signing_hp,
