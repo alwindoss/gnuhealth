@@ -1,4 +1,2 @@
-# -*- coding: utf-8 -*-
-
-from .patient_evaluation_report import *
+from . import patient_evaluation_report
 

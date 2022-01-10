@@ -47,5 +47,6 @@ class PatientEvaluationReport(Report):
             tzinfo=pytz.utc), timezone)
         localcontext['print_time'] = localcontext['print_date'].time()
 
-        return super(PatientEvaluationReport, cls).parse(report, objects, data, 
-            localcontext)
+        return super(PatientEvaluationReport, cls).parse(report,
+                                                         objects, data,
+                                                         localcontext)
