@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    The GNU Health HMIS component is part of the GNU Health project
 #    www.gnuhealth.org
