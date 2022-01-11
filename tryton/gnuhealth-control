@@ -459,11 +459,6 @@ relink_mods()
             ln -sf ${GNUHEALTH_DIR}/tryton/server/modules/${mod} ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/ || bailout
         done
 
-        # Remove symlinks health_caldav and health_webdav3_server, that will use the
-        # names calendar and webdav respectively
-        rm -f ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/health_caldav
-        rm -f ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/health_webdav3_server
-
         message "INFO" "Relinking local modules and customizations ..."
 
         local LOCAL_MODS=`cd ${GNUHEALTH_DIR}/tryton/server/modules/local; ls -A`
@@ -471,13 +466,6 @@ relink_mods()
             message "INFO" "--> Relinking : ${mod}"
             ln -sf ${GNUHEALTH_DIR}/tryton/server/modules/local/${mod} ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/ || bailout
         done
-
-        # WEBDAV3 ports for GNU Health.
-        message "INFO" "Relinking WebDAV3 related modules"
-        local WEBDAV3="health_webdav3_server"
-        local CALENDAR_WEBDAV3="health_caldav"
-        ln -sf ${GNUHEALTH_DIR}/tryton/server/modules/${WEBDAV3} ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/webdav || bailout
-        ln -sf ${GNUHEALTH_DIR}/tryton/server/modules/${CALENDAR_WEBDAV3} ${GNUHEALTH_DIR}/tryton/server/${TRYTOND}/trytond/modules/calendar || bailout
 
     fi
 }
