@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # GNU Health HMIS node installer
-# Version for 3.8 series
+# Version for 4.0 series
 
 ##############################################################################
 #
@@ -365,12 +365,7 @@ gnuhealth_packages() {
     message "INFO" "Copying GNU Health HMIS packages to the Tryton modules directory..."
     cp -a ${GNUHEALTH_INST_DIR}/health* ${MODULES_DIR} || bailout
     ln -si ${MODULES_DIR}/health* .
-    rm -f ./health_webdav3_server
-    rm -f ./health_caldav
 
-    message "INFO" "Installing WebDAV related packages..."
-    ln -si ${MODULES_DIR}/health_webdav3_server ./webdav
-    ln -si ${MODULES_DIR}/health_caldav ./calendar
 
     # Copy LICENSE README and version files
     
