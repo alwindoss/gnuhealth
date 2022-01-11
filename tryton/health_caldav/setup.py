@@ -49,11 +49,11 @@ setup(name='gnuhealth_caldav',
     keywords='GNUHealth calendar caldav',
     package_dir={'trytond.modules.calendar': '.'},
     packages=[
-        'trytond.modules.calendar',
-        'trytond.modules.calendar.tests',
+        'trytond.modules.health_caldav',
+        'trytond.modules.health_caldav.tests',
         ],
     package_data={
-        'trytond.modules.calendar': (info.get('xml', [])
+        'trytond.modules.health_caldav': (info.get('xml', [])
             + ['tryton.cfg', 'view/*.xml', 'locale/*.po']),
         },
     classifiers=[
@@ -79,7 +79,7 @@ setup(name='gnuhealth_caldav',
     zip_safe=False,
     entry_points="""
     [trytond.modules]
-    calendar = trytond.modules.calendar
+    calendar = trytond.modules.health_caldav
     """,
     test_suite='tests',
     test_loader='trytond.test_loader:Loader',
