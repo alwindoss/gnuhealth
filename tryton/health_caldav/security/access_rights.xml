@@ -4,7 +4,7 @@ this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
         <record model="res.group" id="group_calendar_admin">
-            <field name="name">Calendar Administration</field>
+            <field name="name">Calendar Group Administration </field>
         </record>
         <record model="res.user-res.group"
             id="user_admin_group_calendar_admin">
