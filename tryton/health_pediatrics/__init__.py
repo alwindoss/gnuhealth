@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,14 +21,14 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_pediatrics import *
+from . import health_pediatrics
 
 
 def register():
     Pool.register(
-        Newborn,
-        NeonatalApgar,
-        NeonatalMedication,
-        NeonatalCongenitalDiseases,
-        PediatricSymptomsChecklist,
+        health_pediatrics.Newborn,
+        health_pediatrics.NeonatalApgar,
+        health_pediatrics.NeonatalMedication,
+        health_pediatrics.NeonatalCongenitalDiseases,
+        health_pediatrics.PediatricSymptomsChecklist,
         module='health_pediatrics', type_='model')
