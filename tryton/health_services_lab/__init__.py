@@ -22,15 +22,15 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_services_lab import *
-from .wizard import *
+from . import health_services_lab
+from . import wizard
 
 
 def register():
     Pool.register(
-    PatientLabTestRequest,
-	RequestPatientLabTestStart,
+        health_services_lab.PatientLabTestRequest,
+        wizard.wizard_health_services.RequestPatientLabTestStart,
         module='health_services_lab', type_='model')
     Pool.register(
-        RequestPatientLabTest,
+        wizard.wizard_health_services.RequestPatientLabTest,
         module='health_services_lab', type_='wizard')

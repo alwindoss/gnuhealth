@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -21,11 +20,9 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-import datetime
 from trytond.model import ModelView, fields
-from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
-from trytond.wizard import Wizard, StateTransition, StateView, Button
-from trytond.transaction import Transaction
+from trytond.pyson import Eval, Equal
+from trytond.wizard import Wizard
 from trytond.pool import Pool
 
 
@@ -40,7 +37,7 @@ class RequestPatientLabTestStart(ModelView):
     service = fields.Many2One(
         'gnuhealth.health_service', 'Service',
         domain=[('patient', '=', Eval('patient'))], depends=['patient'],
-        states = {'readonly': Equal(Eval('state'), 'done')},
+        states={'readonly': Equal(Eval('state'), 'done')},
         help="Service document associated to this Lab Request")
 
 
@@ -65,10 +62,10 @@ class RequestPatientLabTest(Wizard):
                 lab_test['doctor_id'] = self.start.doctor.id
             lab_test['date'] = self.start.date
             lab_test['urgent'] = self.start.urgent
-            
+
             if self.start.service:
                 lab_test['service'] = self.start.service.id
-            
+
             lab_tests.append(lab_test)
 
         PatientLabTest.create(lab_tests)

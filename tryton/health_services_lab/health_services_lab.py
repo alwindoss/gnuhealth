@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -21,8 +20,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-import datetime
-from trytond.model import ModelView, ModelSQL, fields, ModelSingleton, Unique
+from trytond.model import ModelView, ModelSQL, fields
 from trytond.pyson import Eval, Equal
 from trytond.pool import Pool
 
@@ -30,18 +28,18 @@ from trytond.pool import Pool
 __all__ = ['PatientLabTestRequest']
 
 
-
 """ Add Lab order charges to service model """
+
 
 class PatientLabTestRequest(ModelSQL, ModelView):
     'Lab Order'
     __name__ = 'gnuhealth.patient.lab.test'
 
-
     service = fields.Many2One(
         'gnuhealth.health_service', 'Service',
-        domain=[('patient', '=', Eval('patient_id'))], depends=['patient'],
-        states = {'readonly': Equal(Eval('state'), 'done')},
+        domain=[('patient', '=', Eval('patient_id'))],
+        depends=['patient'],
+        states={'readonly': Equal(Eval('state'), 'done')},
         help="Service document associated to this Lab Request")
 
     @classmethod
@@ -52,7 +50,6 @@ class PatientLabTestRequest(ModelSQL, ModelView):
                 'readonly': Equal(Eval('state'), 'done'),
             },
             })
-
 
     @classmethod
     @ModelView.button
@@ -77,12 +74,11 @@ class PatientLabTestRequest(ModelSQL, ModelView):
             'qty': 1
             }]))
 
-            
         hservice.append(laborder.service)
-        
+
         description = "Services and Lab"
-        
-        service_data ['desc'] =  description
-        service_data ['service_line'] = service_lines
-                
+
+        service_data['desc'] = description
+        service_data['service_line'] = service_lines
+
         HealthService.write(hservice, service_data)
