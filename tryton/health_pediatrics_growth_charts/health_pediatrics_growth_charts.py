@@ -31,7 +31,8 @@ __metaclass__ = PoolMeta
 class PatientEvaluation(metaclass=PoolMeta):
     __name__ = 'gnuhealth.patient.evaluation'
 
-    age_months = fields.Function(fields.Integer('Patient Age in Months'),
+    age_months = fields.Function(
+        fields.Integer('Patient Age in Months'),
         'get_patient_age_months')
 
     def get_patient_age_months(self, name):
