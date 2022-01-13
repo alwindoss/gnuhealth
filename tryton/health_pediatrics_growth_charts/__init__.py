@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,10 +21,10 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_pediatrics_growth_charts import *
+from .import health_pediatrics_growth_charts 
 
 
 def register():
     Pool.register(
-        PatientEvaluation,
+        health_pediatrics_growth_charts.PatientEvaluation,
         module='health_pediatrics_growth_charts', type_='model')
