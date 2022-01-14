@@ -4,7 +4,7 @@
 #
 #
 #    Copyright (C) 2012-2014  Sebastian Marro <smarro@gnusolidario.org>
-#    Copyright (C) 2013-2017 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2013-2022 Luis Falcon <lfalcon@gnusolidario.org>
 #    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
@@ -33,7 +33,7 @@ from trytond.transaction import Transaction
 
 
 __all__ = ['OpenEvaluationsStart', 'OpenEvaluations', 'EvaluationsDoctor',
-    'EvaluationsSpecialty', 'EvaluationsSector']
+           'EvaluationsSpecialty', 'EvaluationsSector']
 
 
 class OpenEvaluationsStart(ModelView):
@@ -53,7 +53,8 @@ class OpenEvaluations(Wizard):
     'Open Evaluations'
     __name__ = 'gnuhealth.evaluations.open'
 
-    start = StateView('gnuhealth.evaluations.open.start',
+    start = StateView(
+        'gnuhealth.evaluations.open.start',
         'health_reporting.evaluations_open_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Open', 'select', 'tryton-ok', default=True),
@@ -141,7 +142,7 @@ class EvaluationsSpecialty(ModelSQL, ModelView):
         pool = Pool()
         Evaluation = pool.get('gnuhealth.patient.evaluation')
         evaluation = Evaluation.__table__()
-        where = evaluation.specialty != None
+        where = evaluation.specialty is not None
         if Transaction().context.get('start_date'):
             where &= evaluation.evaluation_start >= \
                 Transaction().context['start_date']
@@ -202,4 +203,3 @@ class EvaluationsSector(ModelSQL, ModelView):
             Count(join4.right.id).as_('evaluations'),
             where=where,
             group_by=join4.right.id)
-
