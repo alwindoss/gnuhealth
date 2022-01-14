@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,10 +21,10 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_contact_tracing import *
+from . import health_contact_tracing
 
 
 def register():
     Pool.register(
-        ContactTracing,
+        health_contact_tracing.ContactTracing,
         module='health_contact_tracing', type_='model')
