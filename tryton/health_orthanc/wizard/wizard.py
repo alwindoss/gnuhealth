@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
 #
+#                   *** ORTHANC INTEGRATION PACKAGE ***
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -21,7 +21,6 @@
 from datetime import datetime
 from trytond.model import ModelView, fields
 from trytond.wizard import Wizard, StateTransition, StateView, Button
-from trytond.transaction import Transaction
 from trytond.pool import Pool
 from requests.auth import HTTPBasicAuth as auth
 from requests.exceptions import HTTPError
@@ -39,7 +38,8 @@ class AddOrthancInit(ModelView):
     __name__ = "gnuhealth.orthanc.add.init"
 
     label = fields.Char(
-        "Label", required=True, help="The label of the Orthanc server. Must be unique"
+        "Label", required=True,
+        help="The label of the Orthanc server. Must be unique"
     )
     domain = fields.Char(
         "URL", required=True, help="The full URL of the Orthanc server"
@@ -81,7 +81,8 @@ class FullSyncOrthanc(Wizard):
     )
 
     def transition_first_sync(self):
-        """Import and create all current patients and studies on remote DICOM server
+        """ Import and create all current patients
+            and studies on remote DICOM server
         """
 
         pool = Pool()

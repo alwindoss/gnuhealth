@@ -12,20 +12,6 @@
             <field name="group" ref="health.group_health_admin"/>
         </record>
 
-        <!-- Sync Orthanc servers -->
-        <record model="ir.cron" id="cron_orthanc_sync">
-            <field name="name">Sync Orthanc servers</field>
-            <field name="request_user" ref="res.user_admin"/>
-            <field name="user" ref="user_orthanc"/>
-            <field name="active" eval="True"/>
-            <field name="interval_number" eval="15"/>
-            <field name="interval_type">minutes</field>
-            <field name="number_calls" eval="-1"/>
-            <field name="repeat_missed" eval="False"/>
-            <field name="model">gnuhealth.orthanc.config</field>
-            <field name="function">sync</field>
-        </record>
-
         <!-- Access rights
                 Default = Deny models and menu access
                 Providers = Read studies and patients with relevant menu access
