@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -20,11 +19,12 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from trytond.model import ModelView, ModelSQL, fields, Unique
-from trytond.pool import Pool
+
+from trytond.model import ModelView, ModelSQL, fields
 
 
 __all__ = ['ContactTracing']
+
 
 class ContactTracing(ModelSQL, ModelView):
     'Person Contacts tracing'
@@ -38,7 +38,8 @@ class ContactTracing(ModelSQL, ModelView):
         'gnuhealth.pathology', 'Disease',
         help='Disease to trace')
 
-    contact = fields.Many2One('party.party','Contact',
+    contact = fields.Many2One(
+        'party.party', 'Contact',
         domain=[('is_person', '=', True)],
         help="Person that the patient has contacted")
 
@@ -58,8 +59,9 @@ class ContactTracing(ModelSQL, ModelView):
         ('na', 'Not available'),
         ), 'Exposure', required=True, sort=False)
 
-    exposure_time = fields.Integer("Exposure time",
-                    help="Exposure time in minutes")
+    exposure_time = fields.Integer(
+        "Exposure time",
+        help="Exposure time in minutes")
 
     status = fields.Selection((
         ('unreached', 'Unreached'),
@@ -71,11 +73,11 @@ class ContactTracing(ModelSQL, ModelView):
         " has been created and followup evaluations status are stored in the"
         " evaluations")
 
-    context = fields.Char ("Context",
-                           help="Airport, meeting, concert, ...")
+    context = fields.Char(
+        "Context",
+        help="Airport, meeting, concert, ...")
 
-    comments = fields.Text ("Comments")
-
+    comments = fields.Text("Comments")
 
     @fields.depends('du')
     def on_change_with_operational_sector(self):
