@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,10 +21,10 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_archives import *
+from . import health_archives
 
 
 def register():
     Pool.register(
-        PaperArchive,
+        health_archives.PaperArchive,
         module='health_archives', type_='model')
