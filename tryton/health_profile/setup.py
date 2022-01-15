@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #    Copyright (C) 2011-2022 Luis Falcon <falcon@gnuhealth.org>
 #    Copyright (C) 2011 Cédric Krier
 
@@ -22,7 +21,9 @@ import os
 import configparser
 
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname), encoding="UTF-8").read()
+    return open(
+        os.path.join(os.path.dirname(
+            file__), fname), encoding="UTF-8").read()
 
 config = configparser.ConfigParser()
 config.readfp(open('tryton.cfg'))
