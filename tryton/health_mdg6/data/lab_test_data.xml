@@ -7,7 +7,6 @@
         <record id="product_template_bacilloscopy_ZN_analysischarges0" model="product.template">
             <field name="name">Ziehl Neelsen Bacilloscopy Analysis Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0.0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -15,7 +14,6 @@
         <record id="product_template_bacilloscopy_FL_analysischarges0" model="product.template">
             <field name="name">Fluorescent Bacilloscopy Analysis Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0.0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -24,7 +22,6 @@
         <record id="product_template_culture_lj_analysischarges0" model="product.template">
             <field name="name">Lowenstein-Jensen Culture Analysis Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0.0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -32,7 +29,6 @@
         <record id="product_template_bactec_culture_analysischarges0" model="product.template">
             <field name="name">BACTEC Culture Analysis Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0.0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -40,7 +36,6 @@
         <record id="product_template_xpert_mtb_rif_analysischarges0" model="product.template">
             <field name="name">Xpert MTB-RIF Analysis Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0.0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -48,7 +43,6 @@
         <record id="product_template_ppd_analysischarges0" model="product.template">
             <field name="name">Purified Protein Derivative - PPD Analysis Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0.0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -59,7 +53,6 @@
         <record id="product_template_western_blot_analysischarges0" model="product.template">
             <field name="name">Western Blot Analysis Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0.0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
@@ -67,7 +60,6 @@
         <record id="product_template_ELISA_analysischarges0" model="product.template">
             <field name="name">HIV ELISA Analysis Charges</field>
             <field eval="1" name="list_price"/>
-            <field eval="0.0" name="cost_price"/>
             <field name="default_uom" ref="product.uom_unit"/>
             <field name="type">service</field>
         </record>
