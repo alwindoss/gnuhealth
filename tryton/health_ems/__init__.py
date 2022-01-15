@@ -22,6 +22,7 @@ from trytond.pool import Pool
 from . import health_ems
 from . import sequences
 
+
 def register():
     Pool.register(
         sequences.GnuHealthSequences,
