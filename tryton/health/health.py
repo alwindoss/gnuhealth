@@ -38,27 +38,22 @@ from collections import OrderedDict
 from io import BytesIO
 from uuid import uuid4
 
-from sql import Literal, Join, Table, Null
-from sql.functions import Overlay, Position
+from sql import Literal, Join
 
 from trytond.model import (ModelView, ModelSingleton, ModelSQL,
-                           ValueMixin, MultiValueMixin, fields, Unique, tree)
+                           MultiValueMixin, fields, Unique, tree)
 from trytond.wizard import Wizard, StateAction, StateView, Button
 from trytond.transaction import Transaction
-from trytond import backend
-from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
+from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or
 from trytond.pool import Pool
-from trytond.tools import grouped_slice, reduce_ids
-from trytond.backend import name as backend_name
-from trytond.tools.multivalue import migrate_property
 from trytond.rpc import RPC
 from trytond.i18n import gettext
-from trytond.pyson import Id
+
 
 from .exceptions import (
     WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart,
     MedEndDateBeforeStart, NextDoseBeforeFirst, DrugPregnancySafetyCheck,
-    EvaluationEndBeforeStart
+    EvaluationEndBeforeStart, NoAssociatedHealthProfessional
     )
 
 from .core import (get_institution, compute_age_from_dates,
@@ -643,8 +638,6 @@ class Party(ModelSQL, ModelView):
 
     @classmethod
     def create(cls, vlist):
-        Configuration = Pool().get('party.configuration')
-
         vlist = [x.copy() for x in vlist]
 
         tmp_act = cls.generate_puid()
@@ -681,7 +674,6 @@ class Party(ModelSQL, ModelView):
 
             # Generate internal code
             if not values.get('code'):
-                config = Configuration(1)
                 # Use the company name . Initially, use the name
                 # since the company hasn't been created yet.
                 suffix = Transaction().context.get('company.rec_name') \
@@ -1020,8 +1012,6 @@ class PageOfLife(ModelSQL, ModelView):
     # Get the text representation of the health condition
     @fields.depends('health_condition')
     def on_change_health_condition(self):
-        health_condition_text = None
-        health_condition_code = None
         if (self.health_condition):
             self.health_condition_text = self.health_condition.name
             self.health_condition_code = self.health_condition.code
@@ -1029,8 +1019,6 @@ class PageOfLife(ModelSQL, ModelView):
     # Get the text representation of the procedure
     @fields.depends('procedure')
     def on_change_procedure(self):
-        procedure_text = None
-        procedure_code = None
         if (self.procedure):
             self.procedure_text = self.procedure.description
             self.procedure_code = self.procedure.name
@@ -1038,14 +1026,12 @@ class PageOfLife(ModelSQL, ModelView):
     # Get the text representation of the institution
     @fields.depends('institution')
     def on_change_institution(self):
-        node = None
         if (self.institution):
             self.node = str(self.institution.name.name)
 
     # Retrieve the federation account
     @fields.depends('person')
     def on_change_person(self):
-        federation_account = None
         if (self.person):
             self.federation_account = self.person.federation_account
 
@@ -1331,24 +1317,6 @@ class OperationalSector(ModelSQL, ModelView):
 class HealthInstitution(ModelSQL, ModelView):
     'Health Institution'
     __name__ = 'gnuhealth.institution'
-
-    @classmethod
-    def get_institution(cls):
-        # Retrieve the institution associated to this GNU Health instance
-        # That is associated to the Company.
-        company = Transaction().context.get('company')
-
-        cursor = Transaction().connection.cursor()
-        cursor.execute('SELECT party FROM company_company WHERE id=%s \
-            LIMIT 1', (company,))
-        party_id = cursor.fetchone()
-        if party_id:
-            cursor = Transaction().connection.cursor()
-            cursor.execute('SELECT id FROM gnuhealth_institution WHERE \
-                name = %s LIMIT 1', (party_id[0],))
-            institution_id = cursor.fetchone()
-            if (institution_id):
-                return int(institution_id[0])
 
     name = fields.Many2One(
         'party.party', 'Institution',
@@ -2236,11 +2204,6 @@ class PathologyCategory(tree(separator=' / '), ModelSQL, ModelView):
         'gnuhealth.pathology.category', 'parent', 'Children Category')
 
     @classmethod
-    def __setup__(cls):
-        super(PathologyCategory, cls).__setup__()
-        cls._order.insert(0, ('name', 'ASC'))
-
-    @classmethod
     def validate(cls, categories):
         super(PathologyCategory, cls).validate(categories)
 
@@ -2258,6 +2221,7 @@ class PathologyCategory(tree(separator=' / '), ModelSQL, ModelView):
             ('name_uniq', Unique(t, t.name),
              'The category name must be unique'),
         ]
+        cls._order.insert(0, ('name', 'ASC'))
 
 
 class PathologyGroup(ModelSQL, ModelView):
@@ -2425,7 +2389,6 @@ class BirthCertExtraInfo (ModelSQL, ModelView):
     @ModelView.button
     def sign(cls, certificates):
         pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
         Person = pool.get('party.party')
         party = []
 
@@ -2503,7 +2466,6 @@ class DeathCertExtraInfo (ModelSQL, ModelView):
     @ModelView.button
     def sign(cls, certificates):
         pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
         Person = pool.get('party.party')
 
         # Change the state of the death certificate to "Signed"
@@ -2847,7 +2809,6 @@ class Product(ModelSQL, ModelView):
         return True
 
 
-
 # PATIENT GENERAL INFORMATION
 class PatientData(ModelSQL, ModelView):
     'Patient related information'
@@ -2857,10 +2818,9 @@ class PatientData(ModelSQL, ModelView):
         # Patient Critical Information Summary
         # The information will be shown in the front page
 
-        critical_info = ""
         allergies = ""
         other_conditions = ""
-        conditions=[]
+        conditions = []
         for disease in self.diseases:
             for member in disease.pathology.groups:
                 '''Retrieve patient allergies'''
@@ -3102,8 +3062,6 @@ class PatientData(ModelSQL, ModelView):
     # Show the gender upon entering the individual
     @fields.depends('name')
     def on_change_name(self):
-        gender = None
-        age = None
         if (self.name):
             self.gender = self.name.gender
             self.age = self.name.age
@@ -3272,7 +3230,7 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
             ])
         if (self.date_stop_treatment and self.date_start_treatment):
             if (self.date_stop_treatment < self.date_start_treatment):
-                raise EndTreatmenDatetBeforeStart(
+                raise EndTreatmentDateBeforeStart(
                     gettext('health.msg_end_treatment_before_start',
                             date_stop_treatment=Lang.strftime(
                                 self.date_stop_treatment,
@@ -3517,7 +3475,6 @@ class Appointment(ModelSQL, ModelView):
 
     @fields.depends('patient')
     def on_change_patient(self):
-        res = {'state': 'free'}
         if self.patient:
             self.state = 'confirmed'
 
@@ -4140,8 +4097,6 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
         return get_health_professional()
 
     # Method that makes the doctor to acknowledge if there is any
@@ -4568,7 +4523,8 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
         states={'invisible': Equal(Eval('state'), 'in_progress')},
         help="Health Professional that finished the patient evaluation")
 
-    specialty = fields.Many2One('gnuhealth.specialty', 'Specialty',
+    specialty = fields.Many2One(
+        'gnuhealth.specialty', 'Specialty',
         states=STATES)
 
     visit_type = fields.Selection([
@@ -5013,9 +4969,6 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
     # These two are function fields (don't exist at DB level)
     @fields.depends('patient')
     def on_change_patient(self):
-        gender = None
-        age = ''
-        self.gender = self.patient.gender
         self.computed_age = self.patient.age
 
     @staticmethod
@@ -5113,7 +5066,6 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
     @ModelView.button
     def end_evaluation(cls, evaluations):
         pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
         Appointment = pool.get('gnuhealth.appointment')
 
         evaluation_id = evaluations[0]
@@ -5439,7 +5391,7 @@ class Commands(ModelSQL, ModelView):
     def sysinfo():
         # Get Server side information
         info = ''
-        os_header = f"\n-- Operating System / Distribution --\n"
+        os_header = "\n-- Operating System / Distribution --\n"
         uname = platform.uname()
         pversion = f"Python version: {str(platform.python_version())}\n"
         # Get OS version and related info.
