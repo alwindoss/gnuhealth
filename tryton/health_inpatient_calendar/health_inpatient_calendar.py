@@ -3,9 +3,9 @@
 #
 #    GNU Health: The Free Health and Hospital Information System
 #    # Package : Health Inpatient Calendar
-#    Copyright (C) 2008-2018  Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2008-2022  Luis Falcon <falcon@gnuhealth.org>
 #    Copyright (C) 2011-2012  Sebastián Marró <smarro@thymbra.com>
-#    Copyright (C) 2008-2018  GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022  GNU Solidario <health@gnusolidario.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -39,7 +39,8 @@ class InpatientRegistration(ModelSQL, ModelView):
     'Add Calendar to the Inpatient Registration'
     __name__ = 'gnuhealth.inpatient.registration'
 
-    event = fields.Many2One('calendar.event', 'Calendar Event', readonly=True,
+    event = fields.Many2One(
+        'calendar.event', 'Calendar Event', readonly=True,
         help="Calendar Event")
 
     @classmethod
@@ -56,9 +57,11 @@ class InpatientRegistration(ModelSQL, ModelView):
                         'dtstart': inpatient_registration.hospitalization_date,
                         'dtend': inpatient_registration.discharge_date,
                         'calendar': inpatient_registration.bed.calendar.id,
-                        'summary': bed + inpatient_registration.patient.name.rec_name
+                        'summary':
+                            bed + inpatient_registration.patient.name.rec_name
                         }])
-                    cls.write([inpatient_registration],
+                    cls.write(
+                        [inpatient_registration],
                         {'event': events[0].id})
 
     @classmethod
