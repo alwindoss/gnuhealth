@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -22,14 +21,13 @@
 ##############################################################################
 from datetime import datetime
 from trytond.model import ModelView, ModelSQL, fields
-from trytond.transaction import Transaction
 from trytond.rpc import RPC
 from trytond.pool import Pool
-from trytond.wizard import Wizard, StateAction, StateView, Button
-from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or
+from trytond.pyson import Eval, Not, Bool, Equal
 import hashlib
 import json
 from uuid import uuid4
+from trytond.modules.health.core import get_health_professional
 
 __all__ = ['LabTest']
 
@@ -42,7 +40,8 @@ class LabTest(ModelSQL, ModelView):
 
     serializer = fields.Text('Doc String', readonly=True)
 
-    document_digest = fields.Char('Digest', readonly=True,
+    document_digest = fields.Char(
+        'Digest', readonly=True,
         help="Original Document Digest")
 
     state = fields.Selection([
@@ -51,25 +50,29 @@ class LabTest(ModelSQL, ModelView):
         ('validated', 'Validated'),
         ], 'State', readonly=True, sort=False)
 
-
-    digest_status = fields.Function(fields.Boolean('Altered',
-        help="This field will be set whenever parts of" \
-        " the main original document has been changed." \
-        " Please note that the verification is done only on selected" \
-        " fields." ),
+    digest_status = fields.Function(
+        fields.Boolean(
+            'Altered',
+            help="This field will be set whenever parts of"
+            " the main original document has been changed."
+            " Please note that the verification is done only on selected"
+            " fields."),
         'check_digest')
 
-    serializer_current = fields.Function(fields.Text('Current Doc',
+    serializer_current = fields.Function(
+        fields.Text(
+            'Current Doc',
             states={
-            'invisible': Not(Bool(Eval('digest_status'))),
-            }),
+                'invisible': Not(Bool(Eval('digest_status'))),
+                }),
         'check_digest')
 
-
-    digest_current = fields.Function(fields.Char('Current Hash',
+    digest_current = fields.Function(
+        fields.Char(
+            'Current Hash',
             states={
-            'invisible': Not(Bool(Eval('digest_status'))),
-            }),
+                'invisible': Not(Bool(Eval('digest_status'))),
+                }),
         'check_digest')
 
     digital_signature = fields.Text('Digital Signature', readonly=True)
@@ -78,30 +81,33 @@ class LabTest(ModelSQL, ModelView):
         'gnuhealth.healthprofessional',
         'Done by', readonly=True, help='Professional who processes this'
         ' lab test',
-        states = STATES )
+        states=STATES)
 
-    done_date = fields.DateTime('Finished on', readonly=True,
-        states = STATES )
+    done_date = fields.DateTime(
+        'Finished on', readonly=True,
+        states=STATES)
 
     validated_by = fields.Many2One(
         'gnuhealth.healthprofessional',
         'Validated by', readonly=True, help='Professional who validates this'
         ' lab test',
-        states = STATES )
+        states=STATES)
 
-    validation_date = fields.DateTime('Validated on', readonly=True,
-        states = STATES )
+    validation_date = fields.DateTime(
+        'Validated on', readonly=True,
+        states=STATES)
 
-    historize = fields.Boolean("Historize",
-                    states = STATES,
-                    depends=['pathology'],
-                    help='If this flag is set'
-                    ' the a new health condition will be added'
-                    ' to the patient history.'
-                    ' Unset it if this lab test is in the context'
-                    ' of a pre-existing condition of the patient.'
-                    ' The condition will be created when the lab test'
-                    ' is confirmed and validated')
+    historize = fields.Boolean(
+        "Historize",
+        states=STATES,
+        depends=['pathology'],
+        help='If this flag is set'
+        ' the a new health condition will be added'
+        ' to the patient history.'
+        ' Unset it if this lab test is in the context'
+        ' of a pre-existing condition of the patient.'
+        ' The condition will be created when the lab test'
+        ' is confirmed and validated')
 
     @staticmethod
     def default_state():
@@ -138,78 +144,62 @@ class LabTest(ModelSQL, ModelView):
     @classmethod
     @ModelView.button
     def generate_document(cls, documents):
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-
-        document = documents[0]
-
-
         # Set the document to "Done"
         # and write the name of the signing health professional
 
-        hp = HealthProfessional.get_health_professional()
-        if not hp:
-            cls.raise_user_error(
-                "No health professional associated to this user !")
-
-        serial_doc=cls.get_serial(document)
+        hp = get_health_professional()
 
         cls.write(documents, {
             'done_by': hp,
             'done_date': datetime.now(),
-            'state': 'done',})
+            'state': 'done', })
 
     @classmethod
     @ModelView.button
     def set_to_draft(cls, documents):
-        document = documents[0]
-
         cls.write(documents, {
-            'state': 'draft',})
+            'state': 'draft', })
 
     @classmethod
     @ModelView.button
     def sign_document(cls, documents):
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-
         document = documents[0]
 
         # Validate / generate digest for the document
         # and write the name of the signing health professional
-
-        hp = HealthProfessional.get_health_professional()
+        hp = get_health_professional()
         if not hp:
             cls.raise_user_error(
                 "No health professional associated to this user !")
 
-        serial_doc=cls.get_serial(document)
+        serial_doc = cls.get_serial(document)
 
         cls.write(documents, {
             'serializer': serial_doc,
             'document_digest': HealthCrypto().gen_hash(serial_doc),
             'validated_by': hp,
             'validation_date': datetime.now(),
-            'state': 'validated',})
+            'state': 'validated', })
 
         # Create lab PoL if the person has a federation account.
         if (document.patient.name.federation_account):
-            cls.create_lab_pol (document)
+            cls.create_lab_pol(document)
 
         # Create Health condition to the patient
         # if there is a confirmed pathology associated and
         # validated to the lab test result
         # The flag historize must also be set
         if (document.pathology and document.historize):
-            cls.create_health_condition (document)
+            cls.create_health_condition(document)
 
     @classmethod
-    def get_serial(cls,document):
+    def get_serial(cls, document):
 
-        analyte_line=[]
+        analyte_line = []
 
         for line in document.critearea:
-            line_elements=[line.name or '',
+            line_elements = [
+                line.name or '',
                 line.result or '',
                 line.result_text or '',
                 line.remarks or '']
@@ -241,20 +231,19 @@ class LabTest(ModelSQL, ModelView):
             'digital_signature': signature,
             })
 
-
-    def check_digest (self,name):
-        result=''
-        serial_doc=self.get_serial(self)
+    def check_digest(self, name):
+        result = ''
+        serial_doc = self.get_serial(self)
         if (name == 'digest_status' and self.document_digest):
             if (HealthCrypto().gen_hash(serial_doc) == self.document_digest):
                 result = False
             else:
                 ''' Return true if the document has been altered'''
                 result = True
-        if (name=='digest_current'):
+        if (name == 'digest_current'):
             result = HealthCrypto().gen_hash(serial_doc)
 
-        if (name=='serializer_current'):
+        if (name == 'serializer_current'):
             result = serial_doc
 
         return result
@@ -270,7 +259,7 @@ class LabTest(ModelSQL, ModelView):
 
     @classmethod
     def create_health_condition(cls, lab_info):
-        """ Create the health condition when specified and 
+        """ Create the health condition when specified and
             validated in the lab test
         """
         HealthCondition = Pool().get('gnuhealth.patient.disease')
@@ -289,9 +278,8 @@ class LabTest(ModelSQL, ModelView):
         health_condition.append(vals)
         HealthCondition.create(health_condition)
 
-
     @classmethod
-    def create_lab_pol(cls,lab_info):
+    def create_lab_pol(cls, lab_info):
         """ Adds an entry in the person Page of Life
             related to this person lab
         """
@@ -306,13 +294,13 @@ class LabTest(ModelSQL, ModelView):
             'page': str(uuid4()),
             'person': lab_info.patient.name.id,
             'page_date': lab_info.date_analysis,
-            'federation_account': \
+            'federation_account':
                 lab_info.patient.name.federation_account,
-            'page_type':'medical',
-            'medical_context':'lab',
-            'relevance':'important',
+            'page_type': 'medical',
+            'medical_context': 'lab',
+            'relevance': 'important',
             'info': lab_info.analytes_summary,
-            'author': lab_info.requestor and \
+            'author': lab_info.requestor and
                 lab_info.requestor.rec_name
             }
 
@@ -323,15 +311,12 @@ class LabTest(ModelSQL, ModelView):
 class HealthCrypto:
     """ GNU Health Cryptographic functions
     """
-
-    def serialize(self,data_to_serialize):
+    def serialize(self, data_to_serialize):
         """ Format to JSON """
 
         json_output = \
-            json.dumps(data_to_serialize,ensure_ascii=False)
+            json.dumps(data_to_serialize, ensure_ascii=False)
         return json_output
 
     def gen_hash(self, serialized_doc):
         return hashlib.sha512(serialized_doc.encode('utf-8')).hexdigest()
-
-
