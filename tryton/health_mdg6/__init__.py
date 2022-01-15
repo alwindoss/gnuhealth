@@ -1,2 +1,1 @@
-# -*- coding: utf-8 -*-
-from .health_mdg6 import *
+from . import health_mdg6
