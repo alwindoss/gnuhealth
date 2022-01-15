@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -20,54 +19,53 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from dateutil.relativedelta import relativedelta
-from datetime import datetime, timedelta, date
-from sql import Literal, Join, Table
-from trytond.model import ModelView, ModelSingleton, ModelSQL, fields, Unique
-from trytond.transaction import Transaction
-from trytond import backend
-from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
-from trytond.pool import Pool
-import string
-import pytz
+from datetime import date
+from trytond.model import ModelView, ModelSQL, fields, Unique
+from trytond.modules.health.core import get_health_professional
 
-__all__ = ['GnuHealthPatient','Product','BodyFunctionCategory','BodyFunction',
-    'BodyStructureCategory','BodyStructure',
-    'ActivityAndParticipationCategory', 'ActivityAndParticipation',
-    'EnvironmentalFactorCategory','EnvironmentalFactor',
-    'PatientDisabilityAssessment',
-    'PatientBodyFunctionAssessment',
-    'PatientBodyStructureAssessment',
-    'PatientActivityAndParticipationAsssessment',
-    'PatientEnvironmentalFactorAssessment',
-    'PatientAmputation','PatientProthesis',
-    'PatientData']
+__all__ = ['GnuHealthPatient',
+           'Product', 'BodyFunctionCategory', 'BodyFunction',
+           'BodyStructureCategory', 'BodyStructure',
+           'ActivityAndParticipationCategory', 'ActivityAndParticipation',
+           'EnvironmentalFactorCategory', 'EnvironmentalFactor',
+           'PatientDisabilityAssessment',
+           'PatientBodyFunctionAssessment',
+           'PatientBodyStructureAssessment',
+           'PatientActivityAndParticipationAsssessment',
+           'PatientEnvironmentalFactorAssessment',
+           'PatientAmputation', 'PatientProthesis',
+           'PatientData']
 
 
-    
 # Include disabilty amputation and UXO casualty information on patient model
 class GnuHealthPatient(ModelSQL, ModelView):
     __name__ = 'gnuhealth.patient'
 
-    disability = fields.Boolean('Disabilities / Barriers', help="Mark this "
+    disability = fields.Boolean(
+        'Disabilities / Barriers', help="Mark this "
         "box if the patient has history of significant disabilities and/or "
         "barriers. Review the Disability Assessments, socioeconomic info,  "
         "diseases and surgeries for more details")
     uxo = fields.Boolean('UXO', help="UXO casualty")
-    amputee = fields.Boolean('Amputee', help="Person has had one or more"
+    amputee = fields.Boolean(
+        'Amputee', help="Person has had one or more"
         " limbs removed by amputation. Includes congenital conditions")
     amputee_since = fields.Date('Since', help="Date of amputee status")
-    
-    amputations = fields.One2Many('gnuhealth.patient.amputation','patient','Amputations')
 
-    protheses = fields.One2Many('gnuhealth.patient.prothesis','patient','Protheses')
+    amputations = fields.One2Many(
+        'gnuhealth.patient.amputation', 'patient', 'Amputations')
+
+    protheses = fields.One2Many(
+        'gnuhealth.patient.prothesis', 'patient', 'Protheses')
+
 
 class Product(ModelSQL, ModelView):
     'Product'
     __name__ = 'product.product'
-    
+
     is_prothesis = fields.Boolean(
         'Prothesis', help='Check if the product is a prothesis')
+
 
 class BodyFunctionCategory(ModelSQL, ModelView):
     'Body Function Category'
@@ -81,9 +79,10 @@ class BodyFunctionCategory(ModelSQL, ModelView):
         super(BodyFunctionCategory, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code_uniq', Unique(t,t.code),
+            ('code_uniq', Unique(t, t.code),
                 'The code must be unique !'),
         ]
+
 
 class BodyFunction(ModelSQL, ModelView):
     'Body Functions'
@@ -91,16 +90,17 @@ class BodyFunction(ModelSQL, ModelView):
 
     name = fields.Char('Function', required=True)
     code = fields.Char('code', required=True)
-    category = fields.Many2One('gnuhealth.body_function.category','Category')
-    
+    category = fields.Many2One('gnuhealth.body_function.category', 'Category')
+
     @classmethod
     def __setup__(cls):
         super(BodyFunction, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code_uniq', Unique(t,t.code),
+            ('code_uniq', Unique(t, t.code),
                 'The code must be unique !'),
         ]
+
 
 class BodyStructureCategory(ModelSQL, ModelView):
     'Body Structure Category'
@@ -114,9 +114,10 @@ class BodyStructureCategory(ModelSQL, ModelView):
         super(BodyStructureCategory, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code_uniq', Unique(t,t.code),
+            ('code_uniq', Unique(t, t.code),
                 'The code must be unique !'),
         ]
+
 
 class BodyStructure(ModelSQL, ModelView):
     'Body Functions'
@@ -124,16 +125,17 @@ class BodyStructure(ModelSQL, ModelView):
 
     name = fields.Char('Structure', required=True)
     code = fields.Char('code', required=True)
-    category = fields.Many2One('gnuhealth.body_structure.category','Category')
-    
+    category = fields.Many2One('gnuhealth.body_structure.category', 'Category')
+
     @classmethod
     def __setup__(cls):
         super(BodyStructure, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code_uniq', Unique(t,t.code),
+            ('code_uniq', Unique(t, t.code),
                 'The code must be unique !'),
         ]
+
 
 class ActivityAndParticipationCategory(ModelSQL, ModelView):
     'Activity and Participation Category'
@@ -147,9 +149,10 @@ class ActivityAndParticipationCategory(ModelSQL, ModelView):
         super(ActivityAndParticipationCategory, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code_uniq', Unique(t,t.code),
+            ('code_uniq', Unique(t, t.code),
                 'The code must be unique !'),
         ]
+
 
 class ActivityAndParticipation(ModelSQL, ModelView):
     'Activity limitations and participation restrictions'
@@ -158,14 +161,14 @@ class ActivityAndParticipation(ModelSQL, ModelView):
     name = fields.Char('A & P', required=True)
     code = fields.Char('code', required=True)
     category = fields.Many2One(
-        'gnuhealth.activity_and_participation.category','Category')
-    
+        'gnuhealth.activity_and_participation.category', 'Category')
+
     @classmethod
     def __setup__(cls):
         super(ActivityAndParticipation, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code_uniq', Unique(t,t.code),
+            ('code_uniq', Unique(t, t.code),
                 'The code must be unique !'),
         ]
 
@@ -182,9 +185,10 @@ class EnvironmentalFactorCategory(ModelSQL, ModelView):
         super(EnvironmentalFactorCategory, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code_uniq', Unique(t,t.code),
+            ('code_uniq', Unique(t, t.code),
                 'The code must be unique !'),
         ]
+
 
 class EnvironmentalFactor(ModelSQL, ModelView):
     'Environmental factors restrictions'
@@ -193,14 +197,14 @@ class EnvironmentalFactor(ModelSQL, ModelView):
     name = fields.Char('Environment', required=True)
     code = fields.Char('code', required=True)
     category = fields.Many2One(
-        'gnuhealth.environmental_factor.category','Category')
-    
+        'gnuhealth.environmental_factor.category', 'Category')
+
     @classmethod
     def __setup__(cls):
         super(EnvironmentalFactor, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code_uniq', Unique(t,t.code),
+            ('code_uniq', Unique(t, t.code),
                 'The code must be unique !'),
         ]
 
@@ -209,7 +213,7 @@ class PatientDisabilityAssessment(ModelSQL, ModelView):
     'Patient Disability Information'
     __name__ = 'gnuhealth.patient.disability_assessment'
 
-    patient = fields.Many2One('gnuhealth.patient','Patient', required=True)
+    patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
 
     assessment_date = fields.Date('Date')
 
@@ -219,11 +223,13 @@ class PatientDisabilityAssessment(ModelSQL, ModelView):
     wheelchair = fields.Boolean('Wheelchair')
 
     uxo = fields.Function(fields.Boolean('UXO'), 'get_uxo_status')
-    amputee = fields.Function(fields.Boolean('Amputee'),
+    amputee = fields.Function(
+        fields.Boolean('Amputee'),
         'get_amputee_status')
-    amputee_since = fields.Function(fields.Date('Since'),
+    amputee_since = fields.Function(
+        fields.Date('Since'),
         'get_amputee_date')
-    
+
     notes = fields.Text('Notes', help="Extra Information")
 
     hand_function = fields.Selection([
@@ -289,19 +295,23 @@ class PatientDisabilityAssessment(ModelSQL, ModelView):
         ('4', 'Complete impairment'),
         ], 'A & P', sort=False)
 
-    body_functions = fields.One2Many('gnuhealth.body_function.assessment',
-        'assessment','Body Functions Impairments')
+    body_functions = fields.One2Many(
+        'gnuhealth.body_function.assessment',
+        'assessment', 'Body Functions Impairments')
 
-    body_structures = fields.One2Many('gnuhealth.body_structure.assessment',
-        'assessment','Body Structures Impairments')
+    body_structures = fields.One2Many(
+        'gnuhealth.body_structure.assessment',
+        'assessment', 'Body Structures Impairments')
 
     activity_and_participation = fields.One2Many(
         'gnuhealth.activity.assessment',
-        'assessment','Activities and Participation Impairments')
+        'assessment',
+        'Activities and Participation Impairments')
 
     environmental_factor = fields.One2Many(
         'gnuhealth.environment.assessment',
-        'assessment','Environmental Factors Barriers')
+        'assessment',
+        'Environmental Factors Barriers')
 
     healthprof = fields.Many2One(
         'gnuhealth.healthprofessional', 'Health Prof',
@@ -315,24 +325,22 @@ class PatientDisabilityAssessment(ModelSQL, ModelView):
 
     def get_amputee_date(self, name):
         return self.patient.amputee_since
-        
+
     @staticmethod
     def default_assessment_date():
         return date.today()
 
-
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        hp = HealthProf.get_health_professional()
-        return hp
+        return get_health_professional()
+
 
 class PatientBodyFunctionAssessment(ModelSQL, ModelView):
     'Body Functions Assessment'
     __name__ = 'gnuhealth.body_function.assessment'
 
-    assessment = fields.Many2One('gnuhealth.patient.disability_assessment',
+    assessment = fields.Many2One(
+        'gnuhealth.patient.disability_assessment',
         'Assessment', required=True)
     body_function = fields.Many2One('gnuhealth.body_function', 'Body Function')
     qualifier = fields.Selection([
@@ -345,13 +353,16 @@ class PatientBodyFunctionAssessment(ModelSQL, ModelView):
         ('9', 'Not applicable'),
         ], 'Qualifier', sort=False)
 
+
 class PatientBodyStructureAssessment(ModelSQL, ModelView):
     'Body Functions Assessment'
     __name__ = 'gnuhealth.body_structure.assessment'
 
-    assessment = fields.Many2One('gnuhealth.patient.disability_assessment',
+    assessment = fields.Many2One(
+        'gnuhealth.patient.disability_assessment',
         'Assessment', required=True)
-    body_structure = fields.Many2One('gnuhealth.body_structure', 'Body Structure')
+    body_structure = fields.Many2One(
+        'gnuhealth.body_structure', 'Body Structure')
     qualifier1 = fields.Selection([
         (None, ''),
         ('0', 'No impairment'),
@@ -372,7 +383,8 @@ class PatientBodyStructureAssessment(ModelSQL, ModelView):
         ('4', 'Aberrant dimensions'),
         ('5', 'Discontinuity'),
         ('6', 'Deviating position'),
-        ('7', 'Qualitative changes in structure, including accumulation of fluid'),
+        ('7', 'Qualitative changes in structure,'
+            ' including accumulation of fluid'),
         ('8', '8 - Not specified'),
         ('9', '9 - Not applicable'),
         ], 'Nature', help="Nature of the change", sort=False)
@@ -389,12 +401,13 @@ class PatientActivityAndParticipationAsssessment(ModelSQL, ModelView):
     'Activity and Participation Assessment'
     __name__ = 'gnuhealth.activity.assessment'
 
-    assessment = fields.Many2One('gnuhealth.patient.disability_assessment',
+    assessment = fields.Many2One(
+        'gnuhealth.patient.disability_assessment',
         'Assessment', required=True)
-    
+
     activity_and_participation = fields.Many2One(
-        'gnuhealth.activity_and_participation','Activity')
-    
+        'gnuhealth.activity_and_participation', 'Activity')
+
     qualifier1 = fields.Selection([
         (None, ''),
         ('0', 'No difficulty'),
@@ -417,15 +430,17 @@ class PatientActivityAndParticipationAsssessment(ModelSQL, ModelView):
         ('9', 'Not applicable'),
         ], 'Capacity', help="Extent of the dificulty", sort=False)
 
+
 class PatientEnvironmentalFactorAssessment(ModelSQL, ModelView):
     'Environmental Factors Assessment'
     __name__ = 'gnuhealth.environment.assessment'
 
-    assessment = fields.Many2One('gnuhealth.patient.disability_assessment',
+    assessment = fields.Many2One(
+        'gnuhealth.patient.disability_assessment',
         'Assessment', required=True)
-    
+
     environmental_factor = fields.Many2One(
-        'gnuhealth.environmental_factor','Environment')
+        'gnuhealth.environmental_factor', 'Environment')
 
     qualifier = fields.Selection([
         (None, ''),
@@ -439,19 +454,20 @@ class PatientEnvironmentalFactorAssessment(ModelSQL, ModelView):
         ('22', 'Moderate facilitator'),
         ('33', 'Severe facilitator'),
         ('44', 'Complete facilitator'),
-        ], 'Barriers', help="Extent of the barriers or facilitators", sort=False)
+        ], 'Barriers',
+        help="Extent of the barriers or facilitators", sort=False)
 
 
 # Amputation Information
 class PatientAmputation(ModelSQL, ModelView):
     'Amputation'
     __name__ = 'gnuhealth.patient.amputation'
-    
-    patient = fields.Many2One('gnuhealth.patient','Patient', required=True)
+
+    patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
 
     amputation_date = fields.Date('Date')
 
-    body_structure = fields.Many2One('gnuhealth.body_structure','Structure')
+    body_structure = fields.Many2One('gnuhealth.body_structure', 'Structure')
 
     etiology = fields.Selection([
         (None, ''),
@@ -498,17 +514,15 @@ class PatientAmputation(ModelSQL, ModelView):
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        hp = HealthProf.get_health_professional()
-        return hp
+        return get_health_professional()
+
 
 # Patient Protheses Information
 class PatientProthesis(ModelSQL, ModelView):
     'Prothesis'
     __name__ = 'gnuhealth.patient.prothesis'
-    
-    patient = fields.Many2One('gnuhealth.patient','Patient', required=True)
+
+    patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
 
     issue_date = fields.Date('Date')
 
@@ -522,18 +536,15 @@ class PatientProthesis(ModelSQL, ModelView):
     healthprof = fields.Many2One(
         'gnuhealth.healthprofessional', 'Health Prof',
         help="Prosthetist or authorized health professional")
-    
+
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        hp = HealthProf.get_health_professional()
-        return hp
-
+        return get_health_professional()
 
 
 class PatientData (ModelSQL, ModelView):
     __name__ = 'gnuhealth.patient'
 
-    disability_assesments = fields.One2Many('gnuhealth.patient.disability_assessment',
+    disability_assesments = fields.One2Many(
+        'gnuhealth.patient.disability_assessment',
         'patient', 'Assessment', readonly=True)
