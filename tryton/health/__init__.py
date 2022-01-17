@@ -98,6 +98,7 @@ def register():
         health.PageOfLife,
         health.Commands,
         health.Modules,
+        health.Help,
         wizard.wizard_check_immunization_status.CheckImmunizationStatusInit,
         sequences.GnuHealthSequences,
         sequences.PatientSequence,

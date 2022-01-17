@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -21,10 +20,10 @@
 #
 ##############################################################################
 from trytond.model import ModelView, ModelSQL, fields, Unique
-from trytond.pool import Pool
 
 
 __all__ = ['PaperArchive']
+
 
 class PaperArchive(ModelSQL, ModelView):
     'Location of PAPER Patient Clinical History'
@@ -35,12 +34,13 @@ class PaperArchive(ModelSQL, ModelView):
         'gnuhealth.patient', 'Patient', required=True,
         help="Patient associated to this newborn baby")
 
-    legacy = fields.Char('Legacy Code', help="If existing, please enter" \
+    legacy = fields.Char(
+        'Legacy Code', help="If existing, please enter"
         " the old / legacy code associated to this Clinical History")
     location = fields.Many2One(
         'gnuhealth.hospital.unit', 'Unit', required=True,
-        help="Location / Unit where this clinical history document" \
-            " should reside.")
+        help="Location / Unit where this clinical history document"
+        " should reside.")
 
     hc_status = fields.Selection((
         ('archived', 'Archived'),
@@ -49,9 +49,9 @@ class PaperArchive(ModelSQL, ModelView):
         ), 'Status', required=True, sort=False)
 
     current_location = fields.Many2One(
-        'gnuhealth.hospital.unit', 'Current Location', 
-        help="Location / Unit where this clinical history document" \
-            " should reside.")
+        'gnuhealth.hospital.unit', 'Current Location',
+        help="Location / Unit where this clinical history document"
+        " should reside.")
 
     identification_code = fields.Function(
         fields.Char('Code'),
@@ -59,13 +59,13 @@ class PaperArchive(ModelSQL, ModelView):
 
     requested_by = fields.Many2One(
         'party.party', 'Requested by',
-        domain=[('is_person', '=', True)], 
+        domain=[('is_person', '=', True)],
         help="Person who last requested the document")
 
     request_date = fields.DateTime("Request Date")
     return_date = fields.DateTime("Returned Date")
-    comments = fields.Char ("Comments")
-    
+    comments = fields.Char("Comments")
+
     @classmethod
     def __setup__(cls):
         '''Create constraints for both the legacy number and patient'''
@@ -73,13 +73,12 @@ class PaperArchive(ModelSQL, ModelView):
 
         t = cls.__table__()
         cls._sql_constraints = [
-            ('legacy_unique', Unique(t,t.legacy),
+            ('legacy_unique', Unique(t, t.legacy),
                 'The history already exists'),
-            ('patient_unique', Unique(t,t.patient),
+            ('patient_unique', Unique(t, t.patient),
                 'The patient history already exists'),
 
             ]
-
 
     @classmethod
     def search_patient_code(cls, name, clause):

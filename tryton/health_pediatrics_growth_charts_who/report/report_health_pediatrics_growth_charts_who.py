@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -24,7 +23,7 @@ from trytond.report import Report
 from trytond.pool import Pool
 
 __all__ = ['PediatricsGrowthChartsWHOReport', 'WeightForAge',
-    'LengthHeightForAge', 'BMIForAge']
+           'LengthHeightForAge', 'BMIForAge']
 
 _TYPES = {
     '-3': 'p3',
@@ -58,7 +57,8 @@ class PediatricsGrowthChartsWHOReport(Report):
         Patient = pool.get('gnuhealth.patient')
         Evaluation = pool.get('gnuhealth.patient.evaluation')
 
-        context = super(PediatricsGrowthChartsWHOReport, cls).get_context(records, data)
+        context = super(
+            PediatricsGrowthChartsWHOReport, cls).get_context(records, data)
 
         patient = Patient(data['patient'])
 
@@ -118,6 +118,7 @@ class PediatricsGrowthChartsWHOReport(Report):
                     context[con] = evaluation.bmi
 
         return context
+
 
 class WeightForAge(PediatricsGrowthChartsWHOReport):
     __name__ = 'gnuhealth.pediatrics.growth.charts.who.wfa.report'

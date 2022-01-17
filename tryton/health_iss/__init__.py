@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2013  Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2008-2022  Luis Falcon <falcon@gnuhealth.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -20,10 +20,10 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_iss import *
+from . import health_iss
 
 
 def register():
     Pool.register(
-        Iss,
+        health_iss.Iss,
         module='health_iss', type_='model')

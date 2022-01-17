@@ -23,7 +23,7 @@
 """
 health_federation package: HMIS Federation manager
 
-This package is responsible to communicate the GNU Health HMIS 
+This package is responsible to communicate the GNU Health HMIS
 with Thalamus, the Federation message server.
 
 The main functionalities of the package are :
@@ -36,14 +36,14 @@ The main functionalities of the package are :
 """
 
 from trytond.pool import Pool
-from .health_federation import *
+from . import health_federation
 
 
 def register():
     Pool.register(
-        FederationNodeConfig,
-        FederationQueue,
-        FederationObject,
-        PartyFed,
-        PoLFed,
+        health_federation.FederationNodeConfig,
+        health_federation.FederationQueue,
+        health_federation.FederationObject,
+        health_federation.PartyFed,
+        health_federation.PoLFed,
         module='health_federation', type_='model')

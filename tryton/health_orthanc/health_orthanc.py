@@ -1,7 +1,12 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
+#                   
+#                   *** ORTHANC INTEGRATION PACKAGE ***
+#
+#    Copyright (C) 2019-2022 Chris Zimmerman <chris@teffalump.com>
+#    Copyright (C) 2021-2022 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2021-2022 GNU Solidario <info@gnusolidario.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -45,36 +50,44 @@ class OrthancServerConfig(ModelSQL, ModelView):
     __name__ = "gnuhealth.orthanc.config"
     _rec_name = "label"
 
-    label = fields.Char("Label", required=True, help="Label for server (eg., remote1)")
+    label = fields.Char(
+        "Label", required=True, help="Label for server (eg., remote1)")
+
     domain = fields.Char(
-        "URL", required=True, help="The full URL of the Orthanc server"
-    )
+        "URL", required=True, help="The full URL of the Orthanc server")
+
     user = fields.Char(
-        "Username", required=True, help="Username for Orthanc REST server"
-    )
+        "Username", required=True, help="Username for Orthanc REST server")
+
     password = fields.Char(
-        "Password", required=True, help="Password for Orthanc REST server"
-    )
-    last = fields.BigInteger("Last Index", readonly=True, help="Index of last change")
+        "Password", required=True, help="Password for Orthanc REST server")
+
+    last = fields.BigInteger(
+        "Last Index", readonly=True, help="Index of last change")
+
     sync_time = fields.DateTime(
-        "Sync Time", readonly=True, help="Time of last server sync"
-    )
+        "Sync Time", readonly=True, help="Time of last server sync")
+
     validated = fields.Boolean(
-        "Validated", help="Whether the server details have been successfully checked"
-    )
+        "Validated", help="Whether the server details have been "
+        "successfully checked")
+
     since_sync = fields.Function(
         fields.TimeDelta("Since last sync", help="Time since last sync"),
-        "get_since_sync",
-    )
+        "get_since_sync",)
+
     since_sync_readable = fields.Function(
         fields.Char("Since last sync", help="Time since last sync"),
         "get_since_sync_readable",
     )
-    patients = fields.One2Many("gnuhealth.orthanc.patient", "server", "Patients")
+    patients = fields.One2Many(
+        "gnuhealth.orthanc.patient", "server", "Patients")
+
     studies = fields.One2Many("gnuhealth.orthanc.study", "server", "Studies")
     link = fields.Function(
-        fields.Char("URL", help="Link to server in Orthanc Explorer"), "get_link"
-    )
+        fields.Char(
+            "URL",
+            help="Link to server in Orthanc Explorer"), "get_link")
 
     def get_link(self, name):
         pre = "".join([self.domain.rstrip("/"), "/"])
@@ -104,14 +117,16 @@ class OrthancServerConfig(ModelSQL, ModelView):
         study = pool.get("gnuhealth.orthanc.study")
 
         if not servers:
-            servers = cls.search([("domain", "!=", None), ("validated", "=", True)])
+            servers = cls.search([("domain", "!=", None),
+                                  ("validated", "=", True)])
 
         logger.info("Starting sync")
         for server in servers:
             if not server.validated:
                 continue
             logger.info("Getting new changes for <{}>".format(server.label))
-            orthanc = RestClient(server.domain, auth=auth(server.user, server.password))
+            orthanc = RestClient(server.domain,
+                                 auth=auth(server.user, server.password))
             curr = server.last
             new_patients = set()
             update_patients = set()
@@ -123,7 +138,8 @@ class OrthancServerConfig(ModelSQL, ModelView):
                     changes = orthanc.get_changes(since=curr)
                 except:
                     server.validated = False
-                    logger.exception("Invalid details for <{}>".format(server.label))
+                    logger.exception(
+                        "Invalid details for <{}>".format(server.label))
                     break
                 for change in changes["Changes"]:
                     type_ = change["ChangeType"]
@@ -138,7 +154,8 @@ class OrthancServerConfig(ModelSQL, ModelView):
                     else:
                         pass
                 curr = changes["Last"]
-                if changes["Done"] == True:
+
+                if changes["Done"] is True:
                     logger.info("<{}> at newest change".format(server.label))
                     break
 
@@ -163,7 +180,8 @@ class OrthancServerConfig(ModelSQL, ModelView):
             server.last = curr
             server.sync_time = datetime.now()
             logger.info(
-                "<{}> sync complete: {} new patients, {} update patients, {} new studies, {} updated studies".format(
+                "<{}> sync complete: {} new patients, {} \
+                update patients, {} new studies, {} updated studies".format(
                     server.label,
                     len(new_patients),
                     len(update_patients),
@@ -215,10 +233,12 @@ class OrthancPatient(ModelSQL, ModelView):
     studies = fields.One2Many(
         "gnuhealth.orthanc.study", "patient", "Studies", readonly=True
     )
-    server = fields.Many2One("gnuhealth.orthanc.config", "Server", readonly=True)
+    server = fields.Many2One(
+        "gnuhealth.orthanc.config", "Server", readonly=True)
     link = fields.Function(
-        fields.Char("URL", help="Link to patient in Orthanc Explorer"), "get_link"
-    )
+        fields.Char(
+            "URL", help="Link to patient in Orthanc Explorer"), "get_link"
+            )
 
     def get_link(self, name):
         pre = "".join([self.server.domain.rstrip("/"), "/"])
@@ -263,26 +283,27 @@ class OrthancPatient(ModelSQL, ModelView):
     def update_patients(cls, patients, server):
         """Update patients"""
 
-        Patient = pool.get("gnuhealth.patient")
-
         entries = cls.get_info_from_dicom(patients)
         updates = []
         for entry in entries:
             try:
                 patient = cls.search(
-                    [("uuid", "=", entry["uuid"]), ("server", "=", server)], limit=1
+                    [("uuid", "=", entry["uuid"]),
+                     ("server", "=", server)], limit=1
                 )[0]
                 patient.name = entry["name"]
                 patient.bd = entry["bd"]
                 patient.ident = entry["ident"]
-                if not patient.patient:  # don't update unless no patient attached
+                # don't update unless no patient attached
+                if not patient.patient:
                     try:
                         g_patient = Patient.search(
                             [("puid", "=", entry["ident"])], limit=1
                         )[0]
                         patient.patient = g_patient
                         logger.info(
-                            "New Matching PUID found for {}".format(entry["ident"])
+                            "New Matching PUID found for {}".
+                            format(entry["ident"])
                         )
                     except:
                         pass
@@ -290,7 +311,8 @@ class OrthancPatient(ModelSQL, ModelView):
                 logger.info("Updating patient {}".format(entry["uuid"]))
             except:
                 continue
-                logger.warning("Unable to update patient {}".format(entry["uuid"]))
+                logger.warning("Unable to update patient {}".
+                               format(entry["uuid"]))
         cls.save(updates)
 
     @classmethod
@@ -303,7 +325,8 @@ class OrthancPatient(ModelSQL, ModelView):
         entries = cls.get_info_from_dicom(patients)
         for entry in entries:
             try:
-                g_patient = Patient.search([("puid", "=", entry["ident"])], limit=1)[0]
+                g_patient = Patient.search(
+                    [("puid", "=", entry["ident"])], limit=1)[0]
                 logger.info("Matching PUID found for {}".format(entry["uuid"]))
             except:
                 g_patient = None
@@ -317,20 +340,26 @@ class OrthancStudy(ModelSQL, ModelView):
 
     __name__ = "gnuhealth.orthanc.study"
 
-    patient = fields.Many2One("gnuhealth.orthanc.patient", "Patient", readonly=True)
+    patient = fields.Many2One(
+        "gnuhealth.orthanc.patient", "Patient", readonly=True)
+
     uuid = fields.Char("UUID", readonly=True, required=True)
     description = fields.Char("Description", readonly=True)
     date = fields.Date("Date", readonly=True)
     ident = fields.Char("ID", readonly=True)
     institution = fields.Char(
-        "Institution", readonly=True, help="Imaging center where study was undertaken"
+        "Institution", readonly=True,
+        help="Imaging center where study was undertaken"
     )
     ref_phys = fields.Char("Referring Physician", readonly=True)
     req_phys = fields.Char("Requesting Physician", readonly=True)
-    server = fields.Many2One("gnuhealth.orthanc.config", "Server", readonly=True)
+    server = fields.Many2One(
+        "gnuhealth.orthanc.config", "Server", readonly=True)
+
     link = fields.Function(
-        fields.Char("URL", help="Link to study in Orthanc Explorer"), "get_link"
-    )
+        fields.Char(
+            "URL", help="Link to study in Orthanc Explorer"), "get_link")
+
     imaging_test = fields.Many2One("gnuhealth.imaging.test.result", "Test")
 
     def get_link(self, name):
@@ -367,7 +396,8 @@ class OrthancStudy(ModelSQL, ModelView):
             except:
                 date = None
             try:
-                description = study["MainDicomTags"]["RequestedProcedureDescription"]
+                description = \
+                    study["MainDicomTags"]["RequestedProcedureDescription"]
             except:
                 description = None
             data.append(
@@ -377,11 +407,13 @@ class OrthancStudy(ModelSQL, ModelView):
                     "description": description,
                     "date": date,
                     "ident": study.get("MainDicomTags").get("StudyID"),
-                    "institution": study.get("MainDicomTags").get("InstitutionName"),
+                    "institution": study.get(
+                        "MainDicomTags").get("InstitutionName"),
                     "ref_phys": study.get("MainDicomTags").get(
                         "ReferringPhysicianName"
                     ),
-                    "req_phys": study.get("MainDicomTags").get("RequestingPhysician"),
+                    "req_phys": study.get(
+                        "MainDicomTags").get("RequestingPhysician"),
                 }
             )
         return data
@@ -395,7 +427,8 @@ class OrthancStudy(ModelSQL, ModelView):
         for entry in entries:
             try:
                 study = cls.search(
-                    [("uuid", "=", entry["uuid"]), ("server", "=", server)], limit=1
+                    [("uuid", "=", entry["uuid"]),
+                        ("server", "=", server)], limit=1
                 )[0]
                 study.description = entry["description"]
                 study.date = entry["date"]
@@ -407,7 +440,8 @@ class OrthancStudy(ModelSQL, ModelView):
                 logger.info("Updating study {}".format(entry["uuid"]))
             except:
                 continue
-                logger.warning("Unable to update study {}".format(entry["uuid"]))
+                logger.warning(
+                    "Unable to update study {}".format(entry["uuid"]))
         cls.save(updates)
 
     @classmethod
@@ -421,7 +455,8 @@ class OrthancStudy(ModelSQL, ModelView):
         for entry in entries:
             try:
                 patient = Patient.search(
-                    [("uuid", "=", entry["parent_patient"]), ("server", "=", server)],
+                    [("uuid", "=",
+                      entry["parent_patient"]), ("server", "=", server)],
                     limit=1,
                 )[0]
             except:

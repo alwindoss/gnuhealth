@@ -13,26 +13,26 @@ It contains the models to use Calendars in GNU Health HMIS.
 
 from trytond.pool import Pool
 from . import caldav
-from .webdav import *
-from .calendar_ import *
-from .res import *
+from . import webdav
+from . import calendar_
+from . import res
 
 
 def register():
     Pool.register(
-        Collection,
-        Calendar,
-        ReadUser,
-        WriteUser,
-        Category,
-        Location,
-        Event,
-        EventCategory,
-        EventAlarm,
-        EventAttendee,
-        EventRDate,
-        EventExDate,
-        EventRRule,
-        EventExRule,
-        User,
-        module='calendar', type_='model')
+        webdav.Collection,
+        calendar_.Calendar,
+        calendar_.ReadUser,
+        calendar_.WriteUser,
+        calendar_.Category,
+        calendar_.Location,
+        calendar_.Event,
+        calendar_.EventCategory,
+        calendar_.EventAlarm,
+        calendar_.EventAttendee,
+        calendar_.EventRDate,
+        calendar_.EventExDate,
+        calendar_.EventRRule,
+        calendar_.EventExRule,
+        res.User,
+        module='health_caldav', type_='model')

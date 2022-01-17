@@ -1,5 +1,8 @@
 -- Rename webdav to health_webdav3_server
+update ir_module set name='health_webdav3_server' where name='webdav';
 
+-- Rename webdav to health_webdav3_server
+update ir_module set name='health_caldav' where name='calendar';
 
 -- 5.0 -> 5.2
 -- [SQL] Remove error translations:

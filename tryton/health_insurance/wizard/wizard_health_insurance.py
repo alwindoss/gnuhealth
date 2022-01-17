@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -23,8 +22,7 @@
 ##############################################################################
 import datetime
 import decimal
-from trytond.model import ModelView
-from trytond.wizard import Wizard, StateTransition, StateView, Button
+from trytond.wizard import Wizard
 from trytond.transaction import Transaction
 from trytond.pool import Pool
 
@@ -35,18 +33,17 @@ __all__ = ['CreateServiceInvoice']
 class CreateServiceInvoice(Wizard):
     __name__ = 'gnuhealth.service.invoice.create'
 
-#  
 #  name: CreateServiceInvoice.discount_policy
 #  @param : Insurance, service line product
 #  @return : Policy applied to that service line
-#  
+
     def discount_policy(self, insurance, product):
         # Check that there is a plan associated to the insurance
         if insurance.plan_id:
             # Traverse the product policies within the plan
             # In terms of applying discount, category and product are
             # mutually exclusive.
-            
+
             discount = {}
             if insurance.plan_id.product_policy:
                 for policy in insurance.plan_id.product_policy:
@@ -56,17 +53,17 @@ class CreateServiceInvoice(Wizard):
                             discount['value'] = policy.discount
                             discount['type'] = 'pct'
                             return discount
-                    
+
                 for policy in insurance.plan_id.product_policy:
                     # Then, if there's no product, check for the category
                     if (policy.product_category in product.categories):
                         if policy.discount:
                             discount['value'] = policy.discount
-                            discount['type'] = 'pct' 
+                            discount['type'] = 'pct'
                             return discount
 
             return discount
-    
+
     def transition_create_service_invoice(self):
         pool = Pool()
         HealthService = pool.get('gnuhealth.health_service')
@@ -80,7 +77,7 @@ class CreateServiceInvoice(Wizard):
             'active_ids'))
         invoices = []
 
-        #Invoice Header
+        # Invoice Header
         for service in services:
             if service.state == 'invoiced':
                 self.raise_user_error('duplicate_invoice')
@@ -129,7 +126,7 @@ class CreateServiceInvoice(Wizard):
 
             invoice_data['payment_term'] = party.customer_payment_term.id
 
-            #Invoice Lines
+            # Invoice Lines
             seq = 0
             invoice_lines = []
             for line in service.service_line:
@@ -138,37 +135,39 @@ class CreateServiceInvoice(Wizard):
 
                 if sale_price_list:
                     with Transaction().set_context(ctx):
-                        unit_price = sale_price_list.compute(party,
+                        unit_price = sale_price_list.compute(
+                            party,
                             line.product, line.product.list_price,
                             line.qty, line.product.default_uom)
                 else:
                     unit_price = line.product.list_price
-                    
+
                 if line.to_invoice:
                     taxes = []
                     desc = line.desc
-                    
-                    #Include taxes related to the product on the invoice line
+
+                    # Include taxes related to the product on the invoice line
                     for product_tax_line in line.product.customer_taxes_used:
                         taxes.append(product_tax_line.id)
 
                     # Check the Insurance policy for this service
                     if service.insurance_plan:
-                        discount = \
-                            self.discount_policy(service.insurance_plan, \
-                                line.product)
+                        discount = self.discount_policy(
+                            service.insurance_plan,
+                            line.product)
 
                         if discount:
                             if 'value' in list(discount.keys()):
                                 if discount['value']:
                                     if (discount['type'] == 'pct'):
-                                        unit_price *= (1 - 
-                                            decimal.Decimal(discount['value'])/100)
+                                        unit_price *= (
+                                            1 - decimal.Decimal(
+                                                discount['value'])/100)
 
-                                        # Add a remark on the description discount
+                                        # Add remark on description discount
                                         str_disc = str(discount['value']) + '%'
                                         desc = line.desc + " (Discnt " + \
-                                          str (str_disc) + ")"
+                                            str(str_disc) + ")"
 
                     invoice_lines.append(('create', [{
                             'origin': str(line),
@@ -179,7 +178,7 @@ class CreateServiceInvoice(Wizard):
                             'unit': line.product.default_uom.id,
                             'unit_price': unit_price,
                             'sequence': seq,
-                            'taxes': [('add',taxes)],
+                            'taxes': [('add', taxes)],
                         }]))
                 invoice_data['lines'] = invoice_lines
 

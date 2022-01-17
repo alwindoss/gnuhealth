@@ -1,4 +1,3 @@
-# coding=utf-8
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -20,13 +19,3 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
-from dateutil.relativedelta import relativedelta
-from datetime import datetime
-
-from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
-from trytond.transaction import Transaction
-from trytond.pyson import Eval, Not, Bool
-from trytond.pool import Pool
-
-
