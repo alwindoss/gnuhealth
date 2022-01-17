@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-07-24 02:47+0000\n"
-"Last-Translator: Vladislav Basdargin <bazarassa@gmail.com>\n"
+"PO-Revision-Date: 2022-01-17 22:25+0000\n"
+"Last-Translator: Sasha <maxminer88@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gnu-health/"
 "health/ru/>\n"
 "Language: ru\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.7.2-dev\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -22,43 +22,43 @@ msgstr "Свидетельство уже существует!"
 
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Значение Юнит должно быть уникальным!"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "Код должен быть уникальным!"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Значение Юнит должен быть уникальным!"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "Код должен быть уникальным!"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Имя должен быть уникальным!"
 
 msgctxt "error:gnuhealth.du:"
 msgid "The Domiciliary Unit must be unique !"
-msgstr ""
+msgstr "Место жительства должно быть уникальным!"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "КОД должен быть уникальным!"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The Name must be unique !"
-msgstr ""
+msgstr "Имя должен быть уникальным!"
 
 msgctxt "error:gnuhealth.family:"
 msgid "The Family Code must be unique !"
-msgstr ""
+msgstr "Код семьи должен быть уникальным!"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The LICENSE ID must be unique"
-msgstr ""
+msgstr "ID лицензии должен быть уникальным"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
