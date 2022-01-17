@@ -89,7 +89,7 @@ __all__ = [
     'PatientVaccination', 'PatientEvaluation',
     'Directions', 'SecondaryCondition', 'DiagnosticHypothesis',
     'SignsAndSymptoms', 'PatientECG', 'ProductTemplate', 'PageOfLife',
-    'Commands', 'Modules']
+    'Commands', 'Modules', 'Help']
 
 
 class DomiciliaryUnit(ModelSQL, ModelView):
@@ -5427,3 +5427,32 @@ class Modules(ModelSQL, ModelView):
 
     # Add the module description field
     description = fields.Char("Description")
+
+
+class Help(ModelSQL, ModelView):
+    'GNU Health Help'
+    __name__ = 'gnuhealth.help'
+
+    ''' This model contains the documentation for the
+        GNU Health Health and Hospital Management System.
+        It can be invoked from the command line or by
+        menu (Help).
+    '''
+
+    name = fields.Char("Code", required=True, help="Unique help code")
+    description = fields.Char(
+        "Description", 
+        help="Short description", required=True)
+    category = fields.Char("Category")
+    package = fields.Many2One("ir.module", "Package")
+    keywords = fields.Char("Keywords")
+    documentation = fields.Text("Documentation")
+
+    @classmethod
+    def __setup__(cls):
+        super(Help, cls).__setup__()
+        t = cls.__table__()
+        cls._sql_constraints = [
+            ('code_unique', Unique(t, t.name),
+             'The help code already exists')
+        ]
