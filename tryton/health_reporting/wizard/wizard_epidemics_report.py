@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -20,14 +19,12 @@
 #
 ##############################################################################
 
-from datetime import datetime, timedelta, date
+from datetime import date
 from trytond.model import ModelView, fields
-from trytond.wizard import Wizard, StateView, StateAction, StateTransition, \
-    Button
-from trytond.transaction import Transaction
+from trytond.wizard import Wizard, StateView, StateAction, Button
 from dateutil.relativedelta import relativedelta
 
-__all__ = ['EpidemicsReportStart','EpidemicsReport']
+__all__ = ['EpidemicsReportStart', 'EpidemicsReport']
 
 
 class EpidemicsReportStart(ModelView):
@@ -54,11 +51,13 @@ class EpidemicsReportStart(ModelView):
     def default_demographics():
         return True
 
+
 class EpidemicsReport(Wizard):
     'Open Institution Epidemics Report'
     __name__ = 'gnuhealth.epidemics.report.open'
 
-    start = StateView('gnuhealth.epidemics.report.open.start',
+    start = StateView(
+        'gnuhealth.epidemics.report.open.start',
         'health_reporting.epidemics_report_open_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Open', 'open_', 'tryton-ok', default=True),
@@ -68,8 +67,9 @@ class EpidemicsReport(Wizard):
 
     def fill_data(self):
         return {
-            'health_condition': (self.start.health_condition.id
-                    if self.start.health_condition else None),
+            'health_condition': (
+                self.start.health_condition.id
+                if self.start.health_condition else None),
             'start_date': self.start.start_date,
             'end_date': self.start.end_date,
             'demographics': self.start.demographics,

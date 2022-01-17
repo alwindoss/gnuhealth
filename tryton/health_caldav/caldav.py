@@ -8,7 +8,7 @@ from pywebdav.lib import propfind
 from pywebdav.lib.errors import DAV_NotFound, DAV_Error, DAV_Forbidden
 from pywebdav.lib.utils import get_uriparentpath
 from pywebdav.lib.constants import DAV_VERSION_1, DAV_VERSION_2
-from trytond.modules.webdav.protocol import TrytonDAVInterface, LOCAL, \
+from trytond.modules.health_webdav3_server.protocol import TrytonDAVInterface, LOCAL, \
         WebDAVAuthRequestHandler
 from trytond.pool import Pool
 from trytond.transaction import Transaction

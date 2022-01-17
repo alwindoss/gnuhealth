@@ -22,13 +22,13 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_qrcodes import *
+from .import health_qrcodes
 
 
 def register():
     Pool.register(
-        Patient,
-        Appointment,
-        Newborn,
-        LabTest,
+        health_qrcodes.Patient,
+        health_qrcodes.Appointment,
+        health_qrcodes.Newborn,
+        health_qrcodes.LabTest,
         module='health_qrcodes', type_='model')

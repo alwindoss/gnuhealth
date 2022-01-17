@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -25,7 +24,7 @@ from trytond.wizard import Wizard, StateView, StateAction, StateTransition, \
 from trytond.transaction import Transaction
 
 __all__ = ['OpenPediatricsGrowthChartsWHOReportStart',
-    'OpenPediatricsGrowthChartsWHOReport']
+           'OpenPediatricsGrowthChartsWHOReport']
 
 
 class OpenPediatricsGrowthChartsWHOReportStart(ModelView):
@@ -47,15 +46,23 @@ class OpenPediatricsGrowthChartsWHOReport(Wizard):
     'Open Pediatrics Growth Charts WHO Report'
     __name__ = 'gnuhealth.pediatrics.growth.charts.who.report.open'
 
-    start = StateView('gnuhealth.pediatrics.growth.charts.who.report.open.start',
-        'health_pediatrics_growth_charts_who.growth_charts_who_open_start_view_form', [
+    start = StateView(
+        'gnuhealth.pediatrics.growth.charts.who.report.open.start',
+        'health_pediatrics_growth_charts_who.\
+        growth_charts_who_open_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Open', 'choose', 'tryton-ok', default=True),
             ])
     choose = StateTransition()
-    print_wfa = StateAction('health_pediatrics_growth_charts_who.report_pediatrics_growth_charts_who_wfa')
-    print_lhfa = StateAction('health_pediatrics_growth_charts_who.report_pediatrics_growth_charts_who_lhfa')
-    print_bmifa = StateAction('health_pediatrics_growth_charts_who.report_pediatrics_growth_charts_who_bmifa')
+    print_wfa = StateAction(
+        'health_pediatrics_growth_charts_who.\
+        report_pediatrics_growth_charts_who_wfa')
+    print_lhfa = StateAction(
+        'health_pediatrics_growth_charts_who.\
+        report_pediatrics_growth_charts_who_lhfa')
+    print_bmifa = StateAction(
+        'health_pediatrics_growth_charts_who.\
+        report_pediatrics_growth_charts_who_bmifa')
 
     def transition_choose(self):
         if self.start.indicator == 'w-f-a':

@@ -1,8 +1,8 @@
 from trytond.pool import Pool
-from .health_ophthalmology import *
+from . import health_ophthalmology
 
 def register():
     Pool.register(
-        OphthalmologyEvaluation,
-        OphthalmologyFindings,    
+        health_ophthalmology.OphthalmologyEvaluation,
+        health_ophthalmology.OphthalmologyFindings,    
         module='health_ophthalmology', type_='model')

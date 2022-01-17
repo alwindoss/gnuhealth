@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -25,16 +24,16 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_insurance import *
-from .wizard import *
+from . import health_insurance
+from . import wizard
 
 
 def register():
     Pool.register(
-        InsurancePlanProductPolicy,
-        InsurancePlan,
-        HealthService,
+        health_insurance.InsurancePlanProductPolicy,
+        health_insurance.InsurancePlan,
+        health_insurance.HealthService,
         module='health_insurance', type_='model')
     Pool.register(
-        CreateServiceInvoice,
+        wizard.wizard_health_insurance.CreateServiceInvoice,
         module='health_services', type_='wizard')
