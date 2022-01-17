@@ -16,5 +16,5 @@
     </group>
     <newline/>
     <separator string="Documentation" id="separator_documentation" colspan="4"/>
-    <field name="documentation"/>
+    <field name="documentation" widget="richtext"/>
 </form>
