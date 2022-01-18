@@ -45,7 +45,7 @@
         <field name="preop_sterility"/>
     </group>
     <newline/>
-    <notebook id="surgery_notebook">
+    <notebook>
         <page id="risk_assessment_page" string="Risk Assessment">
             <group string="Patient Surgical Risk assessment" id="group_patient_surgery_risk" colspan="4">
                 <label name="preop_asa"/>
