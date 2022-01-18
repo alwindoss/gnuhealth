@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -21,16 +20,12 @@
 #
 ##############################################################################
 import pytz
-from trytond.model import ModelView, ModelSQL, ModelSingleton, fields, \
-    ValueMixin
+from trytond.model import ModelView, ModelSQL, fields
 from datetime import datetime
 from trytond.pool import Pool
 from trytond.transaction import Transaction
-from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
-from trytond import backend
-from trytond.tools.multivalue import migrate_property
+from trytond.pyson import Eval, Equal
 from trytond.i18n import gettext
-from trytond.pyson import Id
 from trytond.modules.health.core import get_health_professional
 
 from .exceptions import (
@@ -52,10 +47,12 @@ class PatientRounding(ModelSQL, ModelView):
 
     STATES = {'readonly': Eval('state') == 'done'}
 
-    name = fields.Many2One('gnuhealth.inpatient.registration',
+    name = fields.Many2One(
+        'gnuhealth.inpatient.registration',
         'Registration Code', required=True, states=STATES)
     code = fields.Char('Code',  states=STATES)
-    health_professional = fields.Many2One('gnuhealth.healthprofessional',
+    health_professional = fields.Many2One(
+        'gnuhealth.healthprofessional',
         'Health Professional', readonly=True)
     evaluation_start = fields.DateTime('Start', required=True, states=STATES)
     evaluation_end = fields.DateTime('End', readonly=True)
@@ -66,57 +63,74 @@ class PatientRounding(ModelSQL, ModelView):
         ('done', 'Done'),
         ], 'State', readonly=True)
 
-    environmental_assessment = fields.Char('Environment', help="Environment"
-        " assessment . State any disorder in the room.",states=STATES)
+    environmental_assessment = fields.Char(
+        'Environment', help="Environment"
+        " assessment . State any disorder in the room.", states=STATES)
 
-    weight = fields.Integer('Weight',
-        help="Measured weight, in kg",states=STATES)
+    weight = fields.Integer(
+        'Weight',
+        help="Measured weight, in kg", states=STATES)
 
     # The 6 P's of rounding
-    pain = fields.Boolean('Pain',
+    pain = fields.Boolean(
+        'Pain',
         help="Check if the patient is in pain", states=STATES)
-    pain_level = fields.Integer('Pain', help="Enter the pain level, from 1 to "
-            "10", states={'invisible': ~Eval('pain'),
+    pain_level = fields.Integer(
+        'Pain', help="Enter the pain level, from 1 to "
+        "10", states={
+            'invisible': ~Eval('pain'),
             'readonly': Eval('state') == 'done'})
 
-    potty = fields.Boolean('Potty', help="Check if the patient needs to "
+    potty = fields.Boolean(
+        'Potty', help="Check if the patient needs to "
         "urinate / defecate", states=STATES)
-    position = fields.Boolean('Position', help="Check if the patient needs to "
+    position = fields.Boolean(
+        'Position', help="Check if the patient needs to "
         "be repositioned or is unconfortable", states=STATES)
-    proximity = fields.Boolean('Proximity', help="Check if personal items, "
-        "water, alarm, ... are not in easy reach",states=STATES)
-    pump = fields.Boolean('Pumps', help="Check if there is any issues with "
+    proximity = fields.Boolean(
+        'Proximity', help="Check if personal items, "
+        "water, alarm, ... are not in easy reach", states=STATES)
+    pump = fields.Boolean(
+        'Pumps', help="Check if there is any issues with "
         "the pumps - IVs ... ", states=STATES)
-    personal_needs = fields.Boolean('Personal needs', help="Check if the "
+    personal_needs = fields.Boolean(
+        'Personal needs', help="Check if the "
         "patient requests anything", states=STATES)
 
     # Vital Signs
-    systolic = fields.Integer('Systolic Pressure',states=STATES)
+    systolic = fields.Integer('Systolic Pressure', states=STATES)
     diastolic = fields.Integer('Diastolic Pressure', states=STATES)
-    bpm = fields.Integer('Heart Rate',
+    bpm = fields.Integer(
+        'Heart Rate',
         help='Heart rate expressed in beats per minute', states=STATES)
-    respiratory_rate = fields.Integer('Respiratory Rate',
+    respiratory_rate = fields.Integer(
+        'Respiratory Rate',
         help='Respiratory rate expressed in breaths per minute', states=STATES)
-    osat = fields.Integer('Oxygen Saturation',
+    osat = fields.Integer(
+        'Oxygen Saturation',
         help='Oxygen Saturation(arterial).', states=STATES)
-    temperature = fields.Float('Temperature',
+    temperature = fields.Float(
+        'Temperature',
         help='Temperature in celsius', states=STATES)
 
     # Diuresis
 
-    diuresis = fields.Integer('Diuresis',help="volume in ml", states=STATES)
+    diuresis = fields.Integer('Diuresis', help="volume in ml", states=STATES)
     urinary_catheter = fields.Boolean('Urinary Catheter', states=STATES)
 
-    #Glycemia
-    glycemia = fields.Integer('Glycemia', help='Blood Glucose level', states=STATES)
+    # Glycemia
+    glycemia = fields.Integer(
+        'Glycemia', help='Blood Glucose level', states=STATES)
 
-    depression = fields.Boolean('Depression signs', help="Check this if the "
+    depression = fields.Boolean(
+        'Depression signs', help="Check this if the "
         "patient shows signs of depression", states=STATES)
-    evolution = fields.Selection([
-        (None, ''),    
-        ('n', 'Status Quo'),
-        ('i', 'Improving'),
-        ('w', 'Worsening'),
+    evolution = fields.Selection(
+        [
+            (None, ''),
+            ('n', 'Status Quo'),
+            ('i', 'Improving'),
+            ('w', 'Worsening'),
         ], 'Evolution', help="Check your judgement of current "
         "patient condition", sort=False, states=STATES)
     round_summary = fields.Text('Round Summary', states=STATES)
@@ -126,22 +140,28 @@ class PatientRounding(ModelSQL, ModelView):
         states={'invisible': Equal(Eval('state'), 'draft')},
         help="Health Professional that signed the rounding")
 
-
-    warning = fields.Boolean('Warning', help="Check this box to alert the "
+    warning = fields.Boolean(
+        'Warning', help="Check this box to alert the "
         "supervisor about this patient rounding. A warning icon will be shown "
         "in the rounding list", states=STATES)
-    warning_icon = fields.Function(fields.Char('Warning Icon'), 'get_warn_icon')
-    procedures = fields.One2Many('gnuhealth.rounding_procedure', 'name',
+    warning_icon = fields.Function(
+        fields.Char('Warning Icon'), 'get_warn_icon')
+    procedures = fields.One2Many(
+        'gnuhealth.rounding_procedure', 'name',
         'Procedures', help="List of the procedures in this rounding. Please "
         "enter the first one as the main procedure", states=STATES)
 
-    report_start_date = fields.Function(fields.Date('Start Date'), 
+    report_start_date = fields.Function(
+        fields.Date('Start Date'),
         'get_report_start_date')
-    report_start_time = fields.Function(fields.Time('Start Time'), 
+    report_start_time = fields.Function(
+        fields.Time('Start Time'),
         'get_report_start_time')
-    report_end_date = fields.Function(fields.Date('End Date'), 
+    report_end_date = fields.Function(
+        fields.Date('End Date'),
         'get_report_end_date')
-    report_end_time = fields.Function(fields.Time('End Time'), 
+    report_end_time = fields.Function(
+        fields.Time('End Time'),
         'get_report_end_time')
 
     @staticmethod
@@ -170,18 +190,15 @@ class PatientRounding(ModelSQL, ModelView):
     @ModelView.button
     def end_rounding(cls, roundings):
         # End the rounding
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-                
+
         # Change the state of the rounding to "Done"
-        signing_hp = HealthProfessional.get_health_professional()
-        
+        signing_hp = get_health_professional()
+
         cls.write(roundings, {
             'state': 'done',
             'signed_by': signing_hp,
             'evaluation_end': datetime.now()
             })
-
 
     @classmethod
     def generate_code(cls, **pattern):
@@ -199,7 +216,6 @@ class PatientRounding(ModelSQL, ModelView):
             if not values.get('code'):
                 values['code'] = cls.generate_code()
         return super(PatientRounding, cls).create(vlist)
-
 
     @classmethod
     def validate(cls, roundings):
@@ -223,7 +239,8 @@ class PatientRounding(ModelSQL, ModelView):
                 timezone = pytz.timezone(company.timezone)
 
         dt = self.evaluation_start
-        return datetime.astimezone(dt.replace(tzinfo=pytz.utc), timezone).date()
+        return datetime.astimezone(
+            dt.replace(tzinfo=pytz.utc), timezone).date()
 
     def get_report_start_time(self, name):
         Company = Pool().get('company.company')
@@ -236,7 +253,8 @@ class PatientRounding(ModelSQL, ModelView):
                 timezone = pytz.timezone(company.timezone)
 
         dt = self.evaluation_start
-        return datetime.astimezone(dt.replace(tzinfo=pytz.utc), timezone).time()
+        return datetime.astimezone(
+            dt.replace(tzinfo=pytz.utc), timezone).time()
 
     def get_report_end_date(self, name):
         Company = Pool().get('company.company')
@@ -249,7 +267,8 @@ class PatientRounding(ModelSQL, ModelView):
                 timezone = pytz.timezone(company.timezone)
 
         dt = self.evaluation_end
-        return datetime.astimezone(dt.replace(tzinfo=pytz.utc), timezone).date()
+        return datetime.astimezone(
+            dt.replace(tzinfo=pytz.utc), timezone).date()
 
     def get_report_end_time(self, name):
         Company = Pool().get('company.company')
@@ -262,7 +281,8 @@ class PatientRounding(ModelSQL, ModelView):
                 timezone = pytz.timezone(company.timezone)
 
         dt = self.evaluation_end
-        return datetime.astimezone(dt.replace(tzinfo=pytz.utc), timezone).time()
+        return datetime.astimezone(
+            dt.replace(tzinfo=pytz.utc), timezone).time()
 
     def get_warn_icon(self, name):
         if self.warning:
@@ -274,7 +294,8 @@ class RoundingProcedure(ModelSQL, ModelView):
     __name__ = 'gnuhealth.rounding_procedure'
 
     name = fields.Many2One('gnuhealth.patient.rounding', 'Rounding')
-    procedure = fields.Many2One('gnuhealth.procedure', 'Code', required=True,
+    procedure = fields.Many2One(
+        'gnuhealth.procedure', 'Code', required=True,
         select=True,
         help="Procedure Code, for example ICD-10-PCS Code 7-character string")
     notes = fields.Text('Notes')
@@ -287,8 +308,9 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
     STATES = {'readonly': Eval('state') == 'done'}
 
     name = fields.Char('ID', readonly=True)
-    patient = fields.Many2One('gnuhealth.patient', 'Patient',
-     required=True, states=STATES)
+    patient = fields.Many2One(
+        'gnuhealth.patient', 'Patient',
+        required=True, states=STATES)
 
     state = fields.Selection([
         (None, ''),
@@ -296,16 +318,21 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
         ('done', 'Done'),
         ], 'State', readonly=True)
 
-    base_condition = fields.Many2One('gnuhealth.pathology', 'Condition',
+    base_condition = fields.Many2One(
+        'gnuhealth.pathology', 'Condition',
         states=STATES)
-    evaluation = fields.Many2One('gnuhealth.patient.evaluation',
+    evaluation = fields.Many2One(
+        'gnuhealth.patient.evaluation',
         'Related Evaluation', domain=[('patient', '=', Eval('patient'))],
         depends=['patient'], states=STATES)
-    ordering_professional = fields.Many2One('gnuhealth.healthprofessional',
+    ordering_professional = fields.Many2One(
+        'gnuhealth.healthprofessional',
         'Requested by', states=STATES)
-    health_professional = fields.Many2One('gnuhealth.healthprofessional',
+    health_professional = fields.Many2One(
+        'gnuhealth.healthprofessional',
         'Health Professional', readonly=True)
-    procedures = fields.One2Many('gnuhealth.ambulatory_care_procedure', 'name',
+    procedures = fields.One2Many(
+        'gnuhealth.ambulatory_care_procedure', 'name',
         'Procedures', states=STATES,
         help="List of the procedures in this session. Please enter the first "
         "one as the main procedure")
@@ -315,22 +342,29 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
     # Vital Signs
     systolic = fields.Integer('Systolic Pressure', states=STATES)
     diastolic = fields.Integer('Diastolic Pressure', states=STATES)
-    bpm = fields.Integer('Heart Rate',states=STATES,
+    bpm = fields.Integer(
+        'Heart Rate', states=STATES,
         help='Heart rate expressed in beats per minute')
-    respiratory_rate = fields.Integer('Respiratory Rate',states=STATES,
+    respiratory_rate = fields.Integer(
+        'Respiratory Rate', states=STATES,
         help='Respiratory rate expressed in breaths per minute')
-    osat = fields.Integer('Oxygen Saturation',states=STATES,
+    osat = fields.Integer(
+        'Oxygen Saturation', states=STATES,
         help='Oxygen Saturation(arterial).')
-    temperature = fields.Float('Temperature',states=STATES,
+    temperature = fields.Float(
+        'Temperature', states=STATES,
         help='Temperature in celsius')
 
-    warning = fields.Boolean('Warning', help="Check this box to alert the "
+    warning = fields.Boolean(
+        'Warning', help="Check this box to alert the "
         "supervisor about this session. A warning icon will be shown in the "
-        "session list",states=STATES)
-    warning_icon = fields.Function(fields.Char('Warning Icon'), 'get_warn_icon')
+        "session list", states=STATES)
+    warning_icon = fields.Function(
+        fields.Char('Warning Icon'), 'get_warn_icon')
 
-    #Glycemia
-    glycemia = fields.Integer('Glycemia', help='Blood Glucose level',
+    # Glycemia
+    glycemia = fields.Integer(
+        'Glycemia', help='Blood Glucose level',
         states=STATES)
 
     evolution = fields.Selection([
@@ -350,13 +384,9 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
         states={'invisible': Equal(Eval('state'), 'draft')},
         help="Health Professional that signed the session")
 
-
     @staticmethod
     def default_health_professional():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        healthprof = HealthProf.get_health_professional()
-        return healthprof
+        return get_health_professional()
 
     @staticmethod
     def default_session_start():
@@ -365,7 +395,6 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
     @staticmethod
     def default_state():
         return 'draft'
-
 
     @classmethod
     def __setup__(cls):
@@ -383,10 +412,10 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
         # End the session and discharge the patient
         pool = Pool()
         HealthProfessional = pool.get('gnuhealth.healthprofessional')
-                
+
         # Change the state of the session to "Done"
         signing_hp = HealthProfessional.get_health_professional()
-        
+
         cls.write(sessions, {
             'state': 'done',
             'signed_by': signing_hp,
@@ -403,7 +432,6 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
         if not self.health_professional:
             raise NoAssociatedHealthProfessional(
                 gettext('health.msg_no_associated_health_professional'))
-
 
     @classmethod
     def generate_code(cls, **pattern):
@@ -422,7 +450,6 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
                 values['name'] = cls.generate_code()
         return super(PatientAmbulatoryCare, cls).create(vlist)
 
-
     @classmethod
     def copy(cls, ambulatorycares, default=None):
         if default is None:
@@ -431,8 +458,10 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
         default['name'] = None
         default['session_start'] = cls.default_session_start()
         default['session_end'] = cls.default_session_start()
-        return super(PatientAmbulatoryCare, cls).copy(ambulatorycares,
-            default=default)
+        return super(
+            PatientAmbulatoryCare, cls).copy(
+                ambulatorycares,
+                default=default)
 
     def get_warn_icon(self, name):
         if self.warning:
@@ -444,7 +473,8 @@ class AmbulatoryCareProcedure(ModelSQL, ModelView):
     __name__ = 'gnuhealth.ambulatory_care_procedure'
 
     name = fields.Many2One('gnuhealth.patient.ambulatory_care', 'Session')
-    procedure = fields.Many2One('gnuhealth.procedure', 'Code', required=True,
+    procedure = fields.Many2One(
+        'gnuhealth.procedure', 'Code', required=True,
         select=True,
         help="Procedure Code, for example ICD-10-PCS Code 7-character string")
     comments = fields.Char('Comments')
