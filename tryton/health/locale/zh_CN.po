@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 08:16+0000\n"
-"PO-Revision-Date: 2022-01-19 05:04+0000\n"
+"PO-Revision-Date: 2022-01-19 06:08+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -70,31 +70,31 @@ msgstr "医务人员不能重复"
 
 msgctxt "error:gnuhealth.hospital.bed:"
 msgid "The Bed must be unique per Health Center"
-msgstr "健康中心的病床不能重复"
+msgstr "医疗机构的病床不能重复"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building code must be unique per Health Center"
-msgstr "健康中心的建筑物代码不能重复"
+msgstr "医疗机构的建筑物代码不能重复"
 
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building name must be unique per Health Center"
-msgstr "健康中心的建筑物名称不能重复"
+msgstr "医疗机构的建筑物名称不能重复"
 
 msgctxt "error:gnuhealth.hospital.or:"
 msgid "The Operating Room Name must be unique per Health Center"
-msgstr "健康中心的手术室名称不能重复"
+msgstr "医疗机构的手术室名称不能重复"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit CODE must be unique per Health Center"
-msgstr "健康中心的单元代码不能重复"
+msgstr "医疗机构的单元代码不能重复"
 
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit NAME must be unique per Health Center"
-msgstr "健康中心的单元名称不能重复"
+msgstr "医疗机构的单元名称不能重复"
 
 msgctxt "error:gnuhealth.hospital.ward:"
 msgid "The Ward / Room Name must be unique per Health Center"
-msgstr "健康中心的病房或者房间的名称不能重复"
+msgstr "医疗机构的病房或者房间的名称不能重复"
 
 msgctxt "error:gnuhealth.immunization_schedule:"
 msgid "The schedule code must be unique"
@@ -4008,7 +4008,7 @@ msgstr "常用地址"
 
 msgctxt "field:party.party,ethnic_group:"
 msgid "Ethnicity"
-msgstr "种族"
+msgstr "人种"
 
 msgctxt "field:party.party,father:"
 msgid "Father"
@@ -6085,7 +6085,7 @@ msgstr "现住址"
 
 msgctxt "model:gnuhealth.ethnicity,name:"
 msgid "Ethnicity"
-msgstr "种族"
+msgstr "人种"
 
 msgctxt "model:gnuhealth.ethnicity,name:eth1"
 msgid "Black"
@@ -6153,7 +6153,7 @@ msgstr "病房"
 
 msgctxt "model:gnuhealth.hp_specialty,name:"
 msgid "Health Professional Specialties"
-msgstr "医务人员专长"
+msgstr "医务人员专业"
 
 msgctxt "model:gnuhealth.immunization_schedule,name:"
 msgid "Immunization Schedule"
@@ -9465,7 +9465,7 @@ msgstr "现住址"
 
 msgctxt "model:ir.action,name:gnuhealth_action_ethnicity"
 msgid "Ethnicities"
-msgstr "种族"
+msgstr "人种"
 
 msgctxt "model:ir.action,name:gnuhealth_action_family"
 msgid "Families"
@@ -9597,7 +9597,7 @@ msgctxt ""
 "model:ir.action.act_window.domain,name:"
 "act_gnuhealth_appointment_domain_noshow"
 msgid "No Shows"
-msgstr "爽约"
+msgstr "已爽约"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_appointment"
 msgid "Appointment"
@@ -9677,7 +9677,7 @@ msgstr "卫生子区域"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_ethnicity"
 msgid "Ethnicities"
-msgstr "种族"
+msgstr "人种"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_federation"
 msgid "Federation"
@@ -9797,7 +9797,7 @@ msgstr "家庭成员"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_hp_specialty"
 msgid "Specialties by health professionals"
-msgstr "医务人员专长"
+msgstr "医务人员专业"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_medicament"
 msgid "Medicaments"
@@ -10144,7 +10144,7 @@ msgstr "电子邮件:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Ethnicity:"
-msgstr "种族:"
+msgstr "人种:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Evaluation Digital Signature"
@@ -10728,7 +10728,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid "Cancelled by Health Center"
-msgstr "被健康中心取消"
+msgstr "被医疗机构取消"
 
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid "Cancelled by patient"
@@ -10752,7 +10752,7 @@ msgstr "号源"
 
 msgctxt "selection:gnuhealth.appointment,state:"
 msgid "No show"
-msgstr "爽约"
+msgstr "已爽约"
 
 msgctxt "selection:gnuhealth.appointment,urgency:"
 msgid ""
@@ -12342,7 +12342,7 @@ msgstr "前缀+名 姓+后缀"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Checked in"
-msgstr "点击设为候诊状态"
+msgstr "设为已候诊"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Date"
@@ -12354,7 +12354,7 @@ msgstr "相关信息"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "No show"
-msgstr "点击设为爽约状态"
+msgstr "设为已爽约"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "The patient did not show up"
