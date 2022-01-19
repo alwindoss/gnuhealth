@@ -44,11 +44,11 @@ class DentistryProcedureReport(Report):
         return result
 
     @classmethod
-    def get_context(cls, records, data):
+    def get_context(cls, records, header, data):
         pool = Pool()
         Date = pool.get('ir.date')
         context = super(DentistryProcedureReport, cls).get_context(
-            records, data)
+            records, header, data)
         context['today'] = Date.today()
         context['digest_treatments'] = cls.digest_treatments
 

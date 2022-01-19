@@ -336,7 +336,7 @@ class InstitutionEpidemicsReport(Report):
         return (image_png)
 
     @classmethod
-    def get_context(cls, records, data):
+    def get_context(cls, records, header, data):
 
         Condition = Pool().get('gnuhealth.pathology')
 
@@ -353,8 +353,8 @@ class InstitutionEpidemicsReport(Report):
         for ses_group in ses_groups:
             ses_count[ses_group] = 0
 
-        context = super(InstitutionEpidemicsReport, cls).get_context(records,
-                                                                     data)
+        context = super(InstitutionEpidemicsReport, cls).get_context(
+            records, header, data)
 
         start_date = data['start_date']
         context['start_date'] = data['start_date']

@@ -4,31 +4,31 @@ this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data grouped="1">
         <record model="ir.message" id="msg_wrong_date_of_birth">
-            <field name="text">Wrong date of birth for a living person</field>
+            <field name="text">SM-CORE-0001: Wrong date of birth for a living person</field>
         </record>
         <record model="ir.message" id="msg_healed_before_dx">
-            <field name="text">The HEALED date "%(healed_date)s" is BEFORE DIAGNOSED DATE "%(diagnosed_date)s"!</field>
+            <field name="text">SM-CORE-0002: The HEALED date "%(healed_date)s" is BEFORE DIAGNOSED DATE "%(diagnosed_date)s"!</field>
         </record>
         <record model="ir.message" id="msg_end_treatment_before_start">
-            <field name="text">The Treatment END DATE "%(date_stop_treatment)s" is BEFORE the start date "%(date_start_treatment)s"</field>
+            <field name="text">SM-CORE-0003: The Treatment END DATE "%(date_stop_treatment)s" is BEFORE the start date "%(date_start_treatment)s"</field>
         </record>
         <record model="ir.message" id="msg_med_end_date_before_start">
-            <field name="text">The Medication END DATE "%(end_treatment)s" is BEFORE the start date "%(start_treatment)s"!</field>
+            <field name="text">SM-CORE-0004: The Medication END DATE "%(end_treatment)s" is BEFORE the start date "%(start_treatment)s"!</field>
         </record>
         <record model="ir.message" id="msg_next_dose_before_first">
-            <field name="text">The vaccine next dose is BEFORE the first one!</field>
+            <field name="text">SM-CORE-0005: The vaccine next dose is BEFORE the first one!</field>
         </record>
         <record model="ir.message" id="msg_drug_pregnancy_safety_check">
-            <field name="text">Verify and check for safety in pregnancy the prescribed drugs</field>
+            <field name="text">SM-CORE-0006: Verify and check for safety in pregnancy the prescribed drugs</field>
         </record>
         <record model="ir.message" id="msg_no_associated_health_professional">
-            <field name="text">There is no health professional associated to this user</field>
+            <field name="text">SM-CORE-0007: There is no health professional associated to this user</field>
         </record>
         <record model="ir.message" id="msg_end_evaluation_time_before_start">
-            <field name="text">End time "%(evaluation_endtime)s" BEFORE evaluation start "%(evaluation_start)s"</field>
+            <field name="text">SM-CORE-0008: End time "%(evaluation_endtime)s" BEFORE evaluation start "%(evaluation_start)s"</field>
         </record>
         <record model="ir.message" id="msg_no_appointment_selected">
-            <field name="text">You need to select one appointment</field>
+            <field name="text">SM-CORE-0009: You need to select one appointment</field>
         </record>
     </data>
 </tryton>

@@ -22,7 +22,7 @@ import configparser
 
 
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname).read())
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
 config = configparser.ConfigParser()
@@ -44,7 +44,7 @@ for dep in info.get('depends', []):
         health_package = dep.split('_', 1)[1]
         requires.append(
             'gnuhealth_%s == %s' % (health_package, info.get('version')))
-    else: 
+    else:
         if not re.match(r'(ir|res)(\W|$)', dep):
             requires.append(
                 'trytond_%s >= %s.%s, < %s.%s' %
