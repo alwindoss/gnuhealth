@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-24 02:12+0000\n"
-"PO-Revision-Date: 2022-01-19 04:55+0000\n"
-"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"PO-Revision-Date: 2022-01-19 09:58+0000\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_qrcodes/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -62,7 +62,7 @@ msgstr ":"
 
 msgctxt "report:appointment.qrcodel:"
 msgid "Appointment #"
-msgstr "预约编号: "
+msgstr "预约编号 #"
 
 msgctxt "report:appointment.qrcodel:"
 msgid "Health Professional"
@@ -78,7 +78,7 @@ msgstr "备注说明"
 
 msgctxt "report:appointment.qrcodel:"
 msgid "PUID :"
-msgstr "PUID: "
+msgstr "PUID："
 
 msgctxt "report:appointment.qrcodel:"
 msgid "Patient"
@@ -94,23 +94,23 @@ msgstr "取样容器标签"
 
 msgctxt "report:labtest.qrlabel:"
 msgid "Extraction date :"
-msgstr "样本采集日期: "
+msgstr "样本采集日期："
 
 msgctxt "report:labtest.qrlabel:"
 msgid "ID:"
-msgstr "ID: "
+msgstr "ID："
 
 msgctxt "report:labtest.qrlabel:"
 msgid "Patient:"
-msgstr "患者: "
+msgstr "患者："
 
 msgctxt "report:labtest.qrlabel:"
 msgid "Req by:"
-msgstr "申请人: "
+msgstr "申请人："
 
 msgctxt "report:labtest.qrlabel:"
 msgid "Test:"
-msgstr "检验: "
+msgstr "检验："
 
 msgctxt "report:newborn.qrcard:"
 msgid ","
@@ -164,10 +164,9 @@ msgctxt "report:newborn.qrcard:"
 msgid "gr"
 msgstr ""
 
-#, fuzzy
 msgctxt "report:patient.qrcard:"
 msgid ":"
-msgstr ":"
+msgstr "："
 
 msgctxt "report:patient.qrcard:"
 msgid "Blood Type"
@@ -175,7 +174,7 @@ msgstr "血型"
 
 msgctxt "report:patient.qrcard:"
 msgid "DoB:"
-msgstr "出生日期: "
+msgstr "出生日期："
 
 msgctxt "report:patient.qrcard:"
 msgid "ID"
