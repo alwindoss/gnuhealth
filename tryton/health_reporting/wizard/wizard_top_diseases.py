@@ -22,7 +22,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from sql import Join
+from sql import Join, Null
 from sql.aggregate import Max, Count
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.wizard import Wizard, StateView, StateAction, Button
@@ -52,7 +52,8 @@ class TopDiseases(ModelSQL, ModelView):
         Evaluation = pool.get('gnuhealth.patient.evaluation')
         evaluation = Evaluation.__table__()
         source = evaluation
-        where = evaluation.diagnosis is not None
+        where = evaluation.diagnosis != Null
+
         if Transaction().context.get('start_date'):
             where &= evaluation.evaluation_start >= \
                 Transaction().context['start_date']
