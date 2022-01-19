@@ -51,14 +51,15 @@ class PediatricsGrowthChartsWHOReport(Report):
     __name__ = 'gnuhealth.pediatrics.growth.charts.who.report'
 
     @classmethod
-    def get_context(cls, records, data):
+    def get_context(cls, records, header, data):
         pool = Pool()
         GrowthChartsWHO = pool.get('gnuhealth.pediatrics.growth.charts.who')
         Patient = pool.get('gnuhealth.patient')
         Evaluation = pool.get('gnuhealth.patient.evaluation')
 
         context = super(
-            PediatricsGrowthChartsWHOReport, cls).get_context(records, data)
+            PediatricsGrowthChartsWHOReport, cls).get_context(
+                records, header, data)
 
         patient = Patient(data['patient'])
 
