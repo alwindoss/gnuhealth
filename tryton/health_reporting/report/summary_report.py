@@ -157,9 +157,9 @@ class InstitutionSummaryReport(Report):
         return(res)
 
     @classmethod
-    def get_context(cls, records, data):
+    def get_context(cls, records, header, data):
         context = super(
-            InstitutionSummaryReport, cls).get_context(records, data)
+            InstitutionSummaryReport, cls).get_context(records, header, data)
 
         start_date = data['start_date']
         end_date = data['end_date']
