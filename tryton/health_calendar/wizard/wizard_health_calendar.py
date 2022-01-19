@@ -26,6 +26,7 @@ from trytond.pyson import PYSONEncoder
 from trytond.pool import Pool
 from trytond.transaction import Transaction
 from trytond.i18n import gettext
+from trytond.modules.health.core import get_institution
 
 __all__ = ['CreateAppointmentStart', 'CreateAppointment']
 
@@ -64,8 +65,7 @@ class CreateAppointmentStart(ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        return HealthInst.get_institution()
+        return get_institution()
 
     @fields.depends('healthprof')
     def on_change_with_specialty(self):
