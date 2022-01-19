@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 08:16+0000\n"
-"PO-Revision-Date: 2022-01-19 09:12+0000\n"
-"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"PO-Revision-Date: 2022-01-19 20:44+0000\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -5070,7 +5070,7 @@ msgstr "治疗开始时间"
 
 msgctxt "help:gnuhealth.person_name,family:"
 msgid "Family / Surname."
-msgstr "姓"
+msgstr "姓氏."
 
 msgctxt "help:gnuhealth.person_name,given:"
 msgid "Given / First name. May include middle name"
@@ -5497,7 +5497,7 @@ msgstr "mL"
 
 msgctxt "model:gnuhealth.dose.unit,name:mmol"
 msgid "mmol"
-msgstr "mmol"
+msgstr "毫克分子"
 
 msgctxt "model:gnuhealth.dose.unit,name:ug"
 msgid "ug"
@@ -6161,7 +6161,7 @@ msgstr "免疫接种程序"
 
 msgctxt "model:gnuhealth.immunization_schedule_dose,name:"
 msgid "Immunization Schedule Dose"
-msgstr "Immunization Schedule Dose"
+msgstr "免疫接种程序剂量"
 
 msgctxt "model:gnuhealth.immunization_schedule_line,name:"
 msgid "Immunization Schedule Line"
@@ -9501,7 +9501,7 @@ msgstr "疫苗剂量"
 
 msgctxt "model:ir.action,name:gnuhealth_action_immunization_schedule_line"
 msgid "Schedule Vaccines"
-msgstr "Schedule Vaccines"
+msgstr "安排疫苗"
 
 msgctxt "model:ir.action,name:gnuhealth_action_insurance"
 msgid "Insurances"
@@ -9701,7 +9701,7 @@ msgstr "疫苗计量"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_immunization_schedule_line"
 msgid "Schedule Vaccines"
-msgstr "Schedule Vaccines"
+msgstr "安排疫苗"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_institution"
 msgid "Institutions"
@@ -9913,7 +9913,7 @@ msgstr "医疗机构"
 
 msgctxt "report:appointment.receipt:"
 msgid "Instructions / Notes :"
-msgstr "备注说明: "
+msgstr "说明/备注："
 
 msgctxt "report:appointment.receipt:"
 msgid "PUID"
@@ -10028,7 +10028,7 @@ msgstr "患者年龄"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "mmunization status corresponding to the"
-msgstr "免疫状态: "
+msgstr "相应的免疫状态"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "only"
@@ -10056,7 +10056,7 @@ msgstr "/"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "/ Reliability :"
-msgstr "/ 可靠性: "
+msgstr "/ 可靠性："
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "15"
@@ -10184,7 +10184,7 @@ msgstr ""
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Occupation :"
-msgstr "职业: "
+msgstr "职业："
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Other Conditions"
@@ -10200,11 +10200,11 @@ msgstr "PUID"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Patient :"
-msgstr "患者: "
+msgstr "患者："
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Phone:"
-msgstr "电话: "
+msgstr "电话："
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Plan"
@@ -10240,7 +10240,7 @@ msgstr "患者类型"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "ate:"
-msgstr "日期: "
+msgstr "日期："
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "rocedures"
@@ -10280,7 +10280,7 @@ msgstr "启用"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Age:"
-msgstr "年龄: "
+msgstr "年龄："
 
 msgctxt "report:patient.conditions_history:"
 msgid "Annotations about the patient"
@@ -10332,7 +10332,7 @@ msgstr ""
 
 msgctxt "report:patient.conditions_history:"
 msgid "Print Date :"
-msgstr "打印日期: "
+msgstr "打印日期："
 
 msgctxt "report:patient.conditions_history:"
 msgid "Remarks"
@@ -10400,11 +10400,11 @@ msgstr "启用"
 
 msgctxt "report:patient.medication:"
 msgid "Age :"
-msgstr "年龄: "
+msgstr "年龄："
 
 msgctxt "report:patient.medication:"
 msgid "E-Mail:"
-msgstr "电子邮件: "
+msgstr "电子邮件："
 
 msgctxt "report:patient.medication:"
 msgid "End"
@@ -10440,11 +10440,11 @@ msgstr ""
 
 msgctxt "report:patient.medication:"
 msgid "Patient :"
-msgstr "患者: "
+msgstr "患者："
 
 msgctxt "report:patient.medication:"
 msgid "Phone:"
-msgstr "电话: "
+msgstr "电话："
 
 msgctxt "report:patient.medication:"
 msgid "Prescribed by"
@@ -10468,7 +10468,7 @@ msgstr ":"
 
 msgctxt "report:patient.vaccination:"
 msgid "Age :"
-msgstr "年龄: "
+msgstr "年龄："
 
 msgctxt "report:patient.vaccination:"
 msgid "Date"
@@ -10476,7 +10476,7 @@ msgstr "日期"
 
 msgctxt "report:patient.vaccination:"
 msgid "Date :"
-msgstr "日期: "
+msgstr "日期："
 
 msgctxt "report:patient.vaccination:"
 msgid "Dose"
@@ -10568,7 +10568,7 @@ msgstr "用法说明书"
 
 msgctxt "report:prescription.order:"
 msgid "DoB :"
-msgstr "出生日期: "
+msgstr "出生日期："
 
 msgctxt "report:prescription.order:"
 msgid "Dose"
@@ -10608,7 +10608,7 @@ msgstr "适应症"
 
 msgctxt "report:prescription.order:"
 msgid "Insurance :"
-msgstr "保险: "
+msgstr "保险："
 
 msgctxt "report:prescription.order:"
 msgid "Medicament"
@@ -10628,11 +10628,11 @@ msgstr "注意事项"
 
 msgctxt "report:prescription.order:"
 msgid "PUID :"
-msgstr "PUID: "
+msgstr "PUID："
 
 msgctxt "report:prescription.order:"
 msgid "Patient :"
-msgstr "患者: "
+msgstr "患者："
 
 msgctxt "report:prescription.order:"
 msgid "Patient Contact Information"
@@ -10644,11 +10644,11 @@ msgstr "开处方专家"
 
 msgctxt "report:prescription.order:"
 msgid "Prescription ID :"
-msgstr "处方编号: "
+msgstr "处方编号："
 
 msgctxt "report:prescription.order:"
 msgid "Prescription date :"
-msgstr "开处方日期: "
+msgstr "开处方日期："
 
 msgctxt "report:prescription.order:"
 msgid "Qty"
@@ -11524,15 +11524,15 @@ msgstr "V6"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "aVF"
-msgstr "aVF"
+msgstr "动静脉瘘"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "aVL"
-msgstr "aVL"
+msgstr "动静脉环"
 
 msgctxt "selection:gnuhealth.patient.ecg,lead:"
 msgid "aVR"
-msgstr "aVR"
+msgstr "动静脉宽度之比"
 
 msgctxt "selection:gnuhealth.patient.ecg,pacemaker:"
 msgid ""
@@ -11882,7 +11882,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.person_name,prefix:"
 msgid "Dr"
-msgstr "Dr "
+msgstr "Dr"
 
 msgctxt "selection:gnuhealth.person_name,prefix:"
 msgid "Miss"
@@ -12290,7 +12290,7 @@ msgstr "私人"
 
 msgctxt "selection:party.party,insurance_company_type:"
 msgid "State"
-msgstr "国家"
+msgstr "国有"
 
 msgctxt "selection:party.party,marital_status:"
 msgid ""
