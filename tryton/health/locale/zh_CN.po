@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 08:16+0000\n"
-"PO-Revision-Date: 2020-12-18 06:29+0000\n"
+"PO-Revision-Date: 2022-01-19 04:55+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.11-dev\n"
 "X-Pootle-Path: /zh_CN/GNUHEALTH/health/locale/zh_CN.po\n"
 "X-Pootle-Revision: 43914\n"
 
@@ -66,7 +66,7 @@ msgstr "资格证号码不能重复"
 
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
-msgstr "健康专家不能重复"
+msgstr "医务人员不能重复"
 
 msgctxt "error:gnuhealth.hospital.bed:"
 msgid "The Bed must be unique per Health Center"
@@ -176,7 +176,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.patient.ecg:"
 msgid "No health professional associated to this user"
-msgstr "此用户没有关联到某位健康专家"
+msgstr "此用户没有关联到某位医务人员"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid ""
@@ -186,7 +186,7 @@ msgstr "结束时间\"%(evaluation_endtime)s\" 在就诊评估开始 \"%(evaluat
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "No health professional associated to this user"
-msgstr "此用户没有关联到某位健康专家"
+msgstr "此用户没有关联到某位医务人员"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "The evaluation code must be unique !"
@@ -231,7 +231,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.prescription.order:"
 msgid "No health professional associated to this user"
-msgstr "此用户没有关联到某个健康专家"
+msgstr "此用户没有关联到某个医务人员"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "The Vaccine next dose is BEFORE the first one !"
@@ -287,7 +287,7 @@ msgstr "创建用户"
 
 msgctxt "field:gnuhealth.appointment,healthprof:"
 msgid "Health Prof"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.appointment,id:"
 msgid "ID"
@@ -367,7 +367,7 @@ msgstr "性别"
 
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.appointment.report,id:"
 msgid "ID"
@@ -407,7 +407,7 @@ msgstr "开始日期"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,healthprof:"
 msgid "Health Prof"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,id:"
 msgid "ID"
@@ -1219,7 +1219,7 @@ msgstr "主要专业"
 
 msgctxt "field:gnuhealth.healthprofessional,name:"
 msgid "Health Professional"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.healthprofessional,puid:"
 msgid "PUID"
@@ -1535,7 +1535,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.hp_specialty,name:"
 msgid "Health Professional"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.hp_specialty,rec_name:"
 msgid "Record Name"
@@ -2567,7 +2567,7 @@ msgstr "痊愈日期"
 
 msgctxt "field:gnuhealth.patient.disease,healthprof:"
 msgid "Health Prof"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.patient.disease,id:"
 msgid "ID"
@@ -2667,7 +2667,7 @@ msgstr "心电图"
 
 msgctxt "field:gnuhealth.patient.ecg,healthprof:"
 msgid "Health Prof"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.patient.ecg,id:"
 msgid "ID"
@@ -2859,7 +2859,7 @@ msgstr "头围"
 
 msgctxt "field:gnuhealth.patient.evaluation,healthprof:"
 msgid "Health Prof"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.patient.evaluation,height:"
 msgid "Height"
@@ -2995,7 +2995,7 @@ msgstr "其它诊断疾病"
 
 msgctxt "field:gnuhealth.patient.evaluation,signed_by:"
 msgid "Health Prof"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.patient.evaluation,signs_and_symptoms:"
 msgid "Signs and Symptoms"
@@ -3135,7 +3135,7 @@ msgstr "单位"
 
 msgctxt "field:gnuhealth.patient.medication,healthprof:"
 msgid "Health Prof"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.patient.medication,id:"
 msgid "ID"
@@ -3876,7 +3876,7 @@ msgstr "剂量"
 
 msgctxt "field:gnuhealth.vaccination,healthprof:"
 msgid "Health Prof"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.vaccination,id:"
 msgid "ID"
@@ -4044,7 +4044,7 @@ msgstr "登录帐户"
 
 msgctxt "field:party.party,is_healthprof:"
 msgid "Health Prof"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "field:party.party,is_institution:"
 msgid "Institution"
@@ -4128,7 +4128,7 @@ msgstr "咨询服务"
 
 msgctxt "help:gnuhealth.appointment,healthprof:"
 msgid "Health Professional"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "help:gnuhealth.appointment,institution:"
 msgid "Health Care Institution"
@@ -4168,7 +4168,7 @@ msgstr "现住址"
 
 msgctxt "help:gnuhealth.death_certificate,signed_by:"
 msgid "Health Professional that signed the death certificate"
-msgstr "出具死亡证明的健康专家"
+msgstr "出具死亡证明的医务人员"
 
 msgctxt "help:gnuhealth.death_certificate,underlying_conditions:"
 msgid ""
@@ -4683,7 +4683,7 @@ msgstr "治疗的结束日期"
 
 msgctxt "help:gnuhealth.patient.disease,healthprof:"
 msgid "Health Professional"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "help:gnuhealth.patient.disease,is_infectious:"
 msgid "Check if the patient has an infectious / transmissible disease"
@@ -4777,11 +4777,11 @@ msgstr "如果病人有脱水的迹象，就选中此项，如果和某个疾病
 
 msgctxt "help:gnuhealth.patient.evaluation,derived_from:"
 msgid "Health Professional who derived the case"
-msgstr "做为推荐人的健康专家"
+msgstr "做为推荐人的医务人员"
 
 msgctxt "help:gnuhealth.patient.evaluation,derived_to:"
 msgid "Health Professional to derive the case"
-msgstr "推荐人推荐的健康专家"
+msgstr "推荐人推荐的医务人员"
 
 msgctxt "help:gnuhealth.patient.evaluation,diagnosis:"
 msgid ""
@@ -4830,7 +4830,7 @@ msgid ""
 "might or might not be the same that signs and finishes the evaluation.The "
 "evaluation remains in progress state until it is signed, when it becomes "
 "read-only"
-msgstr "发起就诊评估的健康专家，此专家可能不是完成评估的专家, 签订之前，评估会处于正在进行的状态，签订之后就无法更改了"
+msgstr "发起就诊评估的医务人员，此专家可能不是完成评估的专家, 签订之前，评估会处于正在进行的状态，签订之后就无法更改了"
 
 msgctxt "help:gnuhealth.patient.evaluation,height:"
 msgid "Height in centimeters"
@@ -4917,7 +4917,7 @@ msgstr "患者其他疾病"
 
 msgctxt "help:gnuhealth.patient.evaluation,signed_by:"
 msgid "Health Professional that finished the patient evaluation"
-msgstr "完成患者就诊评估的健康专家"
+msgstr "完成患者就诊评估的医务人员"
 
 msgctxt "help:gnuhealth.patient.evaluation,signs_and_symptoms:"
 msgid "Enter the Signs and Symptoms for the patient in this evaluation."
@@ -5235,11 +5235,11 @@ msgctxt "help:gnuhealth.vaccination,healthprof:"
 msgid ""
 "Health Professional who administered or reviewed the vaccine          "
 "information"
-msgstr "注射疫苗或者核对疫苗的健康专家"
+msgstr "注射疫苗或者核对疫苗的医务人员"
 
 msgctxt "help:gnuhealth.vaccination,signed_by:"
 msgid "Health Professional that signed the vaccination document"
-msgstr "签署接种证明的健康专家"
+msgstr "签署接种证明的医务人员"
 
 msgctxt "help:gnuhealth.vaccination,vaccine:"
 msgid ""
@@ -5341,7 +5341,7 @@ msgstr ""
 
 msgctxt "help:party.party,is_healthprof:"
 msgid "Check if the party is a health professional"
-msgstr "如果此 party 代表一个健康专家，就勾选此框"
+msgstr "如果此 party 代表一个医务人员，就勾选此框"
 
 msgctxt "help:party.party,is_institution:"
 msgid "Check if the party is a Health Care Institution"
@@ -6129,7 +6129,7 @@ msgstr "GNU Health 信息平台帐号-国家设置"
 
 msgctxt "model:gnuhealth.healthprofessional,name:"
 msgid "Health Professional"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "model:gnuhealth.hospital.bed,name:"
 msgid "Hospital Bed"
@@ -6153,7 +6153,7 @@ msgstr "病房"
 
 msgctxt "model:gnuhealth.hp_specialty,name:"
 msgid "Health Professional Specialties"
-msgstr "健康专家专长"
+msgstr "医务人员专长"
 
 msgctxt "model:gnuhealth.immunization_schedule,name:"
 msgid "Immunization Schedule"
@@ -9485,11 +9485,11 @@ msgstr "疾病"
 
 msgctxt "model:ir.action,name:gnuhealth_action_healthprofessional"
 msgid "Health Professionals"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "model:ir.action,name:gnuhealth_action_hp_specialty"
 msgid "Specialties by health professionals"
-msgstr "健康专家专业"
+msgstr "医务人员专业"
 
 msgctxt "model:ir.action,name:gnuhealth_action_immunization_schedule"
 msgid "Immunization Schedule"
@@ -9689,7 +9689,7 @@ msgstr "平台国家设置"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_healthprofessionals"
 msgid "Health Professionals"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_immunization_schedule"
 msgid "Immunization Schedule"
@@ -9797,7 +9797,7 @@ msgstr "家庭成员"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_hp_specialty"
 msgid "Specialties by health professionals"
-msgstr "健康专家专长"
+msgstr "医务人员专长"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_medicament"
 msgid "Medicaments"
@@ -9905,7 +9905,7 @@ msgstr "日期:"
 
 msgctxt "report:appointment.receipt:"
 msgid "Health Professional :"
-msgstr "健康专家: "
+msgstr "医务人员:"
 
 msgctxt "report:appointment.receipt:"
 msgid "Institution"
@@ -9944,7 +9944,7 @@ msgid ""
 ": This automatically generated report is a tool to assist, but never to "
 "replace the criteria of the health professional. Always verify the person "
 "vaccination cards."
-msgstr ": 这份自动生成的报告只是辅助工具，绝不能替代健康专家的标准，请务必核实个人疫苗接种卡。"
+msgstr ": 这份自动生成的报告只是辅助工具，绝不能替代医务人员的标准，请务必核实个人疫苗接种卡。"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Age"
@@ -10592,7 +10592,7 @@ msgstr "剂型"
 
 msgctxt "report:prescription.order:"
 msgid "Health Professional"
-msgstr "健康专家"
+msgstr "医务人员"
 
 msgctxt "report:prescription.order:"
 msgid "Hours"
@@ -12694,7 +12694,7 @@ msgstr "注意事项"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Prescribed or Reviewed by Health Professional"
-msgstr "已经经过健康专家签字或者审核"
+msgstr "已经经过医务人员签字或者审核"
 
 msgctxt "view:gnuhealth.patient.medication:"
 msgid "Specific Dosage"
