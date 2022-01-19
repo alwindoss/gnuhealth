@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-23 01:29+0000\n"
-"PO-Revision-Date: 2022-01-19 12:32+0000\n"
+"PO-Revision-Date: 2022-01-19 20:44+0000\n"
 "Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_icpm/zh_Hans/>\n"
@@ -930,7 +930,7 @@ msgstr "血管造影(NEC)"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_3-312"
 msgid "CORONARY ARTERY"
-msgstr " 冠状动脉"
+msgstr "冠状动脉"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_3-338"
 msgid "OTHER ANGIOGRAPHY"
@@ -1156,7 +1156,7 @@ msgstr "角膜修复术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-125"
 msgid "KERATOPLASTY"
-msgstr " 角膜成形术"
+msgstr "角膜成形术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-126"
 msgid "REPAIR OF CORNEA (OTHER PLASTY)"
@@ -1304,7 +1304,7 @@ msgstr "乳突根治术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-204"
 msgid "POLYPECTOMY 0F MIDDLE EAR"
-msgstr "0 中耳息肉切除术 "
+msgstr "中耳息肉切除术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-207"
 msgid "EXPLORATION OF EAR"
@@ -1340,7 +1340,7 @@ msgstr "鼻骨复位"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-217"
 msgid "RHINOPLASTY"
-msgstr " 鼻整形术"
+msgstr "鼻整形术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-219"
 msgid "FREEING NASAL ADHESIONS"
@@ -1576,7 +1576,7 @@ msgstr "心脏起搏器植入置换或移除"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-380"
 msgid "EMBOLECTOMY"
-msgstr " 栓子清除术"
+msgstr "栓子切除术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-384"
 msgid "STRIPPING OF VARICOSE VEINS"
@@ -1752,7 +1752,7 @@ msgstr "袢式结肠造口术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-461"
 msgid "COLOSTOMY"
-msgstr " 结肠造口术"
+msgstr "结肠造口术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-462"
 msgid "LLEOSTOMY"
@@ -1760,7 +1760,7 @@ msgstr "回肠造口术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-463"
 msgid "JEJUNOSTOMY"
-msgstr " 空肠造口术"
+msgstr "空肠造口术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-464"
 msgid "REPAIR OF INTESTINAL STOMACH"
@@ -1812,7 +1812,7 @@ msgstr "直肠其他手术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-490"
 msgid "INCISION DRAINAGE PERIANAL ABS"
-msgstr "肛周脓肿切开引流术 "
+msgstr "肛周脓肿切开引流术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-491"
 msgid "ANAL FISTULECTOMY"
@@ -1824,7 +1824,7 @@ msgstr "肛门息肉切除术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-493"
 msgid "HAEMORRHOIDECTOMY"
-msgstr " 痔切除术"
+msgstr "痔切除术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-494"
 msgid "SPHINCTERECTOMY"
@@ -1992,7 +1992,7 @@ msgstr "其他输尿管吻合或旁路"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-568"
 msgid "URETHROPLASTY"
-msgstr " 尿道成形术"
+msgstr "尿道成形术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-569"
 msgid "OPERATION TO THE URETER"
@@ -2006,7 +2006,7 @@ msgstr "尿道间隙穿刺血凝块或粉碎结石经膀胱排出"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-571"
 msgid "SUPRAPUBIC CATHERIZATION"
-msgstr " 耻骨上导尿管"
+msgstr "耻骨弓上的导管插入术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-572"
 msgid "SUPRAPUBIC CYSTOSTOMY"
@@ -2046,7 +2046,7 @@ msgstr "尿道口切开术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-583"
 msgid "URETHROPLASTY"
-msgstr " 尿道成形术"
+msgstr "尿道成形术"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_5-584"
 msgid "INTERNAL URETHROTOMY"
