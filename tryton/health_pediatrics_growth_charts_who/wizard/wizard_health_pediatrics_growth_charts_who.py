@@ -48,21 +48,21 @@ class OpenPediatricsGrowthChartsWHOReport(Wizard):
 
     start = StateView(
         'gnuhealth.pediatrics.growth.charts.who.report.open.start',
-        'health_pediatrics_growth_charts_who.\
-        growth_charts_who_open_start_view_form', [
+        'health_pediatrics_growth_charts_who.'
+        'growth_charts_who_open_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Open', 'choose', 'tryton-ok', default=True),
             ])
     choose = StateTransition()
     print_wfa = StateAction(
-        'health_pediatrics_growth_charts_who.\
-        report_pediatrics_growth_charts_who_wfa')
+        'health_pediatrics_growth_charts_who.'
+        'report_pediatrics_growth_charts_who_wfa')
     print_lhfa = StateAction(
-        'health_pediatrics_growth_charts_who.\
-        report_pediatrics_growth_charts_who_lhfa')
+        'health_pediatrics_growth_charts_who.'
+        'report_pediatrics_growth_charts_who_lhfa')
     print_bmifa = StateAction(
-        'health_pediatrics_growth_charts_who.\
-        report_pediatrics_growth_charts_who_bmifa')
+        'health_pediatrics_growth_charts_who.'
+        'report_pediatrics_growth_charts_who_bmifa')
 
     def transition_choose(self):
         if self.start.indicator == 'w-f-a':
