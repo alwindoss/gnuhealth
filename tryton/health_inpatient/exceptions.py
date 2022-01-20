@@ -20,7 +20,7 @@ class BedIsNotAvailable(UserError):
     pass
 
 
-class DestinationBedNotavailable(UserError):
+class DestinationBedNotAvailable(UserError):
     pass
 
 
