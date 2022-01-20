@@ -26,11 +26,13 @@ from trytond.transaction import Transaction
 from trytond.pool import Pool
 
 
-__all__ = ['CreateLabTestOrderInit', 'CreateLabTestOrder', 'RequestTest',
+__all__ = [
+    'CreateLabTestOrderInit', 'CreateLabTestOrder', 'RequestTest',
     'RequestPatientLabTestStart', 'RequestPatientLabTest']
 
 
 from trytond.modules.health.core import get_health_professional
+
 
 class CreateLabTestOrderInit(ModelView):
     'Create Test Report Init'
@@ -41,7 +43,8 @@ class CreateLabTestOrder(Wizard):
     'Create Lab Test Report'
     __name__ = 'gnuhealth.lab.test.create'
 
-    start = StateView('gnuhealth.lab.test.create.init',
+    start = StateView(
+        'gnuhealth.lab.test.create.init',
         'health_lab.view_lab_make_test', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Create Test Order', 'create_lab_test', 'tryton-ok', True),
@@ -97,7 +100,8 @@ class RequestTest(ModelView):
     __name__ = 'gnuhealth.request-test'
     _table = 'gnuhealth_request_test'
 
-    request = fields.Many2One('gnuhealth.patient.lab.test.request.start',
+    request = fields.Many2One(
+        'gnuhealth.patient.lab.test.request.start',
         'Request', required=True)
     test = fields.Many2One('gnuhealth.lab.test_type', 'Test', required=True)
 
@@ -108,12 +112,15 @@ class RequestPatientLabTestStart(ModelView):
 
     date = fields.DateTime('Date')
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
-    context = fields.Many2One('gnuhealth.pathology', 'Context',
+    context = fields.Many2One(
+        'gnuhealth.pathology', 'Context',
         help="Health context for this order. It can be a suspected or"
              " existing health condition, a regular health checkup, ...")
-    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Health prof',
+    doctor = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Health prof',
         help="Health professional who ordered the lab tests.")
-    tests = fields.Many2Many('gnuhealth.request-test', 'request', 'test',
+    tests = fields.Many2Many(
+        'gnuhealth.request-test', 'request', 'test',
         'Tests', required=True)
     urgent = fields.Boolean('Urgent')
 
@@ -130,11 +137,13 @@ class RequestPatientLabTestStart(ModelView):
     def default_doctor():
         return get_health_professional()
 
+
 class RequestPatientLabTest(Wizard):
     'Request Patient Lab Test'
     __name__ = 'gnuhealth.patient.lab.test.request'
 
-    start = StateView('gnuhealth.patient.lab.test.request.start',
+    start = StateView(
+        'gnuhealth.patient.lab.test.request.start',
         'health_lab.patient_lab_test_request_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Request', 'request', 'tryton-ok', default=True),
