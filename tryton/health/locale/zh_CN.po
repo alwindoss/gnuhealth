@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 08:16+0000\n"
-"PO-Revision-Date: 2022-01-20 02:40+0000\n"
+"PO-Revision-Date: 2022-01-20 09:13+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -5465,7 +5465,7 @@ msgstr "毫升"
 
 msgctxt "model:gnuhealth.dose.unit,desc:mmol"
 msgid "millimol"
-msgstr "毫升"
+msgstr "毫摩尔"
 
 msgctxt "model:gnuhealth.dose.unit,desc:ug"
 msgid "microgram"
@@ -10912,7 +10912,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Apartment"
-msgstr "公寓"
+msgstr "租赁公寓"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Building"
@@ -10924,15 +10924,15 @@ msgstr "工厂"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Mobile House"
-msgstr "移动房"
+msgstr "活动房"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Single / Detached House"
-msgstr "单独或分离的房子"
+msgstr "独立式住宅"
 
 msgctxt "selection:gnuhealth.du,dwelling:"
 msgid "Townhouse"
-msgstr "连栋房屋"
+msgstr "联排别墅"
 
 msgctxt "selection:gnuhealth.du,housing:"
 msgid ""
@@ -12378,7 +12378,7 @@ msgstr "观察结果"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Sign"
-msgstr "签订"
+msgstr "签署"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Sign Birth Certificate ?"
@@ -12414,7 +12414,7 @@ msgstr "地点"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Sign"
-msgstr "签订"
+msgstr "签署"
 
 msgctxt "view:gnuhealth.death_certificate:"
 msgid "Sign Death Certificate ?"
@@ -12822,7 +12822,7 @@ msgstr "注意事项"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Sign"
-msgstr "签订"
+msgstr "签署"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Sign and close the vaccination"
