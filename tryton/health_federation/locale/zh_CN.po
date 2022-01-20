@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-01-19 09:53+0000\n"
-"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"PO-Revision-Date: 2022-01-20 09:13+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_federation/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -268,7 +268,7 @@ msgstr "GNU Health 信息平台节点设置"
 
 msgctxt "model:gnuhealth.federation.object,name:"
 msgid "Federation Object"
-msgstr "GNU Health 信息平台对象"
+msgstr "GNU Health 信息平台对象设置"
 
 msgctxt "model:gnuhealth.federation.queue,name:"
 msgid "Federation Queue"
@@ -284,7 +284,7 @@ msgstr "GNU Health 信息平台-对象"
 
 msgctxt "model:ir.action,name:gnuhealth_action_federation_queue"
 msgid "Federation Queue Manager"
-msgstr "GNU Health 信息平台消息队列管理器"
+msgstr "GNU Health 信息平台消息队列"
 
 msgctxt "model:ir.action.act_window.domain,name:act_gnuhealth_fedq_domain_all"
 msgid "All"
@@ -310,11 +310,11 @@ msgstr "平台节点设置"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_federation_object"
 msgid "Federation Objects"
-msgstr "平台对象"
+msgstr "平台对象设置"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_federation_queue"
 msgid "Federation Queue Manager"
-msgstr "平台消息队列管理器"
+msgstr "平台消息队列"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_federation"
 msgid "Federation"
