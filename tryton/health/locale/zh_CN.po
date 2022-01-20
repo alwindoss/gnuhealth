@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 08:16+0000\n"
-"PO-Revision-Date: 2022-01-19 22:01+0000\n"
+"PO-Revision-Date: 2022-01-20 02:40+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -190,7 +190,7 @@ msgstr "此用户没有关联到某位医务人员"
 
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "The evaluation code must be unique !"
-msgstr "诊断代码不能重复！"
+msgstr "评估代码不能重复！"
 
 msgctxt "error:gnuhealth.patient.medication:"
 msgid ""
@@ -695,7 +695,7 @@ msgstr "创建用户"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,evaluation:"
 msgid "Evaluation"
-msgstr "诊断"
+msgstr "评估"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,id:"
 msgid "ID"
@@ -735,7 +735,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.directions,name:"
 msgid "Evaluation"
-msgstr "诊断"
+msgstr "评估"
 
 msgctxt "field:gnuhealth.directions,procedure:"
 msgid "Procedure"
@@ -2619,7 +2619,7 @@ msgstr "记录名称"
 
 msgctxt "field:gnuhealth.patient.disease,related_evaluations:"
 msgid "Related Evaluations"
-msgstr "相关诊断"
+msgstr "相关评估"
 
 msgctxt "field:gnuhealth.patient.disease,short_comment:"
 msgid "Remarks"
@@ -2823,7 +2823,7 @@ msgstr "结束"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_length:"
 msgid "Evaluation length"
-msgstr "评定长度"
+msgstr "评估时长"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_start:"
 msgid "Start"
@@ -2979,11 +2979,11 @@ msgstr "可靠"
 
 msgctxt "field:gnuhealth.patient.evaluation,report_evaluation_date:"
 msgid "Evaluation Date"
-msgstr "诊断日期"
+msgstr "评估日期"
 
 msgctxt "field:gnuhealth.patient.evaluation,report_evaluation_time:"
 msgid "Evaluation Time"
-msgstr "诊断时间"
+msgstr "评估时间"
 
 msgctxt "field:gnuhealth.patient.evaluation,respiratory_rate:"
 msgid "Respiratory Rate"
@@ -3672,7 +3672,7 @@ msgstr "创建用户"
 
 msgctxt "field:gnuhealth.secondary_condition,evaluation:"
 msgid "Evaluation"
-msgstr "诊断"
+msgstr "评估"
 
 msgctxt "field:gnuhealth.secondary_condition,id:"
 msgid "ID"
@@ -3712,7 +3712,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.sequence.setup,patient_evaluation_sequence:"
 msgid "Patient Evaluation Sequence"
-msgstr "诊断序列"
+msgstr "患者评估序列"
 
 msgctxt "field:gnuhealth.sequence.setup,patient_sequence:"
 msgid "Patient Sequence"
@@ -3752,7 +3752,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.sequences,patient_evaluation_sequence:"
 msgid "Patient Evaluation Sequence"
-msgstr "诊断序列"
+msgstr "患者评估序列"
 
 msgctxt "field:gnuhealth.sequences,patient_sequence:"
 msgid "Patient Sequence"
@@ -3792,7 +3792,7 @@ msgstr "创建用户"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,evaluation:"
 msgid "Evaluation"
-msgstr "诊断"
+msgstr "评估"
 
 msgctxt "field:gnuhealth.signs_and_symptoms,id:"
 msgid "ID"
@@ -4736,7 +4736,7 @@ msgstr "采取的行动"
 msgctxt "help:gnuhealth.patient.evaluation,appointment:"
 msgid ""
 "Enter or select the date / ID of the appointment related to this evaluation"
-msgstr "输入或选择与此诊断相对应的预约日期或预约编号"
+msgstr "输入或选择与此评估相对应的预约日期或预约编号"
 
 msgctxt "help:gnuhealth.patient.evaluation,bmi:"
 msgid "Body mass index"
@@ -4762,11 +4762,11 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,code:"
 msgid "Unique code that         identifies the evaluation"
-msgstr "诊断编号，不能重复"
+msgstr "评估编号，不能重复"
 
 msgctxt "help:gnuhealth.patient.evaluation,computed_age:"
 msgid "Computed patient age at the moment of the evaluation"
-msgstr "患者下诊断时的年龄"
+msgstr "评估时患者的年龄"
 
 msgctxt "help:gnuhealth.patient.evaluation,dehydration:"
 msgid ""
@@ -4803,7 +4803,7 @@ msgstr "患者离院原因"
 
 msgctxt "help:gnuhealth.patient.evaluation,evaluation_length:"
 msgid "Duration of the evaluation"
-msgstr "诊断持续时间"
+msgstr "评估持续时间"
 
 msgctxt "help:gnuhealth.patient.evaluation,glycemia:"
 msgid ""
@@ -4830,7 +4830,7 @@ msgid ""
 "might or might not be the same that signs and finishes the evaluation.The "
 "evaluation remains in progress state until it is signed, when it becomes "
 "read-only"
-msgstr "首诊医师，与完成诊断和签名的医师可能相同也可能不同，签名之前，诊断会处于正在进行的状态，签名之后，诊断就无法更改了"
+msgstr "发起评估医师，与完成评估和签名的医师可能相同也可能不同，签名之前，评估会处于正在进行的状态，签名之后，评估就无法更改了"
 
 msgctxt "help:gnuhealth.patient.evaluation,height:"
 msgid "Height in centimeters"
@@ -4917,11 +4917,11 @@ msgstr "患者其他疾病"
 
 msgctxt "help:gnuhealth.patient.evaluation,signed_by:"
 msgid "Health Professional that finished the patient evaluation"
-msgstr "完成诊断的医务人员"
+msgstr "完成评估的医务人员"
 
 msgctxt "help:gnuhealth.patient.evaluation,signs_and_symptoms:"
 msgid "Enter the Signs and Symptoms for the patient in this evaluation."
-msgstr "输入诊断时的症状和体征。"
+msgstr "输入评估时的症状和体征。"
 
 msgctxt "help:gnuhealth.patient.evaluation,systolic:"
 msgid "Systolic pressure expressed in mmHg"
@@ -8941,7 +8941,7 @@ msgstr "患者心电图"
 
 msgctxt "model:gnuhealth.patient.evaluation,name:"
 msgid "Patient Evaluation"
-msgstr "诊断"
+msgstr "患者评估"
 
 msgctxt "model:gnuhealth.patient.medication,name:"
 msgid "Patient Medication"
@@ -9289,7 +9289,7 @@ msgstr "病人疫苗接种信息"
 
 msgctxt "model:ir.action,name:act_app_evaluation"
 msgid "Patient Evaluation"
-msgstr "诊断"
+msgstr "患者评估"
 
 msgctxt "model:ir.action,name:act_appointment_form1"
 msgid "Appointments"
@@ -9329,7 +9329,7 @@ msgstr "疾病"
 
 msgctxt "model:ir.action,name:act_create_patient_evaluation"
 msgid "Create Patient Evaluation"
-msgstr "新建诊断"
+msgstr "新建患者评估"
 
 msgctxt "model:ir.action,name:act_death_cert_form"
 msgid "Death certificates"
@@ -9345,7 +9345,7 @@ msgstr "心电图"
 
 msgctxt "model:ir.action,name:act_evaluation_form1"
 msgid "Evaluations"
-msgstr "诊断"
+msgstr "评估"
 
 msgctxt "model:ir.action,name:act_medicament_by_category"
 msgid "Medicament by Category"
@@ -9425,7 +9425,7 @@ msgstr "疾病分类"
 
 msgctxt "model:ir.action,name:action_gnuhealth_patient_evaluation_view"
 msgid "Patient Evaluations [readonly]"
-msgstr "诊断[只读]"
+msgstr "患者评估[只读]"
 
 msgctxt "model:ir.action,name:action_gnuhealth_patient_view"
 msgid "Patients"
@@ -9557,7 +9557,7 @@ msgstr "健康状况"
 
 msgctxt "model:ir.action,name:report_patient_evaluation"
 msgid "Patient Evaluation Summary"
-msgstr "诊断总结"
+msgstr "患者评估总结"
 
 msgctxt "model:ir.action,name:report_patient_medication"
 msgid "Medications"
@@ -9609,7 +9609,7 @@ msgstr "患者"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_patient_evaluation"
 msgid "Patient Evaluation"
-msgstr "诊断"
+msgstr "患者评估"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_prescription"
 msgid "Prescription"
@@ -9625,7 +9625,7 @@ msgstr "患者"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_patient_evaluation"
 msgid "Patient Evaluation"
-msgstr "诊断"
+msgstr "患者评估"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_prescription"
 msgid "Prescription"
@@ -9853,7 +9853,7 @@ msgstr "死亡证明"
 
 msgctxt "model:ir.ui.menu,name:menu_gnuhealth_patient_evaluation_list"
 msgid "Patient Evaluations [readonly]"
-msgstr "诊断[只读]"
+msgstr "患者评估[只读]"
 
 msgctxt "model:ir.ui.menu,name:menu_gnuhealth_procedure_list"
 msgid "Procedures"
@@ -10148,7 +10148,7 @@ msgstr "人种:"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Evaluation Digital Signature"
-msgstr "诊断数字签名"
+msgstr "评估数字签名"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "GCS"
@@ -11160,7 +11160,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Clinic"
-msgstr "门诊"
+msgstr "诊所"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Doctor office"
@@ -11172,7 +11172,7 @@ msgstr "综合医院"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Hospice"
-msgstr "临终关怀"
+msgstr "临终安养院"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Nursing Home"
@@ -11180,7 +11180,7 @@ msgstr "护士办公室"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Primary Care Center"
-msgstr "初级保健中心"
+msgstr "初级卫生保健中心"
 
 msgctxt "selection:gnuhealth.institution,institution_type:"
 msgid "Rural facility"
@@ -12558,7 +12558,7 @@ msgstr "怀孕"
 
 msgctxt "view:gnuhealth.patient.disease:"
 msgid "Related Evaluations"
-msgstr "相关诊断"
+msgstr "相关评估"
 
 msgctxt "view:gnuhealth.patient.disease:"
 msgid "Therapy"
@@ -12586,15 +12586,15 @@ msgstr "日期"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Discharge"
-msgstr "诊断结束或患者离院"
+msgstr "评估结束或患者离院"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Discharge patient / End this evaluation ?"
-msgstr "患者离院 / 结束此次诊断？"
+msgstr "患者离院 / 结束此次评估？"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Discharge patient / end this evaluation"
-msgstr "患者离院/ 结束此次诊断"
+msgstr "患者离院/ 结束此次评估"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Extra Info"
