@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -24,7 +23,7 @@ from trytond.model import ModelView, ModelSQL, fields, Unique
 from trytond.pyson import Eval
 from trytond.pool import Pool
 from uuid import uuid4
-
+from trytond.modules.health.core import get_institution
 
 __all__ = ['DiseaseGene', 'ProteinDisease', 'GeneVariant',
            'GeneVariantPhenotype',
@@ -312,9 +311,7 @@ class PatientGeneticRisk(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @classmethod
     def create_genetics_pol(cls, genetic_info):

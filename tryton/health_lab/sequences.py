@@ -35,13 +35,13 @@ from trytond.tools.multivalue import migrate_property
 lab_request_sequence = fields.Many2One(
     'ir.sequence', 'Lab request sequence', required=True,
     domain=[('sequence_type', '=', Id(
-        'health', 'seq_type_gnuhealth_lab_request'))])
+        'health_lab', 'seq_type_gnuhealth_lab_request'))])
 
 
 lab_test_sequence = fields.Many2One(
     'ir.sequence', 'Lab test sequence', required=True,
     domain=[('sequence_type', '=', Id(
-        'health', 'seq_type_gnuhealth_lab_test'))])
+        'health_lab', 'seq_type_gnuhealth_lab_test'))])
 
 # GNU HEALTH SEQUENCES
 class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, MultiValueMixin):

@@ -31,6 +31,7 @@ from trytond import backend
 from trytond.tools.multivalue import migrate_property
 from trytond.i18n import gettext
 from trytond.pyson import Id
+from trytond.modules.health.core import get_institution
 
 from .exceptions import (
     ServiceAlreadyInvoiced, NoServiceAssociated, NoProductAssociated,
@@ -96,9 +97,7 @@ class HealthService(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @classmethod
     @ModelView.button
@@ -248,11 +247,6 @@ class PatientEvaluation(ModelSQL, ModelView):
 
     product = fields.Many2One('product.product', 'Product')
 
-    """
-    @staticmethod
-    def default_product():
-        return get_institution()
-    """
 
     @classmethod
     def __setup__(cls):

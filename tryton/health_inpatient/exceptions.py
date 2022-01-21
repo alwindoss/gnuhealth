@@ -7,29 +7,38 @@ from trytond.model.exceptions import ValidationError
 class NoAssociatedHealthProfessional(ValidationError):
     pass
 
-class BedIsNotAvailable(UserError):
-    pass
 
 class DischargeReasonNeeded(UserError):
     pass
 
+
 class DischargeBeforeAdmission(UserError):
     pass
 
-class DestinationBedNotavailable(UserError):
+
+class BedIsNotAvailable(UserError):
     pass
+
+
+class DestinationBedNotAvailable(UserError):
+    pass
+
 
 class NeedTimeZone(UserError):
     pass
 
+
 class AdmissionMustBeToday(UserError):
     pass
+
 
 class ManyRecordsChosen(UserError):
     pass
 
+
 class NoRecordSelected(UserError):
     pass
+
 
 class SpecialMealNeeds(UserWarning):
     pass
