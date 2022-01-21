@@ -31,7 +31,7 @@ from trytond.pool import Pool
 from trytond import backend
 from trytond.tools.multivalue import migrate_property
 from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
-
+from trytond.modules.health.core import get_health_professional
 
 __all__ = [
     'PatientData', 'TestType', 'Lab',
@@ -272,7 +272,7 @@ class GnuHealthTestCritearea(ModelSQL, ModelView):
 
 
 class GnuHealthPatientLabTest(ModelSQL, ModelView):
-    'Patient Lab Test'
+    'Lab Test Request'
     __name__ = 'gnuhealth.patient.lab.test'
 
     name = fields.Many2One('gnuhealth.lab.test_type', 'Test Type',
@@ -286,8 +286,8 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
         ], 'State', readonly=True, select=True)
     patient_id = fields.Many2One('gnuhealth.patient', 'Patient', required=True,
      select=True)
-    doctor_id = fields.Many2One('gnuhealth.healthprofessional', 'Doctor',
-        help="Doctor who Request the lab test.", select=True)
+    doctor_id = fields.Many2One('gnuhealth.healthprofessional', 'Health prof.',
+        help="Health professional who requests the lab test.", select=True)
     context = fields.Many2One('gnuhealth.pathology', 'Context',
         help="Health context for this order. It can be a suspected or"
              " existing health condition, a regular health checkup, ...",
@@ -312,19 +312,7 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
 
     @staticmethod
     def default_doctor_id():
-        User = Pool().get('res.user')
-        user = User(Transaction().user)
-        uid = int(user.id)
-
-        parties = Pool().get('party.party').search([
-                ('internal_user', '=', uid)])
-        if parties:
-            doctors = Pool().get('gnuhealth.healthprofessional').search([
-                    ('name', '=', parties[0].id)])
-            if doctors:
-                return doctors[0].id
-        else:
-            return False
+        return get_health_professional()
 
     @classmethod
     def generate_code(cls, **pattern):

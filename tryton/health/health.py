@@ -3180,9 +3180,7 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @classmethod
     def __setup__(cls):
@@ -3952,9 +3950,7 @@ class PatientVaccination(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
@@ -5441,7 +5437,7 @@ class Help(ModelSQL, ModelView):
 
     name = fields.Char("Code", required=True, help="Unique help code")
     description = fields.Char(
-        "Description", 
+        "Description",
         help="Short description", required=True)
     category = fields.Char("Category")
     package = fields.Many2One("ir.module", "Package")

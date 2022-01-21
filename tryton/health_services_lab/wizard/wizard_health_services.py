@@ -45,13 +45,17 @@ class RequestPatientLabTest(Wizard):
     'Request Patient Lab Test'
     __name__ = 'gnuhealth.patient.lab.test.request'
 
+    def generate_code(self, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'lab_request_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
     def transition_request(self):
         PatientLabTest = Pool().get('gnuhealth.patient.lab.test')
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
-        config = Config(1)
-        request_number = Sequence.get_id(config.lab_request_sequence.id)
+        request_number = self.generate_code()
         lab_tests = []
         for test in self.start.tests:
             lab_test = {}
@@ -60,6 +64,8 @@ class RequestPatientLabTest(Wizard):
             lab_test['patient_id'] = self.start.patient.id
             if self.start.doctor:
                 lab_test['doctor_id'] = self.start.doctor.id
+            if self.start.context:
+                lab_test['context'] = self.start.context.id
             lab_test['date'] = self.start.date
             lab_test['urgent'] = self.start.urgent
 
