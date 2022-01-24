@@ -23,6 +23,7 @@
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.pyson import Eval, Equal
 from trytond.pool import Pool
+from trytond.i18n import gettext
 
 from .exceptions import (NoServiceAssociated)
 
