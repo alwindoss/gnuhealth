@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -29,6 +28,12 @@ from uuid import uuid4
 from trytond.rpc import RPC
 from datetime import datetime, date
 from trytond.modules.health.core import get_institution
+from trytond.i18n import gettext
+
+from .exceptions import (
+    NeedLoginCredentials, ServerAuthenticationError,
+    ThalamusConnectionError, ThalamusConnectionOK,
+    NoInstitution)
 
 __all__ = [
     'FederationNodeConfig', 'FederationQueue', 'FederationObject',
@@ -120,7 +125,9 @@ class FederationNodeConfig(ModelSingleton, ModelSQL, ModelView):
             protocol = 'http://'
 
         if (not user or not password):
-            cls.raise_user_error("Please setup the login credentials")
+            raise NeedLoginCredentials(
+                gettext('health_federation.need_login_credentials')
+                )
 
         url = protocol + host + ':' + str(port) + '/people/' + user
 
@@ -130,13 +137,19 @@ class FederationNodeConfig(ModelSingleton, ModelSQL, ModelView):
                 auth=(user, password), verify=verify_ssl)
 
         except:
-            cls.raise_user_error("ERROR authenticating to Server")
+            raise ServerAuthenticationError(
+                gettext('health_federation.server_authentication_error')
+                )
 
         if conn:
-            cls.raise_user_error("Connection to Thalamus Server OK !")
+            raise ThalamusConnectionOK(
+                gettext('health_federation.thalamus_connection_ok')
+                )
 
         else:
-            cls.raise_user_error("ERROR authenticating to Server")
+            raise ThalamusConnectionError(
+                gettext('health_federation.thalamus_connection_error')
+                )
 
     @classmethod
     def get_conn_params(cls):
@@ -214,8 +227,9 @@ class FederationQueue(ModelSQL, ModelView):
             institution_code = HealthInst(institution).code
 
         else:
-            FederationQueue.raise_user_error(
-                "You need to create a health Institution first")
+            raise NoInstitution(
+                gettext('health_federation.no_institution')
+                )
 
         return institution_code
 

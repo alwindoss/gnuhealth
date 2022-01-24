@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- This file is part of GNU Health.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_need_login_credentials">
+            <field name="text">SM-FEDERATION-0001: Please setup the login credentials</field>
+        </record>
+        <record model="ir.message" id="msg_server_authentication_error">
+            <field name="text">SM-FEDERATION-0002: ERROR authenticating to Server</field>
+        </record>
+        <record model="ir.message" id="msg_thalamus_connection_ok">
+            <field name="text">SM-FEDERATION-0003: Connection to Thalamus Server OK!</field>
+        </record>
+        <record model="ir.message" id="msg_thalamus_connection_error">
+            <field name="text">SM-FEDERATION-0004: Thalamus Connection error</field>
+        </record>
+        <record model="ir.message" id="msg_no_institution">
+            <field name="text">SM-FEDERATION-0005: You need to create an institution</field>
+        </record>
+    </data>
+</tryton>
