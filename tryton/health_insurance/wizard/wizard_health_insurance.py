@@ -25,7 +25,8 @@ import decimal
 from trytond.wizard import Wizard
 from trytond.transaction import Transaction
 from trytond.pool import Pool
-
+from trytond.i18n import gettext
+from ..exceptions import (ServiceInvoiced, NoInvoiceAddress, NoPaymentTerm)
 
 __all__ = ['CreateServiceInvoice']
 
@@ -80,7 +81,9 @@ class CreateServiceInvoice(Wizard):
         # Invoice Header
         for service in services:
             if service.state == 'invoiced':
-                self.raise_user_error('duplicate_invoice')
+                raise ServiceInvoiced(
+                    gettext('health_insurance.msg_service_invoiced')
+                    )
             if service.invoice_to:
                 party = service.invoice_to
             else:
@@ -117,12 +120,17 @@ class CreateServiceInvoice(Wizard):
 
             party_address = Party.address_get(party, type='invoice')
             if not party_address:
-                self.raise_user_error('no_invoice_address')
+                raise NoInvoiceAddress(
+                    gettext('health_insurance.msg_no_invoice_address')
+                    )
+
             invoice_data['invoice_address'] = party_address.id
             invoice_data['reference'] = service.name
 
             if not party.customer_payment_term:
-                self.raise_user_error('no_payment_term')
+                raise NoPaymentTerm(
+                    gettext('health_insurance.msg_no_payment_term')
+                    )
 
             invoice_data['payment_term'] = party.customer_payment_term.id
 
