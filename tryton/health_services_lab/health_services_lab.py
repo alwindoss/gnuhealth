@@ -23,7 +23,9 @@
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.pyson import Eval, Equal
 from trytond.pool import Pool
+from trytond.i18n import gettext
 
+from .exceptions import (NoServiceAssociated)
 
 __all__ = ['PatientLabTestRequest']
 
@@ -61,7 +63,9 @@ class PatientLabTestRequest(ModelSQL, ModelView):
         laborder = laborders[0]
 
         if not laborder.service:
-            cls.raise_user_error("Need to associate a service !")
+            raise NoServiceAssociated(
+                gettext('health_services_lab.msg_no_service_associated')
+                )
 
         service_data = {}
         service_lines = []

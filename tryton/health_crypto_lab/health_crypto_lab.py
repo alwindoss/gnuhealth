@@ -168,9 +168,6 @@ class LabTest(ModelSQL, ModelView):
         # Validate / generate digest for the document
         # and write the name of the signing health professional
         hp = get_health_professional()
-        if not hp:
-            cls.raise_user_error(
-                "No health professional associated to this user !")
 
         serial_doc = cls.get_serial(document)
 

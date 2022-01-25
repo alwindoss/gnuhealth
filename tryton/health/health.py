@@ -53,7 +53,9 @@ from trytond.i18n import gettext
 from .exceptions import (
     WrongDateofBirth, DateHealedBeforeDx, EndTreatmentDateBeforeStart,
     MedEndDateBeforeStart, NextDoseBeforeFirst, DrugPregnancySafetyCheck,
-    EvaluationEndBeforeStart, NoAssociatedHealthProfessional
+    EvaluationEndBeforeStart, MustBeAPerson, NoAssociatedHealthProfessional,
+    DupOfficialName, FedAccountMismatch, BirthCertDateMismatch,
+    CanNotModifyVaccination
     )
 
 from .core import (get_institution, compute_age_from_dates,
@@ -843,9 +845,9 @@ class Party(ModelSQL, ModelView):
         # are unchecked when is_person is False
 
         if not self.is_person and (self.is_patient or self.is_healthprof):
-            self.raise_user_error(
-                "The Person field must be set if the party is a health"
-                " professional or a patient")
+            raise MustBeAPerson(
+                gettext('health.msg_must_be_a_person')
+                )
 
     def validate_official_name(self):
         # Only allow one official name on the party name
@@ -854,8 +856,9 @@ class Party(ModelSQL, ModelView):
             [("party", "=", self.id), ("use", "=", 'official')],)
 
         if (officialnames > 1):
-            self.raise_user_error(
-                "The person can have only one official name")
+            raise DupOfficialName(
+                gettext('health.msg_dup_official_name')
+                )
 
     @classmethod
     def view_attributes(cls):
@@ -1049,8 +1052,9 @@ class PageOfLife(ModelSQL, ModelView):
 
     def validate_account(self):
         if (self.person.federation_account != self.federation_account):
-            self.raise_user_error(
-                "The account differs from the person federation account !")
+            raise FedAccountMismatch(
+                gettext('health.msg_fed_account_mismatch')
+                )
 
     @classmethod
     def create(cls, vlist):
@@ -2396,9 +2400,6 @@ class BirthCertExtraInfo (ModelSQL, ModelView):
         # and write the name of the certifying health professional
 
         signing_hp = get_health_professional()
-        if not signing_hp:
-            cls.raise_user_error(
-                "No health professional associated to this user !")
 
         cls.write(certificates, {
             'state': 'signed',
@@ -2476,9 +2477,6 @@ class DeathCertExtraInfo (ModelSQL, ModelView):
         party = []
 
         signing_hp = get_health_professional()
-        if not signing_hp:
-            cls.raise_user_error(
-                "No health professional associated to this user !")
 
         cls.write(certificates, {
             'state': 'signed',
@@ -2683,8 +2681,9 @@ class BirthCertificate (ModelSQL, ModelView):
 
     def validate_dob(self):
         if (self.name.dob != self.dob):
-            self.raise_user_error(
-                "The date on the Party differs from the certificate !")
+            raise BirthCertDateMismatch(
+                gettext('health.birth_cert_date_mismatch')
+                )
 
 
 class DeathCertificate (ModelSQL, ModelView):
@@ -3996,9 +3995,9 @@ class PatientVaccination(ModelSQL, ModelView):
     def write(cls, vaccinations, vals):
         # Don't allow to modify the record if the vaccination has been signed
         if vaccinations[0].state == 'done':
-            cls.raise_user_error(
-                "This vaccination is at state Done\n"
-                "You can no longer modify it.")
+            raise CanNotModifyVaccination(
+                gettext('health.can_not_modify_vaccination')
+                )
         return super(PatientVaccination, cls).write(vaccinations, vals)
 
     @classmethod
@@ -4909,7 +4908,9 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
 
     def check_health_professional(self):
         if not self.healthprof:
-            self.raise_user_error('health_professional_warning')
+            raise NoAssociatedHealthProfessional(gettext(
+                ('health.msg_no_associated_health_professional'))
+            )
 
     @staticmethod
     def default_healthprof():
