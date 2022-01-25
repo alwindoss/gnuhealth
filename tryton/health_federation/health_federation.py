@@ -126,7 +126,7 @@ class FederationNodeConfig(ModelSingleton, ModelSQL, ModelView):
 
         if (not user or not password):
             raise NeedLoginCredentials(
-                gettext('health_federation.need_login_credentials')
+                gettext('health_federation.msg_need_login_credentials')
                 )
 
         url = protocol + host + ':' + str(port) + '/people/' + user
@@ -138,17 +138,17 @@ class FederationNodeConfig(ModelSingleton, ModelSQL, ModelView):
 
         except:
             raise ServerAuthenticationError(
-                gettext('health_federation.server_authentication_error')
+                gettext('health_federation.msg_server_authentication_error')
                 )
 
         if conn:
             raise ThalamusConnectionOK(
-                gettext('health_federation.thalamus_connection_ok')
+                gettext('health_federation.msg_thalamus_connection_ok')
                 )
 
         else:
             raise ThalamusConnectionError(
-                gettext('health_federation.thalamus_connection_error')
+                gettext('health_federation.msg_thalamus_connection_error')
                 )
 
     @classmethod
@@ -228,7 +228,7 @@ class FederationQueue(ModelSQL, ModelView):
 
         else:
             raise NoInstitution(
-                gettext('health_federation.no_institution')
+                gettext('health_federation.msg_no_institution')
                 )
 
         return institution_code
