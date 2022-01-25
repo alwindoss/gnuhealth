@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 08:16+0000\n"
-"PO-Revision-Date: 2022-01-22 05:54+0000\n"
+"PO-Revision-Date: 2022-01-25 11:04+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -739,7 +739,7 @@ msgstr "评估"
 
 msgctxt "field:gnuhealth.directions,procedure:"
 msgid "Procedure"
-msgstr "手术操作"
+msgstr "医学操作"
 
 msgctxt "field:gnuhealth.directions,rec_name:"
 msgid "Record Name"
@@ -2607,7 +2607,7 @@ msgstr "疾病诊断"
 
 msgctxt "field:gnuhealth.patient.disease,pcs_code:"
 msgid "Code"
-msgstr "手术操作代码"
+msgstr "医学操作代码"
 
 msgctxt "field:gnuhealth.patient.disease,pregnancy_warning:"
 msgid "Pregnancy warning"
@@ -3384,7 +3384,7 @@ msgstr "显性性状"
 
 msgctxt "field:gnuhealth.pol,procedure:"
 msgid "Procedure"
-msgstr "手术操作"
+msgstr "医学操作"
 
 msgctxt "field:gnuhealth.pol,procedure_code:"
 msgid "Procedure Code"
@@ -3392,7 +3392,7 @@ msgstr "代码"
 
 msgctxt "field:gnuhealth.pol,procedure_text:"
 msgid "Procedure"
-msgstr "手术操作"
+msgstr "医学操作"
 
 msgctxt "field:gnuhealth.pol,rec_name:"
 msgid "Record Name"
@@ -4695,7 +4695,7 @@ msgstr "疾病诊断"
 
 msgctxt "help:gnuhealth.patient.disease,pcs_code:"
 msgid "Procedure code, for example, ICD-10-PCS Code 7-character string"
-msgstr "手术操作代码， 例如：ICD-10-PCS代码，7个字符组成的字符串"
+msgstr "医学操作代码， 例如：ICD-10-PCS代码，7个字符组成的字符串"
 
 msgctxt "help:gnuhealth.patient.disease,short_comment:"
 msgid ""
@@ -8969,7 +8969,7 @@ msgstr "处方单"
 
 msgctxt "model:gnuhealth.procedure,name:"
 msgid "Medical Procedures"
-msgstr "手术操作"
+msgstr "医学操作"
 
 msgctxt "model:gnuhealth.secondary_condition,name:"
 msgid "Secondary Conditions"
@@ -9437,7 +9437,7 @@ msgstr "处方"
 
 msgctxt "model:ir.action,name:action_gnuhealth_procedure_view"
 msgid "Procedures"
-msgstr "手术操作"
+msgstr "医学操作"
 
 msgctxt "model:ir.action,name:appointments_report_open"
 msgid "Appointments with Dx Report"
@@ -9773,7 +9773,7 @@ msgstr "疾病诊断"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_procedure"
 msgid "Procedures"
-msgstr "手术操作"
+msgstr "医学操作"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_specialty"
 msgid "Medical Specialties"
@@ -9857,7 +9857,7 @@ msgstr "患者评估[只读]"
 
 msgctxt "model:ir.ui.menu,name:menu_gnuhealth_procedure_list"
 msgid "Procedures"
-msgstr "手术操作"
+msgstr "医学操作"
 
 msgctxt "model:ir.ui.menu,name:menu_people"
 msgid "People"
@@ -11974,7 +11974,7 @@ msgstr "处方"
 
 msgctxt "selection:gnuhealth.pol,medical_context:"
 msgid "Procedure"
-msgstr "手术操作"
+msgstr "医学操作"
 
 msgctxt "selection:gnuhealth.pol,medical_context:"
 msgid "Surgery"
