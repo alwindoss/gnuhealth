@@ -24,7 +24,8 @@ from trytond.model import ModelView, fields
 from trytond.wizard import Wizard, StateTransition, StateView, Button
 from trytond.transaction import Transaction
 from trytond.pool import Pool
-
+from trytond.i18n import gettext
+from ..exceptions import LabOrderExists
 
 __all__ = [
     'CreateLabTestOrderInit', 'CreateLabTestOrder', 'RequestTest',
@@ -66,8 +67,9 @@ class CreateLabTestOrder(Wizard):
             test_report_data = {}
 
             if lab_test_order.state == 'ordered':
-                self.raise_user_error(
-                    "The Lab test order is already created")
+                raise LabOrderExists(
+                    gettext('health_lab.msg_lab_order_exists')
+                    )
 
             test_report_data['test'] = lab_test_order.name.id
             test_report_data['patient'] = lab_test_order.patient_id.id

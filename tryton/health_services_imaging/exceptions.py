@@ -4,21 +4,7 @@ from trytond.exceptions import UserError
 from trytond.model.exceptions import ValidationError
 
 
-class DisctountPctOutOfRange(ValidationError):
+class NoServiceAssociated(UserError):
     pass
 
 
-class DiscountWithoutElement(ValidationError):
-    pass
-
-
-class ServiceInvoiced(UserError):
-    pass
-
-
-class NoInvoiceAddress(UserError):
-    pass
-
-
-class NoPaymentTerm(UserError):
-    pass

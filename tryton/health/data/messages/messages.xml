@@ -30,5 +30,20 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_no_appointment_selected">
             <field name="text">SM-CORE-0009: You need to select one appointment</field>
         </record>
+        <record model="ir.message" id="msg_must_be_a_person">
+            <field name="text">SM-CORE-0010: The Person field must be set if the party is a health professional or a patient</field>
+        </record>
+        <record model="ir.message" id="msg_dup_official_name">
+            <field name="text">SM-CORE-0011: The person can have only one official name</field>
+        </record>
+        <record model="ir.message" id="msg_fed_account_mismatch">
+            <field name="text">SM-CORE-0012: The account differs from the person federation account</field>
+        </record>
+        <record model="ir.message" id="msg_birth_cert_date_mismatch">
+            <field name="text">SM-CORE-0013: The date on the Party differs from the certificate</field>
+        </record>
+        <record model="ir.message" id="msg_can_not_modify_vaccination">
+            <field name="text">SM-CORE-0014: This vaccination is at state DONE. You can no longer modify it</field>
+        </record>
     </data>
 </tryton>
