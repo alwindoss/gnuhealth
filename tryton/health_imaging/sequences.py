@@ -32,17 +32,17 @@ from trytond.pool import Pool
 from trytond.tools.multivalue import migrate_property
 
 # Sequences
-imaging_request_sequence = fields.MultiValue(
+imaging_req_seq = fields.MultiValue(
     fields.Many2One(
         'ir.sequence', 'Imaging Request Sequence', required=True,
         domain=[('sequence_type', '=', Id(
-            'health', 'seq_type_gnuhealth_imaging_test_request'))]))
+            'health_imaging', 'seq_type_gnuhealth_imaging_test_request'))]))
 
 imaging_test_sequence = fields.MultiValue(
     fields.Many2One(
         'ir.sequence', 'Imaging Sequence', required=True,
         domain=[('sequence_type', '=', Id(
-            'health', 'seq_type_gnuhealth_imaging_test'))]))
+            'health_imaging', 'seq_type_gnuhealth_imaging_test'))]))
 
 
 # GNU HEALTH SEQUENCES
@@ -50,15 +50,14 @@ class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, MultiValueMixin):
     'Standard Sequences for GNU Health'
     __name__ = 'gnuhealth.sequences'
 
-    imaging_request_sequence = fields.MultiValue(
-        imaging_request_sequence)
-
+    imaging_req_seq = fields.MultiValue(
+        imaging_req_seq)
 
     imaging_test_sequence = fields.MultiValue(
         imaging_test_sequence)
 
     @classmethod
-    def default_imaging_request_sequence(cls, **pattern):
+    def default_imaging_req_seq(cls, **pattern):
         pool = Pool()
         ModelData = pool.get('ir.model.data')
         try:
@@ -76,6 +75,7 @@ class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, MultiValueMixin):
                                     'seq_gnuhealth_imaging_test')
         except KeyError:
             return None
+
 
 class _ConfigurationValue(ModelSQL):
 
@@ -101,9 +101,9 @@ class _ConfigurationValue(ModelSQL):
 
 class ImagingRequestSequence(_ConfigurationValue, ModelSQL, ValueMixin):
     'Imaging Request Sequence setup'
-    __name__ = 'gnuhealth.sequences.imaging_request_sequence'
-    imaging_request_sequence = imaging_request_sequence
-    _configuration_value_field = 'imaging_request_sequence'
+    __name__ = 'gnuhealth.sequences.imaging_req_seq'
+    imaging_req_seq = imaging_req_seq
+    _configuration_value_field = 'imaging_req_seq'
 
     @classmethod
     def check_xml_record(cls, records, values):
