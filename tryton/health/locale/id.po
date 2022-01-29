@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-01-01 23:53+0000\n"
+"PO-Revision-Date: 2022-01-30 12:53+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gnu-health/"
 "health/id/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -483,7 +483,7 @@ msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.birth_certificate,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.check_immunization_status.init,id:"
 msgid "ID"
@@ -532,15 +532,15 @@ msgstr "Perintah"
 
 msgctxt "field:gnuhealth.command,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.command,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.command,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.death_certificate,age:"
 msgid "Age"
@@ -548,7 +548,7 @@ msgstr "Usia"
 
 msgctxt "field:gnuhealth.death_certificate,autopsy:"
 msgid "Autopsy"
-msgstr ""
+msgstr "Autopsi"
 
 msgctxt "field:gnuhealth.death_certificate,certification_date:"
 msgid "Certified on"
@@ -568,15 +568,15 @@ msgstr "Negara"
 
 msgctxt "field:gnuhealth.death_certificate,country_subdivision:"
 msgid "Subdivision"
-msgstr ""
+msgstr "Subdivisi"
 
 msgctxt "field:gnuhealth.death_certificate,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Tanggal dibuat"
 
 msgctxt "field:gnuhealth.death_certificate,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat pengguna"
 
 msgctxt "field:gnuhealth.death_certificate,dod:"
 msgid "Date"
@@ -584,7 +584,7 @@ msgstr "Tanggal"
 
 msgctxt "field:gnuhealth.death_certificate,du:"
 msgid "DU"
-msgstr ""
+msgstr "DU"
 
 msgctxt "field:gnuhealth.death_certificate,id:"
 msgid "ID"
@@ -604,7 +604,7 @@ msgstr "Observasi-observasi"
 
 msgctxt "field:gnuhealth.death_certificate,operational_sector:"
 msgid "Op. Sector"
-msgstr ""
+msgstr "Op. Sektor"
 
 msgctxt "field:gnuhealth.death_certificate,place_details:"
 msgid "Details"
@@ -612,287 +612,287 @@ msgstr "Keterangan"
 
 msgctxt "field:gnuhealth.death_certificate,place_of_death:"
 msgid "Place"
-msgstr ""
+msgstr "Tempat"
 
 msgctxt "field:gnuhealth.death_certificate,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.death_certificate,signed_by:"
 msgid "Signed by"
-msgstr ""
+msgstr "Ditandangani oleh"
 
 msgctxt "field:gnuhealth.death_certificate,state:"
 msgid "State"
-msgstr ""
+msgstr "Negara"
 
 msgctxt "field:gnuhealth.death_certificate,type_of_death:"
 msgid "Type of death"
-msgstr ""
+msgstr "Jenis kematian"
 
 msgctxt "field:gnuhealth.death_certificate,underlying_conditions:"
 msgid "Underlying Conditions"
-msgstr ""
+msgstr "Kondisi yang Mendasari"
 
 msgctxt "field:gnuhealth.death_certificate,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.death_certificate,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.death_underlying_condition,condition:"
 msgid "Condition"
-msgstr ""
+msgstr "Kondisi"
 
 msgctxt "field:gnuhealth.death_underlying_condition,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Tanggal Dibuat"
 
 msgctxt "field:gnuhealth.death_underlying_condition,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.death_underlying_condition,death_certificate:"
 msgid "Certificate"
-msgstr ""
+msgstr "Sertifikat"
 
 msgctxt "field:gnuhealth.death_underlying_condition,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.death_underlying_condition,interval:"
 msgid "Interval"
-msgstr ""
+msgstr "Interval"
 
 msgctxt "field:gnuhealth.death_underlying_condition,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.death_underlying_condition,unit_of_time:"
 msgid "Unit"
-msgstr ""
+msgstr "Unit"
 
 msgctxt "field:gnuhealth.death_underlying_condition,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.death_underlying_condition,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Komentar"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,evaluation:"
 msgid "Evaluation"
-msgstr ""
+msgstr "Evaluasi"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,pathology:"
 msgid "Pathology"
-msgstr ""
+msgstr "Patologi"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.diagnostic_hypothesis,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.directions,comments:"
 msgid "Comments"
-msgstr ""
+msgstr "Komentar"
 
 msgctxt "field:gnuhealth.directions,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.directions,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.directions,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.directions,name:"
 msgid "Evaluation"
-msgstr ""
+msgstr "Evaluasi"
 
 msgctxt "field:gnuhealth.directions,procedure:"
 msgid "Procedure"
-msgstr ""
+msgstr "Prosedur"
 
 msgctxt "field:gnuhealth.directions,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.directions,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.directions,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.disease_group.members,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.disease_group.members,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.disease_group.members,disease_group:"
 msgid "Group"
-msgstr ""
+msgstr "Kelompok"
 
 msgctxt "field:gnuhealth.disease_group.members,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.disease_group.members,name:"
 msgid "Condition"
-msgstr ""
+msgstr "Kondisi"
 
 msgctxt "field:gnuhealth.disease_group.members,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.disease_group.members,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.disease_group.members,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.dose.unit,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.dose.unit,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.dose.unit,desc:"
 msgid "Description"
-msgstr ""
+msgstr "Keterangan"
 
 msgctxt "field:gnuhealth.dose.unit,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.dose.unit,name:"
 msgid "Unit"
-msgstr ""
+msgstr "Unit"
 
 msgctxt "field:gnuhealth.dose.unit,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.dose.unit,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.dose.unit,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.drug.form,code:"
 msgid "Code"
-msgstr ""
+msgstr "Kode"
 
 msgctxt "field:gnuhealth.drug.form,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.drug.form,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.drug.form,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.drug.form,name:"
 msgid "Form"
-msgstr ""
+msgstr "Bentuk"
 
 msgctxt "field:gnuhealth.drug.form,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.drug.form,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.drug.form,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.drug.route,code:"
 msgid "Code"
-msgstr ""
+msgstr "Kode"
 
 msgctxt "field:gnuhealth.drug.route,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.drug.route,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat pengguna"
 
 msgctxt "field:gnuhealth.drug.route,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.drug.route,name:"
 msgid "Route"
-msgstr ""
+msgstr "Rute"
 
 msgctxt "field:gnuhealth.drug.route,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.drug.route,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.drug.route,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.du,address_city:"
 msgid "City"
-msgstr ""
+msgstr "Kota"
 
 msgctxt "field:gnuhealth.du,address_country:"
 msgid "Country"
-msgstr ""
+msgstr "Negara"
 
 msgctxt "field:gnuhealth.du,address_district:"
 msgid "District"
-msgstr ""
+msgstr "Kecamatan"
 
 msgctxt "field:gnuhealth.du,address_municipality:"
 msgid "Municipality"
@@ -936,11 +936,11 @@ msgstr "Kamar tidur"
 
 msgctxt "field:gnuhealth.du,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.du,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.du,desc:"
 msgid "Desc"
@@ -1000,7 +1000,7 @@ msgstr "Gambar"
 
 msgctxt "field:gnuhealth.du,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.du,roof_type:"
 msgid "Roof"
@@ -1036,11 +1036,11 @@ msgstr "Air Mengalir"
 
 msgctxt "field:gnuhealth.du,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.du,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.ethnicity,code:"
 msgid "Code"
@@ -1048,11 +1048,11 @@ msgstr "Kode"
 
 msgctxt "field:gnuhealth.ethnicity,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.ethnicity,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.ethnicity,id:"
 msgid "ID"
@@ -1068,23 +1068,23 @@ msgstr "Catatan"
 
 msgctxt "field:gnuhealth.ethnicity,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.ethnicity,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tulis Tanggal"
 
 msgctxt "field:gnuhealth.ethnicity,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.family,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.family,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.family,id:"
 msgid "ID"
@@ -1104,23 +1104,23 @@ msgstr "Keluarga"
 
 msgctxt "field:gnuhealth.family,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.family,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.family,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.family_member,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.family_member,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.family_member,id:"
 msgid "ID"
@@ -1136,31 +1136,31 @@ msgstr "Pihak"
 
 msgctxt "field:gnuhealth.family_member,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Rekam"
 
 msgctxt "field:gnuhealth.family_member,role:"
 msgid "Role"
-msgstr ""
+msgstr "Peran"
 
 msgctxt "field:gnuhealth.family_member,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Tulis"
 
 msgctxt "field:gnuhealth.family_member,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.federation.country.config,code:"
 msgid "Code"
-msgstr ""
+msgstr "Kode"
 
 msgctxt "field:gnuhealth.federation.country.config,country:"
 msgid "Country"
-msgstr ""
+msgstr "Negara"
 
 msgctxt "field:gnuhealth.federation.country.config,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.federation.country.config,create_uid:"
 msgid "Create User"
