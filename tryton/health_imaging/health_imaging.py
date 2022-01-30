@@ -121,7 +121,7 @@ class ImagingTestRequest(Workflow, ModelSQL, ModelView):
         Config = Pool().get('gnuhealth.sequences')
         config = Config(1)
         sequence = config.get_multivalue(
-            'imaging_request_sequence', **pattern)
+            'imaging_req_seq', **pattern)
         if sequence:
             return sequence.get()
 
