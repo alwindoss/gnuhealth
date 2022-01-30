@@ -48,23 +48,14 @@ class Patient(ModelSQL, ModelView):
 
         patient_gender = self.gender or ''
 
-        patient_dob = self.dob or ''
+        if (self.dob):
+            patient_dob = str(self.dob) or ''
 
-        patient_id = self.puid or ''
-
-        if self.lastname:
-            patient_lastname = self.lastname + ', '
-        else:
-            patient_lastname = ''
-
-        qr_string = 'ID: ' + patient_id \
-            + '\nName: ' + patient_lastname + ',' \
-            + self.name.name \
-            + '\nPUID: ' + patient_puid \
-            + '\nGender: ' + patient_gender \
-            + '\nDoB: ' + str(patient_dob) \
-            + '\nBlood Type: ' + patient_blood_type \
-            + ' ' + patient_rh
+        qr_string = f'{patient_puid}\n' \
+            f'Name: {self.name.rec_name}\n' \
+            f'Gender: {patient_gender}\n' \
+            f'DoB: {patient_dob}\n' \
+            f'Blood Type: {patient_blood_type} {patient_rh}'
 
         qr_image = qrcode.make(qr_string)
 
@@ -112,12 +103,12 @@ class Appointment(ModelSQL, ModelView):
         if (self.speciality):
             appointment_specialty = str(self.speciality.rec_name) or ''
 
-        qr_string = 'ID: ' + appointment \
-            + '\nName: ' + appointment_patient \
-            + '\nPUID: ' + patient_puid \
-            + '\nSpecialty: ' + appointment_specialty \
-            + '\nhealth Prof: ' + appointment_healthprof or ''\
-            + '\nDate: ' + appointment_date or ''
+        qr_string = f'{appointment}\n' \
+            f'Name: {appointment_patient}\n' \
+            f'PUID: {patient_puid}\n' \
+            f'Specialty: {appointment_specialty}\n' \
+            f'Health Prof: {appointment_healthprof}\n' \
+            f'Date: {appointment_date}'
 
         qr_image = qrcode.make(qr_string)
 
@@ -162,12 +153,11 @@ class Newborn(ModelSQL, ModelView):
 
         newborn_birth_date = self.birth_date or ''
 
-        qr_string = 'PUID: ' + newborn_name \
-            + '\nMother: ' + newborn_mother_lastname \
-                    + newborn_mother_name \
-            + '\nMother\'s PUID: ' + newborn_mother_id \
-            + '\nSex: ' + newborn_sex \
-            + '\nDoB: ' + str(newborn_birth_date)
+        qr_string = f'{newborn_name}\n' \
+            f'Mother: {newborn_mother_lastname} {newborn_mother_name}\n' \
+            f'Mother\'s PUID: {newborn_mother_id}\n' \
+            f'Sex: {newborn_sex}\n' \
+            f'DoB: {str(newborn_birth_date)}'
 
         qr_image = qrcode.make(qr_string)
 
@@ -199,11 +189,11 @@ class LabTest(ModelSQL, ModelView):
 
         requestor_name = self.requestor.rec_name or ''
 
-        qr_string = 'Test ID' + labtest_id \
-            + 'Test: ' + labtest_type.rec_name \
-            + 'Patient ID: ' + patient_puid \
-            + '\nPatient: ' + patient_name \
-            + '\nRequestor: ' + requestor_name
+        qr_string = f'{labtest_id}\n' \
+            f'Test: {labtest_type.rec_name}\n' \
+            f'Patient ID: {patient_puid}\n' \
+            f'Patient: {patient_name}\n' \
+            f'Requestor: {requestor_name}'
 
         qr_image = qrcode.make(qr_string)
 
