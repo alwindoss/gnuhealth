@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- This file is part of GNU Health.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="gnuhealth.help" id="SM-CORE-0006">
+            <field name="name">SM-CORE-0006</field>
+            <field name="description">Verify and check for safety in pregnancy the prescribed drug</field>
+            <field name="package" search="[('name', '=', 'health')]"/>
+            <field name="documentation">
+<![CDATA[
+<div align="left"><b><font size="7" face="normal">Verify and check for safety in pregnancy the prescribed drug</font></b></div>
+<div><br/><br/></div>
+<div align="left"><font face="normal">During the prescription process, GNU Health checks whether the patient is in <b>childbearing</b> age.</font></div>
+<div><br/><br/></div>
+<div align="left"><font face="normal">In the case the person is a female, it will check whether they might be in childbearing age.</font></div>
+<div><br/><br/></div>
+<div align="left"><font face="normal">If that is the case, the health professional must check the field <b>"Prescription Verified"</b> to be able to proceed.</font></div>
+<div><br/><br/></div>
+<div align="left"><font face="normal">For each drug, GNU Health allows to enter the current pregnancy safety category / fetal risk (A,B,<font color="#ed333b">C,D,X</font>,N)</font></div>
+<div><br/><br/></div>
+<div align="left"><font face="normal">Command: <b>RX</b></font></div>
+]]>
+            </field>
+        </record>
+    </data>
+</tryton>
+
+
