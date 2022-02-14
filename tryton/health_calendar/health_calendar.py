@@ -24,7 +24,9 @@
 from trytond.model import fields
 from trytond.pyson import Eval, Not, Bool
 from trytond.pool import Pool, PoolMeta
+from trytond.i18n import gettext
 
+from .exceptions import (AppointmentEndDateBeforeStart)
 
 __all__ = ['User', 'Appointment']
 
@@ -49,6 +51,22 @@ class Appointment(metaclass=PoolMeta):
         help="Calendar Event",
         states={'invisible': Not(Bool(Eval('event')))})
     appointment_date_end = fields.DateTime('End Date and Time')
+
+    @classmethod
+    def validate(cls, appointments):
+        super(Appointment, cls).validate(appointments)
+        for appointment in appointments:
+            appointment.validate_appointment_dates()
+
+    def validate_appointment_dates(self):
+        if self.appointment_date_end:
+            if (self.appointment_date_end < self.appointment_date):
+                raise AppointmentEndDateBeforeStart(gettext(
+                    'health_calendar.msg_appointment_end_date_before_start',
+                    appointment_date=self.appointment_date,
+                    appointment_date_end=self.appointment_date_end
+                    )
+                )
 
     @classmethod
     def create(cls, vlist):
