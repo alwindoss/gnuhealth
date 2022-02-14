@@ -3201,40 +3201,22 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
             disease.validate_treatment_dates()
 
     def validate_disease_period(self):
-        Lang = Pool().get('ir.lang')
-
-        language, = Lang.search([
-            ('code', '=', Transaction().language),
-            ])
         if (self.healed_date and self.diagnosed_date):
             if (self.healed_date < self.diagnosed_date):
                 raise DateHealedBeforeDx(
                     gettext('health.msg_healed_before_dx',
-                            healed_date=Lang.strftime(
-                                self.healed_date,
-                                language.code, language.date),
-                            diagnosed_date=Lang.strftime(
-                                self.diagnosed_date,
-                                language.code, language.date),
+                            healed_date=self.healed_date,
+                            diagnosed_date=self.diagnosed_date,
                             )
                     )
 
     def validate_treatment_dates(self):
-        Lang = Pool().get('ir.lang')
-
-        language, = Lang.search([
-            ('code', '=', Transaction().language),
-            ])
         if (self.date_stop_treatment and self.date_start_treatment):
             if (self.date_stop_treatment < self.date_start_treatment):
                 raise EndTreatmentDateBeforeStart(
                     gettext('health.msg_end_treatment_before_start',
-                            date_stop_treatment=Lang.strftime(
-                                self.date_stop_treatment,
-                                language.code, language.date),
-                            date_start_treatment=Lang.strftime(
-                                self.date_start_treatment,
-                                language.code, language.date),
+                            date_stop_treatment=self.date_stop_treatment,
+                            date_start_treatment=self.date_start_treatment,
                             )
                     )
 
@@ -3848,19 +3830,12 @@ class PatientMedication(ModelSQL, ModelView):
             medication.validate_medication_dates()
 
     def validate_medication_dates(self):
-        Lang = Pool().get('ir.lang')
-
-        language, = Lang.search([
-            ('code', '=', Transaction().language),
-            ])
         if self.end_treatment:
             if (self.end_treatment < self.start_treatment):
                 raise MedEndDateBeforeStart(gettext(
                     'health.msg_med_end_date_before_start',
-                    start_treatment=Lang.strftime(
-                        self.start_treatment, language.code, language.date),
-                    end_treatment=Lang.strftime(
-                        self.end_treatment, language.code, language.date),
+                    start_treatment=self.start_treatment,
+                    end_treatment=self.end_treatment
                     )
                 )
 
@@ -4888,21 +4863,12 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
             evaluation.check_health_professional()
 
     def validate_evaluation_period(self):
-        Lang = Pool().get('ir.lang')
-
-        language, = Lang.search([
-            ('code', '=', Transaction().language),
-            ])
         if (self.evaluation_endtime and self.evaluation_start):
             if (self.evaluation_endtime < self.evaluation_start):
                 raise EvaluationEndBeforeStart(gettext(
                     'health.msg_end_evaluation_time_before_start',
-                    evaluation_start=Lang.strftime(
-                            self.evaluation_start, language.code,
-                            language.date),
-                    evaluation_endtime=Lang.strftime(
-                            self.evaluation_endtime, language.code,
-                            language.date),
+                    evaluation_start=self.evaluation_start,
+                    evaluation_endtime=self.evaluation_endtime,
                         )
                     )
 

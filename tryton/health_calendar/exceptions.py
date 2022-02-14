@@ -14,3 +14,7 @@ class EndDateBeforeStart(ValidationError):
 
 class PeriodTooLong(ValidationError):
     pass
+
+
+class AppointmentEndDateBeforeStart(ValidationError):
+    pass
