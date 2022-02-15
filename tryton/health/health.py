@@ -1833,6 +1833,27 @@ class HealthProfessional(ModelSQL, ModelView):
             res = self.name.rec_name
         return res
 
+    # Execute when creating a new record
+    @classmethod
+    def create(cls, vlist):
+        vlist = [x.copy() for x in vlist]
+        # Use None instead of '' to allow null values in code
+        # yet enforcing the unique constraint on the license ID
+        for values in vlist:
+            if values.get('code') == '':
+                values['code'] = None
+        return super(HealthProfessional, cls).create(vlist)
+
+    # Execute on update record
+    @classmethod
+    def write(cls, healthprofs, values):
+        # Use None instead of '' to allow null values in code
+        # yet enforcing the unique constraint on the license ID
+        for healthprof in healthprofs:
+            if values.get('code') == '':
+                values['code'] = None
+        return super(HealthProfessional, cls).write(healthprofs, values)
+
 
 class HealthProfessionalSpecialties(ModelSQL, ModelView):
     'Health Professional Specialties'
