@@ -2703,7 +2703,7 @@ class BirthCertificate (ModelSQL, ModelView):
     def validate_dob(self):
         if (self.name.dob != self.dob):
             raise BirthCertDateMismatch(
-                gettext('health.birth_cert_date_mismatch')
+                gettext('health.msg_birth_cert_date_mismatch')
                 )
 
 
