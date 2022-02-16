@@ -3451,7 +3451,7 @@ class Appointment(ModelSQL, ModelView):
 
     @staticmethod
     def default_healthprof():
-        return get_health_professional()
+        return get_health_professional(required=False)
 
     @staticmethod
     def default_urgency():
@@ -3496,7 +3496,8 @@ class Appointment(ModelSQL, ModelView):
 
         # Retrieve the health professional Main specialty, if assigned
 
-        hp_party_id = get_health_professional()
+        hp_party_id = get_health_professional(required=False)
+        hp_main_specialty = None
 
         if hp_party_id:
             # Retrieve the health professional Main specialty, if assigned
