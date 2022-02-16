@@ -126,9 +126,12 @@ def get_institution():
             return int(institution_id[0])
 
 
-def get_health_professional():
+def get_health_professional(required=True):
     # Get the professional associated to the internal user id
     # that logs into GNU Health
+    # If the method is called with the arg "required" as False, then
+    # the error message won't be shown in the case of not finding
+    # the corresponding healthprof (eg, creating a new appointment)
     cursor = Transaction().connection.cursor()
     User = Pool().get('res.user')
     user = User(Transaction().user)
@@ -144,6 +147,7 @@ def get_health_professional():
         if (healthprof_id):
             return int(healthprof_id[0])
     else:
-        raise NoAssociatedHealthProfessional(gettext(
-            ('health.msg_no_associated_health_professional'))
-        )
+        if required:
+            raise NoAssociatedHealthProfessional(gettext(
+                ('health.msg_no_associated_health_professional'))
+            )
