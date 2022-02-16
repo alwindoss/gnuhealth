@@ -110,37 +110,40 @@ class DomiciliaryUnit(ModelSQL, ModelView):
         du_addr = ''
         # Street
         if (self.address_street):
-            du_addr = str(self.address_street) + ' ' + \
-                str(self.address_street_number) + "\n"
+            du_addr = f"{self.address_street} {self.address_street_number} " \
+                f"{self.address_street_bis}\n"
+
+        if (self.address_city):
+            du_addr = f"{du_addr}{self.address_city}\n"
 
         # Grab the parent subdivisions
         if (self.address_subdivision):
-            du_addr = du_addr + \
-                str(self.get_parent(subdivision=self.address_subdivision))
+            du_addr = f"{du_addr}\n" \
+                f"{self.get_parent(subdivision=self.address_subdivision)}"
 
         # Zip Code
         if (self.address_zip):
-            du_addr = du_addr + " - " + self.address_zip
+            du_addr = f"{du_addr} - {self.address_zip}"
 
         # Country
         if (self.address_country):
-            du_addr = du_addr + "\n" + self.address_country.rec_name
+            du_addr = f"{du_addr}\n {self.address_country.rec_name}"
 
         return du_addr
 
     name = fields.Char('Code', required=True)
     desc = fields.Char('Desc')
     address_street = fields.Char('Street')
-    address_street_number = fields.Integer('Number')
-    address_street_bis = fields.Char('Apartment')
+    address_street_number = fields.Char('Number')
+    address_street_bis = fields.Char('Unit')
 
     address_district = fields.Char(
         'District', help="Neighborhood, Village, Barrio....")
 
     address_municipality = fields.Char(
         'Municipality', help="Municipality, Township, county ..")
-    address_city = fields.Char('City')
-    address_zip = fields.Char('Zip Code')
+    address_city = fields.Char('City', help="City / Municipality")
+    address_zip = fields.Char('Zip')
     address_country = fields.Many2One(
         'country.country', 'Country', help='Country')
 
@@ -223,8 +226,8 @@ class DomiciliaryUnit(ModelSQL, ModelView):
     members = fields.One2Many('party.party', 'du', 'Members', readonly=True)
 
     @fields.depends('latitude', 'longitude', 'address_street',
-                    'address_street_number', 'address_district',
-                    'address_municipality', 'address_city',
+                    'address_street_bis', 'address_street_number',
+                    'address_district', 'address_municipality', 'address_city',
                     'address_zip', 'address_subdivision', 'address_country')
     def on_change_with_urladdr(self):
         # Generates the URL to be used in OpenStreetMap
@@ -247,11 +250,13 @@ class DomiciliaryUnit(ModelSQL, ModelView):
 
         else:
             state = country = postalcode = city = municipality = \
-                street = number = ''
+                street = number = unit = ''
             if self.address_street_number is not None:
-                number = str(self.address_street_number)
+                number = self.address_street_number
             if self.address_street:
                 street = self.address_street
+            if self.address_street_bis:
+                unit = self.address_street_bis
             if self.address_municipality:
                 municipality = self.address_municipality
             if self.address_city:
@@ -266,7 +271,9 @@ class DomiciliaryUnit(ModelSQL, ModelView):
             parts['netloc'] = 'nominatim.openstreetmap.org'
             parts['path'] = 'search'
             parts['query'] = urlencode(
-                {'street': ' '.join([number, street]).strip(),
+                {'street': ' '.join(
+                    [number, street]).strip(),
+                 'unit': unit,
                  'county': municipality,
                  'city': city,
                  'state': state,
