@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data noupdate="0">
+
+        <record model="gnuhealth.dentistry.procedure" id="2">
+            <field name="name">Bonding</field>
+            <field name="code">BOND</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="3">
+            <field name="name">Braces</field>
+            <field name="code">BRAC</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="4">
+            <field name="name">Implant</field>
+            <field name="code">IMPL</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="5">
+            <field name="name">Crowns</field>
+            <field name="code">CROW</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="6">
+            <field name="name">Extraction</field>
+            <field name="code">EXTR</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="7">
+            <field name="name">Dentures</field>
+            <field name="code">DENT</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="8">
+            <field name="name">Filling</field>
+            <field name="code">FILL</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="9">
+            <field name="name">Gum Surgery</field>
+            <field name="code">SURG</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="10">
+            <field name="name">Oral Examination</field>
+            <field name="code">EXAM</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="11">
+            <field name="name">Root Canal</field>
+            <field name="code">RCAN</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="12">
+            <field name="name">Sealant</field>
+            <field name="code">SEAL</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="13">
+            <field name="name">Teeth Whitening</field>
+            <field name="code">WHIT</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="14">
+            <field name="name">Veneer</field>
+            <field name="code">VENE</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="15">
+            <field name="name">Cleaning</field>
+            <field name="code">CLEANING</field>
+        </record>
+        <record model="gnuhealth.dentistry.procedure" id="16">
+            <field name="name">Cleaning and topication with fluorine</field>
+            <field name="code">CLEANFLUOR</field>
+        </record>
+
+    </data>
+</tryton>

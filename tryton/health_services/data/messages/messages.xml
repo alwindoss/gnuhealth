@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- This file is part of GNU Health.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_service_already_invoiced">
+            <field name="text">This service has been invoiced. You can no longer modify service lines</field>
+        </record>
+        <record model="ir.message" id="msg_no_service_associated">
+            <field name="text">You need to associate a service</field>
+        </record>
+        <record model="ir.message" id="msg_no_product_associated">
+            <field name="text">You need to associate a product</field>
+        </record>
+        <record model="ir.message" id="msg_no_invoice_address">
+            <field name="text">No invoice adress</field>
+        </record>
+        <record model="ir.message" id="msg_no_payment_term">
+            <field name="text">Need a user payment term</field>
+        </record>
+    </data>
+</tryton>

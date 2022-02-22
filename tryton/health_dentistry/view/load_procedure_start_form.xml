@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<form col="6" cursor="teeth">
+    <group string="Teeth" id="teeth" colspan="6" col="35">
+        <label string="Right" id="rigth1"/>
+        <label name="tooth18"/>
+        <field name="tooth18"/>
+        <label name="tooth17"/>
+        <field name="tooth17"/>
+        <label name="tooth16"/>
+        <field name="tooth16"/>
+        <label name="tooth15"/>
+        <field name="tooth15"/>
+        <label name="tooth14"/>
+        <field name="tooth14"/>
+        <label name="tooth13"/>
+        <field name="tooth13"/>
+        <label name="tooth12"/>
+        <field name="tooth12"/>
+        <label name="tooth11"/>
+        <field name="tooth11"/>
+        <label string="    " id="sep1"/>
+        <label name="tooth21"/>
+        <field name="tooth21"/>
+        <label name="tooth22"/>
+        <field name="tooth22"/>
+        <label name="tooth23"/>
+        <field name="tooth23"/>
+        <label name="tooth24"/>
+        <field name="tooth24"/>
+        <label name="tooth25"/>
+        <field name="tooth25"/>
+        <label name="tooth26"/>
+        <field name="tooth26"/>
+        <label name="tooth27"/>
+        <field name="tooth27"/>
+        <label name="tooth28"/>
+        <field name="tooth28"/>
+        <label string="Left" id="left1"/>
+        <label string="" id="rigth2"/>
+        <label name="tooth48"/>
+        <field name="tooth48"/>
+        <label name="tooth47"/>
+        <field name="tooth47"/>
+        <label name="tooth46"/>
+        <field name="tooth46"/>
+        <label name="tooth45"/>
+        <field name="tooth45"/>
+        <label name="tooth44"/>
+        <field name="tooth44"/>
+        <label name="tooth43"/>
+        <field name="tooth43"/>
+        <label name="tooth42"/>
+        <field name="tooth42"/>
+        <label name="tooth41"/>
+        <field name="tooth41"/>
+        <label string="    " id="sep2"/>
+        <label name="tooth31"/>
+        <field name="tooth31"/>
+        <label name="tooth32"/>
+        <field name="tooth32"/>
+        <label name="tooth33"/>
+        <field name="tooth33"/>
+        <label name="tooth34"/>
+        <field name="tooth34"/>
+        <label name="tooth35"/>
+        <field name="tooth35"/>
+        <label name="tooth36"/>
+        <field name="tooth36"/>
+        <label name="tooth37"/>
+        <field name="tooth37"/>
+        <label name="tooth38"/>
+        <field name="tooth38"/>
+        <label string="" id="left2"/>
+    </group>
+    <field name="include_primary" invisible="1"/>
+    <group string="Primary" id="primary" colspan="6" col="23">
+        <label string="Right" id="rigth1-des" xalign="0.0" xexpand="1"/>
+        <label name="tooth55"/>
+        <field name="tooth55"/>
+        <label name="tooth54"/>
+        <field name="tooth54"/>
+        <label name="tooth53"/>
+        <field name="tooth53"/>
+        <label name="tooth52"/>
+        <field name="tooth52"/>
+        <label name="tooth51"/>
+        <field name="tooth51"/>
+        <label string="    " id="sep1-des" xexpand="1"/>
+        <label name="tooth61"/>
+        <field name="tooth61"/>
+        <label name="tooth62"/>
+        <field name="tooth62"/>
+        <label name="tooth63"/>
+        <field name="tooth63"/>
+        <label name="tooth64"/>
+        <field name="tooth64"/>
+        <label name="tooth65"/>
+        <field name="tooth65"/>
+        <label string="Left" id="left1-des" xexpand="1"/>
+        <label string="" id="rigth2-des" xexpand="1"/>
+        <label name="tooth85"/>
+        <field name="tooth85"/>
+        <label name="tooth84"/>
+        <field name="tooth84"/>
+        <label name="tooth83"/>
+        <field name="tooth83"/>
+        <label name="tooth82"/>
+        <field name="tooth82"/>
+        <label name="tooth81"/>
+        <field name="tooth81"/>
+        <label string="    " id="sep2-des" xexpand="1"/>
+        <label name="tooth71"/>
+        <field name="tooth71"/>
+        <label name="tooth72"/>
+        <field name="tooth72"/>
+        <label name="tooth73"/>
+        <field name="tooth73"/>
+        <label name="tooth74"/>
+        <field name="tooth74"/>
+        <label name="tooth75"/>
+        <field name="tooth75"/>
+        <label string="" id="left2-des" xexpand="1"/>
+    </group>
+    <group string="Procedure" id="procedure" colspan="2" col="4">
+        <field name="procedure"/>
+    </group>
+    <group string="Surfaces" id="surfaces" colspan="4" col="12">
+        <label name="root"/>
+        <field name="root"/>
+        <label name="occlusal"/>
+        <field name="occlusal"/>
+        <label name="vestibular"/>
+        <field name="vestibular"/>
+        <label name="lingual"/>
+        <field name="lingual"/>
+        <label name="mesial"/>
+        <field name="mesial"/>
+        <label name="distal"/>
+        <field name="distal"/>
+    </group>
+</form>

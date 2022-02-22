@@ -1,0 +1,95 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-02-02 18:55+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/gnu-health/"
+"health_insurance/ar/>\n"
+"Language: ar\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.11-dev\n"
+
+msgctxt "error:gnuhealth.insurance.plan.product.policy:"
+msgid "Percentage out of range [0-100]"
+msgstr ""
+
+msgctxt "error:gnuhealth.insurance.plan.product.policy:"
+msgid "You need a product or category"
+msgstr ""
+
+msgctxt "field:gnuhealth.health_service,insurance_holder:"
+msgid "Insurance Holder"
+msgstr ""
+
+msgctxt "field:gnuhealth.health_service,insurance_plan:"
+msgid "Plan"
+msgstr ""
+
+msgctxt "field:gnuhealth.insurance.plan,product_policy:"
+msgid "Policy"
+msgstr ""
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,create_date:"
+msgid "Create Date"
+msgstr "تاريخ الإنشاء"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,create_uid:"
+msgid "Create User"
+msgstr ""
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,discount:"
+msgid "Discount"
+msgstr "خصم"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,id:"
+msgid "ID"
+msgstr ""
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,plan:"
+msgid "Plan"
+msgstr ""
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,product:"
+msgid "Product"
+msgstr ""
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,product_category:"
+msgid "Category"
+msgstr "الفئة"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,rec_name:"
+msgid "Name"
+msgstr ""
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,write_date:"
+msgid "Write Date"
+msgstr "تاريخ التحديث"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,write_uid:"
+msgid "Write User"
+msgstr ""
+
+msgctxt "help:gnuhealth.health_service,insurance_holder:"
+msgid "Insurance Policy Holder"
+msgstr ""
+
+msgctxt "help:gnuhealth.insurance.plan.product.policy,discount:"
+msgid "Discount in Percentage"
+msgstr "الخصم بالنسبة المئوية"
+
+msgctxt "model:gnuhealth.insurance.plan.product.policy,name:"
+msgid "Policy associated to the product on the insurance plan"
+msgstr ""
+
+msgctxt ""
+"model:ir.action,name:action_gnuhealth_insurance_plan_product_policy_view"
+msgid "Plan Product Policies"
+msgstr ""
+
+msgctxt ""
+"model:ir.ui.menu,name:menu_gnuhealth_insurance_plan_product_policy_list"
+msgid "Plan Product Policies"
+msgstr ""

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- This file is part of GNU Health.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_wrong_date_of_birth">
+            <field name="text">SM-CORE-0001: Wrong date of birth for a living person</field>
+        </record>
+        <record model="ir.message" id="msg_healed_before_dx">
+            <field name="text">SM-CORE-0002: The HEALED date "%(healed_date)s" is BEFORE DIAGNOSED DATE "%(diagnosed_date)s"!</field>
+        </record>
+        <record model="ir.message" id="msg_end_treatment_before_start">
+            <field name="text">SM-CORE-0003: The Treatment END DATE "%(date_stop_treatment)s" is BEFORE the start date "%(date_start_treatment)s"</field>
+        </record>
+        <record model="ir.message" id="msg_med_end_date_before_start">
+            <field name="text">SM-CORE-0004: The Medication END DATE "%(end_treatment)s" is BEFORE the start date "%(start_treatment)s"!</field>
+        </record>
+        <record model="ir.message" id="msg_next_dose_before_first">
+            <field name="text">SM-CORE-0005: The vaccine next dose is BEFORE the first one!</field>
+        </record>
+        <record model="ir.message" id="msg_drug_pregnancy_safety_check">
+            <field name="text">SM-CORE-0006: Verify and check for safety in pregnancy the prescribed drugs</field>
+        </record>
+        <record model="ir.message" id="msg_no_associated_health_professional">
+            <field name="text">SM-CORE-0007: There is no health professional associated to this user</field>
+        </record>
+        <record model="ir.message" id="msg_end_evaluation_time_before_start">
+            <field name="text">SM-CORE-0008: End time "%(evaluation_endtime)s" BEFORE evaluation start "%(evaluation_start)s"</field>
+        </record>
+        <record model="ir.message" id="msg_no_appointment_selected">
+            <field name="text">SM-CORE-0009: You need to select one appointment</field>
+        </record>
+        <record model="ir.message" id="msg_must_be_a_person">
+            <field name="text">SM-CORE-0010: The Person field must be set if the party is a health professional or a patient</field>
+        </record>
+        <record model="ir.message" id="msg_dup_official_name">
+            <field name="text">SM-CORE-0011: The person can have only one official name</field>
+        </record>
+        <record model="ir.message" id="msg_fed_account_mismatch">
+            <field name="text">SM-CORE-0012: The account differs from the person federation account</field>
+        </record>
+        <record model="ir.message" id="msg_birth_cert_date_mismatch">
+            <field name="text">SM-CORE-0013: The date on the Party differs from the certificate</field>
+        </record>
+        <record model="ir.message" id="msg_can_not_modify_vaccination">
+            <field name="text">SM-CORE-0014: This vaccination is at state DONE. You can no longer modify it</field>
+        </record>
+    </data>
+</tryton>
