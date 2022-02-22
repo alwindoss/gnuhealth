@@ -476,11 +476,6 @@ class Surgery(ModelSQL, ModelView):
             surgery.validate_surgery_period()
 
     def validate_surgery_period(self):
-        Lang = Pool().get('ir.lang')
-
-        language, = Lang.search([
-            ('code', '=', Transaction().language),
-            ])
         if (self.surgery_end_date and self.surgery_date):
             if (self.surgery_end_date < self.surgery_date):
                 raise EndDateBeforeStart(
