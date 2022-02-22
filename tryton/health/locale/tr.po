@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-01-10 22:52+0000\n"
+"PO-Revision-Date: 2022-02-22 09:58+0000\n"
 "Last-Translator: Jupe Rings <ringsjupe@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gnu-health/"
 "health/tr/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -387,7 +387,7 @@ msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.appointment.report,ref:"
 msgid "PUID"
-msgstr ""
+msgstr "PUID"
 
 msgctxt "field:gnuhealth.appointment.report,write_date:"
 msgid "Write Date"
