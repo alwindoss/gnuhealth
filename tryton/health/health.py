@@ -110,37 +110,40 @@ class DomiciliaryUnit(ModelSQL, ModelView):
         du_addr = ''
         # Street
         if (self.address_street):
-            du_addr = str(self.address_street) + ' ' + \
-                str(self.address_street_number) + "\n"
+            du_addr = f"{self.address_street} {self.address_street_number} " \
+                f"{self.address_street_bis}\n"
+
+        if (self.address_city):
+            du_addr = f"{du_addr}{self.address_city}\n"
 
         # Grab the parent subdivisions
         if (self.address_subdivision):
-            du_addr = du_addr + \
-                str(self.get_parent(subdivision=self.address_subdivision))
+            du_addr = f"{du_addr}\n" \
+                f"{self.get_parent(subdivision=self.address_subdivision)}"
 
         # Zip Code
         if (self.address_zip):
-            du_addr = du_addr + " - " + self.address_zip
+            du_addr = f"{du_addr} - {self.address_zip}"
 
         # Country
         if (self.address_country):
-            du_addr = du_addr + "\n" + self.address_country.rec_name
+            du_addr = f"{du_addr}\n {self.address_country.rec_name}"
 
         return du_addr
 
     name = fields.Char('Code', required=True)
     desc = fields.Char('Desc')
     address_street = fields.Char('Street')
-    address_street_number = fields.Integer('Number')
-    address_street_bis = fields.Char('Apartment')
+    address_street_number = fields.Char('Number')
+    address_street_bis = fields.Char('Unit')
 
     address_district = fields.Char(
         'District', help="Neighborhood, Village, Barrio....")
 
     address_municipality = fields.Char(
         'Municipality', help="Municipality, Township, county ..")
-    address_city = fields.Char('City')
-    address_zip = fields.Char('Zip Code')
+    address_city = fields.Char('City', help="City / Municipality")
+    address_zip = fields.Char('Zip')
     address_country = fields.Many2One(
         'country.country', 'Country', help='Country')
 
@@ -223,8 +226,8 @@ class DomiciliaryUnit(ModelSQL, ModelView):
     members = fields.One2Many('party.party', 'du', 'Members', readonly=True)
 
     @fields.depends('latitude', 'longitude', 'address_street',
-                    'address_street_number', 'address_district',
-                    'address_municipality', 'address_city',
+                    'address_street_bis', 'address_street_number',
+                    'address_district', 'address_municipality', 'address_city',
                     'address_zip', 'address_subdivision', 'address_country')
     def on_change_with_urladdr(self):
         # Generates the URL to be used in OpenStreetMap
@@ -247,11 +250,13 @@ class DomiciliaryUnit(ModelSQL, ModelView):
 
         else:
             state = country = postalcode = city = municipality = \
-                street = number = ''
+                street = number = unit = ''
             if self.address_street_number is not None:
-                number = str(self.address_street_number)
+                number = self.address_street_number
             if self.address_street:
                 street = self.address_street
+            if self.address_street_bis:
+                unit = self.address_street_bis
             if self.address_municipality:
                 municipality = self.address_municipality
             if self.address_city:
@@ -266,7 +271,9 @@ class DomiciliaryUnit(ModelSQL, ModelView):
             parts['netloc'] = 'nominatim.openstreetmap.org'
             parts['path'] = 'search'
             parts['query'] = urlencode(
-                {'street': ' '.join([number, street]).strip(),
+                {'street': ' '.join(
+                    [number, street]).strip(),
+                 'unit': unit,
                  'county': municipality,
                  'city': city,
                  'state': state,
@@ -1833,6 +1840,27 @@ class HealthProfessional(ModelSQL, ModelView):
             res = self.name.rec_name
         return res
 
+    # Execute when creating a new record
+    @classmethod
+    def create(cls, vlist):
+        vlist = [x.copy() for x in vlist]
+        # Use None instead of '' to allow null values in code
+        # yet enforcing the unique constraint on the license ID
+        for values in vlist:
+            if values.get('code') == '':
+                values['code'] = None
+        return super(HealthProfessional, cls).create(vlist)
+
+    # Execute on update record
+    @classmethod
+    def write(cls, healthprofs, values):
+        # Use None instead of '' to allow null values in code
+        # yet enforcing the unique constraint on the license ID
+        for healthprof in healthprofs:
+            if values.get('code') == '':
+                values['code'] = None
+        return super(HealthProfessional, cls).write(healthprofs, values)
+
 
 class HealthProfessionalSpecialties(ModelSQL, ModelView):
     'Health Professional Specialties'
@@ -2682,7 +2710,7 @@ class BirthCertificate (ModelSQL, ModelView):
     def validate_dob(self):
         if (self.name.dob != self.dob):
             raise BirthCertDateMismatch(
-                gettext('health.birth_cert_date_mismatch')
+                gettext('health.msg_birth_cert_date_mismatch')
                 )
 
 
@@ -3201,40 +3229,22 @@ class PatientDiseaseInfo(ModelSQL, ModelView):
             disease.validate_treatment_dates()
 
     def validate_disease_period(self):
-        Lang = Pool().get('ir.lang')
-
-        language, = Lang.search([
-            ('code', '=', Transaction().language),
-            ])
         if (self.healed_date and self.diagnosed_date):
             if (self.healed_date < self.diagnosed_date):
                 raise DateHealedBeforeDx(
                     gettext('health.msg_healed_before_dx',
-                            healed_date=Lang.strftime(
-                                self.healed_date,
-                                language.code, language.date),
-                            diagnosed_date=Lang.strftime(
-                                self.diagnosed_date,
-                                language.code, language.date),
+                            healed_date=self.healed_date,
+                            diagnosed_date=self.diagnosed_date,
                             )
                     )
 
     def validate_treatment_dates(self):
-        Lang = Pool().get('ir.lang')
-
-        language, = Lang.search([
-            ('code', '=', Transaction().language),
-            ])
         if (self.date_stop_treatment and self.date_start_treatment):
             if (self.date_stop_treatment < self.date_start_treatment):
                 raise EndTreatmentDateBeforeStart(
                     gettext('health.msg_end_treatment_before_start',
-                            date_stop_treatment=Lang.strftime(
-                                self.date_stop_treatment,
-                                language.code, language.date),
-                            date_start_treatment=Lang.strftime(
-                                self.date_start_treatment,
-                                language.code, language.date),
+                            date_stop_treatment=self.date_stop_treatment,
+                            date_start_treatment=self.date_start_treatment,
                             )
                     )
 
@@ -3448,7 +3458,7 @@ class Appointment(ModelSQL, ModelView):
 
     @staticmethod
     def default_healthprof():
-        return get_health_professional()
+        return get_health_professional(required=False)
 
     @staticmethod
     def default_urgency():
@@ -3493,7 +3503,8 @@ class Appointment(ModelSQL, ModelView):
 
         # Retrieve the health professional Main specialty, if assigned
 
-        hp_party_id = get_health_professional()
+        hp_party_id = get_health_professional(required=False)
+        hp_main_specialty = None
 
         if hp_party_id:
             # Retrieve the health professional Main specialty, if assigned
@@ -3848,19 +3859,12 @@ class PatientMedication(ModelSQL, ModelView):
             medication.validate_medication_dates()
 
     def validate_medication_dates(self):
-        Lang = Pool().get('ir.lang')
-
-        language, = Lang.search([
-            ('code', '=', Transaction().language),
-            ])
         if self.end_treatment:
             if (self.end_treatment < self.start_treatment):
                 raise MedEndDateBeforeStart(gettext(
                     'health.msg_med_end_date_before_start',
-                    start_treatment=Lang.strftime(
-                        self.start_treatment, language.code, language.date),
-                    end_treatment=Lang.strftime(
-                        self.end_treatment, language.code, language.date),
+                    start_treatment=self.start_treatment,
+                    end_treatment=self.end_treatment
                     )
                 )
 
@@ -4888,21 +4892,12 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
             evaluation.check_health_professional()
 
     def validate_evaluation_period(self):
-        Lang = Pool().get('ir.lang')
-
-        language, = Lang.search([
-            ('code', '=', Transaction().language),
-            ])
         if (self.evaluation_endtime and self.evaluation_start):
             if (self.evaluation_endtime < self.evaluation_start):
                 raise EvaluationEndBeforeStart(gettext(
                     'health.msg_end_evaluation_time_before_start',
-                    evaluation_start=Lang.strftime(
-                            self.evaluation_start, language.code,
-                            language.date),
-                    evaluation_endtime=Lang.strftime(
-                            self.evaluation_endtime, language.code,
-                            language.date),
+                    evaluation_start=self.evaluation_start,
+                    evaluation_endtime=self.evaluation_endtime,
                         )
                     )
 
