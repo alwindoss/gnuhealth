@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-02-23 19:59+0000\n"
+"PO-Revision-Date: 2022-02-23 22:10+0000\n"
 "Last-Translator: Lion <ringsjupe@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gnu-health/"
 "health/tr/>\n"
@@ -2780,11 +2780,11 @@ msgstr "Yaş"
 
 msgctxt "field:gnuhealth.patient.evaluation,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Tarih Oluştur"
 
 msgctxt "field:gnuhealth.patient.evaluation,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Kullanıcı Oluştur"
 
 msgctxt "field:gnuhealth.patient.evaluation,dehydration:"
 msgid "Dehydration"
@@ -2792,47 +2792,47 @@ msgstr "Dehidrasyon"
 
 msgctxt "field:gnuhealth.patient.evaluation,derived_from:"
 msgid "Derived from"
-msgstr ""
+msgstr "Ulaştı"
 
 msgctxt "field:gnuhealth.patient.evaluation,derived_to:"
 msgid "Derived to"
-msgstr ""
+msgstr "Sevk edildi"
 
 msgctxt "field:gnuhealth.patient.evaluation,diagnosis:"
 msgid "Main Condition"
-msgstr ""
+msgstr "Ana Durum"
 
 msgctxt "field:gnuhealth.patient.evaluation,diagnostic_hypothesis:"
 msgid "Hypotheses / DDx"
-msgstr ""
+msgstr "Hipotezler / DDx"
 
 msgctxt "field:gnuhealth.patient.evaluation,diastolic:"
 msgid "Diastolic Pressure"
-msgstr ""
+msgstr "Diyastolik Basınç"
 
 msgctxt "field:gnuhealth.patient.evaluation,directions:"
 msgid "Plan"
-msgstr ""
+msgstr "Plan"
 
 msgctxt "field:gnuhealth.patient.evaluation,discharge_reason:"
 msgid "Discharge Reason"
-msgstr ""
+msgstr "Deşarj Nedeni"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_endtime:"
 msgid "End"
-msgstr ""
+msgstr "Bitiş"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_length:"
 msgid "Evaluation length"
-msgstr ""
+msgstr "Değerlendirme uzunluğu"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_start:"
 msgid "Start"
-msgstr ""
+msgstr "Başlangıç"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_summary:"
 msgid "Clinical and physical"
-msgstr ""
+msgstr "Kliniksel ve fiziksel"
 
 msgctxt "field:gnuhealth.patient.evaluation,evaluation_type:"
 msgid "Type"
@@ -2852,7 +2852,7 @@ msgstr "Glikozillenmiş Hemoglobin"
 
 msgctxt "field:gnuhealth.patient.evaluation,hdl:"
 msgid "Last HDL"
-msgstr ""
+msgstr "Son HDL"
 
 msgctxt "field:gnuhealth.patient.evaluation,head_circumference:"
 msgid "Head"
@@ -2860,7 +2860,7 @@ msgstr "Baş"
 
 msgctxt "field:gnuhealth.patient.evaluation,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Sağlık Uzmanı"
 
 msgctxt "field:gnuhealth.patient.evaluation,height:"
 msgid "Height"
@@ -2872,15 +2872,15 @@ msgstr "Kalça"
 
 msgctxt "field:gnuhealth.patient.evaluation,id:"
 msgid "ID"
-msgstr ""
+msgstr "Kimlik"
 
 msgctxt "field:gnuhealth.patient.evaluation,info_diagnosis:"
 msgid "Presumptive Diagnosis: Extra Info"
-msgstr ""
+msgstr "Olası Teşhis: Ek Bilgi"
 
 msgctxt "field:gnuhealth.patient.evaluation,information_source:"
 msgid "Source"
-msgstr ""
+msgstr "Kaynak"
 
 msgctxt "field:gnuhealth.patient.evaluation,institution:"
 msgid "Institution"
@@ -2888,31 +2888,31 @@ msgstr "Kurum"
 
 msgctxt "field:gnuhealth.patient.evaluation,judgment:"
 msgid "Judgment"
-msgstr ""
+msgstr "Karar"
 
 msgctxt "field:gnuhealth.patient.evaluation,knowledge_current_events:"
 msgid "Knowledge of Current Events"
-msgstr ""
+msgstr "Güncel Olaylar Bilgisi"
 
 msgctxt "field:gnuhealth.patient.evaluation,ldl:"
 msgid "Last LDL"
-msgstr ""
+msgstr "Son LDL"
 
 msgctxt "field:gnuhealth.patient.evaluation,loc:"
 msgid "Glasgow"
-msgstr ""
+msgstr "Glasgow"
 
 msgctxt "field:gnuhealth.patient.evaluation,loc_eyes:"
 msgid "Glasgow - Eyes"
-msgstr ""
+msgstr "Glasgow - Gözler"
 
 msgctxt "field:gnuhealth.patient.evaluation,loc_motor:"
 msgid "Glasgow - Motor"
-msgstr ""
+msgstr "Glasgow - Motor"
 
 msgctxt "field:gnuhealth.patient.evaluation,loc_verbal:"
 msgid "Glasgow - Verbal"
-msgstr ""
+msgstr "Glasgow - Verbal"
 
 msgctxt "field:gnuhealth.patient.evaluation,malnutrition:"
 msgid "Malnutrition"
@@ -2928,23 +2928,23 @@ msgstr "Ruh Hali"
 
 msgctxt "field:gnuhealth.patient.evaluation,next_evaluation:"
 msgid "Next Appointment"
-msgstr ""
+msgstr "Sonraki Randevu"
 
 msgctxt "field:gnuhealth.patient.evaluation,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Notlar"
 
 msgctxt "field:gnuhealth.patient.evaluation,notes_complaint:"
 msgid "Complaint details"
-msgstr ""
+msgstr "Şikayet detayları"
 
 msgctxt "field:gnuhealth.patient.evaluation,object_recognition:"
 msgid "Object Recognition"
-msgstr ""
+msgstr "Nesne tanıma"
 
 msgctxt "field:gnuhealth.patient.evaluation,orientation:"
 msgid "Orientation"
-msgstr ""
+msgstr "Oryantasyon"
 
 msgctxt "field:gnuhealth.patient.evaluation,osat:"
 msgid "Oxygen Saturation"
@@ -2956,7 +2956,7 @@ msgstr "Hasta"
 
 msgctxt "field:gnuhealth.patient.evaluation,praxis:"
 msgid "Praxis"
-msgstr ""
+msgstr "Uygulama"
 
 msgctxt "field:gnuhealth.patient.evaluation,present_illness:"
 msgid "Present Illness"
@@ -2964,27 +2964,27 @@ msgstr "Mevcut Hastalık"
 
 msgctxt "field:gnuhealth.patient.evaluation,psychological_assessment:"
 msgid "Psychological Assessment"
-msgstr ""
+msgstr "Psikolojik Değerlendirme"
 
 msgctxt "field:gnuhealth.patient.evaluation,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.patient.evaluation,related_condition:"
 msgid "Related condition"
-msgstr ""
+msgstr "İlgili koşul"
 
 msgctxt "field:gnuhealth.patient.evaluation,reliable_info:"
 msgid "Reliable"
-msgstr ""
+msgstr "Güvenilir"
 
 msgctxt "field:gnuhealth.patient.evaluation,report_evaluation_date:"
 msgid "Evaluation Date"
-msgstr ""
+msgstr "Değerlendirme Tarihi"
 
 msgctxt "field:gnuhealth.patient.evaluation,report_evaluation_time:"
 msgid "Evaluation Time"
-msgstr ""
+msgstr "Değerlendirme Saati"
 
 msgctxt "field:gnuhealth.patient.evaluation,respiratory_rate:"
 msgid "Respiratory Rate"
@@ -2992,15 +2992,15 @@ msgstr "Solunum Hızı"
 
 msgctxt "field:gnuhealth.patient.evaluation,secondary_conditions:"
 msgid "Other Conditions"
-msgstr ""
+msgstr "Diğer Durumlar"
 
 msgctxt "field:gnuhealth.patient.evaluation,signed_by:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Sağlık Uzmanı"
 
 msgctxt "field:gnuhealth.patient.evaluation,signs_and_symptoms:"
 msgid "Signs and Symptoms"
-msgstr ""
+msgstr "Belirti ve Bulgular"
 
 msgctxt "field:gnuhealth.patient.evaluation,specialty:"
 msgid "Specialty"
@@ -3008,7 +3008,7 @@ msgstr "Uzmanlık"
 
 msgctxt "field:gnuhealth.patient.evaluation,state:"
 msgid "State"
-msgstr ""
+msgstr "Durum"
 
 msgctxt "field:gnuhealth.patient.evaluation,systolic:"
 msgid "Systolic Pressure"
@@ -3016,39 +3016,39 @@ msgstr "Sistolik Basınç"
 
 msgctxt "field:gnuhealth.patient.evaluation,tag:"
 msgid "Last TAGs"
-msgstr ""
+msgstr "Son trigliserit değeri"
 
 msgctxt "field:gnuhealth.patient.evaluation,temperature:"
 msgid "Temperature"
-msgstr ""
+msgstr "Sıcaklık"
 
 msgctxt "field:gnuhealth.patient.evaluation,tremor:"
 msgid "Tremor"
-msgstr ""
+msgstr "Titreme"
 
 msgctxt "field:gnuhealth.patient.evaluation,urgency:"
 msgid "Urgency"
-msgstr ""
+msgstr "Acillik"
 
 msgctxt "field:gnuhealth.patient.evaluation,user_id:"
 msgid "Last Changed by"
-msgstr ""
+msgstr "Son Değiştiren"
 
 msgctxt "field:gnuhealth.patient.evaluation,violent:"
 msgid "Violent Behaviour"
-msgstr ""
+msgstr "Şiddet Davranışı"
 
 msgctxt "field:gnuhealth.patient.evaluation,visit_type:"
 msgid "Visit"
-msgstr ""
+msgstr "Ziyaret"
 
 msgctxt "field:gnuhealth.patient.evaluation,vocabulary:"
 msgid "Vocabulary"
-msgstr ""
+msgstr "Kelime bilgisi"
 
 msgctxt "field:gnuhealth.patient.evaluation,wait_time:"
 msgid "Patient wait time"
-msgstr ""
+msgstr "Hasta bekleme süresi"
 
 msgctxt "field:gnuhealth.patient.evaluation,weight:"
 msgid "Weight"
@@ -3056,7 +3056,7 @@ msgstr "Ağırlık"
 
 msgctxt "field:gnuhealth.patient.evaluation,whr:"
 msgid "WHR"
-msgstr ""
+msgstr "Bel-kalça oranı"
 
 msgctxt "field:gnuhealth.patient.evaluation,write_date:"
 msgid "Write Date"
@@ -3064,39 +3064,39 @@ msgstr "Tarih Yaz"
 
 msgctxt "field:gnuhealth.patient.evaluation,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Kullanıcı Yaz"
 
 msgctxt "field:gnuhealth.patient.medication,admin_times:"
 msgid "Admin hours"
-msgstr ""
+msgstr "Yönetici süresi"
 
 msgctxt "field:gnuhealth.patient.medication,adverse_reaction:"
 msgid "Adverse Reactions"
-msgstr ""
+msgstr "Yan Etkiler"
 
 msgctxt "field:gnuhealth.patient.medication,common_dosage:"
 msgid "Frequency"
-msgstr ""
+msgstr "Sıklık"
 
 msgctxt "field:gnuhealth.patient.medication,course_completed:"
 msgid "Course Completed"
-msgstr ""
+msgstr "Kurs Tamamlandı"
 
 msgctxt "field:gnuhealth.patient.medication,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Tarih Oluştur"
 
 msgctxt "field:gnuhealth.patient.medication,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Kullanıcı Oluştur"
 
 msgctxt "field:gnuhealth.patient.medication,discontinued:"
 msgid "Discontinued"
-msgstr ""
+msgstr "İptal edildi"
 
 msgctxt "field:gnuhealth.patient.medication,discontinued_reason:"
 msgid "Reason for discontinuation"
-msgstr ""
+msgstr "İptale edilme sebebi"
 
 msgctxt "field:gnuhealth.patient.medication,dose:"
 msgid "Dose"
@@ -3104,7 +3104,7 @@ msgstr "Doz"
 
 msgctxt "field:gnuhealth.patient.medication,dose_unit:"
 msgid "dose unit"
-msgstr ""
+msgstr "Birim doz"
 
 msgctxt "field:gnuhealth.patient.medication,duration:"
 msgid "Treatment duration"
@@ -3112,51 +3112,51 @@ msgstr "Tedavı süresi"
 
 msgctxt "field:gnuhealth.patient.medication,duration_period:"
 msgid "Treatment period"
-msgstr ""
+msgstr "Tedavi süresi"
 
 msgctxt "field:gnuhealth.patient.medication,end_treatment:"
 msgid "End"
-msgstr ""
+msgstr "Bitiş"
 
 msgctxt "field:gnuhealth.patient.medication,form:"
 msgid "Form"
-msgstr ""
+msgstr "Form"
 
 msgctxt "field:gnuhealth.patient.medication,frequency:"
 msgid "Frequency"
-msgstr ""
+msgstr "Sıklık"
 
 msgctxt "field:gnuhealth.patient.medication,frequency_prn:"
 msgid "PRN"
-msgstr ""
+msgstr "Gerektiği gibi"
 
 msgctxt "field:gnuhealth.patient.medication,frequency_unit:"
 msgid "unit"
-msgstr ""
+msgstr "birim"
 
 msgctxt "field:gnuhealth.patient.medication,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Sağlık Uzmanı"
 
 msgctxt "field:gnuhealth.patient.medication,id:"
 msgid "ID"
-msgstr ""
+msgstr "Kimlik"
 
 msgctxt "field:gnuhealth.patient.medication,indication:"
 msgid "Indication"
-msgstr ""
+msgstr "Belirti"
 
 msgctxt "field:gnuhealth.patient.medication,infusion:"
 msgid "Infusion"
-msgstr ""
+msgstr "Aşılama"
 
 msgctxt "field:gnuhealth.patient.medication,infusion_rate:"
 msgid "Rate"
-msgstr ""
+msgstr "Oran"
 
 msgctxt "field:gnuhealth.patient.medication,infusion_rate_units:"
 msgid "Unit Rate"
-msgstr ""
+msgstr "Birim Oranı"
 
 msgctxt "field:gnuhealth.patient.medication,institution:"
 msgid "Institution"
@@ -3164,11 +3164,11 @@ msgstr "Kurum"
 
 msgctxt "field:gnuhealth.patient.medication,is_active:"
 msgid "Active"
-msgstr ""
+msgstr "Etkin"
 
 msgctxt "field:gnuhealth.patient.medication,medicament:"
 msgid "Medicament"
-msgstr ""
+msgstr "İlaç"
 
 msgctxt "field:gnuhealth.patient.medication,name:"
 msgid "Patient"
@@ -3176,7 +3176,7 @@ msgstr "Hasta"
 
 msgctxt "field:gnuhealth.patient.medication,notes:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Ek bilgi"
 
 msgctxt "field:gnuhealth.patient.medication,prescription:"
 msgid "Prescription"
@@ -3184,19 +3184,19 @@ msgstr "Reçete"
 
 msgctxt "field:gnuhealth.patient.medication,qty:"
 msgid "x"
-msgstr ""
+msgstr "x"
 
 msgctxt "field:gnuhealth.patient.medication,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.patient.medication,route:"
 msgid "Administration Route"
-msgstr ""
+msgstr "Uygulama Yolu"
 
 msgctxt "field:gnuhealth.patient.medication,start_treatment:"
 msgid "Start"
-msgstr ""
+msgstr "Başlangıç"
 
 msgctxt "field:gnuhealth.patient.medication,write_date:"
 msgid "Write Date"
@@ -3204,16 +3204,16 @@ msgstr "Tarih Yaz"
 
 msgctxt "field:gnuhealth.patient.medication,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Kullanıcı Yaz"
 
 msgctxt ""
 "field:gnuhealth.person_alternative_identification,alternative_id_type:"
 msgid "ID type"
-msgstr ""
+msgstr "Kimlik türü"
 
 msgctxt "field:gnuhealth.person_alternative_identification,code:"
 msgid "Code"
-msgstr ""
+msgstr "Kod"
 
 msgctxt "field:gnuhealth.person_alternative_identification,comments:"
 msgid "Comments"
@@ -3221,23 +3221,23 @@ msgstr "Yorumlar"
 
 msgctxt "field:gnuhealth.person_alternative_identification,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Tarih Oluştur"
 
 msgctxt "field:gnuhealth.person_alternative_identification,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Kullanıcı Oluştur"
 
 msgctxt "field:gnuhealth.person_alternative_identification,id:"
 msgid "ID"
-msgstr ""
+msgstr "Kimlik"
 
 msgctxt "field:gnuhealth.person_alternative_identification,name:"
 msgid "Party"
-msgstr ""
+msgstr "Özlük"
 
 msgctxt "field:gnuhealth.person_alternative_identification,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.person_alternative_identification,write_date:"
 msgid "Write Date"
@@ -3245,55 +3245,55 @@ msgstr "Tarih Yaz"
 
 msgctxt "field:gnuhealth.person_alternative_identification,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Kullanıcı Yaz"
 
 msgctxt "field:gnuhealth.person_name,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Tarih Oluştur"
 
 msgctxt "field:gnuhealth.person_name,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Kullanıcı Oluştur"
 
 msgctxt "field:gnuhealth.person_name,date_from:"
 msgid "From"
-msgstr ""
+msgstr "İtibaren"
 
 msgctxt "field:gnuhealth.person_name,date_to:"
 msgid "To"
-msgstr ""
+msgstr "İle"
 
 msgctxt "field:gnuhealth.person_name,family:"
 msgid "Family"
-msgstr ""
+msgstr "Aile"
 
 msgctxt "field:gnuhealth.person_name,given:"
 msgid "Given"
-msgstr ""
+msgstr "Verilmiş"
 
 msgctxt "field:gnuhealth.person_name,id:"
 msgid "ID"
-msgstr ""
+msgstr "Kimlik"
 
 msgctxt "field:gnuhealth.person_name,party:"
 msgid "Person"
-msgstr ""
+msgstr "Personel"
 
 msgctxt "field:gnuhealth.person_name,prefix:"
 msgid "Prefix"
-msgstr ""
+msgstr "Önek"
 
 msgctxt "field:gnuhealth.person_name,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Kayıt Adı"
 
 msgctxt "field:gnuhealth.person_name,suffix:"
 msgid "Suffix"
-msgstr ""
+msgstr "Sonek"
 
 msgctxt "field:gnuhealth.person_name,use:"
 msgid "Use"
-msgstr ""
+msgstr "Kullan"
 
 msgctxt "field:gnuhealth.person_name,write_date:"
 msgid "Write Date"
@@ -3301,7 +3301,7 @@ msgstr "Tarih Yaz"
 
 msgctxt "field:gnuhealth.person_name,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Kullanıcı Yaz"
 
 msgctxt "field:gnuhealth.pol,age:"
 msgid "Age"
@@ -3309,19 +3309,19 @@ msgstr "Yaş"
 
 msgctxt "field:gnuhealth.pol,author:"
 msgid "Author"
-msgstr ""
+msgstr "Yazar"
 
 msgctxt "field:gnuhealth.pol,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Tarih Oluştur"
 
 msgctxt "field:gnuhealth.pol,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Kullanıcı Oluştur"
 
 msgctxt "field:gnuhealth.pol,federation_account:"
 msgid "Account"
-msgstr ""
+msgstr "Hesap"
 
 msgctxt "field:gnuhealth.pol,gene:"
 msgid "Gene"
@@ -3333,7 +3333,7 @@ msgstr "Sağlık Durumu"
 
 msgctxt "field:gnuhealth.pol,health_condition_code:"
 msgid "Code"
-msgstr ""
+msgstr "Kod"
 
 msgctxt "field:gnuhealth.pol,health_condition_text:"
 msgid "Health Condition"
@@ -3341,11 +3341,11 @@ msgstr "Sağlık Durumu"
 
 msgctxt "field:gnuhealth.pol,id:"
 msgid "ID"
-msgstr ""
+msgstr "Kimlik"
 
 msgctxt "field:gnuhealth.pol,info:"
 msgid "Extended Information"
-msgstr ""
+msgstr "Genişletilmiş Bilgi"
 
 msgctxt "field:gnuhealth.pol,institution:"
 msgid "Institution"
@@ -12225,7 +12225,7 @@ msgstr "Özel"
 
 msgctxt "selection:party.party,insurance_company_type:"
 msgid "State"
-msgstr "Devlet"
+msgstr "Durum"
 
 msgctxt "selection:party.party,marital_status:"
 msgid ""
