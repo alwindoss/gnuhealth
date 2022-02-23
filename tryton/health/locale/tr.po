@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-02-23 15:31+0000\n"
+"PO-Revision-Date: 2022-02-23 19:59+0000\n"
 "Last-Translator: Lion <ringsjupe@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gnu-health/"
 "health/tr/>\n"
@@ -2700,15 +2700,15 @@ msgstr "Halkla İlişkiler"
 
 msgctxt "field:gnuhealth.patient.ecg,qrs:"
 msgid "QRS"
-msgstr ""
+msgstr "QRS"
 
 msgctxt "field:gnuhealth.patient.ecg,qt:"
 msgid "QT"
-msgstr ""
+msgstr "QT"
 
 msgctxt "field:gnuhealth.patient.ecg,rate:"
 msgid "Rate"
-msgstr ""
+msgstr "Oran"
 
 msgctxt "field:gnuhealth.patient.ecg,rec_name:"
 msgid "Record Name"
@@ -2720,11 +2720,11 @@ msgstr "Ritim"
 
 msgctxt "field:gnuhealth.patient.ecg,st_segment:"
 msgid "ST Segment"
-msgstr ""
+msgstr "ST Segmenti"
 
 msgctxt "field:gnuhealth.patient.ecg,twave_inversion:"
 msgid "T wave inversion"
-msgstr ""
+msgstr "T dalgası inversiyonu"
 
 msgctxt "field:gnuhealth.patient.ecg,write_date:"
 msgid "Write Date"
@@ -2732,7 +2732,7 @@ msgstr "Tarih Yaz"
 
 msgctxt "field:gnuhealth.patient.ecg,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Kullanıcı Yaz"
 
 msgctxt "field:gnuhealth.patient.evaluation,abdominal_circ:"
 msgid "Waist"
@@ -2740,11 +2740,11 @@ msgstr "Bel"
 
 msgctxt "field:gnuhealth.patient.evaluation,abstraction:"
 msgid "Abstraction"
-msgstr ""
+msgstr "Soyutlama"
 
 msgctxt "field:gnuhealth.patient.evaluation,actions:"
 msgid "Procedures"
-msgstr ""
+msgstr "Prosedürler"
 
 msgctxt "field:gnuhealth.patient.evaluation,appointment:"
 msgid "Appointment"
@@ -2760,19 +2760,19 @@ msgstr "Kalp Hızı"
 
 msgctxt "field:gnuhealth.patient.evaluation,calculation_ability:"
 msgid "Calculation Ability"
-msgstr ""
+msgstr "Hesaplama Yeteneği"
 
 msgctxt "field:gnuhealth.patient.evaluation,chief_complaint:"
 msgid "Chief Complaint"
-msgstr ""
+msgstr "Baş Şikayet"
 
 msgctxt "field:gnuhealth.patient.evaluation,cholesterol_total:"
 msgid "Last Cholesterol"
-msgstr ""
+msgstr "Son Kolesterol"
 
 msgctxt "field:gnuhealth.patient.evaluation,code:"
 msgid "Code"
-msgstr ""
+msgstr "Kod"
 
 msgctxt "field:gnuhealth.patient.evaluation,computed_age:"
 msgid "Age"
