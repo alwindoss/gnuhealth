@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-08 11:19+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: es_ES\n"
+"PO-Revision-Date: 2022-03-03 13:16+0000\n"
+"Last-Translator: Fernando Sánchez <nando@integraper.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
+"health_surgery/es/>\n"
+"Language: es\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11.1-dev\n"
 "X-POOTLE-MTIME: 1452251943.0\n"
 
 msgctxt "error:gnuhealth.surgery:"
@@ -16,7 +18,7 @@ msgstr "Fecha fin \"%(end_date)s\" ANTES que fecha cirugía \"%(surgery_date)s\"
 
 msgctxt "error:gnuhealth.surgery:"
 msgid "Operating Room is not available"
-msgstr ""
+msgstr "Sala de operación no disponible"
 
 msgctxt "field:gnuhealth.operation,create_date:"
 msgid "Create Date"
@@ -128,7 +130,7 @@ msgstr "Usuario modificación"
 
 msgctxt "field:gnuhealth.sequences,surgery_code_sequence:"
 msgid "Surgery Sequence"
-msgstr ""
+msgstr "Numeración de Cirugía"
 
 msgctxt "field:gnuhealth.surgery,admission:"
 msgid "Admission"
@@ -176,7 +178,7 @@ msgstr "Información Adicional"
 
 msgctxt "field:gnuhealth.surgery,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Género"
 
 msgctxt "field:gnuhealth.surgery,id:"
 msgid "ID"
@@ -192,7 +194,7 @@ msgstr "Quirófano"
 
 msgctxt "field:gnuhealth.surgery,pathology:"
 msgid "Condition"
-msgstr ""
+msgstr "Enfermedad"
 
 msgctxt "field:gnuhealth.surgery,patient:"
 msgid "Patient"
@@ -260,7 +262,7 @@ msgstr "Estado"
 
 msgctxt "field:gnuhealth.surgery,supplies:"
 msgid "Supplies"
-msgstr ""
+msgstr "Suministros"
 
 msgctxt "field:gnuhealth.surgery,surgeon:"
 msgid "Surgeon"
@@ -280,7 +282,7 @@ msgstr "Duración"
 
 msgctxt "field:gnuhealth.surgery,surgery_team:"
 msgid "Team Members"
-msgstr ""
+msgstr "Miembros del equipo"
 
 msgctxt "field:gnuhealth.surgery,surgical_wound:"
 msgid "Surgical wound"
@@ -296,87 +298,87 @@ msgstr "Usuario modificación"
 
 msgctxt "field:gnuhealth.surgery_supply,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Fecha de Creación"
 
 msgctxt "field:gnuhealth.surgery_supply,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Creado por Usuario"
 
 msgctxt "field:gnuhealth.surgery_supply,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.surgery_supply,name:"
 msgid "Surgery"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.surgery_supply,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 msgctxt "field:gnuhealth.surgery_supply,qty:"
 msgid "Qty"
-msgstr ""
+msgstr "Ctdad"
 
 msgctxt "field:gnuhealth.surgery_supply,qty_used:"
 msgid "Used"
-msgstr ""
+msgstr "Usado"
 
 msgctxt "field:gnuhealth.surgery_supply,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.surgery_supply,supply:"
 msgid "Supply"
-msgstr ""
+msgstr "Suministro"
 
 msgctxt "field:gnuhealth.surgery_supply,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Fecha de Modificación"
 
 msgctxt "field:gnuhealth.surgery_supply,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Modificado por Usuario"
 
 msgctxt "field:gnuhealth.surgery_team,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Fecha de Creación"
 
 msgctxt "field:gnuhealth.surgery_team,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Creado por Usuario"
 
 msgctxt "field:gnuhealth.surgery_team,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.surgery_team,name:"
 msgid "Surgery"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.surgery_team,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 msgctxt "field:gnuhealth.surgery_team,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.surgery_team,role:"
 msgid "Role"
-msgstr ""
+msgstr "Rol"
 
 msgctxt "field:gnuhealth.surgery_team,team_member:"
 msgid "Member"
-msgstr ""
+msgstr "Miembro"
 
 msgctxt "field:gnuhealth.surgery_team,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Fecha de Modificación"
 
 msgctxt "field:gnuhealth.surgery_team,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Modificado por Usuario"
 
 msgctxt "help:gnuhealth.operation,procedure:"
 msgid "Procedure Code, for example ICD-10-PCS or ICPM"
@@ -446,7 +448,7 @@ msgstr "Nivel de urgencia para esta cirugía"
 
 msgctxt "help:gnuhealth.surgery,code:"
 msgid "Health Center code / sequence"
-msgstr ""
+msgstr "Código"
 
 msgctxt "help:gnuhealth.surgery,computed_age:"
 msgid "Computed patient age at the moment of the surgery"
@@ -458,7 +460,7 @@ msgstr "Condición de base / Motivo"
 
 msgctxt "help:gnuhealth.surgery,postoperative_dx:"
 msgid "Post-operative diagnosis"
-msgstr ""
+msgstr "Dx Post Qx"
 
 msgctxt "help:gnuhealth.surgery,preop_antibiotics:"
 msgid "Prophylactic antibiotic treatment within the last 60 minutes"
@@ -518,7 +520,7 @@ msgstr "Profesional de la Salud que firmó este documento de cirugía"
 
 msgctxt "help:gnuhealth.surgery,supplies:"
 msgid "List of the supplies required for the surgery"
-msgstr ""
+msgstr "Materiales requeridos para la cirugía"
 
 msgctxt "help:gnuhealth.surgery,surgeon:"
 msgid "Surgeon who did the procedure"
@@ -533,6 +535,8 @@ msgid ""
 "Automatically set when the surgery is done.It is also the estimated end time"
 " when confirming the surgery."
 msgstr ""
+"Tiempo de fin estimado cuando se confirma la cirugía, se actualiza cuando "
+"esta termina."
 
 msgctxt "help:gnuhealth.surgery,surgery_length:"
 msgid "Length of the surgery"
@@ -540,23 +544,23 @@ msgstr "Duración de la cirugía"
 
 msgctxt "help:gnuhealth.surgery,surgery_team:"
 msgid "Professionals Involved in the surgery"
-msgstr ""
+msgstr "Profesionales que participan en la cirugía"
 
 msgctxt "help:gnuhealth.surgery_supply,qty:"
 msgid "Initial required quantity"
-msgstr ""
+msgstr "Cantidad inicial requerida"
 
 msgctxt "help:gnuhealth.surgery_supply,qty_used:"
 msgid "Actual amount used"
-msgstr ""
+msgstr "Cantidad usada"
 
 msgctxt "help:gnuhealth.surgery_supply,supply:"
 msgid "Supply to be used in this surgery"
-msgstr ""
+msgstr "Materiales que se usaran en la cirugía"
 
 msgctxt "help:gnuhealth.surgery_team,team_member:"
 msgid "Health professional that participated on this surgery"
-msgstr ""
+msgstr "Profesionales que participan en la cirugía"
 
 msgctxt "model:gnuhealth.operation,name:"
 msgid "Operation - Surgical Procedures"
