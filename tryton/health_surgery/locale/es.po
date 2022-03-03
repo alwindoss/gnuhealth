@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-03-03 13:16+0000\n"
+"PO-Revision-Date: 2022-03-03 13:30+0000\n"
 "Last-Translator: Fernando Sánchez <nando@integraper.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_surgery/es/>\n"
@@ -202,7 +202,7 @@ msgstr "Paciente"
 
 msgctxt "field:gnuhealth.surgery,postoperative_dx:"
 msgid "Post-op dx"
-msgstr ""
+msgstr "Dx post qx"
 
 msgctxt "field:gnuhealth.surgery,preop_antibiotics:"
 msgid "Antibiotic Prophylaxis"
@@ -286,7 +286,7 @@ msgstr "Miembros del equipo"
 
 msgctxt "field:gnuhealth.surgery,surgical_wound:"
 msgid "Surgical wound"
-msgstr ""
+msgstr "Herida quirúrgica"
 
 msgctxt "field:gnuhealth.surgery,write_date:"
 msgid "Write Date"
@@ -576,11 +576,11 @@ msgstr "Cirugía"
 
 msgctxt "model:gnuhealth.surgery_supply,name:"
 msgid "Supplies related to the surgery"
-msgstr ""
+msgstr "Materiales necesarios para la cirugía"
 
 msgctxt "model:gnuhealth.surgery_team,name:"
 msgid "Team Involved in the surgery"
-msgstr ""
+msgstr "Equipo que participa en la cirugía"
 
 msgctxt "model:ir.action,name:act_rcri_form1"
 msgid "RCRI"
@@ -600,28 +600,28 @@ msgstr "Informe de cirugía"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_all"
 msgid "All"
-msgstr ""
+msgstr "Todos"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_confirmed"
 msgid "Confirmed"
-msgstr ""
+msgstr "Confirmados"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_done"
 msgid "Done"
-msgstr ""
+msgstr "Terminados"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_draft"
 msgid "Draft"
-msgstr ""
+msgstr "Borrador"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_surgery_domain_in_progress"
 msgid "In Progress"
-msgstr ""
+msgstr "En progreso"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_signed"
 msgid "Signed"
-msgstr ""
+msgstr "Firmado"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_surgery_code"
 msgid "Surgery"
@@ -685,19 +685,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Femenino"
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Female -> Male"
-msgstr ""
+msgstr "Femenino -> Masculino"
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Masculino"
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Male -> Female"
-msgstr ""
+msgstr "Masculino -> Femenino"
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid ""
@@ -764,11 +764,11 @@ msgstr "Clase 4: Visible únicamente el paladar duro"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Cancelled"
-msgstr ""
+msgstr "Cancelado"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Confirmed"
-msgstr ""
+msgstr "Confirmada"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Done"
@@ -776,15 +776,15 @@ msgstr "Realizada"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Draft"
-msgstr ""
+msgstr "Borrador"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "In Progress"
-msgstr ""
+msgstr "En progreso"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Signed"
-msgstr ""
+msgstr "Firmado"
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid ""
@@ -792,16 +792,16 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Clean . Class I"
-msgstr ""
+msgstr "Limpio. Clase I"
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Clean-Contaminated . Class II"
-msgstr ""
+msgstr "Limpio-Contaminado. Clase II"
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Contaminated . Class III"
-msgstr ""
+msgstr "Contaminado. Clase III"
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Dirty-Infected . Class IV"
-msgstr ""
+msgstr "Sucio Infectado. Clase IV"
