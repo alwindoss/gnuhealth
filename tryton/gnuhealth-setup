@@ -120,7 +120,7 @@ check_requirements() {
         bailout
     fi
 
-    local PVERSION=$(python3 -V 2>&1 | grep 3.[4-9].[0-9])
+    local PVERSION=$(python3 -V 2>&1 | grep 3.[1-9]*.[0-9])
 
     if test "${PVERSION}" ; then
         message "INFO" "Found ${PVERSION}"
@@ -128,6 +128,19 @@ check_requirements() {
         python -V
         message "ERROR" "Found an Incompatible Python version."
         bailout
+    fi
+
+    # Check for minor numbers on Python version, including 10.*
+    local MINMINOR=6
+    local PMINOR=$(echo ${PVERSION} | cut -d'.' -f2)
+    message "INFO" "Found ${PVERSION}"
+
+    if test $PMINOR -ge $MINMINOR
+    then
+      message "INFO" "Python version minor number: ${PMINOR}... OK"
+    else
+      message "ERROR" "You need at least Python 3.${MINMINOR}"
+      bailout
     fi
 
     # PIP command
