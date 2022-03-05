@@ -7,7 +7,7 @@
 
 :Author: Luis Falcon
 :Contact: info@gnuhealth.org
-:Version: 3.9
+:Version: 4.0.0
 
 .. contents::
 
