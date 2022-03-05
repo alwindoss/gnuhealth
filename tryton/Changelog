@@ -1,3 +1,24 @@
+hangeset:   5083:05575058c23f
+branch:      stable
+tag:         tip
+parent:      5081:9bc3ce474c0a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 19:17:11 2022 +0000
+summary:     Use ODT binary format for pediatric growth charts reports
+
+changeset:   5081:9bc3ce474c0a
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 19:04:57 2022 +0000
+summary:     Remove obsoleted files
+
+changeset:   5080:a98f47300bea
+branch:      stable
+parent:      4637:b0b57448b9df
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 19:02:26 2022 +0000
+summary:     Merge default branch changes for 4.0 series
+
 changeset:   5078:749c43adb9ba
 tag:         tip
 user:        Luis Falcon <falcon@gnuhealth.org>
