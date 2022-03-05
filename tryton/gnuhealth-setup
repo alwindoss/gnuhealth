@@ -256,7 +256,7 @@ install_python_dependencies() {
     local PIP_NUMPY="numpy"
     local PIP_UNOCONV="unoconv"
     local PIP_MAGIC="python-magic"
-    local PIP_BEREN="beren"
+    local PIP_BEREN="beren==0.7.0"
     local PIP_PENDULUM="pendulum"
     local PIP_MATPLOTLIB="matplotlib"
     local PIP_PASSLIB="passlib"
