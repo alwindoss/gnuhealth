@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -23,7 +23,7 @@
 """
 health_federation package: HMIS Federation manager
 
-This package is responsible to communicate the GNU Health HMIS 
+This package is responsible to communicate the GNU Health HMIS
 with Thalamus, the Federation message server.
 
 The main functionalities of the package are :
@@ -36,14 +36,14 @@ The main functionalities of the package are :
 """
 
 from trytond.pool import Pool
-from .health_federation import *
+from . import health_federation
 
 
 def register():
     Pool.register(
-        FederationNodeConfig,
-        FederationQueue,
-        FederationObject,
-        PartyFed,
-        PoLFed,
+        health_federation.FederationNodeConfig,
+        health_federation.FederationQueue,
+        health_federation.FederationObject,
+        health_federation.PartyFed,
+        health_federation.PoLFed,
         module='health_federation', type_='model')

@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    Copyright (C) 2013  Sebastian Marro <smarro@gnusolidario.org>
 #
@@ -23,39 +22,31 @@
 ##############################################################################
 from datetime import datetime
 from trytond.model import Workflow, ModelView, ModelSQL, fields
-from trytond.wizard import Wizard, StateView, Button, StateTransition
 from trytond.pyson import If, Or, Eval, Not, Bool
 from trytond.exceptions import UserError
-from trytond.transaction import Transaction
 from trytond.pool import Pool, PoolMeta
-from functools import reduce
+from trytond.modules.health.core import get_health_professional
+from trytond.i18n import gettext
+
+from .exceptions import (ExpiredVaccine)
 
 __all__ = ['Party', 'Lot', 'Move',
-    'PatientAmbulatoryCare', 'PatientAmbulatoryCareMedicament',
-    'PatientAmbulatoryCareMedicalSupply',
-    'PatientRounding', 'PatientRoundingMedicament',
-    'PatientRoundingMedicalSupply',
-    'PatientPrescriptionOrder', 'PatientVaccination']
-    
+           'PatientAmbulatoryCare', 'PatientAmbulatoryCareMedicament',
+           'PatientAmbulatoryCareMedicalSupply',
+           'PatientRounding', 'PatientRoundingMedicament',
+           'PatientRoundingMedicalSupply',
+           'PatientPrescriptionOrder', 'PatientVaccination']
+
 _STATES = {
     'readonly': Eval('state') == 'done',
     }
 _DEPENDS = ['state']
 
 
-"""
-Deprecated : Using now the quantity related to the product
-class Medicament(metaclass=PoolMeta):
-    __name__ = 'gnuhealth.medicament'
-    quantity = fields.Function(fields.Float('Quantity'), 'get_quantity')
-
-    def get_quantity(self,name):
-        return self.name.quantity
-"""
-
 class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
-    warehouse = fields.Many2One('stock.location', 'Warehouse',
+    warehouse = fields.Many2One(
+        'stock.location', 'Warehouse',
         domain=[('type', 'in', ['warehouse', 'storage'])],
         states={
             'invisible': Not(Bool(Eval('is_pharmacy'))),
@@ -74,7 +65,8 @@ class Party(metaclass=PoolMeta):
 class Lot(metaclass=PoolMeta):
     __name__ = 'stock.lot'
     expiration_date = fields.Date('Expiration Date')
-   
+
+
 class Move(metaclass=PoolMeta):
     __name__ = 'stock.move'
 
@@ -92,11 +84,13 @@ class PatientAmbulatoryCare(Workflow, ModelSQL, ModelView):
     'Patient Ambulatory Care'
     __name__ = 'gnuhealth.patient.ambulatory_care'
 
-    care_location = fields.Many2One('stock.location', 'Care Location',
+    care_location = fields.Many2One(
+        'stock.location', 'Care Location',
         domain=[('type', '=', 'storage')],
         states={
-            'required': If(Or(Bool(Eval('medicaments')),
-                Bool(Eval('medical_supplies'))), True, False),
+            'required': If(
+                Or(Bool(Eval('medicaments')),
+                    Bool(Eval('medical_supplies'))), True, False),
             'readonly': Eval('state') == 'done',
         }, depends=['state', 'medicaments'])
     medicaments = fields.One2Many(
@@ -106,7 +100,8 @@ class PatientAmbulatoryCare(Workflow, ModelSQL, ModelView):
         'gnuhealth.patient.ambulatory_care.medical_supply', 'name',
         'Medical Supplies', states=_STATES, depends=_DEPENDS)
 
-    moves = fields.One2Many('stock.move', 'origin', 'Stock Moves',
+    moves = fields.One2Many(
+        'stock.move', 'origin', 'Stock Moves',
         readonly=True)
 
     @classmethod
@@ -134,7 +129,6 @@ class PatientAmbulatoryCare(Workflow, ModelSQL, ModelView):
     @Workflow.transition('done')
     def done(cls, ambulatory_cares):
         pool = Pool()
-        Patient = pool.get('gnuhealth.patient')
         HealthProfessional = pool.get('gnuhealth.healthprofessional')
 
         lines_to_ship = {}
@@ -144,7 +138,6 @@ class PatientAmbulatoryCare(Workflow, ModelSQL, ModelView):
         signing_hp = HealthProfessional.get_health_professional()
 
         for ambulatory in ambulatory_cares:
-            patient = Patient(ambulatory.patient.id)
             for medicament in ambulatory.medicaments:
                 medicaments_to_ship.append(medicament)
 
@@ -180,8 +173,8 @@ class PatientAmbulatoryCare(Workflow, ModelSQL, ModelView):
                 move_info['unit_price'] = \
                     medicament.medicament.name.list_price
                 if medicament.lot:
-                    if  medicament.lot.expiration_date \
-                    and medicament.lot.expiration_date < Date.today():
+                    if medicament.lot.expiration_date and \
+                            medicament.lot.expiration_date < Date.today():
                         raise UserError('Expired medicaments')
                     move_info['lot'] = medicament.lot.id
                 moves.append(move_info)
@@ -197,8 +190,9 @@ class PatientAmbulatoryCare(Workflow, ModelSQL, ModelView):
                     ambulatory.patient.name.customer_location.id
                 move_info['unit_price'] = medical_supply.product.list_price
                 if medical_supply.lot:
-                    if  medical_supply.lot.expiration_date \
-                    and medical_supply.lot.expiration_date < Date.today():
+                    if medical_supply.lot.expiration_date \
+                            and medical_supply.lot.expiration_date \
+                            < Date.today():
                         raise UserError('Expired supplies')
                     move_info['lot'] = medical_supply.lot.id
                 moves.append(move_info)
@@ -216,15 +210,19 @@ class PatientAmbulatoryCareMedicament(ModelSQL, ModelView):
     'Patient Ambulatory Care Medicament'
     __name__ = 'gnuhealth.patient.ambulatory_care.medicament'
 
-    name = fields.Many2One('gnuhealth.patient.ambulatory_care',
+    name = fields.Many2One(
+        'gnuhealth.patient.ambulatory_care',
         'Ambulatory ID')
-    medicament = fields.Many2One('gnuhealth.medicament', 'Medicament',
+    medicament = fields.Many2One(
+        'gnuhealth.medicament', 'Medicament',
         required=True)
     product = fields.Many2One('product.product', 'Product')
     quantity = fields.Integer('Quantity')
-    short_comment = fields.Char('Comment',
+    short_comment = fields.Char(
+        'Comment',
         help='Short comment on the specific drug')
-    lot = fields.Many2One('stock.lot', 'Lot', depends=['product'],
+    lot = fields.Many2One(
+        'stock.lot', 'Lot', depends=['product'],
         domain=[('product', '=', Eval('product'))])
 
     @staticmethod
@@ -244,14 +242,18 @@ class PatientAmbulatoryCareMedicalSupply(ModelSQL, ModelView):
     'Patient Ambulatory Care Medical Supply'
     __name__ = 'gnuhealth.patient.ambulatory_care.medical_supply'
 
-    name = fields.Many2One('gnuhealth.patient.ambulatory_care',
+    name = fields.Many2One(
+        'gnuhealth.patient.ambulatory_care',
         'Ambulatory ID')
-    product = fields.Many2One('product.product', 'Medical Supply',
+    product = fields.Many2One(
+        'product.product', 'Medical Supply',
         domain=[('is_medical_supply', '=', True)], required=True)
     quantity = fields.Integer('Quantity')
-    short_comment = fields.Char('Comment',
+    short_comment = fields.Char(
+        'Comment',
         help='Short comment on the specific drug')
-    lot = fields.Many2One('stock.lot', 'Lot', depends=['product'],
+    lot = fields.Many2One(
+        'stock.lot', 'Lot', depends=['product'],
         domain=[
             ('product', '=', Eval('product')),
             ])
@@ -260,14 +262,17 @@ class PatientAmbulatoryCareMedicalSupply(ModelSQL, ModelView):
     def default_quantity():
         return 1
 
+
 class PatientRounding(Workflow, ModelSQL, ModelView):
     'Patient Ambulatory Care'
     __name__ = 'gnuhealth.patient.rounding'
 
-    hospitalization_location = fields.Many2One('stock.location',
+    hospitalization_location = fields.Many2One(
+        'stock.location',
         'Hospitalization Location', domain=[('type', '=', 'storage')],
         states={
-            'required': If(Or(Bool(Eval('medicaments')),
+            'required': If(Or(
+                Bool(Eval('medicaments')),
                 Bool(Eval('medical_supplies'))), True, False),
             'readonly': Eval('state') == 'done',
         }, depends=_DEPENDS)
@@ -275,20 +280,22 @@ class PatientRounding(Workflow, ModelSQL, ModelView):
         'gnuhealth.patient.rounding.medicament', 'name', 'Medicaments',
         states=_STATES, depends=_DEPENDS)
     medical_supplies = fields.One2Many(
-        'gnuhealth.patient.rounding.medical_supply', 'name', 'Medical Supplies',
+        'gnuhealth.patient.rounding.medical_supply',
+        'name', 'Medical Supplies',
         states=_STATES, depends=_DEPENDS)
-    moves = fields.One2Many('stock.move', 'origin', 'Stock Moves',
+    moves = fields.One2Many(
+        'stock.move', 'origin', 'Stock Moves',
         readonly=True)
 
     @classmethod
     def __setup__(cls):
         super(PatientRounding, cls).__setup__()
         cls._transitions |= set((
-        ('draft', 'done'),
+            ('draft', 'done'),
         ))
         cls._buttons.update({
             'done': {
-            'invisible': ~Eval('state').in_(['draft']),
+                'invisible': ~Eval('state').in_(['draft']),
             }})
 
     @classmethod
@@ -303,19 +310,13 @@ class PatientRounding(Workflow, ModelSQL, ModelView):
     @ModelView.button
     @Workflow.transition('done')
     def done(cls, roundings):
-        pool = Pool()
-        Patient = pool.get('gnuhealth.patient')
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-
-        signing_hp = HealthProfessional.get_health_professional()
+        signing_hp = get_health_professional()
 
         lines_to_ship = {}
         medicaments_to_ship = []
         supplies_to_ship = []
 
         for rounding in roundings:
-            patient = Patient(rounding.name.patient.id)
-
             for medicament in rounding.medicaments:
                 medicaments_to_ship.append(medicament)
 
@@ -324,7 +325,6 @@ class PatientRounding(Workflow, ModelSQL, ModelView):
 
         lines_to_ship['medicaments'] = medicaments_to_ship
         lines_to_ship['supplies'] = supplies_to_ship
-        
 
         cls.create_stock_moves(roundings, lines_to_ship)
 
@@ -349,11 +349,11 @@ class PatientRounding(Workflow, ModelSQL, ModelView):
                 move_info['from_location'] = \
                     rounding.hospitalization_location.id
                 move_info['to_location'] = \
-                rounding.name.patient.name.customer_location.id
+                    rounding.name.patient.name.customer_location.id
                 move_info['unit_price'] = medicament.medicament.name.list_price
                 if medicament.lot:
-                    if  medicament.lot.expiration_date \
-                    and medicament.lot.expiration_date < Date.today():
+                    if medicament.lot.expiration_date \
+                            and medicament.lot.expiration_date < Date.today():
                         raise UserError('Expired medicaments')
                     move_info['lot'] = medicament.lot.id
                 moves.append(move_info)
@@ -366,11 +366,12 @@ class PatientRounding(Workflow, ModelSQL, ModelView):
                 move_info['from_location'] = \
                     rounding.hospitalization_location.id
                 move_info['to_location'] = \
-                rounding.name.patient.name.customer_location.id
+                    rounding.name.patient.name.customer_location.id
                 move_info['unit_price'] = medical_supply.product.list_price
                 if medical_supply.lot:
-                    if  medical_supply.lot.expiration_date \
-                    and medical_supply.lot.expiration_date < Date.today():
+                    if medical_supply.lot.expiration_date \
+                            and medical_supply.lot.expiration_date < \
+                            Date.today():
                         raise UserError('Expired supplies')
                     move_info['lot'] = medical_supply.lot.id
                 moves.append(move_info)
@@ -388,13 +389,16 @@ class PatientRoundingMedicament(ModelSQL, ModelView):
     __name__ = 'gnuhealth.patient.rounding.medicament'
 
     name = fields.Many2One('gnuhealth.patient.rounding', 'Ambulatory ID')
-    medicament = fields.Many2One('gnuhealth.medicament', 'Medicament',
+    medicament = fields.Many2One(
+        'gnuhealth.medicament', 'Medicament',
         required=True)
     product = fields.Many2One('product.product', 'Product')
     quantity = fields.Integer('Quantity')
-    short_comment = fields.Char('Comment',
+    short_comment = fields.Char(
+        'Comment',
         help='Short comment on the specific drug')
-    lot = fields.Many2One('stock.lot', 'Lot', depends=['product'],
+    lot = fields.Many2One(
+        'stock.lot', 'Lot', depends=['product'],
         domain=[('product', '=', Eval('product'))])
 
     @staticmethod
@@ -415,12 +419,15 @@ class PatientRoundingMedicalSupply(ModelSQL, ModelView):
     __name__ = 'gnuhealth.patient.rounding.medical_supply'
 
     name = fields.Many2One('gnuhealth.patient.rounding', 'Ambulatory ID')
-    product = fields.Many2One('product.product', 'Medical Supply',
+    product = fields.Many2One(
+        'product.product', 'Medical Supply',
         domain=[('is_medical_supply', '=', True)], required=True)
     quantity = fields.Integer('Quantity')
-    short_comment = fields.Char('Comment',
+    short_comment = fields.Char(
+        'Comment',
         help='Short comment on the specific drug')
-    lot = fields.Many2One('stock.lot', 'Lot', depends=['product'],
+    lot = fields.Many2One(
+        'stock.lot', 'Lot', depends=['product'],
         domain=[
             ('product', '=', Eval('product')),
             ])
@@ -453,23 +460,27 @@ class PatientPrescriptionOrder(metaclass=PoolMeta):
 class PatientVaccination(metaclass=PoolMeta):
     __name__ = 'gnuhealth.vaccination'
     moves = fields.One2Many('stock.move', 'origin', 'Moves', readonly=True)
-    location = fields.Many2One('stock.location',
+    location = fields.Many2One(
+        'stock.location',
         'Stock Location', domain=[('type', '=', 'storage')])
 
     product = fields.Many2One('product.product', 'Product')
 
-    lot = fields.Many2One('stock.lot', 'Lot', depends=['product'],
+    lot = fields.Many2One(
+        'stock.lot', 'Lot', depends=['product'],
         domain=[('product', '=', Eval('product'))],
         help="This field includes the lot number and expiration date")
-
 
     @fields.depends('lot')
     def on_change_lot(self):
         # Check expiration date on the vaccine lot
         if self.lot:
             if self.lot.expiration_date < datetime.date(self.date):
-                self.raise_user_error('expired_vaccine')
+                raise ExpiredVaccine(
+                    gettext('health_stock.msg_expired_vaccine')
+                    )
         return {}
+
     @classmethod
     def copy(cls, vaccinations, default=None):
         if default is None:
@@ -479,17 +490,9 @@ class PatientVaccination(metaclass=PoolMeta):
         return super(PatientVaccination, cls).copy(
             vaccinations, default=default)
 
-    @classmethod
-    def __setup__(cls):
-        super(PatientVaccination, cls).__setup__()
-        cls._error_messages.update({
-            'expired_vaccine': 'EXPIRED VACCINE. PLEASE INFORM  THE LOCAL '
-                'HEALTH AUTHORITIES AND DO NOT USE IT !!!',
-        })
-
     @fields.depends('vaccine')
     def on_change_vaccine(self):
         if self.vaccine:
             self.product = self.vaccine.name.id
         else:
-            self.product =  None
+            self.product = None

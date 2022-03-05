@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnuhealth.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnuhealth.org>
 #    Copyright (C) 2013  Sebastián Marro <smarro@thymbra.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -26,6 +26,8 @@ from trytond.wizard import Wizard, StateAction, StateTransition, StateView, \
 from trytond.transaction import Transaction
 from trytond.pyson import PYSONEncoder
 from trytond.pool import Pool
+
+from trytond.modules.health.core import get_health_professional
 
 __all__ = ['WizardGenerateResult', 'RequestImagingTest',
     'RequestPatientImagingTestStart', 'RequestPatientImagingTest']
@@ -51,6 +53,7 @@ class WizardGenerateResult(Wizard):
                 'request_date': request.date,
                 'requested_test': request.requested_test,
                 'request': request.id,
+                'order': request.request,
                 'doctor': request.doctor})
         results = Result.create(request_data)
 
@@ -78,8 +81,12 @@ class RequestPatientImagingTestStart(ModelView):
 
     date = fields.DateTime('Date')
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
-    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Doctor',
-        required=True, help="Doctor who Request the lab tests.")
+    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Health prof',
+        required=True, help="Health professionalwho requests the lab tests.")
+    context = fields.Many2One('gnuhealth.pathology', 'Context',
+        help="Health context for this order. It can be a suspected or"
+             " existing health condition, a regular health checkup, ...",
+             select=True)
     tests = fields.Many2Many('gnuhealth.request-imaging-test', 'request',
         'test', 'Tests', required=True)
     urgent = fields.Boolean('Urgent')
@@ -95,14 +102,7 @@ class RequestPatientImagingTestStart(ModelView):
 
     @staticmethod
     def default_doctor():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        hp = HealthProf.get_health_professional()
-        if not hp:
-            RequestPatientImagingTestStart.raise_user_error(
-                "No health professional associated to this user !")
-        return hp
-
+        return get_health_professional()
 
 class RequestPatientImagingTest(Wizard):
     'Request Patient Imaging Test'
@@ -115,13 +115,18 @@ class RequestPatientImagingTest(Wizard):
             ])
     request = StateTransition()
 
+    def generate_code(self, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'imaging_req_seq', **pattern)
+        if sequence:
+            return sequence.get()
+
+
     def transition_request(self):
         ImagingTestRequest = Pool().get('gnuhealth.imaging.test.request')
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
-        config = Config(1)
-        request_number = Sequence.get_id(config.imaging_request_sequence.id)
+        request_number = self.generate_code()
         imaging_tests = []
         for test in self.start.tests:
             imaging_test = {}
@@ -130,6 +135,9 @@ class RequestPatientImagingTest(Wizard):
             imaging_test['patient'] = self.start.patient.id
             if self.start.doctor:
                 imaging_test['doctor'] = self.start.doctor.id
+            if self.start.context:
+                imaging_test['context'] = self.start.context.id
+
             imaging_test['date'] = self.start.date
             imaging_test['urgent'] = self.start.urgent
             imaging_tests.append(imaging_test)

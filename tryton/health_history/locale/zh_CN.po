@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-23 01:29+0000\n"
-"PO-Revision-Date: 2020-11-27 16:09+0000\n"
+"PO-Revision-Date: 2022-01-20 02:41+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_history/zh_Hans/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.11-dev\n"
 "X-Pootle-Path: /zh_CN/GNUHEALTH/health_history/locale/zh_CN.po\n"
 "X-Pootle-Revision: 43352\n"
 
@@ -62,7 +62,7 @@ msgstr "/ 6"
 
 msgctxt "report:patient.evaluation:"
 msgid "/ Reliability :"
-msgstr "/ 可靠性: "
+msgstr "/ 可靠性："
 
 msgctxt "report:patient.evaluation:"
 msgid ":"
@@ -170,7 +170,7 @@ msgstr "疾病"
 
 msgctxt "report:patient.evaluation:"
 msgid "DoB:"
-msgstr "出生日期: "
+msgstr "出生日期："
 
 msgctxt "report:patient.evaluation:"
 msgid "Dose"
@@ -186,7 +186,7 @@ msgstr "结束"
 
 msgctxt "report:patient.evaluation:"
 msgid "Ethnicity:"
-msgstr "种族: "
+msgstr "人种:"
 
 msgctxt "report:patient.evaluation:"
 msgid "Evaluation Digital Signature"
@@ -194,7 +194,7 @@ msgstr "评估数字签名"
 
 msgctxt "report:patient.evaluation:"
 msgid "Evaluation date:"
-msgstr "评估日期: "
+msgstr "评估日期："
 
 msgctxt "report:patient.evaluation:"
 msgid "Eyes"
@@ -214,7 +214,7 @@ msgstr "家族信息"
 
 msgctxt "report:patient.evaluation:"
 msgid "Family and Socioeconomic assessment history :"
-msgstr "家庭和社会经济评估史: "
+msgstr "家庭和社会经济评估史："
 
 msgctxt "report:patient.evaluation:"
 msgid "Heart rate"
@@ -262,7 +262,7 @@ msgstr "信息"
 
 msgctxt "report:patient.evaluation:"
 msgid "Information Source:"
-msgstr "信息来源: "
+msgstr "信息来源："
 
 msgctxt "report:patient.evaluation:"
 msgid "Information about the Diagnosis"
@@ -314,7 +314,7 @@ msgstr "观察"
 
 msgctxt "report:patient.evaluation:"
 msgid "Occupation :"
-msgstr "职业: "
+msgstr "职业："
 
 msgctxt "report:patient.evaluation:"
 msgid "Other Hypotheses / DDx"
@@ -326,7 +326,7 @@ msgstr "氧饱和度"
 
 msgctxt "report:patient.evaluation:"
 msgid "PUID:"
-msgstr "PUID: "
+msgstr "PUID："
 
 msgctxt "report:patient.evaluation:"
 msgid "Paternal"
@@ -338,7 +338,7 @@ msgstr ""
 
 msgctxt "report:patient.evaluation:"
 msgid "Patient Name:"
-msgstr "患者姓名: "
+msgstr "患者名字："
 
 msgctxt "report:patient.evaluation:"
 msgid "Personal History"
@@ -362,7 +362,7 @@ msgstr "小学"
 
 msgctxt "report:patient.evaluation:"
 msgid "Print Date:"
-msgstr "打印日期: "
+msgstr "打印日期："
 
 msgctxt "report:patient.evaluation:"
 msgid "Remarks"

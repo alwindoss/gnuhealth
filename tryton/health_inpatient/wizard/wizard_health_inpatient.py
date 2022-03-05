@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #
@@ -26,7 +25,8 @@ from trytond.model import ModelView, fields
 from trytond.wizard import Wizard, StateTransition, StateView, Button
 from trytond.transaction import Transaction
 from trytond.pool import Pool
-
+from trytond.i18n import gettext
+from ..exceptions import DestinationBedNotAvailable, ManyRecordsChosen
 
 __all__ = ['CreateBedTransferInit', 'CreateBedTransfer']
 
@@ -34,12 +34,13 @@ __all__ = ['CreateBedTransferInit', 'CreateBedTransfer']
 class CreateBedTransferInit(ModelView):
     'Create Bed Transfer Init'
     __name__ = 'gnuhealth.bed.transfer.init'
-    newbed = fields.Many2One('gnuhealth.hospital.bed', 'New Bed',
+    newbed = fields.Many2One(
+        'gnuhealth.hospital.bed', 'New Bed',
         required=True, select=True)
     reason = fields.Char('Reason', required=True)
 
     orig_bed_state = fields.Selection((
-        (None,''),
+        (None, ''),
         ('free', 'Free'),
         ('reserved', 'Reserved'),
         ('occupied', 'Occupied'),
@@ -51,44 +52,39 @@ class CreateBedTransferInit(ModelView):
     def default_orig_bed_state():
         return 'to_clean'
 
+
 class CreateBedTransfer(Wizard):
     'Create Bed Transfer'
     __name__ = 'gnuhealth.bed.transfer.create'
 
-
-    start = StateView('gnuhealth.bed.transfer.init',
+    start = StateView(
+        'gnuhealth.bed.transfer.init',
         'health_inpatient.view_patient_bed_transfer', [
             Button('Cancel', 'end', 'tryton-cancel'),
-            Button('Transfer Patient', 'create_bed_transfer', 'tryton-ok',
+            Button(
+                'Transfer Patient', 'create_bed_transfer', 'tryton-ok',
                 True),
             ])
     create_bed_transfer = StateTransition()
 
-
-    @classmethod
-    def __setup__(cls):
-        super(CreateBedTransfer, cls).__setup__()
-        cls._error_messages.update({
-            'bed_unavailable': 'Destination bed is unavailable',
-            'choose_one': 'You have chosen more than 1 records. Please choose only one'})
-
     def transition_create_bed_transfer(self):
-        inpatient_registrations = Pool().get('gnuhealth.inpatient.registration')
+        inpatient_registrations = Pool(). \
+            get('gnuhealth.inpatient.registration')
         bed = Pool().get('gnuhealth.hospital.bed')
 
-        registrations = inpatient_registrations.browse(Transaction().context.get(
-            'active_ids'))
+        registrations = inpatient_registrations.browse(
+            Transaction().context.get('active_ids'))
 
         # Don't allow mass changes. Work on a single record
-        if len(registrations) > 1 :
-            self.raise_user_error('choose_one')
+        if len(registrations) > 1:
+            raise ManyRecordsChosen(
+                gettext('health_inpatient.msg_many_records_chosen'))
 
         registration = registrations[0]
         current_bed = registration.bed
         destination_bed = self.start.newbed
         reason = self.start.reason
         orig_bed_state = self.start.orig_bed_state
-
 
         # Check that the new bed is free
         if (destination_bed.state == 'free'):
@@ -106,19 +102,17 @@ class CreateBedTransfer(Wizard):
             # Update the hospitalization data
             transfers = []
             transfers.append(('create', [{
-                            'transfer_date' : datetime.now(),
-                            'bed_from' : current_bed,
-                            'bed_to' : destination_bed,
+                            'transfer_date': datetime.now(),
+                            'bed_from': current_bed,
+                            'bed_to': destination_bed,
                             'reason': reason,
                         }]))
             hospitalization_info['bed_transfers'] = transfers
 
-            inpatient_registrations.write([registration],hospitalization_info)
-
-
+            inpatient_registrations.write([registration], hospitalization_info)
 
         else:
-            self.raise_user_error('bed_unavailable')
+            raise DestinationBedNotAvailable(
+                gettext('health_inpatient.msg_destination_bed_not_available'))
 
         return 'end'
-

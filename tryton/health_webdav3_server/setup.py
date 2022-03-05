@@ -1,7 +1,6 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#    Copyright (C) 2017-2021 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2017-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2017-2022 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2017-2022 GNU Solidario <health@gnusolidario.org>
 #    Copyright (C) 2012-2017 Cédric Krier
 
 #    This program is free software: you can redistribute it and/or modify
@@ -24,7 +23,9 @@ import configparser
 
 
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname), encoding="UTF-8").read()
+    return open(os.path.join(os.path.dirname(__file__), fname),
+                encoding="UTF-8").read()
+
 
 config = configparser.ConfigParser()
 config.readfp(open('tryton.cfg'))
@@ -33,48 +34,50 @@ info = dict(config.items('tryton'))
 for key in ('depends', 'extras_depend', 'xml'):
     if key in info:
         info[key] = info[key].strip().splitlines()
-major_version, minor_version = 5, 0
+major_version, minor_version = 6, 0
 
-requires = []
+requires = ['PyWebDAV3-GNUHealth >= 0.10.1']
 
 for dep in info.get('depends', []):
     if (dep == 'health'):
         requires.append('gnuhealth == %s' % (info.get('version')))
 
     elif dep.startswith('health_'):
-        health_package = dep.split('_',1)[1]
+        health_package = dep.split('_', 1)[1]
         requires.append('gnuhealth_%s == %s' %
-            (health_package, info.get('version')))
-    else: 
-        if not re.match(r'(ir|res|webdav)(\W|$)', dep):
+                        (health_package, info.get('version')))
+    else:
+        if not re.match(r'(ir|res)(\W|$)', dep):
             requires.append('trytond_%s >= %s.%s, < %s.%s' %
-                (dep, major_version, minor_version, major_version,
-                    minor_version + 1))
-
-
-requires = ['PyWebDAV3-GNUHealth >= 0.10.1']
+                            (dep, major_version, minor_version, major_version,
+                             minor_version + 1))
 
 setup(name='gnuhealth_webdav3_server',
-    version=info.get('version', '0.0.1'),
-    description='GNU Health WebDAV server for Python 3',
-    long_description=read('README'),
-    author='GNU Solidario',
-    author_email='health@gnusolidario.org',
-    url='https://www.gnuhealth.org',
-    download_url='http://ftp.gnu.org/gnu/health/',
-    keywords='webdav GNUHealth',
-    package_dir={'trytond.modules.webdav': '.'},
-    packages=[
-        'trytond.modules.webdav',
-        'trytond.modules.webdav.tests',
+      version=info.get('version', '0.0.1'),
+      description='GNU Health WebDAV server for Python 3',
+      long_description=read('README'),
+      author='GNU Solidario',
+      author_email='health@gnusolidario.org',
+      url='https://www.gnuhealth.org',
+      download_url='https://ftp.gnu.org/gnu/health/',
+      keywords='webdav GNUHealth',
+      package_dir={'trytond.modules.health_webdav3_server': '.'},
+      packages=[
+        'trytond.modules.health_webdav3_server',
+        'trytond.modules.health_webdav3_server.tests',
         ],
-    package_data={
-        'trytond.modules.webdav': (info.get('xml', [])
-            + ['tryton.cfg', 'view/*.xml', 'locale/*.po', '*.fodt',
-                'icons/*.svg', 'tests/*.rst']),
+      package_data={
+        'trytond.modules.health_webdav3_server': (info.get('xml', [])
+                                                  + ['tryton.cfg',
+                                                     'view/*.xml',
+                                                     'locale/*.po',
+                                                     '*.fodt',
+                                                     'icons/*.svg',
+                                                     'tests/*.rst']),
         },
-    scripts=['bin/gnuhealth-webdav-server'],
-    classifiers=[
+
+      scripts=['bin/gnuhealth-webdav-server'],
+      classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Plugins',
         'Framework :: Tryton',
@@ -88,13 +91,13 @@ setup(name='gnuhealth_webdav3_server',
         'Topic :: Scientific/Engineering :: Bio-Informatics',
         'Topic :: Scientific/Engineering :: Medical Science Apps.',
         ],
-    license='GPL-3',
-    install_requires=requires,
-    zip_safe=False,
-    entry_points="""
-    [trytond.modules]
-    webdav = trytond.modules.webdav
-    """,
-    test_suite='tests',
-    test_loader='trytond.test_loader:Loader',
-    )
+      license='GPL-3',
+      install_requires=requires,
+      zip_safe=False,
+      entry_points="""
+      [trytond.modules]
+        health_webdav3_server = trytond.modules.health_webdav3_server
+      """,
+      test_suite='tests',
+      test_loader='trytond.test_loader:Loader',
+      )

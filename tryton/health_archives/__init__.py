@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -22,10 +21,10 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_archives import *
+from . import health_archives
 
 
 def register():
     Pool.register(
-        PaperArchive,
+        health_archives.PaperArchive,
         module='health_archives', type_='model')

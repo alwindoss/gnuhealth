@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#    Copyright (C) 2011-2021 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2022 Luis Falcon <falcon@gnuhealth.org>
 #    Copyright (C) 2011 Cédric Krier
 
 #    This program is free software: you can redistribute it and/or modify
@@ -21,8 +20,10 @@ import re
 import os
 import configparser
 
+
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname), encoding="UTF-8").read()
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
 
 config = configparser.ConfigParser()
 config.readfp(open('tryton.cfg'))
@@ -31,7 +32,7 @@ info = dict(config.items('tryton'))
 for key in ('depends', 'extras_depend', 'xml'):
     if key in info:
         info[key] = info[key].strip().splitlines()
-major_version, minor_version = 5, 0
+major_version, minor_version = 6, 0
 
 requires = []
 
@@ -40,18 +41,21 @@ for dep in info.get('depends', []):
         requires.append('gnuhealth == %s' % (info.get('version')))
 
     elif dep.startswith('health_'):
-        health_package = dep.split('_',1)[1]
-        requires.append('gnuhealth_%s == %s' %
-            (health_package, info.get('version')))
-    else: 
-        if not re.match(r'(ir|res|webdav)(\W|$)', dep):
-            requires.append('trytond_%s >= %s.%s, < %s.%s' %
+        health_package = dep.split('_', 1)[1]
+        requires.append(
+            'gnuhealth_%s == %s' % (health_package, info.get('version')))
+    else:
+        if not re.match(r'(ir|res)(\W|$)', dep):
+            requires.append(
+                'trytond_%s >= %s.%s, < %s.%s' %
                 (dep, major_version, minor_version, major_version,
                     minor_version + 1))
 
-setup(name='gnuhealth_profile',
+setup(
+    name='gnuhealth_profile',
     version=info.get('version', '0.0.1'),
-    description=info.get('description', 'GNU Health profile with common packages'),
+    description=info.get(
+        'description', 'GNU Health profile with common packages'),
     long_description=read('README'),
     author='GNU Solidario',
     author_email='health@gnusolidario.org',
@@ -64,10 +68,10 @@ setup(name='gnuhealth_profile',
         ],
 
     package_data={
-        'trytond.modules.health_profile': info.get('xml', []) \
-            + info.get('translation', []) \
-            + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.fodt', 'icons/*.svg'],
+        'trytond.modules.health_profile': info.get('xml', [])
+        + info.get('translation', [])
+        + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
+           'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[

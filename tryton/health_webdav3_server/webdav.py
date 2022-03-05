@@ -2,9 +2,9 @@
 # this repository contains the full copyright notices and license terms.
 import os
 import time
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
 import urllib.parse
-import socket
+import urllib.error
 import encodings
 import uuid
 import datetime
@@ -22,6 +22,8 @@ from trytond.config import config
 from trytond.pyson import Eval
 from trytond.tools import grouped_slice
 
+from .exceptions import InvalidAttachmentName
+
 __all__ = [
     'Collection', 'Share', 'Attachment',
     ]
@@ -33,13 +35,14 @@ def get_webdav_url():
     else:
         protocol = 'http'
     hostname = (config.get('webdav', 'hostname')
-        or str(socket.getfqdn(), 'utf8'))
-    hostname = '.'.join(encodings.idna.ToASCII(part) for part in
-        hostname.split('.'))
+                or str(socket.getfqdn(), 'utf8'))
+    hostname = '.'.join(encodings.idna.ToASCII(part) for
+                        part in hostname.split('.'))
     return urllib.parse.urlunsplit((protocol, hostname,
-        urllib.parse.quote(
-            Transaction().database.name.encode('utf-8') + '/'),
-            None, None))
+                                    urllib.parse.
+                                    quote(Transaction().
+                                          database.name.encode('utf-8') + '/'),
+                                    None, None))
 
 
 class Collection(ModelSQL, ModelView):
@@ -47,12 +50,13 @@ class Collection(ModelSQL, ModelView):
     __name__ = "webdav.collection"
     name = fields.Char('Name', required=True, select=True)
     parent = fields.Many2One('webdav.collection', 'Parent',
-       ondelete='RESTRICT', domain=[('model', '=', None)])
+                             ondelete='RESTRICT',
+                             domain=[('model', '=', None)])
     childs = fields.One2Many('webdav.collection', 'parent', 'Children')
     model = fields.Many2One('ir.model', 'Model')
     domain = fields.Char('Domain')
     complete_name = fields.Function(fields.Char('Complete Name'),
-        'get_rec_name')
+                                    'get_rec_name')
 
     @classmethod
     def __setup__(cls):
@@ -60,13 +64,8 @@ class Collection(ModelSQL, ModelView):
         table = cls.__table__()
         cls._sql_constraints += [
             ('name_parent_uniq', Unique(table, table.name, table.parent),
-                'The collection name must be unique inside a collection!'),
+                'health_webdav3_server.msg_collection_file_name'),
         ]
-        cls._error_messages.update({
-                'collection_file_name': ('You can not create a collection '
-                    'named "%(parent)s" in collection "%(child)s" because '
-                    'there is already a file with that name.'),
-                })
         cls.ext2mime = {
             '.png': 'image/png',
             '.odt': 'application/vnd.oasis.opendocument.text',
@@ -104,14 +103,15 @@ class Collection(ModelSQL, ModelView):
                     ])
                 for attachment in attachments:
                     if attachment.name == collection.name:
-                        cls.raise_user_error('collection_file_name', {
-                                'parent': collection.parent.rec_name,
-                                'child': collection.rec_name,
-                                })
+                        raise InvalidAttachmentName(
+                            gettext('health.webdav3_server.'
+                                    'collection_attachment_name',
+                                    attachment=attachment.rec_name,
+                                    collection=collection.rec_name))
 
     @classmethod
     def _uri2object(cls, uri, object_name=__name__, object_id=None,
-            cache=None):
+                    cache=None):
         pool = Pool()
         Attachment = pool.get('ir.attachment')
         Report = pool.get('ir.action.report')
@@ -196,7 +196,7 @@ class Collection(ModelSQL, ModelView):
                     for attachment in attachments:
                         if cache is not None:
                             cache.setdefault('_model&id&name2attachment_ids',
-                                    {})
+                                             {})
                             cache['_model&id&name2attachment_ids'].setdefault(
                                     key, {})
                             cache['_model&id&name2attachment_ids'][key]\
@@ -234,7 +234,7 @@ class Collection(ModelSQL, ModelView):
                     ])
                 for report in reports:
                     report_name = (report.name + '-' + str(report.id)
-                        + '.' + report.extension)
+                                   + '.' + report.extension)
                     if uri == report_name:
                         if cache is not None:
                             cache['_uri2object'][cache_uri] = \
@@ -332,7 +332,7 @@ class Collection(ModelSQL, ModelView):
                 ])
             for report in reports:
                 report_name = (report.name + '-' + str(report.id)
-                    + '.' + report.extension)
+                               + '.' + report.extension)
                 if '/' in report_name:
                     continue
                 res.append(report_name)
@@ -438,8 +438,9 @@ class Collection(ModelSQL, ModelView):
                 for sub_ids in grouped_slice(ids):
                     red_sql = reduce_ids(table.id, sub_ids)
                     cursor.execute(*table.select(table.id,
-                            Extract('EPOCH', table.create_date),
-                            where=red_sql))
+                                                 Extract('EPOCH',
+                                                         table.create_date),
+                                                 where=red_sql))
                     for object_id2, date in cursor.fetchall():
                         if object_id2 == object_id:
                             res = date
@@ -474,9 +475,10 @@ class Collection(ModelSQL, ModelView):
                 for sub_ids in grouped_slice(ids):
                     red_sql = reduce_ids(table.id, sub_ids)
                     cursor.execute(*table.select(table.id,
-                            Extract('EPOCH',
-                                Coalesce(table.write_date, table.create_date)),
-                            where=red_sql))
+                                                 Extract('EPOCH', Coalesce(
+                                                     table.write_date,
+                                                     table.create_date)),
+                                                 where=red_sql))
                     for object_id2, date in cursor.fetchall():
                         if object_id2 == object_id:
                             res = date
@@ -531,14 +533,13 @@ class Collection(ModelSQL, ModelView):
                 return res
 
             if object_name == 'ir.action.report' and object_id:
-                report_id = int(uri.rsplit('/', 1)[-1].rsplit('-',
-                    1)[-1].rsplit('.', 1)[0])
+                report_id = int(uri.rsplit('/', 1)[-1].
+                                rsplit('-', 1)[-1].rsplit('.', 1)[0])
                 report = Report(report_id)
                 if report.report_name:
-                    Report = pool.get(report.report_name,
-                            type='report')
+                    Report = pool.get(report.report_name, type='report')
                     val = Report.execute([object_id],
-                        {'id': object_id, 'ids': [object_id]})
+                                         {'id': object_id, 'ids': [object_id]})
                     return val[1]
         raise DAV_NotFound
 
@@ -547,7 +548,7 @@ class Collection(ModelSQL, ModelView):
         from pywebdav.lib.errors import DAV_Forbidden
         from pywebdav.lib.utils import get_uriparentpath, get_urifilename
         object_name, object_id = cls._uri2object(get_uriparentpath(uri),
-                cache=cache)
+                                                 cache=cache)
         if not object_name \
                 or object_name == 'ir.attachment' \
                 or not object_id:
@@ -581,7 +582,7 @@ class Collection(ModelSQL, ModelView):
         if uri[-1:] == '/':
             uri = uri[:-1]
         object_name, object_id = cls._uri2object(get_uriparentpath(uri),
-                cache=cache)
+                                                 cache=cache)
         if object_name != 'webdav.collection':
             raise DAV_Forbidden
         name = get_urifilename(uri)
@@ -643,9 +644,7 @@ class Share(ModelSQL, ModelView):
 
     path = fields.Char('Path', required=True, select=True)
     key = fields.Char('Key', required=True, select=True,
-        states={
-            'readonly': True,
-            })
+                      states={'readonly': True, })
     user = fields.Many2One('res.user', 'User', required=True)
     expiration_date = fields.Date('Expiration Date', required=True)
     note = fields.Text('Note')
@@ -665,17 +664,19 @@ class Share(ModelSQL, ModelView):
 
     def get_url(self, name):
         return urllib.parse.urljoin(get_webdav_url(),
-            urllib.parse.urlunsplit((None, None,
-                    urllib.parse.quote(self.path.encode('utf-8')),
-                    urllib.parse.urlencode([('key', self.key)]), None)))
+                                    urllib.parse.urlunsplit(
+                                        (None, None, urllib.
+                                         parse.quote(
+                                             self.path.encode('utf-8')),
+                                         urllib.parse.urlencode(
+                                             [('key', self.key)]), None)))
 
     @staticmethod
     def match(share, command, path):
         "Test if share match with command and path"
         today = datetime.date.today()
-        return (path.startswith(share.path)
-            and share.expiration_date > today
-            and command == 'GET')
+        return (path.startswith(share.path) and share.expiration_date > today
+                and command == 'GET')
 
     @classmethod
     def get_login(cls, key, command, path):
@@ -699,20 +700,12 @@ class Attachment(ModelSQL, ModelView):
     path = fields.Function(fields.Char('Path'), 'get_path')
     url = fields.Function(fields.Char('URL'), 'get_url')
     shares = fields.Function(fields.One2Many('webdav.share', None, 'Shares',
-            domain=[
-                ('path', '=', Eval('path')),
-                ],
-            depends=['path']), 'get_shares', 'set_shares')
-
-    @classmethod
-    def __setup__(cls):
-        super(Attachment, cls).__setup__()
-        cls._error_messages.update({
-                'collection_attachment_name': ('You can not create an '
-                    'attachment named "%(attachment)s" in collection '
-                    '"%(collection)s" because there is already a collection '
-                    'with that name.')
-                })
+                                             domain=[
+                                                    ('path', '=',
+                                                     Eval('path')),
+                                                    ],
+                                             depends=['path']),
+                             'get_shares', 'set_shares')
 
     @classmethod
     def validate(cls, attachments):
@@ -731,11 +724,11 @@ class Attachment(ModelSQL, ModelView):
                     collection = Collection(int(record_id))
                     for child in collection.childs:
                         if child.name == attachment.name:
-                            cls.raise_user_error(
-                                'collection_attachment_name', {
-                                    'attachment': attachment.rec_name,
-                                    'collection': collection.rec_name,
-                                    })
+                            raise InvalidAttachmentName(
+                                gettext('health.webdav3_server'
+                                        '.collection_attachment_name',
+                                        attachment=attachment.rec_name,
+                                        collection=collection.rec_name))
 
     @classmethod
     def get_path(cls, attachments, name):
@@ -753,7 +746,7 @@ class Attachment(ModelSQL, ModelView):
             record_id = attachment.resource.id
             resources.setdefault(model_name, set()).add(record_id)
             resource2attachments.setdefault((model_name, record_id),
-                []).append(attachment)
+                                            []).append(attachment)
         collections = Collection.search([
                 ('model.model', 'in', list(resources.keys())),
                 ])
@@ -768,21 +761,23 @@ class Attachment(ModelSQL, ModelView):
                 for attachment in resource2attachments[
                         (model_name, record.id)]:
                     paths[attachment.id] = '/'.join((collection.rec_name,
-                            record.rec_name + '-' + str(record.id),
-                            attachment.name))
+                                                     record.rec_name
+                                                     + '-' + str(record.id),
+                                                     attachment.name))
         if 'webdav.collection' in resources:
             collection_ids = list(resources['webdav.collection'])
             for collection in Collection.browse(collection_ids):
                 for attachment in resource2attachments[
                         ('webdav.collection', collection.id)]:
                     paths[attachment.id] = '/'.join((collection.rec_name,
-                            attachment.name))
+                                                     attachment.name))
         return paths
 
     def get_url(self, name):
         if self.path:
             return urllib.parse.urljoin(get_webdav_url(),
-                urllib.parse.quote(self.path.encode('utf-8')))
+                                        urllib.parse.quote(
+                                            self.path.encode('utf-8')))
 
     @classmethod
     def get_shares(cls, attachments, name):

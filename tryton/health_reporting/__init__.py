@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -20,29 +19,29 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .wizard import *
-from .report import *
+from . import wizard
+from . import report
+
 
 def register():
     Pool.register(
-        TopDiseases,
-        OpenTopDiseasesStart,
-        OpenEvaluationsStart,
-        SummaryReportStart,
-        EpidemicsReportStart,
-        EvaluationsDoctor,
-        EvaluationsSpecialty,
-        EvaluationsSector,
+        wizard.wizard_top_diseases.TopDiseases,
+        wizard.wizard_top_diseases.OpenTopDiseasesStart,
+        wizard.wizard_evaluations.OpenEvaluationsStart,
+        wizard.wizard_summary_report.SummaryReportStart,
+        wizard.wizard_evaluations.EvaluationsDoctor,
+        wizard.wizard_evaluations.EvaluationsSpecialty,
+        wizard.wizard_evaluations.EvaluationsSector,
+        wizard.wizard_epidemics_report.EpidemicsReportStart,
         module='health_reporting', type_='model')
     Pool.register(
-        OpenTopDiseases,
-        OpenEvaluations,
-        SummaryReport,
-        EpidemicsReport,
+        wizard.wizard_top_diseases.OpenTopDiseases,
+        wizard.wizard_evaluations.OpenEvaluations,
+        wizard.wizard_summary_report.SummaryReport,
+        wizard.wizard_epidemics_report.EpidemicsReport,
         module='health_reporting', type_='wizard')
 
     Pool.register(
-        InstitutionSummaryReport,
-        InstitutionEpidemicsReport,
+        report.summary_report.InstitutionSummaryReport,
+        report.epidemics_report.InstitutionEpidemicsReport,
         module='health_reporting', type_='report')
-

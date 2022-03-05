@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    Copyright (C) 2011  Adrián Bernardi, Mario Puntin (health_invoice)
 #
@@ -21,27 +20,28 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-import datetime
-from trytond.model import ModelView, ModelSQL, fields, ModelSingleton, Unique
+from trytond.model import ModelView, ModelSQL, fields
 from trytond.pyson import Eval, Equal
 from trytond.pool import Pool
+from trytond.i18n import gettext
 
+from .exceptions import (NoServiceAssociated)
 
 __all__ = ['PatientLabTestRequest']
 
 
-
 """ Add Lab order charges to service model """
+
 
 class PatientLabTestRequest(ModelSQL, ModelView):
     'Lab Order'
     __name__ = 'gnuhealth.patient.lab.test'
 
-
     service = fields.Many2One(
         'gnuhealth.health_service', 'Service',
-        domain=[('patient', '=', Eval('patient_id'))], depends=['patient'],
-        states = {'readonly': Equal(Eval('state'), 'done')},
+        domain=[('patient', '=', Eval('patient_id'))],
+        depends=['patient'],
+        states={'readonly': Equal(Eval('state'), 'done')},
         help="Service document associated to this Lab Request")
 
     @classmethod
@@ -53,7 +53,6 @@ class PatientLabTestRequest(ModelSQL, ModelView):
             },
             })
 
-
     @classmethod
     @ModelView.button
     def update_service(cls, laborders):
@@ -64,7 +63,9 @@ class PatientLabTestRequest(ModelSQL, ModelView):
         laborder = laborders[0]
 
         if not laborder.service:
-            cls.raise_user_error("Need to associate a service !")
+            raise NoServiceAssociated(
+                gettext('health_services_lab.msg_no_service_associated')
+                )
 
         service_data = {}
         service_lines = []
@@ -77,12 +78,11 @@ class PatientLabTestRequest(ModelSQL, ModelView):
             'qty': 1
             }]))
 
-            
         hservice.append(laborder.service)
-        
+
         description = "Services and Lab"
-        
-        service_data ['desc'] =  description
-        service_data ['service_line'] = service_lines
-                
+
+        service_data['desc'] = description
+        service_data['service_line'] = service_lines
+
         HealthService.write(hservice, service_data)

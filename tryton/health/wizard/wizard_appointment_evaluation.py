@@ -1,11 +1,11 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
-#
+#    The GNU Health HMIS component is part of the GNU Health project
+#    www.gnuhealth.org
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -21,32 +21,39 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+
 from trytond.model import ModelView
-from trytond.wizard import Wizard, StateTransition, StateAction, StateView, Button
+from trytond.wizard import Wizard, StateTransition, StateAction, \
+    StateView, Button
 from trytond.transaction import Transaction
 from trytond.pool import Pool
 from trytond.pyson import PYSONEncoder
 
+from trytond.i18n import gettext
 
+from ..exceptions import NoAppointmentSelected
 __all__ = ['CreateAppointmentEvaluation']
+
 
 class CreateAppointmentEvaluation(Wizard):
     'Create Appointment Evaluation'
     __name__ = 'wizard.gnuhealth.appointment.evaluation'
-  
+
     start_state = 'appointment_evaluation'
     appointment_evaluation = StateAction('health.act_app_evaluation')
 
     def do_appointment_evaluation(self, action):
-      
+
         appointment = Transaction().context.get('active_id')
 
         try:
             app_id = \
                 Pool().get('gnuhealth.appointment').browse([appointment])[0]
         except:
-            self.raise_user_error('no_record_selected')
-            
+            raise NoAppointmentSelected(gettext(
+                'health.msg_no_appointment_selected')
+                )
+
         patient = app_id.patient.id
 
         if (app_id.speciality):
@@ -73,14 +80,5 @@ class CreateAppointmentEvaluation(Wizard):
             'evaluation_type': evaluation_type,
             'visit_type': visit_type,
             })
-            
-        return action, {}
-        
-    @classmethod
-    def __setup__(cls):
-        super(CreateAppointmentEvaluation, cls).__setup__()
-        cls._error_messages.update({
-            'no_record_selected':
-                'You need to select one Appointment record',
-        })
 
+        return action, {}

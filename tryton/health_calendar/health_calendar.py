@@ -1,12 +1,10 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#                           
 #                            CALENDAR PACKAGE
 #
-#    Copyright (C) 2008-2018  Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2018  GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022  Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022  GNU Solidario <health@gnusolidario.org>
 #    Copyright (C) 2011-2014  Sebastián Marró <smarro@thymbra.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -26,7 +24,9 @@
 from trytond.model import fields
 from trytond.pyson import Eval, Not, Bool
 from trytond.pool import Pool, PoolMeta
+from trytond.i18n import gettext
 
+from .exceptions import (AppointmentEndDateBeforeStart)
 
 __all__ = ['User', 'Appointment']
 
@@ -35,7 +35,8 @@ class User(metaclass=PoolMeta):
     __name__ = "res.user"
 
     use_caldav = fields.Boolean('CalDAV', help="The user has a CalDav account")
-    calendar = fields.Many2One('calendar.calendar', 'Calendar',
+    calendar = fields.Many2One(
+        'calendar.calendar', 'Calendar',
         states={
             'invisible': Not(Bool(Eval('use_caldav'))),
             'required': Bool(Eval('use_caldav')),
@@ -50,6 +51,22 @@ class Appointment(metaclass=PoolMeta):
         help="Calendar Event",
         states={'invisible': Not(Bool(Eval('event')))})
     appointment_date_end = fields.DateTime('End Date and Time')
+
+    @classmethod
+    def validate(cls, appointments):
+        super(Appointment, cls).validate(appointments)
+        for appointment in appointments:
+            appointment.validate_appointment_dates()
+
+    def validate_appointment_dates(self):
+        if self.appointment_date_end:
+            if (self.appointment_date_end < self.appointment_date):
+                raise AppointmentEndDateBeforeStart(gettext(
+                    'health_calendar.msg_appointment_end_date_before_start',
+                    appointment_date=self.appointment_date,
+                    appointment_date_end=self.appointment_date_end
+                    )
+                )
 
     @classmethod
     def create(cls, vlist):
@@ -95,7 +112,7 @@ class Appointment(metaclass=PoolMeta):
         Healthprof = pool.get('gnuhealth.healthprofessional')
 
         for appointment in appointments:
-            #Update caldav event
+            # Update caldav event
             if appointment.event and ('healthprof' not in values):
                 if 'appointment_date' in values:
                     Event.write([appointment.event], {
@@ -116,13 +133,13 @@ class Appointment(metaclass=PoolMeta):
                         })
 
             else:
-                #Move the event to the new health professional
+                # Move the event to the new health professional
                 if appointment.event and ('healthprof' in values):
                     current_event = [appointment.event]
                     if appointment.healthprof.name.internal_user:
                         healthprof = Healthprof(values['healthprof'])
                         if healthprof.name.internal_user.calendar:
-                            #Health professional has calendar
+                            # Health professional has calendar
                             patient = appointment.patient.name.rec_name
                             comments = ''
                             if 'comments' in values:
@@ -134,9 +151,11 @@ class Appointment(metaclass=PoolMeta):
                             else:
                                 appointment_date = appointment.appointment_date
                             if 'appointment_date_end' in values:
-                                appointment_date_end = values['appointment_date_end']
+                                appointment_date_end = \
+                                    values['appointment_date_end']
                             else:
-                                appointment_date_end = appointment.appointment_date_end
+                                appointment_date_end = \
+                                    appointment.appointment_date_end
                             events = Event.create([{
                                 'dtstart': appointment_date,
                                 'dtend': appointment_date_end,

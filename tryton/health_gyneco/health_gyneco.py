@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -29,6 +28,10 @@ from trytond import backend
 from trytond.transaction import Transaction
 from sql import *
 from sql.aggregate import *
+from trytond.modules.health.core import get_health_professional, get_institution
+from trytond.i18n import gettext
+
+from .exceptions import PatientAlreadyPregnant
 
 
 __all__ = ['PatientPregnancy', 'PrenatalEvaluation', 'PuerperiumMonitor',
@@ -220,10 +223,6 @@ class PatientPregnancy(ModelSQL, ModelView):
         ]
         cls._order.insert(0, ('lmp', 'DESC'))
 
-        cls._error_messages.update({
-            'patient_already_pregnant': 'Our records indicate that the patient'
-                ' is already pregnant !'})
-
     @classmethod
     def validate(cls, pregnancies):
         super(PatientPregnancy, cls).validate(pregnancies)
@@ -241,7 +240,8 @@ class PatientPregnancy(ModelSQL, ModelView):
 
         records = cursor.fetchone()[0]
         if records > 1:
-            self.raise_user_error('patient_already_pregnant')
+            raise PatientAlreadyPregnant(
+                gettext('health_gyneco.msg_patient_already_pregnant'))
 
     @staticmethod
     def default_current_pregnancy():
@@ -249,15 +249,11 @@ class PatientPregnancy(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        return HealthProf.get_health_professional()
+        return get_health_professional()
 
     @fields.depends('reverse_weeks', 'pregnancy_end_date')
     def on_change_with_lmp(self):
@@ -338,7 +334,7 @@ class PrenatalEvaluation(ModelSQL, ModelView):
         help="Signs of Urinary System Activity")
 
     digestive_activity_signs = fields.Boolean("SDA", 
-        help="Signs of Digestive Systen Activity")
+        help="Signs of Digestive System Activity")
          
     notes = fields.Text("Notes")
     
@@ -351,15 +347,11 @@ class PrenatalEvaluation(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        return HealthProf.get_health_professional()
+        return get_health_professional()
 
 
     def get_patient_evaluation_data(self, name):
@@ -416,15 +408,11 @@ class PuerperiumMonitor(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        return HealthProf.get_health_professional()
+        return get_health_professional()
 
 
 class Perinatal(ModelSQL, ModelView):
@@ -503,15 +491,11 @@ class Perinatal(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        return HealthProf.get_health_professional()
+        return get_health_professional()
 
 
 
@@ -714,15 +698,11 @@ class PatientMenstrualHistory(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        return HealthProf.get_health_professional()
+        return get_health_professional()
 
 
     @staticmethod
@@ -769,15 +749,11 @@ class PatientMammographyHistory(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        return HealthProf.get_health_professional()
+        return get_health_professional()
 
 
     @staticmethod
@@ -821,15 +797,11 @@ class PatientPAPHistory(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        return HealthProf.get_health_professional()
+        return get_health_professional()
 
 
     @staticmethod
@@ -868,15 +840,11 @@ class PatientColposcopyHistory(ModelSQL, ModelView):
 
     @staticmethod
     def default_institution():
-        HealthInst = Pool().get('gnuhealth.institution')
-        institution = HealthInst.get_institution()
-        return institution
+        return get_institution()
 
     @staticmethod
     def default_healthprof():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        return HealthProf.get_health_professional()
+        return get_health_professional()
 
 
     @staticmethod

@@ -143,9 +143,9 @@ class Odontogram(Report):
         return (image_png)
 
     @classmethod
-    def get_context(cls, records, data):
+    def get_context(cls, records, header, data):
         context = super(Odontogram, cls).get_context(
-            records, data)
+            records, header, data)
 
         dental_schema = \
             Pool().get('gnuhealth.patient')(data['id']).dental_schema

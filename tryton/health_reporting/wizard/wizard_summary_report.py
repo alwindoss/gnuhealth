@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -20,13 +20,11 @@
 #
 ##############################################################################
 
-from datetime import datetime, timedelta, date
+from datetime import date
 from trytond.model import ModelView, fields
-from trytond.wizard import Wizard, StateView, StateAction, StateTransition, \
-    Button
-from trytond.transaction import Transaction
+from trytond.wizard import Wizard, StateView, StateAction, Button
 
-__all__ = ['SummaryReportStart','SummaryReport']
+__all__ = ['SummaryReportStart', 'SummaryReport']
 
 
 class SummaryReportStart(ModelView):
@@ -54,30 +52,32 @@ class SummaryReportStart(ModelView):
     def default_demographics():
         return True
 
+
 class SummaryReport(Wizard):
     'Open Institution Summary Report'
     __name__ = 'gnuhealth.summary.report.open'
 
-    start = StateView('gnuhealth.summary.report.open.start',
+    start = StateView(
+        'gnuhealth.summary.report.open.start',
         'health_reporting.summary_report_open_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Open', 'open_', 'tryton-ok', default=True),
             ])
-    
+
     open_ = StateAction('health_reporting.report_summary_information')
 
     def fill_data(self):
         return {
             'institution': (self.start.institution.id
-                    if self.start.institution else None),
+                            if self.start.institution else None),
             'start_date': self.start.start_date,
             'end_date': self.start.end_date,
             'demographics': self.start.demographics,
             'patient_evaluations': self.start.patient_evaluations,
         }
-    
+
     def do_open_(self, action):
         return action, self.fill_data()
-            
+
     def transition_open_(self):
         return 'end'

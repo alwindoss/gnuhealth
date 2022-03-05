@@ -1,9 +1,11 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
+#
+#    The GNU Health HMIS component is part of the GNU Health project
+#    www.gnuhealth.org
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -21,107 +23,23 @@
 #
 ##############################################################################
 from datetime import datetime
-from trytond.model import ModelView, ModelSingleton, ModelSQL, fields, \
-    Unique, ValueMixin
-from trytond.transaction import Transaction
+from trytond.model import ModelView, ModelSQL, fields, Unique
 from trytond.pool import Pool
-from trytond import backend
-from trytond.tools.multivalue import migrate_property
-from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
+from trytond.pyson import Eval, Not, Bool
+from trytond.modules.health.core import get_health_professional
 
-__all__ = ['GnuHealthSequences', 'GnuHealthSequenceSetup',
+__all__ = [
     'PatientData', 'TestType', 'Lab',
     'GnuHealthLabTestUnits', 'GnuHealthTestCritearea',
-    'GnuHealthPatientLabTest','PatientHealthCondition']
-
-sequences = ['lab_sequence', 'lab_request_sequence']
-
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
-    "Standard Sequences for GNU Health"
-    __name__ = "gnuhealth.sequences"
-
-    lab_sequence = fields.MultiValue(fields.Many2One('ir.sequence',
-        'Lab Sequence', domain=[('code', '=', 'gnuhealth.lab')],
-        required=True))
-    lab_request_sequence = fields.MultiValue(fields.Many2One('ir.sequence',
-        'Patient Lab Request Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.patient.lab.test')]))
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-
-    @classmethod
-    def default_lab_request_sequence(cls):
-        return cls.multivalue_model(
-            'lab_request_sequence').default_lab_request_sequence()
-
-    @classmethod
-    def default_lab_sequence(cls):
-        return cls.multivalue_model(
-            'lab_sequence').default_lab_sequence()
-
-
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    'GNU Health Sequences Setup'
-    __name__ = 'gnuhealth.sequence.setup'
-
-    lab_request_sequence = fields.Many2One('ir.sequence', 
-        'Lab Request Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.patient.lab.test')])
-
-
-    lab_sequence = fields.Many2One('ir.sequence', 
-        'Lab Result Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.lab')])
-
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        exist = TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_MultiValue([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_lab_request_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_lab', 'seq_gnuhealth_lab_request')
-
-    @classmethod
-    def default_lab_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_lab', 'seq_gnuhealth_lab_test')
-
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.MultiValue
-
+    'GnuHealthPatientLabTest', 'PatientHealthCondition']
 
 
 class PatientData(ModelSQL, ModelView):
     'Patient lab tests'
     __name__ = 'gnuhealth.patient'
 
-    lab_test_ids = fields.One2Many('gnuhealth.patient.lab.test', 'patient_id',
+    lab_test_ids = fields.One2Many(
+        'gnuhealth.patient.lab.test', 'patient_id',
         'Lab Tests Required')
 
 
@@ -129,14 +47,17 @@ class TestType(ModelSQL, ModelView):
     'Type of Lab test'
     __name__ = 'gnuhealth.lab.test_type'
 
-    name = fields.Char('Test',
+    name = fields.Char(
+        'Test',
         help="Test type, eg X-Ray, hemogram,biopsy...", required=True,
         select=True, translate=True)
-    code = fields.Char('Code',
+    code = fields.Char(
+        'Code',
         help="Short name - code for the test", required=True, select=True)
     info = fields.Text('Description')
     product_id = fields.Many2One('product.product', 'Service', required=True)
-    critearea = fields.One2Many('gnuhealth.lab.test.critearea', 'test_type_id',
+    critearea = fields.One2Many(
+        'gnuhealth.lab.test.critearea', 'test_type_id',
         'Test Cases')
 
     active = fields.Boolean('Active', select=True)
@@ -171,50 +92,53 @@ class TestType(ModelSQL, ModelView):
         return [(cls._rec_name,) + tuple(clause[1:])]
 
 
-
 class Lab(ModelSQL, ModelView):
     'Patient Lab Test Results'
     __name__ = 'gnuhealth.lab'
 
     name = fields.Char('ID', help="Lab result ID", readonly=True)
-    test = fields.Many2One('gnuhealth.lab.test_type', 'Test type',
+    test = fields.Many2One(
+        'gnuhealth.lab.test_type', 'Test type',
         help="Lab test type", required=True, select=True)
-    patient = fields.Many2One('gnuhealth.patient', 'Patient',
-     help="Patient ID", required=True, select=True)
-    pathologist = fields.Many2One('gnuhealth.healthprofessional', 'Pathologist',
+    patient = fields.Many2One(
+        'gnuhealth.patient', 'Patient',
+        help="Patient ID", required=True, select=True)
+    pathologist = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Pathologist',
         help="Pathologist", select=True)
-    requestor = fields.Many2One('gnuhealth.healthprofessional', 'Physician',
+    requestor = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Health prof',
         help="Doctor who requested the test", select=True)
     results = fields.Text('Results')
     diagnosis = fields.Text('Diagnosis')
-    critearea = fields.One2Many('gnuhealth.lab.test.critearea',
+    critearea = fields.One2Many(
+        'gnuhealth.lab.test.critearea',
         'gnuhealth_lab_id', 'Lab Test Critearea')
-    date_requested = fields.DateTime('Date requested', required=True,
-        select=True)
+    date_requested = fields.DateTime(
+        'Date requested', required=True, select=True)
     date_analysis = fields.DateTime('Date of the Analysis', select=True)
-    request_order = fields.Integer('Request', readonly=True)
+    request_order = fields.Integer('Order', readonly=True)
 
     pathology = fields.Many2One(
         'gnuhealth.pathology', 'Pathology',
         help='Pathology confirmed / associated to this lab test.')
 
-    analytes_summary = \
-        fields.Function(fields.Text('Summary'),
-         'get_analytes_summary')
+    analytes_summary = fields.Function(
+        fields.Text('Summary'), 'get_analytes_summary')
 
     def get_analytes_summary(self, name):
-            summ = ""
-            for analyte in self.critearea:
-                if analyte.result or analyte.result_text:
-                    res = ""
-                    res_text = ""
-                    if analyte.result_text:
-                        res_text = analyte.result_text
-                    if analyte.result:
-                        res = str(analyte.result) + " "
-                    summ = summ + analyte.rec_name + " "  + \
-                        res +  res_text + "\n"
-            return summ
+        summ = ""
+        for analyte in self.critearea:
+            if analyte.result or analyte.result_text:
+                res = ""
+                res_text = ""
+                if analyte.result_text:
+                    res_text = analyte.result_text
+                if analyte.result:
+                    res = str(analyte.result) + " "
+                summ = summ + analyte.rec_name + " " + \
+                    res + res_text + "\n"
+        return summ
 
     @classmethod
     def __setup__(cls):
@@ -226,7 +150,6 @@ class Lab(ModelSQL, ModelView):
         ]
         cls._order.insert(0, ('date_requested', 'DESC'))
 
-
     @staticmethod
     def default_date_requested():
         return datetime.now()
@@ -236,16 +159,20 @@ class Lab(ModelSQL, ModelView):
         return datetime.now()
 
     @classmethod
-    def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
+    def generate_code(cls, **pattern):
         Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'lab_test_sequence', **pattern)
+        if sequence:
+            return sequence.get()
 
+    @classmethod
+    def create(cls, vlist):
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('name'):
-                config = Config(1)
-                values['name'] = Sequence.get_id(
-                    config.lab_sequence.id)
+                values['name'] = cls.generate_code()
 
         return super(Lab, cls).create(vlist)
 
@@ -255,10 +182,12 @@ class Lab(ModelSQL, ModelView):
             bool_op = 'AND'
         else:
             bool_op = 'OR'
-        return [bool_op,
-            ('patient',) + tuple(clause[1:]),
-            ('name',) + tuple(clause[1:]),
+        return [
+            bool_op,
+            ('patient', ) + tuple(clause[1:]),
+            ('name', ) + tuple(clause[1:]),
             ]
+
 
 class GnuHealthLabTestUnits(ModelSQL, ModelView):
     'Lab Test Units'
@@ -276,7 +205,6 @@ class GnuHealthLabTestUnits(ModelSQL, ModelView):
              'The Unit name must be unique')
         ]
 
-
     @classmethod
     def check_xml_record(cls, records, values):
         return True
@@ -286,33 +214,39 @@ class GnuHealthTestCritearea(ModelSQL, ModelView):
     'Lab Test Critearea'
     __name__ = 'gnuhealth.lab.test.critearea'
 
-    name = fields.Char('Analyte', required=True, select=True,
+    name = fields.Char(
+        'Analyte', required=True, select=True,
         translate=True)
-    excluded = fields.Boolean('Excluded', help='Select this option when'
+    excluded = fields.Boolean(
+        'Excluded', help='Select this option when'
         ' this analyte is excluded from the test')
     result = fields.Float('Value')
-    result_text = fields.Char('Result - Text', help='Non-numeric results. For '
+    result_text = fields.Char(
+        'Result - Text', help='Non-numeric results. For '
         'example qualitative values, morphological, colors ...')
     remarks = fields.Char('Remarks')
     normal_range = fields.Text('Reference')
     lower_limit = fields.Float('Lower Limit')
     upper_limit = fields.Float('Upper Limit')
-    warning = fields.Boolean('Warn', help='Warns the patient about this '
+    warning = fields.Boolean(
+        'Warn', help='Warns the patient about this '
         ' analyte result'
         ' It is useful to contextualize the result to each patient status '
         ' like age, sex, comorbidities, ...')
     units = fields.Many2One('gnuhealth.lab.test.units', 'Units')
-    test_type_id = fields.Many2One('gnuhealth.lab.test_type', 'Test type',
-     select=True)
-    gnuhealth_lab_id = fields.Many2One('gnuhealth.lab', 'Test Cases',
+    test_type_id = fields.Many2One(
+        'gnuhealth.lab.test_type', 'Test type',
+        select=True)
+    gnuhealth_lab_id = fields.Many2One(
+        'gnuhealth.lab', 'Test Cases',
         select=True)
     sequence = fields.Integer('Sequence')
 
     # Show the warning icon if warning is active on the analyte line
-    lab_warning_icon = \
-        fields.Function(fields.Char('Lab Warning Icon'),
-         'get_lab_warning_icon')
-    
+    lab_warning_icon = fields.Function(fields.Char(
+        'Lab Warning Icon'),
+        'get_lab_warning_icon')
+
     def get_lab_warning_icon(self, name):
         if (self.warning):
             return 'gnuhealth-warning'
@@ -346,10 +280,11 @@ class GnuHealthTestCritearea(ModelSQL, ModelView):
 
 
 class GnuHealthPatientLabTest(ModelSQL, ModelView):
-    'Patient Lab Test'
+    'Lab Test Request'
     __name__ = 'gnuhealth.patient.lab.test'
 
-    name = fields.Many2One('gnuhealth.lab.test_type', 'Test Type',
+    name = fields.Many2One(
+        'gnuhealth.lab.test_type', 'Test Type',
         required=True, select=True)
     date = fields.DateTime('Date', select=True)
     state = fields.Selection([
@@ -358,10 +293,17 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
         ('ordered', 'Ordered'),
         ('cancel', 'Cancel'),
         ], 'State', readonly=True, select=True)
-    patient_id = fields.Many2One('gnuhealth.patient', 'Patient', required=True,
-     select=True)
-    doctor_id = fields.Many2One('gnuhealth.healthprofessional', 'Doctor',
-        help="Doctor who Request the lab test.", select=True)
+    patient_id = fields.Many2One(
+        'gnuhealth.patient', 'Patient', required=True,
+        select=True)
+    doctor_id = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Health prof.',
+        help="Health professional who requests the lab test.", select=True)
+    context = fields.Many2One(
+        'gnuhealth.pathology', 'Context',
+        help="Health context for this order. It can be a suspected or"
+             " existing health condition, a regular health checkup, ...",
+             select=True)
     request = fields.Integer('Order', readonly=True)
     urgent = fields.Boolean('Urgent')
 
@@ -382,31 +324,23 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
 
     @staticmethod
     def default_doctor_id():
-        User = Pool().get('res.user')
-        user = User(Transaction().user)
-        uid = int(user.id)
+        return get_health_professional()
 
-        parties = Pool().get('party.party').search([
-                ('internal_user', '=', uid)])
-        if parties:
-            doctors = Pool().get('gnuhealth.healthprofessional').search([
-                    ('name', '=', parties[0].id)])
-            if doctors:
-                return doctors[0].id
-        else:
-            return False
+    @classmethod
+    def generate_code(cls, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'lab_request_sequence', **pattern)
+        if sequence:
+            return sequence.get()
 
     @classmethod
     def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
         vlist = [x.copy() for x in vlist]
         for values in vlist:
-            if not values.get('request'):
-                config = Config(1)
-                values['request'] = Sequence.get_id(
-                    config.lab_request_sequence.id)
+            if not values.get('name'):
+                values['name'] = cls.generate_code()
 
         return super(GnuHealthPatientLabTest, cls).create(vlist)
 
@@ -417,8 +351,9 @@ class GnuHealthPatientLabTest(ModelSQL, ModelView):
         default = default.copy()
         default['request'] = None
         default['date'] = cls.default_date()
-        return super(GnuHealthPatientLabTest, cls).copy(tests,
-            default=default)
+        return super(GnuHealthPatientLabTest, cls).copy(
+            tests, default=default)
+
 
 class PatientHealthCondition(ModelSQL, ModelView):
     'Patient Conditions History'
@@ -427,10 +362,12 @@ class PatientHealthCondition(ModelSQL, ModelView):
     # Adds lab confirmed and the link to the test to the
     # Patient health Condition
 
-    lab_confirmed = fields.Boolean('Lab Confirmed', help='Confirmed by'
+    lab_confirmed = fields.Boolean(
+        'Lab Confirmed', help='Confirmed by'
         ' laboratory test')
 
-    lab_test = fields.Many2One('gnuhealth.lab','Lab Test',
+    lab_test = fields.Many2One(
+        'gnuhealth.lab', 'Lab Test',
         domain=[('patient', '=', Eval('name'))], depends=['name'],
         states={'invisible': Not(Bool(Eval('lab_confirmed')))},
         help='Lab test that confirmed the condition')

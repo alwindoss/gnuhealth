@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    Copyright (C) 2013  Sebastian Marro <smarro@gnusolidario.org>
 #
@@ -26,8 +26,11 @@ from trytond.wizard import Wizard, StateView, Button, StateTransition
 from trytond.model import ModelView
 from trytond.transaction import Transaction
 from trytond.pool import Pool
+from trytond.i18n import gettext
+from ..exceptions import (StockMoveExists, NoPharmacy)
 
-__all__ = ['CreatePrescriptionStockMoveInit','CreatePrescriptionStockMove']
+__all__ = ['CreatePrescriptionStockMoveInit', 'CreatePrescriptionStockMove']
+
 
 class CreatePrescriptionStockMoveInit(ModelView):
     'Create Prescription Stock Move Init'
@@ -38,12 +41,14 @@ class CreatePrescriptionStockMove(Wizard):
     'Create Prescription Stock Move'
     __name__ = 'gnuhealth.prescription.stock.move.create'
 
-    start = StateView('gnuhealth.prescription.stock.move.init',
-            'health_stock.view_create_prescription_stock_move', [
+    start = StateView(
+        'gnuhealth.prescription.stock.move.init',
+        'health_stock.view_create_prescription_stock_move', [
             Button('Cancel', 'end', 'tryton-cancel'),
-            Button('Create Stock Move', 'create_stock_move',
+            Button(
+                'Create Stock Move', 'create_stock_move',
                 'tryton-ok', True),
-            ])
+        ])
     create_stock_move = StateTransition()
 
     def transition_create_stock_move(self):
@@ -57,10 +62,14 @@ class CreatePrescriptionStockMove(Wizard):
         for prescription in prescriptions:
 
             if prescription.moves:
-                self.raise_user_error('stock_move_exists')
+                raise StockMoveExists(
+                    gettext('health_stock.msg_stock_move_exists')
+                    )
 
             if not prescription.pharmacy:
-                self.raise_user_error('no_pharmacy_selected')
+                raise NoPharmacy(
+                    gettext('health_stock.msg_no_pharmacy')
+                    )
 
             from_location = prescription.pharmacy.warehouse
             if from_location.type == 'warehouse':
@@ -80,14 +89,3 @@ class CreatePrescriptionStockMove(Wizard):
         StockMove.save(moves)
         StockMove.do(moves)
         return 'end'
-
-    @classmethod
-    def __setup__(cls):
-        super(CreatePrescriptionStockMove, cls).__setup__()
-        cls._error_messages.update({
-            'stock_move_exists':
-                'Stock moves already exists!.',
-            'no_pharmacy_selected':
-                'You need to select a pharmacy.',
-            })
-

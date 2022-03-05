@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -25,10 +24,15 @@ from trytond.model import ModelView, fields
 from trytond.wizard import Wizard, StateTransition, StateView, Button
 from trytond.transaction import Transaction
 from trytond.pool import Pool
+from trytond.i18n import gettext
+from ..exceptions import LabOrderExists
 
-
-__all__ = ['CreateLabTestOrderInit', 'CreateLabTestOrder', 'RequestTest',
+__all__ = [
+    'CreateLabTestOrderInit', 'CreateLabTestOrder', 'RequestTest',
     'RequestPatientLabTestStart', 'RequestPatientLabTest']
+
+
+from trytond.modules.health.core import get_health_professional
 
 
 class CreateLabTestOrderInit(ModelView):
@@ -40,7 +44,8 @@ class CreateLabTestOrder(Wizard):
     'Create Lab Test Report'
     __name__ = 'gnuhealth.lab.test.create'
 
-    start = StateView('gnuhealth.lab.test.create.init',
+    start = StateView(
+        'gnuhealth.lab.test.create.init',
         'health_lab.view_lab_make_test', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Create Test Order', 'create_lab_test', 'tryton-ok', True),
@@ -62,8 +67,9 @@ class CreateLabTestOrder(Wizard):
             test_report_data = {}
 
             if lab_test_order.state == 'ordered':
-                self.raise_user_error(
-                    "The Lab test order is already created")
+                raise LabOrderExists(
+                    gettext('health_lab.msg_lab_order_exists')
+                    )
 
             test_report_data['test'] = lab_test_order.name.id
             test_report_data['patient'] = lab_test_order.patient_id.id
@@ -96,7 +102,8 @@ class RequestTest(ModelView):
     __name__ = 'gnuhealth.request-test'
     _table = 'gnuhealth_request_test'
 
-    request = fields.Many2One('gnuhealth.patient.lab.test.request.start',
+    request = fields.Many2One(
+        'gnuhealth.patient.lab.test.request.start',
         'Request', required=True)
     test = fields.Many2One('gnuhealth.lab.test_type', 'Test', required=True)
 
@@ -107,9 +114,15 @@ class RequestPatientLabTestStart(ModelView):
 
     date = fields.DateTime('Date')
     patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
-    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Doctor',
-        help="Doctor who Request the lab tests.")
-    tests = fields.Many2Many('gnuhealth.request-test', 'request', 'test',
+    context = fields.Many2One(
+        'gnuhealth.pathology', 'Context',
+        help="Health context for this order. It can be a suspected or"
+             " existing health condition, a regular health checkup, ...")
+    doctor = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Health prof',
+        help="Health professional who ordered the lab tests.")
+    tests = fields.Many2Many(
+        'gnuhealth.request-test', 'request', 'test',
         'Tests', required=True)
     urgent = fields.Boolean('Urgent')
 
@@ -124,32 +137,32 @@ class RequestPatientLabTestStart(ModelView):
 
     @staticmethod
     def default_doctor():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        hp = HealthProf.get_health_professional()
-        if not hp:
-            RequestPatientLabTestStart.raise_user_error(
-                "No health professional associated to this user !")
-        return hp
+        return get_health_professional()
+
 
 class RequestPatientLabTest(Wizard):
     'Request Patient Lab Test'
     __name__ = 'gnuhealth.patient.lab.test.request'
 
-    start = StateView('gnuhealth.patient.lab.test.request.start',
+    start = StateView(
+        'gnuhealth.patient.lab.test.request.start',
         'health_lab.patient_lab_test_request_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Request', 'request', 'tryton-ok', default=True),
             ])
     request = StateTransition()
 
+    def generate_code(self, **pattern):
+        Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'lab_request_sequence', **pattern)
+        if sequence:
+            return sequence.get()
+
     def transition_request(self):
         PatientLabTest = Pool().get('gnuhealth.patient.lab.test')
-        Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
-
-        config = Config(1)
-        request_number = Sequence.get_id(config.lab_request_sequence.id)
+        request_number = self.generate_code()
         lab_tests = []
         for test in self.start.tests:
             lab_test = {}
@@ -158,6 +171,8 @@ class RequestPatientLabTest(Wizard):
             lab_test['patient_id'] = self.start.patient.id
             if self.start.doctor:
                 lab_test['doctor_id'] = self.start.doctor.id
+            if self.start.context:
+                lab_test['context'] = self.start.context.id
             lab_test['date'] = self.start.date
             lab_test['urgent'] = self.start.urgent
             lab_tests.append(lab_test)

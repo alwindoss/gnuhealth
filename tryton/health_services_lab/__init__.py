@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -22,15 +22,15 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_services_lab import *
-from .wizard import *
+from . import health_services_lab
+from . import wizard
 
 
 def register():
     Pool.register(
-    PatientLabTestRequest,
-	RequestPatientLabTestStart,
+        health_services_lab.PatientLabTestRequest,
+        wizard.wizard_health_services.RequestPatientLabTestStart,
         module='health_services_lab', type_='model')
     Pool.register(
-        RequestPatientLabTest,
+        wizard.wizard_health_services.RequestPatientLabTest,
         module='health_services_lab', type_='wizard')

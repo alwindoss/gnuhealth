@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #    Copyright (C) 2020 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@ info = dict(config.items('tryton'))
 for key in ('depends', 'extras_depend', 'xml'):
     if key in info:
         info[key] = info[key].strip().splitlines()
-major_version, minor_version = 5, 0
+major_version, minor_version = 6, 0
 
 requires = []
 

@@ -4,20 +4,6 @@ this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
 
-        <record model="res.group" id="group_calendar_admin">
-            <field name="name">Calendar Administration</field>
-        </record>
-        <record model="res.user-res.group"
-            id="user_admin_group_calendar_admin">
-            <field name="user" ref="res.user_admin"/>
-            <field name="group" ref="group_calendar_admin"/>
-        </record>
-        <record model="res.user-res.group"
-            id="user_trigger_group_calendar_admin">
-            <field name="user" ref="res.user_trigger"/>
-            <field name="group" ref="group_calendar_admin"/>
-        </record>
-
         <menuitem name="Calendar" sequence="8" id="menu_calendar"
             icon="tryton-calendar"/>
 
@@ -47,70 +33,6 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <menuitem parent="menu_calendar" sequence="1"
             action="act_calendar_form" id="menu_calendar_form"/>
-
-        <record model="ir.rule.group" id="rule_group_calendar_admin">
-            <field name="model" search="[('model', '=', 'calendar.calendar')]"/>
-            <field name="global_p" eval="False"/>
-            <field name="default_p" eval="False"/>
-            <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="True"/>
-            <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
-        </record>
-        <record model="ir.rule" id="rule_group_calendar_admin_line1">
-            <field name="domain">[]</field>
-            <field name="rule_group" ref="rule_group_calendar_admin"/>
-        </record>
-        <record model="ir.rule.group-res.group"
-            id="rule_group_calendar_admin-calendar_admin">
-            <field name="rule_group" ref="rule_group_calendar_admin"/>
-            <field name="group" ref="group_calendar_admin"/>
-        </record>
-
-        <record model="ir.rule.group" id="rule_group_read_calendar">
-            <field name="model" search="[('model', '=', 'calendar.calendar')]"/>
-            <field name="global_p" eval="False"/>
-            <field name="default_p" eval="True"/>
-            <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="False"/>
-            <field name="perm_create" eval="False"/>
-            <field name="perm_delete" eval="False"/>
-        </record>
-        <record model="ir.rule" id="rule_group_read_calendar_line1">
-            <field name="domain"
-                eval="[('owner', '=', Eval('user', {}).get('id', -1))]"
-                pyson="1"/>
-            <field name="rule_group" ref="rule_group_read_calendar"/>
-        </record>
-        <record model="ir.rule" id="rule_group_read_calendar_line2">
-            <field name="domain"
-                eval="[('read_users', '=', Eval('user', {}).get('id', -1))]"
-                pyson="1"/>
-            <field name="rule_group" ref="rule_group_read_calendar"/>
-        </record>
-
-        <record model="ir.rule.group" id="rule_group_write_calendar">
-            <field name="model" search="[('model', '=', 'calendar.calendar')]"/>
-            <field name="global_p" eval="False"/>
-            <field name="default_p" eval="True"/>
-            <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="True"/>
-            <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
-        </record>
-        <record model="ir.rule" id="rule_group_write_calendar_line1">
-            <field name="domain"
-                eval="[('owner', '=', Eval('user', {}).get('id', -1))]"
-                pyson="1"/>
-            <field name="rule_group" ref="rule_group_write_calendar"/>
-        </record>
-        <record model="ir.rule" id="rule_group_write_calendar_line2">
-            <field name="domain"
-                eval="[('write_users', '=', Eval('user', {}).get('id', -1))]"
-                pyson="1"/>
-            <field name="rule_group" ref="rule_group_write_calendar"/>
-        </record>
-
         <record model="ir.ui.view" id="category_view_tree">
             <field name="model">calendar.category</field>
             <field name="type">tree</field>
@@ -172,69 +94,6 @@ this repository contains the full copyright notices and license terms. -->
         </record>
         <menuitem parent="menu_calendar_form" sequence="20"
             action="act_event_form" id="menu_event_form"/>
-
-        <record model="ir.rule.group" id="rule_group_event_admin">
-            <field name="model" search="[('model', '=', 'calendar.event')]"/>
-            <field name="global_p" eval="False"/>
-            <field name="default_p" eval="False"/>
-            <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="True"/>
-            <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
-        </record>
-        <record model="ir.rule" id="rule_group_event_admin_line1">
-            <field name="domain" eval="[]" pyson="1"/>
-            <field name="rule_group" ref="rule_group_event_admin"/>
-        </record>
-        <record model="ir.rule.group-res.group"
-            id="rule_group_event_admin-calendar_admin">
-            <field name="rule_group" ref="rule_group_event_admin"/>
-            <field name="group" ref="group_calendar_admin"/>
-        </record>
-
-        <record model="ir.rule.group" id="rule_group_read_event">
-            <field name="model" search="[('model', '=', 'calendar.event')]"/>
-            <field name="global_p" eval="False"/>
-            <field name="default_p" eval="True"/>
-            <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="False"/>
-            <field name="perm_create" eval="False"/>
-            <field name="perm_delete" eval="False"/>
-        </record>
-        <record model="ir.rule" id="rule_group_read_event_line1">
-            <field name="domain"
-                eval="[('calendar.owner', '=', Eval('user', {}).get('id', -1))]"
-                pyson="1"/>
-            <field name="rule_group" ref="rule_group_read_event"/>
-        </record>
-        <record model="ir.rule" id="rule_group_read_event_line2">
-            <field name="domain"
-                eval="[('calendar.read_users', '=', Eval('user', {}).get('id', -1))]"
-                pyson="1"/>
-            <field name="rule_group" ref="rule_group_read_event"/>
-        </record>
-
-        <record model="ir.rule.group" id="rule_group_write_event">
-            <field name="model" search="[('model', '=', 'calendar.event')]"/>
-            <field name="global_p" eval="False"/>
-            <field name="default_p" eval="True"/>
-            <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="True"/>
-            <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
-        </record>
-        <record model="ir.rule" id="rule_group_write_event_line1">
-            <field name="domain"
-                eval="[('calendar.owner', '=', Eval('user', {}).get('id', -1))]"
-                pyson="1"/>
-            <field name="rule_group" ref="rule_group_write_event"/>
-        </record>
-        <record model="ir.rule" id="rule_group_write_event_line2">
-            <field name="domain"
-                eval="[('calendar.write_users', '=', Eval('user', {}).get('id', -1))]"
-                pyson="1"/>
-            <field name="rule_group" ref="rule_group_write_event"/>
-        </record>
 
         <record model="ir.action.act_window" id="act_event_form3">
             <field name="name">Events</field>

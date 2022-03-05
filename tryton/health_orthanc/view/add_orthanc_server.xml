@@ -10,6 +10,6 @@
         <label name="user"/>
         <field name="user"/>
         <label name="password"/>
-        <field name="password"/>
+        <field name="password" widget="password"/>
     </group>
 </form>

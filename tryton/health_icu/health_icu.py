@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -25,6 +25,8 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from trytond.transaction import Transaction
 from trytond.pyson import Eval, Not, Bool, Equal
+from .exceptions import PatientAlreadyInICU
+from trytond.i18n import gettext
 
 
 __all__ = ['InpatientRegistration', 'InpatientIcu', 'Glasgow', 'ApacheII',
@@ -72,13 +74,6 @@ class InpatientIcu(ModelSQL, ModelView):
         'name', "Mechanical Ventilation History")
 
     @classmethod
-    def __setup__(cls):
-        super(InpatientIcu, cls).__setup__()
-        cls._error_messages.update({
-            'patient_already_at_icu': 'Our records indicate that the patient'
-                ' is already admitted at ICU'})
-
-    @classmethod
     def validate(cls, inpatients):
         super(InpatientIcu, cls).validate(inpatients)
         for inpatient in inpatients:
@@ -92,7 +87,8 @@ class InpatientIcu(ModelSQL, ModelView):
             WHERE (name = %s AND admitted)",
             (str(self.name.id),))
         if cursor.fetchone()[0] > 1:
-            self.raise_user_error('patient_already_at_icu')
+            raise PatientAlreadyInICU(
+                gettext('health_icu.msg_patient_already_in_icu'))
 
     @staticmethod
     def default_admitted():
@@ -447,13 +443,6 @@ class MechanicalVentilation(ModelSQL, ModelView):
     remarks = fields.Char('Remarks')
 
     @classmethod
-    def __setup__(cls):
-        super(MechanicalVentilation, cls).__setup__()
-        cls._error_messages.update({
-            'patient_already_on_mv': 'Our records indicate that the patient'
-                ' is already on Mechanical Ventilation !'})
-
-    @classmethod
     def validate(cls, inpatients):
         super(MechanicalVentilation, cls).validate(inpatients)
         for inpatient in inpatients:
@@ -467,7 +456,8 @@ class MechanicalVentilation(ModelSQL, ModelView):
             WHERE (name = %s AND current_mv)",
             (str(self.name.id),))
         if cursor.fetchone()[0] > 1:
-            self.raise_user_error('patient_already_on_mv')
+            raise PatientAlreadyOnMV(
+                gettext('health_icu.msg_patient_already_on_mv'))
 
     @staticmethod
     def default_current_mv():

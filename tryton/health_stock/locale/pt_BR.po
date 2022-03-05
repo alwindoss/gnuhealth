@@ -1,22 +1,25 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-12-28 00:01+0000\n"
-"Last-Translator: rvnovaes <rvnovaes@gmail.com>\n"
+"PO-Revision-Date: 2021-09-25 23:35+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health_stock/pt_BR/>\n"
 "Language: pt_BR\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 "X-POOTLE-MTIME: 1451260884.0\n"
 
 msgctxt "error:gnuhealth.prescription.stock.move.create:"
 msgid "Stock moves already exists!."
 msgstr ""
 
+#, fuzzy
 msgctxt "error:gnuhealth.prescription.stock.move.create:"
 msgid "You need to select a pharmacy."
-msgstr ""
+msgstr "Você deve selecionar uma farmácia."
 
 msgctxt "error:gnuhealth.vaccination.stock.move.create:"
 msgid "Stock moves already exists!."
@@ -305,7 +308,7 @@ msgstr "Breve comentário sobre a droga específica"
 
 msgctxt "help:gnuhealth.vaccination,lot:"
 msgid "This field includes the lot number and expiration date"
-msgstr ""
+msgstr "Este campo inclui o número do lote e a data de validade"
 
 msgctxt "model:gnuhealth.patient.ambulatory_care.medical_supply,name:"
 msgid "Patient Ambulatory Care Medical Supply"

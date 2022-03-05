@@ -6,20 +6,31 @@ import dateutil.tz
 import pytz
 import datetime
 import xml.dom.minidom
-from sql import Table, Column, Null
+from sql import Null
 
 from trytond.model import Model, ModelSQL, ModelView, fields, Check, Unique
 from trytond.tools import reduce_ids, grouped_slice
-from trytond import backend
-from trytond.pyson import If, Bool, Eval, PYSONEncoder
+from trytond.pyson import If, Bool, Eval
 from trytond.transaction import Transaction
 from trytond.cache import Cache
 from trytond.pool import Pool
+from trytond.i18n import gettext
+
+from .exceptions import (
+    InvalidCalendarExtension, InvalidRecurrence,
+    InvalidBySecond, InvalidByMinute,
+    InvalidByHour, InvalidByDay,
+    InvalidByMonthDay, InvalidByWeekNumber,
+    InvalidByYearDay,
+    InvalidByMonth, InvalidBySetPosition)
 
 __all__ = ['Calendar', 'ReadUser', 'WriteUser', 'Category', 'Location',
-    'Event', 'EventCategory', 'AlarmMixin', 'EventAlarm', 'AttendeeMixin',
-    'EventAttendee', 'DateMixin', 'EventRDate', 'EventExDate', 'RRuleMixin',
-    'EventRRule', 'EventExRule']
+           'Event', 'EventCategory', 'AlarmMixin', 'EventAlarm',
+           'AttendeeMixin',
+           'EventAttendee', 'DateMixin', 'EventRDate', 'EventExDate',
+           'RRuleMixin',
+           'EventRRule', 'EventExRule']
+
 
 tzlocal = dateutil.tz.tzlocal()
 tzutc = dateutil.tz.tzutc()
@@ -31,13 +42,16 @@ class Calendar(ModelSQL, ModelView):
     __name__ = 'calendar.calendar'
     name = fields.Char('Name', required=True, select=True)
     description = fields.Text('Description')
-    owner = fields.Many2One('res.user', 'Owner', select=True,
-            domain=[('email', '!=', None)],
-            help='The user must have an email')
-    read_users = fields.Many2Many('calendar.calendar-read-res.user',
-            'calendar', 'user', 'Read Users')
-    write_users = fields.Many2Many('calendar.calendar-write-res.user',
-            'calendar', 'user', 'Write Users')
+    owner = fields.Many2One(
+        'res.user', 'Owner', select=True,
+        domain=[('email', '!=', None)],
+        help='The user must have an email')
+    read_users = fields.Many2Many(
+        'calendar.calendar-read-res.user',
+        'calendar', 'user', 'Read Users')
+    write_users = fields.Many2Many(
+        'calendar.calendar-write-res.user',
+        'calendar', 'user', 'Write Users')
     _get_name_cache = Cache('calendar_calendar.get_name')
 
     @classmethod
@@ -51,9 +65,6 @@ class Calendar(ModelSQL, ModelView):
                 'A user can have only one calendar.'),
             ]
         cls._order.insert(0, ('name', 'ASC'))
-        cls._error_messages.update({
-                'invalid_name': 'Calendar name "%s" can not end with .ics',
-                })
 
     @classmethod
     def create(cls, vlist):
@@ -85,7 +96,8 @@ class Calendar(ModelSQL, ModelView):
         Check the name doesn't end with .ics
         '''
         if self.name.endswith('.ics'):
-            self.raise_user_error('invalid_name', (self.name,))
+            raise InvalidCalendarExtension(
+                gettext('health_caldav.msg_invalid_calendar_extension'))
 
     @classmethod
     def get_name(cls, name):
@@ -193,7 +205,7 @@ class Calendar(ModelSQL, ModelView):
                         ('exdates', '!=', None),
                         ('exrules', '!=', None),
                         ('occurences', '!=', None),
-                        ],
+                     ],
                     ('calendar', '=', calendar_id),
                     ])
 
@@ -212,7 +224,7 @@ class Calendar(ModelSQL, ModelView):
                     f_dtstart_tz = freebusy_dtstart.replace(tzinfo=tzlocal)
                     f_dtend_tz = freebusy_dtend.replace(tzinfo=tzlocal)
                     if not ((f_dtstart_tz <= dtstart
-                                and f_dtend_tz >= dtstart)
+                             and f_dtend_tz >= dtstart)
                             or (f_dtstart_tz <= dtend
                                 and f_dtend_tz >= dtend)
                             or (f_dtstart_tz >= dtstart
@@ -317,8 +329,9 @@ class Calendar(ModelSQL, ModelView):
                     vfreebusy.vfreebusy.add('attendee').value = attendee.value
 
                 status = doc.createElement('C:request-status')
-                status.appendChild(doc.createTextNode(vfreebusy
-                        and '2.0;Success'
+                status.appendChild(
+                    doc.createTextNode(
+                        vfreebusy and '2.0;Success'
                         or '5.3;No scheduling support for user.'))
                 resp.appendChild(status)
                 if vfreebusy:
@@ -332,19 +345,24 @@ class Calendar(ModelSQL, ModelView):
 class ReadUser(ModelSQL):
     'Calendar - read - User'
     __name__ = 'calendar.calendar-read-res.user'
-    calendar = fields.Many2One('calendar.calendar', 'Calendar',
-            ondelete='CASCADE', required=True, select=True)
-    user = fields.Many2One('res.user', 'User', ondelete='CASCADE',
-            required=True, select=True)
+    calendar = fields.Many2One(
+        'calendar.calendar', 'Calendar',
+        ondelete='CASCADE', required=True, select=True)
+    user = fields.Many2One(
+        'res.user', 'User', ondelete='CASCADE',
+        required=True, select=True)
 
 
 class WriteUser(ModelSQL):
     'Calendar - write - User'
     __name__ = 'calendar.calendar-write-res.user'
-    calendar = fields.Many2One('calendar.calendar', 'Calendar',
-            ondelete='CASCADE', required=True, select=True)
-    user = fields.Many2One('res.user', 'User', ondelete='CASCADE',
-            required=True, select=True)
+    calendar = fields.Many2One(
+        'calendar.calendar', 'Calendar',
+        ondelete='CASCADE', required=True, select=True)
+
+    user = fields.Many2One(
+        'res.user', 'User', ondelete='CASCADE',
+        required=True, select=True)
 
 
 class Category(ModelSQL, ModelView):
@@ -383,10 +401,12 @@ class Event(ModelSQL, ModelView):
     "Event"
     __name__ = 'calendar.event'
     _rec_name = 'uuid'
-    uuid = fields.Char('UUID', required=True,
-            help='Universally Unique Identifier', select=True)
-    calendar = fields.Many2One('calendar.calendar', 'Calendar',
-            required=True, select=True, ondelete="CASCADE")
+    uuid = fields.Char(
+        'UUID', required=True,
+        help='Universally Unique Identifier', select=True)
+    calendar = fields.Many2One(
+        'calendar.calendar', 'Calendar',
+        required=True, select=True, ondelete="CASCADE")
     summary = fields.Char('Summary')
     sequence = fields.Integer('Sequence', required=True)
     description = fields.Text('Description')
@@ -394,8 +414,9 @@ class Event(ModelSQL, ModelView):
     dtstart = fields.DateTime('Start Date', required=True, select=True)
     dtend = fields.DateTime('End Date', select=True)
     timezone = fields.Selection('timezones', 'Timezone')
-    categories = fields.Many2Many('calendar.event-calendar.category',
-            'event', 'category', 'Categories')
+    categories = fields.Many2Many(
+        'calendar.event-calendar.category',
+        'event', 'category', 'Categories')
     classification = fields.Selection([
         ('public', 'Public'),
         ('private', 'Private'),
@@ -411,34 +432,40 @@ class Event(ModelSQL, ModelView):
     organizer = fields.Char('Organizer', states={
             'required': If(Bool(Eval('attendees')), ~Eval('parent'), False),
             }, depends=['attendees', 'parent'])
-    attendees = fields.One2Many('calendar.event.attendee', 'event',
-            'Attendees')
+    attendees = fields.One2Many(
+        'calendar.event.attendee', 'event',
+        'Attendees')
     transp = fields.Selection([
         ('opaque', 'Opaque'),
         ('transparent', 'Transparent'),
         ], 'Time Transparency', required=True)
     alarms = fields.One2Many('calendar.event.alarm', 'event', 'Alarms')
-    rdates = fields.One2Many('calendar.event.rdate', 'event',
+    rdates = fields.One2Many(
+        'calendar.event.rdate', 'event',
         'Recurrence Dates',
         states={
             'invisible': Bool(Eval('parent')),
             }, depends=['parent'])
-    rrules = fields.One2Many('calendar.event.rrule', 'event',
+    rrules = fields.One2Many(
+        'calendar.event.rrule', 'event',
         'Recurrence Rules',
         states={
             'invisible': Bool(Eval('parent')),
             }, depends=['parent'])
-    exdates = fields.One2Many('calendar.event.exdate', 'event',
+    exdates = fields.One2Many(
+        'calendar.event.exdate', 'event',
         'Exception Dates',
         states={
             'invisible': Bool(Eval('parent')),
             }, depends=['parent'])
-    exrules = fields.One2Many('calendar.event.exrule', 'event',
+    exrules = fields.One2Many(
+        'calendar.event.exrule', 'event',
         'Exception Rules',
         states={
             'invisible': Bool(Eval('parent')),
             }, depends=['parent'])
-    occurences = fields.One2Many('calendar.event', 'parent', 'Occurences',
+    occurences = fields.One2Many(
+        'calendar.event', 'parent', 'Occurences',
         domain=[
             ('uuid', '=', Eval('uuid')),
             ('calendar', '=', Eval('calendar')),
@@ -446,7 +473,8 @@ class Event(ModelSQL, ModelView):
         states={
             'invisible': Bool(Eval('parent')),
             }, depends=['uuid', 'calendar', 'parent'])
-    parent = fields.Many2One('calendar.event', 'Parent',
+    parent = fields.Many2One(
+        'calendar.event', 'Parent',
         domain=[
             ('uuid', '=', Eval('uuid')),
             ('parent', '=', None),
@@ -468,9 +496,6 @@ class Event(ModelSQL, ModelView):
                 Unique(t, t.uuid, t.calendar, t.recurrence),
                 'UUID and recurrence must be unique in a calendar.'),
             ]
-        cls._error_messages.update({
-                'invalid_recurrence': 'Recurrence "%s" can not be recurrent.',
-                })
 
     @staticmethod
     def default_uuid():
@@ -526,7 +551,8 @@ class Event(ModelSQL, ModelView):
                     or self.exdates \
                     or self.exrules \
                     or self.occurences:
-                self.raise_user_error('invalid_recurrence', (self.rec_name,))
+                raise InvalidRecurrence(
+                    gettext('health_caldav.msg_invalid_recurrence'))
 
     @classmethod
     def view_attributes(cls):
@@ -544,17 +570,17 @@ class Event(ModelSQL, ModelView):
         for event in events:
             if (event.calendar.owner
                     and (event.organizer == event.calendar.owner.email
-                        or (event.parent
-                            and event.parent.organizer ==
-                            event.parent.calendar.owner.email))):
+                         or (event.parent
+                             and event.parent.organizer ==
+                             event.parent.calendar.owner.email))):
                 if event.organizer == event.calendar.owner.email:
                     attendee_emails = [x.email for x in event.attendees
-                            if x.status != 'declined'
-                            and x.email != event.organizer]
+                                       if x.status != 'declined'
+                                       and x.email != event.organizer]
                 else:
                     attendee_emails = [x.email for x in event.parent.attendees
-                            if x.status != 'declined'
-                            and x.email != event.parent.organizer]
+                                       if x.status != 'declined'
+                                       and x.email != event.parent.organizer]
                 if attendee_emails:
                     with Transaction().set_user(0):
                         calendars = Calendar.search([
@@ -603,16 +629,16 @@ class Event(ModelSQL, ModelView):
             'organizer': self.organizer,
             'rdates': [('delete', [r.id for r in self.rdates])]
             + [('create', [rdate._date2update()
-                        for rdate in self.rdates])],
+                           for rdate in self.rdates])],
             'exdates': [('delete', [r.id for r in self.exdates])]
             + [('create', [exdate._date2update()
-                        for exdate in self.exdates])],
+                           for exdate in self.exdates])],
             'rrules': [('delete', [r.id for r in self.rrules])]
             + [('create', [rrule._date2update()
-                        for rrule in self.rrules])],
+                           for rrule in self.rrules])],
             'exrules': [('delete', [r.id for r in self.exrules])]
             + [('create', [exrule._date2update()
-                        for exrule in self.exrules])],
+                           for exrule in self.exrules])],
             }
 
     @classmethod
@@ -648,18 +674,19 @@ class Event(ModelSQL, ModelView):
             for event in events:
                 if (event.calendar.owner
                         and (event.organizer == event.calendar.owner.email
-                            or (event.parent
-                                and event.parent.organizer
-                                == event.calendar.owner.email))):
+                             or (event.parent
+                                 and event.parent.organizer
+                                 == event.calendar.owner.email))):
                     if event.organizer == event.calendar.owner.email:
                         attendee_emails = [x.email for x in event.attendees
-                                if x.status != 'declined'
-                                and x.email != event.organizer]
+                                           if x.status != 'declined'
+                                           and x.email != event.organizer]
                     else:
                         attendee_emails = [x.email
-                            for x in event.parent.attendees
-                            if x.status != 'declined'
-                            and x.email != event.parent.organizer]
+                                           for x in event.parent.attendees
+                                           if x.status != 'declined'
+                                           and x.email !=
+                                           event.parent.organizer]
                     with Transaction().set_user(0):
                         events2 = cls.search([
                                 ('uuid', '=', event.uuid),
@@ -720,7 +747,7 @@ class Event(ModelSQL, ModelView):
             current_default = default.copy()
             current_default.setdefault('uuid', cls.default_uuid())
             new_events.extend(super(Event, cls).copy([event],
-                    default=current_default))
+                              default=current_default))
         return new_events
 
     @classmethod
@@ -732,15 +759,15 @@ class Event(ModelSQL, ModelView):
         for event in events:
             if (event.calendar.owner
                     and (event.organizer == event.calendar.owner.email
-                        or (event.parent
-                            and event.parent.organizer
-                            == event.calendar.owner.email))):
+                         or (event.parent
+                             and event.parent.organizer
+                             == event.calendar.owner.email))):
                 if event.organizer == event.calendar.owner.email:
                     attendee_emails = [x.email for x in event.attendees
-                            if x.email != event.organizer]
+                                       if x.email != event.organizer]
                 else:
                     attendee_emails = [x.email for x in event.parent.attendees
-                            if x.email != event.parent.organizer]
+                                       if x.email != event.parent.organizer]
                 if attendee_emails:
                     with Transaction().set_user(0):
                         cls.delete(cls.search([
@@ -819,8 +846,9 @@ class Event(ModelSQL, ModelView):
             res['description'] = None
         if not isinstance(vevent.dtstart.value, datetime.datetime):
             res['all_day'] = True
-            res['dtstart'] = datetime.datetime.combine(vevent.dtstart.value,
-                    datetime.time())
+            res['dtstart'] = datetime.datetime.combine(
+                vevent.dtstart.value,
+                datetime.time())
         else:
             res['all_day'] = False
             if vevent.dtstart.value.tzinfo:
@@ -830,7 +858,7 @@ class Event(ModelSQL, ModelView):
         if hasattr(vevent, 'dtend'):
             if not isinstance(vevent.dtend.value, datetime.datetime):
                 res['dtend'] = datetime.datetime.combine(vevent.dtend.value,
-                        datetime.time())
+                                                         datetime.time())
             else:
                 if vevent.dtend.value.tzinfo:
                     res['dtend'] = vevent.dtend.value.astimezone(tzlocal)
@@ -926,7 +954,8 @@ class Event(ModelSQL, ModelView):
                 vals = Attendee.attendee2values(attendee)
                 if vals['email'] in attendees_todel:
                     res['attendees'].append(('write',
-                        [attendees_todel[vals['email']]], vals))
+                                            [attendees_todel[vals['email']]],
+                                            vals))
                     del attendees_todel[vals['email']]
                 else:
                     to_create.append(vals)
@@ -1174,10 +1203,12 @@ class Event(ModelSQL, ModelView):
 class EventCategory(ModelSQL):
     'Event - Category'
     __name__ = 'calendar.event-calendar.category'
-    event = fields.Many2One('calendar.event', 'Event', ondelete='CASCADE',
-            required=True, select=True)
-    category = fields.Many2One('calendar.category', 'Category',
-            ondelete='CASCADE', required=True, select=True)
+    event = fields.Many2One(
+        'calendar.event', 'Event', ondelete='CASCADE',
+        required=True, select=True)
+    category = fields.Many2One(
+        'calendar.category', 'Category',
+        ondelete='CASCADE', required=True, select=True)
 
 
 class AlarmMixin:
@@ -1203,27 +1234,9 @@ class AlarmMixin:
 class EventAlarm(AlarmMixin, ModelSQL, ModelView):
     'Alarm'
     __name__ = 'calendar.event.alarm'
-    event = fields.Many2One('calendar.event', 'Event', ondelete='CASCADE',
-            required=True, select=True)
-
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        cursor = Transaction().connection.cursor()
-        sql_table = cls.__table__()
-
-        super(EventAlarm, cls).__register__(module_name)
-
-        table = TableHandler(cls, module_name)
-
-        # Migration from 2.6: Remove inherits calendar.alarm
-        if table.column_exist('calendar_alarm'):
-            alarm = Table('calendar_alarm')
-            cursor.execute(*sql_table.update(
-                    columns=[sql_table.valarm],
-                    values=[alarm.select(alarm.valarm,
-                            where=alarm.id == sql_table.calendar_alarm)]))
-            table.drop_column('calendar_alarm', True)
+    event = fields.Many2One(
+        'calendar.event', 'Event', ondelete='CASCADE',
+        required=True, select=True)
 
     @classmethod
     def create(cls, vlist):
@@ -1332,30 +1345,9 @@ class AttendeeMixin:
 class EventAttendee(AttendeeMixin, ModelSQL, ModelView):
     'Attendee'
     __name__ = 'calendar.event.attendee'
-    event = fields.Many2One('calendar.event', 'Event', ondelete='CASCADE',
+    event = fields.Many2One(
+        'calendar.event', 'Event', ondelete='CASCADE',
         required=True, select=True)
-
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        cursor = Transaction().connection.cursor()
-        sql_table = cls.__table__()
-
-        super(EventAttendee, cls).__register__(module_name)
-
-        table = TableHandler(cls, module_name)
-
-        # Migration from 2.6: Remove inherits calendar.attendee
-        if table.column_exist('calendar_attendee'):
-            attendee = Table('calendar_attendee')
-            cursor.execute(*sql_table.update(
-                    columns=[sql_table.email, sql_table.status],
-                    values=[attendee.select(attendee.email,
-                            where=attendee.id == sql_table.calendar_attendee),
-                        attendee.select(attendee.status,
-                            where=attendee.id == sql_table.calendar_attendee),
-                        ]))
-            table.drop_column('calendar_attendee', True)
 
     @classmethod
     def create(cls, vlist):
@@ -1373,15 +1365,15 @@ class EventAttendee(AttendeeMixin, ModelSQL, ModelView):
             event = event_attendee.event
             if (event.calendar.owner
                     and (event.organizer == event.calendar.owner.email
-                        or (event.parent
-                            and event.parent.organizer ==
-                            event.parent.calendar.owner.email))):
+                         or (event.parent
+                             and event.parent.organizer ==
+                             event.parent.calendar.owner.email))):
                 if event.organizer == event.calendar.owner.email:
                     attendee_emails = [x.email for x in event.attendees
-                            if x.email != event.organizer]
+                                       if x.email != event.organizer]
                 else:
                     attendee_emails = [x.email for x in event.parent.attendees
-                            if x.email != event.parent.organizer]
+                                       if x.email != event.parent.organizer]
                 if attendee_emails:
                     with Transaction().set_user(0):
                         events = Event.search([
@@ -1423,15 +1415,15 @@ class EventAttendee(AttendeeMixin, ModelSQL, ModelView):
             event = event_attendee.event
             if (event.calendar.owner
                     and (event.organizer == event.calendar.owner.email
-                        or (event.parent
-                            and event.parent.organizer
-                            == event.calendar.owner.email))):
+                         or (event.parent
+                             and event.parent.organizer
+                             == event.calendar.owner.email))):
                 if event.organizer == event.calendar.owner.email:
                     attendee_emails = [x.email for x in event.attendees
-                            if x.email != event.organizer]
+                                       if x.email != event.organizer]
                 else:
                     attendee_emails = [x.email for x in event.parent.attendees
-                            if x.email != event.parent.organizer]
+                                       if x.email != event.parent.organizer]
                 if attendee_emails:
                     with Transaction().set_user(0):
                         other_attendees = cls.search([
@@ -1444,7 +1436,7 @@ class EventAttendee(AttendeeMixin, ModelSQL, ModelView):
                                 ('email', '=', event_attendee.email),
                                 ])
                         cls.write(other_attendees,
-                            event_attendee._attendee2update())
+                                  event_attendee._attendee2update())
 
     @classmethod
     def delete(cls, event_attendees):
@@ -1460,15 +1452,15 @@ class EventAttendee(AttendeeMixin, ModelSQL, ModelView):
             event = attendee.event
             if (event.calendar.owner
                     and (event.organizer == event.calendar.owner.email
-                        or (event.parent
-                            and event.parent.organizer
-                            == event.calendar.owner.email))):
+                         or (event.parent
+                             and event.parent.organizer
+                             == event.calendar.owner.email))):
                 if event.organizer == event.calendar.owner.email:
                     attendee_emails = [x.email for x in event.attendees
-                            if x.email != event.organizer]
+                                       if x.email != event.organizer]
                 else:
                     attendee_emails = [x.email for x in event.parent.attendees
-                            if x.email != event.parent.organizer]
+                                       if x.email != event.parent.organizer]
                 if attendee_emails:
                     with Transaction().set_user(0):
                         attendees = cls.search([
@@ -1483,8 +1475,8 @@ class EventAttendee(AttendeeMixin, ModelSQL, ModelView):
                         cls.delete(attendees)
             elif (event.calendar.owner
                     and ((event.organizer
-                            or (event.parent and event.parent.organizer))
-                        and attendee.email == event.calendar.owner.email)):
+                          or (event.parent and event.parent.organizer))
+                         and attendee.email == event.calendar.owner.email)):
                 if event.organizer:
                     organizer = event.organizer
                 else:
@@ -1506,7 +1498,8 @@ class EventAttendee(AttendeeMixin, ModelSQL, ModelView):
 
 class DateMixin:
     _rec_name = 'datetime'
-    date = fields.Boolean('Is Date',
+    date = fields.Boolean(
+        'Is Date',
         help='Ignore time of field "Date", but handle as date only.')
     datetime = fields.DateTime('Date', required=True)
 
@@ -1525,7 +1518,7 @@ class DateMixin:
         if not isinstance(date, datetime.datetime):
             res['date'] = True
             res['datetime'] = datetime.datetime.combine(date,
-                    datetime.time())
+                                                        datetime.time())
         else:
             res['date'] = False
             if date.tzinfo:
@@ -1549,34 +1542,9 @@ class EventRDate(DateMixin, ModelSQL, ModelView):
     'Recurrence Date'
     __name__ = 'calendar.event.rdate'
     _rec_name = 'datetime'
-    event = fields.Many2One('calendar.event', 'Event', ondelete='CASCADE',
-            select=True, required=True)
-
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        cursor = Transaction().connection.cursor()
-        sql_table = cls.__table__()
-        # Migration from 1.4: calendar_rdate renamed to calendar_date
-        table = TableHandler(cls, module_name)
-        old_column = 'calendar_rdate'
-        if table.column_exist(old_column):
-            table.column_rename(old_column, 'calendar_date')
-
-        super(EventRDate, cls).__register__(module_name)
-
-        table = TableHandler(cls, module_name)
-
-        # Migration from 2.6: Remove inherits calendar.date
-        if table.column_exist('calendar_date'):
-            date = Table('calendar_date')
-            cursor.execute(*sql_table.update(
-                    columns=[sql_table.date, sql_table.datetime],
-                    values=[date.select(date.date,
-                            where=date.id == sql_table.calendar_date),
-                        date.select(date.datetime,
-                            where=date.id == sql_table.calendar_date)]))
-            table.drop_column('calendar_date', True)
+    event = fields.Many2One(
+        'calendar.event', 'Event', ondelete='CASCADE',
+        select=True, required=True)
 
     @classmethod
     def create(cls, vlist):
@@ -1633,7 +1601,8 @@ class RRuleMixin(Model):
         ('monthly', 'Monthly'),
         ('yearly', 'Yearly'),
         ], 'Frequency', required=True)
-    until_date = fields.Boolean('Is Date',
+    until_date = fields.Boolean(
+        'Is Date',
         help='Ignore time of field "Until Date", but handle as date only.')
     until = fields.DateTime('Until Date')
     count = fields.Integer('Count')
@@ -1665,27 +1634,9 @@ class RRuleMixin(Model):
         cls._sql_constraints += [
             ('until_count_only_one',
                 Check(t,
-                    (t.until == Null) | (t.count == Null) | (t.count == 0)),
+                      (t.until == Null) | (t.count == Null) | (t.count == 0)),
                 'Only one of "until" and "count" can be set.'),
             ]
-        cls._error_messages.update({
-                'invalid_bysecond': ('Invalid "By Second" in recurrence rule '
-                    '"%s"'),
-                'invalid_byminute': ('Invalid "By Minute" in recurrence rule '
-                    '"%s"'),
-                'invalid_byhour': 'Invalid "By Hour" in recurrence rule "%s"',
-                'invalid_byday': 'Invalid "By Day" in recurrence rule "%s"',
-                'invalid_bymonthday': ('Invalid "By Month Day" in recurrence '
-                    'rule "%s"'),
-                'invalid_byyearday': ('Invalid "By Year Day" in recurrence '
-                    'rule "%s"'),
-                'invalid_byweekno': ('Invalid "By Week Number" in recurrence '
-                    'rule "%s"'),
-                'invalid_bymonth': (
-                    'Invalid "By Month" in recurrence rule "%s"'),
-                'invalid_bysetpos': (
-                    'Invalid "By Position" in recurrence rule "%s"'),
-                })
 
     @classmethod
     def validate(cls, rules):
@@ -1709,7 +1660,8 @@ class RRuleMixin(Model):
                 except Exception:
                     second = -1
                 if not (second >= 0 and second <= 59):
-                    self.raise_user_error('invalid_bysecond', (self.rec_name,))
+                    raise InvalidBySecond(
+                        gettext('health_caldav.msg_invalid_bysecond'))
 
     def check_byminute(self):
         if self.byminute:
@@ -1719,7 +1671,8 @@ class RRuleMixin(Model):
                 except Exception:
                     minute = -1
                 if not (minute >= 0 and minute <= 59):
-                    self.raise_user_error('invalid_byminute', (self.rec_name,))
+                    raise InvalidByMinute(
+                        gettext('health_caldav.msg_invalid_byminute'))
 
     def check_byhour(self):
         if self.byhour:
@@ -1729,14 +1682,16 @@ class RRuleMixin(Model):
                 except Exception:
                     hour = -1
                 if not (hour >= 0 and hour <= 23):
-                    self.raise_user_error('invalid_byhour', (self.rec_name,))
+                    raise InvalidByHour(
+                        gettext('health_caldav.msg_invalid_byhour'))
 
     def check_byday(self):
         if self.byday:
             for weekdaynum in self.byday.split(','):
                 weekday = weekdaynum[-2:]
                 if weekday not in ('SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'):
-                    self.raise_user_error('invalid_byday', (self.rec_name,))
+                    raise InvalidByDay(
+                        gettext('health_caldav.msg_invalid_byday'))
                 ordwk = weekday[:-2]
                 if not ordwk:
                     continue
@@ -1745,7 +1700,8 @@ class RRuleMixin(Model):
                 except Exception:
                     ordwk = -1
                 if not (abs(ordwk) >= 1 and abs(ordwk) <= 53):
-                    self.raise_user_error('invalid_byday', (self.rec_name,))
+                    raise InvalidByDay(
+                        gettext('health_caldav.msg_invalid_byday'))
 
     def check_bymonthday(self):
         if self.bymonthday:
@@ -1755,8 +1711,8 @@ class RRuleMixin(Model):
                 except Exception:
                     monthdaynum = -100
                 if not (abs(monthdaynum) >= 1 and abs(monthdaynum) <= 31):
-                    self.raise_user_error('invalid_bymonthday', (
-                            self.rec_name,))
+                    raise InvalidByMonthDay(
+                        gettext('health_caldav.msg_invalid_bymonthday'))
 
     def check_byyearday(self):
         if self.byyearday:
@@ -1766,8 +1722,8 @@ class RRuleMixin(Model):
                 except Exception:
                     yeardaynum = -1000
                 if not (abs(yeardaynum) >= 1 and abs(yeardaynum) <= 366):
-                    self.raise_user_error('invalid_byyearday',
-                        (self.rec_name,))
+                    raise InvalidByYearDay(
+                        gettext('health_caldav.msg_invalid_byyearday'))
 
     def check_byweekno(self):
         if self.byweekno:
@@ -1777,7 +1733,8 @@ class RRuleMixin(Model):
                 except Exception:
                     weeknum = -100
                 if not (abs(weeknum) >= 1 and abs(weeknum) <= 53):
-                    self.raise_user_error('invalid_byweekno', (self.rec_name,))
+                    raise InvalidByWeekNumber(
+                        gettext('health_caldav.msg_invalid_byweeknumber'))
 
     def check_bymonth(self):
         if self.bymonth:
@@ -1787,7 +1744,8 @@ class RRuleMixin(Model):
                 except Exception:
                     monthnum = -1
                 if not (monthnum >= 1 and monthnum <= 12):
-                    self.raise_user_error('invalid_bymonth', (self.rec_name,))
+                    raise InvalidByMonth(
+                        gettext('health_caldav.msg_invalid_bymonth'))
 
     def check_bysetpos(self):
         if self.bysetpos:
@@ -1797,12 +1755,14 @@ class RRuleMixin(Model):
                 except Exception:
                     setposday = -1000
                 if not (abs(setposday) >= 1 and abs(setposday) <= 366):
-                    self.raise_user_error('invalid_bysetpos', (self.rec_name,))
+                    raise InvalidBySetPosition(
+                        gettext('health_caldav.msg_invalid_bysetpos'))
 
     def _rule2update(self):
         res = {}
-        for field in ('freq', 'until_date', 'until', 'count', 'interval',
-                'bysecond', 'byminute', 'byhour', 'byday', 'bymonthday',
+        for field in (
+            'freq', 'until_date', 'until', 'count', 'interval',
+            'bysecond', 'byminute', 'byhour', 'byday', 'bymonthday',
                 'byyearday', 'byweekno', 'bymonth', 'bysetpos', 'wkst'):
             res[field] = getattr(self, field)
         return res
@@ -1824,7 +1784,7 @@ class RRuleMixin(Model):
                 if not isinstance(value, datetime.datetime):
                     res['until_date'] = True
                     res['until'] = datetime.datetime.combine(value,
-                            datetime.time())
+                                                             datetime.time())
                 else:
                     res['until_date'] = False
                     if value.tzinfo:
@@ -1847,7 +1807,8 @@ class RRuleMixin(Model):
             if self.until_date:
                 res += vobject.icalendar.dateToString(self.until.date())
             else:
-                res += vobject.icalendar.dateTimeToString(self.until
+                res += vobject.icalendar.dateTimeToString(
+                    self.until
                     .replace(tzinfo=tzlocal).astimezone(tzutc),
                     convertToUTC=True)
         elif self.count:
@@ -1855,8 +1816,9 @@ class RRuleMixin(Model):
         for field in ('freq', 'wkst'):
             if getattr(self, field):
                 res += ';' + field.upper() + '=' + getattr(self, field).upper()
-        for field in ('interval', 'bysecond', 'byminute', 'byhour',
-                'byday', 'bymonthday', 'byyearday', 'byweekno',
+        for field in (
+            'interval', 'bysecond', 'byminute', 'byhour',
+            'byday', 'bymonthday', 'byyearday', 'byweekno',
                 'bymonth', 'bysetpos'):
             if getattr(self, field):
                 res += ';' + field.upper() + '=' + str(getattr(self, field))
@@ -1866,29 +1828,9 @@ class RRuleMixin(Model):
 class EventRRule(RRuleMixin, ModelSQL, ModelView):
     'Recurrence Rule'
     __name__ = 'calendar.event.rrule'
-    event = fields.Many2One('calendar.event', 'Event', ondelete='CASCADE',
-            select=True, required=True)
-
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        cursor = Transaction().connection.cursor()
-        sql_table = cls.__table__()
-
-        super(EventRRule, cls).__register__(module_name)
-
-        table = TableHandler(cls, module_name)
-
-        # Migration from 2.6: Remove inherits calendar.rrule
-        if table.column_exist('calendar_rrule'):
-            rrule = Table('calendar_rrule')
-            for field in (f for f in dir(RRuleMixin)
-                    if isinstance(f, fields.Field)):
-                cursor.execute(*sql_table.update(
-                        columns=[Column(sql_table, field)],
-                        values=[rrule.select(Column(rrule, field),
-                                where=rrule.id == sql_table.calendar_rrule)]))
-            table.drop_column('calendar_rrule', True)
+    event = fields.Many2One(
+        'calendar.event', 'Event', ondelete='CASCADE',
+        select=True, required=True)
 
     @classmethod
     def create(cls, vlist):

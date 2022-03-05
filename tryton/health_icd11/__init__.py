@@ -1,9 +1,11 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: Hospital Information System component
-#    Copyright (C) 2008-2021 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#
+#               Package : ICD11 MMS linearization
+#
+#    Copyright (C) 2020 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -20,5 +22,3 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
-from .health_icd11 import *

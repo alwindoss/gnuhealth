@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -21,30 +20,30 @@
 #
 ##############################################################################
 
-from trytond.model import ModelView, ModelSQL, ModelSingleton, fields
-from datetime import datetime
-from trytond.pool import Pool
-from trytond.transaction import Transaction
-from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or, If
+from trytond.model import ModelView, ModelSQL, fields
+from trytond.pyson import Eval
+from trytond.i18n import gettext
+
+from .exceptions import (DisctountPctOutOfRange, DiscountWithoutElement)
 
 
-__all__ = ['InsurancePlanProductPolicy','InsurancePlan','HealthService']
+__all__ = ['InsurancePlanProductPolicy', 'InsurancePlan', 'HealthService']
 
 
 class InsurancePlanProductPolicy(ModelSQL, ModelView):
     'Policy associated to the product on the insurance plan'
     __name__ = "gnuhealth.insurance.plan.product.policy"
 
-    plan = fields.Many2One('gnuhealth.insurance.plan',
+    plan = fields.Many2One(
+        'gnuhealth.insurance.plan',
         'Plan', required=True)
 
-    product = fields.Many2One('product.product',
-        'Product', )
+    product = fields.Many2One('product.product', 'Product')
 
-    product_category = fields.Many2One('product.category',
-        'Category', )
-        
-    discount = fields.Float('Discount', digits=(3,2), 
+    product_category = fields.Many2One('product.category', 'Category')
+
+    discount = fields.Float(
+        'Discount', digits=(3, 2),
         help="Discount in Percentage", required=True)
 
     @classmethod
@@ -56,46 +55,41 @@ class InsurancePlanProductPolicy(ModelSQL, ModelView):
 
     def validate_discount(self):
         if (self.discount < 0 or self.discount > 100):
-            self.raise_user_error('discount_pct_out_of_range')
+            raise DisctountPctOutOfRange(
+                gettext('health_insurance.msg_pct_out_of_range')
+                )
 
     def validate_policy_elements(self):
         if (not self.product and not self.product_category):
-            self.raise_user_error('discount_need_and_element')
-
-    @classmethod
-    def __setup__(cls):
-        super(InsurancePlanProductPolicy, cls).__setup__()
-
-        cls._error_messages.update({
-            'discount_pct_out_of_range':
-                'Percentage out of range [0-100]',
-                    'discount_need_and_element':
-                'You need a product or category',
-        })
+            raise DiscountWithoutElement(
+                gettext('health_insurance.msg_discount_without_element')
+                )
 
 
 class InsurancePlan(ModelSQL, ModelView):
     __name__ = "gnuhealth.insurance.plan"
     _rec_name = 'name'
 
-    product_policy = fields.One2Many('gnuhealth.insurance.plan.product.policy',
-        'plan','Policy')
+    product_policy = fields.One2Many(
+        'gnuhealth.insurance.plan.product.policy',
+        'plan', 'Policy')
+
 
 class HealthService(ModelSQL, ModelView):
     __name__ = 'gnuhealth.health_service'
 
-    insurance_holder = fields.Many2One('party.party','Insurance Holder',
+    insurance_holder = fields.Many2One(
+        'party.party', 'Insurance Holder',
         help="Insurance Policy Holder")
 
-    insurance_plan = fields.Many2One('gnuhealth.insurance',
-            'Plan', 
-            domain=[('name', '=', Eval('insurance_holder'))],
-            depends=['insurance_holder'])
+    insurance_plan = fields.Many2One(
+        'gnuhealth.insurance',
+        'Plan',
+        domain=[('name', '=', Eval('insurance_holder'))],
+        depends=['insurance_holder'])
 
- 
-    # Set the insurance holder upon entering the 
+    # Set the insurance holder upon entering the patient
     @fields.depends('patient')
     def on_change_patient(self):
-        insurance_holder=None
         if self.patient:
             self.insurance_holder = self.patient.name

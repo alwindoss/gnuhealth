@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-#    Copyright (C) 2011-2021 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2011-2022 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #    Copyright (C) 2011 Cédric Krier
 
 #    This program is free software: you can redistribute it and/or modify
@@ -31,7 +31,7 @@ info = dict(config.items('tryton'))
 for key in ('depends', 'extras_depend', 'xml'):
     if key in info:
         info[key] = info[key].strip().splitlines()
-major_version, minor_version = 5, 0
+major_version, minor_version = 6, 0
 
 requires = ['pytz', 'numpy']
 

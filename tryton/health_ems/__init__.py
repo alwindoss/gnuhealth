@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2008-2022 Luis Falcon <falcon@gnuhealth.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -20,16 +19,18 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_ems import *
+from . import health_ems
+from . import sequences
 
 
 def register():
     Pool.register(
-        GnuHealthSequences,
-        GnuHealthSequenceSetup,
-        Ambulance,
-        SupportRequest,
-        AmbulanceSupport,
-        AmbulanceHealthProfessional,
-        SupportRequestLog,
+        sequences.GnuHealthSequences,
+        sequences.SupportRequestSequence,
+        health_ems.Ambulance,
+        health_ems.SupportRequest,
+        health_ems.AmbulanceSupport,
+        health_ems.AmbulanceHealthProfessional,
+        health_ems.SupportRequestLog,
         module='health_ems', type_='model')
+

@@ -1,13 +1,15 @@
 # rvnovaes <rvnovaes@gmail.com>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-12-28 00:01+0000\n"
-"Last-Translator: rvnovaes <rvnovaes@gmail.com>\n"
+"PO-Revision-Date: 2021-11-04 22:33+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health_socioeconomics/pt_BR/>\n"
 "Language: pt_BR\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 "X-POOTLE-MTIME: 1451260884.0\n"
 
 msgctxt "field:gnuhealth.patient,domestic_violence:"
@@ -84,11 +86,11 @@ msgstr "Trabalha em casa"
 
 msgctxt "field:gnuhealth.ses.assessment,assessment_date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.ses.assessment,computed_age:"
 msgid "Age"
-msgstr ""
+msgstr "Idade"
 
 msgctxt "field:gnuhealth.ses.assessment,create_date:"
 msgid "Create Date"
@@ -100,7 +102,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ses.assessment,du:"
 msgid "DU"
-msgstr ""
+msgstr "UD"
 
 msgctxt "field:gnuhealth.ses.assessment,education:"
 msgid "Education Level"
@@ -124,7 +126,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ses.assessment,fam_apgar_score:"
 msgid "Score"
-msgstr ""
+msgstr "Pontuação"
 
 msgctxt "field:gnuhealth.ses.assessment,fam_apgar_timesharing:"
 msgid "Time sharing"
@@ -132,11 +134,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ses.assessment,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Gênero"
 
 msgctxt "field:gnuhealth.ses.assessment,health_professional:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Profissional de Saúde"
 
 msgctxt "field:gnuhealth.ses.assessment,housing:"
 msgid "Housing conditions"
@@ -144,27 +146,28 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ses.assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
+#, fuzzy
 msgctxt "field:gnuhealth.ses.assessment,income:"
 msgid "Income"
-msgstr ""
+msgstr "Renda"
 
 msgctxt "field:gnuhealth.ses.assessment,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 msgctxt "field:gnuhealth.ses.assessment,occupation:"
 msgid "Occupation"
-msgstr ""
+msgstr "Profissão"
 
 msgctxt "field:gnuhealth.ses.assessment,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Paciente"
 
 msgctxt "field:gnuhealth.ses.assessment,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.ses.assessment,ses:"
 msgid "Socioeconomics"
@@ -172,7 +175,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ses.assessment,signed_by:"
 msgid "Signed by"
-msgstr ""
+msgstr "Assinado por"
 
 msgctxt "field:gnuhealth.ses.assessment,state:"
 msgid "State"
@@ -236,7 +239,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ses.assessment,du:"
 msgid "Domiciliary Unit"
-msgstr ""
+msgstr "Unidade Domiciliar"
 
 msgctxt "help:gnuhealth.ses.assessment,education:"
 msgid "Education Level"
@@ -281,7 +284,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ses.assessment,health_professional:"
 msgid "Health professional"
-msgstr ""
+msgstr "Profissional de saúde"
 
 msgctxt "help:gnuhealth.ses.assessment,housing:"
 msgid "Housing and sanitary living conditions"
@@ -291,9 +294,10 @@ msgctxt "help:gnuhealth.ses.assessment,ses:"
 msgid "SES - Socioeconomic Status"
 msgstr ""
 
+#, fuzzy
 msgctxt "help:gnuhealth.ses.assessment,signed_by:"
 msgid "Health Professional that finished the patient evaluation"
-msgstr ""
+msgstr "Profissional de Saúde que concluiu a avaliação do paciente"
 
 msgctxt "help:party.party,education:"
 msgid "Education Level"
@@ -313,7 +317,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_ses_assessment_menu"
 msgid "Socioeconomic Assessments"
-msgstr ""
+msgstr "Análises Socioeconômicas"
 
 msgctxt "selection:gnuhealth.patient,education:"
 msgid ""
@@ -373,27 +377,30 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "Incomplete Primary School"
-msgstr ""
+msgstr "Ensino Fundamental Incompleto"
 
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "Incomplete Secondary School"
-msgstr ""
+msgstr "Ensino Médio Incompleto"
 
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "None"
 msgstr ""
 
+#, fuzzy
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "Primary School"
-msgstr ""
+msgstr "Ensino Fundamental"
 
+#, fuzzy
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "Secondary School"
-msgstr ""
+msgstr "Ensino Médio"
 
+#, fuzzy
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "University"
-msgstr ""
+msgstr "Ensino Superior"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
 msgid ""
@@ -481,11 +488,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Feminino"
 
 msgctxt "selection:gnuhealth.ses.assessment,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Masculino"
 
 msgctxt "selection:gnuhealth.ses.assessment,housing:"
 msgid ""
@@ -517,15 +524,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,income:"
 msgid "High"
-msgstr ""
+msgstr "Alta"
 
 msgctxt "selection:gnuhealth.ses.assessment,income:"
 msgid "Low"
-msgstr ""
+msgstr "Baixa"
 
 msgctxt "selection:gnuhealth.ses.assessment,income:"
 msgid "Medium"
-msgstr ""
+msgstr "Média"
 
 msgctxt "selection:gnuhealth.ses.assessment,ses:"
 msgid ""
@@ -561,7 +568,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,state:"
 msgid "In progress"
-msgstr ""
+msgstr "Em andamento"
 
 msgctxt "selection:party.party,education:"
 msgid ""
@@ -613,19 +620,19 @@ msgstr ""
 
 msgctxt "view:gnuhealth.ses.assessment:"
 msgid "End assessment"
-msgstr ""
+msgstr "Concluir análise"
 
 msgctxt "view:gnuhealth.ses.assessment:"
 msgid "End this assessment ?"
-msgstr ""
+msgstr "Concluir esta análise ?"
 
 msgctxt "view:gnuhealth.ses.assessment:"
 msgid "Family Functionality"
-msgstr ""
+msgstr "Funcionalidade da Família"
 
 msgctxt "view:gnuhealth.ses.assessment:"
 msgid "Family functionality"
-msgstr ""
+msgstr "Funcionalidade da família"
 
 msgctxt "view:gnuhealth.ses.assessment:"
 msgid "Notes"

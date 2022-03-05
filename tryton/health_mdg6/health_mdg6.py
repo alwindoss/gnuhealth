@@ -1,9 +1,8 @@
-# coding=utf-8
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -20,13 +19,3 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
-from dateutil.relativedelta import relativedelta
-from datetime import datetime
-
-from trytond.model import ModelView, ModelSingleton, ModelSQL, fields
-from trytond.transaction import Transaction
-from trytond.pyson import Eval, Not, Bool
-from trytond.pool import Pool
-
-

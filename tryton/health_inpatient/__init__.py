@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -22,33 +22,33 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_inpatient import *
-from .wizard import *
-
+from . import health_inpatient
+from . import wizard
+from . import sequences
 
 def register():
     Pool.register(
-        GnuHealthSequences,
-        GnuHealthSequenceSetup,
-        DietTherapeutic,
-        InpatientRegistration,
-        BedTransfer,
-        Appointment,
-        PatientEvaluation,
-        ECG,
-        PatientData,
-        InpatientMedication,
-        InpatientMedicationAdminTimes,
-        InpatientMedicationLog,
-        InpatientDiet,
-        CreateBedTransferInit,
-        InpatientMeal,
-        InpatientMealOrder,
-        InpatientMealOrderItem,
+        health_inpatient.DietTherapeutic,
+        health_inpatient.InpatientRegistration,
+        health_inpatient.BedTransfer,
+        health_inpatient.Appointment,
+        health_inpatient.PatientEvaluation,
+        health_inpatient.ECG,
+        health_inpatient.PatientData,
+        health_inpatient.InpatientMedication,
+        health_inpatient.InpatientMedicationAdminTimes,
+        health_inpatient.InpatientMedicationLog,
+        health_inpatient.InpatientDiet,
+        wizard.CreateBedTransferInit,
+        health_inpatient.InpatientMeal,
+        health_inpatient.InpatientMealOrder,
+        health_inpatient.InpatientMealOrderItem,
+        sequences.GnuHealthSequences,
+        sequences.InpatientRegistrationSequence,
+        sequences.InpatientMealOrderSequence,
         module='health_inpatient', type_='model')
     
     Pool.register(
-        CreateBedTransfer,
-        CreateInpatientEvaluation,
+        wizard.CreateBedTransfer,
+        wizard.CreateInpatientEvaluation,
         module='health_inpatient', type_='wizard')
-

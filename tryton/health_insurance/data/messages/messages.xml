@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- This file is part of GNU Health.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_pct_out_of_range">
+            <field name="text">SM-INSURANCE-0001: Percentage out of range [0-100]</field>
+        </record>
+        <record model="ir.message" id="msg_discount_without_element">
+            <field name="text">SM-INSURANCE-0002: You need to associate a product or category to the discount</field>
+        </record>
+        <record model="ir.message" id="msg_service_invoiced">
+            <field name="text">SM-INSURANCE-0003: The service has been invoiced</field>
+        </record>
+        <record model="ir.message" id="msg_no_invoice_address">
+            <field name="text">SM-INSURANCE-0004: No address associated to the invoice</field>
+        </record>
+        <record model="ir.message" id="msg_no_payment_term">
+            <field name="text">SM-INSURANCE-0005: No payment term</field>
+        </record>
+    </data>
+</tryton>

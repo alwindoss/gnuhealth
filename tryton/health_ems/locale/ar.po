@@ -1,6 +1,16 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-02-02 18:55+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/gnu-health/"
+"health_ems/ar/>\n"
+"Language: ar\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 msgctxt "error:gnuhealth.ambulance:"
 msgid "This vehicle ID already exists"
@@ -12,11 +22,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,active:"
 msgid "Active"
-msgstr ""
+msgstr "نشط"
 
 msgctxt "field:gnuhealth.ambulance,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "تاريخ الإنشاء"
 
 msgctxt "field:gnuhealth.ambulance,create_uid:"
 msgid "Create User"
@@ -24,23 +34,23 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,id:"
 msgid "ID"
-msgstr ""
+msgstr "المعرّف ID"
 
 msgctxt "field:gnuhealth.ambulance,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "الإسم"
 
 msgctxt "field:gnuhealth.ambulance,state:"
 msgid "Status"
-msgstr ""
+msgstr "الحالة"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_brand:"
 msgid "Brand"
-msgstr ""
+msgstr "العلامة التجارية"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_function:"
 msgid "Function"
-msgstr ""
+msgstr "الوظيفة"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_identifier:"
 msgid "ID"
@@ -48,7 +58,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,vehicle_model:"
 msgid "Model"
-msgstr ""
+msgstr "النموذج"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_odometer:"
 msgid "Odometer"
@@ -56,7 +66,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,vehicle_remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "ملاحظات"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_station:"
 msgid "Station"
@@ -76,11 +86,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,ambulance:"
 msgid "Ambulance"
-msgstr ""
+msgstr "سيارة إسعاف"
 
 msgctxt "field:gnuhealth.ambulance.support,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "تاريخ الإنشاء"
 
 msgctxt "field:gnuhealth.ambulance.support,create_uid:"
 msgid "Create User"
@@ -244,7 +254,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request,request_extra_info:"
 msgid "Details"
-msgstr ""
+msgstr "التفاصيل"
 
 msgctxt "field:gnuhealth.support_request,requestor:"
 msgid "Requestor"
@@ -256,7 +266,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request,urgency:"
 msgid "Urgency"
-msgstr ""
+msgstr "الاستعجال"
 
 msgctxt "field:gnuhealth.support_request,urladdr:"
 msgid "OSM Map"
@@ -276,7 +286,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "تاريخ الإنشاء"
 
 msgctxt "field:gnuhealth.support_request.log,create_uid:"
 msgid "Create User"
@@ -292,7 +302,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "ملاحظات"
 
 msgctxt "field:gnuhealth.support_request.log,sr:"
 msgid "SR"
@@ -300,7 +310,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,timestamp:"
 msgid "Time"
-msgstr ""
+msgstr "الساعة"
 
 msgctxt "field:gnuhealth.support_request.log,write_date:"
 msgid "Write Date"
@@ -312,15 +322,15 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ambulance,state:"
 msgid "Vehicle status"
-msgstr ""
+msgstr "حالة المركبة"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_brand:"
 msgid "Ambulance maker"
-msgstr ""
+msgstr "صانع سيارات الإسعاف"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_function:"
 msgid "Vehicle main functionality"
-msgstr ""
+msgstr "الوظيفة الرئيسية للسيارة"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_identifier:"
 msgid "Ambulance license number or other type of ID"
@@ -328,7 +338,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ambulance,vehicle_model:"
 msgid "Ambulance model"
-msgstr ""
+msgstr "نموذج الإسعاف"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_odometer:"
 msgid "Current odometer reading"
@@ -340,7 +350,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.ambulance,vehicle_type:"
 msgid "Type of vehicle"
-msgstr ""
+msgstr "نوع المركبة"
 
 msgctxt "help:gnuhealth.ambulance.support,sr:"
 msgid "Support Request"
@@ -456,7 +466,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_ambulance"
 msgid "Ambulances"
-msgstr ""
+msgstr "سيارات الاسعاف"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_ambulance_sr"
 msgid "Ambulance in Support Requests"
@@ -472,7 +482,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "At Hospital"
-msgstr ""
+msgstr "في المستشفى"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Available / At Station"
@@ -488,11 +498,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "On Location"
-msgstr ""
+msgstr "في عين المكان"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Out of service"
-msgstr ""
+msgstr "خارج الخدمة"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Returning"
@@ -500,7 +510,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "To Hospital"
-msgstr ""
+msgstr "نحو المستشفى"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_function:"
 msgid ""
@@ -524,31 +534,31 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Airplane"
-msgstr ""
+msgstr "طائرة"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Bicycle"
-msgstr ""
+msgstr "دراجة هوائية"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Boat"
-msgstr ""
+msgstr "قارب"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Car"
-msgstr ""
+msgstr "سيارة"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Drone"
-msgstr ""
+msgstr "طائرة بدون طيار"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Helicopter"
-msgstr ""
+msgstr "هليكوبتر"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Motorcycle"
-msgstr ""
+msgstr "دراجة نارية"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Van"
@@ -560,7 +570,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "At Hospital"
-msgstr ""
+msgstr "في المستشفى"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Available / At Station"
@@ -580,7 +590,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Out of service"
-msgstr ""
+msgstr "خارج الخدمة"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Returning"
@@ -588,7 +598,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "To Hospital"
-msgstr ""
+msgstr "إلى المستشفى"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid ""
@@ -704,11 +714,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Suicide attempt"
-msgstr ""
+msgstr "محاولة انتحار"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Transportation accident"
-msgstr ""
+msgstr "حادث نقل"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Traumatic Injuries"
@@ -720,7 +730,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Commercial Area"
-msgstr ""
+msgstr "منطقة تجارية"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Home"
@@ -744,7 +754,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "School"
-msgstr ""
+msgstr "مدرسة"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Sports event"
@@ -752,7 +762,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Street"
-msgstr ""
+msgstr "شارع"
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Unknown"
@@ -792,7 +802,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid "Ambulance"
-msgstr ""
+msgstr "سيارة إسعاف"
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid "General"

@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -22,15 +22,16 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_nursing import *
-
+from . import health_nursing
+from . import sequences
 
 def register():
     Pool.register(
-        GnuHealthSequences,
-        GnuHealthSequenceSetup,
-        PatientRounding,
-        RoundingProcedure,
-        PatientAmbulatoryCare,
-        AmbulatoryCareProcedure,
+        health_nursing.PatientRounding,
+        health_nursing.RoundingProcedure,
+        health_nursing.PatientAmbulatoryCare,
+        health_nursing.AmbulatoryCareProcedure,
+        sequences.GnuHealthSequences,
+        sequences.AmbulatoryCareSequence,
+        sequences.PatientRoundingSequence,
         module='health_nursing', type_='model')

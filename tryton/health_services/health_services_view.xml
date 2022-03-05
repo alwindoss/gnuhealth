@@ -82,12 +82,12 @@
             action="gnuhealth_action_health_service"
             id="gnuhealth_health_service_menu" icon="gnuhealth-list"/>
 
-<!-- Simple view of created health service invoices -->
+<!-- Simple view of created health service invoices in the last month -->
 
         <record model="ir.action.act_window" id="gnuhealth_action_health_service_invoices">
-            <field name="name">Created invoices</field>
+            <field name="name">Service invoices (last month)</field>
             <field name="res_model">account.invoice</field>
-            <field name="domain" eval="[('health_service', '!=', None)]" pyson="1"/>
+            <field name="domain" eval="[('health_service', '!=', None), ('invoice_date', '>=', Date(delta_months=-1))]" pyson="1"/>
         </record>
 
         <menuitem parent="gnuhealth_services_menu"
@@ -153,6 +153,14 @@
             <field name="inherit" ref="health.gnuhealth_prescription_view" />
             <field name="name">gnuhealth_prescription</field>
         </record> 
+
+<!-- Extend patient evaluation view to include the service -->
+
+        <record model="ir.ui.view" id="view_evaluation_form">
+            <field name="model">gnuhealth.patient.evaluation</field>
+            <field name="inherit" ref="health.gnuhealth_patient_evaluation_view" />
+            <field name="name">gnuhealth_patient_evaluation</field>
+        </record>
 
     </data>
 </tryton>

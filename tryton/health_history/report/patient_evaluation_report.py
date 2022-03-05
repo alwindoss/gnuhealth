@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -47,5 +47,6 @@ class PatientEvaluationReport(Report):
             tzinfo=pytz.utc), timezone)
         localcontext['print_time'] = localcontext['print_date'].time()
 
-        return super(PatientEvaluationReport, cls).parse(report, objects, data, 
-            localcontext)
+        return super(PatientEvaluationReport, cls).parse(report,
+                                                         objects, data,
+                                                         localcontext)

@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #
@@ -48,14 +48,6 @@ class CreateServiceInvoice(Wizard):
             ])
     create_service_invoice = StateTransition()
 
-    @classmethod
-    def __setup__(cls):
-        super(CreateServiceInvoice, cls).__setup__()
-        cls._error_messages.update({
-            'duplicate_invoice': 'Service already invoiced', \
-            'no_invoice_address': 'No invoice address associated', \
-            'no_payment_term': 'No Payment Term associated to the Patient'
-            })
 
     def transition_create_service_invoice(self):
         pool = Pool()
@@ -73,7 +65,9 @@ class CreateServiceInvoice(Wizard):
         #Invoice Header
         for service in services:
             if service.state == 'invoiced':
-                self.raise_user_error('duplicate_invoice')
+                raise ServiceAlreadyInvoiced(
+                    gettext('health_service.msg_service_already_invoiced'))
+
             if service.invoice_to:
                 party = service.invoice_to
             else:
@@ -110,12 +104,14 @@ class CreateServiceInvoice(Wizard):
 
             party_address = Party.address_get(party, type='invoice')
             if not party_address:
-                self.raise_user_error('no_invoice_address')
+                raise NoInvoiceAddress(
+                    gettext('health_service.msg_no_invoice_address'))
             invoice_data['invoice_address'] = party_address.id
             invoice_data['reference'] = service.name
 
             if not party.customer_payment_term:
-                self.raise_user_error('no_payment_term')
+                raise NoPaymentTerm(
+                    gettext('health_service.msg_no_payment_term'))
 
             invoice_data['payment_term'] = party.customer_payment_term.id
 

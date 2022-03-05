@@ -2,9 +2,9 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
 #    Copyright (C) 2013  Sebastián Marro <smarro@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -31,7 +31,8 @@ __metaclass__ = PoolMeta
 class PatientEvaluation(metaclass=PoolMeta):
     __name__ = 'gnuhealth.patient.evaluation'
 
-    age_months = fields.Function(fields.Integer('Patient Age in Months'),
+    age_months = fields.Function(
+        fields.Integer('Patient Age in Months'),
         'get_patient_age_months')
 
     def get_patient_age_months(self, name):

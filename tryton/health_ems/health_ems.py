@@ -1,12 +1,11 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <falcon@gnuhealth.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    MODULE : Emergency Management
-# 
+#
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -25,97 +24,33 @@
 #
 # The documentation of the module goes in the "doc" directory.
 
-from dateutil.relativedelta import relativedelta
-from datetime import datetime, timedelta, date
+from datetime import datetime
 
-from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal
-from trytond.model import ModelView, ModelSingleton, ModelSQL, \
-    ValueMixin, fields, Unique
+from trytond.pyson import Eval, Equal
+from trytond.model import ModelView, ModelSQL, fields, Unique
 from trytond.pool import Pool
-from trytond import backend
-from trytond.tools.multivalue import migrate_property
 
+from trytond.modules.health.core import get_health_professional
 
 
 __all__ = [
-    'GnuHealthSequences','GnuHealthSequenceSetup',
-    'Ambulance','SupportRequest', 'AmbulanceSupport',
-    'AmbulanceHealthProfessional','SupportRequestLog']
+    'Ambulance', 'SupportRequest', 'AmbulanceSupport',
+    'AmbulanceHealthProfessional', 'SupportRequestLog']
 
-sequences = ['support_request_code_sequence']
-
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView, ValueMixin):
-    'GNU Health Sequences'
-    __name__ = "gnuhealth.sequences"
-
-    support_request_code_sequence = fields.MultiValue(fields.Many2One(
-        'ir.sequence', 'Support Request Sequence', 
-        domain=[('code', '=', 'gnuhealth.support_request')],
-        required=True))
-
-    @classmethod
-    def multivalue_model(cls, field):
-        pool = Pool()
-
-        if field in sequences:
-            return pool.get('gnuhealth.sequence.setup')
-        return super(GnuHealthSequences, cls).multivalue_model(field)
-
-
-    @classmethod
-    def default_support_request_code_sequence(cls):
-        return cls.multivalue_model(
-            'support_request_code_sequence').default_support_request_code_sequence()
-
-# SEQUENCE SETUP
-class GnuHealthSequenceSetup(ModelSQL, ValueMixin):
-    'GNU Health Sequences Setup'
-    __name__ = 'gnuhealth.sequence.setup'
-
-    support_request_code_sequence = fields.Many2One('ir.sequence', 
-        'Support Request Sequence', required=True,
-        domain=[('code', '=', 'gnuhealth.support_request')])
-
-  
-    @classmethod
-    def __register__(cls, module_name):
-        TableHandler = backend.get('TableHandler')
-        exist = TableHandler.table_exist(cls._table)
-
-        super(GnuHealthSequenceSetup, cls).__register__(module_name)
-
-        if not exist:
-            cls._migrate_property([], [], [])
-
-    @classmethod
-    def _migrate_property(cls, field_names, value_names, fields):
-        field_names.extend(sequences)
-        value_names.extend(sequences)
-        migrate_property(
-            'gnuhealth.sequences', field_names, cls, value_names,
-            fields=fields)
-
-    @classmethod
-    def default_support_request_code_sequence(cls):
-        pool = Pool()
-        ModelData = pool.get('ir.model.data')
-        return ModelData.get_id(
-            'health_ems', 'seq_gnuhealth_support_request_code')
-
-    
-# END SEQUENCE SETUP , MIGRATION FROM FIELDS.PROPERTY
 
 class Ambulance (ModelSQL, ModelView):
     'Ambulance'
     __name__ = 'gnuhealth.ambulance'
 
-    vehicle_identifier = fields.Char('ID', required=True,
+    vehicle_identifier = fields.Char(
+        'ID', required=True,
         help="Ambulance license number or other type of ID")
 
     vehicle_brand = fields.Char('Brand', help="Ambulance maker")
     vehicle_model = fields.Char('Model', help="Ambulance model")
 
-    vehicle_odometer = fields.Integer('Odometer',
+    vehicle_odometer = fields.Integer(
+        'Odometer',
         help="Current odometer reading")
 
     vehicle_type = fields.Selection([
@@ -129,16 +64,16 @@ class Ambulance (ModelSQL, ModelView):
         ('bicycle', 'Bicycle'),
         ('drone', 'Drone'),
         ], 'Type', required=True,
-        help="Type of vehicle",sort=False)
+        help="Type of vehicle", sort=False)
 
     vehicle_function = fields.Selection([
         (None, ''),
         ('patient_transport', 'Type A - Patient Transport'),
         ('emergency', 'Type B - Emergency'),
         ('icu', 'Type C - Mobile ICU'),
-        ], 'Function',sort=False, required=True, 
+        ], 'Function', sort=False, required=True,
         help="Vehicle main functionality")
-    
+
     vehicle_station = fields.Many2One(
         'gnuhealth.institution', 'Station',
         help="Station / Base of the vehicle")
@@ -153,7 +88,7 @@ class Ambulance (ModelSQL, ModelView):
         ('at_hospital', 'At Hospital'),
         ('returning', 'Returning'),
         ('out_of_service', 'Out of service'),
-        ], 'Status',sort=False, readonly=True, help="Vehicle status")
+        ], 'Status', sort=False, readonly=True, help="Vehicle status")
 
     vehicle_remarks = fields.Text('Remarks')
 
@@ -172,39 +107,45 @@ class Ambulance (ModelSQL, ModelView):
         super(Ambulance, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('vehicle_uniq', Unique(t,t.vehicle_identifier), 
-            'This vehicle ID already exists'),
-        ]
+            ('vehicle_uniq',
+                Unique(t, t.vehicle_identifier),
+                'This vehicle ID already exists'),
+            ]
 
     def get_rec_name(self, name):
         return (self.vehicle_identifier + ' : ' + self.vehicle_type)
+
 
 class SupportRequest (ModelSQL, ModelView):
     'Support Request Registration'
     __name__ = 'gnuhealth.support_request'
     _rec_name = 'code'
 
-    code = fields.Char('Code',help='Request Code', readonly=True)
+    code = fields.Char('Code', help='Request Code', readonly=True)
 
     operator = fields.Many2One(
         'gnuhealth.healthprofessional', 'Operator',
         help="Operator who took the call / support request")
 
-    requestor = fields.Many2One('party.party', 'Requestor',
-    domain=[('is_person', '=', True)], help="Related party (person)")
+    requestor = fields.Many2One(
+        'party.party', 'Requestor',
+        domain=[('is_person', '=', True)], help="Related party (person)")
 
     patient = fields.Many2One('gnuhealth.patient', 'Patient')
 
-    evaluation = fields.Many2One('gnuhealth.patient.evaluation',
-        'Evaluation', 
+    evaluation = fields.Many2One(
+        'gnuhealth.patient.evaluation',
+        'Evaluation',
         domain=[('patient', '=', Eval('patient'))], depends=['patient'],
         help='Related Patient Evaluation')
 
-    request_date = fields.DateTime('Date', required=True,
+    request_date = fields.DateTime(
+        'Date', required=True,
         help="Date and time of the call for help")
-    
-    operational_sector = fields.Many2One('gnuhealth.operational_sector',
-        'O. Sector',help="Operational Sector")
+
+    operational_sector = fields.Many2One(
+        'gnuhealth.operational_sector',
+        'O. Sector', help="Operational Sector")
 
     latitude = fields.Numeric('Latidude', digits=(3, 14))
     longitude = fields.Numeric('Longitude', digits=(4, 14))
@@ -214,7 +155,8 @@ class SupportRequest (ModelSQL, ModelView):
         'OSM Map',
         help="Maps the location on Open Street Map")
 
-    healthcenter = fields.Many2One('gnuhealth.institution','Calling Institution')
+    healthcenter = fields.Many2One(
+        'gnuhealth.institution', 'Calling Institution')
 
     patient_sex = fields.Function(
         fields.Char('Sex'),
@@ -234,7 +176,7 @@ class SupportRequest (ModelSQL, ModelView):
         ('urgent', 'Urgent'),
         ('emergency', 'Emergency'),
         ], 'Urgency', sort=False)
-       
+
     place_occurrance = fields.Selection([
         (None, ''),
         ('home', 'Home'),
@@ -247,7 +189,7 @@ class SupportRequest (ModelSQL, ModelView):
         ('sports', 'Sports event'),
         ('publicbuilding', 'Public Building'),
         ('unknown', 'Unknown'),
-        ], 'Origin', help="Place of occurrance",sort=False)
+        ], 'Origin', help="Place of occurrance", sort=False)
 
     event_type = fields.Selection([
         (None, ''),
@@ -283,7 +225,7 @@ class SupportRequest (ModelSQL, ModelView):
         ('event30', 'Other specified'),
         ], 'Event type')
 
-    event_specific = fields.Many2One ('gnuhealth.pathology','Incident')
+    event_specific = fields.Many2One('gnuhealth.pathology', 'Incident')
 
     multiple_casualties = fields.Boolean('Multiple Casualties')
 
@@ -302,12 +244,11 @@ class SupportRequest (ModelSQL, ModelView):
         ('open', 'Open'),
         ('closed', 'Closed'),
         ], 'State', sort=False, readonly=True)
- 
+
     @staticmethod
     def default_request_date():
         return datetime.now()
 
-    
     def get_patient_sex(self, name):
         if self.patient:
             return self.patient.gender
@@ -323,21 +264,17 @@ class SupportRequest (ModelSQL, ModelView):
 
     @staticmethod
     def default_operator():
-        pool = Pool()
-        HealthProf= pool.get('gnuhealth.healthprofessional')
-        operator = HealthProf.get_health_professional()
-        return operator
+        return get_health_professional()
 
     @staticmethod
     def default_state():
         return 'open'
 
-
     @fields.depends('latitude', 'longitude')
     def on_change_with_urladdr(self):
         # Generates the URL to be used in OpenStreetMap
         # The address will be mapped to the URL in the following way
-        # If the latitud and longitude of the Accident / Injury 
+        # If the latitud and longitude of the Accident / Injury
         # are given, then those parameters will be used.
 
         ret_url = ''
@@ -348,34 +285,35 @@ class SupportRequest (ModelSQL, ModelView):
         return ret_url
 
     @classmethod
-    def create(cls, vlist):
-        Sequence = Pool().get('ir.sequence')
+    def generate_code(cls, **pattern):
         Config = Pool().get('gnuhealth.sequences')
+        config = Config(1)
+        sequence = config.get_multivalue(
+            'support_request_code_sequence', **pattern)
+        if sequence:
+            return sequence.get()
 
+    @classmethod
+    def create(cls, vlist):
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('code'):
-                config = Config(1)
-                values['code'] = Sequence.get_id(
-                    config.support_request_code_sequence.id)
-
+                values['code'] = cls.generate_code()
         return super(SupportRequest, cls).create(vlist)
-
 
     @classmethod
     def __setup__(cls):
         super(SupportRequest, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
-            ('code_uniq', Unique(t,t.code), 
-            'This Request Code already exists'),
+            ('code_uniq', Unique(t, t.code),
+             'This Request Code already exists'),
         ]
 
         cls._buttons.update({
             'open_support': {'invisible': Equal(Eval('state'), 'open')},
             'close_support': {'invisible': Equal(Eval('state'), 'closed')},
             })
-
 
     @classmethod
     @ModelView.button
@@ -394,13 +332,16 @@ class AmbulanceSupport (ModelSQL, ModelView):
     'Ambulance associated to a Support Request'
     __name__ = 'gnuhealth.ambulance.support'
 
-    sr = fields.Many2One('gnuhealth.support_request',
+    sr = fields.Many2One(
+        'gnuhealth.support_request',
         'SR', help="Support Request", required=True)
 
-    ambulance = fields.Many2One('gnuhealth.ambulance','Ambulance',
+    ambulance = fields.Many2One(
+        'gnuhealth.ambulance', 'Ambulance',
         domain=[('state', '=', 'available')],)
-    
-    healthprofs = fields.One2Many('gnuhealth.ambulance_hp','name',
+
+    healthprofs = fields.One2Many(
+        'gnuhealth.ambulance_hp', 'name',
         'Health Professionals')
 
     state = fields.Selection([
@@ -413,12 +354,11 @@ class AmbulanceSupport (ModelSQL, ModelView):
         ('at_hospital', 'At Hospital'),
         ('returning', 'Returning'),
         ('out_of_service', 'Out of service'),
-        ], 'Status',sort=False, readonly=True, help="Vehicle status")
+        ], 'Status', sort=False, readonly=True, help="Vehicle status")
 
     @staticmethod
     def default_state():
         return 'available'
-
 
     @classmethod
     def __setup__(cls):
@@ -432,9 +372,8 @@ class AmbulanceSupport (ModelSQL, ModelView):
             'at_hospital': {'invisible': Equal(Eval('state'), 'at_hospital')},
             'returning': {'invisible': Equal(Eval('state'), 'returning')},
             'out_of_service': {'invisible': Equal(Eval('state'),
-            'out_of_service')},
+                               'out_of_service')},
             })
-
 
     @classmethod
     @ModelView.button
@@ -449,7 +388,7 @@ class AmbulanceSupport (ModelSQL, ModelView):
     @classmethod
     @ModelView.button
     def en_route(cls, ambulances):
-         cls.update_ambulance_status(ambulances, status='en_route')
+        cls.update_ambulance_status(ambulances, status='en_route')
 
     @classmethod
     @ModelView.button
@@ -476,21 +415,20 @@ class AmbulanceSupport (ModelSQL, ModelView):
     def out_of_service(cls, ambulances):
         cls.update_ambulance_status(ambulances, status='out_of_service')
 
-
     @classmethod
     def update_ambulance_status(cls, ambulances, status):
         # Update status on local support model for this ambulance
         cls.write(ambulances, {
             'state': status})
-            
+
         # Write current status on ambulance model
         Ambulance = Pool().get('gnuhealth.ambulance')
         vehicle = []
-        
+
         vehicle.append(ambulances[0].ambulance)
-        
-        Ambulance.write(vehicle, {
-            'state': status })
+
+        Ambulance.write(
+            vehicle, {'state': status})
 
         # Create a new current ambulance status on support request log
         Activity = Pool().get('gnuhealth.support_request.log')
@@ -503,7 +441,7 @@ class AmbulanceSupport (ModelSQL, ModelView):
             'timestamp': timestamp,
             }
         values['sr'] = ambulances[0].sr
-        
+
         log.append(values)
         Activity.create(log)
 
@@ -518,24 +456,26 @@ class AmbulanceHealthProfessional(ModelSQL, ModelView):
         'gnuhealth.healthprofessional', 'Health Prof',
         help='Health Professional for this ambulance and support request')
 
+
 class SupportRequestLog (ModelSQL, ModelView):
     'Ambulance associated to a Support Request'
     __name__ = 'gnuhealth.support_request.log'
 
-    sr = fields.Many2One('gnuhealth.support_request',
+    sr = fields.Many2One(
+        'gnuhealth.support_request',
         'SR', help="Support Request", required=True)
 
-    timestamp = fields.DateTime('Time', required=True,
+    timestamp = fields.DateTime(
+        'Time', required=True,
         help="Date and time of activity")
 
     action = fields.Selection([
         (None, ''),
         ('ambulance', 'Ambulance'),
         ('general', 'General'),
-        ], 'Activity',sort=False, help="Activity log")
+        ], 'Activity', sort=False, help="Activity log")
 
     remarks = fields.Char('Remarks', help="Remarks for this item")
-    
 
     @staticmethod
     def default_timestamp():

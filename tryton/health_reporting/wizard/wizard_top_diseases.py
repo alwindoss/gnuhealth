@@ -4,8 +4,8 @@
 #
 #
 #    Copyright (C) 2012-2014  Sebastian Marro <smarro@gnusolidario.org>
-#    Copyright (C) 2013-2017 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2013-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -22,11 +22,10 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from sql import Literal, Join
+from sql import Join, Null
 from sql.aggregate import Max, Count
 from trytond.model import ModelView, ModelSQL, fields
-from trytond.wizard import Wizard, StateView, StateAction, StateTransition, \
-    Button
+from trytond.wizard import Wizard, StateView, StateAction, Button
 from trytond.pyson import PYSONEncoder
 from trytond.pool import Pool
 from trytond.transaction import Transaction
@@ -53,7 +52,8 @@ class TopDiseases(ModelSQL, ModelView):
         Evaluation = pool.get('gnuhealth.patient.evaluation')
         evaluation = Evaluation.__table__()
         source = evaluation
-        where = evaluation.diagnosis != None
+        where = evaluation.diagnosis != Null
+
         if Transaction().context.get('start_date'):
             where &= evaluation.evaluation_start >= \
                 Transaction().context['start_date']
@@ -103,7 +103,8 @@ class OpenTopDiseases(Wizard):
     'Open Top Diseases'
     __name__ = 'gnuhealth.top_diseases.open'
 
-    start = StateView('gnuhealth.top_diseases.open.start',
+    start = StateView(
+        'gnuhealth.top_diseases.open.start',
         'health_reporting.top_diseases_open_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Open', 'open_', 'tryton-ok', default=True),

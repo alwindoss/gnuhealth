@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -20,20 +19,21 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_orthanc import *
-from .wizard import *
+from . import health_orthanc
+from . import wizard
 
 
 def register():
     Pool.register(
-        AddOrthancInit,
-        AddOrthancResult,
-        OrthancServerConfig,
-        OrthancStudy,
-        OrthancPatient,
-        TestResult,
-        Patient,
+        wizard.wizard.AddOrthancInit,
+        wizard.wizard.AddOrthancResult,
+        health_orthanc.OrthancServerConfig,
+        health_orthanc.OrthancStudy,
+        health_orthanc.OrthancPatient,
+        health_orthanc.TestResult,
+        health_orthanc.Patient,
         module="health_orthanc",
         type_="model",
     )
-    Pool.register(FullSyncOrthanc, module="health_orthanc", type_="wizard")
+    Pool.register(
+        wizard.wizard.FullSyncOrthanc, module="health_orthanc", type_="wizard")

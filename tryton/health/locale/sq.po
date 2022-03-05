@@ -1,13 +1,19 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2022-02-08 22:53+0000\n"
+"Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
+"Language-Team: Albanian <https://hosted.weblate.org/projects/gnu-health/"
+"health/sq/>\n"
 "Language: sq\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
-msgstr ""
+msgstr "Vërtetimi gjendet tashmë !"
 
 msgctxt "error:gnuhealth.death_certificate:"
 msgid "Certificate already exists !"
@@ -15,15 +21,15 @@ msgstr ""
 
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Njësia duhet të jetë e vetme !"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The CODE must be unique !"
-msgstr ""
+msgstr "Kodi duhet të jetë i vetëm !"
 
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The Unit must be unique !"
-msgstr ""
+msgstr "Njësia duhet të jetë e vetme !"
 
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The CODE must be unique !"
@@ -35,7 +41,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.du:"
 msgid "The Domiciliary Unit must be unique !"
-msgstr ""
+msgstr "Vendbanimi duhet të jetë i vetëm !"
 
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The CODE must be unique !"

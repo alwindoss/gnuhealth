@@ -1,8 +1,8 @@
 # Nab3a <asn09@aub.edu.lb>, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-28 02:15+0000\n"
-"Last-Translator: Taha Zerrouki <taha_zerrouki@hotmail.com>\n"
+"PO-Revision-Date: 2021-10-23 21:53+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gnu-health/"
 "health_calendar/ar/>\n"
 "Language: ar\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 "X-POOTLE-MTIME: 1452254352.0\n"
 
 msgctxt "error:gnuhealth.calendar.create.appointment:"
@@ -90,7 +90,7 @@ msgstr "الخميس"
 
 msgctxt "field:gnuhealth.calendar.create.appointment.start,time_end:"
 msgid "End Time"
-msgstr "وقت الإنتهاء "
+msgstr "وقت الانتهاء"
 
 msgctxt "field:gnuhealth.calendar.create.appointment.start,time_start:"
 msgid "Start Time"
@@ -118,7 +118,7 @@ msgstr "أحداث التقويم"
 
 msgctxt "model:gnuhealth.calendar.create.appointment.start,name:"
 msgid "Create Appointments Start"
-msgstr "إنشاء بداية المواعيد "
+msgstr "برمجة موعد"
 
 msgctxt "model:ir.action,name:action_gnuhealth_appointment_calendar"
 msgid "Appointments Calendar"

@@ -15,7 +15,7 @@ from trytond.config import config, parse_listen
 from trytond.pool import Pool
 
 
-class TrytonWebdavServer(object):
+class GNUHealthWebdavServer(object):
 
     def __init__(self, options):
 

@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
 #    Copyright (C) 2013  Sebastián Marro <smarro@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -22,10 +21,10 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_pediatrics_growth_charts import *
+from .import health_pediatrics_growth_charts 
 
 
 def register():
     Pool.register(
-        PatientEvaluation,
+        health_pediatrics_growth_charts.PatientEvaluation,
         module='health_pediatrics_growth_charts', type_='model')

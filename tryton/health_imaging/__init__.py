@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2021 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2021 GNU Solidario <health@gnusolidario.org>
+#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
+#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
 #
 #    Copyright (C) 2013  Sebastián Marro <smarro@thymbra.com>
 #
@@ -23,22 +23,24 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_imaging import *
-from .wizard import *
+from . import health_imaging
+from . import wizard
+from . import sequences
 
 
 def register():
     Pool.register(
-        GnuHealthSequences,
-        GnuHealthSequenceSetup,
-        ImagingTestType,
-        ImagingTest,
-        ImagingTestRequest,
-        ImagingTestResult,
-        RequestImagingTest,
-        RequestPatientImagingTestStart,
+        health_imaging.ImagingTestType,
+        health_imaging.ImagingTest,
+        health_imaging.ImagingTestRequest,
+        health_imaging.ImagingTestResult,
+        wizard.RequestImagingTest,
+        wizard.RequestPatientImagingTestStart,
+        sequences.GnuHealthSequences,
+        sequences.ImagingRequestSequence,
+        sequences.ImagingTestSequence,
         module='health_imaging', type_='model')
     Pool.register(
-        WizardGenerateResult,
-        RequestPatientImagingTest,
+        wizard.WizardGenerateResult,
+        wizard.RequestPatientImagingTest,
         module='health_imaging', type_='wizard')
