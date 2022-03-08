@@ -1,6 +1,30 @@
+changeset:   5090:f0c7ce55027b
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Mar 08 15:09:53 2022 +0000
+summary:     Update to 4.0.1
+
+changeset:   5089:0b8e70c666ca
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Mar 08 14:50:19 2022 +0000
+summary:     Update gnuhealth control center and gnuhealth setup, pinning specific python libraries versions
+
+changeset:   5086:0aeeae3cdb8f
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 23:08:35 2022 +0000
+summary:     Allow Python minor versions > 10 (ej Python 3.10.2)
+
+changeset:   5085:785f182c9494
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 21:22:44 2022 +0000
+summary:     Force Beren library to 0.7.0 to make it compatible with Python 3.6
+
+cha
 hangeset:   5083:05575058c23f
 branch:      stable
-tag:         tip
 parent:      5081:9bc3ce474c0a
 user:        Luis Falcon <falcon@gnuhealth.org>
 date:        Sat Mar 05 19:17:11 2022 +0000
