@@ -1,15 +1,15 @@
 # 
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-20 12:03+0000\n"
-"Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
+"PO-Revision-Date: 2022-03-10 21:29+0000\n"
+"Last-Translator: mee <user-accounts@gmx.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
 "health_caldav/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 msgctxt "error:calendar.calendar:"
 msgid "A user can have only one calendar."
@@ -766,7 +766,7 @@ msgstr "Kalender"
 
 msgctxt "help:calendar.calendar,owner:"
 msgid "The user must have an email"
-msgstr "Dem Benutzer muss eine E-Mail-Adresse zugeordnet sein!"
+msgstr "Dem Benutzer muss eine E-Mail-Adresse zugeordnet sein"
 
 msgctxt "help:calendar.event,uuid:"
 msgid "Universally Unique Identifier"
