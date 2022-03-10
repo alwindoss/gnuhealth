@@ -32,7 +32,7 @@
 
 #GNU Health HMIS installer version
 
-VERSION="4.0rc1"
+VERSION="4.0.1"
 
 # Colors constants
 NONE="$(tput sgr0)"
@@ -120,7 +120,7 @@ check_requirements() {
         bailout
     fi
 
-    local PVERSION=$(python3 -V 2>&1 | grep 3.[4-9].[0-9])
+    local PVERSION=$(python3 -V 2>&1 | grep 3.[1-9]*.[0-9])
 
     if test "${PVERSION}" ; then
         message "INFO" "Found ${PVERSION}"
@@ -128,6 +128,19 @@ check_requirements() {
         python -V
         message "ERROR" "Found an Incompatible Python version."
         bailout
+    fi
+
+    # Check for minor numbers on Python version, including 10.*
+    local MINMINOR=6
+    local PMINOR=$(echo ${PVERSION} | cut -d'.' -f2)
+    message "INFO" "Found ${PVERSION}"
+
+    if test $PMINOR -ge $MINMINOR
+    then
+      message "INFO" "Python version minor number: ${PMINOR}... OK"
+    else
+      message "ERROR" "You need at least Python 3.${MINMINOR}"
+      bailout
     fi
 
     # PIP command
@@ -256,12 +269,13 @@ install_python_dependencies() {
     local PIP_NUMPY="numpy"
     local PIP_UNOCONV="unoconv"
     local PIP_MAGIC="python-magic"
-    local PIP_BEREN="beren"
+    local PIP_BEREN="beren==0.7.0"
     local PIP_PENDULUM="pendulum"
     local PIP_MATPLOTLIB="matplotlib"
     local PIP_PASSLIB="passlib"
-    local PIP_PYCOUNTRY="pycountry"
-    local PIP_PROGRESSBAR="progressbar"
+    local PIP_PYCOUNTRY="pycountry==20.7.3"
+    local PIP_PROGRESSBAR="progressbar==2.2"
+    local PIP_DEFUSEDXML="defusedxml"
 
     # Operating System specific package selection
     # Skip PYTHON-LDAP installation since it tries to install / compile it system-wide
@@ -270,7 +284,7 @@ install_python_dependencies() {
 
     local PIP_PKGS="$PIP_NUMPY $PIP_PYTZ $PIP_WRAPT $PIP_WERKZEUG $PIP_SIX $PIP_LXML $PIP_RELATORIO $PIP_DATEUTIL $PIP_PSYCOPG2 $PIP_VOBJECT \
         $PIP_QRCODE $PIP_PYBARCODE $PIP_PILLOW $PIP_CALDAV $PIP_POLIB $PIP_SQL $PIP_STDNUM $PIP_SIMPLEEVAL $PIP_CONFIGPARSER \
-        $PIP_WEBDAV3 $PIP_BCRYPT $PIP_UNOCONV $PIP_MAGIC $PIP_PASSLIB $PIP_BEREN $PIP_PENDULUM $PIP_MATPLOTLIB $PIP_PYCOUNTRY $PIP_PROGRESSBAR"
+        $PIP_WEBDAV3 $PIP_BCRYPT $PIP_UNOCONV $PIP_MAGIC $PIP_PASSLIB $PIP_BEREN $PIP_PENDULUM $PIP_MATPLOTLIB $PIP_PYCOUNTRY $PIP_PROGRESSBAR $PIP_DEFUSEDXML"
     
     message "INFO" "Installing python dependencies with pip-${PIP_VERSION} ..."
 
