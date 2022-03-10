@@ -1,3 +1,2732 @@
+changeset:   5090:f0c7ce55027b
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Mar 08 15:09:53 2022 +0000
+summary:     Update to 4.0.1
+
+changeset:   5089:0b8e70c666ca
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Mar 08 14:50:19 2022 +0000
+summary:     Update gnuhealth control center and gnuhealth setup, pinning specific python libraries versions
+
+changeset:   5086:0aeeae3cdb8f
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 23:08:35 2022 +0000
+summary:     Allow Python minor versions > 10 (ej Python 3.10.2)
+
+changeset:   5085:785f182c9494
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 21:22:44 2022 +0000
+summary:     Force Beren library to 0.7.0 to make it compatible with Python 3.6
+
+cha
+hangeset:   5083:05575058c23f
+branch:      stable
+parent:      5081:9bc3ce474c0a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 19:17:11 2022 +0000
+summary:     Use ODT binary format for pediatric growth charts reports
+
+changeset:   5081:9bc3ce474c0a
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 19:04:57 2022 +0000
+summary:     Remove obsoleted files
+
+changeset:   5080:a98f47300bea
+branch:      stable
+parent:      4637:b0b57448b9df
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 19:02:26 2022 +0000
+summary:     Merge default branch changes for 4.0 series
+
+changeset:   5078:749c43adb9ba
+tag:         tip
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Mar 05 18:47:54 2022 +0000
+summary:     Update to 4.0.0
+
+changeset:   5077:9941c83e1aa2
+user:        Fernando Sánchez <nando@integraper.com>
+date:        Thu Mar 03 13:28:25 2022 +0100
+summary:     Translated using Weblate (Spanish)
+
+changeset:   5076:908cfbb5e050
+parent:      5075:cfa9200b9f24
+parent:      5074:dff8e1ecd93c
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Thu Mar 03 14:16:42 2022 +0100
+summary:     Merge
+
+changeset:   5075:cfa9200b9f24
+parent:      5072:a0a39bf9a857
+user:        Fernando Sánchez <nando@integraper.com>
+date:        Thu Mar 03 13:02:39 2022 +0100
+summary:     Translated using Weblate (Spanish)
+
+changeset:   5074:dff8e1ecd93c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Mar 01 17:54:07 2022 +0000
+summary:     Update HMIS to 4.0 RC1
+
+changeset:   5073:3306b3fca424
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Mar 01 16:58:12 2022 +0000
+summary:     Use ODT instead of FODT format for epidemiology reports w/ graphics
+
+changeset:   5072:a0a39bf9a857
+user:        Lion <ringsjupe@gmail.com>
+date:        Wed Feb 23 20:08:47 2022 +0100
+summary:     Translated using Weblate (Turkish)
+
+changeset:   5071:af875a0aeec7
+user:        Lion <ringsjupe@gmail.com>
+date:        Wed Feb 23 19:55:31 2022 +0100
+summary:     Translated using Weblate (Turkish)
+
+changeset:   5070:22c808be3d21
+parent:      5069:3aaf5c2fe391
+parent:      5068:c920a02f24a2
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Wed Feb 23 16:31:30 2022 +0100
+summary:     Merge
+
+changeset:   5069:3aaf5c2fe391
+parent:      5066:c84902693efd
+user:        Lion <ringsjupe@gmail.com>
+date:        Tue Feb 22 10:20:26 2022 +0100
+summary:     Translated using Weblate (Turkish)
+
+changeset:   5068:c920a02f24a2
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Feb 22 13:59:15 2022 +0000
+summary:     Added tag 4.0b2 for changeset aaceee04a5ac
+
+changeset:   5067:aaceee04a5ac
+tag:         4.0b2
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Feb 22 12:44:47 2022 +0000
+summary:     Update to 4.0b2
+
+changeset:   5066:c84902693efd
+parent:      5065:3a9b19de41bf
+parent:      5063:ffc27c3ecc25
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Tue Feb 22 10:58:40 2022 +0100
+summary:     Merge
+
+changeset:   5065:3a9b19de41bf
+user:        Jupe Rings <ringsjupe@gmail.com>
+date:        Tue Feb 22 09:58:24 2022 +0100
+summary:     Translated using Weblate (Turkish)
+
+changeset:   5064:0688bd4f0d13
+parent:      5058:9dd94a7ecd3d
+user:        Jupe Rings <ringsjupe@gmail.com>
+date:        Tue Feb 22 09:58:16 2022 +0100
+summary:     Translated using Weblate (Turkish)
+
+changeset:   5063:ffc27c3ecc25
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Feb 16 17:43:12 2022 +0000
+summary:     Fix bug #62021, DU: 5e not possible
+
+changeset:   5062:5c5c827c0305
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Feb 16 15:26:13 2022 +0000
+summary:     Fix bug #62025: Appointments only for health professionals?
+
+changeset:   5061:7674f337109a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Feb 15 17:53:53 2022 +0000
+summary:     Fix bug #62023: DOB mismatch error more understandable output
+
+changeset:   5060:48e9240df572
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Feb 15 17:32:37 2022 +0000
+summary:     bug #62022: health professional: license id must be unique but can be empty
+
+changeset:   5059:3369af2e2622
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Feb 14 13:49:09 2022 +0000
+summary:     Fix bug: #62018, Appointment end before start // Remove faulty Lang.strftime method call
+
+changeset:   5058:9dd94a7ecd3d
+user:        Besnik Bleta <besnik@programeshqip.org>
+date:        Mon Feb 07 22:21:02 2022 +0100
+summary:     Translated using Weblate (Albanian)
+
+changeset:   5057:1de34c24a08a
+parent:      5056:59b1800a4406
+parent:      5051:4ce80dbb9109
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Wed Feb 02 19:55:51 2022 +0100
+summary:     Merge
+
+changeset:   5056:59b1800a4406
+user:        ButterflyOfFire <ButterflyOfFire@protonmail.com>
+date:        Wed Feb 02 17:15:30 2022 +0100
+summary:     Translated using Weblate (Arabic)
+
+changeset:   5055:c67eb06c86c0
+user:        ButterflyOfFire <ButterflyOfFire@protonmail.com>
+date:        Tue Feb 01 18:19:46 2022 +0100
+summary:     Translated using Weblate (French)
+
+changeset:   5054:60aba7cd6d6b
+user:        ButterflyOfFire <ButterflyOfFire@protonmail.com>
+date:        Wed Feb 02 17:18:48 2022 +0100
+summary:     Translated using Weblate (Arabic)
+
+changeset:   5053:343b9eeff7e5
+user:        ButterflyOfFire <ButterflyOfFire@protonmail.com>
+date:        Wed Feb 02 17:53:06 2022 +0100
+summary:     Translated using Weblate (Arabic)
+
+changeset:   5052:36420dfd4cb8
+parent:      5050:fbea67918ca4
+user:        ButterflyOfFire <ButterflyOfFire@protonmail.com>
+date:        Wed Feb 02 16:32:08 2022 +0100
+summary:     Translated using Weblate (Arabic)
+
+changeset:   5051:4ce80dbb9109
+parent:      5048:355b1cff847e
+parent:      5050:fbea67918ca4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Feb 02 13:03:27 2022 +0000
+summary:     Merge
+
+changeset:   5050:fbea67918ca4
+parent:      5049:13da0b0839dc
+parent:      5047:e89ef6686f50
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Tue Feb 01 15:55:30 2022 +0100
+summary:     Merge
+
+changeset:   5049:13da0b0839dc
+parent:      5045:b664669f2cae
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Mon Jan 31 14:23:52 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5048:355b1cff847e
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Feb 02 13:02:36 2022 +0000
+summary:     Update version in cfg files, gnuhealth-control and gnuhealth-setup
+
+changeset:   5047:e89ef6686f50
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 31 18:53:00 2022 +0000
+summary:     Include initial HELP message sm-core-0006
+
+changeset:   5046:3fb2765a2ca4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 31 18:51:51 2022 +0000
+summary:     Add gnuhealth HELP command
+
+changeset:   5045:b664669f2cae
+user:        Calcitem <calcitem@outlook.com>
+date:        Mon Jan 31 13:51:32 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5044:cf013d9c6376
+parent:      5043:09559bf45843
+parent:      5042:2b2b20e3c9da
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Sun Jan 30 13:54:04 2022 +0100
+summary:     Merge
+
+changeset:   5043:09559bf45843
+parent:      5024:dce59688ef20
+user:        Reza Almanda <rezaalmanda27@gmail.com>
+date:        Sat Jan 29 11:52:23 2022 +0100
+summary:     Translated using Weblate (Indonesian)
+
+changeset:   5042:2b2b20e3c9da
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Jan 28 17:14:45 2022 +0000
+summary:     Fix bug #61943: health_crypto: dose_unit missing
+
+changeset:   5041:119ef55d6900
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Jan 28 16:53:13 2022 +0000
+summary:     Fix bug #61848: Created Invoices menu taking too long to get invoices from database. Lint
+
+changeset:   5040:bed672499f01
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Jan 28 15:49:34 2022 +0000
+summary:     health_imaging: shorten imaging request sequence field, to avoid erros
+
+changeset:   5039:1e982753bd69
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 19:34:43 2022 +0000
+summary:     health_services: fix bug #61877: Error when I open health service report when no institution is defined
+
+changeset:   5038:3ad880e0fcbb
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 19:22:48 2022 +0000
+summary:     health_surgery: Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5037:87ab440eb554
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 19:17:41 2022 +0000
+summary:     health_services: Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5036:b98971be06e2
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 19:16:16 2022 +0000
+summary:     health_reporting: Migrate to FODT. Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5035:12587def1df9
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 19:01:33 2022 +0000
+summary:     health_qrcodes: Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5034:1d89aaf0d913
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 18:57:00 2022 +0000
+summary:     health_pediatrics_growth_charts_who: Migrate to FODT. Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5033:ffa007f84e0f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 18:38:41 2022 +0000
+summary:     health_pediatrics: Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5032:6da70fd4e880
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 18:37:32 2022 +0000
+summary:     health_ophthalmology: Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5031:dea1b6c77356
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 18:36:16 2022 +0000
+summary:     health_nursing: Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5030:3717a9a0685c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 18:34:54 2022 +0000
+summary:     health_lab: Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5029:9dffe8fc4d14
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 18:33:08 2022 +0000
+summary:     health_history: Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5028:4858fc94e50d
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 18:30:48 2022 +0000
+summary:     health_dentistry: Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5027:fd153c2d57b5
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 18:28:22 2022 +0000
+summary:     health: Use gnu-free-fonts FreeSans as default font in reports
+
+changeset:   5026:352f4cb87936
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 26 12:32:52 2022 +0000
+summary:     bug #61923. Cleanup code, use f-string and remove label from the first line
+
+changeset:   5025:6bb76d8ff528
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 25 19:02:59 2022 +0000
+summary:     health: Remove obsolete icons on report dir
+
+changeset:   5024:dce59688ef20
+parent:      5023:07a22d2f7b5a
+parent:      5021:b281a760742e
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Tue Jan 25 12:04:59 2022 +0100
+summary:     Merge
+
+changeset:   5023:07a22d2f7b5a
+user:        Feng Shu <tumashu@163.com>
+date:        Tue Jan 25 06:28:17 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5022:f0fd2a69ad3f
+parent:      5008:ef54abef7fba
+user:        Feng Shu <tumashu@163.com>
+date:        Tue Jan 25 06:20:15 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5021:b281a760742e
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 25 10:12:46 2022 +0000
+summary:     fix bug bug #61870: The translation problems of immunization_status_report.fodt
+
+changeset:   5020:fac8b97e841f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 25 09:36:45 2022 +0000
+summary:     health_federation: Include msg_ prefix on messages
+
+changeset:   5019:a6c8a690debd
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 20:08:12 2022 +0000
+summary:     health_services: Lint. Fix bug #61906: Origin name is incorrect in Created_invoice
+
+changeset:   5018:16fdaa03b02b
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 19:18:13 2022 +0000
+summary:     health_calendar: Fix bug bug #61889: Error when I change internal user
+
+changeset:   5017:d6b0bef9be39
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 17:40:14 2022 +0000
+summary:     health_insurance: migrate raise_user_error methods
+
+changeset:   5016:e41ff2ee6026
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 17:15:29 2022 +0000
+summary:     health_federation: migrate raise_user_error methods
+
+changeset:   5015:f1112c9943c6
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 16:32:40 2022 +0000
+summary:     health_lab: migrate raise_user_error methods
+
+changeset:   5014:dd38f2b3301b
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 16:21:19 2022 +0000
+summary:     health_lab: lint
+
+changeset:   5013:1dfc4388f2bf
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 15:58:29 2022 +0000
+summary:     health_crypto_lab: Remove duplicated exception from core
+
+changeset:   5012:390333179340
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 15:53:48 2022 +0000
+summary:     health_services_imaging: migrate raise_user_error methods
+
+changeset:   5011:207199fdff57
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 15:48:12 2022 +0000
+summary:     health_services_lab: Import trytond.i18n.gettext
+
+changeset:   5010:754c5341bbb7
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 14:18:32 2022 +0000
+summary:     health_services_lab: migrate raise_user_error methods
+
+changeset:   5009:ac497c880320
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 24 14:01:14 2022 +0000
+summary:     health: migrate raise_user_error methods
+
+changeset:   5008:ef54abef7fba
+user:        Feng Shu <tumashu@163.com>
+date:        Mon Jan 24 01:38:03 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5007:446413dc54f2
+user:        Feng Shu <tumashu@163.com>
+date:        Fri Jan 21 05:38:41 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5006:96e74050d26f
+user:        Feng Shu <tumashu@163.com>
+date:        Fri Jan 21 05:41:24 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5005:724795588f1b
+user:        Feng Shu <tumashu@163.com>
+date:        Fri Jan 21 07:27:22 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5004:0870ad939796
+parent:      5003:190a637c00b3
+parent:      5000:3feb3b43286d
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Fri Jan 21 06:15:48 2022 +0100
+summary:     Merge
+
+changeset:   5003:190a637c00b3
+user:        Feng Shu <tumashu@163.com>
+date:        Fri Jan 21 04:30:29 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5002:d48820ae6a4f
+user:        Feng Shu <tumashu@163.com>
+date:        Fri Jan 21 04:39:11 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5001:92e6963cda21
+parent:      4994:c937e6bcad63
+user:        Feng Shu <tumashu@163.com>
+date:        Fri Jan 21 05:05:33 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   5000:3feb3b43286d
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 20 20:09:10 2022 +0000
+summary:     health report: Use blank when there is no health institution associated
+
+changeset:   4999:cf4afa600ba1
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 20 19:35:53 2022 +0000
+summary:     Fix bug #61865: lab request will show error press request button.
+
+changeset:   4998:44c1a9424718
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 20 19:27:51 2022 +0000
+summary:     health_lab: Fix sequence domain. Use core health_professional method. lint
+
+changeset:   4997:2c7fce7168f4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 20 18:59:30 2022 +0000
+summary:     health_inpatient: Fix CamelCase on DestinationBedNotavailable class
+
+changeset:   4996:5e87bf22779f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 20 18:54:03 2022 +0000
+summary:     health_inpatient: use core get_institution. Fix unused imports and lint modules
+
+changeset:   4995:cff3f4768c9d
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 20 18:50:58 2022 +0000
+summary:     health, genetics, services: use core module get_institution
+
+changeset:   4994:c937e6bcad63
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 09:01:02 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4993:4b8a2052642e
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 03:17:43 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4992:645575755a02
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 04:40:13 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4991:544b1e124f92
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 02:37:51 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4990:903e91826d2b
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 02:36:52 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4989:d09b03a6321a
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 02:36:20 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4988:f1ac7e14010c
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 02:35:34 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4987:fb1206691b2c
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 02:35:01 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4986:9e34d5fd2e8c
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 02:34:29 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4985:82a1eac00493
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 02:30:42 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4984:75ad5662a7bb
+parent:      4983:f1940ad92acd
+parent:      4982:915a3ce9f7d5
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Thu Jan 20 01:39:26 2022 +0100
+summary:     Merge
+
+changeset:   4983:f1940ad92acd
+parent:      4981:65e8b3e39596
+user:        Feng Shu <tumashu@163.com>
+date:        Thu Jan 20 00:30:46 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4982:915a3ce9f7d5
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 19 23:23:47 2022 +0000
+summary:     health_reporting: Use sql Null instead of None
+
+changeset:   4981:65e8b3e39596
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 21:13:50 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4980:a423b5feb0bc
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 21:15:23 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4979:cc4cab5b827f
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 21:16:52 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4978:64b93fdb791b
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 20:47:21 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4977:07c7ea456cf7
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 21:25:01 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4976:97389691a1da
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 21:18:17 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4975:a508001ba9c0
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 21:03:13 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4974:759f4f181ab5
+parent:      4973:1f5011a522f4
+parent:      4960:ce8df108f14b
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Wed Jan 19 21:44:36 2022 +0100
+summary:     Merge
+
+changeset:   4973:1f5011a522f4
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 13:10:20 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4972:790c70ecacd1
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 13:41:30 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4971:687d8a9a42df
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:37:41 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4970:c65b910fff56
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:35:51 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4969:bb8875cfc64d
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:50:56 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4968:b1d784b9ae7c
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:43:52 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4967:f0a85ba5e886
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:55:26 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4966:e6ef450e1b67
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 20:44:01 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4965:a21ec3af952a
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 13:22:59 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4964:29f8e2f73b34
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 13:17:23 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4963:5b60349ccde4
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:36:36 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4962:1f1d8aa42306
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 13:00:09 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4961:9f05e4b98815
+parent:      4956:9a310998893f
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 13:21:01 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4960:ce8df108f14b
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 19 19:39:43 2022 +0000
+summary:     Include header argument on reports  get_context methods
+
+changeset:   4959:4fd5269daf35
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 19 16:09:09 2022 +0000
+summary:     bug #61849: fix outer parenthesis in read method
+
+changeset:   4958:5ec2710e10d1
+parent:      4957:ffcad8d0a35b
+parent:      4956:9a310998893f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 19 14:18:51 2022 +0000
+summary:     Merge translation
+
+changeset:   4957:ffcad8d0a35b
+parent:      4943:237de3bca06d
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 19 14:15:40 2022 +0000
+summary:     health: Update system messages coding nomenclature
+
+changeset:   4956:9a310998893f
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:35:29 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4955:6de65a0ddca8
+parent:      4954:091b56e73995
+parent:      4942:c069825fc80a
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Wed Jan 19 13:33:17 2022 +0100
+summary:     Merge
+
+changeset:   4954:091b56e73995
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 11:51:05 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4953:879e2c144ac6
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:08:08 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4952:3b95821a7dd3
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:14:27 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4951:ae049657e021
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:13:57 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4950:20ad68f3573e
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:06:05 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4949:b3e92fc346b4
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:17:31 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4948:2c0b4a647cc2
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:07:52 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4947:810201bd02bf
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:13:13 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4946:a376481d7961
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:05:38 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4945:173f8092cb96
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 11:52:09 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4944:fa932d6f3e2c
+parent:      4940:69cdd21396a9
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 12:06:12 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4943:237de3bca06d
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 19 14:09:52 2022 +0000
+summary:     health_pediatrics_growth_charts_who: Fix references in wizard
+
+changeset:   4942:c069825fc80a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 19 12:13:59 2022 +0000
+summary:     Fix bug #61850 . Relative import for test suite
+
+changeset:   4941:4a42c6a46441
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 19 11:59:17 2022 +0000
+summary:     Fix bug bug #61849: setup.py broken
+
+changeset:   4940:69cdd21396a9
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:22:06 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4939:01bf1217f017
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 09:43:58 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4938:9f24b37b2c96
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:35:53 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4937:ced1b991cc82
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 09:50:55 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4936:f27934d2d8b1
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:41:15 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4935:99c0b36d9d45
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:30:07 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4934:d1299ea56fee
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:33:08 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4933:656a035d9091
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:22:15 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4932:2f6895ad38c2
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:41:09 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4931:a911f527fd27
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:38:57 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4930:9aa983c96585
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:31:34 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4929:9b6467675f90
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:32:24 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4928:d0e27b9de048
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:32:55 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4927:06295cc65e29
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:39:07 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4926:5464a4712991
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:36:43 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4925:f71406dd3058
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 09:43:59 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4924:c5c3c5905ab7
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:22:54 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4923:449ccd8b8b28
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:35:06 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4922:c0a0a2be02f2
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 09:43:58 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4921:0329a76ed6e1
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:35:45 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4920:087e6f0c3bf1
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 09:50:56 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4919:c5ca63198994
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 09:43:58 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4918:b8b4bb888e64
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:34:45 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4917:a8729bc6d707
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 09:43:58 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4916:48243f2cdcc5
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:37:17 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4915:aa1e55e042a5
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:33:58 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4914:553ca9273b8f
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 09:43:58 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4913:b0a2e68f48b5
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:31:12 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4912:833ca7a5b416
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:34:38 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4911:bf43f914c7a8
+user:        Eric <alchemillatruth@purelymail.com>
+date:        Wed Jan 19 09:29:20 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4910:1a072f62ddee
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 09:02:31 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4909:37cb4ce0f451
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 06:01:21 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4908:45d939a63438
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 05:43:30 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4907:3151d5ca0c96
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 06:01:21 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4906:69f124eaabd1
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 05:43:29 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4905:24623c655672
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:55:33 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4904:537183c12089
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:55:34 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4903:fc87ef0b8877
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:58:01 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4902:2a9de3c5ce83
+parent:      4901:069ec7dbc1cd
+parent:      4889:05c075c3fd2b
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Wed Jan 19 05:55:31 2022 +0100
+summary:     Merge
+
+changeset:   4901:069ec7dbc1cd
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:52 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4900:4c073085dbd6
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:52 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4899:9145a352a977
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:51 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4898:87107b4d6e08
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:51 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4897:f059407ff6c4
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:50 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4896:8904e666737a
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:50 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4895:67bfff15b904
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:48 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4894:b869a0926118
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:48 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4893:b4cbc5016e9b
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:48 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4892:14dfadc2625f
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:46 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4891:aa34f0a7ba34
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:43 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4890:645791ed9337
+parent:      4884:d3e32cbafff1
+user:        Feng Shu <tumashu@163.com>
+date:        Wed Jan 19 04:54:43 2022 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4889:05c075c3fd2b
+user:        Gerald Wiese <wiese@gnuhealth.org>
+date:        Tue Jan 18 17:11:58 2022 +0100
+summary:     hide password when adding orthanc server, fix bug #61528
+
+changeset:   4888:086e30704617
+user:        Gerald Wiese <wiese@gnuhealth.org>
+date:        Tue Jan 18 16:43:20 2022 +0100
+summary:     add logging to default .service file, fix bug #61530
+
+changeset:   4887:0aed3b7f4cb6
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 18 13:17:47 2022 +0000
+summary:     health_nursing: Update call to get_health_professional. Lint module
+
+changeset:   4886:a95ad6799917
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 18 12:58:06 2022 +0000
+summary:     health_caldv: Remove obsolete reference in view. Update default institution method
+
+changeset:   4885:aff414b28fbe
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 18 12:30:18 2022 +0000
+summary:     health_surgery: Remove id from notebook view element
+
+changeset:   4884:d3e32cbafff1
+parent:      4883:90c99247d8b4
+parent:      4882:f835794d6e4b
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Mon Jan 17 23:25:57 2022 +0100
+summary:     Merge
+
+changeset:   4883:90c99247d8b4
+parent:      4841:a7f940831cdc
+user:        Sasha <maxminer88@gmail.com>
+date:        Mon Jan 17 20:21:19 2022 +0100
+summary:     Translated using Weblate (Russian)
+
+changeset:   4882:f835794d6e4b
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 17 14:43:52 2022 +0000
+summary:     task #16030: Create HELP command . Add rich text format for the documentation
+
+changeset:   4881:0b41467801b4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 17 14:33:05 2022 +0000
+summary:     task #16030: Create HELP command accessible from the HMIS Client. Initial Data model and views
+
+changeset:   4880:f2719cf57a20
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 17 12:53:46 2022 +0000
+summary:     health_caldav: Remove obsolete calendar definitions in setup.py
+
+changeset:   4879:6acbbe8bcac4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 11:18:04 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Update version on health_history
+
+changeset:   4878:0af7f7ed8f6f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 11:11:19 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_stock
+
+changeset:   4877:f878697cc363
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 09:59:22 2022 +0000
+summary:     health_insurance: Remove obsolete encoding
+
+changeset:   4876:b32ff7e2b86f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 09:55:45 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_insurance
+
+changeset:   4875:1450878cb7f1
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 09:49:50 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_insurance
+
+changeset:   4874:df3ca2fbe9af
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 09:24:08 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_ophthalmology
+
+changeset:   4873:e4964527e597
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 09:04:57 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_inpatient_calendar
+
+changeset:   4872:177edc9e696c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 08:57:11 2022 +0000
+summary:     health_calendar: Remove obsolete encoding
+
+changeset:   4871:0e5a7dae2008
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 08:53:27 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_mdg6
+
+changeset:   4870:9ca2d96e5978
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 08:44:34 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_federation
+
+changeset:   4869:ad65bace8f56
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 08:40:17 2022 +0000
+summary:     Cleanup health core package
+
+changeset:   4868:b7f8a757b534
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 07:59:52 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: cleanup health_ems
+
+changeset:   4867:d484c58618cd
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 07:42:24 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_qrcodes
+
+changeset:   4866:61425e2fd7b0
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 07:35:32 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_crypto_lab
+
+changeset:   4865:f825cbfb21b5
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 07:16:33 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_disability
+
+changeset:   4864:96858aa3c1f3
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jan 15 07:16:08 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_profile
+
+changeset:   4863:3a5171e5694f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Jan 14 22:38:45 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_reporting
+
+changeset:   4862:bcdb9d00c7b3
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Jan 14 21:43:01 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_orthanc
+
+changeset:   4861:e1567c3d934f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Jan 14 16:42:09 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_who_essential_medicines
+
+changeset:   4860:3f83eca562f0
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Jan 14 16:41:46 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_icd9procs
+
+changeset:   4859:2833ff0c82a1
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Jan 14 16:41:33 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_icd10
+
+changeset:   4858:8df613d84f83
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Jan 14 16:25:09 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_contact_tracing
+
+changeset:   4857:ba94107421a5
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Jan 14 11:19:17 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_archives
+
+changeset:   4856:007a3f719e29
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 13 18:10:22 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_iss
+
+changeset:   4855:f40c97f17a08
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 13 17:55:41 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_services_lab
+
+changeset:   4854:c3d6e5b9f728
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 13 17:44:30 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_genetics_uniprot
+
+changeset:   4853:0fbffa3c4d6a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 13 17:44:05 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_icd11
+
+changeset:   4852:d3de76b0a7f4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 13 17:13:14 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_pediatrics_growth_charts_who
+
+changeset:   4851:0088bb66fda2
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 13 16:54:27 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate and cleanup health_pediatrics
+
+changeset:   4850:d1f0751c30b6
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 13 16:09:27 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_icd10pcs package
+
+changeset:   4849:6eed692426cd
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 13 15:42:56 2022 +0000
+summary:     task #16043, GNU Health 4.0 migration: health_caldav - Fix dup group name
+
+changeset:   4848:07e74f1d3174
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 13 15:36:05 2022 +0000
+summary:     task #16043, Migration to GNU Health 4.0: Update before.sql script renaming webdav and calendar packages
+
+changeset:   4847:e3ebcf694ab0
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jan 12 14:03:49 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: migration of health_calendar
+
+changeset:   4846:f763345104d5
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 11 19:10:43 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Update gnuhealth-control
+
+changeset:   4845:e93657b999ef
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 11 19:06:52 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Update gnuhealth-setup
+
+changeset:   4844:0e76aeab5dc4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 11 18:53:03 2022 +0000
+summary:     health_webdav3_server: Update header dates on setup.py
+
+changeset:   4843:e4b72700f1c0
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 11 18:43:16 2022 +0000
+summary:     health_caldav: Refactor package. GH naming and migration to 4.0
+
+changeset:   4842:66515b54d4a3
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jan 11 11:52:53 2022 +0000
+summary:     genetics: Fix SQL constraint on variant phenotype
+
+changeset:   4841:a7f940831cdc
+parent:      4840:996bf3d405cc
+parent:      4839:de1f1d81471a
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Mon Jan 10 23:53:00 2022 +0100
+summary:     Merge
+
+changeset:   4840:996bf3d405cc
+parent:      4829:50e06f895e75
+user:        Jupe Rings <ringsjupe@gmail.com>
+date:        Sun Jan 09 22:11:39 2022 +0100
+summary:     Translated using Weblate (Turkish)
+
+changeset:   4839:de1f1d81471a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 10 19:48:00 2022 +0000
+summary:     genetics_package: Remove editable property. Need to check the sql_constraint on variant phenotype
+
+changeset:   4838:4fa476734b9d
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 10 19:35:19 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Cleanup and migrate health_socioeconomics
+
+changeset:   4837:fe6e96725008
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 10 19:06:11 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Update crypto package to 3.9 dev
+
+changeset:   4836:f9e22eeb4a52
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 10 19:05:27 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Cleanup and migrate health_crypto
+
+changeset:   4835:bad81ad4fefd
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 10 17:32:13 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Update genetics package to 3.9 dev
+
+changeset:   4834:51fcabd87a8b
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 10 17:31:03 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Initial migration of health_genetics and PEP8
+
+changeset:   4833:6d9cd618f10f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 10 16:53:37 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Initial migration of health_history
+
+changeset:   4832:caa485d3be15
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 10 16:29:05 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Initial migration of health_icpm package
+
+changeset:   4831:ece120cd96b2
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 10 14:19:23 2022 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Initial migration of health_dentistry package
+
+changeset:   4830:6f97191e212c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jan 10 11:59:22 2022 +0000
+summary:     Update dates on GPL headers
+
+changeset:   4829:50e06f895e75
+parent:      4828:b6d37513b0a8
+parent:      4827:0dcadfd71a44
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Sun Jan 02 00:53:29 2022 +0100
+summary:     Merge
+
+changeset:   4828:b6d37513b0a8
+parent:      4822:15efa4e13c51
+user:        Reza Almanda <rezaalmanda27@gmail.com>
+date:        Fri Dec 31 23:09:05 2021 +0100
+summary:     Translated using Weblate (Indonesian)
+
+changeset:   4827:0dcadfd71a44
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 22:34:40 2021 +0000
+summary:     health_caldav: Update error messages datafile
+
+changeset:   4826:9b1c94a7caba
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 21:57:54 2021 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_caldav
+
+changeset:   4825:dd25162e1355
+parent:      4824:afc471962330
+parent:      4822:15efa4e13c51
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 21:39:16 2021 +0000
+summary:     Merge w/ translation
+
+changeset:   4824:afc471962330
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 21:38:21 2021 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_icu package
+
+changeset:   4823:aa1f80f2176e
+parent:      4820:64917af212cf
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 21:28:27 2021 +0000
+summary:     health gyneco:Remove obsolete encoding from header
+
+changeset:   4822:15efa4e13c51
+parent:      4821:d624d6a78516
+parent:      4820:64917af212cf
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Tue Dec 21 20:52:23 2021 +0100
+summary:     Merge
+
+changeset:   4821:d624d6a78516
+parent:      4812:90316fe79c42
+user:        Mulyatno Saimi <pa.mulyatno@gmail.com>
+date:        Mon Dec 20 18:44:27 2021 +0100
+summary:     Translated using Weblate (Indonesian)
+
+changeset:   4820:64917af212cf
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 16:50:54 2021 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migration of health_gyneco package
+
+changeset:   4819:eb5654be6e64
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 12:52:04 2021 +0000
+summary:     GNU Health - Tasks: task #16043, Migration to GNU Health 4.0: Migrate health_ntd_dengue
+
+changeset:   4818:1a062fa88cf5
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 12:22:09 2021 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migration of health_ntd and health_ntd_chagas packages
+
+changeset:   4817:c0a4ebca5c4c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 12:19:57 2021 +0000
+summary:     health_inpatient: Fix sequences and use f-string
+
+changeset:   4816:c38c485dbbde
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 00:18:53 2021 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Initial migration of health_lifestyle package
+
+changeset:   4815:3e49997e14fa
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 00:17:12 2021 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Initial migration of health_inpatient package
+
+changeset:   4814:e159b19e21c2
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Dec 21 00:15:45 2021 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Initial migration of health_nursing package
+
+changeset:   4813:0b12c281e834
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Dec 17 14:18:02 2021 +0000
+summary:     task #16043: Migration to GNU Health 4.0: Migrate health_ems package
+
+changeset:   4812:90316fe79c42
+user:        PhD. Ayhan YALÇINSOY <ayhanyalcinsoy@pisilinux.org>
+date:        Sun Dec 12 06:10:26 2021 +0100
+summary:     Translated using Weblate (Turkish)
+
+changeset:   4811:9ca1d7f2edcd
+user:        Taras Panchenko <top39@ukr.net>
+date:        Wed Dec 08 21:18:46 2021 +0100
+summary:     Translated using Weblate (Ukrainian)
+
+changeset:   4810:7eeadea10234
+user:        Taras Panchenko <top39@ukr.net>
+date:        Wed Dec 08 21:48:56 2021 +0100
+summary:     Translated using Weblate (Ukrainian)
+
+changeset:   4809:ba73d8f087e2
+parent:      4808:52271f27db17
+parent:      4807:17e5570588cc
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Wed Dec 08 21:15:04 2021 +0100
+summary:     Merge
+
+changeset:   4808:52271f27db17
+parent:      4778:113450b21349
+user:        Taras Panchenko <top39@ukr.net>
+date:        Wed Dec 08 21:13:08 2021 +0100
+summary:     Added translation using Weblate (Ukrainian)
+
+changeset:   4807:17e5570588cc
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Dec 06 20:41:46 2021 +0000
+summary:     health_surgery: Complete task #16090: Improve layout on surgery form
+
+changeset:   4806:2c318d8123f1
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Dec 04 20:07:19 2021 +0000
+summary:     task #16043: Migration to GNU Health 4.0. Initial migration of health_surgery package
+
+changeset:   4805:32b3669a34d7
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 27 13:19:23 2021 +0000
+summary:     health_imaging: Complete task #16083: include context field in the Dx imaging study order
+
+changeset:   4804:fbe1c9f5483e
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 27 12:49:26 2021 +0000
+summary:     Improve terminology on lab test menus and shortcuts
+
+changeset:   4803:d71cdcb814a2
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 27 12:22:50 2021 +0000
+summary:     Complete task #16082: Include optional expiration date on personal ID documentation
+
+changeset:   4802:2eb6621c56e0
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 27 10:36:39 2021 +0000
+summary:     Complete task #16084: Create health_service_imaging package
+
+changeset:   4801:0ce0daa257da
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 27 10:18:43 2021 +0000
+summary:     health: Fix health service sequence description
+
+changeset:   4800:f6d6b93a2aca
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 27 10:17:34 2021 +0000
+summary:     Add order ID to the Dx imaging study requests and results
+
+changeset:   4799:63f503d293c4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 27 10:11:38 2021 +0000
+summary:     health: Improve terminology for lab test orders vs requests
+
+changeset:   4798:dfd4d94984a2
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Nov 24 20:09:43 2021 +0000
+summary:     health_imaging: Initial migration / refactoring to GH 4.0
+
+changeset:   4797:a050b3464875
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Nov 24 20:09:06 2021 +0000
+summary:     health_lab: remove obsolete sequence code
+
+changeset:   4796:21dea08f3aec
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Nov 24 13:00:24 2021 +0000
+summary:     health_services: Completed task #16048: Include a validation check on services
+
+changeset:   4795:320d3c300fed
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Nov 23 11:13:15 2021 +0000
+summary:     health: Completed task #16079: Improve ergonomics on patient evaluation form
+
+changeset:   4794:a202b3a4bf79
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Nov 22 11:53:29 2021 +0000
+summary:     health: Complete task task #16078: Add patient medical evaluation to health services
+
+changeset:   4793:a20d5f2bc315
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Nov 22 11:45:29 2021 +0000
+summary:     Fix typo in health product definition datafile
+
+changeset:   4792:a75a14bff948
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 20 13:44:29 2021 +0000
+summary:     health_services: Initial migration to GH 4.0
+
+changeset:   4791:7cd4565d235d
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 20 13:43:33 2021 +0000
+summary:     health: Include definition of messages
+
+changeset:   4790:1dbf88954116
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 20 13:42:35 2021 +0000
+summary:     health_lab: Remove unneeded classes from __all__
+
+changeset:   4789:4ee934d96a39
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Nov 20 13:23:19 2021 +0000
+summary:     health: Fix messages datafile tags
+
+changeset:   4788:bc7c4e39b712
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Nov 19 13:08:02 2021 +0000
+summary:     health_lab: Complete task #16062: include health condition code in order form
+
+changeset:   4787:780706ba2023
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 18 19:33:34 2021 +0000
+summary:     health_lab: remove CompanyReport
+
+changeset:   4786:33263357c8c4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 18 18:42:04 2021 +0000
+summary:     health_lab: Refactor lab wizard sequences
+
+changeset:   4785:118f7d0a1d0d
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 18 18:41:25 2021 +0000
+summary:     health: Include gettext import
+
+changeset:   4784:0b9846fdef6b
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 18 18:39:46 2021 +0000
+summary:     health_lab: Add sequences.py
+
+changeset:   4783:0ff0910f8848
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 18 16:59:51 2021 +0000
+summary:     health_lab: Remove cost_price from products datafile
+
+changeset:   4782:7e8b4ee063ad
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 18 16:54:09 2021 +0000
+summary:     health_lab: Use boolean for tree editable attribute
+
+changeset:   4781:0bfd0d7dee65
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 18 16:49:36 2021 +0000
+summary:     health_lab: initial sequences refactoring
+
+changeset:   4780:0b8271b30863
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Nov 18 10:17:13 2021 +0000
+summary:     health_lab: Use new direct access to backend classes
+
+changeset:   4779:e913ce2c44df
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Nov 15 05:34:18 2021 +0000
+summary:     Core module: update documentation. Wrap lines at 80 chars
+
+changeset:   4778:113450b21349
+user:        George Kiria <ggkiria@gmail.com>
+date:        Thu Nov 11 16:32:07 2021 +0100
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4777:ce000a0b2aa1
+user:        Reza Almanda <rezaalmanda27@gmail.com>
+date:        Fri Nov 12 02:52:47 2021 +0100
+summary:     Translated using Weblate (Indonesian)
+
+changeset:   4776:9aa883e52799
+user:        George Kiria <ggkiria@gmail.com>
+date:        Thu Nov 11 18:06:13 2021 +0100
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4775:9ae4fd1b2adf
+user:        Vinicius Monego <monego@posteo.net>
+date:        Wed Nov 03 22:16:03 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4774:162e05d721ad
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Nov 04 21:33:32 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4773:ec039a6f067a
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Nov 04 21:12:32 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4772:f1c62ddf10c3
+user:        jxpedro <jpsm@tutanota.com>
+date:        Thu Nov 04 21:17:15 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4771:4453e2d341a6
+user:        Vinicius Monego <monego@posteo.net>
+date:        Wed Nov 03 22:41:57 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4770:826fc1c4a4de
+user:        Vinicius Monego <monego@posteo.net>
+date:        Wed Nov 03 22:47:04 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4769:d983b83b8981
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Nov 04 22:09:03 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4768:f0d090b424a4
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Nov 04 21:11:12 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4767:7692c40fbbe6
+user:        jxpedro <jpsm@tutanota.com>
+date:        Thu Nov 04 21:12:00 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4766:e232b922453c
+user:        jxpedro <jpsm@tutanota.com>
+date:        Thu Nov 04 21:10:59 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4765:dc9187688d07
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Nov 04 21:10:17 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4764:58bb94a0c96e
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Nov 04 20:58:56 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4763:73d371fef72a
+user:        jxpedro <jpsm@tutanota.com>
+date:        Thu Nov 04 20:59:20 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4762:39b32aedc065
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Nov 04 20:58:21 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4761:90a794ef7777
+user:        jxpedro <jpsm@tutanota.com>
+date:        Thu Nov 04 20:58:43 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4760:d8ec52549c08
+user:        jxpedro <jpsm@tutanota.com>
+date:        Wed Nov 03 19:14:23 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4759:745a050d4a54
+user:        Vinicius Monego <monego@posteo.net>
+date:        Wed Nov 03 19:13:30 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4758:c18de55861e1
+user:        Vinicius Monego <monego@posteo.net>
+date:        Wed Nov 03 19:04:33 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4757:021ddfb462b5
+user:        jxpedro <jpsm@tutanota.com>
+date:        Wed Nov 03 19:09:52 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4756:598aa6800c30
+user:        jxpedro <jpsm@tutanota.com>
+date:        Wed Nov 03 19:03:53 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4755:9381d425c16c
+parent:      4754:502a197c917a
+parent:      4749:a21a6f9f7f72
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Wed Nov 03 20:03:57 2021 +0100
+summary:     Merge
+
+changeset:   4754:502a197c917a
+user:        Vinicius Monego <monego@posteo.net>
+date:        Wed Nov 03 19:03:39 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4753:8a2760fa5bc2
+user:        Vinicius Monego <monego@posteo.net>
+date:        Wed Nov 03 18:52:35 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4752:0e244da3fd35
+user:        Vinicius Monego <monego@posteo.net>
+date:        Wed Nov 03 18:25:18 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4751:087173349532
+user:        jxpedro <jpsm@tutanota.com>
+date:        Wed Nov 03 19:01:09 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4750:21f708dc0a61
+parent:      4747:d13984c3ee87
+user:        Vinicius Monego <monego@posteo.net>
+date:        Wed Nov 03 19:02:09 2021 +0100
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4749:a21a6f9f7f72
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Oct 31 17:53:09 2021 +0000
+summary:     Add initial RST documentation file - Introduction section
+
+changeset:   4748:f32f26d86b38
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Oct 31 17:52:11 2021 +0000
+summary:     Update sample demographics uploader for 3.9
+
+changeset:   4747:d13984c3ee87
+user:        Vinicius Monego <monego@posteo.net>
+date:        Tue Oct 26 01:14:54 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4746:78693fd85701
+user:        Vinicius Monego <monego@posteo.net>
+date:        Tue Oct 26 01:22:38 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4745:20bc70f86014
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Oct 25 18:06:13 2021 +0100
+summary:     health lab:Add Georgian template for translation
+
+changeset:   4744:f5a077db0a97
+parent:      4743:1a081de49e15
+parent:      4739:2f9f7043b600
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Sat Oct 23 23:54:05 2021 +0200
+summary:     Merge
+
+changeset:   4743:1a081de49e15
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Sat Oct 23 08:20:16 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4742:f9d6b7582c55
+user:        ButterflyOfFire <ButterflyOfFire@protonmail.com>
+date:        Sat Oct 23 12:00:49 2021 +0200
+summary:     Translated using Weblate (Arabic)
+
+changeset:   4741:7e2ec273e4a6
+user:        ButterflyOfFire <ButterflyOfFire@protonmail.com>
+date:        Sat Oct 23 12:04:51 2021 +0200
+summary:     Translated using Weblate (Arabic)
+
+changeset:   4740:75e585afdaa9
+parent:      4738:16a6b3e9120b
+user:        ButterflyOfFire <ButterflyOfFire@protonmail.com>
+date:        Sat Oct 23 12:03:17 2021 +0200
+summary:     Translated using Weblate (Arabic)
+
+changeset:   4739:2f9f7043b600
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Oct 14 16:01:20 2021 +0100
+summary:     Include pycountry and progressbar to the python deps
+
+changeset:   4738:16a6b3e9120b
+user:        George Kiria <ggkiria@gmail.com>
+date:        Mon Oct 11 20:19:50 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4737:7623ec893804
+parent:      4736:5dc0d5317e79
+parent:      4735:6e3cf98b34d1
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Mon Oct 11 21:58:05 2021 +0200
+summary:     Merge
+
+changeset:   4736:5dc0d5317e79
+parent:      4734:316dfef1f5e0
+user:        George Kiria <ggkiria@gmail.com>
+date:        Mon Oct 11 21:56:46 2021 +0200
+summary:     Added translation using Weblate (Georgian)
+
+changeset:   4735:6e3cf98b34d1
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Oct 10 19:27:28 2021 +0100
+summary:     Include sample script to upload demographic information on people / patients
+
+changeset:   4734:316dfef1f5e0
+user:        Reza Almanda <rezaalmanda27@gmail.com>
+date:        Tue Oct 05 10:52:01 2021 +0200
+summary:     Translated using Weblate (Indonesian)
+
+changeset:   4733:c8fa14613f2b
+user:        jxpedro <jpsm@tutanota.com>
+date:        Sat Oct 02 22:47:35 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4732:076be272fb51
+user:        jxpedro <jpsm@tutanota.com>
+date:        Sat Oct 02 20:25:11 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4731:9a0b611d7f7f
+user:        Vinicius Monego <monego@posteo.net>
+date:        Fri Sep 24 23:21:12 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4730:97b57209a0bf
+user:        Vinicius Monego <monego@posteo.net>
+date:        Sat Sep 25 00:58:31 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4729:9c2e5dc26638
+user:        Vinicius Monego <monego@posteo.net>
+date:        Sat Sep 25 00:38:07 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4728:db87a97f3221
+user:        Vinicius Monego <monego@posteo.net>
+date:        Fri Sep 24 23:00:43 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4727:74936449cc35
+user:        Vinicius Monego <monego@posteo.net>
+date:        Sat Sep 25 01:35:35 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4726:28236b7e0897
+user:        Vinicius Monego <monego@posteo.net>
+date:        Sat Sep 25 01:05:44 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4725:4069e478ef6b
+user:        Vinicius Monego <monego@posteo.net>
+date:        Fri Sep 24 23:05:20 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4724:2e0ef4cc145a
+user:        Vinicius Monego <monego@posteo.net>
+date:        Fri Sep 24 23:01:19 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4723:074922fe436d
+user:        Vinicius Monego <monego@posteo.net>
+date:        Fri Sep 24 23:15:31 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4722:b66c46a686cc
+user:        Vinicius Monego <monego@posteo.net>
+date:        Fri Sep 24 23:27:33 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4721:dec607f10dcf
+user:        Vinicius Monego <monego@posteo.net>
+date:        Fri Sep 24 23:01:44 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4720:5bde8c0599f5
+user:        Vinicius Monego <monego@posteo.net>
+date:        Sat Sep 25 01:22:28 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4719:d4b59f60cb1d
+user:        Vinicius Monego <monego@posteo.net>
+date:        Fri Sep 24 23:07:18 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4718:0a7aadf3cc03
+user:        Vinicius Monego <monego@posteo.net>
+date:        Fri Sep 24 22:57:18 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4717:223988a90494
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Sep 23 15:11:54 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4716:d317bdc3b8b3
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Sep 23 15:00:53 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4715:19ab7ab1b31f
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Sep 23 15:05:58 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4714:b6bde67a3e4b
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Sep 23 20:56:58 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4713:5b61fa3c0a34
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Sep 23 20:49:24 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4712:4e026b62a5f0
+user:        Vinicius Monego <monego@posteo.net>
+date:        Thu Sep 23 14:05:26 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4711:dfa6ed16d007
+user:        Vinicius Monego <monego@posteo.net>
+date:        Tue Sep 21 23:45:03 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4710:ba23a5a3072d
+user:        Vinicius Monego <monego@posteo.net>
+date:        Wed Sep 22 02:08:46 2021 +0200
+summary:     Translated using Weblate (Portuguese (Brazil))
+
+changeset:   4709:026c71faab58
+user:        Biepa <github@flippie.de>
+date:        Tue Sep 21 08:27:06 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4708:94d1983768f1
+parent:      4707:e4446cfd507b
+parent:      4706:ee3a71472529
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Sat Sep 18 22:36:39 2021 +0200
+summary:     Merge
+
+changeset:   4707:e4446cfd507b
+parent:      4703:af4a5eae7420
+user:        Mateusz Skórka <mateusz@skorka.hub.pl>
+date:        Sat Sep 18 19:59:39 2021 +0200
+summary:     Translated using Weblate (Polish)
+
+changeset:   4706:ee3a71472529
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Sep 09 17:47:16 2021 +0100
+summary:     Update report templates, from object to records
+
+changeset:   4705:d7e30164d5d0
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Sep 07 20:28:56 2021 +0100
+summary:     Update core package version to 3.9 dev
+
+changeset:   4704:258b2e582edf
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Sep 07 20:28:31 2021 +0100
+summary:     Include passlib back to the dependencies
+
+changeset:   4703:af4a5eae7420
+user:        George Kiria <ggkiria@gmail.com>
+date:        Sun Aug 29 05:25:39 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4702:8380896d5df1
+user:        Cube Kassaki <2524737581@qq.com>
+date:        Fri Aug 27 08:31:24 2021 +0200
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4701:df6f7d266a8d
+user:        ToldYouThat <itoldyouthat@protonmail.com>
+date:        Wed Aug 25 11:27:13 2021 +0200
+summary:     Translated using Weblate (Turkish)
+
+changeset:   4700:90e353d29f10
+parent:      4699:c19b0a333abf
+parent:      4687:8276ce3e7511
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Fri Aug 20 14:33:07 2021 +0200
+summary:     Merge
+
+changeset:   4699:c19b0a333abf
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 12:15:53 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4698:f90fb2c6d6bc
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:23:12 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4697:f9dd7ea5d9fb
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:03:07 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4696:89e83349cfef
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:25:41 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4695:b9c91a065566
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:38:23 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4694:963e4e59523b
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:54:51 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4693:1c995f07653f
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:11:21 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4692:5bd907e66246
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:22:24 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4691:102c0dc6f5f5
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:10:46 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4690:21703d5f9b95
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:13:22 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4689:c60b13bd05d1
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:01:45 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4688:f656a3508074
+parent:      4686:7ac97c54ab28
+user:        Johannes Keyser <joke@fsfe.org>
+date:        Fri Aug 20 11:21:19 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4687:8276ce3e7511
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Aug 14 17:00:12 2021 +0100
+summary:     Improve SYSINFO command output and collection
+
+changeset:   4686:7ac97c54ab28
+parent:      4685:93717da700f2
+parent:      4684:1167bef9339e
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Sat Aug 14 16:25:23 2021 +0200
+summary:     Merge
+
+changeset:   4685:93717da700f2
+parent:      4683:db17ad47b264
+user:        George Kiria <ggkiria@gmail.com>
+date:        Sat Aug 14 11:19:13 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4684:1167bef9339e
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Aug 13 18:53:51 2021 +0100
+summary:     Refactor sequences and common methods
+
+changeset:   4683:db17ad47b264
+parent:      4682:5df1ce233e38
+parent:      4681:43d385dee031
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Fri Aug 13 17:33:33 2021 +0200
+summary:     Merge
+
+changeset:   4682:5df1ce233e38
+parent:      4680:a82627bc827f
+user:        George Kiria <ggkiria@gmail.com>
+date:        Thu Aug 12 15:28:14 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4681:43d385dee031
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Aug 12 20:46:24 2021 +0100
+summary:     Refactoring core objects
+
+changeset:   4680:a82627bc827f
+user:        George Kiria <ggkiria@gmail.com>
+date:        Thu Aug 12 13:47:14 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4679:dfce236c47d8
+parent:      4678:2b0ddeb09c07
+parent:      4676:ba120d8ee11f
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Thu Aug 12 15:46:00 2021 +0200
+summary:     Merge
+
+changeset:   4678:2b0ddeb09c07
+user:        George Kiria <ggkiria@gmail.com>
+date:        Thu Aug 12 13:45:46 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4677:3a1859bede84
+parent:      4662:3ff95d38a8b6
+user:        George Kiria <ggkiria@gmail.com>
+date:        Thu Aug 12 13:44:54 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4676:ba120d8ee11f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Aug 11 17:10:32 2021 +0100
+summary:     use f string
+
+changeset:   4675:81876c3dee51
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Aug 11 14:20:37 2021 +0100
+summary:     health: Adapt party form view
+
+changeset:   4674:7a0bf965202c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Aug 11 13:55:00 2021 +0100
+summary:     health: Initial migration of sequences, removing code
+
+changeset:   4673:ac4e9dc95341
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Aug 11 12:48:27 2021 +0100
+summary:     health: change to boolean the editable property in tree views
+
+changeset:   4672:430a3be710f3
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Aug 10 20:57:53 2021 +0100
+summary:     health package. PEP8 compliance
+
+changeset:   4671:55c8bd649989
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Aug 10 18:33:44 2021 +0100
+summary:     health package. PEP8 compliance
+
+changeset:   4670:1af753dd2b85
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Aug 10 17:38:25 2021 +0100
+summary:     Use new direct access to backend classes
+
+changeset:   4669:2fb89cb54cfa
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Aug 10 16:49:34 2021 +0100
+summary:     Migrate wizard messages to new format. PEP8
+
+changeset:   4668:b4e7344b4f8b
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Aug 10 16:17:21 2021 +0100
+summary:     Migrate messages related to patient evaluation and ECG
+
+changeset:   4667:eb5a25b48a7e
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Aug 10 15:52:16 2021 +0100
+summary:     Migrate exception messages related to prescription
+
+changeset:   4666:a1f3807f5ca4
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Aug 10 10:35:28 2021 +0100
+summary:     Migrate vaccine dose error message to exceptions
+
+changeset:   4665:d4116fa3bf22
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Aug 10 10:03:51 2021 +0100
+summary:     HMIS core module. Initial migration of exception messages
+
+changeset:   4664:8760b9f06ca2
+parent:      4663:cb50216e1529
+parent:      4662:3ff95d38a8b6
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Aug 09 18:36:04 2021 +0100
+summary:     Merge PEP8 compliance from GH  webdav server
+
+changeset:   4663:cb50216e1529
+parent:      4656:9dc06108eab9
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Aug 09 18:35:02 2021 +0100
+summary:     PEP8 compliance
+
+changeset:   4662:3ff95d38a8b6
+user:        Vladislav Basargin <bazarassa@gmail.com>
+date:        Sat Aug 07 15:29:00 2021 +0200
+summary:     Translated using Weblate (Russian)
+
+changeset:   4661:b96ae9b7e26b
+parent:      4660:b02b4d653f32
+parent:      4656:9dc06108eab9
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Wed Jul 28 03:55:59 2021 +0200
+summary:     Merge
+
+changeset:   4660:b02b4d653f32
+user:        light lrc <lrc572lrc@gmail.com>
+date:        Tue Jul 27 14:07:01 2021 +0200
+summary:     Translated using Weblate (Spanish)
+
+changeset:   4659:0b90eeb7c437
+user:        light lrc <lrc572lrc@gmail.com>
+date:        Tue Jul 27 13:59:44 2021 +0200
+summary:     Translated using Weblate (Spanish)
+
+changeset:   4658:283dd88cd261
+user:        light lrc <lrc572lrc@gmail.com>
+date:        Tue Jul 27 13:58:58 2021 +0200
+summary:     Translated using Weblate (Spanish)
+
+changeset:   4657:d01566a7f13b
+parent:      4654:02d73519ae7c
+user:        light lrc <lrc572lrc@gmail.com>
+date:        Tue Jul 27 21:29:46 2021 +0200
+summary:     Translated using Weblate (Spanish)
+
+changeset:   4656:9dc06108eab9
+parent:      4655:67ff09c199ea
+parent:      4654:02d73519ae7c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jul 27 21:06:39 2021 +0100
+summary:     Merge w/ initial migration of GH webdav server
+
+changeset:   4655:67ff09c199ea
+parent:      4645:6dc56451ae4f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jul 27 20:58:04 2021 +0100
+summary:     Initial migration of the GNU Health WebDAV server to GH 4.0
+
+changeset:   4654:02d73519ae7c
+user:        light lrc <lrc572lrc@gmail.com>
+date:        Tue Jul 27 11:38:18 2021 +0200
+summary:     Translated using Weblate (Spanish)
+
+changeset:   4653:7daf6f149495
+user:        George Kiria <ggkiria@gmail.com>
+date:        Sat Jul 24 14:44:40 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4652:124cbb8c5fc1
+user:        Vladislav Basdargin <bazarassa@gmail.com>
+date:        Thu Jul 22 14:08:15 2021 +0200
+summary:     Translated using Weblate (Russian)
+
+changeset:   4651:b1d8c514169a
+user:        George Kiria <ggkiria@gmail.com>
+date:        Fri Jul 23 15:04:03 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4650:f9d0c3ec5ec9
+user:        Vladislav Basdargin <bazarassa@gmail.com>
+date:        Thu Jul 22 14:31:40 2021 +0200
+summary:     Added translation using Weblate (Russian)
+
+changeset:   4649:2e47a8757f1d
+user:        George Kiria <ggkiria@gmail.com>
+date:        Tue Jul 20 09:40:16 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4648:55446c1b110e
+parent:      4647:fdf1aba4e6bd
+parent:      4645:6dc56451ae4f
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Fri Jul 16 17:38:05 2021 +0200
+summary:     Merge
+
+changeset:   4647:fdf1aba4e6bd
+user:        Reza Almanda <rezaalmanda27@gmail.com>
+date:        Thu Jul 15 04:55:45 2021 +0200
+summary:     Translated using Weblate (Indonesian)
+
+changeset:   4646:dd1976025be8
+parent:      4634:e1be6745079f
+user:        George Kiria <ggkiria@gmail.com>
+date:        Thu Jul 15 15:07:39 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4645:6dc56451ae4f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Jul 10 14:23:34 2021 +0100
+summary:     Update setup.py for tyrtond server 6.x
+
+changeset:   4644:a3799f5b0a87
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 30 20:50:10 2021 +0100
+summary:     Update to Tryton server 6.x in gnuhealth-setup
+
+changeset:   4643:91c234bc86d3
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 30 20:49:14 2021 +0100
+summary:     Fix SQL statement on before.sql
+
+changeset:   4642:57f9a1e38a8c
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 30 20:22:56 2021 +0100
+summary:     Update version on gnuhealth-setup to 3.9
+
+changeset:   4641:29a7e1ca733a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 30 20:20:33 2021 +0100
+summary:     Include instpydeps command in gnuhealth-control
+
+changeset:   4640:f671b6788a00
+parent:      4639:600f8ec1512a
+parent:      4634:e1be6745079f
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 30 19:40:54 2021 +0100
+summary:     merge with current translations
+
+changeset:   4639:600f8ec1512a
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 30 19:40:25 2021 +0100
+summary:     merge translations
+
+changeset:   4638:43c55fc2be1e
+parent:      4600:92ae8325c947
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 30 19:31:18 2021 +0100
+summary:     Initial SQL migration scripts
+
+changeset:   4637:b0b57448b9df
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 30 13:17:54 2021 +0100
+summary:     Added tag 3.8.0 for changeset a6636ea6cbb0
+
+changeset:   4636:a6636ea6cbb0
+branch:      stable
+tag:         3.8.0
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 30 13:17:32 2021 +0100
+summary:     Remove obsolete odt files that have been converted to sodt format
+
+changeset:   4635:7dc9d064f42e
+branch:      stable
+parent:      4093:92d483c69b8b
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 30 13:13:46 2021 +0100
+summary:     Update stable branch with 3.8.0 version
+
+changeset:   4634:e1be6745079f
+user:        Reza Almanda <rezaalmanda27@gmail.com>
+date:        Sat Jun 26 07:10:39 2021 +0200
+summary:     Translated using Weblate (Indonesian)
+
+changeset:   4633:81f763801c51
+user:        Reza Almanda <rezaalmanda27@gmail.com>
+date:        Sat Jun 12 06:08:12 2021 +0200
+summary:     Translated using Weblate (Indonesian)
+
+changeset:   4632:1ffbe9e3300a
+user:        George Kiria <ggkiria@gmail.com>
+date:        Mon Jun 07 17:23:08 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4631:f93174fe7621
+user:        Reza Almanda <rezaalmanda27@gmail.com>
+date:        Tue Jun 01 06:04:50 2021 +0200
+summary:     Translated using Weblate (Indonesian)
+
+changeset:   4630:73a5f29854fd
+user:        Kristoffer Grundström <swedishsailfishosuser@tutanota.com>
+date:        Tue Jun 01 21:24:14 2021 +0200
+summary:     Translated using Weblate (Swedish)
+
+changeset:   4629:35dc2a77da8b
+user:        Dario Mastromattei <Dariomas@protonmail.com>
+date:        Sat May 29 15:00:14 2021 +0200
+summary:     Translated using Weblate (Italian)
+
+changeset:   4628:d90d044c41ec
+user:        liimee <alt3753.7@gmail.com>
+date:        Sun May 23 08:19:08 2021 +0200
+summary:     Translated using Weblate (Indonesian)
+
+changeset:   4627:2f5298ad6242
+user:        Vadym Tkachuk <vadymtkachuk@gmail.com>
+date:        Sun May 23 15:52:18 2021 +0200
+summary:     Translated using Weblate (Ukrainian)
+
+changeset:   4626:b2e25efc171b
+user:        liimee <alt3753.7@gmail.com>
+date:        Sun May 23 10:00:16 2021 +0200
+summary:     Added translation using Weblate (Indonesian)
+
+changeset:   4625:c06870c2c70c
+user:        yusuf <yusuf.aydemir@pisilinux.org>
+date:        Sat May 15 20:43:36 2021 +0200
+summary:     Translated using Weblate (Turkish)
+
+changeset:   4624:209106ef43f5
+user:        Armand MPASSY <armandmpassy@yahoo.com>
+date:        Sat May 01 06:30:44 2021 +0200
+summary:     Translated using Weblate (French)
+
+changeset:   4623:93b479e70c2d
+user:        Armand MPASSY <armandmpassy@yahoo.com>
+date:        Thu Apr 29 20:31:35 2021 +0200
+summary:     Translated using Weblate (French)
+
+changeset:   4622:cb75a0f68a2b
+user:        Edgar Hagenbichler <edgar@hagenbichler.at>
+date:        Thu Apr 29 20:04:19 2021 +0200
+summary:     Translated using Weblate (German)
+
+changeset:   4621:f3b1315b4636
+user:        George Kiria <ggkiria@gmail.com>
+date:        Sat Apr 24 16:31:03 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4620:2a68f4305be8
+user:        Oğuz Ersen <oguzersen@protonmail.com>
+date:        Sat Apr 24 17:53:21 2021 +0200
+summary:     Translated using Weblate (Turkish)
+
+changeset:   4619:b8dab8088582
+user:        Vadym Tkachuk <vadymtkachuk@gmail.com>
+date:        Fri Apr 23 17:14:53 2021 +0200
+summary:     Translated using Weblate (Ukrainian)
+
+changeset:   4618:72fa5fcb6571
+user:        George Kiria <ggkiria@gmail.com>
+date:        Sat Apr 24 16:03:18 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4617:2b719ee73a64
+user:        Vadym Tkachuk <vadymtkachuk@gmail.com>
+date:        Thu Apr 22 16:50:13 2021 +0200
+summary:     Translated using Weblate (Ukrainian)
+
+changeset:   4616:76f9d8434235
+user:        Vadym Tkachuk <vadymtkachuk@gmail.com>
+date:        Thu Apr 22 16:48:56 2021 +0200
+summary:     Translated using Weblate (Ukrainian)
+
+changeset:   4615:74ccafdb7d8e
+user:        Vadym Tkachuk <vadymtkachuk@gmail.com>
+date:        Thu Apr 22 16:32:00 2021 +0200
+summary:     Translated using Weblate (Ukrainian)
+
+changeset:   4614:97f60185c82a
+user:        Vadym Tkachuk <vadymtkachuk@gmail.com>
+date:        Thu Apr 22 17:03:39 2021 +0200
+summary:     Added translation using Weblate (Ukrainian)
+
+changeset:   4613:9d194e936594
+user:        SoftwareByRedline <krajczar.david41@gmail.com>
+date:        Fri Apr 16 08:37:37 2021 +0200
+summary:     Added translation using Weblate (Hungarian)
+
+changeset:   4612:8ab08f558090
+user:        George Kiria <ggkiria@gmail.com>
+date:        Sat Apr 10 19:45:52 2021 +0200
+summary:     Translated using Weblate (Georgian)
+
+changeset:   4611:96eb9033584a
+user:        Kristoffer Grundström <swedishsailfishosuser@tutanota.com>
+date:        Fri Apr 09 21:47:11 2021 +0200
+summary:     Translated using Weblate (Swedish)
+
+changeset:   4610:a859d8409366
+user:        George Kiria <ggkiria@gmail.com>
+date:        Sat Apr 10 20:20:23 2021 +0200
+summary:     Added translation using Weblate (Georgian)
+
+changeset:   4609:bfb2ab08fb62
+user:        Kristoffer Grundström <swedishsailfishosuser@tutanota.com>
+date:        Fri Apr 09 23:56:07 2021 +0200
+summary:     Added translation using Weblate (Swedish)
+
+changeset:   4608:0ba02d839f25
+user:        Kristoffer Grundström <swedishsailfishosuser@tutanota.com>
+date:        Fri Apr 09 23:29:24 2021 +0200
+summary:     Added translation using Weblate (Swedish)
+
+changeset:   4607:f9707e3406f7
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Sun Mar 21 18:14:28 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4606:da0d8d36fcd3
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Mar 19 11:10:47 2021 +0100
+summary:     Translated using Weblate (Spanish)
+
+changeset:   4605:53cf4076c7ed
+user:        Adolfo Jayme Barrientos <fitojb@ubuntu.com>
+date:        Wed Mar 03 10:39:17 2021 +0100
+summary:     Translated using Weblate (Spanish)
+
+changeset:   4604:ca344bed8600
+user:        Adolfo Jayme Barrientos <fitojb@ubuntu.com>
+date:        Wed Mar 03 10:37:38 2021 +0100
+summary:     Translated using Weblate (Spanish)
+
+changeset:   4603:c8a715b56e3c
+user:        Adolfo Jayme Barrientos <fitojb@ubuntu.com>
+date:        Wed Mar 03 10:37:29 2021 +0100
+summary:     Translated using Weblate (Spanish)
+
+changeset:   4602:129ddb3ee029
+parent:      4601:aa4a34238321
+parent:      4600:92ae8325c947
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Mon Feb 15 00:58:53 2021 +0100
+summary:     Merge
+
+changeset:   4601:aa4a34238321
+parent:      4595:860173a1b7c7
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Sun Feb 14 19:44:44 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4600:92ae8325c947
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Feb 14 18:02:52 2021 +0000
+summary:     Fix typo in description
+
+changeset:   4599:498942f3e9a8
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Feb 14 13:45:07 2021 +0000
+summary:     Update to 3.8.0. PEP8
+
+changeset:   4598:93508dde0518
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sun Feb 14 01:42:25 2021 +0000
+summary:     Contact tracing: bug #59883: 'Exposure time' missing in Details screen
+
+changeset:   4597:dc33b3e665ba
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Feb 13 17:06:02 2021 +0000
+summary:     Remove obsolete misc directory
+
+changeset:   4596:fe74214e17d3
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Fri Feb 12 16:27:25 2021 +0000
+summary:     Fix bug bug #59970: Dump when accessing Dentistry procedures reports
+
+changeset:   4595:860173a1b7c7
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 15:36:26 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4594:0cd22dc77163
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 15:31:18 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4593:459ede591b8c
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 15:25:41 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4592:caffad7550f1
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 16:18:39 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4591:b218360fa07a
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 16:18:22 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4590:891b0f54d080
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 15:35:16 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4589:1ebca89e56b0
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 16:18:34 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4588:50f50eec949d
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 15:26:20 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4587:6ec2ee4df2f8
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 15:28:20 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4586:2d87e3035306
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 16:18:30 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4585:30de4413ee71
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 15:21:39 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4584:b2c2569ecd22
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 21:45:07 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4583:b66b35975d21
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 13:51:23 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4582:ee6f82147a2c
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Mon Feb 08 13:47:48 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4581:7f4f0b33f246
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Sun Feb 07 13:57:41 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4580:ecde0635ffb7
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Thu Feb 04 22:04:15 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4579:b04a6090c936
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Thu Feb 04 22:01:17 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4578:18953e207937
+user:        Michalis <michalisntovas@yahoo.gr>
+date:        Thu Feb 04 16:15:47 2021 +0100
+summary:     Translated using Weblate (Greek)
+
+changeset:   4577:b1967ad2df48
+user:        Saverio Napolitano <savi.napolitano@gmail.com>
+date:        Thu Feb 04 11:54:15 2021 +0100
+summary:     Translated using Weblate (Italian)
+
+changeset:   4576:3f3bda5a993b
+user:        IvanDan <ivandanza@gmail.com>
+date:        Thu Feb 04 11:46:25 2021 +0100
+summary:     Translated using Weblate (Italian)
+
+changeset:   4575:18243998e98c
+user:        Saverio Napolitano <savi.napolitano@gmail.com>
+date:        Thu Feb 04 11:52:25 2021 +0100
+summary:     Translated using Weblate (Italian)
+
+changeset:   4574:f92d555efda8
+user:        Saverio Napolitano <savi.napolitano@gmail.com>
+date:        Thu Feb 04 11:41:56 2021 +0100
+summary:     Translated using Weblate (Italian)
+
+changeset:   4573:15460b6bbc34
+user:        HBtwozero <karldoudy28@gmail.com>
+date:        Tue Feb 02 20:16:03 2021 +0100
+summary:     Translated using Weblate (Haitian)
+
+changeset:   4572:3c4276f3bfc8
+user:        HBtwozero <karldoudy28@gmail.com>
+date:        Tue Feb 02 21:04:00 2021 +0100
+summary:     Added translation using Weblate (Haitian)
+
+changeset:   4571:8acb0fb81ab1
+parent:      4570:1199fdf346f7
+parent:      4568:c3eea46304c0
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Sat Jan 30 21:42:17 2021 +0100
+summary:     Merge
+
+changeset:   4570:1199fdf346f7
+user:        Ömer Faruk Çakmak <omerfarukckmk@protonmail.com>
+date:        Fri Jan 29 19:40:55 2021 +0100
+summary:     Translated using Weblate (Turkish)
+
+changeset:   4569:9b96175b07ec
+parent:      4567:fb7925de2137
+user:        Oğuz Ersen <oguzersen@protonmail.com>
+date:        Fri Jan 29 20:17:08 2021 +0100
+summary:     Translated using Weblate (Turkish)
+
+changeset:   4568:c3eea46304c0
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Thu Jan 28 23:34:04 2021 +0000
+summary:     Update files, headers to HMIS 3.8RC1. Include setup.py for dentistry
+
+changeset:   4567:fb7925de2137
+parent:      4566:cabeda59f688
+parent:      4564:91c3472379cc
+user:        Hosted Weblate <hosted@weblate.org>
+date:        Tue Jan 12 04:32:30 2021 +0100
+summary:     Merge
+
+changeset:   4566:cabeda59f688
+user:        Feng Shu <tumashu@163.com>
+date:        Tue Jan 12 03:25:14 2021 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
+changeset:   4565:63d8fbcf35fa
+parent:      4559:3b9b003594ef
+user:        Feng Shu <tumashu@163.com>
+date:        Tue Jan 12 03:24:04 2021 +0100
+summary:     Translated using Weblate (Chinese (Simplified))
+
 changeset:   4564:91c3472379cc
 tag:         tip
 user:        Luis Falcon <falcon@gnuhealth.org>
