@@ -11,7 +11,7 @@ if os.path.isdir(DIR):
     sys.path.insert(0, os.path.dirname(DIR))
 
 from trytond import __version__
-from trytond.modules.webdav import server
+from trytond.modules.health_webdav3_server import server
 
 
 def parse_commandline():
