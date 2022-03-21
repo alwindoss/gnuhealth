@@ -1,3 +1,10 @@
+changeset:   5103:bc719b95ceb5
+branch:      stable
+parent:      5092:106851d74198
+user:        Gerald Wiese <wiese@gnuhealth.org>
+date:        Tue Mar 15 00:11:00 2022 +0100
+summary:     fix webdav import error, bug #62165
+
 changeset:   5090:f0c7ce55027b
 branch:      stable
 user:        Luis Falcon <falcon@gnuhealth.org>
