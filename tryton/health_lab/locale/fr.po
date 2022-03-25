@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-21 12:36+0000\n"
-"Last-Translator: Stephane Tuffier <stephane@tuffier.eu>\n"
+"PO-Revision-Date: 2022-03-25 17:08+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_lab/fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 msgctxt "error:gnuhealth.lab.test.units:"
 msgid "The Unit name must be unique"
@@ -86,7 +86,7 @@ msgstr "Date de Mise à Jour"
 #, fuzzy
 msgctxt "field:gnuhealth.lab,write_uid:"
 msgid "Write User"
-msgstr "Écrivez l'utilisateur"
+msgstr "Écrit par"
 
 msgctxt "field:gnuhealth.lab.test.create.init,id:"
 msgid "ID"
