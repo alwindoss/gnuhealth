@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-25 08:09+0000\n"
-"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"PO-Revision-Date: 2022-03-25 17:08+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
 "health_icpm/fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-190"
 msgid "APGAR SCORING OF NEWBORN, WITHOUT OTHER INITIAL MEDICAL EVALUATION"
@@ -130,15 +130,15 @@ msgstr "MESURE DE LA COURBURE DE L’OEIL"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-232"
 msgid "CLINICAL TESTS OF HEARING, TUNING FORK TESTS, WHISPERED SPEECH"
-msgstr ""
+msgstr "TESTS CLINIQUES DE L’AUDITION, TESTS DE DIAPASON, PAROLE CHUCHOTÉE"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-240"
 msgid "ROUTINE OTOSCOPY, AUROSCOPY"
-msgstr ""
+msgstr "OTOSCOPIE DE ROUTINE, AUROSCOPIE"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-241"
 msgid "MAGNIFYING OTOSCOPY"
-msgstr ""
+msgstr "OTOSCOPIE GROSSISSANTE"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-242"
 msgid "OTHER INSTRUMENTAL EXAMINATION OF EAR"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-272"
 msgid "CENTRAL VENOUS PRESSURE (CVP) MEASUREMENT"
-msgstr ""
+msgstr "MESURE DE LA PRESSION VEINEUSE CENTRALE (PVC)"
 
 msgctxt "model:gnuhealth.procedure,description:icpm_1-273"
 msgid "INTRAVENOUS CATHERIZATION OF HEART, CARDIAC CATHERIZATION, UNQUALIFIED"
