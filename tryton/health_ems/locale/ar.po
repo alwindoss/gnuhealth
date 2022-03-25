@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-02-02 18:55+0000\n"
+"PO-Revision-Date: 2022-03-25 17:08+0000\n"
 "Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/ar/>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 msgctxt "error:gnuhealth.ambulance:"
 msgid "This vehicle ID already exists"
@@ -18,7 +18,7 @@ msgstr ""
 
 msgctxt "error:gnuhealth.support_request:"
 msgid "This Request Code already exists"
-msgstr ""
+msgstr "رمز الطلب هذا موجود بالفعل"
 
 msgctxt "field:gnuhealth.ambulance,active:"
 msgid "Active"
@@ -30,7 +30,7 @@ msgstr "تاريخ الإنشاء"
 
 msgctxt "field:gnuhealth.ambulance,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "أنشأه"
 
 msgctxt "field:gnuhealth.ambulance,id:"
 msgid "ID"
@@ -54,15 +54,16 @@ msgstr "الوظيفة"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_identifier:"
 msgid "ID"
-msgstr ""
+msgstr "المعرّف"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_model:"
 msgid "Model"
 msgstr "النموذج"
 
+#, fuzzy
 msgctxt "field:gnuhealth.ambulance,vehicle_odometer:"
 msgid "Odometer"
-msgstr ""
+msgstr "عداد المسافات"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_remarks:"
 msgid "Remarks"
@@ -70,11 +71,11 @@ msgstr "ملاحظات"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_station:"
 msgid "Station"
-msgstr ""
+msgstr "المحطة"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_type:"
 msgid "Type"
-msgstr ""
+msgstr "النوع"
 
 msgctxt "field:gnuhealth.ambulance,write_date:"
 msgid "Write Date"
@@ -98,7 +99,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,healthprofs:"
 msgid "Health Professionals"
-msgstr ""
+msgstr "متخصصو الصحة"
 
 msgctxt "field:gnuhealth.ambulance.support,id:"
 msgid "ID"
@@ -106,7 +107,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "الاسم"
 
 msgctxt "field:gnuhealth.ambulance.support,sr:"
 msgid "SR"
@@ -126,7 +127,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.ambulance_hp,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "تاريخ الإنشاء"
 
 msgctxt "field:gnuhealth.ambulance_hp,create_uid:"
 msgid "Create User"
