@@ -410,11 +410,8 @@ class PatientAmbulatoryCare(ModelSQL, ModelView):
     @ModelView.button
     def end_session(cls, sessions):
         # End the session and discharge the patient
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-
         # Change the state of the session to "Done"
-        signing_hp = HealthProfessional.get_health_professional()
+        signing_hp = get_health_professional()
 
         cls.write(sessions, {
             'state': 'done',

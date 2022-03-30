@@ -128,14 +128,11 @@ class PatientAmbulatoryCare(Workflow, ModelSQL, ModelView):
     @ModelView.button
     @Workflow.transition('done')
     def done(cls, ambulatory_cares):
-        pool = Pool()
-        HealthProfessional = pool.get('gnuhealth.healthprofessional')
-
         lines_to_ship = {}
         medicaments_to_ship = []
         supplies_to_ship = []
 
-        signing_hp = HealthProfessional.get_health_professional()
+        signing_hp = get_health_professional()
 
         for ambulatory in ambulatory_cares:
             for medicament in ambulatory.medicaments:
