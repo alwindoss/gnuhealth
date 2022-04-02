@@ -1,3 +1,18 @@
+changeset:   5122:6019cf10a447
+branch:      stable
+tag:         tip
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Sat Apr 02 12:17:43 2022 +0100
+summary:     Remove pinning from vobject library version
+
+changeset:   5121:d4a05c89a8f5
+branch:      stable
+parent:      5105:fabe18e3e0ef
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Mar 30 18:23:36 2022 +0100
+summary:     fix bug #62235: Traceback on default health professional
+
+
 changeset:   5103:bc719b95ceb5
 branch:      stable
 parent:      5092:106851d74198
