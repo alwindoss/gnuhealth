@@ -24,7 +24,7 @@
 #
 ##############################################################################
 
-VERSION="4.0.1"
+VERSION="4.0.2"
 
 TRYTON_URL="https://downloads-cdn.tryton.org"
 GNUHEALTH_URL="https://ftp.gnu.org/gnu/health"
@@ -552,7 +552,7 @@ install_python_dependencies() {
     local PIP_PSYCOPG2="psycopg2-binary"
     local PIP_PYTZ="pytz"
     local PIP_LDAP="python-ldap"
-    local PIP_VOBJECT="vobject==0.9.5"
+    local PIP_VOBJECT="vobject"
     local PIP_QRCODE="qrcode"
     local PIP_PYBARCODE="python-barcode"
     local PIP_SIX="six"
