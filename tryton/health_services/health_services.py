@@ -166,7 +166,7 @@ class HealthServiceLine(ModelSQL, ModelView):
         if (self.name):
             if (self.name.state == 'invoiced'):
                 raise ServiceAlreadyInvoiced(
-                    gettext('health_service.msg_service_already_invoiced'))
+                    gettext('health_services.msg_service_already_invoiced'))
 
     def get_rec_name(self, name):
         if self.name:
@@ -203,7 +203,7 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
 
         if not prescription.service:
             raise NoServiceAssociated(
-                    gettext('health_service.msg_no_service_associated'))
+                    gettext('health_services.msg_no_service_associated'))
 
         service_data = {}
         service_lines = []
@@ -261,11 +261,11 @@ class PatientEvaluation(ModelSQL, ModelView):
 
         if not evaluation.service:
             raise NoServiceAssociated(
-                    gettext('health_service.msg_no_service_associated'))
+                    gettext('health_services.msg_no_service_associated'))
 
         if not evaluation.product:
             raise NoProductAssociated(
-                    gettext('health_service.msg_no_product_associated'))
+                    gettext('health_services.msg_no_product_associated'))
 
         service_data = {}
         service_lines = []
