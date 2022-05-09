@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-08 11:15+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: it\n"
+"PO-Revision-Date: 2022-04-15 17:06+0000\n"
+"Last-Translator: G R <gradaellig@gmail.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_imaging/it/>\n"
+"Language: it_IT\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12-dev\n"
 "X-POOTLE-MTIME: 1452251705.0\n"
 
 msgctxt "field:gnuhealth.imaging.test,code:"
@@ -248,7 +250,7 @@ msgstr "Medico che Richiede i test di laboratorio."
 
 msgctxt "model:gnuhealth.imaging.test,name:"
 msgid "Imaging Test"
-msgstr " Test Imaging"
+msgstr "Test di imaging"
 
 msgctxt "model:gnuhealth.imaging.test.request,name:"
 msgid "Imaging Test Request"
@@ -360,7 +362,7 @@ msgstr "Tipo Imaging Test"
 
 msgctxt "model:ir.ui.menu,name:menu_imaging_test_view"
 msgid "Imaging Test"
-msgstr "Imaging Test"
+msgstr "Test di imaging"
 
 msgctxt "model:ir.ui.menu,name:menu_patient_imaging_test_request"
 msgid "Request Imaging Test"
@@ -372,23 +374,23 @@ msgstr "Servizi Imaging"
 
 msgctxt "model:product.template,name:product_template_ctscancharges"
 msgid "CT Scan charges"
-msgstr ""
+msgstr "Spese per la TAC"
 
 msgctxt "model:product.template,name:product_template_mricharges"
 msgid "MRI charges"
-msgstr ""
+msgstr "Spese per la risonanza magnetica"
 
 msgctxt "model:product.template,name:product_template_petscancharges"
 msgid "PET Scan charges"
-msgstr ""
+msgstr "Spese di scansione PET"
 
 msgctxt "model:product.template,name:product_template_ultrasoundcharges"
 msgid "Ultrasound charges"
-msgstr ""
+msgstr "Spese per ultrasuoni"
 
 msgctxt "model:product.template,name:product_template_xraycharges"
 msgid "X-ray charges"
-msgstr ""
+msgstr "Spese per i raggi X"
 
 msgctxt "selection:gnuhealth.imaging.test.request,state:"
 msgid "Done"

@@ -1,124 +1,133 @@
 # 
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-04-15 17:06+0000\n"
+"Last-Translator: G R <gradaellig@gmail.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_caldav/it/>\n"
+"Language: it_IT\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 msgctxt "error:calendar.calendar:"
 msgid "A user can have only one calendar."
-msgstr ""
+msgstr "Un utente può avere al massimo un calendario."
 
 msgctxt "error:calendar.calendar:"
 msgid "Calendar name \"%s\" can not end with .ics"
-msgstr ""
+msgstr "Il nome del calendario \"%s\" non può terminare con .ics"
 
 msgctxt "error:calendar.calendar:"
 msgid "The name of calendar must be unique."
-msgstr ""
+msgstr "Il nome del calendario deve essere unico."
 
 msgctxt "error:calendar.category:"
 msgid "The name of calendar category must be unique."
-msgstr ""
+msgstr "Il nome della categoria del calendario deve essere unico."
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Invalid \"By Day\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per giorno\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Invalid \"By Hour\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per ora\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Invalid \"By Minute\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per minuto\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Invalid \"By Month Day\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per giorno del mese\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Invalid \"By Month\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per mese\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Invalid \"By Position\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per posizione\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Invalid \"By Second\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per secondo\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Invalid \"By Week Number\" in recurrence rule \"%s\""
 msgstr ""
+"\"Per numero di settimana\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Invalid \"By Year Day\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per giorno dell'anno\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.exrule:"
 msgid "Only one of \"until\" and \"count\" can be set."
-msgstr ""
+msgstr "È possibile impostare solo uno tra \"fino a\" e \"conta\"."
 
 msgctxt "error:calendar.event.rrule:"
 msgid "Invalid \"By Day\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per giorno\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.rrule:"
 msgid "Invalid \"By Hour\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per ora\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.rrule:"
 msgid "Invalid \"By Minute\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per minuto\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.rrule:"
 msgid "Invalid \"By Month Day\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per giorno del mese\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.rrule:"
 msgid "Invalid \"By Month\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per mese\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.rrule:"
 msgid "Invalid \"By Position\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per posizione\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.rrule:"
 msgid "Invalid \"By Second\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per secondo\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.rrule:"
 msgid "Invalid \"By Week Number\" in recurrence rule \"%s\""
 msgstr ""
+"\"Per numero di settimana\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.rrule:"
 msgid "Invalid \"By Year Day\" in recurrence rule \"%s\""
-msgstr ""
+msgstr "\"Per giorno dell'anno\" non valido nella regola di ricorrenza \"%s\""
 
 msgctxt "error:calendar.event.rrule:"
 msgid "Only one of \"until\" and \"count\" can be set."
-msgstr ""
+msgstr "È possibile impostare solo uno tra \"fino a\" e \"conta\"."
 
 msgctxt "error:calendar.event:"
 msgid "Recurrence \"%s\" can not be recurrent."
-msgstr ""
+msgstr "La ricorrenza \"%s\" non può essere ricorrente."
 
 msgctxt "error:calendar.event:"
 msgid "UUID and recurrence must be unique in a calendar."
-msgstr ""
+msgstr "UUID e ricorrenza devono essere unici in un calendario."
 
 msgctxt "error:calendar.location:"
 msgid "The name of calendar location must be unique."
-msgstr ""
+msgstr "Il nome della posizione del calendario deve essere univoco."
 
-#, fuzzy
 msgctxt "field:calendar.calendar,create_date:"
 msgid "Create Date"
-msgstr "Data di creazione"
+msgstr "Creare Data"
 
-#, fuzzy
 msgctxt "field:calendar.calendar,create_uid:"
 msgid "Create User"
-msgstr "Utente creazione"
+msgstr "Creare utente"
 
 #, fuzzy
 msgctxt "field:calendar.calendar,description:"
