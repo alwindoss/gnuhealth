@@ -3,6 +3,8 @@
 	<xpath expr="//field[@name=&quot;tests&quot;]" position="after">
         <newline/>
         <group id="group_imaging_services" colspan="4">
+            <label name="ungroup_tests"/>
+            <field name="ungroup_tests"/>
             <label name="service"/>
             <field name="service"/>
         </group>
