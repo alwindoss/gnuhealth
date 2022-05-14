@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-25 01:37+0000\n"
-"PO-Revision-Date: 2022-04-20 15:35+0000\n"
-"Last-Translator: Wynnesi Ingerwood <pjwckp8euh@dnmx.org>\n"
+"PO-Revision-Date: 2022-05-15 05:17+0000\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_genetics/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.13-dev\n"
 "X-Pootle-Path: /zh_CN/GNUHEALTH/health_genetics/locale/zh_CN.po\n"
 "X-Pootle-Revision: 43530\n"
 
@@ -374,9 +374,9 @@ msgid ""
 "Second degree = Uncles, nephews and Nieces\n"
 "Third degree = Grandparents and cousins"
 msgstr ""
-"直系亲属 = 兄弟姐妹，母亲和父亲。\n"
-"第二级亲属 = 叔叔、侄子和侄女。\n"
-"第三级亲属 = 祖父母和堂兄弟姐妹。"
+"直系亲属 = 兄弟姐妹、母亲和父亲\n"
+"第二级亲属 = 叔叔（舅父）、侄子（外甥）和侄女（外甥女）\n"
+"第三级亲属 = (外）祖父母和堂（表）兄弟姐妹"
 
 msgctxt "help:gnuhealth.patient.genetic.risk,healthprof:"
 msgid "Health professional"
@@ -811,37 +811,30 @@ msgctxt "model:gnuhealth.disease.gene,long_name:ACVRL1"
 msgid "activin A receptor type II-like 1"
 msgstr "A 型激活素受体 II 型样 1"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:ACY1"
 msgid "aminoacylase 1"
 msgstr "氨基酰化酶1"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:AD10"
 msgid "Alzheimer disease-10"
 msgstr "阿尔茨海默病-10"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:AD11"
 msgid "Alzheimer disease-11"
 msgstr "阿尔茨海默病-11"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:AD12"
 msgid "Alzheimer disease 12"
 msgstr "阿尔茨海默病 12"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:AD13"
 msgid "Alzheimer disease-13"
 msgstr "阿尔茨海默病-13"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:AD14"
 msgid "Alzheimer disease 14"
 msgstr "阿尔茨海默病 14"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:AD15"
 msgid "Alzheimer disease-15"
 msgstr "阿尔茨海默病-15"
@@ -858,7 +851,6 @@ msgctxt "model:gnuhealth.disease.gene,long_name:AD6"
 msgid "Alzheimer disease 6"
 msgstr "阿尔茨海默病 6"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:AD7"
 msgid "Alzheimer disease 7"
 msgstr "阿尔茨海默病 7"
@@ -883,30 +875,25 @@ msgctxt "model:gnuhealth.disease.gene,long_name:ADAM10"
 msgid ""
 msgstr ""
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:ADAM17"
 msgid "Disintegrin and metalloproteinase domain-containing protein 17"
-msgstr "含分解和金属蛋白酶域的蛋白17"
+msgstr "含分离素和金属蛋白酶结构域的蛋白17"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:ADAM33"
 msgid "Disintegrin and metalloproteinase domain-containing protein 33"
-msgstr "含分解和金属蛋白酶域的蛋白33"
+msgstr "含分离素和金属蛋白酶结构域的蛋白33"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:ADAM9"
 msgid "Disintegrin and metalloproteinase domain-containing protein 9"
-msgstr "含分解和金属蛋白酶域的蛋白9"
+msgstr "含分离素和金属蛋白酶结构域的蛋白 9"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:ADAMTS10"
 msgid "ADAM metallopeptidase with thrombospondin type 1 motif, 10"
-msgstr "具有血栓软骨素1型图案的ADAM金属肽酶, 10"
+msgstr "具有凝血反应蛋白1型基序的 ADAM 金属肽酶 , 10"
 
-#, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:ADAMTS13"
 msgid "ADAM metallopeptidase with thrombospondin type 1 motif, 13"
-msgstr "具有血栓软骨素1型图案的ADAM金属肽酶, 13"
+msgstr "具有凝血反应蛋白1型基序的 ADAM 金属肽酶，13"
 
 #, fuzzy
 msgctxt "model:gnuhealth.disease.gene,long_name:ADAMTS17"
