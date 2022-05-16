@@ -1093,11 +1093,20 @@
             <field name="name">gnuhealth_insurance_plan</field>
         </record>
 
+       <record model="ir.action.act_window" id="gnuhealth_action_insurance_plan">
+            <field name="name">Insurance Plans</field>
+            <field name="res_model">gnuhealth.insurance.plan</field>
+        </record>
+
         <record model="ir.ui.view" id="gnuhealth_insurance_plan_tree">
             <field name="model">gnuhealth.insurance.plan</field>
             <field name="type">tree</field>
             <field name="name">gnuhealth_insurance_plan_tree</field>
         </record>
+
+        <menuitem name="Insurance Plans" action="gnuhealth_action_insurance_plan"
+            parent="gnuhealth_conf_insurances" sequence="1"
+            id="gnuhealth_conf_edit_insurance_plan" icon="gnuhealth-list"/>
 
 
  <!-- Insurances companies -->
