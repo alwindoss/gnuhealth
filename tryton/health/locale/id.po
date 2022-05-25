@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-01-30 12:53+0000\n"
+"PO-Revision-Date: 2022-05-27 02:20+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gnu-health/"
 "health/id/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -287,7 +287,7 @@ msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.appointment,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Prof Kesehatan"
 
 msgctxt "field:gnuhealth.appointment,id:"
 msgid "ID"
@@ -367,7 +367,7 @@ msgstr "Kelamin"
 
 msgctxt "field:gnuhealth.appointment.report,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Prof Kesehatan"
 
 msgctxt "field:gnuhealth.appointment.report,id:"
 msgid "ID"
@@ -407,7 +407,7 @@ msgstr "Tanggal Mulai"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Prof Kesehatan"
 
 msgctxt "field:gnuhealth.appointment.report.open.start,id:"
 msgid "ID"
@@ -1164,91 +1164,91 @@ msgstr "Buat Tanggal"
 
 msgctxt "field:gnuhealth.federation.country.config,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.federation.country.config,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.federation.country.config,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Nama Pasien"
 
 msgctxt "field:gnuhealth.federation.country.config,use_citizenship:"
 msgid "Use Citizenship"
-msgstr ""
+msgstr "Gunakan Kewarganegaraan"
 
 msgctxt "field:gnuhealth.federation.country.config,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Penulisan"
 
 msgctxt "field:gnuhealth.federation.country.config,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.healthprofessional,active:"
 msgid "Active"
-msgstr ""
+msgstr "Aktif"
 
 msgctxt "field:gnuhealth.healthprofessional,code:"
 msgid "LICENSE ID"
-msgstr ""
+msgstr "ID LISENSI"
 
 msgctxt "field:gnuhealth.healthprofessional,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Tanggal Pembuatan"
 
 msgctxt "field:gnuhealth.healthprofessional,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Buat Pengguna"
 
 msgctxt "field:gnuhealth.healthprofessional,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.healthprofessional,info:"
 msgid "Extra info"
-msgstr ""
+msgstr "Info tambahan"
 
 msgctxt "field:gnuhealth.healthprofessional,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Insititusi"
 
 msgctxt "field:gnuhealth.healthprofessional,main_specialty:"
 msgid "Main Specialty"
-msgstr ""
+msgstr "Spesialisasi Utama"
 
 msgctxt "field:gnuhealth.healthprofessional,name:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Profesional Kesehatan"
 
 msgctxt "field:gnuhealth.healthprofessional,puid:"
 msgid "PUID"
-msgstr ""
+msgstr "PUID"
 
 msgctxt "field:gnuhealth.healthprofessional,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Catat Nama"
 
 msgctxt "field:gnuhealth.healthprofessional,specialties:"
 msgid "Specialties"
-msgstr ""
+msgstr "Spesialisasi"
 
 msgctxt "field:gnuhealth.healthprofessional,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Tanggal Penulisan"
 
 msgctxt "field:gnuhealth.healthprofessional,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Tulis Pengguna"
 
 msgctxt "field:gnuhealth.hospital.bed,bed_type:"
 msgid "Bed Type"
-msgstr ""
+msgstr "Tipe Tempat Tidur"
 
 msgctxt "field:gnuhealth.hospital.bed,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Tanggal Pembuatan"
 
 msgctxt "field:gnuhealth.hospital.bed,create_uid:"
 msgid "Create User"
