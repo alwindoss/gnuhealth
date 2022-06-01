@@ -46,6 +46,8 @@ class CreateServiceInvoice(Wizard):
             # mutually exclusive.
 
             discount = {}
+            # If the policy line contains both values (percentage and
+            # fixed price, the percentage value will take over.
             if insurance.plan_id.product_policy:
                 for policy in insurance.plan_id.product_policy:
                     # Check first for product
@@ -53,6 +55,11 @@ class CreateServiceInvoice(Wizard):
                         if policy.discount:
                             discount['value'] = policy.discount
                             discount['type'] = 'pct'
+                            return discount
+
+                        if policy.price:
+                            discount['value'] = policy.price
+                            discount['type'] = 'fixed'
                             return discount
 
                 for policy in insurance.plan_id.product_policy:
@@ -178,7 +185,10 @@ class CreateServiceInvoice(Wizard):
                                         str_disc = str(discount['value']) + '%'
                                         desc = line.desc + " (Discnt " + \
                                             str(str_disc) + ")"
-
+                                    # Use the fixed price
+                                    else:
+                                        unit_price = discount['value']
+                                        desc = f"{line.desc} (policy plan)"
                     invoice_lines.append(('create', [{
                             'origin': str(line),
                             'product': line.product.id,
