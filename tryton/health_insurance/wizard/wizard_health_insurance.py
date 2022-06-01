@@ -168,9 +168,11 @@ class CreateServiceInvoice(Wizard):
                             if 'value' in list(discount.keys()):
                                 if discount['value']:
                                     if (discount['type'] == 'pct'):
-                                        unit_price *= (
-                                            1 - decimal.Decimal(
-                                                discount['value'])/100)
+                                        unit_price *= decimal.Decimal(
+                                            1 - discount['value']/100)
+                                        # Round to avoid error on sig figs
+                                        # at invoice.
+                                        unit_price = round(unit_price, 2)
 
                                         # Add remark on description discount
                                         str_disc = str(discount['value']) + '%'
