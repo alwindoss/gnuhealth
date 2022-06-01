@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-18 20:36+0000\n"
-"Last-Translator: Mateusz Skórka <mateusz@skorka.hub.pl>\n"
+"PO-Revision-Date: 2022-05-18 10:19+0000\n"
+"Last-Translator: N S <vkr1oldt@gromanov.anonaddy.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gnu-health/health/"
 "pl/>\n"
 "Language: pl\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -8111,15 +8111,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ537"
 msgid "Sociologists"
-msgstr ""
+msgstr "Socjolog"
 
 msgctxt "model:gnuhealth.occupation,name:occ538"
 msgid "Software architect"
-msgstr ""
+msgstr "Architekt oprogramowania"
 
 msgctxt "model:gnuhealth.occupation,name:occ539"
 msgid "Software engineer"
-msgstr ""
+msgstr "Inżynier oprogramowania"
 
 msgctxt "model:gnuhealth.occupation,name:occ54"
 msgid "Civil engineer"
@@ -8147,7 +8147,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ545"
 msgid "Sound Engineer"
-msgstr ""
+msgstr "Dźwiękowiec"
 
 msgctxt "model:gnuhealth.occupation,name:occ546"
 msgid "Special agent"
@@ -8155,15 +8155,15 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ547"
 msgid "Specialist"
-msgstr ""
+msgstr "Specjalista"
 
 msgctxt "model:gnuhealth.occupation,name:occ548"
 msgid "Speech therapist"
-msgstr ""
+msgstr "Logopeda"
 
 msgctxt "model:gnuhealth.occupation,name:occ55"
 msgid "Clarinetist"
-msgstr ""
+msgstr "Klarnecista"
 
 msgctxt "model:gnuhealth.occupation,name:occ550"
 msgid "Sports therapist"
@@ -8171,7 +8171,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ551"
 msgid "Stage designer"
-msgstr ""
+msgstr "Scenograf"
 
 msgctxt "model:gnuhealth.occupation,name:occ552"
 msgid "Statistician"
@@ -8179,7 +8179,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ553"
 msgid "Steward or stewardess"
-msgstr ""
+msgstr "Steward lub stewardessa"
 
 msgctxt "model:gnuhealth.occupation,name:occ554"
 msgid "Stock broker"
@@ -8187,11 +8187,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ555"
 msgid "Store Manager"
-msgstr ""
+msgstr "Kierownik sklepu"
 
 msgctxt "model:gnuhealth.occupation,name:occ556"
 msgid "Street artist"
-msgstr ""
+msgstr "Artysta uliczny"
 
 msgctxt "model:gnuhealth.occupation,name:occ557"
 msgid "Street musician"
@@ -8199,7 +8199,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ558"
 msgid "Street vendor"
-msgstr ""
+msgstr "Sprzedawca uliczny"
 
 msgctxt "model:gnuhealth.occupation,name:occ559"
 msgid "Stringer"
@@ -8207,11 +8207,11 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ56"
 msgid "Cleaner"
-msgstr ""
+msgstr "Sprzątacz"
 
 msgctxt "model:gnuhealth.occupation,name:occ560"
 msgid "Stripper"
-msgstr ""
+msgstr "Striptizer"
 
 msgctxt "model:gnuhealth.occupation,name:occ561"
 msgid "Structural engineers"
@@ -8219,23 +8219,23 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ562"
 msgid "Student"
-msgstr ""
+msgstr "Student /Uczeń"
 
 msgctxt "model:gnuhealth.occupation,name:occ564"
 msgid "Stunt coordinator"
-msgstr ""
+msgstr "Koordynator kaskaderski"
 
 msgctxt "model:gnuhealth.occupation,name:occ565"
 msgid "Stunt double"
-msgstr ""
+msgstr "Kaskader"
 
 msgctxt "model:gnuhealth.occupation,name:occ566"
 msgid "Stunt performer"
-msgstr ""
+msgstr "Kaskader"
 
 msgctxt "model:gnuhealth.occupation,name:occ568"
 msgid "Surgeon"
-msgstr ""
+msgstr "Chirurg"
 
 msgctxt "model:gnuhealth.occupation,name:occ569"
 msgid "Surgical Technologist"
@@ -8243,7 +8243,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ57"
 msgid "Clerk"
-msgstr ""
+msgstr "Ekspedient"
 
 msgctxt "model:gnuhealth.occupation,name:occ570"
 msgid "Surveyor"
@@ -8251,27 +8251,27 @@ msgstr ""
 
 msgctxt "model:gnuhealth.occupation,name:occ571"
 msgid "Swimmer"
-msgstr ""
+msgstr "Pływak"
 
 msgctxt "model:gnuhealth.occupation,name:occ572"
 msgid "Switchboard operator"
-msgstr ""
+msgstr "Operator centrali"
 
 msgctxt "model:gnuhealth.occupation,name:occ573"
 msgid "System administrator"
-msgstr ""
+msgstr "Administrator systemu"
 
 msgctxt "model:gnuhealth.occupation,name:occ574"
 msgid "Systems designer"
-msgstr ""
+msgstr "Projektant systemów"
 
 msgctxt "model:gnuhealth.occupation,name:occ575"
 msgid "Systems analyst"
-msgstr ""
+msgstr "Analityk systemów"
 
 msgctxt "model:gnuhealth.occupation,name:occ576"
 msgid "Tailor"
-msgstr ""
+msgstr "Krawiec"
 
 msgctxt "model:gnuhealth.occupation,name:occ578"
 msgid "Tapicer"
@@ -12705,31 +12705,31 @@ msgstr ""
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Create the prescription"
-msgstr ""
+msgstr "Stwórz receptę"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Notes"
-msgstr ""
+msgstr "Notatki"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Patient and Health Professional Information"
-msgstr ""
+msgstr "Informacje o Pacjencie i Specjaliście"
 
 msgctxt "view:gnuhealth.signs_and_symptoms:"
 msgid "Comments"
-msgstr ""
+msgstr "Komentarze"
 
 msgctxt "view:gnuhealth.signs_and_symptoms:"
 msgid "Sign or Symptom"
-msgstr ""
+msgstr "Objawy"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Administration"
-msgstr ""
+msgstr "Sposób dawkowania"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Dose"
-msgstr ""
+msgstr "Dawkowanie"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Finish and sign this vaccination ? It will become read-only !"
@@ -12737,7 +12737,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Notes"
-msgstr ""
+msgstr "Notatki"
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Sign"
@@ -12749,7 +12749,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.vaccination:"
 msgid "Vaccination"
-msgstr ""
+msgstr "Szczepienie"
 
 msgctxt "view:party.party:"
 msgid "Demographics"
@@ -12769,7 +12769,7 @@ msgstr ""
 
 msgctxt "wizard_button:gnuhealth.appointment.report.open,start,end:"
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
 
 msgctxt "wizard_button:gnuhealth.appointment.report.open,start,open_:"
 msgid "Open"
@@ -12782,4 +12782,4 @@ msgstr ""
 
 msgctxt "wizard_button:gnuhealth.check_immunization_status,start,end:"
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
