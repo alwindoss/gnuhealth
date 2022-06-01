@@ -4,9 +4,11 @@ from trytond.exceptions import UserError
 from trytond.model.exceptions import ValidationError
 
 
-class DisctountPctOutOfRange(ValidationError):
+class DiscountPctOutOfRange(ValidationError):
     pass
 
+class NeedAPolicy(ValidationError):
+    pass
 
 class DiscountWithoutElement(ValidationError):
     pass
