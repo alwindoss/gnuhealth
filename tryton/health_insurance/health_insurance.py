@@ -24,7 +24,8 @@ from trytond.model import ModelView, ModelSQL, fields
 from trytond.pyson import Eval
 from trytond.i18n import gettext
 
-from .exceptions import (DisctountPctOutOfRange, DiscountWithoutElement)
+from .exceptions import (DiscountPctOutOfRange, NeedAPolicy,
+                         DiscountWithoutElement)
 
 
 __all__ = ['InsurancePlanProductPolicy', 'InsurancePlan', 'HealthService']
@@ -44,7 +45,11 @@ class InsurancePlanProductPolicy(ModelSQL, ModelView):
 
     discount = fields.Float(
         'Discount', digits=(3, 2),
-        help="Discount in Percentage", required=True)
+        help="Discount in Percentage. It has higher precedence than "
+             "the fixed price when both values coexist")
+
+    price = fields.Float(
+        'Price', help="Apply a fixed price for this product or category")
 
     @classmethod
     def validate(cls, policies):
@@ -54,9 +59,14 @@ class InsurancePlanProductPolicy(ModelSQL, ModelView):
             policy.validate_policy_elements()
 
     def validate_discount(self):
-        if (self.discount < 0 or self.discount > 100):
-            raise DisctountPctOutOfRange(
-                gettext('health_insurance.msg_pct_out_of_range')
+        if (self.discount):
+            if (self.discount < 0 or self.discount > 100):
+                raise DiscountPctOutOfRange(
+                    gettext('health_insurance.msg_pct_out_of_range')
+                    )
+        if (not self.discount and not self.price):
+            raise NeedAPolicy(
+                gettext('health_insurance.msg_need_a_policy')
                 )
 
     def validate_policy_elements(self):
