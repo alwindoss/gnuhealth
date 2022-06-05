@@ -18,5 +18,8 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_no_payment_term">
             <field name="text">SM-INSURANCE-0005: No payment term</field>
         </record>
+        <record model="ir.message" id="msg_need_a_policy">
+            <field name="text">SM-INSURANCE-0006: You need to specify either a percentage or a fixed price for this policy line. If both are present, the percentage will be applied</field>
+        </record>
     </data>
 </tryton>

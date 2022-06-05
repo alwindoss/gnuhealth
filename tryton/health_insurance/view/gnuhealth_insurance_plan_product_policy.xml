@@ -8,4 +8,6 @@
     <field name="product_category"/>
     <label name="discount"/>
     <field name="discount"/>
+    <label name="price"/>
+    <field name="price"/>
 </form>
