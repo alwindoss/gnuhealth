@@ -17,7 +17,6 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import re
-import os
 import configparser
 from setuptools import setup
 
@@ -36,22 +35,20 @@ major_version, minor_version = 6, 0
 requires = ['pytz', 'numpy']
 
 for dep in info.get('depends', []):
-    if (dep == 'health_dentistry'):
-        requires.append('gnuhealth_dentistry == %s' % (info.get('version')))
+    if (dep == 'health'):
+        requires.append('gnuhealth == %s' % (info.get('version')))
 
-    elif dep.startswith('health_dentistry_'):
-        health_dentistry_package = dep.split('_', 1)[1]
-        requires.append('gnuhealth_dentistry_%s == %s' %
-                        (health_dentistry_package, info.get('version')))
+    elif dep.startswith('health_'):
+        health_package = dep.split('_', 1)[1]
+        requires.append(
+            'gnuhealth_%s == %s' % (health_package, info.get('version')))
     else:
         if not re.match(r'(ir|res|webdav)(\W|$)', dep):
-            requires.append('trytond_%s >= %s.%s, < %s.%s' %
-                            (dep, major_version, minor_version, major_version,
-                             minor_version + 1))
+            requires.append(
+                'trytond_%s >= %s.%s, < %s.%s' %
+                (dep, major_version, minor_version, major_version,
+                    minor_version + 1))
 
-requires.append('trytond >= %s.%s, < %s.%s' %
-                (major_version, minor_version, major_version,
-                 minor_version + 1))
 
 setup(
     name='gnuhealth_dentistry',
