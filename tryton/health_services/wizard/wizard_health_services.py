@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-##############################################################################
+#############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
 #    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
@@ -26,9 +25,15 @@ from trytond.model import ModelView
 from trytond.wizard import Wizard, StateTransition, StateView, Button
 from trytond.transaction import Transaction
 from trytond.pool import Pool
+from trytond.i18n import gettext
 
 
 __all__ = ['CreateServiceInvoiceInit', 'CreateServiceInvoice']
+
+from ..exceptions import (
+    ServiceAlreadyInvoiced, NoInvoiceAddress,
+    NoPaymentTerm, NoAccountReceivable
+    )
 
 
 class CreateServiceInvoiceInit(ModelView):
@@ -40,14 +45,14 @@ class CreateServiceInvoice(Wizard):
     'Create Service Invoice'
     __name__ = 'gnuhealth.service.invoice.create'
 
-    start = StateView('gnuhealth.service.invoice.init',
+    start = StateView(
+        'gnuhealth.service.invoice.init',
         'health_services.view_health_service_invoice', [
             Button('Cancel', 'end', 'tryton-cancel'),
-            Button('Create Invoice', 'create_service_invoice', 'tryton-ok',
-                True),
+            Button('Create Invoice', 'create_service_invoice',
+                   'tryton-ok', True),
             ])
     create_service_invoice = StateTransition()
-
 
     def transition_create_service_invoice(self):
         pool = Pool()
@@ -55,6 +60,8 @@ class CreateServiceInvoice(Wizard):
         Invoice = pool.get('account.invoice')
         Party = pool.get('party.party')
         Journal = pool.get('account.journal')
+        AcctConfig = pool.get('account.configuration')
+        acct_config = AcctConfig(1)
 
         currency_id = Transaction().context.get('currency')
 
@@ -62,7 +69,7 @@ class CreateServiceInvoice(Wizard):
             'active_ids'))
         invoices = []
 
-        #Invoice Header
+        # Invoice Header
         for service in services:
             if service.state == 'invoiced':
                 raise ServiceAlreadyInvoiced(
@@ -77,8 +84,21 @@ class CreateServiceInvoice(Wizard):
             invoice_data['party'] = party.id
             invoice_data['type'] = 'out'
             invoice_data['invoice_date'] = datetime.date.today()
-            invoice_data['account'] = party.account_receivable.id
             invoice_data['company'] = service.company.id
+
+            """ Look for the AR account in the following order:
+                * Party
+                * Default AR in accounting config
+                * Raise an error if there is no AR account
+            """
+            if (party.account_receivable):
+                invoice_data['account'] = party.account_receivable.id
+            elif (acct_config.default_account_receivable):
+                invoice_data['account'] = \
+                    acct_config.default_account_receivable.id
+            else:
+                raise NoAccountReceivable(
+                    gettext('health_services.msg_no_account_receivable'))
 
             ctx = {}
             sale_price_list = None
@@ -115,7 +135,7 @@ class CreateServiceInvoice(Wizard):
 
             invoice_data['payment_term'] = party.customer_payment_term.id
 
-            #Invoice Lines
+            # Invoice Lines
             seq = 0
             invoice_lines = []
             for line in service.service_line:
@@ -124,7 +144,8 @@ class CreateServiceInvoice(Wizard):
 
                 if sale_price_list:
                     with Transaction().set_context(ctx):
-                        unit_price = sale_price_list.compute(party,
+                        unit_price = sale_price_list.compute(
+                            party,
                             line.product, line.product.list_price,
                             line.qty, line.product.default_uom)
                 else:
@@ -132,10 +153,10 @@ class CreateServiceInvoice(Wizard):
 
                 if line.to_invoice:
                     taxes = []
-                    #Include taxes related to the product on the invoice line
+                    # Include taxes related to the product on the invoice line
                     for product_tax_line in line.product.customer_taxes_used:
                         taxes.append(product_tax_line.id)
-                        
+
                     invoice_lines.append(('create', [{
                             'origin': str(line),
                             'product': line.product.id,
@@ -145,7 +166,7 @@ class CreateServiceInvoice(Wizard):
                             'unit': line.product.default_uom.id,
                             'unit_price': unit_price,
                             'sequence': seq,
-                            'taxes': [('add',taxes)],
+                            'taxes': [('add', taxes)],
                         }]))
                 invoice_data['lines'] = invoice_lines
 
