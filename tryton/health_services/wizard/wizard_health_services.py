@@ -73,7 +73,7 @@ class CreateServiceInvoice(Wizard):
         for service in services:
             if service.state == 'invoiced':
                 raise ServiceAlreadyInvoiced(
-                    gettext('health_service.msg_service_already_invoiced'))
+                    gettext('health_services.msg_service_already_invoiced'))
 
             if service.invoice_to:
                 party = service.invoice_to
@@ -125,7 +125,7 @@ class CreateServiceInvoice(Wizard):
             party_address = Party.address_get(party, type='invoice')
             if not party_address:
                 raise NoInvoiceAddress(
-                    gettext('health_service.msg_no_invoice_address'))
+                    gettext('health_services.msg_no_invoice_address'))
             invoice_data['invoice_address'] = party_address.id
             invoice_data['reference'] = service.name
 
@@ -141,7 +141,7 @@ class CreateServiceInvoice(Wizard):
                     acct_config.default_customer_payment_term.id
             else:
                 raise NoPaymentTerm(
-                    gettext('health_service.msg_no_payment_term'))
+                    gettext('health_services.msg_no_payment_term'))
 
             # Invoice Lines
             seq = 0
