@@ -129,11 +129,19 @@ class CreateServiceInvoice(Wizard):
             invoice_data['invoice_address'] = party_address.id
             invoice_data['reference'] = service.name
 
-            if not party.customer_payment_term:
+            """ Look for the payment term in the following order:
+                * Party
+                * Default payment term in accounting config
+                * Raise an error if there is no payment term
+            """
+            if (party.customer_payment_term):
+                invoice_data['payment_term'] = party.customer_payment_term.id
+            elif (acct_config.default_customer_payment_term):
+                invoice_data['payment_term'] = \
+                    acct_config.default_customer_payment_term.id
+            else:
                 raise NoPaymentTerm(
                     gettext('health_service.msg_no_payment_term'))
-
-            invoice_data['payment_term'] = party.customer_payment_term.id
 
             # Invoice Lines
             seq = 0
