@@ -26,6 +26,7 @@ from trytond.wizard import Wizard
 from trytond.transaction import Transaction
 from trytond.pool import Pool
 from trytond.i18n import gettext
+from trytond.modules.product import round_price
 from ..exceptions import (ServiceInvoiced, NoInvoiceAddress, NoPaymentTerm)
 
 __all__ = ['CreateServiceInvoice']
@@ -170,9 +171,10 @@ class CreateServiceInvoice(Wizard):
                                     if (discount['type'] == 'pct'):
                                         unit_price *= decimal.Decimal(
                                             1 - discount['value']/100)
-                                        # Round to avoid error on sig figs
-                                        # at invoice.
-                                        unit_price = round(unit_price, 2)
+                                        # Use price_decimal value from
+                                        # system configuration to set
+                                        # the number of decimals
+                                        unit_price = round_price(unit_price)
 
                                         # Add remark on description discount
                                         str_disc = str(discount['value']) + '%'
