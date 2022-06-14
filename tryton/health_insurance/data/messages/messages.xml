@@ -18,5 +18,8 @@ this repository contains the full copyright notices and license terms. -->
         <record model="ir.message" id="msg_no_payment_term">
             <field name="text">SM-INSURANCE-0005: No payment term</field>
         </record>
+        <record model="ir.message" id="msg_no_account_receivable">
+            <field name="text">SM-INSURANCE-0007: No Account Receivable defined in party or in default configuration</field>
+        </record>
     </data>
 </tryton>

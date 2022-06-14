@@ -22,3 +22,6 @@ class NoInvoiceAddress(UserError):
 
 class NoPaymentTerm(UserError):
     pass
+
+class NoAccountReceivable(UserError):
+    pass

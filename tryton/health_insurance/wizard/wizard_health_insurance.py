@@ -27,7 +27,8 @@ from trytond.transaction import Transaction
 from trytond.pool import Pool
 from trytond.i18n import gettext
 from trytond.modules.product import round_price
-from ..exceptions import (ServiceInvoiced, NoInvoiceAddress, NoPaymentTerm)
+from ..exceptions import (
+    ServiceInvoiced, NoInvoiceAddress, NoPaymentTerm, NoAccountReceivable)
 
 __all__ = ['CreateServiceInvoice']
 
@@ -72,6 +73,8 @@ class CreateServiceInvoice(Wizard):
         Invoice = pool.get('account.invoice')
         Party = pool.get('party.party')
         Journal = pool.get('account.journal')
+        AcctConfig = pool.get('account.configuration')
+        acct_config = AcctConfig(1)
 
         currency_id = Transaction().context.get('currency')
 
@@ -94,8 +97,21 @@ class CreateServiceInvoice(Wizard):
             invoice_data['party'] = party.id
             invoice_data['type'] = 'out'
             invoice_data['invoice_date'] = datetime.date.today()
-            invoice_data['account'] = party.account_receivable.id
             invoice_data['company'] = service.company.id
+
+            """ Look for the AR account in the following order:
+                * Party
+                * Default AR in accounting config
+                * Raise an error if there is no AR account
+            """
+            if (party.account_receivable):
+                invoice_data['account'] = party.account_receivable.id
+            elif (acct_config.default_account_receivable):
+                invoice_data['account'] = \
+                    acct_config.default_account_receivable.id
+            else:
+                raise NoAccountReceivable(
+                    gettext('health_insurance.msg_no_account_receivable'))
 
             ctx = {}
             sale_price_list = None
