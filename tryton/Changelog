@@ -1,6 +1,68 @@
-changeset:   5122:6019cf10a447
+changeset:   5171:bb424fd550fd
 branch:      stable
 tag:         tip
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 08 18:54:46 2022 +0100
+summary:     health_insurance: Fix bug #62598: Payment term search stops in party
+
+changeset:   5170:17ca0fa711f0
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 08 18:54:20 2022 +0100
+summary:     health_: Fix bug #62598: Payment term search stops in party
+
+changeset:   5169:b90b3f96d8e1
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 08 12:51:49 2022 +0100
+summary:     health_services: Fix bug #62596: Traceback if there is no Account Receivable defined neither on party or default acct config
+
+changeset:   5168:3c4e88e11bce
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jun 14 13:13:25 2022 +0100
+summary:     Apply saved rejects from https://hg.savannah.gnu.org/hgweb/health/rev/d35dc2652483
+
+changeset:   5167:29c26a5d36da
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Tue Jun 14 13:07:12 2022 +0100
+summary:     Include round_price method manually due to save rejects on patch https://hg.savannah.gnu.org/hgweb/health/rev/180cc7a9d84b
+
+changeset:   5166:7b9d2322d993
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed Jun 01 12:12:37 2022 +0100
+summary:     Fix bug #62555: Too many decimals error when generating the invoice with certain discounts
+
+changeset:   5165:c686110942c3
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon Jun 06 16:55:26 2022 +0100
+summary:     Fix bug #62517: Dependency bug on PyPI for gnuhealth-dentistry
+
+changeset:   5164:eb7d995fb6c5
+branch:      stable
+parent:      5140:11536e760a71
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Wed May 11 12:58:24 2022 +0100
+summary:     Fix bug #62439: Error in sequence when generating Dx Imaging order
+
+changeset:   5140:11536e760a71
+branch:      stable
+parent:      5125:632e2c1b13f5
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 09 09:37:13 2022 +0100
+summary:     Fixed bug #62427: Typo in health_services exceptions
+
+changeset:   5125:632e2c1b13f5
+branch:      stable
+user:        Luis Falcon <falcon@gnuhealth.org>
+date:        Mon May 09 09:15:34 2022 +0100
+summary:     Fix bug #62428: complete blood count report takes two pages
+
+changeset:   5122:6019cf10a447
+branch:      stable
 user:        Luis Falcon <falcon@gnuhealth.org>
 date:        Sat Apr 02 12:17:43 2022 +0100
 summary:     Remove pinning from vobject library version
