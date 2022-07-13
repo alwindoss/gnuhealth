@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-07-13 02:30+0000\n"
+"PO-Revision-Date: 2022-07-13 03:01+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_orthanc/zh_Hans/>\n"
@@ -132,7 +132,7 @@ msgstr "写入用户"
 
 msgctxt "field:gnuhealth.orthanc.patient,bd:"
 msgid "Birthdate"
-msgstr "出生日期"
+msgstr "Orthanc 患者出生日期"
 
 msgctxt "field:gnuhealth.orthanc.patient,create_date:"
 msgid "Create Date"
@@ -168,7 +168,7 @@ msgstr "记录名称"
 
 msgctxt "field:gnuhealth.orthanc.patient,server:"
 msgid "Server"
-msgstr "服务器"
+msgstr "Orthanc 服务器"
 
 msgctxt "field:gnuhealth.orthanc.patient,studies:"
 msgid "Studies"
@@ -196,11 +196,11 @@ msgstr "创建用户"
 
 msgctxt "field:gnuhealth.orthanc.study,date:"
 msgid "Date"
-msgstr "日期"
+msgstr "Orthanc 检查日期"
 
 msgctxt "field:gnuhealth.orthanc.study,description:"
 msgid "Description"
-msgstr "描述"
+msgstr "Orthanc 检查描述"
 
 msgctxt "field:gnuhealth.orthanc.study,id:"
 msgid "ID"
@@ -212,11 +212,11 @@ msgstr "Orthanc 检查 ID"
 
 msgctxt "field:gnuhealth.orthanc.study,imaging_test:"
 msgid "Test"
-msgstr "影像检查"
+msgstr "GNU Health 检查结果"
 
 msgctxt "field:gnuhealth.orthanc.study,institution:"
 msgid "Institution"
-msgstr "医疗机构"
+msgstr "Orthanc 检查机构"
 
 msgctxt "field:gnuhealth.orthanc.study,link:"
 msgid "URL"
@@ -232,15 +232,15 @@ msgstr "记录名称"
 
 msgctxt "field:gnuhealth.orthanc.study,ref_phys:"
 msgid "Referring Physician"
-msgstr "相关医师"
+msgstr "Orthanc 委托医师"
 
 msgctxt "field:gnuhealth.orthanc.study,req_phys:"
 msgid "Requesting Physician"
-msgstr "申请医师"
+msgstr "Orthanc 申请医师"
 
 msgctxt "field:gnuhealth.orthanc.study,server:"
 msgid "Server"
-msgstr "服务器"
+msgstr "Orthanc 服务器"
 
 msgctxt "field:gnuhealth.orthanc.study,uuid:"
 msgid "UUID"
