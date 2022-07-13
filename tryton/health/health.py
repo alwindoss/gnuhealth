@@ -726,6 +726,15 @@ class Party(ModelSQL, ModelView):
         return super(Party, cls).create(vlist)
 
     @classmethod
+    def copy(cls, parties, default=None):
+        if default is None:
+            default = {}
+        else:
+            default = default.copy()
+        default.setdefault('ref', None)
+        return super().copy(parties, default=default)
+
+    @classmethod
     def __setup__(cls):
         super(Party, cls).__setup__()
         t = cls.__table__()
