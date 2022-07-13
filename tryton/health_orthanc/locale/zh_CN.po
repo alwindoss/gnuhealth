@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-07-13 02:09+0000\n"
+"PO-Revision-Date: 2022-07-13 02:30+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_orthanc/zh_Hans/>\n"
@@ -176,7 +176,7 @@ msgstr "Orthanc 检查"
 
 msgctxt "field:gnuhealth.orthanc.patient,uuid:"
 msgid "PatientUUID"
-msgstr "GNU Health 患者 UUID"
+msgstr "Orthanc 患者 UUID"
 
 msgctxt "field:gnuhealth.orthanc.patient,write_date:"
 msgid "Write Date"
@@ -244,7 +244,7 @@ msgstr "服务器"
 
 msgctxt "field:gnuhealth.orthanc.study,uuid:"
 msgid "UUID"
-msgstr "UUID"
+msgstr "Orthanc 检查 UUID"
 
 msgctxt "field:gnuhealth.orthanc.study,write_date:"
 msgid "Write Date"
@@ -260,11 +260,11 @@ msgstr "Orthanc 患者"
 
 msgctxt "help:gnuhealth.orthanc.add.init,domain:"
 msgid "The full URL of the Orthanc server"
-msgstr "Orthanc 服务器的完整 URL"
+msgstr "Orthanc 服务器完整 URL"
 
 msgctxt "help:gnuhealth.orthanc.add.init,label:"
 msgid "The label of the Orthanc server. Must be unique"
-msgstr "Orthanc 服务器标签不能重复"
+msgstr "Orthanc 服务器标签，不能重复"
 
 msgctxt "help:gnuhealth.orthanc.add.init,password:"
 msgid "Password for Orthanc REST server"
@@ -280,7 +280,7 @@ msgstr "信息"
 
 msgctxt "help:gnuhealth.orthanc.config,domain:"
 msgid "The full URL of the Orthanc server"
-msgstr "Orthanc 服务器的完整 URL"
+msgstr "Orthanc 服务器完整 URL"
 
 msgctxt "help:gnuhealth.orthanc.config,label:"
 msgid "Label for server (eg., remote1)"
@@ -308,7 +308,7 @@ msgstr "距离上次同步的时间"
 
 msgctxt "help:gnuhealth.orthanc.config,sync_time:"
 msgid "Time of last server sync"
-msgstr "距离服务器上次同步的时间"
+msgstr "服务器上次同步时间"
 
 msgctxt "help:gnuhealth.orthanc.config,user:"
 msgid "Username for Orthanc REST server"
@@ -320,7 +320,7 @@ msgstr "是否已成功检查服务器详细信息"
 
 msgctxt "help:gnuhealth.orthanc.patient,link:"
 msgid "Link to patient in Orthanc Explorer"
-msgstr "Orthanc 浏览器链接"
+msgstr "链接到 Orthanc 浏览器对应的患者页面"
 
 msgctxt "help:gnuhealth.orthanc.patient,patient:"
 msgid "Local linked patient"
@@ -332,11 +332,11 @@ msgstr "负责检查的影像中心"
 
 msgctxt "help:gnuhealth.orthanc.study,link:"
 msgid "Link to study in Orthanc Explorer"
-msgstr "Orthanc 浏览器链接"
+msgstr "链接到 Orthanc 浏览器对应的检查页面"
 
 msgctxt "model:gnuhealth.orthanc.add.init,name:"
 msgid "Init Full Orthanc Sync"
-msgstr "Orthanc 完全同步初始化"
+msgstr "Orthanc 全量同步初始化"
 
 msgctxt "model:gnuhealth.orthanc.add.result,name:"
 msgid "Display Result"
@@ -444,7 +444,7 @@ msgstr "常规"
 
 msgctxt "view:gnuhealth.orthanc.patient:"
 msgid "Local patient"
-msgstr "患者"
+msgstr "GNU Health 患者"
 
 msgctxt "view:gnuhealth.orthanc.patient:"
 msgid "Orthanc PatientID"
