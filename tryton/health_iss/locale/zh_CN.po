@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-16 13:18+0000\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_iss/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.iss,alcohol:"
 msgid "Alcohol"
@@ -266,7 +275,6 @@ msgctxt "selection:gnuhealth.iss,injury_method:"
 msgid "Other"
 msgstr "其它"
 
-#, fuzzy
 msgctxt "selection:gnuhealth.iss,injury_method:"
 msgid "Push/bodily force"
 msgstr "推/身体力"
