@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-16 13:18+0000\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_federation/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.federation.config,enabled:"
 msgid "Enabled"
@@ -164,7 +173,7 @@ msgstr "传递给 URL 的后缀"
 
 msgctxt "help:gnuhealth.pol,fsync:"
 msgid " If active, this record information will be sent to the Federation"
-msgstr "如果激活，此记录信息将发送到 GNU Health 信息平台"
+msgstr " 如激活，此记录信息将发送到 Federation"
 
 msgctxt "help:party.party,fsync:"
 msgid "If active, this record information will be sent to the Federation"
