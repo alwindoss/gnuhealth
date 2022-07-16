@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-16 13:18+0000\n"
-"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"PO-Revision-Date: 2022-07-17 05:59+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_lab/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -31,14 +31,13 @@ msgctxt "field:gnuhealth.lab,diagnosis:"
 msgid "Diagnosis"
 msgstr "诊断"
 
-#, fuzzy
 msgctxt "field:gnuhealth.lab,name:"
 msgid "ID"
-msgstr "Orthanc 检查 ID"
+msgstr "检验结果编号"
 
 msgctxt "field:gnuhealth.lab,pathologist:"
 msgid "Pathologist"
-msgstr "病理医生"
+msgstr "病理医师"
 
 #, fuzzy
 msgctxt "field:gnuhealth.lab,pathology:"
@@ -55,7 +54,7 @@ msgstr "申请编号"
 
 msgctxt "field:gnuhealth.lab,requestor:"
 msgid "Health prof"
-msgstr "申请医生"
+msgstr "申请医师"
 
 msgctxt "field:gnuhealth.lab,results:"
 msgid "Results"
@@ -83,7 +82,7 @@ msgstr "参考值下限"
 
 msgctxt "field:gnuhealth.lab.test.critearea,name:"
 msgid "Analyte"
-msgstr "项目"
+msgstr "分析项目"
 
 msgctxt "field:gnuhealth.lab.test.critearea,normal_range:"
 msgid "Reference"
@@ -123,7 +122,7 @@ msgstr "警告"
 
 msgctxt "field:gnuhealth.lab.test.units,code:"
 msgid "Code"
-msgstr "代码"
+msgstr "计量单位代码"
 
 msgctxt "field:gnuhealth.lab.test.units,name:"
 msgid "Unit"
@@ -135,7 +134,7 @@ msgstr "启用"
 
 msgctxt "field:gnuhealth.lab.test_type,code:"
 msgid "Code"
-msgstr "代码"
+msgstr "检验类型代码"
 
 msgctxt "field:gnuhealth.lab.test_type,critearea:"
 msgid "Test Cases"
@@ -155,21 +154,19 @@ msgstr "服务"
 
 msgctxt "field:gnuhealth.patient,lab_test_ids:"
 msgid "Lab Tests Required"
-msgstr "实验室检验"
+msgstr "已申请的实验室检验"
 
 msgctxt "field:gnuhealth.patient.disease,lab_confirmed:"
 msgid "Lab Confirmed"
-msgstr ""
+msgstr "实验室已确认"
 
-#, fuzzy
 msgctxt "field:gnuhealth.patient.disease,lab_test:"
 msgid "Lab Test"
 msgstr "实验室检验"
 
-#, fuzzy
 msgctxt "field:gnuhealth.patient.lab.test,context:"
 msgid "Context"
-msgstr "内容"
+msgstr "相关信息"
 
 msgctxt "field:gnuhealth.patient.lab.test,date:"
 msgid "Date"
@@ -199,10 +196,9 @@ msgctxt "field:gnuhealth.patient.lab.test,urgent:"
 msgid "Urgent"
 msgstr "紧急"
 
-#, fuzzy
 msgctxt "field:gnuhealth.patient.lab.test.request.start,context:"
 msgid "Context"
-msgstr "内容"
+msgstr "相关信息"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,date:"
 msgid "Date"
@@ -210,7 +206,7 @@ msgstr "日期"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,doctor:"
 msgid "Health prof"
-msgstr "医生"
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,patient:"
 msgid "Patient"
@@ -234,20 +230,19 @@ msgstr "实验室检验"
 
 msgctxt "field:gnuhealth.sequences,lab_request_sequence:"
 msgid "Lab request sequence"
-msgstr "患者实验室检验序列"
+msgstr "实验室检验序列"
 
 msgctxt "field:gnuhealth.sequences,lab_test_sequence:"
 msgid "Lab test sequence"
-msgstr ""
+msgstr "实验室检验序列"
 
-#, fuzzy
 msgctxt "field:gnuhealth.sequences.lab_request_sequence,lab_request_sequence:"
 msgid "Lab request sequence"
-msgstr "患者实验室检验序列"
+msgstr "实验室检验申请序列"
 
 msgctxt "field:gnuhealth.sequences.lab_test_sequence,lab_test_sequence:"
 msgid "Lab test sequence"
-msgstr ""
+msgstr "实验室检验序列"
 
 msgctxt "help:gnuhealth.lab,name:"
 msgid "Lab result ID"
@@ -255,11 +250,11 @@ msgstr "实验室检验结果编号"
 
 msgctxt "help:gnuhealth.lab,pathologist:"
 msgid "Pathologist"
-msgstr "病理医生"
+msgstr "病理医师"
 
 msgctxt "help:gnuhealth.lab,pathology:"
 msgid "Pathology confirmed / associated to this lab test."
-msgstr ""
+msgstr "病理学证实/与本实验室试验相关。"
 
 msgctxt "help:gnuhealth.lab,patient:"
 msgid "Patient ID"
@@ -267,7 +262,7 @@ msgstr "患者代码"
 
 msgctxt "help:gnuhealth.lab,requestor:"
 msgid "Doctor who requested the test"
-msgstr "申请实验室检验的医生"
+msgstr "申请实验室检验的医师"
 
 msgctxt "help:gnuhealth.lab,test:"
 msgid "Lab test type"
@@ -275,7 +270,7 @@ msgstr "实验室检验类型"
 
 msgctxt "help:gnuhealth.lab.test.critearea,excluded:"
 msgid "Select this option when this analyte is excluded from the test"
-msgstr "如果此项不需要在化验报告中出现时，就选中此项"
+msgstr "如果此项不需要在检验报告中出现时，就选中此项"
 
 msgctxt "help:gnuhealth.lab.test.critearea,result_text:"
 msgid ""
@@ -291,7 +286,7 @@ msgstr "警告患者，此分析结果需要结合患者的实际情况来解读
 
 msgctxt "help:gnuhealth.lab.test_type,code:"
 msgid "Short name - code for the test"
-msgstr "简称 - 此项检验的编码"
+msgstr "简称 - 检验项目编码"
 
 msgctxt "help:gnuhealth.lab.test_type,name:"
 msgid "Test type, eg X-Ray, hemogram,biopsy..."
@@ -299,31 +294,33 @@ msgstr "检验类型，如 X光照射, 血常规, 活体组织检验..."
 
 msgctxt "help:gnuhealth.patient.disease,lab_confirmed:"
 msgid "Confirmed by laboratory test"
-msgstr ""
+msgstr "实验室检验已确认"
 
 msgctxt "help:gnuhealth.patient.disease,lab_test:"
 msgid "Lab test that confirmed the condition"
-msgstr ""
+msgstr "实验室测试证实了这种情况"
 
 msgctxt "help:gnuhealth.patient.lab.test,context:"
 msgid ""
 "Health context for this order. It can be a suspected or existing health "
 "condition, a regular health checkup, ..."
-msgstr ""
+msgstr "此申请对应的患者健康情况说明。它可以是疑似或现有的健康状况，定期健康检查。。"
+"。"
 
 msgctxt "help:gnuhealth.patient.lab.test,doctor_id:"
 msgid "Health professional who requests the lab test."
-msgstr "请求化验的医生。"
+msgstr "请求检验的医师。"
 
 msgctxt "help:gnuhealth.patient.lab.test.request.start,context:"
 msgid ""
 "Health context for this order. It can be a suspected or existing health "
 "condition, a regular health checkup, ..."
-msgstr ""
+msgstr "此申请对应的患者健康相关情况说明。它可以是疑似或现有的健康状况，定期健康检查"
+"。。。"
 
 msgctxt "help:gnuhealth.patient.lab.test.request.start,doctor:"
 msgid "Health professional who ordered the lab tests."
-msgstr "请求化验的医生。"
+msgstr "请求化验的医师。"
 
 msgctxt "model:gnuhealth.lab,name:"
 msgid "Patient Lab Test Results"
@@ -340,7 +337,7 @@ msgstr "实验室检验标准"
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_agratio0"
 msgid "AG Ratio"
-msgstr "结晶"
+msgstr "白蛋白比率"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_albumin0"
@@ -872,7 +869,7 @@ msgstr "尿液常规检查"
 
 msgctxt "model:gnuhealth.patient.lab.test,name:"
 msgid "Lab Test Request"
-msgstr "患者实验室检验"
+msgstr "实验室检验申请"
 
 msgctxt "model:gnuhealth.patient.lab.test.request.start,name:"
 msgid "Request Patient Lab Test Start"
@@ -884,11 +881,11 @@ msgstr "申请实验室检验项目"
 
 msgctxt "model:gnuhealth.sequences.lab_request_sequence,name:"
 msgid "Lab Request Sequence setup"
-msgstr ""
+msgstr "实验室检验申请序列设置"
 
 msgctxt "model:gnuhealth.sequences.lab_test_sequence,name:"
 msgid "Lab Test Sequence setup"
-msgstr ""
+msgstr "实验室检验序列设置"
 
 msgctxt "model:ir.action,name:act_create_lab_test"
 msgid "Lab: Create test"
@@ -896,7 +893,7 @@ msgstr "实验室：按照申请创建检验项目"
 
 msgctxt "model:ir.action,name:act_patient_lab_history_form1"
 msgid "Lab: Results"
-msgstr "实验室: 检验报告列表"
+msgstr "实验室: 检验结果列表"
 
 msgctxt "model:ir.action,name:gnuhealth_action_lab_test_request"
 msgid "Lab Test Requests"
@@ -1022,7 +1019,6 @@ msgctxt "report:patient.labtest.report:"
 msgid "*"
 msgstr "*"
 
-#, fuzzy
 msgctxt "report:patient.labtest.report:"
 msgid ":"
 msgstr "："
@@ -1043,19 +1039,17 @@ msgctxt "report:patient.labtest.report:"
 msgid "Diagnosis"
 msgstr "诊断"
 
-#, fuzzy
 msgctxt "report:patient.labtest.report:"
 msgid "Doctor"
-msgstr "医生"
+msgstr "医务人员"
 
 msgctxt "report:patient.labtest.report:"
 msgid "Female"
 msgstr "女"
 
-#, fuzzy
 msgctxt "report:patient.labtest.report:"
 msgid "ID"
-msgstr "Orthanc 检查 ID"
+msgstr "检查报告 ID"
 
 msgctxt "report:patient.labtest.report:"
 msgid "LABORATORY REPORT"
@@ -1075,11 +1069,11 @@ msgstr "申请编号 #"
 
 msgctxt "report:patient.labtest.report:"
 msgid "PU"
-msgstr ""
+msgstr "PU"
 
 msgctxt "report:patient.labtest.report:"
 msgid "Pathologist"
-msgstr "病理医生"
+msgstr "病理医师"
 
 msgctxt "report:patient.labtest.report:"
 msgid "Reference"
@@ -1169,10 +1163,9 @@ msgctxt "view:gnuhealth.lab:"
 msgid "Notes"
 msgstr "说明"
 
-#, fuzzy
 msgctxt "view:gnuhealth.patient.disease:"
 msgid "Laboratory"
-msgstr "实验室检验"
+msgstr "实验室"
 
 msgctxt "wizard_button:gnuhealth.lab.test.create,start,create_lab_test:"
 msgid "Create Test Order"
