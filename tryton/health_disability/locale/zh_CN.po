@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-16 13:18+0000\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_disability/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.activity.assessment,activity_and_participation:"
 msgid "Activity"
@@ -724,7 +733,7 @@ msgstr "SD - 肩关节切除"
 
 msgctxt "selection:gnuhealth.patient.amputation,amputation_level:"
 msgid "Symes"
-msgstr "Symes"
+msgstr "赛姆截肢"
 
 msgctxt "selection:gnuhealth.patient.amputation,amputation_level:"
 msgid "TF - Transfemoral"
