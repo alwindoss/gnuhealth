@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2022-07-17 05:59+0000\n"
-"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -3313,7 +3313,7 @@ msgstr "收缩压（mmHg）"
 
 msgctxt "help:gnuhealth.patient.evaluation,tag:"
 msgid "Last Triglicerides level, (mg/dL)"
-msgstr "甘油三脂水平，可以用估计值，用 mg/dL 或者 mmol/L 表示。"
+msgstr "最近一次检测的甘油三脂水平（mg/dL）"
 
 msgctxt "help:gnuhealth.patient.evaluation,temperature:"
 msgid "Temperature in celcius"
