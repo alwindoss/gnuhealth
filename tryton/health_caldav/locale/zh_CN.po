@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-16 13:18+0000\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_caldav/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #, fuzzy
 msgctxt "field:calendar.calendar,description:"
@@ -543,7 +552,7 @@ msgstr "事件"
 
 msgctxt "model:res.group,name:group_calendar_admin"
 msgid "Calendar Group Administration "
-msgstr "日历管理"
+msgstr "日历组管理 "
 
 msgctxt "selection:calendar.event,classification:"
 msgid "Confidential"
