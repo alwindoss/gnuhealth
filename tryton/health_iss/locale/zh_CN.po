@@ -1,24 +1,6 @@
+#
 msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-25 09:32+0000\n"
-"PO-Revision-Date: 2022-01-20 02:42+0000\n"
-"Last-Translator: Feng Shu <tumashu@163.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"gnu-health/health_iss/zh_Hans/>\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11-dev\n"
-"X-Pootle-Path: /zh_CN/GNUHEALTH/health_iss/locale/zh_CN.po\n"
-"X-Pootle-Revision: 43920\n"
-
-msgctxt "error:gnuhealth.iss:"
-msgid "This ISS registration Code already exists"
-msgstr "这个注册代码已经存在"
+msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:gnuhealth.iss,alcohol:"
 msgid "Alcohol"
@@ -32,14 +14,6 @@ msgctxt "field:gnuhealth.iss,complaint:"
 msgid "Chief Complaint"
 msgstr "主诉"
 
-msgctxt "field:gnuhealth.iss,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.iss,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
-
 msgctxt "field:gnuhealth.iss,disposition:"
 msgid "Disposition"
 msgstr "处置情况"
@@ -51,10 +25,6 @@ msgstr "其它毒品"
 msgctxt "field:gnuhealth.iss,healthcenter:"
 msgid "Institution"
 msgstr "医疗机构"
-
-msgctxt "field:gnuhealth.iss,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.iss,injury_date:"
 msgid "Injury Date"
@@ -116,10 +86,6 @@ msgctxt "field:gnuhealth.iss,place_occurrance:"
 msgid "Place"
 msgstr "地点"
 
-msgctxt "field:gnuhealth.iss,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
 msgctxt "field:gnuhealth.iss,registration_date:"
 msgid "Registration Date"
 msgstr "注册日期"
@@ -140,18 +106,10 @@ msgctxt "field:gnuhealth.iss,violence_circumstances:"
 msgid "Context"
 msgstr "背景"
 
-msgctxt "field:gnuhealth.iss,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.iss,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
-
 msgctxt "help:gnuhealth.iss,alcohol:"
 msgid ""
-"Is there evidence of alcohol use by the injured person in the 6 hours before "
-"the accident ?"
+"Is there evidence of alcohol use by the injured person in the 6 hours before"
+" the accident ?"
 msgstr "有证据表明，受伤人员在事故发生6小时之前曾经饮过酒吗？"
 
 msgctxt "help:gnuhealth.iss,code:"
@@ -233,10 +191,6 @@ msgid "Injury Surveillance System Registration"
 msgstr "伤害监测系统注册"
 
 msgctxt "selection:gnuhealth.iss,alcohol:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.iss,alcohol:"
 msgid "No"
 msgstr "否"
 
@@ -251,10 +205,6 @@ msgstr "未知"
 msgctxt "selection:gnuhealth.iss,alcohol:"
 msgid "Yes"
 msgstr "是"
-
-msgctxt "selection:gnuhealth.iss,disposition:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.iss,disposition:"
 msgid "Admitted to Observation"
@@ -285,10 +235,6 @@ msgid "Treated and Sent Home"
 msgstr "治疗并送回家"
 
 msgctxt "selection:gnuhealth.iss,drugs:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.iss,drugs:"
 msgid "No"
 msgstr "否"
 
@@ -303,10 +249,6 @@ msgstr "未知"
 msgctxt "selection:gnuhealth.iss,drugs:"
 msgid "Yes"
 msgstr "是"
-
-msgctxt "selection:gnuhealth.iss,injury_method:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.iss,injury_method:"
 msgid "Blunt object"
@@ -342,10 +284,6 @@ msgid "Unknown"
 msgstr "未知"
 
 msgctxt "selection:gnuhealth.iss,injury_type:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.iss,injury_type:"
 msgid "Accidental / Unintentional"
 msgstr "意外/非有意"
 
@@ -360,10 +298,6 @@ msgstr "企图自杀"
 msgctxt "selection:gnuhealth.iss,injury_type:"
 msgid "Violence"
 msgstr "暴力"
-
-msgctxt "selection:gnuhealth.iss,mva_counterpart:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.iss,mva_counterpart:"
 msgid "Aircraft"
@@ -418,10 +352,6 @@ msgid "Van / Pickup / Jeep"
 msgstr "货车/皮卡/吉普"
 
 msgctxt "selection:gnuhealth.iss,mva_mode:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.iss,mva_mode:"
 msgid "Aircraft"
 msgstr "飞机"
 
@@ -474,10 +404,6 @@ msgid "Van / Pickup / Jeep"
 msgstr "货车/皮卡/吉普"
 
 msgctxt "selection:gnuhealth.iss,mva_position:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.iss,mva_position:"
 msgid "Bystander"
 msgstr "旁观者"
 
@@ -500,10 +426,6 @@ msgstr "未知"
 msgctxt "selection:gnuhealth.iss,mva_position:"
 msgid "Unspecified vehicle"
 msgstr "未说明车辆"
-
-msgctxt "selection:gnuhealth.iss,place_occurrance:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.iss,place_occurrance:"
 msgid "Commercial Area"
@@ -546,10 +468,6 @@ msgid "Unknown"
 msgstr "未知"
 
 msgctxt "selection:gnuhealth.iss,safety_gear:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.iss,safety_gear:"
 msgid "No"
 msgstr "否"
 
@@ -560,10 +478,6 @@ msgstr "未知"
 msgctxt "selection:gnuhealth.iss,safety_gear:"
 msgid "Yes"
 msgstr "是"
-
-msgctxt "selection:gnuhealth.iss,victim_perpetrator:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.iss,victim_perpetrator:"
 msgid "Acquaintance / Friend"
@@ -596,10 +510,6 @@ msgstr "妻子/丈夫"
 msgctxt "selection:gnuhealth.iss,victim_perpetrator:"
 msgid "other"
 msgstr "其他"
-
-msgctxt "selection:gnuhealth.iss,violence_circumstances:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.iss,violence_circumstances:"
 msgid "Committing a crime (other)"
