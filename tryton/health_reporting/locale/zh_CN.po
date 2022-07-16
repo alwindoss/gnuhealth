@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-16 13:18+0000\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_reporting/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #, fuzzy
 msgctxt "field:gnuhealth.epidemics.report.open.start,demographics:"
@@ -670,10 +679,9 @@ msgctxt "view:gnuhealth.top_diseases:"
 msgid "Cases"
 msgstr "例数"
 
-#, fuzzy
 msgctxt "wizard_button:gnuhealth.epidemics.report.open,start,end:"
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "取消"
 
 #, fuzzy
 msgctxt "wizard_button:gnuhealth.epidemics.report.open,start,open_:"
