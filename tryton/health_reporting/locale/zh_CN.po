@@ -1,20 +1,26 @@
+#
 msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-23 01:29+0000\n"
-"PO-Revision-Date: 2022-01-19 09:58+0000\n"
-"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"gnu-health/health_reporting/zh_Hans/>\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11-dev\n"
-"X-Pootle-Path: /zh_CN/GNUHEALTH/health_reporting/locale/zh_CN.po\n"
-"X-Pootle-Revision: 43813\n"
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+#, fuzzy
+msgctxt "field:gnuhealth.epidemics.report.open.start,demographics:"
+msgid "Demographics"
+msgstr "人口统计学"
+
+#, fuzzy
+msgctxt "field:gnuhealth.epidemics.report.open.start,end_date:"
+msgid "End"
+msgstr "结束日期"
+
+#, fuzzy
+msgctxt "field:gnuhealth.epidemics.report.open.start,health_condition:"
+msgid "Condition"
+msgstr "状况"
+
+#, fuzzy
+msgctxt "field:gnuhealth.epidemics.report.open.start,start_date:"
+msgid "Start"
+msgstr "开始"
 
 msgctxt "field:gnuhealth.evaluations.open.start,end_date:"
 msgid "End Date"
@@ -24,21 +30,9 @@ msgctxt "field:gnuhealth.evaluations.open.start,group_by:"
 msgid "Group By"
 msgstr "分组依据"
 
-msgctxt "field:gnuhealth.evaluations.open.start,id:"
-msgid "ID"
-msgstr "ID"
-
 msgctxt "field:gnuhealth.evaluations.open.start,start_date:"
 msgid "Start Date"
 msgstr "开始日期"
-
-msgctxt "field:gnuhealth.evaluations_doctor,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.evaluations_doctor,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
 
 msgctxt "field:gnuhealth.evaluations_doctor,doctor:"
 msgid "Doctor"
@@ -48,85 +42,21 @@ msgctxt "field:gnuhealth.evaluations_doctor,evaluations:"
 msgid "Evaluations"
 msgstr "评估"
 
-msgctxt "field:gnuhealth.evaluations_doctor,id:"
-msgid "ID"
-msgstr "ID"
-
-msgctxt "field:gnuhealth.evaluations_doctor,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
-msgctxt "field:gnuhealth.evaluations_doctor,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.evaluations_doctor,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
-
-msgctxt "field:gnuhealth.evaluations_sector,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.evaluations_sector,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
-
 msgctxt "field:gnuhealth.evaluations_sector,evaluations:"
 msgid "Evaluations"
 msgstr "评估"
-
-msgctxt "field:gnuhealth.evaluations_sector,id:"
-msgid "ID"
-msgstr "ID"
-
-msgctxt "field:gnuhealth.evaluations_sector,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
 
 msgctxt "field:gnuhealth.evaluations_sector,sector:"
 msgid "Sector"
 msgstr "科室或病区"
 
-msgctxt "field:gnuhealth.evaluations_sector,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.evaluations_sector,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
-
-msgctxt "field:gnuhealth.evaluations_specialty,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.evaluations_specialty,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
-
 msgctxt "field:gnuhealth.evaluations_specialty,evaluations:"
 msgid "Evaluations"
 msgstr "评估"
 
-msgctxt "field:gnuhealth.evaluations_specialty,id:"
-msgid "ID"
-msgstr "ID"
-
-msgctxt "field:gnuhealth.evaluations_specialty,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
 msgctxt "field:gnuhealth.evaluations_specialty,specialty:"
 msgid "Specialty"
 msgstr "专业"
-
-msgctxt "field:gnuhealth.evaluations_specialty,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.evaluations_specialty,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
 
 msgctxt "field:gnuhealth.summary.report.open.start,demographics:"
 msgid "Demographics"
@@ -135,10 +65,6 @@ msgstr "人口统计数据"
 msgctxt "field:gnuhealth.summary.report.open.start,end_date:"
 msgid "End"
 msgstr "结束日期"
-
-msgctxt "field:gnuhealth.summary.report.open.start,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.summary.report.open.start,institution:"
 msgid "Institution"
@@ -156,33 +82,9 @@ msgctxt "field:gnuhealth.top_diseases,cases:"
 msgid "Cases"
 msgstr "例数"
 
-msgctxt "field:gnuhealth.top_diseases,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.top_diseases,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
-
 msgctxt "field:gnuhealth.top_diseases,disease:"
 msgid "Disease"
 msgstr "疾病"
-
-msgctxt "field:gnuhealth.top_diseases,id:"
-msgid "ID"
-msgstr "ID"
-
-msgctxt "field:gnuhealth.top_diseases,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
-msgctxt "field:gnuhealth.top_diseases,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.top_diseases,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
 
 msgctxt "field:gnuhealth.top_diseases.open.start,end_date:"
 msgid "End Date"
@@ -192,10 +94,6 @@ msgctxt "field:gnuhealth.top_diseases.open.start,group:"
 msgid "Disease Group"
 msgstr "疾病分组"
 
-msgctxt "field:gnuhealth.top_diseases.open.start,id:"
-msgid "ID"
-msgstr "ID"
-
 msgctxt "field:gnuhealth.top_diseases.open.start,number_records:"
 msgid "Number of Records"
 msgstr "记录数"
@@ -203,6 +101,10 @@ msgstr "记录数"
 msgctxt "field:gnuhealth.top_diseases.open.start,start_date:"
 msgid "Start Date"
 msgstr "开始日期"
+
+msgctxt "model:gnuhealth.epidemics.report.open.start,name:"
+msgid "Epidemics Report Start"
+msgstr ""
 
 msgctxt "model:gnuhealth.evaluations.open.start,name:"
 msgid "Open Evaluations"
@@ -256,9 +158,17 @@ msgctxt "model:ir.action,name:act_top_diseases_open"
 msgid "Top Diseases"
 msgstr "疾病排行榜"
 
+msgctxt "model:ir.action,name:act_wizard_epidemics_report"
+msgid "Epidemiological Surveillance"
+msgstr ""
+
 msgctxt "model:ir.action,name:act_wizard_summary_report"
 msgid "Summary Report"
 msgstr "总结报告"
+
+msgctxt "model:ir.action,name:report_epidemics_information"
+msgid "Epidemiological Surveillance"
+msgstr ""
 
 msgctxt "model:ir.action,name:report_summary_information"
 msgid "Summary Report"
@@ -268,6 +178,10 @@ msgctxt "model:ir.ui.menu,name:menu_evaluations_open"
 msgid "Evaluations Report"
 msgstr "评估报表"
 
+msgctxt "model:ir.ui.menu,name:menu_institution_epidemics_report"
+msgid "Epidemiological Surveillance"
+msgstr ""
+
 msgctxt "model:ir.ui.menu,name:menu_institution_summary_report"
 msgid "Summary Report"
 msgstr "总结报告"
@@ -276,9 +190,190 @@ msgctxt "model:ir.ui.menu,name:menu_top_diseases_open"
 msgid "Top Diseases"
 msgstr "疾病排行榜"
 
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "-"
+msgstr "-"
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "0"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "15 – 45"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "15-44"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "45 – 60"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "45-60"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "5 – 14"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "5-14"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "< 5"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "<5"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "> 6"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid ">60"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Age group"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Birth"
+msgstr "出生"
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Cases by age group"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Confirmed cases"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Death"
+msgstr "死亡"
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Deaths"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Distribution by"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Distribution by Socioeconomic Status"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Epidemiolog"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Ethnic group"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Female"
+msgstr "女性"
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "In health system"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "In t"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "LibreOffice/7.1.8.1$Linux_X86_64 LibreOffice_project/10$Build-1"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Living Population"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Male"
+msgstr "男性"
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "NaN"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "No Age"
+msgstr "无年龄"
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "No DoB"
+msgstr "无出生日期"
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Period"
+msgstr "周期"
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Print Date:"
+msgstr "打印日期："
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Registrations"
+msgstr "注册"
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Surveillance"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Total"
+msgstr "合计"
+
+#, fuzzy
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "at"
+msgstr "在"
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "certs"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "his period"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "ical"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "to"
+msgstr ""
+
+msgctxt "report:gnuhealth.epidemics.report:"
+msgid "Σ"
+msgstr ""
+
+#, fuzzy
 msgctxt "report:gnuhealth.summary.report:"
 msgid "-"
-msgstr ""
+msgstr "-"
 
 msgctxt "report:gnuhealth.summary.report:"
 msgid "0"
@@ -294,6 +389,10 @@ msgstr ""
 
 msgctxt "report:gnuhealth.summary.report:"
 msgid "100"
+msgstr ""
+
+msgctxt "report:gnuhealth.summary.report:"
+msgid "100-104"
 msgstr ""
 
 msgctxt "report:gnuhealth.summary.report:"
@@ -389,6 +488,10 @@ msgid "95-"
 msgstr ""
 
 msgctxt "report:gnuhealth.summary.report:"
+msgid "95-99"
+msgstr ""
+
+msgctxt "report:gnuhealth.summary.report:"
 msgid "99"
 msgstr ""
 
@@ -398,6 +501,10 @@ msgstr ""
 
 msgctxt "report:gnuhealth.summary.report:"
 msgid "> 6"
+msgstr ""
+
+msgctxt "report:gnuhealth.summary.report:"
+msgid "Age Group"
 msgstr ""
 
 msgctxt "report:gnuhealth.summary.report:"
@@ -441,6 +548,10 @@ msgid "In t"
 msgstr ""
 
 msgctxt "report:gnuhealth.summary.report:"
+msgid "LibreOffice/7.1.8.1$Linux_X86_64 LibreOffice_project/10$Build-1"
+msgstr ""
+
+msgctxt "report:gnuhealth.summary.report:"
 msgid "Living Population"
 msgstr ""
 
@@ -450,6 +561,10 @@ msgstr "男"
 
 msgctxt "report:gnuhealth.summary.report:"
 msgid "Male stacked"
+msgstr ""
+
+msgctxt "report:gnuhealth.summary.report:"
+msgid "NaN"
 msgstr ""
 
 msgctxt "report:gnuhealth.summary.report:"
@@ -480,9 +595,10 @@ msgctxt "report:gnuhealth.summary.report:"
 msgid "Registrations"
 msgstr "注册"
 
+#, fuzzy
 msgctxt "report:gnuhealth.summary.report:"
 msgid "at"
-msgstr ""
+msgstr "在"
 
 msgctxt "report:gnuhealth.summary.report:"
 msgid "certs"
@@ -520,6 +636,16 @@ msgctxt "selection:gnuhealth.evaluations.open.start,group_by:"
 msgid "Specialty"
 msgstr "专业"
 
+#, fuzzy
+msgctxt "view:gnuhealth.epidemics.report.open.start:"
+msgid "Main"
+msgstr "主要情况"
+
+#, fuzzy
+msgctxt "view:gnuhealth.epidemics.report.open.start:"
+msgid "Sections"
+msgstr "科室或病区"
+
 msgctxt "view:gnuhealth.evaluations_doctor:"
 msgid "Evaluations"
 msgstr "评估"
@@ -543,6 +669,16 @@ msgstr "科室或病区"
 msgctxt "view:gnuhealth.top_diseases:"
 msgid "Cases"
 msgstr "例数"
+
+#, fuzzy
+msgctxt "wizard_button:gnuhealth.epidemics.report.open,start,end:"
+msgid "Cancel"
+msgstr "Cancel"
+
+#, fuzzy
+msgctxt "wizard_button:gnuhealth.epidemics.report.open,start,open_:"
+msgid "Open"
+msgstr "打开"
 
 msgctxt "wizard_button:gnuhealth.evaluations.open,start,end:"
 msgid "Cancel"

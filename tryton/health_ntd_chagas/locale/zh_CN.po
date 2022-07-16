@@ -1,32 +1,10 @@
+#
 msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-23 01:29+0000\n"
-"PO-Revision-Date: 2022-01-19 20:44+0000\n"
-"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"gnu-health/health_ntd_chagas/zh_Hans/>\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11-dev\n"
-"X-Pootle-Path: /zh_CN/GNUHEALTH/health_ntd_chagas/locale/zh_CN.po\n"
-"X-Pootle-Revision: 43539\n"
+msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:gnuhealth.chagas_du_survey,bugtraps:"
 msgid "Bug traps"
 msgstr "捕虫器"
-
-msgctxt "field:gnuhealth.chagas_du_survey,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.chagas_du_survey,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
 
 msgctxt "field:gnuhealth.chagas_du_survey,dfloor:"
 msgid "Floor"
@@ -64,10 +42,6 @@ msgctxt "field:gnuhealth.chagas_du_survey,fumigation_date:"
 msgid "Fumigation Date"
 msgstr "熏蒸日期"
 
-msgctxt "field:gnuhealth.chagas_du_survey,id:"
-msgid "ID"
-msgstr "ID"
-
 msgctxt "field:gnuhealth.chagas_du_survey,name:"
 msgid "Survey Code"
 msgstr "调查代码"
@@ -87,10 +61,6 @@ msgstr "意见"
 msgctxt "field:gnuhealth.chagas_du_survey,paint_date:"
 msgid "Paint Date"
 msgstr "涂抹日期"
-
-msgctxt "field:gnuhealth.chagas_du_survey,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
 
 msgctxt "field:gnuhealth.chagas_du_survey,survey_date:"
 msgid "Date"
@@ -112,20 +82,14 @@ msgctxt "field:gnuhealth.chagas_du_survey,vector:"
 msgid "Vector"
 msgstr "载体"
 
-msgctxt "field:gnuhealth.chagas_du_survey,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.chagas_du_survey,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
-
-msgctxt "field:gnuhealth.sequence.setup,chagas_du_survey_sequence:"
-msgid "Chagas DU Survey Sequence"
-msgstr "美洲锥虫病现住址调查序列"
-
 msgctxt "field:gnuhealth.sequences,chagas_du_survey_sequence:"
-msgid "Chagas Survey Sequence"
+msgid "Chagas DU Survey Sequence"
+msgstr "美洲锥虫病调查序列"
+
+#, fuzzy
+msgctxt ""
+"field:gnuhealth.sequences.chagas_du_survey_sequence,chagas_du_survey_sequence:"
+msgid "Chagas DU Survey Sequence"
 msgstr "美洲锥虫病调查序列"
 
 msgctxt "help:gnuhealth.chagas_du_survey,bugtraps:"
@@ -197,8 +161,7 @@ msgid "Chagas DU Entomological Survey"
 msgstr "美洲锥虫病现住址昆虫学调查"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_bsmear_trypomastigotes"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_bsmear_trypomastigotes"
 msgid "Trypomastigotes"
 msgstr "美洲锥虫病"
 
@@ -227,19 +190,18 @@ msgctxt ""
 msgid "T. cruzi in triatomine excreta"
 msgstr ""
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_qpcr"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_qpcr"
 msgid "Chagas Realtime Quantitative qPCR"
 msgstr "美洲锥虫病实时定量 qPCR"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_qualitative_pcr"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_qualitative_pcr"
 msgid "Chagas Qualitative PCR"
 msgstr "美洲锥虫定量 PCR"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_strout_trypomastigotes"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_strout_trypomastigotes"
 msgid "Trypomastigotes"
 msgstr "锥虫病"
 
@@ -269,20 +231,33 @@ msgid "CHAGAS STROUT"
 msgstr "美洲锥虫病 STROUT"
 
 msgctxt ""
-"model:gnuhealth.lab.test_type,name:"
-"gnuhealth_test_chagas_xenodiagnosis_analysis0"
+"model:gnuhealth.lab.test_type,name:gnuhealth_test_chagas_xenodiagnosis_analysis0"
 msgid "CHAGAS XENODIAGNOSIS"
 msgstr "美洲锥虫病病媒接种诊断"
+
+msgctxt "model:gnuhealth.sequences.chagas_du_survey_sequence,name:"
+msgid "Chagas DU Survey Sequences setup"
+msgstr ""
 
 msgctxt "model:ir.action,name:act_chagas_du_survey_form"
 msgid "Chagas DU Survey"
 msgstr "美洲锥虫病现住址调查"
 
-msgctxt "model:ir.sequence,name:seq_gnuhealth_du_survey"
+msgctxt "model:ir.sequence,name:"
 msgid "Chagas DU Survey"
 msgstr "美洲锥虫病现住址调查"
 
-msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_du_survey"
+#, fuzzy
+msgctxt "model:ir.sequence,name:seq_gnuhealth_chagas_du_survey"
+msgid "Chagas DU Survey"
+msgstr "美洲锥虫病现住址调查"
+
+msgctxt "model:ir.sequence.type,name:"
+msgid "Chagas DU Survey"
+msgstr "美洲锥虫病现住址调查"
+
+#, fuzzy
+msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_chagas_du_survey"
 msgid "Chagas DU Survey"
 msgstr "美洲锥虫病现住址调查"
 
@@ -312,14 +287,9 @@ msgid "Chagas strout Charges"
 msgstr "美洲锥虫病 strout 收费"
 
 msgctxt ""
-"model:product.template,name:"
-"product_template_chagas_xenodiagnosis_analysischarges0"
+"model:product.template,name:product_template_chagas_xenodiagnosis_analysischarges0"
 msgid "Chagas Xenodiagnosis Charges"
 msgstr "美洲锥虫病病媒接种诊断收费"
-
-msgctxt "selection:gnuhealth.chagas_du_survey,du_status:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.chagas_du_survey,du_status:"
 msgid "Improved"
@@ -336,10 +306,6 @@ msgstr "未改善"
 msgctxt "selection:gnuhealth.chagas_du_survey,du_status:"
 msgid "Worsen"
 msgstr "恶化"
-
-msgctxt "selection:gnuhealth.chagas_du_survey,vector:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.chagas_du_survey,vector:"
 msgid "P. megistus"
@@ -365,9 +331,10 @@ msgctxt "view:gnuhealth.chagas_du_survey:"
 msgid "Areas to Improve"
 msgstr ""
 
+#, fuzzy
 msgctxt "view:gnuhealth.chagas_du_survey:"
 msgid "Notes"
-msgstr ""
+msgstr "注意事项"
 
 msgctxt "view:gnuhealth.chagas_du_survey:"
 msgid "Presence of triatomines"

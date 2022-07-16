@@ -1,44 +1,10 @@
+#
 msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-25 09:32+0000\n"
-"PO-Revision-Date: 2022-01-19 22:01+0000\n"
-"Last-Translator: Feng Shu <tumashu@163.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"gnu-health/health_lab/zh_Hans/>\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11-dev\n"
-"X-Pootle-Path: /zh_CN/GNUHEALTH/health_lab/locale/zh_CN.po\n"
-"X-Pootle-Revision: 43923\n"
-
-msgctxt "error:gnuhealth.lab.test.units:"
-msgid "The Unit name must be unique"
-msgstr "实验室单元名称必须唯一"
-
-msgctxt "error:gnuhealth.lab.test_type:"
-msgid "The Lab Test code must be unique"
-msgstr "实验室检验编号不能重复"
-
-msgctxt "error:gnuhealth.lab:"
-msgid "The test ID code must be unique"
-msgstr "检验编号不能重复"
+msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:gnuhealth.lab,analytes_summary:"
 msgid "Summary"
 msgstr "总结"
-
-msgctxt "field:gnuhealth.lab,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.lab,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
 
 msgctxt "field:gnuhealth.lab,critearea:"
 msgid "Lab Test Critearea"
@@ -56,32 +22,30 @@ msgctxt "field:gnuhealth.lab,diagnosis:"
 msgid "Diagnosis"
 msgstr "诊断"
 
-msgctxt "field:gnuhealth.lab,id:"
-msgid "ID"
-msgstr ""
-
+#, fuzzy
 msgctxt "field:gnuhealth.lab,name:"
 msgid "ID"
-msgstr ""
+msgstr "Orthanc 检查 ID"
 
 msgctxt "field:gnuhealth.lab,pathologist:"
 msgid "Pathologist"
 msgstr "病理医生"
 
+#, fuzzy
+msgctxt "field:gnuhealth.lab,pathology:"
+msgid "Pathology"
+msgstr "疾病诊断"
+
 msgctxt "field:gnuhealth.lab,patient:"
 msgid "Patient"
 msgstr "患者"
 
-msgctxt "field:gnuhealth.lab,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
 msgctxt "field:gnuhealth.lab,request_order:"
-msgid "Request"
+msgid "Order"
 msgstr "申请编号"
 
 msgctxt "field:gnuhealth.lab,requestor:"
-msgid "Physician"
+msgid "Health prof"
 msgstr "申请医生"
 
 msgctxt "field:gnuhealth.lab,results:"
@@ -92,26 +56,6 @@ msgctxt "field:gnuhealth.lab,test:"
 msgid "Test type"
 msgstr "检验类型"
 
-msgctxt "field:gnuhealth.lab,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.lab,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
-
-msgctxt "field:gnuhealth.lab.test.create.init,id:"
-msgid "ID"
-msgstr "编号"
-
-msgctxt "field:gnuhealth.lab.test.critearea,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.lab.test.critearea,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
-
 msgctxt "field:gnuhealth.lab.test.critearea,excluded:"
 msgid "Excluded"
 msgstr "无检验报告"
@@ -119,10 +63,6 @@ msgstr "无检验报告"
 msgctxt "field:gnuhealth.lab.test.critearea,gnuhealth_lab_id:"
 msgid "Test Cases"
 msgstr "检验用例"
-
-msgctxt "field:gnuhealth.lab.test.critearea,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.lab.test.critearea,lab_warning_icon:"
 msgid "Lab Warning Icon"
@@ -139,10 +79,6 @@ msgstr "项目"
 msgctxt "field:gnuhealth.lab.test.critearea,normal_range:"
 msgid "Reference"
 msgstr "参考值范围"
-
-msgctxt "field:gnuhealth.lab.test.critearea,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
 
 msgctxt "field:gnuhealth.lab.test.critearea,remarks:"
 msgid "Remarks"
@@ -176,45 +112,13 @@ msgctxt "field:gnuhealth.lab.test.critearea,warning:"
 msgid "Warn"
 msgstr "警告"
 
-msgctxt "field:gnuhealth.lab.test.critearea,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.lab.test.critearea,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
-
 msgctxt "field:gnuhealth.lab.test.units,code:"
 msgid "Code"
 msgstr "代码"
 
-msgctxt "field:gnuhealth.lab.test.units,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.lab.test.units,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
-
-msgctxt "field:gnuhealth.lab.test.units,id:"
-msgid "ID"
-msgstr "ID"
-
 msgctxt "field:gnuhealth.lab.test.units,name:"
 msgid "Unit"
 msgstr "计量单位"
-
-msgctxt "field:gnuhealth.lab.test.units,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
-msgctxt "field:gnuhealth.lab.test.units,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.lab.test.units,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
 
 msgctxt "field:gnuhealth.lab.test_type,active:"
 msgid "Active"
@@ -224,21 +128,9 @@ msgctxt "field:gnuhealth.lab.test_type,code:"
 msgid "Code"
 msgstr "代码"
 
-msgctxt "field:gnuhealth.lab.test_type,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.lab.test_type,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
-
 msgctxt "field:gnuhealth.lab.test_type,critearea:"
 msgid "Test Cases"
 msgstr "检验用例"
-
-msgctxt "field:gnuhealth.lab.test_type,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.lab.test_type,info:"
 msgid "Description"
@@ -252,41 +144,31 @@ msgctxt "field:gnuhealth.lab.test_type,product_id:"
 msgid "Service"
 msgstr "服务"
 
-msgctxt "field:gnuhealth.lab.test_type,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
-msgctxt "field:gnuhealth.lab.test_type,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.lab.test_type,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
-
 msgctxt "field:gnuhealth.patient,lab_test_ids:"
 msgid "Lab Tests Required"
 msgstr "实验室检验"
 
-msgctxt "field:gnuhealth.patient.lab.test,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
+msgctxt "field:gnuhealth.patient.disease,lab_confirmed:"
+msgid "Lab Confirmed"
+msgstr ""
 
-msgctxt "field:gnuhealth.patient.lab.test,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
+#, fuzzy
+msgctxt "field:gnuhealth.patient.disease,lab_test:"
+msgid "Lab Test"
+msgstr "实验室检验"
+
+#, fuzzy
+msgctxt "field:gnuhealth.patient.lab.test,context:"
+msgid "Context"
+msgstr "内容"
 
 msgctxt "field:gnuhealth.patient.lab.test,date:"
 msgid "Date"
 msgstr "日期"
 
 msgctxt "field:gnuhealth.patient.lab.test,doctor_id:"
-msgid "Doctor"
+msgid "Health prof."
 msgstr "医生"
-
-msgctxt "field:gnuhealth.patient.lab.test,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.lab.test,name:"
 msgid "Test Type"
@@ -295,10 +177,6 @@ msgstr "检验类型"
 msgctxt "field:gnuhealth.patient.lab.test,patient_id:"
 msgid "Patient"
 msgstr "患者"
-
-msgctxt "field:gnuhealth.patient.lab.test,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
 
 msgctxt "field:gnuhealth.patient.lab.test,request:"
 msgid "Order"
@@ -312,25 +190,18 @@ msgctxt "field:gnuhealth.patient.lab.test,urgent:"
 msgid "Urgent"
 msgstr "紧急"
 
-msgctxt "field:gnuhealth.patient.lab.test,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.patient.lab.test,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
+#, fuzzy
+msgctxt "field:gnuhealth.patient.lab.test.request.start,context:"
+msgid "Context"
+msgstr "内容"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,date:"
 msgid "Date"
 msgstr "日期"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,doctor:"
-msgid "Doctor"
+msgid "Health prof"
 msgstr "医生"
-
-msgctxt "field:gnuhealth.patient.lab.test.request.start,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.lab.test.request.start,patient:"
 msgid "Patient"
@@ -344,10 +215,6 @@ msgctxt "field:gnuhealth.patient.lab.test.request.start,urgent:"
 msgid "Urgent"
 msgstr "紧急"
 
-msgctxt "field:gnuhealth.request-test,id:"
-msgid "ID"
-msgstr "ID"
-
 msgctxt "field:gnuhealth.request-test,request:"
 msgid "Request"
 msgstr "申请编号"
@@ -356,21 +223,22 @@ msgctxt "field:gnuhealth.request-test,test:"
 msgid "Test"
 msgstr "实验室检验"
 
-msgctxt "field:gnuhealth.sequence.setup,lab_request_sequence:"
-msgid "Lab Request Sequence"
-msgstr "实验室检验申请序列"
-
-msgctxt "field:gnuhealth.sequence.setup,lab_sequence:"
-msgid "Lab Result Sequence"
-msgstr "实验室检验申请序列"
-
 msgctxt "field:gnuhealth.sequences,lab_request_sequence:"
-msgid "Patient Lab Request Sequence"
+msgid "Lab request sequence"
 msgstr "患者实验室检验序列"
 
-msgctxt "field:gnuhealth.sequences,lab_sequence:"
-msgid "Lab Sequence"
-msgstr "实验室检验序列"
+msgctxt "field:gnuhealth.sequences,lab_test_sequence:"
+msgid "Lab test sequence"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.sequences.lab_request_sequence,lab_request_sequence:"
+msgid "Lab request sequence"
+msgstr "患者实验室检验序列"
+
+msgctxt "field:gnuhealth.sequences.lab_test_sequence,lab_test_sequence:"
+msgid "Lab test sequence"
+msgstr ""
 
 msgctxt "help:gnuhealth.lab,name:"
 msgid "Lab result ID"
@@ -379,6 +247,10 @@ msgstr "实验室检验结果编号"
 msgctxt "help:gnuhealth.lab,pathologist:"
 msgid "Pathologist"
 msgstr "病理医生"
+
+msgctxt "help:gnuhealth.lab,pathology:"
+msgid "Pathology confirmed / associated to this lab test."
+msgstr ""
 
 msgctxt "help:gnuhealth.lab,patient:"
 msgid "Patient ID"
@@ -398,16 +270,15 @@ msgstr "如果此项不需要在化验报告中出现时，就选中此项"
 
 msgctxt "help:gnuhealth.lab.test.critearea,result_text:"
 msgid ""
-"Non-numeric results. For example qualitative values, morphological, "
-"colors ..."
+"Non-numeric results. For example qualitative values, morphological, colors "
+"..."
 msgstr "非数字的结果。比如：定性结果，形态，颜色..."
 
 msgctxt "help:gnuhealth.lab.test.critearea,warning:"
 msgid ""
 "Warns the patient about this  analyte result It is useful to contextualize "
 "the result to each patient status  like age, sex, comorbidities, ..."
-msgstr ""
-"警告患者，此分析结果需要结合患者的实际情况来解读，比如年龄、性别、并发症等。"
+msgstr "警告患者，此分析结果需要结合患者的实际情况来解读，比如年龄、性别、并发症等。"
 
 msgctxt "help:gnuhealth.lab.test_type,code:"
 msgid "Short name - code for the test"
@@ -417,12 +288,32 @@ msgctxt "help:gnuhealth.lab.test_type,name:"
 msgid "Test type, eg X-Ray, hemogram,biopsy..."
 msgstr "检验类型，如 X光照射, 血常规, 活体组织检验..."
 
+msgctxt "help:gnuhealth.patient.disease,lab_confirmed:"
+msgid "Confirmed by laboratory test"
+msgstr ""
+
+msgctxt "help:gnuhealth.patient.disease,lab_test:"
+msgid "Lab test that confirmed the condition"
+msgstr ""
+
+msgctxt "help:gnuhealth.patient.lab.test,context:"
+msgid ""
+"Health context for this order. It can be a suspected or existing health "
+"condition, a regular health checkup, ..."
+msgstr ""
+
 msgctxt "help:gnuhealth.patient.lab.test,doctor_id:"
-msgid "Doctor who Request the lab test."
+msgid "Health professional who requests the lab test."
 msgstr "请求化验的医生。"
 
+msgctxt "help:gnuhealth.patient.lab.test.request.start,context:"
+msgid ""
+"Health context for this order. It can be a suspected or existing health "
+"condition, a regular health checkup, ..."
+msgstr ""
+
 msgctxt "help:gnuhealth.patient.lab.test.request.start,doctor:"
-msgid "Doctor who Request the lab tests."
+msgid "Health professional who ordered the lab tests."
 msgstr "请求化验的医生。"
 
 msgctxt "model:gnuhealth.lab,name:"
@@ -448,8 +339,7 @@ msgid "Albumin"
 msgstr "白蛋白"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_alkalinephosphatase0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_alkalinephosphatase0"
 msgid "Alkaline Phosphatase"
 msgstr "碱性磷酸酶"
 
@@ -462,7 +352,8 @@ msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_bas"
 msgid "BAS"
 msgstr "嗜碱性粒细胞计数(BAS)"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_bas0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_bas0"
 msgid "BAS%"
 msgstr "嗜碱性粒细胞百分比(BAS%)"
 
@@ -482,8 +373,7 @@ msgid "Blood"
 msgstr "血液"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_bloodgrouprh0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_bloodgrouprh0"
 msgid "Blood Group & RH"
 msgstr "血型 & RH"
 
@@ -493,14 +383,12 @@ msgid "Casts"
 msgstr "项目"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_chemicalexamination0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_chemicalexamination0"
 msgid "Chemical Examination"
 msgstr "化学检验"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_clarityappearance0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_clarityappearance0"
 msgid "Clarity/ Appearance"
 msgstr "清晰度/外观"
 
@@ -535,8 +423,7 @@ msgid "Crystals"
 msgstr "结晶"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_directbilirubin0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_directbilirubin0"
 msgid "Direct Bilirubin"
 msgstr "直接胆红素"
 
@@ -544,27 +431,28 @@ msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_eo"
 msgid "EO"
 msgstr "嗜酸性粒细胞计数(EO)"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_eos0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_eos0"
 msgid "EO%"
 msgstr "嗜酸性粒细胞百分比(EO%)"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_epithelialcells0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_epithelialcells0"
 msgid "Epithelial Cells"
 msgstr "上皮细胞"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_epithelialcells1"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_epithelialcells1"
 msgid "Epithelial Cells"
 msgstr "上皮细胞"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_esr0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_esr0"
 msgid "ESR"
 msgstr "红细胞沉降率"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_fsh0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_fsh0"
 msgid "FSH"
 msgstr "促卵泡激素(FSH)"
 
@@ -583,7 +471,8 @@ msgctxt ""
 msgid "Glucose"
 msgstr "葡萄糖"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_gra0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_gra0"
 msgid "GRA#"
 msgstr "中性粒细胞（GRA）#"
 
@@ -592,19 +481,18 @@ msgctxt ""
 msgid "HGB"
 msgstr "血红蛋白(HGB)"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_hct0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_hct0"
 msgid "HCT"
 msgstr "红细胞压积(HCT)"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_indirectbilirubin0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_indirectbilirubin0"
 msgid "Indirect Bilirubin"
 msgstr "间接胆红素"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_ketonebodies0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_ketonebodies0"
 msgid "Ketone Bodies"
 msgstr "酮体"
 
@@ -618,20 +506,22 @@ msgid "LH"
 msgstr "促黄体生成激素(LH)"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_liquefactiontime0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_liquefactiontime0"
 msgid "Liquefaction Time"
 msgstr "液化时间"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_lym0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_lym0"
 msgid "LYM%"
 msgstr "淋巴细胞百分比(LYM%)"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_lym1"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_lym1"
 msgid "LYM"
 msgstr "淋巴细胞计数(LYM)"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mch0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mch0"
 msgid "MCH"
 msgstr "平均红细胞血红蛋白含量(MCH)"
 
@@ -640,25 +530,23 @@ msgctxt ""
 msgid "MCHC"
 msgstr "平均红细胞血红蛋白浓度(MCHC)"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mcv0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mcv0"
 msgid "MCV"
 msgstr "平均红细胞体积(MCV)"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_microscopicexamination0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_microscopicexamination0"
 msgid "Microscopic Examination"
 msgstr "显微镜检验"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_microscopicexamination1"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_microscopicexamination1"
 msgid "Microscopic Examination"
 msgstr "显微镜检验"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_microscopicexamination2"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_microscopicexamination2"
 msgid "Microscopic Examination"
 msgstr "显微镜检验"
 
@@ -666,7 +554,8 @@ msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mon"
 msgid "MON"
 msgstr "单核细胞计数(MON)"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mon0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_mon0"
 msgid "MON%"
 msgstr "单核细胞百分比(MON%)"
 
@@ -693,7 +582,8 @@ msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_neu"
 msgid "NEU"
 msgstr "中性粒细胞计数(NEU)"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_neu0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_neu0"
 msgid "NEU%"
 msgstr "中性粒细胞百分比(%)"
 
@@ -708,8 +598,7 @@ msgid "Non Motile"
 msgstr "完全不动"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_nonprogressive0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_nonprogressive0"
 msgid "Non Progressive"
 msgstr "非向前运动"
 
@@ -742,20 +631,17 @@ msgid "PH"
 msgstr "PH值"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_physicalexamination0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_physicalexamination0"
 msgid "Physical Examination"
 msgstr "体格检查"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_physicalexamination1"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_physicalexamination1"
 msgid "Physical Examination"
 msgstr "体格检查"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_physicalexamination2"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_physicalexamination2"
 msgid "Physical Examination"
 msgstr "体格检查"
 
@@ -764,7 +650,8 @@ msgctxt ""
 msgid "Platelets"
 msgstr "血小板"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_plt0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_plt0"
 msgid "PLT"
 msgstr "血小板计数(PLT)"
 
@@ -798,7 +685,8 @@ msgctxt ""
 msgid "Pus Cells"
 msgstr "脓细胞(Pus cells)"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_rbc0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_rbc0"
 msgid "RBC"
 msgstr "红细胞"
 
@@ -853,26 +741,22 @@ msgid "SGPT"
 msgstr "谷丙转氨酶(SGPT)"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_specificgravity0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_specificgravity0"
 msgid "Specific Gravity"
 msgstr "比重"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_spermatogoniccells0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_spermatogoniccells0"
 msgid "Spermatogonic Cells"
 msgstr "生精细胞"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_testosterone0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_testosterone0"
 msgid "TESTOSTERONE"
 msgstr "睾酮"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_totalbilirubin0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_totalbilirubin0"
 msgid "Total Bilirubin"
 msgstr "总胆红素"
 
@@ -882,18 +766,17 @@ msgid "Total count"
 msgstr "总菌数"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_totalprotein0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_totalprotein0"
 msgid "Total Protein"
 msgstr "血清总蛋白"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_tsh0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_tsh0"
 msgid "TSH"
 msgstr "促甲状腺激素(TSH)"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_undigestedmatter0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_undigestedmatter0"
 msgid "Un digested matter"
 msgstr "未消化物质"
 
@@ -908,8 +791,7 @@ msgid "Uric Acid"
 msgstr "尿酸"
 
 msgctxt ""
-"model:gnuhealth.lab.test.critearea,name:"
-"gnuhealth_test_critearea_urobilinogen0"
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_urobilinogen0"
 msgid "Urobilinogen"
 msgstr "尿胆素原"
 
@@ -923,7 +805,8 @@ msgctxt ""
 msgid "Volume"
 msgstr "容积"
 
-msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_wbc0"
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_wbc0"
 msgid "WBC"
 msgstr "白细胞"
 
@@ -940,7 +823,8 @@ msgctxt "model:gnuhealth.lab.test_type,name:"
 msgid "Type of Lab test"
 msgstr "实验室检验类型"
 
-msgctxt "model:gnuhealth.lab.test_type,name:gnuhealth_test_completebloodcount0"
+msgctxt ""
+"model:gnuhealth.lab.test_type,name:gnuhealth_test_completebloodcount0"
 msgid "COMPLETE BLOOD COUNT"
 msgstr "全血细胞计数"
 
@@ -978,7 +862,7 @@ msgid "URINE ANALYSIS"
 msgstr "尿液常规检查"
 
 msgctxt "model:gnuhealth.patient.lab.test,name:"
-msgid "Patient Lab Test"
+msgid "Lab Test Request"
 msgstr "患者实验室检验"
 
 msgctxt "model:gnuhealth.patient.lab.test.request.start,name:"
@@ -989,12 +873,20 @@ msgctxt "model:gnuhealth.request-test,name:"
 msgid "Request - Test"
 msgstr "申请实验室检验项目"
 
+msgctxt "model:gnuhealth.sequences.lab_request_sequence,name:"
+msgid "Lab Request Sequence setup"
+msgstr ""
+
+msgctxt "model:gnuhealth.sequences.lab_test_sequence,name:"
+msgid "Lab Test Sequence setup"
+msgstr ""
+
 msgctxt "model:ir.action,name:act_create_lab_test"
 msgid "Lab: Create test"
 msgstr "实验室：按照申请创建检验项目"
 
 msgctxt "model:ir.action,name:act_patient_lab_history_form1"
-msgid "Lab: Reports"
+msgid "Lab: Results"
 msgstr "实验室: 检验报告列表"
 
 msgctxt "model:ir.action,name:gnuhealth_action_lab_test_request"
@@ -1010,11 +902,11 @@ msgid "Lab Test Types"
 msgstr "实验室检验类型"
 
 msgctxt "model:ir.action,name:gnuhealth_action_tree_lab"
-msgid "Lab Tests Results"
+msgid "Lab Results"
 msgstr "实验室: 检验结果列表"
 
 msgctxt "model:ir.action,name:patient_lab_test_request"
-msgid "Lab: Request new order"
+msgid "Lab: New order"
 msgstr "实验室: 申请检验项目"
 
 msgctxt "model:ir.action,name:report_patient_labtest_report"
@@ -1038,7 +930,7 @@ msgid "Lab Test"
 msgstr "实验室检验"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_action_lab_tree"
-msgid "Lab Tests Results"
+msgid "Lab Results"
 msgstr "实验室: 检验结果列表"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_laboratory"
@@ -1062,7 +954,7 @@ msgid "Lab Test Types"
 msgstr "实验室检验类型"
 
 msgctxt "model:ir.ui.menu,name:menu_patient_lab_test_request"
-msgid "Lab: Request new order"
+msgid "Lab: New order"
 msgstr "实验室: 申请检验项目"
 
 msgctxt "model:product.category,name:product_category_labservices0"
@@ -1087,8 +979,7 @@ msgid "Liver Function test charges"
 msgstr "肝功能检验费"
 
 msgctxt ""
-"model:product.template,name:"
-"product_template_peripheralsmearexaminationcharges0"
+"model:product.template,name:product_template_peripheralsmearexaminationcharges0"
 msgid "Peripheral Smear Examination Charges"
 msgstr "外周血涂片检验费"
 
@@ -1101,7 +992,8 @@ msgctxt "model:product.template,name:product_template_semenanalysischarges0"
 msgid "Semen Analysis Charges"
 msgstr "精液分析费"
 
-msgctxt "model:product.template,name:product_template_stoolexaminationcharges0"
+msgctxt ""
+"model:product.template,name:product_template_stoolexaminationcharges0"
 msgid "Stool Examination Charges"
 msgstr "粪便检验费"
 
@@ -1121,9 +1013,10 @@ msgctxt "report:patient.labtest.report:"
 msgid "*"
 msgstr "*"
 
+#, fuzzy
 msgctxt "report:patient.labtest.report:"
-msgid ","
-msgstr ","
+msgid ":"
+msgstr "："
 
 msgctxt "report:patient.labtest.report:"
 msgid "Age"
@@ -1141,17 +1034,19 @@ msgctxt "report:patient.labtest.report:"
 msgid "Diagnosis"
 msgstr "诊断"
 
+#, fuzzy
 msgctxt "report:patient.labtest.report:"
-msgid "Doctor:"
-msgstr "医生："
+msgid "Doctor"
+msgstr "医生"
 
 msgctxt "report:patient.labtest.report:"
 msgid "Female"
 msgstr "女"
 
+#, fuzzy
 msgctxt "report:patient.labtest.report:"
 msgid "ID"
-msgstr ""
+msgstr "Orthanc 检查 ID"
 
 msgctxt "report:patient.labtest.report:"
 msgid "LABORATORY REPORT"
@@ -1265,6 +1160,11 @@ msgctxt "view:gnuhealth.lab:"
 msgid "Notes"
 msgstr "说明"
 
+#, fuzzy
+msgctxt "view:gnuhealth.patient.disease:"
+msgid "Laboratory"
+msgstr "实验室检验"
+
 msgctxt "wizard_button:gnuhealth.lab.test.create,start,create_lab_test:"
 msgid "Create Test Order"
 msgstr "创建检验序列"
@@ -1280,23 +1180,3 @@ msgstr "取消"
 msgctxt "wizard_button:gnuhealth.patient.lab.test.request,start,request:"
 msgid "Request"
 msgstr "申请"
-
-#~ msgctxt "field:gnuhealth.lab.test.critearea,rec_name:"
-#~ msgid "Name"
-#~ msgstr "名称"
-
-#~ msgctxt "field:gnuhealth.lab.test.units,rec_name:"
-#~ msgid "Name"
-#~ msgstr "名称"
-
-#~ msgctxt "model:gnuhealth.lab,name:"
-#~ msgid "Lab Test"
-#~ msgstr "实验室检验"
-
-#~ msgctxt "field:gnuhealth.patient.lab.test,rec_name:"
-#~ msgid "Name"
-#~ msgstr "名称"
-
-#~ msgctxt "field:gnuhealth.lab.test_type,rec_name:"
-#~ msgid "Name"
-#~ msgstr "名称"

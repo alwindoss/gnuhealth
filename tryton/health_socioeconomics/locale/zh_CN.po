@@ -1,20 +1,6 @@
+#
 msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-23 01:29+0000\n"
-"PO-Revision-Date: 2022-01-19 12:32+0000\n"
-"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"gnu-health/health_socioeconomics/zh_Hans/>\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11-dev\n"
-"X-Pootle-Path: /zh_CN/GNUHEALTH/health_socioeconomics/locale/zh_CN.po\n"
-"X-Pootle-Revision: 43395\n"
+msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:gnuhealth.patient,domestic_violence:"
 msgid "Domestic violence"
@@ -60,6 +46,10 @@ msgctxt "field:gnuhealth.patient,school_withdrawal:"
 msgid "School withdrawal"
 msgstr "学校退学"
 
+msgctxt "field:gnuhealth.patient,ses:"
+msgid "SES"
+msgstr ""
+
 msgctxt "field:gnuhealth.patient,ses_assessments:"
 msgid "Assessments"
 msgstr "评估"
@@ -95,14 +85,6 @@ msgstr "日期"
 msgctxt "field:gnuhealth.ses.assessment,computed_age:"
 msgid "Age"
 msgstr "年龄"
-
-msgctxt "field:gnuhealth.ses.assessment,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.ses.assessment,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
 
 msgctxt "field:gnuhealth.ses.assessment,du:"
 msgid "DU"
@@ -148,10 +130,6 @@ msgctxt "field:gnuhealth.ses.assessment,housing:"
 msgid "Housing conditions"
 msgstr "住房条件"
 
-msgctxt "field:gnuhealth.ses.assessment,id:"
-msgid "ID"
-msgstr "ID"
-
 msgctxt "field:gnuhealth.ses.assessment,income:"
 msgid "Income"
 msgstr "收入"
@@ -168,10 +146,6 @@ msgctxt "field:gnuhealth.ses.assessment,patient:"
 msgid "Patient"
 msgstr "患者"
 
-msgctxt "field:gnuhealth.ses.assessment,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
 msgctxt "field:gnuhealth.ses.assessment,ses:"
 msgid "Socioeconomics"
 msgstr "社会经济学"
@@ -183,14 +157,6 @@ msgstr "签署人"
 msgctxt "field:gnuhealth.ses.assessment,state:"
 msgid "State"
 msgstr "日期"
-
-msgctxt "field:gnuhealth.ses.assessment,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.ses.assessment,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
 
 msgctxt "field:party.party,education:"
 msgid "Education"
@@ -205,11 +171,11 @@ msgid "Education Level"
 msgstr "教育水平"
 
 msgctxt "help:gnuhealth.patient,hostile_area:"
-msgid "Check if patient lives in a zone of high hostility (eg, war)"
+msgid "Check if patient lives in a zoneof high hostility (eg, war)"
 msgstr "检查患者是否生活在严重的敌对区（比如，战争）"
 
 msgctxt "help:gnuhealth.patient,hours_outside:"
-msgid "Number of hours a day the patient spend outside the house"
+msgid "Number of hours a day the patientspend outside the house"
 msgstr "每天患者在户外的小时数"
 
 msgctxt "help:gnuhealth.patient,housing:"
@@ -221,6 +187,10 @@ msgid ""
 "Check if someone from the nuclear family - parents / sibblings  is or has "
 "been in prison"
 msgstr "检查患者是否来自核心家庭-父母/兄弟姐妹正在服刑或者曾经入狱"
+
+msgctxt "help:gnuhealth.patient,ses:"
+msgid "Current Socioeconomic Status"
+msgstr ""
 
 msgctxt "help:gnuhealth.patient,ses_assessments:"
 msgid "Socioeconomics and Family assessments history"
@@ -248,7 +218,8 @@ msgstr "教育水平"
 
 msgctxt "help:gnuhealth.ses.assessment,fam_apgar_affection:"
 msgid ""
-"Is the patient satisfied with the level of affection coming from the family ?"
+"Is the patient satisfied with the level of affection coming from the family "
+"?"
 msgstr "患者对亲情水平满意吗？"
 
 msgctxt "help:gnuhealth.ses.assessment,fam_apgar_decisions:"
@@ -259,7 +230,8 @@ msgstr "患者是否对家人集体做出重要决策的水平感到满意？"
 
 msgctxt "help:gnuhealth.ses.assessment,fam_apgar_discussion:"
 msgid ""
-"Is the patient satisfied with the level talking over the problems as family ?"
+"Is the patient satisfied with the level talking over the problems as family "
+"?"
 msgstr "患者是否对以家庭身份讨论问题的程度感到满意？"
 
 msgctxt "help:gnuhealth.ses.assessment,fam_apgar_help:"
@@ -322,10 +294,6 @@ msgid "Socioeconomic Assessments"
 msgstr "社会经济评估"
 
 msgctxt "selection:gnuhealth.patient,education:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.patient,education:"
 msgid "Incomplete Primary School"
 msgstr "小学未毕业"
 
@@ -348,10 +316,6 @@ msgstr "中学"
 msgctxt "selection:gnuhealth.patient,education:"
 msgid "University"
 msgstr "大学"
-
-msgctxt "selection:gnuhealth.patient,housing:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.patient,housing:"
 msgid "Comfortable and good sanitary conditions"
@@ -373,9 +337,30 @@ msgctxt "selection:gnuhealth.patient,housing:"
 msgid "Small, crowded but with good sanitary conditions"
 msgstr "小而拥挤，但卫生条件良好"
 
-msgctxt "selection:gnuhealth.ses.assessment,education:"
-msgid ""
-msgstr ""
+#, fuzzy
+msgctxt "selection:gnuhealth.patient,ses:"
+msgid "Higher"
+msgstr "较高"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.patient,ses:"
+msgid "Lower"
+msgstr "较低"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.patient,ses:"
+msgid "Lower-middle"
+msgstr "下中等"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.patient,ses:"
+msgid "Middle"
+msgstr "中等"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.patient,ses:"
+msgid "Middle-upper"
+msgstr "上中等"
 
 msgctxt "selection:gnuhealth.ses.assessment,education:"
 msgid "Incomplete Primary School"
@@ -402,10 +387,6 @@ msgid "University"
 msgstr "大学"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
 msgid "Moderately"
 msgstr "一般"
 
@@ -418,10 +399,6 @@ msgid "Very much"
 msgstr "非常大"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
 msgid "Moderately"
 msgstr "一般"
 
@@ -434,10 +411,6 @@ msgid "Very much"
 msgstr "非常大"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
 msgid "Moderately"
 msgstr "一般"
 
@@ -448,10 +421,6 @@ msgstr "无"
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
 msgid "Very much"
 msgstr "非常大"
-
-msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
 msgid "Moderately"
@@ -466,10 +435,6 @@ msgid "Very much"
 msgstr "非常大"
 
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
 msgid "Moderately"
 msgstr "一般"
 
@@ -480,10 +445,6 @@ msgstr "无"
 msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
 msgid "Very much"
 msgstr "非常大"
-
-msgctxt "selection:gnuhealth.ses.assessment,gender:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,gender:"
 msgid "Female"
@@ -494,10 +455,6 @@ msgid "Male"
 msgstr "男性"
 
 msgctxt "selection:gnuhealth.ses.assessment,housing:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.ses.assessment,housing:"
 msgid "Comfortable and good sanitary conditions"
 msgstr "舒适和良好的卫生条件"
 
@@ -516,10 +473,6 @@ msgstr "棚户区，卫生条件差"
 msgctxt "selection:gnuhealth.ses.assessment,housing:"
 msgid "Small, crowded but with good sanitary conditions"
 msgstr "小而拥挤，但卫生条件良好"
-
-msgctxt "selection:gnuhealth.ses.assessment,income:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,income:"
 msgid "High"
@@ -532,10 +485,6 @@ msgstr "底"
 msgctxt "selection:gnuhealth.ses.assessment,income:"
 msgid "Medium"
 msgstr "中等"
-
-msgctxt "selection:gnuhealth.ses.assessment,ses:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.ses.assessment,ses:"
 msgid "Higher"
@@ -558,20 +507,12 @@ msgid "Middle-upper"
 msgstr "上中等"
 
 msgctxt "selection:gnuhealth.ses.assessment,state:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.ses.assessment,state:"
 msgid "Done"
 msgstr "完成"
 
 msgctxt "selection:gnuhealth.ses.assessment,state:"
 msgid "In progress"
 msgstr "正在进行"
-
-msgctxt "selection:party.party,education:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:party.party,education:"
 msgid "Incomplete Primary School"

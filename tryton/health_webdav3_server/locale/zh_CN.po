@@ -1,15 +1,81 @@
 #
 msgid ""
-msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: health_webdav 3_server\n"
-"PO-Revision-Date: 2019-10-26 11:47+0800\n"
-"Last-Translator:  <tumashu@163.com>\n"
-"Language-Team: Chinese (simplified)\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"X-Pootle-Path: /zh_CN/GNUHEALTH/health_webdav3_server/locale/zh_CN.po\n"
-"Content-Transfer-Encoding: 8bit\n"
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+#, fuzzy
+msgctxt "field:ir.attachment,path:"
+msgid "Path"
+msgstr "路径"
+
+#, fuzzy
+msgctxt "field:ir.attachment,shares:"
+msgid "Shares"
+msgstr "共享"
+
+#, fuzzy
+msgctxt "field:ir.attachment,url:"
+msgid "URL"
+msgstr "URL"
+
+#, fuzzy
+msgctxt "field:webdav.collection,childs:"
+msgid "Children"
+msgstr "子账户"
+
+#, fuzzy
+msgctxt "field:webdav.collection,complete_name:"
+msgid "Complete Name"
+msgstr "全称"
+
+#, fuzzy
+msgctxt "field:webdav.collection,domain:"
+msgid "Domain"
+msgstr "域"
+
+#, fuzzy
+msgctxt "field:webdav.collection,model:"
+msgid "Model"
+msgstr "型号"
+
+#, fuzzy
+msgctxt "field:webdav.collection,name:"
+msgid "Name"
+msgstr "姓名"
+
+#, fuzzy
+msgctxt "field:webdav.collection,parent:"
+msgid "Parent"
+msgstr "上级"
+
+#, fuzzy
+msgctxt "field:webdav.share,expiration_date:"
+msgid "Expiration Date"
+msgstr "过期日期"
+
+#, fuzzy
+msgctxt "field:webdav.share,key:"
+msgid "Key"
+msgstr "密钥"
+
+#, fuzzy
+msgctxt "field:webdav.share,note:"
+msgid "Note"
+msgstr "注释"
+
+#, fuzzy
+msgctxt "field:webdav.share,path:"
+msgid "Path"
+msgstr "路径"
+
+#, fuzzy
+msgctxt "field:webdav.share,url:"
+msgid "URL"
+msgstr "URL"
+
+#, fuzzy
+msgctxt "field:webdav.share,user:"
+msgid "User"
+msgstr "帐户"
 
 msgctxt "model:ir.action,name:act_collection_list"
 msgid "Collections"
@@ -22,6 +88,24 @@ msgstr "收藏"
 msgctxt "model:ir.action,name:act_share_list"
 msgid "Shares"
 msgstr "共享"
+
+msgctxt "model:ir.message,text:msg_collection_file_name"
+msgid ""
+"You can not create a collection named \"%(parent)s\" in collection "
+"\"%(child)s\" because there is already a file with that name."
+msgstr ""
+
+msgctxt "model:ir.message,text:msg_collection_unique"
+msgid "The collection name must be unique inside"
+msgstr ""
+
+msgctxt "model:ir.rule.group,name:rule_group_share"
+msgid "share"
+msgstr ""
+
+msgctxt "model:ir.rule.group,name:rule_group_share_admin"
+msgid "share_admin"
+msgstr ""
 
 msgctxt "model:ir.ui.menu,name:menu_collection_list"
 msgid "Collections"
@@ -38,6 +122,14 @@ msgstr "共享"
 msgctxt "model:ir.ui.menu,name:menu_webdav"
 msgid "WebDAV"
 msgstr "WebDAV"
+
+msgctxt "model:webdav.collection,name:"
+msgid "Collection"
+msgstr ""
+
+msgctxt "model:webdav.share,name:"
+msgid "Share"
+msgstr ""
 
 msgctxt "view:ir.attachment:"
 msgid "WebDAV"

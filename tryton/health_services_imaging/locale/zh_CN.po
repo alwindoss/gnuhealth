@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+#, fuzzy
+msgctxt "field:gnuhealth.imaging.test.request,service:"
+msgid "Service"
+msgstr "服务"
+
+#, fuzzy
+msgctxt "field:gnuhealth.patient.imaging.test.request.start,service:"
+msgid "Service"
+msgstr "服务"
+
+msgctxt "field:gnuhealth.patient.imaging.test.request.start,ungroup_tests:"
+msgid "Ungroup"
+msgstr ""
+
+msgctxt "help:gnuhealth.imaging.test.request,service:"
+msgid "Service document associated to this Imaging Request"
+msgstr ""
+
+msgctxt "help:gnuhealth.patient.imaging.test.request.start,service:"
+msgid "Service document associated to this Imaging Request"
+msgstr ""
+
+msgctxt "help:gnuhealth.patient.imaging.test.request.start,ungroup_tests:"
+msgid ""
+"Check if you DO NOT want to include each individual Dx imaging test from this order in the lab test generation step. This is useful when some services are not provided in the same institution.\n"
+"In this case, you need to individually update the service document from each individual test"
+msgstr ""
+
+msgctxt "view:gnuhealth.imaging.test.request:"
+msgid "Transfer imaging request to services ?"
+msgstr ""
+
+msgctxt "view:gnuhealth.imaging.test.request:"
+msgid "Update Service document with this imaging request ?"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.imaging.test.request:"
+msgid "Update Services"
+msgstr "依照处方更新服务"

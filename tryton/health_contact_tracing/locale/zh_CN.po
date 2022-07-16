@@ -1,15 +1,6 @@
 #
 msgid ""
-msgstr ""
-"PO-Revision-Date: 2020-11-26 01:29+0000\n"
-"Last-Translator: Feng Shu <tumashu@163.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"gnu-health/health_contact_tracing/zh_Hans/>\n"
-"Language: zh_CN\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4-dev\n"
+msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:gnuhealth.contact_tracing,comments:"
 msgid "Comments"
@@ -27,14 +18,6 @@ msgctxt "field:gnuhealth.contact_tracing,context:"
 msgid "Context"
 msgstr "暴露方式"
 
-msgctxt "field:gnuhealth.contact_tracing,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.contact_tracing,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
-
 msgctxt "field:gnuhealth.contact_tracing,du:"
 msgid "Dom.Unit"
 msgstr "现住址"
@@ -46,10 +29,6 @@ msgstr "暴露"
 msgctxt "field:gnuhealth.contact_tracing,exposure_time:"
 msgid "Exposure time"
 msgstr "暴露时间"
-
-msgctxt "field:gnuhealth.contact_tracing,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.contact_tracing,operational_sector:"
 msgid "Op.Sector"
@@ -63,21 +42,9 @@ msgctxt "field:gnuhealth.contact_tracing,patient:"
 msgid "Source"
 msgstr "传染源"
 
-msgctxt "field:gnuhealth.contact_tracing,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
 msgctxt "field:gnuhealth.contact_tracing,status:"
 msgid "Status"
 msgstr "状态"
-
-msgctxt "field:gnuhealth.contact_tracing,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.contact_tracing,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
 
 msgctxt "help:gnuhealth.contact_tracing,contact:"
 msgid "Person that the patient has contacted"
@@ -109,7 +76,7 @@ msgstr "确诊人员或者疑似人员"
 
 msgctxt "help:gnuhealth.contact_tracing,status:"
 msgid ""
-"Unreached: The contact has not been reached yet."
+"Unreached: The contact has not been reached yet.\n"
 "Following up: The contact has been traced, demographics information has been created and followup evaluations status are stored in the evaluations"
 msgstr "未联系：尚未联系到密切接触者.已追踪：密切接触者已被追踪，人口统计信息已创建，流行病学调查随访等信息已经保存"
 

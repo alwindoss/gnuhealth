@@ -1,24 +1,6 @@
+#
 msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-23 01:29+0000\n"
-"PO-Revision-Date: 2022-07-13 02:29+0000\n"
-"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"gnu-health/health_imaging/zh_Hans/>\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14-dev\n"
-"X-Pootle-Path: /zh_CN/GNUHEALTH/health_imaging/locale/zh_CN.po\n"
-"X-Pootle-Revision: 43904\n"
-
-msgctxt "error:gnuhealth.imaging.test.result:"
-msgid "The test ID code must be unique"
-msgstr "影像检查项目 ID 代码不能重复"
+msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:gnuhealth.imaging.test,active:"
 msgid "Active"
@@ -28,76 +10,41 @@ msgctxt "field:gnuhealth.imaging.test,code:"
 msgid "Code"
 msgstr "代码"
 
-msgctxt "field:gnuhealth.imaging.test,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.imaging.test,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
-
-msgctxt "field:gnuhealth.imaging.test,id:"
-msgid "ID"
-msgstr "ID"
-
 msgctxt "field:gnuhealth.imaging.test,name:"
 msgid "Name"
 msgstr "名称"
 
 msgctxt "field:gnuhealth.imaging.test,product:"
-msgid "Service"
+msgid "Product"
 msgstr "服务"
-
-msgctxt "field:gnuhealth.imaging.test,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
 
 msgctxt "field:gnuhealth.imaging.test,test_type:"
 msgid "Type"
 msgstr "类型"
 
-msgctxt "field:gnuhealth.imaging.test,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.imaging.test,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
-
 msgctxt "field:gnuhealth.imaging.test.request,comment:"
-msgid "Comment"
+msgid "Additional Information"
 msgstr "说明"
 
-msgctxt "field:gnuhealth.imaging.test.request,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.imaging.test.request,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
+#, fuzzy
+msgctxt "field:gnuhealth.imaging.test.request,context:"
+msgid "Context"
+msgstr "内容"
 
 msgctxt "field:gnuhealth.imaging.test.request,date:"
 msgid "Date"
 msgstr "日期"
 
 msgctxt "field:gnuhealth.imaging.test.request,doctor:"
-msgid "Doctor"
+msgid "Health prof"
 msgstr "医生"
-
-msgctxt "field:gnuhealth.imaging.test.request,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.imaging.test.request,patient:"
 msgid "Patient"
 msgstr "患者"
 
-msgctxt "field:gnuhealth.imaging.test.request,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
 msgctxt "field:gnuhealth.imaging.test.request,request:"
-msgid "Request"
+msgid "Order"
 msgstr "申请编号"
 
 msgctxt "field:gnuhealth.imaging.test.request,requested_test:"
@@ -112,37 +59,17 @@ msgctxt "field:gnuhealth.imaging.test.request,urgent:"
 msgid "Urgent"
 msgstr "紧急"
 
-msgctxt "field:gnuhealth.imaging.test.request,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.imaging.test.request,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
-
 msgctxt "field:gnuhealth.imaging.test.result,comment:"
-msgid "Comment"
+msgid "Additional Information"
 msgstr "说明"
-
-msgctxt "field:gnuhealth.imaging.test.result,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.imaging.test.result,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
 
 msgctxt "field:gnuhealth.imaging.test.result,date:"
 msgid "Date"
 msgstr "日期"
 
 msgctxt "field:gnuhealth.imaging.test.result,doctor:"
-msgid "Doctor"
+msgid "Health prof"
 msgstr "医生"
-
-msgctxt "field:gnuhealth.imaging.test.result,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.imaging.test.result,images:"
 msgid "Images"
@@ -152,13 +79,14 @@ msgctxt "field:gnuhealth.imaging.test.result,number:"
 msgid "Number"
 msgstr "检查结果编号"
 
+#, fuzzy
+msgctxt "field:gnuhealth.imaging.test.result,order:"
+msgid "Order"
+msgstr "申请编号"
+
 msgctxt "field:gnuhealth.imaging.test.result,patient:"
 msgid "Patient"
 msgstr "患者"
-
-msgctxt "field:gnuhealth.imaging.test.result,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
 
 msgctxt "field:gnuhealth.imaging.test.result,request:"
 msgid "Request"
@@ -172,57 +100,26 @@ msgctxt "field:gnuhealth.imaging.test.result,requested_test:"
 msgid "Test"
 msgstr "影像检查"
 
-msgctxt "field:gnuhealth.imaging.test.result,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.imaging.test.result,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
-
 msgctxt "field:gnuhealth.imaging.test.type,code:"
 msgid "Code"
 msgstr "代码"
-
-msgctxt "field:gnuhealth.imaging.test.type,create_date:"
-msgid "Create Date"
-msgstr "创建日期"
-
-msgctxt "field:gnuhealth.imaging.test.type,create_uid:"
-msgid "Create User"
-msgstr "创建用户"
-
-msgctxt "field:gnuhealth.imaging.test.type,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.imaging.test.type,name:"
 msgid "Name"
 msgstr "名称"
 
-msgctxt "field:gnuhealth.imaging.test.type,rec_name:"
-msgid "Record Name"
-msgstr "记录名称"
-
-msgctxt "field:gnuhealth.imaging.test.type,write_date:"
-msgid "Write Date"
-msgstr "写入日期"
-
-msgctxt "field:gnuhealth.imaging.test.type,write_uid:"
-msgid "Write User"
-msgstr "写入用户"
+#, fuzzy
+msgctxt "field:gnuhealth.patient.imaging.test.request.start,context:"
+msgid "Context"
+msgstr "内容"
 
 msgctxt "field:gnuhealth.patient.imaging.test.request.start,date:"
 msgid "Date"
 msgstr "日期"
 
 msgctxt "field:gnuhealth.patient.imaging.test.request.start,doctor:"
-msgid "Doctor"
+msgid "Health prof"
 msgstr "医生"
-
-msgctxt "field:gnuhealth.patient.imaging.test.request.start,id:"
-msgid "ID"
-msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.imaging.test.request.start,patient:"
 msgid "Patient"
@@ -236,10 +133,6 @@ msgctxt "field:gnuhealth.patient.imaging.test.request.start,urgent:"
 msgid "Urgent"
 msgstr "紧急"
 
-msgctxt "field:gnuhealth.request-imaging-test,id:"
-msgid "ID"
-msgstr "ID"
-
 msgctxt "field:gnuhealth.request-imaging-test,request:"
 msgid "Request"
 msgstr "申请编号"
@@ -248,24 +141,41 @@ msgctxt "field:gnuhealth.request-imaging-test,test:"
 msgid "Test"
 msgstr "影像检查"
 
-msgctxt "field:gnuhealth.sequence.setup,imaging_request_sequence:"
+msgctxt "field:gnuhealth.sequences,imaging_req_seq:"
 msgid "Imaging Request Sequence"
-msgstr "影像检查申请序列"
+msgstr ""
 
-msgctxt "field:gnuhealth.sequence.setup,imaging_sequence:"
-msgid "Imaging Result Sequence"
-msgstr "影像检查结果序列"
-
-msgctxt "field:gnuhealth.sequences,imaging_request_sequence:"
-msgid "Imaging Request Sequence"
-msgstr "影像检查申请序列"
-
-msgctxt "field:gnuhealth.sequences,imaging_sequence:"
+msgctxt "field:gnuhealth.sequences,imaging_test_sequence:"
 msgid "Imaging Sequence"
-msgstr "影像检查序列"
+msgstr ""
+
+msgctxt "field:gnuhealth.sequences.imaging_req_seq,imaging_req_seq:"
+msgid "Imaging Request Sequence"
+msgstr ""
+
+msgctxt ""
+"field:gnuhealth.sequences.imaging_test_sequence,imaging_test_sequence:"
+msgid "Imaging Sequence"
+msgstr ""
+
+msgctxt "help:gnuhealth.imaging.test.request,context:"
+msgid ""
+"Health context for this order. It can be a suspected or existing health "
+"condition, a regular health checkup, ..."
+msgstr ""
+
+msgctxt "help:gnuhealth.imaging.test.result,order:"
+msgid "The order ID containing this particular imaging study"
+msgstr ""
+
+msgctxt "help:gnuhealth.patient.imaging.test.request.start,context:"
+msgid ""
+"Health context for this order. It can be a suspected or existing health "
+"condition, a regular health checkup, ..."
+msgstr ""
 
 msgctxt "help:gnuhealth.patient.imaging.test.request.start,doctor:"
-msgid "Doctor who Request the lab tests."
+msgid "Health professionalwho requests the lab tests."
 msgstr "申请医生."
 
 msgctxt "model:gnuhealth.imaging.test,name:"
@@ -292,6 +202,14 @@ msgctxt "model:gnuhealth.request-imaging-test,name:"
 msgid "Request - Test"
 msgstr "申请影像检查"
 
+msgctxt "model:gnuhealth.sequences.imaging_req_seq,name:"
+msgid "Imaging Request Sequence setup"
+msgstr ""
+
+msgctxt "model:gnuhealth.sequences.imaging_test_sequence,name:"
+msgid "Imaging Test Sequence setup"
+msgstr ""
+
 msgctxt "model:ir.action,name:act_imaging_test_request_view"
 msgid "Dx Imaging Requests"
 msgstr "影像: 检查申请列表"
@@ -317,7 +235,7 @@ msgid "Dx Imaging Tests"
 msgstr "影像检查"
 
 msgctxt "model:ir.action,name:patient_imaging_test_request"
-msgid "Dx Imaging - New"
+msgid "Dx Imaging - New order"
 msgstr "影像: 申请检查项目"
 
 msgctxt "model:ir.action,name:wizard_generate_result"
@@ -340,8 +258,7 @@ msgid "Draft"
 msgstr "草案"
 
 msgctxt ""
-"model:ir.action.act_window.domain,name:"
-"act_imaging_test_request_domain_requested"
+"model:ir.action.act_window.domain,name:act_imaging_test_request_domain_requested"
 msgid "Requested"
 msgstr "已申请"
 
@@ -386,7 +303,7 @@ msgid "Dx Imaging Tests"
 msgstr "影像检查"
 
 msgctxt "model:ir.ui.menu,name:menu_patient_imaging_test_request"
-msgid "Dx Imaging - New"
+msgid "Dx Imaging - New order"
 msgstr "影像: 申请检查项目"
 
 msgctxt "model:product.category,name:product_category_imagingservices"
