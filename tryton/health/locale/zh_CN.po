@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-16 13:21+0000\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.appointment,appointment_date:"
 msgid "Date and Time"
@@ -3147,7 +3156,7 @@ msgstr "主诉"
 
 msgctxt "help:gnuhealth.patient.evaluation,cholesterol_total:"
 msgid "Last cholesterol reading (mg/dL)"
-msgstr "最近一次的胆固醇检测读数，可以是一个大概数字，用 mg/dl 或者 mol/L 表示。"
+msgstr "最近一次胆固醇检测读数（mg/dl）"
 
 msgctxt "help:gnuhealth.patient.evaluation,code:"
 msgid "Unique code that         identifies the evaluation"
@@ -3196,15 +3205,15 @@ msgstr "评估持续时间"
 
 msgctxt "help:gnuhealth.patient.evaluation,glycemia:"
 msgid "Blood glucose level (mg/dL)"
-msgstr "最近一次测量的血糖水平，可以用近似值，以 mg/dL 或 mmol/L 表示。"
+msgstr "最近一次测量的血糖水平（mg/dL）"
 
 msgctxt "help:gnuhealth.patient.evaluation,hba1c:"
 msgid "Last Glycated Hemoglobin HbA1c level(mmol/mol)"
-msgstr "最近一次测量的糖化血红蛋白水平，可以用近似值，以 mmol/mol 表示。"
+msgstr "最近一次测量的糖化血红蛋白水平（mmol/mol）"
 
 msgctxt "help:gnuhealth.patient.evaluation,hdl:"
 msgid "Last HDL Cholesterol reading (mg/dL)"
-msgstr "最近一次高密度脂蛋白胆固醇检测读数，可以用近似值，以 mg/dL 或者 mmol/L 表示。"
+msgstr "最近一次高密度脂蛋白胆固醇检测读数（mg/dL）"
 
 msgctxt "help:gnuhealth.patient.evaluation,head_circumference:"
 msgid "Head circumference in centimeters"
@@ -3242,7 +3251,7 @@ msgstr "如果病人对臭名昭著的公共事件无法回应，就选中此项
 
 msgctxt "help:gnuhealth.patient.evaluation,ldl:"
 msgid "Last LDL Cholesterol reading (mg/dL)"
-msgstr "最近一次低密度脂蛋白胆固醇检测读数，可以使用估计值，用 mg/dL 或 mmol/L 表示。"
+msgstr "最近一次低密度脂蛋白胆固醇检测读数（mg/dL）"
 
 msgctxt "help:gnuhealth.patient.evaluation,loc:"
 msgid ""
