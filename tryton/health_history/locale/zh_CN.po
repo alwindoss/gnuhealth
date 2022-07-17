@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_history/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "model:ir.action,name:report_patient_evaluation"
 msgid "Patient Evaluation and History"
@@ -126,12 +135,10 @@ msgctxt "report:patient.evaluation:"
 msgid "Comments"
 msgstr "说明"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "D"
 msgstr "D"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "DU"
 msgstr "现住址"
@@ -212,7 +219,6 @@ msgctxt "report:patient.evaluation:"
 msgid "Height"
 msgstr "身高"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "Hip"
 msgstr "臀围"
@@ -237,7 +243,6 @@ msgctxt "report:patient.evaluation:"
 msgid "Incomplete Secondary School"
 msgstr "中学未毕业"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "Indication"
 msgstr "适应症"
@@ -274,7 +279,6 @@ msgctxt "report:patient.evaluation:"
 msgid "Marital Status"
 msgstr "婚姻状况"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "Maternal"
 msgstr "母系"
@@ -287,12 +291,10 @@ msgctxt "report:patient.evaluation:"
 msgid "Medication History"
 msgstr "用药史"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "Motor"
 msgstr "肢体反应"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "Next Dose"
 msgstr "下一个剂量"
@@ -321,14 +323,13 @@ msgctxt "report:patient.evaluation:"
 msgid "PUID:"
 msgstr "PUID："
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "Paternal"
 msgstr "父系"
 
 msgctxt "report:patient.evaluation:"
 msgid "Patient Genetic"
-msgstr ""
+msgstr "患者遗传"
 
 msgctxt "report:patient.evaluation:"
 msgid "Patient Name:"
@@ -442,7 +443,6 @@ msgctxt "report:patient.evaluation:"
 msgid "Vaccine"
 msgstr "疫苗"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "Verbal"
 msgstr "语言反应"
@@ -451,7 +451,6 @@ msgctxt "report:patient.evaluation:"
 msgid "Vital Signs"
 msgstr "生命体征"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "WHR"
 msgstr "腰臀比"
@@ -508,12 +507,10 @@ msgctxt "report:patient.evaluation:"
 msgid "middle-upper"
 msgstr ""
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "mild"
 msgstr "温和"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "moderate"
 msgstr "中度"
@@ -526,7 +523,6 @@ msgctxt "report:patient.evaluation:"
 msgid "risky"
 msgstr "风险"
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "s"
 msgstr "s"
@@ -543,7 +539,6 @@ msgctxt "report:patient.evaluation:"
 msgid "transexual"
 msgstr ""
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "unchanged"
 msgstr "未愈"
@@ -552,7 +547,6 @@ msgctxt "report:patient.evaluation:"
 msgid "upper"
 msgstr ""
 
-#, fuzzy
 msgctxt "report:patient.evaluation:"
 msgid "worsening"
 msgstr "恶化"
