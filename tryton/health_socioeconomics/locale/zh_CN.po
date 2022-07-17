@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-18 04:40+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_socioeconomics/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.patient,domestic_violence:"
 msgid "Domestic violence"
@@ -48,7 +57,7 @@ msgstr "学校退学"
 
 msgctxt "field:gnuhealth.patient,ses:"
 msgid "SES"
-msgstr ""
+msgstr "SES"
 
 msgctxt "field:gnuhealth.patient,ses_assessments:"
 msgid "Assessments"
@@ -190,7 +199,7 @@ msgstr "检查患者是否来自核心家庭-父母/兄弟姐妹正在服刑或�
 
 msgctxt "help:gnuhealth.patient,ses:"
 msgid "Current Socioeconomic Status"
-msgstr ""
+msgstr "当前社会经济状况"
 
 msgctxt "help:gnuhealth.patient,ses_assessments:"
 msgid "Socioeconomics and Family assessments history"
@@ -337,27 +346,22 @@ msgctxt "selection:gnuhealth.patient,housing:"
 msgid "Small, crowded but with good sanitary conditions"
 msgstr "小而拥挤，但卫生条件良好"
 
-#, fuzzy
 msgctxt "selection:gnuhealth.patient,ses:"
 msgid "Higher"
 msgstr "较高"
 
-#, fuzzy
 msgctxt "selection:gnuhealth.patient,ses:"
 msgid "Lower"
 msgstr "较低"
 
-#, fuzzy
 msgctxt "selection:gnuhealth.patient,ses:"
 msgid "Lower-middle"
 msgstr "下中等"
 
-#, fuzzy
 msgctxt "selection:gnuhealth.patient,ses:"
 msgid "Middle"
 msgstr "中等"
 
-#, fuzzy
 msgctxt "selection:gnuhealth.patient,ses:"
 msgid "Middle-upper"
 msgstr "上中等"
