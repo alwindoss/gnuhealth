@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-17 07:37+0000\n"
+"PO-Revision-Date: 2022-07-18 04:39+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_lab/zh_Hans/>\n"
@@ -33,7 +33,7 @@ msgstr "诊断"
 
 msgctxt "field:gnuhealth.lab,name:"
 msgid "ID"
-msgstr "检验结果编号"
+msgstr "结果编号"
 
 msgctxt "field:gnuhealth.lab,pathologist:"
 msgid "Pathologist"
@@ -173,7 +173,7 @@ msgstr "日期"
 
 msgctxt "field:gnuhealth.patient.lab.test,doctor_id:"
 msgid "Health prof."
-msgstr "医务人员."
+msgstr "医务人员"
 
 msgctxt "field:gnuhealth.patient.lab.test,name:"
 msgid "Test Type"
