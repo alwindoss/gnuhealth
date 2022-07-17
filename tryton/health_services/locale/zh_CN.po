@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-17 07:37+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_services/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:account.invoice,health_service:"
 msgid "Health Service"
@@ -48,7 +57,7 @@ msgstr "状态"
 
 msgctxt "field:gnuhealth.health_service.line,action_required:"
 msgid "Action required"
-msgstr ""
+msgstr "需要相应操作"
 
 msgctxt "field:gnuhealth.health_service.line,appointment:"
 msgid "Appointment"
@@ -74,7 +83,6 @@ msgctxt "field:gnuhealth.health_service.line,qty:"
 msgid "Qty"
 msgstr "数量"
 
-#, fuzzy
 msgctxt "field:gnuhealth.health_service.line,remarks:"
 msgid "Remarks"
 msgstr "说明"
@@ -87,12 +95,10 @@ msgctxt "field:gnuhealth.health_service.line,to_invoice:"
 msgid "Invoice"
 msgstr "凭证"
 
-#, fuzzy
 msgctxt "field:gnuhealth.patient.evaluation,product:"
 msgid "Product"
-msgstr "药品"
+msgstr "产品"
 
-#, fuzzy
 msgctxt "field:gnuhealth.patient.evaluation,service:"
 msgid "Service"
 msgstr "服务"
@@ -105,7 +111,6 @@ msgctxt "field:gnuhealth.sequences,health_service_sequence:"
 msgid "Health service sequence"
 msgstr "健康服务序列"
 
-#, fuzzy
 msgctxt ""
 "field:gnuhealth.sequences.health_service_sequence,health_service_sequence:"
 msgid "Health service sequence"
@@ -127,7 +132,8 @@ msgctxt "help:gnuhealth.health_service.line,action_required:"
 msgid ""
 "This optional field is used in the context of validation on the service "
 "line. Mark it if there is any administrative or other type that needs action"
-msgstr ""
+msgstr "此可选字段用于服务明细验证相关内容，如果需要有任何管理或其他类型的动作，请标"
+"记它"
 
 msgctxt "help:gnuhealth.health_service.line,appointment:"
 msgid ""
@@ -136,7 +142,7 @@ msgstr "输入或者选择与此评估相关的预约日期或预约编号"
 
 msgctxt "help:gnuhealth.patient.evaluation,service:"
 msgid "Service document associated to this evaluation"
-msgstr ""
+msgstr "与此项评估关联的服务文档"
 
 msgctxt "help:gnuhealth.prescription.order,service:"
 msgid "Service document associated to this prescription"
@@ -152,11 +158,11 @@ msgstr "健康服务"
 
 msgctxt "model:gnuhealth.sequences.health_service_sequence,name:"
 msgid "Health Service Request Sequence setup"
-msgstr ""
+msgstr "健康服务申请序列设置"
 
 msgctxt "model:gnuhealth.service.invoice.init,name:"
 msgid "Create Service Invoice Init"
-msgstr "创建初始的服务凭证"
+msgstr "创建服务凭证初始化"
 
 msgctxt "model:ir.action,name:act_create_health_service_invoice"
 msgid "Create Health Service Invoice"
@@ -164,7 +170,7 @@ msgstr "创建健康服务凭证"
 
 msgctxt "model:ir.action,name:act_invoice_related_form1"
 msgid "Related Invoice"
-msgstr "服务相关凭证"
+msgstr "相关服务凭证"
 
 msgctxt "model:ir.action,name:act_service_form1"
 msgid "Services"
@@ -176,7 +182,7 @@ msgstr "健康服务"
 
 msgctxt "model:ir.action,name:gnuhealth_action_health_service_invoices"
 msgid "Service invoices (last month)"
-msgstr "已开凭证列表"
+msgstr "服务凭证列表(上个月)"
 
 msgctxt "model:ir.action,name:report_health_services_report"
 msgid "Services Report"
@@ -199,27 +205,27 @@ msgstr "已开凭证"
 
 msgctxt "model:ir.message,text:msg_no_account_receivable"
 msgid "No Account Receivable defined in party or in default configuration"
-msgstr ""
+msgstr "Party 或者默认设置中没有定义接收账户"
 
 msgctxt "model:ir.message,text:msg_no_invoice_address"
 msgid "No invoice adress"
-msgstr ""
+msgstr "没有凭证地址"
 
 msgctxt "model:ir.message,text:msg_no_payment_term"
 msgid "Need a user payment term"
-msgstr ""
+msgstr "需要用户付款条件"
 
 msgctxt "model:ir.message,text:msg_no_product_associated"
 msgid "You need to associate a product"
-msgstr ""
+msgstr "需要关联到某个产品"
 
 msgctxt "model:ir.message,text:msg_no_service_associated"
 msgid "You need to associate a service"
-msgstr ""
+msgstr "需要关联到某个服务"
 
 msgctxt "model:ir.message,text:msg_service_already_invoiced"
 msgid "This service has been invoiced. You can no longer modify service lines"
-msgstr ""
+msgstr "此服务已开凭证，不允许再更改服务明细"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_health_service"
 msgid "Health Service"
@@ -231,7 +237,7 @@ msgstr "健康服务"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_health_service_invoices_menu"
 msgid "Service invoices (last month)"
-msgstr "已开凭证列表"
+msgstr "服务凭证列表(上个月)"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_health_service_menu"
 msgid "Health services"
@@ -243,27 +249,24 @@ msgstr "健康服务"
 
 msgctxt "model:product.category,name:product_category_medical_evaluation"
 msgid "Medical Evaluation"
-msgstr ""
+msgstr "医学评估"
 
 msgctxt "model:product.template,name:product_template_medical_services"
 msgid "Medical evaluation service"
-msgstr ""
+msgstr "医学评估服务"
 
 msgctxt "model:res.group,name:group_health_services_admin"
 msgid "Health Services Administration"
 msgstr "Health 服务管理"
 
-#, fuzzy
 msgctxt "report:health_services.report:"
 msgid "-"
 msgstr "-"
 
-#, fuzzy
 msgctxt "report:health_services.report:"
 msgid "//"
 msgstr "//"
 
-#, fuzzy
 msgctxt "report:health_services.report:"
 msgid ":"
 msgstr "："
@@ -276,7 +279,6 @@ msgctxt "report:health_services.report:"
 msgid "Address"
 msgstr "地址"
 
-#, fuzzy
 msgctxt "report:health_services.report:"
 msgid "D"
 msgstr "D"
@@ -355,14 +357,13 @@ msgstr "日期"
 
 msgctxt "report:health_services.report:"
 msgid "e"
-msgstr ""
+msgstr "e"
 
 #, fuzzy
 msgctxt "report:health_services.report:"
 msgid "mail"
 msgstr "mail"
 
-#, fuzzy
 msgctxt "report:health_services.report:"
 msgid "mail"
 msgstr "mail"
@@ -383,23 +384,21 @@ msgctxt "view:gnuhealth.health_service:"
 msgid "Set to Draft"
 msgstr "设为草案"
 
-#, fuzzy
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Services"
 msgstr "服务"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Transfer                     this evaluation to services?"
-msgstr ""
+msgstr "需要将此项评估转化为服务吗？"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Update Service document with this evaluation"
-msgstr ""
+msgstr "按照当前评估的信息更新服务文档"
 
-#, fuzzy
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Update Services"
-msgstr "依照处方更新服务"
+msgstr "更新服务"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Transfer medicaments to services ?"
