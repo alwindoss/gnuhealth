@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_orthanc/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.imaging.test.result,studies:"
 msgid "Studies"
@@ -256,7 +265,7 @@ msgstr "Orthanc 患者"
 
 msgctxt "model:ir.action,name:act_orthanc_server_view"
 msgid "Servers"
-msgstr "服务器列表"
+msgstr "Orthanc 服务器列表"
 
 msgctxt "model:ir.action,name:act_orthanc_study_view"
 msgid "Studies"
@@ -280,11 +289,11 @@ msgstr "添加 Orthanc 服务器"
 
 msgctxt "model:ir.ui.menu,name:orthanc_config_menu"
 msgid "Orthanc"
-msgstr "Orthanc"
+msgstr "Orthanc 集成"
 
 msgctxt "model:ir.ui.menu,name:orthanc_menu"
 msgid "Orthanc"
-msgstr "Orthanc"
+msgstr "Orthanc 集成"
 
 msgctxt "model:ir.ui.menu,name:orthanc_menu_patient_view"
 msgid "Patients"
@@ -296,7 +305,7 @@ msgstr "Orthanc 检查"
 
 msgctxt "model:ir.ui.menu,name:orthanc_server_menu"
 msgid "Servers"
-msgstr "服务器列表"
+msgstr "Orthanc 服务器列表"
 
 msgctxt "view:gnuhealth.imaging.test.result:"
 msgid "Studies"
