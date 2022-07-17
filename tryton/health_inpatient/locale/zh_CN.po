@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-16 13:18+0000\n"
-"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"PO-Revision-Date: 2022-07-17 08:31+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_inpatient/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -379,17 +379,15 @@ msgctxt "field:gnuhealth.sequences,inpatient_registration_sequence:"
 msgid "Inpatient Registration Sequence"
 msgstr "住院序列"
 
-#, fuzzy
 msgctxt ""
 "field:gnuhealth.sequences.inpatient_meal_order_sequence,inpatient_meal_order_sequence:"
 msgid "Inpatient Meal order Sequence"
-msgstr "住院用餐序列"
+msgstr "住院订餐序列"
 
-#, fuzzy
 msgctxt ""
 "field:gnuhealth.sequences.inpatient_registration_sequence,inpatient_registration_sequence:"
 msgid "Inpatient Registration Sequence"
-msgstr "住院序列"
+msgstr "入院序列"
 
 msgctxt "help:gnuhealth.appointment,inpatient_registration_code:"
 msgid "Enter the patient hospitalization code"
@@ -890,11 +888,11 @@ msgstr "患者入院历史"
 
 msgctxt "model:gnuhealth.sequences.inpatient_meal_order_sequence,name:"
 msgid "Patient Evaluation Sequence setup"
-msgstr ""
+msgstr "患者评估序列设置"
 
 msgctxt "model:gnuhealth.sequences.inpatient_registration_sequence,name:"
 msgid "Ambulatory Care Sequences setup"
-msgstr ""
+msgstr "门诊护理序列设置"
 
 msgctxt "model:ir.action,name:act_create_inpatient_evaluation"
 msgid "Create Patient Evaluation"
@@ -977,39 +975,39 @@ msgstr "住院"
 
 msgctxt "model:ir.message,text:msg_bed_is_not_available"
 msgid "Bed is not available"
-msgstr ""
+msgstr "床位不可用"
 
 msgctxt "model:ir.message,text:msg_destination_bed_not_available"
 msgid "Destination bed is not available"
-msgstr ""
+msgstr "目标床位不可用"
 
 msgctxt "model:ir.message,text:msg_discharge_befor_admission"
 msgid "The Discharge date must later than the admission"
-msgstr ""
+msgstr "出院日期必须晚于入院日期"
 
 msgctxt "model:ir.message,text:msg_discharge_reason_needed"
 msgid "Admission and Discharge reasons as well as Discharge Dx are needed"
-msgstr ""
+msgstr "需要入院和出院原因以及出院诊断"
 
 msgctxt "model:ir.message,text:msg_many_records_chosen"
 msgid "You have chosen more than 1 record. Please choose only one"
-msgstr ""
+msgstr "不允许选择多条记录"
 
 msgctxt "model:ir.message,text:msg_need_timezone"
 msgid "Need timezone"
-msgstr ""
+msgstr "需要时区"
 
 msgctxt "model:ir.message,text:msg_no_associated_health_professional"
 msgid "There is no health professional associated to this user"
-msgstr ""
+msgstr "这个用户没有与医务人员关联"
 
 msgctxt "model:ir.message,text:msg_no_record_selected"
 msgid "You need to select one record"
-msgstr ""
+msgstr "需要选择一条记录"
 
 msgctxt "model:ir.message,text:msg_special_meal_needs"
 msgid "This patient has special meal needs"
-msgstr ""
+msgstr "此病人有特殊的饮食需要"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_inpatient_meal_order"
 msgid "Inpatient Meal Order"
