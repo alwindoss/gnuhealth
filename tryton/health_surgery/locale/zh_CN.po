@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-18 04:40+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_surgery/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.operation,name:"
 msgid "Surgery"
@@ -66,11 +75,10 @@ msgctxt "field:gnuhealth.sequences,surgery_code_sequence:"
 msgid "Surgery code sequence"
 msgstr "手术序列"
 
-#, fuzzy
 msgctxt ""
 "field:gnuhealth.sequences.surgery_code_sequence,surgery_code_sequence:"
 msgid "Surgery code sequence"
-msgstr "手术序列"
+msgstr "手术代码序列"
 
 msgctxt "field:gnuhealth.surgery,admission:"
 msgid "Admission"
@@ -429,7 +437,7 @@ msgstr "改良心脏风险指数"
 
 msgctxt "model:gnuhealth.sequences.surgery_code_sequence,name:"
 msgid "Health Service Request Sequence setup"
-msgstr ""
+msgstr "健康服务申请序列设置"
 
 msgctxt "model:gnuhealth.surgery,name:"
 msgid "Surgery"
@@ -486,23 +494,23 @@ msgstr "已签署"
 
 msgctxt "model:ir.message,text:msg_end_date_before_start"
 msgid "End time \"%(end_date)s\" BEFORE surgery date \"%(surgery_date)s\""
-msgstr ""
+msgstr "结束时间 \"%(end_date)s\" 在手术时间 \"%(surgery_date)s\" 之前"
 
 msgctxt "model:ir.message,text:msg_or_and_time_needed"
 msgid ""
 "Operating Room and estimated end time are needed in order to confirm the "
 "surgery"
-msgstr ""
+msgstr "确认手术需要手术室和估计结束时间"
 
 msgctxt "model:ir.message,text:msg_or_is_not_available"
 msgid "Operating Room is not available"
-msgstr ""
+msgstr "手术室不可用"
 
 msgctxt "model:ir.message,text:msg_surgery_is_done"
 msgid ""
 "This surgery is at state Done and has been signed. You can no longer modify "
 "it."
-msgstr ""
+msgstr "当前手术已完成并签字，不可以再更改。"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_surgery_code"
 msgid "Surgery"
@@ -528,12 +536,10 @@ msgctxt "report:surgery:"
 msgid "(ID"
 msgstr "(ID"
 
-#, fuzzy
 msgctxt "report:surgery:"
 msgid ")"
 msgstr ")"
 
-#, fuzzy
 msgctxt "report:surgery:"
 msgid ","
 msgstr ","
@@ -566,7 +572,6 @@ msgid ""
 "purposes"
 msgstr "等级6：脑死亡患者，器官可被移除，用于捐助"
 
-#, fuzzy
 msgctxt "report:surgery:"
 msgid ":"
 msgstr "："
@@ -771,7 +776,7 @@ msgstr "正在手术"
 
 msgctxt "report:surgery:"
 msgid "e :"
-msgstr ""
+msgstr " "
 
 msgctxt "report:surgery:"
 msgid "i"
@@ -779,7 +784,7 @@ msgstr ""
 
 msgctxt "report:surgery:"
 msgid "ntravenous access and fluids availabl"
-msgstr ""
+msgstr "静脉注射和液体可用"
 
 msgctxt "selection:gnuhealth.rcri,rcri_class:"
 msgid "I"
@@ -989,14 +994,13 @@ msgctxt "view:gnuhealth.surgery:"
 msgid "Preoperative checklist"
 msgstr "术前检查表"
 
-#, fuzzy
 msgctxt "view:gnuhealth.surgery:"
 msgid "Procedures"
-msgstr "医学操作"
+msgstr "手术"
 
 msgctxt "view:gnuhealth.surgery:"
 msgid "Risk Assessment"
-msgstr ""
+msgstr "风险评估"
 
 msgctxt "view:gnuhealth.surgery:"
 msgid "Sign"
@@ -1018,14 +1022,13 @@ msgctxt "view:gnuhealth.surgery:"
 msgid "Start the surgery ?"
 msgstr "开始手术?"
 
-#, fuzzy
 msgctxt "view:gnuhealth.surgery:"
 msgid "Supplies"
 msgstr "外科用品"
 
 msgctxt "view:gnuhealth.surgery:"
 msgid "Team"
-msgstr ""
+msgstr "团队"
 
 msgctxt "view:gnuhealth.surgery:"
 msgid "Time"
