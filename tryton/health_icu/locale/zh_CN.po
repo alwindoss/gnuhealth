@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_icu/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.icu.apache2,aado2:"
 msgid "A-a DO2"
@@ -527,12 +536,12 @@ msgstr "ICU患者信息"
 
 msgctxt "model:ir.message,text:msg_patient_already_in_icu"
 msgid "Our records indicate that the patient is already in ICU"
-msgstr ""
+msgstr "系统记录显示，此患者已经在ICU"
 
 msgctxt "model:ir.message,text:msg_patient_already_on_mv"
 msgid ""
 "Our records indicate that the patient is already on Mechanical Ventilation"
-msgstr ""
+msgstr "系统记录显示，此患者已经上呼吸机"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_icu_menu"
 msgid "Intensive Care"
