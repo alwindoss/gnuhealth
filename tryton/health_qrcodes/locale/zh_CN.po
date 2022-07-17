@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_qrcodes/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.appointment,qr:"
 msgid "QR Code"
@@ -136,7 +145,7 @@ msgstr "名称"
 
 msgctxt "report:newborn.qrcard:"
 msgid "PU"
-msgstr ""
+msgstr "PU"
 
 msgctxt "report:newborn.qrcard:"
 msgid "and"
@@ -148,7 +157,7 @@ msgstr "厘米"
 
 msgctxt "report:newborn.qrcard:"
 msgid "gr"
-msgstr ""
+msgstr "gr"
 
 msgctxt "report:patient.qrcard:"
 msgid ":"
