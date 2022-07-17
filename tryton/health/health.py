@@ -4519,7 +4519,7 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
 
     user_id = fields.Many2One('res.user', 'Last Changed by', readonly=True)
     healthprof = fields.Many2One(
-        'gnuhealth.healthprofessional', 'Health Prof',
+        'gnuhealth.healthprofessional', 'Initiated by',
         help="Health professional that initiates the evaluation."
         "This health professional might or might not be the same that"
         " signs and finishes the evaluation."
@@ -4527,7 +4527,7 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
         ", when it becomes read-only", readonly=True)
 
     signed_by = fields.Many2One(
-        'gnuhealth.healthprofessional', 'Health Prof', readonly=True,
+        'gnuhealth.healthprofessional', 'Signed by', readonly=True,
         states={'invisible': Equal(Eval('state'), 'in_progress')},
         help="Health Professional that finished the patient evaluation")
 
