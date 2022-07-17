@@ -1,18 +1,24 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-18 04:39+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_webdav3_server/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
-#, fuzzy
 msgctxt "field:ir.attachment,path:"
 msgid "Path"
 msgstr "路径"
 
-#, fuzzy
 msgctxt "field:ir.attachment,shares:"
 msgid "Shares"
 msgstr "共享"
 
-#, fuzzy
 msgctxt "field:ir.attachment,url:"
 msgid "URL"
 msgstr "URL"
@@ -22,20 +28,17 @@ msgctxt "field:webdav.collection,childs:"
 msgid "Children"
 msgstr "子账户"
 
-#, fuzzy
 msgctxt "field:webdav.collection,complete_name:"
 msgid "Complete Name"
 msgstr "全称"
 
-#, fuzzy
 msgctxt "field:webdav.collection,domain:"
 msgid "Domain"
 msgstr "域"
 
-#, fuzzy
 msgctxt "field:webdav.collection,model:"
 msgid "Model"
-msgstr "型号"
+msgstr "模型"
 
 #, fuzzy
 msgctxt "field:webdav.collection,name:"
@@ -47,7 +50,6 @@ msgctxt "field:webdav.collection,parent:"
 msgid "Parent"
 msgstr "上级"
 
-#, fuzzy
 msgctxt "field:webdav.share,expiration_date:"
 msgid "Expiration Date"
 msgstr "过期日期"
@@ -57,17 +59,14 @@ msgctxt "field:webdav.share,key:"
 msgid "Key"
 msgstr "密钥"
 
-#, fuzzy
 msgctxt "field:webdav.share,note:"
 msgid "Note"
 msgstr "注释"
 
-#, fuzzy
 msgctxt "field:webdav.share,path:"
 msgid "Path"
 msgstr "路径"
 
-#, fuzzy
 msgctxt "field:webdav.share,url:"
 msgid "URL"
 msgstr "URL"
@@ -129,7 +128,7 @@ msgstr ""
 
 msgctxt "model:webdav.share,name:"
 msgid "Share"
-msgstr ""
+msgstr "共享"
 
 msgctxt "view:ir.attachment:"
 msgid "WebDAV"
