@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_ntd_chagas/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.chagas_du_survey,bugtraps:"
 msgid "Bug traps"
@@ -86,11 +95,10 @@ msgctxt "field:gnuhealth.sequences,chagas_du_survey_sequence:"
 msgid "Chagas DU Survey Sequence"
 msgstr "美洲锥虫病调查序列"
 
-#, fuzzy
 msgctxt ""
 "field:gnuhealth.sequences.chagas_du_survey_sequence,chagas_du_survey_sequence:"
 msgid "Chagas DU Survey Sequence"
-msgstr "美洲锥虫病调查序列"
+msgstr "美洲锥虫病现住址调查序列"
 
 msgctxt "help:gnuhealth.chagas_du_survey,bugtraps:"
 msgid "The DU has traps to detect triatomines"
@@ -237,7 +245,7 @@ msgstr "美洲锥虫病病媒接种诊断"
 
 msgctxt "model:gnuhealth.sequences.chagas_du_survey_sequence,name:"
 msgid "Chagas DU Survey Sequences setup"
-msgstr ""
+msgstr "美洲锥虫病现住址调查序列设置"
 
 msgctxt "model:ir.action,name:act_chagas_du_survey_form"
 msgid "Chagas DU Survey"
@@ -247,7 +255,6 @@ msgctxt "model:ir.sequence,name:"
 msgid "Chagas DU Survey"
 msgstr "美洲锥虫病现住址调查"
 
-#, fuzzy
 msgctxt "model:ir.sequence,name:seq_gnuhealth_chagas_du_survey"
 msgid "Chagas DU Survey"
 msgstr "美洲锥虫病现住址调查"
@@ -256,7 +263,6 @@ msgctxt "model:ir.sequence.type,name:"
 msgid "Chagas DU Survey"
 msgstr "美洲锥虫病现住址调查"
 
-#, fuzzy
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_chagas_du_survey"
 msgid "Chagas DU Survey"
 msgstr "美洲锥虫病现住址调查"
@@ -329,9 +335,8 @@ msgstr ""
 
 msgctxt "view:gnuhealth.chagas_du_survey:"
 msgid "Areas to Improve"
-msgstr ""
+msgstr "需要改进的领域"
 
-#, fuzzy
 msgctxt "view:gnuhealth.chagas_du_survey:"
 msgid "Notes"
 msgstr "注意事项"
@@ -342,4 +347,4 @@ msgstr "滋生美洲锥虫"
 
 msgctxt "view:gnuhealth.chagas_du_survey:"
 msgid "Preventive Measures"
-msgstr ""
+msgstr "预防性措施"
