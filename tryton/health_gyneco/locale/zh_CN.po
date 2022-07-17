@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_gyneco/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.patient,abortions:"
 msgid "Abortions"
@@ -960,7 +969,7 @@ msgstr "产科史"
 
 msgctxt "model:ir.message,text:msg_patient_already_pregnant"
 msgid "Our records indicate that the patient is already pregnant"
-msgstr ""
+msgstr "系统记录表明此患者已怀孕"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_obstetrics"
 msgid "Obstetrics"
