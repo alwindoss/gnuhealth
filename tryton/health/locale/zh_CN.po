@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-17 05:59+0000\n"
-"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"PO-Revision-Date: 2022-07-18 04:39+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -8007,7 +8007,7 @@ msgstr "已爽约"
 
 msgctxt "model:ir.message,text:msg_birth_cert_date_mismatch"
 msgid "SM-CORE-0013: The date on the Party differs from the certificate"
-msgstr ""
+msgstr "SM-CORE-0013: 参与人页面记录的出生日期与出生证明页面记录的出生日期不一致"
 
 msgctxt "model:ir.message,text:msg_can_not_modify_vaccination"
 msgid ""
@@ -8021,57 +8021,64 @@ msgstr "SM-CORE-0006：验证并检查处方药物在怀孕期间的安全性"
 
 msgctxt "model:ir.message,text:msg_dup_official_name"
 msgid "SM-CORE-0011: The person can have only one official name"
-msgstr ""
+msgstr "SM-CORE-0011: 一个人只允许有一个官方名字"
 
 msgctxt "model:ir.message,text:msg_end_evaluation_time_before_start"
 msgid ""
 "SM-CORE-0008: End time \"%(evaluation_endtime)s\" BEFORE evaluation start "
 "\"%(evaluation_start)s\""
 msgstr ""
+"SM-CORE-0008: 结束时间 \"%(evaluation_endtime)s\" 在评估开始时间 \""
+"%(evaluation_start)s\" 之前"
 
 msgctxt "model:ir.message,text:msg_end_treatment_before_start"
 msgid ""
 "SM-CORE-0003: The Treatment END DATE \"%(date_stop_treatment)s\" is BEFORE "
 "the start date \"%(date_start_treatment)s\""
 msgstr ""
+"SM-CORE-0003: 治疗结束时间 \"%(date_stop_treatment)s\" 在开始时间 \""
+"%(date_start_treatment)s\" 之前"
 
 msgctxt "model:ir.message,text:msg_fed_account_mismatch"
 msgid "SM-CORE-0012: The account differs from the person federation account"
-msgstr ""
+msgstr "SM-CORE-0012: 这个帐号与 GNU health 健康信息平台上的个人帐号不同"
 
 msgctxt "model:ir.message,text:msg_healed_before_dx"
 msgid ""
 "SM-CORE-0002: The HEALED date \"%(healed_date)s\" is BEFORE DIAGNOSED DATE "
 "\"%(diagnosed_date)s\"!"
-msgstr ""
+msgstr "SM-CORE-0002: 康复日期 \"%(healed_date)s\" 在诊断日期 \"%(diagnosed_date)s\" "
+"之前!"
 
 msgctxt "model:ir.message,text:msg_med_end_date_before_start"
 msgid ""
 "SM-CORE-0004: The Medication END DATE \"%(end_treatment)s\" is BEFORE the "
 "start date \"%(start_treatment)s\"!"
 msgstr ""
+"SM-CORE-0004: 用药结束日期 \"%(end_treatment)s\" 在开始日期 \""
+"%(start_treatment)s\" 之前!"
 
 msgctxt "model:ir.message,text:msg_must_be_a_person"
 msgid ""
 "SM-CORE-0010: The Person field must be set if the party is a health "
 "professional or a patient"
-msgstr ""
+msgstr "SM-CORE-0010: 如果当前参与者是一个医务人员或者患者，那么 Person 字段必须设置"
 
 msgctxt "model:ir.message,text:msg_next_dose_before_first"
 msgid "SM-CORE-0005: The vaccine next dose is BEFORE the first one!"
-msgstr ""
+msgstr "SM-CORE-0005: 疫苗下一剂在第一剂之前!"
 
 msgctxt "model:ir.message,text:msg_no_appointment_selected"
 msgid "SM-CORE-0009: You need to select one appointment"
-msgstr ""
+msgstr "SM-CORE-0009: 需要选择一个预约"
 
 msgctxt "model:ir.message,text:msg_no_associated_health_professional"
 msgid "SM-CORE-0007: There is no health professional associated to this user"
-msgstr ""
+msgstr "SM-CORE-0007: 当前用户没有关联到某个医务人员"
 
 msgctxt "model:ir.message,text:msg_wrong_date_of_birth"
 msgid "SM-CORE-0001: Wrong date of birth for a living person"
-msgstr ""
+msgstr "SM-CORE-0001: 对活人来说，这个出生日期不对"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_appointment"
 msgid "Appointment"
@@ -8371,7 +8378,7 @@ msgstr "Health 社会工作者"
 
 msgctxt "report:appointment.receipt:"
 msgid "#"
-msgstr ""
+msgstr "#"
 
 msgctxt "report:appointment.receipt:"
 msgid ","
@@ -8446,7 +8453,7 @@ msgstr "剂量 #"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "FOR SCHEDULE"
-msgstr ""
+msgstr "时间表"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Female"
@@ -8488,7 +8495,7 @@ msgctxt "report:gnuhealth.immunization_status_report:"
 msgid ""
 "Showing only the immunization status corresponding to the person age and the"
 " selected schedule"
-msgstr ""
+msgstr "仅显示与此人年龄和所选时间表相对应的免疫状态"
 
 msgctxt "report:gnuhealth.immunization_status_report:"
 msgid "Status"
@@ -8552,7 +8559,7 @@ msgstr "体质指数(BMI)"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "BP : (Sys / dias)"
-msgstr ""
+msgstr "血压: (收缩压 / 舒张压)"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Chief Complaint"
@@ -8602,10 +8609,9 @@ msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Evaluation Digital Signature"
 msgstr "评估数字签名"
 
-#, fuzzy
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "GCS"
-msgstr "格拉斯哥昏迷评分表"
+msgstr "格拉斯哥评分"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Heart Rate"
@@ -8633,7 +8639,7 @@ msgstr "婚姻状态"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "OSAT"
-msgstr ""
+msgstr "血氧饱和度"
 
 msgctxt "report:gnuhealth.patient_evaluation:"
 msgid "Occupation :"
@@ -8781,7 +8787,7 @@ msgstr "患者"
 
 msgctxt "report:patient.conditions_history:"
 msgid "PU"
-msgstr ""
+msgstr "PU"
 
 msgctxt "report:patient.conditions_history:"
 msgid "Print Date :"
@@ -8889,7 +8895,7 @@ msgstr "患者用药史"
 
 msgctxt "report:patient.medication:"
 msgid "PU"
-msgstr ""
+msgstr "PU"
 
 msgctxt "report:patient.medication:"
 msgid "Patient :"
@@ -9143,7 +9149,7 @@ msgstr "患者"
 
 msgctxt "report:patient.vaccination:"
 msgid "PU"
-msgstr ""
+msgstr "PU"
 
 msgctxt "report:patient.vaccination:"
 msgid "Patient"
@@ -9331,13 +9337,12 @@ msgstr "需要时使用"
 
 msgctxt "report:prescription.order:"
 msgid "e"
-msgstr ""
+msgstr "e"
 
 msgctxt "report:prescription.order:"
 msgid "mail"
 msgstr "mail"
 
-#, fuzzy
 msgctxt "report:prescription.order:"
 msgid "s"
 msgstr "s"
@@ -10441,7 +10446,7 @@ msgstr "欺凌"
 
 msgctxt "selection:gnuhealth.pol,social_context:"
 msgid "Early life development"
-msgstr ""
+msgstr "早期生命发展"
 
 msgctxt "selection:gnuhealth.pol,social_context:"
 msgid "Education"
@@ -10657,7 +10662,7 @@ msgstr "未披露"
 
 msgctxt "selection:party.party,gender:"
 msgid "Non-binary"
-msgstr ""
+msgstr "非二元性别"
 
 msgctxt "selection:party.party,gender:"
 msgid "Other"
@@ -10949,7 +10954,7 @@ msgstr "治疗"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Administrative"
-msgstr ""
+msgstr "管理"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Anthropometry"
@@ -10985,7 +10990,7 @@ msgstr "患者离院/ 结束此次评估"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Dx and Procedures"
-msgstr ""
+msgstr "诊断和操作"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Glasgow Coma Scale"
