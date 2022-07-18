@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-19 00:47+0000\n"
+"PO-Revision-Date: 2022-07-19 02:22+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_dentistry/zh_Hans/>\n"
@@ -17,19 +17,19 @@ msgstr "远中面"
 
 msgctxt "field:gnuhealth.dentistry.load.procedure.start,include_primary:"
 msgid "Include Primary"
-msgstr ""
+msgstr "包含乳牙"
 
 msgctxt "field:gnuhealth.dentistry.load.procedure.start,lingual:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "field:gnuhealth.dentistry.load.procedure.start,mesial:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "field:gnuhealth.dentistry.load.procedure.start,occlusal:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "field:gnuhealth.dentistry.load.procedure.start,procedure:"
 msgid "Procedure"
@@ -37,7 +37,7 @@ msgstr "手术"
 
 msgctxt "field:gnuhealth.dentistry.load.procedure.start,root:"
 msgid "Root"
-msgstr ""
+msgstr "牙根"
 
 msgctxt "field:gnuhealth.dentistry.load.procedure.start,tooth11:"
 msgid "11"
@@ -249,7 +249,7 @@ msgstr "85"
 
 msgctxt "field:gnuhealth.dentistry.load.procedure.start,vestibular:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "field:gnuhealth.dentistry.procedure,code:"
 msgid "Code"
@@ -565,7 +565,7 @@ msgstr "I"
 
 msgctxt "field:gnuhealth.dentistry.set.odontogram.start,include_primary:"
 msgid "Include Primary"
-msgstr ""
+msgstr "包含乳牙"
 
 msgctxt "field:gnuhealth.dentistry.set.odontogram.start,l31:"
 msgid "L"
@@ -1545,19 +1545,19 @@ msgstr "日期"
 
 msgctxt "field:gnuhealth.dentistry.treatment.procedure,distal:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "field:gnuhealth.dentistry.treatment.procedure,lingual:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "field:gnuhealth.dentistry.treatment.procedure,mesial:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "field:gnuhealth.dentistry.treatment.procedure,occlusal:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "field:gnuhealth.dentistry.treatment.procedure,procedure:"
 msgid "Procedure"
@@ -1565,7 +1565,7 @@ msgstr "牙科手术"
 
 msgctxt "field:gnuhealth.dentistry.treatment.procedure,root:"
 msgid "Root"
-msgstr ""
+msgstr "牙根"
 
 msgctxt "field:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "Tooth"
@@ -1577,7 +1577,7 @@ msgstr "治疗"
 
 msgctxt "field:gnuhealth.dentistry.treatment.procedure,vestibular:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "field:gnuhealth.patient,dental_schema:"
 msgid "Dental Schema"
@@ -1593,43 +1593,43 @@ msgstr "治疗"
 
 msgctxt "field:gnuhealth.patient,dmft_index:"
 msgid "DMFT Index"
-msgstr ""
+msgstr "龋失补指数"
 
 msgctxt "field:gnuhealth.patient,dmft_index_primary:"
 msgid "dmft index"
-msgstr ""
+msgstr "龋失补指数"
 
 msgctxt "field:gnuhealth.patient,teeth1:"
 msgid "Quadrant 1"
-msgstr ""
+msgstr "部位1"
 
 msgctxt "field:gnuhealth.patient,teeth2:"
 msgid "Quadrant 2"
-msgstr ""
+msgstr "部位2"
 
 msgctxt "field:gnuhealth.patient,teeth3:"
 msgid "Quadrant 3"
-msgstr ""
+msgstr "部位3"
 
 msgctxt "field:gnuhealth.patient,teeth4:"
 msgid "Quadrant 4"
-msgstr ""
+msgstr "部位4"
 
 msgctxt "field:gnuhealth.patient,teeth5:"
 msgid "Quadrant 5"
-msgstr ""
+msgstr "部位5"
 
 msgctxt "field:gnuhealth.patient,teeth6:"
 msgid "Quadrant 6"
-msgstr ""
+msgstr "部位6"
 
 msgctxt "field:gnuhealth.patient,teeth7:"
 msgid "Quadrant 7"
-msgstr ""
+msgstr "部位7"
 
 msgctxt "field:gnuhealth.patient,teeth8:"
 msgid "Quadrant 8"
-msgstr ""
+msgstr "部位8"
 
 msgctxt "field:gnuhealth.patient,use_primary_schema:"
 msgid "Primary Schema"
@@ -1641,1043 +1641,1043 @@ msgstr "请使用大写字母，不要加空格"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d11:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d12:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d13:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d14:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d15:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d16:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d17:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d18:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d21:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d22:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d23:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d24:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d25:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d26:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d27:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d28:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d31:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d32:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d33:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d34:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d35:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d36:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d37:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d38:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d41:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d42:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d43:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d44:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d45:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d46:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d47:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d48:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d51:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d52:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d53:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d54:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d55:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d61:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d62:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d63:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d64:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d65:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d71:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d72:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d73:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d74:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d75:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d81:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d82:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d83:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d84:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,d85:"
 msgid "Distal"
-msgstr ""
+msgstr "远中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i11:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i12:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i13:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i21:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i22:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i23:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i31:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i32:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i33:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i41:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i42:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i43:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i51:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i52:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i53:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i61:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i62:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i63:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i71:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i72:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i73:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i81:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i82:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,i83:"
 msgid "Incisal"
-msgstr ""
+msgstr "切端"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l31:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l32:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l33:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l34:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l35:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l36:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l37:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l38:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l41:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l42:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l43:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l44:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l45:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l46:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l47:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l48:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l71:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l72:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l73:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l74:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l75:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l81:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l82:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l83:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l84:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,l85:"
 msgid "Lingual"
-msgstr ""
+msgstr "舌面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m11:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m12:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m13:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m14:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m15:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m16:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m17:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m18:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m21:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m22:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m23:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m24:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m25:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m26:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m27:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m28:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m31:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m32:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m33:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m34:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m35:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m36:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m37:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m38:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m41:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m42:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m43:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m44:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m45:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m46:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m47:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m48:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m51:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m52:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m53:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m54:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m55:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m61:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m62:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m63:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m64:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m65:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m71:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m72:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m73:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m74:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m75:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m81:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m82:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m83:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m84:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,m85:"
 msgid "Mesial"
-msgstr ""
+msgstr "近中面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o14:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o15:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o16:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o17:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o18:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o24:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o25:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o26:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o27:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o28:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o34:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o35:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o36:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o37:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o38:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o44:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o45:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o46:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o47:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o48:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o54:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o55:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o64:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o65:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o74:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o75:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o84:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,o85:"
 msgid "Occlusal"
-msgstr ""
+msgstr "牙合面"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p11:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p12:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p13:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p14:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p15:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p16:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p17:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p18:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p21:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p22:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p23:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p24:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p25:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p26:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p27:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p28:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p51:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p52:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p53:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p54:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p55:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p61:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p62:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p63:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p64:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,p65:"
 msgid "Palatine"
-msgstr ""
+msgstr "腭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v11:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v12:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v13:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v14:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v15:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v16:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v17:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v18:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v21:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v22:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v23:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v24:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v25:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v26:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v27:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v28:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v31:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v32:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v33:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v34:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v35:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v36:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v37:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v38:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v41:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v42:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v43:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v44:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v45:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v46:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v47:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v48:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v51:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v52:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v53:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v54:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v55:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v61:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v62:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v63:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v64:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v65:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v71:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v72:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v73:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v74:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v75:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v81:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v82:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v83:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v84:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.set.odontogram.start,v85:"
 msgid "Vestibular"
-msgstr ""
+msgstr "前庭"
 
 msgctxt "help:gnuhealth.dentistry.treatment,healthprof:"
 msgid "Health professional"
@@ -2693,7 +2693,7 @@ msgstr "完成治疗的医务人员"
 
 msgctxt "help:gnuhealth.patient,dmft_index_primary:"
 msgid "dmft index for primary teeth"
-msgstr ""
+msgstr "乳牙龋失补指数"
 
 msgctxt "help:gnuhealth.patient,use_primary_schema:"
 msgid "Use Primary Schema"
@@ -2765,31 +2765,31 @@ msgstr ""
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:"
 msgid "Dentistry Procedure"
-msgstr ""
+msgstr "牙科手术"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:10"
 msgid "Oral Examination"
-msgstr ""
+msgstr "口腔检查"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:11"
 msgid "Root Canal"
-msgstr ""
+msgstr "根管"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:12"
 msgid "Sealant"
-msgstr ""
+msgstr "封闭"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:13"
 msgid "Teeth Whitening"
-msgstr ""
+msgstr "牙齿美白"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:14"
 msgid "Veneer"
-msgstr ""
+msgstr "牙科贴面"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:15"
 msgid "Cleaning"
-msgstr ""
+msgstr "洗牙"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:16"
 msgid "Cleaning and topication with fluorine"
@@ -2797,36 +2797,35 @@ msgstr ""
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:2"
 msgid "Bonding"
-msgstr ""
+msgstr "粘接"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:3"
 msgid "Braces"
-msgstr ""
+msgstr "牙套"
 
-#, fuzzy
 msgctxt "model:gnuhealth.dentistry.procedure,name:4"
 msgid "Implant"
 msgstr "移植"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:5"
 msgid "Crowns"
-msgstr ""
+msgstr "牙冠"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:6"
 msgid "Extraction"
-msgstr ""
+msgstr "拔牙术"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:7"
 msgid "Dentures"
-msgstr ""
+msgstr "假牙"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:8"
 msgid "Filling"
-msgstr ""
+msgstr "补牙"
 
 msgctxt "model:gnuhealth.dentistry.procedure,name:9"
 msgid "Gum Surgery"
-msgstr ""
+msgstr "牙龈手术"
 
 msgctxt "model:gnuhealth.dentistry.set.odontogram.start,name:"
 msgid "Set Odontogram Start"
@@ -2914,7 +2913,7 @@ msgstr "牙科手术"
 
 msgctxt "report:health_dentistry.procedure.report:"
 msgid "DMFT Index:"
-msgstr ""
+msgstr "龋失补指数:"
 
 msgctxt "report:health_dentistry.procedure.report:"
 msgid "Date"
@@ -2958,1077 +2957,1072 @@ msgstr "状态"
 
 msgctxt "report:health_dentistry.procedure.report:"
 msgid "dmft index:"
-msgstr ""
+msgstr "龋失补指数:"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t11:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t11:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t11:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t11:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t12:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t12:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t12:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t12:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t13:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t13:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t13:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t13:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t14:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t14:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t14:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t14:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t15:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t15:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t15:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t15:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t16:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t16:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t16:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t16:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t17:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t17:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t17:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t17:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t18:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t18:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t18:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t18:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t21:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t21:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t21:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t21:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t22:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t22:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t22:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t22:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t23:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t23:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t23:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t23:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t24:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t24:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t24:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t24:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t25:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t25:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t25:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t25:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t26:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t26:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t26:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t26:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t27:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t27:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t27:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t27:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t28:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t28:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t28:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t28:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t31:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t31:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t31:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t31:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t32:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t32:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t32:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t32:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t33:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t33:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t33:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t33:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t34:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t34:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t34:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t34:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t35:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t35:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t35:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t35:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t36:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t36:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t36:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t36:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t37:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t37:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t37:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t37:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t38:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t38:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t38:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t38:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t41:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t41:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t41:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t41:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t42:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t42:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t42:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t42:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t43:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t43:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t43:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t43:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t44:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t44:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t44:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t44:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t45:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t45:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t45:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t45:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t46:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t46:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t46:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t46:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t47:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t47:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t47:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t47:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t48:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t48:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t48:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t48:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t51:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t51:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t51:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t51:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t52:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t52:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t52:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t52:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t53:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t53:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t53:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t53:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t54:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t54:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t54:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t54:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t55:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t55:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t55:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t55:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t61:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t61:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t61:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t61:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t62:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t62:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t62:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t62:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t63:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t63:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t63:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t63:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t64:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t64:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t64:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t64:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t65:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t65:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t65:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t65:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t71:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t71:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t71:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t71:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t72:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t72:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t72:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t72:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t73:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t73:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t73:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t73:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t74:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t74:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t74:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t74:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t75:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t75:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t75:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t75:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t81:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t81:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t81:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t81:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t82:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t82:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t82:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t82:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t83:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t83:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t83:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t83:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t84:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t84:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t84:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t84:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t85:"
 msgid "Decayed"
-msgstr ""
+msgstr "龋齿"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t85:"
 msgid "Filled"
-msgstr ""
+msgstr "已补牙"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t85:"
 msgid "For Extraction"
-msgstr ""
+msgstr "已拔除"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t85:"
 msgid "Missing"
-msgstr ""
+msgstr "脱失"
 
-#, fuzzy
 msgctxt "selection:gnuhealth.dentistry.treatment,state:"
 msgid "Done"
 msgstr "已完成"
 
 msgctxt "selection:gnuhealth.dentistry.treatment,state:"
 msgid "Pending"
-msgstr ""
+msgstr "等待中"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "11"
-msgstr ""
+msgstr "11"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "12"
-msgstr ""
+msgstr "12"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "13"
-msgstr ""
+msgstr "13"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "14"
-msgstr ""
+msgstr "14"
 
-#, fuzzy
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "15"
 msgstr "15"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "16"
-msgstr ""
+msgstr "16"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "17"
-msgstr ""
+msgstr "17"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "18"
-msgstr ""
+msgstr "18"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "21"
-msgstr ""
+msgstr "21"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "22"
-msgstr ""
+msgstr "22"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "23"
-msgstr ""
+msgstr "23"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "24"
-msgstr ""
+msgstr "24"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "25"
-msgstr ""
+msgstr "25"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "26"
-msgstr ""
+msgstr "26"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "27"
-msgstr ""
+msgstr "27"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "28"
-msgstr ""
+msgstr "28"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "31"
-msgstr ""
+msgstr "31"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "32"
-msgstr ""
+msgstr "32"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "33"
-msgstr ""
+msgstr "33"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "34"
-msgstr ""
+msgstr "34"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "35"
-msgstr ""
+msgstr "35"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "36"
-msgstr ""
+msgstr "36"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "37"
-msgstr ""
+msgstr "37"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "38"
-msgstr ""
+msgstr "38"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "41"
-msgstr ""
+msgstr "41"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "42"
-msgstr ""
+msgstr "42"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "43"
-msgstr ""
+msgstr "43"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "44"
-msgstr ""
+msgstr "44"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "45"
-msgstr ""
+msgstr "45"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "46"
-msgstr ""
+msgstr "46"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "47"
-msgstr ""
+msgstr "47"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "48"
-msgstr ""
+msgstr "48"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "51"
-msgstr ""
+msgstr "51"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "52"
-msgstr ""
+msgstr "52"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "53"
-msgstr ""
+msgstr "53"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "54"
-msgstr ""
+msgstr "54"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "55"
-msgstr ""
+msgstr "55"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "61"
-msgstr ""
+msgstr "61"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "62"
-msgstr ""
+msgstr "62"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "63"
-msgstr ""
+msgstr "63"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "64"
-msgstr ""
+msgstr "64"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "65"
-msgstr ""
+msgstr "65"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "71"
-msgstr ""
+msgstr "71"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "72"
-msgstr ""
+msgstr "72"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "73"
-msgstr ""
+msgstr "73"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "74"
-msgstr ""
+msgstr "74"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "75"
-msgstr ""
+msgstr "75"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "81"
-msgstr ""
+msgstr "81"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "82"
-msgstr ""
+msgstr "82"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "83"
-msgstr ""
+msgstr "83"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "84"
-msgstr ""
+msgstr "84"
 
 msgctxt "selection:gnuhealth.dentistry.treatment.procedure,tooth:"
 msgid "85"
-msgstr ""
+msgstr "85"
 
 msgctxt "view:gnuhealth.dentistry.load.procedure.start:"
 msgid "    "
-msgstr ""
+msgstr "    。。。。    "
 
-#, fuzzy
 msgctxt "view:gnuhealth.dentistry.load.procedure.start:"
 msgid "Left"
 msgstr "左侧"
 
 msgctxt "view:gnuhealth.dentistry.load.procedure.start:"
 msgid "Primary"
-msgstr ""
+msgstr "乳牙"
 
-#, fuzzy
 msgctxt "view:gnuhealth.dentistry.load.procedure.start:"
 msgid "Procedure"
 msgstr "手术操作"
 
-#, fuzzy
 msgctxt "view:gnuhealth.dentistry.load.procedure.start:"
 msgid "Right"
 msgstr "右侧"
@@ -4039,9 +4033,8 @@ msgstr ""
 
 msgctxt "view:gnuhealth.dentistry.load.procedure.start:"
 msgid "Teeth"
-msgstr ""
+msgstr "牙齿"
 
-#, fuzzy
 msgctxt "view:gnuhealth.dentistry.set.odontogram.start:"
 msgid "Lower"
 msgstr "较低"
@@ -4056,44 +4049,40 @@ msgstr ""
 
 msgctxt "view:gnuhealth.dentistry.set.odontogram.start:"
 msgid "Upper"
-msgstr ""
+msgstr "上颚"
 
-#, fuzzy
 msgctxt "view:gnuhealth.dentistry.treatment:"
 msgid "Done"
 msgstr "已完成"
 
 msgctxt "view:gnuhealth.dentistry.treatment:"
 msgid "End this treatment"
-msgstr ""
+msgstr "此次治疗结束"
 
 msgctxt "view:gnuhealth.dentistry.treatment:"
 msgid "End this treatment?"
-msgstr ""
+msgstr "是否结束此次治疗?"
 
-#, fuzzy
 msgctxt "view:gnuhealth.dentistry.treatment:"
 msgid "Extra Info"
 msgstr "其它信息"
 
-#, fuzzy
 msgctxt "view:gnuhealth.dentistry.treatment:"
 msgid "Header"
 msgstr "页眉"
 
 msgctxt "view:gnuhealth.dentistry.treatment:"
 msgid "Load Procedure"
-msgstr ""
+msgstr "加载牙科手术"
 
 msgctxt "view:gnuhealth.dentistry.treatment:"
 msgid "Set Odontogram"
-msgstr ""
+msgstr "设置齿形图"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Dentistry"
-msgstr ""
+msgstr "牙科"
 
-#, fuzzy
 msgctxt "view:gnuhealth.patient:"
 msgid "Left"
 msgstr "左侧"
@@ -4102,26 +4091,24 @@ msgctxt "view:gnuhealth.patient:"
 msgid ""
 "Legends:     (*)  Decayed      (X)  Missing      (#)  Filled      (=)  For "
 "Extraction"
-msgstr ""
+msgstr "\"说明:     (*) 龋      (X) 缺      (#) 补      (=) 拔 \""
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Odontogram"
-msgstr ""
+msgstr "齿形图"
 
-#, fuzzy
 msgctxt "view:gnuhealth.patient:"
 msgid "Right"
 msgstr "右侧"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Set Odontogram"
-msgstr ""
+msgstr "设置齿形图"
 
 msgctxt "wizard_button:gnuhealth.dentistry.load.procedure,start,end:"
 msgid "Cancel"
 msgstr "取消"
 
-#, fuzzy
 msgctxt "wizard_button:gnuhealth.dentistry.load.procedure,start,load:"
 msgid "Load"
 msgstr "加载"
@@ -4130,7 +4117,6 @@ msgctxt "wizard_button:gnuhealth.dentistry.set.odontogram,start,end:"
 msgid "Cancel"
 msgstr "取消"
 
-#, fuzzy
 msgctxt "wizard_button:gnuhealth.dentistry.set.odontogram,start,set_:"
 msgid "Set"
 msgstr "设置"
