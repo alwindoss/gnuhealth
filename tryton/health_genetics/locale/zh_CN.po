@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-07-19 04:15+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_genetics/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 msgctxt "field:gnuhealth.disease.gene,chromosome:"
 msgid "Chromosome"
@@ -130,7 +139,6 @@ msgctxt "field:gnuhealth.protein.disease,acronym:"
 msgid "Acronym"
 msgstr "首字母缩略词"
 
-#, fuzzy
 msgctxt "field:gnuhealth.protein.disease,active:"
 msgid "Active"
 msgstr "启用"
@@ -22095,7 +22103,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_genetics"
 msgid "Genetics"
-msgstr "遗传学"
+msgstr "遗传基因"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_protein_diseases"
 msgid "Protein related diseases"
@@ -22103,7 +22111,7 @@ msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_genetics"
 msgid "Genetics"
-msgstr "遗传学"
+msgstr "遗传基因"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_patient_genetics"
 msgid "Person genetic information"
@@ -22111,7 +22119,7 @@ msgstr "个人遗传信息"
 
 msgctxt "model:res.group,name:group_health_genetics_admin"
 msgid "Health Genetics Administration"
-msgstr "Health 遗传学管理"
+msgstr "Health 遗传基因管理"
 
 msgctxt "selection:gnuhealth.patient.family.diseases,relative:"
 msgid "Aunt"
@@ -22183,7 +22191,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Genetics"
-msgstr "遗传学"
+msgstr "遗传基因"
 
 msgctxt "view:gnuhealth.protein.disease:"
 msgid "Disease"
