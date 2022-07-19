@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-19 03:09+0000\n"
+"PO-Revision-Date: 2022-07-19 03:21+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_dentistry/zh_Hans/>\n"
@@ -1593,11 +1593,11 @@ msgstr "治疗"
 
 msgctxt "field:gnuhealth.patient,dmft_index:"
 msgid "DMFT Index"
-msgstr "龋失补指数"
+msgstr "恒牙龋失补指数"
 
 msgctxt "field:gnuhealth.patient,dmft_index_primary:"
 msgid "dmft index"
-msgstr "龋失补指数"
+msgstr "乳牙龋失补指数"
 
 msgctxt "field:gnuhealth.patient,teeth1:"
 msgid "Quadrant 1"
@@ -2913,7 +2913,7 @@ msgstr "牙科操作"
 
 msgctxt "report:health_dentistry.procedure.report:"
 msgid "DMFT Index:"
-msgstr "龋失补指数:"
+msgstr "恒牙龋失补指数:"
 
 msgctxt "report:health_dentistry.procedure.report:"
 msgid "Date"
@@ -2957,7 +2957,7 @@ msgstr "状态"
 
 msgctxt "report:health_dentistry.procedure.report:"
 msgid "dmft index:"
-msgstr "龋失补指数:"
+msgstr "乳牙龋失补指数:"
 
 msgctxt "selection:gnuhealth.dentistry.set.odontogram.start,t11:"
 msgid "Decayed"
