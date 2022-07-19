@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-19 04:15+0000\n"
+"PO-Revision-Date: 2022-07-19 04:35+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_genetics/zh_Hans/>\n"
@@ -29,7 +29,7 @@ msgstr "位置"
 
 msgctxt "field:gnuhealth.disease.gene,long_name:"
 msgid "Official Long Name"
-msgstr "官方名称"
+msgstr "正式长名称"
 
 msgctxt "field:gnuhealth.disease.gene,name:"
 msgid "Gene Name"
