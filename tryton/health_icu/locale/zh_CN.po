@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"PO-Revision-Date: 2022-07-20 01:13+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_icu/zh_Hans/>\n"
@@ -273,7 +273,7 @@ msgstr "浮肿"
 
 msgctxt "field:gnuhealth.patient.rounding,fio2:"
 msgid "FiO2"
-msgstr "吸入氧气分数2"
+msgstr "吸氧分数"
 
 msgctxt "field:gnuhealth.patient.rounding,gcs:"
 msgid "GCS"
@@ -285,7 +285,7 @@ msgstr "重症监护病房"
 
 msgctxt "field:gnuhealth.patient.rounding,left_pupil:"
 msgid "L"
-msgstr "L"
+msgstr "左瞳孔"
 
 msgctxt "field:gnuhealth.patient.rounding,lips_lesion:"
 msgid "Lips lesion"
@@ -337,11 +337,11 @@ msgstr "呼吸"
 
 msgctxt "field:gnuhealth.patient.rounding,right_pupil:"
 msgid "R"
-msgstr "伦琴"
+msgstr "右瞳孔"
 
 msgctxt "field:gnuhealth.patient.rounding,sce:"
 msgid "SCE"
-msgstr "子宫内膜分泌性癌"
+msgstr "皮下气肿"
 
 msgctxt "field:gnuhealth.patient.rounding,ssi:"
 msgid "Surgery Site Infection"
