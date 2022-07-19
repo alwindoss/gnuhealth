@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-18 04:39+0000\n"
+"PO-Revision-Date: 2022-07-19 04:15+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -8266,7 +8266,7 @@ msgstr "医学专科"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_demographics_menu"
 msgid "Demographics"
-msgstr "人口统计学"
+msgstr "人口统计"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_edit_du"
 msgid "Domiciliary Units"
@@ -9877,7 +9877,7 @@ msgstr "SS"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Concubinage"
-msgstr "非法同居"
+msgstr "同居"
 
 msgctxt "selection:gnuhealth.patient,marital_status:"
 msgid "Divorced"
@@ -10414,7 +10414,7 @@ msgstr "个人自述"
 
 msgctxt "selection:gnuhealth.pol,page_type:"
 msgid "Demographical"
-msgstr "人口统计学相关"
+msgstr "人口统计"
 
 msgctxt "selection:gnuhealth.pol,page_type:"
 msgid "Medical"
@@ -10686,7 +10686,7 @@ msgstr "国有"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Concubinage"
-msgstr "非法同居"
+msgstr "同居"
 
 msgctxt "selection:party.party,marital_status:"
 msgid "Divorced"
