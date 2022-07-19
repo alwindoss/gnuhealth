@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-19 02:43+0000\n"
+"PO-Revision-Date: 2022-07-19 03:09+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_dentistry/zh_Hans/>\n"
@@ -993,15 +993,15 @@ msgstr "O"
 
 msgctxt "field:gnuhealth.dentistry.set.odontogram.start,p11:"
 msgid "P"
-msgstr "患者"
+msgstr "P"
 
 msgctxt "field:gnuhealth.dentistry.set.odontogram.start,p12:"
 msgid "P"
-msgstr "患者"
+msgstr "P"
 
 msgctxt "field:gnuhealth.dentistry.set.odontogram.start,p13:"
 msgid "P"
-msgstr "患者"
+msgstr "P"
 
 msgctxt "field:gnuhealth.dentistry.set.odontogram.start,p14:"
 msgid "P"
@@ -4009,7 +4009,7 @@ msgstr "85"
 
 msgctxt "view:gnuhealth.dentistry.load.procedure.start:"
 msgid "    "
-msgstr "    。。。。    "
+msgstr "    "
 
 msgctxt "view:gnuhealth.dentistry.load.procedure.start:"
 msgid "Left"
@@ -4091,7 +4091,7 @@ msgctxt "view:gnuhealth.patient:"
 msgid ""
 "Legends:     (*)  Decayed      (X)  Missing      (#)  Filled      (=)  For "
 "Extraction"
-msgstr "\"说明:     (*) 龋      (X) 失      (#) 补      (=) 拔 \""
+msgstr "标记说明:     (*) 龋      (X) 失      (#) 补      (=) 拔"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Odontogram"
