@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"PO-Revision-Date: 2022-07-20 01:13+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_nursing/zh_Hans/>\n"
@@ -185,7 +185,7 @@ msgstr "个人需要"
 
 msgctxt "field:gnuhealth.patient.rounding,position:"
 msgid "Position"
-msgstr "状态"
+msgstr "姿势"
 
 msgctxt "field:gnuhealth.patient.rounding,potty:"
 msgid "Potty"
@@ -279,17 +279,15 @@ msgctxt "field:gnuhealth.sequences,patient_rounding_sequence:"
 msgid "Patient Rounding Sequence"
 msgstr "Health 查房"
 
-#, fuzzy
 msgctxt ""
 "field:gnuhealth.sequences.ambulatory_care_sequence,ambulatory_care_sequence:"
 msgid "Ambulatory Sequence"
-msgstr "Health 流动护理"
+msgstr "门诊护理序列"
 
-#, fuzzy
 msgctxt ""
 "field:gnuhealth.sequences.patient_rounding_sequence,patient_rounding_sequence:"
 msgid "Patient Rounding Sequence"
-msgstr "Health 查房"
+msgstr "患者查房序列"
 
 msgctxt "help:gnuhealth.ambulatory_care_procedure,procedure:"
 msgid "Procedure Code, for example ICD-10-PCS Code 7-character string"
@@ -441,11 +439,11 @@ msgstr "查房 - 操作"
 
 msgctxt "model:gnuhealth.sequences.ambulatory_care_sequence,name:"
 msgid "Ambulatory Care Sequences setup"
-msgstr ""
+msgstr "门诊护理序列设置"
 
 msgctxt "model:gnuhealth.sequences.patient_rounding_sequence,name:"
 msgid "Patient Evaluation Sequence setup"
-msgstr ""
+msgstr "患者评估序列设置"
 
 msgctxt "model:ir.action,name:action_gnuhealth_patient_ambulatory_care_view"
 msgid "Ambulatory Care"
@@ -501,42 +499,39 @@ msgstr "Health 护理管理"
 
 msgctxt "report:patient.rounding.report:"
 msgid "(%)"
-msgstr ""
+msgstr "(%)"
 
 msgctxt "report:patient.rounding.report:"
 msgid "(C)"
-msgstr ""
+msgstr "(C)"
 
 msgctxt "report:patient.rounding.report:"
 msgid "(kg)"
-msgstr ""
+msgstr "(kg)"
 
-#, fuzzy
 msgctxt "report:patient.rounding.report:"
 msgid "."
 msgstr "."
 
-#, fuzzy
 msgctxt "report:patient.rounding.report:"
 msgid "/"
 msgstr "/"
 
 msgctxt "report:patient.rounding.report:"
 msgid "2"
-msgstr ""
+msgstr "2"
 
-#, fuzzy
 msgctxt "report:patient.rounding.report:"
 msgid ":"
 msgstr "："
 
 msgctxt "report:patient.rounding.report:"
 msgid ";"
-msgstr ""
+msgstr ";"
 
 msgctxt "report:patient.rounding.report:"
 msgid "BP"
-msgstr ""
+msgstr "BP"
 
 msgctxt "report:patient.rounding.report:"
 msgid "Diuresis"
@@ -586,19 +581,17 @@ msgctxt "report:patient.rounding.report:"
 msgid "No"
 msgstr "否"
 
-#, fuzzy
 msgctxt "report:patient.rounding.report:"
 msgid "O"
 msgstr "O"
 
-#, fuzzy
 msgctxt "report:patient.rounding.report:"
 msgid "P"
-msgstr "患者"
+msgstr "P"
 
 msgctxt "report:patient.rounding.report:"
 msgid "PU"
-msgstr ""
+msgstr "PU"
 
 msgctxt "report:patient.rounding.report:"
 msgid "Pain"
@@ -612,10 +605,9 @@ msgctxt "report:patient.rounding.report:"
 msgid "Resp. rate"
 msgstr "呼吸频率"
 
-#, fuzzy
 msgctxt "report:patient.rounding.report:"
 msgid "Sat"
-msgstr "星期六"
+msgstr "Sat"
 
 msgctxt "report:patient.rounding.report:"
 msgid "Start"
@@ -623,7 +615,7 @@ msgstr "开始"
 
 msgctxt "report:patient.rounding.report:"
 msgid "Status quo"
-msgstr ""
+msgstr "Status quo"
 
 msgctxt "report:patient.rounding.report:"
 msgid "Summary"
@@ -647,7 +639,7 @@ msgstr "是"
 
 msgctxt "report:patient.rounding.report:"
 msgid "atient:"
-msgstr "患者："
+msgstr "atient:"
 
 msgctxt "selection:gnuhealth.patient.ambulatory_care,evolution:"
 msgid "Improving"
@@ -703,11 +695,11 @@ msgstr "结束"
 
 msgctxt "view:gnuhealth.patient.ambulatory_care:"
 msgid "End this session"
-msgstr ""
+msgstr "结束此次门诊护理？"
 
 msgctxt "view:gnuhealth.patient.ambulatory_care:"
 msgid "End this session ?"
-msgstr ""
+msgstr "结束此次门诊护理？"
 
 msgctxt "view:gnuhealth.patient.ambulatory_care:"
 msgid "Main"
@@ -755,7 +747,7 @@ msgstr "查房总结"
 
 msgctxt "view:gnuhealth.patient.rounding:"
 msgid "Six P's"
-msgstr ""
+msgstr "护理 Six P's"
 
 msgctxt "view:gnuhealth.patient.rounding:"
 msgid "Time"
