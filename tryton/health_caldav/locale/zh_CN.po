@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-20 01:13+0000\n"
+"PO-Revision-Date: 2022-07-20 05:08+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_caldav/zh_Hans/>\n"
@@ -57,7 +57,7 @@ msgstr "警报"
 
 msgctxt "field:calendar.event,all_day:"
 msgid "All Day"
-msgstr "整天"
+msgstr "全天事件"
 
 msgctxt "field:calendar.event,attendees:"
 msgid "Attendees"
@@ -69,11 +69,11 @@ msgstr "日历"
 
 msgctxt "field:calendar.event,categories:"
 msgid "Categories"
-msgstr "类别"
+msgstr "分类"
 
 msgctxt "field:calendar.event,classification:"
 msgid "Classification"
-msgstr "分级"
+msgstr "保密级别"
 
 msgctxt "field:calendar.event,description:"
 msgid "Description"
@@ -133,7 +133,7 @@ msgstr "状态"
 
 msgctxt "field:calendar.event,summary:"
 msgid "Summary"
-msgstr "概要"
+msgstr "事件概要"
 
 msgctxt "field:calendar.event,timezone:"
 msgid "Timezone"
@@ -153,7 +153,7 @@ msgstr "vevent"
 
 msgctxt "field:calendar.event-calendar.category,category:"
 msgid "Category"
-msgstr "类别"
+msgstr "分类"
 
 msgctxt "field:calendar.event-calendar.category,event:"
 msgid "Event"
@@ -233,7 +233,7 @@ msgstr "按年份日期"
 
 msgctxt "field:calendar.event.exrule,count:"
 msgid "Count"
-msgstr "盘点"
+msgstr "总数"
 
 msgctxt "field:calendar.event.exrule,event:"
 msgid "Event"
@@ -309,7 +309,7 @@ msgstr "按年份日期"
 
 msgctxt "field:calendar.event.rrule,count:"
 msgid "Count"
-msgstr "盘点"
+msgstr "总数"
 
 msgctxt "field:calendar.event.rrule,event:"
 msgid "Event"
@@ -381,7 +381,7 @@ msgstr "日历 - 写 - 用户"
 
 msgctxt "model:calendar.category,name:"
 msgid "Category"
-msgstr "类别"
+msgstr "分类"
 
 msgctxt "model:calendar.event,name:"
 msgid "Event"
@@ -389,7 +389,7 @@ msgstr "事件"
 
 msgctxt "model:calendar.event-calendar.category,name:"
 msgid "Event - Category"
-msgstr "事件 - 类别"
+msgstr "事件 - 分类"
 
 msgctxt "model:calendar.event.alarm,name:"
 msgid "Alarm"
@@ -525,7 +525,7 @@ msgstr "私人"
 
 msgctxt "selection:calendar.event,classification:"
 msgid "Public"
-msgstr "公共"
+msgstr "公开"
 
 msgctxt "selection:calendar.event,status:"
 msgid "Cancelled"
@@ -697,11 +697,11 @@ msgstr "时间"
 
 msgctxt "view:calendar.event:"
 msgid "Attendees"
-msgstr "参加者"
+msgstr "出席者"
 
 msgctxt "view:calendar.event:"
 msgid "Categories"
-msgstr "类别"
+msgstr "分类"
 
 msgctxt "view:calendar.event:"
 msgid "End Time"
