@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-19 04:15+0000\n"
+"PO-Revision-Date: 2022-07-19 04:35+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -7890,7 +7890,7 @@ msgstr "医务人员"
 
 msgctxt "model:ir.action,name:gnuhealth_action_help"
 msgid "Help and Documentation"
-msgstr "帮助和文档"
+msgstr "帮助文档"
 
 msgctxt "model:ir.action,name:gnuhealth_action_hp_specialty"
 msgid "Specialties by health professionals"
@@ -8021,7 +8021,7 @@ msgstr "SM-CORE-0006：验证并检查处方药物在怀孕期间的安全性"
 
 msgctxt "model:ir.message,text:msg_dup_official_name"
 msgid "SM-CORE-0011: The person can have only one official name"
-msgstr "SM-CORE-0011: 一个人只允许有一个官方名字"
+msgstr "SM-CORE-0011: 一个人只允许有一个正式名字"
 
 msgctxt "model:ir.message,text:msg_end_evaluation_time_before_start"
 msgid ""
@@ -8290,7 +8290,7 @@ msgstr "药品"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_help"
 msgid "Help and Documentation"
-msgstr "帮助和文档"
+msgstr "帮助文档"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_institution_operationalsector"
 msgid "Operational sectors by institution"
@@ -8326,7 +8326,7 @@ msgstr "处方"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_reporting_menu"
 msgid "Reporting"
-msgstr "统计报表或报告"
+msgstr "统计报告"
 
 msgctxt "model:ir.ui.menu,name:menu_appointments_report_view_tree"
 msgid "Appointments with Dx Report"
