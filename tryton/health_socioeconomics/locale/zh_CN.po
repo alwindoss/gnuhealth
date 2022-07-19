@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-18 04:40+0000\n"
+"PO-Revision-Date: 2022-07-19 04:05+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_socioeconomics/zh_Hans/>\n"
@@ -57,7 +57,7 @@ msgstr "学校退学"
 
 msgctxt "field:gnuhealth.patient,ses:"
 msgid "SES"
-msgstr "SES"
+msgstr "社会经济状况"
 
 msgctxt "field:gnuhealth.patient,ses_assessments:"
 msgid "Assessments"
@@ -157,7 +157,7 @@ msgstr "患者"
 
 msgctxt "field:gnuhealth.ses.assessment,ses:"
 msgid "Socioeconomics"
-msgstr "社会经济学"
+msgstr "社会经济状况"
 
 msgctxt "field:gnuhealth.ses.assessment,signed_by:"
 msgid "Signed by"
@@ -276,7 +276,7 @@ msgstr "住房和卫生生活条件"
 
 msgctxt "help:gnuhealth.ses.assessment,ses:"
 msgid "SES - Socioeconomic Status"
-msgstr "SES - 社会经济地位"
+msgstr "SES - 社会经济状况"
 
 msgctxt "help:gnuhealth.ses.assessment,signed_by:"
 msgid "Health Professional that finished the patient evaluation"
@@ -288,7 +288,7 @@ msgstr "教育水平"
 
 msgctxt "model:gnuhealth.ses.assessment,name:"
 msgid "Socioeconomics and Family Functionality Assessment"
-msgstr "社会经济学和家庭功能评估"
+msgstr "社会经济和家庭功能评估"
 
 msgctxt "model:ir.action,name:act_ses_assessment"
 msgid "Socioeconomic and Family Assessment"
@@ -556,7 +556,7 @@ msgstr "其他家庭和环境决定因素"
 
 msgctxt "view:gnuhealth.patient:"
 msgid "Socioeconomics"
-msgstr "社会经济学"
+msgstr "社会经济状况"
 
 msgctxt "view:gnuhealth.ses.assessment:"
 msgid "Done"
@@ -584,4 +584,4 @@ msgstr "说明"
 
 msgctxt "view:gnuhealth.ses.assessment:"
 msgid "Socioeconomics"
-msgstr "社会经济学"
+msgstr "社会经济状况"
