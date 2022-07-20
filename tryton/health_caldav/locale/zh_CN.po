@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-20 05:08+0000\n"
+"PO-Revision-Date: 2022-07-20 23:47+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_caldav/zh_Hans/>\n"
@@ -53,7 +53,7 @@ msgstr "日历名称"
 
 msgctxt "field:calendar.event,alarms:"
 msgid "Alarms"
-msgstr "警报"
+msgstr "提醒"
 
 msgctxt "field:calendar.event,all_day:"
 msgid "All Day"
@@ -101,7 +101,7 @@ msgstr "位置"
 
 msgctxt "field:calendar.event,occurences:"
 msgid "Occurences"
-msgstr "事件"
+msgstr "发生的事"
 
 msgctxt "field:calendar.event,organizer:"
 msgid "Organizer"
@@ -141,7 +141,7 @@ msgstr "时区"
 
 msgctxt "field:calendar.event,transp:"
 msgid "Time Transparency"
-msgstr "时间透明"
+msgstr "时间占用"
 
 msgctxt "field:calendar.event,uuid:"
 msgid "UUID"
@@ -161,7 +161,7 @@ msgstr "事件"
 
 msgctxt "field:calendar.event.alarm,event:"
 msgid "Event"
-msgstr "时间"
+msgstr "事件"
 
 msgctxt "field:calendar.event.alarm,valarm:"
 msgid "valarm"
@@ -229,7 +229,7 @@ msgstr "按周数"
 
 msgctxt "field:calendar.event.exrule,byyearday:"
 msgid "By Year Day"
-msgstr "按年份日期"
+msgstr "按年月日"
 
 msgctxt "field:calendar.event.exrule,count:"
 msgid "Count"
@@ -245,7 +245,7 @@ msgstr "频率"
 
 msgctxt "field:calendar.event.exrule,interval:"
 msgid "Interval"
-msgstr "时间间隔"
+msgstr "间隔"
 
 msgctxt "field:calendar.event.exrule,until:"
 msgid "Until Date"
@@ -305,7 +305,7 @@ msgstr "按周数"
 
 msgctxt "field:calendar.event.rrule,byyearday:"
 msgid "By Year Day"
-msgstr "按年份日期"
+msgstr "按年月日"
 
 msgctxt "field:calendar.event.rrule,count:"
 msgid "Count"
@@ -337,7 +337,7 @@ msgstr "工作日"
 
 msgctxt "field:calendar.location,name:"
 msgid "Name"
-msgstr "名称"
+msgstr "位置名称"
 
 msgctxt "field:res.user,calendars:"
 msgid "Calendars"
@@ -345,7 +345,7 @@ msgstr "日历"
 
 msgctxt "help:calendar.calendar,owner:"
 msgid "The user must have an email"
-msgstr "用户必须有电子邮件"
+msgstr "用户需要有一个电子邮件"
 
 msgctxt "help:calendar.event,uuid:"
 msgid "Universally Unique Identifier"
@@ -353,19 +353,19 @@ msgstr "通用唯一标识符"
 
 msgctxt "help:calendar.event.exdate,date:"
 msgid "Ignore time of field \"Date\", but handle as date only."
-msgstr "忽略时间，只按日期处理。"
+msgstr "忽略 “日期” 字段中的时间，只按日期处理。"
 
 msgctxt "help:calendar.event.exrule,until_date:"
 msgid "Ignore time of field \"Until Date\", but handle as date only."
-msgstr "忽略截止日期字段中的时间，只按日期处理。"
+msgstr "忽略 “截止日期\" 字段中的时间，只按日期处理。"
 
 msgctxt "help:calendar.event.rdate,date:"
 msgid "Ignore time of field \"Date\", but handle as date only."
-msgstr "忽略日期字段中的事件，只按日期处理。"
+msgstr "忽略 \"日期\" 字段中的事件，只按日期处理。"
 
 msgctxt "help:calendar.event.rrule,until_date:"
 msgid "Ignore time of field \"Until Date\", but handle as date only."
-msgstr "忽略截止日期字段中的时间，只按日期处理。"
+msgstr "忽略 \"截止日期\" 字段中的时间，只按日期处理。"
 
 msgctxt "model:calendar.calendar,name:"
 msgid "Calendar"
@@ -373,11 +373,11 @@ msgstr "日历"
 
 msgctxt "model:calendar.calendar-read-res.user,name:"
 msgid "Calendar - read - User"
-msgstr "日历 - 读 - 用户"
+msgstr "日历 - 读权限 - 用户"
 
 msgctxt "model:calendar.calendar-write-res.user,name:"
 msgid "Calendar - write - User"
-msgstr "日历 - 写 - 用户"
+msgstr "日历 - 写权限 - 用户"
 
 msgctxt "model:calendar.category,name:"
 msgid "Category"
@@ -393,7 +393,7 @@ msgstr "事件 - 分类"
 
 msgctxt "model:calendar.event.alarm,name:"
 msgid "Alarm"
-msgstr "报警"
+msgstr "提醒"
 
 msgctxt "model:calendar.event.attendee,name:"
 msgid "Attendee"
@@ -465,11 +465,11 @@ msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按周数* 是无效规则"
 
 msgctxt "model:ir.message,text:msg_invalid_byyearday"
 msgid "Invalid *By Year Day* in recurrence rule \"%(self.rec_name,)s\""
-msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按年份日期* 是无效规则"
+msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按年月日* 是无效规则"
 
 msgctxt "model:ir.message,text:msg_invalid_calendar_extension"
 msgid "The calendar name can not have the icd extension"
-msgstr "日历名称不能包含 icd 扩展"
+msgstr "日历名称中不能包含 icd 扩展"
 
 msgctxt "model:ir.message,text:msg_invalid_recurrence"
 msgid "This recurrence can not be recurrent"
@@ -541,11 +541,11 @@ msgstr "暂定"
 
 msgctxt "selection:calendar.event,transp:"
 msgid "Opaque"
-msgstr "不透明"
+msgstr "由事件状态决定"
 
 msgctxt "selection:calendar.event,transp:"
 msgid "Transparent"
-msgstr "透明"
+msgstr "不占用"
 
 msgctxt "selection:calendar.event.attendee,status:"
 msgid "Accepted"
@@ -713,7 +713,7 @@ msgstr "一般情况"
 
 msgctxt "view:calendar.event:"
 msgid "Occurences"
-msgstr "事件"
+msgstr "发生的事"
 
 msgctxt "view:calendar.event:"
 msgid "Start Time"
