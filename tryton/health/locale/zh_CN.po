@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-23 06:22+0000\n"
+"PO-Revision-Date: 2022-07-24 07:25+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -2369,11 +2369,11 @@ msgstr "年龄"
 
 msgctxt "field:party.party,alternative_identification:"
 msgid "Alternative IDs"
-msgstr "其它ID"
+msgstr "备选ID"
 
 msgctxt "field:party.party,alternative_ids:"
 msgid "Alternative IDs"
-msgstr "其它ID"
+msgstr "备选ID"
 
 msgctxt "field:party.party,birth_certificate:"
 msgid "Birth Certificate"
@@ -2501,7 +2501,7 @@ msgstr "定居"
 
 msgctxt "field:party.party,unidentified:"
 msgid "Unidentified"
-msgstr "未确认"
+msgstr "未实名制"
 
 msgctxt "field:product.product,is_bed:"
 msgid "Bed"
@@ -2669,7 +2669,7 @@ msgstr "卫生专业人员的名字，来自 partner 列表"
 
 msgctxt "help:gnuhealth.healthprofessional,puid:"
 msgid "Person Unique Identifier"
-msgstr "个人唯一标识，身份证号"
+msgstr "个人唯一标识"
 
 msgctxt "help:gnuhealth.help,description:"
 msgid "Short description"
@@ -3057,7 +3057,7 @@ msgstr "当前患者的全科医生/家庭医生"
 
 msgctxt "help:gnuhealth.patient,puid:"
 msgid "Person Unique Identifier"
-msgstr "个人唯一标识，身份证号"
+msgstr "个人唯一标识"
 
 msgctxt "help:gnuhealth.patient.disease,age:"
 msgid "Patient age at the moment of the diagnosis. Can be estimative"
@@ -3667,7 +3667,7 @@ msgctxt "help:party.party,alternative_identification:"
 msgid ""
 "Other types of identification, not the official PUID . Examples : Passport, "
 "foreign ID,.."
-msgstr "其他类型的身份证明，不是官方的 身份证号. 比如： 护照，外国身份证 ..."
+msgstr "其他类型的身份证明，不是本地正式的身份证号。比如： 护照，外国身份证 ..."
 
 msgctxt "help:party.party,citizenship:"
 msgid "Country of Citizenship"
@@ -3762,7 +3762,7 @@ msgstr "国籍"
 
 msgctxt "help:party.party,unidentified:"
 msgid "Patient is currently unidentified"
-msgstr "无法验证患者身份"
+msgstr "患者当前未实名制"
 
 msgctxt "help:product.product,is_bed:"
 msgid "Check if the product is a bed on the gnuhealth.center"
@@ -7338,7 +7338,7 @@ msgstr "患者用药"
 
 msgctxt "model:gnuhealth.person_alternative_identification,name:"
 msgid "Alternative person ID"
-msgstr "个人其它ID"
+msgstr "备选个人身份ID"
 
 msgctxt "model:gnuhealth.person_name,name:"
 msgid "Person Name"
