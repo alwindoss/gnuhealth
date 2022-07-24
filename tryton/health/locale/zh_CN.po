@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-24 07:25+0000\n"
+"PO-Revision-Date: 2022-07-24 23:45+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -2353,7 +2353,7 @@ msgstr "联系"
 
 msgctxt "field:party.contact_mechanism,emergency:"
 msgid "Emergency"
-msgstr "急诊"
+msgstr "紧急"
 
 msgctxt "field:party.contact_mechanism,remarks:"
 msgid "Remarks"
@@ -7598,7 +7598,7 @@ msgstr "创伤外科"
 
 msgctxt "model:gnuhealth.specialty,name:57"
 msgid "Urgent Care Medicine"
-msgstr "紧急护理医学"
+msgstr "急救护理医学"
 
 msgctxt "model:gnuhealth.specialty,name:58"
 msgid "Urology"
@@ -9385,7 +9385,7 @@ msgstr "已爽约"
 
 msgctxt "selection:gnuhealth.appointment,urgency:"
 msgid "Medical Emergency"
-msgstr "急诊"
+msgstr "医疗急救"
 
 msgctxt "selection:gnuhealth.appointment,urgency:"
 msgid "Normal"
@@ -10201,7 +10201,7 @@ msgstr "已签署"
 
 msgctxt "selection:gnuhealth.patient.evaluation,urgency:"
 msgid "Medical Emergency"
-msgstr "急诊"
+msgstr "医疗急救"
 
 msgctxt "selection:gnuhealth.patient.evaluation,urgency:"
 msgid "Normal"
