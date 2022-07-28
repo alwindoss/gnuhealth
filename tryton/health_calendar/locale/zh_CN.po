@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-19 06:48+0000\n"
+"PO-Revision-Date: 2022-07-29 12:19+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_calendar/zh_Hans/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.appointment,appointment_date_end:"
 msgid "End Date and Time"
-msgstr "结束日期和时间"
+msgstr "结束时间"
 
 msgctxt "field:gnuhealth.appointment,event:"
 msgid "CalDAV Event"
@@ -82,7 +82,7 @@ msgstr "星期三"
 
 msgctxt "field:res.user,calendar:"
 msgid "Calendar"
-msgstr "日程表"
+msgstr "日历"
 
 msgctxt "field:res.user,use_caldav:"
 msgid "CalDAV"
@@ -90,11 +90,11 @@ msgstr "CalDAV"
 
 msgctxt "help:gnuhealth.appointment,event:"
 msgid "Calendar Event"
-msgstr "日程表事件"
+msgstr "日历事件"
 
 msgctxt "help:res.user,use_caldav:"
 msgid "The user has a CalDav account"
-msgstr "用户拥有 CalDav 帐户"
+msgstr "拥有 CalDav 帐号的用户"
 
 msgctxt "model:gnuhealth.calendar.create.appointment.start,name:"
 msgid "Create Appointments Start"
