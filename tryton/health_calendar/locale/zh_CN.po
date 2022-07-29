@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-29 12:19+0000\n"
+"PO-Revision-Date: 2022-07-31 02:18+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health_calendar/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr "结束时间"
 
 msgctxt "field:gnuhealth.appointment,event:"
 msgid "CalDAV Event"
-msgstr "CalDAV 事件"
+msgstr "日历事件"
 
 msgctxt ""
 "field:gnuhealth.calendar.create.appointment.start,appointment_minutes:"
