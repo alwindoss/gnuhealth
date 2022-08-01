@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-29 12:19+0000\n"
+"PO-Revision-Date: 2022-08-02 05:21+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -2139,7 +2139,7 @@ msgstr "开始"
 
 msgctxt "field:gnuhealth.prescription.order,healthprof:"
 msgid "Prescribed by"
-msgstr "开处方专家"
+msgstr "处方专家"
 
 msgctxt "field:gnuhealth.prescription.order,notes:"
 msgid "Prescription Notes"
@@ -2159,7 +2159,7 @@ msgstr "妊娠警告"
 
 msgctxt "field:gnuhealth.prescription.order,prescription_date:"
 msgid "Prescription Date"
-msgstr "开处方日期"
+msgstr "处方日期"
 
 msgctxt "field:gnuhealth.prescription.order,prescription_id:"
 msgid "Prescription ID"
@@ -2175,11 +2175,11 @@ msgstr "处方已审核"
 
 msgctxt "field:gnuhealth.prescription.order,report_prescription_date:"
 msgid "Prescription Date"
-msgstr "开处方日期"
+msgstr "处方日期"
 
 msgctxt "field:gnuhealth.prescription.order,report_prescription_time:"
 msgid "Prescription Time"
-msgstr "开处方时间"
+msgstr "处方时间"
 
 msgctxt "field:gnuhealth.prescription.order,state:"
 msgid "State"
@@ -2501,7 +2501,7 @@ msgstr "定居"
 
 msgctxt "field:party.party,unidentified:"
 msgid "Unidentified"
-msgstr "未实名制"
+msgstr "身份未确认"
 
 msgctxt "field:product.product,is_bed:"
 msgid "Bed"
@@ -3762,7 +3762,7 @@ msgstr "国籍"
 
 msgctxt "help:party.party,unidentified:"
 msgid "Patient is currently unidentified"
-msgstr "患者当前未实名制"
+msgstr "患者目前的身份未确认"
 
 msgctxt "help:product.product,is_bed:"
 msgid "Check if the product is a bed on the gnuhealth.center"
@@ -8907,7 +8907,7 @@ msgstr "电话："
 
 msgctxt "report:patient.medication:"
 msgid "Prescribed by"
-msgstr "开处方专家"
+msgstr "处方专家"
 
 msgctxt "report:patient.medication:"
 msgid "Print Date"
@@ -9277,7 +9277,7 @@ msgstr "病人相关信息"
 
 msgctxt "report:prescription.order:"
 msgid "Prescribed by"
-msgstr "开处方专家"
+msgstr "处方专家"
 
 msgctxt "report:prescription.order:"
 msgid "Prescription ID :"
@@ -9285,7 +9285,7 @@ msgstr "处方编号："
 
 msgctxt "report:prescription.order:"
 msgid "Prescription date :"
-msgstr "开处方日期："
+msgstr "处方日期："
 
 msgctxt "report:prescription.order:"
 msgid "Qty"
@@ -10958,7 +10958,7 @@ msgstr "管理"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Anthropometry"
-msgstr "体位"
+msgstr "人体测量"
 
 msgctxt "view:gnuhealth.patient.evaluation:"
 msgid "Chief Complaint"
