@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-08-02 05:21+0000\n"
+"PO-Revision-Date: 2022-08-02 15:59+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -2119,7 +2119,7 @@ msgstr "总剂量"
 
 msgctxt "field:gnuhealth.prescription.line,refills:"
 msgid "Refills #"
-msgstr "继续按方用药 #"
+msgstr "续方次数 #"
 
 msgctxt "field:gnuhealth.prescription.line,review:"
 msgid "Valid Until"
@@ -2139,7 +2139,7 @@ msgstr "开始"
 
 msgctxt "field:gnuhealth.prescription.order,healthprof:"
 msgid "Prescribed by"
-msgstr "处方专家"
+msgstr "处方医师"
 
 msgctxt "field:gnuhealth.prescription.order,notes:"
 msgid "Prescription Notes"
@@ -3410,7 +3410,7 @@ msgstr "需要时使用"
 
 msgctxt "help:gnuhealth.patient.medication,healthprof:"
 msgid "Health Professional who prescribed or reviewed the medicament"
-msgstr "开处方专家或者处方审核专家"
+msgstr "开具或审核处方的医师"
 
 msgctxt "help:gnuhealth.patient.medication,indication:"
 msgid ""
@@ -3582,7 +3582,7 @@ msgctxt "help:gnuhealth.prescription.line,review:"
 msgid ""
 "Until this date, the patientusually can ask for a refill / reorder of this "
 "medicament"
-msgstr "这个日期之前，患者通常可以继续按方用药"
+msgstr "这个日期之前，患者可以要求续方"
 
 msgctxt "help:gnuhealth.prescription.line,route:"
 msgid "Drug administration route code."
@@ -8907,7 +8907,7 @@ msgstr "电话："
 
 msgctxt "report:patient.medication:"
 msgid "Prescribed by"
-msgstr "处方专家"
+msgstr "处方医师"
 
 msgctxt "report:patient.medication:"
 msgid "Print Date"
@@ -9277,7 +9277,7 @@ msgstr "病人相关信息"
 
 msgctxt "report:prescription.order:"
 msgid "Prescribed by"
-msgstr "处方专家"
+msgstr "处方医师"
 
 msgctxt "report:prescription.order:"
 msgid "Prescription ID :"
@@ -9293,7 +9293,7 @@ msgstr "数量"
 
 msgctxt "report:prescription.order:"
 msgid "Refills"
-msgstr "继续按方用药"
+msgstr "续方次数"
 
 msgctxt "report:prescription.order:"
 msgid "Remarks"
@@ -11190,7 +11190,7 @@ msgstr "注意事项"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Patient and Health Professional Information"
-msgstr "患者与开处方专家信息"
+msgstr "患者与医师信息"
 
 msgctxt "view:gnuhealth.signs_and_symptoms:"
 msgid "Comments"
