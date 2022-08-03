@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-08-02 15:59+0000\n"
+"PO-Revision-Date: 2022-08-04 07:17+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -1943,7 +1943,7 @@ msgstr "编写人员账户"
 
 msgctxt "field:gnuhealth.pol,federation_account:"
 msgid "Account"
-msgstr "GNU Health 信息平台帐号"
+msgstr "平台帐号"
 
 msgctxt "field:gnuhealth.pol,gene:"
 msgid "Gene"
@@ -2421,7 +2421,7 @@ msgstr "前缀"
 
 msgctxt "field:party.party,federation_account:"
 msgid "Federation ID"
-msgstr "GNU Health 信息平台帐号"
+msgstr "平台帐号"
 
 msgctxt "field:party.party,gender:"
 msgid "Gender"
@@ -2643,7 +2643,7 @@ msgstr "父亲，母亲，兄弟..."
 
 msgctxt "help:gnuhealth.federation.country.config,country:"
 msgid "Country code to be use as the prefix for the FederationID account."
-msgstr "将国家代码做为 GNU Health 信息平台帐号的前缀使用。"
+msgstr "国家代码，作为 GNU Health 信息平台帐号前缀使用。"
 
 msgctxt "help:gnuhealth.federation.country.config,use_citizenship:"
 msgid ""
