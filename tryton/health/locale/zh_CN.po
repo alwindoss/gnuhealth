@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-08-05 20:04+0000\n"
+"PO-Revision-Date: 2022-08-10 00:21+0000\n"
 "Last-Translator: Feng Shu <tumashu@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "gnu-health/health/zh_Hans/>\n"
@@ -1502,11 +1502,11 @@ msgstr "脱水"
 
 msgctxt "field:gnuhealth.patient.evaluation,derived_from:"
 msgid "Derived from"
-msgstr "谁推荐我"
+msgstr "介绍人"
 
 msgctxt "field:gnuhealth.patient.evaluation,derived_to:"
 msgid "Derived to"
-msgstr "我推荐谁"
+msgstr "介绍给"
 
 msgctxt "field:gnuhealth.patient.evaluation,diagnosis:"
 msgid "Main Condition"
@@ -3164,11 +3164,11 @@ msgstr "如果病人有脱水的迹象，就选中此项，如果和某个疾病
 
 msgctxt "help:gnuhealth.patient.evaluation,derived_from:"
 msgid "Health Professional who derived the case"
-msgstr "某位医师，这个医师把病例推荐给我"
+msgstr "某位医师，这位医师把当前病例介绍给另外一位医师"
 
 msgctxt "help:gnuhealth.patient.evaluation,derived_to:"
 msgid "Health Professional to derive the case"
-msgstr "某位医师，我准备把这个病例推荐给他"
+msgstr "某位医师，当前病例被其他医师介绍给这位医师"
 
 msgctxt "help:gnuhealth.patient.evaluation,diagnosis:"
 msgid ""
