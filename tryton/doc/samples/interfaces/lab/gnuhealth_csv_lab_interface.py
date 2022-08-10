@@ -26,10 +26,10 @@ from proteus import config, Model
 import csv
 import sys
 
-dbname = 'health37dev'
+dbname = 'health40'
 user = 'admin'
 password = 'gnusolidario'
-hostname = 'localhost'
+hostname = 'federation.gnuhealth.org'
 port = '8000'
 
 health_server = \

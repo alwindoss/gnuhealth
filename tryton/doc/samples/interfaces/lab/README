@@ -11,11 +11,11 @@ the test "TEST006", a "Complete Blood Count - CBC"
 Requirements :
 This version works with the following versions :
 
-- GNU Health : 3.6
-- Proteus library : 5.0
+- GNU Health : 4.0 
+- Proteus library : 6.0
 
 Installing proteus :
-$ pip3 install --user "proteus>=5.0,<5.1"
+$ pip3 install --user "proteus>=6.0,<6.1"
 
 
 Usage :
