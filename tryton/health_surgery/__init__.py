@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    GNU Health: The Free Health and Hospital Information System
@@ -38,6 +37,7 @@ def register():
         health_surgery.SurgerySupply,
         health_surgery.PatientData,
         health_surgery.SurgeryTeam,
+        health_surgery.PreOperativeAssessment,
         module='health_surgery', type_='model')
     Pool.register(
         report.SurgeryReport,

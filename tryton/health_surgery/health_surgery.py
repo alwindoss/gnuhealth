@@ -45,7 +45,9 @@ from trytond.modules.health.core import get_health_professional, \
     get_institution
 
 __all__ = ['RCRI', 'Surgery', 'Operation', 'SurgeryMainProcedure',
-           'SurgerySupply', 'PatientData', 'SurgeryTeam']
+           'SurgerySupply', 'PatientData', 'SurgeryTeam',
+           'PreOperativeAssessment']
+
 
 class RCRI(ModelSQL, ModelView):
     'Revised Cardiac Risk Index'
@@ -300,21 +302,6 @@ class Surgery(ModelSQL, ModelView):
 
 
     description = fields.Char('Description')
-    preop_mallampati = fields.Selection([
-        (None, ''),
-        ('Class 1', 'Class 1: Full visibility of tonsils, uvula and soft '
-                    'palate'),
-        ('Class 2', 'Class 2: Visibility of hard and soft palate, '
-                    'upper portion of tonsils and uvula'),
-        ('Class 3', 'Class 3: Soft and hard palate and base of the uvula are '
-                    'visible'),
-        ('Class 4', 'Class 4: Only Hard Palate visible'),
-        ], 'Mallampati Score', sort=False)
-    preop_bleeding_risk = fields.Boolean(
-        'Risk of Massive bleeding',
-        help="Patient has a risk of losing more than 500 "
-        "ml in adults of over 7ml/kg in infants. If so, make sure that "
-        "intravenous access and fluids are available")
 
     preop_oximeter = fields.Boolean(
         'Pulse Oximeter in place',
@@ -332,6 +319,27 @@ class Surgery(ModelSQL, ModelView):
     preop_sterility = fields.Boolean(
         'Sterility confirmed',
         help="Nursing team has confirmed sterility of the devices and room")
+
+    """ Mallampati, ASA, bleeding risk, RCRI are now part of the
+        preoperative assessment.
+        They will not be shown in the main surgery view
+    """
+    
+    preop_mallampati = fields.Selection([
+        (None, ''),
+        ('Class 1', 'Class 1: Full visibility of tonsils, uvula and soft '
+                    'palate'),
+        ('Class 2', 'Class 2: Visibility of hard and soft palate, '
+                    'upper portion of tonsils and uvula'),
+        ('Class 3', 'Class 3: Soft and hard palate and base of the uvula are '
+                    'visible'),
+        ('Class 4', 'Class 4: Only Hard Palate visible'),
+        ], 'Mallampati Score', sort=False)
+    preop_bleeding_risk = fields.Boolean(
+        'Risk of Massive bleeding',
+        help="Patient has a risk of losing more than 500 "
+        "ml in adults of over 7ml/kg in infants. If so, make sure that "
+        "intravenous access and fluids are available")
 
     preop_asa = fields.Selection([
         (None, ''),
@@ -677,8 +685,69 @@ class SurgeryTeam(ModelSQL, ModelView):
     
     notes = fields.Char('Notes')
 
+
+class PreOperativeAssessment(ModelSQL, ModelView):
+    'Preoperative Assessment'
+    __name__ = 'gnuhealth.preoperative_assessment'
+
+
+    """ Preoperative Assessment class contains the necessary patient
+        and anesthesia information to be taken into account 
+        in the upcoming surgery
+    """
+    patient = fields.Many2One('gnuhealth.patient', 'Patient', required=True)
+
+    health_professional = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Health Prof',
+        help="Health professional that signs this assessment")
+
+    surgery = fields.Many2One('gnuhealth.surgery', 'Surgery')
+
+    assessment_date = fields.Date(
+        'Date', help="Date of the assessment")
+
+    preop_mallampati = fields.Selection([
+        (None, ''),
+        ('Class 1', 'Class 1: Full visibility of tonsils, uvula and soft '
+                    'palate'),
+        ('Class 2', 'Class 2: Visibility of hard and soft palate, '
+                    'upper portion of tonsils and uvula'),
+        ('Class 3', 'Class 3: Soft and hard palate and base of the uvula are '
+                    'visible'),
+        ('Class 4', 'Class 4: Only Hard Palate visible'),
+        ], 'Mallampati Score', sort=False)
+    preop_bleeding_risk = fields.Boolean(
+        'Risk of Massive bleeding',
+        help="Patient has a risk of losing more than 500 "
+        "ml in adults of over 7ml/kg in infants. If so, make sure that "
+        "intravenous access and fluids are available")
+
+    preop_asa = fields.Selection([
+        (None, ''),
+        ('ps1', 'PS 1 : Normal healthy patient'),
+        ('ps2', 'PS 2 : Patients with mild systemic disease'),
+        ('ps3', 'PS 3 : Patients with severe systemic disease'),
+        ('ps4', 'PS 4 : Patients with severe systemic disease that is'
+            ' a constant threat to life '),
+        ('ps5', 'PS 5 : Moribund patients who are not expected to'
+            ' survive without the operation'),
+        ('ps6', 'PS 6 : A declared brain-dead patient who organs are'
+            ' being removed for donor purposes'),
+        ], 'ASA PS',
+        help="ASA pre-operative Physical Status", sort=False)
+
+    preop_rcri = fields.Many2One(
+        'gnuhealth.rcri', 'RCRI',
+        help='Patient Revised Cardiac Risk Index\n'
+        'Points 0: Class I Very Low (0.4% complications)\n'
+        'Points 1: Class II Low (0.9% complications)\n'
+        'Points 2: Class III Moderate (6.6% complications)\n'
+        'Points 3 or more : Class IV High (>11% complications)')
+
 class PatientData(ModelSQL, ModelView):
     __name__ = 'gnuhealth.patient'
 
     surgery = fields.One2Many(
         'gnuhealth.surgery', 'patient', 'Surgeries', readonly=True)
+
+
