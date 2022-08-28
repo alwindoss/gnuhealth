@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<form>
+    <group id="preop_header" col="6">
+        <label name="patient"/>
+        <field name="patient"/>
+        <label name="health_professional"/>
+        <field name="health_professional"/>
+        <label name="assessment_date"/>
+        <field name="assessment_date"/>
+        <label name="surgery"/>
+        <field name="surgery"/>
+    </group>
+    <newline/>
+</form>
