@@ -10,5 +10,16 @@
         <label name="surgery"/>
         <field name="surgery"/>
     </group>
+    <group string="Risk assessment" id="group_preop_risk" colspan="4">
+        <label name="preop_asa"/>
+        <field name="preop_asa"/>
+        <label name="preop_mallampati"/>
+        <field name="preop_mallampati"/>
+        <label name="preop_rcri"/>
+        <field name="preop_rcri"/>
+        <label name="surgical_wound"/>
+        <field name="surgical_wound"/>
+    </group>
+
     <newline/>
 </form>
