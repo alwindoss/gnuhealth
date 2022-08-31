@@ -46,18 +46,6 @@
     </group>
     <newline/>
     <notebook>
-        <page id="risk_assessment_page" string="Risk Assessment">
-            <group string="Patient Surgical Risk assessment" id="group_patient_surgery_risk" colspan="4">
-                <label name="preop_asa"/>
-                <field name="preop_asa"/>
-                <label name="preop_mallampati"/>
-                <field name="preop_mallampati"/>
-                <label name="preop_rcri"/>
-                <field name="preop_rcri"/>
-                <label name="surgical_wound"/>
-                <field name="surgical_wound"/>
-            </group>
-        </page>
         <page id="procedures_page" string="Procedures">
             <field name="procedures" colspan="4"/>
         </page>
