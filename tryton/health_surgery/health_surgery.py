@@ -402,6 +402,10 @@ class Surgery(ModelSQL, ModelView):
     def default_state():
         return 'draft'
 
+    def get_rec_name(self, name):
+        res = f'{self.code} ({self.description})'
+        return res
+
     def get_patient_gender(self, name):
         return self.patient.gender
 
@@ -485,7 +489,6 @@ class Surgery(ModelSQL, ModelView):
 
     # Method to check for availability and make the Operating Room
     # reservation for the associated surgery
-
     @classmethod
     @ModelView.button
     def confirmed(cls, surgeries):
@@ -733,6 +736,10 @@ class PreOperativeAssessment(ModelSQL, ModelView):
         ('III', 'Contaminated . Class III'),
         ('IV', 'Dirty-Infected . Class IV'),
         ], 'Surgical wound', sort=False)
+
+    @staticmethod
+    def default_assessment_date():
+        return datetime.now()
 
 
 class PatientData(ModelSQL, ModelView):
