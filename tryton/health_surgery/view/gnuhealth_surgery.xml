@@ -45,6 +45,10 @@
         <field name="preop_sterility"/>
     </group>
     <newline/>
+    <group string="Anesthesia" id="group_anesthesia" colspan="4" col="10">
+        <label name="anesthesia_type"/>
+        <field name="anesthesia_type"/>
+    </group>
     <notebook>
         <page id="procedures_page" string="Procedures">
             <field name="procedures" colspan="4"/>

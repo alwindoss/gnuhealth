@@ -364,6 +364,13 @@ class Surgery(ModelSQL, ModelView):
         ('IV', 'Dirty-Infected . Class IV'),
         ], 'Surgical wound', sort=False)
 
+    anesthesia_type = fields.Selection([
+        (None, ''),
+        ('local', 'Local'),
+        ('regional', 'Regional'),
+        ('general', 'General'),
+        ], 'Anesthesia type', sort=False)
+
     extra_info = fields.Text('Extra Info')
 
     anesthesia_report = fields.Text('Anesthesia Report')
