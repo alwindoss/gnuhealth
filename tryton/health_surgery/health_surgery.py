@@ -39,6 +39,7 @@ from trytond.modules.health.core import get_health_professional, \
 
 __all__ = ['RCRI', 'Surgery', 'Operation', 'SurgeryMainProcedure',
            'SurgerySupply', 'PatientData', 'SurgeryTeam',
+           'SurgeryComplication',
            'PreOperativeAssessment']
 
 
@@ -369,7 +370,20 @@ class Surgery(ModelSQL, ModelView):
         ('local', 'Local'),
         ('regional', 'Regional'),
         ('general', 'General'),
+        ('sedation', 'Sedation'),
+        ('rachianesthesia', 'Rachianesthesia'),
+        ('epidural', 'Epidural'),
+        ('peribulbar', 'Peribulbar'),
+        ('regional_block', 'Regional Block'),
+        ('local_sedation', 'Local + sedation'),
+        ('No anesthesia', 'No anesthesia'),
         ], 'Anesthesia type', sort=False)
+
+    surgery_complications = fields.One2Many(
+        'gnuhealth.surgery.complication', 'name', 'Complications',
+        help="Complications related to the surgery")
+
+    complications_notes = fields.Text('Complications')
 
     extra_info = fields.Text('Extra Info')
 
@@ -677,6 +691,29 @@ class SurgeryTeam(ModelSQL, ModelView):
         depends=['team_member'])
 
     notes = fields.Char('Notes')
+
+
+# SURGERY COMPLICATIONS
+class SurgeryComplication(ModelSQL, ModelView):
+    'Surgery Complication'
+    __name__ = 'gnuhealth.surgery.complication'
+
+    name = fields.Many2One('gnuhealth.surgery', 'Surgery')
+
+    complication = fields.Many2One(
+            'gnuhealth.pathology', 'Complication', required=True,
+            help='Complication during surgery')
+
+    severity = fields.Selection([
+        (None, ''),
+        ('1_mi', 'Mild'),
+        ('2_mo', 'Moderate'),
+        ('3_sv', 'Severe'),
+        ], 'Severity', select=True, sort=False)
+
+    short_comment = fields.Char(
+        'Remarks',
+        help='Brief, one-line remark of the complication.')
 
 
 class PreOperativeAssessment(ModelSQL, ModelView):

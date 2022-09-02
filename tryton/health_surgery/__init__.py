@@ -37,6 +37,7 @@ def register():
         health_surgery.SurgerySupply,
         health_surgery.PatientData,
         health_surgery.SurgeryTeam,
+        health_surgery.SurgeryComplication,
         health_surgery.PreOperativeAssessment,
         module='health_surgery', type_='model')
     Pool.register(

@@ -50,8 +50,23 @@
         <field name="anesthesia_type"/>
     </group>
     <notebook>
+        <page id="main_page" string="Main">
+            <group string="Main Procedure" id="main_procedure_group" colspan="4">
+                <field name="main_procedure"/>
+            </group>
+            <newline/>
+            <separator string="Details" id="separator_surgery_details" colspan="2"/>
+            <separator string="Anesthesia" id="separator_anesthesia_details" colspan="2"/>
+            <newline/>
+            <field name="extra_info" colspan="2"/>
+            <field name="anesthesia_report" colspan="2"/>
+        </page>
         <page id="procedures_page" string="Procedures">
             <field name="procedures" colspan="4"/>
+        </page>
+        <page id="complications" string="Complications">
+            <field name="surgery_complications" colspan="4"/>
+            <field name="complications_notes" colspan="4"/>
         </page>
         <page id="supplies_page" string="Supplies">
             <field name="supplies"/>
@@ -60,15 +75,6 @@
             <field name="surgery_team" colspan="4"/>
         </page>
     </notebook>
-    <group string="Main Procedure" id="main_procedure_group" colspan="4">
-        <field name="main_procedure"/>
-    </group>
-    <newline/>
-    <separator string="Details" id="separator_surgery_details" colspan="2"/>
-    <separator string="Anesthesia" id="separator_anesthesia_details" colspan="2"/>
-    <newline/>
-    <field name="extra_info" colspan="2"/>
-    <field name="anesthesia_report" colspan="2"/>
     <newline/>
     <group id="end_surgery" colspan="4" col="14">
         <label name="surgery_end_date"/>

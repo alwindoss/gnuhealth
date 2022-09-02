@@ -157,6 +157,20 @@
             <field name="name">gnuhealth_operation_tree</field>
         </record>
 
+<!-- Complication -->
+
+        <record model="ir.ui.view" id="gnuhealth_surgery_complication_view">
+            <field name="model">gnuhealth.surgery.complication</field>
+            <field name="type">form</field>
+            <field name="name">gnuhealth_surgery_complication</field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_surgery_complication_tree">
+            <field name="model">gnuhealth.surgery.complication</field>
+            <field name="type">tree</field>
+            <field name="name">gnuhealth_surgery_complication_tree</field>
+        </record>
+
 <!-- Surgery Supply -->
 
         <record model="ir.ui.view" id="gnuhealth_surgery_supply_view">
