@@ -668,8 +668,12 @@ class SurgerySupply(ModelSQL, ModelView):
                          help="Initial required quantity")
     supply = fields.Many2One(
         'product.product', 'Supply', required=True,
-        domain=[('is_medical_supply', '=', True)],
-        help="Supply to be used in this surgery")
+        domain=[
+            'OR',
+            ('is_medical_supply', '=', True),
+            ('is_vaccine', '=', True),
+            ('is_medicament', '=', True)],
+        help="Supplies and drugs to be used in the surgery")
 
     notes = fields.Char('Notes')
     qty_used = fields.Numeric('Used', required=True,
