@@ -22,6 +22,11 @@
         <field name="surgical_wound"/>
     </group>
     <newline/>
+    <group string="Complementary tests" id="preop_complementary_tests">
+        <label name="ecg"/>
+        <field name="ecg"/>
+    </group>
+    <newline/>
     <group string="Misc" id="preop_misc">
         <label name="no_anesthesia"/>
         <field name="no_anesthesia"/>
