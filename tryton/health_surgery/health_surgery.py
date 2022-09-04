@@ -379,6 +379,33 @@ class Surgery(ModelSQL, ModelView):
         ('No anesthesia', 'No anesthesia'),
         ], 'Anesthesia type', sort=False)
 
+    clavien_dindo = fields.Selection([
+        (None, ''),
+        ('grade1', 'Grade I'),
+        ('grade2', 'Grade II'),
+        ('grade3', 'Grade III'),
+        ('grade3a', 'Grade IIIa'),
+        ('grade3a', 'Grade IIIa'),
+        ('grade4', 'Grade IV'),
+        ('grade4a', 'Grade IVa'),
+        ('grade4b', 'Grade IVb'),
+        ('grade5', 'Grade V'),
+        ], 'Clavien-Dindo', sort=False,
+        help="Grade I: Any deviation from the normal postoperative "
+             "course without the need for pharmacological treatment "
+             "or surgical, endoscopic and radiological interventions\n"
+             "Grade II: Requiring pharmacological treatment with drugs "
+             "other than such allowed for grade I complications.\n"
+             "Grade III: Requiring surgical, endoscopic or radiological "
+             "intervention.\n"
+             "  IIIa: Intervention not under general anesthesia\n"
+             "  IIIb: Intervention under general anesthesia\n"
+             "Grade IV: Life-threatening complication (including CNS "
+             "complications) requiring IC/ICU-management.\n"
+             "  IVa: single organ dysfunction (including dialysis)\n"
+             "  IVb: multiorgan dysfunction\n"
+             "Grade V: Death of a patient")
+
     surgery_complications = fields.One2Many(
         'gnuhealth.surgery.complication', 'name', 'Complications',
         help="Complications related to the surgery")
@@ -792,6 +819,11 @@ class PreOperativeAssessment(ModelSQL, ModelView):
     needs_blood_reserve = fields.Boolean(
         'Needs blood reservation',
         help="The surgery requires preoperative blood ordering")
+
+    # Include link to patient ECG
+    ecg = fields.Many2One(
+        'gnuhealth.patient.ecg', 'ECG',
+        help='Link to the associated electrocardiogram')
 
     @staticmethod
     def default_assessment_date():

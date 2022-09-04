@@ -65,6 +65,8 @@
             <field name="procedures" colspan="4"/>
         </page>
         <page id="complications" string="Complications">
+            <label name="clavien_dindo"/>
+            <field name="clavien_dindo"/>
             <field name="surgery_complications" colspan="4"/>
             <field name="complications_notes" colspan="4"/>
         </page>
