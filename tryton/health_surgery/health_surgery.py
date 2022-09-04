@@ -785,6 +785,14 @@ class PreOperativeAssessment(ModelSQL, ModelView):
         ('IV', 'Dirty-Infected . Class IV'),
         ], 'Surgical wound', sort=False)
 
+    no_anesthesia = fields.Boolean(
+        'Do NOT use anesthesia',
+        help="The patient is not eligible to be anesthetized")
+
+    needs_blood_reserve = fields.Boolean(
+        'Needs blood reservation',
+        help="The surgery requires preoperative blood ordering")
+
     @staticmethod
     def default_assessment_date():
         return datetime.now()

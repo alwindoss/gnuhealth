@@ -10,6 +10,7 @@
         <label name="surgery"/>
         <field name="surgery"/>
     </group>
+    <newline/>
     <group string="Risk assessment" id="group_preop_risk" colspan="4">
         <label name="preop_asa"/>
         <field name="preop_asa"/>
@@ -20,6 +21,12 @@
         <label name="surgical_wound"/>
         <field name="surgical_wound"/>
     </group>
-
     <newline/>
+    <group string="Misc" id="preop_misc">
+        <label name="no_anesthesia"/>
+        <field name="no_anesthesia"/>
+        <label name="needs_blood_reserve"/>
+        <field name="needs_blood_reserve"/>
+    </group>
+
 </form>
