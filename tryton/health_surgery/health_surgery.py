@@ -23,22 +23,29 @@
 ##############################################################################
 import pytz
 from dateutil.relativedelta import relativedelta
-from trytond.model import ModelView, ModelSQL, fields
+from trytond.model import ModelView, ModelSingleton, ModelSQL, fields, \
+    ValueMixin
 from datetime import datetime
 from trytond.transaction import Transaction
+from trytond import backend
 from trytond.pool import Pool
-from trytond.pyson import Eval, Not, Equal, And, Or
+from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or
+from trytond import backend
+from trytond.tools.multivalue import migrate_property
 
 from trytond.i18n import gettext
+from trytond.pyson import Id
 
 from .exceptions import (
-    EndDateBeforeStart, ORNotAvailable, OperatingRoomAndDateRequired)
+    EndDateBeforeStart, ORNotAvailable, OperatingRoomAndDateRequired,
+    SurgeryDone
+    )
 
 from trytond.modules.health.core import get_health_professional, \
     get_institution
 
 __all__ = ['RCRI', 'Surgery', 'Operation', 'SurgeryMainProcedure',
-           'SurgerySupply', 'PatientData', 'SurgeryTeam',
+           'SurgerySupply', 'PatientData', 'SurgeryTeam']
            'SurgeryComplication',
            'PreOperativeAssessment']
 
@@ -179,7 +186,9 @@ class RCRI(ModelSQL, ModelView):
             bool_op = 'AND'
         else:
             bool_op = 'OR'
-        return [bool_op, ('patient',) + tuple(clause[1:]), ]
+        return [bool_op,
+            ('patient',) + tuple(clause[1:]),
+            ]
 
 
 class Surgery(ModelSQL, ModelView):
@@ -291,8 +300,8 @@ class Surgery(ModelSQL, ModelView):
         (None, ''),
         ('m', 'Male'),
         ('f', 'Female'),
-        ('f-m', 'Female -> Male'),
-        ('m-f', 'Male -> Female'),
+        ('f-m','Female -> Male'),
+        ('m-f','Male -> Female'),
         ], 'Gender'), 'get_patient_gender', searcher='search_patient_gender')
 
     description = fields.Char('Description')
@@ -540,35 +549,39 @@ class Surgery(ModelSQL, ModelView):
     @classmethod
     @ModelView.button
     def confirmed(cls, surgeries):
-        surgery_id = surgeries[0]
+        Operating_room = Pool().get('gnuhealth.hospital.or')
+        table = cls.__table__()
         cursor = Transaction().connection.cursor()
 
-        # Operating Room and end surgery time check
-        if (not surgery_id.operating_room or not surgery_id.surgery_end_date):
-            raise OperatingRoomAndDateRequired(
-                    gettext('health_surgery.msg_or_and_time_needed'))
+        for surgery in surgeries:
+            # Operating Room and end surgery time check
+            if (not surgery.operating_room or not surgery.surgery_end_date):
+                raise OperatingRoomAndDateRequired(
+                        gettext('health_surgery.msg_or_and_time_needed'))
+            if surgery.surgery_end_date <  surgery.surgery_date:
+                    raise EndDateBeforeStart(
+                        gettext('health_surgery.msg_end_date_before_start'))
+            cursor.execute(*table.select(
+                    table.id,
+                    where=(((table.surgery_date
+                                <= surgery.surgery_date)
+                            & (table.surgery_end_date
+                                >= surgery.surgery_date))
+                        | ((table.surgery_date
+                                <= surgery.surgery_end_date)
+                            & (table.surgery_end_date
+                                >= surgery.surgery_end_date))
+                        | ((table.surgery_date
+                                >= surgery.surgery_date)
+                            & (table.surgery_end_date
+                                <= surgery.surgery_end_date)))
+                    & table.state.in_(['confirmed', 'in_progress'])
+                    & (table.operating_room == surgery.operating_room.id)))
+            if cursor.fetchone():
+                raise ORNotAvailable(
+                        gettext('health_surgery.msg_or_is_not_available'))
 
-        or_id = surgery_id.operating_room.id
-        cursor.execute(
-            "SELECT COUNT(*) \
-            FROM gnuhealth_surgery \
-            WHERE (surgery_date::timestamp,surgery_end_date::timestamp) \
-                OVERLAPS (timestamp %s, timestamp %s) \
-              AND (state = %s or state = %s) \
-              AND operating_room = CAST(%s AS INTEGER) ",
-            (surgery_id.surgery_date,
-             surgery_id.surgery_end_date,
-             'confirmed', 'in_progress', str(or_id)))
-        res = cursor.fetchone()
-        if (surgery_id.surgery_end_date < surgery_id.surgery_date):
-            raise EndDateBeforeStart(
-                    gettext('health_surgery.msg_end_date_before_start'))
-        if res[0] > 0:
-            raise ORNotAvailable(
-                    gettext('health_surgery.msg_or_is_not_available'))
-
-        else:
-            cls.write(surgeries, {'state': 'confirmed'})
+        cls.write(surgeries, {'state': 'confirmed'})
 
     # Cancel the surgery and set it to draft state
     # Free the related Operating Room
@@ -593,7 +606,7 @@ class Surgery(ModelSQL, ModelView):
         Operating_room.write([surgery_id.operating_room],
                              {'state': 'occupied'})
 
-    # Finish the surgery
+    # Finnish the surgery
     # Free the related Operating Room
 
     @classmethod
@@ -649,7 +662,6 @@ class Surgery(ModelSQL, ModelView):
         dt = self.surgery_date
         return datetime.astimezone(dt.replace(tzinfo=pytz.utc),
                                    timezone).time()
-
     @classmethod
     def search_rec_name(cls, name, clause):
         if clause[1].startswith('!') or clause[1].startswith('not '):
@@ -704,7 +716,7 @@ class SurgerySupply(ModelSQL, ModelView):
 
     notes = fields.Char('Notes')
     qty_used = fields.Numeric('Used', required=True,
-                              help="Actual amount used")
+        help="Actual amount used")
 
 
 class SurgeryTeam(ModelSQL, ModelView):

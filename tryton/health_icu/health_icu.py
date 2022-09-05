@@ -82,11 +82,12 @@ class InpatientIcu(ModelSQL, ModelView):
     def check_patient_admitted_at_icu(self):
         # Verify that the patient is not at ICU already
         cursor = Transaction().connection.cursor()
-        cursor.execute("SELECT count(name) "
-            "FROM " + self._table + "  \
-            WHERE (name = %s AND admitted)",
-            (str(self.name.id),))
-        if cursor.fetchone()[0] > 1:
+        table = self.__class__.__table__()
+        cursor.execute(*table.select(
+                table.name, where=(
+                    (table.name == self.name.id)
+                    & (table.admitted == True))))
+        if cursor.fetchone():
             raise PatientAlreadyInICU(
                 gettext('health_icu.msg_patient_already_in_icu'))
 
@@ -451,11 +452,12 @@ class MechanicalVentilation(ModelSQL, ModelView):
     def check_patient_current_mv(self):
         # Check for only one current mechanical ventilation on patient
         cursor = Transaction().connection.cursor()
-        cursor.execute("SELECT count(name) "
-            "FROM " + self._table + "  \
-            WHERE (name = %s AND current_mv)",
-            (str(self.name.id),))
-        if cursor.fetchone()[0] > 1:
+        table = self.__class__.__table__()
+        cursor.execute(*table.select(
+                table.name, where=(
+                    (table.name == self.name.id)
+                    & (table.current_mv == True))))
+        if cursor.fetchone():
             raise PatientAlreadyOnMV(
                 gettext('health_icu.msg_patient_already_on_mv'))
 
