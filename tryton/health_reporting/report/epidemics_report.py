@@ -19,6 +19,8 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+from sql.aggregate import Count
+from sql.functions import DateTrunc
 from datetime import date, datetime
 from trytond.report import Report
 from trytond.pool import Pool
@@ -42,84 +44,77 @@ class InstitutionEpidemicsReport(Report):
     def get_population_with_no_dob(cls):
         """ Return Total Number of living people in the system
         without a date of birth"""
-        cursor = Transaction().connection.cursor()
+        pool = Pool()
+        Party = pool.get('party.party')
 
-        # Check for entries without date of birth
-        cursor.execute("SELECT COUNT(id) \
-            FROM party_party WHERE is_person is TRUE and \
-            deceased is not TRUE and dob is null")
-
-        res = cursor.fetchone()[0]
-
-        return(res)
+        return Party.search([
+                ('is_person', '=', True),
+                ('decesased', '!=', True),
+                ('dob', '=', None),
+                ], count=True)
 
     @classmethod
     def get_population(cls, date1, date2, gender, total):
         """ Return Total Number of living people in the system
         segmented by age group and gender"""
-        cursor = Transaction().connection.cursor()
+        pool = Pool()
+        Party = pool.get('party.party')
 
-        if (total):
-            cursor.execute("SELECT COUNT(id) \
-                FROM party_party WHERE \
-                gender = %s and deceased is not TRUE", (gender))
+        domain = [
+            ('deceased', '!=', True),
+            ('gender', '=', gender),
+            ]
 
-        else:
-            cursor.execute("SELECT COUNT(id) \
-                FROM party_party \
-                WHERE dob BETWEEN %s and %s AND \
-                gender = %s  \
-                and deceased is not TRUE", (date2, date1, gender))
+        if not total:
+            domain.append(('dob', '>=', date2))
+            domain.append(('dob', '<=', date1))
 
-        res = cursor.fetchone()[0]
-
-        return(res)
+        return Party.search(domain, count=True)
 
     @classmethod
     def get_new_people(cls, start_date, end_date, in_health_system):
         """ Return Total Number of new registered persons alive """
+        pool = Pool()
+        Party = pool.get('party.party')
 
-        query = "SELECT COUNT(activation_date) \
-            FROM party_party \
-            WHERE activation_date BETWEEN \
-            %s AND %s and is_person=True and deceased is not TRUE"
-        if (in_health_system):
-            query = query + " and is_patient=True"
-        cursor = Transaction().connection.cursor()
-        cursor.execute(query, (start_date, end_date))
-        res = cursor.fetchone()
-        return(res)
+        domain = [
+            ('activation_date', '>=', start_date),
+            ('activation_date', '<=', end_date),
+            ('decesased', '!=', True),
+            ('is_person', '=', True),
+            ]
+
+        if in_health_system:
+            domain.append(('is_patient', '=', True))
+
+        return Party.search(domain, count=True)
 
     @classmethod
     def get_new_births(cls, start_date, end_date):
         """ Return birth certificates within that period """
+        pool = Pool()
+        BirthCertificate = pool.get('gnuhealth.birth_certificate')
 
-        query = "SELECT COUNT(dob) \
-            FROM gnuhealth_birth_certificate \
-            WHERE dob BETWEEN \
-            %s AND %s"
-
-        cursor = Transaction().connection.cursor()
-        cursor.execute(query, (start_date, end_date))
-
-        res = cursor.fetchone()
-        return(res)
+        return BirthCertificate.search([
+                ('dob', '>=', start_date),
+                ('dob', '<=', end_date),
+                ], count=True)
 
     @classmethod
     def get_new_deaths(cls, start_date, end_date):
         """ Return death certificates within that period """
         """ Truncate the timestamp of DoD to match a whole day"""
+        pool = Pool()
+        DeathCertificate = pool.get('gnuhealth.death_certificate')
+        table = DeathCertificate.__table__()
 
-        query = "SELECT COUNT(dod) \
-            FROM gnuhealth_death_certificate \
-            WHERE date_trunc('day', dod) BETWEEN \
-            %s AND %s"
+        dod = DateTrunc('day', table.dod)
 
         cursor = Transaction().connection.cursor()
-        cursor.execute(query, (start_date, end_date))
-
-        res = cursor.fetchone()
-        return(res)
+        cursor.execute(*table.select(
+                Count(table.dod),
+                where=((dod >= start_date) & (dod <= end_date))))
+        return cursor.fetchone()
 
     @classmethod
     def get_confirmed_cases(cls, start_date, end_date, dx):

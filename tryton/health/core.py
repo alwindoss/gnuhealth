@@ -111,19 +111,22 @@ def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
 def get_institution():
     # Retrieve the institution associated to this GNU Health instance
     # That is associated to the Company.
-    company = Transaction().context.get('company')
+    pool = Pool()
+    Company = pool.get('company.company')
+    Institution = pool.get('gnuhealth.institution')
+    company = Company.__table__()
+    institution = Institution.__table__()
+
+    company_id = Transaction().context.get('company')
 
     cursor = Transaction().connection.cursor()
-    cursor.execute('SELECT party FROM company_company WHERE id=%s \
-        LIMIT 1', (company,))
-    party_id = cursor.fetchone()
-    if party_id:
-        cursor = Transaction().connection.cursor()
-        cursor.execute('SELECT id FROM gnuhealth_institution WHERE \
-            name = %s LIMIT 1', (party_id[0],))
-        institution_id = cursor.fetchone()
-        if (institution_id):
-            return int(institution_id[0])
+    cursor.execute(*company.join(institution, condition=(
+                institution.name == company.party)).select(
+            institution.id,
+            where=(company.id == company_id)))
+    institution_id = cursor.fetchone()
+    if institution_id:
+        return int(institution_id[0])
 
 
 def get_health_professional(required=True):
@@ -132,20 +135,22 @@ def get_health_professional(required=True):
     # If the method is called with the arg "required" as False, then
     # the error message won't be shown in the case of not finding
     # the corresponding healthprof (eg, creating a new appointment)
+    pool = Pool()
+    Party = pool.get('party.party')
+    Professional = pool.get('gnuhealth.healthprofessional')
+    party = Party.__table__()
+    professional = Professional.__table__()
+
     cursor = Transaction().connection.cursor()
-    User = Pool().get('res.user')
-    user = User(Transaction().user)
-    login_user_id = int(user.id)
-    cursor.execute('SELECT id FROM party_party WHERE is_healthprof=True \
-        AND internal_user = %s LIMIT 1', (login_user_id,))
-    partner_id = cursor.fetchone()
-    if partner_id:
-        cursor = Transaction().connection.cursor()
-        cursor.execute('SELECT id FROM gnuhealth_healthprofessional WHERE \
-            name = %s LIMIT 1', (partner_id[0],))
-        healthprof_id = cursor.fetchone()
-        if (healthprof_id):
-            return int(healthprof_id[0])
+    cursor.execute(*party.join(professional,
+            condition=(professional.name == party.id)).select(
+            professional.id,
+            where=(
+                (party.is_healthprof == True)
+                & (party.internal_user == Transaction().user))))
+    healthprof_id = cursor.fetchone()
+    if healthprof_id:
+        return int(healthprof_id[0])
     else:
         if required:
             raise NoAssociatedHealthProfessional(gettext(
