@@ -11,7 +11,9 @@
         <field name="code"/>
     </group>
     <newline/>
-    <group colspan="4" col="8" id="group_surgery_header">
+    <group colspan="4" col="10" id="group_surgery_header">
+        <label name="protocol"/>
+        <field name="protocol"/>
         <label name="description"/>
         <field name="description"/>
         <label name="pathology"/>

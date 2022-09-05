@@ -171,6 +171,44 @@
             <field name="name">gnuhealth_surgery_complication_tree</field>
         </record>
 
+<!-- Surgery protocol -->
+
+        <record model="ir.ui.view" id="gnuhealth_surgery_protocol_view">
+            <field name="model">gnuhealth.surgery.protocol</field>
+            <field name="type">form</field>
+            <field name="name">gnuhealth_surgery_protocol</field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_surgery_protocol_tree">
+            <field name="model">gnuhealth.surgery.protocol</field>
+            <field name="type">tree</field>
+            <field name="name">gnuhealth_surgery_protocol_tree</field>
+        </record>
+
+<!-- Surgery Protocol Menu -->
+
+        <record model="ir.action.act_window" id="action_gnuhealth_surgery_protocol_view">
+            <field name="name">Surgery Protocol</field>
+            <field name="res_model">gnuhealth.surgery.protocol</field>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_gnuhealth_surgery_protocol_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="gnuhealth_surgery_protocol_tree"/>
+            <field name="act_window" ref="action_gnuhealth_surgery_protocol_view"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_gnuhealth_surgery_protocol_form">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="gnuhealth_surgery_protocol_view"/>
+            <field name="act_window" ref="action_gnuhealth_surgery_protocol_view"/>
+        </record>
+
+        <menuitem name="Surgery Protocols" parent="gnuhealth_surgery_menu"
+            id="gnuhealth_surgery_protocol" sequence="50"
+            action="action_gnuhealth_surgery_protocol_view"
+            icon="icon-surgery"/>
+
+
 <!-- Surgery Supply -->
 
         <record model="ir.ui.view" id="gnuhealth_surgery_supply_view">
