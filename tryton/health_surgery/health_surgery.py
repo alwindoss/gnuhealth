@@ -408,6 +408,31 @@ class Surgery(ModelSQL, ModelView):
              "  IVb: multiorgan dysfunction\n"
              "Grade V: Death of a patient")
 
+    patient_positioning = fields.Selection([
+        (None, ''),
+        ('supine_decubitus', 'Supine Decubitus'),
+        ('prone_decubitus', 'Prone Decubitus'),
+        ('lithotomy', 'Lithotomy'),
+        ('lateral', 'Lateral'),
+        ('sims', 'Sims'),
+        ('fowlers', 'Fowlers'),
+        ('semi_fowlers', 'Semi-Fowler'),
+        ('trendelenburg', 'Trendelenburg'),
+        ('reverse_trendelenburg', 'Reverse Trendelenburg'),
+        ('jacknife', 'Jacknife'),
+        ('knee_chest', 'Knee-chest'),
+        ('lloyd_davies', 'Lloyd-Davies'),
+        ('kidney', 'Kidney positioning'),
+        ('other', 'Other'),
+        ], 'Patient Positioning', sort=False,)
+
+    laterality = fields.Selection([
+        (None, ''),
+        ('right', 'Right'),
+        ('left', 'Left'),
+        ('bilateral', 'Bilateral'),
+        ], 'Laterality', sort=False,)
+
     surgery_complications = fields.One2Many(
         'gnuhealth.surgery.complication', 'name', 'Complications',
         help="Complications related to the surgery")
