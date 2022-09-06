@@ -142,11 +142,12 @@ def get_health_professional(required=True):
     professional = Professional.__table__()
 
     cursor = Transaction().connection.cursor()
-    cursor.execute(*party.join(professional,
-            condition=(professional.name == party.id)).select(
+    cursor.execute(
+        *party.join(professional,
+                    condition=(professional.name == party.id)).select(
             professional.id,
             where=(
-                (party.is_healthprof == True)
+                (party.is_healthprof)
                 & (party.internal_user == Transaction().user))))
     healthprof_id = cursor.fetchone()
     if healthprof_id:
