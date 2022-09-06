@@ -47,6 +47,12 @@
         <field name="preop_sterility"/>
     </group>
     <newline/>
+    <group string="Patient positioning" id="group_patient_positioning" colspan="4">
+        <label name="patient_positioning"/>
+        <field name="patient_positioning"/>
+        <label name="laterality"/>
+        <field name="laterality"/>
+    </group>
     <group string="Anesthesia" id="group_anesthesia" colspan="4" col="10">
         <label name="anesthesia_type"/>
         <field name="anesthesia_type"/>
