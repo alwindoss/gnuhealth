@@ -84,6 +84,16 @@
         <page id="team_page" string="Team">
             <field name="surgery_team" colspan="4"/>
         </page>
+        <page id="postop" string="Postoperative">
+            <group string="Postoperative guidelines" id="postop_group" colspan="4" yexpand="1">
+                <field name="postoperative_guidelines" colspan="4"/>
+            </group>
+        </page>
+        <page id="discharge" string="Discharge">
+            <group string="Discharge instructions" id="discharge_instructions_group" colspan="4" yexpand="1">
+                <field name="discharge_instructions" colspan="4"/>
+            </group>
+        </page>
     </notebook>
     <newline/>
     <group id="end_surgery" colspan="4" col="14">
