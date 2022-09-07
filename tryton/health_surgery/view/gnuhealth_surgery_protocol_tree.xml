@@ -2,4 +2,6 @@
 <tree>
     <field name="name"/>
     <field name="description"/>
+    <field name="pathology"/>
+    <field name="classification"/>
 </tree>
