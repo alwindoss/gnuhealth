@@ -212,6 +212,10 @@ class Surgery(ModelSQL, ModelView):
     protocol = fields.Many2One(
         'gnuhealth.surgery.protocol', 'Protocol')
 
+    postoperative_guidelines = fields.Text('Postoperative guidelines')
+
+    discharge_instructions = fields.Text('Discharge Instructions')
+
     procedures = fields.One2Many(
         'gnuhealth.operation', 'name', 'Procedures',
         help="List of the procedures in the surgery. Please enter the first "
@@ -488,6 +492,9 @@ class Surgery(ModelSQL, ModelView):
             self.anesthesia_type = self.protocol.anesthesia_type
             self.patient_positioning = self.protocol.patient_positioning
             self.laterality = self.protocol.laterality
+            self.postoperative_guidelines = \
+                self.protocol.postoperative_guidelines
+            self.discharge_instructions = self.protocol.discharge_instructions
 
     def get_rec_name(self, name):
         res = f'{self.code} ({self.description})'
@@ -611,7 +618,6 @@ class Surgery(ModelSQL, ModelView):
 
     # Cancel the surgery and set it to draft state
     # Free the related Operating Room
-
     @classmethod
     @ModelView.button
     def cancel(cls, surgeries):
@@ -932,6 +938,10 @@ class SurgeryProtocol(ModelSQL, ModelView):
         ('u', 'Urgent'),
         ('e', 'Emergency'),
         ], 'Urgency', help="Urgency level for this surgery", sort=False)
+
+    postoperative_guidelines = fields.Text('Postoperative guidelines')
+
+    discharge_instructions = fields.Text('Discharge Instructions')
 
     @classmethod
     def __setup__(cls):

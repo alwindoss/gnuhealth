@@ -13,12 +13,22 @@
     <label name="anesthesia_type"/>
     <field name="anesthesia_type"/>
     <newline/>
-    <label name="patient_positioning"/>
-    <field name="patient_positioning"/>
-    <label name="laterality"/>
-    <field name="laterality"/>
+    <group string="Patient positioning" id="patient_positioning_group" colspan="4">
+        <label name="patient_positioning"/>
+        <field name="patient_positioning"/>
+        <label name="laterality"/>
+        <field name="laterality"/>
+    </group>
     <newline/>
-    <label name="general_info"/>
-    <field name="general_info" colspan="4"/>
-    
+    <group string="General Info" id="general_info_group" colspan="4">
+        <field name="general_info" colspan="4"/>
+    </group>    
+    <newline/>
+    <group string="Postoperative guidelines" id="postoperative_guidelines_group" colspan="4" yexpand="1">
+        <field name="postoperative_guidelines" colspan="4"/>
+    </group>    
+    <newline/>
+    <group string="Discharge instructions" id="discharge_instructions_group" colspan="4" yexpand="1">
+        <field name="discharge_instructions" colspan="4" yfill="1"/>
+    </group>    
 </form>
