@@ -222,7 +222,7 @@ class Surgery(ModelSQL, ModelView):
         help="List of the supplies required for the surgery")
 
     pathology = fields.Many2One(
-        'gnuhealth.pathology', 'Condition',
+        'gnuhealth.pathology', 'Health Condition',
         help="Base Condition / Reason")
 
     classification = fields.Selection([
@@ -483,6 +483,11 @@ class Surgery(ModelSQL, ModelView):
         if (self.protocol):
             self.description = self.protocol.description
             self.extra_info = self.protocol.general_info
+            self.pathology = self.protocol.pathology
+            self.classification = self.protocol.classification
+            self.anesthesia_type = self.protocol.anesthesia_type
+            self.patient_positioning = self.protocol.patient_positioning
+            self.laterality = self.protocol.laterality
 
     def get_rec_name(self, name):
         res = f'{self.code} ({self.description})'
@@ -876,6 +881,57 @@ class SurgeryProtocol(ModelSQL, ModelView):
     description = fields.Char('Description')
 
     general_info = fields.Text('General Information')
+
+    anesthesia_type = fields.Selection([
+        (None, ''),
+        ('local', 'Local'),
+        ('regional', 'Regional'),
+        ('general', 'General'),
+        ('sedation', 'Sedation'),
+        ('rachianesthesia', 'Rachianesthesia'),
+        ('epidural', 'Epidural'),
+        ('peribulbar', 'Peribulbar'),
+        ('regional_block', 'Regional Block'),
+        ('local_sedation', 'Local + sedation'),
+        ('No anesthesia', 'No anesthesia'),
+        ], 'Anesthesia type', sort=False)
+
+    patient_positioning = fields.Selection([
+        (None, ''),
+        ('supine_decubitus', 'Supine Decubitus'),
+        ('prone_decubitus', 'Prone Decubitus'),
+        ('lithotomy', 'Lithotomy'),
+        ('lateral', 'Lateral'),
+        ('sims', 'Sims'),
+        ('fowlers', 'Fowlers'),
+        ('semi_fowlers', 'Semi-Fowler'),
+        ('trendelenburg', 'Trendelenburg'),
+        ('reverse_trendelenburg', 'Reverse Trendelenburg'),
+        ('jacknife', 'Jacknife'),
+        ('knee_chest', 'Knee-chest'),
+        ('lloyd_davies', 'Lloyd-Davies'),
+        ('kidney', 'Kidney positioning'),
+        ('other', 'Other'),
+        ], 'Patient Positioning', sort=False,)
+
+    laterality = fields.Selection([
+        (None, ''),
+        ('right', 'Right'),
+        ('left', 'Left'),
+        ('bilateral', 'Bilateral'),
+        ], 'Laterality', sort=False,)
+
+    pathology = fields.Many2One(
+        'gnuhealth.pathology', 'Health Condition',
+        help="Base Condition / Reason")
+
+    classification = fields.Selection([
+        (None, ''),
+        ('o', 'Optional'),
+        ('r', 'Required'),
+        ('u', 'Urgent'),
+        ('e', 'Emergency'),
+        ], 'Urgency', help="Urgency level for this surgery", sort=False)
 
     @classmethod
     def __setup__(cls):

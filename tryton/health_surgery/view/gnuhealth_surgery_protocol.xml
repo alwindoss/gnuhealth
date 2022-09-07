@@ -5,6 +5,20 @@
     <label name="description"/>
     <field name="description"/>
     <newline/>
+    <label name="pathology"/>
+    <field name="pathology"/>
+    <label name="classification"/>
+    <field name="classification"/>
+    <newline/>
+    <label name="anesthesia_type"/>
+    <field name="anesthesia_type"/>
+    <newline/>
+    <label name="patient_positioning"/>
+    <field name="patient_positioning"/>
+    <label name="laterality"/>
+    <field name="laterality"/>
+    <newline/>
     <label name="general_info"/>
     <field name="general_info" colspan="4"/>
+    
 </form>
