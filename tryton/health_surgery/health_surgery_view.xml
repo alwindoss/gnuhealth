@@ -209,6 +209,20 @@
             icon="icon-surgery"/>
 
 
+<!-- Surgical Drain -->
+
+        <record model="ir.ui.view" id="gnuhealth_surgery_drain_view">
+            <field name="model">gnuhealth.surgery.drain</field>
+            <field name="type">form</field>
+            <field name="name">gnuhealth_surgery_drain</field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_surgery_drain_tree">
+            <field name="model">gnuhealth.surgery.drain</field>
+            <field name="type">tree</field>
+            <field name="name">gnuhealth_surgery_drain_tree</field>
+        </record>
+
 <!-- Surgery Supply -->
 
         <record model="ir.ui.view" id="gnuhealth_surgery_supply_view">

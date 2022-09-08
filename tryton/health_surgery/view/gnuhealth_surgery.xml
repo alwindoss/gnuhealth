@@ -59,6 +59,10 @@
     </group>
     <notebook>
         <page id="main_page" string="Main">
+            <group string="Approach" id="main_procedure_group" colspan="4">
+                <field name="approach"/>
+            </group>
+            <newline/>
             <group string="Main Procedure" id="main_procedure_group" colspan="4">
                 <field name="main_procedure"/>
             </group>
@@ -71,6 +75,8 @@
         </page>
         <page id="procedures_page" string="Procedures">
             <field name="procedures" colspan="4"/>
+            <newline/>
+            <field name="drains" colspan="4"/>
         </page>
         <page id="complications" string="Complications">
             <label name="clavien_dindo"/>

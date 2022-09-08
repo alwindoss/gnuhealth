@@ -39,7 +39,7 @@ from trytond.modules.health.core import get_health_professional, \
 
 __all__ = ['RCRI', 'Surgery', 'Operation', 'SurgeryMainProcedure',
            'SurgerySupply', 'PatientData', 'SurgeryTeam',
-           'SurgeryComplication',
+           'SurgeryComplication', 'SurgeryDrain',
            'PreOperativeAssessment', 'SurgeryProtocol']
 
 
@@ -437,11 +437,25 @@ class Surgery(ModelSQL, ModelView):
         ('bilateral', 'Bilateral'),
         ], 'Laterality', sort=False,)
 
+    approach = fields.Selection([
+        (None, ''),
+        ('open', 'Open'),
+        ('laparoscopic', 'Laparoscopic'),
+        ('endoscopic', 'Endoscopic'),
+        ('arthroscopic', 'Arthroscopic'),
+        ('robotic', 'Robotic'),
+        ('other', 'other'),
+        ], 'Approach', sort=False)
+
     surgery_complications = fields.One2Many(
         'gnuhealth.surgery.complication', 'name', 'Complications',
         help="Complications related to the surgery")
 
     complications_notes = fields.Text('Complications')
+
+    drains = fields.One2Many(
+        'gnuhealth.surgery.drain', 'name', 'Drains',
+        help="Drains on this surgery")
 
     extra_info = fields.Text('Extra Info')
 
@@ -495,6 +509,7 @@ class Surgery(ModelSQL, ModelView):
             self.postoperative_guidelines = \
                 self.protocol.postoperative_guidelines
             self.discharge_instructions = self.protocol.discharge_instructions
+            self.approach = self.protocol.approach
 
     def get_rec_name(self, name):
         res = f'{self.code} ({self.description})'
@@ -721,6 +736,29 @@ class Operation(ModelSQL, ModelView):
         return self.procedure.rec_name
 
 
+class SurgeryDrain(ModelSQL, ModelView):
+    'Surgical drain'
+    __name__ = 'gnuhealth.surgery.drain'
+
+    name = fields.Many2One('gnuhealth.surgery', 'Surgery')
+    drain = fields.Selection([
+        (None, ''),
+        ('penrose', 'Penrose'),
+        ('blake', 'Blake'),
+        ('kehr', 'Kehr'),
+        ('jackson_pratt', 'Jackson-Pratt'),
+        ('redon', 'Redon'),
+        ('thoracic_tube', 'Thoracic tube'),
+        ('redivac', 'Redivac'),
+        ('davol', 'Davol'),
+        ], 'Drain', sort=False,)
+
+    notes = fields.Text('Notes')
+
+    def get_rec_name(self, name):
+        return self.drain
+
+
 class SurgeryMainProcedure(ModelSQL, ModelView):
     __name__ = 'gnuhealth.surgery'
 
@@ -926,6 +964,16 @@ class SurgeryProtocol(ModelSQL, ModelView):
         ('left', 'Left'),
         ('bilateral', 'Bilateral'),
         ], 'Laterality', sort=False,)
+
+    approach = fields.Selection([
+        (None, ''),
+        ('open', 'Open'),
+        ('laparoscopic', 'Laparoscopic'),
+        ('endoscopic', 'Endoscopic'),
+        ('arthroscopic', 'Arthroscopic'),
+        ('robotic', 'Robotic'),
+        ('other', 'other'),
+        ], 'Approach', sort=False)
 
     pathology = fields.Many2One(
         'gnuhealth.pathology', 'Health Condition',

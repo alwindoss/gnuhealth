@@ -10,6 +10,8 @@
     <label name="classification"/>
     <field name="classification"/>
     <newline/>
+    <label name="approach"/>
+    <field name="approach"/>
     <label name="anesthesia_type"/>
     <field name="anesthesia_type"/>
     <newline/>
