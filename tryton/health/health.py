@@ -3040,6 +3040,27 @@ class PatientData(ModelSQL, ModelView):
 
     active = fields.Boolean('Active', select=True)
 
+    # General key information about the patient, independent
+    # from coding systems
+    crit_dbt = fields.Boolean('DBT', help="Diabetes")
+    crit_hbp = fields.Boolean(
+        'HBP',
+        help = "High blood pressure (hypertension)")
+    crit_cardio = fields.Boolean('Cardiovascular', help="Cardiovascular")
+    crit_nutrition = fields.Boolean(
+        'Nutrition', help="Issues on nutrition, malnourhisment."
+        " Including obesity, famine and eating disorders")
+    crit_cancer = fields.Boolean('Cancer', help="Cancer")
+    crit_immuno = fields.Boolean(
+        'Immunocompromised', help="Immunocompromised or autoimmune disorders")
+    crit_cognitive = fields.Boolean(
+        'Cognitive', help="Cognitive issues")
+    crit_social = fields.Boolean(
+        'Social',
+        help="There are serious socio-familiar issues, such as"
+             " physical and social barriers, drug addiction, violence,"
+             " education")
+
     @staticmethod
     def default_active():
         return True

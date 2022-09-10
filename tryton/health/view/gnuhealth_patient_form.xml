@@ -19,6 +19,24 @@
             <field xfill="0" xexpand="1" name="photo" height="200" width="200" widget="image"/>
         </group>
     </group>
+    <group id="patient_crit_markers" string="Focus on" colspan="4" col="16">
+        <label name="crit_cardio"/>
+        <field name="crit_cardio"/>
+        <label name="crit_hbp"/>
+        <field name="crit_hbp"/>
+        <label name="crit_dbt"/>
+        <field name="crit_dbt"/>
+        <label name="crit_nutrition"/>
+        <field name="crit_nutrition"/>
+        <label name="crit_cancer"/>
+        <field name="crit_cancer"/>
+        <label name="crit_immuno"/>
+        <field name="crit_immuno"/>
+        <label name="crit_cognitive"/>
+        <field name="crit_cognitive"/>
+        <label name="crit_social"/>
+        <field name="crit_social"/>
+    </group>
     <newline/>
     <notebook>
         <page string="General Info" id="general_info">
