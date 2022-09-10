@@ -15,6 +15,9 @@
         <field name="evaluation"/>
     </group>
     <newline/>
+    <group string="Critical Information" id="group_preop_critical" colspan="4">
+        <field name="critical_info"/>
+    </group>
     <group string="Risk assessment" id="group_preop_risk" colspan="4">
         <label name="preop_asa"/>
         <field name="preop_asa"/>
