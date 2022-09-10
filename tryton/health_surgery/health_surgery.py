@@ -846,6 +846,8 @@ class PreOperativeAssessment(ModelSQL, ModelView):
 
     surgery = fields.Many2One('gnuhealth.surgery', 'Surgery')
 
+    specialty = fields.Many2One('gnuhealth.specialty', 'Specialty')
+
     assessment_date = fields.Date(
         'Date', help="Date of the assessment")
 
@@ -914,6 +916,12 @@ class PreOperativeAssessment(ModelSQL, ModelView):
         'gnuhealth.imaging.test.result', 'Imaging',
         domain=[('patient', '=', Eval('patient'))],
         help='Link to the associated Dx imaging test')
+
+    # Include link to patient lab test (eg, CBC)
+    lab_test = fields.Many2One(
+        'gnuhealth.lab', 'Lab',
+        domain=[('patient', '=', Eval('patient'))],
+        help='Link to the associated lab test')
 
     @staticmethod
     def default_assessment_date():
