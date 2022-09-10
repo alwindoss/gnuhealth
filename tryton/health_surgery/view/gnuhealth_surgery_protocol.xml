@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <form>
+    <group string="Header" id="protocol_header_group" colspan="4">
     <label name="name"/>
     <field name="name"/>
     <label name="description"/>
