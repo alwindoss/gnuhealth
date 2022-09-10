@@ -855,6 +855,11 @@ class PreOperativeAssessment(ModelSQL, ModelView):
     assessment_date = fields.Date(
         'Date', help="Date of the assessment")
 
+    critical_info = fields.Text(
+        'Critical Information',
+        help='Patient important health conditions at the moment of the'
+             ' assessment')
+
     preop_mallampati = fields.Selection([
         (None, ''),
         ('Class 1', 'Class 1: Full visibility of tonsils, uvula and soft '
@@ -930,6 +935,13 @@ class PreOperativeAssessment(ModelSQL, ModelView):
     @staticmethod
     def default_assessment_date():
         return datetime.now()
+
+    # Show the gender and age upon entering the patient
+    # These two are function fields (don't exist at DB level)
+    @fields.depends('patient')
+    def on_change_patient(self):
+        self.critical_info = f'{self.patient.critical_summary} \n' \
+                             f'{self.patient.critical_info}'
 
 
 # SURGERY PROTOCOL TEMPLATE
