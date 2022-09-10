@@ -11,6 +11,8 @@
         <field name="specialty"/>
         <label name="surgery"/>
         <field name="surgery"/>
+        <label name="evaluation"/>
+        <field name="evaluation"/>
     </group>
     <newline/>
     <group string="Risk assessment" id="group_preop_risk" colspan="4">
