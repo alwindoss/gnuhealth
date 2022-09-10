@@ -25,6 +25,8 @@
     <group string="Complementary tests" id="preop_complementary_tests">
         <label name="ecg"/>
         <field name="ecg"/>
+        <label name="imaging_test"/>
+        <field name="imaging_test"/>
     </group>
     <newline/>
     <group string="Misc" id="preop_misc">
