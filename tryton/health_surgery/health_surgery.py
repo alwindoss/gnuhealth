@@ -848,6 +848,10 @@ class PreOperativeAssessment(ModelSQL, ModelView):
 
     specialty = fields.Many2One('gnuhealth.specialty', 'Specialty')
 
+    evaluation = fields.Many2One(
+        'gnuhealth.patient.evaluation', 'Evaluation',
+        help="Related encounter")
+
     assessment_date = fields.Date(
         'Date', help="Date of the assessment")
 
