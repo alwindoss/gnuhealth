@@ -906,7 +906,14 @@ class PreOperativeAssessment(ModelSQL, ModelView):
     # Include link to patient ECG
     ecg = fields.Many2One(
         'gnuhealth.patient.ecg', 'ECG',
+        domain=[('name', '=', Eval('patient'))],
         help='Link to the associated electrocardiogram')
+
+    # Include link to patient Imaging test (eg, Xray)
+    imaging_test = fields.Many2One(
+        'gnuhealth.imaging.test.result', 'Imaging',
+        domain=[('patient', '=', Eval('patient'))],
+        help='Link to the associated Dx imaging test')
 
     @staticmethod
     def default_assessment_date():
