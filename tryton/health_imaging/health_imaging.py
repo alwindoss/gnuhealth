@@ -218,3 +218,7 @@ class ImagingTestResult(ModelSQL, ModelView):
              'The test ID code must be unique')
         ]
         cls._order.insert(0, ('date', 'DESC'))
+
+    def get_rec_name(self, name):
+        res = f'{self.number} ({self.requested_test.name})'
+        return res
