@@ -3045,8 +3045,11 @@ class PatientData(ModelSQL, ModelView):
     crit_dbt = fields.Boolean('DBT', help="Diabetes")
     crit_hbp = fields.Boolean(
         'HBP',
-        help = "High blood pressure (hypertension)")
-    crit_cardio = fields.Boolean('Cardiovascular', help="Cardiovascular")
+        help="High blood pressure (hypertension)")
+    crit_cardio = fields.Boolean(
+        'Cardiovascular',
+        help="Cardiovascular disease, excluding HPB, that will "
+             " is set on its own field.")
     crit_nutrition = fields.Boolean(
         'Nutrition', help="Issues on nutrition, malnourhisment."
         " Including obesity, famine and eating disorders")
@@ -3058,8 +3061,8 @@ class PatientData(ModelSQL, ModelView):
     crit_social = fields.Boolean(
         'Social',
         help="There are serious socio-familiar issues, such as"
-             " physical and social barriers, drug addiction, violence,"
-             " education")
+             " physical and social barriers, drug addiction, violence "
+             " and education")
 
     @staticmethod
     def default_active():
