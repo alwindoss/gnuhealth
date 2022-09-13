@@ -303,6 +303,11 @@ class Surgery(ModelSQL, ModelView):
 
     description = fields.Char('Description')
 
+    preop_assessment = fields.Many2One(
+        'gnuhealth.preoperative_assessment', 'Preop assessment',
+        domain=[('surgery', '=', Eval('active_id'))],
+        help="Preoperative assessment associated to this surgery")
+
     preop_oximeter = fields.Boolean(
         'Pulse Oximeter in place',
         help="Pulse oximeter is in place "
@@ -942,6 +947,12 @@ class PreOperativeAssessment(ModelSQL, ModelView):
     def on_change_patient(self):
         self.critical_info = f'{self.patient.critical_summary} \n' \
                              f'{self.patient.critical_info}'
+
+    def get_rec_name(self, name):
+        asa = ''
+        if (self.preop_asa):
+            asa = self.preop_asa
+        return (f'{str(self.assessment_date)} ASA: {asa}')
 
 
 # SURGERY PROTOCOL TEMPLATE
