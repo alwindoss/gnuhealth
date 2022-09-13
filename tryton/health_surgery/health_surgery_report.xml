@@ -14,5 +14,18 @@
             <field name="action" ref="report_surgery_report"/>
         </record>
 
+        <record model="ir.action.report" id="report_outpatient_surgery_report">
+            <field name="name">Outpatient Surgery Report</field>
+            <field name="model">gnuhealth.surgery</field>
+            <field name="report_name">surgery</field>
+            <field name="report">health_surgery/report/surgery_outpatient_report.fodt</field>
+            <field name="extension">pdf</field>
+        </record>
+        <record model="ir.action.keyword" id="report_outpatient_surgery">
+            <field name="keyword">form_print</field>
+            <field name="model">gnuhealth.surgery,-1</field>
+            <field name="action" ref="report_outpatient_surgery_report"/>
+        </record>
+
     </data>
 </tryton>
