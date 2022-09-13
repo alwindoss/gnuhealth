@@ -19,7 +19,9 @@
             <field xfill="0" xexpand="1" name="photo" height="200" width="200" widget="image"/>
         </group>
     </group>
-    <group id="patient_crit_markers" string="Focus on" colspan="4" col="16">
+    <group id="patient_crit_markers" string="Focus on" colspan="4" col="18">
+        <label name="crit_allergic"/>
+        <field name="crit_allergic"/>
         <label name="crit_cardio"/>
         <field name="crit_cardio"/>
         <label name="crit_hbp"/>

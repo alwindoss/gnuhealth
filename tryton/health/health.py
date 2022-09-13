@@ -3042,20 +3042,23 @@ class PatientData(ModelSQL, ModelView):
 
     # General key information about the patient, independent
     # from coding systems
+    crit_allergic = fields.Boolean(
+        'Allergic',
+        help="Known serious allergic reactions")
     crit_dbt = fields.Boolean('DBT', help="Diabetes")
     crit_hbp = fields.Boolean(
         'HBP',
         help="High blood pressure (hypertension)")
     crit_cardio = fields.Boolean(
         'Cardiovascular',
-        help="Cardiovascular disease, excluding HPB, that will "
-             " is set on its own field.")
+        help="Cardiovascular disease, excluding HBP, that has "
+             " its own field.")
     crit_nutrition = fields.Boolean(
         'Nutrition', help="Issues on nutrition, malnourhisment."
         " Including obesity, famine and eating disorders")
     crit_cancer = fields.Boolean('Cancer', help="Cancer")
     crit_immuno = fields.Boolean(
-        'Immunocompromised', help="Immunocompromised or autoimmune disorders")
+        'Immunity', help="Immunocompromised or autoimmune disorders")
     crit_cognitive = fields.Boolean(
         'Cognitive', help="Cognitive issues")
     crit_social = fields.Boolean(
