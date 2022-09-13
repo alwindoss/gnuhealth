@@ -15,6 +15,7 @@
     <field name="approach"/>
     <label name="anesthesia_type"/>
     <field name="anesthesia_type"/>
+    </group>
     <newline/>
     <group string="Patient positioning" id="patient_positioning_group" colspan="4">
         <label name="patient_positioning"/>
