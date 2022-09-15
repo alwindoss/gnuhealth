@@ -59,6 +59,7 @@ from .exceptions import (
     )
 
 from .core import (get_institution, compute_age_from_dates,
+                   estimated_date_from_years,
                    get_health_professional)
 
 
@@ -395,6 +396,8 @@ class Party(ModelSQL, ModelView):
         'Family names', help='Family or last names',
         states={'invisible': Not(Bool(Eval('is_person')))})
     dob = fields.Date('DoB', help='Date of Birth')
+    est_dob = fields.Boolean('Est', help="Estimated from referred years")
+    est_years = fields.Integer('Years', help="Referred years")
 
     age = fields.Function(fields.Char('Age'), 'person_age')
 
@@ -829,6 +832,24 @@ class Party(ModelSQL, ModelView):
     def on_change_with_du_address(self):
         if (self.du):
             return self.get_du_address(name=None)
+
+    @fields.depends('est_years', 'dob', 'deceased', 'dod', 'gender')
+    def on_change_est_years(self):
+        if (self.est_years):
+            self.dob = estimated_date_from_years(self.est_years)
+            self.est_dob = True
+            self.age = self.person_age(name='age')
+            # Resets the referred age in years to None after it computes
+            # the age, so the form won't confuse the reader.
+            self.est_years = None
+
+    @fields.depends('dob', 'deceased', 'dod', 'gender')
+    def on_change_dob(self):
+        """ Automatically show the age in Y-M-D format upon
+            entering the date of birth
+        """
+        self.age = self.person_age(name='age')
+        self.est_years = None
 
     @classmethod
     def validate(cls, parties):
