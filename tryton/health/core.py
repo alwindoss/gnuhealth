@@ -58,6 +58,18 @@ def convert_date_timezone(sdate, target):
     return res
 
 
+def estimated_date_from_years(years_old):
+    """ returns a date of substracting the
+        referred number of years from today's date
+        It can be used in different context, such as to estimate
+        the date of birth from a referred age in years
+    """
+
+    today = datetime.today().date()
+    est_dob = today - relativedelta(years=years_old)
+    return est_dob
+
+
 def compute_age_from_dates(dob, deceased, dod, gender, caller, extra_date):
     """ Get the person's age.
 
