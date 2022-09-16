@@ -11,6 +11,10 @@
     <label name="classification"/>
     <field name="classification"/>
     <newline/>
+    <group string="Surgical Intervention" id="surgical_intervention_group" colspan="4">
+        <field name="surgical_intervention"/>
+    </group>
+    <newline/>
     <label name="approach"/>
     <field name="approach"/>
     <label name="anesthesia_type"/>

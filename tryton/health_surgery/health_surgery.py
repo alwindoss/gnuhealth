@@ -394,7 +394,7 @@ class Surgery(ModelSQL, ModelView):
         ('regional_block', 'Regional Block'),
         ('local_sedation', 'Local + sedation'),
         ('No anesthesia', 'No anesthesia'),
-        ], 'Anesthesia type', sort=False)
+        ], 'Anesthesia', sort=False)
 
     clavien_dindo = fields.Selection([
         (None, ''),
@@ -523,6 +523,7 @@ class Surgery(ModelSQL, ModelView):
             self.description = self.protocol.description
             self.extra_info = self.protocol.general_info
             self.pathology = self.protocol.pathology
+            self.surgical_intervention = self.protocol.surgical_intervention
             self.classification = self.protocol.classification
             self.anesthesia_type = self.protocol.anesthesia_type
             self.patient_positioning = self.protocol.patient_positioning
@@ -986,7 +987,7 @@ class SurgeryProtocol(ModelSQL, ModelView):
         ('regional_block', 'Regional Block'),
         ('local_sedation', 'Local + sedation'),
         ('No anesthesia', 'No anesthesia'),
-        ], 'Anesthesia type', sort=False)
+        ], 'Anesthesia', sort=False)
 
     patient_positioning = fields.Selection([
         (None, ''),
@@ -1022,6 +1023,10 @@ class SurgeryProtocol(ModelSQL, ModelView):
         ('robotic', 'Robotic'),
         ('other', 'other'),
         ], 'Approach', sort=False)
+
+    surgical_intervention = fields.Many2One(
+        'gnuhealth.procedure', 'Surgical Intervention',
+        help="This code reflects the main intervention of this surgery.")
 
     pathology = fields.Many2One(
         'gnuhealth.pathology', 'Health Condition',
