@@ -104,11 +104,13 @@
         </page>
     </notebook>
     <newline/>
-    <group id="end_surgery" colspan="4" col="14">
+    <group id="end_surgery" colspan="4" col="16">
         <label name="surgery_end_date"/>
         <field name="surgery_end_date"/>
         <label name="surgery_length"/>
         <field name="surgery_length"/>
+        <label name="ellapsed_time"/>
+        <field name="ellapsed_time"/>
         <label name="postoperative_dx"/>
         <field name="postoperative_dx"/>
         <field name="state"/>

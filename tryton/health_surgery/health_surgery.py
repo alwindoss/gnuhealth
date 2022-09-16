@@ -258,11 +258,18 @@ class Surgery(ModelSQL, ModelView):
 
     surgery_length = fields.Function(
         fields.TimeDelta(
-            'Duration',
+            'Length',
             states={'invisible': And(Not(Equal(Eval('state'), 'done')),
                     Not(Equal(Eval('state'), 'signed')))},
             help="Length of the surgery"),
         'surgery_duration')
+
+    ellapsed_time = fields.Integer(
+        "Ellapsed time",
+        help="Time in minutes of the surgery process."
+             " This value is optional and is used when the automatic"
+             " computed surgery length does not reflect the actual"
+             " time or it has been recorded afterwards.")
 
     state = fields.Selection([
         ('draft', 'Draft'),
