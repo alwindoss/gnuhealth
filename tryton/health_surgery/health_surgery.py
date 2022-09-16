@@ -27,7 +27,7 @@ from trytond.model import ModelView, ModelSQL, fields, Unique
 from datetime import datetime
 from trytond.transaction import Transaction
 from trytond.pool import Pool
-from trytond.pyson import Eval, Not, Equal, And, Or
+from trytond.pyson import Eval, Not, Equal, And
 
 from trytond.i18n import gettext
 
@@ -37,9 +37,9 @@ from .exceptions import (
 from trytond.modules.health.core import get_health_professional, \
     get_institution
 
-__all__ = ['RCRI', 'Surgery', 'Operation', 'SurgeryMainProcedure',
-           'SurgerySupply', 'PatientData', 'SurgeryTeam',
-           'SurgeryComplication', 'SurgeryDrain',
+__all__ = ['RCRI', 'Surgery', 'Operation', 'SurgerySupply',
+           'PatientData',
+           'SurgeryTeam', 'SurgeryComplication', 'SurgeryDrain',
            'PreOperativeAssessment', 'SurgeryProtocol']
 
 
@@ -218,8 +218,7 @@ class Surgery(ModelSQL, ModelView):
 
     procedures = fields.One2Many(
         'gnuhealth.operation', 'name', 'Procedures',
-        help="List of the procedures in the surgery. Please enter the first "
-        "one as the main procedure")
+        help="Procedures / Interventions done in the surgery")
 
     supplies = fields.One2Many(
         'gnuhealth.surgery_supply', 'name', 'Supplies',
@@ -489,6 +488,16 @@ class Surgery(ModelSQL, ModelView):
         states={'invisible': And(Not(Equal(Eval('state'), 'done')),
                                  Not(Equal(Eval('state'), 'signed')))},
         help="Post-operative diagnosis")
+
+    # Deprecated since 4.2. Now use "Surgical intervention"
+    main_procedure = fields.Many2One(
+        'gnuhealth.procedure', 'Main Procedure',
+        domain=[('name', '=', Eval('active_id'))],)
+
+    surgical_intervention = fields.Many2One(
+        'gnuhealth.procedure', 'Surgical Intervention',
+        help="This code reflects the main intervention of this surgery."
+             "Additional procedures can be entered on the procedures tab.")
 
     @staticmethod
     def default_institution():
@@ -769,16 +778,6 @@ class SurgeryDrain(ModelSQL, ModelView):
 
     def get_rec_name(self, name):
         return self.drain
-
-
-class SurgeryMainProcedure(ModelSQL, ModelView):
-    __name__ = 'gnuhealth.surgery'
-
-    main_procedure = fields.Many2One(
-        'gnuhealth.operation', 'Main Proc',
-        domain=[('name', '=', Eval('active_id'))],
-        states={'readonly': Or(~Eval('procedures'), Eval('id', 0) < 0)},
-        depends=['procedures'])
 
 
 class SurgerySupply(ModelSQL, ModelView):

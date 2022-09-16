@@ -24,16 +24,15 @@ from trytond.pool import Pool
 from . import health_surgery
 from . import report
 from . import sequences
-from . import exceptions
+
 
 def register():
     Pool.register(
-		sequences.GnuHealthSequences,
+        sequences.GnuHealthSequences,
         sequences.SurgeryCodeSequence,
         health_surgery.RCRI,
         health_surgery.Surgery,
         health_surgery.Operation,
-        health_surgery.SurgeryMainProcedure,
         health_surgery.SurgerySupply,
         health_surgery.PatientData,
         health_surgery.SurgeryTeam,
