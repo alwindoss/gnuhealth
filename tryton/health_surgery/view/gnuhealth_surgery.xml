@@ -61,12 +61,12 @@
     </group>
     <notebook>
         <page id="main_page" string="Main">
-            <group string="Approach" id="main_procedure_group" colspan="4">
-                <field name="approach"/>
+            <group string="Surgical Intervention" id="main_procedure_group" colspan="4">
+                <field name="surgical_intervention"/>
             </group>
             <newline/>
-            <group string="Main Procedure" id="main_procedure_group" colspan="4">
-                <field name="main_procedure"/>
+            <group string="Approach" id="main_procedure_group" colspan="4">
+                <field name="approach"/>
             </group>
             <newline/>
             <separator string="Details" id="separator_surgery_details" colspan="2"/>
