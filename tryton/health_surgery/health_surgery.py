@@ -311,7 +311,10 @@ class Surgery(ModelSQL, ModelView):
 
     preop_assessment = fields.Many2One(
         'gnuhealth.preoperative_assessment', 'Preop assessment',
-        domain=[('surgery', '=', Eval('active_id'))],
+        domain=[
+            'AND',
+            ('surgery', '=', Eval('active_id')),
+            ('patient', '=', Eval('patient'))],
         help="Preoperative assessment associated to this surgery")
 
     preop_oximeter = fields.Boolean(
@@ -856,12 +859,15 @@ class PreOperativeAssessment(ModelSQL, ModelView):
         'gnuhealth.healthprofessional', 'Health Prof',
         help="Health professional that signs this assessment")
 
-    surgery = fields.Many2One('gnuhealth.surgery', 'Surgery')
+    surgery = fields.Many2One(
+        'gnuhealth.surgery', 'Surgery',
+        domain=[('patient', '=', Eval('patient'))],)
 
     specialty = fields.Many2One('gnuhealth.specialty', 'Specialty')
 
     evaluation = fields.Many2One(
         'gnuhealth.patient.evaluation', 'Evaluation',
+        domain=[('patient', '=', Eval('patient'))],
         help="Related encounter")
 
     assessment_date = fields.Date(
