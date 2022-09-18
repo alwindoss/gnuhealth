@@ -28,7 +28,7 @@ from datetime import datetime
 from trytond.transaction import Transaction
 from trytond.pool import Pool
 from trytond.pyson import Eval, Not, Equal, And
-
+from trytond.pool import PoolMeta
 from trytond.i18n import gettext
 
 from .exceptions import (
@@ -1062,8 +1062,21 @@ class SurgeryProtocol(ModelSQL, ModelView):
         ]
 
 
-class PatientData(ModelSQL, ModelView):
+class PatientData(metaclass=PoolMeta):
     __name__ = 'gnuhealth.patient'
 
     surgery = fields.One2Many(
         'gnuhealth.surgery', 'patient', 'Surgeries', readonly=True)
+
+
+class PatientEvaluation (metaclass=PoolMeta):
+    __name__ = 'gnuhealth.patient.evaluation'
+
+    """ Add contextual information
+        findings of importance in surgical contexts """
+
+    surgical_context = fields.Selection([
+        (None, ''),
+        ('thyroid', 'Thyroid'),
+        ('hernia', 'Hernia'),
+        ], 'Context', sort=False)
