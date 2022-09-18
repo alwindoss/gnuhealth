@@ -143,13 +143,15 @@
                 <field name="praxis"/>
             </group>
         </page>
-        <page string="Dx and Procedures" id="page_patient_evaluation_extra_info">
+        <page string="Info Dx" id="page_patient_evaluation_extra_info">
             <separator string="Information on Diagnosis" colspan="2" id="separator_evaluation_diagnosis_1"/>
             <newline/>
             <field name="info_diagnosis" colspan="4"/>
             <newline/>
             <field name="secondary_conditions" colspan="2"/>
             <field name="diagnostic_hypothesis" colspan="2"/>
+        </page>
+        <page string="Procedures" id="page_patient_evaluation_procedures">
             <field name="actions" colspan="4"/>
         </page>
         <page string="Administrative" id="page_patient_evaluation_administrative">
