@@ -840,6 +840,8 @@ class SurgeryComplication(ModelSQL, ModelView):
         ('3_sv', 'Severe'),
         ], 'Severity', select=True, sort=False)
 
+    severity_str = severity.translated('severity')
+
     short_comment = fields.Char(
         'Remarks',
         help='Brief, one-line remark of the complication.')
