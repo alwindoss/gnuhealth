@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <tree>
-    <field name="patient"/>
+    <field name="patient" expand="1"/>
     <field name="assessment_date"/>
+    <field name="surgical_decision" expand="1"/>
+    <field name="short_notes" expand="1"/>
     <field name="surgery"/>
     <field name="health_professional"/>
 </tree>

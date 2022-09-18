@@ -44,5 +44,11 @@
         <label name="needs_blood_reserve"/>
         <field name="needs_blood_reserve"/>
     </group>
+    <group string="Decision" id="preop_decision" colspan="4">
+        <field name="surgical_decision"/>
+    </group>
+    <group string="Notes" id="preop_notes" colspan="4">
+        <field name="short_notes"/>
+    </group>
 
 </form>

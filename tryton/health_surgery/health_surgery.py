@@ -952,6 +952,19 @@ class PreOperativeAssessment(ModelSQL, ModelView):
         domain=[('patient', '=', Eval('patient'))],
         help='Link to the associated lab test')
 
+    surgical_decision = fields.Selection([
+        (None, ''),
+        ('revision', 'Schedule Revision'),
+        ('watchful_waiting', 'Watchful waiting'),
+        ('needs_surgery', 'Needs surgery'),
+        ('urgent_surgery', 'Urgent surgery'),
+        ('discharge', 'Discharge'),
+        ], 'Surgical decision',
+        help='Surgical decision / advice',
+        sort=False)
+
+    short_notes = fields.Char('Notes')
+
     @staticmethod
     def default_assessment_date():
         return datetime.now()
