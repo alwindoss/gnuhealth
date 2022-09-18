@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rpt="http://openoffice.org/2005/report" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>lfm </meta:initial-creator><meta:creation-date>2011-06-15T19:12:18</meta:creation-date><dc:date>2022-09-17T11:16:23.096038374</dc:date><meta:editing-duration>P3DT13H39M14S</meta:editing-duration><meta:editing-cycles>135</meta:editing-cycles><meta:generator>LibreOffice/7.3.5.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="13" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="80" meta:word-count="201" meta:character-count="2589" meta:non-whitespace-character-count="2462"/></office:meta>
+ <office:meta><meta:initial-creator>lfm </meta:initial-creator><meta:creation-date>2011-06-15T19:12:18</meta:creation-date><dc:date>2022-09-18T18:21:00.868911859</dc:date><meta:editing-duration>P4DT20H43M49S</meta:editing-duration><meta:editing-cycles>139</meta:editing-cycles><meta:generator>LibreOffice/7.3.5.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="13" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="80" meta:word-count="201" meta:character-count="2588" meta:non-whitespace-character-count="2461"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="ViewAreaTop" config:type="long">28152</config:config-item>
@@ -13,8 +13,8 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">20389</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">34717</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">13936</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">36382</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
      <config:config-item config:name="VisibleTop" config:type="long">28152</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">42466</config:config-item>
@@ -487,7 +487,9 @@
    <style:table-cell-properties fo:padding="0.0382in" fo:border="0.5pt solid #000000"/>
   </style:style>
   <style:style style:name="Table2" style:family="table">
-   <style:table-properties style:width="6.75in" fo:margin-left="0in" table:align="left"/>
+   <style:table-properties style:width="6.75in" fo:margin-left="0in" table:align="left" fo:background-color="transparent">
+    <style:background-image/>
+   </style:table-properties>
   </style:style>
   <style:style style:name="Table2.A" style:family="table-column">
    <style:table-column-properties style:column-width="2.9375in"/>
@@ -498,25 +500,49 @@
   <style:style style:name="Table2.C" style:family="table-column">
    <style:table-column-properties style:column-width="2.5in"/>
   </style:style>
+  <style:style style:name="Table2.1" style:family="table-row">
+   <style:table-row-properties fo:background-color="transparent">
+    <style:background-image/>
+   </style:table-row-properties>
+  </style:style>
   <style:style style:name="Table2.A1" style:family="table-cell">
-   <style:table-cell-properties fo:background-color="transparent" fo:padding="0.0382in" fo:border="none">
+   <style:table-cell-properties fo:background-color="transparent" fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="0.05pt solid #000000" fo:border-bottom="0.05pt solid #000000">
     <style:background-image/>
    </style:table-cell-properties>
   </style:style>
   <style:style style:name="Table2.B1" style:family="table-cell">
-   <style:table-cell-properties fo:padding="0.0382in" fo:border="none"/>
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="0.05pt solid #000000" fo:border-bottom="0.05pt solid #000000"/>
   </style:style>
   <style:style style:name="Table2.C1" style:family="table-cell">
-   <style:table-cell-properties fo:padding="0.0382in" fo:border="none"/>
+   <style:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
+  </style:style>
+  <style:style style:name="Table2.A2" style:family="table-cell">
+   <style:table-cell-properties fo:background-color="transparent" fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000">
+    <style:background-image/>
+   </style:table-cell-properties>
   </style:style>
   <style:style style:name="Table2.B2" style:family="table-cell">
-   <style:table-cell-properties fo:padding="0.0382in" fo:border="none"/>
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
   </style:style>
   <style:style style:name="Table2.C2" style:family="table-cell">
-   <style:table-cell-properties fo:padding="0.0382in" fo:border="none"/>
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
+  </style:style>
+  <style:style style:name="Table2.B3" style:family="table-cell">
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
+  </style:style>
+  <style:style style:name="Table2.C3" style:family="table-cell">
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
+  </style:style>
+  <style:style style:name="Table2.B4" style:family="table-cell">
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
+  </style:style>
+  <style:style style:name="Table2.C4" style:family="table-cell">
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
   </style:style>
   <style:style style:name="Table2" style:family="table">
-   <style:table-properties style:width="6.75in" fo:margin-left="0in" table:align="left"/>
+   <style:table-properties style:width="6.75in" fo:margin-left="0in" table:align="left" fo:background-color="transparent">
+    <style:background-image/>
+   </style:table-properties>
   </style:style>
   <style:style style:name="Table2.A" style:family="table-column">
    <style:table-column-properties style:column-width="2.9375in"/>
@@ -527,22 +553,44 @@
   <style:style style:name="Table2.C" style:family="table-column">
    <style:table-column-properties style:column-width="2.5in"/>
   </style:style>
+  <style:style style:name="Table2.1" style:family="table-row">
+   <style:table-row-properties fo:background-color="transparent">
+    <style:background-image/>
+   </style:table-row-properties>
+  </style:style>
   <style:style style:name="Table2.A1" style:family="table-cell">
-   <style:table-cell-properties fo:background-color="transparent" fo:padding="0.0382in" fo:border="none">
+   <style:table-cell-properties fo:background-color="transparent" fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="0.05pt solid #000000" fo:border-bottom="0.05pt solid #000000">
     <style:background-image/>
    </style:table-cell-properties>
   </style:style>
   <style:style style:name="Table2.B1" style:family="table-cell">
-   <style:table-cell-properties fo:padding="0.0382in" fo:border="none"/>
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="0.05pt solid #000000" fo:border-bottom="0.05pt solid #000000"/>
   </style:style>
   <style:style style:name="Table2.C1" style:family="table-cell">
-   <style:table-cell-properties fo:padding="0.0382in" fo:border="none"/>
+   <style:table-cell-properties fo:padding="0.0382in" fo:border="0.05pt solid #000000"/>
+  </style:style>
+  <style:style style:name="Table2.A2" style:family="table-cell">
+   <style:table-cell-properties fo:background-color="transparent" fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000">
+    <style:background-image/>
+   </style:table-cell-properties>
   </style:style>
   <style:style style:name="Table2.B2" style:family="table-cell">
-   <style:table-cell-properties fo:padding="0.0382in" fo:border="none"/>
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
   </style:style>
   <style:style style:name="Table2.C2" style:family="table-cell">
-   <style:table-cell-properties fo:padding="0.0382in" fo:border="none"/>
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
+  </style:style>
+  <style:style style:name="Table2.B3" style:family="table-cell">
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
+  </style:style>
+  <style:style style:name="Table2.C3" style:family="table-cell">
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
+  </style:style>
+  <style:style style:name="Table2.B4" style:family="table-cell">
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
+  </style:style>
+  <style:style style:name="Table2.C4" style:family="table-cell">
+   <style:table-cell-properties fo:padding="0.0382in" fo:border-left="0.05pt solid #000000" fo:border-right="0.05pt solid #000000" fo:border-top="none" fo:border-bottom="0.05pt solid #000000"/>
   </style:style>
   <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties style:font-name="Cantarell"/>
@@ -1379,12 +1427,11 @@
     <table:table-column table:style-name="Table13.A"/>
     <table:table-row table:style-name="TableLine94883623040784">
      <table:table-cell table:style-name="Table13.A1" office:value-type="string">
-      <text:p text:style-name="P127"><text:span text:style-name="T55"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;complication in surgery.surgery_complications&quot;&gt;</text:placeholder></text:span></text:p>
       <table:table table:name="Table2" table:style-name="Table2">
        <table:table-column table:style-name="Table2.A"/>
        <table:table-column table:style-name="Table2.B"/>
        <table:table-column table:style-name="Table2.C"/>
-       <table:table-row table:style-name="TableLine94883633325760">
+       <table:table-row table:style-name="Table2.1">
         <table:table-cell table:style-name="Table2.A1" office:value-type="string">
          <text:p text:style-name="P128">Complication</text:p>
         </table:table-cell>
@@ -1395,19 +1442,41 @@
          <text:p text:style-name="P128">Comments</text:p>
         </table:table-cell>
        </table:table-row>
-       <table:table-row table:style-name="TableLine94883633325760">
-        <table:table-cell table:style-name="Table2.A1" office:value-type="string">
-         <text:p text:style-name="P124"><text:placeholder text:placeholder-type="text">&lt;complication.complication.rec_name&gt;</text:placeholder></text:p>
+       <table:table-row table:style-name="TableLine94883484456464">
+        <table:table-cell table:style-name="Table2.A2" office:value-type="string">
+         <text:p text:style-name="P127"><text:span text:style-name="T55"><text:placeholder text:placeholder-type="text">&lt;for each=&quot;complication in surgery.surgery_complications&quot;&gt;</text:placeholder></text:span></text:p>
         </table:table-cell>
         <table:table-cell table:style-name="Table2.B2" office:value-type="string">
-         <text:p text:style-name="P124"><text:placeholder text:placeholder-type="text">&lt;complication.severity&gt;</text:placeholder></text:p>
+         <text:p text:style-name="P128"/>
         </table:table-cell>
         <table:table-cell table:style-name="Table2.C2" office:value-type="string">
+         <text:p text:style-name="P128"/>
+        </table:table-cell>
+       </table:table-row>
+       <table:table-row table:style-name="TableLine94883484456464">
+        <table:table-cell table:style-name="Table2.A2" office:value-type="string">
+         <text:p text:style-name="P124"><text:placeholder text:placeholder-type="text">&lt;complication.complication.rec_name&gt;</text:placeholder></text:p>
+        </table:table-cell>
+        <table:table-cell table:style-name="Table2.B3" office:value-type="string">
+         <text:p text:style-name="P124"><text:placeholder text:placeholder-type="text">&lt;complication.severity_str&gt;</text:placeholder></text:p>
+        </table:table-cell>
+        <table:table-cell table:style-name="Table2.C3" office:value-type="string">
          <text:p text:style-name="P124"><text:placeholder text:placeholder-type="text">&lt;complication.short_comment&gt;</text:placeholder></text:p>
         </table:table-cell>
        </table:table-row>
+       <table:table-row table:style-name="TableLine94883484456464">
+        <table:table-cell table:style-name="Table2.A2" office:value-type="string">
+         <text:p text:style-name="P133"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+        </table:table-cell>
+        <table:table-cell table:style-name="Table2.B4" office:value-type="string">
+         <text:p text:style-name="P124"/>
+        </table:table-cell>
+        <table:table-cell table:style-name="Table2.C4" office:value-type="string">
+         <text:p text:style-name="P124"/>
+        </table:table-cell>
+       </table:table-row>
       </table:table>
-      <text:p text:style-name="P133"><text:placeholder text:placeholder-type="text">&lt;/for&gt;</text:placeholder></text:p>
+      <text:p text:style-name="P133"/>
      </table:table-cell>
     </table:table-row>
    </table:table>
