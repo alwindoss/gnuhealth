@@ -40,6 +40,7 @@ def register():
         health_surgery.PreOperativeAssessment,
         health_surgery.SurgeryProtocol,
         health_surgery.SurgeryDrain,
+        health_surgery.PatientEvaluation,
         module='health_surgery', type_='model')
     Pool.register(
         report.SurgeryReport,
