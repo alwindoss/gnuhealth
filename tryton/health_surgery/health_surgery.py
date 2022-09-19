@@ -1092,4 +1092,70 @@ class PatientEvaluation (metaclass=PoolMeta):
         (None, ''),
         ('thyroid', 'Thyroid'),
         ('hernia', 'Hernia'),
-        ], 'Context', sort=False)
+        ], 'Context')
+
+    hernia_localization = fields.Selection([
+        (None, ''),
+        ('umbilical', 'Umbilical'),
+        ('inguinal', 'Inguinal'),
+        ('crural', 'Crural'),
+        ('obturator', 'Obturator'),
+        ('spigelian', 'Spigelian'),
+        ('lumbar', 'Lumbar'),
+        ('eventration', 'Eventration'),
+        ], 'Localization', sort=False)
+
+    hernia_side = fields.Selection([
+        (None, ''),
+        ('left', 'Left'),
+        ('right', 'Right'),
+        ('bilateral', 'bilateral'),
+        ], 'Side', sort=False)
+
+    hernia_type = fields.Selection([
+        (None, ''),
+        ('h1', 'H1 - Reduces spontaneously when patient is lying'),
+        ('h2', 'H2 - Groin only, reduces completely with gentle manual '
+            'pressure'),
+        ('h3a', 'H3a - Inguino-scrotal reductible with manual '
+            'manipulation. Component ing-scrot<10cm'),
+        ('h3b', 'H3b - Inguino-scrotal reductible with manual '
+            'manipulation. Component ing-scrot 10-20 cm'),
+        ('h3c', 'H3c - Inguino-scrotal reductible with manual '
+            'manipulation. Component ing-scrot>20cm'),
+        ('h4a', 'H4a - Irreducible. Component ing-scrot<10cm'),
+        ('h4b', 'H4b - Irreducible. Component ing-scrot 10-20 cm'),
+        ('h4c', 'H4c - Irreducible. Component ing-scrot >20 cm'),
+        ], 'Type', sort=False)
+
+    hernia_ehs = fields.Selection([
+        (None, ''),
+        ('lateral', 'Lateral (indirect)'),
+        ('medial', 'Medial (direct)'),
+        ('sliding', 'Sliding'),
+        ('femoral', 'Femoral'),
+        ], 'EHS', sort=False)
+
+    hernia_time = fields.Selection([
+        (None, ''),
+        ('less_1_year', '< 1 year'),
+        ('1_to_5_year', '1 - 5 years'),
+        ('more_5_year', '> 5 years'),
+        ], 'Evolution time', sort=False)
+
+    hernia_disfunction = fields.Selection([
+        (None, ''),
+        ('no_disfunction', 'No disfunction'),
+        ('limited', 'Limited daily activities'),
+        ('severe', 'Discapacitating'),
+        ], 'Disfunctionality level', sort=False)
+
+    @classmethod
+    def view_attributes(cls):
+        # Hide the specific group unless selected in surgical_context
+        return super(PatientEvaluation, cls).view_attributes() + [
+                ('//group[@id="group_evl_surgery_hernia_info"]',
+                    'states', {
+                        'invisible': ~Equal(
+                            Eval('surgical_context'), 'hernia'),
+                    })]
