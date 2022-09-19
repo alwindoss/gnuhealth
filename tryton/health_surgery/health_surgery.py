@@ -1094,6 +1094,7 @@ class PatientEvaluation (metaclass=PoolMeta):
         ('hernia', 'Hernia'),
         ], 'Context')
 
+    # Begin hernia specific information
     hernia_localization = fields.Selection([
         (None, ''),
         ('umbilical', 'Umbilical'),
@@ -1150,6 +1151,62 @@ class PatientEvaluation (metaclass=PoolMeta):
         ('severe', 'Discapacitating'),
         ], 'Disfunctionality level', sort=False)
 
+    # End hernia specific information
+
+    # Begin thyroid specific information
+    thyroid_exploration = fields.Selection([
+        (None, ''),
+        ('normal', 'Normal'),
+        ('nodule', 'Nodule'),
+        ('goiter', 'Goiter'),
+        ], 'Exploration', sort=False)
+
+    thyroid_side = fields.Selection([
+        (None, ''),
+        ('left', 'Left'),
+        ('right', 'Right'),
+        ('bilateral', 'Bilateral'),
+        ], 'Side', sort=False)
+
+    thyroid_clinical = fields.Selection([
+        (None, ''),
+        ('hoarseness', 'Hoarseness'),
+        ('cough', 'Cough'),
+        ('other', 'Other'),
+        ], 'Clinical', sort=False)
+
+    thyroid_goiter = fields.Selection([
+        (None, ''),
+        ('solitary_nodule', 'Solitary nodule'),
+        ('multinodular', 'Multinodular'),
+        ('difuse', 'Difuse'),
+        ('intrathoracic', 'Intrathoracic'),
+        ], 'Goiter', sort=False)
+
+    thyroid_tirads = fields.Selection([
+        (None, ''),
+        ('tr1', 'TR1'),
+        ('tr2', 'TR2'),
+        ('tr3', 'TR3'),
+        ('tr4a', 'TR4a'),
+        ('tr4b', 'TR4b'),
+        ('tr5', 'TR5'),
+        ('tr6', 'TR6'),
+        ], 'TI-RADS', sort=False)
+
+    thyroid_tvol = fields.Integer ("TVol (mL)",
+        help="Volume in mL")
+    thyroid_goiter_class = fields.Selection([
+        (None, ''),
+        ('gr1', '0'),
+        ('gr2', '1'),
+        ('gr3', '2'),
+        ('gr4a', '3'),
+        ('gr5', '4'),
+        ('gr5', '5'),
+        ], 'Goiter classification', sort=False)
+
+    
     @classmethod
     def view_attributes(cls):
         # Hide the specific group unless selected in surgical_context
@@ -1158,4 +1215,10 @@ class PatientEvaluation (metaclass=PoolMeta):
                     'states', {
                         'invisible': ~Equal(
                             Eval('surgical_context'), 'hernia'),
-                    })]
+                    }),
+                ('//group[@id="group_evl_surgery_thyroid_info"]',
+                    'states', {
+                        'invisible': ~Equal(
+                            Eval('surgical_context'), 'thyroid'),
+                    }),
+                    ]
