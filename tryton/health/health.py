@@ -4913,6 +4913,7 @@ class PatientEvaluation(ModelSQL, ModelView, MultiValueMixin):
         states={'invisible': Equal(Eval('state'), 'in_progress'),
                 'readonly': Eval('state') == 'signed'},
         help="Reason for patient discharge")
+    discharge_reason_str = discharge_reason.translated('discharge_reason')
 
     institution = fields.Many2One('gnuhealth.institution', 'Institution',
                                   states=STATES)
