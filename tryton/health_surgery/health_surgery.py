@@ -890,6 +890,9 @@ class PreOperativeAssessment(ModelSQL, ModelView):
                     'visible'),
         ('Class 4', 'Class 4: Only Hard Palate visible'),
         ], 'Mallampati Score', sort=False)
+
+    preop_mallampati_str = preop_mallampati.translated('preop_mallampati')
+
     preop_bleeding_risk = fields.Boolean(
         'Risk of Massive bleeding',
         help="Patient has a risk of losing more than 500 "
@@ -909,6 +912,7 @@ class PreOperativeAssessment(ModelSQL, ModelView):
             ' being removed for donor purposes'),
         ], 'ASA PS',
         help="ASA pre-operative Physical Status", sort=False)
+    preop_asa_str = preop_asa.translated('preop_asa')
 
     preop_rcri = fields.Many2One(
         'gnuhealth.rcri', 'RCRI',
@@ -962,6 +966,8 @@ class PreOperativeAssessment(ModelSQL, ModelView):
         ], 'Surgical decision',
         help='Surgical decision / advice',
         sort=False)
+
+    surgical_decision_str = surgical_decision.translated('surgical_decision')
 
     short_notes = fields.Char('Notes')
 
@@ -1194,8 +1200,10 @@ class PatientEvaluation (metaclass=PoolMeta):
         ('tr6', 'TR6'),
         ], 'TI-RADS', sort=False)
 
-    thyroid_tvol = fields.Integer ("TVol (mL)",
+    thyroid_tvol = fields.Integer(
+        "TVol (mL)",
         help="Volume in mL")
+
     thyroid_goiter_class = fields.Selection([
         (None, ''),
         ('gr1', '0'),
@@ -1206,7 +1214,6 @@ class PatientEvaluation (metaclass=PoolMeta):
         ('gr5', '5'),
         ], 'Goiter classification', sort=False)
 
-    
     @classmethod
     def view_attributes(cls):
         # Hide the specific group unless selected in surgical_context

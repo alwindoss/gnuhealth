@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tryton>
     <data>
+        <!-- BEGIN SURGERY REPORT -->
+
         <record model="ir.action.report" id="report_surgery_report">
             <field name="name">Surgery Report</field>
             <field name="model">gnuhealth.surgery</field>
@@ -13,11 +15,13 @@
             <field name="model">gnuhealth.surgery,-1</field>
             <field name="action" ref="report_surgery_report"/>
         </record>
-
+        <!-- END SURGERY REPORT -->
+        
+        <!-- BEGIN OUTPATIENT SURGERY REPORT -->
         <record model="ir.action.report" id="report_outpatient_surgery_report">
             <field name="name">Outpatient Surgery Report</field>
             <field name="model">gnuhealth.surgery</field>
-            <field name="report_name">surgery</field>
+            <field name="report_name">surgery_outpatient</field>
             <field name="report">health_surgery/report/surgery_outpatient_report.fodt</field>
             <field name="extension">pdf</field>
         </record>
@@ -25,6 +29,21 @@
             <field name="keyword">form_print</field>
             <field name="model">gnuhealth.surgery,-1</field>
             <field name="action" ref="report_outpatient_surgery_report"/>
+        </record>
+        <!-- END OUTPATIENT REPORT -->
+
+        <!-- BEGIN PREOPERATIVE ASSESSMENT REPORT -->
+        <record model="ir.action.report" id="report_preoperative_assessment_report">
+            <field name="name">Preoperative Assessment</field>
+            <field name="model">gnuhealth.preoperative_assessment</field>
+            <field name="report_name">preoperative_assessment</field>
+            <field name="report">health_surgery/report/preoperative_assessment_report.fodt</field>
+            <field name="extension">pdf</field>
+        </record>
+        <record model="ir.action.keyword" id="report_preoperative_assessment">
+            <field name="keyword">form_print</field>
+            <field name="model">gnuhealth.preoperative_assessment,-1</field>
+            <field name="action" ref="report_preoperative_assessment_report"/>
         </record>
 
     </data>
