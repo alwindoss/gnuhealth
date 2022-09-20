@@ -90,7 +90,7 @@
         </record>
 
         <record model="ir.action.report" id="report_patient_evaluation">
-            <field name="name">Patient Evaluation Summary</field>
+            <field name="name">Patient Evaluation</field>
             <field name="model">gnuhealth.patient.evaluation</field>
             <field name="report_name">gnuhealth.patient_evaluation</field>
             <field name="report">health/report/patient_evaluation.fodt</field>
@@ -101,5 +101,19 @@
             <field name="model">gnuhealth.patient.evaluation,-1</field>
             <field name="action" ref="report_patient_evaluation"/>
         </record>
+
+        <record model="ir.action.report" id="report_patient_evaluation_brief">
+            <field name="name">Evaluation Report (brief)</field>
+            <field name="model">gnuhealth.patient.evaluation</field>
+            <field name="report_name">gnuhealth.patient_evaluation_brief</field>
+            <field name="report">health/report/patient_evaluation_brief.fodt</field>
+            <field name="extension">pdf</field>
+        </record>
+        <record model="ir.action.keyword" id="report_evaluation_patient_brief">
+            <field name="keyword">form_print</field>
+            <field name="model">gnuhealth.patient.evaluation,-1</field>
+            <field name="action" ref="report_patient_evaluation_brief"/>
+        </record>
+
     </data>
 </tryton>
