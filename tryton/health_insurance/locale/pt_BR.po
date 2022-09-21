@@ -1,0 +1,98 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-09-25 23:35+0000\n"
+"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gnu-health/health_insurance/pt_BR/>\n"
+"Language: pt_BR\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
+
+msgctxt "error:gnuhealth.insurance.plan.product.policy:"
+msgid "Percentage out of range [0-100]"
+msgstr "Porcentagem fora do intervalo [0-100]"
+
+msgctxt "error:gnuhealth.insurance.plan.product.policy:"
+msgid "You need a product or category"
+msgstr "Você precisa de um produto ou categoria"
+
+msgctxt "field:gnuhealth.health_service,insurance_holder:"
+msgid "Insurance Holder"
+msgstr "Titular do Seguro"
+
+msgctxt "field:gnuhealth.health_service,insurance_plan:"
+msgid "Plan"
+msgstr "Plano"
+
+msgctxt "field:gnuhealth.insurance.plan,product_policy:"
+msgid "Policy"
+msgstr "Apólice"
+
+#, fuzzy
+msgctxt "field:gnuhealth.insurance.plan.product.policy,create_date:"
+msgid "Create Date"
+msgstr "Criar Data"
+
+#, fuzzy
+msgctxt "field:gnuhealth.insurance.plan.product.policy,create_uid:"
+msgid "Create User"
+msgstr "Criar Usuário"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,discount:"
+msgid "Discount"
+msgstr "Desconto"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,plan:"
+msgid "Plan"
+msgstr "Plano"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,product:"
+msgid "Product"
+msgstr "Produto"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,product_category:"
+msgid "Category"
+msgstr "Categoria"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,rec_name:"
+msgid "Name"
+msgstr "Nome"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,write_date:"
+msgid "Write Date"
+msgstr ""
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,write_uid:"
+msgid "Write User"
+msgstr ""
+
+#, fuzzy
+msgctxt "help:gnuhealth.health_service,insurance_holder:"
+msgid "Insurance Policy Holder"
+msgstr "Titular da Apólice de Seguro"
+
+msgctxt "help:gnuhealth.insurance.plan.product.policy,discount:"
+msgid "Discount in Percentage"
+msgstr "Desconto em Porcentagem"
+
+#, fuzzy
+msgctxt "model:gnuhealth.insurance.plan.product.policy,name:"
+msgid "Policy associated to the product on the insurance plan"
+msgstr "Apólice associada ao produto no plano de saúde"
+
+msgctxt ""
+"model:ir.action,name:action_gnuhealth_insurance_plan_product_policy_view"
+msgid "Plan Product Policies"
+msgstr ""
+
+msgctxt ""
+"model:ir.ui.menu,name:menu_gnuhealth_insurance_plan_product_policy_list"
+msgid "Plan Product Policies"
+msgstr ""

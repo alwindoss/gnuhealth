@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <!-- Procedure Report -->
+        <record model="ir.action.report" id="report_dentistry_procedure">
+            <field name="name">Dentistry Procedures</field>
+            <field name="model">gnuhealth.patient</field>
+            <field name="report_name">health_dentistry.procedure.report</field>
+            <field name="report">health_dentistry/report/procedures_report.fodt</field>
+            <field name="extension">pdf</field>
+        </record>
+
+        <record model="ir.action.keyword" id="patient_dentistry_procedure_report">
+            <field name="keyword">form_print</field>
+            <field name="model">gnuhealth.patient,-1</field>
+            <field name="action" ref="report_dentistry_procedure"/>
+        </record>
+
+        <!-- Odontogram Report -->
+        <record model="ir.action.report" id="report_dentistry_odontogram">
+            <field name="name">Odontogram</field>
+            <field name="model">gnuhealth.patient</field>
+            <field name="report_name">health_dentistry.odontogram.report</field>
+            <field name="report">health_dentistry/report/odontogram_report.fodt</field>
+            <field name="extension">pdf</field>
+        </record>
+
+        <record model="ir.action.keyword" id="patient_dentistry_odontogram_report">
+            <field name="keyword">form_print</field>
+            <field name="model">gnuhealth.patient,-1</field>
+            <field name="action" ref="report_dentistry_odontogram"/>
+        </record>
+
+    </data>
+</tryton>

@@ -1,0 +1,148 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_crypto_lab/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
+
+msgctxt "field:gnuhealth.lab,digest_current:"
+msgid "Current Hash"
+msgstr "当前哈希值"
+
+msgctxt "field:gnuhealth.lab,digest_status:"
+msgid "Altered"
+msgstr "已更改"
+
+msgctxt "field:gnuhealth.lab,digital_signature:"
+msgid "Digital Signature"
+msgstr "数字签名"
+
+msgctxt "field:gnuhealth.lab,document_digest:"
+msgid "Digest"
+msgstr "数字摘要"
+
+msgctxt "field:gnuhealth.lab,done_by:"
+msgid "Done by"
+msgstr "检验医师"
+
+msgctxt "field:gnuhealth.lab,done_date:"
+msgid "Finished on"
+msgstr "完成日期"
+
+msgctxt "field:gnuhealth.lab,historize:"
+msgid "Historize"
+msgstr "记入健康档案"
+
+msgctxt "field:gnuhealth.lab,serializer:"
+msgid "Doc String"
+msgstr "文档字符串"
+
+msgctxt "field:gnuhealth.lab,serializer_current:"
+msgid "Current Doc"
+msgstr "当前文档"
+
+msgctxt "field:gnuhealth.lab,state:"
+msgid "State"
+msgstr "状态"
+
+msgctxt "field:gnuhealth.lab,validated_by:"
+msgid "Validated by"
+msgstr "审核医师"
+
+msgctxt "field:gnuhealth.lab,validation_date:"
+msgid "Validated on"
+msgstr "审核日期"
+
+msgctxt "help:gnuhealth.lab,digest_status:"
+msgid ""
+"This field will be set whenever parts of the main original document has been"
+" changed. Please note that the verification is done only on selected fields."
+msgstr "原始文档某些部分被更改时，系统会自动设置这个字段，需要注意的是，系统只验证事先选择的部分字段。"
+
+msgctxt "help:gnuhealth.lab,document_digest:"
+msgid "Original Document Digest"
+msgstr "原始文档生成的数字摘要"
+
+msgctxt "help:gnuhealth.lab,done_by:"
+msgid "Professional who processes this lab test"
+msgstr "做这个检验项目的医务人员"
+
+msgctxt "help:gnuhealth.lab,historize:"
+msgid ""
+"If this flag is set the a new health condition will be added to the patient "
+"history. Unset it if this lab test is in the context of a pre-existing "
+"condition of the patient. The condition will be created when the lab test is"
+" confirmed and validated"
+msgstr ""
+"如果勾选此项，那么检验结果确认和验证时，会自动在患者健康档案中会添加一项新健"
+"康状况记录，如果当前检验项目只涉及患者已有的健康状况，那就不要勾选此项"
+
+msgctxt "help:gnuhealth.lab,validated_by:"
+msgid "Professional who validates this lab test"
+msgstr "审核这个检验项目的医务人员"
+
+msgctxt "selection:gnuhealth.lab,state:"
+msgid "Done"
+msgstr "完成"
+
+msgctxt "selection:gnuhealth.lab,state:"
+msgid "Draft"
+msgstr "草案"
+
+msgctxt "selection:gnuhealth.lab,state:"
+msgid "Validated"
+msgstr "已审核"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Are the results ready ?"
+msgstr "检验结果准备就绪了吗？"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Are you sure to sign this lab results ?"
+msgstr "你确定要为这个检验结果签名吗？"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Digital Signature"
+msgstr "数字签名"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Document validation"
+msgstr "文件验证"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Done"
+msgstr "完成"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Draft"
+msgstr "草案"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Reverse the document to draft state."
+msgstr "将当前文档回退为草稿状态。"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Set to Draft ?"
+msgstr "设为草案？"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "The lab test is done and results are waiting to be validated"
+msgstr "实验室检验项目已经完成，检验结果正在等待验证"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Validate"
+msgstr "验证"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Validate and Sign the lab test"
+msgstr "验证此实验室检验项目并签名"
+
+msgctxt "view:gnuhealth.lab:"
+msgid "Validation"
+msgstr "验证"

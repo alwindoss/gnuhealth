@@ -1,0 +1,764 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<form col="4">
+    <notebook width="800" height="612">
+        <page string="Permanent" id="permanent">
+            <group string="Upper" id="dentistry_teeth_info" colspan="4" col="4">
+                <group string="" id="dentistry_q1" col="2">
+                    <group string="" id="dentistry_11" colspan="2" col="12">
+                        <label name="t11"/>
+                        <field name="t11" xexpand="0" xfill="0"/>
+                        <label name="v11"/>
+                        <field name="v11"/>
+                        <label name="i11"/>
+                        <field name="i11"/>
+                        <label name="m11"/>
+                        <field name="m11"/>
+                        <label name="d11"/>
+                        <field name="d11"/>
+                        <label name="p11"/>
+                        <field name="p11"/>
+                    </group>
+                    <group string="" id="dentistry_12" colspan="2" col="12">
+                        <label name="t12"/>
+                        <field name="t12" xexpand="0" xfill="0"/>
+                        <label name="v12"/>
+                        <field name="v12"/>
+                        <label name="i12"/>
+                        <field name="i12"/>
+                        <label name="m12"/>
+                        <field name="m12"/>
+                        <label name="d12"/>
+                        <field name="d12"/>
+                        <label name="p12"/>
+                        <field name="p12"/>
+                    </group>
+                    <group string="" id="dentistry_13" colspan="2" col="12">
+                        <label name="t13"/>
+                        <field name="t13" xexpand="0" xfill="0"/>
+                        <label name="v13"/>
+                        <field name="v13"/>
+                        <label name="i13"/>
+                        <field name="i13"/>
+                        <label name="m13"/>
+                        <field name="m13"/>
+                        <label name="d13"/>
+                        <field name="d13"/>
+                        <label name="p13"/>
+                        <field name="p13"/>
+                    </group>
+                    <group string="" id="dentistry_14" colspan="2" col="12">
+                        <label name="t14"/>
+                        <field name="t14" xexpand="0" xfill="0"/>
+                        <label name="v14"/>
+                        <field name="v14"/>
+                        <label name="o14"/>
+                        <field name="o14"/>
+                        <label name="m14"/>
+                        <field name="m14"/>
+                        <label name="d14"/>
+                        <field name="d14"/>
+                        <label name="p14"/>
+                        <field name="p14"/>
+                    </group>
+                    <group string="" id="dentistry_15" colspan="2" col="12">
+                        <label name="t15"/>
+                        <field name="t15" xexpand="0" xfill="0"/>
+                        <label name="v15"/>
+                        <field name="v15"/>
+                        <label name="o15"/>
+                        <field name="o15"/>
+                        <label name="m15"/>
+                        <field name="m15"/>
+                        <label name="d15"/>
+                        <field name="d15"/>
+                        <label name="p15"/>
+                        <field name="p15"/>
+                    </group>
+                    <group string="" id="dentistry_16" colspan="2" col="12">
+                        <label name="t16"/>
+                        <field name="t16" xexpand="0" xfill="0"/>
+                        <label name="v16"/>
+                        <field name="v16"/>
+                        <label name="o16"/>
+                        <field name="o16"/>
+                        <label name="m16"/>
+                        <field name="m16"/>
+                        <label name="d16"/>
+                        <field name="d16"/>
+                        <label name="p16"/>
+                        <field name="p16"/>
+                    </group>
+                    <group string="" id="dentistry_17" colspan="2" col="12">
+                        <label name="t17"/>
+                        <field name="t17" xexpand="0" xfill="0"/>
+                        <label name="v17"/>
+                        <field name="v17"/>
+                        <label name="o17"/>
+                        <field name="o17"/>
+                        <label name="m17"/>
+                        <field name="m17"/>
+                        <label name="d17"/>
+                        <field name="d17"/>
+                        <label name="p17"/>
+                        <field name="p17"/>
+                    </group>
+                    <group string="" id="dentistry_18" colspan="2" col="12">
+                        <label name="t18"/>
+                        <field name="t18" xexpand="0" xfill="0"/>
+                        <label name="v18"/>
+                        <field name="v18"/>
+                        <label name="o18"/>
+                        <field name="o18"/>
+                        <label name="m18"/>
+                        <field name="m18"/>
+                        <label name="d18"/>
+                        <field name="d18"/>
+                        <label name="p18"/>
+                        <field name="p18"/>
+                    </group>
+                </group>
+                <group string="" id="dentistry_q2" col="2">
+                    <group string="" id="dentistry_21" colspan="2" col="12">
+                        <label name="t21"/>
+                        <field name="t21" xexpand="0" xfill="0"/>
+                        <label name="v21"/>
+                        <field name="v21"/>
+                        <label name="i21"/>
+                        <field name="i21"/>
+                        <label name="m21"/>
+                        <field name="m21"/>
+                        <label name="d21"/>
+                        <field name="d21"/>
+                        <label name="p21"/>
+                        <field name="p21"/>
+                    </group>
+                    <group string="" id="dentistry_22" colspan="2" col="12">
+                        <label name="t22"/>
+                        <field name="t22" xexpand="0" xfill="0"/>
+                        <label name="v22"/>
+                        <field name="v22"/>
+                        <label name="i22"/>
+                        <field name="i22"/>
+                        <label name="m22"/>
+                        <field name="m22"/>
+                        <label name="d22"/>
+                        <field name="d22"/>
+                        <label name="p22"/>
+                        <field name="p22"/>
+                    </group>
+                    <group string="" id="dentistry_23" colspan="2" col="12">
+                        <label name="t23"/>
+                        <field name="t23" xexpand="0" xfill="0"/>
+                        <label name="v23"/>
+                        <field name="v23"/>
+                        <label name="i23"/>
+                        <field name="i23"/>
+                        <label name="m23"/>
+                        <field name="m23"/>
+                        <label name="d23"/>
+                        <field name="d23"/>
+                        <label name="p23"/>
+                        <field name="p23"/>
+                    </group>
+                    <group string="" id="dentistry_24" colspan="2" col="12">
+                        <label name="t24"/>
+                        <field name="t24" xexpand="0" xfill="0"/>
+                        <label name="v24"/>
+                        <field name="v24"/>
+                        <label name="o24"/>
+                        <field name="o24"/>
+                        <label name="m24"/>
+                        <field name="m24"/>
+                        <label name="d24"/>
+                        <field name="d24"/>
+                        <label name="p24"/>
+                        <field name="p24"/>
+                    </group>
+                    <group string="" id="dentistry_25" colspan="2" col="12">
+                        <label name="t25"/>
+                        <field name="t25" xexpand="0" xfill="0"/>
+                        <label name="v25"/>
+                        <field name="v25"/>
+                        <label name="o25"/>
+                        <field name="o25"/>
+                        <label name="m25"/>
+                        <field name="m25"/>
+                        <label name="d25"/>
+                        <field name="d25"/>
+                        <label name="p25"/>
+                        <field name="p25"/>
+                    </group>
+                    <group string="" id="dentistry_26" colspan="2" col="12">
+                        <label name="t26"/>
+                        <field name="t26" xexpand="0" xfill="0"/>
+                        <label name="v26"/>
+                        <field name="v26"/>
+                        <label name="o26"/>
+                        <field name="o26"/>
+                        <label name="m26"/>
+                        <field name="m26"/>
+                        <label name="d26"/>
+                        <field name="d26"/>
+                        <label name="p26"/>
+                        <field name="p26"/>
+                    </group>
+                    <group string="" id="dentistry_27" colspan="2" col="12">
+                        <label name="t27"/>
+                        <field name="t27" xexpand="0" xfill="0"/>
+                        <label name="v27"/>
+                        <field name="v27"/>
+                        <label name="o27"/>
+                        <field name="o27"/>
+                        <label name="m27"/>
+                        <field name="m27"/>
+                        <label name="d27"/>
+                        <field name="d27"/>
+                        <label name="p27"/>
+                        <field name="p27"/>
+                    </group>
+                    <group string="" id="dentistry_28" colspan="2" col="12">
+                        <label name="t28"/>
+                        <field name="t28" xexpand="0" xfill="0"/>
+                        <label name="v28"/>
+                        <field name="v28"/>
+                        <label name="o28"/>
+                        <field name="o28"/>
+                        <label name="m28"/>
+                        <field name="m28"/>
+                        <label name="d28"/>
+                        <field name="d28"/>
+                        <label name="p28"/>
+                        <field name="p28"/>
+                    </group>
+                </group>
+            </group>
+            <group string="Lower" id="dentistry_teeth_info" colspan="4" col="4">
+                <group string="" id="dentistry_q4" col="2">
+                    <group string="" id="dentistry_41" colspan="2" col="12">
+                        <label name="t41"/>
+                        <field name="t41" xexpand="0" xfill="0"/>
+                        <label name="v41"/>
+                        <field name="v41"/>
+                        <label name="i41"/>
+                        <field name="i41"/>
+                        <label name="m41"/>
+                        <field name="m41"/>
+                        <label name="d41"/>
+                        <field name="d41"/>
+                        <label name="l41"/>
+                        <field name="l41"/>
+                    </group>
+                    <group string="" id="dentistry_42" colspan="2" col="12">
+                        <label name="t42"/>
+                        <field name="t42" xexpand="0" xfill="0"/>
+                        <label name="v42"/>
+                        <field name="v42"/>
+                        <label name="i42"/>
+                        <field name="i42"/>
+                        <label name="m42"/>
+                        <field name="m42"/>
+                        <label name="d42"/>
+                        <field name="d42"/>
+                        <label name="l42"/>
+                        <field name="l42"/>
+                    </group>
+                    <group string="" id="dentistry_43" colspan="2" col="12">
+                        <label name="t43"/>
+                        <field name="t43" xexpand="0" xfill="0"/>
+                        <label name="v43"/>
+                        <field name="v43"/>
+                        <label name="i43"/>
+                        <field name="i43"/>
+                        <label name="m43"/>
+                        <field name="m43"/>
+                        <label name="d43"/>
+                        <field name="d43"/>
+                        <label name="l43"/>
+                        <field name="l43"/>
+                    </group>
+                    <group string="" id="dentistry_44" colspan="2" col="12">
+                        <label name="t44"/>
+                        <field name="t44" xexpand="0" xfill="0"/>
+                        <label name="v44"/>
+                        <field name="v44"/>
+                        <label name="o44"/>
+                        <field name="o44"/>
+                        <label name="m44"/>
+                        <field name="m44"/>
+                        <label name="d44"/>
+                        <field name="d44"/>
+                        <label name="l44"/>
+                        <field name="l44"/>
+                    </group>
+                    <group string="" id="dentistry_45" colspan="2" col="12">
+                        <label name="t45"/>
+                        <field name="t45" xexpand="0" xfill="0"/>
+                        <label name="v45"/>
+                        <field name="v45"/>
+                        <label name="o45"/>
+                        <field name="o45"/>
+                        <label name="m45"/>
+                        <field name="m45"/>
+                        <label name="d45"/>
+                        <field name="d45"/>
+                        <label name="l45"/>
+                        <field name="l45"/>
+                    </group>
+                    <group string="" id="dentistry_46" colspan="2" col="12">
+                        <label name="t46"/>
+                        <field name="t46" xexpand="0" xfill="0"/>
+                        <label name="v46"/>
+                        <field name="v46"/>
+                        <label name="o46"/>
+                        <field name="o46"/>
+                        <label name="m46"/>
+                        <field name="m46"/>
+                        <label name="d46"/>
+                        <field name="d46"/>
+                        <label name="l46"/>
+                        <field name="l46"/>
+                    </group>
+                    <group string="" id="dentistry_47" colspan="2" col="12">
+                        <label name="t47"/>
+                        <field name="t47" xexpand="0" xfill="0"/>
+                        <label name="v47"/>
+                        <field name="v47"/>
+                        <label name="o47"/>
+                        <field name="o47"/>
+                        <label name="m47"/>
+                        <field name="m47"/>
+                        <label name="d47"/>
+                        <field name="d47"/>
+                        <label name="l47"/>
+                        <field name="l47"/>
+                    </group>
+                    <group string="" id="dentistry_48" colspan="2" col="12">
+                        <label name="t48"/>
+                        <field name="t48" xexpand="0" xfill="0"/>
+                        <label name="v48"/>
+                        <field name="v48"/>
+                        <label name="o48"/>
+                        <field name="o48"/>
+                        <label name="m48"/>
+                        <field name="m48"/>
+                        <label name="d48"/>
+                        <field name="d48"/>
+                        <label name="l48"/>
+                        <field name="l48"/>
+                    </group>
+                </group>
+                <group string="" id="dentistry_q3" col="2">
+                    <group string="" id="dentistry_31" colspan="2" col="12">
+                        <label name="t31"/>
+                        <field name="t31" xexpand="0" xfill="0"/>
+                        <label name="v31"/>
+                        <field name="v31"/>
+                        <label name="i31"/>
+                        <field name="i31"/>
+                        <label name="m31"/>
+                        <field name="m31"/>
+                        <label name="d31"/>
+                        <field name="d31"/>
+                        <label name="l31"/>
+                        <field name="l31"/>
+                    </group>
+                    <group string="" id="dentistry_32" colspan="2" col="12">
+                        <label name="t32"/>
+                        <field name="t32" xexpand="0" xfill="0"/>
+                        <label name="v32"/>
+                        <field name="v32"/>
+                        <label name="i32"/>
+                        <field name="i32"/>
+                        <label name="m32"/>
+                        <field name="m32"/>
+                        <label name="d32"/>
+                        <field name="d32"/>
+                        <label name="l32"/>
+                        <field name="l32"/>
+                    </group>
+                    <group string="" id="dentistry_33" colspan="2" col="12">
+                        <label name="t33"/>
+                        <field name="t33" xexpand="0" xfill="0"/>
+                        <label name="v33"/>
+                        <field name="v33"/>
+                        <label name="i33"/>
+                        <field name="i33"/>
+                        <label name="m33"/>
+                        <field name="m33"/>
+                        <label name="d33"/>
+                        <field name="d33"/>
+                        <label name="l33"/>
+                        <field name="l33"/>
+                    </group>
+                    <group string="" id="dentistry_34" colspan="2" col="12">
+                        <label name="t34"/>
+                        <field name="t34" xexpand="0" xfill="0"/>
+                        <label name="v34"/>
+                        <field name="v34"/>
+                        <label name="o34"/>
+                        <field name="o34"/>
+                        <label name="m34"/>
+                        <field name="m34"/>
+                        <label name="d34"/>
+                        <field name="d34"/>
+                        <label name="l34"/>
+                        <field name="l34"/>
+                    </group>
+                    <group string="" id="dentistry_35" colspan="2" col="12">
+                        <label name="t35"/>
+                        <field name="t35" xexpand="0" xfill="0"/>
+                        <label name="v35"/>
+                        <field name="v35"/>
+                        <label name="o35"/>
+                        <field name="o35"/>
+                        <label name="m35"/>
+                        <field name="m35"/>
+                        <label name="d35"/>
+                        <field name="d35"/>
+                        <label name="l35"/>
+                        <field name="l35"/>
+                    </group>
+                    <group string="" id="dentistry_36" colspan="2" col="12">
+                        <label name="t36"/>
+                        <field name="t36" xexpand="0" xfill="0"/>
+                        <label name="v36"/>
+                        <field name="v36"/>
+                        <label name="o36"/>
+                        <field name="o36"/>
+                        <label name="m36"/>
+                        <field name="m36"/>
+                        <label name="d36"/>
+                        <field name="d36"/>
+                        <label name="l36"/>
+                        <field name="l36"/>
+                    </group>
+                    <group string="" id="dentistry_37" colspan="2" col="12">
+                        <label name="t37"/>
+                        <field name="t37" xexpand="0" xfill="0"/>
+                        <label name="v37"/>
+                        <field name="v37"/>
+                        <label name="o37"/>
+                        <field name="o37"/>
+                        <label name="m37"/>
+                        <field name="m37"/>
+                        <label name="d37"/>
+                        <field name="d37"/>
+                        <label name="l37"/>
+                        <field name="l37"/>
+                    </group>
+                    <group string="" id="dentistry_38" colspan="2" col="12">
+                        <label name="t38"/>
+                        <field name="t38" xexpand="0" xfill="0"/>
+                        <label name="v38"/>
+                        <field name="v38"/>
+                        <label name="o38"/>
+                        <field name="o38"/>
+                        <label name="m38"/>
+                        <field name="m38"/>
+                        <label name="d38"/>
+                        <field name="d38"/>
+                        <label name="l38"/>
+                        <field name="l38"/>
+                    </group>
+                </group>
+            </group>
+        </page>
+        <page string="Primary" id="primary">
+            <field name="include_primary" invisible="1"/>
+            <group string="Upper" id="dentistry_teeth_primary" colspan="4" col="4">
+                <group string="" id="dentistry_q5" col="2">
+                    <group string="" id="dentistry_51" colspan="2" col="12">
+                        <label name="t51"/>
+                        <field name="t51" xexpand="0" xfill="0"/>
+                        <label name="v51"/>
+                        <field name="v51"/>
+                        <label name="i51"/>
+                        <field name="i51"/>
+                        <label name="m51"/>
+                        <field name="m51"/>
+                        <label name="d51"/>
+                        <field name="d51"/>
+                        <label name="p51"/>
+                        <field name="p51"/>
+                    </group>
+                    <group string="" id="dentistry_52" colspan="2" col="12">
+                        <label name="t52"/>
+                        <field name="t52" xexpand="0" xfill="0"/>
+                        <label name="v52"/>
+                        <field name="v52"/>
+                        <label name="i52"/>
+                        <field name="i52"/>
+                        <label name="m52"/>
+                        <field name="m52"/>
+                        <label name="d52"/>
+                        <field name="d52"/>
+                        <label name="p52"/>
+                        <field name="p52"/>
+                    </group>
+                    <group string="" id="dentistry_53" colspan="2" col="12">
+                        <label name="t53"/>
+                        <field name="t53" xexpand="0" xfill="0"/>
+                        <label name="v53"/>
+                        <field name="v53"/>
+                        <label name="i53"/>
+                        <field name="i53"/>
+                        <label name="m53"/>
+                        <field name="m53"/>
+                        <label name="d53"/>
+                        <field name="d53"/>
+                        <label name="p53"/>
+                        <field name="p53"/>
+                    </group>
+                    <group string="" id="dentistry_54" colspan="2" col="12">
+                        <label name="t54"/>
+                        <field name="t54" xexpand="0" xfill="0"/>
+                        <label name="v54"/>
+                        <field name="v54"/>
+                        <label name="o54"/>
+                        <field name="o54"/>
+                        <label name="m54"/>
+                        <field name="m54"/>
+                        <label name="d54"/>
+                        <field name="d54"/>
+                        <label name="p54"/>
+                        <field name="p54"/>
+                    </group>
+                    <group string="" id="dentistry_55" colspan="2" col="12">
+                        <label name="t55"/>
+                        <field name="t55" xexpand="0" xfill="0"/>
+                        <label name="v55"/>
+                        <field name="v55"/>
+                        <label name="o55"/>
+                        <field name="o55"/>
+                        <label name="m55"/>
+                        <field name="m55"/>
+                        <label name="d55"/>
+                        <field name="d55"/>
+                        <label name="p55"/>
+                        <field name="p55"/>
+                    </group>
+                </group>
+                <group string="" id="dentistry_q6" col="2">
+                    <group string="" id="dentistry_61" colspan="2" col="12">
+                        <label name="t61"/>
+                        <field name="t61" xexpand="0" xfill="0"/>
+                        <label name="v61"/>
+                        <field name="v61"/>
+                        <label name="i61"/>
+                        <field name="i61"/>
+                        <label name="m61"/>
+                        <field name="m61"/>
+                        <label name="d61"/>
+                        <field name="d61"/>
+                        <label name="p61"/>
+                        <field name="p61"/>
+                    </group>
+                    <group string="" id="dentistry_62" colspan="2" col="12">
+                        <label name="t62"/>
+                        <field name="t62" xexpand="0" xfill="0"/>
+                        <label name="v62"/>
+                        <field name="v62"/>
+                        <label name="i62"/>
+                        <field name="i62"/>
+                        <label name="m62"/>
+                        <field name="m62"/>
+                        <label name="d62"/>
+                        <field name="d62"/>
+                        <label name="p62"/>
+                        <field name="p62"/>
+                    </group>
+                    <group string="" id="dentistry_63" colspan="2" col="12">
+                        <label name="t63"/>
+                        <field name="t63" xexpand="0" xfill="0"/>
+                        <label name="v63"/>
+                        <field name="v63"/>
+                        <label name="i63"/>
+                        <field name="i63"/>
+                        <label name="m63"/>
+                        <field name="m63"/>
+                        <label name="d63"/>
+                        <field name="d63"/>
+                        <label name="p63"/>
+                        <field name="p63"/>
+                    </group>
+                    <group string="" id="dentistry_64" colspan="2" col="12">
+                        <label name="t64"/>
+                        <field name="t64" xexpand="0" xfill="0"/>
+                        <label name="v64"/>
+                        <field name="v64"/>
+                        <label name="o64"/>
+                        <field name="o64"/>
+                        <label name="m64"/>
+                        <field name="m64"/>
+                        <label name="d64"/>
+                        <field name="d64"/>
+                        <label name="p64"/>
+                        <field name="p64"/>
+                    </group>
+                    <group string="" id="dentistry_65" colspan="2" col="12">
+                        <label name="t65"/>
+                        <field name="t65" xexpand="0" xfill="0"/>
+                        <label name="v65"/>
+                        <field name="v65"/>
+                        <label name="o65"/>
+                        <field name="o65"/>
+                        <label name="m65"/>
+                        <field name="m65"/>
+                        <label name="d65"/>
+                        <field name="d65"/>
+                        <label name="p65"/>
+                        <field name="p65"/>
+                    </group>
+                </group>
+            </group>
+            <group string="Lower" id="dentistry_teeth_info" colspan="4" col="4">
+                <group string="" id="dentistry_q8" col="2">
+                    <group string="" id="dentistry_81" colspan="2" col="12">
+                        <label name="t81"/>
+                        <field name="t81" xexpand="0" xfill="0"/>
+                        <label name="v81"/>
+                        <field name="v81"/>
+                        <label name="i81"/>
+                        <field name="i81"/>
+                        <label name="m81"/>
+                        <field name="m81"/>
+                        <label name="d81"/>
+                        <field name="d81"/>
+                        <label name="l81"/>
+                        <field name="l81"/>
+                    </group>
+                    <group string="" id="dentistry_82" colspan="2" col="12">
+                        <label name="t82"/>
+                        <field name="t82" xexpand="0" xfill="0"/>
+                        <label name="v82"/>
+                        <field name="v82"/>
+                        <label name="i82"/>
+                        <field name="i82"/>
+                        <label name="m82"/>
+                        <field name="m82"/>
+                        <label name="d82"/>
+                        <field name="d82"/>
+                        <label name="l82"/>
+                        <field name="l82"/>
+                    </group>
+                    <group string="" id="dentistry_83" colspan="2" col="12">
+                        <label name="t83"/>
+                        <field name="t83" xexpand="0" xfill="0"/>
+                        <label name="v83"/>
+                        <field name="v83"/>
+                        <label name="i83"/>
+                        <field name="i83"/>
+                        <label name="m83"/>
+                        <field name="m83"/>
+                        <label name="d83"/>
+                        <field name="d83"/>
+                        <label name="l83"/>
+                        <field name="l83"/>
+                    </group>
+                    <group string="" id="dentistry_84" colspan="2" col="12">
+                        <label name="t84"/>
+                        <field name="t84" xexpand="0" xfill="0"/>
+                        <label name="v84"/>
+                        <field name="v84"/>
+                        <label name="o84"/>
+                        <field name="o84"/>
+                        <label name="m84"/>
+                        <field name="m84"/>
+                        <label name="d84"/>
+                        <field name="d84"/>
+                        <label name="l84"/>
+                        <field name="l84"/>
+                    </group>
+                    <group string="" id="dentistry_85" colspan="2" col="12">
+                        <label name="t85"/>
+                        <field name="t85" xexpand="0" xfill="0"/>
+                        <label name="v85"/>
+                        <field name="v85"/>
+                        <label name="o85"/>
+                        <field name="o85"/>
+                        <label name="m85"/>
+                        <field name="m85"/>
+                        <label name="d85"/>
+                        <field name="d85"/>
+                        <label name="l85"/>
+                        <field name="l85"/>
+                    </group>
+                </group>
+                <group string="" id="dentistry_q7" col="2">
+                    <group string="" id="dentistry_71" colspan="2" col="12">
+                        <label name="t71"/>
+                        <field name="t71" xexpand="0" xfill="0"/>
+                        <label name="v71"/>
+                        <field name="v71"/>
+                        <label name="i71"/>
+                        <field name="i71"/>
+                        <label name="m71"/>
+                        <field name="m71"/>
+                        <label name="d71"/>
+                        <field name="d71"/>
+                        <label name="l71"/>
+                        <field name="l71"/>
+                    </group>
+                    <group string="" id="dentistry_72" colspan="2" col="12">
+                        <label name="t72"/>
+                        <field name="t72" xexpand="0" xfill="0"/>
+                        <label name="v72"/>
+                        <field name="v72"/>
+                        <label name="i72"/>
+                        <field name="i72"/>
+                        <label name="m72"/>
+                        <field name="m72"/>
+                        <label name="d72"/>
+                        <field name="d72"/>
+                        <label name="l72"/>
+                        <field name="l72"/>
+                    </group>
+                    <group string="" id="dentistry_73" colspan="2" col="12">
+                        <label name="t73"/>
+                        <field name="t73" xexpand="0" xfill="0"/>
+                        <label name="v73"/>
+                        <field name="v73"/>
+                        <label name="i73"/>
+                        <field name="i73"/>
+                        <label name="m73"/>
+                        <field name="m73"/>
+                        <label name="d73"/>
+                        <field name="d73"/>
+                        <label name="l73"/>
+                        <field name="l73"/>
+                    </group>
+                    <group string="" id="dentistry_74" colspan="2" col="12">
+                        <label name="t74"/>
+                        <field name="t74" xexpand="0" xfill="0"/>
+                        <label name="v74"/>
+                        <field name="v74"/>
+                        <label name="o74"/>
+                        <field name="o74"/>
+                        <label name="m74"/>
+                        <field name="m74"/>
+                        <label name="d74"/>
+                        <field name="d74"/>
+                        <label name="l74"/>
+                        <field name="l74"/>
+                    </group>
+                    <group string="" id="dentistry_75" colspan="2" col="12">
+                        <label name="t75"/>
+                        <field name="t75" xexpand="0" xfill="0"/>
+                        <label name="v75"/>
+                        <field name="v75"/>
+                        <label name="o75"/>
+                        <field name="o75"/>
+                        <label name="m75"/>
+                        <field name="m75"/>
+                        <label name="d75"/>
+                        <field name="d75"/>
+                        <label name="l75"/>
+                        <field name="l75"/>
+                    </group>
+                </group>
+            </group>
+        </page>
+    </notebook>
+</form>

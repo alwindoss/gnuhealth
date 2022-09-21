@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<form>
+    <group string="Header" id="protocol_header_group" colspan="4">
+    <label name="name"/>
+    <field name="name"/>
+    <label name="description"/>
+    <field name="description"/>
+    <newline/>
+    <label name="pathology"/>
+    <field name="pathology"/>
+    <label name="classification"/>
+    <field name="classification"/>
+    <newline/>
+    <group string="Surgical Intervention" id="surgical_intervention_group" colspan="4">
+        <field name="surgical_intervention"/>
+    </group>
+    <newline/>
+    <label name="approach"/>
+    <field name="approach"/>
+    <label name="anesthesia_type"/>
+    <field name="anesthesia_type"/>
+    </group>
+    <newline/>
+    <group string="Patient positioning" id="patient_positioning_group" colspan="4">
+        <label name="patient_positioning"/>
+        <field name="patient_positioning"/>
+        <label name="laterality"/>
+        <field name="laterality"/>
+    </group>
+    <newline/>
+    <group string="General Info" id="general_info_group" colspan="4">
+        <field name="general_info" colspan="4"/>
+    </group>    
+    <newline/>
+    <group string="Postoperative guidelines" id="postoperative_guidelines_group" colspan="4" yexpand="1">
+        <field name="postoperative_guidelines" colspan="4"/>
+    </group>    
+    <newline/>
+    <group string="Discharge instructions" id="discharge_instructions_group" colspan="4" yexpand="1">
+        <field name="discharge_instructions" colspan="4" yfill="1"/>
+    </group>    
+</form>

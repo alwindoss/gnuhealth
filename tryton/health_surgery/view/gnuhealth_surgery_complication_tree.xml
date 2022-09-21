@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<tree editable="1">
+    <field name="name"/>
+    <field name="complication" expand="1"/>
+    <field name="severity" expand="1"/>
+    <field name="short_comment" expand="1"/>
+</tree>

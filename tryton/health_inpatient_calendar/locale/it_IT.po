@@ -1,0 +1,24 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-04-15 17:06+0000\n"
+"Last-Translator: G R <gradaellig@gmail.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_inpatient_calendar/it/>\n"
+"Language: it_IT\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12-dev\n"
+
+msgctxt "field:gnuhealth.hospital.bed,calendar:"
+msgid "Calendar"
+msgstr "Calendario"
+
+msgctxt "field:gnuhealth.inpatient.registration,event:"
+msgid "Calendar Event"
+msgstr "Evento del calendario"
+
+msgctxt "help:gnuhealth.inpatient.registration,event:"
+msgid "Calendar Event"
+msgstr "Evento del calendario"
