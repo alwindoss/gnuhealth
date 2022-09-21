@@ -1,24 +1,6 @@
-# Anonymous Pootle User, 2016.
+#
 msgid ""
-msgstr ""
-"PO-Revision-Date: 2022-03-03 13:30+0000\n"
-"Last-Translator: Fernando Sánchez <nando@integraper.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
-"health_surgery/es/>\n"
-"Language: es\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.1-dev\n"
-"X-POOTLE-MTIME: 1452251943.0\n"
-
-msgctxt "error:gnuhealth.surgery:"
-msgid "End time \"%(end_date)s\" BEFORE surgery date \"%(surgery_date)s\""
-msgstr "Fecha fin \"%(end_date)s\" ANTES que fecha cirugía \"%(surgery_date)s\""
-
-msgctxt "error:gnuhealth.surgery:"
-msgid "Operating Room is not available"
-msgstr "Sala de operación no disponible"
+msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:gnuhealth.operation,create_date:"
 msgid "Create Date"
@@ -59,6 +41,154 @@ msgstr "Usuario modificación"
 msgctxt "field:gnuhealth.patient,surgery:"
 msgid "Surgeries"
 msgstr "Cirugías"
+
+msgctxt "field:gnuhealth.patient.evaluation,hernia_disfunction:"
+msgid "Disfunctionality level"
+msgstr ""
+
+msgctxt "field:gnuhealth.patient.evaluation,hernia_ehs:"
+msgid "EHS"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.patient.evaluation,hernia_localization:"
+msgid "Localization"
+msgstr "Localización"
+
+msgctxt "field:gnuhealth.patient.evaluation,hernia_side:"
+msgid "Side"
+msgstr ""
+
+msgctxt "field:gnuhealth.patient.evaluation,hernia_time:"
+msgid "Evolution time"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.patient.evaluation,hernia_type:"
+msgid "Type"
+msgstr "Tipo"
+
+msgctxt "field:gnuhealth.patient.evaluation,surgical_context:"
+msgid "Context"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.patient.evaluation,thyroid_clinical:"
+msgid "Clinical"
+msgstr "Clínico"
+
+msgctxt "field:gnuhealth.patient.evaluation,thyroid_exploration:"
+msgid "Exploration"
+msgstr ""
+
+msgctxt "field:gnuhealth.patient.evaluation,thyroid_goiter:"
+msgid "Goiter"
+msgstr ""
+
+msgctxt "field:gnuhealth.patient.evaluation,thyroid_goiter_class:"
+msgid "Goiter classification"
+msgstr ""
+
+msgctxt "field:gnuhealth.patient.evaluation,thyroid_side:"
+msgid "Side"
+msgstr ""
+
+msgctxt "field:gnuhealth.patient.evaluation,thyroid_tirads:"
+msgid "TI-RADS"
+msgstr ""
+
+msgctxt "field:gnuhealth.patient.evaluation,thyroid_tvol:"
+msgid "TVol (mL)"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,assessment_date:"
+msgid "Date"
+msgstr "Fecha"
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,critical_info:"
+msgid "Critical Information"
+msgstr "Información Crítica"
+
+msgctxt "field:gnuhealth.preoperative_assessment,ecg:"
+msgid "ECG"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,evaluation:"
+msgid "Evaluation"
+msgstr "Evaluación"
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,health_professional:"
+msgid "Health Prof"
+msgstr "Prof Salud"
+
+msgctxt "field:gnuhealth.preoperative_assessment,imaging_test:"
+msgid "Imaging"
+msgstr ""
+
+msgctxt "field:gnuhealth.preoperative_assessment,lab_test:"
+msgid "Lab"
+msgstr ""
+
+msgctxt "field:gnuhealth.preoperative_assessment,needs_blood_reserve:"
+msgid "Needs blood reservation"
+msgstr ""
+
+msgctxt "field:gnuhealth.preoperative_assessment,no_anesthesia:"
+msgid "Do NOT use anesthesia"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,patient:"
+msgid "Patient"
+msgstr "Paciente"
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,preop_asa:"
+msgid "ASA PS"
+msgstr "ASA PS"
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,preop_bleeding_risk:"
+msgid "Risk of Massive bleeding"
+msgstr "Riesgo de hemorragia masiva"
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,preop_mallampati:"
+msgid "Mallampati Score"
+msgstr "Score Mallampati"
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,preop_rcri:"
+msgid "RCRI"
+msgstr "IRCR"
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,short_notes:"
+msgid "Notes"
+msgstr "Notas"
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,specialty:"
+msgid "Specialty"
+msgstr "Especialidad"
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,surgery:"
+msgid "Surgery"
+msgstr "Nombre"
+
+msgctxt "field:gnuhealth.preoperative_assessment,surgical_decision:"
+msgid "Surgical decision"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.preoperative_assessment,surgical_wound:"
+msgid "Surgical wound"
+msgstr "Herida quirúrgica"
 
 msgctxt "field:gnuhealth.rcri,create_date:"
 msgid "Create Date"
@@ -128,8 +258,15 @@ msgctxt "field:gnuhealth.rcri,write_uid:"
 msgid "Write User"
 msgstr "Usuario modificación"
 
+#, fuzzy
 msgctxt "field:gnuhealth.sequences,surgery_code_sequence:"
-msgid "Surgery Sequence"
+msgid "Surgery code sequence"
+msgstr "Numeración de Cirugía"
+
+#, fuzzy
+msgctxt ""
+"field:gnuhealth.sequences.surgery_code_sequence,surgery_code_sequence:"
+msgid "Surgery code sequence"
 msgstr "Numeración de Cirugía"
 
 msgctxt "field:gnuhealth.surgery,admission:"
@@ -144,17 +281,33 @@ msgctxt "field:gnuhealth.surgery,anesthesia_report:"
 msgid "Anesthesia Report"
 msgstr "Informe de anestesia"
 
+msgctxt "field:gnuhealth.surgery,anesthesia_type:"
+msgid "Anesthesia"
+msgstr ""
+
 msgctxt "field:gnuhealth.surgery,anesthetist:"
 msgid "Anesthetist"
 msgstr "Anestesista"
+
+msgctxt "field:gnuhealth.surgery,approach:"
+msgid "Approach"
+msgstr ""
 
 msgctxt "field:gnuhealth.surgery,classification:"
 msgid "Urgency"
 msgstr "Urgencia"
 
+msgctxt "field:gnuhealth.surgery,clavien_dindo:"
+msgid "Clavien-Dindo"
+msgstr ""
+
 msgctxt "field:gnuhealth.surgery,code:"
 msgid "Code"
 msgstr "Código"
+
+msgctxt "field:gnuhealth.surgery,complications_notes:"
+msgid "Complications"
+msgstr ""
 
 msgctxt "field:gnuhealth.surgery,computed_age:"
 msgid "Age"
@@ -172,6 +325,18 @@ msgctxt "field:gnuhealth.surgery,description:"
 msgid "Description"
 msgstr "Descripción"
 
+msgctxt "field:gnuhealth.surgery,discharge_instructions:"
+msgid "Discharge Instructions"
+msgstr ""
+
+msgctxt "field:gnuhealth.surgery,drains:"
+msgid "Drains"
+msgstr ""
+
+msgctxt "field:gnuhealth.surgery,ellapsed_time:"
+msgid "Ellapsed time"
+msgstr ""
+
 msgctxt "field:gnuhealth.surgery,extra_info:"
 msgid "Extra Info"
 msgstr "Información Adicional"
@@ -188,21 +353,38 @@ msgctxt "field:gnuhealth.surgery,institution:"
 msgid "Institution"
 msgstr "Institución"
 
+msgctxt "field:gnuhealth.surgery,laterality:"
+msgid "Laterality"
+msgstr ""
+
+msgctxt "field:gnuhealth.surgery,main_procedure:"
+msgid "Main Procedure"
+msgstr ""
+
 msgctxt "field:gnuhealth.surgery,operating_room:"
 msgid "Operating Room"
 msgstr "Quirófano"
 
+#, fuzzy
 msgctxt "field:gnuhealth.surgery,pathology:"
-msgid "Condition"
+msgid "Health Condition"
 msgstr "Enfermedad"
 
 msgctxt "field:gnuhealth.surgery,patient:"
 msgid "Patient"
 msgstr "Paciente"
 
+msgctxt "field:gnuhealth.surgery,patient_positioning:"
+msgid "Patient Positioning"
+msgstr ""
+
 msgctxt "field:gnuhealth.surgery,postoperative_dx:"
 msgid "Post-op dx"
 msgstr "Dx post qx"
+
+msgctxt "field:gnuhealth.surgery,postoperative_guidelines:"
+msgid "Postoperative guidelines"
+msgstr ""
 
 msgctxt "field:gnuhealth.surgery,preop_antibiotics:"
 msgid "Antibiotic Prophylaxis"
@@ -211,6 +393,10 @@ msgstr "Profilaxis antibiótica"
 msgctxt "field:gnuhealth.surgery,preop_asa:"
 msgid "ASA PS"
 msgstr "ASA PS"
+
+msgctxt "field:gnuhealth.surgery,preop_assessment:"
+msgid "Preop assessment"
+msgstr ""
 
 msgctxt "field:gnuhealth.surgery,preop_bleeding_risk:"
 msgid "Risk of Massive bleeding"
@@ -240,6 +426,10 @@ msgctxt "field:gnuhealth.surgery,procedures:"
 msgid "Procedures"
 msgstr "Procedimientos"
 
+msgctxt "field:gnuhealth.surgery,protocol:"
+msgid "Protocol"
+msgstr ""
+
 msgctxt "field:gnuhealth.surgery,rec_name:"
 msgid "Name"
 msgstr "Nombre"
@@ -268,6 +458,10 @@ msgctxt "field:gnuhealth.surgery,surgeon:"
 msgid "Surgeon"
 msgstr "Cirujano"
 
+msgctxt "field:gnuhealth.surgery,surgery_complications:"
+msgid "Complications"
+msgstr ""
+
 msgctxt "field:gnuhealth.surgery,surgery_date:"
 msgid "Date"
 msgstr "Fecha"
@@ -276,13 +470,18 @@ msgctxt "field:gnuhealth.surgery,surgery_end_date:"
 msgid "End"
 msgstr "Fin"
 
+#, fuzzy
 msgctxt "field:gnuhealth.surgery,surgery_length:"
-msgid "Duration"
+msgid "Length"
 msgstr "Duración"
 
 msgctxt "field:gnuhealth.surgery,surgery_team:"
 msgid "Team Members"
 msgstr "Miembros del equipo"
+
+msgctxt "field:gnuhealth.surgery,surgical_intervention:"
+msgid "Surgical Intervention"
+msgstr ""
 
 msgctxt "field:gnuhealth.surgery,surgical_wound:"
 msgid "Surgical wound"
@@ -295,6 +494,92 @@ msgstr "Fecha modificación"
 msgctxt "field:gnuhealth.surgery,write_uid:"
 msgid "Write User"
 msgstr "Usuario modificación"
+
+msgctxt "field:gnuhealth.surgery.complication,complication:"
+msgid "Complication"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.surgery.complication,name:"
+msgid "Surgery"
+msgstr "Nombre"
+
+#, fuzzy
+msgctxt "field:gnuhealth.surgery.complication,severity:"
+msgid "Severity"
+msgstr "Severidad"
+
+#, fuzzy
+msgctxt "field:gnuhealth.surgery.complication,short_comment:"
+msgid "Remarks"
+msgstr "Observaciones"
+
+msgctxt "field:gnuhealth.surgery.drain,drain:"
+msgid "Drain"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.surgery.drain,name:"
+msgid "Surgery"
+msgstr "Nombre"
+
+#, fuzzy
+msgctxt "field:gnuhealth.surgery.drain,notes:"
+msgid "Notes"
+msgstr "Notas"
+
+msgctxt "field:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "Anesthesia"
+msgstr ""
+
+msgctxt "field:gnuhealth.surgery.protocol,approach:"
+msgid "Approach"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.surgery.protocol,classification:"
+msgid "Urgency"
+msgstr "Urgencia"
+
+#, fuzzy
+msgctxt "field:gnuhealth.surgery.protocol,description:"
+msgid "Description"
+msgstr "Descripción"
+
+msgctxt "field:gnuhealth.surgery.protocol,discharge_instructions:"
+msgid "Discharge Instructions"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.surgery.protocol,general_info:"
+msgid "General Information"
+msgstr "Información General"
+
+msgctxt "field:gnuhealth.surgery.protocol,laterality:"
+msgid "Laterality"
+msgstr ""
+
+#, fuzzy
+msgctxt "field:gnuhealth.surgery.protocol,name:"
+msgid "Name"
+msgstr "Nombre"
+
+#, fuzzy
+msgctxt "field:gnuhealth.surgery.protocol,pathology:"
+msgid "Health Condition"
+msgstr "Enfermedad"
+
+msgctxt "field:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Patient Positioning"
+msgstr ""
+
+msgctxt "field:gnuhealth.surgery.protocol,postoperative_guidelines:"
+msgid "Postoperative guidelines"
+msgstr ""
+
+msgctxt "field:gnuhealth.surgery.protocol,surgical_intervention:"
+msgid "Surgical Intervention"
+msgstr ""
 
 msgctxt "field:gnuhealth.surgery_supply,create_date:"
 msgid "Create Date"
@@ -384,6 +669,80 @@ msgctxt "help:gnuhealth.operation,procedure:"
 msgid "Procedure Code, for example ICD-10-PCS or ICPM"
 msgstr "Código de Procedimiento, por ejemplo ICD-10-PCS o ICPM"
 
+msgctxt "help:gnuhealth.patient.evaluation,thyroid_tvol:"
+msgid "Volume in mL"
+msgstr ""
+
+msgctxt "help:gnuhealth.preoperative_assessment,assessment_date:"
+msgid "Date of the assessment"
+msgstr ""
+
+msgctxt "help:gnuhealth.preoperative_assessment,critical_info:"
+msgid "Patient important health conditions at the moment of the assessment"
+msgstr ""
+
+msgctxt "help:gnuhealth.preoperative_assessment,ecg:"
+msgid "Link to the associated electrocardiogram"
+msgstr ""
+
+msgctxt "help:gnuhealth.preoperative_assessment,evaluation:"
+msgid "Related encounter"
+msgstr ""
+
+msgctxt "help:gnuhealth.preoperative_assessment,health_professional:"
+msgid "Health professional that signs this assessment"
+msgstr ""
+
+msgctxt "help:gnuhealth.preoperative_assessment,imaging_test:"
+msgid "Link to the associated Dx imaging test"
+msgstr ""
+
+msgctxt "help:gnuhealth.preoperative_assessment,lab_test:"
+msgid "Link to the associated lab test"
+msgstr ""
+
+msgctxt "help:gnuhealth.preoperative_assessment,needs_blood_reserve:"
+msgid "The surgery requires preoperative blood ordering"
+msgstr ""
+
+msgctxt "help:gnuhealth.preoperative_assessment,no_anesthesia:"
+msgid "The patient is not eligible to be anesthetized"
+msgstr ""
+
+#, fuzzy
+msgctxt "help:gnuhealth.preoperative_assessment,preop_asa:"
+msgid "ASA pre-operative Physical Status"
+msgstr "ASA Estado pre-quirúrgico"
+
+#, fuzzy
+msgctxt "help:gnuhealth.preoperative_assessment,preop_bleeding_risk:"
+msgid ""
+"Patient has a risk of losing more than 500 ml in adults of over 7ml/kg in "
+"infants. If so, make sure that intravenous access and fluids are available"
+msgstr ""
+"El paciente tiene riesgo de perder más de 500 ml en adultos y más de 7ml/kg "
+"en niños. Si es así, asegúrese que están disponibles las vías intravenosas y"
+" fluidos."
+
+#, fuzzy
+msgctxt "help:gnuhealth.preoperative_assessment,preop_rcri:"
+msgid ""
+"Patient Revised Cardiac Risk Index\n"
+"Points 0: Class I Very Low (0.4% complications)\n"
+"Points 1: Class II Low (0.9% complications)\n"
+"Points 2: Class III Moderate (6.6% complications)\n"
+"Points 3 or more : Class IV High (>11% complications)"
+msgstr ""
+"Indice de Riesgo Cardíaco del Paciente\n"
+"Puntos 0: Clase I Muy Bajo (0.4% complicaciones)\n"
+"Puntos 1: Clase II Bajo (0.9% complicaciones)\n"
+"Puntos 2: Clase III Moderado (6.6% complicaciones)\n"
+"Puntos 3 o más: Clase IV Alto (>11% complicaciones)"
+
+msgctxt "help:gnuhealth.preoperative_assessment,surgical_decision:"
+msgid "Surgical decision / advice"
+msgstr ""
+
 msgctxt "help:gnuhealth.rcri,health_professional:"
 msgid "Health professional /Cardiologist who signed the assesment RCRI"
 msgstr "Profesional Médico / Cardiólogo que firmó el estudio IRCR"
@@ -408,8 +767,8 @@ msgid ""
 "prior coronary revascularization procedure         unless one of the other "
 "criteria for ischemic heart disease is         present"
 msgstr ""
-"historia de infarto de miocardio o una prueba de esfuerzo positiva, presente "
-"queja de dolor torácico considerado como secundario a la isquemia "
+"historia de infarto de miocardio o una prueba de esfuerzo positiva, presente"
+" queja de dolor torácico considerado como secundario a la isquemia "
 "miocárdica, el uso del tratamiento con nitratos, o ECG con ondas Q "
 "patológicas; no cuentan procedimiento de revascularización coronaria previa "
 "a menos que uno de los otros criterios para la enfermedad de cardiopatía "
@@ -446,6 +805,19 @@ msgctxt "help:gnuhealth.surgery,classification:"
 msgid "Urgency level for this surgery"
 msgstr "Nivel de urgencia para esta cirugía"
 
+msgctxt "help:gnuhealth.surgery,clavien_dindo:"
+msgid ""
+"Grade I: Any deviation from the normal postoperative course without the need for pharmacological treatment or surgical, endoscopic and radiological interventions\n"
+"Grade II: Requiring pharmacological treatment with drugs other than such allowed for grade I complications.\n"
+"Grade III: Requiring surgical, endoscopic or radiological intervention.\n"
+"  IIIa: Intervention not under general anesthesia\n"
+"  IIIb: Intervention under general anesthesia\n"
+"Grade IV: Life-threatening complication (including CNS complications) requiring IC/ICU-management.\n"
+"  IVa: single organ dysfunction (including dialysis)\n"
+"  IVb: multiorgan dysfunction\n"
+"Grade V: Death of a patient"
+msgstr ""
+
 msgctxt "help:gnuhealth.surgery,code:"
 msgid "Health Center code / sequence"
 msgstr "Código"
@@ -453,6 +825,17 @@ msgstr "Código"
 msgctxt "help:gnuhealth.surgery,computed_age:"
 msgid "Computed patient age at the moment of the surgery"
 msgstr "Edad del paciente en el momento de la cirugía"
+
+msgctxt "help:gnuhealth.surgery,drains:"
+msgid "Drains on this surgery"
+msgstr ""
+
+msgctxt "help:gnuhealth.surgery,ellapsed_time:"
+msgid ""
+"Time in minutes of the surgery process. This value is optional and is used "
+"when the automatic computed surgery length does not reflect the actual time "
+"or it has been recorded afterwards."
+msgstr ""
 
 msgctxt "help:gnuhealth.surgery,pathology:"
 msgid "Base Condition / Reason"
@@ -470,14 +853,18 @@ msgctxt "help:gnuhealth.surgery,preop_asa:"
 msgid "ASA pre-operative Physical Status"
 msgstr "ASA Estado pre-quirúrgico"
 
+msgctxt "help:gnuhealth.surgery,preop_assessment:"
+msgid "Preoperative assessment associated to this surgery"
+msgstr ""
+
 msgctxt "help:gnuhealth.surgery,preop_bleeding_risk:"
 msgid ""
 "Patient has a risk of losing more than 500 ml in adults of over 7ml/kg in "
 "infants. If so, make sure that intravenous access and fluids are available"
 msgstr ""
 "El paciente tiene riesgo de perder más de 500 ml en adultos y más de 7ml/kg "
-"en niños. Si es así, asegúrese que están disponibles las vías intravenosas y "
-"fluidos."
+"en niños. Si es así, asegúrese que están disponibles las vías intravenosas y"
+" fluidos."
 
 msgctxt "help:gnuhealth.surgery,preop_oximeter:"
 msgid "Pulse oximeter is in place and functioning"
@@ -506,10 +893,9 @@ msgid "Nursing team has confirmed sterility of the devices and room"
 msgstr ""
 "Enfermería ha confirmado la esterilidad de los dispositivos y del quirófano"
 
+#, fuzzy
 msgctxt "help:gnuhealth.surgery,procedures:"
-msgid ""
-"List of the procedures in the surgery. Please enter the first one as the "
-"main procedure"
+msgid "Procedures / Interventions done in the surgery"
 msgstr ""
 "Lista de procedimientos en la cirugía. Introduzca el primero como el "
 "procedimiento principal"
@@ -525,6 +911,10 @@ msgstr "Materiales requeridos para la cirugía"
 msgctxt "help:gnuhealth.surgery,surgeon:"
 msgid "Surgeon who did the procedure"
 msgstr "Cirujano que realizó el procedimiento"
+
+msgctxt "help:gnuhealth.surgery,surgery_complications:"
+msgid "Complications related to the surgery"
+msgstr ""
 
 msgctxt "help:gnuhealth.surgery,surgery_date:"
 msgid "Start of the Surgery"
@@ -546,6 +936,38 @@ msgctxt "help:gnuhealth.surgery,surgery_team:"
 msgid "Professionals Involved in the surgery"
 msgstr "Profesionales que participan en la cirugía"
 
+msgctxt "help:gnuhealth.surgery,surgical_intervention:"
+msgid ""
+"This code reflects the main intervention of this surgery.Additional "
+"procedures can be entered on the procedures tab."
+msgstr ""
+
+msgctxt "help:gnuhealth.surgery.complication,complication:"
+msgid "Complication during surgery"
+msgstr ""
+
+msgctxt "help:gnuhealth.surgery.complication,short_comment:"
+msgid "Brief, one-line remark of the complication."
+msgstr ""
+
+#, fuzzy
+msgctxt "help:gnuhealth.surgery.protocol,classification:"
+msgid "Urgency level for this surgery"
+msgstr "Nivel de urgencia para esta cirugía"
+
+msgctxt "help:gnuhealth.surgery.protocol,name:"
+msgid "Protocol Name"
+msgstr ""
+
+#, fuzzy
+msgctxt "help:gnuhealth.surgery.protocol,pathology:"
+msgid "Base Condition / Reason"
+msgstr "Condición de base / Motivo"
+
+msgctxt "help:gnuhealth.surgery.protocol,surgical_intervention:"
+msgid "This code reflects the main intervention of this surgery."
+msgstr ""
+
 msgctxt "help:gnuhealth.surgery_supply,qty:"
 msgid "Initial required quantity"
 msgstr "Cantidad inicial requerida"
@@ -554,8 +976,9 @@ msgctxt "help:gnuhealth.surgery_supply,qty_used:"
 msgid "Actual amount used"
 msgstr "Cantidad usada"
 
+#, fuzzy
 msgctxt "help:gnuhealth.surgery_supply,supply:"
-msgid "Supply to be used in this surgery"
+msgid "Supplies and drugs to be used in the surgery"
 msgstr "Materiales que se usaran en la cirugía"
 
 msgctxt "help:gnuhealth.surgery_team,team_member:"
@@ -566,13 +989,33 @@ msgctxt "model:gnuhealth.operation,name:"
 msgid "Operation - Surgical Procedures"
 msgstr "Operación - Procedimientos quirúrgicos"
 
+msgctxt "model:gnuhealth.preoperative_assessment,name:"
+msgid "Preoperative Assessment"
+msgstr ""
+
 msgctxt "model:gnuhealth.rcri,name:"
 msgid "Revised Cardiac Risk Index"
 msgstr "Índice de Riesgo Cardiaco Revisado"
 
+msgctxt "model:gnuhealth.sequences.surgery_code_sequence,name:"
+msgid "Health Service Request Sequence setup"
+msgstr ""
+
 msgctxt "model:gnuhealth.surgery,name:"
 msgid "Surgery"
 msgstr "Cirugía"
+
+msgctxt "model:gnuhealth.surgery.complication,name:"
+msgid "Surgery Complication"
+msgstr ""
+
+msgctxt "model:gnuhealth.surgery.drain,name:"
+msgid "Surgical drain"
+msgstr ""
+
+msgctxt "model:gnuhealth.surgery.protocol,name:"
+msgid "Surgery Protocol"
+msgstr ""
 
 msgctxt "model:gnuhealth.surgery_supply,name:"
 msgid "Supplies related to the surgery"
@@ -582,6 +1025,10 @@ msgctxt "model:gnuhealth.surgery_team,name:"
 msgid "Team Involved in the surgery"
 msgstr "Equipo que participa en la cirugía"
 
+msgctxt "model:ir.action,name:act_preoperative_assessment_form1"
+msgid "Preoperative Assessment"
+msgstr ""
+
 msgctxt "model:ir.action,name:act_rcri_form1"
 msgid "RCRI"
 msgstr "IRCR"
@@ -590,9 +1037,25 @@ msgctxt "model:ir.action,name:act_surgery_form"
 msgid "Surgeries"
 msgstr "Cirugías"
 
+msgctxt "model:ir.action,name:action_gnuhealth_preoperative_assessment_view"
+msgid "Preoperative Assessments"
+msgstr ""
+
+msgctxt "model:ir.action,name:action_gnuhealth_surgery_protocol_view"
+msgid "Surgery Protocol"
+msgstr ""
+
 msgctxt "model:ir.action,name:action_gnuhealth_surgery_view"
 msgid "Surgeries"
 msgstr "Cirugías"
+
+msgctxt "model:ir.action,name:report_outpatient_surgery_report"
+msgid "Outpatient Surgery Report"
+msgstr ""
+
+msgctxt "model:ir.action,name:report_preoperative_assessment_report"
+msgid "Preoperative Assessment"
+msgstr ""
 
 msgctxt "model:ir.action,name:report_surgery_report"
 msgid "Surgery Report"
@@ -623,25 +1086,793 @@ msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_signed"
 msgid "Signed"
 msgstr "Firmado"
 
-msgctxt "model:ir.sequence,name:seq_gnuhealth_surgery_code"
-msgid "Surgery"
+msgctxt "model:ir.message,text:msg_end_date_before_start"
+msgid "End time \"%(end_date)s\" BEFORE surgery date \"%(surgery_date)s\""
 msgstr ""
 
+msgctxt "model:ir.message,text:msg_or_and_time_needed"
+msgid ""
+"Operating Room and estimated end time are needed in order to confirm the "
+"surgery"
+msgstr ""
+
+msgctxt "model:ir.message,text:msg_or_is_not_available"
+msgid "Operating Room is not available"
+msgstr ""
+
+msgctxt "model:ir.message,text:msg_surgery_is_done"
+msgid ""
+"This surgery is at state Done and has been signed. You can no longer modify "
+"it."
+msgstr ""
+
+#, fuzzy
+msgctxt "model:ir.sequence,name:seq_gnuhealth_surgery_code"
+msgid "Surgery"
+msgstr "Nombre"
+
+#, fuzzy
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_surgery_code"
 msgid "Surgery"
+msgstr "Nombre"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_preoperative_assessment"
+msgid "Preoperative Assessments"
 msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_surgery_menu"
 msgid "Surgeries"
 msgstr "Cirugías"
 
+msgctxt "model:ir.ui.menu,name:gnuhealth_surgery_protocol"
+msgid "Surgery Protocols"
+msgstr ""
+
 msgctxt "model:res.group,name:group_health_surgery_admin"
 msgid "Health Surgery Administration"
 msgstr "Administración de consultas de salud"
 
-msgctxt "selection:gnuhealth.rcri,rcri_class:"
-msgid ""
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid ","
+msgstr ","
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid ":"
+msgstr ":"
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "A"
+msgstr "A"
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "ALLERGIC"
+msgstr "ALÉRGICA"
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "Age"
+msgstr "Edad"
+
+msgctxt "report:preoperative_assessment:"
+msgid "Base Condition:"
 msgstr ""
+
+msgctxt "report:preoperative_assessment:"
+msgid "CG interpretation:"
+msgstr ""
+
+msgctxt "report:preoperative_assessment:"
+msgid "Chief complaint"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "Critical Information"
+msgstr "Información Crítica"
+
+msgctxt "report:preoperative_assessment:"
+msgid "Decision"
+msgstr ""
+
+msgctxt "report:preoperative_assessment:"
+msgid "E"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "Health Professional"
+msgstr "Profesional de Salud"
+
+msgctxt "report:preoperative_assessment:"
+msgid "History of present illness"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "report:preoperative_assessment:"
+msgid "Mallampati :"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "report:preoperative_assessment:"
+msgid "Needs blood reserve"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "Notes"
+msgstr "Notas"
+
+msgctxt "report:preoperative_assessment:"
+msgid "PREOPERATIVE ASSESSMENT REPORT"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "Patient directions"
+msgstr "Directrices para el paciente"
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "Print Date"
+msgstr "Fecha impresión"
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "RCRI"
+msgstr "IRCR"
+
+msgctxt "report:preoperative_assessment:"
+msgid "SA:"
+msgstr ""
+
+msgctxt "report:preoperative_assessment:"
+msgid "date"
+msgstr ""
+
+msgctxt "report:preoperative_assessment:"
+msgid "essment"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:preoperative_assessment:"
+msgid "s"
+msgstr "s"
+
+msgctxt "report:surgery:"
+msgid "(ID"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid ")"
+msgstr "("
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid ","
+msgstr ","
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid ":"
+msgstr ":"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Age"
+msgstr "Edad"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Anesthesia Report"
+msgstr "Informe de anestesia"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Anesthetist"
+msgstr "Anestesista"
+
+msgctxt "report:surgery:"
+msgid "Base Condition"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "C"
+msgstr "C"
+
+msgctxt "report:surgery:"
+msgid "Classification"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Comments"
+msgstr "Comentarios"
+
+msgctxt "report:surgery:"
+msgid "Complication"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Date"
+msgstr "Fecha"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Description"
+msgstr "Descripción"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Details"
+msgstr "Detalles"
+
+msgctxt "report:surgery:"
+msgid "Discharge instructions"
+msgstr ""
+
+msgctxt "report:surgery:"
+msgid "Ellapsed"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Emergency"
+msgstr "Emergencia"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Female"
+msgstr "Femenino"
+
+msgctxt "report:surgery:"
+msgid "History of present illness"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "I"
+msgstr "I"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Institution"
+msgstr "Institución"
+
+msgctxt "report:surgery:"
+msgid "Main Surgeon"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Male"
+msgstr "Masculino"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Member"
+msgstr "Miembro"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Notes"
+msgstr "Notas"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Operating Room"
+msgstr "Quirófano"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Optional"
+msgstr "Opcional"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Patient"
+msgstr "Paciente"
+
+msgctxt "report:surgery:"
+msgid "Post-operative Diagnosis"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Print Date"
+msgstr "Fecha impresión"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Procedure Code"
+msgstr "Código procedimiento"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Qty"
+msgstr "Ctdad"
+
+msgctxt "report:surgery:"
+msgid "Qty used"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Required"
+msgstr "Necesario"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Role"
+msgstr "Rol"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Severity"
+msgstr "Severidad"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Sex"
+msgstr "Sexo"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Supply"
+msgstr "Suministro"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Surgery"
+msgstr "Nombre"
+
+msgctxt "report:surgery:"
+msgid "Surgery Report :"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Surgery Time"
+msgstr "Hora de la cirugía"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Time"
+msgstr "Tiempo"
+
+#, fuzzy
+msgctxt "report:surgery:"
+msgid "Urgent"
+msgstr "Urgente"
+
+msgctxt "report:surgery:"
+msgid "at surgery"
+msgstr ""
+
+msgctxt "report:surgery:"
+msgid "ntervention:"
+msgstr ""
+
+msgctxt "report:surgery:"
+msgid "omplications"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery_outpatient:"
+msgid ","
+msgstr ","
+
+#, fuzzy
+msgctxt "report:surgery_outpatient:"
+msgid ":"
+msgstr ":"
+
+#, fuzzy
+msgctxt "report:surgery_outpatient:"
+msgid "Age"
+msgstr "Edad"
+
+msgctxt "report:surgery_outpatient:"
+msgid "Base condition:"
+msgstr ""
+
+msgctxt "report:surgery_outpatient:"
+msgid "Chief complaint"
+msgstr ""
+
+msgctxt "report:surgery_outpatient:"
+msgid "Date of surgery:"
+msgstr ""
+
+msgctxt "report:surgery_outpatient:"
+msgid "Discharge instructions"
+msgstr ""
+
+msgctxt "report:surgery_outpatient:"
+msgid "History of present illness"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery_outpatient:"
+msgid "ID"
+msgstr "ID"
+
+#, fuzzy
+msgctxt "report:surgery_outpatient:"
+msgid "Institution"
+msgstr "Institución"
+
+#, fuzzy
+msgctxt "report:surgery_outpatient:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "report:surgery_outpatient:"
+msgid "Outpatient Surgery: Discharge report"
+msgstr ""
+
+#, fuzzy
+msgctxt "report:surgery_outpatient:"
+msgid "Print Date"
+msgstr "Fecha impresión"
+
+msgctxt "report:surgery_outpatient:"
+msgid "Surgical Intervention"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_disfunction:"
+msgid "Discapacitating"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_disfunction:"
+msgid "Limited daily activities"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_disfunction:"
+msgid "No disfunction"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_ehs:"
+msgid "Femoral"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_ehs:"
+msgid "Lateral (indirect)"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_ehs:"
+msgid "Medial (direct)"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_ehs:"
+msgid "Sliding"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_localization:"
+msgid "Crural"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_localization:"
+msgid "Eventration"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_localization:"
+msgid "Inguinal"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_localization:"
+msgid "Lumbar"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_localization:"
+msgid "Obturator"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_localization:"
+msgid "Spigelian"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_localization:"
+msgid "Umbilical"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_side:"
+msgid "Left"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_side:"
+msgid "Right"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_side:"
+msgid "bilateral"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_time:"
+msgid "1 - 5 years"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_time:"
+msgid "< 1 year"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_time:"
+msgid "> 5 years"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_type:"
+msgid "H1 - Reduces spontaneously when patient is lying"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_type:"
+msgid "H2 - Groin only, reduces completely with gentle manual pressure"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_type:"
+msgid ""
+"H3a - Inguino-scrotal reductible with manual manipulation. Component ing-"
+"scrot<10cm"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_type:"
+msgid ""
+"H3b - Inguino-scrotal reductible with manual manipulation. Component ing-"
+"scrot 10-20 cm"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_type:"
+msgid ""
+"H3c - Inguino-scrotal reductible with manual manipulation. Component ing-"
+"scrot>20cm"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_type:"
+msgid "H4a - Irreducible. Component ing-scrot<10cm"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_type:"
+msgid "H4b - Irreducible. Component ing-scrot 10-20 cm"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,hernia_type:"
+msgid "H4c - Irreducible. Component ing-scrot >20 cm"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.patient.evaluation,surgical_context:"
+msgid "Hernia"
+msgstr "Hernia"
+
+msgctxt "selection:gnuhealth.patient.evaluation,surgical_context:"
+msgid "Thyroid"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_clinical:"
+msgid "Cough"
+msgstr "Tos"
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_clinical:"
+msgid "Hoarseness"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_clinical:"
+msgid "Other"
+msgstr "Otro"
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_exploration:"
+msgid "Goiter"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_exploration:"
+msgid "Nodule"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_exploration:"
+msgid "Normal"
+msgstr "Normal"
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_goiter:"
+msgid "Difuse"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_goiter:"
+msgid "Intrathoracic"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_goiter:"
+msgid "Multinodular"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_goiter:"
+msgid "Solitary nodule"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_goiter_class:"
+msgid "0"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_goiter_class:"
+msgid "1"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_goiter_class:"
+msgid "2"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_goiter_class:"
+msgid "3"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_goiter_class:"
+msgid "4"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_goiter_class:"
+msgid "5"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_side:"
+msgid "Bilateral"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_side:"
+msgid "Left"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_side:"
+msgid "Right"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_tirads:"
+msgid "TR1"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_tirads:"
+msgid "TR2"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_tirads:"
+msgid "TR3"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_tirads:"
+msgid "TR4a"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_tirads:"
+msgid "TR4b"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_tirads:"
+msgid "TR5"
+msgstr ""
+
+msgctxt "selection:gnuhealth.patient.evaluation,thyroid_tirads:"
+msgid "TR6"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,preop_asa:"
+msgid "PS 1 : Normal healthy patient"
+msgstr "PS 1 : Paciente Normal / Saludable"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,preop_asa:"
+msgid "PS 2 : Patients with mild systemic disease"
+msgstr "PS 2 : Pacientes con enfermedad sistémica leve"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,preop_asa:"
+msgid "PS 3 : Patients with severe systemic disease"
+msgstr "PS 3 : Pacientes con enfermedad sistémica grave"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,preop_asa:"
+msgid ""
+"PS 4 : Patients with severe systemic disease that is a constant threat to "
+"life "
+msgstr ""
+"PS 4 : Pacientes con enfermedad sistémica grave que le supone un riesgo "
+"constante a su vida"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,preop_asa:"
+msgid ""
+"PS 5 : Moribund patients who are not expected to survive without the "
+"operation"
+msgstr ""
+"PS 5 : Pacientes moribundo que no se espera que sobrevivan sin la operación"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,preop_asa:"
+msgid ""
+"PS 6 : A declared brain-dead patient who organs are being removed for donor "
+"purposes"
+msgstr ""
+"PS 6 : Paciente declarado con muerte cerebral cuyos órganos se extraen para "
+"donación"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,preop_mallampati:"
+msgid "Class 1: Full visibility of tonsils, uvula and soft palate"
+msgstr "Clase 1: Visibilidad total de amígdala, úvula y paladar blando"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,preop_mallampati:"
+msgid ""
+"Class 2: Visibility of hard and soft palate, upper portion of tonsils and "
+"uvula"
+msgstr ""
+"Clase 2: Visibilidad de paladar duro, blando, porción superior de las "
+"amígdalas y úvula"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,preop_mallampati:"
+msgid "Class 3: Soft and hard palate and base of the uvula are visible"
+msgstr "Clase 3:  paladar blando, duro y base de la úvula visibles"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,preop_mallampati:"
+msgid "Class 4: Only Hard Palate visible"
+msgstr "Clase 4: Visible únicamente el paladar duro"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,surgical_decision:"
+msgid "Discharge"
+msgstr "Cerrar"
+
+msgctxt "selection:gnuhealth.preoperative_assessment,surgical_decision:"
+msgid "Needs surgery"
+msgstr ""
+
+msgctxt "selection:gnuhealth.preoperative_assessment,surgical_decision:"
+msgid "Schedule Revision"
+msgstr ""
+
+msgctxt "selection:gnuhealth.preoperative_assessment,surgical_decision:"
+msgid "Urgent surgery"
+msgstr ""
+
+msgctxt "selection:gnuhealth.preoperative_assessment,surgical_decision:"
+msgid "Watchful waiting"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,surgical_wound:"
+msgid "Clean . Class I"
+msgstr "Limpio. Clase I"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,surgical_wound:"
+msgid "Clean-Contaminated . Class II"
+msgstr "Limpio-Contaminado. Clase II"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,surgical_wound:"
+msgid "Contaminated . Class III"
+msgstr "Contaminado. Clase III"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.preoperative_assessment,surgical_wound:"
+msgid "Dirty-Infected . Class IV"
+msgstr "Sucio Infectado. Clase IV"
 
 msgctxt "selection:gnuhealth.rcri,rcri_class:"
 msgid "I"
@@ -659,8 +1890,71 @@ msgctxt "selection:gnuhealth.rcri,rcri_class:"
 msgid "IV"
 msgstr "IV"
 
-msgctxt "selection:gnuhealth.surgery,classification:"
-msgid ""
+msgctxt "selection:gnuhealth.surgery,anesthesia_type:"
+msgid "Epidural"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery,anesthesia_type:"
+msgid "General"
+msgstr "General"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery,anesthesia_type:"
+msgid "Local"
+msgstr "Local"
+
+msgctxt "selection:gnuhealth.surgery,anesthesia_type:"
+msgid "Local + sedation"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,anesthesia_type:"
+msgid "No anesthesia"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,anesthesia_type:"
+msgid "Peribulbar"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,anesthesia_type:"
+msgid "Rachianesthesia"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,anesthesia_type:"
+msgid "Regional"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,anesthesia_type:"
+msgid "Regional Block"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,anesthesia_type:"
+msgid "Sedation"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,approach:"
+msgid "Arthroscopic"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,approach:"
+msgid "Endoscopic"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,approach:"
+msgid "Laparoscopic"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery,approach:"
+msgid "Open"
+msgstr "Pendiente"
+
+msgctxt "selection:gnuhealth.surgery,approach:"
+msgid "Robotic"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,approach:"
+msgid "other"
 msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,classification:"
@@ -679,8 +1973,36 @@ msgctxt "selection:gnuhealth.surgery,classification:"
 msgid "Urgent"
 msgstr "Urgente"
 
-msgctxt "selection:gnuhealth.surgery,gender:"
-msgid ""
+msgctxt "selection:gnuhealth.surgery,clavien_dindo:"
+msgid "Grade I"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,clavien_dindo:"
+msgid "Grade II"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,clavien_dindo:"
+msgid "Grade III"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,clavien_dindo:"
+msgid "Grade IIIa"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,clavien_dindo:"
+msgid "Grade IV"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,clavien_dindo:"
+msgid "Grade IVa"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,clavien_dindo:"
+msgid "Grade IVb"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,clavien_dindo:"
+msgid "Grade V"
 msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,gender:"
@@ -699,8 +2021,73 @@ msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Male -> Female"
 msgstr "Masculino -> Femenino"
 
-msgctxt "selection:gnuhealth.surgery,preop_asa:"
-msgid ""
+msgctxt "selection:gnuhealth.surgery,laterality:"
+msgid "Bilateral"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,laterality:"
+msgid "Left"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,laterality:"
+msgid "Right"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Fowlers"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Jacknife"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Kidney positioning"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Knee-chest"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Lateral"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Lithotomy"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Lloyd-Davies"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Other"
+msgstr "Otro"
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Prone Decubitus"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Reverse Trendelenburg"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Semi-Fowler"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Sims"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Supine Decubitus"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery,patient_positioning:"
+msgid "Trendelenburg"
 msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
@@ -737,10 +2124,6 @@ msgid ""
 msgstr ""
 "PS 6 : Paciente declarado con muerte cerebral cuyos órganos se extraen para "
 "donación"
-
-msgctxt "selection:gnuhealth.surgery,preop_mallampati:"
-msgid ""
-msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,preop_mallampati:"
 msgid "Class 1: Full visibility of tonsils, uvula and soft palate"
@@ -787,10 +2170,6 @@ msgid "Signed"
 msgstr "Firmado"
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
-msgid ""
-msgstr ""
-
-msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Clean . Class I"
 msgstr "Limpio. Clase I"
 
@@ -805,3 +2184,408 @@ msgstr "Contaminado. Clase III"
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Dirty-Infected . Class IV"
 msgstr "Sucio Infectado. Clase IV"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.complication,severity:"
+msgid "Mild"
+msgstr "Leve"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.complication,severity:"
+msgid "Moderate"
+msgstr "Moderado"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.complication,severity:"
+msgid "Severe"
+msgstr "Severo"
+
+msgctxt "selection:gnuhealth.surgery.drain,drain:"
+msgid "Blake"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.drain,drain:"
+msgid "Davol"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.drain,drain:"
+msgid "Jackson-Pratt"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.drain,drain:"
+msgid "Kehr"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.drain,drain:"
+msgid "Penrose"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.drain,drain:"
+msgid "Redivac"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.drain,drain:"
+msgid "Redon"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.drain,drain:"
+msgid "Thoracic tube"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "Epidural"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "General"
+msgstr "General"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "Local"
+msgstr "Local"
+
+msgctxt "selection:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "Local + sedation"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "No anesthesia"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "Peribulbar"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "Rachianesthesia"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "Regional"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "Regional Block"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,anesthesia_type:"
+msgid "Sedation"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,approach:"
+msgid "Arthroscopic"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,approach:"
+msgid "Endoscopic"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,approach:"
+msgid "Laparoscopic"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.protocol,approach:"
+msgid "Open"
+msgstr "Pendiente"
+
+msgctxt "selection:gnuhealth.surgery.protocol,approach:"
+msgid "Robotic"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,approach:"
+msgid "other"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.protocol,classification:"
+msgid "Emergency"
+msgstr "Emergencia"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.protocol,classification:"
+msgid "Optional"
+msgstr "Opcional"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.protocol,classification:"
+msgid "Required"
+msgstr "Necesario"
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.protocol,classification:"
+msgid "Urgent"
+msgstr "Urgente"
+
+msgctxt "selection:gnuhealth.surgery.protocol,laterality:"
+msgid "Bilateral"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,laterality:"
+msgid "Left"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,laterality:"
+msgid "Right"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Fowlers"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Jacknife"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Kidney positioning"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Knee-chest"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Lateral"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Lithotomy"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Lloyd-Davies"
+msgstr ""
+
+#, fuzzy
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Other"
+msgstr "Otro"
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Prone Decubitus"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Reverse Trendelenburg"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Semi-Fowler"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Sims"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Supine Decubitus"
+msgstr ""
+
+msgctxt "selection:gnuhealth.surgery.protocol,patient_positioning:"
+msgid "Trendelenburg"
+msgstr ""
+
+msgctxt "view:gnuhealth.operation:"
+msgid "Procedure Details / Incidents"
+msgstr ""
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Surgical relevant info"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.patient:"
+msgid "Surgeries"
+msgstr "Cirugías"
+
+msgctxt "view:gnuhealth.preoperative_assessment:"
+msgid "Complementary tests"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.preoperative_assessment:"
+msgid "Critical Information"
+msgstr "Información Crítica"
+
+msgctxt "view:gnuhealth.preoperative_assessment:"
+msgid "Decision"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.preoperative_assessment:"
+msgid "Misc"
+msgstr "Varios"
+
+#, fuzzy
+msgctxt "view:gnuhealth.preoperative_assessment:"
+msgid "Notes"
+msgstr "Notas"
+
+msgctxt "view:gnuhealth.preoperative_assessment:"
+msgid "Risk assessment"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery.protocol:"
+msgid "Discharge instructions"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery.protocol:"
+msgid "General Info"
+msgstr "Información general"
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery.protocol:"
+msgid "Header"
+msgstr "Encabezado"
+
+msgctxt "view:gnuhealth.surgery.protocol:"
+msgid "Patient positioning"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery.protocol:"
+msgid "Postoperative guidelines"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery.protocol:"
+msgid "Surgical Intervention"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Anesthesia"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Cancel surgery ?"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Cancel the confirmed surgery"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Complications"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Confirm"
+msgstr "Confirmación"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Confirm the scheduled surgery"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Confirm the surgery and reserve the Operating Room ?"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Details"
+msgstr "Detalles"
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Discharge"
+msgstr "Cerrar"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Discharge instructions"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "End this surgery ?"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Finish and sign this surgery ? Itwill become read-only !"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Finnish"
+msgstr "Finlandés"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Finnish the surgery"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Main"
+msgstr "Principal"
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Patient"
+msgstr "Paciente"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Patient positioning"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Postoperative"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Postoperative guidelines"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Preoperative checklist"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Procedures"
+msgstr "Procedimientos"
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Sign"
+msgstr "Signo"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Sign this surgery"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Start"
+msgstr "Inicio"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Start the Surgery"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Start the surgery ?"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Supplies"
+msgstr "Suministros"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Surgical Intervention"
+msgstr ""
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Team"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.surgery:"
+msgid "Time"
+msgstr "Tiempo"
