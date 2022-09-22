@@ -311,10 +311,7 @@ class Surgery(ModelSQL, ModelView):
 
     preop_assessment = fields.Many2One(
         'gnuhealth.preoperative_assessment', 'Preop assessment',
-        domain=[
-            'AND',
-            ('surgery', '=', Eval('active_id')),
-            ('patient', '=', Eval('patient'))],
+        domain=[('patient', '=', Eval('patient'))],
         help="Preoperative assessment associated to this surgery")
 
     preop_oximeter = fields.Boolean(
