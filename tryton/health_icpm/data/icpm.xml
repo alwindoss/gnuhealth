@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tryton>
-  <data noupdate="1" skiptest="1">
+  <data noupdate="1">
     <record model="gnuhealth.procedure" id="icpm_1-190">
       <field name="name">1-190</field>
       <field name="description">APGAR SCORING OF NEWBORN, WITHOUT OTHER INITIAL MEDICAL EVALUATION</field>
