@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tryton>
-    <data noupdate="0" skiptest="1">
+    <data noupdate="0">
  
         <record model="gnuhealth.vegetarian_types" id="ovo">
             <field name="name">Ovo vegetarian</field>
