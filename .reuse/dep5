@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: GNU HEALTH
+Upstream-Contact: Luis Falcon <falcon@gnuhealth.org>
+Source: https://www.gnuhealth.org
+
+Files: tryton/health/icons/*.svg
+Copyright: 2012-2022 Leonardo D'Acchile <ldacchile@thymbra.com>
+License: CC-BY-SA-4.0
+
