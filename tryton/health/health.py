@@ -10,7 +10,8 @@
 #                       GNU Health project                              #
 #                   https://www.gnuhealth.org                           #
 #########################################################################
-#                       MAIN HMIS MODULE                                #
+#                           HEALTH package                              #
+#                       health.py: main module                          #
 #########################################################################
 
 import platform
