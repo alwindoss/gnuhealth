@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2001-2022 Luis Falcón <falcon@gnuhealth.org>
+# SPDX-FileCopyrightText: 2011-2022 Luis Falcón <falcon@gnuhealth.org>
 # SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
 # SPDX-FileCopyrightText: 2011 Cédric Krier <cedric.krier@b2ck.com>
 #
