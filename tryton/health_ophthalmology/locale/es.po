@@ -1,15 +1,15 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-07-27 11:50+0000\n"
-"Last-Translator: light lrc <lrc572lrc@gmail.com>\n"
+"PO-Revision-Date: 2022-10-17 00:42+0000\n"
+"Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gnu-health/"
 "health_ophthalmology/es/>\n"
 "Language: es\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,computed_age:"
 msgid "Age"
@@ -296,7 +296,7 @@ msgstr "Agudeza Visual - Visión del Ojo Izquierdo Usando Oclusor Estenopeico"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,liop:"
 msgid "Left Intraocular Pressure in mmHg"
-msgstr "Presión Intraocular  Medida en Milimetros del Ojo Izquierdo"
+msgstr "Presión Intraocular Medida en Milimetros del Ojo Izquierdo"
 
 msgctxt "help:gnuhealth.ophthalmology.evaluation,lnv:"
 msgid "Left Eye Near Vision"
