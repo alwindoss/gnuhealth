@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-08 11:15+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: it\n"
+"PO-Revision-Date: 2022-10-17 00:42+0000\n"
+"Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_reporting/it/>\n"
+"Language: it_IT\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15-dev\n"
 "X-POOTLE-MTIME: 1452251722.0\n"
 
 msgctxt "field:gnuhealth.evaluations.open.start,end_date:"
@@ -16,7 +18,7 @@ msgstr "Data fine"
 
 msgctxt "field:gnuhealth.evaluations.open.start,group_by:"
 msgid "Group By"
-msgstr ""
+msgstr "Ragruppa per"
 
 msgctxt "field:gnuhealth.evaluations.open.start,id:"
 msgid "ID"
@@ -124,7 +126,7 @@ msgstr "Scrivere nome utente"
 
 msgctxt "field:gnuhealth.summary.report.open.start,demographics:"
 msgid "Demographics"
-msgstr ""
+msgstr "Dati demografici"
 
 msgctxt "field:gnuhealth.summary.report.open.start,end_date:"
 msgid "End"
@@ -140,7 +142,7 @@ msgstr "Istituzione"
 
 msgctxt "field:gnuhealth.summary.report.open.start,patient_evaluations:"
 msgid "Evaluations"
-msgstr ""
+msgstr "Valutazioni"
 
 msgctxt "field:gnuhealth.summary.report.open.start,start_date:"
 msgid "Start"
@@ -200,7 +202,7 @@ msgstr "Data inizio"
 
 msgctxt "model:gnuhealth.evaluations.open.start,name:"
 msgid "Open Evaluations"
-msgstr ""
+msgstr "Valutazioni aperte"
 
 msgctxt "model:gnuhealth.evaluations_doctor,name:"
 msgid "Evaluations per Doctor"
@@ -216,7 +218,7 @@ msgstr "Valutazioni e Specialità"
 
 msgctxt "model:gnuhealth.summary.report.open.start,name:"
 msgid "Summary Report Start"
-msgstr ""
+msgstr "Rapporto sintetico Inizio"
 
 msgctxt "model:gnuhealth.top_diseases,name:"
 msgid "Top Diseases"
@@ -232,7 +234,7 @@ msgstr "Valutazioni per Medico"
 
 msgctxt "model:ir.action,name:act_evaluations_open"
 msgid "Evaluations Report"
-msgstr ""
+msgstr "Rapporto di valutazione"
 
 msgctxt "model:ir.action,name:act_evaluations_sector"
 msgid "Evaluations per Sector"
@@ -252,19 +254,19 @@ msgstr "Malattie Principali"
 
 msgctxt "model:ir.action,name:act_wizard_summary_report"
 msgid "Summary Report"
-msgstr ""
+msgstr "Rapporto di sintesi"
 
 msgctxt "model:ir.action,name:report_summary_information"
 msgid "Summary Report"
-msgstr ""
+msgstr "Rapporto di sintesi"
 
 msgctxt "model:ir.ui.menu,name:menu_evaluations_open"
 msgid "Evaluations Report"
-msgstr ""
+msgstr "Rapporto di valutazione"
 
 msgctxt "model:ir.ui.menu,name:menu_institution_summary_report"
 msgid "Summary Report"
-msgstr ""
+msgstr "Rapporto di sintesi"
 
 msgctxt "model:ir.ui.menu,name:menu_top_diseases_open"
 msgid "Top Diseases"
@@ -284,7 +286,7 @@ msgstr "Specialità"
 
 msgctxt "wizard_button:gnuhealth.evaluations.open,start,end:"
 msgid "Cancel"
-msgstr "Cancellare"
+msgstr "Annullare"
 
 msgctxt "wizard_button:gnuhealth.evaluations.open,start,select:"
 msgid "Open"
@@ -292,7 +294,7 @@ msgstr "Aprire"
 
 msgctxt "wizard_button:gnuhealth.summary.report.open,start,end:"
 msgid "Cancel"
-msgstr "Cancellare"
+msgstr "Annullare"
 
 msgctxt "wizard_button:gnuhealth.summary.report.open,start,open_:"
 msgid "Open"
@@ -300,7 +302,7 @@ msgstr "Aprire"
 
 msgctxt "wizard_button:gnuhealth.top_diseases.open,start,end:"
 msgid "Cancel"
-msgstr "Cancellare"
+msgstr "Annullare"
 
 msgctxt "wizard_button:gnuhealth.top_diseases.open,start,open_:"
 msgid "Open"
