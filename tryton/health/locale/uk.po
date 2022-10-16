@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-12-09 21:51+0000\n"
-"Last-Translator: Taras Panchenko <top39@ukr.net>\n"
+"PO-Revision-Date: 2022-10-17 00:42+0000\n"
+"Last-Translator: Tymofii Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gnu-health/"
 "health/uk/>\n"
 "Language: uk\n"
@@ -10,17 +10,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
-msgstr "Свідоцтво про народження уже існує!"
+msgstr "Свідоцтво вже існує!"
 
 msgctxt "error:gnuhealth.death_certificate:"
 msgid "Certificate already exists !"
 msgstr "Свідоцтво про смерть уже існує!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
 msgstr "Одиниця повинна бути унікальною!"
@@ -29,7 +28,6 @@ msgctxt "error:gnuhealth.drug.form:"
 msgid "The CODE must be unique !"
 msgstr "Цей КОД повинен бути унікальним!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The Unit must be unique !"
 msgstr "Одиниця вимірювання має бути унікальною!"
@@ -42,12 +40,10 @@ msgctxt "error:gnuhealth.drug.route:"
 msgid "The Name must be unique !"
 msgstr "Ім'я має бути унікальним!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.du:"
 msgid "The Domiciliary Unit must be unique !"
-msgstr "Підрозділ допомоги на дому повинен бути унікальним!"
+msgstr "Помешкання має бути унікальним!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The CODE must be unique !"
 msgstr "Цей КОД має бути унікальним!"
@@ -60,17 +56,14 @@ msgctxt "error:gnuhealth.family:"
 msgid "The Family Code must be unique !"
 msgstr "Код сім'ї має бути унікальним!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The LICENSE ID must be unique"
 msgstr "Код ліцензії (LICENSE ID) повинен бути унікальним"
 
-#, fuzzy
 msgctxt "error:gnuhealth.healthprofessional:"
 msgid "The health professional must be unique"
 msgstr "Медичний працівник повинен бути унікальним"
 
-#, fuzzy
 msgctxt "error:gnuhealth.hospital.bed:"
 msgid "The Bed must be unique per Health Center"
 msgstr "Ліжко має бути унікальним для кожного медичного центру"
@@ -79,12 +72,10 @@ msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building code must be unique per Health Center"
 msgstr "Код будівлі має бути унікальним для кожного Центру здоров'я"
 
-#, fuzzy
 msgctxt "error:gnuhealth.hospital.building:"
 msgid "The Building name must be unique per Health Center"
 msgstr "Назва будівлі має бути унікальною для кожного медичного центру"
 
-#, fuzzy
 msgctxt "error:gnuhealth.hospital.or:"
 msgid "The Operating Room Name must be unique per Health Center"
 msgstr "Назва операційної має бути унікальною для кожного медичного центру"
@@ -93,13 +84,11 @@ msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit CODE must be unique per Health Center"
 msgstr "Код підрозділу має бути унікальним для кожного Центру здоров'я"
 
-#, fuzzy
 msgctxt "error:gnuhealth.hospital.unit:"
 msgid "The Unit NAME must be unique per Health Center"
 msgstr ""
-"Назва блоку (Unit NAME) має бути унікальним для кожного медичного центру"
+"Назва блоку (Unit NAME) має бути унікальниою для кожного медичного центру"
 
-#, fuzzy
 msgctxt "error:gnuhealth.hospital.ward:"
 msgid "The Ward / Room Name must be unique per Health Center"
 msgstr "Назва палати / кімнати має бути унікальною для кожного медичного центру"
@@ -108,16 +97,14 @@ msgctxt "error:gnuhealth.immunization_schedule:"
 msgid "The schedule code must be unique"
 msgstr "Код розкладу повинен бути унікальним"
 
-#, fuzzy
 msgctxt "error:gnuhealth.immunization_schedule_dose:"
 msgid "The dose number must be unique for this vaccine"
-msgstr "Номер дози повинен бути унікальним для цієї вакцини"
+msgstr "Номер дози повинен бути унікальним для цього щеплення"
 
 msgctxt "error:gnuhealth.institution.operationalsector:"
 msgid "The Operational Sector already exists for this institution"
 msgstr "Для цієї установи операційний сектор вже існує"
 
-#, fuzzy
 msgctxt "error:gnuhealth.institution.specialties:"
 msgid "The Specialty already exists for this institution"
 msgstr "Для цієї установи вже існує спеціальність"
@@ -130,7 +117,6 @@ msgctxt "error:gnuhealth.institution:"
 msgid "This Institution already exists !"
 msgstr "Ця установа уже існує!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.insurance:"
 msgid "The number must be unique per insurance company"
 msgstr "Номер повинен бути унікальним для кожної страхової компанії"
@@ -139,7 +125,6 @@ msgctxt "error:gnuhealth.medication.dosage:"
 msgid "The CODE must be unique !"
 msgstr "Цей КОД має бути унікальним!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.medication.dosage:"
 msgid "The Unit must be unique !"
 msgstr "Одиниця вимірювання має бути унікальною!"
@@ -148,22 +133,18 @@ msgctxt "error:gnuhealth.occupation:"
 msgid "The CODE must be unique !"
 msgstr "Цей КОД повинен бути унікальним!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.occupation:"
 msgid "The Name must be unique !"
 msgstr "Ім'я має бути унікальним!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.operational_area:"
 msgid "The operational area must be unique !"
 msgstr "Операційна зона повинна бути унікальною!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.operational_sector:"
 msgid "The operational sector must be unique in each operational area!"
 msgstr "Операційний сектор повинен бути унікальним у кожній операційній зоні!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.pathology.category:"
 msgid "The category name must be unique"
 msgstr "Назва категорії повинна бути унікальною"
@@ -184,7 +165,6 @@ msgstr ""
 "Дата зцілення \"%(healed_date)s\" передує даті діагностування \""
 "%(diagnosed_date)s\"!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.patient.disease:"
 msgid ""
 "The Treatment END DATE \"%(date_stop_treatment)s\" is BEFORE the start date "
@@ -193,12 +173,10 @@ msgstr ""
 "ДАТА ЗАКІНЧЕННЯ ЛІКУВАННЯ \"% (date_stop_treatment) s\"  ПЕРЕДУЄ ДАТІ "
 "ПОЧАТКУ ЛІКУВАННЯ \"% (date_start_treatment) s\"!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.patient.ecg:"
 msgid "No health professional associated to this user"
 msgstr "Жоден медичний працівник не пов’язаний із цим користувачем"
 
-#, fuzzy
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid ""
 "End time \"%(evaluation_endtime)s\" BEFORE evaluation start "
@@ -207,7 +185,6 @@ msgstr ""
 "Час завершення \"%(evaluation_endtime)s\" ПЕРЕД початком оцінювання \""
 "%(evaluation_start)s\""
 
-#, fuzzy
 msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "No health professional associated to this user"
 msgstr "Жоден медичний працівник не пов’язаний з цим користувачем"
@@ -216,7 +193,6 @@ msgctxt "error:gnuhealth.patient.evaluation:"
 msgid "The evaluation code must be unique !"
 msgstr "Код оцінки повинен бути унікальним!"
 
-#, fuzzy
 msgctxt "error:gnuhealth.patient.medication:"
 msgid ""
 "The Medication END DATE \"%(end_treatment)s\" is BEFORE the start date "
@@ -261,13 +237,12 @@ msgstr "Жоден медичний працівник не  пов’язани
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "The Vaccine next dose is BEFORE the first one !"
-msgstr "Наступна доза вакцини - ДО першої!"
+msgstr "Наступна доза щеплення - ДО першої!"
 
 msgctxt "error:gnuhealth.vaccination:"
 msgid "This vaccine dose has been given already to the patient"
 msgstr "Ця доза вакцини вже була введена пацієнту"
 
-#, fuzzy
 msgctxt "error:party.party:"
 msgid "The Federation Account must be unique"
 msgstr "Обліковий запис федерації має бути унікальним"
@@ -276,12 +251,10 @@ msgctxt "error:party.party:"
 msgid "The PUID must be unique"
 msgstr "PUID повинен бути унікальним"
 
-#, fuzzy
 msgctxt "error:party.party:"
 msgid "This internal user is already assigned to a party"
 msgstr "Цьому внутрішньому користувачу вже призначено сторону"
 
-#, fuzzy
 msgctxt "error:wizard.gnuhealth.appointment.evaluation:"
 msgid "You need to select one Appointment record"
 msgstr "Вам потрібно вибрати один запис на прийом"
@@ -318,7 +291,6 @@ msgctxt "field:gnuhealth.appointment,healthprof:"
 msgid "Health Prof"
 msgstr "Практикуючий лікар"
 
-#, fuzzy
 msgctxt "field:gnuhealth.appointment,id:"
 msgid "ID"
 msgstr "Ідентифікатор (ID)"
@@ -327,7 +299,6 @@ msgctxt "field:gnuhealth.appointment,institution:"
 msgid "Institution"
 msgstr "Установа"
 
-#, fuzzy
 msgctxt "field:gnuhealth.appointment,name:"
 msgid "Appointment ID"
 msgstr "Ідентифікатор прийому у лікаря"
@@ -348,7 +319,6 @@ msgctxt "field:gnuhealth.appointment,state:"
 msgid "State"
 msgstr "Держава"
 
-#, fuzzy
 msgctxt "field:gnuhealth.appointment,urgency:"
 msgid "Urgency"
 msgstr "Невідкладний випадок"
@@ -389,7 +359,6 @@ msgctxt "field:gnuhealth.appointment.report,create_uid:"
 msgid "Create User"
 msgstr "Створити користувача"
 
-#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,diagnosis:"
 msgid "Main Codition"
 msgstr "Основна кодиція"
@@ -418,7 +387,6 @@ msgctxt "field:gnuhealth.appointment.report,rec_name:"
 msgid "Record Name"
 msgstr "Назва запису"
 
-#, fuzzy
 msgctxt "field:gnuhealth.appointment.report,ref:"
 msgid "PUID"
 msgstr "PUID"
@@ -435,7 +403,6 @@ msgctxt "field:gnuhealth.appointment.report.open.start,date_end:"
 msgid "Date End"
 msgstr "Дата завершення"
 
-#, fuzzy
 msgctxt "field:gnuhealth.appointment.report.open.start,date_start:"
 msgid "Date Start"
 msgstr "Дата початку"
@@ -541,7 +508,6 @@ msgctxt "field:gnuhealth.command,description:"
 msgid "Description"
 msgstr "Опис"
 
-#, fuzzy
 msgctxt "field:gnuhealth.command,domain:"
 msgid "Domain"
 msgstr "Домен"
@@ -586,10 +552,9 @@ msgctxt "field:gnuhealth.death_certificate,autopsy:"
 msgid "Autopsy"
 msgstr "Розтин"
 
-#, fuzzy
 msgctxt "field:gnuhealth.death_certificate,certification_date:"
 msgid "Certified on"
-msgstr "Сертифікований на"
+msgstr "Сертифіковано на"
 
 msgctxt "field:gnuhealth.death_certificate,cod:"
 msgid "Cause"
@@ -639,7 +604,6 @@ msgctxt "field:gnuhealth.death_certificate,observations:"
 msgid "Observations"
 msgstr "Спостереження"
 
-#, fuzzy
 msgctxt "field:gnuhealth.death_certificate,operational_sector:"
 msgid "Op. Sector"
 msgstr "Операційний сектор"
@@ -668,7 +632,6 @@ msgctxt "field:gnuhealth.death_certificate,type_of_death:"
 msgid "Type of death"
 msgstr "Вид смерті"
 
-#, fuzzy
 msgctxt "field:gnuhealth.death_certificate,underlying_conditions:"
 msgid "Underlying Conditions"
 msgstr "Основні умови"
@@ -681,10 +644,9 @@ msgctxt "field:gnuhealth.death_certificate,write_uid:"
 msgid "Write User"
 msgstr "Записати користувача"
 
-#, fuzzy
 msgctxt "field:gnuhealth.death_underlying_condition,condition:"
 msgid "Condition"
-msgstr "Стан"
+msgstr "Умова"
 
 msgctxt "field:gnuhealth.death_underlying_condition,create_date:"
 msgid "Create Date"
@@ -694,7 +656,6 @@ msgctxt "field:gnuhealth.death_underlying_condition,create_uid:"
 msgid "Create User"
 msgstr "Створити користувача"
 
-#, fuzzy
 msgctxt "field:gnuhealth.death_underlying_condition,death_certificate:"
 msgid "Certificate"
 msgstr "Свідоцтво"
@@ -935,12 +896,10 @@ msgctxt "field:gnuhealth.du,address_district:"
 msgid "District"
 msgstr "Район"
 
-#, fuzzy
 msgctxt "field:gnuhealth.du,address_municipality:"
 msgid "Municipality"
-msgstr "Община (ОТГ)"
+msgstr "Муніципалітет (ОТГ)"
 
-#, fuzzy
 msgctxt "field:gnuhealth.du,address_repr:"
 msgid "DU Address"
 msgstr "Адреса проживання"
@@ -1033,7 +992,6 @@ msgctxt "field:gnuhealth.du,name:"
 msgid "Code"
 msgstr "Код"
 
-#, fuzzy
 msgctxt "field:gnuhealth.du,operational_sector:"
 msgid "Operational Sector"
 msgstr "Операційний сектор"
@@ -1070,10 +1028,9 @@ msgctxt "field:gnuhealth.du,trash:"
 msgid "Trash recollection"
 msgstr "Вивіз сміття"
 
-#, fuzzy
 msgctxt "field:gnuhealth.du,urladdr:"
 msgid "OSM Map"
-msgstr "Карта OSM"
+msgstr "Мапа OSM"
 
 msgctxt "field:gnuhealth.du,water:"
 msgid "Running Water"
@@ -1247,7 +1204,6 @@ msgctxt "field:gnuhealth.healthprofessional,create_uid:"
 msgid "Create User"
 msgstr "Створити користувача"
 
-#, fuzzy
 msgctxt "field:gnuhealth.healthprofessional,id:"
 msgid "ID"
 msgstr "ID"
@@ -1268,7 +1224,6 @@ msgctxt "field:gnuhealth.healthprofessional,name:"
 msgid "Health Professional"
 msgstr "Медичний працівник"
 
-#, fuzzy
 msgctxt "field:gnuhealth.healthprofessional,puid:"
 msgid "PUID"
 msgstr "PUID"
@@ -1277,7 +1232,6 @@ msgctxt "field:gnuhealth.healthprofessional,rec_name:"
 msgid "Record Name"
 msgstr "Назва запису"
 
-#, fuzzy
 msgctxt "field:gnuhealth.healthprofessional,specialties:"
 msgid "Specialties"
 msgstr "Спеціалізації"
@@ -1330,10 +1284,9 @@ msgctxt "field:gnuhealth.hospital.bed,telephone_number:"
 msgid "Telephone Number"
 msgstr "Номер телефону"
 
-#, fuzzy
 msgctxt "field:gnuhealth.hospital.bed,ward:"
 msgid "Ward"
-msgstr "Станція"
+msgstr "Відділення"
 
 msgctxt "field:gnuhealth.hospital.bed,write_date:"
 msgid "Write Date"
@@ -1383,7 +1336,6 @@ msgctxt "field:gnuhealth.hospital.building,write_uid:"
 msgid "Write User"
 msgstr "Записати користувача"
 
-#, fuzzy
 msgctxt "field:gnuhealth.hospital.or,building:"
 msgid "Building"
 msgstr "Будівля"
@@ -1450,259 +1402,259 @@ msgstr "Додаткова інформація"
 
 msgctxt "field:gnuhealth.hospital.unit,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.hospital.unit,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Заклад"
 
 msgctxt "field:gnuhealth.hospital.unit,name:"
 msgid "Name"
-msgstr ""
+msgstr "Назва"
 
 msgctxt "field:gnuhealth.hospital.unit,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Назва запису"
 
 msgctxt "field:gnuhealth.hospital.unit,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Дата запису"
 
 msgctxt "field:gnuhealth.hospital.unit,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Записати користувача"
 
 msgctxt "field:gnuhealth.hospital.ward,ac:"
 msgid "Air Conditioning"
-msgstr ""
+msgstr "Кондиціонер"
 
 msgctxt "field:gnuhealth.hospital.ward,bio_hazard:"
 msgid "Bio Hazard"
-msgstr ""
+msgstr "Біологічна небезпека"
 
 msgctxt "field:gnuhealth.hospital.ward,building:"
 msgid "Building"
-msgstr ""
+msgstr "Будівля"
 
 msgctxt "field:gnuhealth.hospital.ward,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Дата створення"
 
 msgctxt "field:gnuhealth.hospital.ward,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Створити користувача"
 
 msgctxt "field:gnuhealth.hospital.ward,extra_info:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Додаткові дані"
 
 msgctxt "field:gnuhealth.hospital.ward,floor:"
 msgid "Floor Number"
-msgstr ""
+msgstr "Номер поверху"
 
 msgctxt "field:gnuhealth.hospital.ward,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Стать"
 
 msgctxt "field:gnuhealth.hospital.ward,guest_sofa:"
 msgid "Guest sofa-bed"
-msgstr ""
+msgstr "Гостьовий диван-ліжко"
 
 msgctxt "field:gnuhealth.hospital.ward,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.hospital.ward,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Заклад"
 
 msgctxt "field:gnuhealth.hospital.ward,internet:"
 msgid "Internet Access"
-msgstr ""
+msgstr "Доступ до Інтернету"
 
 msgctxt "field:gnuhealth.hospital.ward,microwave:"
 msgid "Microwave"
-msgstr ""
+msgstr "Мікрохвильовка"
 
 msgctxt "field:gnuhealth.hospital.ward,name:"
 msgid "Name"
-msgstr ""
+msgstr "Назва"
 
 msgctxt "field:gnuhealth.hospital.ward,number_of_beds:"
 msgid "Number of beds"
-msgstr ""
+msgstr "Кількість ліжок"
 
 msgctxt "field:gnuhealth.hospital.ward,private:"
 msgid "Private"
-msgstr ""
+msgstr "Особиста"
 
 msgctxt "field:gnuhealth.hospital.ward,private_bathroom:"
 msgid "Private Bathroom"
-msgstr ""
+msgstr "Окрема ванна кімната"
 
 msgctxt "field:gnuhealth.hospital.ward,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Назва запису"
 
 msgctxt "field:gnuhealth.hospital.ward,refrigerator:"
 msgid "Refrigerator"
-msgstr ""
+msgstr "Холодильник"
 
 msgctxt "field:gnuhealth.hospital.ward,state:"
 msgid "Status"
-msgstr ""
+msgstr "Стан"
 
 msgctxt "field:gnuhealth.hospital.ward,telephone:"
 msgid "Telephone access"
-msgstr ""
+msgstr "Телефонний доступ"
 
 msgctxt "field:gnuhealth.hospital.ward,tv:"
 msgid "Television"
-msgstr ""
+msgstr "Телебачення"
 
 msgctxt "field:gnuhealth.hospital.ward,unit:"
 msgid "Unit"
-msgstr ""
+msgstr "Одиниця виміру"
 
 msgctxt "field:gnuhealth.hospital.ward,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Дата запису"
 
 msgctxt "field:gnuhealth.hospital.ward,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Записати користувача"
 
 msgctxt "field:gnuhealth.hp_specialty,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Дата створення"
 
 msgctxt "field:gnuhealth.hp_specialty,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Створити користувача"
 
 msgctxt "field:gnuhealth.hp_specialty,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.hp_specialty,name:"
 msgid "Health Professional"
-msgstr ""
+msgstr "Медичний працівник"
 
 msgctxt "field:gnuhealth.hp_specialty,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Назва запису"
 
 msgctxt "field:gnuhealth.hp_specialty,specialty:"
 msgid "Specialty"
-msgstr ""
+msgstr "Спеціальність"
 
 msgctxt "field:gnuhealth.hp_specialty,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Дата запису"
 
 msgctxt "field:gnuhealth.hp_specialty,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Записати користувача"
 
 msgctxt "field:gnuhealth.immunization_schedule,active:"
 msgid "Active"
-msgstr ""
+msgstr "Активно"
 
 msgctxt "field:gnuhealth.immunization_schedule,country:"
 msgid "Country"
-msgstr ""
+msgstr "Країна"
 
 msgctxt "field:gnuhealth.immunization_schedule,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Дата створення"
 
 msgctxt "field:gnuhealth.immunization_schedule,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Створити користувача"
 
 msgctxt "field:gnuhealth.immunization_schedule,desc:"
 msgid "Description"
-msgstr ""
+msgstr "Опис"
 
 msgctxt "field:gnuhealth.immunization_schedule,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.immunization_schedule,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Назва запису"
 
 msgctxt "field:gnuhealth.immunization_schedule,sched:"
 msgid "Code"
-msgstr ""
+msgstr "Код"
 
 msgctxt "field:gnuhealth.immunization_schedule,vaccines:"
 msgid "Vaccines"
-msgstr ""
+msgstr "Щеплення"
 
 msgctxt "field:gnuhealth.immunization_schedule,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Дата запису"
 
 msgctxt "field:gnuhealth.immunization_schedule,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Записати користувача"
 
 msgctxt "field:gnuhealth.immunization_schedule,year:"
 msgid "Year"
-msgstr ""
+msgstr "Рік"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,age_dose:"
 msgid "Age"
-msgstr ""
+msgstr "Вік"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,age_unit:"
 msgid "Time Unit"
-msgstr ""
+msgstr "Одиниця часу"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Дата створення"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Створити користувача"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,dose_number:"
 msgid "Dose"
-msgstr ""
+msgstr "Доза"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,rec_name:"
 msgid "Record Name"
-msgstr ""
+msgstr "Назва запису"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "Зауваження"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,sched:"
 msgid "Schedule"
-msgstr ""
+msgstr "Розклад"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,vaccine:"
 msgid "Vaccine"
-msgstr ""
+msgstr "Щеплення"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Дата запису"
 
 msgctxt "field:gnuhealth.immunization_schedule_dose,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Записати користувача"
 
 msgctxt "field:gnuhealth.immunization_schedule_line,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Дата створення"
 
 msgctxt "field:gnuhealth.immunization_schedule_line,create_uid:"
 msgid "Create User"
