@@ -10,9 +10,8 @@
 #                           HEALTH package                              #
 #                  wizard_appointment_evaluation.py: wizard             #
 #########################################################################
-from trytond.model import ModelView
-from trytond.wizard import Wizard, StateTransition, StateAction, \
-    StateView, Button
+
+from trytond.wizard import Wizard, StateAction
 from trytond.transaction import Transaction
 from trytond.pool import Pool
 from trytond.pyson import PYSONEncoder
