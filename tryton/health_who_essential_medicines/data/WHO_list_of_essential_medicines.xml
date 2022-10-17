@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tryton>
-<data skiptest="1" noupdate="0">
+<data noupdate="0">
 
 <!-- Add list of products -->
 <record model="gnuhealth.medicament" id="meds_em1">

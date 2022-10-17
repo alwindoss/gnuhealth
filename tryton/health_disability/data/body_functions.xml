@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tryton>
-    <data skiptest="1" noupdate="1">
+    <data noupdate="1">
         <!-- MENTAL FUNCTIONS -->
         <record model="gnuhealth.body_function" id="b110">
             <field name="name">Consciousness</field>
