@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 <tryton>
-    <data skiptest="1" noupdate="0">
+    <data noupdate="0">
 
         <record model="gnuhealth.ethnicity" id="eth1">
             <field name="name">Black</field>
