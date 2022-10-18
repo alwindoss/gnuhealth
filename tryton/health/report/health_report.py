@@ -17,8 +17,10 @@ from trytond.pool import Pool
 from trytond.transaction import Transaction
 from trytond.report import Report
 
-__all__ = ['PatientDiseaseReport', 'PatientMedicationReport', 
-    'PatientVaccinationReport']
+__all__ = ['PatientDiseaseReport',
+           'PatientMedicationReport',
+           'PatientVaccinationReport']
+
 
 def get_print_date():
     Company = Pool().get('company.company')
@@ -42,8 +44,9 @@ class PatientDiseaseReport(Report):
         localcontext['print_date'] = get_print_date()
         localcontext['print_time'] = localcontext['print_date'].time()
 
-        return super(PatientDiseaseReport, cls).parse(report, objects, data, 
-            localcontext)
+        return super(
+                     PatientDiseaseReport, cls).parse(
+                     report, objects, data, localcontext)
 
 
 class PatientMedicationReport(Report):
@@ -54,8 +57,9 @@ class PatientMedicationReport(Report):
         localcontext['print_date'] = get_print_date()
         localcontext['print_time'] = localcontext['print_date'].time()
 
-        return super(PatientMedicationReport, cls).parse(report, objects, data, 
-            localcontext)
+        return super(
+                     PatientMedicationReport, cls).parse(
+                     report, objects, data, localcontext)
 
 
 class PatientVaccinationReport(Report):
@@ -66,5 +70,6 @@ class PatientVaccinationReport(Report):
         localcontext['print_date'] = get_print_date()
         localcontext['print_time'] = localcontext['print_date'].time()
 
-        return super(PatientVaccinationReport, cls).parse(report, objects, data, 
-            localcontext)
+        return super(
+                     PatientVaccinationReport, cls).parse(
+                     report, objects, data, localcontext)
