@@ -1,3 +1,7 @@
+.. SPDX-FileCopyrightText: 2008-2022 Luis Falcón 
+..
+.. SPDX-License-Identifier: CC-BY-SA-4.0
+
 gnuhealth_csv_lab_interface.py
 
 Simple script to show ways to interface with GNU Health in a
