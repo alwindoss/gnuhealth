@@ -1,3 +1,8 @@
+-- SPDX-FileCopyrightText: 2021 Luis Falcón <falcon@gnuhealth.org>
+-- SPDX-FileCopyrightText: 2021 Tryton Foundation <info@tryton.org>
+--
+-- SPDX-License-Identifier: GPL-3.0-or-later
+
 -- Rename webdav to health_webdav3_server
 update ir_module set name='health_webdav3_server' where name='webdav';
 
