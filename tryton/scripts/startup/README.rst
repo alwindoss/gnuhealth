@@ -1,6 +1,6 @@
 .. SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
 ..
-.. SPDX-License-Identifier: CC-BY-SA-4.0.txt
+.. SPDX-License-Identifier: CC-BY-SA-4.0
 
 Creating a Systemd service for the GNU Health server
 
