@@ -1,3 +1,7 @@
+.. SPDX-FileCopyrightText: 2008-2022 Luis Falcón
+..
+.. SPDX-License-Identifier: CC-BY-SA-4.0
+
 patient_uploader.py
 
 Simple script to upload people demographics from a CSV formatted file.  
