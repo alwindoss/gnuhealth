@@ -36,3 +36,18 @@ License: CC-BY-SA-4.0
 Files: scripts/startup/gnuhealth.service
 Copyright: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
 License: CC-BY-SA-4.0
+
+Comment: The GNU Health translation team
+Files: health*/locale/*.po*
+Copyright: 2008-2022 GNU Solidario <health@gnusolidario.org>
+License: CC-BY-SA-4.0
+
+Comment: Misc files common for most packages  
+Files: health*/MANIFEST.in health*/tryton.cfg
+Copyright: 2011-2022 GNU Solidario <health@gnusolidario.org>
+License: CC-BY-SA-4.0
+
+Comment: Man page
+Files: health/man/gnuhealth.1
+Copyright: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+License: CC-BY-SA-4.0
