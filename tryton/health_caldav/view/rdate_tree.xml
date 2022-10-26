@@ -1,6 +1,13 @@
 <?xml version="1.0"?>
-<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
-this repository contains the full copyright notices and license terms. -->
+
+<!--
+SPDX-FileCopyrightText: 2009-2016 Tryton Foundation <info@tryton.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+SPDX-FileCopyrightText: 2011-2022 Luis Falcón <falcon@gnuhealth.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 <tree>
     <field name="event"/>
     <field name="datetime" widget="date"/>

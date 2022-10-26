@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 
+# SPDX-FileCopyrightText: 2009-2013 Bertrand Chenal
+# SPDX-FileCopyrightText: 2009-2016 B2CK
+# SPDX-FileCopyrightText: 2009-2016 Cédric Krier
+# SPDX-FileCopyrightText: 2009-2016 Tryton Foundation <info@tryton.org>
+# SPDX-FileCopyrightText: 2016-2022 GNU Solidario <health@gnusolidario.org>
+# SPDX-FileCopyrightText: 2016-2022 Luis Falcón <falcon@gnuhealth.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 from setuptools import setup
 import re
 import os

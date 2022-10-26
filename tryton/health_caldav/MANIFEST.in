@@ -1,7 +1,6 @@
 include INSTALL
-include README
 include COPYRIGHT
-include CHANGELOG
+include Changelog
 include LICENSE
 include tryton.cfg
 include *.xml

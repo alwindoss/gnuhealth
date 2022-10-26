@@ -1,5 +1,10 @@
-# This file is part of Tryton.  The COPYRIGHT file at the top level of
-# this repository contains the full copyright notices and license terms.
+# SPDX-FileCopyrightText: 2009-2013 Bertrand Chenal
+# SPDX-FileCopyrightText: 2009-2016 B2CK
+# SPDX-FileCopyrightText: 2009-2016 Cédric Krier
+# SPDX-FileCopyrightText: 2016-2022 Luis Falcon <falcon@gnuhealth.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 import unittest
 import trytond.tests.test_tryton
 from trytond.tests.test_tryton import ModuleTestCase
@@ -7,7 +12,7 @@ from trytond.tests.test_tryton import ModuleTestCase
 
 class CalendarTestCase(ModuleTestCase):
     'Test Calendar module'
-    module = 'calendar'
+    module = 'health_caldav'
 
 
 def suite():
