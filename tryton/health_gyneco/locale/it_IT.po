@@ -1,15 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-04-15 17:06+0000\n"
-"Last-Translator: G R <gradaellig@gmail.com>\n"
+"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_gyneco/it/>\n"
 "Language: it_IT\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 "X-POOTLE-MTIME: 1452251648.0\n"
 
 msgctxt "error:gnuhealth.patient.pregnancy:"
@@ -146,7 +146,7 @@ msgstr "Precedente"
 
 msgctxt "field:gnuhealth.patient.colposcopy_history,name:"
 msgid "Patient"
-msgstr "paziente"
+msgstr "Paziente"
 
 msgctxt "field:gnuhealth.patient.colposcopy_history,rec_name:"
 msgid "Name"
@@ -743,11 +743,11 @@ msgstr "Altezza fondo uterino"
 
 msgctxt "field:gnuhealth.perinatal.monitor,id:"
 msgid "ID"
-msgstr "ID"
+msgstr "Identificazione"
 
 msgctxt "field:gnuhealth.perinatal.monitor,meconium:"
 msgid "Meconium"
-msgstr "meconio"
+msgstr "Meconio"
 
 msgctxt "field:gnuhealth.perinatal.monitor,name:"
 msgid "Patient Perinatal Evaluation"
@@ -759,27 +759,27 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.perinatal.monitor,systolic:"
 msgid "Systolic Pressure"
-msgstr "Pressione Sistolica"
+msgstr "Pressione sistolica"
 
 msgctxt "field:gnuhealth.perinatal.monitor,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.perinatal.monitor,write_uid:"
 msgid "Write User"
-msgstr "Scrivere Nome Utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.puerperium.monitor,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.puerperium.monitor,create_uid:"
 msgid "Create User"
-msgstr "Creare Utente"
+msgstr "Creare utente"
 
 msgctxt "field:gnuhealth.puerperium.monitor,date:"
 msgid "Date and Time"
-msgstr "Data e Ora"
+msgstr "Data e ora"
 
 msgctxt "field:gnuhealth.puerperium.monitor,diastolic:"
 msgid "Diastolic Pressure"
@@ -791,11 +791,11 @@ msgstr "Frecuenza cardiaca"
 
 msgctxt "field:gnuhealth.puerperium.monitor,healthprof:"
 msgid "Health Prof"
-msgstr "Professionista medico"
+msgstr "Prof. sanitario"
 
 msgctxt "field:gnuhealth.puerperium.monitor,id:"
 msgid "ID"
-msgstr "ID"
+msgstr "Identificazione"
 
 msgctxt "field:gnuhealth.puerperium.monitor,institution:"
 msgid "Institution"
