@@ -1,18 +1,17 @@
-#    Copyright (C) 2008-2022 Luis Falcon
-#    Copyright (C) 2008-2022 GNU SOLIDARIO
+#!/usr/bin/env python 
+# SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+# SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-
-#    You should have received a copy of the GNU General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#########################################################################
+#   Hospital Management Information System (HMIS) component of the      #
+#                       GNU Health project                              #
+#                   https://www.gnuhealth.org                           #
+#########################################################################
+#                       patient_uploader.py                             #
+#         Sample script to upload patients and demographics             #
+#########################################################################
 
 # Functionality :
 # Small SAMPLE proteus script to create the parties and their respective patients 

@@ -1,7 +1,16 @@
-# GNU Health BASH environment
-# 2013-2018 Luis Falcon <falcon@gnuhealth.org>
+# SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+# SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 
-# File Editor 
+#########################################################################
+#   Hospital Management Information System (HMIS) component of the      #
+#                       GNU Health project                              #
+#                   https://www.gnuhealth.org                           #
+#########################################################################
+#                             gnuhealthrc                               #
+#                  BASH resource file for GNUHealth HMIS                #
+#########################################################################
 
 export EDITOR=vi
 
