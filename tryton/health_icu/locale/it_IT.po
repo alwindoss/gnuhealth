@@ -1,15 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-04-15 17:06+0000\n"
-"Last-Translator: G R <gradaellig@gmail.com>\n"
+"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_icu/it/>\n"
 "Language: it_IT\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 "X-POOTLE-MTIME: 1452251703.0\n"
 
 msgctxt "error:gnuhealth.icu.ventilation:"
@@ -47,7 +47,7 @@ msgstr "Condizione cronica"
 
 msgctxt "field:gnuhealth.icu.apache2,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.icu.apache2,create_uid:"
 msgid "Create User"
@@ -131,11 +131,11 @@ msgstr "WBC (Globuli Bianchi)"
 
 msgctxt "field:gnuhealth.icu.apache2,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.icu.apache2,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,air_leak:"
 msgid "Air Leak"
@@ -143,7 +143,7 @@ msgstr "Dispnea"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,create_uid:"
 msgid "Create User"
@@ -163,7 +163,7 @@ msgstr "Identificazione"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,location:"
 msgid "Location"
-msgstr "Posizione"
+msgstr "Ubicazione"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,name:"
 msgid "Rounding"
@@ -191,15 +191,15 @@ msgstr "cm H2O"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.icu.chest_drainage,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.icu.glasgow,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.icu.glasgow,create_uid:"
 msgid "Create User"
@@ -239,15 +239,15 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.icu.glasgow,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.icu.glasgow,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.icu.ventilation,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.icu.ventilation,create_uid:"
 msgid "Create User"
@@ -299,11 +299,11 @@ msgstr "Tipo"
 
 msgctxt "field:gnuhealth.icu.ventilation,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.icu.ventilation,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.inpatient.icu,admitted:"
 msgid "Admitted"
@@ -311,7 +311,7 @@ msgstr "Ricoverato"
 
 msgctxt "field:gnuhealth.inpatient.icu,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.inpatient.icu,create_uid:"
 msgid "Create User"
@@ -351,11 +351,11 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.inpatient.icu,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.inpatient.icu,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.inpatient.registration,icu:"
 msgid "ICU"
