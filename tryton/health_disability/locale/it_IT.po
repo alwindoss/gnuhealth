@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_disability/it/>\n"
@@ -529,11 +529,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.amputation,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Prof. sanitario"
 
 msgctxt "field:gnuhealth.patient.amputation,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.amputation,limb:"
 msgid "Limb"
@@ -619,27 +619,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.disability_assessment,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Prof. sanitario"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,hearing_function:"
 msgid "Hearing"
-msgstr ""
+msgstr "Audizione"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,locomotor_function:"
 msgid "Mobility"
-msgstr ""
+msgstr "Mobilità"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Note"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,patient:"
 msgid "Patient"
-msgstr ""
+msgstr "Paziente"
 
 msgctxt "field:gnuhealth.patient.disability_assessment,rec_name:"
 msgid "Name"
@@ -683,15 +683,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.prothesis,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Prof. sanitario"
 
 msgctxt "field:gnuhealth.patient.prothesis,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.prothesis,issue_date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.patient.prothesis,patient:"
 msgid "Patient"
@@ -1467,7 +1467,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.patient.disability_assessment:"
 msgid "Extra Info"
-msgstr "Data di creazione"
+msgstr "Informazioni extra"
 
 msgctxt "view:gnuhealth.patient.disability_assessment:"
 msgid "Header"
