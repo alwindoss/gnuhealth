@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-08 11:15+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: it\n"
+"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_who_essential_medicines/it/>\n"
+"Language: it_IT\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 "X-POOTLE-MTIME: 1452251737.0\n"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em1"
@@ -300,7 +302,7 @@ msgstr "sulfadiazina"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em164"
 msgid "sulfamethoxazole + trimethoprim"
-msgstr "sulfametossazolo  + trimetoprim"
+msgstr "sulfametossazolo + trimetoprim"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em165"
 msgid "pentamidine"
@@ -524,7 +526,7 @@ msgstr "diazepam"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em214"
 msgid "docusate sodium"
-msgstr "sodio docusato "
+msgstr "sodio docusato"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em215"
 msgid "fluoxetine"
@@ -532,7 +534,7 @@ msgstr "fluoxetina"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em216"
 msgid "hyoscine hydrobromide"
-msgstr "Scopolamina Bromidrato "
+msgstr "scopolamina bromidrato"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em217"
 msgid "ibuprofen"
@@ -612,7 +614,7 @@ msgstr "warfarin"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em234"
 msgid "heparin sodium "
-msgstr "eparina sodica"
+msgstr "eparina sodica "
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em235"
 msgid "protamine sulfate"
@@ -661,7 +663,7 @@ msgstr "trinitroglicerina"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em245"
 msgid "isosorbide dinitrate"
-msgstr "Isosorbide dinitrato "
+msgstr "isosorbide dinitrato"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em246"
 msgid "verapamil"
@@ -893,7 +895,7 @@ msgstr "iodio polivinilpirrolidone"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em298"
 msgid "chlorine base compound"
-msgstr "residuo base di cloro "
+msgstr "residuo base di cloro"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em299"
 msgid "chloroxylenol"
@@ -1049,7 +1051,7 @@ msgstr "diaframmi"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em332"
 msgid "levonorgestrel‐releasing implant"
-msgstr "impianto a rilascio di levonorgestrel "
+msgstr "impianto a rilascio di levonorgestrel"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em333"
 msgid "glibenclamide"
@@ -1081,7 +1083,7 @@ msgstr "clomifene"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em34"
 msgid "methylthioninium chloride (methylene blue) "
-msgstr "Blu di metilene"
+msgstr "cloruro di metiltioninio (blu di metilene) "
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em340"
 msgid "medroxyprogesterone acetate"
@@ -1121,7 +1123,7 @@ msgstr "immunoglobulina anti-D (umano)"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em349"
 msgid "antitetanus immunoglobulin (human)"
-msgstr " Immunoglobulina umana antitetano "
+msgstr "immunoglobulina antitetanica (umana)"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em35"
 msgid "naloxone"
@@ -1161,7 +1163,7 @@ msgstr "vaccino epatite B"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em358"
 msgid "Haemophilus influenzae type b vaccine"
-msgstr "Vaccino Haemophilus influenzae di tipo b "
+msgstr "Vaccino Haemophilus influenzae di tipo b"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em359"
 msgid "influenza vaccine"
@@ -1214,7 +1216,7 @@ msgstr "vaccino rosolia"
 msgctxt "model:gnuhealth.medicament,active_component:meds_em37"
 msgid "potassium ferric hexacyano‐ferrate(II) ‐ 2H20 (Prussian blue)"
 msgstr ""
-"ferrocianuro di potassio -  potassio esacianoferrato (II) - 2H20 (Blu di "
+"ferrocianuro di potassio - potassio esacianoferrato (II) - 2H20 (Blu di "
 "Prussia)"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em370"
@@ -1327,7 +1329,7 @@ msgstr "nifedipina"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em395"
 msgid "intraperitoneal dialysis solution (of appropriate composition)"
-msgstr " soluzioni per dialisi intraperitoneale (di composizione appropriata)"
+msgstr "soluzioni per dialisi intraperitoneale (di composizione appropriata)"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em396"
 msgid "chlorpromazine"
@@ -1411,7 +1413,7 @@ msgstr "epinefrina (adrenalina)"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em413"
 msgid "ipratropium bromide"
-msgstr "bromuro ipratropio "
+msgstr "bromuro ipratropio"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em414"
 msgid "salbutamol"
@@ -1631,7 +1633,7 @@ msgstr "amoxicillina"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em65"
 msgid "amoxicillin + clavulanic acid "
-msgstr "amoxicillina + acido clavulanico"
+msgstr "amoxicillina + acido clavulanico "
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em66"
 msgid "Ampicillin"
@@ -1735,7 +1737,7 @@ msgstr "spectinomicina"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em89"
 msgid "sulfamethoxazole + trimethoprim"
-msgstr "sulfametossazolo  + trimetoprim"
+msgstr "sulfametossazolo + trimetoprim"
 
 msgctxt "model:gnuhealth.medicament,active_component:meds_em9"
 msgid "lidocaine + epinephrine (adrenaline)"
@@ -2037,7 +2039,7 @@ msgstr "Induttori dell'ovulazione"
 
 msgctxt "model:gnuhealth.medicament.category,name:em_18_7"
 msgid "Progestogens "
-msgstr "Progestinici"
+msgstr "Progestinici "
 
 msgctxt "model:gnuhealth.medicament.category,name:em_18_8"
 msgid "Thyroid hormones and antithyroid medicines"
@@ -2199,7 +2201,7 @@ msgstr "Complementare"
 
 msgctxt "model:gnuhealth.medicament.category,name:em_25"
 msgid "MEDICINES ACTING ON THE RESPIRATORY TRACT"
-msgstr "FARMACI CHE AGISCONO SULLE VIE RESPIRATORIE "
+msgstr "FARMACI CHE AGISCONO SULLE VIE RESPIRATORIE"
 
 msgctxt "model:gnuhealth.medicament.category,name:em_25_1"
 msgid "Antiasthmatic and medicines for chronic obstructive pulmonary disease"
@@ -2370,7 +2372,7 @@ msgstr "Nucleoside/Inibitori nucleosidici della trascrittasi inversa"
 
 msgctxt "model:gnuhealth.medicament.category,name:em_6_4_2_2"
 msgid "Non-nucleoside reverse transcriptase inhibitors"
-msgstr "Inibitori non nucleosidici della trascrittasi inversa "
+msgstr "Inibitori non nucleosidici della trascrittasi inversa"
 
 msgctxt "model:gnuhealth.medicament.category,name:em_6_4_2_3"
 msgid "Protease Inhibitors"
@@ -2908,7 +2910,7 @@ msgstr "ciclizina"
 
 msgctxt "model:product.template,name:templ_em214"
 msgid "docusate sodium"
-msgstr "sodio docusato "
+msgstr "sodio docusato"
 
 msgctxt "model:product.template,name:templ_em215"
 msgid "fluoxetine"
@@ -2916,7 +2918,7 @@ msgstr "fluoxetina"
 
 msgctxt "model:product.template,name:templ_em216"
 msgid "hyoscine hydrobromide"
-msgstr "Scopolamina Bromidrato "
+msgstr "Scopolamina Bromidrato"
 
 msgctxt "model:product.template,name:templ_em218"
 msgid "lactulose"
@@ -2984,7 +2986,7 @@ msgstr "warfarin"
 
 msgctxt "model:product.template,name:templ_em234"
 msgid "heparin sodium "
-msgstr "eparina sodica"
+msgstr "eparina sodica "
 
 msgctxt "model:product.template,name:templ_em239"
 msgid "dextran 70"
@@ -3017,7 +3019,7 @@ msgstr "trinitroglicerina"
 
 msgctxt "model:product.template,name:templ_em245"
 msgid "isosorbide dinitrate"
-msgstr "Isosorbide dinitrato "
+msgstr "Isosorbide dinitrato"
 
 msgctxt "model:product.template,name:templ_em246"
 msgid "verapamil"
@@ -3193,7 +3195,7 @@ msgstr "iodio polivinilpirrolidone"
 
 msgctxt "model:product.template,name:templ_em298"
 msgid "chlorine base compound"
-msgstr "residuo base di cloro "
+msgstr "residuo base di cloro"
 
 msgctxt "model:product.template,name:templ_em299"
 msgid "chloroxylenol"
@@ -3301,7 +3303,7 @@ msgstr "diaframmi"
 
 msgctxt "model:product.template,name:templ_em332"
 msgid "levonorgestrel‐releasing implant"
-msgstr "impianto a rilascio di levonorgestrel "
+msgstr "impianto a rilascio di levonorgestrel"
 
 msgctxt "model:product.template,name:templ_em333"
 msgid "glibenclamide"
@@ -3329,7 +3331,7 @@ msgstr "clomifene"
 
 msgctxt "model:product.template,name:templ_em34"
 msgid "methylthioninium chloride (methylene blue) "
-msgstr "Blu di metilene"
+msgstr "cloruro di metiltioninio (blu di metilene) "
 
 msgctxt "model:product.template,name:templ_em341"
 msgid "levothyroxine"
@@ -3353,7 +3355,7 @@ msgstr "immunoglobulina anti-D (umano)"
 
 msgctxt "model:product.template,name:templ_em349"
 msgid "antitetanus immunoglobulin (human)"
-msgstr " Immunoglobulina umana antitetano "
+msgstr "immunoglobulina antitetanica (umana)"
 
 msgctxt "model:product.template,name:templ_em35"
 msgid "naloxone"
@@ -3393,7 +3395,7 @@ msgstr "vaccino epatite B"
 
 msgctxt "model:product.template,name:templ_em358"
 msgid "Haemophilus influenzae type b vaccine"
-msgstr "Vaccino Haemophilus influenzae di tipo b "
+msgstr "Vaccino Haemophilus influenzae di tipo b"
 
 msgctxt "model:product.template,name:templ_em359"
 msgid "influenza vaccine"
@@ -3446,7 +3448,7 @@ msgstr "vaccino rosolia"
 msgctxt "model:product.template,name:templ_em37"
 msgid "potassium ferric hexacyano‐ferrate(II) ‐ 2H20 (Prussian blue)"
 msgstr ""
-"ferrocianuro di potassio -  potassio esacianoferrato (II) - 2H20 (Blu di "
+"ferrocianuro di potassio - potassio esacianoferrato (II) - 2H20 (Blu di "
 "Prussia)"
 
 msgctxt "model:product.template,name:templ_em370"
@@ -3539,7 +3541,7 @@ msgstr "nifedipina"
 
 msgctxt "model:product.template,name:templ_em395"
 msgid "intraperitoneal dialysis solution (of appropriate composition)"
-msgstr " soluzioni per dialisi intraperitoneale (di composizione appropriata)"
+msgstr "soluzioni per dialisi intraperitoneale (di composizione appropriata)"
 
 msgctxt "model:product.template,name:templ_em396"
 msgid "chlorpromazine"
@@ -3591,7 +3593,7 @@ msgstr "budesonide"
 
 msgctxt "model:product.template,name:templ_em413"
 msgid "ipratropium bromide"
-msgstr "bromuro ipratropio "
+msgstr "bromuro ipratropio"
 
 msgctxt "model:product.template,name:templ_em414"
 msgid "salbutamol"
@@ -3615,7 +3617,7 @@ msgstr "glucosio con sodio cloruro"
 
 msgctxt "model:product.template,name:templ_em42"
 msgid "sodium calcium edetate "
-msgstr "sodio calcio edetato"
+msgstr "sodio calcio edetato "
 
 msgctxt "model:product.template,name:templ_em420"
 msgid "sodium chloride"
@@ -3787,7 +3789,7 @@ msgstr "amoxicillina"
 
 msgctxt "model:product.template,name:templ_em65"
 msgid "amoxicillin + clavulanic acid "
-msgstr "amoxicillina + acido clavulanico"
+msgstr "amoxicillina + acido clavulanico "
 
 msgctxt "model:product.template,name:templ_em66"
 msgid "Ampicillin"
@@ -3887,7 +3889,7 @@ msgstr "spectinomicina"
 
 msgctxt "model:product.template,name:templ_em89"
 msgid "sulfamethoxazole + trimethoprim"
-msgstr "sulfametossazolo  + trimetoprim"
+msgstr "sulfametossazolo + trimetoprim"
 
 msgctxt "model:product.template,name:templ_em9"
 msgid "lidocaine + epinephrine (adrenaline)"
