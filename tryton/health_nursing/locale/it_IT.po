@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-08 11:15+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: it\n"
+"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_nursing/it/>\n"
+"Language: it_IT\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 "X-POOTLE-MTIME: 1452251717.0\n"
 
 msgctxt "error:gnuhealth.patient.ambulatory_care:"
@@ -56,7 +58,7 @@ msgstr "Scrivere nome utente"
 
 msgctxt "field:gnuhealth.patient.ambulatory_care,base_condition:"
 msgid "Condition"
-msgstr ""
+msgstr "Condizione"
 
 msgctxt "field:gnuhealth.patient.ambulatory_care,bpm:"
 msgid "Heart Rate"
@@ -180,7 +182,7 @@ msgstr "Frequenza cardiaca"
 
 msgctxt "field:gnuhealth.patient.rounding,code:"
 msgid "Code"
-msgstr ""
+msgstr "Codice"
 
 msgctxt "field:gnuhealth.patient.rounding,create_date:"
 msgid "Create Date"
@@ -280,15 +282,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.rounding,report_end_time:"
 msgid "End Time"
-msgstr ""
+msgstr "Ora fine"
 
 msgctxt "field:gnuhealth.patient.rounding,report_start_date:"
 msgid "Start Date"
-msgstr ""
+msgstr "Data inizio"
 
 msgctxt "field:gnuhealth.patient.rounding,report_start_time:"
 msgid "Start Time"
-msgstr ""
+msgstr "Ora inizio"
 
 msgctxt "field:gnuhealth.patient.rounding,respiratory_rate:"
 msgid "Respiratory Rate"
@@ -368,7 +370,7 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.rounding_procedure,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Data scrittura"
 
 msgctxt "field:gnuhealth.rounding_procedure,write_uid:"
 msgid "Write User"
