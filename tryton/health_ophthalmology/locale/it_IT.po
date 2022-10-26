@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-17 00:42+0000\n"
+"PO-Revision-Date: 2022-10-26 22:03+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_ophthalmology/it/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,computed_age:"
 msgid "Age"
@@ -21,7 +21,7 @@ msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,create_uid:"
 msgid "Create User"
-msgstr "Crea utente"
+msgstr "Creare utente"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,findings:"
 msgid "Findings"
@@ -189,7 +189,7 @@ msgstr "Data"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,write_date:"
 msgid "Write Date"
-msgstr "Scrivi la data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.ophthalmology.evaluation,write_uid:"
 msgid "Write User"
@@ -205,7 +205,7 @@ msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,create_uid:"
 msgid "Create User"
-msgstr "Crea utente"
+msgstr "Creare utente"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,eye_structure:"
 msgid "Structure"
@@ -229,7 +229,7 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,write_date:"
 msgid "Write Date"
-msgstr "Scrivi la data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.ophthalmology.findings,write_uid:"
 msgid "Write User"
