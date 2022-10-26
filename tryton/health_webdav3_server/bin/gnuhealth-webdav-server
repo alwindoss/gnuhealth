@@ -1,6 +1,18 @@
-#!/usr/bin/env python3
-# This file is part of Tryton.  The COPYRIGHT file at the top level of
-# this repository contains the full copyright notices and license terms.
+#!/usr/bin/env python
+# SPDX-FileCopyrightText: 2012-2017 Cédric Krier <cedric.krier@b2ck.com>
+# SPDX-FileCopyrightText: 2017-2022 Luis Falcón <falcon@gnuhealth.org>
+# SPDX-FileCopyrightText: 2017-2022 GNU Solidario <health@gnusolidario.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+#########################################################################
+#   Hospital Management Information System (HMIS) component of the      #
+#                       GNU Health project                              #
+#                   https://www.gnuhealth.org                           #
+#########################################################################
+#                      HEALTH WEBDAV SERVER                             #
+#              nuhealth-webdav-server: main executable                  #
+#########################################################################
 import sys
 import os
 import argparse

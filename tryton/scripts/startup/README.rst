@@ -1,3 +1,7 @@
+.. SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+..
+.. SPDX-License-Identifier: CC-BY-SA-4.0
+
 Creating a Systemd service for the GNU Health server
 
 If you use the standard installation method, you can use the following scripts to automate the startup/stop of the GNU Health instance using systemd services.

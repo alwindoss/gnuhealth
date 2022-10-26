@@ -1,3 +1,8 @@
+.. SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+.. SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+..
+.. SPDX-License-Identifier: CC-BY-SA-4.0
+
 .. image:: https://www.gnuhealth.org/downloads/artwork/logos/isologo-gnu-health.png
 
 GNU Health HMIS: Libre Hospital Management and Health Information System
