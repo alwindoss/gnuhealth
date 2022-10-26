@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_ntd_dengue/it/>\n"
+"Language: it_IT\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 msgctxt "field:gnuhealth.dengue_du_survey,aedes_larva:"
 msgid "Larvae"
@@ -12,11 +21,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.dengue_du_survey,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.dengue_du_survey,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Creare utente"
 
 msgctxt "field:gnuhealth.dengue_du_survey,du:"
 msgid "DU"
@@ -28,7 +37,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.dengue_du_survey,du_status:"
 msgid "Status"
-msgstr ""
+msgstr "Stato"
 
 msgctxt "field:gnuhealth.dengue_du_survey,flower_vase:"
 msgid "Flower vase"
@@ -76,7 +85,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.dengue_du_survey,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.dengue_du_survey,rock_holes:"
 msgid "Rock holes"
@@ -92,7 +101,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.dengue_du_survey,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Data scrittura"
 
 msgctxt "field:gnuhealth.dengue_du_survey,write_uid:"
 msgid "Write User"
