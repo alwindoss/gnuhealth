@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-08 11:15+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: it\n"
+"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_lifestyle/it/>\n"
+"Language: it_IT\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 "X-POOTLE-MTIME: 1452251713.0\n"
 
 msgctxt "error:gnuhealth.diet.belief:"
@@ -24,7 +26,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.diet.belief,code:"
 msgid "Code"
-msgstr ""
+msgstr "Codice"
 
 msgctxt "field:gnuhealth.diet.belief,create_date:"
 msgid "Create Date"
@@ -476,7 +478,7 @@ msgstr "Scrivere nome utente"
 
 msgctxt "field:gnuhealth.vegetarian_types,code:"
 msgid "Code"
-msgstr ""
+msgstr "Codice"
 
 msgctxt "field:gnuhealth.vegetarian_types,create_date:"
 msgid "Create Date"
