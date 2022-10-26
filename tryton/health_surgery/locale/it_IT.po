@@ -1,6 +1,15 @@
 #
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_surgery/it/>\n"
+"Language: it_IT\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 msgctxt "error:gnuhealth.surgery:"
 msgid "End time \"%(end_date)s\" BEFORE surgery date \"%(surgery_date)s\""
@@ -32,7 +41,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.operation,procedure:"
 msgid "Code"
-msgstr ""
+msgstr "Codice"
 
 msgctxt "field:gnuhealth.operation,rec_name:"
 msgid "Name"
@@ -144,11 +153,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery,code:"
 msgid "Code"
-msgstr ""
+msgstr "Codice"
 
 msgctxt "field:gnuhealth.surgery,computed_age:"
 msgid "Age"
-msgstr ""
+msgstr "Età"
 
 msgctxt "field:gnuhealth.surgery,create_date:"
 msgid "Create Date"
@@ -164,7 +173,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery,extra_info:"
 msgid "Extra Info"
-msgstr ""
+msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.surgery,gender:"
 msgid "Gender"
@@ -176,7 +185,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery,institution:"
 msgid "Institution"
-msgstr ""
+msgstr "Istituzione"
 
 msgctxt "field:gnuhealth.surgery,operating_room:"
 msgid "Operating Room"
@@ -184,7 +193,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery,pathology:"
 msgid "Condition"
-msgstr ""
+msgstr "Condizione"
 
 msgctxt "field:gnuhealth.surgery,patient:"
 msgid "Patient"
