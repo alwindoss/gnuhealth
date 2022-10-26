@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_gyneco/it/>\n"
@@ -346,7 +346,7 @@ msgstr "Scrivere nome utente"
 
 msgctxt "field:gnuhealth.patient.pregnancy,bba:"
 msgid "BBA"
-msgstr ""
+msgstr "BBA"
 
 msgctxt "field:gnuhealth.patient.pregnancy,create_date:"
 msgid "Create Date"
@@ -370,7 +370,7 @@ msgstr "Numero gravidanza"
 
 msgctxt "field:gnuhealth.patient.pregnancy,healthprof:"
 msgid "Health Prof"
-msgstr "Professionista medico"
+msgstr "Prof. sanitario"
 
 msgctxt "field:gnuhealth.patient.pregnancy,home_birth:"
 msgid "Home Birth"
@@ -378,7 +378,7 @@ msgstr "Nascita in casa"
 
 msgctxt "field:gnuhealth.patient.pregnancy,id:"
 msgid "ID"
-msgstr "Identificazione"
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.pregnancy,institution:"
 msgid "Institution"
@@ -386,7 +386,7 @@ msgstr "Istituzione"
 
 msgctxt "field:gnuhealth.patient.pregnancy,iugr:"
 msgid "IUGR"
-msgstr "IUGR Restrizione della Crescita Intrauterina"
+msgstr "IUGR"
 
 msgctxt "field:gnuhealth.patient.pregnancy,lmp:"
 msgid "LMP"
@@ -436,10 +436,9 @@ msgctxt "field:gnuhealth.patient.pregnancy,reverse:"
 msgid "Reverse"
 msgstr "Inverso"
 
-#, fuzzy
 msgctxt "field:gnuhealth.patient.pregnancy,reverse_weeks:"
 msgid "Pr. Weeks"
-msgstr "Settimane Precedenti"
+msgstr "Settimane Prec."
 
 msgctxt "field:gnuhealth.patient.pregnancy,warning:"
 msgid "Warn"
@@ -515,7 +514,7 @@ msgstr "Settimane di gestazione"
 
 msgctxt "field:gnuhealth.patient.prenatal.evaluation,healthprof:"
 msgid "Health Prof"
-msgstr "Professionista medico"
+msgstr "Prof. sanitario"
 
 msgctxt "field:gnuhealth.patient.prenatal.evaluation,hypertension:"
 msgid "Hypertension"
@@ -535,11 +534,11 @@ msgstr "Placentazione"
 
 msgctxt "field:gnuhealth.patient.prenatal.evaluation,iugr:"
 msgid "IUGR"
-msgstr "IUGR Restrizione della Crescita Intrauterina"
+msgstr "IUGR"
 
 msgctxt "field:gnuhealth.patient.prenatal.evaluation,name:"
 msgid "Patient Pregnancy"
-msgstr "Gravidanza della Paziente"
+msgstr "Paziente in gravidanza"
 
 msgctxt "field:gnuhealth.patient.prenatal.evaluation,oligohydramnios:"
 msgid "Oligohydramnios"
@@ -607,11 +606,11 @@ msgstr "Distocia"
 
 msgctxt "field:gnuhealth.perinatal,episiotomy:"
 msgid "Episiotomy"
-msgstr "Ppisiotomia"
+msgstr "Episiotomia"
 
 msgctxt "field:gnuhealth.perinatal,fetus_presentation:"
 msgid "Fetus Presentation"
-msgstr "presentazione del feto"
+msgstr "Presentazione del feto"
 
 msgctxt "field:gnuhealth.perinatal,forceps:"
 msgid "Forceps"
@@ -631,7 +630,7 @@ msgstr "Gravida #"
 
 msgctxt "field:gnuhealth.perinatal,healthprof:"
 msgid "Health Prof"
-msgstr "Professionista medico"
+msgstr "Prof. sanitario"
 
 msgctxt "field:gnuhealth.perinatal,hematoma:"
 msgid "Hematoma"
@@ -655,7 +654,7 @@ msgstr "Monitors"
 
 msgctxt "field:gnuhealth.perinatal,name:"
 msgid "Patient Pregnancy"
-msgstr "Gravidanza della Paziente"
+msgstr "Paziente in gravidanza"
 
 msgctxt "field:gnuhealth.perinatal,notes:"
 msgid "Notes"
@@ -671,7 +670,7 @@ msgstr "Ritenuto"
 
 msgctxt "field:gnuhealth.perinatal,prenatal_evaluations:"
 msgid "Prenatal evaluations"
-msgstr "valutazioni prenatali"
+msgstr "Valutazioni prenatali"
 
 msgctxt "field:gnuhealth.perinatal,rec_name:"
 msgid "Name"
@@ -815,7 +814,7 @@ msgstr "Odore della lochia"
 
 msgctxt "field:gnuhealth.puerperium.monitor,name:"
 msgid "Patient Pregnancy"
-msgstr "Gravidanza della Paziente"
+msgstr "Paziente in gravidanza"
 
 msgctxt "field:gnuhealth.puerperium.monitor,rec_name:"
 msgid "Name"
@@ -952,7 +951,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.pregnancy,bba:"
 msgid "Born Before Arrival"
-msgstr ""
+msgstr "Nato prima dell'arrivo"
 
 msgctxt "help:gnuhealth.patient.pregnancy,current_pregnancy:"
 msgid "This field marks the current pregnancy"
@@ -1118,7 +1117,7 @@ msgstr "Storia clinica del PAP test"
 
 msgctxt "model:gnuhealth.patient.pregnancy,name:"
 msgid "Patient Pregnancy"
-msgstr "Gravidanza della Paziente"
+msgstr "Paziente in gravidanza"
 
 msgctxt "model:gnuhealth.patient.prenatal.evaluation,name:"
 msgid "Prenatal and Antenatal Evaluations"
