@@ -1,13 +1,15 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-08 11:14+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
-"Language: it\n"
+"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_genetics/it/>\n"
+"Language: it_IT\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 "X-POOTLE-MTIME: 1452251644.0\n"
 
 msgctxt "error:gnuhealth.disease.gene:"
@@ -44,7 +46,7 @@ msgstr "Informazioni"
 
 msgctxt "field:gnuhealth.disease.gene,location:"
 msgid "Location"
-msgstr "Posizione"
+msgstr "Ubicazione"
 
 msgctxt "field:gnuhealth.disease.gene,long_name:"
 msgid "Official Long Name"
@@ -88,7 +90,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.family.diseases,name:"
 msgid "Condition"
-msgstr ""
+msgstr "Condizione"
 
 msgctxt "field:gnuhealth.patient.family.diseases,patient:"
 msgid "Patient"
@@ -104,11 +106,11 @@ msgstr "Parente"
 
 msgctxt "field:gnuhealth.patient.family.diseases,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Data scrittura"
 
 msgctxt "field:gnuhealth.patient.family.diseases,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome Utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.patient.family.diseases,xory:"
 msgid "Maternal or Paternal"
@@ -116,11 +118,11 @@ msgstr "Materno o Paterno"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Data di creazione"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,create_uid:"
 msgid "Create User"
-msgstr "Creare Utente"
+msgstr "Creare utente"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,disease_gene:"
 msgid "Disease Gene"
@@ -136,7 +138,7 @@ msgstr "Note"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,patient:"
 msgid "Patient"
-msgstr "paziente"
+msgstr "Paziente"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,rec_name:"
 msgid "Name"
@@ -144,7 +146,7 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Data scrittura"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,write_uid:"
 msgid "Write User"
@@ -156,7 +158,7 @@ msgstr "Nome del cromosoma affetto"
 
 msgctxt "help:gnuhealth.disease.gene,gene_id:"
 msgid "default code from NCBI Entrez database."
-msgstr "codice predefinito dal database NCBI Entrez"
+msgstr "codice predefinito dal database NCBI Entrez."
 
 msgctxt "help:gnuhealth.disease.gene,info:"
 msgid "Extra Information"
@@ -6511,108 +6513,110 @@ msgstr ""
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GCG"
 msgid "glucagon"
-msgstr ""
+msgstr "glucagone"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GCGR"
 msgid "glucagon receptor"
-msgstr ""
+msgstr "recettore del glucagone"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GCH1"
 msgid "GTP cyclohydrolase 1"
-msgstr ""
+msgstr "GTP cicloidrolasi 1"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GCK"
 msgid "glucokinase (hexokinase 4)"
-msgstr ""
+msgstr "glucochinasi (esochinasi 4)"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GCKR"
 msgid "glucokinase (hexokinase 4) regulator"
-msgstr ""
+msgstr "regolatore della glucochinasi (esochinasi 4)"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GCLC"
 msgid "glutamate-cysteine ligase, catalytic subunit"
-msgstr ""
+msgstr "glutammato-cisteina ligasi, subunità catalitica"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GCLM"
 msgid "glutamate-cysteine ligase, modifier subunit"
-msgstr ""
+msgstr "glutammato-cisteina ligasi, subunità modificatrice"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GCNT2"
 msgid ""
 "glucosaminyl (N-acetyl) transferase 2, I-branching enzyme (I blood group)"
 msgstr ""
+"glucosaminil (N-acetil) transferasi 2, enzima di ramificazione I (gruppo "
+"sanguigno I)"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GCSH"
 msgid "glycine cleavage system protein H (aminomethyl carrier)"
-msgstr ""
+msgstr "sistema di scissione della glicina proteina H (vettore aminometilico)"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GDAP1"
 msgid "ganglioside-induced differentiation-associated protein 1"
-msgstr ""
+msgstr "proteina 1 associata alla differenziazione indotta da gangliosidi"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GDB2"
 msgid "Gallbladder disease 2"
-msgstr ""
+msgstr "Malattia della cistifellea 2"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GDF1"
 msgid "growth differentiation factor 1"
-msgstr ""
+msgstr "fattore di differenziazione della crescita 1"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GDF5"
 msgid "growth differentiation factor 5"
-msgstr ""
+msgstr "fattore di differenziazione della crescita 5"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GDF6"
 msgid "growth differentiation factor 6"
-msgstr ""
+msgstr "fattore di differenziazione della crescita 6"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GDI1"
 msgid "GDP dissociation inhibitor 1"
-msgstr ""
+msgstr "Inibitore della dissociazione del GDP 1"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GDNF"
 msgid "glial cell derived neurotrophic factor"
-msgstr ""
+msgstr "fattore neurotrofico derivato dalle cellule gliali"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GDXY"
 msgid "gonadal dysgenesis, XY female type"
-msgstr ""
+msgstr "Disgenesia gonadica, tipo XY femminile"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GDXYM"
 msgid "Gonadal dysgenesis, XY type"
-msgstr ""
+msgstr "Disgenesia gonadica, tipo XY"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GEFSP4"
 msgid "Epilepsy, generalized, with febrile seizures plus, type 4"
-msgstr ""
+msgstr "Epilessia generalizzata con crisi febbrili aggiuntive, tipo 4"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GEFSP6"
 msgid "Generalized epilepsy with febrile seizures plus, type 6"
-msgstr ""
+msgstr "Epilessia generalizzata con crisi febbrili aggiuntive, tipo 6"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GEM"
 msgid "GTP binding protein overexpressed in skeletal muscle"
-msgstr ""
+msgstr "Proteina legante GTP sovraespressa nel muscolo scheletrico"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GER"
 msgid "Gastroesophageal reflux"
-msgstr ""
+msgstr "Reflusso gastroesofageo"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GEVQ1"
 msgid "gene expression, variation in, quantitative trait locus"
-msgstr ""
+msgstr "espressione genica, variazione, locus di tratto quantitativo"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GEVQ2"
 msgid "gene expression, variation in, quantitative trait locus"
-msgstr ""
+msgstr "espressione genica, variazione, locus di tratto quantitativo"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GFAP"
 msgid "glial fibrillary acidic protein"
-msgstr ""
+msgstr "proteina acida fibrillare gliale"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GFI1"
 msgid "growth factor independent 1 transcription repressor"
-msgstr ""
+msgstr "repressore della trascrizione del fattore di crescita indipendente 1"
 
 msgctxt "model:gnuhealth.disease.gene,long_name:GFM1"
 msgid "G elongation factor, mitochondrial 1"
