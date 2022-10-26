@@ -5,6 +5,6 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from .test_calendar import suite
+from .test_health_caldav import suite
 
 __all__ = ['suite']
