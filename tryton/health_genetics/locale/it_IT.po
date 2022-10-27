@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-27 13:01+0000\n"
+"PO-Revision-Date: 2022-10-28 14:02+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_genetics/it/>\n"
@@ -26,7 +26,7 @@ msgstr "Creare data"
 
 msgctxt "field:gnuhealth.disease.gene,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:gnuhealth.disease.gene,dominance:"
 msgid "Dominance"
@@ -82,7 +82,7 @@ msgstr "Creare data"
 
 msgctxt "field:gnuhealth.patient.family.diseases,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:gnuhealth.patient.family.diseases,id:"
 msgid "ID"
@@ -122,7 +122,7 @@ msgstr "Creare data"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,disease_gene:"
 msgid "Disease Gene"
