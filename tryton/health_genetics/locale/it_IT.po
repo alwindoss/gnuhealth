@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_genetics/it/>\n"
@@ -22,7 +22,7 @@ msgstr "Cromosoma affetto"
 
 msgctxt "field:gnuhealth.disease.gene,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.disease.gene,create_uid:"
 msgid "Create User"
@@ -62,11 +62,11 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.disease.gene,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.disease.gene,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome Utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.patient,family_history:"
 msgid "Family History"
@@ -78,7 +78,7 @@ msgstr "Rischi genetici"
 
 msgctxt "field:gnuhealth.patient.family.diseases,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.patient.family.diseases,create_uid:"
 msgid "Create User"
@@ -106,7 +106,7 @@ msgstr "Parente"
 
 msgctxt "field:gnuhealth.patient.family.diseases,write_date:"
 msgid "Write Date"
-msgstr "Data scrittura"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.patient.family.diseases,write_uid:"
 msgid "Write User"
@@ -118,7 +118,7 @@ msgstr "Materno o Paterno"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,create_date:"
 msgid "Create Date"
-msgstr "Data di creazione"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,create_uid:"
 msgid "Create User"
@@ -146,11 +146,11 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,write_date:"
 msgid "Write Date"
-msgstr "Data scrittura"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.patient.genetic.risk,write_uid:"
 msgid "Write User"
-msgstr "Scrivere Nome Utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "help:gnuhealth.disease.gene,chromosome:"
 msgid "Name of the affected chromosome"
