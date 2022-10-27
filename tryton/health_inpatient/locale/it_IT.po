@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_inpatient/it/>\n"
@@ -292,15 +292,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.inpatient.meal.order,order_date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.inpatient.meal.order,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.inpatient.meal.order,remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "Osservazioni"
 
 msgctxt "field:gnuhealth.inpatient.meal.order,state:"
 msgid "Status"
@@ -328,27 +328,27 @@ msgstr ""
 
 msgctxt "field:gnuhealth.inpatient.meal.order.item,meal:"
 msgid "Meal"
-msgstr ""
+msgstr "Pasto"
 
 msgctxt "field:gnuhealth.inpatient.meal.order.item,name:"
 msgid "Meal Order"
-msgstr ""
+msgstr "Ordine dei pasti"
 
 msgctxt "field:gnuhealth.inpatient.meal.order.item,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.inpatient.meal.order.item,remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "Osservazioni"
 
 msgctxt "field:gnuhealth.inpatient.meal.order.item,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.inpatient.meal.order.item,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.inpatient.medication,admin_times:"
 msgid "Admin times"
@@ -388,7 +388,7 @@ msgstr "Dose"
 
 msgctxt "field:gnuhealth.inpatient.medication,dose_unit:"
 msgid "dose unit"
-msgstr "Unità dose"
+msgstr "unità dose"
 
 msgctxt "field:gnuhealth.inpatient.medication,end_treatment:"
 msgid "End"
@@ -428,7 +428,7 @@ msgstr "Archivio delle registrazioni"
 
 msgctxt "field:gnuhealth.inpatient.medication,medicament:"
 msgid "Medicament"
-msgstr "Farmaco"
+msgstr "Medicazione"
 
 msgctxt "field:gnuhealth.inpatient.medication,name:"
 msgid "Registration Code"
@@ -556,11 +556,11 @@ msgstr "Motivo Ricovero"
 
 msgctxt "field:gnuhealth.inpatient.registration,admission_type:"
 msgid "Admission type"
-msgstr "Tipo do ricovero"
+msgstr "Tipo di ricovero"
 
 msgctxt "field:gnuhealth.inpatient.registration,attending_physician:"
 msgid "Attending Physician"
-msgstr "Medico Curante"
+msgstr "Medico curante"
 
 msgctxt "field:gnuhealth.inpatient.registration,bed:"
 msgid "Hospital Bed"
@@ -582,9 +582,10 @@ msgctxt "field:gnuhealth.inpatient.registration,discharge_date:"
 msgid "Expected Discharge Date"
 msgstr "Data prevista di dimissione"
 
+#, fuzzy
 msgctxt "field:gnuhealth.inpatient.registration,discharge_dx:"
 msgid "Discharge Dx"
-msgstr ""
+msgstr "Dimissione Dx"
 
 msgctxt "field:gnuhealth.inpatient.registration,discharge_plan:"
 msgid "Discharge Plan"
@@ -592,23 +593,23 @@ msgstr "Programma dimissione"
 
 msgctxt "field:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Discharge Reason"
-msgstr ""
+msgstr "Motivo dimissione"
 
 msgctxt "field:gnuhealth.inpatient.registration,discharged_by:"
 msgid "Discharged by"
-msgstr ""
+msgstr "Dimesso da"
 
 msgctxt "field:gnuhealth.inpatient.registration,hospitalization_date:"
 msgid "Hospitalization date"
-msgstr "Data ricovero"
+msgstr "Data di ricovero"
 
 msgctxt "field:gnuhealth.inpatient.registration,id:"
 msgid "ID"
-msgstr "I"
+msgstr "ID"
 
 msgctxt "field:gnuhealth.inpatient.registration,info:"
 msgid "Notes"
-msgstr ""
+msgstr "Note"
 
 msgctxt "field:gnuhealth.inpatient.registration,institution:"
 msgid "Institution"
@@ -616,7 +617,7 @@ msgstr "Istituzione"
 
 msgctxt "field:gnuhealth.inpatient.registration,medications:"
 msgid "Medications"
-msgstr "Medicamenti"
+msgstr "Medicinali"
 
 msgctxt "field:gnuhealth.inpatient.registration,name:"
 msgid "Registration Code"
@@ -640,7 +641,7 @@ msgstr "Paziente"
 
 msgctxt "field:gnuhealth.inpatient.registration,puid:"
 msgid "PUID"
-msgstr ""
+msgstr "PUID"
 
 msgctxt "field:gnuhealth.inpatient.registration,rec_name:"
 msgid "Name"
@@ -652,7 +653,7 @@ msgstr "Stato"
 
 msgctxt "field:gnuhealth.inpatient.registration,therapeutic_diets:"
 msgid "Meals / Diet Program"
-msgstr ""
+msgstr "Pasti / Programma dietetico"
 
 msgctxt "field:gnuhealth.inpatient.registration,write_date:"
 msgid "Write Date"
@@ -1276,12 +1277,12 @@ msgstr ""
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_inpatient_meal_order_domain_done"
 msgid "Done"
-msgstr ""
+msgstr "Fatto"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_inpatient_meal_order_domain_draft"
 msgid "Draft"
-msgstr ""
+msgstr "Bozza"
 
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_inpatient_meal_order_domain_ordered"
@@ -1295,7 +1296,7 @@ msgstr ""
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_registration_domain_confirmed"
 msgid "Confirmed"
-msgstr ""
+msgstr "Confermato"
 
 msgctxt "model:ir.action.act_window.domain,name:act_registration_domain_done"
 msgid "To clean"
@@ -1410,11 +1411,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid "Done"
-msgstr ""
+msgstr "Fatto"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid "Draft"
-msgstr ""
+msgstr "Bozza"
 
 msgctxt "selection:gnuhealth.inpatient.meal.order,state:"
 msgid "Ordered"
@@ -1531,4 +1532,4 @@ msgstr "Trasferisci Paziente"
 
 msgctxt "wizard_button:gnuhealth.bed.transfer.create,start,end:"
 msgid "Cancel"
-msgstr "Cancellare"
+msgstr "Annulla"
