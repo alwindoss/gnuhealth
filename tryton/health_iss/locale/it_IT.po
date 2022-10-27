@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_iss/it/>\n"
@@ -13,11 +13,11 @@ msgstr ""
 
 msgctxt "error:gnuhealth.iss:"
 msgid "This ISS registration Code already exists"
-msgstr ""
+msgstr "Questo codice di registrazione ISS esiste già"
 
 msgctxt "field:gnuhealth.iss,alcohol:"
 msgid "Alcohol"
-msgstr ""
+msgstr "Alcool"
 
 msgctxt "field:gnuhealth.iss,code:"
 msgid "Code"
@@ -25,11 +25,11 @@ msgstr "Codice"
 
 msgctxt "field:gnuhealth.iss,complaint:"
 msgid "Chief Complaint"
-msgstr ""
+msgstr "Reclamo principale"
 
 msgctxt "field:gnuhealth.iss,create_date:"
 msgid "Create Date"
-msgstr "Data di creazione"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.iss,create_uid:"
 msgid "Create User"
@@ -37,11 +37,11 @@ msgstr "Creare utente"
 
 msgctxt "field:gnuhealth.iss,disposition:"
 msgid "Disposition"
-msgstr ""
+msgstr "Disposizione"
 
 msgctxt "field:gnuhealth.iss,drugs:"
 msgid "Other Drugs"
-msgstr ""
+msgstr "Altri farmaci"
 
 msgctxt "field:gnuhealth.iss,healthcenter:"
 msgid "Institution"
@@ -53,23 +53,23 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.iss,injury_date:"
 msgid "Injury Date"
-msgstr ""
+msgstr "Data di infortunio"
 
 msgctxt "field:gnuhealth.iss,injury_details:"
 msgid "Details"
-msgstr ""
+msgstr "Dettagli"
 
 msgctxt "field:gnuhealth.iss,injury_method:"
 msgid "Method"
-msgstr ""
+msgstr "Metodo"
 
 msgctxt "field:gnuhealth.iss,injury_type:"
 msgid "Injury Type"
-msgstr ""
+msgstr "Tipo di infortunio"
 
 msgctxt "field:gnuhealth.iss,latitude:"
 msgid "Latidude"
-msgstr ""
+msgstr "Latitudine"
 
 msgctxt "field:gnuhealth.iss,longitude:"
 msgid "Longitude"
@@ -77,23 +77,23 @@ msgstr "Longitudine"
 
 msgctxt "field:gnuhealth.iss,mva_counterpart:"
 msgid "Counterpart"
-msgstr ""
+msgstr "Controparte"
 
 msgctxt "field:gnuhealth.iss,mva_mode:"
 msgid "Mode"
-msgstr ""
+msgstr "Modalità"
 
 msgctxt "field:gnuhealth.iss,mva_position:"
 msgid "User Position"
-msgstr ""
+msgstr "Posizione utente"
 
 msgctxt "field:gnuhealth.iss,name:"
 msgid "Evaluation"
-msgstr ""
+msgstr "Valutazione"
 
 msgctxt "field:gnuhealth.iss,operational_sector:"
 msgid "O. Sector"
-msgstr ""
+msgstr "Settore O."
 
 msgctxt "field:gnuhealth.iss,patient:"
 msgid "Patient"
@@ -117,19 +117,19 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.iss,registration_date:"
 msgid "Registration Date"
-msgstr ""
+msgstr "Data di registrazione"
 
 msgctxt "field:gnuhealth.iss,safety_gear:"
 msgid "Safety Gear"
-msgstr ""
+msgstr "Dispositivi di sicurezza"
 
 msgctxt "field:gnuhealth.iss,urladdr:"
 msgid "OSM Map"
-msgstr ""
+msgstr "Mappa OSM"
 
 msgctxt "field:gnuhealth.iss,victim_perpetrator:"
 msgid "Relationship"
-msgstr ""
+msgstr "Relazione"
 
 msgctxt "field:gnuhealth.iss,violence_circumstances:"
 msgid "Context"
