@@ -1,7 +1,7 @@
 # 
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_caldav/it/>\n"
@@ -339,10 +339,9 @@ msgctxt "field:calendar.event,exrules:"
 msgid "Exception Rules"
 msgstr ""
 
-#, fuzzy
 msgctxt "field:calendar.event,id:"
 msgid "ID"
-msgstr "Movimento contabile"
+msgstr "ID"
 
 msgctxt "field:calendar.event,location:"
 msgid "Location"
@@ -435,10 +434,9 @@ msgctxt "field:calendar.event-calendar.category,event:"
 msgid "Event"
 msgstr ""
 
-#, fuzzy
 msgctxt "field:calendar.event-calendar.category,id:"
 msgid "ID"
-msgstr "Movimento contabile"
+msgstr "ID"
 
 #, fuzzy
 msgctxt "field:calendar.event-calendar.category,rec_name:"
@@ -467,10 +465,9 @@ msgctxt "field:calendar.event.alarm,event:"
 msgid "Event"
 msgstr ""
 
-#, fuzzy
 msgctxt "field:calendar.event.alarm,id:"
 msgid "ID"
-msgstr "Movimento contabile"
+msgstr "ID"
 
 #, fuzzy
 msgctxt "field:calendar.event.alarm,rec_name:"
@@ -515,7 +512,7 @@ msgstr ""
 #, fuzzy
 msgctxt "field:calendar.event.attendee,id:"
 msgid "ID"
-msgstr "Movimento contabile"
+msgstr "ID"
 
 #, fuzzy
 msgctxt "field:calendar.event.attendee,rec_name:"
@@ -557,10 +554,9 @@ msgctxt "field:calendar.event.exdate,event:"
 msgid "Event"
 msgstr ""
 
-#, fuzzy
 msgctxt "field:calendar.event.exdate,id:"
 msgid "ID"
-msgstr "Movimento contabile"
+msgstr "ID"
 
 #, fuzzy
 msgctxt "field:calendar.event.exdate,rec_name:"
@@ -637,7 +633,7 @@ msgstr "Frequenza"
 #, fuzzy
 msgctxt "field:calendar.event.exrule,id:"
 msgid "ID"
-msgstr "Movimento contabile"
+msgstr "ID"
 
 msgctxt "field:calendar.event.exrule,interval:"
 msgid "Interval"
@@ -694,7 +690,7 @@ msgstr ""
 #, fuzzy
 msgctxt "field:calendar.event.rdate,id:"
 msgid "ID"
-msgstr "Movimento contabile"
+msgstr "ID"
 
 #, fuzzy
 msgctxt "field:calendar.event.rdate,rec_name:"
@@ -768,10 +764,9 @@ msgctxt "field:calendar.event.rrule,freq:"
 msgid "Frequency"
 msgstr "Frequenza"
 
-#, fuzzy
 msgctxt "field:calendar.event.rrule,id:"
 msgid "ID"
-msgstr "Movimento contabile"
+msgstr "ID"
 
 msgctxt "field:calendar.event.rrule,interval:"
 msgid "Interval"
@@ -812,10 +807,9 @@ msgctxt "field:calendar.location,create_uid:"
 msgid "Create User"
 msgstr "Creare utente"
 
-#, fuzzy
 msgctxt "field:calendar.location,id:"
 msgid "ID"
-msgstr "Movimento contabile"
+msgstr "ID"
 
 #, fuzzy
 msgctxt "field:calendar.location,name:"
@@ -972,7 +966,7 @@ msgstr ""
 
 msgctxt "selection:calendar.event,status:"
 msgid "Confirmed"
-msgstr ""
+msgstr "Confermato"
 
 msgctxt "selection:calendar.event,status:"
 msgid "Tentative"
