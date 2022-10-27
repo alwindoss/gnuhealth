@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_ntd_dengue/it/>\n"
@@ -29,7 +29,7 @@ msgstr "Creare utente"
 
 msgctxt "field:gnuhealth.dengue_du_survey,du:"
 msgid "DU"
-msgstr ""
+msgstr "UD"
 
 msgctxt "field:gnuhealth.dengue_du_survey,du_fumigation:"
 msgid "Fumigation"
@@ -49,19 +49,20 @@ msgstr ""
 
 msgctxt "field:gnuhealth.dengue_du_survey,id:"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
+#, fuzzy
 msgctxt "field:gnuhealth.dengue_du_survey,larva_in_house:"
 msgid "Domiciliary"
-msgstr ""
+msgstr "Domiciliare"
 
 msgctxt "field:gnuhealth.dengue_du_survey,larva_peri:"
 msgid "Peri-Domiciliary"
-msgstr ""
+msgstr "Peridomiciliare"
 
 msgctxt "field:gnuhealth.dengue_du_survey,name:"
 msgid "Survey Code"
-msgstr ""
+msgstr "Codice indagine"
 
 msgctxt "field:gnuhealth.dengue_du_survey,next_survey_date:"
 msgid "Next survey"
