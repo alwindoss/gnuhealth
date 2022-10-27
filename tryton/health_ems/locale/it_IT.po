@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/it/>\n"
@@ -13,11 +13,11 @@ msgstr ""
 
 msgctxt "error:gnuhealth.ambulance:"
 msgid "This vehicle ID already exists"
-msgstr ""
+msgstr "Questo ID veicolo esiste già"
 
 msgctxt "error:gnuhealth.support_request:"
 msgid "This Request Code already exists"
-msgstr ""
+msgstr "Questo codice di richiesta esiste già"
 
 msgctxt "field:gnuhealth.ambulance,active:"
 msgid "Active"
@@ -25,7 +25,7 @@ msgstr "Attivo"
 
 msgctxt "field:gnuhealth.ambulance,create_date:"
 msgid "Create Date"
-msgstr "Data di creazione"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.ambulance,create_uid:"
 msgid "Create User"
@@ -45,11 +45,11 @@ msgstr "Stato"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_brand:"
 msgid "Brand"
-msgstr ""
+msgstr "Marca"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_function:"
 msgid "Function"
-msgstr ""
+msgstr "Funzione"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_identifier:"
 msgid "ID"
@@ -61,15 +61,15 @@ msgstr "Modello"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_odometer:"
 msgid "Odometer"
-msgstr ""
+msgstr "Contachilometri"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "Osservazioni"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_station:"
 msgid "Station"
-msgstr ""
+msgstr "Stazione"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_type:"
 msgid "Type"
@@ -89,15 +89,15 @@ msgstr "Ambulanza"
 
 msgctxt "field:gnuhealth.ambulance.support,create_date:"
 msgid "Create Date"
-msgstr "Data di creazione"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.ambulance.support,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:gnuhealth.ambulance.support,healthprofs:"
 msgid "Health Professionals"
-msgstr ""
+msgstr "Professionisti sanitari"
 
 msgctxt "field:gnuhealth.ambulance.support,id:"
 msgid "ID"
@@ -109,7 +109,7 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.ambulance.support,sr:"
 msgid "SR"
-msgstr ""
+msgstr "SR"
 
 msgctxt "field:gnuhealth.ambulance.support,state:"
 msgid "Status"
@@ -125,7 +125,7 @@ msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.ambulance_hp,create_date:"
 msgid "Create Date"
-msgstr "Data di creazione"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.ambulance_hp,create_uid:"
 msgid "Create User"
@@ -133,7 +133,7 @@ msgstr "Creare utente"
 
 msgctxt "field:gnuhealth.ambulance_hp,healthprof:"
 msgid "Health Prof"
-msgstr ""
+msgstr "Prof. sanitario"
 
 msgctxt "field:gnuhealth.ambulance_hp,id:"
 msgid "ID"
@@ -157,27 +157,27 @@ msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.sequences,support_request_code_sequence:"
 msgid "Support Request Sequence"
-msgstr ""
+msgstr "Sequenza di richieste di assistenza"
 
 msgctxt "field:gnuhealth.support_request,address:"
 msgid "Address"
-msgstr ""
+msgstr "Indirizzo"
 
 msgctxt "field:gnuhealth.support_request,ambulances:"
 msgid "Ambulances"
-msgstr ""
+msgstr "Ambulanze"
 
 msgctxt "field:gnuhealth.support_request,code:"
 msgid "Code"
-msgstr ""
+msgstr "Codice"
 
 msgctxt "field:gnuhealth.support_request,complaint:"
 msgid "Chief Complaint"
-msgstr ""
+msgstr "Reclamo principale"
 
 msgctxt "field:gnuhealth.support_request,create_date:"
 msgid "Create Date"
-msgstr "Data di creazione"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.support_request,create_uid:"
 msgid "Create User"
@@ -185,19 +185,20 @@ msgstr "Creare utente"
 
 msgctxt "field:gnuhealth.support_request,evaluation:"
 msgid "Evaluation"
-msgstr ""
+msgstr "Valutazione"
 
 msgctxt "field:gnuhealth.support_request,event_specific:"
 msgid "Incident"
-msgstr ""
+msgstr "Incidente"
 
+#, fuzzy
 msgctxt "field:gnuhealth.support_request,event_type:"
 msgid "Event type"
-msgstr ""
+msgstr "Tipo di evento"
 
 msgctxt "field:gnuhealth.support_request,healthcenter:"
 msgid "Calling Institution"
-msgstr ""
+msgstr "Istituzione chiamante"
 
 msgctxt "field:gnuhealth.support_request,id:"
 msgid "ID"
@@ -205,7 +206,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.support_request,latitude:"
 msgid "Latidude"
-msgstr ""
+msgstr "Latitudine"
 
 msgctxt "field:gnuhealth.support_request,longitude:"
 msgid "Longitude"
@@ -285,7 +286,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,create_date:"
 msgid "Create Date"
-msgstr "Data di creazione"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.support_request.log,create_uid:"
 msgid "Create User"
@@ -301,7 +302,7 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.support_request.log,remarks:"
 msgid "Remarks"
-msgstr ""
+msgstr "Osservazioni"
 
 msgctxt "field:gnuhealth.support_request.log,sr:"
 msgid "SR"
@@ -777,7 +778,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,state:"
 msgid "Open"
-msgstr ""
+msgstr "Aprire"
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid ""
@@ -785,7 +786,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Emergency"
-msgstr ""
+msgstr "Emergenza"
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Low"
@@ -793,7 +794,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Urgent"
-msgstr ""
+msgstr "Urgente"
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid ""
