@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_icu/it/>\n"
@@ -127,7 +127,7 @@ msgstr "Temperatura"
 
 msgctxt "field:gnuhealth.icu.apache2,wbc:"
 msgid "WBC"
-msgstr "WBC (Globuli Bianchi)"
+msgstr "WBC"
 
 msgctxt "field:gnuhealth.icu.apache2,write_date:"
 msgid "Write Date"
@@ -594,8 +594,8 @@ msgid ""
 "Shows if patient was admitted to the Intensive Care Unit during the "
 "hospitalization period"
 msgstr ""
-"ostra se il paziente è stato ricoverato nell'Unità di terapia Intensiva "
-"durante  la degenza in ospedale."
+"Indica se il paziente è stato ricoverato nell'unità di terapia intensiva "
+"durante il periodo di ricovero."
 
 msgctxt "help:gnuhealth.patient.rounding,icu_patient:"
 msgid "Check this box if this isan Intensive Care Unit rounding."
@@ -629,7 +629,7 @@ msgstr "Enfisema sottocutaneo"
 
 msgctxt "help:gnuhealth.patient.rounding,swan_ganz:"
 msgid "Pulmonary Artery Catheterization - PAC -"
-msgstr "Catetere arterioso polmonare  - PAC -"
+msgstr "Catetere arterioso polmonare - PAC -"
 
 msgctxt "model:gnuhealth.icu.apache2,name:"
 msgid "Apache II scoring"
@@ -657,7 +657,7 @@ msgstr "APACHE II"
 
 msgctxt "model:ir.action,name:act_ecg_form1"
 msgid "Inpatient ECGs"
-msgstr ""
+msgstr "ECG per pazienti ricoverati"
 
 msgctxt "model:ir.action,name:act_glasgow_form1"
 msgid "Glasgow Coma Scale"
@@ -669,7 +669,7 @@ msgstr "Risultato APACHE II"
 
 msgctxt "model:ir.action,name:action_gnuhealth_icu_ecg_form1"
 msgid "ECGs"
-msgstr "ECGs"
+msgstr "ECG"
 
 msgctxt "model:ir.action,name:action_gnuhealth_icu_glasgow_form"
 msgid "GCS"
@@ -689,7 +689,7 @@ msgstr "Risultato APACHE II"
 
 msgctxt "model:ir.ui.menu,name:menu_gnuhealth_icu_ecgs_list1"
 msgid "ECGs"
-msgstr "ECGs"
+msgstr "ECG"
 
 msgctxt "model:ir.ui.menu,name:menu_gnuhealth_icu_glasgow_list"
 msgid "GCS"
