@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-27 13:01+0000\n"
+"PO-Revision-Date: 2022-10-28 14:02+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_lab/it/>\n"
@@ -30,11 +30,11 @@ msgstr "Creare data"
 
 msgctxt "field:gnuhealth.lab,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:gnuhealth.lab,critearea:"
 msgid "Lab Test Critearea"
-msgstr "Lab Test Critearea"
+msgstr "Criterio del test di laboratorio"
 
 msgctxt "field:gnuhealth.lab,date_analysis:"
 msgid "Date of the Analysis"
@@ -98,7 +98,7 @@ msgstr "Creare data"
 
 msgctxt "field:gnuhealth.lab.test.critearea,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:gnuhealth.lab.test.critearea,excluded:"
 msgid "Excluded"
@@ -182,7 +182,7 @@ msgstr "Creare data"
 
 msgctxt "field:gnuhealth.lab.test.units,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:gnuhealth.lab.test.units,id:"
 msgid "ID"
@@ -214,7 +214,7 @@ msgstr "Creare data"
 
 msgctxt "field:gnuhealth.lab.test_type,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:gnuhealth.lab.test_type,critearea:"
 msgid "Test Cases"
@@ -258,7 +258,7 @@ msgstr "Creare data"
 
 msgctxt "field:gnuhealth.patient.lab.test,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:gnuhealth.patient.lab.test,date:"
 msgid "Date"
@@ -377,7 +377,8 @@ msgid ""
 "Non-numeric results. For example qualitative values, morphological, colors "
 "..."
 msgstr ""
-"Risultati nonb numerici. Per esempio valori qualitativi, morfologici, colori"
+"Risultati non numerici. Per esempio valori qualitativi, morfologici, "
+"colori..."
 
 msgctxt "help:gnuhealth.lab.test.critearea,warning:"
 msgid ""
@@ -394,11 +395,11 @@ msgstr "Nome corto - codice del test"
 
 msgctxt "help:gnuhealth.lab.test_type,name:"
 msgid "Test type, eg X-Ray, hemogram,biopsy..."
-msgstr "Tipo dio test, per esempio Raggi X, emogramma, biopsia"
+msgstr "Tipo di test, ad esempio radiografia, ecografia, biopsia..."
 
 msgctxt "help:gnuhealth.patient.lab.test,doctor_id:"
 msgid "Doctor who Request the lab test."
-msgstr "Medico che ha richiesto il test di laboratorio"
+msgstr "Medico che ha richiesto il test di laboratorio."
 
 msgctxt "help:gnuhealth.patient.lab.test.request.start,doctor:"
 msgid "Doctor who Request the lab tests."
@@ -414,7 +415,7 @@ msgstr "Creare il Report del Test"
 
 msgctxt "model:gnuhealth.lab.test.critearea,name:"
 msgid "Lab Test Critearea"
-msgstr "Lab Test Critearea"
+msgstr "Criterio del test di laboratorio"
 
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_agratio0"
@@ -678,7 +679,7 @@ msgstr "Altri"
 msgctxt ""
 "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_ovacyst0"
 msgid "Ova/Cyst"
-msgstr "Ova/Cyst"
+msgstr "Cisti ovariche"
 
 msgctxt "model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_ph0"
 msgid "PH"
