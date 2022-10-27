@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_imaging/it/>\n"
@@ -18,7 +18,7 @@ msgstr "Codice"
 
 msgctxt "field:gnuhealth.imaging.test,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.imaging.test,create_uid:"
 msgid "Create User"
@@ -58,7 +58,7 @@ msgstr "Commento"
 
 msgctxt "field:gnuhealth.imaging.test.request,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.imaging.test.request,create_uid:"
 msgid "Create User"
@@ -106,7 +106,7 @@ msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.imaging.test.request,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.imaging.test.result,comment:"
 msgid "Comment"
@@ -114,7 +114,7 @@ msgstr "Commento"
 
 msgctxt "field:gnuhealth.imaging.test.result,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Creare data"
 
 msgctxt "field:gnuhealth.imaging.test.result,create_uid:"
 msgid "Create User"
@@ -162,11 +162,11 @@ msgstr "test"
 
 msgctxt "field:gnuhealth.imaging.test.result,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.imaging.test.result,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.imaging.test.type,code:"
 msgid "Code"
@@ -194,11 +194,11 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.imaging.test.type,write_date:"
 msgid "Write Date"
-msgstr "Scrivere Data"
+msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.imaging.test.type,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.patient.imaging.test.request.start,date:"
 msgid "Date"
@@ -406,7 +406,7 @@ msgstr "Richiesto"
 
 msgctxt "wizard_button:gnuhealth.patient.imaging.test.request,start,end:"
 msgid "Cancel"
-msgstr "Cancellare"
+msgstr "Annulla"
 
 msgctxt "wizard_button:gnuhealth.patient.imaging.test.request,start,request:"
 msgid "Request"
