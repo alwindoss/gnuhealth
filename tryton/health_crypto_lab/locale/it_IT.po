@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-17 00:42+0000\n"
+"PO-Revision-Date: 2022-10-28 14:02+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_crypto_lab/it/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 msgctxt "field:gnuhealth.lab,digest_current:"
 msgid "Current Hash"
@@ -37,7 +37,7 @@ msgstr "Finito il"
 
 msgctxt "field:gnuhealth.lab,serializer:"
 msgid "Doc String"
-msgstr "Stringa doc"
+msgstr "Doc. sequenza"
 
 msgctxt "field:gnuhealth.lab,serializer_current:"
 msgid "Current Doc"
@@ -66,7 +66,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.lab,document_digest:"
 msgid "Original Document Digest"
-msgstr "Documento originale"
+msgstr "Riepilogo del documento originale"
 
 msgctxt "help:gnuhealth.lab,done_by:"
 msgid "Professional who processes this lab test"
