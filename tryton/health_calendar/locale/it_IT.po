@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_calendar/it/>\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Prima di creare un piano di lavoro, è necessario definire un fuso orario per "
 "questa azienda.\n"
 "\n"
-"Party > Configurazione > Aziende"
+"Gruppo > Configurazione > Aziende"
 
 msgctxt "field:gnuhealth.appointment,appointment_date_end:"
 msgid "End Date and Time"
@@ -145,7 +145,7 @@ msgstr "Nuovo piano di lavoro"
 
 msgctxt "wizard_button:gnuhealth.calendar.create.appointment,start,create_:"
 msgid "Create"
-msgstr "Crea"
+msgstr "Creare"
 
 msgctxt "wizard_button:gnuhealth.calendar.create.appointment,start,end:"
 msgid "Cancel"
