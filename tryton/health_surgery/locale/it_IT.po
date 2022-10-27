@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_surgery/it/>\n"
@@ -33,11 +33,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.operation,name:"
 msgid "Surgery"
-msgstr ""
+msgstr "Chirurgia"
 
 msgctxt "field:gnuhealth.operation,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Note"
 
 msgctxt "field:gnuhealth.operation,procedure:"
 msgid "Code"
@@ -57,7 +57,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,surgery:"
 msgid "Surgeries"
-msgstr ""
+msgstr "Interventi chirurgici"
 
 msgctxt "field:gnuhealth.rcri,create_date:"
 msgid "Create Date"
@@ -173,7 +173,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery,extra_info:"
 msgid "Extra Info"
-msgstr "Data di creazione"
+msgstr "Informazioni extra"
 
 msgctxt "field:gnuhealth.surgery,gender:"
 msgid "Gender"
@@ -309,15 +309,15 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery_supply,name:"
 msgid "Surgery"
-msgstr ""
+msgstr "Chirurgia"
 
 msgctxt "field:gnuhealth.surgery_supply,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Note"
 
 msgctxt "field:gnuhealth.surgery_supply,qty:"
 msgid "Qty"
-msgstr ""
+msgstr "Qtà"
 
 msgctxt "field:gnuhealth.surgery_supply,qty_used:"
 msgid "Used"
@@ -353,19 +353,19 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery_team,name:"
 msgid "Surgery"
-msgstr ""
+msgstr "Chirurgia"
 
 msgctxt "field:gnuhealth.surgery_team,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Note"
 
 msgctxt "field:gnuhealth.surgery_team,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgctxt "field:gnuhealth.surgery_team,role:"
 msgid "Role"
-msgstr ""
+msgstr "Ruolo"
 
 msgctxt "field:gnuhealth.surgery_team,team_member:"
 msgid "Member"
@@ -545,7 +545,7 @@ msgstr ""
 
 msgctxt "model:gnuhealth.surgery,name:"
 msgid "Surgery"
-msgstr ""
+msgstr "Chirurgia"
 
 msgctxt "model:gnuhealth.surgery_supply,name:"
 msgid "Supplies related to the surgery"
@@ -561,11 +561,11 @@ msgstr ""
 
 msgctxt "model:ir.action,name:act_surgery_form"
 msgid "Surgeries"
-msgstr ""
+msgstr "Interventi chirurgici"
 
 msgctxt "model:ir.action,name:action_gnuhealth_surgery_view"
 msgid "Surgeries"
-msgstr ""
+msgstr "Interventi chirurgici"
 
 msgctxt "model:ir.action,name:report_surgery_report"
 msgid "Surgery Report"
@@ -575,62 +575,69 @@ msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_all"
 msgid "All"
 msgstr ""
 
+#, fuzzy
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_confirmed"
 msgid "Confirmed"
-msgstr ""
+msgstr "Confermato"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_done"
 msgid "Done"
-msgstr ""
+msgstr "Fatto"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_draft"
 msgid "Draft"
-msgstr ""
+msgstr "Bozza"
 
+#, fuzzy
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_surgery_domain_in_progress"
 msgid "In Progress"
-msgstr ""
+msgstr "In corso"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_signed"
 msgid "Signed"
-msgstr ""
+msgstr "Firmato"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_surgery_code"
 msgid "Surgery"
-msgstr ""
+msgstr "Chirurgia"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_surgery_code"
 msgid "Surgery"
-msgstr ""
+msgstr "Chirurgia"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_surgery_menu"
 msgid "Surgeries"
-msgstr ""
+msgstr "Interventi chirurgici"
 
+#, fuzzy
 msgctxt "model:res.group,name:group_health_surgery_admin"
 msgid "Health Surgery Administration"
-msgstr ""
+msgstr "Amministrazione Chirurgia Sanitaria"
 
 msgctxt "selection:gnuhealth.rcri,rcri_class:"
 msgid ""
 msgstr ""
 
+#, fuzzy
 msgctxt "selection:gnuhealth.rcri,rcri_class:"
 msgid "I"
-msgstr ""
+msgstr "I"
 
+#, fuzzy
 msgctxt "selection:gnuhealth.rcri,rcri_class:"
 msgid "II"
-msgstr ""
+msgstr "II"
 
+#, fuzzy
 msgctxt "selection:gnuhealth.rcri,rcri_class:"
 msgid "III"
-msgstr ""
+msgstr "III"
 
+#, fuzzy
 msgctxt "selection:gnuhealth.rcri,rcri_class:"
 msgid "IV"
-msgstr ""
+msgstr "IV"
 
 msgctxt "selection:gnuhealth.surgery,classification:"
 msgid ""
@@ -638,19 +645,21 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,classification:"
 msgid "Emergency"
-msgstr ""
+msgstr "Emergenza"
 
+#, fuzzy
 msgctxt "selection:gnuhealth.surgery,classification:"
 msgid "Optional"
-msgstr ""
+msgstr "Facoltativo"
 
+#, fuzzy
 msgctxt "selection:gnuhealth.surgery,classification:"
 msgid "Required"
-msgstr ""
+msgstr "Necessario"
 
 msgctxt "selection:gnuhealth.surgery,classification:"
 msgid "Urgent"
-msgstr ""
+msgstr "Urgente"
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid ""
@@ -658,19 +667,19 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Female"
-msgstr ""
+msgstr "Femmina"
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Female -> Male"
-msgstr ""
+msgstr "Femmina -> Maschio"
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Male"
-msgstr ""
+msgstr "Maschio"
 
 msgctxt "selection:gnuhealth.surgery,gender:"
 msgid "Male -> Female"
-msgstr ""
+msgstr "Maschio -> Femmina"
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid ""
@@ -678,15 +687,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid "PS 1 : Normal healthy patient"
-msgstr ""
+msgstr "PS 1: paziente normale sano"
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid "PS 2 : Patients with mild systemic disease"
-msgstr ""
+msgstr "PS 2: pazienti con malattia sistemica lieve"
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid "PS 3 : Patients with severe systemic disease"
-msgstr ""
+msgstr "PS 3: pazienti con malattia sistemica grave"
 
 msgctxt "selection:gnuhealth.surgery,preop_asa:"
 msgid ""
@@ -734,23 +743,23 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Confirmed"
-msgstr ""
+msgstr "Confermato"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Done"
-msgstr ""
+msgstr "Fatto"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Draft"
-msgstr ""
+msgstr "Bozza"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "In Progress"
-msgstr ""
+msgstr "In corso"
 
 msgctxt "selection:gnuhealth.surgery,state:"
 msgid "Signed"
-msgstr ""
+msgstr "Firmato"
 
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid ""
