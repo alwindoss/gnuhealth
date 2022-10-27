@@ -10,7 +10,7 @@
 #                       GNU Health project                              #
 #                   https://www.gnuhealth.org                           #
 #########################################################################
-#                           HEALTH WEBDAV3 SERVER                       #
+#                        HEALTH WEBDAV3 SERVER                          #
 #                      setup.py: Setuptools file                        #
 #########################################################################
 
