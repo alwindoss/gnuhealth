@@ -1,27 +1,27 @@
 #!/usr/bin/env python
-#    Copyright (C) 2011-2022 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011 Cédric Krier
+# SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+# SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-
-#    You should have received a copy of the GNU General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#########################################################################
+#   Hospital Management Information System (HMIS) component of the      #
+#                       GNU Health project                              #
+#                   https://www.gnuhealth.org                           #
+#########################################################################
+#                       HEALTH CALENDAR package                         #
+#                      setup.py: Setuptools file                        #
+#########################################################################
 
 from setuptools import setup
-import re
 import os
 import configparser
 
+
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname), encoding="UTF-8").read()
+    return open(os.path.join(os.path.dirname(__file__), fname),
+                encoding="UTF-8").read()
+
 
 config = configparser.ConfigParser()
 config.readfp(open('tryton.cfg'))
@@ -41,13 +41,15 @@ for dep in info.get('depends', []):
     if (dep == 'calendar'):
         requires.append('gnuhealth_caldav == %s' % (info.get('version')))
 
-
-requires.append('trytond >= %s.%s, < %s.%s' %
+requires.append(
+    'trytond >= %s.%s, < %s.%s' %
     (major_version, minor_version, major_version, minor_version + 1))
 
-setup(name='gnuhealth_calendar',
+setup(
+    name='gnuhealth_calendar',
     version=info.get('version', '0.0.1'),
-    description=info.get('description', 'GNU Health Calendar with Caldav support'),
+    description=info.get(
+        'description', 'GNU Health Calendar with Caldav support'),
     long_description=read('README'),
     author='GNU Solidario',
     author_email='health@gnusolidario.org',
@@ -61,10 +63,10 @@ setup(name='gnuhealth_calendar',
         ],
 
     package_data={
-        'trytond.modules.health_calendar': info.get('xml', []) \
-            + info.get('translation', []) \
-            + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
-               'report/*.fodt', 'icons/*.svg'],
+        'trytond.modules.health_calendar': info.get('xml', [])
+        + info.get('translation', [])
+        + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
+           'report/*.fodt', 'icons/*.svg'],
         },
 
     classifiers=[
