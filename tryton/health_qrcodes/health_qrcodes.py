@@ -41,15 +41,13 @@ class Patient(ModelSQL, ModelView):
         # Create the QR code
 
         patient_puid = self.puid or ''
-
         patient_blood_type = self.blood_type or ''
-
         patient_rh = self.rh or ''
-
         patient_gender = self.gender or ''
+        patient_dob = ''
 
         if (self.dob):
-            patient_dob = str(self.dob) or ''
+            patient_dob = str(self.dob)
 
         qr_string = f'{patient_puid}\n' \
             f'Name: {self.name.rec_name}\n' \
