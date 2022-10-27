@@ -1,0 +1,430 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_services/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
+
+msgctxt "field:account.invoice,health_service:"
+msgid "Health Service"
+msgstr "健康服务"
+
+msgctxt "field:account.invoice,patient:"
+msgid "Patient"
+msgstr "患者"
+
+msgctxt "field:gnuhealth.health_service,company:"
+msgid "Company"
+msgstr "公司"
+
+msgctxt "field:gnuhealth.health_service,desc:"
+msgid "Description"
+msgstr "说明"
+
+msgctxt "field:gnuhealth.health_service,institution:"
+msgid "Institution"
+msgstr "医疗机构"
+
+msgctxt "field:gnuhealth.health_service,invoice_to:"
+msgid "Invoice to"
+msgstr "凭证单位"
+
+msgctxt "field:gnuhealth.health_service,name:"
+msgid "ID"
+msgstr "服务编号"
+
+msgctxt "field:gnuhealth.health_service,patient:"
+msgid "Patient"
+msgstr "患者"
+
+msgctxt "field:gnuhealth.health_service,service_date:"
+msgid "Date"
+msgstr "日期"
+
+msgctxt "field:gnuhealth.health_service,service_line:"
+msgid "Service Line"
+msgstr "服务明细"
+
+msgctxt "field:gnuhealth.health_service,state:"
+msgid "State"
+msgstr "状态"
+
+msgctxt "field:gnuhealth.health_service.line,action_required:"
+msgid "Action required"
+msgstr "需要采取措施"
+
+msgctxt "field:gnuhealth.health_service.line,appointment:"
+msgid "Appointment"
+msgstr "预约"
+
+msgctxt "field:gnuhealth.health_service.line,desc:"
+msgid "Description"
+msgstr "说明"
+
+msgctxt "field:gnuhealth.health_service.line,from_date:"
+msgid "From"
+msgstr "开始日期"
+
+msgctxt "field:gnuhealth.health_service.line,name:"
+msgid "Service"
+msgstr "服务"
+
+msgctxt "field:gnuhealth.health_service.line,product:"
+msgid "Product"
+msgstr "产品"
+
+msgctxt "field:gnuhealth.health_service.line,qty:"
+msgid "Qty"
+msgstr "数量"
+
+msgctxt "field:gnuhealth.health_service.line,remarks:"
+msgid "Remarks"
+msgstr "说明"
+
+msgctxt "field:gnuhealth.health_service.line,to_date:"
+msgid "To"
+msgstr "结束日期"
+
+msgctxt "field:gnuhealth.health_service.line,to_invoice:"
+msgid "Invoice"
+msgstr "凭证"
+
+msgctxt "field:gnuhealth.patient.evaluation,product:"
+msgid "Product"
+msgstr "产品"
+
+msgctxt "field:gnuhealth.patient.evaluation,service:"
+msgid "Service"
+msgstr "服务"
+
+msgctxt "field:gnuhealth.prescription.order,service:"
+msgid "Service"
+msgstr "服务"
+
+msgctxt "field:gnuhealth.sequences,health_service_sequence:"
+msgid "Health service sequence"
+msgstr "健康服务序列"
+
+msgctxt ""
+"field:gnuhealth.sequences.health_service_sequence,health_service_sequence:"
+msgid "Health service sequence"
+msgstr "健康服务序列"
+
+msgctxt "help:account.invoice,health_service:"
+msgid "The service entry"
+msgstr "服务条目"
+
+msgctxt "help:account.invoice,patient:"
+msgid "Patient in the invoice"
+msgstr "凭证上面显示的患者"
+
+msgctxt "help:gnuhealth.health_service,service_line:"
+msgid "Service Line"
+msgstr "服务明细"
+
+msgctxt "help:gnuhealth.health_service.line,action_required:"
+msgid ""
+"This optional field is used in the context of validation on the service "
+"line. Mark it if there is any administrative or other type that needs action"
+msgstr "此可选字段用于服务明细验证相关内容，如果需要有任何管理或其他类型的动作，请标"
+"记它"
+
+msgctxt "help:gnuhealth.health_service.line,appointment:"
+msgid ""
+"Enter or select the date / ID of the appointment related to this evaluation"
+msgstr "输入或者选择与此评估相关的预约日期或预约编号"
+
+msgctxt "help:gnuhealth.patient.evaluation,service:"
+msgid "Service document associated to this evaluation"
+msgstr "与此项评估关联的服务文档"
+
+msgctxt "help:gnuhealth.prescription.order,service:"
+msgid "Service document associated to this prescription"
+msgstr "当前处方对应的服务文档"
+
+msgctxt "model:gnuhealth.health_service,name:"
+msgid "Health Service"
+msgstr "健康服务"
+
+msgctxt "model:gnuhealth.health_service.line,name:"
+msgid "Health Service"
+msgstr "健康服务"
+
+msgctxt "model:gnuhealth.sequences.health_service_sequence,name:"
+msgid "Health Service Request Sequence setup"
+msgstr "健康服务申请序列设置"
+
+msgctxt "model:gnuhealth.service.invoice.init,name:"
+msgid "Create Service Invoice Init"
+msgstr "创建服务凭证初始化"
+
+msgctxt "model:ir.action,name:act_create_health_service_invoice"
+msgid "Create Health Service Invoice"
+msgstr "创建健康服务凭证"
+
+msgctxt "model:ir.action,name:act_invoice_related_form1"
+msgid "Related Invoice"
+msgstr "相关服务凭证"
+
+msgctxt "model:ir.action,name:act_service_form1"
+msgid "Services"
+msgstr "服务"
+
+msgctxt "model:ir.action,name:gnuhealth_action_health_service"
+msgid "Health services"
+msgstr "健康服务"
+
+msgctxt "model:ir.action,name:gnuhealth_action_health_service_invoices"
+msgid "Service invoices (last month)"
+msgstr "服务凭证列表(上个月)"
+
+msgctxt "model:ir.action,name:report_health_services_report"
+msgid "Services Report"
+msgstr "服务报告"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_gnuhealth_service_domain_all"
+msgid "All"
+msgstr "所有"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_gnuhealth_service_domain_draft"
+msgid "Draft"
+msgstr "草案"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_gnuhealth_service_domain_invoiced"
+msgid "Invoiced"
+msgstr "已开凭证"
+
+msgctxt "model:ir.message,text:msg_no_account_receivable"
+msgid "No Account Receivable defined in party or in default configuration"
+msgstr "Party 或者默认设置中没有定义接收账户"
+
+msgctxt "model:ir.message,text:msg_no_invoice_address"
+msgid "No invoice adress"
+msgstr "没有凭证地址"
+
+msgctxt "model:ir.message,text:msg_no_payment_term"
+msgid "Need a user payment term"
+msgstr "需要用户付款条件"
+
+msgctxt "model:ir.message,text:msg_no_product_associated"
+msgid "You need to associate a product"
+msgstr "需要关联到某个产品"
+
+msgctxt "model:ir.message,text:msg_no_service_associated"
+msgid "You need to associate a service"
+msgstr "需要关联到某个服务"
+
+msgctxt "model:ir.message,text:msg_service_already_invoiced"
+msgid "This service has been invoiced. You can no longer modify service lines"
+msgstr "此服务已开凭证，不允许再更改服务明细"
+
+msgctxt "model:ir.sequence,name:seq_gnuhealth_health_service"
+msgid "Health Service"
+msgstr "健康服务"
+
+msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_health_service"
+msgid "Health Service"
+msgstr "健康服务"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_health_service_invoices_menu"
+msgid "Service invoices (last month)"
+msgstr "服务凭证列表(上个月)"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_health_service_menu"
+msgid "Health services"
+msgstr "健康服务列表"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_services_menu"
+msgid "Health Services"
+msgstr "健康服务"
+
+msgctxt "model:product.category,name:product_category_medical_evaluation"
+msgid "Medical Evaluation"
+msgstr "医学评估"
+
+msgctxt "model:product.template,name:product_template_medical_services"
+msgid "Medical evaluation service"
+msgstr "医学评估服务"
+
+msgctxt "model:res.group,name:group_health_services_admin"
+msgid "Health Services Administration"
+msgstr "Health 服务管理"
+
+msgctxt "report:health_services.report:"
+msgid "-"
+msgstr "-"
+
+msgctxt "report:health_services.report:"
+msgid "//"
+msgstr "//"
+
+msgctxt "report:health_services.report:"
+msgid ":"
+msgstr "："
+
+msgctxt "report:health_services.report:"
+msgid "Address"
+msgstr "地址"
+
+msgctxt "report:health_services.report:"
+msgid "Address"
+msgstr "地址"
+
+msgctxt "report:health_services.report:"
+msgid "D"
+msgstr "D"
+
+msgctxt "report:health_services.report:"
+msgid "Description"
+msgstr "说明"
+
+msgctxt "report:health_services.report:"
+msgid "From"
+msgstr "开始日期"
+
+msgctxt "report:health_services.report:"
+msgid "Health Service"
+msgstr "Health 服务"
+
+msgctxt "report:health_services.report:"
+msgid "ID :"
+msgstr "ID："
+
+msgctxt "report:health_services.report:"
+msgid "Institution :"
+msgstr "医疗机构："
+
+msgctxt "report:health_services.report:"
+msgid "Invoice"
+msgstr "凭证"
+
+msgctxt "report:health_services.report:"
+msgid "Invoice to :"
+msgstr "凭证单位:"
+
+msgctxt "report:health_services.report:"
+msgid "PUID"
+msgstr "PUID"
+
+msgctxt "report:health_services.report:"
+msgid "PUID"
+msgstr "PUID"
+
+msgctxt "report:health_services.report:"
+msgid "Patient :"
+msgstr "患者："
+
+msgctxt "report:health_services.report:"
+msgid "Patient Contact Information"
+msgstr "患者联系方式"
+
+msgctxt "report:health_services.report:"
+msgid "Qty"
+msgstr "数量"
+
+msgctxt "report:health_services.report:"
+msgid "Service"
+msgstr "服务"
+
+msgctxt "report:health_services.report:"
+msgid "Tel"
+msgstr "电话"
+
+msgctxt "report:health_services.report:"
+msgid "Tel"
+msgstr "电话"
+
+msgctxt "report:health_services.report:"
+msgid "To"
+msgstr "结束日期"
+
+msgctxt "report:health_services.report:"
+msgid "ate"
+msgstr "日期"
+
+msgctxt "report:health_services.report:"
+msgid "ate"
+msgstr "日期"
+
+msgctxt "report:health_services.report:"
+msgid "e"
+msgstr "e"
+
+#, fuzzy
+msgctxt "report:health_services.report:"
+msgid "mail"
+msgstr "mail"
+
+msgctxt "report:health_services.report:"
+msgid "mail"
+msgstr "mail"
+
+msgctxt "selection:gnuhealth.health_service,state:"
+msgid "Draft"
+msgstr "草案"
+
+msgctxt "selection:gnuhealth.health_service,state:"
+msgid "Invoiced"
+msgstr "已开凭证"
+
+msgctxt "view:account.invoice:"
+msgid "Health"
+msgstr "健康"
+
+msgctxt "view:gnuhealth.health_service:"
+msgid "Set to Draft"
+msgstr "设为草案"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Services"
+msgstr "服务"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Transfer                     this evaluation to services?"
+msgstr "需要将此项评估转化为服务吗？"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Update Service document with this evaluation"
+msgstr "按照当前评估的信息更新服务文档"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Update Services"
+msgstr "更新服务"
+
+msgctxt "view:gnuhealth.prescription.order:"
+msgid "Transfer medicaments to services ?"
+msgstr "是否需要依照药品信息生成相应的服务明细？"
+
+msgctxt "view:gnuhealth.prescription.order:"
+msgid "Update Service document with this prescription lines"
+msgstr "根据当前处方信息生成相应的服务明细"
+
+msgctxt "view:gnuhealth.prescription.order:"
+msgid "Update Services"
+msgstr "依照处方更新服务"
+
+msgctxt "view:gnuhealth.service.invoice.init:"
+msgid "Create Invoices"
+msgstr "创建凭证"
+
+msgctxt "view:gnuhealth.service.invoice.init:"
+msgid "Do you want to generate the Invoice(s) ?"
+msgstr "确定要生成凭证吗？"
+
+msgctxt ""
+"wizard_button:gnuhealth.service.invoice.create,start,create_service_invoice:"
+msgid "Create Invoice"
+msgstr "创建凭证"
+
+msgctxt "wizard_button:gnuhealth.service.invoice.create,start,end:"
+msgid "Cancel"
+msgstr "取消"

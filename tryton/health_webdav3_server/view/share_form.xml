@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2012-2017 Cédric Krier
+SPDX-FileCopyrightText: 2017-2022 GNU Solidario <health@gnusolidario.org>
+SPDX-FileCopyrightText: 2017-2022 Luis Falcon <falcon@gnuhealth.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <label name="path"/>
+    <field name="path"/>
+    <label name="key"/>
+    <field name="key"/>
+    <label name="user"/>
+    <field name="user"/>
+    <label name="expiration_date"/>
+    <field name="expiration_date"/>
+    <label name="url"/>
+    <group id="url" colspan="2">
+        <field name="url"/>
+        <field name="url" widget="url"/>
+    </group>
+    <notebook>
+        <page name="note">
+            <field name="note" colspan="4"/>
+        </page>
+    </notebook>
+</form>

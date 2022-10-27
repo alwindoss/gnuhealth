@@ -1,0 +1,28 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-04-15 17:06+0000\n"
+"Last-Translator: G R <gradaellig@gmail.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
+"health_qrcodes/it/>\n"
+"Language: it_IT\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12-dev\n"
+
+msgctxt "field:gnuhealth.newborn,qr:"
+msgid "QR Code"
+msgstr "Codice QR"
+
+msgctxt "field:gnuhealth.patient,qr:"
+msgid "QR Code"
+msgstr "Codice QR"
+
+msgctxt "model:ir.action,name:report_newborn_qrcard"
+msgid "Newborn ID - QR"
+msgstr "ID neonato - QR"
+
+msgctxt "model:ir.action,name:report_patient_qrcard"
+msgid "ID Cards - QR"
+msgstr "Carte d'identità - QR"

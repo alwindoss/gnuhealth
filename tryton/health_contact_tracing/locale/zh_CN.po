@@ -1,0 +1,137 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-16 13:18+0000\n"
+"Last-Translator: Eric <alchemillatruth@purelymail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_contact_tracing/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
+
+msgctxt "field:gnuhealth.contact_tracing,comments:"
+msgid "Comments"
+msgstr "说明"
+
+msgctxt "field:gnuhealth.contact_tracing,contact:"
+msgid "Contact"
+msgstr "密切接触人员"
+
+msgctxt "field:gnuhealth.contact_tracing,contact_date:"
+msgid "Date"
+msgstr "日期"
+
+msgctxt "field:gnuhealth.contact_tracing,context:"
+msgid "Context"
+msgstr "暴露方式"
+
+msgctxt "field:gnuhealth.contact_tracing,du:"
+msgid "Dom.Unit"
+msgstr "现住址"
+
+msgctxt "field:gnuhealth.contact_tracing,exposure_risk:"
+msgid "Exposure"
+msgstr "暴露"
+
+msgctxt "field:gnuhealth.contact_tracing,exposure_time:"
+msgid "Exposure time"
+msgstr "暴露时间"
+
+msgctxt "field:gnuhealth.contact_tracing,operational_sector:"
+msgid "Op.Sector"
+msgstr "卫生子区域"
+
+msgctxt "field:gnuhealth.contact_tracing,pathology:"
+msgid "Disease"
+msgstr "疾病"
+
+msgctxt "field:gnuhealth.contact_tracing,patient:"
+msgid "Source"
+msgstr "传染源"
+
+msgctxt "field:gnuhealth.contact_tracing,status:"
+msgid "Status"
+msgstr "状态"
+
+msgctxt "help:gnuhealth.contact_tracing,contact:"
+msgid "Person that the patient has contacted"
+msgstr "与患者接触过的人员"
+
+msgctxt "help:gnuhealth.contact_tracing,context:"
+msgid "Airport, meeting, concert, ..."
+msgstr "机场，会议，演唱会，..."
+
+msgctxt "help:gnuhealth.contact_tracing,du:"
+msgid "Domiciliary Unit"
+msgstr "现住址"
+
+msgctxt "help:gnuhealth.contact_tracing,exposure_time:"
+msgid "Exposure time in minutes"
+msgstr "暴露时间（分钟）"
+
+msgctxt "help:gnuhealth.contact_tracing,operational_sector:"
+msgid "Operational / Sanitary region"
+msgstr "卫生子区域"
+
+msgctxt "help:gnuhealth.contact_tracing,pathology:"
+msgid "Disease to trace"
+msgstr "需要追踪的疾病"
+
+msgctxt "help:gnuhealth.contact_tracing,patient:"
+msgid "Person suspected or confirmed"
+msgstr "确诊人员或者疑似人员"
+
+msgctxt "help:gnuhealth.contact_tracing,status:"
+msgid ""
+"Unreached: The contact has not been reached yet.\n"
+"Following up: The contact has been traced, demographics information has been created and followup evaluations status are stored in the evaluations"
+msgstr ""
+"未联系：尚未联系到接触者。\n"
+"已追踪：接触者已经被跟踪，人口统计信息已经被创建，后续的评估状态被存储在评估"
+"中"
+
+msgctxt "model:gnuhealth.contact_tracing,name:"
+msgid "Person Contacts tracing"
+msgstr "需要追踪的密切接触者"
+
+msgctxt "model:ir.action,name:gnuhealth_action_contact_tracing"
+msgid "Contact Tracing"
+msgstr "密切接触者追踪"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_contact-tracing"
+msgid "Contact Tracing"
+msgstr "密切接触者追踪"
+
+msgctxt "selection:gnuhealth.contact_tracing,exposure_risk:"
+msgid "High"
+msgstr "高剂量"
+
+msgctxt "selection:gnuhealth.contact_tracing,exposure_risk:"
+msgid "Low"
+msgstr "低剂量"
+
+msgctxt "selection:gnuhealth.contact_tracing,exposure_risk:"
+msgid "Not available"
+msgstr "未知剂量"
+
+msgctxt "selection:gnuhealth.contact_tracing,status:"
+msgid "Following up"
+msgstr "已追踪"
+
+msgctxt "selection:gnuhealth.contact_tracing,status:"
+msgid "Not available"
+msgstr "无法追踪"
+
+msgctxt "selection:gnuhealth.contact_tracing,status:"
+msgid "Unreached"
+msgstr "未联系"
+
+msgctxt "view:gnuhealth.contact_tracing:"
+msgid "Date"
+msgstr "日期"
+
+msgctxt "view:gnuhealth.contact_tracing:"
+msgid "Extra Information"
+msgstr "其它信息"

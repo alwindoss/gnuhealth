@@ -1,0 +1,131 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-23 00:18+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_webdav3_server/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
+
+msgctxt "field:ir.attachment,path:"
+msgid "Path"
+msgstr "路径"
+
+msgctxt "field:ir.attachment,shares:"
+msgid "Shares"
+msgstr "共享"
+
+msgctxt "field:ir.attachment,url:"
+msgid "URL"
+msgstr "URL"
+
+msgctxt "field:webdav.collection,childs:"
+msgid "Children"
+msgstr "子集合"
+
+msgctxt "field:webdav.collection,complete_name:"
+msgid "Complete Name"
+msgstr "集合全称"
+
+msgctxt "field:webdav.collection,domain:"
+msgid "Domain"
+msgstr "域"
+
+msgctxt "field:webdav.collection,model:"
+msgid "Model"
+msgstr "模型"
+
+msgctxt "field:webdav.collection,name:"
+msgid "Name"
+msgstr "集合名"
+
+msgctxt "field:webdav.collection,parent:"
+msgid "Parent"
+msgstr "父集合"
+
+msgctxt "field:webdav.share,expiration_date:"
+msgid "Expiration Date"
+msgstr "有效期"
+
+msgctxt "field:webdav.share,key:"
+msgid "Key"
+msgstr "密钥"
+
+msgctxt "field:webdav.share,note:"
+msgid "Note"
+msgstr "说明"
+
+msgctxt "field:webdav.share,path:"
+msgid "Path"
+msgstr "路径"
+
+msgctxt "field:webdav.share,url:"
+msgid "URL"
+msgstr "URL"
+
+msgctxt "field:webdav.share,user:"
+msgid "User"
+msgstr "用户"
+
+msgctxt "model:ir.action,name:act_collection_list"
+msgid "Collections"
+msgstr "集合"
+
+msgctxt "model:ir.action,name:act_collection_tree"
+msgid "Collections"
+msgstr "集合"
+
+msgctxt "model:ir.action,name:act_share_list"
+msgid "Shares"
+msgstr "共享"
+
+msgctxt "model:ir.message,text:msg_collection_file_name"
+msgid ""
+"You can not create a collection named \"%(parent)s\" in collection "
+"\"%(child)s\" because there is already a file with that name."
+msgstr "无法在集合 \"%(child)s\" 中创建一个名称为 \"%(parent)s\" "
+"的集合，因为有此名称的文件。"
+
+msgctxt "model:ir.message,text:msg_collection_unique"
+msgid "The collection name must be unique inside"
+msgstr "集合名在内部不能重复"
+
+msgctxt "model:ir.rule.group,name:rule_group_share"
+msgid "share"
+msgstr "共享"
+
+msgctxt "model:ir.rule.group,name:rule_group_share_admin"
+msgid "share_admin"
+msgstr "共享(管理员)"
+
+msgctxt "model:ir.ui.menu,name:menu_collection_list"
+msgid "Collections"
+msgstr "集合"
+
+msgctxt "model:ir.ui.menu,name:menu_collection_tree"
+msgid "Collections"
+msgstr "集合"
+
+msgctxt "model:ir.ui.menu,name:menu_share_list"
+msgid "Shares"
+msgstr "共享"
+
+msgctxt "model:ir.ui.menu,name:menu_webdav"
+msgid "WebDAV"
+msgstr "WebDAV"
+
+msgctxt "model:webdav.collection,name:"
+msgid "Collection"
+msgstr "集合"
+
+msgctxt "model:webdav.share,name:"
+msgid "Share"
+msgstr "共享"
+
+msgctxt "view:ir.attachment:"
+msgid "WebDAV"
+msgstr "WebDAV"

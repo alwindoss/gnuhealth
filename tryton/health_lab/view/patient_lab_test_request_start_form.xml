@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<form>
+    <label name="date"/>
+    <field name="date"/>
+    <label name="urgent"/>
+    <field name="urgent"/>
+    <newline/>
+    <label name="patient"/>
+    <field name="patient"/>
+    <newline/>
+    <label name="context"/>
+    <field name="context"/>
+    <label name="doctor"/>
+    <field name="doctor" widget="selection"/>
+    <newline/>
+    <field name="tests" colspan="4"/>
+</form>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tree>
+    <field name="quantity"/>
+    <field name="review" widget="date"/>
+    <field name="add_to_history" expand="1"/>
+    <field name="medicament" expand="1"/>
+    <field name="indication" expand="1"/>
+    <field name="dose"/>
+    <field name="dose_unit"/>
+    <field name="form"/>
+    <field name="common_dosage"/>
+    <field name="duration"/>
+    <field name="duration_period"/>
+    <field name="short_comment" expand="1"/>
+</tree>

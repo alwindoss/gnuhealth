@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+
+        <!-- Dentistry information in the Patient -->
+        <record model="ir.ui.view" id="gnuhealth_patient_view">
+            <field name="model">gnuhealth.patient</field>
+            <field name="inherit" ref="health.gnuhealth_patient_view_form" />
+            <field name="name">gnuhealth_patient_form</field>
+        </record>
+
+        <!-- Set Odontogram button -->
+        <record model="ir.model.button" id="patient_set_odontogram_button">
+            <field name="name">set_odontogram_wizard</field>
+            <field name="string">Set Odontogram</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.patient')]"/>
+        </record>
+
+        <!-- Dentistry Treatment -->
+        <record model="ir.ui.view" id="gnuhealth_dentistry_treatment_view">
+            <field name="model">gnuhealth.dentistry.treatment</field>
+            <field name="type">form</field>
+            <field name="name">gnuhealth_dentistry_treatment_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_dentistry_treatment_tree">
+            <field name="model">gnuhealth.dentistry.treatment</field>
+            <field name="type">tree</field>
+            <field name="name">gnuhealth_dentistry_treatment_tree</field>
+        </record>
+
+        <!-- Shortcut to Dentistry treatment in the Patient -->
+        <record model="ir.action.act_window" id="act_patient_dentistry_treatment_form">
+            <field name="name">Dentistry Treatments</field>
+            <field name="res_model">gnuhealth.dentistry.treatment</field>
+            <field name="domain" eval="[('patient', '=', Eval('active_id'))]" pyson="1"/>
+        </record>
+
+        <record model="ir.action.keyword" id="act_open_patient_dentistry_treatment_keyword">
+            <field name="keyword">form_relate</field>
+            <field name="model">gnuhealth.patient,-1</field>
+            <field name="action" ref="act_patient_dentistry_treatment_form"/>
+        </record>
+
+        <!-- Dentistry Procedure -->
+        <record model="ir.ui.view" id="gnuhealth_dentistry_procedure_view">
+            <field name="model">gnuhealth.dentistry.procedure</field>
+            <field name="type">form</field>
+            <field name="name">gnuhealth_dentistry_procedure_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_dentistry_procedure_tree">
+            <field name="model">gnuhealth.dentistry.procedure</field>
+            <field name="type">tree</field>
+            <field name="name">gnuhealth_dentistry_procedure_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="action_gnuhealth_dentistry_procedure_view">
+            <field name="name">Dentistry Procedures</field>
+            <field name="res_model">gnuhealth.dentistry.procedure</field>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_gnuhealth_dentistry_procedure_view_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="gnuhealth_dentistry_procedure_tree"/>
+            <field name="act_window" ref="action_gnuhealth_dentistry_procedure_view"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_gnuhealth_dentistry_procedure_view_form">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="gnuhealth_dentistry_procedure_view"/>
+            <field name="act_window" ref="action_gnuhealth_dentistry_procedure_view"/>
+        </record>
+
+        <menuitem action="action_gnuhealth_dentistry_procedure_view"
+            id="menu_gnuhealth_dentistry_procedure_list" icon="gnuhealth-list"
+            sequence="10" parent="health.gnuhealth_conf_procedure"/>
+
+        <!-- Treatment Procedure -->
+        <record model="ir.ui.view" id="gnuhealth_dentistry_treatment_procedure_view">
+            <field name="model">gnuhealth.dentistry.treatment.procedure</field>
+            <field name="type">form</field>
+            <field name="name">gnuhealth_dentistry_treatment_procedure_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="gnuhealth_dentistry_treatment_procedure_tree">
+            <field name="model">gnuhealth.dentistry.treatment.procedure</field>
+            <field name="type">tree</field>
+            <field name="name">gnuhealth_dentistry_treatment_procedure_tree</field>
+        </record>
+
+    </data>
+</tryton>

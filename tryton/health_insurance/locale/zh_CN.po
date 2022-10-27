@@ -1,0 +1,107 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-18 04:40+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_insurance/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
+
+msgctxt "field:gnuhealth.health_service,insurance_holder:"
+msgid "Insurance Holder"
+msgstr "保险持有人"
+
+msgctxt "field:gnuhealth.health_service,insurance_plan:"
+msgid "Plan"
+msgstr "计划"
+
+msgctxt "field:gnuhealth.insurance.plan,product_policy:"
+msgid "Policy"
+msgstr "政策"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,discount:"
+msgid "Discount"
+msgstr "优惠"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,plan:"
+msgid "Plan"
+msgstr "计划"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,price:"
+msgid "Price"
+msgstr "价格"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,product:"
+msgid "Product"
+msgstr "产品"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,product_category:"
+msgid "Category"
+msgstr "类别"
+
+msgctxt "help:gnuhealth.health_service,insurance_holder:"
+msgid "Insurance Policy Holder"
+msgstr "保单持有者"
+
+msgctxt "help:gnuhealth.insurance.plan.product.policy,discount:"
+msgid ""
+"Discount in Percentage. It has higher precedence than the fixed price when "
+"both values coexist"
+msgstr "折扣百分比。 与固定价同时存在时，它的优先级更高"
+
+msgctxt "help:gnuhealth.insurance.plan.product.policy,price:"
+msgid "Apply a fixed price for this product or category"
+msgstr "当前产品或者类别使用固定价格"
+
+msgctxt "model:gnuhealth.insurance.plan.product.policy,name:"
+msgid "Policy associated to the product on the insurance plan"
+msgstr "与保险计划中的产品相关联的保险单"
+
+msgctxt ""
+"model:ir.action,name:action_gnuhealth_insurance_plan_product_policy_view"
+msgid "Plan Product Policies"
+msgstr "优惠政策"
+
+msgctxt "model:ir.message,text:msg_discount_without_element"
+msgid ""
+"SM-INSURANCE-0002: You need to associate a product or category to the "
+"discount"
+msgstr "SM-INSURANCE-0002: 需要为这个折扣关联一个产品或者一个类别"
+
+msgctxt "model:ir.message,text:msg_need_a_policy"
+msgid ""
+"SM-INSURANCE-0006: You need to specify either a percentage or a fixed price "
+"for this policy line. If both are present, the percentage will be applied"
+msgstr "SM-INSURANCE-0006: "
+"需要为这条政策设定一个百分比或者固定价，如果两者都设定，百分比优先使用"
+
+msgctxt "model:ir.message,text:msg_no_account_receivable"
+msgid ""
+"SM-INSURANCE-0007: No Account Receivable defined in party or in default "
+"configuration"
+msgstr "SM-INSURANCE-0007: party 或者默认设置中没有定义接受账户"
+
+msgctxt "model:ir.message,text:msg_no_invoice_address"
+msgid "SM-INSURANCE-0004: No address associated to the invoice"
+msgstr "SM-INSURANCE-0004: 凭证没有地址"
+
+msgctxt "model:ir.message,text:msg_no_payment_term"
+msgid "SM-INSURANCE-0005: No payment term"
+msgstr "SM-INSURANCE-0005: 无付款条件"
+
+msgctxt "model:ir.message,text:msg_pct_out_of_range"
+msgid "SM-INSURANCE-0001: Percentage out of range [0-100]"
+msgstr "SM-INSURANCE-0001: 百分数超出 [0-100]范围"
+
+msgctxt "model:ir.message,text:msg_service_invoiced"
+msgid "SM-INSURANCE-0003: The service has been invoiced"
+msgstr "SM-INSURANCE-0003: 当前服务已开收费凭证"
+
+msgctxt ""
+"model:ir.ui.menu,name:menu_gnuhealth_insurance_plan_product_policy_list"
+msgid "Plan Product Policies"
+msgstr "优惠政策"

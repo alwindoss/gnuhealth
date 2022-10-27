@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <group id="help_header" colspan="4" col="6">
+        <label name="name"/>
+        <field name="name"/>
+        <newline/>
+        <label name="description"/>
+        <field name="description" colspan="5"/>
+        <newline/>
+        <label name="package"/>
+        <field name="package"/>
+        <label name="category"/>
+        <field name="category"/>
+        <label name="keywords"/>
+        <field name="keywords"/>
+    </group>
+    <newline/>
+    <separator string="Documentation" id="separator_documentation" colspan="4"/>
+    <field name="documentation" widget="richtext"/>
+</form>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <label name="use"/>
+    <field name="use"/>
+    <newline/>
+    <label name="family"/>
+    <field name="family"/>
+    <label name="given"/>
+    <field name="given"/>
+    <label name="prefix"/>
+    <field name="prefix"/>
+    <label name="suffix"/>
+    <field name="suffix"/>
+    <newline/>
+    <label name="date_from"/>
+    <field name="date_to"/>
+</form>

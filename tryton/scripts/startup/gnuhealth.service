@@ -1,0 +1,14 @@
+[Unit]
+Description=GNU Health Server
+After=network.target
+
+[Service]
+Type=simple
+User=gnuhealth
+WorkingDirectory=/home/gnuhealth
+ExecStart=/home/gnuhealth/start_gnuhealth.sh --logconf /home/gnuhealth/gnuhealth/tryton/server/config/gnuhealth_log.conf
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
+

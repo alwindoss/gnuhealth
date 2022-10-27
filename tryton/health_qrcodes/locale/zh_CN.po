@@ -1,0 +1,180 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-17 08:30+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_qrcodes/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
+
+msgctxt "field:gnuhealth.appointment,qr:"
+msgid "QR Code"
+msgstr "二维码"
+
+msgctxt "field:gnuhealth.lab,bar:"
+msgid "Bar Code39"
+msgstr "条形码"
+
+msgctxt "field:gnuhealth.lab,qr:"
+msgid "QR Code"
+msgstr "二维码"
+
+msgctxt "field:gnuhealth.newborn,qr:"
+msgid "QR Code"
+msgstr "二维码"
+
+msgctxt "field:gnuhealth.patient,qr:"
+msgid "QR Code"
+msgstr "二维码"
+
+msgctxt "model:ir.action,name:report_appointment_qrcode"
+msgid "Appointment QRCODE"
+msgstr "预约凭证（带二维码）"
+
+msgctxt "model:ir.action,name:report_labtest_barcode39"
+msgid "Code39 barcode label"
+msgstr "条形码标签"
+
+msgctxt "model:ir.action,name:report_labtest_qrcode"
+msgid "Test Labels"
+msgstr "检验项目标签"
+
+msgctxt "model:ir.action,name:report_newborn_qrcard"
+msgid "Newborn ID - QR"
+msgstr "新生儿ID（二维码）"
+
+msgctxt "model:ir.action,name:report_patient_qrcard"
+msgid "ID Cards - QR"
+msgstr "就诊卡（带二维码）"
+
+msgctxt "report:appointment.qrcodel:"
+msgid ":"
+msgstr ":"
+
+msgctxt "report:appointment.qrcodel:"
+msgid "Appointment #"
+msgstr "预约编号 #"
+
+msgctxt "report:appointment.qrcodel:"
+msgid "Health Professional"
+msgstr "医务人员"
+
+msgctxt "report:appointment.qrcodel:"
+msgid "Institution"
+msgstr "医疗机构"
+
+msgctxt "report:appointment.qrcodel:"
+msgid "Instructions / Notes"
+msgstr "备注说明"
+
+msgctxt "report:appointment.qrcodel:"
+msgid "PUID :"
+msgstr "PUID："
+
+msgctxt "report:appointment.qrcodel:"
+msgid "Patient"
+msgstr "患者"
+
+msgctxt "report:appointment.qrcodel:"
+msgid "Specialty"
+msgstr "专业"
+
+msgctxt "report:labtest.qrlabel:"
+msgid "Cap label"
+msgstr "取样容器标签"
+
+msgctxt "report:labtest.qrlabel:"
+msgid "Extraction date :"
+msgstr "样本采集日期："
+
+msgctxt "report:labtest.qrlabel:"
+msgid "ID:"
+msgstr "ID："
+
+msgctxt "report:labtest.qrlabel:"
+msgid "Patient:"
+msgstr "患者："
+
+msgctxt "report:labtest.qrlabel:"
+msgid "Req by:"
+msgstr "申请人："
+
+msgctxt "report:labtest.qrlabel:"
+msgid "Test:"
+msgstr "检验："
+
+msgctxt "report:newborn.qrcard:"
+msgid ","
+msgstr ","
+
+msgctxt "report:newborn.qrcard:"
+msgid ":"
+msgstr ":"
+
+msgctxt "report:newborn.qrcard:"
+msgid "DoB"
+msgstr "出生日期"
+
+msgctxt "report:newborn.qrcard:"
+msgid "Female"
+msgstr "女"
+
+msgctxt "report:newborn.qrcard:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "report:newborn.qrcard:"
+msgid "Male"
+msgstr "男"
+
+msgctxt "report:newborn.qrcard:"
+msgid "Mother"
+msgstr "母亲"
+
+msgctxt "report:newborn.qrcard:"
+msgid "Mother's"
+msgstr "母亲"
+
+msgctxt "report:newborn.qrcard:"
+msgid "Name"
+msgstr "名称"
+
+msgctxt "report:newborn.qrcard:"
+msgid "PU"
+msgstr "PU"
+
+msgctxt "report:newborn.qrcard:"
+msgid "and"
+msgstr "和"
+
+msgctxt "report:newborn.qrcard:"
+msgid "cm"
+msgstr "厘米"
+
+msgctxt "report:newborn.qrcard:"
+msgid "gr"
+msgstr "gr"
+
+msgctxt "report:patient.qrcard:"
+msgid ":"
+msgstr "："
+
+msgctxt "report:patient.qrcard:"
+msgid "Blood Type"
+msgstr "血型"
+
+msgctxt "report:patient.qrcard:"
+msgid "DoB:"
+msgstr "出生日期："
+
+msgctxt "report:patient.qrcard:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "report:patient.qrcard:"
+msgid "Name"
+msgstr "名称"

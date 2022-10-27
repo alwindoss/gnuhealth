@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<form>
+    <group string="Patient" colspan="4" col="10" id="group_surgery_patient_header">
+        <field name="patient" colspan="3"/>
+        <field name="gender"/>
+        <label name="computed_age"/>
+        <field name="computed_age"/>
+        <label name="surgery_date"/>
+        <field name="surgery_date"/>
+        <label name="code"/>
+        <field name="code"/>
+    </group>
+    <newline/>
+    <group colspan="4" col="10" id="group_surgery_header">
+        <label name="protocol"/>
+        <field name="protocol"/>
+        <label name="description"/>
+        <field name="description"/>
+        <label name="pathology"/>
+        <field name="pathology"/>
+        <label name="classification"/>
+        <field name="classification"/>
+        <label name="operating_room"/>
+        <field name="operating_room"/>
+    </group>
+    <newline/>
+    <group colspan="4" col="6" id="group_surgery_1">
+        <label name="institution"/>
+        <field name="institution"/>
+        <label name="surgeon"/>
+        <field name="surgeon"/>
+        <label name="anesthetist"/>
+        <field name="anesthetist"/>
+    </group>
+    <newline/>
+    <group string="Surgical Intervention" id="surgical_intervention_group" colspan="4" col="6">
+        <field name="surgical_intervention"/>
+        <label name="approach"/>
+        <field name="approach"/>
+        <label name="anesthesia_type"/>
+        <field name="anesthesia_type"/>
+    </group>
+
+    <group string="Preoperative checklist" id="group_preoperative_checklist" colspan="4" col="12">
+        <label name="preop_assessment"/>
+        <field name="preop_assessment"/>
+        <label name="preop_bleeding_risk"/>
+        <field name="preop_bleeding_risk"/>
+        <label name="preop_oximeter"/>
+        <field name="preop_oximeter"/>
+        <label name="preop_site_marking"/>
+        <field name="preop_site_marking"/>
+        <label name="preop_antibiotics"/>
+        <field name="preop_antibiotics"/>
+        <label name="preop_sterility"/>
+        <field name="preop_sterility"/>
+    </group>
+    <notebook>
+        <page id="main_page" string="Main">
+            <group string="Patient positioning" id="group_patient_positioning" colspan="4">
+                <label name="patient_positioning"/>
+                <field name="patient_positioning"/>
+                <label name="laterality"/>
+                <field name="laterality"/>
+            </group>
+            <newline/>
+            <separator string="Details" id="separator_surgery_details" colspan="2"/>
+            <separator string="Anesthesia" id="separator_anesthesia_details" colspan="2"/>
+            <newline/>
+            <field name="extra_info" colspan="2"/>
+            <field name="anesthesia_report" colspan="2"/>
+        </page>
+        <page id="procedures_page" string="Procedures">
+            <field name="procedures" colspan="4"/>
+            <newline/>
+            <field name="drains" colspan="4"/>
+        </page>
+        <page id="complications" string="Complications">
+            <label name="clavien_dindo"/>
+            <field name="clavien_dindo"/>
+            <field name="surgery_complications" colspan="4"/>
+            <field name="complications_notes" colspan="4"/>
+        </page>
+        <page id="supplies_page" string="Supplies">
+            <field name="supplies"/>
+        </page>
+        <page id="team_page" string="Team">
+            <field name="surgery_team" colspan="4"/>
+        </page>
+        <page id="postop" string="Postoperative">
+            <group string="Postoperative guidelines" id="postop_group" colspan="4" yexpand="1">
+                <field name="postoperative_guidelines" colspan="4"/>
+            </group>
+        </page>
+        <page id="discharge" string="Discharge">
+            <group string="Discharge instructions" id="discharge_instructions_group" colspan="4" yexpand="1">
+                <field name="discharge_instructions" colspan="4"/>
+            </group>
+        </page>
+    </notebook>
+    <newline/>
+    <group id="end_surgery" colspan="4" col="16">
+        <label name="surgery_end_date"/>
+        <field name="surgery_end_date"/>
+        <label name="surgery_length"/>
+        <field name="surgery_length"/>
+        <label name="ellapsed_time"/>
+        <field name="ellapsed_time"/>
+        <label name="postoperative_dx"/>
+        <field name="postoperative_dx"/>
+        <field name="state"/>
+        <button name="confirmed" help="Confirm the scheduled surgery" string="Confirm" icon="tryton-go-next" confirm="Confirm the surgery and reserve the Operating Room ?"/>
+        <button name="cancel" help="Cancel the confirmed surgery" string="Cancel" icon="tryton-go-next" confirm="Cancel surgery ?"/>
+        <button name="start" help="Start the Surgery" string="Start" icon="tryton-go-next" confirm="Start the surgery ?"/>
+        <button name="done" help="Finnish the surgery" string="Finnish" icon="tryton-go-next" confirm="End this surgery ?"/>
+        <button name="signsurgery" help="Sign this surgery" string="Sign" icon="tryton-go-next" confirm="Finish and sign this surgery ? Itwill become read-only !"/>
+        <field name="signed_by"/>
+    </group>
+</form>

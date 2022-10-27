@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2017-2022 GNU Solidario <health@gnusolidario.org>
+SPDX-FileCopyrightText: 2017-2022 Luis Falcon <falcon@gnuhealth.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_collection_file_name">
+            <field name="text">You can not create a collection named "%(parent)s" in collection "%(child)s" because there is already a file with that name.</field>
+        </record>
+        <record model="ir.message" id="msg_collection_unique">
+            <field name="text">The collection name must be unique inside</field>
+        </record>
+     </data>
+</tryton>

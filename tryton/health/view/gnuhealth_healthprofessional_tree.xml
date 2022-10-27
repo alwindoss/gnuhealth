@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tree>
+    <field name="name" expand="1"/>
+    <field name="code" expand="1"/>
+    <field name="puid" expand="1"/>
+    <field name="institution" expand="1"/>
+    <field name="active" tree_invisible="1"/>
+</tree>

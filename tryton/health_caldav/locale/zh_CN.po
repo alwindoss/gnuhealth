@@ -1,0 +1,720 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-29 12:19+0000\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-health/health_caldav/zh_Hans/>\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
+
+msgctxt "field:calendar.calendar,description:"
+msgid "Description"
+msgstr "描述"
+
+msgctxt "field:calendar.calendar,name:"
+msgid "Name"
+msgstr "日历名称"
+
+msgctxt "field:calendar.calendar,owner:"
+msgid "Owner"
+msgstr "所有者"
+
+msgctxt "field:calendar.calendar,read_users:"
+msgid "Read Users"
+msgstr "拥有读权限的用户"
+
+msgctxt "field:calendar.calendar,write_users:"
+msgid "Write Users"
+msgstr "拥有写权限的用户"
+
+msgctxt "field:calendar.calendar-read-res.user,calendar:"
+msgid "Calendar"
+msgstr "日历"
+
+msgctxt "field:calendar.calendar-read-res.user,user:"
+msgid "User"
+msgstr "用户"
+
+msgctxt "field:calendar.calendar-write-res.user,calendar:"
+msgid "Calendar"
+msgstr "日历"
+
+msgctxt "field:calendar.calendar-write-res.user,user:"
+msgid "User"
+msgstr "用户"
+
+msgctxt "field:calendar.category,name:"
+msgid "Name"
+msgstr "分类名称"
+
+msgctxt "field:calendar.event,alarms:"
+msgid "Alarms"
+msgstr "提醒"
+
+msgctxt "field:calendar.event,all_day:"
+msgid "All Day"
+msgstr "全天事件"
+
+msgctxt "field:calendar.event,attendees:"
+msgid "Attendees"
+msgstr "出席者"
+
+msgctxt "field:calendar.event,calendar:"
+msgid "Calendar"
+msgstr "日历"
+
+msgctxt "field:calendar.event,categories:"
+msgid "Categories"
+msgstr "分类"
+
+msgctxt "field:calendar.event,classification:"
+msgid "Classification"
+msgstr "保密级别"
+
+msgctxt "field:calendar.event,description:"
+msgid "Description"
+msgstr "描述"
+
+msgctxt "field:calendar.event,dtend:"
+msgid "End Date"
+msgstr "结束日期"
+
+msgctxt "field:calendar.event,dtstart:"
+msgid "Start Date"
+msgstr "开始日期"
+
+msgctxt "field:calendar.event,exdates:"
+msgid "Exception Dates"
+msgstr "例外日期"
+
+msgctxt "field:calendar.event,exrules:"
+msgid "Exception Rules"
+msgstr "例外规则"
+
+msgctxt "field:calendar.event,location:"
+msgid "Location"
+msgstr "位置"
+
+msgctxt "field:calendar.event,occurences:"
+msgid "Occurences"
+msgstr "重复事件"
+
+msgctxt "field:calendar.event,organizer:"
+msgid "Organizer"
+msgstr "组织者"
+
+msgctxt "field:calendar.event,parent:"
+msgid "Parent"
+msgstr "上级"
+
+msgctxt "field:calendar.event,rdates:"
+msgid "Recurrence Dates"
+msgstr "重复日期"
+
+msgctxt "field:calendar.event,recurrence:"
+msgid "Recurrence"
+msgstr "重复"
+
+msgctxt "field:calendar.event,rrules:"
+msgid "Recurrence Rules"
+msgstr "重复规则"
+
+msgctxt "field:calendar.event,sequence:"
+msgid "Sequence"
+msgstr "序列"
+
+msgctxt "field:calendar.event,status:"
+msgid "Status"
+msgstr "状态"
+
+msgctxt "field:calendar.event,summary:"
+msgid "Summary"
+msgstr "事件概要"
+
+msgctxt "field:calendar.event,timezone:"
+msgid "Timezone"
+msgstr "时区"
+
+msgctxt "field:calendar.event,transp:"
+msgid "Time Transparency"
+msgstr "时间占用"
+
+msgctxt "field:calendar.event,uuid:"
+msgid "UUID"
+msgstr "UUID"
+
+msgctxt "field:calendar.event,vevent:"
+msgid "vevent"
+msgstr "vevent"
+
+msgctxt "field:calendar.event-calendar.category,category:"
+msgid "Category"
+msgstr "分类"
+
+msgctxt "field:calendar.event-calendar.category,event:"
+msgid "Event"
+msgstr "事件"
+
+msgctxt "field:calendar.event.alarm,event:"
+msgid "Event"
+msgstr "事件"
+
+msgctxt "field:calendar.event.alarm,valarm:"
+msgid "valarm"
+msgstr "valarm"
+
+msgctxt "field:calendar.event.attendee,attendee:"
+msgid "attendee"
+msgstr "出席者"
+
+msgctxt "field:calendar.event.attendee,email:"
+msgid "Email"
+msgstr "电子邮件"
+
+msgctxt "field:calendar.event.attendee,event:"
+msgid "Event"
+msgstr "事件"
+
+msgctxt "field:calendar.event.attendee,status:"
+msgid "Participation Status"
+msgstr "参与状态"
+
+msgctxt "field:calendar.event.exdate,date:"
+msgid "Is Date"
+msgstr "仅考虑日期"
+
+msgctxt "field:calendar.event.exdate,datetime:"
+msgid "Date"
+msgstr "日期"
+
+msgctxt "field:calendar.event.exdate,event:"
+msgid "Event"
+msgstr "事件"
+
+msgctxt "field:calendar.event.exrule,byday:"
+msgid "By Day"
+msgstr "按天"
+
+msgctxt "field:calendar.event.exrule,byhour:"
+msgid "By Hour"
+msgstr "按小时"
+
+msgctxt "field:calendar.event.exrule,byminute:"
+msgid "By Minute"
+msgstr "按分钟"
+
+msgctxt "field:calendar.event.exrule,bymonth:"
+msgid "By Month"
+msgstr "按月"
+
+msgctxt "field:calendar.event.exrule,bymonthday:"
+msgid "By Month Day"
+msgstr "按月日"
+
+msgctxt "field:calendar.event.exrule,bysecond:"
+msgid "By Second"
+msgstr "按秒"
+
+msgctxt "field:calendar.event.exrule,bysetpos:"
+msgid "By Position"
+msgstr "按位置"
+
+msgctxt "field:calendar.event.exrule,byweekno:"
+msgid "By Week Number"
+msgstr "按周数"
+
+msgctxt "field:calendar.event.exrule,byyearday:"
+msgid "By Year Day"
+msgstr "按年月日"
+
+msgctxt "field:calendar.event.exrule,count:"
+msgid "Count"
+msgstr "总数"
+
+msgctxt "field:calendar.event.exrule,event:"
+msgid "Event"
+msgstr "事件"
+
+msgctxt "field:calendar.event.exrule,freq:"
+msgid "Frequency"
+msgstr "频率"
+
+msgctxt "field:calendar.event.exrule,interval:"
+msgid "Interval"
+msgstr "间隔"
+
+msgctxt "field:calendar.event.exrule,until:"
+msgid "Until Date"
+msgstr "截止日期"
+
+msgctxt "field:calendar.event.exrule,until_date:"
+msgid "Is Date"
+msgstr "仅考虑日期"
+
+msgctxt "field:calendar.event.exrule,wkst:"
+msgid "Week Day"
+msgstr "工作日"
+
+msgctxt "field:calendar.event.rdate,date:"
+msgid "Is Date"
+msgstr "仅考虑日期"
+
+msgctxt "field:calendar.event.rdate,datetime:"
+msgid "Date"
+msgstr "日期"
+
+msgctxt "field:calendar.event.rdate,event:"
+msgid "Event"
+msgstr "事件"
+
+msgctxt "field:calendar.event.rrule,byday:"
+msgid "By Day"
+msgstr "按天"
+
+msgctxt "field:calendar.event.rrule,byhour:"
+msgid "By Hour"
+msgstr "按小时"
+
+msgctxt "field:calendar.event.rrule,byminute:"
+msgid "By Minute"
+msgstr "按分钟"
+
+msgctxt "field:calendar.event.rrule,bymonth:"
+msgid "By Month"
+msgstr "按月"
+
+msgctxt "field:calendar.event.rrule,bymonthday:"
+msgid "By Month Day"
+msgstr "按月日"
+
+msgctxt "field:calendar.event.rrule,bysecond:"
+msgid "By Second"
+msgstr "按秒"
+
+msgctxt "field:calendar.event.rrule,bysetpos:"
+msgid "By Position"
+msgstr "按位置"
+
+msgctxt "field:calendar.event.rrule,byweekno:"
+msgid "By Week Number"
+msgstr "按周数"
+
+msgctxt "field:calendar.event.rrule,byyearday:"
+msgid "By Year Day"
+msgstr "按年月日"
+
+msgctxt "field:calendar.event.rrule,count:"
+msgid "Count"
+msgstr "总数"
+
+msgctxt "field:calendar.event.rrule,event:"
+msgid "Event"
+msgstr "事件"
+
+msgctxt "field:calendar.event.rrule,freq:"
+msgid "Frequency"
+msgstr "频率"
+
+msgctxt "field:calendar.event.rrule,interval:"
+msgid "Interval"
+msgstr "间隔"
+
+msgctxt "field:calendar.event.rrule,until:"
+msgid "Until Date"
+msgstr "截止日期"
+
+msgctxt "field:calendar.event.rrule,until_date:"
+msgid "Is Date"
+msgstr "仅考虑日期"
+
+msgctxt "field:calendar.event.rrule,wkst:"
+msgid "Week Day"
+msgstr "工作日"
+
+msgctxt "field:calendar.location,name:"
+msgid "Name"
+msgstr "位置名称"
+
+msgctxt "field:res.user,calendars:"
+msgid "Calendars"
+msgstr "日历"
+
+msgctxt "help:calendar.calendar,owner:"
+msgid "The user must have an email"
+msgstr "用户需要有一个电子邮件"
+
+msgctxt "help:calendar.event,uuid:"
+msgid "Universally Unique Identifier"
+msgstr "通用唯一标识符"
+
+msgctxt "help:calendar.event.exdate,date:"
+msgid "Ignore time of field \"Date\", but handle as date only."
+msgstr "忽略 “日期” 字段中的时间，只按日期处理。"
+
+msgctxt "help:calendar.event.exrule,until_date:"
+msgid "Ignore time of field \"Until Date\", but handle as date only."
+msgstr "忽略 “截止日期\" 字段中的时间，只按日期处理。"
+
+msgctxt "help:calendar.event.rdate,date:"
+msgid "Ignore time of field \"Date\", but handle as date only."
+msgstr "忽略 \"日期\" 字段中的事件，只按日期处理。"
+
+msgctxt "help:calendar.event.rrule,until_date:"
+msgid "Ignore time of field \"Until Date\", but handle as date only."
+msgstr "忽略 \"截止日期\" 字段中的时间，只按日期处理。"
+
+msgctxt "model:calendar.calendar,name:"
+msgid "Calendar"
+msgstr "日历"
+
+msgctxt "model:calendar.calendar-read-res.user,name:"
+msgid "Calendar - read - User"
+msgstr "日历 - 读权限 - 用户"
+
+msgctxt "model:calendar.calendar-write-res.user,name:"
+msgid "Calendar - write - User"
+msgstr "日历 - 写权限 - 用户"
+
+msgctxt "model:calendar.category,name:"
+msgid "Category"
+msgstr "分类"
+
+msgctxt "model:calendar.event,name:"
+msgid "Event"
+msgstr "事件"
+
+msgctxt "model:calendar.event-calendar.category,name:"
+msgid "Event - Category"
+msgstr "事件 - 分类"
+
+msgctxt "model:calendar.event.alarm,name:"
+msgid "Alarm"
+msgstr "提醒"
+
+msgctxt "model:calendar.event.attendee,name:"
+msgid "Attendee"
+msgstr "出席者"
+
+msgctxt "model:calendar.event.exdate,name:"
+msgid "Exception Date"
+msgstr "例外日期"
+
+msgctxt "model:calendar.event.exrule,name:"
+msgid "Exception Rule"
+msgstr "例外规则"
+
+msgctxt "model:calendar.event.rdate,name:"
+msgid "Recurrence Date"
+msgstr "重复日期"
+
+msgctxt "model:calendar.event.rrule,name:"
+msgid "Recurrence Rule"
+msgstr "重复规则"
+
+msgctxt "model:calendar.location,name:"
+msgid "Location"
+msgstr "位置"
+
+msgctxt "model:ir.action,name:act_calendar_form"
+msgid "Calendars"
+msgstr "日历"
+
+msgctxt "model:ir.action,name:act_event_form"
+msgid "Events"
+msgstr "事件"
+
+msgctxt "model:ir.action,name:act_event_form3"
+msgid "Events"
+msgstr "事件"
+
+msgctxt "model:ir.message,text:msg_invalid_byday"
+msgid "Invalid *By Day* in recurrence rule \"%(self.rec_name,)s\""
+msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按天* 是无效规则"
+
+msgctxt "model:ir.message,text:msg_invalid_byhour"
+msgid "Invalid *By Hour* in recurrence rule \"%(self.rec_name,)s\""
+msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按小时* 是无效规则"
+
+msgctxt "model:ir.message,text:msg_invalid_byminute"
+msgid "Invalid *By Minute* in recurrence rule \"%(self.rec_name,)s\""
+msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按分钟* 是无效规则"
+
+msgctxt "model:ir.message,text:msg_invalid_bymonth"
+msgid "Invalid *By Month* in recurrence rule \"%(self.rec_name,)s\""
+msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按月* 是无效规则"
+
+msgctxt "model:ir.message,text:msg_invalid_bymonthday"
+msgid "Invalid *By Month Day* in recurrence rule \"%(self.rec_name,)s\""
+msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按月日* 是无效规则"
+
+msgctxt "model:ir.message,text:msg_invalid_bysecond"
+msgid "Invalid *By Second* in recurrence rule \"%(self.rec_name,)s\""
+msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按秒钟* 是无效规则"
+
+msgctxt "model:ir.message,text:msg_invalid_bysetpos"
+msgid "Invalid *By Position* in recurrence rule \"%(self.rec_name,)s\""
+msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按位置* 是无效规则"
+
+msgctxt "model:ir.message,text:msg_invalid_byweeknumber"
+msgid "Invalid *By Week Number* in recurrence rule \"%(self.rec_name,)s\""
+msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按周数* 是无效规则"
+
+msgctxt "model:ir.message,text:msg_invalid_byyearday"
+msgid "Invalid *By Year Day* in recurrence rule \"%(self.rec_name,)s\""
+msgstr "重复规则 \"%(self.rec_name,)s\" 中，*按年月日* 是无效规则"
+
+msgctxt "model:ir.message,text:msg_invalid_calendar_extension"
+msgid "The calendar name can not have the icd extension"
+msgstr "日历名称中不能包含 icd 扩展"
+
+msgctxt "model:ir.message,text:msg_invalid_recurrence"
+msgid "This recurrence can not be recurrent"
+msgstr "这种重复设置不可能重复"
+
+msgctxt "model:ir.rule.group,name:rule_group_calendar_admin"
+msgid "Calendar rule group"
+msgstr "日历规则组"
+
+msgctxt "model:ir.rule.group,name:rule_group_event_admin"
+msgid "Event rule group - admin"
+msgstr "事件规则组 - 管理"
+
+msgctxt "model:ir.rule.group,name:rule_group_read_calendar"
+msgid "Calendar rule group - read"
+msgstr "日历规则组 - 写入"
+
+msgctxt "model:ir.rule.group,name:rule_group_read_event"
+msgid "Event rule group - read"
+msgstr "事件规则组-读取"
+
+msgctxt "model:ir.rule.group,name:rule_group_write_calendar"
+msgid "Calendar rule group - write"
+msgstr "日历规则组 - 写入"
+
+msgctxt "model:ir.rule.group,name:rule_group_write_event"
+msgid "Event rule group - write"
+msgstr "事件规则组-写入"
+
+msgctxt "model:ir.ui.menu,name:menu_calendar"
+msgid "Calendar"
+msgstr "日历"
+
+msgctxt "model:ir.ui.menu,name:menu_calendar_form"
+msgid "Calendars"
+msgstr "日历"
+
+msgctxt "model:ir.ui.menu,name:menu_event_form"
+msgid "Events"
+msgstr "事件"
+
+msgctxt "model:res.group,name:group_calendar_admin"
+msgid "Calendar Group Administration "
+msgstr "日历组管理 "
+
+msgctxt "selection:calendar.event,classification:"
+msgid "Confidential"
+msgstr "保密"
+
+msgctxt "selection:calendar.event,classification:"
+msgid "Private"
+msgstr "私人"
+
+msgctxt "selection:calendar.event,classification:"
+msgid "Public"
+msgstr "公开"
+
+msgctxt "selection:calendar.event,status:"
+msgid "Cancelled"
+msgstr "已取消"
+
+msgctxt "selection:calendar.event,status:"
+msgid "Confirmed"
+msgstr "已确认"
+
+msgctxt "selection:calendar.event,status:"
+msgid "Tentative"
+msgstr "暂定"
+
+msgctxt "selection:calendar.event,transp:"
+msgid "Opaque"
+msgstr "由事件状态决定"
+
+msgctxt "selection:calendar.event,transp:"
+msgid "Transparent"
+msgstr "不占用"
+
+msgctxt "selection:calendar.event.attendee,status:"
+msgid "Accepted"
+msgstr "接受"
+
+msgctxt "selection:calendar.event.attendee,status:"
+msgid "Declined"
+msgstr "拒绝"
+
+msgctxt "selection:calendar.event.attendee,status:"
+msgid "Delegated"
+msgstr "委派"
+
+msgctxt "selection:calendar.event.attendee,status:"
+msgid "Needs Action"
+msgstr "需要行动"
+
+msgctxt "selection:calendar.event.attendee,status:"
+msgid "Tentative"
+msgstr "暂定"
+
+msgctxt "selection:calendar.event.exrule,freq:"
+msgid "Daily"
+msgstr "每天"
+
+msgctxt "selection:calendar.event.exrule,freq:"
+msgid "Hourly"
+msgstr "每小时"
+
+msgctxt "selection:calendar.event.exrule,freq:"
+msgid "Minutely"
+msgstr "每分钟"
+
+msgctxt "selection:calendar.event.exrule,freq:"
+msgid "Monthly"
+msgstr "每月"
+
+msgctxt "selection:calendar.event.exrule,freq:"
+msgid "Secondly"
+msgstr "每秒钟"
+
+msgctxt "selection:calendar.event.exrule,freq:"
+msgid "Weekly"
+msgstr "每周"
+
+msgctxt "selection:calendar.event.exrule,freq:"
+msgid "Yearly"
+msgstr "每年"
+
+msgctxt "selection:calendar.event.exrule,wkst:"
+msgid "Friday"
+msgstr "星期五"
+
+msgctxt "selection:calendar.event.exrule,wkst:"
+msgid "Monday"
+msgstr "星期一"
+
+msgctxt "selection:calendar.event.exrule,wkst:"
+msgid "Saturday"
+msgstr "星期六"
+
+msgctxt "selection:calendar.event.exrule,wkst:"
+msgid "Sunday"
+msgstr "星期日"
+
+msgctxt "selection:calendar.event.exrule,wkst:"
+msgid "Thursday"
+msgstr "星期四"
+
+msgctxt "selection:calendar.event.exrule,wkst:"
+msgid "Tuesday"
+msgstr "星期二"
+
+msgctxt "selection:calendar.event.exrule,wkst:"
+msgid "Wednesday"
+msgstr "星期三"
+
+msgctxt "selection:calendar.event.rrule,freq:"
+msgid "Daily"
+msgstr "每天"
+
+msgctxt "selection:calendar.event.rrule,freq:"
+msgid "Hourly"
+msgstr "每小时"
+
+msgctxt "selection:calendar.event.rrule,freq:"
+msgid "Minutely"
+msgstr "每分钟"
+
+msgctxt "selection:calendar.event.rrule,freq:"
+msgid "Monthly"
+msgstr "每月"
+
+msgctxt "selection:calendar.event.rrule,freq:"
+msgid "Secondly"
+msgstr "每秒钟"
+
+msgctxt "selection:calendar.event.rrule,freq:"
+msgid "Weekly"
+msgstr "每周"
+
+msgctxt "selection:calendar.event.rrule,freq:"
+msgid "Yearly"
+msgstr "每年"
+
+msgctxt "selection:calendar.event.rrule,wkst:"
+msgid "Friday"
+msgstr "星期五"
+
+msgctxt "selection:calendar.event.rrule,wkst:"
+msgid "Monday"
+msgstr "星期一"
+
+msgctxt "selection:calendar.event.rrule,wkst:"
+msgid "Saturday"
+msgstr "星期六"
+
+msgctxt "selection:calendar.event.rrule,wkst:"
+msgid "Sunday"
+msgstr "星期日"
+
+msgctxt "selection:calendar.event.rrule,wkst:"
+msgid "Thursday"
+msgstr "星期四"
+
+msgctxt "selection:calendar.event.rrule,wkst:"
+msgid "Tuesday"
+msgstr "星期二"
+
+msgctxt "selection:calendar.event.rrule,wkst:"
+msgid "Wednesday"
+msgstr "星期三"
+
+msgctxt "view:calendar.calendar:"
+msgid "Access Permissions"
+msgstr "访问权限"
+
+msgctxt "view:calendar.calendar:"
+msgid "General"
+msgstr "一般情况"
+
+msgctxt "view:calendar.event.exdate:"
+msgid "Time"
+msgstr "时间"
+
+msgctxt "view:calendar.event.rdate:"
+msgid "Time"
+msgstr "时间"
+
+msgctxt "view:calendar.event:"
+msgid "Attendees"
+msgstr "出席者"
+
+msgctxt "view:calendar.event:"
+msgid "Categories"
+msgstr "分类"
+
+msgctxt "view:calendar.event:"
+msgid "End Time"
+msgstr "结束时间"
+
+msgctxt "view:calendar.event:"
+msgid "General"
+msgstr "一般情况"
+
+msgctxt "view:calendar.event:"
+msgid "Occurences"
+msgstr "重复事件"
+
+msgctxt "view:calendar.event:"
+msgid "Start Time"
+msgstr "开始时间"

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tree>
+    <field name="number" expand="1"/>
+    <field name="name" expand="1"/>
+    <field name="plan_id"/>
+    <field name="insurance_type"/>
+    <field name="company"/>
+    <field name="category"/>
+    <field name="member_since"/>
+    <field name="member_exp" expand="1"/>
+</tree>

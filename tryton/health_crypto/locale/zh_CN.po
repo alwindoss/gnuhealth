@@ -1,0 +1,257 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:gnuhealth.birth_certificate,digest_current:"
+msgid "Current Hash"
+msgstr "当前哈希值"
+
+msgctxt "field:gnuhealth.birth_certificate,digest_status:"
+msgid "Altered"
+msgstr "已修改"
+
+msgctxt "field:gnuhealth.birth_certificate,digital_signature:"
+msgid "Digital Signature"
+msgstr "数字签名"
+
+msgctxt "field:gnuhealth.birth_certificate,document_digest:"
+msgid "Digest"
+msgstr "数字摘要"
+
+msgctxt "field:gnuhealth.birth_certificate,serializer:"
+msgid "Doc String"
+msgstr "文档字符串"
+
+msgctxt "field:gnuhealth.birth_certificate,serializer_current:"
+msgid "Current Doc"
+msgstr "当前文档"
+
+msgctxt "field:gnuhealth.death_certificate,digest_current:"
+msgid "Current Hash"
+msgstr "当前哈希值"
+
+msgctxt "field:gnuhealth.death_certificate,digest_status:"
+msgid "Altered"
+msgstr "已更改"
+
+msgctxt "field:gnuhealth.death_certificate,digital_signature:"
+msgid "Digital Signature"
+msgstr "数字签名"
+
+msgctxt "field:gnuhealth.death_certificate,document_digest:"
+msgid "Digest"
+msgstr "数字摘要"
+
+msgctxt "field:gnuhealth.death_certificate,serializer:"
+msgid "Doc String"
+msgstr "文档字符串"
+
+msgctxt "field:gnuhealth.death_certificate,serializer_current:"
+msgid "Current Doc"
+msgstr "当前文档"
+
+msgctxt "field:gnuhealth.patient.evaluation,digest_current:"
+msgid "Current Hash"
+msgstr "当前哈希值"
+
+msgctxt "field:gnuhealth.patient.evaluation,digest_status:"
+msgid "Altered"
+msgstr "已更改"
+
+msgctxt "field:gnuhealth.patient.evaluation,digital_signature:"
+msgid "Digital Signature"
+msgstr "数字签名"
+
+msgctxt "field:gnuhealth.patient.evaluation,document_digest:"
+msgid "Digest"
+msgstr "数字摘要"
+
+msgctxt "field:gnuhealth.patient.evaluation,serializer:"
+msgid "Doc String"
+msgstr "文档字符串"
+
+msgctxt "field:gnuhealth.patient.evaluation,serializer_current:"
+msgid "Current Doc"
+msgstr "当前文档"
+
+msgctxt "field:gnuhealth.prescription.order,digest_current:"
+msgid "Current Hash"
+msgstr "当前哈希值"
+
+msgctxt "field:gnuhealth.prescription.order,digest_status:"
+msgid "Altered"
+msgstr "已修改"
+
+msgctxt "field:gnuhealth.prescription.order,digital_signature:"
+msgid "Digital Signature"
+msgstr "数字签名"
+
+msgctxt "field:gnuhealth.prescription.order,document_digest:"
+msgid "Digest"
+msgstr "数字摘要"
+
+msgctxt "field:gnuhealth.prescription.order,serializer:"
+msgid "Doc String"
+msgstr "文档字符串"
+
+msgctxt "field:gnuhealth.prescription.order,serializer_current:"
+msgid "Current Doc"
+msgstr "当前文档"
+
+msgctxt "help:gnuhealth.birth_certificate,digest_status:"
+msgid ""
+"This field will be set whenever parts of the main original document has been"
+" changed. Please note that the verification is done only on selected  "
+"fields."
+msgstr "原始文档某些部分被修改后，系统会自动设置这个字段，但需要注意的是，系统只验证事先选择的部分字段，不是验证全部字段。"
+
+msgctxt "help:gnuhealth.birth_certificate,document_digest:"
+msgid "Original Document Digest"
+msgstr "原始文档生成的数字摘要"
+
+msgctxt "help:gnuhealth.death_certificate,digest_status:"
+msgid ""
+"This field will be set whenever parts of the main original document has been"
+" changed. Please note that the verification is done  only on selected "
+"fields."
+msgstr "原始文档某些部分被修改后，系统会自动设置这个字段，但需要注意的是，系统只验证事先选择的部分字段，不是验证全部字段。"
+
+msgctxt "help:gnuhealth.death_certificate,document_digest:"
+msgid "Original Document Digest"
+msgstr "原始文档生成的数字摘要"
+
+msgctxt "help:gnuhealth.patient.evaluation,digest_status:"
+msgid ""
+"This field will be set whenever parts of the main original document has been"
+" changed. Please note that the verification is done only on selected fields."
+msgstr "原始文档某些部分被修改后，系统会自动设置这个字段，但需要注意的是，系统只验证事先选择的部分字段，不是验证全部字段。"
+
+msgctxt "help:gnuhealth.patient.evaluation,document_digest:"
+msgid "Original Document Digest"
+msgstr "原始文档生成的数字摘要"
+
+msgctxt "help:gnuhealth.prescription.order,digest_status:"
+msgid ""
+"This field will be set whenever parts of the main original document has been"
+" changed. Please note that the verification is done only on selected fields."
+msgstr "原始文档某些部分被修改后，系统会自动设置这个字段，但需要注意的是，系统只验证事先选择的部分字段，不是验证全部字段。"
+
+msgctxt "help:gnuhealth.prescription.order,document_digest:"
+msgid "Original Document Digest"
+msgstr "原始文档生成的数字摘要"
+
+msgctxt "view:gnuhealth.birth_certificate:"
+msgid "Altered / current String"
+msgstr "已更改 / 当前字符串"
+
+msgctxt "view:gnuhealth.birth_certificate:"
+msgid "Digital Signature"
+msgstr "数字签名"
+
+msgctxt "view:gnuhealth.birth_certificate:"
+msgid "Document validation"
+msgstr "文档验证"
+
+msgctxt "view:gnuhealth.birth_certificate:"
+msgid "Generate"
+msgstr "生成"
+
+msgctxt "view:gnuhealth.birth_certificate:"
+msgid "Generate certificate ?"
+msgstr "确定要生成证书?"
+
+msgctxt "view:gnuhealth.birth_certificate:"
+msgid "Generate the certificate"
+msgstr "生成证书"
+
+msgctxt "view:gnuhealth.birth_certificate:"
+msgid "Hashes"
+msgstr "哈希值"
+
+msgctxt "view:gnuhealth.birth_certificate:"
+msgid "Original String"
+msgstr "原始字符串"
+
+msgctxt "view:gnuhealth.death_certificate:"
+msgid "Altered / current String"
+msgstr "已更改 / 当前字符串"
+
+msgctxt "view:gnuhealth.death_certificate:"
+msgid "Digital Signature"
+msgstr "数字签名"
+
+msgctxt "view:gnuhealth.death_certificate:"
+msgid "Document validation"
+msgstr "文档验证"
+
+msgctxt "view:gnuhealth.death_certificate:"
+msgid "Generate"
+msgstr "生成"
+
+msgctxt "view:gnuhealth.death_certificate:"
+msgid "Generate certificate ?"
+msgstr "确定要生成证书?"
+
+msgctxt "view:gnuhealth.death_certificate:"
+msgid "Generate the certificate"
+msgstr "生成证书"
+
+msgctxt "view:gnuhealth.death_certificate:"
+msgid "Hashes"
+msgstr "哈希值"
+
+msgctxt "view:gnuhealth.death_certificate:"
+msgid "Original String"
+msgstr "原始字符串"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Altered / current String"
+msgstr "已更改 / 当前字符串"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Close Evaluation"
+msgstr "结束评估"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Close and Sign evaluation ?"
+msgstr "结束评估并签名？"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Digital Signature"
+msgstr "数字签名"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Document validation"
+msgstr "文档验证"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Hashes"
+msgstr "哈希值"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Original String"
+msgstr "原始字符串"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Sign this patient evaluation"
+msgstr "为当前患者评估签名"
+
+msgctxt "view:gnuhealth.patient.evaluation:"
+msgid "Validation"
+msgstr "验证"
+
+msgctxt "view:gnuhealth.prescription.order:"
+msgid "Document validation"
+msgstr "文档验证"
+
+msgctxt "view:gnuhealth.prescription.order:"
+msgid "Generate Validation"
+msgstr "生成验证"
+
+msgctxt "view:gnuhealth.prescription.order:"
+msgid "Generate Validation ?"
+msgstr "是否生成验证？"
+
+msgctxt "view:gnuhealth.prescription.order:"
+msgid "Generate the prescription validation code"
+msgstr "生成处方验证代码"
