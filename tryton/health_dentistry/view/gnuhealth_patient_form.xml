@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<data>
+
+    <!-- Page on Patient form-->
+    <xpath expr="/form/notebook/page[@id=&quot;general_info&quot;]" position="after">
+        <page string="Dentistry" id="patient_dentistry">
+            <group string="Odontogram" id="dental_main_info" colspan="4" col="2">
+                <group id="dental_schema" colspan="4" col="4">
+                    <separator
+                        string="Legends:     (*)  Decayed      (X)  Missing      (#)  Filled      (=)  For Extraction"
+                        id="legend" colspan="4" xalign="0.5"/>
+                    <label string="Right" id="rigth1"/>
+                    <field name="teeth1"/>
+                    <field name="teeth2"/>
+                    <label string="Left" id="left1"/>
+                    <newline/>
+                    <label string="" id="rigth2"/>
+                    <field name="teeth4"/>
+                    <field name="teeth3"/>
+                    <label string="" id="left2"/>
+                </group>
+                <group id="dental_primary_use" colspan="4">
+                   <label name="use_primary_schema" xalign="0.5"/>
+                   <field name="use_primary_schema" xalign="0.5"/>
+                </group>
+                <group id="dental_schema_primary" colspan="4" col="4">
+                    <label string="Right" id="rigth3"/>
+                    <field name="teeth5"/>
+                    <field name="teeth6"/>
+                    <label string="Left" id="left3"/>
+                    <newline/>
+                    <label string="" id="rigth4"/>
+                    <field name="teeth8"/>
+                    <field name="teeth7"/>
+                    <label string="" id="left4"/>
+                </group>
+            </group>
+            <group string="" id="dmft_index" colspan="2" col="4">
+                <label name="dmft_index"/>
+                <field name="dmft_index"/>
+                <label name="dmft_index_primary"/>
+                <field name="dmft_index_primary"/>
+            </group>
+            <group string="" id="buttons" colspan="2" col="2">
+                <button name="set_odontogram_wizard" string="Set Odontogram"
+                    icon="tryton-ok" colspan="2"/>
+            </group>
+        </page>
+    </xpath>
+
+</data>

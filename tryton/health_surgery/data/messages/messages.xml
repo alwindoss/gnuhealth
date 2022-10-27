@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- This file is part of GNU Health.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_end_date_before_start">
+            <field name="text">End time "%(end_date)s" BEFORE surgery date "%(surgery_date)s"</field>
+        </record>
+        <record model="ir.message" id="msg_or_is_not_available">
+            <field name="text">Operating Room is not available</field>
+        </record>
+        <record model="ir.message" id="msg_or_and_time_needed">
+            <field name="text">Operating Room and estimated end time are needed in order to confirm the surgery</field>
+        </record>
+        <record model="ir.message" id="msg_surgery_is_done">
+            <field name="text">This surgery is at state Done and has been signed. You can no longer modify it.</field>
+        </record>
+    </data>
+</tryton>

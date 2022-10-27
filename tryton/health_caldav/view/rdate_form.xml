@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2009-2016 Tryton Foundation <info@tryton.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+SPDX-FileCopyrightText: 2011-2022 Luis Falcón <falcon@gnuhealth.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <label name="event"/>
+    <field name="event" colspan="3"/>
+    <label name="datetime"/>
+    <field name="datetime"/>
+    <label name="date"/>
+    <field name="date"/>
+</form>

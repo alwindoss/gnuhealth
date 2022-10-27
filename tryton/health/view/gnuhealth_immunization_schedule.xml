@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <label name="sched"/>
+    <field name="sched"/>
+    <label name="country"/>
+    <field name="country"/>
+    <label name="year"/>
+    <field name="year"/>
+    <label name="active"/>
+    <field name="active"/>
+    <newline/>
+    <label name="desc"/>
+    <field colspan="4" name="desc"/>
+    <field colspan="4" name="vaccines"/>
+</form>

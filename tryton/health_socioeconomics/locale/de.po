@@ -1,0 +1,660 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-12-26 21:18+0000\n"
+"Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/gnu-health/"
+"health_socioeconomics/de/>\n"
+"Language: de\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.1-dev\n"
+
+msgctxt "field:gnuhealth.patient,domestic_violence:"
+msgid "Domestic violence"
+msgstr "Häusliche Gewalt"
+
+msgctxt "field:gnuhealth.patient,drug_addiction:"
+msgid "Drug addiction"
+msgstr "Abhängigkeiten"
+
+msgctxt "field:gnuhealth.patient,education:"
+msgid "Education Level"
+msgstr "Bildungsgrad"
+
+msgctxt "field:gnuhealth.patient,hostile_area:"
+msgid "Hostile Area"
+msgstr "Unsichere Wohngegend"
+
+msgctxt "field:gnuhealth.patient,hours_outside:"
+msgid "Hours outside home"
+msgstr "Stunden außerhalb der Wohnung"
+
+msgctxt "field:gnuhealth.patient,housing:"
+msgid "Housing conditions"
+msgstr "Wohnverhältnisse"
+
+msgctxt "field:gnuhealth.patient,occupation:"
+msgid "Occupation"
+msgstr "Tätigkeit"
+
+msgctxt "field:gnuhealth.patient,prison_current:"
+msgid "Currently in prison"
+msgstr "Derzeit im Gefängnis"
+
+msgctxt "field:gnuhealth.patient,prison_past:"
+msgid "Has been in prison"
+msgstr "Vorbestraft (Gefängnisstrafe)"
+
+msgctxt "field:gnuhealth.patient,relative_in_prison:"
+msgid "Relative in prison"
+msgstr "Angehörige im Strafvollzug"
+
+msgctxt "field:gnuhealth.patient,school_withdrawal:"
+msgid "School withdrawal"
+msgstr "Schulabbrecher"
+
+msgctxt "field:gnuhealth.patient,ses_assessments:"
+msgid "Assessments"
+msgstr "Einschätzung"
+
+msgctxt "field:gnuhealth.patient,ses_notes:"
+msgid "Extra info"
+msgstr "Extra Info"
+
+msgctxt "field:gnuhealth.patient,sexual_abuse:"
+msgid "Sexual abuse"
+msgstr "Sexueller Missbrauch"
+
+msgctxt "field:gnuhealth.patient,single_parent:"
+msgid "Single parent family"
+msgstr "Haushalt mit nur einem Erwachsenen"
+
+msgctxt "field:gnuhealth.patient,teenage_pregnancy:"
+msgid "Teenage pregnancy"
+msgstr "Teenager Schwangerschaft"
+
+msgctxt "field:gnuhealth.patient,working_children:"
+msgid "Working children"
+msgstr "Kinderarbeit"
+
+msgctxt "field:gnuhealth.patient,works_at_home:"
+msgid "Works at home"
+msgstr "Arbeitet von Zuhause"
+
+msgctxt "field:gnuhealth.ses.assessment,assessment_date:"
+msgid "Date"
+msgstr "Datum"
+
+msgctxt "field:gnuhealth.ses.assessment,computed_age:"
+msgid "Age"
+msgstr "Alter"
+
+msgctxt "field:gnuhealth.ses.assessment,create_date:"
+msgid "Create Date"
+msgstr "Datum erstellen"
+
+msgctxt "field:gnuhealth.ses.assessment,create_uid:"
+msgid "Create User"
+msgstr "Benutzer anlegen"
+
+msgctxt "field:gnuhealth.ses.assessment,du:"
+msgid "DU"
+msgstr "Wohnbereich"
+
+msgctxt "field:gnuhealth.ses.assessment,education:"
+msgid "Education Level"
+msgstr "Bildungsniveau"
+
+msgctxt "field:gnuhealth.ses.assessment,fam_apgar_affection:"
+msgid "Family affection"
+msgstr "Familiäre Zuneigung"
+
+msgctxt "field:gnuhealth.ses.assessment,fam_apgar_decisions:"
+msgid "Decision making"
+msgstr "Entscheidungsfindung"
+
+msgctxt "field:gnuhealth.ses.assessment,fam_apgar_discussion:"
+msgid "Problems discussion"
+msgstr "Problemdiskussion"
+
+msgctxt "field:gnuhealth.ses.assessment,fam_apgar_help:"
+msgid "Help from family"
+msgstr "Unterstützung von Familie"
+
+msgctxt "field:gnuhealth.ses.assessment,fam_apgar_score:"
+msgid "Score"
+msgstr "APGAR-Wert"
+
+msgctxt "field:gnuhealth.ses.assessment,fam_apgar_timesharing:"
+msgid "Time sharing"
+msgstr "Gemeinsame Zeit"
+
+msgctxt "field:gnuhealth.ses.assessment,gender:"
+msgid "Gender"
+msgstr "Geschlecht"
+
+msgctxt "field:gnuhealth.ses.assessment,health_professional:"
+msgid "Health Professional"
+msgstr "Gesundheitsfachkraft"
+
+msgctxt "field:gnuhealth.ses.assessment,housing:"
+msgid "Housing conditions"
+msgstr "Wohnverhältnisse"
+
+msgctxt "field:gnuhealth.ses.assessment,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.ses.assessment,income:"
+msgid "Income"
+msgstr "Einkommen"
+
+msgctxt "field:gnuhealth.ses.assessment,notes:"
+msgid "Notes"
+msgstr "Vermerk"
+
+msgctxt "field:gnuhealth.ses.assessment,occupation:"
+msgid "Occupation"
+msgstr "Beruf"
+
+msgctxt "field:gnuhealth.ses.assessment,patient:"
+msgid "Patient"
+msgstr "Patient"
+
+msgctxt "field:gnuhealth.ses.assessment,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:gnuhealth.ses.assessment,ses:"
+msgid "Socioeconomics"
+msgstr "Sozioökonomischer Status"
+
+msgctxt "field:gnuhealth.ses.assessment,signed_by:"
+msgid "Signed by"
+msgstr "Unterzeichnet von"
+
+msgctxt "field:gnuhealth.ses.assessment,state:"
+msgid "State"
+msgstr "Status"
+
+msgctxt "field:gnuhealth.ses.assessment,write_date:"
+msgid "Write Date"
+msgstr "Speicherdatum"
+
+msgctxt "field:gnuhealth.ses.assessment,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:party.party,education:"
+msgid "Education"
+msgstr "Bildung"
+
+msgctxt "field:party.party,occupation:"
+msgid "Occupation"
+msgstr "Tätigkeit"
+
+msgctxt "help:gnuhealth.patient,education:"
+msgid "Education Level"
+msgstr "Bildungsgrad"
+
+msgctxt "help:gnuhealth.patient,hostile_area:"
+msgid "Check if patient lives in a zone of high hostility (eg, war)"
+msgstr ""
+"Markieren Sie dieses Kästchen, wenn der Patient in einer unsicheren Gegend "
+"wohnt (z.B. Kriegsgebiet)"
+
+msgctxt "help:gnuhealth.patient,hours_outside:"
+msgid "Number of hours a day the patient spend outside the house"
+msgstr ""
+"Anzahl der Stunden pro Tag, die der Patient außerhalb der Wohnung verbringt"
+
+msgctxt "help:gnuhealth.patient,housing:"
+msgid "Housing and sanitary living conditions"
+msgstr "Wohn- und Hygieneverhältnisse"
+
+msgctxt "help:gnuhealth.patient,relative_in_prison:"
+msgid ""
+"Check if someone from the nuclear family - parents / sibblings  is or has "
+"been in prison"
+msgstr ""
+"Überprüfen, ob jemand aus der Kernfamilie - Eltern / Geschwister  im "
+"Gefängnis ist oder war"
+
+msgctxt "help:gnuhealth.patient,ses_assessments:"
+msgid "Socioeconomics and Family assessments history"
+msgstr ""
+
+msgctxt "help:gnuhealth.patient,works_at_home:"
+msgid "Check if the patient works at his / her house"
+msgstr ""
+"Markieren Sie dieses Kästchen, wenn der Patient von zu Hause aus arbeitet"
+
+msgctxt "help:gnuhealth.ses.assessment,assessment_date:"
+msgid "Assessment date"
+msgstr "Datum der Beurteilung"
+
+msgctxt "help:gnuhealth.ses.assessment,computed_age:"
+msgid "Computed patient age at the moment of the evaluation"
+msgstr "Berechnetes Patientenalter zum Zeitpunkt der Auswertung"
+
+msgctxt "help:gnuhealth.ses.assessment,du:"
+msgid "Domiciliary Unit"
+msgstr "Wohneinheit"
+
+msgctxt "help:gnuhealth.ses.assessment,education:"
+msgid "Education Level"
+msgstr "Bildungsniveau"
+
+msgctxt "help:gnuhealth.ses.assessment,fam_apgar_affection:"
+msgid ""
+"Is the patient satisfied with the level of affection coming from the family "
+"?"
+msgstr ""
+"Ist der Patient mit dem Grad der Zuneigung seitens der Familie zufrieden ?"
+
+msgctxt "help:gnuhealth.ses.assessment,fam_apgar_decisions:"
+msgid ""
+"Is the patient satisfied with the level of making important decisions as a "
+"group ?"
+msgstr ""
+"Ist der Patient zufrieden damit, als Gruppe wichtige Entscheidungen zu "
+"treffen?"
+
+msgctxt "help:gnuhealth.ses.assessment,fam_apgar_discussion:"
+msgid ""
+"Is the patient satisfied with the level talking over the problems as family "
+"?"
+msgstr ""
+"Ist der Patient zufrieden mit dem Niveau, in dem er als Familie über die "
+"Probleme spricht?"
+
+msgctxt "help:gnuhealth.ses.assessment,fam_apgar_help:"
+msgid ""
+"Is the patient satisfied with the level of help coming from the family when "
+"there is a problem ?"
+msgstr ""
+"Ist der Patient mit der Hilfe der Familie zufrieden, wenn ein Problem "
+"vorliegt?"
+
+msgctxt "help:gnuhealth.ses.assessment,fam_apgar_score:"
+msgid ""
+"Total Family APGAR \n"
+"7 - 10 : Functional Family \n"
+"4 - 6  : Some level of disfunction \n"
+"0 - 3  : Severe disfunctional family \n"
+msgstr ""
+"Gesamtfamilie APGAR\n"
+"7 - 10: Funktionelle Familie\n"
+"4 - 6: Einige Funktionsstörungen\n"
+"0 - 3: Familie mit schwerer Funktionsstörung \n"
+
+msgctxt "help:gnuhealth.ses.assessment,fam_apgar_timesharing:"
+msgid ""
+"Is the patient satisfied with the level of time that they spend together ?"
+msgstr "Ist der Patient mit der Zeit zufrieden, die er zusammen verbringt?"
+
+msgctxt "help:gnuhealth.ses.assessment,health_professional:"
+msgid "Health professional"
+msgstr " "
+
+msgctxt "help:gnuhealth.ses.assessment,housing:"
+msgid "Housing and sanitary living conditions"
+msgstr "Wohn- und sanitäre Lebensbedingungen"
+
+msgctxt "help:gnuhealth.ses.assessment,ses:"
+msgid "SES - Socioeconomic Status"
+msgstr "SES - Sozioökonomischer Status"
+
+msgctxt "help:gnuhealth.ses.assessment,signed_by:"
+msgid "Health Professional that finished the patient evaluation"
+msgstr "Mitarbeiter, der die Untersuchung des Patienten beendet hat"
+
+msgctxt "help:party.party,education:"
+msgid "Education Level"
+msgstr "Bildungsgrad"
+
+msgctxt "model:gnuhealth.ses.assessment,name:"
+msgid "Socioeconomics and Family Functionality Assessment"
+msgstr "Sozioökonomie und Bewertung der Familienfunktionalität"
+
+msgctxt "model:ir.action,name:act_ses_assessment"
+msgid "Socioeconomic and Family Assessment"
+msgstr "Sozioökonomische und familiäre Bewertung"
+
+msgctxt "model:ir.action,name:act_ses_family_assessment"
+msgid "Socioeconomics and Family Assessment"
+msgstr "Sozioökonomische und familiäre Bewertung"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_ses_assessment_menu"
+msgid "Socioeconomic Assessments"
+msgstr "Sozioökonomische Beurteilungen"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "Incomplete Primary School"
+msgstr "Grundschule nicht beendet"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "Incomplete Secondary School"
+msgstr "Sekundäre Schule nicht beendet"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "None"
+msgstr "Kein(e)"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "Primary School"
+msgstr "Grundschulbildung"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "Secondary School"
+msgstr "Sekundarschulbildung"
+
+msgctxt "selection:gnuhealth.patient,education:"
+msgid "University"
+msgstr "Universitätsabschluss"
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid "Comfortable and good sanitary conditions"
+msgstr "Gute, komfortable Sanitäreinrichtungen"
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid "Luxury and excellent sanitary conditions"
+msgstr "Luxuriöse, hervorragende Sanitäreinrichtungen"
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid "Roomy and excellent sanitary conditions"
+msgstr "Geräumige, hervorragende Sanitäreinrichtungen"
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid "Shanty, deficient sanitary conditions"
+msgstr "Baufällige, unzulängliche Sanitäreinrichtungen"
+
+msgctxt "selection:gnuhealth.patient,housing:"
+msgid "Small, crowded but with good sanitary conditions"
+msgstr "Kleine, überfüllte jedoch gute Sanitäreinrichtungen"
+
+msgctxt "selection:gnuhealth.ses.assessment,education:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,education:"
+msgid "Incomplete Primary School"
+msgstr "Grundschule nicht beendet"
+
+msgctxt "selection:gnuhealth.ses.assessment,education:"
+msgid "Incomplete Secondary School"
+msgstr "Sekundäre Schule nicht beendet"
+
+msgctxt "selection:gnuhealth.ses.assessment,education:"
+msgid "None"
+msgstr "Keine"
+
+msgctxt "selection:gnuhealth.ses.assessment,education:"
+msgid "Primary School"
+msgstr "Grundschule"
+
+msgctxt "selection:gnuhealth.ses.assessment,education:"
+msgid "Secondary School"
+msgstr "Sekundarschule"
+
+msgctxt "selection:gnuhealth.ses.assessment,education:"
+msgid "University"
+msgstr "Universität"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
+msgid "Moderately"
+msgstr "Mäßig"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
+msgid "None"
+msgstr "Nicht"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_affection:"
+msgid "Very much"
+msgstr "Sehr stark"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
+msgid "Moderately"
+msgstr "Mäßig"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
+msgid "None"
+msgstr "Nicht"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_decisions:"
+msgid "Very much"
+msgstr "Sehr stark"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
+msgid "Moderately"
+msgstr "Mäßig"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
+msgid "None"
+msgstr "Nicht"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_discussion:"
+msgid "Very much"
+msgstr "Sehr stark"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
+msgid "Moderately"
+msgstr "Mäßig"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
+msgid "None"
+msgstr "Nicht"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_help:"
+msgid "Very much"
+msgstr "Sehr stark"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
+msgid "Moderately"
+msgstr "Mäßig"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
+msgid "None"
+msgstr "Nicht"
+
+msgctxt "selection:gnuhealth.ses.assessment,fam_apgar_timesharing:"
+msgid "Very much"
+msgstr "Sehr stark"
+
+msgctxt "selection:gnuhealth.ses.assessment,gender:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,gender:"
+msgid "Female"
+msgstr "Weiblich"
+
+msgctxt "selection:gnuhealth.ses.assessment,gender:"
+msgid "Male"
+msgstr "Männlich"
+
+msgctxt "selection:gnuhealth.ses.assessment,housing:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,housing:"
+msgid "Comfortable and good sanitary conditions"
+msgstr "Komfortabel und gute sanitäre Bedingungen"
+
+msgctxt "selection:gnuhealth.ses.assessment,housing:"
+msgid "Luxury and excellent sanitary conditions"
+msgstr "Luxuriös und hervorragende Sanitäreinrichtungen"
+
+msgctxt "selection:gnuhealth.ses.assessment,housing:"
+msgid "Roomy and excellent sanitary conditions"
+msgstr "Geräumig und hervorragende sanitäre Bedingungen"
+
+msgctxt "selection:gnuhealth.ses.assessment,housing:"
+msgid "Shanty, deficient sanitary conditions"
+msgstr "Baufällige, unzulängliche Sanitäreinrichtungen"
+
+msgctxt "selection:gnuhealth.ses.assessment,housing:"
+msgid "Small, crowded but with good sanitary conditions"
+msgstr "Kleine, überfüllte jedoch gute Sanitäreinrichtungen"
+
+msgctxt "selection:gnuhealth.ses.assessment,income:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,income:"
+msgid "High"
+msgstr "Hoch"
+
+msgctxt "selection:gnuhealth.ses.assessment,income:"
+msgid "Low"
+msgstr "Gering"
+
+msgctxt "selection:gnuhealth.ses.assessment,income:"
+msgid "Medium"
+msgstr "Mittel"
+
+msgctxt "selection:gnuhealth.ses.assessment,ses:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,ses:"
+msgid "Higher"
+msgstr "Höher"
+
+msgctxt "selection:gnuhealth.ses.assessment,ses:"
+msgid "Lower"
+msgstr "Unter"
+
+msgctxt "selection:gnuhealth.ses.assessment,ses:"
+msgid "Lower-middle"
+msgstr "Unter-mitte"
+
+msgctxt "selection:gnuhealth.ses.assessment,ses:"
+msgid "Middle"
+msgstr "Mitte"
+
+msgctxt "selection:gnuhealth.ses.assessment,ses:"
+msgid "Middle-upper"
+msgstr "Mittel-oben"
+
+msgctxt "selection:gnuhealth.ses.assessment,state:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:gnuhealth.ses.assessment,state:"
+msgid "Done"
+msgstr "Erledigt"
+
+msgctxt "selection:gnuhealth.ses.assessment,state:"
+msgid "In progress"
+msgstr "Laufend"
+
+msgctxt "selection:party.party,education:"
+msgid ""
+msgstr " "
+
+msgctxt "selection:party.party,education:"
+msgid "Incomplete Primary School"
+msgstr "Grundschule nicht beendet"
+
+msgctxt "selection:party.party,education:"
+msgid "Incomplete Secondary School"
+msgstr "Sekundäre Schule nicht beendet"
+
+msgctxt "selection:party.party,education:"
+msgid "None"
+msgstr "Kein(e)"
+
+msgctxt "selection:party.party,education:"
+msgid "Primary School"
+msgstr "Grundschulbildung"
+
+msgctxt "selection:party.party,education:"
+msgid "Secondary School"
+msgstr "Sekundarschulbildung"
+
+msgctxt "selection:party.party,education:"
+msgid "University"
+msgstr "Universitätsabschluss"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Current Status"
+msgstr "Aktueller Status"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Notes"
+msgstr "Notiz"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Other Family and Environmental determinants"
+msgstr "Andere familiäre und umweltbedingte Faktoren"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Socioeconomics"
+msgstr "Sozioökonomie"
+
+msgctxt "view:gnuhealth.ses.assessment:"
+msgid "Done"
+msgstr "Erledigt"
+
+msgctxt "view:gnuhealth.ses.assessment:"
+msgid "End assessment"
+msgstr "Bewertung beenden"
+
+msgctxt "view:gnuhealth.ses.assessment:"
+msgid "End this assessment ?"
+msgstr "Diese Bewertung beenden?"
+
+msgctxt "view:gnuhealth.ses.assessment:"
+msgid "Family Functionality"
+msgstr "Familienfunktionalität"
+
+msgctxt "view:gnuhealth.ses.assessment:"
+msgid "Family functionality"
+msgstr "Funktionalität der Familie"
+
+msgctxt "view:gnuhealth.ses.assessment:"
+msgid "Notes"
+msgstr "Notiz"
+
+msgctxt "view:gnuhealth.ses.assessment:"
+msgid "Socioeconomics"
+msgstr "Sozioökonomie"
+
+msgctxt "view:gnuhealth.ses.assessment:"
+msgid "Socioeconomics and Family Assessment"
+msgstr "Sozioökonomische und familiäre Bewertung"
+
+msgctxt "view:gnuhealth.ses.assessment:"
+msgid "Socioeconomics and Family assessment"
+msgstr "Sozioökonomische und familiäre Bewertung"

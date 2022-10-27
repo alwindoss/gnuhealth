@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<form>
+    <group id="preop_header" colspan="4" col="6">
+        <label name="patient"/>
+        <field name="patient"/>
+        <label name="health_professional"/>
+        <field name="health_professional"/>
+        <label name="assessment_date"/>
+        <field name="assessment_date"/>
+        <label name="specialty"/>
+        <field name="specialty"/>
+        <label name="surgery"/>
+        <field name="surgery"/>
+        <label name="evaluation"/>
+        <field name="evaluation"/>
+    </group>
+    <newline/>
+    <group string="Critical Information" id="group_preop_critical" colspan="4">
+        <field name="critical_info"/>
+    </group>
+    <group string="Risk assessment" id="group_preop_risk" colspan="4">
+        <label name="preop_asa"/>
+        <field name="preop_asa"/>
+        <label name="preop_mallampati"/>
+        <field name="preop_mallampati"/>
+        <label name="preop_rcri"/>
+        <field name="preop_rcri"/>
+        <label name="surgical_wound"/>
+        <field name="surgical_wound"/>
+    </group>
+    <newline/>
+    <group string="Complementary tests" id="preop_complementary_tests" colspan="4" col="6">
+        <label name="ecg"/>
+        <field name="ecg"/>
+        <label name="imaging_test"/>
+        <field name="imaging_test"/>
+        <label name="lab_test"/>
+        <field name="lab_test"/>
+    </group>
+    <newline/>
+    <group string="Misc" id="preop_misc">
+        <label name="no_anesthesia"/>
+        <field name="no_anesthesia"/>
+        <label name="needs_blood_reserve"/>
+        <field name="needs_blood_reserve"/>
+    </group>
+    <group string="Decision" id="preop_decision" colspan="4">
+        <field name="surgical_decision"/>
+    </group>
+    <group string="Notes" id="preop_notes" colspan="4">
+        <field name="short_notes"/>
+    </group>
+
+</form>

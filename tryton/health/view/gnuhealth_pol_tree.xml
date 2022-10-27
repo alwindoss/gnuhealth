@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tree>
+    <field name="page"/>
+    <field name="person"/>
+    <field name="federation_account"/>
+    <field name="relevance"/>
+    <field name="page_date"  widget="date"/>
+    <field name="age"/>
+    <field name="page_type" expand="1"/>
+    <field name="medical_context" expand="1"/>
+    <field name="social_context" expand="1"/>
+    <field name="summary"/>
+    <field name="node"/>
+</tree>

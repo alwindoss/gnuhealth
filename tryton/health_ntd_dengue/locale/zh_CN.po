@@ -1,0 +1,264 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:gnuhealth.dengue_du_survey,aedes_larva:"
+msgid "Larvae"
+msgstr "幼虫"
+
+msgctxt "field:gnuhealth.dengue_du_survey,animal_water_container:"
+msgid "Animal Water containers"
+msgstr "动物水容器"
+
+msgctxt "field:gnuhealth.dengue_du_survey,du:"
+msgid "DU"
+msgstr "现住址"
+
+msgctxt "field:gnuhealth.dengue_du_survey,du_fumigation:"
+msgid "Fumigation"
+msgstr "熏蒸"
+
+msgctxt "field:gnuhealth.dengue_du_survey,du_status:"
+msgid "Status"
+msgstr "状态"
+
+msgctxt "field:gnuhealth.dengue_du_survey,flower_vase:"
+msgid "Flower vase"
+msgstr "花瓶"
+
+msgctxt "field:gnuhealth.dengue_du_survey,fumigation_date:"
+msgid "Fumigation Date"
+msgstr "熏蒸日期"
+
+msgctxt "field:gnuhealth.dengue_du_survey,larva_in_house:"
+msgid "Domiciliary"
+msgstr "室内"
+
+msgctxt "field:gnuhealth.dengue_du_survey,larva_peri:"
+msgid "Peri-Domiciliary"
+msgstr "居室周围"
+
+msgctxt "field:gnuhealth.dengue_du_survey,name:"
+msgid "Survey Code"
+msgstr "调查代码"
+
+msgctxt "field:gnuhealth.dengue_du_survey,next_survey_date:"
+msgid "Next survey"
+msgstr "下次调查"
+
+msgctxt "field:gnuhealth.dengue_du_survey,observations:"
+msgid "Observations"
+msgstr "观察"
+
+msgctxt "field:gnuhealth.dengue_du_survey,old_tyres:"
+msgid "Tyres"
+msgstr "轮胎"
+
+msgctxt "field:gnuhealth.dengue_du_survey,ovitraps:"
+msgid "Ovitraps"
+msgstr "轮胎"
+
+msgctxt "field:gnuhealth.dengue_du_survey,potted_plant:"
+msgid "Potted Plants"
+msgstr "花瓶插花"
+
+msgctxt "field:gnuhealth.dengue_du_survey,rock_holes:"
+msgid "Rock holes"
+msgstr "岩洞"
+
+msgctxt "field:gnuhealth.dengue_du_survey,survey_date:"
+msgid "Date"
+msgstr "日期"
+
+msgctxt "field:gnuhealth.dengue_du_survey,tree_holes:"
+msgid "Tree holes"
+msgstr "树洞"
+
+msgctxt "field:gnuhealth.sequences,dengue_du_survey_sequence:"
+msgid "Dengue DU Survey Sequence"
+msgstr "登革热调查序列"
+
+#, fuzzy
+msgctxt ""
+"field:gnuhealth.sequences.dengue_du_survey_sequence,dengue_du_survey_sequence:"
+msgid "Dengue DU Survey Sequence"
+msgstr "登革热调查序列"
+
+msgctxt "help:gnuhealth.dengue_du_survey,aedes_larva:"
+msgid "Check this box if Aedes aegypti larvae were found"
+msgstr "如果发现埃及伊蚊幼虫，请选中此框"
+
+msgctxt "help:gnuhealth.dengue_du_survey,animal_water_container:"
+msgid "Animal water containers not scrubbed or clean"
+msgstr "未擦洗或清洁的动物用水容器"
+
+msgctxt "help:gnuhealth.dengue_du_survey,du:"
+msgid "Domiciliary Unit"
+msgstr "现住址"
+
+msgctxt "help:gnuhealth.dengue_du_survey,du_fumigation:"
+msgid "The DU has been fumigated"
+msgstr "现住址已经熏蒸"
+
+msgctxt "help:gnuhealth.dengue_du_survey,du_status:"
+msgid "DU status compared to last visit"
+msgstr "现住址情况（与上次随访比较）"
+
+msgctxt "help:gnuhealth.dengue_du_survey,flower_vase:"
+msgid "Flower vases without scrubbing or cleaning"
+msgstr "没有擦洗或清洗的花瓶"
+
+msgctxt "help:gnuhealth.dengue_du_survey,fumigation_date:"
+msgid "Last Fumigation Date"
+msgstr "上次熏蒸日期"
+
+msgctxt "help:gnuhealth.dengue_du_survey,larva_in_house:"
+msgid "Check this box if larvae were found inside the house"
+msgstr "如果在房子里发现幼虫，请勾选此框"
+
+msgctxt "help:gnuhealth.dengue_du_survey,larva_peri:"
+msgid "Check this box if larva were found in the peridomiciliary area"
+msgstr "如果在住所周围区域发现幼虫，请选中此框"
+
+msgctxt "help:gnuhealth.dengue_du_survey,old_tyres:"
+msgid "Old vehicle tyres found"
+msgstr "找到旧车辆轮胎"
+
+msgctxt "help:gnuhealth.dengue_du_survey,ovitraps:"
+msgid "Check if ovitraps are in place"
+msgstr "检查产卵器是否到位"
+
+msgctxt "help:gnuhealth.dengue_du_survey,potted_plant:"
+msgid "Potted Plants with saucers"
+msgstr "有托盘的盆栽植物"
+
+msgctxt "help:gnuhealth.dengue_du_survey,rock_holes:"
+msgid "unfilled rock holes"
+msgstr "未填堵的岩洞"
+
+msgctxt "help:gnuhealth.dengue_du_survey,tree_holes:"
+msgid "unfilled tree holes"
+msgstr "未填堵的树洞"
+
+msgctxt "model:gnuhealth.dengue_du_survey,name:"
+msgid "Dengue DU Survey"
+msgstr "登革热住所调查"
+
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_elisa_elisa_igg"
+msgid "Dengue ELISA Ig-M"
+msgstr "登革热 ELISA Ig-M"
+
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_elisa_igg"
+msgid "Dengue Ig-G"
+msgstr "登革热 Ig-G"
+
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_qualitative_pcr"
+msgid "Dengue PCR"
+msgstr "登革热 PCR"
+
+msgctxt ""
+"model:gnuhealth.lab.test.critearea,name:gnuhealth_test_critearea_qualitative_prnt"
+msgid "Dengue PRNT"
+msgstr "登革热 PRNT"
+
+msgctxt ""
+"model:gnuhealth.lab.test_type,name:gnuhealth_test_dengue_elisa_igg_analysis0"
+msgid "DENGUE IgG"
+msgstr "登革热 IgG"
+
+msgctxt ""
+"model:gnuhealth.lab.test_type,name:gnuhealth_test_dengue_elisa_igm_analysis0"
+msgid "DENGUE ELISA"
+msgstr "登革热 ELISA"
+
+msgctxt ""
+"model:gnuhealth.lab.test_type,name:gnuhealth_test_dengue_pcr_analysis0"
+msgid "DENGUE PCR"
+msgstr "登革热 PCR"
+
+msgctxt ""
+"model:gnuhealth.lab.test_type,name:gnuhealth_test_dengue_prnt_analysis0"
+msgid "DENGUE PRNT"
+msgstr "登革热 PRNT"
+
+msgctxt "model:gnuhealth.sequences.dengue_du_survey_sequence,name:"
+msgid "Dengue DU Survey Sequences setup"
+msgstr ""
+
+msgctxt "model:ir.action,name:act_dengue_du_survey_form"
+msgid "Dengue DU Survey"
+msgstr "登革热现住址调查"
+
+msgctxt "model:ir.sequence,name:"
+msgid "Dengue DU Survey"
+msgstr "登革热现住址调查"
+
+#, fuzzy
+msgctxt "model:ir.sequence,name:seq_gnuhealth_dengue_du_survey"
+msgid "Dengue DU Survey"
+msgstr "登革热住所调查"
+
+msgctxt "model:ir.sequence.type,name:"
+msgid "Dengue DU Survey"
+msgstr "登革热现住址调查"
+
+#, fuzzy
+msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_dengue_du_survey"
+msgid "Dengue DU Survey"
+msgstr "登革热住所调查"
+
+msgctxt ""
+"model:product.template,name:product_template_dengue_elisa_igg_analysischarges0"
+msgid "Dengue IgG Charges"
+msgstr "登革热 IgG 收费"
+
+msgctxt ""
+"model:product.template,name:product_template_dengue_elisa_igm_analysischarges0"
+msgid "Dengue ELISA MAC Ig-M Charges"
+msgstr "登革热 ELISA MAC Ig-M 收费"
+
+msgctxt ""
+"model:product.template,name:product_template_dengue_pcr_analysischarges0"
+msgid "Dengue PCR Charges"
+msgstr "登革热 PCR 收费"
+
+msgctxt ""
+"model:product.template,name:product_template_dengue_prnt_analysischarges0"
+msgid "Dengue PRNT Charges"
+msgstr "登革热 PRNT 收费"
+
+msgctxt "selection:gnuhealth.dengue_du_survey,du_status:"
+msgid "Improved"
+msgstr "已改进"
+
+msgctxt "selection:gnuhealth.dengue_du_survey,du_status:"
+msgid "Initial"
+msgstr "初次"
+
+msgctxt "selection:gnuhealth.dengue_du_survey,du_status:"
+msgid "Unchanged"
+msgstr "未改变"
+
+msgctxt "selection:gnuhealth.dengue_du_survey,du_status:"
+msgid "Worsen"
+msgstr "恶化"
+
+msgctxt "view:gnuhealth.dengue_du_survey:"
+msgid "Areas to Improve"
+msgstr ""
+
+#, fuzzy
+msgctxt "view:gnuhealth.dengue_du_survey:"
+msgid "Notes"
+msgstr "注意事项"
+
+msgctxt "view:gnuhealth.dengue_du_survey:"
+msgid "Presence of larvae"
+msgstr ""
+
+msgctxt "view:gnuhealth.dengue_du_survey:"
+msgid "Preventive Measures"
+msgstr ""

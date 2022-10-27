@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+
+<!-- Extend imaging request view to include the service -->
+
+        <record model="ir.ui.view" id="view_imaging_request_form">
+            <field name="model">gnuhealth.imaging.test.request</field>
+            <field name="inherit" ref="health_imaging.view_imaging_test_request_form" />
+            <field name="name">gnuhealth_imaging_request</field>
+        </record> 
+
+<!-- Include the service to the imaging test request -->
+        <record model="ir.ui.view" id="view_imaging_request_start_form">
+            <field name="model">gnuhealth.patient.imaging.test.request.start</field>
+            <field name="inherit" ref="health_imaging.patient_imaging_test_request_start_view_form" />
+            <field name="name">gnuhealth_imaging_start_request</field>
+        </record> 
+
+    </data>
+</tryton>

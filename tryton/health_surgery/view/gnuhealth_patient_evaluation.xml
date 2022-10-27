@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<data>
+    <xpath expr="//field[@name=&quot;info_diagnosis&quot;]" position="after">
+        <group string="Surgical relevant info" id="group_evl_surgery_info" colspan="4">
+            <field name="surgical_context" colspan="4"/>
+            <group id="group_evl_surgery_hernia_info" colspan="4" col="6">
+                <label name="hernia_localization"/>
+                <field name="hernia_localization"/>
+                <label name="hernia_side"/>
+                <field name="hernia_side"/>
+                <label name="hernia_type"/>
+                <field name="hernia_type"/>
+                <label name="hernia_ehs"/>
+                <field name="hernia_ehs"/>
+                <label name="hernia_time"/>
+                <field name="hernia_time"/>
+                <label name="hernia_disfunction"/>
+                <field name="hernia_disfunction"/>
+            </group>
+            <group id="group_evl_surgery_thyroid_info" colspan="4" col="8">
+                <label name="thyroid_exploration"/>
+                <field name="thyroid_exploration"/>
+                <label name="thyroid_side"/>
+                <field name="thyroid_side"/>
+                <label name="thyroid_clinical"/>
+                <field name="thyroid_clinical"/>
+                <label name="thyroid_goiter"/>
+                <field name="thyroid_goiter"/>
+                <label name="thyroid_tirads"/>
+                <field name="thyroid_tirads"/>
+                <label name="thyroid_tvol"/>
+                <field name="thyroid_tvol"/>
+                <label name="thyroid_goiter_class"/>
+                <field name="thyroid_goiter_class"/>
+           </group>
+        </group>
+    </xpath>
+</data>

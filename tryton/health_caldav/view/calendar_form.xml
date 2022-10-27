@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2009-2016 Tryton Foundation <info@tryton.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+SPDX-FileCopyrightText: 2011-2022 Luis Falcón <falcon@gnuhealth.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <label name="name"/>
+    <field name="name"/>
+    <label name="owner"/>
+    <field name="owner"/>
+    <notebook colspan="4">
+        <page string="General" id="general">
+            <separator name="description" colspan="4"/>
+            <field name="description" colspan="4"/>
+        </page>
+        <page string="Access Permissions" id="permissions">
+            <field name="read_users" colspan="4"/>
+            <field name="write_users" colspan="4"/>
+        </page>
+    </notebook>
+</form>

@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-06-29 15:07+0000\n"
+"Last-Translator: Armand MPASSY <armandmpassy@yahoo.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/gnu-health/"
+"health_insurance/fr/>\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
+
+msgctxt "error:gnuhealth.insurance.plan.product.policy:"
+msgid "Percentage out of range [0-100]"
+msgstr "Pourcentage hors limites [0-100]"
+
+msgctxt "error:gnuhealth.insurance.plan.product.policy:"
+msgid "You need a product or category"
+msgstr "Vous avez besoin d'un produit ou d'une catégorie"
+
+msgctxt "field:gnuhealth.health_service,insurance_holder:"
+msgid "Insurance Holder"
+msgstr "Titulaire d'assurance"
+
+msgctxt "field:gnuhealth.health_service,insurance_plan:"
+msgid "Plan"
+msgstr "Régime"
+
+msgctxt "field:gnuhealth.insurance.plan,product_policy:"
+msgid "Policy"
+msgstr "Police"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,create_date:"
+msgid "Create Date"
+msgstr "Date de création"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,create_uid:"
+msgid "Create User"
+msgstr "Créé par"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,discount:"
+msgid "Discount"
+msgstr "Remise"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,plan:"
+msgid "Plan"
+msgstr "Régime"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,product:"
+msgid "Product"
+msgstr "Produit"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,product_category:"
+msgid "Category"
+msgstr "Catégorie"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,write_date:"
+msgid "Write Date"
+msgstr "Date de mise à jour"
+
+msgctxt "field:gnuhealth.insurance.plan.product.policy,write_uid:"
+msgid "Write User"
+msgstr "Modifié par"
+
+msgctxt "help:gnuhealth.health_service,insurance_holder:"
+msgid "Insurance Policy Holder"
+msgstr "Titulaire de police d'assurance"
+
+msgctxt "help:gnuhealth.insurance.plan.product.policy,discount:"
+msgid "Discount in Percentage"
+msgstr "Remise en pourcentage"
+
+msgctxt "model:gnuhealth.insurance.plan.product.policy,name:"
+msgid "Policy associated to the product on the insurance plan"
+msgstr "Police associée au produit du régime d'assurance"
+
+msgctxt ""
+"model:ir.action,name:action_gnuhealth_insurance_plan_product_policy_view"
+msgid "Plan Product Policies"
+msgstr "Régime-Produit-Polices d'assurance"
+
+msgctxt ""
+"model:ir.ui.menu,name:menu_gnuhealth_insurance_plan_product_policy_list"
+msgid "Plan Product Policies"
+msgstr "Régime-Produit-Polices d'assurance"

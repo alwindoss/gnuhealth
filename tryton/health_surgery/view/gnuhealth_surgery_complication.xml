@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<form>
+    <label name="name"/>
+    <field name="name"/>
+    <label name="complication"/>
+    <field name="complication"/>
+    <label name="severity"/>
+    <field name="severity"/>
+    <label name="short_comment"/>
+    <field name="short_comment"/>
+</form>

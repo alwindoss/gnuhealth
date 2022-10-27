@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- This file is part of GNU Health.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data grouped="1">
+        <record model="ir.message" id="msg_no_company_timezone">
+            <field name="text">SM-CALENDAR-001: You need to define a timezone for this company before creating a work schedule</field>
+        </record>
+        <record model="ir.message" id="msg_end_before_start">
+            <field name="text">SM-CALENDAR-002: End date before start</field>
+        </record>
+        <record model="ir.message" id="msg_period_too_long">
+            <field name="text">SM-CALENDAR-003: The schedule period should be less than 31 days</field>
+        </record>
+
+        <record model="ir.message" id="msg_appointment_end_date_before_start">
+            <field name="text">SM-CALENDAR-0004: The Appointment END date "%(appointment_date_end)s" is BEFORE the start date "%(appointment_date)s"</field>
+        </record>
+
+    </data>
+</tryton>

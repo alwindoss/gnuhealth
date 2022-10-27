@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2012-2017 Cédric Krier
+SPDX-FileCopyrightText: 2017-2022 GNU Solidario <health@gnusolidario.org>
+SPDX-FileCopyrightText: 2017-2022 Luis Falcon <falcon@gnuhealth.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tree>
+    <field name="name"/>
+    <field name="model"/>
+    <field name="parent" tree_invisible="1"/>
+    <field name="childs" tree_invisible="1"/>
+</tree>

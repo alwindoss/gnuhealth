@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2009-2016 Tryton Foundation <info@tryton.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+SPDX-FileCopyrightText: 2011-2022 Luis Falcón <falcon@gnuhealth.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tree>
+    <field name="summary"/>
+    <field name="recurrence" widget="date"/>
+    <field name="recurrence" widget="time"/>
+    <field name="all_day"/>
+    <field name="dtstart" widget="date"/>
+    <field name="dtstart" widget="time" string="Start Time"/>
+    <field name="dtend" widget="date"/>
+    <field name="dtend" widget="time" string="End Time"/>
+    <field name="status"/>
+</tree>

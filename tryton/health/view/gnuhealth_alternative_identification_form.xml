@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <label name="code"/>
+    <field name="code"/>
+    <label name="alternative_id_type"/>
+    <field name="alternative_id_type"/>
+    <label name="expiration_date"/>
+    <field name="expiration_date"/>
+    <label name="comments"/>
+    <field name="comments"/>
+</form>

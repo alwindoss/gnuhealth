@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+        <!-- Sequences for Chagas -->
+        <record id="seq_type_gnuhealth_chagas_du_survey" model="ir.sequence.type">
+            <field name="name">Chagas DU Survey</field>
+        </record>
+        <record id="seq_gnuhealth_chagas_du_survey" model="ir.sequence">
+            <field name="name">Chagas DU Survey</field>
+            <field name="sequence_type" ref="seq_type_gnuhealth_chagas_du_survey"></field>
+            <field name="prefix">CHAGAS-DU-${year}/</field>
+            <field name="padding">3</field>
+        </record>
+    </data>
+</tryton>
