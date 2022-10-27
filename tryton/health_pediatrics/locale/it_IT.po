@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-10-27 13:01+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_pediatrics/it/>\n"
@@ -56,9 +56,10 @@ msgctxt "field:gnuhealth.neonatal.apgar,create_uid:"
 msgid "Create User"
 msgstr "Creare utente"
 
+#, fuzzy
 msgctxt "field:gnuhealth.neonatal.apgar,id:"
 msgid "ID"
-msgstr "Identificazione"
+msgstr "ID"
 
 msgctxt "field:gnuhealth.neonatal.apgar,name:"
 msgid "Newborn ID"
@@ -136,9 +137,10 @@ msgctxt "field:gnuhealth.newborn,healthprof:"
 msgid "Health Professional"
 msgstr ""
 
+#, fuzzy
 msgctxt "field:gnuhealth.newborn,id:"
 msgid "ID"
-msgstr "Identificazione"
+msgstr "ID"
 
 msgctxt "field:gnuhealth.newborn,length:"
 msgid "Length"
@@ -314,7 +316,7 @@ msgstr "VDRL"
 
 msgctxt "field:gnuhealth.newborn,tod:"
 msgid "Time of Death"
-msgstr "Data del decesso "
+msgstr "Data del decesso"
 
 msgctxt "field:gnuhealth.newborn,weight:"
 msgid "Weight"
@@ -352,9 +354,10 @@ msgctxt "field:gnuhealth.patient.psc,evaluation_start:"
 msgid "Date"
 msgstr "Data"
 
+#, fuzzy
 msgctxt "field:gnuhealth.patient.psc,id:"
 msgid "ID"
-msgstr "Identità / Codice Fiscale"
+msgstr "ID"
 
 msgctxt "field:gnuhealth.patient.psc,notes:"
 msgid "Notes"
@@ -699,7 +702,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.newborn,state:"
 msgid "Signed"
-msgstr ""
+msgstr "Firmato"
 
 msgctxt "selection:gnuhealth.newborn,state:"
 msgid "draft"
