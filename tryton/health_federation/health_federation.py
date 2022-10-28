@@ -9,7 +9,7 @@
 #                   https://www.gnuhealth.org                           #
 #########################################################################
 #                      HEALTH FEDERATION package                        #
-#                  health_federation.py: main module                    '#
+#                  health_federation.py: main module                    #
 #########################################################################
 
 from trytond.model import ModelView, ModelSQL, ModelSingleton, fields, Unique
