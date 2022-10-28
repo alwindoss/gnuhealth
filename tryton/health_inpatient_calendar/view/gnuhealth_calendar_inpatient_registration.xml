@@ -1,4 +1,12 @@
 <?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 <data>
     <xpath expr="/form/notebook/page[@id=&quot;page_admin_data&quot;]/group[@id=&quot;group_admin_data_holder1&quot;]/group[@id=&quot;group_admin_data_holder2&quot;]/field[@name=&quot;discharge_date&quot;]" position="after">
         <label name="event"/>
