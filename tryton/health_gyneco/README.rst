@@ -1,3 +1,8 @@
+.. SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+.. SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+..
+.. SPDX-License-Identifier: CC-BY-SA-4.0
+
 .. image:: https://www.gnuhealth.org/downloads/artwork/logos/isologo-gnu-health.png
 
 GNU Health HMIS: Libre Hospital Management and Health Information System
@@ -12,7 +17,7 @@ The GNU Health HMIS provides the following functionality:
 
 The Hospital and Health Information System component (HMIS) from GNU Health (GH) 
 provides over 40 standard-based packages (primary care, obstetrics & gynecology,
-pediatrics, surgery, lims, genetics, diagnostic imaging, dentistry, reporting...)
+pediatrics, surgery, lims, genetics, diagnostic imaging, dentisstry, reporting...)
 to fit your institution needs. The GH HMIS combines the socioeconomic determinants of
 health with state-of-the-art technology in bioinformatics and clinical genetics. 
 
