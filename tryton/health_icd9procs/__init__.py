@@ -10,5 +10,3 @@
 #                       HEALTH ICD9PROCS package                        #
 #              __init__.py: Package declaration file                    #
 #########################################################################
-
-from . import health_icd9procs
