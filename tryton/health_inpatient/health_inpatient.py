@@ -1,24 +1,18 @@
-##############################################################################
-#
-#    GNU Health: The Free Health and Hospital Information System
-#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnusolidario.org>
-#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
-#
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-##############################################################################
+#!/usr/bin/env python
+
+# SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+# SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+#########################################################################
+#   Hospital Management Information System (HMIS) component of the      #
+#                       GNU Health project                              #
+#                   https://www.gnuhealth.org                           #
+#########################################################################
+#                     HEALTH INPATIENT package                          #
+#                 health_inpatient.py: Main module                      #
+#########################################################################
 from datetime import datetime
 from trytond.model import ModelView, ModelSQL, fields, Unique
 from trytond.transaction import Transaction
@@ -232,20 +226,23 @@ class InpatientRegistration(ModelSQL, ModelView):
                     gettext('health_inpatient.msg_discharge_befor_admission'))
             cursor.execute(*table.select(
                     table.id,
-                    where=(((table.hospitalization_date
-                                <= registration.hospitalization_date)
+                    where=((
+                            (table.hospitalization_date <=
+                             registration.hospitalization_date) &
+                            (table.discharge_date >=
+                             registration.hospitalization_date)
+                            ) |
+                           ((table.hospitalization_date
+                            <= registration.discharge_date)
                             & (table.discharge_date
-                                >= registration.hospitalization_date))
-                        | ((table.hospitalization_date
-                                <= registration.discharge_date)
-                            & (table.discharge_date
-                                >= registration.discharge_date))
-                        | ((table.hospitalization_date
-                                >= registration.hospitalization_date)
+                                >= registration.discharge_date)) |
+                           ((table.hospitalization_date
+                            >= registration.hospitalization_date)
                             & (table.discharge_date
                                 <= registration.discharge_date)))
                     & table.state.in_(['confirmed', 'hospitalized', 'done'])
                     & (table.bed == registration.bed.id)))
+
             if cursor.fetchone():
                 raise BedIsNotAvailable(
                     gettext('health_inpatient.msg_bed_is_not_available'))

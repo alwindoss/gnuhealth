@@ -1,34 +1,23 @@
-# -*- coding: utf-8 -*-
-##############################################################################
-#
-#    GNU Health: The Free Health and Hospital Information System
-#    MODULE : Diagnostic Imaging
-#
-#    Copyright (C) 2008-2022 Luis Falcon <lfalcon@gnuhealth.org>
-#    Copyright (C) 2011-2022 GNU Solidario <health@gnusolidario.org>
-#    Copyright (C) 2013  Sebastián Marro <smarro@thymbra.com>
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-##############################################################################
+#!/usr/bin/env python
+
+# SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+# SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+# SPDX-FileCopyrightText: 2013 Sebastián Marró <smarro@thymbra.com>
+
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+#########################################################################
+#   Hospital Management Information System (HMIS) component of the      #
+#                       GNU Health project                              #
+#                   https://www.gnuhealth.org                           #
+#########################################################################
+#                     HEALTH IMAGING package                            #
+#                 health_imaging.pu: Main module                        #
+#########################################################################
 from datetime import datetime
-from trytond.model import Workflow, ModelView, ModelSingleton, ModelSQL, \
-    fields, Unique, ValueMixin
+from trytond.model import Workflow, ModelView, ModelSQL, fields, Unique
 from trytond.pyson import Eval
 from trytond.pool import Pool
-from trytond import backend
-from trytond.tools.multivalue import migrate_property
 
 from trytond.modules.health.core import get_health_professional
 
@@ -62,6 +51,7 @@ class ImagingTest(ModelSQL, ModelView):
     def default_active():
         return True
 
+
 class ImagingTestRequest(Workflow, ModelSQL, ModelView):
     'Imaging Test Request'
     __name__ = 'gnuhealth.imaging.test.request'
@@ -71,14 +61,16 @@ class ImagingTestRequest(Workflow, ModelSQL, ModelView):
     requested_test = fields.Many2One(
         'gnuhealth.imaging.test', 'Test',
         required=True)
-    doctor = fields.Many2One('gnuhealth.healthprofessional', 'Health prof', required=True)
+    doctor = fields.Many2One(
+        'gnuhealth.healthprofessional', 'Health prof', required=True)
     state = fields.Selection([
         ('draft', 'Draft'),
         ('requested', 'Requested'),
         ('done', 'Done'),
         ], 'State', readonly=True)
 
-    context = fields.Many2One('gnuhealth.pathology', 'Context',
+    context = fields.Many2One(
+        'gnuhealth.pathology', 'Context',
         help="Health context for this order. It can be a suspected or"
              " existing health condition, a regular health checkup, ...",
              select=True)
