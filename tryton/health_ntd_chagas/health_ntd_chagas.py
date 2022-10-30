@@ -10,8 +10,8 @@
 #                       GNU Health project                              #
 #                   https://www.gnuhealth.org                           #
 #########################################################################
-#                     HEALTH NTD package                                #
-#                health_ntd.py: main module                             #
+#                    HEALTH NTD CHAGAS package                          #
+#                health_ntd_chagas.py: main module                      #
 #########################################################################
 
 from datetime import datetime
