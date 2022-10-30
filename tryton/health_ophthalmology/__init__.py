@@ -7,7 +7,7 @@
 #                       GNU Health project                              #
 #                   https://www.gnuhealth.org                           #
 #########################################################################
-#                       HEALTH OPHTHALMOGLOY package                    #
+#                       HEALTH OPHTHALMOLOGY package                    #
 #                  __init__.py: Package declaration file                #
 #########################################################################
 
