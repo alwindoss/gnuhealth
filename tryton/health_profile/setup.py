@@ -1,20 +1,19 @@
 #!/usr/bin/env python
-#    Copyright (C) 2011-2022 Luis Falcon <falcon@gnuhealth.org>
-#    Copyright (C) 2011 Cédric Krier
 
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
+# SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
+# SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
+# SPDX-FileCopyrightText: 2011 Cédric Krier <cedric.krier@b2ck.com>
 
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
+# SPDX-License-Identifier: GPL-3.0-or-later
 
-#    You should have received a copy of the GNU General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+#########################################################################
+#   Hospital Management Information System (HMIS) component of the      #
+#                       GNU Health project                              #
+#                   https://www.gnuhealth.org                           #
+#########################################################################
+#                     HEALTH_PROFILE package                            #
+#                   setup.py: Setuptools file                           #
+#########################################################################
 from setuptools import setup
 import re
 import os
