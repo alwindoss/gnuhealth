@@ -9,7 +9,7 @@
 #                   https://www.gnuhealth.org                           #
 #########################################################################
 #                 HEALTH PEDIATRICS_GROWTH_CHARTS package               #
-#              health_pediatrics_growth_charts.py: main module          #
+#                  __init__.py: Package declaration file                #
 #########################################################################
 
 from trytond.pool import Pool
