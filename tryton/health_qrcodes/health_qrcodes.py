@@ -8,7 +8,7 @@
 #                   https://www.gnuhealth.org                           #
 #########################################################################
 #                         HEALTH QR_CODES PACKAGE                       #
-#                      health_qrcodes.pu: Main module                   #
+#                      health_qrcodes.py: Main module                   #
 #########################################################################
 import qrcode
 import barcode
