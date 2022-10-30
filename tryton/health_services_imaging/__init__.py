@@ -18,8 +18,8 @@ from . import wizard
 
 def register():
     Pool.register(
-    health_services_imaging.ImagingTestRequest,
-	wizard.RequestPatientImagingTestStart,
+        health_services_imaging.ImagingTestRequest,
+        wizard.RequestPatientImagingTestStart,
         module='health_services_imaging', type_='model')
     Pool.register(
         wizard.RequestPatientImagingTest,
