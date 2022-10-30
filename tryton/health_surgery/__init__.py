@@ -2,10 +2,8 @@
 
 # SPDX-FileCopyrightText: 2008-2022 Luis Falcón <falcon@gnuhealth.org>
 # SPDX-FileCopyrightText: 2011-2022 GNU Solidario <health@gnusolidario.org>
-# SPDX-FileCopyrightText: 2011 Cédric Krier <cedric.krier@b2ck.com>
-
+#
 # SPDX-License-Identifier: GPL-3.0-or-later
-
 #########################################################################
 #   Hospital Management Information System (HMIS) component of the      #
 #                       GNU Health project                              #
