@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-28 14:02+0000\n"
+"PO-Revision-Date: 2022-11-16 19:33+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_lab/it/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 "X-POOTLE-MTIME: 1452251710.0\n"
 
 msgctxt "error:gnuhealth.lab.test.units:"
@@ -26,7 +26,7 @@ msgstr "Il codice del Test di Laboratorio deve essere unico"
 
 msgctxt "field:gnuhealth.lab,create_date:"
 msgid "Create Date"
-msgstr "Creare data"
+msgstr "Crea data"
 
 msgctxt "field:gnuhealth.lab,create_uid:"
 msgid "Create User"
@@ -94,7 +94,7 @@ msgstr "ID"
 
 msgctxt "field:gnuhealth.lab.test.critearea,create_date:"
 msgid "Create Date"
-msgstr "Creare data"
+msgstr "Crea data"
 
 msgctxt "field:gnuhealth.lab.test.critearea,create_uid:"
 msgid "Create User"
@@ -178,7 +178,7 @@ msgstr "Codice"
 
 msgctxt "field:gnuhealth.lab.test.units,create_date:"
 msgid "Create Date"
-msgstr "Creare data"
+msgstr "Crea data"
 
 msgctxt "field:gnuhealth.lab.test.units,create_uid:"
 msgid "Create User"
@@ -210,7 +210,7 @@ msgstr "Codice"
 
 msgctxt "field:gnuhealth.lab.test_type,create_date:"
 msgid "Create Date"
-msgstr "Creare data"
+msgstr "Crea data"
 
 msgctxt "field:gnuhealth.lab.test_type,create_uid:"
 msgid "Create User"
@@ -254,7 +254,7 @@ msgstr "Test di Laboratorio Richiesti"
 
 msgctxt "field:gnuhealth.patient.lab.test,create_date:"
 msgid "Create Date"
-msgstr "Creare data"
+msgstr "Crea data"
 
 msgctxt "field:gnuhealth.patient.lab.test,create_uid:"
 msgid "Create User"
