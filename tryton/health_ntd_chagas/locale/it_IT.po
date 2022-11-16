@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-27 13:01+0000\n"
+"PO-Revision-Date: 2022-11-16 19:33+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_ntd_chagas/it/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 "X-POOTLE-MTIME: 1452251714.0\n"
 
 msgctxt "field:gnuhealth.chagas_du_survey,bugtraps:"
@@ -18,11 +18,11 @@ msgstr "Trappole per insetti"
 
 msgctxt "field:gnuhealth.chagas_du_survey,create_date:"
 msgid "Create Date"
-msgstr "Creare Data"
+msgstr "Crea data"
 
 msgctxt "field:gnuhealth.chagas_du_survey,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:gnuhealth.chagas_du_survey,dfloor:"
 msgid "Floor"
@@ -114,7 +114,7 @@ msgstr "Scrivere data"
 
 msgctxt "field:gnuhealth.chagas_du_survey,write_uid:"
 msgid "Write User"
-msgstr "Scrivere nome utente"
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.sequences,chagas_du_survey_sequence:"
 msgid "Chagas Survey Sequence"
