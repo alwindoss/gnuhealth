@@ -1,7 +1,7 @@
 # 
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 22:03+0000\n"
+"PO-Revision-Date: 2022-11-16 19:33+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_webdav3_server/it/>\n"
@@ -9,58 +9,56 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 msgctxt "error:ir.attachment:"
 msgid ""
 "You can not create an attachment named \"%(attachment)s\" in collection "
 "\"%(collection)s\" because there is already a collection with that name."
 msgstr ""
+"Non è possibile creare un allegato chiamato \"%(attachment)s\" nella "
+"raccolta \"%(collection)s\" perché esiste già una raccolta con questo nome."
 
 msgctxt "error:webdav.collection:"
 msgid "The collection name must be unique inside a collection!"
-msgstr ""
+msgstr "Il nome dell'insieme deve essere univoco all'interno di un insieme."
 
 msgctxt "error:webdav.collection:"
 msgid ""
 "You can not create a collection named \"%(parent)s\" in collection "
 "\"%(child)s\" because there is already a file with that name."
 msgstr ""
+"Non è possibile creare un insieme chiamato \"%(parent)s\" nell'insieme \""
+"%(child)s\" perché esiste già un file con quel nome."
 
-#, fuzzy
 msgctxt "field:ir.attachment,path:"
 msgid "Path"
 msgstr "Percorso"
 
 msgctxt "field:ir.attachment,shares:"
 msgid "Shares"
-msgstr ""
+msgstr "Condivisioni"
 
-#, fuzzy
 msgctxt "field:ir.attachment,url:"
 msgid "URL"
 msgstr "URL"
 
-#, fuzzy
 msgctxt "field:webdav.collection,childs:"
 msgid "Children"
-msgstr "Figlio"
+msgstr "Figli"
 
-#, fuzzy
 msgctxt "field:webdav.collection,complete_name:"
 msgid "Complete Name"
-msgstr "Completare il nome"
+msgstr "Completa il nome"
 
-#, fuzzy
 msgctxt "field:webdav.collection,create_date:"
 msgid "Create Date"
-msgstr "Data di creazione"
+msgstr "Crea data"
 
 msgctxt "field:webdav.collection,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
-#, fuzzy
 msgctxt "field:webdav.collection,domain:"
 msgid "Domain"
 msgstr "Dominio"
@@ -69,12 +67,10 @@ msgctxt "field:webdav.collection,id:"
 msgid "ID"
 msgstr "ID"
 
-#, fuzzy
 msgctxt "field:webdav.collection,model:"
 msgid "Model"
 msgstr "Modello"
 
-#, fuzzy
 msgctxt "field:webdav.collection,name:"
 msgid "Name"
 msgstr "Nome"
@@ -83,115 +79,102 @@ msgctxt "field:webdav.collection,parent:"
 msgid "Parent"
 msgstr "Genitore"
 
-#, fuzzy
 msgctxt "field:webdav.collection,rec_name:"
 msgid "Name"
 msgstr "Nome"
 
-#, fuzzy
 msgctxt "field:webdav.collection,write_date:"
 msgid "Write Date"
-msgstr "Utente scrittura"
+msgstr "Scrivere data"
 
-#, fuzzy
 msgctxt "field:webdav.collection,write_uid:"
 msgid "Write User"
-msgstr "modificato da"
+msgstr "Scrivere l'utente"
 
-#, fuzzy
 msgctxt "field:webdav.share,create_date:"
 msgid "Create Date"
-msgstr "Data di creazione"
+msgstr "Crea data"
 
 msgctxt "field:webdav.share,create_uid:"
 msgid "Create User"
-msgstr "Creare utente"
+msgstr "Crea utente"
 
 msgctxt "field:webdav.share,expiration_date:"
 msgid "Expiration Date"
-msgstr ""
+msgstr "Data scadenza"
 
-#, fuzzy
 msgctxt "field:webdav.share,id:"
 msgid "ID"
-msgstr "Movimento contabile"
+msgstr "ID"
 
-#, fuzzy
 msgctxt "field:webdav.share,key:"
 msgid "Key"
 msgstr "Chiave"
 
-#, fuzzy
 msgctxt "field:webdav.share,note:"
 msgid "Note"
 msgstr "Nota"
 
-#, fuzzy
 msgctxt "field:webdav.share,path:"
 msgid "Path"
 msgstr "Percorso"
 
-#, fuzzy
 msgctxt "field:webdav.share,rec_name:"
 msgid "Name"
 msgstr "Nome"
 
-#, fuzzy
 msgctxt "field:webdav.share,url:"
 msgid "URL"
 msgstr "URL"
 
-#, fuzzy
 msgctxt "field:webdav.share,user:"
 msgid "User"
 msgstr "Utente"
 
-#, fuzzy
 msgctxt "field:webdav.share,write_date:"
 msgid "Write Date"
-msgstr "Utente scrittura"
+msgstr "Scrivere data"
 
-#, fuzzy
 msgctxt "field:webdav.share,write_uid:"
 msgid "Write User"
-msgstr "modificato da"
+msgstr "Scrivere l'utente"
 
 msgctxt "model:ir.action,name:act_collection_list"
 msgid "Collections"
-msgstr ""
+msgstr "Insiemi"
 
 msgctxt "model:ir.action,name:act_collection_tree"
 msgid "Collections"
-msgstr ""
+msgstr "Insiemi"
 
 msgctxt "model:ir.action,name:act_share_list"
 msgid "Shares"
-msgstr ""
+msgstr "Condivisioni"
 
 msgctxt "model:ir.ui.menu,name:menu_collection_list"
 msgid "Collections"
-msgstr ""
+msgstr "Insiemi"
 
 msgctxt "model:ir.ui.menu,name:menu_collection_tree"
 msgid "Collections"
-msgstr ""
+msgstr "Insiemi"
 
 msgctxt "model:ir.ui.menu,name:menu_share_list"
 msgid "Shares"
-msgstr ""
+msgstr "Condivisioni"
 
 msgctxt "model:ir.ui.menu,name:menu_webdav"
 msgid "WebDAV"
-msgstr ""
+msgstr "WebDAV"
 
 msgctxt "model:webdav.collection,name:"
 msgid "Collection"
-msgstr ""
+msgstr "Insieme"
 
 msgctxt "model:webdav.share,name:"
 msgid "Share"
-msgstr ""
+msgstr "Condivisione"
 
 msgctxt "view:ir.attachment:"
 msgid "WebDAV"
-msgstr ""
+msgstr "WebDAV"
