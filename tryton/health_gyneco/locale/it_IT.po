@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-27 13:01+0000\n"
+"PO-Revision-Date: 2022-11-16 19:33+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_gyneco/it/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 "X-POOTLE-MTIME: 1452251648.0\n"
 
 msgctxt "error:gnuhealth.patient.pregnancy:"
@@ -370,7 +370,7 @@ msgstr "Numero gravidanza"
 
 msgctxt "field:gnuhealth.patient.pregnancy,healthprof:"
 msgid "Health Prof"
-msgstr "Prof. sanitario"
+msgstr "Paramedico"
 
 msgctxt "field:gnuhealth.patient.pregnancy,home_birth:"
 msgid "Home Birth"
@@ -514,7 +514,7 @@ msgstr "Settimane di gestazione"
 
 msgctxt "field:gnuhealth.patient.prenatal.evaluation,healthprof:"
 msgid "Health Prof"
-msgstr "Prof. sanitario"
+msgstr "Paramedico"
 
 msgctxt "field:gnuhealth.patient.prenatal.evaluation,hypertension:"
 msgid "Hypertension"
@@ -630,7 +630,7 @@ msgstr "Gravida #"
 
 msgctxt "field:gnuhealth.perinatal,healthprof:"
 msgid "Health Prof"
-msgstr "Prof. sanitario"
+msgstr "Paramedico"
 
 msgctxt "field:gnuhealth.perinatal,hematoma:"
 msgid "Hematoma"
@@ -790,7 +790,7 @@ msgstr "Frecuenza cardiaca"
 
 msgctxt "field:gnuhealth.puerperium.monitor,healthprof:"
 msgid "Health Prof"
-msgstr "Prof. sanitario"
+msgstr "Paramedico"
 
 msgctxt "field:gnuhealth.puerperium.monitor,id:"
 msgid "ID"
