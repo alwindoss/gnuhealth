@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-27 13:01+0000\n"
+"PO-Revision-Date: 2022-11-16 19:33+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_nursing/it/>\n"
@@ -9,16 +9,16 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 "X-POOTLE-MTIME: 1452251717.0\n"
 
 msgctxt "error:gnuhealth.patient.ambulatory_care:"
 msgid "No health professional associated to this user"
-msgstr "Nessun professionista sanitario associato a questo utente"
+msgstr "Nessun paramedico associato a questo utente"
 
 msgctxt "error:gnuhealth.patient.rounding:"
 msgid "No health professional associated to this user"
-msgstr "Nessun professionista sanitario associato a questo utente"
+msgstr "Nessun paramedico associato a questo utente"
 
 msgctxt "field:gnuhealth.ambulatory_care_procedure,comments:"
 msgid "Comments"
