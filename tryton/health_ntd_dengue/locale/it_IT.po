@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-11-16 19:33+0000\n"
+"PO-Revision-Date: 2022-11-19 20:47+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_ntd_dengue/it/>\n"
@@ -64,13 +64,15 @@ msgctxt "field:gnuhealth.dengue_du_survey,name:"
 msgid "Survey Code"
 msgstr "Codice indagine"
 
+#, fuzzy
 msgctxt "field:gnuhealth.dengue_du_survey,next_survey_date:"
 msgid "Next survey"
-msgstr ""
+msgstr "Prossima indagine"
 
+#, fuzzy
 msgctxt "field:gnuhealth.dengue_du_survey,observations:"
 msgid "Observations"
-msgstr ""
+msgstr "Osservazioni"
 
 msgctxt "field:gnuhealth.dengue_du_survey,old_tyres:"
 msgid "Tyres"
@@ -262,4 +264,4 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.dengue_du_survey,du_status:"
 msgid "Worsen"
-msgstr ""
+msgstr "Peggiorato"
