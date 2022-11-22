@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-11-19 20:47+0000\n"
+"PO-Revision-Date: 2022-11-23 17:47+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_ntd_dengue/it/>\n"
@@ -74,17 +74,18 @@ msgctxt "field:gnuhealth.dengue_du_survey,observations:"
 msgid "Observations"
 msgstr "Osservazioni"
 
+#, fuzzy
 msgctxt "field:gnuhealth.dengue_du_survey,old_tyres:"
 msgid "Tyres"
-msgstr ""
+msgstr "Pneumatici"
 
 msgctxt "field:gnuhealth.dengue_du_survey,ovitraps:"
 msgid "Ovitraps"
-msgstr ""
+msgstr "Trappole larvale"
 
 msgctxt "field:gnuhealth.dengue_du_survey,potted_plant:"
 msgid "Potted Plants"
-msgstr ""
+msgstr "Piante in vaso"
 
 msgctxt "field:gnuhealth.dengue_du_survey,rec_name:"
 msgid "Name"
@@ -92,15 +93,15 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.dengue_du_survey,rock_holes:"
 msgid "Rock holes"
-msgstr ""
+msgstr "Fori nella roccia"
 
 msgctxt "field:gnuhealth.dengue_du_survey,survey_date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.dengue_du_survey,tree_holes:"
 msgid "Tree holes"
-msgstr ""
+msgstr "Fori degli alberi"
 
 msgctxt "field:gnuhealth.dengue_du_survey,write_date:"
 msgid "Write Date"
@@ -108,23 +109,23 @@ msgstr "Data scrittura"
 
 msgctxt "field:gnuhealth.dengue_du_survey,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.sequences,dengue_du_survey_sequence:"
 msgid "Dengue Survey Sequence"
-msgstr ""
+msgstr "Sequenza indagini sulla Dengue"
 
 msgctxt "help:gnuhealth.dengue_du_survey,aedes_larva:"
 msgid "Check this box if Aedes aegypti larvae were found"
-msgstr ""
+msgstr "Seleziona questa casella se sono state trovate larve di Aedes aegypti"
 
 msgctxt "help:gnuhealth.dengue_du_survey,animal_water_container:"
 msgid "Animal water containers not scrubbed or clean"
-msgstr ""
+msgstr "Contenitori per l'acqua degli animali non puliti o non lavati"
 
 msgctxt "help:gnuhealth.dengue_du_survey,du:"
 msgid "Domiciliary Unit"
-msgstr ""
+msgstr "Unità domiciliare"
 
 msgctxt "help:gnuhealth.dengue_du_survey,du_fumigation:"
 msgid "The DU has been fumigated"
