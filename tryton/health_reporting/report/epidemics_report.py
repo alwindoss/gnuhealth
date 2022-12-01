@@ -35,7 +35,7 @@ class InstitutionEpidemicsReport(Report):
 
         return Party.search([
                 ('is_person', '=', True),
-                ('decesased', '!=', True),
+                ('deceased', '!=', True),
                 ('dob', '=', None),
                 ], count=True)
 
@@ -66,7 +66,7 @@ class InstitutionEpidemicsReport(Report):
         domain = [
             ('activation_date', '>=', start_date),
             ('activation_date', '<=', end_date),
-            ('decesased', '!=', True),
+            ('deceased', '!=', True),
             ('is_person', '=', True),
             ]
 
