@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2022-12-08 15:49+0000\n"
-"Last-Translator: Vinicius Monego <monego@posteo.net>\n"
+"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health_crypto_lab/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -13,7 +13,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.lab,digest_current:"
 msgid "Current Hash"
-msgstr ""
+msgstr "Hash atual"
 
 msgctxt "field:gnuhealth.lab,digest_status:"
 msgid "Altered"
