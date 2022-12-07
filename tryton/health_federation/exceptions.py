@@ -18,7 +18,7 @@ class ThalamusConnectionError(UserError):
     pass
 
 
-class ThalamusConnectionOK(UserWarning):
+class ThalamusConnectionOK(UserError):
     pass
 
 
