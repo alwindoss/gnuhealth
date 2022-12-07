@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-25 23:35+0000\n"
+"PO-Revision-Date: 2022-12-08 15:49+0000\n"
 "Last-Translator: Vinicius Monego <monego@posteo.net>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gnu-health/health_crypto_lab/pt_BR/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 msgctxt "field:gnuhealth.lab,digest_current:"
 msgid "Current Hash"
@@ -17,7 +17,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.lab,digest_status:"
 msgid "Altered"
-msgstr ""
+msgstr "Alterado"
 
 msgctxt "field:gnuhealth.lab,digital_signature:"
 msgid "Digital Signature"
