@@ -1,16 +1,16 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-01-17 22:25+0000\n"
-"Last-Translator: Sasha <maxminer88@gmail.com>\n"
+"PO-Revision-Date: 2022-12-08 15:49+0000\n"
+"Last-Translator: WofWca <wofwca@protonmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gnu-health/"
 "health/ru/>\n"
 "Language: ru\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
 msgid "Certificate already exists !"
@@ -20,30 +20,37 @@ msgctxt "error:gnuhealth.death_certificate:"
 msgid "Certificate already exists !"
 msgstr "Свидетельство уже существует!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.dose.unit:"
 msgid "The Unit must be unique !"
 msgstr "Значение Юнит должно быть уникальным!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The CODE must be unique !"
 msgstr "Код должен быть уникальным!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.drug.form:"
 msgid "The Unit must be unique !"
 msgstr "Значение Юнит должен быть уникальным!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The CODE must be unique !"
 msgstr "Код должен быть уникальным!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.drug.route:"
 msgid "The Name must be unique !"
 msgstr "Имя должен быть уникальным!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.du:"
 msgid "The Domiciliary Unit must be unique !"
 msgstr "Место жительства должно быть уникальным!"
 
+#, fuzzy
 msgctxt "error:gnuhealth.ethnicity:"
 msgid "The CODE must be unique !"
 msgstr "КОД должен быть уникальным!"
