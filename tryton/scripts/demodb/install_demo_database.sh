@@ -10,10 +10,9 @@
 #                   https://www.gnuhealth.org                           #
 #########################################################################
 #                      install_demo_database.sh                         #
-#              The GNU Health HMIS startup script                       #
+#        Downloads and installs the GNU Health demo database            #
 #########################################################################
 
-# Script to download/unpack and locally install the GNU Health demo database
 
 
 URL="https://www.gnuhealth.org/downloads/postgres_dumps/gnuhealth-$1-demo.sql.gz"
