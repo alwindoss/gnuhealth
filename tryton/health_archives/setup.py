@@ -50,7 +50,7 @@ for dep in info.get('depends', []):
 setup(name='gnuhealth_archives',
     version=info.get('version', '0.0.1'),
     description=info.get('description', 'GNU Health package to manage paper and legacy clinical records'),
-    long_description=read('README'),
+    long_description=read('README.rst'),
     author='GNU Solidario',
     author_email='health@gnusolidario.org',
     url='https://www.gnuhealth.org',
