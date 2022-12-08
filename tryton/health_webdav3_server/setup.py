@@ -54,7 +54,7 @@ for dep in info.get('depends', []):
 setup(name='gnuhealth_webdav3_server',
       version=info.get('version', '0.0.1'),
       description='GNU Health WebDAV server for Python 3',
-      long_description=read('README'),
+      long_description=read('README.rst'),
       author='GNU Solidario',
       author_email='health@gnusolidario.org',
       url='https://www.gnuhealth.org',
