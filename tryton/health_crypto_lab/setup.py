@@ -60,7 +60,7 @@ setup(
         'description',
         'GNU Health package with public-key crypto functionality'
         ' for laboratories'),
-    long_description=read('README'),
+    long_description=read('README.rst'),
     author='GNU Solidario',
     author_email='health@gnusolidario.org',
     url='https://www.gnuhealth.org',

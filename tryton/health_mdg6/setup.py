@@ -58,7 +58,7 @@ setup(
     description=info.get(
         'description',
         'GNU Health MDG6 - Millenium Development Goal # 6 package'),
-    long_description=read('README'),
+    long_description=read('README.rst'),
     author='GNU Solidario',
     author_email='health@gnusolidario.org',
     url='https://www.gnuhealth.org',

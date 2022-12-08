@@ -371,7 +371,7 @@ gnuhealth_packages() {
 
     # Copy LICENSE README and version files
     
-    local EXTRA_FILES="COPYING README version"
+    local EXTRA_FILES="COPYING README.rst version"
     for FILE in ${EXTRA_FILES}; do
         cp -a ${GNUHEALTH_INST_DIR}/${FILE} ${BASEDIR} || bailout
     done

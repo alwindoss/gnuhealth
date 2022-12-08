@@ -60,7 +60,7 @@ setup(
     description=info.get(
         'description',
         'GNU Health personal and medical history package'),
-    long_description=read('README'),
+    long_description=read('README.rst'),
     author='GNU Solidario',
     author_email='health@gnusolidario.org',
     url='https://www.gnuhealth.org',
