@@ -59,7 +59,7 @@ setup(
         'description',
         'GNU Health package for patient Functioning and disability,'
         ' including WHO ICF'),
-    long_description=read('README'),
+    long_description=read('README.rst'),
     author='GNU Solidario',
     author_email='health@gnusolidario.org',
     url='https://www.gnuhealth.org',
