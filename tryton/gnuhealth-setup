@@ -417,9 +417,9 @@ apply_patches() {
 
 }
 
-bash_profile () {
+shell_profiles () {
 
-    message "INFO" "Creating or Updating the BASH profile for GNU Health"
+    message "INFO" "Creating or Updating the BASH and ZSH profiles for GNU Health"
 
     cd $INSTDIR
 
@@ -427,7 +427,7 @@ bash_profile () {
 
     if [[ -e ${PROFILE} ]]; then
         # Make a backup copy of the GNU Health BASH profile if it exists
-        message "INFO" "GNU Health BASH Profile exists. Making backup to ${PROFILE}.bak ."
+        message "INFO" "GNU Health shell profile exists. Making backup to ${PROFILE}.bak ."
         cp ${PROFILE} ${PROFILE}.bak || bailout
     fi
 
@@ -440,11 +440,25 @@ bash_profile () {
         echo "[[ -f ${PROFILE} ]] && source ${PROFILE}" >> $HOME/.bash_profile
     fi
 
-    # Include .gnuhealthrc in .bashrc for non-login shells
+    # Include .gnuhealthrc in .bashrc for non-login / interactive shells
     if [[ -e $HOME/.bashrc ]]; then
         grep --silent "source ${PROFILE}" $HOME/.bashrc || echo "[[ -f ${PROFILE} ]] && source ${PROFILE}" >> $HOME/.bashrc
     else
         echo "[[ -f ${PROFILE} ]] && source ${PROFILE}" >> $HOME/.bashrc
+    fi
+
+    # Load .gnuhealthrc from .zprofile . If .zprofile does not exist, create it.
+    if [[ -e $HOME/.zprofile ]]; then
+        grep --silent "source ${PROFILE}" $HOME/.zprofile || echo "[[ -f ${PROFILE} ]] && source ${PROFILE}" >> $HOME/.zprofile
+    else
+        echo "[[ -f ${PROFILE} ]] && source ${PROFILE}" >> $HOME/.zprofile
+    fi
+
+    # Include .gnuhealthrc in .zshrc for non-login / interactive shells
+    if [[ -e $HOME/.zshrc ]]; then
+        grep --silent "source ${PROFILE}" $HOME/.zshrc || echo "[[ -f ${PROFILE} ]] && source ${PROFILE}" >> $HOME/.zshrc
+    else
+        echo "[[ -f ${PROFILE} ]] && source ${PROFILE}" >> $HOME/.zshrc
     fi
 
 }
@@ -519,8 +533,8 @@ install() {
     # (6) Apply Patches to Tryton Kernel
     apply_patches
 
-    # (7) BASH Profile
-    bash_profile
+    # (7) SHELL Profiles
+    shell_profiles
 
     # (7) Install startup script
     startup_script
