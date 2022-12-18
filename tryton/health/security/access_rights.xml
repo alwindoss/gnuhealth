@@ -309,7 +309,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
         <record model="ir.model.access" id="access_health_patient_medication_admin">
@@ -777,7 +777,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
 <!-- END OF FRONT DESK GROUP ACCESS RIGHTS -->
@@ -879,7 +879,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
         <record model="ir.model.access" id="access_health_family_member_doctor">
@@ -906,7 +906,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
         <record model="ir.model.access" id="access_health_patient_disease_doctor">
@@ -924,7 +924,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
         <record model="ir.model.access" id="access_health_patient_medication_doctor">
@@ -951,7 +951,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
         <record model="ir.model.access" id="access_health_procedure_doctor">
@@ -969,7 +969,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
         <record model="ir.model.access" id="access_health_hospital_bed_doctor">
@@ -1049,7 +1049,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
         <record model="ir.model.access" id="access_health_patient_social_worker">
@@ -1058,7 +1058,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
 <!-- END OF SOCIAL WORKER GROUP ACCESS RIGHTS -->
@@ -1172,7 +1172,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
 <!-- END OF BACK OFFICE GROUP ACCESS RIGHTS -->
