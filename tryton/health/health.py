@@ -2500,7 +2500,7 @@ class DeathCertExtraInfo (ModelSQL, ModelView):
     def on_change_institution(self):
         country = None
         subdivision = None
-        if (self.institution and self.institutiFon.name.addresses[0].country):
+        if (self.institution and self.institution.name.addresses[0].country):
             country = self.institution.name.addresses[0].country.id
 
         if (self.institution and self.institution.name.addresses[0].
