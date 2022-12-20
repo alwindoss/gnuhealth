@@ -35,7 +35,7 @@ from trytond.model import (ModelView, ModelSingleton, ModelSQL,
 from trytond.wizard import Wizard, StateAction, StateView, Button
 from trytond.transaction import Transaction
 from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or
-from trytond.pool import Pool
+from trytond.pool import Pool, PoolMeta
 from trytond.rpc import RPC
 from trytond.i18n import gettext
 
@@ -318,7 +318,7 @@ class FederationCountryConfig(ModelSingleton, ModelSQL, ModelView):
         return self.country.code3
 
 
-class Party(ModelSQL, ModelView):
+class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
 
     def person_age(self, name):
@@ -1110,7 +1110,7 @@ class PageOfLife(ModelSQL, ModelView):
         cls._order.insert(0, ('page_date', 'DESC'))
 
 
-class ContactMechanism(ModelSQL, ModelView):
+class ContactMechanism(metaclass=PoolMeta):
     __name__ = 'party.contact_mechanism'
 
     emergency = fields.Boolean('Emergency', select=True)
@@ -1160,8 +1160,7 @@ class PersonName(ModelSQL, ModelView):
     date_to = fields.Date('To')
 
 
-class PartyAddress(ModelSQL, ModelView):
-    'Party Address'
+class PartyAddress(metaclass=PoolMeta):
     __name__ = 'party.address'
 
     relationship = fields.Char(
@@ -2501,7 +2500,7 @@ class DeathCertExtraInfo (ModelSQL, ModelView):
     def on_change_institution(self):
         country = None
         subdivision = None
-        if (self.institution and self.institution.name.addresses[0].country):
+        if (self.institution and self.institutiFon.name.addresses[0].country):
             country = self.institution.name.addresses[0].country.id
 
         if (self.institution and self.institution.name.addresses[0].
