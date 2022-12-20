@@ -256,7 +256,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
         <record model="ir.model.access" id="access_health_lab_test_create_init_lab">
