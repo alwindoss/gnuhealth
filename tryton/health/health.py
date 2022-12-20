@@ -2566,7 +2566,6 @@ class InsurancePlan(ModelSQL, ModelView):
     'Insurance Plan'
 
     __name__ = 'gnuhealth.insurance.plan'
-    _rec_name = 'company'
 
     name = fields.Many2One(
         'product.product', 'Plan', required=True,
