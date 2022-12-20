@@ -133,7 +133,7 @@ class DomiciliaryUnit(ModelSQL, ModelView):
 
     address_municipality = fields.Char(
         'Municipality', help="Municipality, Township, county ..")
-    address_city = fields.Char('City', help="City / Municipality")
+    address_city = fields.Char('City', help="City")
     address_zip = fields.Char('Zip')
     address_country = fields.Many2One(
         'country.country', 'Country', help='Country')
