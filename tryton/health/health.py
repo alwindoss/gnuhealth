@@ -5404,7 +5404,7 @@ class PatientECG(ModelSQL, ModelView):
                 ]
 
 
-class ProductTemplate(ModelSQL, ModelView):
+class ProductTemplate(metaclass=PoolMeta):
     __name__ = 'product.template'
     """
     Allow to change the values from the product templates
@@ -5461,7 +5461,7 @@ class Commands(ModelSQL, ModelView):
                 })
 
 
-class Modules(ModelSQL, ModelView):
+class Modules(metaclass=PoolMeta):
     __name__ = 'ir.module'
 
     # Add the module description field
