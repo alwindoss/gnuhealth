@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-11-16 19:33+0000\n"
+"PO-Revision-Date: 2022-12-30 13:47+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_ems/it/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 msgctxt "error:gnuhealth.ambulance:"
 msgid "This vehicle ID already exists"
@@ -238,7 +238,7 @@ msgstr "Sesso"
 
 msgctxt "field:gnuhealth.support_request,place_occurrance:"
 msgid "Origin"
-msgstr ""
+msgstr "Origine"
 
 msgctxt "field:gnuhealth.support_request,rec_name:"
 msgid "Name"
@@ -246,31 +246,31 @@ msgstr "Nome"
 
 msgctxt "field:gnuhealth.support_request,request_actions:"
 msgid "Activities"
-msgstr ""
+msgstr "Attività"
 
 msgctxt "field:gnuhealth.support_request,request_date:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "field:gnuhealth.support_request,request_extra_info:"
 msgid "Details"
-msgstr ""
+msgstr "Dettagli"
 
 msgctxt "field:gnuhealth.support_request,requestor:"
 msgid "Requestor"
-msgstr ""
+msgstr "Richiedente"
 
 msgctxt "field:gnuhealth.support_request,state:"
 msgid "State"
-msgstr ""
+msgstr "Stato"
 
 msgctxt "field:gnuhealth.support_request,urgency:"
 msgid "Urgency"
-msgstr ""
+msgstr "Urgenza"
 
 msgctxt "field:gnuhealth.support_request,urladdr:"
 msgid "OSM Map"
-msgstr ""
+msgstr "Mappa OSM"
 
 msgctxt "field:gnuhealth.support_request,write_date:"
 msgid "Write Date"
@@ -282,7 +282,7 @@ msgstr "Scrivere l'utente"
 
 msgctxt "field:gnuhealth.support_request.log,action:"
 msgid "Activity"
-msgstr ""
+msgstr "Attività"
 
 msgctxt "field:gnuhealth.support_request.log,create_date:"
 msgid "Create Date"
@@ -306,7 +306,7 @@ msgstr "Osservazioni"
 
 msgctxt "field:gnuhealth.support_request.log,sr:"
 msgid "SR"
-msgstr ""
+msgstr "SR"
 
 msgctxt "field:gnuhealth.support_request.log,timestamp:"
 msgid "Time"
