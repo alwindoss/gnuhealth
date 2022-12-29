@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-27 13:01+0000\n"
+"PO-Revision-Date: 2022-12-30 13:47+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health_surgery/it/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 msgctxt "error:gnuhealth.surgery:"
 msgid "End time \"%(end_date)s\" BEFORE surgery date \"%(surgery_date)s\""
@@ -149,7 +149,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery,classification:"
 msgid "Urgency"
-msgstr ""
+msgstr "Urgenza"
 
 msgctxt "field:gnuhealth.surgery,code:"
 msgid "Code"
@@ -257,7 +257,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery,state:"
 msgid "State"
-msgstr ""
+msgstr "Stato"
 
 msgctxt "field:gnuhealth.surgery,supplies:"
 msgid "Supplies"
