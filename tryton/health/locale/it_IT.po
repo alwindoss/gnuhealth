@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-11-23 17:47+0000\n"
+"PO-Revision-Date: 2022-12-30 13:47+0000\n"
 "Last-Translator: Alessandro Fanna <alex@rospus.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gnu-health/"
 "health/it/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-POOTLE-MTIME: 1452251637.0\n"
 
 msgctxt "error:gnuhealth.birth_certificate:"
@@ -11752,7 +11752,7 @@ msgstr "Arrivo"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Information"
@@ -11776,7 +11776,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Time"
-msgstr ""
+msgstr "Tempo"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Birh Certificate"
