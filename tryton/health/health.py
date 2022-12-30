@@ -35,7 +35,7 @@ from trytond.model import (ModelView, ModelSingleton, ModelSQL,
 from trytond.wizard import Wizard, StateAction, StateView, Button
 from trytond.transaction import Transaction
 from trytond.pyson import Eval, Not, Bool, PYSONEncoder, Equal, And, Or
-from trytond.pool import Pool
+from trytond.pool import Pool, PoolMeta
 from trytond.rpc import RPC
 from trytond.i18n import gettext
 
@@ -133,7 +133,7 @@ class DomiciliaryUnit(ModelSQL, ModelView):
 
     address_municipality = fields.Char(
         'Municipality', help="Municipality, Township, county ..")
-    address_city = fields.Char('City', help="City / Municipality")
+    address_city = fields.Char('City', help="City")
     address_zip = fields.Char('Zip')
     address_country = fields.Many2One(
         'country.country', 'Country', help='Country')
@@ -275,7 +275,8 @@ class DomiciliaryUnit(ModelSQL, ModelView):
 
     # Show the resulting Address representation in realtime
     @fields.depends(
-        'address_street', 'address_subdivision',
+        'address_street', 'address_subdivision', 'address_city',
+        'address_zip',
         'address_street_number', 'address_country')
     def on_change_with_address_repr(self):
         return self.get_du_address(name=None)
@@ -318,7 +319,7 @@ class FederationCountryConfig(ModelSingleton, ModelSQL, ModelView):
         return self.country.code3
 
 
-class Party(ModelSQL, ModelView):
+class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
 
     def person_age(self, name):
@@ -1110,7 +1111,7 @@ class PageOfLife(ModelSQL, ModelView):
         cls._order.insert(0, ('page_date', 'DESC'))
 
 
-class ContactMechanism(ModelSQL, ModelView):
+class ContactMechanism(metaclass=PoolMeta):
     __name__ = 'party.contact_mechanism'
 
     emergency = fields.Boolean('Emergency', select=True)
@@ -1160,8 +1161,7 @@ class PersonName(ModelSQL, ModelView):
     date_to = fields.Date('To')
 
 
-class PartyAddress(ModelSQL, ModelView):
-    'Party Address'
+class PartyAddress(metaclass=PoolMeta):
     __name__ = 'party.address'
 
     relationship = fields.Char(
@@ -2567,7 +2567,6 @@ class InsurancePlan(ModelSQL, ModelView):
     'Insurance Plan'
 
     __name__ = 'gnuhealth.insurance.plan'
-    _rec_name = 'company'
 
     name = fields.Many2One(
         'product.product', 'Plan', required=True,
@@ -5405,7 +5404,7 @@ class PatientECG(ModelSQL, ModelView):
                 ]
 
 
-class ProductTemplate(ModelSQL, ModelView):
+class ProductTemplate(metaclass=PoolMeta):
     __name__ = 'product.template'
     """
     Allow to change the values from the product templates
@@ -5462,7 +5461,7 @@ class Commands(ModelSQL, ModelView):
                 })
 
 
-class Modules(ModelSQL, ModelView):
+class Modules(metaclass=PoolMeta):
     __name__ = 'ir.module'
 
     # Add the module description field

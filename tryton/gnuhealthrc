@@ -9,7 +9,8 @@
 #                   https://www.gnuhealth.org                           #
 #########################################################################
 #                             gnuhealthrc                               #
-#                  BASH resource file for GNUHealth HMIS                #
+#                  Resource file for GNUHealth HMIS                     #     
+#                       for BASH and ZSH shells                         #
 #########################################################################
 
 export EDITOR=vi
@@ -47,13 +48,20 @@ alias editconf='${EDITOR} ${TRYTOND_CONFIG}'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
+alias ls='ls --color=auto'
 
 #GNU HEALTH version
 export GNUHEALTH_VERSION=`cat ${GNUHEALTH_DIR}/version`
 
-# Commented to be compatible with FreeBSD
-# alias ls='ls --color=auto'
 
 #Prompt
+#It tries to guess the right shell from user shell or invocation
+#and picks the prompt accordingly
+#
+#Currently supports BASH and ZSH
 
-PS1="\[\e[32;2m\]\u@\h:\[\e[30;0m\]\w $ \[\e[0m\]"
+if [[ $SHELL == *"bash" || $0 == *"bash" ]]; then
+  PS1="\[\e[96;2m\]\u@\h \w $ \[\e[0m\]"
+elif [[ $SHELL == *"zsh" || $0 == *"zsh" ]]; then
+  PS1="%F{cyan}%n@%m %/ $ %f"
+fi
