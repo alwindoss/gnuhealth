@@ -22,6 +22,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <label name="address_street_bis"/>
             <field name="address_street_bis"/>
             <newline/>
+            <label name="address_municipality"/>
+            <field name="address_municipality"/>
             <label name="address_city"/>
             <field name="address_city"/>
             <label name="address_zip"/>

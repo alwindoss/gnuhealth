@@ -43,7 +43,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
         <record model="ir.model.access" id="access_health_nursing_rounding_procedure_admin">
@@ -125,7 +125,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
-            <field name="perm_delete" eval="True"/>
+            <field name="perm_delete" eval="False"/>
         </record>
 
         <record model="ir.model.access" id="access_health_nursing_rounding_procedure_nursing">

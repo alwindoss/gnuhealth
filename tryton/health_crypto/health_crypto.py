@@ -111,7 +111,7 @@ class PatientPrescriptionOrder(ModelSQL, ModelView):
             line_elements = [line.medicament and
                              line.medicament.name.name or '',
                              line.dose or '',
-                             line.dose_unit.name or '',
+                             line.dose_unit and line.dose_unit.name or '',
                              line.route and line.route.name or '',
                              line.form and line.form.name or '',
                              line.indication and line.indication.name or '',

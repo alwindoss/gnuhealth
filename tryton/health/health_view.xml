@@ -138,6 +138,70 @@ SPDX-License-Identifier: GPL-3.0-or-later
             icon="gnuhealth-product"/>
 
 
+
+<!-- Buttons -->
+
+        <!-- Birth Certficate -->
+        <record model="ir.model.button" id="birthcert_sign_button">
+            <field name="name">sign</field>
+            <field name="string">Sign</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.birth_certificate')]"/>
+        </record>
+
+        <!-- Death Certficate -->
+        <record model="ir.model.button" id="deathcert_sign_button">
+            <field name="name">sign</field>
+            <field name="string">Sign</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.death_certificate')]"/>
+        </record>
+
+
+        <!-- Appointment -->
+        <record model="ir.model.button" id="appoinntment_checked_in">
+            <field name="name">checked_in</field>
+            <field name="string">Check In</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.appointment')]"/>
+        </record>
+
+        <record model="ir.model.button" id="appoinntment_no_show">
+            <field name="name">no_show</field>
+            <field name="string">No show</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.appointment')]"/>
+        </record>
+
+        <!-- Vaccination -->
+        <record model="ir.model.button" id="vaccination_sign">
+            <field name="name">sign</field>
+            <field name="string">Sign</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.vaccination')]"/>
+        </record>
+
+
+        <!-- Prescription -->
+        <record model="ir.model.button" id="prescription_create">
+            <field name="name">create_prescription</field>
+            <field name="string">Create Prescription</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.prescription.order')]"/>
+        </record>
+
+
+        <!-- Patient Evaluation -->
+        <record model="ir.model.button" id="patient_evaluation_end">
+            <field name="name">end_evaluation</field>
+            <field name="string">End evaluation</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.patient.evaluation')]"/>
+        </record>
+
+
+        <!-- Hospital Bed -->
+        <record model="ir.model.button" id="hospital_bed_fix">
+            <field name="name">fix_bed</field>
+            <field name="string">Fix bed</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.hospital.bed')]"/>
+        </record>
+
+
+
 <!-- Initial Menu -->
         <menuitem name="Health" id="gnuhealth_menu" icon="gnuhealth"/>
         <menuitem name="Demographics" id="gnuhealth_demographics_menu"
